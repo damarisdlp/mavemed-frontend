@@ -7,12 +7,12 @@ import ApproachSection from "./components/ApproachSection";
 import PromoBanner from "./components/PromoBanner";
 import Header from "./components/Header";
 import HeroSection from "./components/HeroSection";
-import TreatmentsSection from "./components/TreatmentsSection";
 import PopularTreatments from "./components/PopularTreatments";
 import AboutSection from "./components/AboutSection";
 import ContactCTA from "./components/ContactCTA";
 import LocationMap from "./components/LocationMap";
 import ReviewsSection from "./components/ReviewsSection";
+import PromoPackageSection from "./components/PromoPackageSection";
 import Footer from "./components/Footer";
 
 export default function Home() {
@@ -48,7 +48,7 @@ export default function Home() {
       <LeadForm />
       <ApproachSection />
       <PopularTreatments />
-      <AboutSection />
+      <PromoPackageSection />
       <ContactCTA />
       <LocationMap />
 

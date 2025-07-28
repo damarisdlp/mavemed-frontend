@@ -101,7 +101,7 @@ export default function PopularTreatments() {
       <div className="container mx-auto px-4 flex justify-between items-center mb-10">
         <h2 className="text-4xl font-serif font-medium mb-10">Popular Treatments</h2>
         <Link
-          href="/#treatments"
+          href="/treatments"
           className="text-sm underline text-gray-600 hover:text-black"
         >
           View All
