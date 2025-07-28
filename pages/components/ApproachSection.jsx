@@ -4,11 +4,11 @@ import Link from "next/link";
 
 export default function ApproachSection() {
   return (
-    <section className="bg-white py-5 px-0">
+    <section className="bg-white py-10 px-0">
       <div className="grid md:grid-cols-[minmax(0,_1.7fr)_1fr] items-center max-w-none w-full">
 
         {/* Image – full bleed */}
-        <div className="relative w-full h-[700px]">
+        <div className="relative w-full h-[815px]">
           <Image
             src="/approach-section.jpg"
             alt="Close-up of glowing skin"
@@ -21,7 +21,7 @@ export default function ApproachSection() {
         {/* Text Content – constrained */}
         <div className="px-10 md:px-20 max-w-xl mx-auto">
 
-          <h2 className="text-4xl font-serif font-medium mb-10">
+          <h2 className="text-4xl font-serif font-medium mb-10 mt-15">
             A New Approach to Skincare
           </h2>
 

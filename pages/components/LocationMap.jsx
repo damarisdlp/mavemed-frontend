@@ -2,10 +2,10 @@
 
 export default function LocationSection() {
   return (
-    <section id="location" className="bg-gray-100 py-12 px-6">
+    <section id="location" style={{ backgroundColor: '#efeee7' }} className="py-7 px-6">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-2xl md:text-3xl font-semibold text-center mb-6">
-          Visit Us in Tijuana
+        <h2 className="text-4xl font-serif text-center font-medium mb-5">
+          We Can't Wait to See You
         </h2>
         <p className="text-center text-gray-600 mb-6">
           Convenient cross-border access, just minutes from the San Diego–Tijuana border.

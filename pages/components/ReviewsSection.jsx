@@ -12,9 +12,9 @@ export default function ReviewsSection() {
       />
 
       {/* Reviews Section */}
-      <section className="bg-white py-16 px-6">
+      <section className="bg-white py-10 px-6">
         <div className="max-w-6xl mx-auto text-center">
-          <h2 className="text-3xl font-semibold mb-6">What Our Patients Say</h2>
+          <h2 className="text-4xl font-serif font-medium mb-6">What Our Patients Say</h2>
           <p className="text-gray-600 mb-8">
             Verified reviews from cross-border clients and locals who’ve trusted Mave.
           </p>
