@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const treatments = [
   {
-    title: "Wrinkle Reducers",
+    title: "Wrinkle Reducers (Botox)",
     slug: "wrinkle-reducers",
     image: "/wrinkle-reducers.jpg",
     description: "Reduce the appearance of fine lines and wrinkles for a smoother, more refreshed look."
@@ -26,16 +26,16 @@ const treatments = [
     title: "Microneedling",
     slug: "microneedling",
     image: "/microneedling.jpg",
-    description: "Stimulate the skin’s natural healing process using SkinPen® to reduce fine lines, pores and scarring."
+    description: "Stimulate the skin’s natural healing process using microneedling technology to reduce fine lines, pores and scarring."
   },
   {
-    title: "Microneedling with Radio Frequency",
+    title: "Microneedling with Radio Frequency (Scarlet S RF)",
     slug: "rf-microneedling",
     image: "/rf-microneedling.jpg",
     description: "Improve fine lines and scarring with added skin laxity tightening and reduced downtime."
   },
   {
-    title: "CO2 Resurfacing Laser",
+    title: "CO2 Resurfacing Laser (AcuPulse)",
     slug: "co2-resurfacing-laser",
     image: "/co2-resurfacing-laser.jpg",
     description: "Skin resurfacing and deep dermal remodeling, treating sun damage, deeper wrinkles, skin texture and sagging."
@@ -53,23 +53,29 @@ const treatments = [
     description: "Pain-free, fast, and effective laser hair removal using state-of-the-art Alma Soprano Titanium ICE technology."
   },
   {
-    title: "IPL Photofacial",
+    title: "IPL Photofacial (Alma Harmony XL)",
     slug: "ipl",
     image: "/ipl.jpg",
     description: "Target sunspots, redness, and pigmentation with this light-based therapy that revitalizes skin clarity."
   },
   {
-    title: "Radiofrequency (Venus Freeze)",
+    title: "Body Contouring with Radiofrequency (Venus Freeze)",
     slug: "radiofrequency",
     image: "/radiofrequency.jpg",
     description: "Lift and tighten skin non-invasively with Venus Freeze radiofrequency technology for face and body."
   },
   {
-    title: "PDO Threads",
+    title: "Skin Tightening with PDO Threads",
     slug: "pdo-threads",
     image: "/pdo-threads.jpg",
     description: "Non-surgical lifting and contouring treatment that repositions tissue and stimulates collagen."
-  }
+  },
+  {
+  title: "High Intensity Frequency Ultrasound (Ultraformer MPT)",
+  slug: "ultraformer-mpt",
+  image: "/ultraformer-mpt.jpg",
+  description: "Lift and tighten the skin with non-invasive ultrasound energy. Ultraformer MPT targets multiple layers to stimulate collagen and redefine facial contours."
+}
 ];
 
 export default function PopularTreatments() {

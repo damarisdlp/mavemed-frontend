@@ -48,7 +48,6 @@ export default function Home() {
       <LeadForm />
       <ApproachSection />
       <PopularTreatments />
-      <TreatmentsSection />
       <AboutSection />
       <ContactCTA />
       <LocationMap />
