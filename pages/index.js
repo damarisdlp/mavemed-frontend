@@ -8,6 +8,7 @@ import PromoBanner from "./components/PromoBanner";
 import Header from "./components/Header";
 import HeroSection from "./components/HeroSection";
 import TreatmentsSection from "./components/TreatmentsSection";
+import PopularTreatments from "./components/PopularTreatments";
 import AboutSection from "./components/AboutSection";
 import ContactCTA from "./components/ContactCTA";
 import LocationMap from "./components/LocationMap";
@@ -46,6 +47,7 @@ export default function Home() {
       <HeroSection />
       <LeadForm />
       <ApproachSection />
+      <PopularTreatments />
       <TreatmentsSection />
       <AboutSection />
       <ContactCTA />

@@ -1,4 +1,5 @@
 // components/AboutSection.jsx
+import Image from "next/image";
 
 export default function AboutSection() {
   return (
@@ -6,10 +7,11 @@ export default function AboutSection() {
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
         {/* Image */}
         <div className="flex-1">
-          <img
+          <Image
             src="/about-image.jpg"
-            alt="About Mave"
-            className="rounded-xl shadow-md object-cover w-full"
+            alt="About Mave Group Picture"
+            className="w-full rounded-lg object-cover" 
+            width={600} height={400} 
           />
         </div>
 

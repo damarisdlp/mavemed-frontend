@@ -1,21 +1,24 @@
 // components/ApproachSection.jsx
+import Image from "next/image";
 
 export default function ApproachSection() {
   return (
-    <section className="bg-white py-24 px-6">
-      <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
-        {/* Image */}
-        <div>
-          <img
-            src="/public/logo-mave.png" // replace with your actual image path
+    <section className="bg-white py-5 px-0">
+      <div className="grid md:grid-cols-[minmax(0,_1.7fr)_1fr] items-center max-w-none w-full">
+        {/* Image – full bleed */}
+        <div className="relative w-full h-[700px]">
+          <Image
+            src="/approach-section.jpg"
             alt="Close-up of glowing skin"
-            className="w-full rounded-lg object-cover"
+            fill
+            className="object-cover"
+            priority
           />
         </div>
 
-        {/* Text Content */}
-        <div>
-          <h2 className="text-3xl md:text-4xl font-serif font-medium mb-10">
+        {/* Text Content – constrained */}
+        <div className="px-10 md:px-20 max-w-xl mx-auto">
+          <h2 className="text-4xl font-serif font-medium mb-10">
             A New Approach to Skincare
           </h2>
 
