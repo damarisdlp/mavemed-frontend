@@ -3,7 +3,7 @@
 export default function PromoBanner() {
   return (
     <div className="bg-[#731a2f] text-white text-sm text-center py-2 px-4">
-      Access exclusive promo pricing on select multi-sessional treatments |{" "}
+      Access exclusive promo pricing on select treatments.{" "}
       <a href="#contact" className="underline">
         Inquire Now
       </a>
