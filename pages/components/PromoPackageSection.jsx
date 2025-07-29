@@ -8,7 +8,7 @@ export default function PromoPackageSection() {
         
         {/* Text Side */}
         <div className="px-6 md:px-20 py-10 md:py-0 max-w-2xl mx-auto">
-          <h2 className="text-4xl font-serif font-medium mb-10">
+          <h2 className="text-4xl font-serif text-black font-medium mb-10">
             Exclusive Savings When You Commit to Results
           </h2>
           <p className="text-gray-700 mb-6 leading-relaxed text-base">

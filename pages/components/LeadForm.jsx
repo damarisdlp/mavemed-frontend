@@ -54,11 +54,11 @@ export default function LeadForm() {
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
         {/* Text Section */}
         <div>
-          <h2 className="text-3xl md:text-4xl font-serif font-medium mb-4">
+          <h2 className=" text-black text-3xl md:text-4xl font-serif font-medium mb-4">
             Stay Up to Date with Mave
           </h2>
           <p className="text-gray-700 text-base md:text-lg">
-            Sign up for our newsletter and SMS promos to get exclusive offers, medical insights, and aesthetic trends. Be the first to know.
+            Sign up for our newsletter and SMS promos to get 10% off your first facial and exclusive offers, medical insights, and aesthetic trends. Be the first to know.
           </p>
         </div>
 
@@ -73,7 +73,7 @@ export default function LeadForm() {
             value={formData.firstName}
             onChange={handleChange}
             placeholder="Your First Name"
-            className="border border-gray-300 rounded px-4 py-3 focus:outline-none focus:ring-2 focus:ring-black"
+            className="border border-gray-300 text-gray-500 rounded px-4 py-3 focus:outline-none focus:ring-2 focus:ring-black"
             required
           />
           <input
@@ -82,7 +82,7 @@ export default function LeadForm() {
             value={formData.lastName}
             onChange={handleChange}
             placeholder="Your Full Last Name"
-            className="border border-gray-300 rounded px-4 py-3 focus:outline-none focus:ring-2 focus:ring-black"
+            className="border border-gray-300 text-gray-500 rounded px-4 py-3 focus:outline-none focus:ring-2 focus:ring-black"
             required
           />
           <input
@@ -91,7 +91,7 @@ export default function LeadForm() {
             value={formData.email}
             onChange={handleChange}
             placeholder="Your Email Address"
-            className="border border-gray-300 rounded px-4 py-3 focus:outline-none focus:ring-2 focus:ring-black"
+            className="border border-gray-300 text-gray-500 rounded px-4 py-3 focus:outline-none focus:ring-2 focus:ring-black"
             required
           />
           <input
@@ -100,7 +100,7 @@ export default function LeadForm() {
             value={formData.phone}
             onChange={handleChange}
             placeholder="Your Mobile Number"
-            className="border border-gray-300 rounded px-4 py-3 focus:outline-none focus:ring-2 focus:ring-black"
+            className="border border-gray-300 text-gray-500 rounded px-4 py-3 focus:outline-none focus:ring-2 focus:ring-black"
             required
           />
 

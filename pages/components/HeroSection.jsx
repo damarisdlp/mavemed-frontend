@@ -3,7 +3,7 @@
 export default function HeroSection() {
   return (
     <section className="min-h-screen flex flex-col justify-center items-center bg-white px-6 text-center relative">
-      <h1 className="text-4xl sm:text-5xl md:text-6xl font-serif font-medium leading-tight max-w-4xl">
+      <h1 className="text-4xl text-black sm:text-5xl md:text-6xl font-serif font-medium leading-tight max-w-4xl">
         Mave Medical Spa in Tijuana – Expert Aesthetic Care for U.S. Clients
       </h1>
       <p className="text-base sm:text-lg text-gray-600 mt-4 max-w-lg">

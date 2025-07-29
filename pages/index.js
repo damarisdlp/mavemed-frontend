@@ -8,9 +8,9 @@ import PromoBanner from "./components/PromoBanner";
 import Header from "./components/Header";
 import HeroSection from "./components/HeroSection";
 import PopularTreatments from "./components/PopularTreatments";
-import AboutSection from "./components/AboutSection";
 import ContactCTA from "./components/ContactCTA";
 import LocationMap from "./components/LocationMap";
+import InstagramFeed from "./components/InstagramFeed"
 import ReviewsSection from "./components/ReviewsSection";
 import PromoPackageSection from "./components/PromoPackageSection";
 import Footer from "./components/Footer";
@@ -51,6 +51,7 @@ export default function Home() {
       <PromoPackageSection />
       <ContactCTA />
       <LocationMap />
+      <InstagramFeed />
 
       <Script
         src="https://static.elfsight.com/platform/platform.js"

@@ -99,7 +99,7 @@ export default function PopularTreatments() {
     <section className="bg-white py-5">
       {/* Header */}
       <div className="container mx-auto px-4 flex justify-between items-center mb-10">
-        <h2 className="text-4xl font-serif font-medium mb-10">Popular Treatments</h2>
+        <h2 className="text-4xl font-serif text-black font-medium mb-10">Popular Treatments</h2>
         <Link
           href="/treatments"
           className="text-sm underline text-gray-600 hover:text-black"
@@ -113,13 +113,13 @@ export default function PopularTreatments() {
         <div className="container mx-auto px-4 flex justify-end gap-4 mb-6">
           <button
             onClick={() => slider.current?.prev()}
-            className="bg-gray-200 hover:bg-gray-300 p-2 rounded-full text-lg"
+            className="bg-gray-200 hover:bg-gray-300 text-black p-2 rounded-full text-lg"
           >
             ←
           </button>
           <button
             onClick={() => slider.current?.next()}
-            className="bg-gray-200 hover:bg-gray-300 p-2 rounded-full text-lg"
+            className="bg-gray-200 hover:bg-gray-300 text-black p-2 rounded-full text-lg"
           >
             →
           </button>
@@ -141,8 +141,8 @@ export default function PopularTreatments() {
               </div>
               <div className="p-6 flex-1 flex flex-col justify-between">
                 <div>
-                  <h3 className="text-lg font-medium mb-2">{treatment.title}</h3>
-                  <p className="text-sm text-gray-600 mb-4">{treatment.description}</p>
+                  <h3 className="text-lg font-serif text-black font-medium mb-2">{treatment.title}</h3>
+                  <p className="text-2lg text-gray-600 mb-4">{treatment.description}</p>
                 </div>
                 <div className="mt-auto flex gap-2">
                   <Link
@@ -153,7 +153,7 @@ export default function PopularTreatments() {
                   </Link>
                   <Link
                     href={`/services/${treatment.slug}`}
-                    className="border border-gray-300 px-4 py-2 rounded-full text-xs hover:border-black transition"
+                    className="border border-gray-300 text-black px-4 py-2 rounded-full text-xs hover:border-black transition"
                   >
                     Learn More
                   </Link>
