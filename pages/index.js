@@ -44,7 +44,7 @@ export default function Home() {
   {/* Twitter */}
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Mave Medical Spa | Tijuana Aesthetic Experts for U.S. Patients" />
-  <meta name="twitter:description" content="Top-rated med spa for Botox, Sculptra, PDO threads, and more — serving SoCal & Canadian patients looking for safe, natural results in Mexico." />
+  <meta name="twitter:description" content="Top-rated med spa for Botox, Sculptra, PDO threads, and more — serving SoCal & Tijuana patients looking for safe, natural results in Mexico." />
   <meta name="twitter:image" content="https://www.mavemedspa.com/logo.png" />
 
   {/* Structured Data */}
@@ -57,7 +57,7 @@ export default function Home() {
         "name": "Mave Medical Spa",
         "url": "https://www.mavemedspa.com",
         "image": "https://www.mavemedspa.com/logo.png",
-        "description": "Cross-border med spa offering injectables, laser treatments, and non-surgical rejuvenation for patients from the U.S. and Canada.",
+        "description": "Cross-border med spa offering injectables, laser treatments, and non-surgical rejuvenation for patients from the U.S. and Mexico.",
         "telephone": "+52 664 207 7675",
         "priceRange": "$$",
         "address": {
@@ -68,6 +68,13 @@ export default function Home() {
           "postalCode": "22010",
           "addressCountry": "MX"
         },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 32.521,
+          "longitude": -117.038
+        },
+        "priceRange": "$$",
+        "description": "Mave Medical Spa in Tijuana offers expert-level aesthetic services including facial balancing with dermal fillers, microneedling, Sculptra, CO2 laser resurfacing, and non-surgical skin lifting. Located 35 minutes from San Diego.",
         "openingHoursSpecification": [
           {
             "@type": "OpeningHoursSpecification",

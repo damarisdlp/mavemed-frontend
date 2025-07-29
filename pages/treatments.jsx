@@ -22,7 +22,7 @@ dangerouslySetInnerHTML={{
         "@context": "https://schema.org",
         "@type": "MedicalBusiness",
         "name": "Mave Medical Spa",
-        "image": "https://www.mavemedspa.com/",
+        "image": "https://www.mavemedspa.com/logo.png",
         "url": "https://www.mavemedspa.com",
         "telephone": "+52-664-207-7675",
         "address": {
@@ -38,7 +38,7 @@ dangerouslySetInnerHTML={{
           "latitude": 32.521,
           "longitude": -117.038
         },
-              "priceRange": "$$",
+        "priceRange": "$$",
         "description": "Mave Medical Spa in Tijuana offers expert-level aesthetic services including facial balancing with dermal fillers, microneedling, Sculptra, CO2 laser resurfacing, and non-surgical skin lifting. Located 35 minutes from San Diego.",
         "openingHoursSpecification": [
           {
