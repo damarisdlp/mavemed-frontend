@@ -12,7 +12,7 @@ export default function ReviewsSection() {
       />
 
       {/* Reviews Section */}
-      <section className="bg-white py-5 px-6">
+      <section className="bg-white px-6">
         <div className="max-w-6xl mx-auto text-center">
           <h2 className="text-4xl font-serif text-black font-medium mb-6">What Our Patients Say</h2>
           <p className="text-gray-600 mb-8">

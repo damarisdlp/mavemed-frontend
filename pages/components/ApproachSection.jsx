@@ -8,10 +8,10 @@ export default function ApproachSection() {
       <div className="grid md:grid-cols-[minmax(0,_1.7fr)_1fr] items-center max-w-none w-full">
 
         {/* Image – full bleed */}
-        <div className="relative w-full h-[815px]">
+        <div className="relative w-full h-[835px]">
           <Image
             src="/approach-section.jpg"
-            alt="Close-up of glowing skin"
+            alt="Close-up of rejuvenated skin after aesthetic treatment"
             fill
             className="object-cover"
             priority
@@ -21,46 +21,46 @@ export default function ApproachSection() {
         {/* Text Content – constrained */}
         <div className="px-10 md:px-20 max-w-xl mx-auto">
 
-          <h2 className="text-4xl text-black font-serif font-medium mb-10 mt-15">
-            A New Approach to Skincare
+          <h2 className="text-4xl text-black font-serif font-medium mb-7 mt-10">
+            Our Results-Driven Skincare Philosophy in Tijuana
           </h2>
 
           {/* Safety */}
           <div className="mb-8">
             <div className="flex items-center gap-3 mb-2">
-              <Image src="/safety-icon.png" alt="Safety icon" width={35} height={35} />
-              <h3 className="text-lg text-black font-semibold">Safety</h3>
+              <Image src="/safety-icon.png" alt="Medical-grade skincare safety icon" width={35} height={35} />
+              <h3 className="text-lg text-black font-semibold">Medical-Grade Safety</h3>
             </div>
             <p className="text-gray-700 text-base leading-relaxed">
-              Safety is our top priority. All procedures at Mave are performed or overseen by licensed medical professionals specializing in aesthetic medicine. We follow strict COFEPRIS-compliant clinical protocols to ensure your health and wellbeing.
+              All cosmetic procedures at Mave Medical Spa in Tijuana are performed or overseen by licensed aesthetic doctors. We adhere to COFEPRIS-compliant safety standards for treatments such as Botox, RF microneedling, Sculptra, and PDO threads.
             </p>
           </div>
 
           {/* Efficacy */}
           <div className="mb-8">
             <div className="flex items-center gap-3 mb-2">
-              <Image src="/tech-icon.png" alt="Technology icon" width={35} height={35} />
-              <h3 className="text-lg text-black font-semibold">Efficacy</h3>
+              <Image src="/tech-icon.png" alt="Technology and skin treatment efficacy icon" width={35} height={35} />
+              <h3 className="text-lg text-black font-semibold">Proven Efficacy</h3>
             </div>
             <p className="text-gray-700 text-base leading-relaxed">
-              We believe in delivering real, visible results. Our services are built on medical-grade technologies and high-performing ingredients that are clinically proven to stimulate change in the skin.
+              From collagen stimulation to advanced skin tightening, our treatments use FDA-approved technologies and high-performance products that are clinically proven to transform skin health and appearance.
             </p>
           </div>
 
           {/* Experience */}
           <div className="mb-10">
             <div className="flex items-center gap-3 mb-2">
-              <Image src="/experience-icon.png" alt="Experience icon" width={35} height={35} />
-              <h3 className="text-lg text-black font-semibold">Experience</h3>
+              <Image src="/experience-icon.png" alt="Personalized skincare experience icon" width={35} height={35} />
+              <h3 className="text-lg text-black font-semibold">Personalized Aesthetic Experience</h3>
             </div>
             <p className="text-gray-700 text-base leading-relaxed">
-              We provide a carefully curated experience. Every appointment is personalized to your skin goals, and our team works with you to build a treatment plan that feels right — and gets results.
+              Your aesthetic journey begins with a skin consultation tailored to your goals. Whether you're seeking wrinkle reduction, skin tightening, or collagen rejuvenation, we create a custom treatment plan with real results.
             </p>
           </div>
 
           <Link href="/treatments">
             <button className="bg-black text-white px-6 py-3 rounded-full hover:bg-[#731a2f] transition">
-              View Our Treatments
+              Explore Our Med Spa Treatments
             </button>
           </Link>
 

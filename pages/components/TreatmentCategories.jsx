@@ -1,394 +1,380 @@
-import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 
 const categories = [
   {
-    title: "Wrinkle Reducers",
+    title: "Wrinkle Reducers in Tijuana",
     services: [
       {
-        name: "Wrinkle Reducers",
+        name: "Botox Wrinkle Reducers",
         slug: "botulinum-toxin",
         image: "/wrinkle-reducers.jpg",
         description:
-          "Smooth expression lines and reduce wrinkles for a youthful appearance using neuromodulators."
+          "Reduce frown lines, forehead creases, and crow’s feet with FDA‑approved Botox treatments for a smoother, youthful appearance."
       }
     ]
   },
   {
-    title: "Dermal Fillers",
+    title: "Dermal Fillers (Hyaluronic Acid)",
     services: [
       {
-        name: "Dermal Filler (Hyaluronic Acid)",
+        name: "Hyaluronic Acid Lip Fillers",
         slug: "hyaluronic-filler",
         image: "/fillers.jpg",
         description:
-          "Add volume and contour to lips, cheeks, under-eyes, and jawline with immediate results."
+          "Restore and add volume and contour lips using hyaluronic acid dermal fillers with immediate visible results."
       },
       {
-        name: "Hyaluronidase (PB Serum)",
+        name: "Facial Balancing with Dermal Fillers",
+        slug: "facial-balancing-fillers",
+        image: "/fillers.jpg",
+        description:
+        "Strategic dermal filler placement to enhance facial harmony, symmetry, and balance. Ideal for correcting asymmetry, contouring the jawline, chin, cheeks, and temples while preserving a natural aesthetic."
+      },
+      {
+        name: "Hyaluronidase Filler Reversal",
         slug: "hyaluronidase",
         image: "/fillers.jpg",
         description:
-          "Safely dissolve previous hyaluronic acid filler using an enzyme-based solution."
+          "Safely dissolve misplaced hyaluronic acid filler using hyaluronidase enzyme to restore natural contours and prevent complications."
       }
     ]
   },
   {
-    title: "Biostimulatory Fillers",
+    title: "Biostimulatory Fillers in Tijuana",
     services: [
       {
-        name: "Poly-L-Lactic Acid - PLLA (Sculptra)",
+        name: "Sculptra PLLA Collagen Stimulator",
         slug: "sculptra",
         image: "/sculptra.jpg",
         description:
-          "Stimulate natural collagen production to improve skin firmness, texture, and elasticity."
+          "Stimulate natural collagen production with Sculptra injections for long‑term volume restoration and firmer, youthful skin."
       },
       {
         name: "Hyaluronic Acid + CaHa (HarmonyCA)",
         slug: "harmonyca",
         image: "/sculptra.jpg",
         description:
-          "Boost hydration and volume instantly while stimulating long-term collagen growth."
+          "Combine HA and calcium hydroxylapatite to instantly lift and hydrate skin while promoting longer‑term collagen strengthening."
       }
     ]
   },
   {
-    title: "Skin Tightening & Body Contouring",
+    title: "Skin Tightening & Sculpting",
     services: [
       {
-        name: "High Intensity Frequency Ultrasound (Ultraformer MPT)",
-        slug: "ultraformer",
+        name: "Ultraformer MPT Ultrasound Lift",
+        slug: "ultraformer-mpt",
         image: "/hifu.jpg",
         description:
-          "High-intensity focused ultrasound for non-surgical face and body lifting."
+          "Non‑surgical high‑intensity focused ultrasound for face and body lifting, collagen stimulation, and contour refinement."
       },
       {
-        name: "PDO Threads",
+        name: "PDO Thread Lift Skin Tightening",
         slug: "pdo-threads",
         image: "/threads.jpg",
         description:
-          "Immediate skin lifting using absorbable threads. Common areas: face, neck, and jawline."
+          "Subtle non‑surgical face and neck lift using dissolvable PDO threads for improved contour, collagen, and skin firmness."
       },
-         {
-        name: "Radio Frequency (Venus Freeze)",
-        slug: "enzymatic-therapy",
-        image: "/body.jpg",
+      {
+        name: "Radio Frequency Body Sculpting",
+        slug: "venus-freeze",
+        image: "/radiofrequency.jpg",
         description:
-          "Non-surgical treatment for localized fat, fibrosis, and skin laxity."
+          "Pain‑free radiofrequency therapy targeting localized fat, fibrosis, and laxity to tighten skin and smooth surfaces."
       },
-         {
+      {
         name: "Enzymatic Remodeling Therapy",
         slug: "enzymatic-therapy",
         image: "/body.jpg",
         description:
-          "Non-surgical treatment for localized fat, fibrosis, and skin laxity."
+          "Target fat pockets, fibrosis, and uneven texture using enzyme‑infused therapy for improved contour and skin tone."
       },
-         {
-        name: "Radio Frequency + Enzymatic Remodeling Therapy",
-        slug: "enzymatic-therapy",
+      {
+        name: "RF + Enzymatic Body Treatment",
+        slug: "rf-enzymatic",
         image: "/body.jpg",
         description:
-          "Non-surgical treatment for localized fat, fibrosis, and skin laxity."
+          "Combined radiofrequency and enzymatic therapy for stronger skin tightening, fat reduction, and body contour enhancement."
       }
     ]
   },
   {
-    title: "Skin Resurfacing & Light Treatments",
+    title: "Laser Treatments & Skin Resurfacing",
     services: [
       {
-        name: "CO2 Laser Resurfacing (AcuPulse-Light & Deep)",
+        name: "CO₂ Laser Resurfacing (AcuPulse)",
         slug: "co2-laser",
         image: "/laser-co2.jpg",
         description:
-          "Fractional laser for treating sun damage, texture, deep wrinkles, and skin renewal."
+          "Fractional CO₂ laser for treating sun damage, deep wrinkles, texture, pigmentation, and skin renewal."
       },
       {
-        name: "Intense Pulsed Light (Harmony XL)",
+        name: "IPL Photofacial (Harmony XL)",
         slug: "ipl",
         image: "/ipl.jpg",
         description:
-          "Targets uneven skin tone, inflammation, rosacea, melasma, and sun spots."
+          "Intense pulsed light treatment to correct pigmentation, rosacea, sun spots, and improve skin clarity."
       },
       {
-        name: "Laser Hair Removal (Soprano Titanium Ice)",
+        name: "Laser Hair Removal (Soprano Titanium ICE)",
         slug: "laser-hair-removal",
         image: "/hair-removal.jpg",
         description:
-          "Pain-free permanent hair reduction with triple-wavelength technology for all skin types."
+          "Pain‑free permanent hair reduction with Alma Soprano Titanium ICE laser, suitable for all skin types."
       }
     ]
   },
   {
-    title: "Microneedling",
+    title: "Microneedling & RF Skin Rejuvenation",
     services: [
       {
-        name: "Microneedling",
+        name: "Microneedling Skin Renewal",
         slug: "microneedling",
         image: "/microneedling.jpg",
         description:
-          "Microneedling for natural skin rejuvenation and collagen stimulation."
+          "Precision microneedling to rejuvenate skin, stimulate collagen, refine texture, shrink pores, and reduce scars."
       },
       {
-        name: "Microneedling with Radio Frequency",
-        slug: "microneedling",
+        name: "Scarlet RF Microneedling",
+        slug: "rf-microneedling",
         image: "/microneedling.jpg",
         description:
-          "Microneedling for natural skin rejuvenation and collagen stimulation."
+          "Radiofrequency‑enhanced Scarlet RF microneedling for enhanced tightening, scar reduction, and skin elasticity improvement."
       },
       {
         name: "Skin Booster Cocktails",
         slug: "skin-boosters",
         image: "/meso.jpg",
         description:
-          "Vitamin and peptide cocktails to deeply hydrate, revitalize, and improve skin texture."
+          "Customized vitamin and peptide injections for deep hydration, skin revitalization, and visible glow."
       }
     ]
   },
   {
-    title: "Mesotherapy & Skin Rejuvenation",
+    title: "Mesotherapy & Growth Factor Infusions",
     services: [
       {
-  name: "Rejuran (PN / PDRN)",
-  slug: "rejuran",
-  image: "/rejuran.jpg",
-  description:
-    "Rejuvenate your skin from within using Polynucleotide (PN) and PDRN technology to repair damaged skin, improve elasticity, and boost hydration. Ideal for treating acne scars, fine lines, and dull skin tone with regenerative results.",
-},
-{
-  name: "Kiara Reju (PN + Hyaluronic Acid)",
-  slug: "kiara-reju",
-  image: "/kiara-reju.jpg",
-  description:
-    "Restore radiant, hydrated skin with Kiara Reju, a skin booster that combines polynucleotides and hyaluronic acid to visibly improve skin texture, plumpness, and glow. Perfect for dull, dry, or tired-looking skin.",
-},
-{
-  name: "SkinVive by Juvéderm",
-  slug: "skinvive",
-  image: "/skinvive.jpg",
-  description:
-    "SkinVive is an FDA-approved hyaluronic acid injectable designed to deeply hydrate and smooth the skin from within, giving you a glowing, refreshed, and naturally radiant complexion. Ideal for improving skin texture, luminosity, and hydration in the cheeks.",
-},
-{
-  name: "TKN HA 3",
-  slug: "tkn-ha3",
-  image: "/tkn-ha3.jpg",
-  description:
-    "TKN HA 3 is a polirevitalizing mesotherapy treatment that combines medium molecular weight hyaluronic acid with antioxidants and amino acids to deeply nourish, hydrate, and regenerate the skin. Great for dull, dehydrated, or aging skin.",
-},
-{
-  name: "PRP (Platelet-Rich Plasma)",
-  slug: "prp",
-  image: "/prp.jpg",
-  description:
-    "PRP is a regenerative treatment that uses your own blood-derived growth factors to naturally stimulate collagen, reduce wrinkles, and improve skin texture. Ideal for facial rejuvenation, dark circles, and acne scars."
-},
-{
-  name: "PRFM (Platelet-Rich Fibrin Matrix)",
-  slug: "prfm",
-  image: "/prp.jpg",
-  description:
-    "PRFM is an advanced form of PRP that forms a fibrin matrix for extended growth factor release. Ideal for under-eye hollows, skin tightening, and collagen regeneration with longer-lasting results."
-}
-    ]
-  },
-  {
-    title: "Facial Treatments",
-    services: [
-      {
-        name: "HydraFacial MD (Available for Face & Back)",
-        slug: "hydrafacial",
-        image: "/facials.jpg",
+        name: "Rejuran PN/PDRN Skin Rejuvenation",
+        slug: "rejuran",
+        image: "/rejuran.jpg",
         description:
-          "Deep vortex cleaning, exfoliation, extraction, and hydration for glowing, smooth skin."
+          "Regenerate skin using polynucleotide (PN/PDRN) injections to improve elasticity, heal acne scars, and boost hydration."
       },
       {
-        name: "Casmara Purifying Treatment",
-        slug: "casmara-purifying",
-        image: "/facials.jpg",
-        description: "Deep cleansing facial with Casmara’s purifying algae mask to detoxify, balance oil production, and reduce acne breakouts. Ideal for oily or congested skin types."
-    },
-{
-  name: "Casmara Retinol Proage 0.30%",
-  slug: "casmara-retinol-proage",
-  image: "/facials.jpg",
-  description:
-    "Professional-grade retinol peel with Casmara’s 0.30% formula to reduce fine lines, improve texture, and stimulate cell renewal. Ideal for aging, dull, or uneven skin."
-},
-{
-  name: "Casmara Infinity Treatment",
-  slug: "casmara-infinity",
-  image: "/facials.jpg",
-  description:
-    "Luxurious anti-aging facial using Casmara’s Infinity line to firm, hydrate, and lift the skin while boosting collagen production. Suitable for mature skin or those seeking deep rejuvenation."
-},
-{
-  name: "Janssen Ultra Renewal Facial",
-  slug: "janssen-ultra-renewal",
-  image: "/facials.jpg",
-  description:
-    "Anti-aging facial with AHA fruit acids and peptides to accelerate skin renewal, smooth texture, and reduce the appearance of wrinkles. Perfect for tired, aging, or sun-damaged skin."
-},
-{
-  name: "Janssen Radiance Boost Facial",
-  slug: "janssen-radiance-boost",
-  image: "/facials.jpg",
-  description:
-    "Brightening facial designed to enhance glow, even out skin tone, and boost hydration using antioxidant-rich Janssen formulas. Ideal for dull or uneven skin."
-}
+        name: "Kiara Reju (PN + Hyaluronic Acid)",
+        slug: "kiara-reju",
+        image: "/kiara-reju.jpg",
+        description:
+          "Combination of polynucleotides and hyaluronic acid to restore skin radiance, plumpness, hydration, and texture."
+      },
+      {
+        name: "SkinVive by Juvéderm",
+        slug: "skinvive",
+        image: "/skinvive.jpg",
+        description:
+          "FDA‑approved hyaluronic acid injection for deep hydration and smoothing—ideal for achieving a naturally radiant complexion."
+      },
+      {
+        name: "TKN HA‑3 Mesotherapy",
+        slug: "tkn-ha3",
+        image: "/tkn-ha3.jpg",
+        description:
+          "Hyaluronic acid with antioxidants and amino acids to nourish, hydrate, and regenerate dull, dehydrated, or aging skin."
+      },
+      {
+        name: "PRP Platelet‑Rich Plasma",
+        slug: "prp",
+        image: "/prp.jpg",
+        description:
+          "Regenerative PRP therapy using your own blood platelets to rejuvenate skin, reduce fine lines, dark circles, and acne scars."
+      },
+      {
+        name: "PRFM (Platelet‑Rich Fibrin Matrix)",
+        slug: "prfm",
+        image: "/prp.jpg",
+        description:
+          "Advanced PRFM forms a fibrin matrix for longer-lasting growth factor release—ideal for under-eye rejuvenation and skin tightening."
+      }
     ]
   },
   {
-  title: "Facial Add-Ons",
-  services: [
-    {
-      name: "Brightening & Tone Correction Booster",
-      slug: "brightening-booster",
-      image: "/facials.jpg",
-      description:
-        "Evens out skin tone and visibly reduces dark spots caused by sun damage or pigmentation. Leaves the skin brighter, more radiant, and refreshed."
-    },
-    {
-      name: "Firming & Contour Booster",
-      slug: "firming-booster",
-      image: "/facials.jpg",
-      description:
-        "Lifts and defines facial contours while enhancing elasticity. Ideal for sagging or aging skin needing added firmness and youthful tone."
-    },
-    {
-      name: "Premium Anti-Aging Nutrition Booster",
-      slug: "antiaging-nutrition-booster",
-      image: "/facials.jpg",
-      description:
-        "Luxurious caviar-based treatment rich in proteins, vitamins, and antioxidants. Deeply nourishes, smooths fine lines, and boosts skin luminosity without invasive techniques."
-    }
-  ]
-},
-  {
-    title: "Body Treatments",
+    title: "Medical Facials & Add‑Ons",
     services: [
-          {
-      name: "Sclerotherapy",
-      slug: "sclerotherapy",
-      image: "/body.jpg",
-      description:
-        "Minimally invasive treatment for spider veins and small varicose veins. Injected solution causes gradual collapse and fading of visible veins."
-    },
       {
-        name: "Swedish Massage",
+        name: "HydraFacial MD (Face & Back)",
+        slug: "hydrafacial",
+        image: "/hydrafacial.jpg",
+        description:
+          "Vortex‑powered deep cleansing, exfoliation, extraction, and hydration for radiant, smooth skin."
+      },
+      {
+        name: "Casmara Purifying Algae Facial",
+        slug: "casmara-purifying",
+        image: "/facials.jpg",
+        description:
+          "Deep detox facial using Casmara algae mask to balance oil production, clear congestion, and calm breakouts."
+      },
+      {
+        name: "Casmara Retinol Pro‑Age Facial",
+        slug: "casmara-retinol-proage",
+        image: "/facials.jpg",
+        description:
+          "Professional retinol peel with Casmara's 0.30% formula to improve texture, renew cells, and reduce fine lines."
+      },
+      {
+        name: "Casmara Infinity Anti‑Aging Facial",
+        slug: "casmara-infinity",
+        image: "/facials.jpg",
+        description:
+          "Luxury anti-aging facial with Casmara Infinity serum to firm, hydrate, and lift mature or aging skin."
+      },
+      {
+        name: "Janssen Ultra Renewal Facial",
+        slug: "janssen-ultra-renewal",
+        image: "/facials.jpg",
+        description:
+          "AHA acid and peptide peel to accelerate skin renewal, soften wrinkles, and improve texture."
+      },
+      {
+        name: "Janssen Radiance Boost Facial",
+        slug: "janssen-radiance-boost",
+        image: "/facials.jpg",
+        description:
+          "Brightening facial using antioxidant-rich formulas to even tone, hydrate, and enhance skin luminosity."
+      }
+    ]
+  },
+  {
+    title: "Body & Medical Treatments",
+    services: [
+      {
+        name: "Sclerotherapy for Vein Removal",
+        slug: "sclerotherapy",
+        image: "/body.jpg",
+        description:
+          "Inject treatment to remove spider veins and small varicose veins for improved leg aesthetics and health."
+      },
+      {
+        name: "Relaxing Swedish Massage",
         slug: "swedish-massage",
         image: "/body.jpg",
         description:
-          "Relaxing massage that improves circulation, detoxification, and muscle relief."
+          "Gentle Swedish massage to improve circulation, promote detoxification, and relieve muscle tension."
       },
-          {
-      name: "Cupping Therapy Add On with Swedish Massage",
-      slug: "cupping",
-      image: "/body.jpg",
-      description:
-        "Complementary massage therapy that uses suction cups to stimulate circulation and relieve deep muscle tension."
-    },
+      {
+        name: "Cupping Therapy Add‑On",
+        slug: "cupping",
+        image: "/body.jpg",
+        description:
+          "Therapeutic cupping combined with massage for enhanced circulation, tension relief, and detox benefits."
+      },
       {
         name: "Wart & Skin Tag Removal",
         slug: "wart-removal",
         image: "/body.jpg",
         description:
-          "Quick clinical procedure to remove benign skin growths like warts and tags."
+          "Clinical removal of benign skin growths like warts and tags for cleaner, smoother skin."
       },
       {
-        name: "Keloid Injection",
+        name: "Keloid Scar Injection",
         slug: "keloid-injection",
         image: "/podiatry.jpg",
         description:
-          "Reduce raised scars and keloids through targeted injectable therapy."
-      },
+          "Targeted injectable therapy to flatten and soften raised keloid scars for cosmetic and functional improvement."
+      }
     ]
   },
   {
-    title: "Medical Podiatry",
+    title: "Medical Podiatry Services",
     services: [
       {
         name: "Laser Nail Fungus Treatment",
         slug: "nail-fungus-laser",
         image: "/podiatry.jpg",
         description:
-          "Non-invasive laser treatment to eliminate fungal nail infections."
+          "Non-invasive laser treatment to eliminate fungal infections in toenails and improve nail appearance."
       },
       {
-        name: "Toenail Extraction",
+        name: "Toenail Extraction Procedure",
         slug: "toenail-extraction",
         image: "/podiatry.jpg",
         description:
-          "Medical procedure to partially or fully remove infected or ingrown toenails."
+          "Partial or full toenail removal to treat ingrown, infected, or painful nails in a clinical setting."
       },
       {
-      name: "Calcaneal Spur Treatment",
-      slug: "calcaneal-spur",
-      image: "/podiatry.jpg",
-      description:
-        "Treatment for heel spurs that includes guided injection, evaluation, and supportive therapy. Helps relieve pain and inflammation from chronic plantar fasciitis."
-    },{
-      name: "Matrixectomy",
-      slug: "matrixectomy",
-      image: "/podiatry.jpg",
-      description:
-        "Surgical procedure to treat severe ingrown toenails by removing part or all of the nail matrix. Recommended for recurring infections and long-term relief."
-    }
+        name: "Heel Spur (Calcaneal Spur) Injection",
+        slug: "calcaneal-spur",
+        image: "/podiatry.jpg",
+        description:
+          "Injection-based therapy for heel spur discomfort and plantar fasciitis relief."
+      },
+      {
+        name: "Matrixectomy for Ingrown Toenails",
+        slug: "matrixectomy",
+        image: "/podiatry.jpg",
+        description:
+          "Surgical removal of nail matrix tissue for permanent relief from recurrent ingrown toenails."
+      }
     ]
   }
 ];
 
-export default function TreatmentsPage() {
+export default function TreatmentCategories() {
   return (
-    <>
-      <div className="bg-white">
-        <div className="container mx-auto px-4 py-16 ">
-          {categories.map((category, i) => (
-            <div key={i} className="mb-16">
-              <h2 className="text-2xl text-black md:text-3xl font-serif font-medium mb-6">
-                {category.title}
-              </h2>
-              <div className="grid md:grid-cols-3 gap-8">
-                {category.services.map((service, j) => (
-                  <div
-                    key={j}
-                    className="bg-[#f9f9f9] rounded-lg overflow-hidden shadow-sm hover:shadow-md transition"
-                  >
-                    <div className="relative h-56 w-full">
-                      <Image
-                        src={service.image}
-                        alt={service.name}
-                        fill
-                        className="object-cover"
-                      />
+    <div className="bg-white">
+      <div className="container mx-auto px-4 py-16">
+        {categories.map((category, i) => (
+          <div key={i} className="mb-16">
+            <h2 className="text-2xl text-black md:text-3xl font-serif font-medium mb-6">
+              {category.title}
+            </h2>
+            <div className="grid md:grid-cols-3 gap-8">
+              {category.services.map((service, j) => (
+                <div
+                  key={j}
+                  className="bg-[#f9f9f9] rounded-lg overflow-hidden shadow-sm hover:shadow-md transition"
+                >
+                  <div className="relative h-56 w-full">
+                    <Image
+                      src={service.image}
+                      alt={`${service.name} in Tijuana – ${service.description}`}
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
+                  <div className="p-6 flex flex-col justify-between h-[260px]">
+                    <div>
+                      <h3 className="text-lg text-black font-serif font-medium mb-2">
+                        {service.name}
+                      </h3>
+                      <p className="text-2lg text-gray-600 mb-4">
+                        {service.description}
+                      </p>
                     </div>
-                    <div className="p-6 flex flex-col justify-between h-[260px]">
-                      <div>
-                        <h3 className="text-lg text-black font-serif font-medium mb-2">{service.name}</h3>
-                        <p className="text-2lg text-gray-600 mb-4">{service.description}</p>
-                      </div>
-                      <div className="mt-auto flex gap-2">
-                        <Link
-                          href="https://wa.me/+526642077675"
-                          className="bg-black text-white px-4 py-2 rounded-full text-xs hover:bg-[#731a2f] transition"
-                        >
-                          Book Now
-                        </Link>
-                        <Link
-                          href={`/services/${service.slug}`}
-                          className="border border-gray-300 text-black px-4 py-2 rounded-full text-xs hover:border-black transition"
-                        >
-                          Learn More
-                        </Link>
-                      </div>
+                    <div className="mt-auto flex gap-2">
+                      <Link
+                        href="https://wa.me/+526642077675"
+                        className="bg-black text-white px-4 py-2 rounded-full text-xs hover:bg-[#731a2f] transition"
+                        aria-label={`Book ${service.name} at Mave Medical Spa in Tijuana`}
+                      >
+                        Book Now
+                      </Link>
+                      <Link
+                        href={`/services/${service.slug}`}
+                        className="border border-gray-300 text-black px-4 py-2 rounded-full text-xs hover:border-black transition"
+                        aria-label={`Learn more about ${service.name}`}
+                      >
+                        Learn More
+                      </Link>
                     </div>
                   </div>
-                ))}
-              </div>
+                </div>
+              ))}
             </div>
-          ))}
-        </div>
+          </div>
+        ))}
       </div>
-    </>
+    </div>
   );
 }

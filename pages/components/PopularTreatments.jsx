@@ -5,25 +5,27 @@ import Image from "next/image";
 
 const treatments = [
   {
-    title: "Wrinkle Reducers (Botox)",
-    slug: "wrinkle-reducers",
+    title: "Botox Wrinkle Reducers",
+    slug: "botulinum-toxin",
     image: "/wrinkle-reducers.jpg",
-    description: "Reduce the appearance of fine lines and wrinkles for a smoother, more refreshed look."
+    description:"Reduce frown lines, forehead creases, and crow’s feet with FDA‑approved Botox treatments for a smoother, youthful appearance."
   },
   {
-    title: "Dermal Filler (Hyaluronic Acid)",
-    slug: "fillers",
+    title: "Hyaluronic Acid Lip Fillers",
+    slug: "hyaluronic-filler",
     image: "/fillers.jpg",
-    description: "Add volume to areas such as the lips, cheeks, undereyes and jawline with immediately visible results."
+    description: "Restore and add volume and contour lips using hyaluronic acid dermal fillers with immediate visible results."
+
   },
   {
-    title: "Biostimulatory Filler (Sculptra)",
+    title: "Sculptra PLLA Collagen Stimulator",
     slug: "sculptra",
     image: "/sculptra.jpg",
-    description: "Correct volume loss and wrinkles naturally by restoring collagen production with long-lasting results."
+    description: "Stimulate natural collagen production with Sculptra injections for long‑term volume restoration and firmer, youthful skin."
+
   },
   {
-    title: "Microneedling",
+    title: "Microneedling Skin Renewal",
     slug: "microneedling",
     image: "/microneedling.jpg",
     description: "Stimulate the skin’s natural healing process using microneedling technology to reduce fine lines, pores and scarring."
@@ -32,49 +34,56 @@ const treatments = [
     title: "Microneedling with Radio Frequency (Scarlet S RF)",
     slug: "rf-microneedling",
     image: "/rf-microneedling.jpg",
-    description: "Improve fine lines and scarring with added skin laxity tightening and reduced downtime."
+    description: "Precision microneedling to rejuvenate skin, stimulate collagen, refine texture, shrink pores, and reduce scars."
   },
   {
-    title: "CO2 Resurfacing Laser (AcuPulse)",
-    slug: "co2-resurfacing-laser",
-    image: "/co2-resurfacing-laser.jpg",
-    description: "Skin resurfacing and deep dermal remodeling, treating sun damage, deeper wrinkles, skin texture and sagging."
+    title: "CO₂ Laser Resurfacing (AcuPulse)",
+    slug: "co2-laser",
+    image: "/laser-co2.jpg",
+    description: "Fractional CO₂ laser for treating sun damage, deep wrinkles, texture, pigmentation, and skin renewal."
+
   },
   {
-    title: "Hydrafacial",
+    title: "HydraFacial MD (Face & Back)",
     slug: "hydrafacial",
     image: "/hydrafacial.jpg",
-    description: "Deeply cleanse, exfoliate, and hydrate your skin with this signature facial for glow and radiance."
+    description: "Vortex‑powered deep cleansing, exfoliation, extraction, and hydration for radiant, smooth skin."
+
   },
   {
-    title: "Laser Hair Removal (Alma Soprano Titanium ICE)",
+    title: "Laser Hair Removal (Soprano Titanium ICE)",
     slug: "laser-hair-removal",
-    image: "/laser-hair-removal.jpg",
-    description: "Pain-free, fast, and effective laser hair removal using state-of-the-art Alma Soprano Titanium ICE technology."
+    image: "/hair-removal.jpg",
+    description: "Pain‑free permanent hair reduction with Alma Soprano Titanium ICE laser, suitable for all skin types."
+
   },
   {
-    title: "IPL Photofacial (Alma Harmony XL)",
+    title: "IPL Photofacial (Harmony XL)",
     slug: "ipl",
     image: "/ipl.jpg",
-    description: "Target sunspots, redness, and pigmentation with this light-based therapy that revitalizes skin clarity."
+    description: "Intense pulsed light treatment to correct pigmentation, rosacea, sun spots, and improve skin clarity."
+
   },
   {
-    title: "Body Contouring with Radiofrequency (Venus Freeze)",
-    slug: "radiofrequency",
+    title: "Radio Frequency Body Sculpting",
+    slug: "venus-freeze",
     image: "/radiofrequency.jpg",
-    description: "Lift and tighten skin non-invasively with Venus Freeze radiofrequency technology for face and body."
+    description: "Pain‑free radiofrequency therapy targeting localized fat, fibrosis, and laxity to tighten skin and smooth surfaces."
+
   },
   {
-    title: "Skin Tightening with PDO Threads",
+    title: "PDO Thread Lift Skin Tightening",
     slug: "pdo-threads",
-    image: "/pdo-threads.jpg",
-    description: "Non-surgical lifting and contouring treatment that repositions tissue and stimulates collagen."
+    image: "/threads.jpg",
+    description: "Subtle non‑surgical face and neck lift using dissolvable PDO threads for improved contour, collagen, and skin firmness."
+
   },
   {
-  title: "High Intensity Frequency Ultrasound (Ultraformer MPT)",
+  title: "Ultraformer MPT Ultrasound Lift",
   slug: "ultraformer-mpt",
-  image: "/ultraformer-mpt.jpg",
-  description: "Lift and tighten the skin with non-invasive ultrasound energy. Ultraformer MPT targets multiple layers to stimulate collagen and redefine facial contours."
+  image: "/hifu.jpg",
+  description: "Non‑surgical high‑intensity focused ultrasound for face and body lifting, collagen stimulation, and contour refinement."
+
 }
 ];
 
