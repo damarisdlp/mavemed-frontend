@@ -50,8 +50,8 @@ export default function LeadForm() {
   }
 };
   return (
-    <section className="bg-[#f3efec] py-20 px-6">
-      <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+    <section className="bg-[#f3efec] min-h-[65vh] md:min-h-[50vh] px-6 py-6 justify-center items-center text-center relative">
+      <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-5 items-center">
         {/* Text Section */}
         <div>
           <h2 className=" text-black text-3xl md:text-4xl font-serif font-medium mb-4">

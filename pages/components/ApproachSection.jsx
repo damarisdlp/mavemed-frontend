@@ -4,11 +4,11 @@ import Link from "next/link";
 
 export default function ApproachSection() {
   return (
-    <section className="bg-white py-10 px-0">
-      <div className="grid md:grid-cols-[minmax(0,_1.7fr)_1fr] items-center max-w-none w-full">
+    <section className="min-h-[65vh] md:min-h-[75vh]">
+      <div className="grid md:grid-cols-[minmax(0,_1.7fr)_1fr] justify-center items-center max-w-none w-full">
 
         {/* Image – full bleed */}
-        <div className="relative w-full h-[835px]">
+        <div className="relative w-full min-h-[60vh] md:min-h-[65vh]">
           <Image
             src="/approach-section.jpg"
             alt="Close-up of rejuvenated skin after aesthetic treatment"
@@ -19,7 +19,7 @@ export default function ApproachSection() {
         </div>
 
         {/* Text Content – constrained */}
-        <div className="px-10 md:px-20 max-w-xl mx-auto">
+        <div className="px-5 md:px-6 max-w-xl mx-auto">
 
           <h2 className="text-4xl text-black font-serif font-medium mb-7 mt-10">
             Our Results-Driven Skincare Philosophy in Tijuana

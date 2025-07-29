@@ -31,7 +31,7 @@ export default function Header() {
           href="/"
           className="absolute left-1/2 transform -translate-x-1/2 flex items-center"
         >
-          <Image src="/logo-mave.png" alt="Mave Logo" width={155} height={45} />
+          <Image src="/logo-mave.png" alt="Mave Logo" width={130} height={30} />
         </Link>
 
         {/* Right CTA - Desktop */}

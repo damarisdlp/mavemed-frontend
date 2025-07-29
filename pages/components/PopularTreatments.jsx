@@ -8,21 +8,19 @@ const treatments = [
     title: "Botox Wrinkle Reducers",
     slug: "botulinum-toxin",
     image: "/wrinkle-reducers.jpg",
-    description:"Reduce frown lines, forehead creases, and crow’s feet with FDA‑approved Botox treatments for a smoother, youthful appearance."
+    description: "Reduce frown lines, forehead creases, and crow’s feet with FDA‑approved Botox treatments for a smoother, youthful appearance."
   },
   {
     title: "Hyaluronic Acid Lip Fillers",
     slug: "hyaluronic-filler",
     image: "/fillers.jpg",
     description: "Restore and add volume and contour lips using hyaluronic acid dermal fillers with immediate visible results."
-
   },
   {
     title: "Sculptra PLLA Collagen Stimulator",
     slug: "sculptra",
     image: "/sculptra.jpg",
     description: "Stimulate natural collagen production with Sculptra injections for long‑term volume restoration and firmer, youthful skin."
-
   },
   {
     title: "Microneedling Skin Renewal",
@@ -41,74 +39,66 @@ const treatments = [
     slug: "co2-laser",
     image: "/laser-co2.jpg",
     description: "Fractional CO₂ laser for treating sun damage, deep wrinkles, texture, pigmentation, and skin renewal."
-
   },
   {
     title: "HydraFacial MD (Face & Back)",
     slug: "hydrafacial",
     image: "/hydrafacial.jpg",
     description: "Vortex‑powered deep cleansing, exfoliation, extraction, and hydration for radiant, smooth skin."
-
   },
   {
     title: "Laser Hair Removal (Soprano Titanium ICE)",
     slug: "laser-hair-removal",
     image: "/hair-removal.jpg",
     description: "Pain‑free permanent hair reduction with Alma Soprano Titanium ICE laser, suitable for all skin types."
-
   },
   {
     title: "IPL Photofacial (Harmony XL)",
     slug: "ipl",
     image: "/ipl.jpg",
     description: "Intense pulsed light treatment to correct pigmentation, rosacea, sun spots, and improve skin clarity."
-
   },
   {
     title: "Radio Frequency Body Sculpting",
     slug: "venus-freeze",
     image: "/radiofrequency.jpg",
     description: "Pain‑free radiofrequency therapy targeting localized fat, fibrosis, and laxity to tighten skin and smooth surfaces."
-
   },
   {
     title: "PDO Thread Lift Skin Tightening",
     slug: "pdo-threads",
     image: "/threads.jpg",
     description: "Subtle non‑surgical face and neck lift using dissolvable PDO threads for improved contour, collagen, and skin firmness."
-
   },
   {
-  title: "Ultraformer MPT Ultrasound Lift",
-  slug: "ultraformer-mpt",
-  image: "/hifu.jpg",
-  description: "Non‑surgical high‑intensity focused ultrasound for face and body lifting, collagen stimulation, and contour refinement."
-
-}
+    title: "Ultraformer MPT Ultrasound Lift",
+    slug: "ultraformer-mpt",
+    image: "/hifu.jpg",
+    description: "Non‑surgical high‑intensity focused ultrasound for face and body lifting, collagen stimulation, and contour refinement."
+  }
 ];
 
 export default function PopularTreatments() {
   const [sliderRef, slider] = useKeenSlider({
     loop: true,
     slides: {
-      perView: 3.1,
-      spacing: 24,
+      perView: 1,
+      spacing: 16,
     },
     breakpoints: {
-      "(max-width: 768px)": {
-        slides: { perView: 1.2, spacing: 12 },
-      },
-      "(max-width: 1024px)": {
+      "(min-width: 768px)": {
         slides: { perView: 2.2, spacing: 16 },
+      },
+      "(min-width: 1024px)": {
+        slides: { perView: 3.1, spacing: 24 },
       },
     },
   });
 
   return (
-    <section className="bg-white py-5">
-      {/* Header */}
-      <div className="container mx-auto px-4 flex justify-between items-center mb-10">
-        <h2 className="text-4xl font-serif text-black font-medium mb-10">Popular Treatments</h2>
+    <section className="bg-white pb-2">
+      <div className="container mx-auto px-4 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2 mb-6">
+        <h2 className="text-3xl md:text-4xl font-serif text-black font-medium">Popular Med Spa Treatments in Tijuana</h2>
         <Link
           href="/treatments"
           className="text-sm underline text-gray-600 hover:text-black"
@@ -117,9 +107,8 @@ export default function PopularTreatments() {
         </Link>
       </div>
 
-      {/* Arrows */}
       {slider && (
-        <div className="container mx-auto px-4 flex justify-end gap-4 mb-6">
+        <div className="container mx-auto px-6 flex justify-end gap-4 mb-6">
           <button
             onClick={() => slider.current?.prev()}
             className="bg-gray-200 hover:bg-gray-300 text-black p-2 rounded-full text-lg"
@@ -135,23 +124,22 @@ export default function PopularTreatments() {
         </div>
       )}
 
-      {/* Carousel */}
       <div ref={sliderRef} className="keen-slider overflow-hidden">
         {treatments.map((treatment, index) => (
           <div key={index} className="keen-slider__slide">
-            <div className="mx-4 h-full flex flex-col bg-[#f9f9f9] rounded-lg overflow-hidden shadow-sm hover:shadow-md transition">
-              <div className="relative h-52 w-full">
+            <div className="mx-4 flex flex-col bg-[#f9f9f9] rounded-lg overflow-hidden shadow-sm hover:shadow-md transition">
+              <div className="relative h-[35vh] sm:h-[30vh] md:h-[28vh] w-full">
                 <Image
                   src={treatment.image}
-                  alt={treatment.title}
+                  alt={`${treatment.title} – ${treatment.description}`}
                   fill
-                  style={{ objectFit: "cover" }}
+                  className="object-cover"
                 />
               </div>
-              <div className="p-6 flex-1 flex flex-col justify-between">
+              <div className="p-4 flex-1 flex flex-col justify-between">
                 <div>
-                  <h3 className="text-lg font-serif text-black font-medium mb-2">{treatment.title}</h3>
-                  <p className="text-2lg text-gray-600 mb-4">{treatment.description}</p>
+                  <h3 className="text-lg font-serif text-black font-medium mb-1">{treatment.title}</h3>
+                  <p className="text-sm text-gray-600 mb-3">{treatment.description}</p>
                 </div>
                 <div className="mt-auto flex gap-2">
                   <Link
