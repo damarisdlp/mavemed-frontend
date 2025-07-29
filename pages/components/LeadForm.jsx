@@ -50,7 +50,7 @@ export default function LeadForm() {
   }
 };
   return (
-    <section className="bg-[#f3efec] min-h-[65vh] md:min-h-[50vh] px-6 py-6 justify-center items-center text-center relative">
+    <section className="bg-[#f3efec] px-6 py-6 justify-center items-center text-center relative">
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-5 items-center">
         {/* Text Section */}
         <div>
@@ -103,22 +103,21 @@ export default function LeadForm() {
             className="border border-gray-300 text-gray-500 rounded px-4 py-3 focus:outline-none focus:ring-2 focus:ring-black"
             required
           />
-
+          
           <select
-  name="whatsapp"
-  value={formData.whatsapp}
-  onChange={handleChange}
-  className={`border border-gray-300 rounded px-4 py-3 focus:outline-none focus:ring-2 focus:ring-black ${
-    formData.whatsapp ? "text-black" : "text-gray-500"
-  } appearance-none`}
-  required
->
-  <option value="" disabled>
-    Are you on WhatsApp?
-  </option>
-  <option value="Yes">Yes</option>
-  <option value="No">No</option>
-</select>
+          name="whatsapp"
+          value={formData.whatsapp}
+          onChange={handleChange}
+          className={`border border-gray-300 rounded px-4 py-3 focus:outline-none focus:ring-2 focus:ring-black ${
+            formData.whatsapp ? "text-black" : "text-gray-500"} appearance-none`}
+            required
+            >
+              <option value="" disabled>
+                Are you on WhatsApp?
+                </option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+                </select>
 
           <p className="text-xs text-gray-500 mt-2">
             Mave Medical Spa needs this contact info to keep you informed about treatments and services. You can unsubscribe at anytime. To learn more, please review our <a href="/privacy-policy" className="underline">Privacy Policy</a>.
@@ -129,9 +128,9 @@ export default function LeadForm() {
             className="bg-black text-white py-3 rounded-full hover:bg-[#731a2f] transition"
           >
             Subscribe
-          </button>
-        </form>
-      </div>
-    </section>
-  );
-}
+            </button>
+            </form>
+            </div>
+            </section>
+            );
+            }
