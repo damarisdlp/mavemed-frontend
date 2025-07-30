@@ -10,9 +10,19 @@ export default function AddOnSection({ addOns }) {
         <div key={idx} className="mb-4">
           <p className="text-md font-semibold">{addon.name}</p>
           <p className="text-sm text-gray-700">{addon.description}</p>
+
           <p className="text-sm text-gray-700 mt-1">
-            Standard: {addon.standardPrice} | Members: {addon.promoPrice}
+            <span className="font-semibold">Standard:</span> {addon.standardPrice}{" "}
+            |{" "}
+            <span className="font-semibold">Exclusive Pricing:</span>{" "}
+            {addon.promoPrice
+              ? addon.promoPrice
+              : addon.promoNote
+              ? <span className="italic text-gray-500">{addon.promoNote}</span>
+              : <span className="italic text-gray-400">Not Available</span>
+            }
           </p>
+
           <Link
             href={addon.link}
             className="text-sm underline text-black mt-1 inline-block hover:text-[#731a2f]"
