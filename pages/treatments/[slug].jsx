@@ -8,6 +8,8 @@ import TreatmentDetails from "../components/TreatmentDetails";
 import PricingTable from "../components/PricingTable";
 import WhatToExpect from "../components/WhatToExpect";
 import FAQSection from "../components/FAQSection";
+import ContactCTA from "../components/ContactCTA";
+import PromoPackageSection from "../components/PromoPackageSection";
 
 export default function TreatmentPage() {
   const router = useRouter();
@@ -39,6 +41,8 @@ export default function TreatmentPage() {
       <PricingTable treatment={treatment} />
       <WhatToExpect expectations={treatment.expectations} />
       <FAQSection faqs={treatment.faq} />
+      <ContactCTA/>
+      <PromoPackageSection/>
 <Footer />
     </>
   );
