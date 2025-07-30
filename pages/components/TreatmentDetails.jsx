@@ -39,7 +39,7 @@ export default function TreatmentDetail({ treatment }) {
                 href="https://wa.me/+526642077675"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-3 inline-block w-full text-center bg-black hover:bg-[#a80000] text-white font-medium py-2 rounded transition duration-200"
+                className="mt-3 inline-block w-full text-center bg-black hover:bg-[#731a2f] text-white font-medium py-2 rounded transition duration-200"
               >
                 Book Now
               </a>
