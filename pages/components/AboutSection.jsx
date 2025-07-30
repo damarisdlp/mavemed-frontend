@@ -124,13 +124,13 @@ export default function AboutSection() {
         >
           {staff.map((staff, index) => (
             <div key={index} className="keen-slider__slide flex justify-center px-2">
-              <div className="w-[280px] sm:w-[300px] md:w-[320px] flex flex-col bg-[#f9f9f9] rounded-lg overflow-hidden shadow-sm hover:shadow-md transition">
+              <div className="w-[280px] sm:w-[300px] md:w-[320px] flex flex-col bg-[#f9f9f9] rounded-lg overflow-hidden shadow-sm hover:shadow-md transition mb-3">
                 <div className="relative h-[420px] w-full">
                   <Image
                     src={staff.image}
                     alt={`${staff.name} – ${staff.title}`}
                     fill
-                    className="object-cover"
+                    className="object-cover text-gray-600"
                   />
                 </div>
                 <div className="p-4 flex-1 flex flex-col justify-between text-center">
@@ -154,7 +154,7 @@ export default function AboutSection() {
       </div>
 
       {/* Final Spacer */}
-      <div className="h-6 bg-white w-full" />
+      <div className="h-1 bg-white w-full" />
     </section>
   );
 }
