@@ -8,74 +8,86 @@ const treatments = [
     title: "Botox Wrinkle Reducers",
     slug: "botulinum-toxin",
     image: "/wrinkle-reducers.jpg",
-    description: "Reduce frown lines, forehead creases, and crow’s feet with FDA‑approved Botox treatments for a smoother, youthful appearance."
+    description:
+      "Reduce frown lines, forehead creases, and crow’s feet with FDA‑approved Botox treatments for a smoother, youthful appearance.",
   },
   {
     title: "Hyaluronic Acid Lip Fillers",
     slug: "hyaluronic-filler",
     image: "/fillers.jpg",
-    description: "Restore and add volume and contour lips using hyaluronic acid dermal fillers with immediate visible results."
+    description:
+      "Restore and add volume and contour lips using hyaluronic acid dermal fillers with immediate visible results.",
   },
   {
     title: "Sculptra PLLA Collagen Stimulator",
     slug: "sculptra",
     image: "/sculptra.jpg",
-    description: "Stimulate natural collagen production with Sculptra injections for long‑term volume restoration and firmer, youthful skin."
+    description:
+      "Stimulate natural collagen production with Sculptra injections for long‑term volume restoration and firmer, youthful skin.",
   },
   {
     title: "Microneedling Skin Renewal",
     slug: "microneedling",
     image: "/microneedling.jpg",
-    description: "Stimulate the skin’s natural healing process using microneedling technology to reduce fine lines, pores and scarring."
+    description:
+      "Stimulate the skin’s natural healing process using microneedling technology to reduce fine lines, pores and scarring.",
   },
   {
     title: "Microneedling with Radio Frequency (Scarlet S RF)",
     slug: "rf-microneedling",
     image: "/rf-microneedling.jpg",
-    description: "Precision microneedling to rejuvenate skin, stimulate collagen, refine texture, shrink pores, and reduce scars."
+    description:
+      "Precision microneedling to rejuvenate skin, stimulate collagen, refine texture, shrink pores, and reduce scars.",
   },
   {
     title: "CO₂ Laser Resurfacing (AcuPulse)",
     slug: "co2-laser",
     image: "/laser-co2.jpg",
-    description: "Fractional CO₂ laser for treating sun damage, deep wrinkles, texture, pigmentation, and skin renewal."
+    description:
+      "Fractional CO₂ laser for treating sun damage, deep wrinkles, texture, pigmentation, and skin renewal.",
   },
   {
     title: "HydraFacial MD (Face & Back)",
     slug: "hydrafacial",
     image: "/hydrafacial.jpg",
-    description: "Vortex‑powered deep cleansing, exfoliation, extraction, and hydration for radiant, smooth skin."
+    description:
+      "Vortex‑powered deep cleansing, exfoliation, extraction, and hydration for radiant, smooth skin.",
   },
   {
     title: "Laser Hair Removal (Soprano Titanium ICE)",
     slug: "laser-hair-removal",
     image: "/hair-removal.jpg",
-    description: "Pain‑free permanent hair reduction with Alma Soprano Titanium ICE laser, suitable for all skin types."
+    description:
+      "Pain‑free permanent hair reduction with Alma Soprano Titanium ICE laser, suitable for all skin types.",
   },
   {
     title: "IPL Photofacial (Harmony XL)",
     slug: "ipl",
     image: "/ipl.jpg",
-    description: "Intense pulsed light treatment to correct pigmentation, rosacea, sun spots, and improve skin clarity."
+    description:
+      "Intense pulsed light treatment to correct pigmentation, rosacea, sun spots, and improve skin clarity.",
   },
   {
     title: "Radio Frequency Body Sculpting",
     slug: "venus-freeze",
     image: "/radiofrequency.jpg",
-    description: "Pain‑free radiofrequency therapy targeting localized fat, fibrosis, and laxity to tighten skin and smooth surfaces."
+    description:
+      "Pain‑free radiofrequency therapy targeting localized fat, fibrosis, and laxity to tighten skin and smooth surfaces.",
   },
   {
     title: "PDO Thread Lift Skin Tightening",
     slug: "pdo-threads",
     image: "/threads.jpg",
-    description: "Subtle non‑surgical face and neck lift using dissolvable PDO threads for improved contour, collagen, and skin firmness."
+    description:
+      "Subtle non‑surgical face and neck lift using dissolvable PDO threads for improved contour, collagen, and skin firmness.",
   },
   {
     title: "Ultraformer MPT Ultrasound Lift",
     slug: "ultraformer-mpt",
     image: "/hifu.jpg",
-    description: "Non‑surgical high‑intensity focused ultrasound for face and body lifting, collagen stimulation, and contour refinement."
-  }
+    description:
+      "Non‑surgical high‑intensity focused ultrasound for face and body lifting, collagen stimulation, and contour refinement.",
+  },
 ];
 
 export default function PopularTreatments() {
@@ -96,9 +108,11 @@ export default function PopularTreatments() {
   });
 
   return (
-    <section className="bg-white pb-2">
+    <section className="bg-white py-10 pb-2">
       <div className="container mx-auto px-4 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2 mb-6">
-        <h2 className="text-3xl md:text-4xl font-serif text-black font-medium">Popular Med Spa Treatments in Tijuana</h2>
+        <h2 className="text-3xl md:text-4xl font-serif text-black font-medium mx-auto sm:mx-0 sm:ml-4">
+          Popular Treatments
+        </h2>
         <Link
           href="/treatments"
           className="text-sm underline text-gray-600 hover:text-black"
@@ -126,9 +140,12 @@ export default function PopularTreatments() {
 
       <div ref={sliderRef} className="keen-slider overflow-hidden">
         {treatments.map((treatment, index) => (
-          <div key={index} className="keen-slider__slide">
-            <div className="mx-4 flex flex-col bg-[#f9f9f9] rounded-lg overflow-hidden shadow-sm hover:shadow-md transition">
-              <div className="relative h-[35vh] sm:h-[30vh] md:h-[28vh] w-full">
+          <div
+            key={index}
+            className="keen-slider__slide min-h-[475px] sm:min-h-[510px] flex"
+          >
+            <div className="mx-4 h-full flex flex-col bg-[#f9f9f9] rounded-lg overflow-hidden shadow-sm hover:shadow-md transition">
+              <div className="relative h-[200px] sm:h-[220px] md:h-[240px] w-full">
                 <Image
                   src={treatment.image}
                   alt={`${treatment.title} – ${treatment.description}`}
@@ -138,19 +155,23 @@ export default function PopularTreatments() {
               </div>
               <div className="p-4 flex-1 flex flex-col justify-between">
                 <div>
-                  <h3 className="text-lg font-serif text-black font-medium mb-1">{treatment.title}</h3>
-                  <p className="text-sm text-gray-600 mb-3">{treatment.description}</p>
+                  <h3 className="text-lg font-serif text-black font-medium mb-1">
+                    {treatment.title}
+                  </h3>
+                  <p className="text-sm text-gray-600 mb-3">
+                    {treatment.description}
+                  </p>
                 </div>
                 <div className="mt-auto flex gap-2">
                   <Link
                     href="https://wa.me/+526642077675"
-                    className="bg-black text-white px-4 py-2 rounded-full text-xs hover:bg-[#731a2f] transition"
+                    className="bg-black text-white px-4 py-2 rounded-full text-xs hover:bg-[#731a2f] transition text-center"
                   >
                     Book Now
                   </Link>
                   <Link
                     href={`/services/${treatment.slug}`}
-                    className="border border-gray-300 text-black px-4 py-2 rounded-full text-xs hover:border-black transition"
+                    className="border border-gray-300 text-black px-4 py-2 rounded-full text-xs hover:border-black transition text-center"
                   >
                     Learn More
                   </Link>
