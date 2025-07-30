@@ -4,8 +4,8 @@ import Image from "next/image";
 // Shared components
 import Header from "./components/Header";
 import PromoBanner from "./components/PromoBanner";
-import TreatmentCategories from "./components/TreatmentCategories";
 import Footer from "./components/Footer";
+import Team from "./components/Team";
 
 
 export default function TeamPage() {
@@ -136,7 +136,7 @@ dangerouslySetInnerHTML={{
         <div className="relative w-full h-[400px] md:h-[500px]">
           <Image
             src="/logo-mave.jpg"
-            alt="Our Treatments"
+            alt="Our Team"
             layout="fill"
             objectFit="cover"
             priority
@@ -144,7 +144,7 @@ dangerouslySetInnerHTML={{
           <div className="absolute inset-0 bg-black/30 flex items-center justify-start px-10 md:px-20">
             <div className="text-white max-w-2xl">
               <h1 className="text-4xl md:text-5xl font-serif font-medium mb-4">
-                Our Treatments
+                Our Team
               </h1>
               <p className="text-base md:text-lg">
                 Specializing in cosmetic injectables, skin rejuvenation, and
@@ -154,8 +154,8 @@ dangerouslySetInnerHTML={{
           </div>
         </div>
 
-        {/* Treatment Categories */}
-        <TreatmentCategories />
+        {/* Team */}
+        <Team />
         <Footer />
         
       </div>
