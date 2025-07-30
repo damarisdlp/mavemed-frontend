@@ -12,20 +12,34 @@ export default function TeamPage() {
   return (
     <>
       <Head>
-        <title>Our Team | Mave Medical Spa</title>
+        <title>Meet Our Expert Team | Mave Medical Spa in Tijuana</title>
         <meta
           name="description"
-          content="Explore cosmetic injectables, microneedling, laser treatments, and more at Mave Medical Spa — Tijuana’s leading med spa serving Southern California."
+          content="Get to know the team behind Mave Medical Spa — licensed doctors, cosmetologists, and aesthetic specialists delivering personalized care in Tijuana, Mexico."
         />
+        <meta
+          name="keywords"
+          content="Tijuana Med Spa Team, Aesthetic Specialists, Cosmetic Doctors Mexico, Injectables Experts, Skin Rejuvenation Tijuana"
+        />
+        <meta property="og:title" content="Meet Our Expert Team | Mave Medical Spa in Tijuana" />
+        <meta property="og:description" content="Discover the talented team of doctors and specialists behind Mave Medical Spa — Tijuana’s top destination for natural, ethical cosmetic results." />
+        <meta property="og:image" content="https://www.mavemedspa.com/logo.png" />
+        <meta property="og:url" content="https://www.mavemedspa.com/aboutus" />
+        <meta property="og:type" content="website" />
+        <link rel="canonical" href="https://www.mavemedspa.com/aboutus" />
+
         <script
-          type="application/ld+json"
-dangerouslySetInnerHTML={{
+    type="application/ld+json"
+    dangerouslySetInnerHTML={{
       __html: JSON.stringify({
         "@context": "https://schema.org",
-        "@type": "MedicalBusiness",
+        "@type": "MedicalOrganization",
         "name": "Mave Medical Spa",
-        "image": "https://www.mavemedspa.com/logo.png",
-        "url": "https://www.mavemedspa.com",
+        "url": "https://www.mavemedspa.com/aboutus",
+        "logo": "https://www.mavemedspa.com/logo.png",
+        "image": "https://www.mavemedspa.com/logo-mave.jpg",
+        "description":
+          "Meet the expert team behind Mave Medical Spa — a physician-led medical spa in Tijuana, Mexico, specializing in Botox, biostimulators, microneedling, lasers, and regenerative aesthetics.",
         "telephone": "+52-664-207-7675",
         "address": {
           "@type": "PostalAddress",
@@ -35,13 +49,69 @@ dangerouslySetInnerHTML={{
           "postalCode": "22010",
           "addressCountry": "MX"
         },
+        "employee": [
+          {
+            "@type": "Person",
+            "name": "Veronica",
+            "jobTitle": "Founder",
+            "url": "https://www.mavemedspa.com/aboutus/veronica"
+          },
+          {
+            "@type": "Person",
+            "name": "Damaris",
+            "jobTitle": "Chief Executive Director",
+            "url": "https://www.mavemedspa.com/aboutus/damaris"
+          },
+          {
+            "@type": "Person",
+            "name": "Dra. Nataly",
+            "jobTitle": "MD",
+            "url": "https://www.mavemedspa.com/aboutus/dranataly"
+          },
+          {
+            "@type": "Person",
+            "name": "Dra. Jocelyn",
+            "jobTitle": "MD",
+            "url": "https://www.mavemedspa.com/aboutus/drajocelyn"
+          },
+          {
+            "@type": "Person",
+            "name": "Vicky",
+            "jobTitle": "Cosmetologist",
+            "url": "https://www.mavemedspa.com/aboutus/vicky"
+          },
+          {
+            "@type": "Person",
+            "name": "Manuel",
+            "jobTitle": "Cosmetologist & Masseur",
+            "url": "https://www.mavemedspa.com/aboutus/manuel"
+          },
+          {
+            "@type": "Person",
+            "name": "Mayra",
+            "jobTitle": "Cosmetologist",
+            "url": "https://www.mavemedspa.com/aboutus/mayra"
+          },
+          {
+            "@type": "Person",
+            "name": "Zury",
+            "jobTitle": "Receptionist",
+            "url": "https://www.mavemedspa.com/aboutus/zury"
+          },
+          {
+            "@type": "Person",
+            "name": "Gabi",
+            "jobTitle": "Receptionist",
+            "url": "https://www.mavemedspa.com/aboutus/gabi"
+          }
+        ],
         "geo": {
           "@type": "GeoCoordinates",
           "latitude": 32.521,
           "longitude": -117.038
         },
         "priceRange": "$$",
-        "description": "Mave Medical Spa in Tijuana offers expert-level aesthetic services including facial balancing with dermal fillers, microneedling, Sculptra, CO2 laser resurfacing, and non-surgical skin lifting. Located 35 minutes from San Diego.",
+        "description": "Meet the team behind Mave Medical Spa in Tijuana — expert doctors and licensed providers specializing in Botox, Sculptra, laser treatments, and microneedling. Serving patients from San Diego, Los Angeles, and across Southern California.",
         "openingHoursSpecification": [
           {
             "@type": "OpeningHoursSpecification",
@@ -76,52 +146,6 @@ dangerouslySetInnerHTML={{
                 { "@type": "Place", "name": "Pomona, California" },
                 { "@type": "Place", "name": "San Bernardino, California" }
               ],
-  "hasOfferCatalog": {
-          "@type": "OfferCatalog",
-          "name": "Advanced Aesthetic Services",
-          "itemListElement": [
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "Botox for Wrinkle Reduction",
-                "description": "FDA-approved wrinkle relaxing injections to smooth frown lines, crow’s feet, and forehead lines."
-              }
-            },
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "Facial Balancing Fillers",
-                "description": "Strategically placed hyaluronic acid fillers to restore facial symmetry, enhance contours, and create harmonious proportions."
-              }
-            },
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "RF Microneedling (Scarlet S)",
-                "description": "Radiofrequency microneedling for skin tightening, pore reduction, and scar remodeling."
-              }
-            },
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "PDO Thread Lifts",
-                "description": "Minimally invasive skin lifting using dissolvable threads to redefine facial contours and stimulate collagen."
-              }
-            },
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "CO2 Laser Resurfacing",
-                "description": "Fractional ablative laser to improve texture, fine lines, sun damage, and skin laxity."
-              }
-                    }
-                ]
-              }
             })
           }}
         />
