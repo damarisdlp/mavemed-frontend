@@ -5,7 +5,6 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import PromoBanner from "../components/PromoBanner";
 import TreatmentDetails from "../components/TreatmentDetails";
-import AddOnSection from "../components/AddOnSection";
 import PricingTable from "../components/PricingTable";
 
 export default function TreatmentPage() {
@@ -35,8 +34,7 @@ export default function TreatmentPage() {
       <PromoBanner />
       <Header />
       <TreatmentDetails treatment={treatment} />
-      <PricingTable pricing={treatment.pricing} />      
-      <Footer />
+      <PricingTable treatment={treatment} />      <Footer />
     </>
   );
 }
