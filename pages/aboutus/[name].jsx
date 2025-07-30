@@ -4,6 +4,7 @@ import Link from "next/link";
 import { staff } from "../../data/staff";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import Head from "next/head";
 
 export default function TeamMemberPage() {
   const router = useRouter();
@@ -22,6 +23,44 @@ export default function TeamMemberPage() {
   }
 
   return (
+    <>
+    <Head>
+  <title>{`${member.displayName} | ${member.title} at Mave Medical Spa in Tijuana`}</title>
+  <meta
+    name="description"
+    content={`Learn more about ${member.displayName}, our ${member.title} at Mave Medical Spa in Tijuana. Specializing in ${member.bio.slice(0, 120)}...`}
+  />
+  <meta
+    name="keywords"
+    content={`Mave Medical Spa, ${member.displayName}, ${member.title}, Tijuana Med Spa, Aesthetic Experts, Medical Aesthetics Mexico`}
+  />
+  <meta property="og:title" content={`${member.displayName} | ${member.title} – Mave Medical Spa`} />
+  <meta property="og:description" content={`Meet ${member.displayName}, a valued member of our expert team delivering advanced aesthetic care in Tijuana.`} />
+  <meta property="og:image" content={`https://www.mavemedspa.com${member.image}`} />
+  <meta property="og:url" content={`https://www.mavemedspa.com/aboutus/${member.name}`} />
+  <meta property="og:type" content="profile" />
+  <link rel="canonical" href={`https://www.mavemedspa.com/aboutus/${member.name}`} />
+
+  <script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": member.displayName,
+      "jobTitle": member.title,
+      "image": `https://www.mavemedspa.com${member.image}`,
+      "worksFor": {
+        "@type": "MedicalBusiness",
+        "name": "Mave Medical Spa",
+        "url": "https://www.mavemedspa.com"
+      },
+      "url": `https://www.mavemedspa.com/aboutus/${member.name}`,
+      "description": member.bio.slice(0, 160)
+    })
+  }}
+/>
+</Head>
     <div className="min-h-screen bg-white text-black flex flex-col">
       <Header />
 
@@ -83,5 +122,6 @@ export default function TeamMemberPage() {
 
       <Footer />
     </div>
+    </>
   );
 }
