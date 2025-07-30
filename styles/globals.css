@@ -24,3 +24,11 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+/* Tailwind styles (optional override) */
+.btn-primary {
+  @apply bg-black text-white px-4 py-2 rounded hover:bg-[#731a2f] transition;
+}
+
+.btn-outline {
+  @apply border border-black text-black px-4 py-2 rounded hover:bg-black hover:text-white transition;
+}
