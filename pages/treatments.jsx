@@ -5,6 +5,8 @@ import Image from "next/image";
 import Header from "./components/Header";
 import PromoBanner from "./components/PromoBanner";
 import TreatmentCategories from "./components/TreatmentCategories";
+import Footer from "./components/Footer";
+
 
 export default function TreatmentsPage() {
   return (
@@ -154,6 +156,8 @@ dangerouslySetInnerHTML={{
 
         {/* Treatment Categories */}
         <TreatmentCategories />
+        <Footer />
+        
       </div>
     </>
   );
