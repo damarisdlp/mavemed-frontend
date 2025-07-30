@@ -8,8 +8,8 @@ export const treatments = [
     image2: "/botox2.jpg",
     description:
       "Reduce the appearance of fine lines and wrinkles for a smoother, more refreshed look.",
-    standardPrice: "$305+ per area",
-    memberPrice: "$285+ per area",
+    standardPrice: "Price varies per zone",
+    memberPrice: "Price varies per zone",
     notes: [
       "Only new patients receive exclusive welcome-prices",
       "Established patients receive exclusive maintenance tier pricing",
