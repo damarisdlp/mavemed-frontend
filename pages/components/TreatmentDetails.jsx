@@ -4,7 +4,7 @@ import { AccordionToggle } from "./AccordionToggle";
 export default function TreatmentDetail({ treatment }) {
   return (
     <div className="w-full bg-white">
-      <div className="grid grid-cols-1 md:grid-cols-[3fr_2fr] min-h-[80vh]">
+      <div className="grid grid-cols-1 md:grid-cols-[3fr_2fr] min-h-[50vh]">
         {/* Left: Full Bleed Image */}
         <div className="relative w-full h-[60vh]">
           <Image
@@ -17,7 +17,7 @@ export default function TreatmentDetail({ treatment }) {
         </div>
 
         {/* Right: Content */}
-        <div className="w-full px-6 md:px-12 py-10 flex flex-col justify-center">
+        <div className="w-full px-6 md:px-12 py-5 flex flex-col justify-center">
           <div className="mb-4">
             <p className="text-sm text-gray-500">
               Treatments / {treatment.category} / {treatment.displayName}
@@ -39,7 +39,7 @@ export default function TreatmentDetail({ treatment }) {
                 href="https://wa.me/+526642077675"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-3 inline-block w-full text-center bg-[#374a44] hover:bg-[#a80000] text-white font-medium py-2 rounded transition duration-200"
+                className="mt-3 inline-block w-full text-center bg-black hover:bg-[#a80000] text-white font-medium py-2 rounded transition duration-200"
               >
                 Book Now
               </a>
@@ -66,7 +66,7 @@ export default function TreatmentDetail({ treatment }) {
           )}
 
           {/* Accordion Sections */}
-          <AccordionToggle title="Details" defaultOpen>
+          <AccordionToggle title="Details">
             <p className="text-gray-700">{treatment.details}</p>
           </AccordionToggle>
 
