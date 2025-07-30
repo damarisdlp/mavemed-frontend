@@ -361,7 +361,7 @@ export default function TreatmentCategories() {
                         Book Now
                       </Link>
                       <Link
-                        href={`/treatment/${service.slug}`}
+                        href={`/treatments/${service.slug}`}
                         className="border border-gray-300 text-black px-4 py-2 rounded-full text-xs hover:border-black transition"
                         aria-label={`Learn more about ${service.name}`}
                       >
