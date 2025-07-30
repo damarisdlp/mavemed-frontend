@@ -6,6 +6,7 @@ import Footer from "../components/Footer";
 import PromoBanner from "../components/PromoBanner";
 import TreatmentDetails from "../components/TreatmentDetails";
 import PricingTable from "../components/PricingTable";
+import WhatToExpect from "../components/WhatToExpect";
 
 export default function TreatmentPage() {
   const router = useRouter();
@@ -34,7 +35,9 @@ export default function TreatmentPage() {
       <PromoBanner />
       <Header />
       <TreatmentDetails treatment={treatment} />
-      <PricingTable treatment={treatment} />      <Footer />
+      <PricingTable treatment={treatment} />
+      <WhatToExpect expectations={treatment.expectations} />
+      <Footer />
     </>
   );
 }
