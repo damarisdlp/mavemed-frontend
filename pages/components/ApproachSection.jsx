@@ -71,7 +71,7 @@ export default function ApproachSection() {
       </div>
 
       {/* Optional small spacer */}
-      <div className="h-6 md:h-8 bg-white w-full" />
+      <div className="h-2 md:h-0 bg-white w-full" />
     </section>
   );
 }
