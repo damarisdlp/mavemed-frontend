@@ -19,7 +19,7 @@ export default function Header() {
 
         {/* Left Nav - Desktop */}
         <div className="flex-1 hidden lg:flex gap-5 text-base text-gray-600 whitespace-nowrap">          <Link href="/treatments" className="hover:text-black">Treatments</Link>
-          <a href="/about" className="hover:text-black">About Us</a>
+          <a href="/aboutus" className="hover:text-black">About Us</a>
           <a href="/contact" className="hover:text-black">Contact Us</a>
           <a href="/location" className="hover:text-black">Location</a>
         </div>
@@ -46,7 +46,7 @@ export default function Header() {
       {isMobileMenuOpen && (
         <nav className="lg:hidden flex flex-col items-center gap-4 py-4 bg-white border-t border-gray-300">
           <Link href="/treatments" className="text-sm text-gray-700 hover:text-black">Treatments</Link>
-          <Link href="/about" className="text-sm text-gray-700 hover:text-black">About Us</Link>
+          <Link href="/aboutus" className="text-sm text-gray-700 hover:text-black">About Us</Link>
           <Link href="/contact" className="text-sm text-gray-700 hover:text-black">Contact Us</Link>
           <Link href="/location" className="text-sm text-gray-700 hover:text-black">Location</Link>
           <a
