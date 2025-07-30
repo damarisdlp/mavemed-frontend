@@ -5,6 +5,7 @@ import { staff } from "../../data/staff";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Head from "next/head";
+import PromoBanner from "../components/PromoBanner";
 
 export default function TeamMemberPage() {
   const router = useRouter();
@@ -62,6 +63,7 @@ export default function TeamMemberPage() {
 />
 </Head>
     <div className="min-h-screen bg-white text-black flex flex-col">
+      <PromoBanner/>
       <Header />
 
       <main className="flex-grow max-w-6xl mx-auto px-6 py-12">
