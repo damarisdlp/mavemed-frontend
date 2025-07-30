@@ -109,7 +109,7 @@ export default function PopularTreatments() {
 
   return (
     <section className="bg-white py-10 pb-2">
-      <div className="container mx-auto px-4 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2 mb-6">
+      <div className="container mx-auto px-4 flex flex-row sm:flex-row justify-between items-center sm:items-center gap-3 mb-6">
         <h2 className="text-3xl md:text-4xl font-serif text-black font-medium mx-auto sm:mx-0 sm:ml-4">
           Popular Treatments
         </h2>
