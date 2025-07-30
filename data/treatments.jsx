@@ -78,22 +78,38 @@ export const treatments = [
       }
     ],
     expectations: [
-      {
-        label: "Pre-Treatment",
-        note: "Avoid strenuous exercise, ibuprofen, aspirin or alcohol for 24 hours as this might increase your risk of bruising."
-      },
-      {
-        label: "Post-Treatment",
-        note: "Avoid strenuous exercise and massaging the area, ibuprofen, aspirin or alcohol for 24 hours as this might increase your risk of bruising."
-      },
-      {
-        label: "Pre-Treatment",
-        note: "It is safe to apply skin care and/or makeup after treatment."
-      },
-      {
-        label: "Post-Treatment",
-        note: "Avoid laying face down for 4 hours following treatment."
-      }
-    ]
+  {
+    label: "Pre-Treatment",
+    note: "Avoid alcohol, ibuprofen, aspirin, or any blood thinners for 24 hours prior to treatment to reduce the risk of bruising."
+  },
+  {
+    label: "Pre-Treatment",
+    note: "Refrain from intense physical activity on the day of your appointment."
+  },
+  {
+    label: "Pre-Treatment",
+    note: "Inform your provider of any recent vaccinations, medications, or medical conditions."
+  },
+  {
+    label: "Post-Treatment",
+    note: "Avoid touching, rubbing, or applying pressure to the treated areas for at least 4 hours."
+  },
+  {
+    label: "Post-Treatment",
+    note: "Remain upright and avoid lying down flat for 4 hours following treatment."
+  },
+  {
+    label: "Post-Treatment",
+    note: "Skip intense physical activity, alcohol, and saunas for 24 hours post-treatment to reduce the risk of swelling and migration."
+  },
+  {
+    label: "Post-Treatment",
+    note: "Mild swelling or bruising may occur and typically resolves within a few days. Ice can be applied gently if needed."
+  },
+  {
+    label: "Post-Treatment",
+    note: "Results begin to appear within 3–5 days, with full effect visible at 10–14 days."
+  }
+]
   }
 ];
