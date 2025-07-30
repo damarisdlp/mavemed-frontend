@@ -36,7 +36,7 @@ export default function AboutSection() {
   return (
     <section id="aboutus" className="bg-white min-h-screen w-full">
       {/* Top Section Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-[3fr_2fr] min-h-[85vh]">
+      <div className="grid grid-cols-1 md:grid-cols-[3fr_2fr] min-h-[85vh] mb-5">
         {/* Left: Image */}
         <div className="relative w-full h-[40vh] md:h-auto">
           <Image
@@ -86,7 +86,7 @@ export default function AboutSection() {
       </div>
 
       {/* Team Section Header */}
-      <div className="container mx-auto px-4 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2 mt-12 mb-6">
+      <div className="container mx-auto px-4 flex flex-row sm:flex-row justify-between items-center sm:items-center gap-3 mb-6">
         <h2 className="text-3xl md:text-4xl font-serif text-black font-medium mx-auto sm:mx-0 sm:ml-4">
           Meet Our Team
         </h2>
