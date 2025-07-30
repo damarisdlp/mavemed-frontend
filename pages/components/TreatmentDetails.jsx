@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Image from "next/image";
 import { AccordionToggle } from "./AccordionToggle";
 
@@ -20,8 +21,20 @@ export default function TreatmentDetail({ treatment }) {
         <div className="w-full px-6 md:px-12 py-5 flex flex-col justify-center">
           <div className="mb-4">
             <p className="text-sm text-gray-500">
-              Treatments / {treatment.category} / {treatment.displayName}
+              <Link href="/treatments" className="hover:underline hover:text-black">
+                Treatments
+              </Link>{" "}
+              /{" "}
+              <Link
+                href={`/treatments/category/${treatment.category.toLowerCase().replace(/\s+/g, "-")}`}
+                className="hover:underline hover:text-black"
+              >
+                {treatment.category}
+              </Link>{" "}
+              /{" "}
+              <span className="text-gray-700 underline">{treatment.displayName}</span>
             </p>
+
             <h1 className="text-4xl font-serif font-medium mt-2 mb-2">
               {treatment.displayName}
             </h1>
@@ -45,13 +58,13 @@ export default function TreatmentDetail({ treatment }) {
               </a>
             </div>
             <div className="border p-4 rounded shadow-sm">
-              <h2 className="text-md font-semibold">Members</h2>
+              <h2 className="text-md font-semibold">Exclusive Pricing</h2>
               <p className="text-gray-700">{treatment.memberPrice}</p>
               <a
                 href="/membership"
                 className="mt-3 inline-block w-full text-center border border-gray-700 text-gray-800 hover:border-black hover:text-black font-medium py-2 rounded transition duration-200"
               >
-                Become A Member
+                Inquire
               </a>
             </div>
           </div>
