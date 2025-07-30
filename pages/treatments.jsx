@@ -12,11 +12,21 @@ export default function TreatmentsPage() {
   return (
     <>
       <Head>
-        <title>Our Treatments | Mave Medical Spa</title>
+        <title>Advanced Aesthetic Treatments in Tijuana | Mave Medical Spa</title>
         <meta
           name="description"
-          content="Explore cosmetic injectables, microneedling, laser treatments, and more at Mave Medical Spa — Tijuana’s leading med spa serving Southern California."
+          content="Explore Botox, dermal fillers, microneedling, CO2 lasers, and thread lifts at Mave Medical Spa — trusted by patients from Tijuana, San Diego, Los Angeles, and Southern California."
         />
+        <meta
+          name="keywords"
+          content="Tijuana Medical Spa, Botox Tijuana, Sculptra, Microneedling Mexico, CO2 Laser Tijuana, PDO Threads, RF Microneedling, Facial Rejuvenation"
+        />
+        <meta property="og:title" content="Advanced Aesthetic Treatments in Tijuana | Mave Medical Spa" />
+        <meta property="og:description" content="Non-surgical aesthetic solutions: Botox, fillers, lasers, and more at Mave Medical Spa. Serving cross-border clients from Southern California." />
+        <meta property="og:image" content="https://www.mavemedspa.com/logo.png" />
+        <meta property="og:url" content="https://www.mavemedspa.com/treatments" />
+        <meta property="og:type" content="website" />
+        <link rel="canonical" href="https://www.mavemedspa.com/treatments" />
         <script
           type="application/ld+json"
 dangerouslySetInnerHTML={{
@@ -41,7 +51,7 @@ dangerouslySetInnerHTML={{
           "longitude": -117.038
         },
         "priceRange": "$$",
-        "description": "Mave Medical Spa in Tijuana offers expert-level aesthetic services including facial balancing with dermal fillers, microneedling, Sculptra, CO2 laser resurfacing, and non-surgical skin lifting. Located 35 minutes from San Diego.",
+        "description": "Mave Medical Spa in Tijuana offers advanced non-surgical aesthetic treatments including Botox, fillers, CO2 lasers, microneedling, and thread lifts. Just 7 minutes from San Diego.",
         "openingHoursSpecification": [
           {
             "@type": "OpeningHoursSpecification",
