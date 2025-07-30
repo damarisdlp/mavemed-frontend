@@ -49,7 +49,7 @@ export const staff = [
     ],
 },
   {
-    name: "dra.nataly",
+    name: "dranataly",
     displayName: "Dra. Nataly",
     title: "MD",
     image: "/nataly.jpg",
@@ -70,8 +70,8 @@ export const staff = [
     ],
 },
   {
-    name: "dra.jocelyn",
-    displayName: "Dra.Jocelyn",
+    name: "drajocelyn",
+    displayName: "Dra. Jocelyn",
     title: "MD",
     image: "/jocelyn.jpg",
     bio: "Damaris oversees operations, strategy, and patient experience across Mave with a commitment to excellence and integrity...",
