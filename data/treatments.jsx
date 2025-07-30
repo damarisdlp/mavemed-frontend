@@ -110,6 +110,43 @@ export const treatments = [
     label: "Post-Treatment",
     note: "Results begin to appear within 3–5 days, with full effect visible at 10–14 days."
   }
+],
+faq: [
+  {
+    question: "How long does Botox take to work?",
+    answer:
+      "You may begin to see softening of lines within 3 to 5 days, but full results usually appear between 10 to 14 days after treatment."
+  },
+  {
+    question: "How long do Botox results last?",
+    answer:
+      "Botox typically lasts 3 to 4 months. Longevity may vary depending on your metabolism, lifestyle, and treatment area."
+  },
+  {
+    question: "Will I look frozen or unnatural?",
+    answer:
+      "Not at all. Our providers specialize in natural-looking results. We focus on softening movement, not eliminating expression."
+  },
+  {
+    question: "Can I wear makeup or skincare after Botox?",
+    answer:
+      "Yes, but wait at least 4 hours before applying makeup and avoid rubbing the treated areas to prevent product migration."
+  },
+  {
+    question: "Is there any downtime?",
+    answer:
+      "There is no official downtime, though you should avoid lying down, heavy exercise, and alcohol for 24 hours post-treatment."
+  },
+  {
+    question: "Is Botox safe?",
+    answer:
+      "Botox is FDA-approved and considered very safe when administered by trained medical professionals. At Mave, treatments are performed under medical supervision using only certified products."
+  },
+  {
+    question: "Can I combine Botox with other treatments?",
+    answer:
+      "Absolutely. Botox can be safely combined with treatments like HydraFacial, Sculptra, or laser resurfacing for enhanced results. Your provider will guide you on the ideal timing between procedures."
+  }
 ]
   }
 ];
