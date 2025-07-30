@@ -8,7 +8,7 @@ const categories = [
       {
         name: "Botox Wrinkle Reducers",
         slug: "botulinum-toxin",
-        image: "/wrinkle-reducers.jpg",
+        image: "/botox.jpg",
         description:
           "Reduce frown lines, forehead creases, and crow’s feet with FDA‑approved Botox treatments for a smoother, youthful appearance."
       }
