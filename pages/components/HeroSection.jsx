@@ -2,7 +2,7 @@
 
 export default function HeroSection() {
   return (
-<section className="min-h-[65vh] md:min-h-[75vh] flex flex-col justify-center items-center px-6 py-6 text-center relative">
+<section className="bg-white min-h-[65vh] md:min-h-[75vh] flex flex-col justify-center items-center px-6 py-6 text-center relative">
   <h1 className="text-4xl text-black sm:text-5xl md:text-6xl font-serif font-medium leading-tight max-w-4xl">
         Mave Medical Spa in Tijuana – Botox, Fillers, RF Microneedling & More
       </h1>
