@@ -1,8 +1,6 @@
 import Head from "next/head";
 import Script from "next/script";
 import { useState } from "react";
-import Layout from "./components/Layout"; // Adjust if your path differs
-
 
 import LeadForm from "./components/LeadForm";
 import ApproachSection from "./components/ApproachSection";
@@ -21,7 +19,6 @@ export default function Home() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
-    <Layout>
     <>
      <Head>
   <title>Mave Medical Spa | Top Tijuana Med Spa for U.S. Patients – Botox, Fillers, Threads & Lasers</title>
@@ -137,6 +134,5 @@ export default function Home() {
       <ReviewsSection />
       <Footer />
     </>
-    </Layout>
   );
 }
