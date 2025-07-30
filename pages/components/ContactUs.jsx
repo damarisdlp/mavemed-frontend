@@ -9,8 +9,8 @@ export default function ContactUs() {
         {/* Left: Image */}
         <div className="relative w-full h-[40vh] md:h-auto">
           <Image
-            src="/approach-section.jpg"
-            alt="Close-up of rejuvenated skin after aesthetic treatment"
+            src="/group.jpg"
+            alt="Group picture of the team at Mave Medical Spa in Tijuana"
             fill
             className="object-cover"
             priority
@@ -21,14 +21,14 @@ export default function ContactUs() {
         <div className="flex items-center justify-center px-6 py-10">
           <div className="w-full max-w-md mx-auto text-center md:text-left">
             <h2 className="text-3xl sm:text-4xl md:text-5xl text-black font-serif font-medium mb-7 leading-tight">
-              Our Results-Driven Skincare Philosophy in Tijuana
+              Chat with Us
             </h2>
 
             {/* Safety */}
             <div className="mb-6 text-left">
               <div className="flex items-center gap-3 mb-2">
                 <Image src="/safety-icon.png" alt="Medical safety icon" width={35} height={35} />
-                <h3 className="text-lg md:text-xl text-black font-semibold">Medical-Grade Safety</h3>
+                <h3 className="text-lg md:text-xl text-black font-semibold">Text or Call-Us</h3>
               </div>
               <p className="text-gray-700 text-base md:text-lg leading-relaxed">
                 All cosmetic procedures at Mave Medical Spa in Tijuana are performed or overseen by licensed aesthetic doctors. We adhere to COFEPRIS-compliant safety standards for treatments such as Botox, RF microneedling, Sculptra, and PDO threads.
