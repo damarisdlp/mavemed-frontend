@@ -8,7 +8,7 @@ export default function AboutSection() {
         {/* Image */}
         <div className="flex-1">
           <Image
-            src="/about-image.jpg"
+            src="/group.jpg"
             alt="About Mave Group Picture"
             className="w-full rounded-lg object-cover" 
             width={600} height={400} 
