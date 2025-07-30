@@ -9,7 +9,7 @@ import Header from "./components/Header";
 import HeroSection from "./components/HeroSection";
 import PopularTreatments from "./components/PopularTreatments";
 import ContactCTA from "./components/ContactCTA";
-import LocationMap from "./components/LocationMap";
+import LocationMap from "./components/LocationSection";
 import InstagramFeed from "./components/InstagramFeed"
 import ReviewsSection from "./components/ReviewsSection";
 import PromoPackageSection from "./components/PromoPackageSection";
