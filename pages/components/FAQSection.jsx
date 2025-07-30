@@ -4,7 +4,7 @@ export default function FAQSection({ faqs }) {
   if (!faqs?.length) return null;
 
   return (
-    <div className="m-5">
+    <div className="bg-white m-5">
       <h3 className="text-2xl font-serif font-medium mb-4 text-center">
         Frequently Asked Questions
       </h3>
@@ -21,7 +21,7 @@ function ToggleItem({ question, answer }) {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="border border-gray-200 w-full max-w-xl rounded-lg">
+    <div className="border border-gray-200 w-full max-w-xl rounded-lg bg-{#efeee7}">
       <button
         onClick={() => setOpen(!open)}
         className="w-full text-left px-4 py-3 flex justify-between items-center hover:bg-gray-50"
