@@ -142,7 +142,7 @@ export default function PopularTreatments() {
         {treatments.map((treatment, index) => (
           <div
             key={index}
-            className="keen-slider__slide min-h-[475px] sm:min-h-[510px] flex"
+            className="p-2 keen-slider__slide min-h-[475px] sm:min-h-[510px] flex"
           >
             <div className="mx-4 h-full flex flex-col bg-[#f9f9f9] rounded-lg overflow-hidden shadow-sm hover:shadow-md transition">
               <div className="relative h-[200px] sm:h-[220px] md:h-[240px] w-full">
@@ -162,7 +162,7 @@ export default function PopularTreatments() {
                     {treatment.description}
                   </p>
                 </div>
-                <div className="mt-auto flex gap-2">
+                <div className="flex flex-col gap-2">
                   <Link
                     href="https://wa.me/+526642077675"
                     className="bg-black text-white px-4 py-2 rounded-full text-xs hover:bg-[#731a2f] transition text-center"
