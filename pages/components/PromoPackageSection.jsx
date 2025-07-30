@@ -24,15 +24,23 @@ export default function PromoPackageSection() {
             <ul className="space-y-6 text-base md:text-lg text-gray-700 text-left">
               <li className="flex items-start gap-4">
                 <Image src="/money-icon.png" alt="Special pricing on bundles" width={30} height={30} />
-                <span><strong>Discounted bundle pricing</strong> on services like Botox, Sculptra, RF microneedling, Ultraformer, and fillers.</span>
+                <span><strong>Special pricing on bundled services</strong> - including collagen stimulators (like Sculptra), RF microneedling (Scarlet RF), Ultraformer, fillers, PDO threads, and more.</span>
               </li>
               <li className="flex items-start gap-4">
                 <Image src="/percent-icon.png" alt="20% deposit" width={30} height={30} />
-                <span><strong>20% deposit per session</strong> — flexible payments without full prepay. Your deposit goes toward the next visit.</span>
+                <span><strong>Only 20% deposit required per session</strong> - skip the financial pressure of full prepayment. Your deposit is fully credited toward your next visit.</span>
               </li>
               <li className="flex items-start gap-4">
-                <Image src="/sparkle-icon.png" alt="Custom plan" width={30} height={30} />
-                <span><strong>Doctor-guided personalized plan</strong> combining advanced techniques for natural, long-term results.</span>
+                <Image src="/sparkle-icon.png" alt="20% deposit" width={30} height={30} />
+                <span><strong>Personalized plans</strong> combining advanced technologies and proven aesthetic techniques for natural-looking, long-term skin rejuvenation.</span>
+              </li>
+              <li className="flex items-start gap-4">
+                <Image src="/dr-icon.png" alt="Custom plan" width={30} height={30} />
+                <span><strong>Doctor-led care</strong> at every stage to ensure safe, effective results from Tijuana’s trusted medical spa professionals.</span>
+              </li>
+              <li className="flex items-start gap-4">
+                <Image src="/date-icon.png" alt="Custom plan" width={30} height={30} />
+                <span><strong>VIP treatment perks</strong> — including priority scheduling, complimentary upgrades, bonus boosters, and access to limited-time med spa promotions.</span>
               </li>
             </ul>
 
