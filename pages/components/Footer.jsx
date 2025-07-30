@@ -129,7 +129,7 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold mb-4">About</h4>
             <ul className="space-y-2">
-              <li><Link href="/about" className="hover:underline">About Us</Link></li>
+              <li><Link href="/aboutus" className="hover:underline">About Us</Link></li>
               <li><Link href="/contact" className="hover:underline">Contact</Link></li>
               <li><Link href="/faq" className="hover:underline">FAQs</Link></li>
               <li><Link href="/mave101" className="hover:underline">Mave 101</Link></li>
