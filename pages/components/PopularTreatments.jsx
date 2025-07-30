@@ -170,7 +170,7 @@ export default function PopularTreatments() {
                     Book Now
                   </Link>
                   <Link
-                    href={`/services/${treatment.slug}`}
+                    href={`/treatments/${treatment.slug}`}
                     className="border border-gray-300 text-black px-4 py-2 rounded-full text-xs hover:border-black transition text-center"
                   >
                     Learn More
