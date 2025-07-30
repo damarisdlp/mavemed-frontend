@@ -25,14 +25,14 @@ const teams = [
     title: "Providers",
     members: [
       {
-        name: "dra.nataly",
+        name: "dranataly",
         displayName: "Dra. Nataly",
         title: "MD",
         image: "/nataly.jpg",
         bio: "Veronica is the visionary founder of Mave Medical Spa with over 15 years of experience in aesthetic medicine...",
     },
     {
-        name: "dra.jocelyn",
+        name: "drajocelyn",
         displayName: "Dra. Jocelyn",
         title: "MD",
         image: "/jocelyn.jpg",
