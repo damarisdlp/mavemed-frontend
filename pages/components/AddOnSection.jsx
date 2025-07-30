@@ -15,7 +15,7 @@ export default function AddOnSection({ addOns }) {
           </p>
           <Link
             href={addon.link}
-            className="text-sm underline text-black mt-1 inline-block hover:text-[#a80000]"
+            className="text-sm underline text-black mt-1 inline-block hover:text-[#731a2f]"
           >
             Learn more about {addon.name}
           </Link>
