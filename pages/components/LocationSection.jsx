@@ -9,51 +9,77 @@ export default function LocationSection() {
         <h2 className="text-4xl font-serif text-black text-center font-medium mb-4">
           We Can't Wait to See You
         </h2>
-        <p className="text-center text-gray-600 mb-5">
+        <p className="text-center text-gray-600 mb-10">
           Convenient cross-border access, just minutes from the San Diego–Tijuana border.
         </p>
 
         {/* Grid Layout */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-          {/* Right Side: Text Block (on mobile shows first) */}
-          <div className="text-center text-left">
-            <h3 className="text-xl text-black text-center font-semibold mb-2">Mave Medical Spa</h3>
-            <p className="text-gray-700 mb-2">
-            <strong>Address:</strong><br />
-            <a
-            href="https://www.google.com/maps/dir/?api=1&destination=Blvrd+Gral+Rodolfo+Sánchez+Taboada+10512-Interior+8a+-+Segundo+Piso,+Revolucion,+22010+Tijuana,+B.C.,+Mexico"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-gray-700 mb-3 leading-relaxed underline hover:text-black transition block"
-            >
-              Blvrd Gral Rodolfo Sánchez Taboada 10512-Interior 8a – Segundo Piso,<br />
-              Revolución, 22010 Tijuana, B.C., Mexico
-              </a>
-              </p>
-            <p className="text-gray-700 mb-3">
-              <strong>Hours:</strong><br />
-              Monday–Friday: 9:00am – 6:00pm<br />
-              Saturday: 9:00am - 4:00pm<br/>
-              Sun: Closed
-            </p>
-            <p className="text-gray-700 mb-3">
-              <strong className="whitespace-nowrap">Phone:</strong><br/>
-              <a
-              href="https://wa.me/+526642077675"
-              className="underline hover:text-black transition flex items-center gap-2"
-              >
-                +52 664 207 7675
-                </a>
-                </p>
-                <p className="text-gray-700">
-                  <strong>Email:</strong><br />
-                  <a href="mailto:info@mavemedspa.com" className="underline hover:text-black transition">
-                    info@mavemedspa.com
-                    </a>
-                    </p>
-                    </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
+          {/* Left Side: Text Block */}
+          <div className="w-full max-w-md mx-auto text-left space-y-6">
+            {/* Clinic Name */}
+            <h3 className="text-xl text-black font-semibold text-center md:text-left">Mave Medical Spa</h3>
 
-          {/* Left Side: Map (on mobile shows second) */}
+            {/* Address */}
+            <div className="flex gap-4 items-start">
+              <Image src="/location.png" alt="Location icon" width={40} height={40} />
+              <div>
+                <h4 className="text-black font-semibold text-base">Address:</h4>
+                <a
+                  href="https://www.google.com/maps/dir/?api=1&destination=Blvrd+Gral+Rodolfo+Sánchez+Taboada+10512-Interior+8a+-+Segundo+Piso,+Revolucion,+22010+Tijuana,+B.C.,+Mexico"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline hover:text-black transition text-gray-700 block leading-relaxed"
+                >
+                  Blvrd Gral Rodolfo Sánchez Taboada 10512-Interior 8a – Segundo Piso,<br />
+                  Revolución, 22010 Tijuana, B.C., Mexico
+                </a>
+              </div>
+            </div>
+
+            {/* Hours */}
+            <div className="flex gap-4 items-start">
+              <Image src="/date-icon.png" alt="Clock icon" width={40} height={40} />
+              <div>
+                <h4 className="text-black font-semibold text-base">Hours:</h4>
+                <p className="text-gray-700">
+                  Monday–Friday: 9:00am – 6:00pm<br />
+                  Saturday: 9:00am – 4:00pm<br />
+                  Sunday: Closed
+                </p>
+              </div>
+            </div>
+
+            {/* Phone */}
+            <div className="flex gap-4 items-start">
+              <Image src="/WA.png" alt="WhatsApp icon" width={40} height={40} />
+              <div>
+                <h4 className="text-black font-semibold text-base">Phone:</h4>
+                <a
+                  href="https://wa.me/+526642077675"
+                  className="underline hover:text-black transition text-gray-700"
+                >
+                  +52 664 207 7675
+                </a>
+              </div>
+            </div>
+
+            {/* Email */}
+            <div className="flex gap-4 items-start">
+              <Image src="/email.png" alt="Email icon" width={40} height={40} />
+              <div>
+                <h4 className="text-black font-semibold text-base">Email:</h4>
+                <a
+                  href="mailto:info@mavemedspa.com"
+                  className="underline hover:text-black transition text-gray-700"
+                >
+                  info@mavemedspa.com
+                </a>
+              </div>
+            </div>
+          </div>
+
+          {/* Right Side: Map */}
           <div className="w-full h-72 md:h-80 rounded-xl overflow-hidden shadow-sm">
             <iframe
               title="Mave Medical Spa Location"
