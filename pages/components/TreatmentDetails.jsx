@@ -30,10 +30,10 @@ export default function TreatmentDetail({ treatment }) {
               </Link>{" "}
               /{" "}
               <Link
-                href={`/treatments/category/${treatment.category.toLowerCase().replace(/\s+/g, "-")}`}
+                href={`/treatments/#${treatment.categoryDisplayName.replace(/\s+/g, "-").toLowerCase()}`}
                 className="hover:underline hover:text-black"
               >
-                {treatment.category}
+                {treatment.categoryDisplayName}
               </Link>{" "}
               /{" "}
               <span className="text-gray-700 underline">{treatment.displayName}</span>
