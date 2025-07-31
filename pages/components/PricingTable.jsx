@@ -37,18 +37,26 @@ export default function PricingTable({ treatment }) {
                     <span className="font-semibold">Standard:</span> {p.standardPrice}
                   </p>
 
-                  {/* Exclusive Pricing Logic */}
-                  {p.promoPrice ? (
-                    <p>
-                      <span className="font-semibold">Exclusive Pricing:</span> {p.promoPrice}
-                    </p>
-                  ) : p.promoNote ? (
-                    <p className="text-xs italic text-gray-500">{p.promoNote}</p>
-                  ) : null}
+                  {/* Exclusive Pricing or Promo Note */}
+                  {p.memberPrice !== "Not eligible for exclusive pricing" && (
+                    p.promoPrice ? (
+                      <p>
+                        <span className="font-semibold">Exclusive Pricing:</span> {p.promoPrice}
+                      </p>
+                    ) : (
+                      p.promoNote && (
+                        <ul className="text-sm text-gray-600 italic">
+                          {Array.isArray(p.promoNote)
+                            ? p.promoNote.map((note, i) => <li key={i}>{note}</li>)
+                            : <li>{p.promoNote}</li>}
+                        </ul>
+                      )
+                    )
+                  )}
 
                   {/* Extra Notes */}
                   {p.notes?.length > 0 && (
-                    <ul className="mt-1 text-xs text-gray-600 italic list-disc list-inside">
+                    <ul className="text-sm text-gray-600 italic">
                       {p.notes.map((note, i) => (
                         <li key={i}>{note}</li>
                       ))}
