@@ -15,7 +15,7 @@ export const treatments = [
     notes: [
       "Only new patients receive exclusive welcome-prices",
       "Established patients receive exclusive maintenance tier pricing",
-      "Maintenance zone pricing is only applicable within 3–4 months after the initial application"
+      "Maintenance zone pricing is only applicable within 4-5 months after the initial application"
     ],
     details:
       "Neuromodulators are injected into the muscle to temporarily relax fine lines and wrinkles, resulting in improved and more youthful skin quality.",
@@ -41,35 +41,35 @@ export const treatments = [
       "Palmar Hyperhidrosis (Hands)"
     ],
     pricing: [
-      { zone: "Forehead", standardPrice: "$86USD", promoPrice: "$78USD" },
-      { zone: "Frown Lines (Glabella)", standardPrice: "$145USD", promoPrice: "$130USD" },
-      { zone: "Crow’s Feet", standardPrice: "$139USD", promoPrice: "$126USD" },
-      { zone: "Bunny Lines", standardPrice: "$48USD", promoPrice: "$45USD" },
-      { zone: "Chin Dimples", standardPrice: "$45USD", promoPrice: "$40USD" },
-      { zone: "Perioral Lines", standardPrice: "$46USD", promoPrice: null, promoNote: "Not eligible for exclusive pricing" },
-      { zone: "Gummy Smile", standardPrice: "$45USD", promoPrice: null, promoNote: "Only available as part of Perioral Package" },
-      { zone: "Downturned Corners", standardPrice: "$45USD", promoPrice: null, promoNote: "Only available as part of Perioral Package" },
-      { zone: "Eyebrow Lift", standardPrice: "$30USD", promoPrice: null, promoNote: "Not eligible for exclusive pricing" },
-      { zone: "Masseters", standardPrice: "$225USD", promoPrice: null, promoNote: "Not eligible for exclusive pricing" },
-      { zone: "Neck Bands", standardPrice: "$340USD", promoPrice: null, promoNote: "Not eligible for exclusive pricing" },
-      { zone: "Axillary Hyperhidrosis", standardPrice: "$570USD", promoPrice: null, promoNote: "Not eligible for exclusive pricing" },
-      { zone: "Palmar Hyperhidrosis", standardPrice: "$570USD", promoPrice: null, promoNote: "Not eligible for exclusive pricing" },
+      { zone: "Forehead", standardPrice: "$86 USD", promoPrice: "$78 USD" },
+      { zone: "Frown Lines (Glabella)", standardPrice: "$145 USD", promoPrice: "$130 USD" },
+      { zone: "Crow’s Feet", standardPrice: "$139 USD", promoPrice: "$126 USD" },
+      { zone: "Bunny Lines", standardPrice: "$48 USD", promoPrice: "$45 USD" },
+      { zone: "Chin Dimples", standardPrice: "$45 USD", promoPrice: "$40 USD" },
+      { zone: "Perioral Lines", standardPrice: "$46 USD", promoPrice: null},
+      { zone: "Gummy Smile", standardPrice: "$45 USD", promoPrice: "$40 USD", notes:[ "Only available as part of Perioral Package"] },
+      { zone: "Downturned Corners", standardPrice: "$45 USD", promoPrice: "$40 USD", notes: ["Only available as part of Perioral Package"] },
+      { zone: "Eyebrow Lift", standardPrice: "$30 USD", promoPrice: null },
+      { zone: "Masseters", standardPrice: "$225 USD", promoPrice: null },
+      { zone: "Neck Bands", standardPrice: "$340 USD", promoPrice: null },
+      { zone: "Axillary Hyperhidrosis", standardPrice: "$570 USD", promoPrice: null },
+      { zone: "Palmar Hyperhidrosis", standardPrice: "$570 USD", promoPrice: null},
       {
         zone: "Perioral Package",
-        standardPrice: "$135USD",
-        promoPrice: "$120USD",
+        standardPrice: "$135 USD",
+        promoPrice: "$120 USD",
         notes: ["Includes gummy smile, mouth elevators, and chin dimples"]
       },
       {
         zone: "Maintenance of Superior Third",
-        standardPrice: "$260USD",
-        promoPrice: "Not eligible for exclusive pricing",
+        standardPrice: "$260 USD",
+        promoPrice: null,
         notes: ["Appointment must be within 4-5 months of initial application","Includes forehead, frown lines (glabella), and crow's feet"]
       },
       {
         zone: "Maintenance of Individual Zone",
-        standardPrice: "$70USD",
-        promoPrice: "Not eligible for exclusive pricing",
+        standardPrice: "$70 USD",
+        promoPrice: null,
         notes: [
           "Appointment must be within 4–5 months of initial application",
           "Applicable to any zone",
@@ -80,17 +80,17 @@ export const treatments = [
       {
         name: "HydraFacial",
         description: "A hydrating facial that cleanses, exfoliates, and infuses serums into the skin for a fresh glow.",
-        standardPrice: "$95",
+        standardPrice: "$95 USD",
         promoPrice: null,
-        promoNote: "Add-on only available at standard rate",
+        promoNote: "Standard rate only",
         link: "/treatments/hydrafacial"
       },
       {
         name: "Casmara Purifying Facial Treatment",
         description: "A clarifying treatment that deeply detoxifies and calms the skin before or after injectables.",
-        standardPrice: "$80",
+        standardPrice: "$80 USD",
         promoPrice: null,
-        promoNote: "Add-on only available at standard rate",
+        promoNote: "Standard rate only",
         link: "/treatments/casmara-purifying-treatment"
       }
     ],
@@ -172,11 +172,12 @@ faq: [
   categoryDisplayName: "Dermal Fillers (Hyaluronic Acid)",
   displayName: "Hyaluronic Acid Lip Fillers",
   isPopular: true,
+  isPromoEligibe: false,
   image: "/fillers.jpg",
   image2: "/fillers2.jpg",
   description: "Restore and add volume and contour to lips using hyaluronic acid dermal fillers with immediate, natural-looking results.",
   standardPrice: "Starting at $305 USD",
-  memberPrice: "Not eligible for exclusive pricing",
+  memberPrice: null,
   notes: [
     "Results are immediate with minimal downtime",
     "Volume and symmetry can be customized to patient goals",
@@ -190,14 +191,14 @@ faq: [
   ],
   treatableAreas: ["Upper lip", "Lower lip", "Cupid's bow", "Vermilion border"],
   pricing: [
-    { zone: "Stylage M with Lidocaine", standardPrice: "$306USD", promoPrice: null, promoNote: ["Price per 1ml syringe","Duration approx 9 to 12 months"]},
-    { zone: "Juvéderm Volift with Lidocaine", standardPrice: "$365USD", promoPrice: null, promoNote: ["Price per 1ml syringe","Duration approx 12 to 15 months"] },
+    { zone: "Stylage M with Lidocaine", standardPrice: "$305 USD", promoPrice: null, notes: ["Price per 1ml syringe","Duration approx 9 to 12 months"]},
+    { zone: "Juvéderm Volift with Lidocaine", standardPrice: "$365 USD", promoPrice: null, notes: ["Price per 1ml syringe","Duration approx 12 to 15 months"] },
   ],
   addOns: [
   {
     name: "Wrinkle Reducer - Botox - Lip Flip (Gummy Smile)",
     description: "Enhance your smile by relaxing upper lip muscles for a subtle lift and reduced gum visibility.",
-    standardPrice: "$30USD",
+    standardPrice: "$30 USD",
     promoPrice: null,
     promoNote: "Standard rate only",
     link: "/treatments/botulinum-toxin"
@@ -250,11 +251,11 @@ faq: [
   categoryDisplayName: "Dermal Fillers (Hyaluronic Acid)",
   displayName: "Facial Balancing with Dermal Fillers",
   isPopular: false,
-  image: "/fillers.jpg",
-  image2: "/fillers.jpg",
+  image: "/facialfillers.jpg",
+  image2: "/facialfillers2.jpg",
   description: "Strategic filler placement to enhance facial harmony, restore volume, and contour areas like the chin, jawline, and cheeks.",
-  standardPrice: "Custom pricing per zone",
-  memberPrice: "Discounted member pricing available",
+  standardPrice: "Starting at $305 USD",
+  memberPrice: "Not eligible for exclusive pricing",
   notes: [
     "Pricing is based on volume and number of syringes required",
     "Most balancing treatments use between 2–5 syringes",
@@ -276,37 +277,44 @@ faq: [
     "Midface"
   ],
   pricing: [
+    { 
+      zone: "Stylage M with Lidocaine", 
+      standardPrice: "$305 USD", 
+      promoPrice: null, 
+      notes: ["Price per 1ml syringe","Duration approx 9 to 12 months"]},
+      {
+        zone: "Juvéderm Volift with Lidocaine", 
+        standardPrice: "$365 USD", 
+        promoPrice: null, 
+        notes: ["Price per 1ml syringe","Duration approx 12 to 15 months"] },
     {
-      zone: "Chin Contour",
-      standardPrice: "$280USD",
-      promoPrice: "$250USD"
-    },
+        zone: "Juvéderm Voluma with Lidocaine", 
+        standardPrice: "$370 USD", 
+        promoPrice: null, 
+        notes: ["Price per 1ml syringe","Duration approx 12 to 15 months"] },
     {
-      zone: "Jawline (per side)",
-      standardPrice: "$320USD",
-      promoPrice: "$290USD"
-    },
-    {
-      zone: "Cheek Enhancement",
-      standardPrice: "$290USD",
+      zone: "Juvéderm Volux with Lidocaine", 
+      standardPrice: "$385 USD",
       promoPrice: null,
-      promoNote: "Promo not available on structural fillers"
-    },
-    {
-      zone: "Midface Lift",
-      standardPrice: "$290USD",
-      promoPrice: null
-    }
+      notes: ["Price per 1ml syringe","Duration approx 18 to 24 months"] },
   ],
   addOns: [
     {
-      name: "RF Microneedling",
-      description: "Boost collagen and skin tightening before or after filler for stronger contour.",
-      standardPrice: "$190",
-      promoPrice: "$160",
-      promoNote: "Add-on discounted only when bundled",
-      link: "/treatments/rf-microneedling"
-    }
+    name: "Wrinkle Reducer - Botox - Lip Flip (Gummy Smile)",
+    description: "Enhance your smile by relaxing upper lip muscles for a subtle lift and reduced gum visibility.",
+    standardPrice: "$30 USD",
+    promoPrice: null,
+    promoNote: "Standard rate only",
+    link: "/treatments/botulinum-toxin"
+  },
+  {
+    name: "Casmara Retinol Pro Age Facial",
+    description: "Anti-aging facial that promotes cell turnover, brightens skin tone, and reduces fine lines using encapsulated retinol and nourishing active ingredients.",
+    standardPrice: "$30 USD",
+    promoPrice: null,
+    promoNote: "Standard rate only",
+    link: "/treatments/casmara-retinol-proage"
+  }
   ],
   expectations: [
     {
@@ -355,12 +363,13 @@ faq: [
   categoryDisplayName: "Dermal Fillers (Hyaluronic Acid)",
   displayName: "Hyaluronidase Filler Reversal",
   isPopular: false,
-  image: "/fillers.jpg",
-  image2: "/fillers.jpg",
+  image: "/enzymes.jpg",
+  image2: "/enzymes2.jpg",
   description: "Dissolve misplaced or undesired hyaluronic acid fillers using hyaluronidase for safe and effective correction.",
-  standardPrice: "$115USD per session",
-  memberPrice: "$95USD per session",
+  standardPrice: "$45 USD",
+  memberPrice: "Not eligible for exclusive pricing",
   notes: [
+    "Price is per vial",
     "A patch test may be required to rule out allergy",
     "Multiple sessions may be needed for complete dissolution",
     "Follow-up correction with fresh filler is optional"
@@ -382,25 +391,20 @@ faq: [
   ],
   pricing: [
     {
-      zone: "Focal Correction (Small Area)",
-      standardPrice: "$115USD",
-      promoPrice: null
-    },
-    {
-      zone: "Full Dissolution (Multiple Areas)",
-      standardPrice: "$180USD",
+      zone: "Hyaluronidase Filler Reversal",
+      standardPrice: "$45 USD",
       promoPrice: null,
-      promoNote: "Promo pricing not available due to medical use classification"
+      notes:["Price is per vial"]
     }
   ],
   addOns: [
     {
-      name: "New Filler Application",
-      description: "Once the area is corrected, a new filler session can restore ideal contours.",
-      standardPrice: "Varies",
+      name: "Hyaluronic Acid Lip Fillers",
+      description: "Restore and add volume and contour to lips using hyaluronic acid dermal fillers with immediate, natural-looking results.",
+      standardPrice: "Starting at $305 USD",
       promoPrice: null,
-      promoNote: "Available upon consultation",
-      link: "/treatments/facial-balancing-fillers"
+      promoNote: "Standard rate only",
+      link: "/treatments/hyaluronic-filler"
     }
   ],
   expectations: [
