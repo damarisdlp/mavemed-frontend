@@ -173,7 +173,7 @@ faq: [
   displayName: "Hyaluronic Acid Lip Fillers",
   isPopular: true,
   image: "/fillers.jpg",
-  image2: "/fillers.jpg",
+  image2: "/fillers2.jpg",
   description: "Restore and add volume and contour to lips using hyaluronic acid dermal fillers with immediate, natural-looking results.",
   standardPrice: "Starting at $305 USD",
   memberPrice: "Not eligible for exclusive pricing",
