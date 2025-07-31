@@ -12,14 +12,21 @@ export default function AddOnSection({ addOns }) {
           <p className="text-sm text-gray-700">{addon.description}</p>
 
           <p className="text-sm text-gray-700 mt-1">
-            <span className="font-semibold">Standard:</span> {addon.standardPrice}{" "}
-            |{" "}
-            <span className="font-semibold">Exclusive Pricing:</span>{" "}
-            {addon.promoPrice
-              ? addon.promoPrice
-              : addon.promoNote
-              ? <span className="italic text-gray-500">{addon.promoNote}</span>
-              : <span className="italic text-gray-400">Not Available</span>
+            <span className="font-semibold">Standard:</span> {addon.standardPrice}
+            {
+              // Only show Exclusive Pricing if promoNote is NOT "Standard rate only"
+              addon.promoNote !== "Standard rate only" && (
+                <>
+                  {" "} |{" "}
+                  <span className="font-semibold">Exclusive Pricing:</span>{" "}
+                  {addon.promoPrice
+                    ? addon.promoPrice
+                    : addon.promoNote
+                    ? <span className="italic text-gray-500">{addon.promoNote}</span>
+                    : <span className="italic text-gray-400">Not Available</span>
+                  }
+                </>
+              )
             }
           </p>
 
