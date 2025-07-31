@@ -10,11 +10,11 @@ export default function PricingTable({ treatment }) {
   }
 
   return (
-    <div className="w-full">
+    <div className="w-full bg-white">
       <div className="grid grid-cols-1 md:grid-cols-[3fr_2fr] min-h-[80vh]">
         
         {/* Left: Scrollable Content */}
-        <div className="w-full px-6 md:px-12 py-5 overflow-y-scroll h-[80vh]">
+        <div className="w-full text-black px-6 md:px-12 py-5 overflow-y-scroll h-[80vh]">
           <h1 className="text-4xl font-serif font-medium mb-3">
             Pricing Options & Packages
           </h1>
@@ -31,22 +31,22 @@ export default function PricingTable({ treatment }) {
                 {/* Zone Name */}
                 <div className="text-lg font-medium">{p.zone}</div>
 
-                {/* Pricing Info aligned left within right block */}
+                {/* Pricing Info */}
                 <div className="text-sm leading-6 text-left max-w-[60%]">
                   <p>
                     <span className="font-semibold">Standard:</span> {p.standardPrice}
                   </p>
-                  <p>
-                    <span className="font-semibold">Exclusive Pricing:</span>{" "}
-                    {p.promoPrice
-                      ? p.promoPrice
-                      : p.promoNote
-                      ? <span className="italic text-gray-500">{p.promoNote}</span>
-                      : <span className="italic text-gray-400">Not Available</span>
-                    }
-                  </p>
 
-                  {/* Additional Notes */}
+                  {/* Exclusive Pricing Logic */}
+                  {p.promoPrice ? (
+                    <p>
+                      <span className="font-semibold">Exclusive Pricing:</span> {p.promoPrice}
+                    </p>
+                  ) : p.promoNote ? (
+                    <p className="text-xs italic text-gray-500">{p.promoNote}</p>
+                  ) : null}
+
+                  {/* Extra Notes */}
                   {p.notes?.length > 0 && (
                     <ul className="mt-1 text-xs text-gray-600 italic list-disc list-inside">
                       {p.notes.map((note, i) => (
