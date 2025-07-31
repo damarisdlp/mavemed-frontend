@@ -1,13 +1,14 @@
 import Image from "next/image";
+import { treatments } from "@/data/treatments";
 import AddOnSection from "./AddOnSection";
 
 export default function PricingTable({ treatment }) {
-  const pricing = treatment.pricing;
-  const addOns = treatment.addOns;
-
-  if (!pricing?.length) {
+  if (!treatment || !treatment.pricing?.length) {
     return <div><p>No pricing available.</p></div>;
   }
+
+  const pricing = treatment.pricing;
+  const addOns = treatment.addOns;
 
   return (
     <div className="w-full bg-white">
@@ -33,30 +34,31 @@ export default function PricingTable({ treatment }) {
 
                 {/* Pricing Info */}
                 <div className="text-sm leading-6 text-left max-w-[60%]">
+                  {/* Standard Price */}
                   <p>
                     <span className="font-semibold">Standard:</span> {p.standardPrice}
                   </p>
 
-                  {/* Exclusive Pricing or Promo Note */}
-                  {p.memberPrice !== "Not eligible for exclusive pricing" && (
-                    p.promoPrice ? (
-                      <p>
-                        <span className="font-semibold">Exclusive Pricing:</span> {p.promoPrice}
-                      </p>
-                    ) : (
-                      p.promoNote && (
-                        <ul className="text-sm text-gray-600 italic">
-                          {Array.isArray(p.promoNote)
-                            ? p.promoNote.map((note, i) => <li key={i}>{note}</li>)
-                            : <li>{p.promoNote}</li>}
-                        </ul>
-                      )
-                    )
+                  {/* Exclusive Price if valid */}
+                  {p.promoPrice && p.memberPrice !== "Not eligible for exclusive pricing" && (
+                    <p>
+                      <span className="font-semibold">Exclusive Pricing:</span> {p.promoPrice}
+                    </p>
+                  )}
+
+                  {/* Promo Note if not "Standard rate only" */}
+                  {p.promoNote &&
+                    p.promoNote !== "Standard rate only" && (
+                      <ul className="mt-1 text-xs text-gray-600 italic list-disc list-inside">
+                        {Array.isArray(p.promoNote)
+                          ? p.promoNote.map((note, i) => <li key={i}>{note}</li>)
+                          : <li>{p.promoNote}</li>}
+                      </ul>
                   )}
 
                   {/* Extra Notes */}
                   {p.notes?.length > 0 && (
-                    <ul className="text-sm text-gray-600 italic">
+                    <ul className="mt-1 text-xs text-gray-600 italic  list-inside">
                       {p.notes.map((note, i) => (
                         <li key={i}>{note}</li>
                       ))}
@@ -70,7 +72,7 @@ export default function PricingTable({ treatment }) {
           {/* Add-On Section */}
           {addOns?.length > 0 && (
             <div className="mt-10">
-              <AddOnSection addOns={addOns} />
+              <AddOnSection addOns={addOns} treatments={treatments} />
             </div>
           )}
         </div>
