@@ -4,8 +4,8 @@ export default function FAQSection({ faqs }) {
   if (!faqs?.length) return null;
 
   return (
-    <div className="bg-white m-5">
-      <h3 className="text-2xl font-serif font-medium mb-4 text-center">
+    <div className="bg-white text-black mb-4">
+      <h3 className="text-2xl p-5 font-serif font-medium mb-4 text-center">
         Frequently Asked Questions
       </h3>
       <div className="flex flex-col items-center space-y-3">
