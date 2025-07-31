@@ -14,7 +14,7 @@ export default function ContactCTA() {
         Our Tijuana med spa serves clients from San Diego, LA, Tijuana and beyond — </p>
         <p className="text-gray-100 text-lg mb-6">
           Offering advanced treatments in rejuvenation from Sculptra, RF microneedling, PDO threads, and facial balancing. </p>
-          <p className="text-gray-100 font-semibold text-lg mb-4">
+          <p className="text-gray-100 font-semibold text-lg mb-5">
           Book your consultation and get a personalized plan tailored to your goals.
       </p>
 
