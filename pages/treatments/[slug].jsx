@@ -35,6 +35,7 @@ export default function TreatmentPage() {
       <Head>
         <title>{treatment.displayName} | Mave Medical Spa</title>
       </Head>
+      <section className="bg-white">
       <PromoBanner />
       <Header />
       <TreatmentDetails treatment={treatment} />
@@ -44,6 +45,7 @@ export default function TreatmentPage() {
       <ContactCTA/>
       <PromoPackageSection/>
 <Footer />
+</section>
     </>
   );
 }
