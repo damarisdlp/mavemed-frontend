@@ -2,6 +2,7 @@ import "keen-slider/keen-slider.min.css";
 import { useKeenSlider } from "keen-slider/react";
 import Link from "next/link";
 import Image from "next/image";
+import { popularTreatments } from "@/data/treatments";
 
 const treatments = [
   {
@@ -139,16 +140,13 @@ export default function PopularTreatments() {
       )}
 
       <div ref={sliderRef} className="keen-slider overflow-hidden">
-        {treatments.map((treatment, index) => (
-          <div
-            key={index}
-            className="p-2 keen-slider__slide min-h-[475px] sm:min-h-[510px] flex"
-          >
-            <div className="mx-4 h-full flex flex-col bg-[#f9f9f9] rounded-lg overflow-hidden shadow-sm hover:shadow-md transition">
+        {popularTreatments.map((treatment, index) => (
+          <div key={index} className="keen-slider__slide min-h-[475px] flex p-2">
+            <div className="mx-4 flex flex-col bg-[#f9f9f9] rounded-lg overflow-hidden shadow-sm hover:shadow-md transition">
               <div className="relative h-[200px] sm:h-[220px] md:h-[240px] w-full">
                 <Image
                   src={treatment.image}
-                  alt={`${treatment.title} – ${treatment.description}`}
+                  alt={`${treatment.displayName} – ${treatment.description}`}
                   fill
                   className="object-cover"
                 />
@@ -156,22 +154,20 @@ export default function PopularTreatments() {
               <div className="p-4 flex-1 flex flex-col justify-between">
                 <div>
                   <h3 className="text-lg font-serif text-black font-medium mb-1">
-                    {treatment.title}
+                    {treatment.displayName}
                   </h3>
-                  <p className="text-sm text-gray-600 mb-3">
-                    {treatment.description}
-                  </p>
+                  <p className="text-sm text-gray-600 mb-3">{treatment.description}</p>
                 </div>
                 <div className="flex flex-col gap-2">
                   <Link
                     href="https://wa.me/+526642077675"
-                    className="bg-black text-white px-4 py-2 rounded-full text-xs hover:bg-[#731a2f] transition text-center"
+                    className="bg-black text-white px-4 py-2 rounded-full text-xs hover:bg-[#731a2f] text-center"
                   >
                     Book Now
                   </Link>
                   <Link
                     href={`/treatments/${treatment.slug}`}
-                    className="border border-gray-300 text-black px-4 py-2 rounded-full text-xs hover:border-black transition text-center"
+                    className="border border-gray-300 text-black px-4 py-2 rounded-full text-xs hover:border-black text-center"
                   >
                     Learn More
                   </Link>
