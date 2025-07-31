@@ -190,8 +190,8 @@ faq: [
   ],
   treatableAreas: ["Upper lip", "Lower lip", "Cupid's bow", "Vermilion border"],
   pricing: [
-    { zone: "Stylage M with Lidocaine", standardPrice: "$306USD", promoPrice: null, promoNote: ["Price per 1ml syringe","Duration approx 9 to 12 months", "Contains Mannitol (antioxidant) which may help prolong result stability and reduce swelling"]},
-    { zone: "Juvéderm Volift with Lidocaine", standardPrice: "$365USD", promoPrice: null, promoNote: ["Price per 1ml syringe","Duration approx 9 to 12 months","Made with Vycross technology for longer-lasting results and a smooth texture"] },
+    { zone: "Stylage M with Lidocaine", standardPrice: "$306USD", promoPrice: null, promoNote: ["Price per 1ml syringe","Duration approx 9 to 12 months"]},
+    { zone: "Juvéderm Volift with Lidocaine", standardPrice: "$365USD", promoPrice: null, promoNote: ["Price per 1ml syringe","Duration approx 12 to 15 months"] },
   ],
   addOns: [
   {
