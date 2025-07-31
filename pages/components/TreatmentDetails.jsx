@@ -3,6 +3,10 @@ import Image from "next/image";
 import { AccordionToggle } from "./AccordionToggle";
 
 export default function TreatmentDetail({ treatment }) {
+  const showExclusivePricing =
+    treatment.memberPrice &&
+    treatment.memberPrice !== "Not eligible for exclusive pricing";
+
   return (
     <div className="w-full bg-white">
       <div className="grid grid-cols-1 md:grid-cols-[3fr_2fr] min-h-[50vh]">
@@ -18,7 +22,7 @@ export default function TreatmentDetail({ treatment }) {
         </div>
 
         {/* Right: Content */}
-        <div className="w-full px-6 md:px-12 py-5 flex flex-col justify-center">
+        <div className="w-full text-black px-6 md:px-12 py-5 flex flex-col justify-center">
           <div className="mb-4">
             <p className="text-sm text-gray-500">
               <Link href="/treatments" className="hover:underline hover:text-black">
@@ -35,7 +39,7 @@ export default function TreatmentDetail({ treatment }) {
               <span className="text-gray-700 underline">{treatment.displayName}</span>
             </p>
 
-            <h1 className="text-4xl font-serif font-medium mt-2 mb-2">
+            <h1 className="text-4xl font-serif text-black font-medium mt-2 mb-2">
               {treatment.displayName}
             </h1>
             <p className="text-gray-700 text-base leading-relaxed">
@@ -43,10 +47,15 @@ export default function TreatmentDetail({ treatment }) {
             </p>
           </div>
 
-          {/* Button Pricing Tiers */}
-          <div className="grid grid-cols-2 gap-4 mb-6">
+          {/* Pricing Tiers */}
+          <div
+            className={`grid ${
+              showExclusivePricing ? "grid-cols-2" : "grid-cols-1"
+            } gap-4 mb-6`}
+          >
+            {/* Standard */}
             <div className="border p-4 rounded shadow-sm">
-              <h2 className="text-md font-semibold">Standard</h2>
+              <h2 className="text-md font-semibold text-black">Standard</h2>
               <p className="text-gray-700">{treatment.standardPrice}</p>
               <a
                 href="https://wa.me/+526642077675"
@@ -57,16 +66,20 @@ export default function TreatmentDetail({ treatment }) {
                 Book Now
               </a>
             </div>
-            <div className="border p-4 rounded shadow-sm">
-              <h2 className="text-md font-semibold">Exclusive Pricing</h2>
-              <p className="text-gray-700">{treatment.memberPrice}</p>
-              <a
-                href="/membership"
-                className="mt-3 inline-block w-full text-center border border-gray-700 text-gray-800 hover:border-black hover:text-black font-medium py-2 rounded transition duration-200"
-              >
-                Inquire
-              </a>
-            </div>
+
+            {/* Exclusive Pricing - only if valid */}
+            {showExclusivePricing && (
+              <div className="border p-4 rounded shadow-sm">
+                <h2 className="text-md font-semibold text-black">Exclusive Pricing</h2>
+                <p className="text-gray-700">{treatment.memberPrice}</p>
+                <a
+                  href="/membership"
+                  className="mt-3 inline-block w-full text-center border border-gray-700 text-gray-800 hover:border-black hover:text-black font-medium py-2 rounded transition duration-200"
+                >
+                  Inquire
+                </a>
+              </div>
+            )}
           </div>
 
           {/* Notes */}
@@ -106,7 +119,6 @@ export default function TreatmentDetail({ treatment }) {
           <AccordionToggle title="Available Locations">
             <p className="text-gray-700">Tijuana, B.C.</p>
           </AccordionToggle>
-
         </div>
       </div>
     </div>
