@@ -27,7 +27,11 @@ export default function TreatmentCategories() {
     <div className="bg-white">
       <div className="container mx-auto px-4 py-16">
         {categories.map((category, i) => (
-          <div key={i} className="mb-16">
+          <div
+            key={i}
+            id={category.title.replace(/\s+/g, "-").toLowerCase()} // 👈 This is the anchor ID
+            className="mb-16 scroll-mt-60"
+          >
             <h2 className="text-2xl text-black md:text-3xl font-serif font-medium mb-6">
               {category.title}
             </h2>
