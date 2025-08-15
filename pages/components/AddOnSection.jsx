@@ -13,7 +13,7 @@ export default function AddOnSection({ addOns, treatments }) {
 
         return (
           <div key={idx} className="mb-4">
-            <p className="text-md font-semibold">{addon.displayName}</p>
+            <p className="text-md font-semibold">{addonRef.displayName}</p>
             <p className="text-sm text-gray-700">{addon.description}</p>
 
             <p className="text-sm text-gray-700 mt-1">
