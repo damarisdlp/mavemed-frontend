@@ -29,26 +29,25 @@ export const kiaraReju = {
     "Repair fine lines and texture damage"
   ],
   treatableAreas: [
-    "Back of Hands",
-    "Décolleté",
     "Face",
-    "Neck"
+    "Neck",
+    "Décolleté",
   ],
   prices: [
-    { serviceChildName: "Full Face", applicationMethod: "Microneedling", priceType: "standard", price: 190 },
-    { serviceChildName: "Full Face", applicationMethod: "Mesotherapy", priceType: "standard", price: 180 },
-    { serviceChildName: "Full Face", applicationMethod: "Microneedling", priceType: "promo", price: 170 },
-    { serviceChildName: "Full Face", applicationMethod: "Mesotherapy", priceType: "promo", price: 160 },
+    { serviceChildName: "1 Zone (Either Face, Neck, Décolleté)", applicationMethod: "Microneedling", priceType: "standard", price: 190 },
+    { serviceChildName: "1 Zone (Either Face, Neck, Décolleté)", applicationMethod: "Mesotherapy", priceType: "standard", price: 180 },
+    { serviceChildName: "1 Zone (Either Face, Neck, Décolleté)", applicationMethod: "Microneedling", priceType: "promo", price: 170 },
+    { serviceChildName: "1 Zone (Either Face, Neck, Décolleté)", applicationMethod: "Mesotherapy", priceType: "promo", price: 160 },
 
-    { serviceChildName: "Full Face & Neck", applicationMethod: "Microneedling", priceType: "standard", price: 215 },
-    { serviceChildName: "Full Face & Neck", applicationMethod: "Mesotherapy", priceType: "standard", price: 205 },
-    { serviceChildName: "Full Face & Neck", applicationMethod: "Microneedling", priceType: "promo", price: 185 },
-    { serviceChildName: "Full Face & Neck", applicationMethod: "Mesotherapy", priceType: "promo", price: 175 },
+    { serviceChildName: "2 Zones (Choose from Face, Neck, Décolleté)", applicationMethod: "Microneedling", priceType: "standard", price: 215 },
+    { serviceChildName: "2 Zones (Choose from Face, Neck, Décolleté)", applicationMethod: "Mesotherapy", priceType: "standard", price: 205 },
+    { serviceChildName: "2 Zones (Choose from Face, Neck, Décolleté)", applicationMethod: "Microneedling", priceType: "promo", price: 185 },
+    { serviceChildName: "2 Zones (Choose from Face, Neck, Décolleté)", applicationMethod: "Mesotherapy", priceType: "promo", price: 175 },
 
-    { serviceChildName: "Full Face, Neck, & Décolleté", applicationMethod: "Microneedling", priceType: "standard", price: 245 },
-    { serviceChildName: "Full Face, Neck, & Décolleté", applicationMethod: "Mesotherapy", priceType: "standard", price: 235 },
-    { serviceChildName: "Full Face, Neck, & Décolleté", applicationMethod: "Microneedling", priceType: "promo", price: 215 },
-    { serviceChildName: "Full Face, Neck, & Décolleté", applicationMethod: "Mesotherapy", priceType: "promo", price: 205 },
+    { serviceChildName: "3 Zones (Choose from Face, Neck, Décolleté)", applicationMethod: "Microneedling", priceType: "standard", price: 245 },
+    { serviceChildName: "3 Zones (Choose from Face, Neck, Décolleté)", applicationMethod: "Mesotherapy", priceType: "standard", price: 235 },
+    { serviceChildName: "3 Zones (Choose from Face, Neck, Décolleté)", applicationMethod: "Microneedling", priceType: "promo", price: 215 },
+    { serviceChildName: "3 Zones (Choose from Face, Neck, Décolleté)", applicationMethod: "Mesotherapy", priceType: "promo", price: 205 },
   ],
   addOns: [],
   expectations: {
