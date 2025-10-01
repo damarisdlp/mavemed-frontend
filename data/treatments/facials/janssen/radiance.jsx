@@ -1,7 +1,7 @@
 export const janssenRadianceBoost = {
   urlSlug: "facials-janssen-radiance-boost",
   category: "facials",
-  categoryDisplayName: "Facials & Add‑Ons",
+  categoryDisplayName: "Facials",
   serviceDisplayName: "Janssen Radiance Boost Facial",
   isPopular: false,
   isPromoEligible: false,
@@ -13,7 +13,12 @@ export const janssenRadianceBoost = {
     "Brightening antioxidant facial to restore luminosity, even tone, and improve hydration.",
   details:
     "The Radiance Boost Facial uses potent antioxidant serums, hydration masks, and oxygenating techniques to revitalize tired-looking skin. This is your go-to glow facial before any big event or seasonal change.",
-  pricing: {
+  notes: [
+    "Great for dull, dehydrated, or tired skin",
+    "Includes oxygenating and vitamin-rich serums",
+    "No downtime—perfect before events"
+  ],
+    pricing: {
     startingPrice: "$70",
     startingPriceCurrency: "USD",
     promoPrice: "",
@@ -53,7 +58,7 @@ export const janssenRadianceBoost = {
     "Hydrate and plump",
     "Even out skin tone and texture"
   ],
-  treatableAreas: ["Full Face"],
+  treatableAreas: ["Face","Neck","Décolleté"],
   addOns: [
     {
       serviceParent: "Wrinkle Reducer - Botox",
