@@ -17,10 +17,10 @@ export default function PricingTable({ treatment }) {
 
   return (
     <div className="w-full bg-white">
-      <div className="grid grid-cols-1 md:grid-cols-[3fr_2fr] min-h-[80vh]">
+      <div className="grid grid-cols-1 md:grid-cols-[3fr_2fr]">
         
-        {/* Left: Scrollable Content */}
-        <div className="w-full text-black px-6 md:px-12 py-5 overflow-y-scroll h-[80vh]">
+        {/* Left: Dynamic Height Content */}
+        <div className="w-full max-w-3xl mx-auto text-black px-6 md:px-12 py-5">
           <h1 className="text-4xl font-serif font-medium mb-3">
             Pricing Options & Packages
           </h1>
@@ -67,16 +67,16 @@ export default function PricingTable({ treatment }) {
           )}
         </div>
 
-        {/* Right: Static Image */}
-        <div className="relative w-full h-[80vh]">
-          <Image
-            src={treatment.images?.secondary || "/placeholder.jpg"}
-            alt={`Treatment image for ${treatment.serviceDisplayName}`}
-            fill
-            className="object-cover [object-position:center_10%] [object-position:0%_60%]"
-            priority
-          />
-        </div>
+{/* Right: Dynamically Sized Image */}
+<div className="relative w-full h-full min-h-[400px] md:min-h-[600px]">
+  <Image
+    src={treatment.images?.secondary || "/placeholder.jpg"}
+    alt={`Treatment image for ${treatment.serviceDisplayName}`}
+    fill
+    className="object-cover object-center"
+    priority
+  />
+</div>
       </div>
     </div>
   );
