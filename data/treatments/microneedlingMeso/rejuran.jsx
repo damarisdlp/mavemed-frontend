@@ -2,13 +2,21 @@ export const rejuran = {
   slug: "rejuran",
   category: "mesotherapy",
   categoryDisplayName: "Mesotherapy & Growth Factor Infusions",
-  serviceDisplayName: "Rejuran Healer (PN/PDRN Skin Rejuvenation)",
+  serviceParentName: "Rejuran Healer (PN/PDRN Skin Rejuvenation)",
+  currency: "USD",
   isPopular: true,
   isPromoEligible: true,
   image: "/rejuran.jpg",
   image2: "/rejuran2.jpg",
   description:
     "Rejuran Healer uses polynucleotides (PN/PDRN) derived from salmon DNA to stimulate cellular repair, boost collagen, and restore skin integrity. Ideal for acne scars, dull or aging skin, and post-procedure recovery.",
+  protocol: {
+    recommendedSessions: 3,
+    intervalWeeks: [3,4],
+  },
+  promoInfo: {
+    numberOfSessions: 2,
+  },
   notes: [
     "A full protocol includes 2 sessions spaced 3–4 weeks apart",
     "May be injected or applied topically post-RF or microneedling",
@@ -25,73 +33,20 @@ export const rejuran = {
     "Full Face",
     "Neck",
     "Décolleté",
-    "Under Eyes",
-    "Acne Scars"
   ],
-  pricing: [
-    {
-      serviceChildName: "Rejuran - Full Face",
-      isPromoEligible: true,
-      standardPrice: [
-        {
-          applicationMethod: "Injection",
-          price: "300",
-          currency: "USD"
-        }
-      ],
-      promoPrice: [
-        {
-          applicationMethod: "Injection",
-          price: "285",
-          currency: "USD"
-        }
-      ],
-      notes: [
-        "2-session protocol recommended for optimal collagen stimulation"
-      ]
-    },
-    {
-      serviceChildName: "Rejuran - Full Face + Neck",
-      isPromoEligible: true,
-      standardPrice: [
-        {
-          applicationMethod: "Injection",
-          price: "405",
-          currency: "USD"
-        }
-      ],
-      promoPrice: [
-        {
-          applicationMethod: "Injection",
-          price: "370",
-          currency: "USD"
-        }
-      ],
-      notes: [
-        "Pricing reflects combination zone discount for 2-session package"
-      ]
-    },
-    {
-      serviceChildName: "Rejuran - Full Face + Neck + Décolleté",
-      isPromoEligible: true,
-      standardPrice: [
-        {
-          applicationMethod: "Injection",
-          price: "520",
-          currency: "USD"
-        }
-      ],
-      promoPrice: [
-        {
-          applicationMethod: "Injection",
-          price: "400",
-          currency: "USD"
-        }
-      ],
-      notes: [
-        "Best for full rejuvenation protocol across 3 anatomical zones"
-      ]
-    }
+  prices: [
+    { serviceChildName: "Full Face",applicationMethod: "Microneedling", priceType: "standard", price: 300},
+    { serviceChildName: "Full Face",applicationMethod: "Mesotherapy", priceType: "standard", price: 300},
+    { serviceChildName: "Full Face",applicationMethod: "Microneedling", priceType: "standard", price: 300},
+    { serviceChildName: "Full Face",applicationMethod: "Mesotherapy", priceType: "standard", price: 300},
+
+    { serviceChildName: "Neck",applicationMethod: "Microneedling", priceType: "standard", price: 300},
+    { serviceChildName: "Neck",applicationMethod: "Mesotherapy", priceType: "standard", price: 300},
+    { serviceChildName: "Neck",applicationMethod: "Microneedling", priceType: "standard", price: 300},
+    { serviceChildName: "Neck",applicationMethod: "Mesotherapy", priceType: "standard", price: 300},
+
+    { serviceChildName: "Décolleté",applicationMethod: "Microneedling", priceType: "standard", price: 300},
+
   ],
   addOns: [
     {

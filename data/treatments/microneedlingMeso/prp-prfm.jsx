@@ -30,41 +30,41 @@ export const prp = {
     "Stimulate collagen for long-term skin quality"
   ],
   treatableAreas: [
-    "Under Eyes - Mesotherapy Only",
-    "Full Face",
+    "Face",
     "Neck",
     "Décolleté",
+    "Back of Hands",
+    "Under Eyes - Mesotherapy Only",
     "Scalp (for hair restoration)",
-    "Stretch Marks - Medium Zone (e.g: lower abdomen):",
-    "Back of Hands"
+    "Stretch Marks - Medium Size Zone (e.g: Lower Abdomen):"
   ],
   prices: [
-    { serviceChildName: "Full Face", applicationMethod: "Microneedling", priceType: "standard", price: 165 },
-    { serviceChildName: "Full Face", applicationMethod: "Mesotherapy", priceType: "standard", price: 180 },
-    { serviceChildName: "Full Face", applicationMethod: "Microneedling", priceType: "promo", price: 170 },
-    { serviceChildName: "Full Face", applicationMethod: "Mesotherapy", priceType: "promo", price: 160 },
+    { serviceChildName: "1 Zone (Either Face, Neck, Décolleté)", applicationMethod: "Microneedling", priceType: "standard", price: 165 },
+    { serviceChildName: "1 Zone (Either Face, Neck, Décolleté)", applicationMethod: "Mesotherapy", priceType: "standard", price: 180 },
+    { serviceChildName: "1 Zone (Either Face, Neck, Décolleté)", applicationMethod: "Microneedling", priceType: "promo", price: 170 },
+    { serviceChildName: "1 Zone (Either Face, Neck, Décolleté)", applicationMethod: "Mesotherapy", priceType: "promo", price: 160 },
 
-    { serviceChildName: "Full Face & Neck", applicationMethod: "Microneedling", priceType: "standard", price: 180 },
-    { serviceChildName: "Full Face & Neck", applicationMethod: "Mesotherapy", priceType: "standard", price: 205 },
-    { serviceChildName: "Full Face & Neck", applicationMethod: "Microneedling", priceType: "promo", price: 185 },
-    { serviceChildName: "Full Face & Neck", applicationMethod: "Mesotherapy", priceType: "promo", price: 175 },
+    { serviceChildName: "2 Zones (Choose from Face, Neck, Décolleté)", applicationMethod: "Microneedling", priceType: "standard", price: 180 },
+    { serviceChildName: "2 Zones (Choose from Face, Neck, Décolleté)", applicationMethod: "Mesotherapy", priceType: "standard", price: 205 },
+    { serviceChildName: "2 Zones (Choose from Face, Neck, Décolleté)", applicationMethod: "Microneedling", priceType: "promo", price: 185 },
+    { serviceChildName: "2 Zones (Choose from Face, Neck, Décolleté)", applicationMethod: "Mesotherapy", priceType: "promo", price: 175 },
 
-    { serviceChildName: "Full Face, Neck, & Décolleté", applicationMethod: "Microneedling", priceType: "standard", price: 195 },
-    { serviceChildName: "Full Face, Neck, & Décolleté", applicationMethod: "Mesotherapy", priceType: "standard", price: 235 },
-    { serviceChildName: "Full Face, Neck, & Décolleté", applicationMethod: "Microneedling", priceType: "promo", price: 215 },
-    { serviceChildName: "Full Face, Neck, & Décolleté", applicationMethod: "Mesotherapy", priceType: "promo", price: 205 },
+    { serviceChildName: "3 Zones (Choose from Face, Neck, Décolleté)", applicationMethod: "Microneedling", priceType: "standard", price: 195 },
+    { serviceChildName: "3 Zones (Choose from Face, Neck, Décolleté)", applicationMethod: "Mesotherapy", priceType: "standard", price: 235 },
+    { serviceChildName: "3 Zones (Choose from Face, Neck, Décolleté)", applicationMethod: "Microneedling", priceType: "promo", price: 215 },
+    { serviceChildName: "3 Zones (Choose from Face, Neck, Décolleté)", applicationMethod: "Mesotherapy", priceType: "promo", price: 205 },
 
     { serviceChildName: "Back of Hands", applicationMethod: "Microneedling", priceType: "standard", price: 120 },
     { serviceChildName: "Back of Hands", applicationMethod: "Microneedling", priceType: "promo", price: 105 },
 
-    { serviceChildName: "Under Eyes", applicationMethod: "Mesotherapy", priceType: "standard", price: 100 },
-    { serviceChildName: "Under Eyes", applicationMethod: "Mesotherapy", priceType: "promo", price: 95 },
+    { serviceChildName: "Under Eyes - Mesotherapy Only", applicationMethod: "Mesotherapy", priceType: "standard", price: 100 },
+    { serviceChildName: "Under Eyes - Mesotherapy Only", applicationMethod: "Mesotherapy", priceType: "promo", price: 95 },
 
-    { serviceChildName: "Scalp (for hair restoration)", applicationMethod: "Mesotherapy", priceType: "standard", price: 145 },
-    { serviceChildName: "Scalp (for hair restoration)", applicationMethod: "Mesotherapy", priceType: "promo", price: 125 },
+    { serviceChildName: "Scalp (for hair restoration) - Mesotherapy Only", applicationMethod: "Mesotherapy", priceType: "standard", price: 145 },
+    { serviceChildName: "Scalp (for hair restoration) - Mesotherapy Only", applicationMethod: "Mesotherapy", priceType: "promo", price: 125 },
 
-    { serviceChildName: "Stretch Marks", applicationMethod: "Microneedling", priceType: "standard", price: 115 },
-    { serviceChildName: "Stretch Marks", applicationMethod: "Microneedling", priceType: "promo", price: 105 },
+    { serviceChildName: "Stretch Marks - Medium Size Zone (e.j: Lower Abdomen)", applicationMethod: "Microneedling", priceType: "standard", price: 115 },
+    { serviceChildName: "Stretch Marks - Medium Size Zone (e.j: Lower Abdomen)", applicationMethod: "Microneedling", priceType: "promo", price: 105 },
   ],
   addOns: [],
   expectations: {

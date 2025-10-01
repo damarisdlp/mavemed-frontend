@@ -174,25 +174,4 @@ export const staff = [
       },
     ],
 },
-{
-    name: "gabi",
-    displayName: "Gabi",
-    title: "Receptionist",
-    image: "/zury.jpg",
-    bio: "Damaris oversees operations, strategy, and patient experience across Mave with a commitment to excellence and integrity...",
-    favorites: [
-      {
-        name: "Cheek Filler",
-        price: 890,
-        memberPrice: 800,
-        link: "/services/cheek-filler",
-      },
-      {
-        name: "Aquagold",
-        price: 585,
-        memberPrice: 530,
-        link: "/services/aquagold",
-      },
-    ],
-}
 ];
