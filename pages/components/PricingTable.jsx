@@ -31,31 +31,40 @@ export default function PricingTable({ treatment }) {
           {/* Package / General Zones Pricing */}
           {pricingOptions.length > 0 && (
             <div className="space-y-4 mb-8">
-              {pricingOptions.map((p, idx) => (
-                <div
-                  key={`zone-${idx}`}
-                  className="flex flex-row justify-between items-start bg-[#f9f9f9] border p-4 rounded-lg shadow-sm hover:shadow-md transition"
-                >
-                  <div className="text-lg font-medium">{p.optionName}</div>
-                  <div className="text-sm leading-6 text-left max-w-[60%]">
-                    <p>
-                      <span className="font-semibold">Price:</span> {p.optionPrice} {p.optionCurrency}
-                    </p>
-                    {p.optionPromoPrice && (
+              {pricingOptions.map((p, idx) => {
+                const showPromo =
+                  p.isPromoEligible === true &&
+                  typeof p.optionPromoPrice === "string" &&
+                  p.optionPromoPrice.trim() !== "";
+
+                return (
+                  <div
+                    key={`zone-${idx}`}
+                    className="flex flex-row justify-between items-start bg-[#f9f9f9] border p-4 rounded-lg shadow-sm hover:shadow-md transition"
+                  >
+                    <div className="text-lg font-medium">{p.optionName}</div>
+                    <div className="text-sm leading-6 text-left max-w-[60%]">
                       <p>
-                        <span className="font-semibold">Exclusive Pricing:</span> {p.optionPromoPrice} {p.optionCurrency}
+                        <span className="font-semibold">Price:</span>{" "}
+                        {p.optionPrice} {p.optionCurrency}
                       </p>
-                    )}
-                    {p.notes?.length > 0 && (
-                      <ul className="mt-1 text-xs text-gray-600 italic list-disc list-inside">
-                        {p.notes.map((note, i) => (
-                          <li key={i}>{note}</li>
-                        ))}
-                      </ul>
-                    )}
+                      {showPromo && (
+                        <p>
+                          <span className="font-semibold">Exclusive Pricing:</span>{" "}
+                          {p.optionPromoPrice} {p.optionCurrency}
+                        </p>
+                      )}
+                      {p.notes?.length > 0 && (
+                        <ul className="mt-1 text-xs text-gray-600 italic list-disc list-inside">
+                          {p.notes.map((note, i) => (
+                            <li key={i}>{note}</li>
+                          ))}
+                        </ul>
+                      )}
+                    </div>
                   </div>
-                </div>
-              ))}
+                );
+              })}
             </div>
           )}
 
@@ -67,16 +76,16 @@ export default function PricingTable({ treatment }) {
           )}
         </div>
 
-{/* Right: Dynamically Sized Image */}
-<div className="relative w-full h-full min-h-[400px] md:min-h-[600px]">
-  <Image
-    src={treatment.images?.secondary || "/placeholder.jpg"}
-    alt={`Treatment image for ${treatment.serviceDisplayName}`}
-    fill
-    className="object-cover object-center"
-    priority
-  />
-</div>
+        {/* Right: Dynamically Sized Image */}
+        <div className="relative w-full h-full min-h-[400px] md:min-h-[600px]">
+          <Image
+            src={treatment.images?.secondary || "/placeholder.jpg"}
+            alt={`Treatment image for ${treatment.serviceDisplayName}`}
+            fill
+            className="object-cover object-center"
+            priority
+          />
+        </div>
       </div>
     </div>
   );
