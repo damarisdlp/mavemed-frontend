@@ -1,7 +1,7 @@
 export const casmaraPurifying = {
   urlSlug: "casmara-purifying",
   category: "facials",
-  categoryDisplayName: "Facials & Add‑Ons",
+  categoryDisplayName: "Facials",
   serviceDisplayName: "Casmara Purifying Algae Facial",
   isPopular: true,
   isPromoEligible: false,
@@ -13,6 +13,11 @@ export const casmaraPurifying = {
   "A detoxifying facial treatment featuring Casmara’s purifying algae mask to target oily, acne-prone, and congested skin. This clarifying facial soothes inflammation and restores skin balance.",
   details: 
   "The Casmara Purifying Algae Facial is a professional-grade treatment designed to cleanse and rebalance oily, acne-prone, or inflamed skin. This facial includes steam, manual extractions, and high-frequency therapy when needed. The purifying algae mask helps reduce oil production, calm irritation, and decongest clogged pores for clearer, healthier skin.",
+  notes: [
+          "Includes manual extractions and optional high-frequency therapy",
+          "Ideal for teens, oily or acne-prone skin, and congested pores",
+          "Soothing formula helps calm redness and inflammation"
+        ],
   pricing: {
     startingPrice: "$85",
     startingPriceCurrency: "USD",
@@ -25,11 +30,7 @@ export const casmaraPurifying = {
         optionPrice: "$85",
         optionCurrency: "USD",
         optionPromoPrice: "",
-        notes: [
-          "Includes manual extractions and optional high-frequency therapy",
-          "Ideal for teens, oily or acne-prone skin, and congested pores",
-          "Soothing formula helps calm redness and inflammation"
-        ]
+        notes: null
       }
     ]
   },
