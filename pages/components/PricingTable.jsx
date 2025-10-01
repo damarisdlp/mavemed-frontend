@@ -39,11 +39,11 @@ export default function PricingTable({ treatment }) {
                   <div className="text-lg font-medium">{p.optionName}</div>
                   <div className="text-sm leading-6 text-left max-w-[60%]">
                     <p>
-                      <span className="font-semibold">Price:</span> {p.optionPrice}
+                      <span className="font-semibold">Price:</span> {p.optionPrice} {p.optionCurrency}
                     </p>
                     {p.optionPromoPrice && (
                       <p>
-                        <span className="font-semibold">Exclusive Pricing:</span> {p.optionPromoPrice}
+                        <span className="font-semibold">Exclusive Pricing:</span> {p.optionPromoPrice} {p.optionCurrency}
                       </p>
                     )}
                     {p.notes?.length > 0 && (

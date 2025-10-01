@@ -55,7 +55,7 @@ export default function TreatmentDetail({ treatment }) {
           <div className={`grid ${hasPromo ? "grid-cols-2" : "grid-cols-1"} gap-4 mb-6`}>
             <div className="border p-4 rounded shadow-sm">
               <h2 className="text-md font-semibold text-black">Price</h2>
-              <p className="text-gray-700">{pricing.startingPrice}</p>
+              <p className="text-gray-700">{pricing.startingPrice} {pricing.startingPriceCurrency}</p>
               <a
                 href="https://wa.me/+526642077675"
                 target="_blank"
@@ -69,7 +69,7 @@ export default function TreatmentDetail({ treatment }) {
             {hasPromo && (
               <div className="border p-4 rounded shadow-sm">
                 <h2 className="text-md font-semibold text-black">Exclusive Pricing</h2>
-                <p className="text-gray-700">{pricing.promoPrice}</p>
+                <p className="text-gray-700">{pricing.promoPrice} {pricing.promoPriceCurrency}</p>
                 <a
                   href="https://wa.me/+526642077675"
                   className="mt-3 inline-block w-full text-center border border-gray-700 text-gray-800 hover:border-black hover:text-black font-medium py-2 rounded transition duration-200"

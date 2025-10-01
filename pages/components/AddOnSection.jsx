@@ -31,12 +31,13 @@ export default function AddOnSection({ addOns }) {
             {addon?.pricing && (
               <p className="text-sm text-gray-700 mt-1">
                 <span className="font-semibold">Price:</span>{" "}
-                {addon.pricing.startingPrice}
+                {addon.pricing.startingPrice} {addon.pricing.startingPriceCurrency}
                 {addon.isPromoEligible && addon.pricing.promoPrice && (
                   <>
                     {" "} |{" "}
                     <span className="font-semibold">Exclusive Pricing:</span>{" "}
-                    {addon.pricing.promoPrice}
+                    {addon.pricing.promoPrice} {addon.pricing.promoPriceCurrency}
+
                   </>
                 )}
               </p>

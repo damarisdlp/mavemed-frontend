@@ -14,14 +14,18 @@ export const botox = {
   details:
   "Neuromodulator injections temporarily relax facial muscles to smooth fine lines and dynamic wrinkles, enhancing skin texture and creating a more youthful, natural-looking appearance.",
   pricing: {
-    startingPrice: "$6.25 USD / unit",
-    promoPrice: "$250 USD / 45 units",
+    startingPrice: "$6.25 / Unit",
+    startingPriceCurrency: "USD",
+    promoPrice: "$250 / 45 units",
+    promoPriceCurrency: "USD",
     options: [
       {
         optionName: "Any Zone",
         isPromoEligible: true,
-        optionPrice: "$6.25 USD / unit",
-        optionPromoPrice: "$250 USD / 45 units",
+        optionPrice: "$6.25",
+        optionCurrency: "USD",
+        optionPromoPrice: "$250 / 45 units",
+        optionPromoPriceCurrency: "USD",
         notes: [
           "Purchasing under the exclusive price grants patient access to a per-unit rate at the respective exclusive per-unit price",
           "Touch-ups at this rate are only applicable within 1-2 weeks after initial application at the ",
@@ -60,7 +64,7 @@ export const botox = {
     },
     {
       serviceParent: "Casmara Purifying Algae Facial",
-      serviceChild:  null,
+      serviceChild:  "Casmara Purifying Algae Facial",
       displayName:   "Casmara Purifying Algae Facial",
       link:          "/treatments/casmara-purifying"
     }
