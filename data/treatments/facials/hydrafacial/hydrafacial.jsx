@@ -1,7 +1,7 @@
 export const hydrafacial = {
   urlSlug: "hydrafacial",
   category: "facials",
-  categoryDisplayName: "Facials & Add‑Ons",
+  categoryDisplayName: "Facials",
   serviceDisplayName: "HydraFacial MD",
   isPopular: true,
   isPromoEligible: false,
@@ -13,42 +13,43 @@ export const hydrafacial = {
   "Experience a medical-grade HydraFacial in Tijuana featuring patented Vortex-Fusion® technology for deep pore cleansing, painless extractions, and intense skin hydration. Perfect for acne-prone, dry, or congested skin.",
   details: 
   "HydraFacial MD is a multi-step, medical-grade facial that uses patented Vortex-Fusion® technology to deeply cleanse, exfoliate, and infuse hydrating serums into the skin. It’s ideal for clients with acne-prone, dull, or congested complexions seeking clearer, more radiant skin.",
+  notes: [
+          "No downtime — makeup can be applied the same day",
+          "Safe for all skin tones and sensitive skin types",
+          "Includes optional manual extractions when needed"
+        ],
   pricing: {
-    startingPrice: "$95 USD",
+    startingPrice: "$95",
+    startingPriceCurrency: "USD",
     promoPrice: "",
+    promoPriceCurrency: "USD",
     options: [
       {
         optionName: "Hydrafacial MD - Face",
         isPromoEligible: false,
-        optionPrice: "$95 USD",
+        optionPrice: "$95",
+        optionCurrency: "USD",
         optionPromoPrice: "",
-        notes: [
-          "No downtime — makeup can be applied the same day",
-          "Safe for all skin tones and sensitive skin types",
-          "Includes optional manual extractions when needed"
-        ]
+        optionPromoPriceCurrency: "USD",
+        notes: null
       },
       {
         optionName: "Hydrafacial MD - Shoulders",
         isPromoEligible: false,
-        optionPrice: "$TBD USD",
+        optionPrice: "$TBD",
+        optionCurrency: "USD",
         optionPromoPrice: "",
-        notes: [
-          "No downtime",
-          "Safe for all skin tones and sensitive skin types",
-          "Includes optional manual extractions when needed"
-        ]
+        optionPromoPriceCurrency: "USD",
+        notes: null
       },
       {
         optionName: "Hydrafacial MD - Upper Back",
         isPromoEligible: false,
-        optionPrice: "$TBD USD",
+        optionPrice: "$TBD",
+        optionCurrency: "USD",
         optionPromoPrice: "",
-        notes: [
-          "No downtime",
-          "Safe for all skin tones and sensitive skin types",
-          "Includes optional manual extractions when needed"
-        ]
+        optionPromoPriceCurrency: "USD",
+        notes: null
       }
     ]
   },
