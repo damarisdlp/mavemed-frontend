@@ -1,7 +1,7 @@
 export const casmaraInfinity = {
   urlSlug: "casmara-infinity",
   category: "facials",
-  categoryDisplayName: "Facials & Add‑Ons",
+  categoryDisplayName: "Facials",
   serviceDisplayName: "Casmara Infinity Anti‑Aging Facial",
   isPopular: false,
   isPromoEligible: false,
@@ -13,6 +13,10 @@ export const casmaraInfinity = {
   "Luxury anti-aging facial with growth factors, peptides, and Casmara's exclusive Infinity serum for firming and lifting mature skin.",
   details: 
   "This high-end anti-aging protocol combines biomimetic peptides, firming actives, and Casmara’s potent Infinity serum to visibly firm, hydrate, and restore mature skin. Includes facial massage and lifting mask for enhanced effect.",
+  notes: [
+          "Great for special events or regular anti-aging maintenance",
+          "Leaves skin glowing, firmer, and deeply nourished"
+        ],
   pricing: {
     startingPrice: "$95",
     startingPriceCurrency: "USD",
@@ -26,10 +30,7 @@ export const casmaraInfinity = {
         optionCurrency: "USD",
         optionPromoPrice: "",
         optionPromoPriceCurrency: "USD",
-        notes: [
-          "Great for special events or regular anti-aging maintenance",
-          "Leaves skin glowing, firmer, and deeply nourished"
-        ]
+        notes: null
       },
     ]
   },
