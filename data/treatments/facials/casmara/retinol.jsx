@@ -1,7 +1,7 @@
 export const casmaraRetinolProAge = {
   urlSlug: "casmara-retinol-proage",
   category: "facials",
-  categoryDisplayName: "Facials & Add‑Ons",
+  categoryDisplayName: "Facials",
   serviceDisplayName: "Casmara Retinol Pro‑Age Facial",
   isPopular: false,
   isPromoEligible: true,
@@ -13,7 +13,12 @@ export const casmaraRetinolProAge = {
     "Professional-strength retinol treatment designed to promote cellular renewal, improve texture, and reduce fine lines.",
   details:
     "Casmara’s Pro-Age facial uses a high-potency 0.3% retinol complex to deeply renew the skin. Ideal for mature or sun-damaged skin in need of resurfacing and hydration. Includes antioxidants and post-treatment recovery mask.",
-  pricing: {
+  notes: [
+          "Mild flaking may occur after treatment",
+          "Not suitable for use with other retinol products at home",
+          "Safe for aging skin, sun damage, and uneven tone"
+        ],
+    pricing: {
     startingPrice: "$90",
     startingPriceCurrency: "USD",
     promoPrice: "",
@@ -26,11 +31,7 @@ export const casmaraRetinolProAge = {
         optionCurrency: "USD",
         optionPromoPrice: "",
         optionPromoPriceCurrency: "USD",
-        notes: [
-          "Mild flaking may occur after treatment",
-          "Not suitable for use with other retinol products at home",
-          "Safe for aging skin, sun damage, and uneven tone"
-        ],
+        notes: null
       },
     ],
   },
