@@ -67,7 +67,19 @@ export const botox = {
       serviceChild:  "Casmara Purifying Algae Facial",
       displayName:   "Casmara Purifying Algae Facial",
       link:          "/treatments/casmara-purifying"
-    }
+    },
+    {
+      serviceParent: "Casmara Infinity Anti‑Aging Facial",
+      serviceChild:  "Casmara Infinity Anti‑Aging Facial",
+      displayName:   "Casmara Infinity Anti‑Aging Facial",
+      link:          "/treatments/casmara-infinity"
+    },
+    {
+      serviceParent: "Casmara Retinol Pro‑Age Facial",
+      serviceChild:  "Casmara Retinol Pro‑Age Facial",
+      displayName:   "Casmara Retinol Pro‑Age Facial",
+      link:          "/treatments/casmara-retinol"
+    },
   ],
   expectations: {
     preTreatment: [
