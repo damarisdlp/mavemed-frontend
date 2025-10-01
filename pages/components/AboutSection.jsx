@@ -14,7 +14,6 @@ export default function AboutSection() {
     { name: "Manuel", title: "Cosmetologist & Masseur", image: "/manuel.jpg" },
     { name: "Mayra", title: "Cosmetologist", image: "/mayra.jpg" },
     { name: "Zury", title: "Receptionist", image: "/zury.jpg" },
-    { name: "Gabi", title: "Receptionist", image: "/gabi.jpg" },
   ];
 
   const [sliderRef, slider] = useKeenSlider({
