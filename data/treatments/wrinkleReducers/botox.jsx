@@ -78,7 +78,7 @@ export const botox = {
       serviceParent: "Casmara Retinol Pro‑Age Facial",
       serviceChild:  "Casmara Retinol Pro‑Age Facial",
       displayName:   "Casmara Retinol Pro‑Age Facial",
-      link:          "/treatments/casmara-retinol"
+      link:          "/treatments/casmara-retinol-proage"
     },
   ],
   expectations: {
