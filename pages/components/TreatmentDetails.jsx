@@ -4,8 +4,8 @@ import { AccordionToggle } from "./AccordionToggle";
 
 export default function TreatmentDetail({ treatment }) {
   const showExclusivePricing =
-    treatment.memberPrice &&
-    treatment.memberPrice !== "Not eligible for exclusive pricing";
+    treatment.promoPrice &&
+    treatment.promoPrice !== "";
 
   return (
     <div className="w-full bg-white">
@@ -71,7 +71,7 @@ export default function TreatmentDetail({ treatment }) {
             {showExclusivePricing && (
               <div className="border p-4 rounded shadow-sm">
                 <h2 className="text-md font-semibold text-black">Exclusive Pricing</h2>
-                <p className="text-gray-700">{treatment.memberPrice}</p>
+                <p className="text-gray-700">{treatment.promoPrice}</p>
                 <a
                   href="/membership"
                   className="mt-3 inline-block w-full text-center border border-gray-700 text-gray-800 hover:border-black hover:text-black font-medium py-2 rounded transition duration-200"

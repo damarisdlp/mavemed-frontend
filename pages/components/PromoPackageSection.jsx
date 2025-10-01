@@ -24,11 +24,11 @@ export default function PromoPackageSection() {
             <ul className="space-y-6 text-base md:text-lg text-gray-700 text-left">
               <li className="flex items-start gap-4">
                 <Image src="/money-icon.png" alt="Special pricing on bundles" width={30} height={30} />
-                <span><strong>Special pricing on bundled services</strong> - including collagen stimulators (like Sculptra), RF microneedling (Scarlet RF), Ultraformer, fillers, PDO threads, and more.</span>
+                <span><strong>Special pricing on bundled services</strong> which include Collagen Stimulators (like Sculptra), RF Microneedling (Scarlet S RF), Ultraformer MPT, Dermal Fillers, PDO Threads, and more.</span>
               </li>
               <li className="flex items-start gap-4">
                 <Image src="/percent-icon.png" alt="20% deposit" width={30} height={30} />
-                <span><strong>Only 20% deposit required per session</strong> - skip the financial pressure of full prepayment. Your deposit is fully credited toward your next visit.</span>
+                <span><strong>Only 20% deposit required per session</strong> so you can skip the financial pressure of full prepayment. Your deposit is fully credited toward your next visit.</span>
               </li>
               <li className="flex items-start gap-4">
                 <Image src="/sparkle-icon.png" alt="20% deposit" width={30} height={30} />
@@ -40,7 +40,7 @@ export default function PromoPackageSection() {
               </li>
               <li className="flex items-start gap-4">
                 <Image src="/date-icon.png" alt="Custom plan" width={30} height={30} />
-                <span><strong>VIP treatment perks</strong> — including priority scheduling, complimentary upgrades, bonus boosters, and access to limited-time med spa promotions.</span>
+                <span><strong>VIP treatment perks</strong> which include priority scheduling, complimentary upgrades, bonus boosters, and access to limited-time medical spa promotions.</span>
               </li>
             </ul>
 

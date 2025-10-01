@@ -11,8 +11,8 @@ export const treatments = [
     image2: "/botox2.jpg",
     description:
       "Reduce the appearance of fine lines and wrinkles for a smoother, more refreshed look.",
-    standardPrice: "Price varies per zone",
-    memberPrice: "Price varies per zone",
+    standardPrice: "$6.25 USD / unit",
+    promoPrice: "$250 USD / 45 units",
     notes: [
       "Only new patients receive exclusive welcome-prices",
       "Established patients receive exclusive maintenance tier pricing",
@@ -45,113 +45,12 @@ export const treatments = [
   {
     zone:             "Forehead",
     isPromoEligibe:   true,
-    standardPrice:    "$86 USD",
-    promoPrice:       "$78 USD"
-  },
-  {
-    zone:             "Frown Lines (Glabella)",
-    isPromoEligibe:   true,
-    standardPrice:    "$145 USD",
-    promoPrice:       "$130 USD"
-  },
-  {
-    zone:             "Crow’s Feet",
-    isPromoEligibe:   true,
-    standardPrice:    "$139 USD",
-    promoPrice:       "$126 USD"
-  },
-  {
-    zone:             "Bunny Lines",
-    isPromoEligibe:   true,
-    standardPrice:    "$48 USD",
-    promoPrice:       "$45 USD"
-  },
-  {
-    zone:             "Chin Dimples",
-    isPromoEligibe:   true,
-    standardPrice:    "$45 USD",
-    promoPrice:       "$40 USD"
-  },
-  {
-    zone:             "Perioral Lines",
-    isPromoEligibe:   false,
-    standardPrice:    "$46 USD",
-    promoPrice:       null
-  },
-  {
-    zone:             "Lip Flip (Gummy Smile)",
-    isPromoEligibe:   true,
-    standardPrice:    "$45 USD",
-    promoPrice:       "$40 USD",
-    notes:            ["Only available as part of Perioral Package"]
-  },
-  {
-    zone:             "Downturned Corners",
-    isPromoEligibe:   true,
-    standardPrice:    "$45 USD",
-    promoPrice:       "$40 USD",
-    notes:            ["Only available as part of Perioral Package"]
-  },
-  {
-    zone:             "Eyebrow Lift",
-    isPromoEligibe:   false,
-    standardPrice:    "$30 USD",
-    promoPrice:       null
-  },
-  {
-    zone:             "Masseters",
-    isPromoEligibe:   false,
-    standardPrice:    "$225 USD",
-    promoPrice:       null
-  },
-  {
-    zone:             "Neck Bands",
-    isPromoEligibe:   false,
-    standardPrice:    "$340 USD",
-    promoPrice:       null
-  },
-  {
-    zone:             "Axillary Hyperhidrosis",
-    isPromoEligibe:   false,
-    standardPrice:    "$570 USD",
-    promoPrice:       null
-  },
-  {
-    zone:             "Palmar Hyperhidrosis",
-    isPromoEligibe:   false,
-    standardPrice:    "$570 USD",
-    promoPrice:       null
-  },
-  {
-    zone:             "Perioral Package",
-    isPromoEligibe:   true,
-    standardPrice:    "$135 USD",
-    promoPrice:       "$120 USD",
+    standardPrice:    "$6.25 USD / unit",
+    promoPrice:       "$250 USD / 45 units",
     notes:            [
-      "Includes gummy smile, mouth elevators, and chin dimples"
+      "Purchasing under the promo price grants patient access to a touch-up within 1-2 weeks after initial application at the respective promo per unit rate"
     ]
   },
-  {
-    zone:             "Maintenance of Superior Third",
-    isPromoEligibe:   false,
-    standardPrice:    "$260 USD",
-    promoPrice:       null,
-    notes:            [
-      "Appointment must be within 4-5 months of initial application",
-      "Includes forehead, frown lines (glabella), and crow's feet"
-    ]
-  },
-  {
-    zone:             "Maintenance of Individual Zone",
-    isPromoEligibe:   false,
-    standardPrice:    "$70 USD",
-    promoPrice:       null,
-    notes:            [
-      "Appointment must be within 4–5 months of initial application",
-      "Applicable to any zone",
-      "Zones may be combined at the doctor's discretion based on evaluation"
-    ]
-  }
 ],
     addOns: [
       {
@@ -159,8 +58,8 @@ export const treatments = [
         link: "/treatments/hydrafacial"
       },
       {
-        name: "Casmara Purifying Facial Treatment",
-        link: "/treatments/casmara-purifying-treatment"
+        name: "Casmara Purifying Algae Facial",
+        link: "/treatments/casmara-purifying"
       }
     ],
     expectations: [
@@ -2370,8 +2269,8 @@ faq: [
   image: "/body.jpg",
   image2: "/body2.jpg",
   description: "Therapeutic cupping paired with massage to enhance circulation, relieve tension, and support detoxification.",
-  standardPrice: "$25USD",
-  memberPrice: "$20USD",
+  standardPrice: "$25 USD",
+  promoPrice: "",
   notes: [
     "Add-on service only, not available as a standalone treatment",
     "May leave temporary circular marks on the skin",
@@ -2389,12 +2288,16 @@ faq: [
     "Thighs"
   ],
   pricing: [
-    { zone: "Single Area (Add‑On)", standardPrice: "$25USD", promoPrice: "$20USD" }
+    { zone: "Single Area (Add‑On)", standardPrice: "$10 USD", promoPrice: "" }
   ],
   expectations: [
     {
       label: "Pre-Treatment",
-      note: "Wear loose clothing. Notify your provider of any skin conditions or medications that affect clotting."
+      note: "Wear loose clothing."
+    },
+    {
+      label: "Pre-Treatment",
+      note: "Notify your provider of any skin conditions or medications that affect clotting.",
     },
     {
       label: "Post-Treatment",

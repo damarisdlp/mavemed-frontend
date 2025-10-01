@@ -1,15 +1,14 @@
 export const cupping = {
-  slug: "cupping",
-  category: "body-treatments",
-  categoryDisplayName: "Body & Medical Treatments",
+  urlSlug: "cupping",
+  category: "Body & Medical Treatments",
   serviceDisplayName: "Cupping Therapy Add‑On",
   isPopular: false,
-  isPromoEligible: true,
-  image: "/body.jpg",
-  image2: "/body2.jpg",
-  description: "Therapeutic cupping paired with massage to enhance circulation, relieve tension, and support detoxification.",
-  standardPrice: "$25USD",
-  promoPrice: "$20USD",
+  isPromoEligible: false,
+  image: "/cupping.jpg",
+  image2: "/cupping2.jpg",
+  serviceDescription: "Therapeutic cupping paired with massage to enhance circulation, relieve tension, and support detoxification.",
+  standardPrice: "$10USD",
+  promoPrice: "",
   notes: [
     "Add-on service only, not available as a standalone treatment",
     "May leave temporary circular marks on the skin",
@@ -22,13 +21,13 @@ export const cupping = {
     "Support lymphatic detox"
   ],
   treatableAreas: ["Back", "Shoulders", "Thighs"],
-  pricing: [
+  pricingOptions: [
     {
       serviceChild: "Single Area (Add‑On)",
-      isPromoEligible: true,
-      standardPrice: "$25USD",
-      promoPrice: "$20USD",
-      notes: "Only available as an add-on to massage or RF treatments"
+      isPromoEligible: false,
+      standardPrice: "$10 USD",
+      promoPrice: "",
+      notes: "Only available as an add-on to swiss massage"
     }
   ],
   addOns: [],

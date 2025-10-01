@@ -72,8 +72,8 @@ export default function PricingTable({ treatment }) {
           {/* Add-On Section */}
           {addOns?.length > 0 && (
             <div className="mt-10">
-              <AddOnSection addOns={addOns} treatments={treatments} />
-            </div>
+              <AddOnSection addOns={addOns} />            
+              </div>
           )}
         </div>
 

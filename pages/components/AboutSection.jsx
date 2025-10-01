@@ -58,7 +58,7 @@ export default function AboutSection() {
             </strong>
 
             <p className="text-gray-700 text-base md:text-lg leading-relaxed mb-4">
-              At Mave Medical Spa in Tijuana, we combine medical science, aesthetics, and regenerative medicine to deliver personalized, results-driven cosmetic care. Just minutes from the San Diego border, we serve both local clients and patients traveling from across Southern California and beyond — offering safe, ethical treatments with natural-looking results.
+              At Mave Medical Spa in Tijuana, we combine medical science, aesthetics, and regenerative medicine to deliver personalized, results-driven cosmetic care. Just minutes from the San Diego border, we serve both local clients and patients traveling from across Southern California and beyond; offering safe, ethical treatments with natural-looking results.
             </p>
 
             <p className="text-gray-700 text-base md:text-lg leading-relaxed mb-4">
@@ -78,7 +78,7 @@ export default function AboutSection() {
             </p>
 
             <p className="text-gray-700 text-base md:text-lg leading-relaxed">
-              Every patient is treated with intention, clinical precision, and compassionate care — because your transformation deserves both beauty and integrity.
+              Every patient is treated with intention, clinical precision, and compassionate care, because your transformation deserves both beauty and integrity.
             </p>
           </div>
         </div>
