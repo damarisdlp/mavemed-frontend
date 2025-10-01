@@ -13,24 +13,25 @@ export const botox = {
     "Reduce the appearance of fine lines and wrinkles for a smoother, more refreshed look.",
   details:
   "Neuromodulator injections temporarily relax facial muscles to smooth fine lines and dynamic wrinkles, enhancing skin texture and creating a more youthful, natural-looking appearance.",
+  notes: [
+          "Purchasing under the exclusive price grants patient access to a per-unit rate at the respective exclusive per-unit price",
+          "Touch-ups at this rate are only applicable within 1-2 weeks after initial application at the ",
+          "Touch-ups on Botox application outside of the exclusive price option are subject to the standard base rate"
+        ],
   pricing: {
-    startingPrice: "$6.25 / Unit",
+    startingPrice: "Each unit at $6.25",
     startingPriceCurrency: "USD",
-    promoPrice: "$250 / 45 units",
+    promoPrice: "45 units for $250",
     promoPriceCurrency: "USD",
     options: [
       {
         optionName: "Any Zone",
         isPromoEligible: true,
-        optionPrice: "$6.25",
+        optionPrice: "Each unit at $6.25",
         optionCurrency: "USD",
-        optionPromoPrice: "$250 / 45 units",
+        optionPromoPrice: "45 units for $250",
         optionPromoPriceCurrency: "USD",
-        notes: [
-          "Purchasing under the exclusive price grants patient access to a per-unit rate at the respective exclusive per-unit price",
-          "Touch-ups at this rate are only applicable within 1-2 weeks after initial application at the ",
-          "Touch-ups on botox application out of the exclusive price option are subject to the standard base rate"
-        ],
+        notes: null,
       },
     ],
   },
