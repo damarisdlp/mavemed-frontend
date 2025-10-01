@@ -11,7 +11,6 @@ export default function AddOnSection({ addOns }) {
       {addOns.map((addonRef, idx) => {
         const addon =
           allTreatments.find((t) =>
-            t.serviceDisplayName === addonRef.displayName ||
             t.displayName === addonRef.displayName ||
             t.urlSlug === addonRef.link?.split("/").pop()
           );
@@ -24,20 +23,20 @@ export default function AddOnSection({ addOns }) {
         return (
           <div key={idx} className="mb-4">
             <p className="text-md font-semibold">
-              {addonRef.displayName || addon.serviceDisplayName || addon.displayName}
+              {addonRef.displayName}
             </p>
 
             <p className="text-sm text-gray-700">{addon.description}</p>
 
-            {addon?.pricingSummary && (
+            {addon?.pricing && (
               <p className="text-sm text-gray-700 mt-1">
-                <span className="font-semibold">Standard:</span>{" "}
-                {addon.pricingSummary.displayStandard}
-                {addon.isPromoEligible && addon.pricingSummary.displayPromo && (
+                <span className="font-semibold">Price:</span>{" "}
+                {addon.pricing.startingPrice}
+                {addon.isPromoEligible && addon.pricing.promoPrice && (
                   <>
                     {" "} |{" "}
                     <span className="font-semibold">Exclusive Pricing:</span>{" "}
-                    {addon.pricingSummary.displayPromo}
+                    {addon.pricing.promoPrice}
                   </>
                 )}
               </p>
@@ -48,7 +47,7 @@ export default function AddOnSection({ addOns }) {
                 href={addonRef.link}
                 className="text-sm underline text-black mt-1 inline-block hover:text-[#731a2f]"
               >
-                Learn more about {addonRef.displayName || addon.serviceDisplayName}
+                Learn more about {addonRef.displayName}
               </Link>
             )}
           </div>

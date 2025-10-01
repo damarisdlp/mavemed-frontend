@@ -1,23 +1,57 @@
 export const hydrafacial = {
-  slug: "hydrafacial",
+  urlSlug: "hydrafacial",
   category: "facials",
   categoryDisplayName: "Facials & Add‑Ons",
-  serviceDisplayName: "HydraFacial MD – Face",
+  serviceDisplayName: "HydraFacial MD",
   isPopular: true,
   isPromoEligible: false,
-  image: "/hydrafacial.jpg",
-  image2: "/hydrafacial2.jpg",
+  images: {
+    primary: "/hydrafacial.jpg",
+    secondary: "/hydrafacial2.jpg",
+  },
   description: 
   "Experience a medical-grade HydraFacial in Tijuana featuring patented Vortex-Fusion® technology for deep pore cleansing, painless extractions, and intense skin hydration. Perfect for acne-prone, dry, or congested skin.",
-  standardPrice: "Starting at $95 USD",
-  promoPrice: null,
-  notes: [
-    "No downtime — makeup can be applied the same day",
-    "Safe for all skin tones and sensitive skin types",
-    "Includes optional manual extractions when needed"
-  ],
   details: 
   "HydraFacial MD is a multi-step, medical-grade facial that uses patented Vortex-Fusion® technology to deeply cleanse, exfoliate, and infuse hydrating serums into the skin. It’s ideal for clients with acne-prone, dull, or congested complexions seeking clearer, more radiant skin.",
+  pricing: {
+    startingPrice: "$95 USD",
+    promoPrice: "",
+    options: [
+      {
+        optionName: "Hydrafacial MD - Face",
+        isPromoEligible: false,
+        optionPrice: "$95 USD",
+        optionPromoPrice: "",
+        notes: [
+          "No downtime — makeup can be applied the same day",
+          "Safe for all skin tones and sensitive skin types",
+          "Includes optional manual extractions when needed"
+        ]
+      },
+      {
+        optionName: "Hydrafacial MD - Shoulders",
+        isPromoEligible: false,
+        optionPrice: "$TBD USD",
+        optionPromoPrice: "",
+        notes: [
+          "No downtime",
+          "Safe for all skin tones and sensitive skin types",
+          "Includes optional manual extractions when needed"
+        ]
+      },
+      {
+        optionName: "Hydrafacial MD - Upper Back",
+        isPromoEligible: false,
+        optionPrice: "$TBD USD",
+        optionPromoPrice: "",
+        notes: [
+          "No downtime",
+          "Safe for all skin tones and sensitive skin types",
+          "Includes optional manual extractions when needed"
+        ]
+      }
+    ]
+  },
   goals: [
     "Deeply cleanse and exfoliate the skin",
     "Unclog pores and remove blackheads",
@@ -28,47 +62,12 @@ export const hydrafacial = {
     "Shoulders",
     "Upper Back",
   ],  
-  pricing: [
-    {
-      serviceChild: "Face",
-      isPromoEligible: false,
-      standardPrice: "$95 USD",
-      promoPrice: null,
-      notes: null
-    },
-    {
-      serviceChild: "Shoulders",
-      isPromoEligible: false,
-      standardPrice: "$TBD USD",
-      promoPrice: null,
-      notes: null
-    },
-    {
-      serviceChild: "Upper Back",
-      isPromoEligible: false,
-      standardPrice: "$TBD USD",
-      promoPrice: null,
-      notes: null
-    }
-  ],
   addOns: [
     {
       serviceParent: "Wrinkle Reducer - Botox",
-      serviceChild:  "Forehead",
-      displayName:   "Botox - Forehead",
-      link:          "/treatments/wrinkleReducers/botox"
-    },
-    {
-      serviceParent: "Wrinkle Reducer - Botox",
-      serviceChild:  "Frown Lines (Glabella)",
-      displayName:   "Botox - Frown Lines (Glabella)",
-      link:          "/treatments/wrinkleReducers/botox"
-    },
-    {
-      serviceParent: "Wrinkle Reducer - Botox",
-      serviceChild:  "Crow’s Feet",
-      displayName:   "Botox - Crow’s Feet",
-      link:          "/treatments/wrinkleReducers/botox"
+      serviceChild:  "Any Zone",
+      displayName:   "Wrinkle Reducer - Botox",
+      link:          "/treatments/wrinkle-reducers-botox"
     }
   ],
   expectations: {
@@ -76,7 +75,8 @@ export const hydrafacial = {
       "Avoid using retinol, acids, and exfoliants 48 hours before treatment."
     ],
     postTreatment: [
-      "Enjoy immediate glow and hydration. Avoid harsh skincare products for 24 hours and apply sunscreen."
+      "Enjoy immediate glow and hydration.",
+      "Avoid harsh skincare products for 24 hours and apply sunscreen."
     ]
   },
   faq: [

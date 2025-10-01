@@ -2,11 +2,10 @@ import Image from "next/image";
 import AddOnSection from "./AddOnSection";
 
 export default function PricingTable({ treatment }) {
-  const pricingZones = treatment?.pricingSummary?.zones || [];
-  const individualZones = treatment?.individualZonePricing || [];
+  const pricingOptions = treatment?.pricing.options || [];
   const addOns = treatment?.addOns || [];
 
-  const hasPricing = pricingZones.length > 0 || individualZones.length > 0;
+  const hasPricing = pricingOptions.length > 0;
 
   if (!treatment || !hasPricing) {
     return (
@@ -30,52 +29,21 @@ export default function PricingTable({ treatment }) {
           </p>
 
           {/* Package / General Zones Pricing */}
-          {pricingZones.length > 0 && (
+          {pricingOptions.length > 0 && (
             <div className="space-y-4 mb-8">
-              {pricingZones.map((p, idx) => (
+              {pricingOptions.map((p, idx) => (
                 <div
                   key={`zone-${idx}`}
                   className="flex flex-row justify-between items-start bg-[#f9f9f9] border p-4 rounded-lg shadow-sm hover:shadow-md transition"
                 >
-                  <div className="text-lg font-medium">{p.name}</div>
+                  <div className="text-lg font-medium">{p.optionName}</div>
                   <div className="text-sm leading-6 text-left max-w-[60%]">
                     <p>
-                      <span className="font-semibold">Standard:</span> {p.standardPrice}
+                      <span className="font-semibold">Price:</span> {p.optionPrice}
                     </p>
-                    {p.promoPrice && (
+                    {p.optionPromoPrice && (
                       <p>
-                        <span className="font-semibold">Exclusive Pricing:</span> {p.promoPrice}
-                      </p>
-                    )}
-                    {p.notes?.length > 0 && (
-                      <ul className="mt-1 text-xs text-gray-600 italic list-disc list-inside">
-                        {p.notes.map((note, i) => (
-                          <li key={i}>{note}</li>
-                        ))}
-                      </ul>
-                    )}
-                  </div>
-                </div>
-              ))}
-            </div>
-          )}
-
-          {/* Individual Zone Pricing */}
-          {individualZones.length > 0 && (
-            <div className="space-y-4">
-              {individualZones.map((p, idx) => (
-                <div
-                  key={`individual-${idx}`}
-                  className="flex flex-row justify-between items-start bg-[#f9f9f9] border p-4 rounded-lg shadow-sm hover:shadow-md transition"
-                >
-                  <div className="text-lg font-medium">{p.zone}</div>
-                  <div className="text-sm leading-6 text-left max-w-[60%]">
-                    <p>
-                      <span className="font-semibold">Standard:</span> {p.standardPrice}
-                    </p>
-                    {p.promoPrice && (
-                      <p>
-                        <span className="font-semibold">Exclusive Pricing:</span> {p.promoPrice}
+                        <span className="font-semibold">Exclusive Pricing:</span> {p.optionPromoPrice}
                       </p>
                     )}
                     {p.notes?.length > 0 && (
@@ -103,7 +71,7 @@ export default function PricingTable({ treatment }) {
         <div className="relative w-full h-[80vh]">
           <Image
             src={treatment.images?.secondary || "/placeholder.jpg"}
-            alt={`Treatment image for ${treatment.displayName}`}
+            alt={`Treatment image for ${treatment.serviceDisplayName}`}
             fill
             className="object-cover [object-position:center_10%] [object-position:0%_60%]"
             priority

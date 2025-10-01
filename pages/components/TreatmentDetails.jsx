@@ -3,8 +3,8 @@ import Image from "next/image";
 import { AccordionToggle } from "./AccordionToggle";
 
 export default function TreatmentDetail({ treatment }) {
-  const pricing = treatment?.pricingSummary || {};
-  const hasPromo = pricing.displayPromo;
+  const pricing = treatment?.pricing || {};
+  const hasPromo = pricing.promoPrice;
 
   return (
     <div className="w-full bg-white">
@@ -13,7 +13,7 @@ export default function TreatmentDetail({ treatment }) {
         <div className="relative w-full h-[60vh]">
           <Image
             src={treatment.images?.primary || "/placeholder.jpg"}
-            alt={`Treatment image for ${treatment.displayName}`}
+            alt={`Treatment image for ${treatment.serviceDisplayName}`}
             fill
             className="object-cover [object-position:center_55%] [object-position:0%_60%]"
             priority
@@ -35,11 +35,16 @@ export default function TreatmentDetail({ treatment }) {
                 {treatment.categoryDisplayName}
               </Link>{" "}
               /{" "}
-              <span className="text-gray-700 underline">{treatment.displayName}</span>
+              <Link
+              href={`/treatments/#${treatment.categoryDisplayName?.replace(/\s+/g, "-").toLowerCase()}/#${treatment.serviceDisplayName?.replace(/\s+/g, "-").toLowerCase()}`}
+                className="text-gray-700 underline"
+              >
+                {treatment.serviceDisplayName}
+              </Link>{" "}
             </p>
 
             <h1 className="text-4xl font-serif text-black font-medium mt-2 mb-2">
-              {treatment.displayName}
+              {treatment.serviceDisplayName}
             </h1>
             <p className="text-gray-700 text-base leading-relaxed">
               {treatment.description}
@@ -49,8 +54,8 @@ export default function TreatmentDetail({ treatment }) {
           {/* Pricing */}
           <div className={`grid ${hasPromo ? "grid-cols-2" : "grid-cols-1"} gap-4 mb-6`}>
             <div className="border p-4 rounded shadow-sm">
-              <h2 className="text-md font-semibold text-black">Standard</h2>
-              <p className="text-gray-700">{pricing.displayStandard}</p>
+              <h2 className="text-md font-semibold text-black">Price</h2>
+              <p className="text-gray-700">{pricing.startingPrice}</p>
               <a
                 href="https://wa.me/+526642077675"
                 target="_blank"
@@ -64,9 +69,9 @@ export default function TreatmentDetail({ treatment }) {
             {hasPromo && (
               <div className="border p-4 rounded shadow-sm">
                 <h2 className="text-md font-semibold text-black">Exclusive Pricing</h2>
-                <p className="text-gray-700">{pricing.displayPromo}</p>
+                <p className="text-gray-700">{pricing.promoPrice}</p>
                 <a
-                  href="/membership"
+                  href="https://wa.me/+526642077675"
                   className="mt-3 inline-block w-full text-center border border-gray-700 text-gray-800 hover:border-black hover:text-black font-medium py-2 rounded transition duration-200"
                 >
                   Inquire
