@@ -2,7 +2,7 @@ export const hydrafacial = {
   slug: "hydrafacial",
   category: "facials",
   categoryDisplayName: "Facials & Add‑Ons",
-  serviceDisplayName: "HydraFacial MD – Face And/Or Back",
+  serviceDisplayName: "HydraFacial MD – Face",
   isPopular: true,
   isPromoEligible: false,
   image: "/hydrafacial.jpg",

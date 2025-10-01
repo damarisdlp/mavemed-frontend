@@ -1,23 +1,33 @@
 export const botox = {
-  slug: "wrinkle-reducers-botox",
+  urlSlug: "wrinkle-reducers-botox",
   category: "wrinkle-reducers",
   categoryDisplayName: "Wrinkle Reducers",
   serviceDisplayName: "Wrinkle Reducer - Botox",
   isPopular: true,
   isPromoEligible: true,
-  image: "/botox.jpg",
-  image2: "/botox2.jpg",
+ images: {
+    primary: "/botox.jpg",
+    secondary: "/botox2.jpg",
+  },
   description:
-    "Smooth dynamic wrinkles and fine lines with precision injectables for a refreshed, youthful appearance.",
-  standardPrice: "Price varies per zone",
-  promoPrice: "Price varies per zone",
-  notes: [
-    "Only new patients receive exclusive welcome-prices",
-    "Established patients receive exclusive maintenance tier pricing",
-    "Maintenance zone pricing is only applicable within 4-5 months after the initial application"
-  ],
+    "Reduce the appearance of fine lines and wrinkles for a smoother, more refreshed look.",
   details:
   "Neuromodulator injections temporarily relax facial muscles to smooth fine lines and dynamic wrinkles, enhancing skin texture and creating a more youthful, natural-looking appearance.",
+  pricing: {
+    displayStandard: "$6.25 USD / unit",
+    displayPromo: "$250 USD / 45 units",
+    zones: [
+      {
+        name: "Application on Any Zone",
+        isPromoEligible: true,
+        standardPrice: "$6.25 USD / unit",
+        promoPrice: "$250 USD / 45 units",
+        notes: [
+          "Purchasing under the promo price grants patient access to a touch-up within 1-2 weeks after initial application at the respective promo per unit rate"
+        ],
+      },
+    ],
+  },
   goals: [
     "Smooth dynamic lines",
     "Lift eyebrows or corners of mouth",
@@ -39,132 +49,17 @@ export const botox = {
     "Axillary Hyperhidrosis (Underarms)",
     "Palmar Hyperhidrosis (Hands)"
   ],
-  pricing: [
-    { 
-      serviceChild: "Forehead",                      
-      isPromoEligible: true,  
-      standardPrice: "$86 USD",  
-      promoPrice: "$78 USD",  
-      notes: [null] 
-    },{ 
-      serviceChild: "Frown Lines (Glabella)",        
-      isPromoEligible: true,  
-      standardPrice: "$145 USD", 
-      promoPrice: "$130 USD", 
-      notes: [null] 
-    },{ 
-      serviceChild: "Crow’s Feet",                   
-      isPromoEligible: true,  
-      standardPrice: "$139 USD", 
-      promoPrice: "$126 USD", 
-      notes: [null] 
-    },{ 
-      serviceChild: "Bunny Lines",                   
-      isPromoEligible: true,  
-      standardPrice: "$48 USD",  
-      promoPrice: "$45 USD",  
-      notes: [null] 
-    },{ 
-      serviceChild: "Chin Dimples",                  
-      isPromoEligible: true,  
-      standardPrice: "$45 USD",  
-      promoPrice: "$40 USD",  
-      notes: [null] 
-    },{ 
-      serviceChild: "Perioral Lines",                
-      isPromoEligible: false, 
-      standardPrice: "$46 USD",  
-      promoPrice: null,       
-      notes: [null] 
-    },{ 
-      serviceChild: "Lip Flip (Gummy Smile)",        
-      isPromoEligible: true,  
-      standardPrice: "$45 USD",  
-      promoPrice: "$40 USD",  
-      notes: 
-      [
-        "Only available as part of Perioral Package"
-      ] 
-    },{ 
-      serviceChild: "Downturned Corners",            
-      isPromoEligible: true,  
-      standardPrice: "$45 USD",  
-      promoPrice: "$40 USD",  
-      notes: 
-      [
-        "Only available as part of Perioral Package"
-      ] 
-    },{ 
-      serviceChild: "Eyebrow Lift",                  
-      isPromoEligible: false, 
-      standardPrice: "$30 USD",  
-      promoPrice: null,       
-      notes: [null] 
-    },{ 
-      serviceChild: "Masseters",                     
-      isPromoEligible: false, 
-      standardPrice: "$225 USD", 
-      promoPrice: null,       
-      notes: [null] 
-    },{ 
-      serviceChild: "Neck Bands",                    
-      isPromoEligible: false, 
-      standardPrice: "$340 USD", 
-      promoPrice: null,       
-      notes: [null] 
-    },{ 
-      serviceChild: "Axillary Hyperhidrosis",        
-      isPromoEligible: false, 
-      standardPrice: "$570 USD", 
-      promoPrice: null,       
-      notes: [null] 
-    },{ 
-      serviceChild: "Palmar Hyperhidrosis",          
-      isPromoEligible: false, 
-      standardPrice: "$570 USD", 
-      promoPrice: null,       
-      notes: [null] 
-    },{
-      serviceChild:   "Perioral Package",
-      isPromoEligible: true,
-      standardPrice:  "$135 USD",
-      promoPrice:     "$120 USD",
-      notes: [
-        "Includes gummy smile, mouth elevators, and chin dimples"
-      ]
-    },{
-      serviceChild:   "Maintenance of Superior Third",
-      isPromoEligible: false,
-      standardPrice:  "$260 USD",
-      promoPrice:     null,
-      notes: [
-        "Appointment must be within 4-5 months of initial application",
-        "Includes forehead, frown lines (glabella), and crow's feet"
-      ]
-    },
-    {
-      serviceChild:   "Maintenance of Individual Zone",
-      isPromoEligible: false,
-      standardPrice:  "$70 USD",
-      promoPrice:     null,
-      notes: [
-        "Appointment must be within 4–5 months of initial application",
-        "Applicable to any zone",
-        "Zones may be combined at the doctor's discretion based on evaluation"
-      ]
-    }
-  ],
   addOns: [
     {
-      serviceParent: "HydraFacial MD – Face And/Or Back",
+      serviceParent: "HydraFacial MD – Face",
       serviceChild:  "Face",
       displayName:   "HydraFacial MD - Face",
-      link:          "/treatments/facials/hydrafacial"
+      link:          "/treatments/facials/hydrafacial/hydrafacialFace"
     },
     {
-      serviceParent: "Casmara Purifying Facial Treatment",
+      serviceParent: "Casmara Purifying Algae Facial",
       serviceChild:  null,
-      displayName:   "Casmara Purifying Facial Treatment",
+      displayName:   "Casmara Purifying Algae Facial",
       link:          "/treatments/facials/casmara/purifying"
     }
   ],

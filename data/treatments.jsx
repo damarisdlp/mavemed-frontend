@@ -43,7 +43,7 @@ export const treatments = [
     ],
     pricing: [
   {
-    zone:             "Forehead",
+    zone:             "Botox - Any Zone",
     isPromoEligibe:   true,
     standardPrice:    "$6.25 USD / unit",
     promoPrice:       "$250 USD / 45 units",
