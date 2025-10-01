@@ -4,11 +4,15 @@ import { AccordionToggle } from "./AccordionToggle";
 
 export default function TreatmentDetail({ treatment }) {
   const pricing = treatment?.pricing || {};
-  const hasPromo = pricing.promoPrice;
+  const hasPromo =
+    treatment?.isPromoEligible === true &&
+    typeof pricing.promoPrice === "string" &&
+    pricing.promoPrice.trim() !== "";
 
   return (
     <div className="w-full bg-white">
       <div className="grid grid-cols-1 md:grid-cols-[3fr_2fr] min-h-[50vh]">
+        
         {/* Image */}
         <div className="relative w-full h-[60vh]">
           <Image
@@ -36,7 +40,7 @@ export default function TreatmentDetail({ treatment }) {
               </Link>{" "}
               /{" "}
               <Link
-              href={`/treatments/#${treatment.categoryDisplayName?.replace(/\s+/g, "-").toLowerCase()}/#${treatment.serviceDisplayName?.replace(/\s+/g, "-").toLowerCase()}`}
+                href={`/treatments/${treatment.urlSlug}`}
                 className="text-gray-700 underline"
               >
                 {treatment.serviceDisplayName}
