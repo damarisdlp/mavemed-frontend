@@ -1,45 +1,91 @@
 export const janssenUltraRenewal = {
-  slug: "janssen-ultra-renewal",
+  urlSlug: "facials-janssen-ultra-renewal",
   category: "facials",
-  categoryDisplayName: "Facials & Add‑Ons",
+  categoryDisplayName: "Facials",
   serviceDisplayName: "Janssen Ultra Renewal Facial",
   isPopular: false,
-  isPromoEligible: true,
-  image: "/facials.jpg",
-  image2: "/facials2.jpg",
-  description: "A gentle yet effective AHA and peptide-based peel that stimulates skin renewal and refines texture.",
-  standardPrice: "$88USD",
-  promoPrice: "$78USD",
+  isPromoEligible: false,
+
+  images: {
+    primary: "/janssen-ultra.jpg",
+    secondary: "/janssen-ultra2.jpg",
+  },
+
+  description:
+    "A gentle yet effective AHA and peptide-based peel that stimulates skin renewal and refines texture.",
+
+  details:
+    "This advanced facial combines alpha hydroxy acids (AHAs) with peptides to exfoliate, stimulate cell turnover, and brighten the skin. It’s perfect for those seeking renewal without harsh downtime.",
+
+  pricing: {
+    startingPrice: "$TBD",
+    startingPriceCurrency: "USD",
+    promoPrice: "",
+    promoPriceCurrency: "USD",
+    options: [
+      {
+        optionName: "Face",
+        isPromoEligible: false,
+        optionPrice: "$70",
+        optionCurrency: "USD",
+        optionPromoPrice: "",
+        optionPromoPriceCurrency: "USD",
+        notes: null
+      },
+      {
+        optionName: "Face + Neck",
+        isPromoEligible: false,
+        optionPrice: "$TBD",
+        optionCurrency: "USD",
+        optionPromoPrice: "",
+        optionPromoPriceCurrency: "USD",
+        notes: null
+      },
+      {
+        optionName: "Face + Neck + Décolleté",
+        isPromoEligible: false,
+        optionPrice: "$TBD",
+        optionCurrency: "USD",
+        optionPromoPrice: "",
+        optionPromoPriceCurrency: "USD",
+        notes: null
+      }
+    ]
+  },
+
   notes: [
     "Minimal downtime and safe for most skin types",
     "Ideal for dull or uneven skin tone",
     "Great monthly maintenance option"
   ],
-  details: "This advanced facial combines alpha hydroxy acids (AHAs) with peptides to exfoliate, stimulate cell turnover, and brighten the skin. It’s perfect for those seeking renewal without harsh downtime.",
+
   goals: [
     "Improve skin tone and clarity",
     "Stimulate collagen and cell renewal",
     "Minimize the appearance of pores and fine lines"
   ],
-  treatableAreas: ["Full Face"],
-  pricing: [
+
+  treatableAreas: ["Face","Neck","Décolleté"],
+  addOns: [
     {
-      serviceChild: "Full Face",
-      isPromoEligible: true,
-      standardPrice: "$88USD",
-      promoPrice: "$78USD",
-      notes: null
+      serviceParent: "Wrinkle Reducer - Botox",
+      serviceChild:  "Any Zone",
+      displayName:   "Wrinkle Reducer - Botox",
+      link:          "/treatments/wrinkle-reducers-botox"
     }
   ],
-  addOns: [],
+
   expectations: {
     preTreatment: [
       "Avoid retinol, acids, or exfoliating agents for 3 days prior."
     ],
     postTreatment: [
-      "Mild redness may occur. Use hydrating products and sunscreen. Avoid exfoliating products for 3 days."
+      "Mild redness may occur.",
+      "Use hydrating products and sunscreen",
+      "Avoid exfoliating products for 3 days."
     ]
   },
+
   faq: [
     {
       question: "Is this facial suitable for sensitive skin?",
