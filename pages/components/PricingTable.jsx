@@ -1,14 +1,20 @@
 import Image from "next/image";
-import { treatments } from "@/data/treatments";
 import AddOnSection from "./AddOnSection";
 
 export default function PricingTable({ treatment }) {
-  if (!treatment || !treatment.pricing?.length) {
-    return <div><p>No pricing available.</p></div>;
-  }
+  const pricingZones = treatment?.pricingSummary?.zones || [];
+  const individualZones = treatment?.individualZonePricing || [];
+  const addOns = treatment?.addOns || [];
 
-  const pricing = treatment.pricing;
-  const addOns = treatment.addOns;
+  const hasPricing = pricingZones.length > 0 || individualZones.length > 0;
+
+  if (!treatment || !hasPricing) {
+    return (
+      <div>
+        <p>No pricing available.</p>
+      </div>
+    );
+  }
 
   return (
     <div className="w-full bg-white">
@@ -23,64 +29,80 @@ export default function PricingTable({ treatment }) {
             All prices listed are in either USD or MXN as indicated. If payment is made in a different currency than the one listed (e.g., paying in pesos for a USD-listed price or vice versa), the final price will be calculated using Mave Medical Spa’s current internal exchange rate at the time of payment.
           </p>
 
-          <div className="space-y-4">
-            {pricing.map((p, idx) => (
-              <div
-                key={idx}
-                className="flex flex-row justify-between items-start bg-[#f9f9f9] border p-4 rounded-lg shadow-sm hover:shadow-md transition"
-              >
-                {/* Zone Name */}
-                <div className="text-lg font-medium">{p.zone}</div>
-
-                {/* Pricing Info */}
-                <div className="text-sm leading-6 text-left max-w-[60%]">
-                  {/* Standard Price */}
-                  <p>
-                    <span className="font-semibold">Standard:</span> {p.standardPrice}
-                  </p>
-
-                  {/* Exclusive Price if valid */}
-                  {p.promoPrice && p.memberPrice !== "Not eligible for exclusive pricing" && (
+          {/* Package / General Zones Pricing */}
+          {pricingZones.length > 0 && (
+            <div className="space-y-4 mb-8">
+              {pricingZones.map((p, idx) => (
+                <div
+                  key={`zone-${idx}`}
+                  className="flex flex-row justify-between items-start bg-[#f9f9f9] border p-4 rounded-lg shadow-sm hover:shadow-md transition"
+                >
+                  <div className="text-lg font-medium">{p.name}</div>
+                  <div className="text-sm leading-6 text-left max-w-[60%]">
                     <p>
-                      <span className="font-semibold">Exclusive Pricing:</span> {p.promoPrice}
+                      <span className="font-semibold">Standard:</span> {p.standardPrice}
                     </p>
-                  )}
-
-                  {/* Promo Note if not "Standard rate only" */}
-                  {p.promoNote &&
-                    p.promoNote !== "Standard rate only" && (
+                    {p.promoPrice && (
+                      <p>
+                        <span className="font-semibold">Exclusive Pricing:</span> {p.promoPrice}
+                      </p>
+                    )}
+                    {p.notes?.length > 0 && (
                       <ul className="mt-1 text-xs text-gray-600 italic list-disc list-inside">
-                        {Array.isArray(p.promoNote)
-                          ? p.promoNote.map((note, i) => <li key={i}>{note}</li>)
-                          : <li>{p.promoNote}</li>}
+                        {p.notes.map((note, i) => (
+                          <li key={i}>{note}</li>
+                        ))}
                       </ul>
-                  )}
-
-                  {/* Extra Notes */}
-                  {p.notes?.length > 0 && (
-                    <ul className="mt-1 text-xs text-gray-600 italic  list-inside">
-                      {p.notes.map((note, i) => (
-                        <li key={i}>{note}</li>
-                      ))}
-                    </ul>
-                  )}
+                    )}
+                  </div>
                 </div>
-              </div>
-            ))}
-          </div>
+              ))}
+            </div>
+          )}
+
+          {/* Individual Zone Pricing */}
+          {individualZones.length > 0 && (
+            <div className="space-y-4">
+              {individualZones.map((p, idx) => (
+                <div
+                  key={`individual-${idx}`}
+                  className="flex flex-row justify-between items-start bg-[#f9f9f9] border p-4 rounded-lg shadow-sm hover:shadow-md transition"
+                >
+                  <div className="text-lg font-medium">{p.zone}</div>
+                  <div className="text-sm leading-6 text-left max-w-[60%]">
+                    <p>
+                      <span className="font-semibold">Standard:</span> {p.standardPrice}
+                    </p>
+                    {p.promoPrice && (
+                      <p>
+                        <span className="font-semibold">Exclusive Pricing:</span> {p.promoPrice}
+                      </p>
+                    )}
+                    {p.notes?.length > 0 && (
+                      <ul className="mt-1 text-xs text-gray-600 italic list-disc list-inside">
+                        {p.notes.map((note, i) => (
+                          <li key={i}>{note}</li>
+                        ))}
+                      </ul>
+                    )}
+                  </div>
+                </div>
+              ))}
+            </div>
+          )}
 
           {/* Add-On Section */}
-          {addOns?.length > 0 && (
+          {addOns.length > 0 && (
             <div className="mt-10">
-              <AddOnSection addOns={addOns} />            
-              </div>
+              <AddOnSection addOns={addOns} />
+            </div>
           )}
         </div>
 
         {/* Right: Static Image */}
         <div className="relative w-full h-[80vh]">
           <Image
-            src={treatment.image2}
+            src={treatment.images?.secondary || "/placeholder.jpg"}
             alt={`Treatment image for ${treatment.displayName}`}
             fill
             className="object-cover [object-position:center_10%] [object-position:0%_60%]"

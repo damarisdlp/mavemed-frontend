@@ -1,11 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
-import { treatments } from "@/data/treatments";
+import { allTreatments } from "@/data/allTreatments";
 
 export default function TreatmentCategories() {
   // Group treatments by category
   const categoriesMap = {};
-  treatments.forEach((t) => {
+  allTreatments.forEach((t) => {
     const key = t.category;
     if (!categoriesMap[key]) {
       categoriesMap[key] = {
@@ -14,9 +14,9 @@ export default function TreatmentCategories() {
       };
     }
     categoriesMap[key].services.push({
-      name: t.displayName,
-      slug: t.slug,
-      image: t.image,
+      name: t.displayName || t.serviceDisplayName,
+      slug: t.urlSlug,
+      image: t.images?.primary || "/placeholder.jpg",
       description: t.description
     });
   });
@@ -29,7 +29,7 @@ export default function TreatmentCategories() {
         {categories.map((category, i) => (
           <div
             key={i}
-            id={category.title.replace(/\s+/g, "-").toLowerCase()} // 👈 This is the anchor ID
+            id={category.title.replace(/\s+/g, "-").toLowerCase()}
             className="mb-16 scroll-mt-60"
           >
             <h2 className="text-2xl text-black md:text-3xl font-serif font-medium mb-6">

@@ -14,7 +14,7 @@ export const botox = {
   details:
   "Neuromodulator injections temporarily relax facial muscles to smooth fine lines and dynamic wrinkles, enhancing skin texture and creating a more youthful, natural-looking appearance.",
   pricing: {
-    displayStandard: "$6.25 USD / unit",
+    displayStandard: "$6.25 tUSD / unit",
     displayPromo: "$250 USD / 45 units",
     zones: [
       {

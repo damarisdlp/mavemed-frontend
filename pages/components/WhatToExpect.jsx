@@ -1,7 +1,7 @@
 import "keen-slider/keen-slider.min.css";
 import { useKeenSlider } from "keen-slider/react";
 
-export default function WhatToExpect({ expectations = [] }) {
+export default function WhatToExpect({ expectations = {} }) {
   const [sliderRef, slider] = useKeenSlider({
     loop: true,
     slides: {
@@ -18,15 +18,18 @@ export default function WhatToExpect({ expectations = [] }) {
     },
   });
 
-  if (!expectations.length) return null;
+  const combined = [
+    ...(expectations.preTreatment || []).map((note) => ({
+      label: "Pre-Treatment",
+      note,
+    })),
+    ...(expectations.postTreatment || []).map((note) => ({
+      label: "Post-Treatment",
+      note,
+    })),
+  ];
 
-  // 🧠 Sort expectations: all "Pre-Treatment" first, then "Post-Treatment"
-  const sortedExpectations = [...expectations].sort((a, b) => {
-    if (a.label === b.label) return 0;
-    if (a.label === "Pre-Treatment") return -1;
-    if (b.label === "Pre-Treatment") return 1;
-    return 0;
-  });
+  if (!combined.length) return null;
 
   return (
     <section className="bg-[#c4b7a6] py-7">
@@ -54,7 +57,7 @@ export default function WhatToExpect({ expectations = [] }) {
       )}
 
       <div ref={sliderRef} className="keen-slider overflow-hidden">
-        {sortedExpectations.map((item, index) => (
+        {combined.map((item, index) => (
           <div
             key={index}
             className="keen-slider__slide p-2 min-h-[180px] flex"
@@ -63,9 +66,7 @@ export default function WhatToExpect({ expectations = [] }) {
               <h4 className="text-sm font-semibold text-gray-600 mb-1">
                 {item.label}
               </h4>
-              <p className="text-sm text-black leading-snug">
-                {item.note}
-              </p>
+              <p className="text-sm text-black leading-snug">{item.note}</p>
             </div>
           </div>
         ))}
