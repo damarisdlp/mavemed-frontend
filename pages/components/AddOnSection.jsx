@@ -10,9 +10,10 @@ export default function AddOnSection({ addOns }) {
 
       {addOns.map((addonRef, idx) => {
         const addon =
-          allTreatments.find((t) =>
-            t.displayName === addonRef.displayName ||
-            t.urlSlug === addonRef.link?.split("/").pop()
+          allTreatments.find(
+            (t) =>
+              t.serviceDisplayName === addonRef.displayName ||
+              t.urlSlug === addonRef.link?.split("/").pop()
           );
 
         if (!addon) {
@@ -20,11 +21,14 @@ export default function AddOnSection({ addOns }) {
           return null;
         }
 
+        const hasPromo =
+          addon.isPromoEligible === true &&
+          typeof addon.pricing?.promoPrice === "string" &&
+          addon.pricing.promoPrice.trim() !== "";
+
         return (
           <div key={idx} className="mb-4">
-            <p className="text-md font-semibold">
-              {addonRef.displayName}
-            </p>
+            <p className="text-md font-semibold">{addonRef.displayName}</p>
 
             <p className="text-sm text-gray-700">{addon.description}</p>
 
@@ -32,12 +36,12 @@ export default function AddOnSection({ addOns }) {
               <p className="text-sm text-gray-700 mt-1">
                 <span className="font-semibold">Price:</span>{" "}
                 {addon.pricing.startingPrice} {addon.pricing.startingPriceCurrency}
-                {addon.isPromoEligible && addon.pricing.promoPrice && (
+                
+                {hasPromo && (
                   <>
                     {" "} |{" "}
                     <span className="font-semibold">Exclusive Pricing:</span>{" "}
                     {addon.pricing.promoPrice} {addon.pricing.promoPriceCurrency}
-
                   </>
                 )}
               </p>
