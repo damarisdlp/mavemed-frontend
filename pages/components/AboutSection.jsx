@@ -1,4 +1,4 @@
-// components/AboutSection.jsx
+import { useState, useEffect } from "react"; // ⬅️ make sure these are imported
 import Image from "next/image";
 import Link from "next/link";
 import { useKeenSlider } from "keen-slider/react";
@@ -32,11 +32,19 @@ export default function AboutSection() {
     },
   });
 
+  // ⬅️ Scroll-to-top state + effect
+  const [showScrollTop, setShowScrollTop] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => setShowScrollTop(window.scrollY > 400);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <section id="aboutus" className="bg-white min-h-screen w-full">
+    <section id="aboutus" className="bg-white min-h-screen w-full relative">
       {/* Top Section Grid */}
       <div className="grid grid-cols-1 md:grid-cols-[3fr_2fr] min-h-[85vh] mb-5">
-        {/* Left: Image */}
         <div className="relative w-full h-[40vh] md:h-auto">
           <Image
             src="/logo-mave.png"
@@ -47,7 +55,6 @@ export default function AboutSection() {
           />
         </div>
 
-        {/* Right: Text Content */}
         <div className="flex items-center justify-center px-6 py-10">
           <div className="w-full max-w-md mx-auto text-center md:text-left">
             <h2 className="text-3xl sm:text-4xl md:text-5xl text-black font-serif font-medium mb-2 leading-tight">
@@ -58,11 +65,18 @@ export default function AboutSection() {
             </strong>
 
             <p className="text-gray-700 text-base md:text-lg leading-relaxed mb-4">
-              At Mave Medical Spa in Tijuana, we combine medical science, aesthetics, and regenerative medicine to deliver personalized, results-driven cosmetic care. Just minutes from the San Diego border, we serve both local clients and patients traveling from across Southern California and beyond; offering safe, ethical treatments with natural-looking results.
+              At Mave Medical Spa in Tijuana, we combine medical science, aesthetics,
+              and regenerative medicine to deliver personalized, results-driven
+              cosmetic care. Just minutes from the San Diego border, we serve both
+              local clients and patients traveling from across Southern California
+              and beyond; offering safe, ethical treatments with natural-looking
+              results.
             </p>
 
             <p className="text-gray-700 text-base md:text-lg leading-relaxed mb-4">
-              Our vision is to be a modern sanctuary for aesthetic wellness, where treatments support confidence, healing, and long-term skin health. We specialize in advanced procedures including:
+              Our vision is to be a modern sanctuary for aesthetic wellness, where
+              treatments support confidence, healing, and long-term skin health. We
+              specialize in advanced procedures including:
             </p>
 
             <ul className="list-disc list-inside pl-4 text-left text-gray-700 text-base md:text-lg space-y-2 mb-4">
@@ -74,11 +88,15 @@ export default function AboutSection() {
             </ul>
 
             <p className="text-gray-700 text-base md:text-lg leading-relaxed mb-4">
-              Our approach is grounded in COFEPRIS-compliant protocols, physician oversight, and highly personalized treatment plans tailored to your unique goals and facial anatomy.
+              Our approach is grounded in COFEPRIS-compliant protocols, physician
+              oversight, and highly personalized treatment plans tailored to your
+              unique goals and facial anatomy.
             </p>
 
             <p className="text-gray-700 text-base md:text-lg leading-relaxed">
-              Every patient is treated with intention, clinical precision, and compassionate care, because your transformation deserves both beauty and integrity.
+              Every patient is treated with intention, clinical precision, and
+              compassionate care, because your transformation deserves both beauty
+              and integrity.
             </p>
           </div>
         </div>
@@ -121,13 +139,13 @@ export default function AboutSection() {
           ref={sliderRef}
           className="keen-slider overflow-hidden px-4 mx-auto max-w-[1100px]"
         >
-          {staff.map((staff, index) => (
+          {staff.map((s, index) => (
             <div key={index} className="keen-slider__slide flex justify-center px-2">
               <div className="w-[280px] sm:w-[300px] md:w-[320px] flex flex-col bg-[#f9f9f9] rounded-lg overflow-hidden shadow-sm hover:shadow-md transition mb-3">
                 <div className="relative h-[420px] w-full">
                   <Image
-                    src={staff.image}
-                    alt={`${staff.name} – ${staff.title}`}
+                    src={s.image}
+                    alt={`${s.name} – ${s.title}`}
                     fill
                     className="object-cover text-gray-600"
                   />
@@ -135,12 +153,12 @@ export default function AboutSection() {
                 <div className="p-4 flex-1 flex flex-col justify-between text-center">
                   <div>
                     <h3 className="text-lg font-serif text-black font-medium mb-1">
-                      {staff.name}
+                      {s.name}
                     </h3>
-                    <p className="text-sm text-gray-600 mb-3">{staff.title}</p>
+                    <p className="text-sm text-gray-600 mb-3">{s.title}</p>
                   </div>
                   <Link
-                    href={`/aboutus/${staff.name.toLowerCase()}`}
+                    href={`/aboutus/${s.name.toLowerCase()}`}
                     className="inline-block border border-gray-300 text-black px-4 py-2 rounded-full text-xs hover:border-black transition"
                   >
                     Learn More
@@ -152,8 +170,19 @@ export default function AboutSection() {
         </div>
       </div>
 
-      {/* Final Spacer */}
+      {/* Spacer */}
       <div className="h-1 bg-white w-full" />
+
+      {/* Scroll to Top Button */}
+      {showScrollTop && (
+        <button
+          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+          className="fixed bottom-6 right-6 z-40 bg-black text-white px-4 py-2 rounded-full shadow-lg text-sm hover:bg-[#731a2f] transition"
+          aria-label="Scroll to top of page"
+        >
+          ↑ Top
+        </button>
+      )}
     </section>
   );
 }
