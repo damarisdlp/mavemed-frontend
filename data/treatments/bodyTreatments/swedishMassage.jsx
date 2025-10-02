@@ -25,7 +25,7 @@ export const swedishMassage = {
     promoPriceCurrency: "USD",
     options: [
       {
-        optionName: "Full Body",
+        optionName: "Relaxing Swedish Massage - Full Body",
         isPromoEligible: false,
         optionPrice: "$65",
         optionCurrency: "USD",
