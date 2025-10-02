@@ -1,36 +1,46 @@
 export const sclerotherapy = {
-  slug: "sclerotherapy",
-  category: "body-treatments",
+  urlSlug: "sclerotherapy",
+  category: "body-medical-treatments",
   categoryDisplayName: "Body & Medical Treatments",
   serviceDisplayName: "Sclerotherapy for Vein Removal",
   isPopular: false,
-  isPromoEligible: true,
-  image: "/body.jpg",
-  image2: "/body2.jpg",
-  description: "Minimally invasive injection treatment to eliminate spider veins and improve leg appearance.",
-  standardPrice: "$135USD",
-  promoPrice: "$115USD",
+  isPromoEligible: false,
+  images: {
+    primary: "/sclerotherapy.jpg",
+    secondary: "/sclerotherapy2.jpg",
+  },
+  description:
+    "Minimally invasive injection treatment to eliminate spider veins and improve leg appearance.",
+  details:
+    "Sclerotherapy involves injecting a sclerosing agent into small superficial veins, causing them to collapse and fade from view. It is commonly used to treat spider veins and small varicose veins on the legs.",
   notes: [
     "Multiple sessions may be needed for optimal results",
     "Compression stockings required post-treatment",
     "Ideal for non-varicose surface veins"
   ],
-  details: "Sclerotherapy involves injecting a sclerosing agent into small superficial veins, causing them to collapse and fade from view. It is commonly used to treat spider veins and small varicose veins on the legs.",
+  pricing: {
+    startingPrice: "$135",
+    startingPriceCurrency: "USD",
+    promoPrice: "",
+    promoPriceCurrency: "USD",
+    options: [
+      {
+        optionName: "One Leg (Up to 3 zones)",
+        isPromoEligible: true,
+        optionPrice: "$135",
+        optionCurrency: "USD",
+        optionPromoPrice: "",
+        optionPromoPriceCurrency: "USD",
+        notes: null,
+      },
+    ],
+  },
   goals: [
     "Reduce visibility of spider veins",
     "Improve leg aesthetics",
     "Prevent worsening of vascular issues"
   ],
   treatableAreas: ["Thighs", "Calves", "Ankles"],
-  pricing: [
-    {
-      serviceChild: "One Leg (Up to 3 zones)",
-      isPromoEligible: true,
-      standardPrice: "$135USD",
-      promoPrice: "$115USD",
-      notes: null
-    }
-  ],
   addOns: [],
   expectations: {
     preTreatment: [
@@ -43,11 +53,13 @@ export const sclerotherapy = {
   faq: [
     {
       question: "How long before I see results?",
-      answer: "Veins typically fade over 3–6 weeks. Larger veins may take longer or require more sessions."
+      answer:
+        "Veins typically fade over 3–6 weeks. Larger veins may take longer or require more sessions."
     },
     {
       question: "Is the procedure painful?",
-      answer: "There may be a slight stinging or cramping sensation, but most patients tolerate it well."
+      answer:
+        "There may be a slight stinging or cramping sensation, but most patients tolerate it well."
     }
   ]
 };
