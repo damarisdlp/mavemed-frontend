@@ -16,6 +16,7 @@ import { sculptra } from './treatments/collagenBiostimulators/sculptra';
 import { facialBalancing } from './treatments/dermalFillers/facialBalancing';
 import { lipFillers } from './treatments/dermalFillers/lipFillers';
 import { hyaluronidase } from './treatments/dermalFillers/hyaluronidase';
+import { co2Laser } from './treatments/laserTreatments/co2Laser';
 
 export const allTreatments = [
     botox, 
@@ -34,5 +35,6 @@ export const allTreatments = [
     sculptra,
     facialBalancing,
     lipFillers,
-    hyaluronidase
+    hyaluronidase,
+    co2Laser
 ];
