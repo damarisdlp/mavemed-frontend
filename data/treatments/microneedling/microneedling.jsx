@@ -75,23 +75,17 @@ export const microneedling = {
     "Hands"
   ],
   addOns: [
-    {
-      serviceParent: "PRFM Upgrade",
-      serviceChild: "Replace PRP with PRFM",
-      displayName: "Upgrade to PRFM (Fibrin Matrix)",
-      link: "/treatments/mesotherapy/prp"
+     {
+      serviceParent: "Wrinkle Reducer - Botox",
+      serviceChild:  "Any Zone",
+      displayName:   "Wrinkle Reducer - Botox",
+      link:          "/treatments/wrinkle-reducers-botox"
     },
     {
-      serviceParent: "Rejuran Healer",
-      serviceChild: "Full Face",
-      displayName: "Rejuran Healer Infusion",
-      link: "/treatments/mesotherapy/rejuran"
-    },
-    {
-      serviceParent: "Kiara Reju",
-      serviceChild: "1–3 Zones",
-      displayName: "Kiara Reju Booster Infusion",
-      link: "/treatments/mesotherapy/kiara-reju"
+      serviceParent: "HydraFacial MD",
+      serviceChild:  "Hydrafacial MD - Face",
+      displayName:   "HydraFacial MD - Face",
+      link:          "/treatments/hydrafacial"
     }
   ],
   expectations: {
