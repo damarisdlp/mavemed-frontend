@@ -1,23 +1,58 @@
 export const ipl = {
-  slug: "ipl",
+  urlSlug: "ipl",
   category: "laser-resurfacing",
   categoryDisplayName: "Laser Treatments & Skin Resurfacing",
   serviceDisplayName: "IPL Photofacial (Harmony XL)",
   isPopular: false,
   isPromoEligible: true,
-  image: "/ipl.jpg",
-  image2: "/ipl2.jpg",
+  images: {
+    primary: "/ipl.jpg",
+    secondary: "/ipl2.jpg"
+  },
   description:
     "Light-based therapy to reduce sun damage, pigmentation, redness, and boost overall skin clarity.",
-  standardPrice: "$170USD per session",
-  promoPrice: "$145USD",
+  details:
+    "IPL (Intense Pulsed Light) delivers broad-spectrum light to target pigment, sun spots, redness, and broken capillaries. It gently resurfaces and revitalizes without damaging the top layer of skin.",
   notes: [
     "Package pricing available for multiple sessions",
     "Requires photo evaluation for clearance",
     "No active tan or self-tanner before session"
   ],
-  details:
-    "IPL (Intense Pulsed Light) delivers broad-spectrum light to target pigment, sun spots, redness, and broken capillaries. It gently resurfaces and revitalizes without damaging the top layer of skin.",
+  pricing: {
+    startingPrice: "$170",
+    startingPriceCurrency: "USD",
+    promoPrice: "$145",
+    promoPriceCurrency: "USD",
+    options: [
+      {
+        optionName: "Full Face",
+        isPromoEligible: true,
+        optionPrice: "$170",
+        optionCurrency: "USD",
+        optionPromoPrice: "$145",
+        optionPromoPriceCurrency: "USD",
+        notes: null
+      },
+      {
+        optionName: "Chest",
+        isPromoEligible: true,
+        optionPrice: "$185",
+        optionCurrency: "USD",
+        optionPromoPrice: "$160",
+        optionPromoPriceCurrency: "USD",
+        notes: null
+      },
+      {
+        optionName: "Face + Neck + Chest",
+        isPromoEligible: true,
+        optionPrice: "$395",
+        optionCurrency: "USD",
+        optionPromoPrice: "$350",
+        optionPromoPriceCurrency: "USD",
+        notes: null
+      }
+    ]
+  },
   goals: [
     "Reduce pigmentation and age spots",
     "Minimize redness and rosacea",
@@ -30,29 +65,6 @@ export const ipl = {
     "Hands",
     "Shoulders",
     "Arms"
-  ],
-  pricing: [
-    {
-      serviceChild: "Full Face",
-      isPromoEligible: true,
-      standardPrice: "$170USD",
-      promoPrice: "$145USD",
-      notes: null
-    },
-    {
-      serviceChild: "Chest",
-      isPromoEligible: true,
-      standardPrice: "$185USD",
-      promoPrice: "$160USD",
-      notes: null
-    },
-    {
-      serviceChild: "Face + Neck + Chest",
-      isPromoEligible: true,
-      standardPrice: "$395USD",
-      promoPrice: "$350USD",
-      notes: null
-    }
   ],
   addOns: [
     {
