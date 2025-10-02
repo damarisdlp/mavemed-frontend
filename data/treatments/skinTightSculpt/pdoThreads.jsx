@@ -1,23 +1,77 @@
 export const pdoThreads = {
-  slug: "pdo-threads",
+  urlSlug: "pdo-threads",
   category: "skin-tightening",
   categoryDisplayName: "Skin Tightening & Sculpting",
   serviceDisplayName: "PDO Thread Lift – Non-Surgical Facial Rejuvenation",
   isPopular: true,
   isPromoEligible: false,
-  image: "/threads.jpg",
-  image2: "/threads2.jpg",
+  images: {
+    primary: "/threads.jpg",
+    secondary: "/threads2.jpg",
+  },
   description:
     "Achieve a lifted, more defined look without surgery. PDO threads offer a non-invasive way to tighten skin, contour the face, and boost collagen over time.",
-  standardPrice: "Price varies by area and number of threads used",
-  promoPrice: "Discounted packages available for multiple treatment zones",
+  details:
+    "PDO (polydioxanone) thread lifts are a minimally invasive procedure that uses absorbable sutures to reposition tissue and stimulate collagen production. The treatment provides both immediate lifting and long-term skin rejuvenation. Common areas include the jawline, cheeks, neck, and brow. No general anesthesia or downtime required.",
   notes: [
     "Sterile, absorbable polydioxanone (PDO) threads are used",
     "Stimulates natural collagen production for long-term firmness",
     "Best for mild to moderate facial sagging and skin laxity"
   ],
-  details:
-    "PDO (polydioxanone) thread lifts are a minimally invasive procedure that places absorbable sutures beneath the skin to reposition tissue and stimulate collagen production. This dual action provides both instant lifting and gradual skin rejuvenation. Common areas treated include the jawline, cheeks, neck, and brow. No general anesthesia or downtime required.",
+  pricing: {
+    startingPrice: "Price varies by area and thread count",
+    startingPriceCurrency: "USD",
+    promoPrice: "Discounted packages available for multiple zones",
+    promoPriceCurrency: "USD",
+    options: [
+      {
+        optionName: "Signature Lower Face Lift",
+        isPromoEligible: false,
+        optionPrice: "$TBD USD",
+        optionCurrency: "USD",
+        optionPromoPrice: null,
+        optionPromoPriceCurrency: null,
+        notes: [
+          "Includes Jawline, Jowls, Nasolabial",
+          "Most popular package – delivers visible contouring"
+        ]
+      },
+      {
+        optionName: "Full Face Thread Lift",
+        isPromoEligible: false,
+        optionPrice: "$TBD USD",
+        optionCurrency: "USD",
+        optionPromoPrice: null,
+        optionPromoPriceCurrency: null,
+        notes: [
+          "Includes Midface, Jawline, Brows",
+          "Includes sculpting and lifting for top-to-bottom facial balance"
+        ]
+      },
+      {
+        optionName: "Eyebrow Lift",
+        isPromoEligible: false,
+        optionPrice: "$TBD USD",
+        optionCurrency: "USD",
+        optionPromoPrice: null,
+        optionPromoPriceCurrency: null,
+        notes: [
+          "Creates a subtle lateral brow lift and opens the eye area"
+        ]
+      },
+      {
+        optionName: "Full Face & Neck Combo",
+        isPromoEligible: false,
+        optionPrice: "$TBD USD",
+        optionCurrency: "USD",
+        optionPromoPrice: null,
+        optionPromoPriceCurrency: null,
+        notes: [
+          "Includes Midface, Jawline, Brows, and Neck"
+        ]
+      }
+    ]
+  },
   goals: [
     "Lift sagging jowls, cheeks, and midface",
     "Improve skin laxity and smooth wrinkles",
@@ -32,90 +86,45 @@ export const pdoThreads = {
     "Marionette Lines",
     "Under Eyes"
   ],
-  pricing: [
-    {
-      serviceChild: "Signature Lower Face Lift",
-      isPromoEligible: false,
-      standardPrice: "$TBD USD",
-      promoPrice: null,
-      notes: [
-        "Includes Jawline, Jowls, Nasolabial",
-        "Most popular package – delivers visible contouring"
-      ]
-    },
-    {
-      serviceChild: "Full Face Thread Lift",
-      isPromoEligible: false,
-      standardPrice: "$TBD USD",
-      promoPrice: null,
-      notes: [
-        "Includes Midface, Jawline, Brows",
-        "Includes sculpting and lifting for top-to-bottom facial balance"
-      ]
-    },
-    {
-      serviceChild: "Eyebrow Lift",
-      isPromoEligible: false,
-      standardPrice: "$TBD USD",
-      promoPrice: null,
-      notes: [
-        "Creates a subtle lateral brow lift and opens the eye area"
-      ]
-    },
-    {
-      serviceChild: "Full Face & Neck Combo",
-      isPromoEligible: false,
-      standardPrice: "$TBD USD",
-      promoPrice: null,
-      notes: [
-        "Includes Midface, Jawline, Brows, and Neck"
-      ]
-    }
-  ],
   addOns: [
     {
       serviceParent: "PN + Hyaluronic Acid Booster + Niacinamide",
       serviceChild: "Kiara Reju",
-      displayName: "PN + Hyaluronic Acid Booster + Niacinamide - Kiara Reju",
+      displayName: "Kiara Reju – PN + Hyaluronic Acid + Niacinamide",
       link: "/treatments/mesotherapy/kiaraReju"
     }
   ],
   expectations: {
     preTreatment: [
-      "Avoid alcohol, NSAIDs, and blood-thinning supplements 24–48 hours prior to reduce bruising risk.",
-      "Inform your provider of recent Botox or filler treatments to ensure optimal treatment planning."
+      "Avoid alcohol, NSAIDs, and blood-thinning supplements 24–48 hours before your appointment to reduce bruising.",
+      "Let your provider know about any recent Botox or filler procedures to plan your treatment accordingly."
     ],
     postTreatment: [
-      "Expect temporary swelling, soreness, or mild bruising at insertion sites.",
-      "Avoid dental visits, facial massage, or strenuous activity for 7 days.",
-      "Sleep on your back and limit facial movements for 5–7 days to allow threads to settle."
+      "Expect mild soreness, swelling, or bruising around thread entry points.",
+      "Avoid dental work, strenuous activity, or facial massage for 7 days.",
+      "Sleep on your back and minimize exaggerated facial movements for 5–7 days to ensure threads settle properly."
     ]
   },
   faq: [
     {
       question: "What is a PDO thread lift?",
-      answer:
-        "A PDO thread lift is a non-surgical treatment that uses dissolvable threads to lift, contour, and stimulate collagen in the face or neck. It offers natural-looking results with minimal downtime."
+      answer: "A PDO thread lift is a non-surgical treatment that uses dissolvable threads to lift, contour, and stimulate collagen in the face or neck. It offers natural-looking results with minimal downtime."
     },
     {
       question: "How long do the results last?",
-      answer:
-        "The threads dissolve within 6 months, but the skin tightening and collagen production can last up to 12–18 months."
+      answer: "The threads dissolve within 6 months, but collagen stimulation continues, and results can last 12–18 months depending on lifestyle and skin condition."
     },
     {
       question: "Is the procedure painful?",
-      answer:
-        "Mild discomfort is expected, but the area is numbed with lidocaine to ensure the procedure is well tolerated."
+      answer: "The area is numbed with lidocaine, so discomfort is minimal. Some tenderness or tightness may occur for a few days post-procedure."
     },
     {
       question: "Can threads be combined with other treatments?",
-      answer:
-        "Yes. They’re often paired with fillers, biostimulators, or microneedling for comprehensive facial rejuvenation."
+      answer: "Yes. Thread lifts are often paired with biostimulators, dermal fillers, or RF microneedling for a full facial rejuvenation plan."
     },
     {
       question: "When will I see results?",
-      answer:
-        "Some lifting is seen immediately, but full results develop gradually as collagen forms over 6–12 weeks."
+      answer: "Some lifting is visible immediately, while full collagen remodeling takes 6–12 weeks for optimal improvement."
     }
   ]
 };
