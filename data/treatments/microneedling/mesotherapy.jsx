@@ -89,9 +89,9 @@ export const mesotherapy = {
   addOns: [
     {
       serviceParent: "Microneedling Skin Renewal",
-      serviceChild: "Microneedling Only",
-      displayName: "Combine with Microneedling",
-      link: "/treatments/microneedling/microneedling"
+      serviceChild: "Microneedling Skin Renewal",
+      displayName: "Microneedling Skin Renewal",
+      link: "/treatments/microneedling"
     },
     {
       serviceParent: "PDO Threads",
