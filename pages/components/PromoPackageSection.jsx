@@ -57,7 +57,7 @@ export default function PromoPackageSection() {
                 href="/treatments"
                 className="inline-flex items-center justify-center bg-black text-white px-6 py-3 rounded-full hover:bg-[#731a2f] transition text-center"
               >
-                Explore Packages
+                Explore Services
               </Link>
             </div>
           </div>
