@@ -1,7 +1,7 @@
 export const casmaraRetinolProAge = {
   urlSlug: "casmara-retinol-proage",
   category: "facials",
-  categoryDisplayName: "Facials",
+  categoryDisplayName: "Facials & Add-Ons",
   serviceDisplayName: "Casmara Retinol Pro‑Age Facial",
   isPopular: false,
   isPromoEligible: true,
