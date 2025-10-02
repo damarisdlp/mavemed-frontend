@@ -1,7 +1,7 @@
 export const mesotherapy = {
   urlSlug: "mesotherapy-infusions",
   category: "microneedling & mesotherapy",
-  categoryDisplayName: "Mesotherapy & Growth Factor Infusions",
+  categoryDisplayName: "Microneedling & Mesotherapy",
   serviceDisplayName: "Mesotherapy Skin Boosters",
   isPopular: true,
   isPromoEligible: true,
