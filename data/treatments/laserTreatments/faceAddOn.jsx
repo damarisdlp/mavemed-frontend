@@ -1,21 +1,17 @@
-export const casmaraInfinity = {
+export const serumAddOns = {
   urlSlug: "serum-add-ons",
-  category: "facials",
-  categoryDisplayName: "Facials & Add-Ons",
-  serviceDisplayName: "Serum Add-Ons for Medical Grade Services",
+  category: "laser-resurfacing",
+  categoryDisplayName: "Laser Treatments & Skin Resurfacing",
+  serviceDisplayName: "Serum Add-Ons",
   isPopular: false,
   isPromoEligible: false,
   images: {
     primary: "/serum.jpg",
     secondary: "/serum2.jpg",
   },
-  description: 
-  "Luxury anti-aging facial with growth factors, peptides, and Casmara's exclusive Infinity serum for firming and lifting mature skin.",
-  details: 
-  "This high-end anti-aging protocol combines biomimetic peptides, firming actives, and Casmara’s potent Infinity serum to visibly firm, hydrate, and restore mature skin. Includes facial massage and lifting mask for enhanced effect.",
+  description: "",
+  details: "",
   notes: [
-          "Great for special events or regular anti-aging maintenance",
-          "Leaves skin glowing, firmer, and deeply nourished"
         ],
   pricing: {
     startingPrice: "$95",
@@ -24,13 +20,31 @@ export const casmaraInfinity = {
     promoPriceCurrency: "USD",
     options: [
       {
-        optionName: "Casmara Infinity Anti‑Aging Facial",
+        optionName: "PRP or PRFM",
         isPromoEligible: false,
-        optionPrice: "$95",
+        optionPrice: "$90",
         optionCurrency: "USD",
         optionPromoPrice: "",
         optionPromoPriceCurrency: "USD",
-        notes: null
+        notes: ["Uses patient's own plasma or fibrin matrix"]
+      },
+      {
+        optionName: "Kiara Reju",
+        isPromoEligible: false,
+        optionPrice: "$190",
+        optionCurrency: "USD",
+        optionPromoPrice: "$170",
+        optionPromoPriceCurrency: "USD",
+        notes: ["PN + HA + Niacinamide booster"]
+      },
+      {
+        optionName: "Rejuran - Full Face",
+        isPromoEligible: false,
+        optionPrice: "$300",
+        optionCurrency: "USD",
+        optionPromoPrice: null,
+        optionPromoPriceCurrency: "USD",
+        notes: ["Salmon DNA-based cellular regeneration"]
       },
     ]
   },
