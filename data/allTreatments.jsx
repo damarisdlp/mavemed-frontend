@@ -31,6 +31,7 @@ import { pdoThreads } from './treatments/skinTightSculpt/pdoThreads';
 import { rfEnzymatic } from './treatments/skinTightSculpt/rfEnzymaticRemodeling';
 import { venusFreeze } from './treatments/skinTightSculpt/rfSculpting';
 import { ultraformerMPT } from './treatments/skinTightSculpt/ultraformerMPT';
+import { serumAddOns } from './treatments/laserTreatments/faceAddOn';
 
 export const allTreatments = [
     botox,
@@ -64,5 +65,6 @@ export const allTreatments = [
     calcanealSpur,
     matrixectomy,
     nailFungusLaser,
-    toenailExtraction
+    toenailExtraction,
+    serumAddOns
 ];
