@@ -1,7 +1,7 @@
 export const janssenRadianceBoost = {
   urlSlug: "facials-janssen-radiance-boost",
   category: "facials",
-  categoryDisplayName: "Facials",
+  categoryDisplayName: "Facials & Add-Ons",
   serviceDisplayName: "Janssen Radiance Boost Facial",
   isPopular: false,
   isPromoEligible: false,
