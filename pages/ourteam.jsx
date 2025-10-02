@@ -66,13 +66,13 @@ export default function TeamPage() {
             "@type": "Person",
             "name": "Dra. Nataly",
             "jobTitle": "MD",
-            "url": "https://www.mavemedspa.com/ourteam/dranataly"
+            "url": "https://www.mavemedspa.com/ourteam/drnataly"
           },
           {
             "@type": "Person",
             "name": "Dra. Jocelyn",
             "jobTitle": "MD",
-            "url": "https://www.mavemedspa.com/ourteam/drajocelyn"
+            "url": "https://www.mavemedspa.com/ourteam/drjocelyn"
           },
           {
             "@type": "Person",
