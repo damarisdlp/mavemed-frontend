@@ -90,7 +90,7 @@ export default function Team() {
                     </div>
                     <div className="mt-4 flex justify-center">
                       <Link
-                        href={`/aboutus/${staff.slug.toLowerCase()}`}
+                        href={`/ourteam/${staff.slug.toLowerCase()}`}
                         className="inline-block border border-gray-300 text-black px-4 py-2 rounded-full text-xs hover:border-black transition"
                         aria-label={`Learn more about ${staff.name}`}
                       >
