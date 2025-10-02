@@ -1,23 +1,58 @@
 export const rfMicroneedling = {
-  slug: "rf-microneedling",
-  category: "microneedling-rf",
-  categoryDisplayName: "Microneedling & RF Skin Rejuvenation",
-  serviceDisplayName: "Scarlet RF Microneedling",
+  urlSlug: "rf-microneedling",
+  category: "laser-resurfacing",
+  categoryDisplayName: "Laser Treatments & Skin Resurfacing",
+  serviceDisplayName: "Scarlet S RF Microneedling",
   isPopular: true,
   isPromoEligible: true,
-  image: "/microneedling.jpg",
-  image2: "/scarlet.jpg",
+  images: {
+    primary: "/microneedling.jpg",
+    secondary: "/scarlet.jpg"
+  },
   description:
     "Combines microneedling with fractional radiofrequency to lift, tighten, and resurface skin with minimal downtime.",
-  standardPrice: "$265USD per session",
-  promoPrice: "$225USD",
+  details:
+    "Scarlet S uses short-pulse radiofrequency delivered through microneedles to stimulate deeper layers of skin for collagen remodeling, tightening, and scar reduction. It enhances firmness and texture without damaging the skin’s surface.",
   notes: [
     "3–4 sessions spaced 4–6 weeks apart recommended",
     "Safe for all skin types",
     "Mild redness may last 1–2 days"
   ],
-  details:
-    "Scarlet S uses short-pulse radiofrequency delivered through microneedles to stimulate deeper layers of skin for collagen remodeling, tightening, and scar reduction. It enhances firmness and texture without damaging the skin’s surface.",
+  pricing: {
+    startingPrice: "$265",
+    startingPriceCurrency: "USD",
+    promoPrice: "$225",
+    promoPriceCurrency: "USD",
+    options: [
+      {
+        optionName: "Face",
+        isPromoEligible: true,
+        optionPrice: "$265",
+        optionCurrency: "USD",
+        optionPromoPrice: "$225",
+        optionPromoPriceCurrency: "USD",
+        notes: null
+      },
+      {
+        optionName: "Face + Neck",
+        isPromoEligible: true,
+        optionPrice: "$310",
+        optionCurrency: "USD",
+        optionPromoPrice: "$275",
+        optionPromoPriceCurrency: "USD",
+        notes: null
+      },
+      {
+        optionName: "Face + Neck + Décolleté",
+        isPromoEligible: true,
+        optionPrice: "$350",
+        optionCurrency: "USD",
+        optionPromoPrice: "$310",
+        optionPromoPriceCurrency: "USD",
+        notes: null
+      }
+    ]
+  },
   goals: [
     "Lift and tighten sagging skin",
     "Reduce acne scars and large pores",
@@ -31,31 +66,7 @@ export const rfMicroneedling = {
     "Acne scars",
     "Stretch marks"
   ],
-  pricing: [
-    {
-      serviceChild: "Face",
-      isPromoEligible: true,
-      standardPrice: "$265USD",
-      promoPrice: "$225USD",
-      notes: null
-    },
-    {
-      serviceChild: "Face + Neck",
-      isPromoEligible: true,
-      standardPrice: "$310USD",
-      promoPrice: "$275USD",
-      notes: null
-    },
-    {
-      serviceChild: "Face + Neck + Décolleté",
-      isPromoEligible: true,
-      standardPrice: "$350USD",
-      promoPrice: "$310USD",
-      notes: null
-    }
-  ],
   addOns: [],
-
   expectations: {
     preTreatment: [
       "Avoid blood thinners, alcohol, and caffeine 24 hours before your session.",
@@ -66,7 +77,6 @@ export const rfMicroneedling = {
       "Avoid sun exposure and heat-based treatments for 72 hours."
     ]
   },
-
   faq: [
     {
       question: "How is this different from regular microneedling?",
