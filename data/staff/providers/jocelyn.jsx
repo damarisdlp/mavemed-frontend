@@ -1,5 +1,5 @@
 export const jocelyn = {
-    name: "dr.jocelyn",
+    name: "drjocelyn",
     displayName: "Dr. Jocelyn",
     category: "Providers",
     title: "Provider",
