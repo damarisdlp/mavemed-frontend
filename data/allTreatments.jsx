@@ -8,6 +8,7 @@ import { janssenRadianceBoost } from './treatments/facials/janssen/radiance'
 import { janssenUltraRenewal } from './treatments/facials/janssen/ultra';
 import { cupping } from './treatments/bodyTreatments/cupping';
 import { keloidInjection } from './treatments/bodyTreatments/keloidScar';
+import { sclerotherapy } from './treatments/bodyTreatments/sclerotherapy';
 
 export const allTreatments = [
     botox, 
@@ -18,5 +19,6 @@ export const allTreatments = [
     janssenRadianceBoost,
     janssenUltraRenewal,
     cupping,
-    keloidInjection
+    keloidInjection,
+    sclerotherapy
 ];
