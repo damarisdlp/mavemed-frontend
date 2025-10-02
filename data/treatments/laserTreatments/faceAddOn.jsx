@@ -20,7 +20,7 @@ export const serumAddOns = {
     promoPriceCurrency: "USD",
     options: [
       {
-        optionName: "PRP or PRFM",
+        optionName: "Add-On - Platelet-Rich Plasma (PRP) or Platelet-Rich Fibrin Matrix(PRFM)",
         isPromoEligible: false,
         optionPrice: "$90",
         optionCurrency: "USD",
@@ -29,7 +29,7 @@ export const serumAddOns = {
         notes: ["Uses patient's own plasma or fibrin matrix"]
       },
       {
-        optionName: "Kiara Reju",
+        optionName: "Add-On - Kiara Reju",
         isPromoEligible: false,
         optionPrice: "$190",
         optionCurrency: "USD",
@@ -38,7 +38,7 @@ export const serumAddOns = {
         notes: ["PN + HA + Niacinamide booster"]
       },
       {
-        optionName: "Rejuran - Full Face",
+        optionName: "Add-On - Rejuran",
         isPromoEligible: false,
         optionPrice: "$300",
         optionCurrency: "USD",
