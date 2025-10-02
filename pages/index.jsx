@@ -14,6 +14,7 @@ import InstagramFeed from "./components/InstagramFeed"
 import ReviewsSection from "./components/ReviewsSection";
 import PromoPackageSection from "./components/PromoPackageSection";
 import Footer from "./components/Footer";
+import ScrollToTopButton from "./components/ScrollToTop";
 
 export default function Home() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -113,7 +114,7 @@ export default function Home() {
     }}
   />
 </Head>
-
+      <ScrollToTopButton />
       <PromoBanner />
       <Header isMobileMenuOpen={isMobileMenuOpen} setIsMobileMenuOpen={setIsMobileMenuOpen} />
       <HeroSection />
