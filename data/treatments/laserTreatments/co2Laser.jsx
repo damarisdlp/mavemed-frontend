@@ -25,7 +25,7 @@ export const co2Laser = {
     promoPriceCurrency: "USD",
     options: [
       {
-        optionName: "Perioral Area (Smoker’s Lines)",
+        optionName: "CO₂ Laser Resurfacing - Perioral Area (Smoker’s Lines)",
         isPromoEligible: true,
         optionPrice: "$195",
         optionCurrency: "USD",
@@ -34,7 +34,7 @@ export const co2Laser = {
         notes: null
       },
       {
-        optionName: "Under-Eyes",
+        optionName: "CO₂ Laser Resurfacing - Under-Eyes",
         isPromoEligible: true,
         optionPrice: "$195",
         optionCurrency: "USD",
@@ -43,7 +43,7 @@ export const co2Laser = {
         notes: null
       },
       {
-        optionName: "Full Face",
+        optionName: "CO₂ Laser Resurfacing - Full Face",
         isPromoEligible: true,
         optionPrice: "$460",
         optionCurrency: "USD",
@@ -52,7 +52,7 @@ export const co2Laser = {
         notes: null
       },
       {
-        optionName: "Neck",
+        optionName: "CO₂ Laser Resurfacing - Neck",
         isPromoEligible: true,
         optionPrice: "$225",
         optionCurrency: "USD",
@@ -61,7 +61,7 @@ export const co2Laser = {
         notes: null
       },
       {
-        optionName: "Décolleté",
+        optionName: "CO₂ Laser Resurfacing - Décolleté",
         isPromoEligible: true,
         optionPrice: "$260",
         optionCurrency: "USD",
@@ -70,7 +70,7 @@ export const co2Laser = {
         notes: null
       },
       {
-        optionName: "Stretch Marks",
+        optionName: "CO₂ Laser Resurfacing - Stretch Marks",
         isPromoEligible: true,
         optionPrice: "$260",
         optionCurrency: "USD",
@@ -79,7 +79,7 @@ export const co2Laser = {
         notes: null
       },
       {
-        optionName: "Surgical Scars",
+        optionName: "CO₂ Laser Resurfacing - Scars",
         isPromoEligible: true,
         optionPrice: "$260",
         optionCurrency: "USD",
@@ -88,7 +88,7 @@ export const co2Laser = {
         notes: null
       },
       {
-        optionName: "Hands",
+        optionName: "CO₂ Laser Resurfacing - Hands",
         isPromoEligible: true,
         optionPrice: "$260",
         optionCurrency: "USD",
@@ -110,15 +110,15 @@ export const co2Laser = {
     "Neck",
     "Décolleté",
     "Stretch Marks",
-    "Surgical Scars",
+    "Scars",
     "Hands"
   ],
   addOns: [
     {
-      serviceParent: "Platelet-Rich Plasma (PRP)",
-      serviceChild: null,
-      displayName: "PRP Add-On",
-      link: "/treatments/prp"
+      serviceParent: "Serum Add-Ons",
+      serviceChild: "Add-On - Platelet-Rich Plasma (PRP) or Platelet-Rich Fibrin Matrix(PRFM)",
+      displayName: "Add-On - Platelet-Rich Plasma (PRP) or Platelet-Rich Fibrin Matrix(PRFM)",
+      link: "/treatments/serum-add-ons"
     }
   ],
   expectations: {
