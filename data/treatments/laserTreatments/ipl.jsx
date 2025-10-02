@@ -68,11 +68,23 @@ export const ipl = {
   ],
   addOns: [
     {
-      serviceParent: "Platelet-Rich Plasma (PRP)",
-      serviceChild: null,
-      displayName: "PRP Add-On",
-      link: "/treatments/prp"
-    }
+      serviceParent: "Wrinkle Reducer - Botox",
+      serviceChild:  "Any Zone",
+      displayName:   "Wrinkle Reducer - Botox",
+      link:          "/treatments/wrinkle-reducers-botox"
+    },
+    {
+      serviceParent: "HydraFacial MD",
+      serviceChild:  "Hydrafacial MD - Face",
+      displayName:   "HydraFacial MD - Face",
+      link:          "/treatments/hydrafacial"
+    },
+    {
+      serviceParent: "Relaxing Swedish Massage",
+      serviceChild:  "Relaxing Swedish Massage - Full Body",
+      displayName:   "Relaxing Swedish Massage - Full Body",
+      link:          "/treatments/swedish-massage"
+    },
   ],
   expectations: {
     preTreatment: [
