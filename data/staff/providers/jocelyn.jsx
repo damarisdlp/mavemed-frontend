@@ -1,10 +1,10 @@
 export const jocelyn = {
-    name: "jocelyn",
-    displayName: "Jocelyn",
+    name: "dr.jocelyn",
+    displayName: "Dr.Jocelyn",
     category: "Providers",
     title: "Provider",
-    image: "/jocelyn.jpg",
-    bio: "Jocelyn is a cosmetologist",
+    image: "/drjocelyn.jpg",
+    bio: "Dr.Jocelyn is a Doctor",
     favorites: [
       {
         serviceName: "HydraFacial MD - Face",

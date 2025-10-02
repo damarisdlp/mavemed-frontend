@@ -1,10 +1,10 @@
 export const veronica = {
-    name: "veronica",
-    displayName: "Veronica",
+    name: "dr.veronica",
+    displayName: "Dr. Veronica",
     category: "Directors",
     title: "Director & Founder",
-    image: "/veronica.jpg",
-    bio: "Veronica is a director",
+    image: "/drveronica.jpg",
+    bio: "Dr.Veronica is a director",
     favorites: [
       {
         serviceName: "HydraFacial MD - Face",

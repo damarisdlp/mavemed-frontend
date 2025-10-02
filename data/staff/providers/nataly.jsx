@@ -1,10 +1,10 @@
 export const nataly = {
-    name: "nataly",
-    displayName: "Nataly",
+    name: "dr.nataly",
+    displayName: "Dr.Nataly",
     category: "Providers",
     title: "Provider",
-    image: "/nataly.jpg",
-    bio: "Nataly is a cosmetologist",
+    image: "/drnataly.jpg",
+    bio: "Dr.Nataly is a Doctor",
     favorites: [
       {
         serviceName: "HydraFacial MD - Face",
