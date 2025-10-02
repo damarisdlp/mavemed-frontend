@@ -1,27 +1,53 @@
 export const enzymaticTherapy = {
-  slug: "enzymatic-therapy",
+  urlSlug: "enzymatic-therapy",
   category: "skin-tightening",
   categoryDisplayName: "Skin Tightening & Sculpting",
   serviceDisplayName: "Enzymatic Remodeling Therapy",
   isPopular: false,
   isPromoEligible: true,
-  image: "/body.jpg",
-  image2: "/enzymatic2.jpg",
+  images: {
+    primary: "/body.jpg",
+    secondary: "/enzymatic2.jpg",
+  },
   description:
-    "Localized fat reduction and fibrosis breakdown using targeted enzyme therapy for smoother contour and skin texture.",
-  standardPrice: "$130USD per session",
-  promoPrice: "$110USD per session with package",
-  notes: [
-    "Non-surgical injectable treatment with visible skin smoothing effects",
-    "Multiple sessions typically required",
-    "Ideal for post-liposuction fibrosis, localized fat, and skin tone improvement"
-  ],
+    "Localized fat reduction and fibrosis breakdown using targeted enzyme therapy for smoother contour and improved skin texture.",
   details:
-    "Enzymatic therapy uses lipolytic and anti-fibrotic enzymes injected into specific areas to break down dense connective tissue, improve circulation, and promote fat metabolism. Commonly used for patients post-lipo or with stubborn pockets of fat or fibrosis.",
+    "Enzymatic therapy involves injecting lipolytic and anti-fibrotic enzymes into specific areas to break down dense tissue, improve circulation, and support localized fat metabolism. It is especially effective for post-liposuction fibrosis, stubborn fat pockets, and skin tone irregularities. Results build over time with multiple sessions and are enhanced when combined with drainage or radiofrequency therapy.",
+  notes: [
+    "Non-surgical, injectable fat reduction treatment",
+    "Targets fibrosis, localized fat, and texture irregularities",
+    "Most effective in a series of 4–6 sessions",
+  ],
+  pricing: {
+    startingPrice: "$130 USD per session",
+    startingPriceCurrency: "USD",
+    promoPrice: "$110 USD per session (with package)",
+    promoPriceCurrency: "USD",
+    options: [
+      {
+        optionName: "Localized Area (any small zone)",
+        isPromoEligible: true,
+        optionPrice: "$130 USD",
+        optionCurrency: "USD",
+        optionPromoPrice: "$110 USD",
+        optionPromoPriceCurrency: "USD",
+        notes: null,
+      },
+      {
+        optionName: "Larger Zones (abdomen, thighs, flanks)",
+        isPromoEligible: true,
+        optionPrice: "$160 USD",
+        optionCurrency: "USD",
+        optionPromoPrice: "$140 USD",
+        optionPromoPriceCurrency: "USD",
+        notes: null,
+      },
+    ],
+  },
   goals: [
     "Break down post-lipo fibrosis",
-    "Improve localized fat reduction",
-    "Even out texture and skin tone"
+    "Reduce stubborn localized fat",
+    "Smooth and even skin texture"
   ],
   treatableAreas: [
     "Abdomen",
@@ -31,66 +57,45 @@ export const enzymaticTherapy = {
     "Flanks",
     "Under Chin (Submental)"
   ],
-  pricing: [
-    {
-      serviceChild:    "Localized Area (any small zone)",
-      isPromoEligible: true,
-      standardPrice:   "$130USD",
-      promoPrice:      "$110USD",
-      notes:           null
-    },
-    {
-      serviceChild:    "Larger Zones (abdomen, thighs, flanks)",
-      isPromoEligible: true,
-      standardPrice:   "$160USD",
-      promoPrice:      "$140USD",
-      notes:           null
-    }
-  ],
   addOns: [
     {
       serviceParent: "RF Body Sculpting",
-      serviceChild:  null,
-      displayName:   "RF Body Sculpting",
-      link:          "/treatments/enzymaticRemodeling"
+      serviceChild: null,
+      displayName: "RF Body Sculpting",
+      link: "/treatments/enzymaticRemodeling"
     }
   ],
   expectations: {
     preTreatment: [
-      "Avoid anti-inflammatories and alcohol 24 hours prior to reduce bruising risk.",
-      "Hydrate well to support lymphatic drainage post-treatment."
+      "Avoid alcohol and anti-inflammatory medications for 24 hours prior to reduce the risk of bruising.",
+      "Drink plenty of water before treatment to support post-treatment lymphatic drainage."
     ],
     postTreatment: [
-      "Bruising and tenderness are common for 2–5 days in treated areas.",
-      "Wear compression garments if recommended by provider for enhanced results.",
-      "Lymphatic massage or movement is encouraged to assist enzyme clearance."
+      "Expect some soreness, swelling, or bruising in the treated area for 2–5 days.",
+      "Wear compression garments if recommended to enhance sculpting results.",
+      "Engage in gentle movement or lymphatic massage to accelerate enzyme clearance and optimize results."
     ]
   },
   faq: [
     {
       question: "Is this the same as mesotherapy?",
-      answer:
-        "While similar in concept, enzymatic remodeling uses specific enzymes rather than lipolytic cocktails, and is more effective for fibrosis and post-lipo recovery."
+      answer: "Not exactly. Enzymatic therapy uses specific enzymes designed for fibrosis and post-lipo remodeling, whereas mesotherapy typically uses general lipolytic cocktails."
     },
     {
-      question: "How many sessions will I need?",
-      answer:
-        "Typically 4–6 sessions are recommended, spaced 1–2 weeks apart, depending on severity and area."
+      question: "How many sessions are needed?",
+      answer: "Most patients benefit from 4–6 sessions, spaced 1–2 weeks apart, depending on treatment goals and area size."
     },
     {
-      question: "Can I combine this with RF or massage?",
-      answer:
-        "Yes, combination therapy enhances drainage and skin tightening. RF or lymphatic massage is often recommended after enzyme sessions."
+      question: "Does the treatment hurt?",
+      answer: "You may feel slight stinging during injection and tenderness after. Discomfort is mild and temporary."
     },
     {
-      question: "Does it hurt?",
-      answer:
-        "Mild discomfort or stinging during injection is normal, followed by soreness or light bruising."
+      question: "When will I see results?",
+      answer: "Some smoothing is visible within 1–2 weeks. More dramatic results appear progressively across multiple sessions."
     },
     {
-      question: "How soon will I see results?",
-      answer:
-        "Initial smoothing may be visible within 1–2 weeks. More dramatic improvements occur gradually over several sessions."
+      question: "Can I combine this with other treatments?",
+      answer: "Yes. Combining enzymatic therapy with RF body sculpting or lymphatic massage improves both fat reduction and skin tightening outcomes."
     }
   ]
 };
