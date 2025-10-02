@@ -18,10 +18,10 @@ export default function StaffDetails({ member }) {
             </Link>{" "}
             /{" "}
             <Link
-              href={`/ourteam/#${member.title?.replace(/\s+/g, "-").toLowerCase()}`}
+              href={`/ourteam/#${member.category?.replace(/\s+/g, "-").toLowerCase()}`}
               className="hover:underline hover:text-black"
             >
-              {member.title}
+              {member.category}
             </Link>{" "}
             /{" "}
             <span className="text-gray-700 underline">{member.displayName}</span>
@@ -68,12 +68,12 @@ export default function StaffDetails({ member }) {
 
               const hasPromo =
                 match?.isPromoEligible &&
-                match?.pricing?.promoPrice &&
+                typeof match?.pricing?.promoPrice === "string" &&
                 match.pricing.promoPrice.trim() !== "";
 
               return (
-                <div key={idx} className="mb-6 bg-gray-50 p-5 rounded-lg">
-                  <p className="text-lg font-semibold text-black">
+                <div key={idx} className="mb-6">
+                  <p className="text-md font-semibold text-black">
                     {favorite.serviceName}
                   </p>
 
@@ -86,17 +86,12 @@ export default function StaffDetails({ member }) {
                   {match?.pricing?.startingPrice && (
                     <p className="text-sm text-gray-700 mt-2">
                       <span className="font-semibold">Price:</span>{" "}
-                      {match.pricing.startingPrice}{" "}
-                      {match.pricing.startingPriceCurrency}
+                      {match.pricing.startingPrice} {match.pricing.startingPriceCurrency}
                       {hasPromo && (
                         <>
-                          {" "}
-                          |{" "}
-                          <span className="font-semibold">
-                            Exclusive Pricing:
-                          </span>{" "}
-                          {match.pricing.promoPrice}{" "}
-                          {match.pricing.promoPriceCurrency}
+                          {" "} |{" "}
+                          <span className="font-semibold">Exclusive Pricing:</span>{" "}
+                          {match.pricing.promoPrice} {match.pricing.promoPriceCurrency}
                         </>
                       )}
                     </p>
@@ -105,7 +100,7 @@ export default function StaffDetails({ member }) {
                   {favorite.link && (
                     <Link
                       href={favorite.link}
-                      className="text-sm underline text-black mt-2 inline-block hover:text-[#731a2f]"
+                      className="text-sm underline text-black mt-1 inline-block hover:text-[#731a2f]"
                     >
                       Learn more about {favorite.serviceName}
                     </Link>
