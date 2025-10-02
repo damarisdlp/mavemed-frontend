@@ -34,7 +34,7 @@ export const microneedling = {
         notes: ["Includes Toskani Lumicen Gel serum infusion only"]
       },
       {
-        optionName: "Microneedling + PRP or PRFM",
+        optionName: "Microneedling - PRP or PRFM",
         isPromoEligible: false,
         optionPrice: "$160",
         optionCurrency: "USD",
@@ -43,7 +43,7 @@ export const microneedling = {
         notes: ["Uses patient's own plasma or fibrin matrix"]
       },
       {
-        optionName: "Microneedling + Kiara Reju",
+        optionName: "Microneedling - Kiara Reju",
         isPromoEligible: false,
         optionPrice: "$190",
         optionCurrency: "USD",
@@ -52,7 +52,7 @@ export const microneedling = {
         notes: ["PN + HA + Niacinamide booster"]
       },
       {
-        optionName: "Microneedling + Rejuran",
+        optionName: "Microneedling Skin Renewal - Rejuran - Full Face",
         isPromoEligible: false,
         optionPrice: "$300",
         optionCurrency: "USD",
