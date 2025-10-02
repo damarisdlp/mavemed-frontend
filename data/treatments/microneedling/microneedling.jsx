@@ -1,6 +1,6 @@
 export const microneedling = {
   urlSlug: "microneedling",
-  category: "microneedling",
+  category: "microneedling & mesotherapy",
   categoryDisplayName: "Microneedling & Mesotherapy",
   serviceDisplayName: "Microneedling Skin Renewal",
   isPopular: false,
