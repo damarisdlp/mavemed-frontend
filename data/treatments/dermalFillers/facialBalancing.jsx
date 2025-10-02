@@ -1,23 +1,79 @@
 export const facialBalancing = {
-  slug: "facial-balancing-fillers",
+  urlSlug: "facial-balancing-fillers",
   category: "dermal-fillers",
   categoryDisplayName: "Dermal Fillers (Hyaluronic Acid)",
   serviceDisplayName: "Facial Balancing with Dermal Fillers",
   isPopular: false,
   isPromoEligible: false,
-  image: "/facialfillers.jpg",
-  image2: "/facialfillers2.jpg",
+  images: {
+    primary: "/facialfillers.jpg",
+    secondary: "/facialfillers2.jpg"
+  },
   description:
     "Achieve natural facial harmony with strategic dermal filler placement targeting the cheeks, chin, jawline, and midface. Ideal for restoring symmetry, contour, and volume loss.",
-  standardPrice: "Starting at $305 USD",
-  promoPrice: null,
+  details:
+    "Facial balancing is a non-surgical aesthetic treatment that uses hyaluronic acid-based dermal fillers to enhance symmetry, define features, and restore youthful proportions. Areas treated often include the jawline, chin, cheeks, temples, and midface. Each plan is tailored for your unique facial structure and aesthetic goals to ensure natural-looking, harmonious results.",
   notes: [
     "Pricing depends on treatment zones and number of syringes used",
     "Typical plans involve 2–5 syringes for full-face balancing",
     "Designed for subtle but transformative rejuvenation"
   ],
-  details:
-    "Facial balancing is a non-surgical aesthetic treatment that uses hyaluronic acid-based dermal fillers to enhance symmetry, define features, and restore youthful proportions. Areas treated often include the jawline, chin, cheeks, temples, and midface. Each plan is tailored for your unique facial structure and aesthetic goals to ensure natural-looking, harmonious results.",
+  pricing: {
+    startingPrice: "$305",
+    startingPriceCurrency: "USD",
+    promoPrice: null,
+    promoPriceCurrency: null,
+    options: [
+      {
+        optionName: "Stylage M with Lidocaine",
+        isPromoEligible: false,
+        optionPrice: "$305",
+        optionCurrency: "USD",
+        optionPromoPrice: null,
+        optionPromoPriceCurrency: null,
+        notes: [
+          "Price per 1ml syringe",
+          "Duration approx 9 to 12 months"
+        ]
+      },
+      {
+        optionName: "Juvéderm Volift with Lidocaine",
+        isPromoEligible: false,
+        optionPrice: "$365",
+        optionCurrency: "USD",
+        optionPromoPrice: null,
+        optionPromoPriceCurrency: null,
+        notes: [
+          "Price per 1ml syringe",
+          "Duration approx 12 to 15 months"
+        ]
+      },
+      {
+        optionName: "Juvéderm Voluma with Lidocaine",
+        isPromoEligible: false,
+        optionPrice: "$370",
+        optionCurrency: "USD",
+        optionPromoPrice: null,
+        optionPromoPriceCurrency: null,
+        notes: [
+          "Price per 1ml syringe",
+          "Duration approx 12 to 15 months"
+        ]
+      },
+      {
+        optionName: "Juvéderm Volux with Lidocaine",
+        isPromoEligible: false,
+        optionPrice: "$385",
+        optionCurrency: "USD",
+        optionPromoPrice: null,
+        optionPromoPriceCurrency: null,
+        notes: [
+          "Price per 1ml syringe",
+          "Duration approx 18 to 24 months"
+        ]
+      }
+    ]
+  },
   goals: [
     "Enhance facial symmetry and definition",
     "Lift and volumize cheeks and midface",
@@ -31,48 +87,6 @@ export const facialBalancing = {
     "Nasolabial folds",
     "Marionette lines",
     "Midface"
-  ],
-  pricing: [
-    {
-      serviceChild: "Stylage M with Lidocaine",
-      isPromoEligible: false,
-      standardPrice: "$305 USD",
-      promoPrice: null,
-      notes: [
-        "Price per 1ml syringe",
-        "Duration approx 9 to 12 months"
-      ]
-    },
-    {
-      serviceChild: "Juvéderm Volift with Lidocaine",
-      isPromoEligible: false,
-      standardPrice: "$365 USD",
-      promoPrice: null,
-      notes: [
-        "Price per 1ml syringe",
-        "Duration approx 12 to 15 months"
-      ]
-    },
-    {
-      serviceChild: "Juvéderm Voluma with Lidocaine",
-      isPromoEligible: false,
-      standardPrice: "$370 USD",
-      promoPrice: null,
-      notes: [
-        "Price per 1ml syringe",
-        "Duration approx 12 to 15 months"
-      ]
-    },
-    {
-      serviceChild: "Juvéderm Volux with Lidocaine",
-      isPromoEligible: false,
-      standardPrice: "$385 USD",
-      promoPrice: null,
-      notes: [
-        "Price per 1ml syringe",
-        "Duration approx 18 to 24 months"
-      ]
-    }
   ],
   addOns: [
     {
