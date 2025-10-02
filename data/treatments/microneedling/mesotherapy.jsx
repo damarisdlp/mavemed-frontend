@@ -43,7 +43,7 @@ export const mesotherapy = {
         notes: ["PN + HA + Niacinamide for glow and elasticity"]
       },
       {
-        optionName: "Rejuran – Full Face",
+        optionName: "Rejuran - Full Face",
         isPromoEligible: false,
         optionPrice: "$300",
         optionCurrency: "USD",
