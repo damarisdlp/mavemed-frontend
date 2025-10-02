@@ -1,23 +1,67 @@
 export const venusFreeze = {
-  slug: "venus-freeze",
+  urlSlug: "venus-freeze",
   category: "skin-tightening",
   categoryDisplayName: "Skin Tightening & Sculpting",
   serviceDisplayName: "Radio Frequency Body Sculpting",
   isPopular: false,
   isPromoEligible: true,
-  image: "/radiofrequency.jpg",
-  image2: "/venus-freeze2.jpg",
+  images: {
+    primary: "/radiofrequency.jpg",
+    secondary: "/venus-freeze2.jpg",
+  },
   description:
     "Non-invasive radiofrequency therapy to smooth skin, reduce localized fat, and improve body contour.",
-  standardPrice: "$110USD per session",
-  promoPrice: "$95USD per session with package",
+  details:
+    "Venus Freeze uses multi-polar radiofrequency and pulsed electromagnetic fields to deliver heat into the skin, stimulating collagen and elastin while reducing fat deposits. Ideal for patients seeking skin tightening and smoother contours without surgery.",
   notes: [
     "Painless treatment with no downtime",
     "Multiple sessions recommended for optimal results",
     "Also improves cellulite and lymphatic drainage"
   ],
-  details:
-    "Venus Freeze uses multi-polar radiofrequency and pulsed electromagnetic fields to deliver heat into the skin, stimulating collagen and elastin while reducing fat deposits. Ideal for patients seeking skin tightening and smoother contours without surgery.",
+  pricing: {
+    startingPrice: "$110USD per session",
+    startingPriceCurrency: "USD",
+    promoPrice: "$95USD per session with package",
+    promoPriceCurrency: "USD",
+    options: [
+      {
+        optionName: "Abdomen",
+        isPromoEligible: true,
+        optionPrice: "$110USD",
+        optionCurrency: "USD",
+        optionPromoPrice: "$95USD",
+        optionPromoPriceCurrency: "USD",
+        notes: null
+      },
+      {
+        optionName: "Arms",
+        isPromoEligible: true,
+        optionPrice: "$110USD",
+        optionCurrency: "USD",
+        optionPromoPrice: "$95USD",
+        optionPromoPriceCurrency: "USD",
+        notes: null
+      },
+      {
+        optionName: "Thighs (Inner or Outer)",
+        isPromoEligible: true,
+        optionPrice: "$120USD",
+        optionCurrency: "USD",
+        optionPromoPrice: "$105USD",
+        optionPromoPriceCurrency: "USD",
+        notes: null
+      },
+      {
+        optionName: "Buttocks",
+        isPromoEligible: true,
+        optionPrice: "$130USD",
+        optionCurrency: "USD",
+        optionPromoPrice: "$115USD",
+        optionPromoPriceCurrency: "USD",
+        notes: null
+      }
+    ]
+  },
   goals: [
     "Tighten loose skin on abdomen, arms, or thighs",
     "Reduce appearance of cellulite",
@@ -32,42 +76,12 @@ export const venusFreeze = {
     "Back (Bra Fat)",
     "Love Handles"
   ],
-  pricing: [
-    {
-      serviceChild:    "Abdomen",
-      isPromoEligible: true,
-      standardPrice:   "$110USD",
-      promoPrice:      "$95USD",
-      notes:           null
-    },
-    {
-      serviceChild:    "Arms",
-      isPromoEligible: true,
-      standardPrice:   "$110USD",
-      promoPrice:      "$95USD",
-      notes:           null
-    },
-    {
-      serviceChild:    "Thighs (Inner or Outer)",
-      isPromoEligible: true,
-      standardPrice:   "$120USD",
-      promoPrice:      "$105USD",
-      notes:           null
-    },
-    {
-      serviceChild:    "Buttocks",
-      isPromoEligible: true,
-      standardPrice:   "$130USD",
-      promoPrice:      "$115USD",
-      notes:           null
-    }
-  ],
   addOns: [
     {
       serviceParent: "Enzymatic Therapy",
-      serviceChild:  null,
-      displayName:   "Enzymatic Therapy",
-      link:          "/treatments/enzymatic-therapy"
+      serviceChild: null,
+      displayName: "Enzymatic Therapy",
+      link: "/treatments/enzymatic-therapy"
     }
   ],
   expectations: {
