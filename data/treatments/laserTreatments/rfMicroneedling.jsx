@@ -66,7 +66,32 @@ export const rfMicroneedling = {
     "Acne scars",
     "Stretch marks"
   ],
-  addOns: [],
+  addOns: [
+    {
+      serviceParent: "Wrinkle Reducer - Botox",
+      serviceChild:  "Any Zone",
+      displayName:   "Wrinkle Reducer - Botox",
+      link:          "/treatments/wrinkle-reducers-botox"
+    },
+    {
+      serviceParent: "HydraFacial MD",
+      serviceChild:  "Hydrafacial MD - Face",
+      displayName:   "HydraFacial MD - Face",
+      link:          "/treatments/hydrafacial"
+    },
+    {
+      serviceParent: "Serum Add-Ons",
+      serviceChild: "Add-On - Platelet-Rich Plasma (PRP) or Platelet-Rich Fibrin Matrix (PRFM)",
+      displayName: "Add-On - Platelet-Rich Plasma (PRP) or Platelet-Rich Fibrin Matrix (PRFM)",
+      link: "/treatments/serum-add-ons"
+    },
+    {
+      serviceParent: "Serum Add-Ons",
+      serviceChild: "Add-On - Rejuran",
+      displayName: "Add-On - Rejuran",
+      link: "/treatments/serum-add-ons"
+    }
+  ],
   expectations: {
     preTreatment: [
       "Avoid blood thinners, alcohol, and caffeine 24 hours before your session.",
