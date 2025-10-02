@@ -12,6 +12,7 @@ import { sclerotherapy } from './treatments/bodyTreatments/sclerotherapy';
 import { wartRemoval } from './treatments/bodyTreatments/wartRemoval';
 import { swedishMassage } from './treatments/bodyTreatments/swedishMassage';
 import { harmonyca } from './treatments/collagenBiostimulators/harmonyCa';
+import { sculptra } from './treatments/collagenBiostimulators/sculptra';
 
 export const allTreatments = [
     botox, 
@@ -26,5 +27,6 @@ export const allTreatments = [
     sclerotherapy,
     wartRemoval,
     swedishMassage,
-    harmonyca
+    harmonyca,
+    sculptra
 ];
