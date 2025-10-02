@@ -42,7 +42,15 @@ export default function PricingTable({ treatment }) {
                     key={`zone-${idx}`}
                     className="flex flex-row justify-between items-start bg-[#f9f9f9] border p-4 rounded-lg shadow-sm hover:shadow-md transition"
                   >
-                    <div className="text-lg font-medium">{p.optionName}</div>
+                    <div className="text-lg font-medium">{p.optionName}
+                      {p.notes?.length > 0 && (
+                        <ul className="mt-1 text-xs text-gray-600 italic list-disc list-inside">
+                          {p.notes.map((note, i) => (
+                            <li key={i}>{note}</li>
+                          ))}
+                        </ul>
+                      )}
+                    </div>
                     <div className="text-sm leading-6 text-left max-w-[60%]">
                       <p>
                         <span className="font-semibold">Price:</span>{" "}
@@ -53,13 +61,6 @@ export default function PricingTable({ treatment }) {
                           <span className="font-semibold">Exclusive Pricing:</span>{" "}
                           {p.optionPromoPrice} {p.optionCurrency}
                         </p>
-                      )}
-                      {p.notes?.length > 0 && (
-                        <ul className="mt-1 text-xs text-gray-600 italic list-disc list-inside">
-                          {p.notes.map((note, i) => (
-                            <li key={i}>{note}</li>
-                          ))}
-                        </ul>
                       )}
                     </div>
                   </div>
