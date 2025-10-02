@@ -9,39 +9,49 @@ export default function AddOnSection({ addOns }) {
       <h3 className="text-xl font-medium mb-2">Add‑On Options</h3>
 
       {addOns.map((addonRef, idx) => {
-        const addon =
-          allTreatments.find(
-            (t) =>
-              t.serviceDisplayName === addonRef.displayName ||
-              t.urlSlug === addonRef.link?.split("/").pop()
-          );
+        const addon = allTreatments.find(
+          (t) =>
+            t.serviceDisplayName === addonRef.serviceParent ||
+            t.urlSlug === addonRef.link?.split("/").pop()
+        );
 
         if (!addon) {
-          console.warn("No addon match found for:", addonRef.displayName);
+          console.warn("⚠️ No addon match found for:", addonRef.serviceParent);
           return null;
         }
 
+        // Try to match the specific variation from pricing options
+        const matchedOption =
+          addon.pricing?.options?.find(
+            (opt) =>
+              opt.optionName === addonRef.serviceChild ||
+              opt.optionName === addonRef.displayName
+          ) || null;
+
+        const displayPrice = matchedOption?.optionPrice || addon.pricing?.startingPrice;
+        const displayCurrency = matchedOption?.optionCurrency || addon.pricing?.startingPriceCurrency;
+
         const hasPromo =
-          addon.isPromoEligible === true &&
-          typeof addon.pricing?.promoPrice === "string" &&
-          addon.pricing.promoPrice.trim() !== "";
+          matchedOption?.isPromoEligible &&
+          matchedOption.optionPromoPrice?.trim() !== "";
 
         return (
           <div key={idx} className="mb-4">
             <p className="text-md font-semibold">{addonRef.displayName}</p>
 
-            <p className="text-sm text-gray-700">{addon.description}</p>
+            {addon.description && (
+              <p className="text-sm text-gray-700">{addon.description}</p>
+            )}
 
-            {addon?.pricing && (
+            {displayPrice && (
               <p className="text-sm text-gray-700 mt-1">
                 <span className="font-semibold">Price:</span>{" "}
-                {addon.pricing.startingPrice} {addon.pricing.startingPriceCurrency}
-                
+                {displayPrice} {displayCurrency}
                 {hasPromo && (
                   <>
                     {" "} |{" "}
                     <span className="font-semibold">Exclusive Pricing:</span>{" "}
-                    {addon.pricing.promoPrice} {addon.pricing.promoPriceCurrency}
+                    {matchedOption.optionPromoPrice} {matchedOption.optionPromoPriceCurrency}
                   </>
                 )}
               </p>
