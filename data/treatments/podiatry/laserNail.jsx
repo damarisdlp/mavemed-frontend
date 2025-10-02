@@ -1,59 +1,99 @@
 export const nailFungusLaser = {
-  slug: "nail-fungus-laser",
+  urlSlug: "nail-fungus-laser",
   category: "podiatry",
   categoryDisplayName: "Medical Podiatry Services",
   serviceDisplayName: "Laser Nail Fungus Treatment",
   isPopular: false,
   isPromoEligible: true,
-  image: "/podiatry.jpg",
-  image2: "/podiatry2.jpg",
-  description: "Non-invasive laser therapy to eliminate toenail fungus and restore nail clarity.",
-  standardPrice: "$95USD per session",
-  promoPrice: "$80USD per session",
+  images: {
+    primary: "/podiatry.jpg",
+    secondary: "/podiatry2.jpg",
+  },
+  description:
+    "Non-invasive laser therapy to eliminate toenail fungus and restore nail clarity without pain or medication.",
+  details:
+    "Laser nail fungus treatment uses targeted light energy (K-Laser Blue Derma) to penetrate the nail and destroy fungal infections at the root without harming surrounding tissue. The treatment is safe, effective, and requires no downtime. A typical protocol includes 6–8 sessions spaced 2–3 weeks apart for optimal results.",
   notes: [
-    "Recommended protocol: 1 session every 2–3 weeks, total 6–8 sessions",
-    "Treatment is safe, painless, and requires no downtime"
+    "Ideal for mild to moderate onychomycosis",
+    "Painless, non-invasive, and drug-free",
+    "Full results may take months as healthy nail regrows",
   ],
-  details: "Using focused laser light (K-Laser Blue Derma), this treatment targets fungal colonies beneath the toenail without damaging surrounding tissue. The procedure is safe, effective, and requires no medication.",
+  pricing: {
+    startingPrice: "$95 USD per session",
+    startingPriceCurrency: "USD",
+    promoPrice: "$80 USD per session",
+    promoPriceCurrency: "USD",
+    options: [
+      {
+        optionName: "Single Nail",
+        isPromoEligible: true,
+        optionPrice: "$25 USD",
+        optionCurrency: "USD",
+        optionPromoPrice: "$20 USD",
+        optionPromoPriceCurrency: "USD",
+        notes: null,
+      },
+      {
+        optionName: "Full Foot (5 Nails)",
+        isPromoEligible: true,
+        optionPrice: "$95 USD",
+        optionCurrency: "USD",
+        optionPromoPrice: "$80 USD",
+        optionPromoPriceCurrency: "USD",
+        notes: null,
+      }
+    ]
+  },
   goals: [
-    "Kill fungal infection at the root",
-    "Improve nail appearance and clarity",
-    "Prevent recurrence of infection"
+    "Eliminate fungal infection from nail bed",
+    "Improve nail clarity and texture",
+    "Prevent future recurrence of infection"
   ],
-  treatableAreas: ["Toenails", "Fingernails (case-dependent)"],
-  pricing: [
+  treatableAreas: [
+    "Toenails",
+    "Fingernails (case-by-case)"
+  ],
+  addOns: [
     {
-      serviceChild: "Single Nail",
-      isPromoEligible: true,
-      standardPrice: "$25USD",
-      promoPrice: "$20USD",
-      notes: null
+      serviceParent: "Podiatric Foot Evaluation",
+      serviceChild: "Basic Foot Assessment",
+      displayName: "Add-on: Full Foot Evaluation",
+      link: "/treatments/podiatry/foot-evaluation"
     },
     {
-      serviceChild: "Full Foot (5 Nails)",
-      isPromoEligible: true,
-      standardPrice: "$95USD",
-      promoPrice: "$80USD",
-      notes: null
+      serviceParent: "Post-Laser Shoe Sanitization",
+      serviceChild: "UV Shoe Sterilization",
+      displayName: "Shoe Sanitization Add-On",
+      link: "/treatments/podiatry/uv-shoe-sanitize"
     }
   ],
-  addOns: [],
   expectations: {
     preTreatment: [
-      "Clean feet thoroughly and avoid polish. Let the staff know if you've taken antifungal medications."
+      "Wash feet thoroughly before arrival. Remove any nail polish or artificial nails.",
+      "Notify your provider if you’ve recently taken oral or topical antifungal medications."
     ],
     postTreatment: [
-      "Avoid re-contamination by disinfecting shoes and socks. Keep nails clean and dry."
+      "Keep nails dry and clean to prevent reinfection.",
+      "Disinfect shoes and change socks daily. Avoid barefoot walking in public areas.",
+      "Nail appearance improves gradually as the nail grows out over several months."
     ]
   },
   faq: [
     {
-      question: "Does it hurt?",
-      answer: "Not at all. Most patients describe it as a warm sensation. There is no downtime or pain afterward."
+      question: "Does laser nail fungus treatment hurt?",
+      answer: "No. Most patients describe a gentle warmth or tingling. There is no pain or downtime involved."
     },
     {
-      question: "When will I see results?",
-      answer: "Healthy nail regrowth can take months. However, the fungus dies quickly, and improvement is visible within weeks."
+      question: "When will I start to see clear nails?",
+      answer: "Visible improvement may start within weeks, but full nail clarity may take several months as healthy nail grows in."
+    },
+    {
+      question: "How many sessions do I need?",
+      answer: "A standard protocol involves 6–8 sessions spaced 2–3 weeks apart. Severe cases may require additional follow-up."
+    },
+    {
+      question: "Can the fungus come back?",
+      answer: "Yes, reinfection is possible if shoes, socks, or nail tools remain contaminated. Proper aftercare and hygiene are essential."
     }
   ]
 };
