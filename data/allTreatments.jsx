@@ -17,6 +17,7 @@ import { facialBalancing } from './treatments/dermalFillers/facialBalancing';
 import { lipFillers } from './treatments/dermalFillers/lipFillers';
 import { hyaluronidase } from './treatments/dermalFillers/hyaluronidase';
 import { co2Laser } from './treatments/laserTreatments/co2Laser';
+import { laserHairRemoval } from './treatments/laserTreatments/hairRemoval';
 
 export const allTreatments = [
     botox, 
@@ -36,5 +37,6 @@ export const allTreatments = [
     facialBalancing,
     lipFillers,
     hyaluronidase,
-    co2Laser
+    co2Laser,
+    laserHairRemoval
 ];
