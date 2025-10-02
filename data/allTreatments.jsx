@@ -30,6 +30,7 @@ import { enzymaticTherapy } from './treatments/skinTightSculpt/enzymaticRemodeli
 import { pdoThreads } from './treatments/skinTightSculpt/pdoThreads';
 import { rfEnzymatic } from './treatments/skinTightSculpt/rfEnzymaticRemodeling';
 import { venusFreeze } from './treatments/skinTightSculpt/rfSculpting';
+import { ultraformerMPT } from './treatments/skinTightSculpt/ultraformerMPT';
 
 export const allTreatments = [
     botox, 
@@ -62,5 +63,6 @@ export const allTreatments = [
     enzymaticTherapy,
     pdoThreads,
     rfEnzymatic,
-    venusFreeze
+    venusFreeze,
+    ultraformerMPT
 ];
