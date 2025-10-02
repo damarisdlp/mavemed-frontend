@@ -22,7 +22,7 @@ export default function PricingTable({ treatment }) {
         {/* Left: Dynamic Height Content */}
         <div className="w-full max-w-3xl mx-auto text-black px-6 md:px-12 py-5">
           <h1 className="text-4xl font-serif font-medium mb-3">
-            Pricing Options & Packages
+            Pricing Options & Add-Ons
           </h1>
           <p className="text-sm text-gray-600 italic mb-4">
             All prices listed are in either USD or MXN as indicated. If payment is made in a different currency than the one listed (e.g., paying in pesos for a USD-listed price or vice versa), the final price will be calculated using Mave Medical Spa’s current internal exchange rate at the time of payment.
