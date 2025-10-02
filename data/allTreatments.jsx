@@ -6,6 +6,8 @@ import { casmaraInfinity } from './treatments/facials/casmara/infinity';
 import { casmaraRetinolProAge } from './treatments/facials/casmara/retinol';
 import { janssenRadianceBoost } from './treatments/facials/janssen/radiance'
 import { janssenUltraRenewal } from './treatments/facials/janssen/ultra';
+import { cupping } from './treatments/bodyTreatments/cupping';
+import { keloidInjection } from './treatments/bodyTreatments/keloidScar';
 
 export const allTreatments = [
     botox, 
@@ -14,5 +16,7 @@ export const allTreatments = [
     casmaraInfinity, 
     casmaraRetinolProAge,
     janssenRadianceBoost,
-    janssenUltraRenewal
+    janssenUltraRenewal,
+    cupping,
+    keloidInjection
 ];
