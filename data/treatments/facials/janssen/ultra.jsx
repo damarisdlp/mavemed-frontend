@@ -1,7 +1,7 @@
 export const janssenUltraRenewal = {
   urlSlug: "facials-janssen-ultra-renewal",
   category: "facials",
-  categoryDisplayName: "Facials",
+  categoryDisplayName: "Facials & Add-Ons",
   serviceDisplayName: "Janssen Ultra Renewal Facial",
   isPopular: false,
   isPromoEligible: false,
