@@ -1,7 +1,7 @@
 export const casmaraInfinity = {
   urlSlug: "casmara-infinity",
   category: "facials",
-  categoryDisplayName: "Facials",
+  categoryDisplayName: "Facials & Add-Ons",
   serviceDisplayName: "Casmara Infinity Anti‑Aging Facial",
   isPopular: false,
   isPromoEligible: false,
