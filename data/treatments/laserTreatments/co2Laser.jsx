@@ -116,10 +116,22 @@ export const co2Laser = {
   addOns: [
     {
       serviceParent: "Serum Add-Ons",
-      serviceChild: "Add-On - Platelet-Rich Plasma (PRP) or Platelet-Rich Fibrin Matrix(PRFM)",
-      displayName: "Add-On - Platelet-Rich Plasma (PRP) or Platelet-Rich Fibrin Matrix(PRFM)",
+      serviceChild: "Add-On - Platelet-Rich Plasma (PRP) or Platelet-Rich Fibrin Matrix (PRFM)",
+      displayName: "Add-On - Platelet-Rich Plasma (PRP) or Platelet-Rich Fibrin Matrix (PRFM)",
       link: "/treatments/serum-add-ons"
-    }
+    },
+    {
+      serviceParent: "Serum Add-Ons",
+      serviceChild: "Add-On - Rejuran",
+      displayName: "Add-On - Rejuran",
+      link: "/treatments/serum-add-ons"
+    },
+    {
+      serviceParent: "Casmara Purifying Algae Facial",
+      serviceChild:  "Casmara Purifying Algae Facial",
+      displayName:   "Casmara Purifying Algae Facial",
+      link:          "/treatments/casmara-purifying"
+    },
   ],
   expectations: {
     preTreatment: [
