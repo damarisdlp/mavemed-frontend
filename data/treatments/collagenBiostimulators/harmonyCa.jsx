@@ -1,24 +1,41 @@
 export const harmonyca = {
-  slug: "harmonyca",
+  urlSlug: "harmonyca",
   category: "biostimulatory-fillers",
   categoryDisplayName: "Collagen Biostimulators",
   serviceDisplayName: "HarmonyCA (HA + Calcium Hydroxyapatite)",
   isPopular: false,
   isPromoEligible: false,
-  image: "/harmonyca.jpg",
-  image2: "/harmonyca2.jpg",
+  images: {
+    primary: "/harmonyca.jpg",
+    secondary: "/harmonyca2.jpg",
+  },
   description:
     "HarmonyCA is a next-generation biostimulatory filler that combines hyaluronic acid (HA) for immediate facial volume with calcium hydroxyapatite (CaHA) for long-term collagen stimulation. This hybrid injectable enhances facial contour, skin quality, and structural lift in a single treatment.",
-  standardPrice: "$875 USD per treatment",
-  promoPrice: null,
+  details:
+    "HarmonyCA is a dual-phase injectable combining hyaluronic acid for immediate hydration and volume, with CaHA microspheres to boost collagen production over time. This advanced formula is ideal for enhancing cheekbones, defining the jawline, and restoring firmness in the lower face. Its bioregenerative effect helps improve skin density and elasticity, making it a top choice for long-lasting, natural-looking rejuvenation without heaviness or puffiness.",
   notes: [
     "Treatment includes 2 syringes (1.25 mL each)",
     "Delivers both instant lift and progressive collagen support",
     "Clinically effective for rejuvenating midface, jawline, and lower face",
     "Recommended for patients seeking natural yet structural results"
   ],
-  details:
-    "HarmonyCA is a dual-phase injectable combining hyaluronic acid for immediate hydration and volume, with CaHA microspheres to boost collagen production over time. This advanced formula is ideal for enhancing cheekbones, defining the jawline, and restoring firmness in the lower face. Its bioregenerative effect helps improve skin density and elasticity, making it a top choice for long-lasting, natural-looking rejuvenation without heaviness or puffiness.",
+  pricing: {
+    startingPrice: "$875",
+    startingPriceCurrency: "USD",
+    promoPrice: "",
+    promoPriceCurrency: "USD",
+    options: [
+      {
+        optionName: "Per Treatment",
+        isPromoEligible: false,
+        optionPrice: "$875",
+        optionCurrency: "USD",
+        optionPromoPrice: "",
+        optionPromoPriceCurrency: "USD",
+        notes: null,
+      }
+    ],
+  },
   goals: [
     "Lift and contour midface and lower face",
     "Stimulate collagen and improve skin architecture",
@@ -31,18 +48,9 @@ export const harmonyca = {
     "Lower Face",
     "Preauricular Hollow"
   ],
-  pricing: [
-    {
-      serviceChild: "Per Treatment",
-      isPromoEligible: false,
-      standardPrice: "$875 USD",
-      promoPrice: null,
-      notes: null
-    }
-  ],
   addOns: [
     {
-      serviceParent: "PN/PDRN for Skin Rejuvenatio",
+      serviceParent: "PN/PDRN for Skin Rejuvenation",
       serviceChild: "Rejuran - Full Face",
       displayName: "Microneedling - Rejuran - Full Face",
       link: "/treatments/mesotherapy/rejuran"
