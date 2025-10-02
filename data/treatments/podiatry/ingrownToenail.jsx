@@ -45,18 +45,6 @@ export const matrixectomy = {
     "Lesser Toes (as recommended by provider)"
   ],
   addOns: [
-    {
-      serviceParent: "Podiatric Foot Evaluation",
-      serviceChild: "Basic Foot Assessment",
-      displayName: "Add-on: Full Foot Evaluation",
-      link: "/treatments/podiatry/foot-evaluation"
-    },
-    {
-      serviceParent: "Post-Surgical Dressing Change",
-      serviceChild: "Toe Dressing Follow-Up",
-      displayName: "Toe Dressing Change Visit",
-      link: "/treatments/podiatry/dressing-change"
-    }
   ],
   expectations: {
     preTreatment: [

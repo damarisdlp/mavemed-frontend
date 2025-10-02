@@ -54,18 +54,6 @@ export const toenailExtraction = {
     "Lesser Toes"
   ],
   addOns: [
-    {
-      serviceParent: "Matrixectomy",
-      serviceChild: "Matrixectomy (Permanent Ingrown Nail Removal)",
-      displayName: "Add Matrixectomy for Permanent Prevention",
-      link: "/treatments/podiatry/matrixectomy"
-    },
-    {
-      serviceParent: "Laser Fungus Therapy",
-      serviceChild: "Laser Nail Fungus Treatment",
-      displayName: "Laser Fungus Treatment for Infection Control",
-      link: "/treatments/podiatry/nail-fungus-laser"
-    }
   ],
   expectations: {
     preTreatment: [

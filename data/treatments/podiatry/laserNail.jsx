@@ -54,18 +54,6 @@ export const nailFungusLaser = {
     "Fingernails (case-by-case)"
   ],
   addOns: [
-    {
-      serviceParent: "Podiatric Foot Evaluation",
-      serviceChild: "Basic Foot Assessment",
-      displayName: "Add-on: Full Foot Evaluation",
-      link: "/treatments/podiatry/foot-evaluation"
-    },
-    {
-      serviceParent: "Post-Laser Shoe Sanitization",
-      serviceChild: "UV Shoe Sterilization",
-      displayName: "Shoe Sanitization Add-On",
-      link: "/treatments/podiatry/uv-shoe-sanitize"
-    }
   ],
   expectations: {
     preTreatment: [

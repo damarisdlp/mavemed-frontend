@@ -45,18 +45,6 @@ export const calcanealSpur = {
     "Plantar fascia insertion"
   ],
   addOns: [
-    {
-      serviceParent: "Podiatric Foot Evaluation",
-      serviceChild: "Basic Foot Assessment",
-      displayName: "Add-on: Full Foot Evaluation",
-      link: "/treatments/podiatry/foot-evaluation"
-    },
-    {
-      serviceParent: "Orthotic Customization",
-      serviceChild: "Orthotic Prescription",
-      displayName: "Custom Orthotic Prescription",
-      link: "/treatments/podiatry/custom-orthotics"
-    }
   ],
   expectations: {
     preTreatment: [
