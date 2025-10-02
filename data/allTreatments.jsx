@@ -14,6 +14,7 @@ import { swedishMassage } from './treatments/bodyTreatments/swedishMassage';
 import { harmonyca } from './treatments/collagenBiostimulators/harmonyCa';
 import { sculptra } from './treatments/collagenBiostimulators/sculptra';
 import { facialBalancing } from './treatments/dermalFillers/facialBalancing';
+import { lipFillers } from './treatments/dermalFillers/lipFillers';
 
 export const allTreatments = [
     botox, 
@@ -30,5 +31,6 @@ export const allTreatments = [
     swedishMassage,
     harmonyca,
     sculptra,
-    facialBalancing
+    facialBalancing,
+    lipFillers
 ];
