@@ -20,6 +20,7 @@ import { co2Laser } from './treatments/laserTreatments/co2Laser';
 import { laserHairRemoval } from './treatments/laserTreatments/hairRemoval';
 import { ipl } from './treatments/laserTreatments/ipl';
 import { rfMicroneedling } from './treatments/laserTreatments/rfMicroneedling';
+import { microneedling } from './treatments/microneedling/microneedling';
 
 export const allTreatments = [
     botox, 
@@ -42,5 +43,6 @@ export const allTreatments = [
     co2Laser,
     laserHairRemoval,
     ipl,
-    rfMicroneedling
+    rfMicroneedling,
+    microneedling
 ];
