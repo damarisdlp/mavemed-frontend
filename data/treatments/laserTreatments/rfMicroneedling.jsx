@@ -34,7 +34,7 @@ export const rfMicroneedling = {
         notes: null
       },
       {
-        optionName: "Face + Neck",
+        optionName: "Scarlet S RF Microneedling - Face + Neck",
         isPromoEligible: true,
         optionPrice: "$310",
         optionCurrency: "USD",
@@ -43,7 +43,7 @@ export const rfMicroneedling = {
         notes: null
       },
       {
-        optionName: "Face + Neck + Décolleté",
+        optionName: "Scarlet S RF Microneedling - Face + Neck + Décolleté",
         isPromoEligible: true,
         optionPrice: "$350",
         optionCurrency: "USD",
