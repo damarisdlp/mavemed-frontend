@@ -27,7 +27,7 @@ export const pdoThreads = {
       {
         optionName: "Signature Lower Face Lift",
         isPromoEligible: false,
-        optionPrice: "$TBD USD",
+        optionPrice: "$TBD",
         optionCurrency: "USD",
         optionPromoPrice: null,
         optionPromoPriceCurrency: null,
@@ -39,7 +39,7 @@ export const pdoThreads = {
       {
         optionName: "Full Face Thread Lift",
         isPromoEligible: false,
-        optionPrice: "$TBD USD",
+        optionPrice: "$TBD",
         optionCurrency: "USD",
         optionPromoPrice: null,
         optionPromoPriceCurrency: null,
@@ -51,7 +51,7 @@ export const pdoThreads = {
       {
         optionName: "Eyebrow Lift",
         isPromoEligible: false,
-        optionPrice: "$TBD USD",
+        optionPrice: "$TBD",
         optionCurrency: "USD",
         optionPromoPrice: null,
         optionPromoPriceCurrency: null,
