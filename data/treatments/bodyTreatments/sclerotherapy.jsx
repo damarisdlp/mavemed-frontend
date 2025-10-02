@@ -41,7 +41,20 @@ export const sclerotherapy = {
     "Prevent worsening of vascular issues"
   ],
   treatableAreas: ["Thighs", "Calves", "Ankles"],
-  addOns: [],
+  addOns: [
+    {
+      serviceParent: "Relaxing Swedish Massage",
+      serviceChild:  "Full Body",
+      displayName:   "Relaxing Swedish Massage - Full Body",
+      link:          "/treatments/swedish-massage"
+    },
+     {
+      serviceParent: "Cupping Therapy - Add‑On",
+      serviceChild:  "Cupping Therapy - Add‑On",
+      displayName:   "Cupping Therapy - Add‑On",
+      link:          "/treatments/cupping"
+    },
+  ],
   expectations: {
     preTreatment: [
       "Avoid aspirin, ibuprofen, or alcohol 24 hours prior. Wear loose clothing."
