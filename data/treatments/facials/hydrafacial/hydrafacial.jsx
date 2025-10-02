@@ -1,7 +1,7 @@
 export const hydrafacial = {
   urlSlug: "hydrafacial",
   category: "facials",
-  categoryDisplayName: "Facials",
+  categoryDisplayName: "Facials & Add-Ons",
   serviceDisplayName: "HydraFacial MD",
   isPopular: true,
   isPromoEligible: false,
