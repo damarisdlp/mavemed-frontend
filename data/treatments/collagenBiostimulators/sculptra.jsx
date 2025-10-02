@@ -1,23 +1,45 @@
 export const sculptra = {
-  slug: "sculptra",
+  urlSlug: "sculptra",
   category: "biostimulatory-fillers",
   categoryDisplayName: "Collagen Biostimulators",
   serviceDisplayName: "Sculptra PLLA Collagen Stimulator",
   isPopular: true,
   isPromoEligible: true,
-  image: "/sculptra.jpg",
-  image2: "/sculptra2.jpg",
+  images: {
+    primary: "/sculptra.jpg",
+    secondary: "/sculptra2.jpg"
+  },
   description:
     "Gradually restore youthful volume and firmness with Sculptra — a poly-L-lactic acid (PLLA) collagen stimulator that enhances skin texture and structure over time.",
-  standardPrice: "$575 USD per vial",
-  promoPrice: "$515 USD per vial",
+  details:
+    "Sculptra is an injectable biostimulant composed of poly-L-lactic acid (PLLA), designed to activate your skin’s natural collagen production. It gradually restores lost facial volume, improves skin density, and enhances definition in areas like the cheeks, jawline, and temples. Unlike traditional dermal fillers, Sculptra delivers subtle, progressive improvements that last up to two years.",
   notes: [
     "Treatment plan typically includes 2–3 vials spaced 4–6 weeks apart",
     "Full results build over 2–3 months as collagen regenerates",
     "Excellent for long-term volume restoration without an overfilled look"
   ],
-  details:
-    "Sculptra is an injectable biostimulant composed of poly-L-lactic acid (PLLA), designed to activate your skin’s natural collagen production. It gradually restores lost facial volume, improves skin density, and enhances definition in areas like the cheeks, jawline, and temples. Unlike traditional dermal fillers, Sculptra delivers subtle, progressive improvements that last up to two years.",
+  notes: [
+          "Exclusive pricing varies per quantity of sessions needed, listed price is applicable for 3 sessions"
+        ],
+  pricing: {
+    startingPrice: "$575",
+    startingPriceCurrency: "USD",
+    promoPrice: "$515",
+    promoPriceCurrency: "USD",
+    options: [
+      {
+        optionName: "Per Vial",
+        isPromoEligible: true,
+        optionPrice: "$575",
+        optionCurrency: "USD",
+        optionPromoPrice: "$515",
+        optionPromoPriceCurrency: "USD",
+        notes: [
+          "Exclusive pricing varies per quantity of sessions needed, listed price is applicable for 3 sessions"
+        ]
+      }
+    ]
+  },
   goals: [
     "Stimulate natural collagen growth",
     "Rebuild facial volume lost to aging",
@@ -31,17 +53,6 @@ export const sculptra = {
     "Marionette Lines",
     "Chin",
     "Neck"
-  ],
-  pricing: [
-    {
-      serviceChild: "Per Vial",
-      isPromoEligible: true,
-      standardPrice: "$575 USD",
-      promoPrice: "$515 USD",
-      notes: [
-        "Exclusive pricing varies per quantity of sessions needed, listed price is applicable for 3 sessions"
-      ]
-    }
   ],
   addOns: [
     {
