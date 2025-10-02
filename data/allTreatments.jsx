@@ -11,6 +11,7 @@ import { keloidInjection } from './treatments/bodyTreatments/keloidScar';
 import { sclerotherapy } from './treatments/bodyTreatments/sclerotherapy';
 import { wartRemoval } from './treatments/bodyTreatments/wartRemoval';
 import { swedishMassage } from './treatments/bodyTreatments/swedishMassage';
+import { harmonyca } from './treatments/collagenBiostimulators/harmonyCa';
 
 export const allTreatments = [
     botox, 
@@ -24,5 +25,6 @@ export const allTreatments = [
     keloidInjection,
     sclerotherapy,
     wartRemoval,
-    swedishMassage
+    swedishMassage,
+    harmonyca
 ];
