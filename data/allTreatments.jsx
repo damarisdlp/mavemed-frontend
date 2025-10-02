@@ -10,6 +10,7 @@ import { cupping } from './treatments/bodyTreatments/cupping';
 import { keloidInjection } from './treatments/bodyTreatments/keloidScar';
 import { sclerotherapy } from './treatments/bodyTreatments/sclerotherapy';
 import { wartRemoval } from './treatments/bodyTreatments/wartRemoval';
+import { swedishMassage } from './treatments/bodyTreatments/swedishMassage';
 
 export const allTreatments = [
     botox, 
@@ -22,5 +23,6 @@ export const allTreatments = [
     cupping,
     keloidInjection,
     sclerotherapy,
-    wartRemoval
+    wartRemoval,
+    swedishMassage
 ];
