@@ -1,43 +1,57 @@
 export const swedishMassage = {
-  slug: "swedish-massage",
-  category: "body-treatments",
+  urlSlug: "swedish-massage",
+  category: "body-medical-treatments",
   categoryDisplayName: "Body & Medical Treatments",
   serviceDisplayName: "Relaxing Swedish Massage",
   isPopular: false,
-  isPromoEligible: true,
-  image: "/body.jpg",
-  image2: "/body2.jpg",
-  description: "A gentle, full-body massage to relieve tension, improve circulation, and promote overall relaxation.",
-  standardPrice: "$65USD",
-  promoPrice: "$55USD",
+  isPromoEligible: false,
+  images: {
+    primary: "/swiss-msg.jpg",
+    secondary: "/swiss-msg2.jpg",
+  },
+  description:
+    "A gentle, full-body massage to relieve tension, improve circulation, and promote overall relaxation.",
+  details:
+    "This classic Swedish massage uses light to moderate pressure with long, flowing strokes. It helps improve lymphatic flow, reduce stress, and increase oxygen levels in the blood.",
   notes: [
     "Includes aromatherapy upon request",
     "Not a deep tissue massage",
     "Ideal for stress relief and general wellness"
   ],
-  details: "This classic Swedish massage uses light to moderate pressure with long, flowing strokes. It helps improve lymphatic flow, reduce stress, and increase oxygen levels in the blood.",
+  pricing: {
+    startingPrice: "$65",
+    startingPriceCurrency: "USD",
+    promoPrice: "$55",
+    promoPriceCurrency: "USD",
+    options: [
+      {
+        optionName: "Full Body",
+        isPromoEligible: false,
+        optionPrice: "$65",
+        optionCurrency: "USD",
+        optionPromoPrice: "",
+        optionPromoPriceCurrency: "USD",
+        notes: null,
+      }
+    ],
+  },
   goals: [
     "Promote relaxation",
     "Relieve muscular tension",
     "Improve blood circulation"
   ],
-  treatableAreas: ["Full Body"],
-  pricing: [
-    {
-      serviceChild: "Full Body",
-      isPromoEligible: true,
-      standardPrice: "$65USD",
-      promoPrice: "$55USD",
-      notes: null
-    }
+  treatableAreas: [
+    "Full Body"
   ],
   addOns: [],
   expectations: {
     preTreatment: [
-      "Arrive well-hydrated. Avoid heavy meals beforehand."
+      "Arrive well-hydrated.",
+      "Avoid heavy meals beforehand."
     ],
     postTreatment: [
-      "Drink plenty of water to support lymphatic drainage. Mild soreness may occur if it's your first massage."
+      "Drink plenty of water to support lymphatic drainage.",
+      "Mild soreness may occur if it's your first massage."
     ]
   },
   faq: [
