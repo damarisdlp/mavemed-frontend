@@ -15,6 +15,7 @@ import { harmonyca } from './treatments/collagenBiostimulators/harmonyCa';
 import { sculptra } from './treatments/collagenBiostimulators/sculptra';
 import { facialBalancing } from './treatments/dermalFillers/facialBalancing';
 import { lipFillers } from './treatments/dermalFillers/lipFillers';
+import { hyaluronidase } from './treatments/dermalFillers/hyaluronidase';
 
 export const allTreatments = [
     botox, 
@@ -32,5 +33,6 @@ export const allTreatments = [
     harmonyca,
     sculptra,
     facialBalancing,
-    lipFillers
+    lipFillers,
+    hyaluronidase
 ];
