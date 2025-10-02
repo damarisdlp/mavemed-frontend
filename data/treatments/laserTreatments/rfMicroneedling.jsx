@@ -6,8 +6,8 @@ export const rfMicroneedling = {
   isPopular: true,
   isPromoEligible: true,
   images: {
-    primary: "/microneedling.jpg",
-    secondary: "/scarlet.jpg"
+    primary: "/scarlet.jpg",
+    secondary: "/scarlet2.jpg"
   },
   description:
     "Combines microneedling with fractional radiofrequency to lift, tighten, and resurface skin with minimal downtime.",
@@ -25,7 +25,7 @@ export const rfMicroneedling = {
     promoPriceCurrency: "USD",
     options: [
       {
-        optionName: "Face",
+        optionName: "Scarlet S RF Microneedling - Face",
         isPromoEligible: true,
         optionPrice: "$265",
         optionCurrency: "USD",
