@@ -149,7 +149,7 @@ export default function AboutSection() {
                     <p className="text-sm text-gray-600 mb-3">{s.title}</p>
                   </div>
                   <Link
-                    href={`/aboutus/${s.displayName.toLowerCase()}`}
+                    href={`/ourteam/${s.displayName.toLowerCase()}`}
                     className="inline-block border border-gray-300 text-black px-4 py-2 rounded-full text-xs hover:border-black transition"
                   >
                     Learn More
