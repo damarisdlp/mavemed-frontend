@@ -8,12 +8,12 @@ import { jocelyn } from "./staff/providers/jocelyn"
 import { zury } from "./staff/receptionists/zury"
 
 export const allStaff = [
-    vicky,
-    manuel,
-    mayra,
     veronica,
     damaris,
     nataly,
     jocelyn,
-    zury
+    zury,
+    vicky,
+    manuel,
+    mayra,
 ]
