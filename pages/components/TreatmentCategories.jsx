@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 import { allTreatments } from "@/data/allTreatments";
 
 export default function TreatmentCategories() {
@@ -23,9 +24,38 @@ export default function TreatmentCategories() {
 
   const categories = Object.values(categoriesMap);
 
+  // Show/hide scroll-to-top button
+  const [showScrollTop, setShowScrollTop] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowScrollTop(window.scrollY > 400);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <div className="bg-white">
-      <div className="container mx-auto px-4 py-16">
+    <div className="bg-white scroll-smooth relative">
+      <div className="container mx-auto px-4 pt-12 pb-4">
+
+        {/* Sticky Category Menu */}
+        <div
+          id="category-menu"
+          className="flex flex-wrap gap-4 mb-12 justify-center sticky top-[90px] bg-white z-20 py-4 border-b border-gray-200"
+        >
+          {categories.map((category, i) => (
+            <a
+              key={i}
+              href={`#${category.title.replace(/\s+/g, "-").toLowerCase()}`}
+              className="text-sm md:text-base px-4 py-2 rounded-full border border-gray-300 text-black hover:border-black hover:text-[#731a2f] transition"
+            >
+              {category.title}
+            </a>
+          ))}
+        </div>
+
+        {/* Services by Category */}
         {categories.map((category, i) => (
           <div
             key={i}
@@ -80,6 +110,18 @@ export default function TreatmentCategories() {
             </div>
           </div>
         ))}
+
+        {/* Scroll to Top Button */}
+        {showScrollTop && (
+          <button
+            onClick={() => {
+              window.scrollTo({ top: 0, behavior: "smooth" });            }}
+            className="fixed bottom-6 right-6 z-40 bg-black text-white px-4 py-2 rounded-full shadow-lg text-sm hover:bg-[#731a2f] transition"
+            aria-label="Scroll to top category menu"
+          >
+            ↑ Top
+          </button>
+        )}
       </div>
     </div>
   );
