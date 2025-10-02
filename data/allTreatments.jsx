@@ -22,6 +22,7 @@ import { ipl } from './treatments/laserTreatments/ipl';
 import { rfMicroneedling } from './treatments/laserTreatments/rfMicroneedling';
 import { microneedling } from './treatments/microneedling/microneedling';
 import { mesotherapy } from './treatments/microneedling/mesotherapy';
+import { calcanealSpur } from './treatments/podiatry/heelSpur';
 
 export const allTreatments = [
     botox, 
@@ -46,5 +47,6 @@ export const allTreatments = [
     ipl,
     rfMicroneedling,
     microneedling,
-    mesotherapy
+    mesotherapy,
+    calcanealSpur
 ];
