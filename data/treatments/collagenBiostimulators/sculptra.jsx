@@ -54,10 +54,16 @@ export const sculptra = {
   ],
   addOns: [
     {
+      serviceParent: "Scarlet S RF Microneedling",
+      serviceChild: "Scarlet S RF Microneedling - Face",
+      displayName: "Scarlet S RF Microneedling - Face",
+      link: "/treatments/rf-microneedling"
+    },
+    {
       serviceParent: "Ultraformer MPT Ultrasound Lift",
-      serviceChild: "360 Contour",
-      displayName: "Ultraformer MPT Ultrasound Lift - 360 Contour",
-      link: "/treatments/skinTightSculpt/ultraformerMPT"
+      serviceChild: "Ultraformer MPT - 360 Contour",
+      displayName: "Ultraformer MPT - 360 Contour",
+      link: "/treatments/ultraformer-mpt"
     }
   ],
   expectations: {
