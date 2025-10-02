@@ -30,7 +30,7 @@ function ToggleItem({ question, answer }) {
         <span className="text-gray-500">{open ? "−" : "+"}</span>
       </button>
       {open && (
-        <div className="px-4 pb-4 text-sm text-gray-700 transition-all duration-300">
+        <div className="px-4 py-4 pb-4 text-sm text-gray-700 transition-all duration-300">
           {answer}
         </div>
       )}
