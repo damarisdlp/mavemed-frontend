@@ -123,7 +123,7 @@ export default function Footer() {
             <h4 className="font-semibold mb-4">Treatments</h4>
             <ul className="space-y-2">
               <li><Link href="/treatments" className="hover:underline">All Treatments</Link></li>
-              <li><Link href="/packages" className="hover:underline">Promo Packages</Link></li>
+              {/*<li><Link href="/packages" className="hover:underline">Promo Packages</Link></li>*/}
             </ul>
           </div>
           <div>
@@ -132,7 +132,7 @@ export default function Footer() {
               <li><Link href="/aboutus" className="hover:underline">About Us</Link></li>
               <li><Link href="/contact" className="hover:underline">Contact</Link></li>
               <li><Link href="/faq" className="hover:underline">FAQs</Link></li>
-              <li><Link href="/mave101" className="hover:underline">Mave 101</Link></li>
+              {/*<li><Link href="/mave101" className="hover:underline">Mave 101</Link></li>*/}
             </ul>
           </div>
           <div>
