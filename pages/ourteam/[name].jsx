@@ -7,7 +7,6 @@ import Footer from "../components/Footer";
 import PromoBanner from "../components/PromoBanner";
 import StaffDetails from "../components/StaffDetails";
 import ContactCTA from "../components/ContactCTA";
-import Breadcrumb from "../components/Breadcrumb"; // ⬅️ import Breadcrumb component
 
 export default function TeamMemberPage() {
   const router = useRouter();
@@ -49,9 +48,9 @@ export default function TeamMemberPage() {
         <meta property="og:title" content={`${member.displayName} | ${member.title} – Mave Medical Spa`} />
         <meta property="og:description" content={`Meet ${member.displayName}, a valued member of our expert team delivering advanced aesthetic care in Tijuana.`} />
         <meta property="og:image" content={`https://www.mavemedspa.com${member.image}`} />
-        <meta property="og:url" content={`https://www.mavemedspa.com/aboutus/${member.name}`} />
+        <meta property="og:url" content={`https://www.mavemedspa.com/ourteam/${member.name}`} />
         <meta property="og:type" content="profile" />
-        <link rel="canonical" href={`https://www.mavemedspa.com/aboutus/${member.name}`} />
+        <link rel="canonical" href={`https://www.mavemedspa.com/ourteam/${member.name}`} />
 
         <script
           type="application/ld+json"
@@ -67,7 +66,7 @@ export default function TeamMemberPage() {
                 "name": "Mave Medical Spa",
                 "url": "https://www.mavemedspa.com"
               },
-              "url": `https://www.mavemedspa.com/aboutus/${member.name}`,
+              "url": `https://www.mavemedspa.com/ourteam/${member.name}`,
               "description": member.bio.slice(0, 160)
             })
           }}
