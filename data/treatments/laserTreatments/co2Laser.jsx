@@ -1,74 +1,117 @@
 export const co2Laser = {
-  slug: "co2-laser",
+  urlSlug: "co2-laser",
   category: "laser-resurfacing",
   categoryDisplayName: "Laser Treatments & Skin Resurfacing",
   serviceDisplayName: "CO₂ Laser Resurfacing (AcuPulse)",
   isPopular: true,
   isPromoEligible: true,
-  image: "/laser-co2.jpg",
-  image2: "/laser-co2-2.jpg",
+  images: {
+    primary: "/laser-co2.jpg",
+    secondary: "/laser-co2-2.jpg"
+  },
   description:
     "Deep fractional CO₂ laser therapy to repair damaged skin, reduce wrinkles, and renew overall texture and tone.",
-  standardPrice: "Varies by area",
-  promoPrice: "Package pricing available",
+  details:
+    "CO₂ laser delivers fractional ablative energy to stimulate deep skin regeneration. It vaporizes microcolumns of tissue, triggering collagen production and promoting smoother, healthier skin. Ideal for acne scars, wrinkles, sun damage, and dull skin tone.",
   notes: [
     "Requires consultation for clearance and prep",
     "Downtime ranges from 3–7 days depending on intensity",
     "Most patients need 1–3 sessions spaced 2+ months apart"
   ],
-  details:
-    "CO₂ laser delivers fractional ablative energy to stimulate deep skin regeneration. It vaporizes microcolumns of tissue, triggering collagen production and promoting smoother, healthier skin. Ideal for acne scars, wrinkles, sun damage, and dull skin tone.",
+  pricing: {
+    startingPrice: "$195",
+    startingPriceCurrency: "USD",
+    promoPrice: "$TBD",
+    promoPriceCurrency: "USD",
+    options: [
+      {
+        optionName: "Perioral Area (Smoker’s Lines)",
+        isPromoEligible: true,
+        optionPrice: "$195",
+        optionCurrency: "USD",
+        optionPromoPrice: "$165",
+        optionPromoPriceCurrency: "USD",
+        notes: null
+      },
+      {
+        optionName: "Under-Eyes",
+        isPromoEligible: true,
+        optionPrice: "$195",
+        optionCurrency: "USD",
+        optionPromoPrice: "$165",
+        optionPromoPriceCurrency: "USD",
+        notes: null
+      },
+      {
+        optionName: "Full Face",
+        isPromoEligible: true,
+        optionPrice: "$460",
+        optionCurrency: "USD",
+        optionPromoPrice: "$415",
+        optionPromoPriceCurrency: "USD",
+        notes: null
+      },
+      {
+        optionName: "Neck",
+        isPromoEligible: true,
+        optionPrice: "$225",
+        optionCurrency: "USD",
+        optionPromoPrice: "$200",
+        optionPromoPriceCurrency: "USD",
+        notes: null
+      },
+      {
+        optionName: "Décolleté",
+        isPromoEligible: true,
+        optionPrice: "$260",
+        optionCurrency: "USD",
+        optionPromoPrice: "$230",
+        optionPromoPriceCurrency: "USD",
+        notes: null
+      },
+      {
+        optionName: "Stretch Marks",
+        isPromoEligible: true,
+        optionPrice: "$260",
+        optionCurrency: "USD",
+        optionPromoPrice: "$230",
+        optionPromoPriceCurrency: "USD",
+        notes: null
+      },
+      {
+        optionName: "Surgical Scars",
+        isPromoEligible: true,
+        optionPrice: "$260",
+        optionCurrency: "USD",
+        optionPromoPrice: "$230",
+        optionPromoPriceCurrency: "USD",
+        notes: null
+      },
+      {
+        optionName: "Hands",
+        isPromoEligible: true,
+        optionPrice: "$260",
+        optionCurrency: "USD",
+        optionPromoPrice: "$230",
+        optionPromoPriceCurrency: "USD",
+        notes: null
+      }
+    ]
+  },
   goals: [
     "Fade deep wrinkles and lines",
     "Smooth acne scars and uneven skin",
     "Brighten tone and rejuvenate texture"
   ],
   treatableAreas: [
-    "Full Face",
     "Perioral Lines (Smoker’s Lines)",
-    "Eye Area",
+    "Under-Eyes",
+    "Full Face",
     "Neck",
-    "Chest (Décolleté)",
+    "Décolleté",
     "Stretch Marks",
     "Surgical Scars",
     "Hands"
-  ],
-  pricing: [
-    {
-      serviceChild: "Perioral Area",
-      isPromoEligible: true,
-      standardPrice: "$195USD",
-      promoPrice: "$165USD",
-      notes: null
-    },
-    {
-      serviceChild: "Under-Eyes",
-      isPromoEligible: true,
-      standardPrice: "$195USD",
-      promoPrice: "$165USD",
-      notes: null
-    },
-    {
-      serviceChild: "Full Face",
-      isPromoEligible: true,
-      standardPrice: "$460USD",
-      promoPrice: "$415USD",
-      notes: null
-    },
-    {
-      serviceChild: "Neck",
-      isPromoEligible: true,
-      standardPrice: "$225USD",
-      promoPrice: "$200USD",
-      notes: null
-    },
-    {
-      serviceChild: "Chest",
-      isPromoEligible: true,
-      standardPrice: "$260USD",
-      promoPrice: "$230USD",
-      notes: null
-    }
   ],
   addOns: [
     {
