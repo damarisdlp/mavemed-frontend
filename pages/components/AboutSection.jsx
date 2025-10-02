@@ -3,18 +3,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
+import { allStaff } from "@/data/allStaff";
 
 export default function AboutSection() {
-  const staff = [
-    { name: "Veronica", title: "Founder", image: "/veronica.jpg" },
-    { name: "Damaris", title: "Chief Executive Director", image: "/damaris.jpg" },
-    { name: "Dra. Nataly", title: "MD", image: "/nataly.jpg" },
-    { name: "Dra. Jocelyn", title: "MD", image: "/jocelyn.jpg" },
-    { name: "Vicky", title: "Cosmetologist", image: "/vicky.jpg" },
-    { name: "Manuel", title: "Cosmetologist & Masseur", image: "/manuel.jpg" },
-    { name: "Mayra", title: "Cosmetologist", image: "/mayra.jpg" },
-    { name: "Zury", title: "Receptionist", image: "/zury.jpg" },
-  ];
 
   const [sliderRef, slider] = useKeenSlider({
     loop: true,
@@ -139,13 +130,13 @@ export default function AboutSection() {
           ref={sliderRef}
           className="keen-slider overflow-hidden px-4 mx-auto max-w-[1100px]"
         >
-          {staff.map((s, index) => (
+          {allStaff.map((s, index) => (
             <div key={index} className="keen-slider__slide flex justify-center px-2">
               <div className="w-[280px] sm:w-[300px] md:w-[320px] flex flex-col bg-[#f9f9f9] rounded-lg overflow-hidden shadow-sm hover:shadow-md transition mb-3">
                 <div className="relative h-[420px] w-full">
                   <Image
                     src={s.image}
-                    alt={`${s.name} – ${s.title}`}
+                    alt={`${s.displayName} – ${s.title}`}
                     fill
                     className="object-cover text-gray-600"
                   />
@@ -153,12 +144,12 @@ export default function AboutSection() {
                 <div className="p-4 flex-1 flex flex-col justify-between text-center">
                   <div>
                     <h3 className="text-lg font-serif text-black font-medium mb-1">
-                      {s.name}
+                      {s.displayName}
                     </h3>
                     <p className="text-sm text-gray-600 mb-3">{s.title}</p>
                   </div>
                   <Link
-                    href={`/aboutus/${s.name.toLowerCase()}`}
+                    href={`/aboutus/${s.displayName.toLowerCase()}`}
                     className="inline-block border border-gray-300 text-black px-4 py-2 rounded-full text-xs hover:border-black transition"
                   >
                     Learn More
