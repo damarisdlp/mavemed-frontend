@@ -50,10 +50,22 @@ export const harmonyca = {
   ],
   addOns: [
     {
-      serviceParent: "PN/PDRN for Skin Rejuvenation",
-      serviceChild: "Rejuran - Full Face",
-      displayName: "Microneedling - Rejuran - Full Face",
-      link: "/treatments/mesotherapy/rejuran"
+      serviceParent: "HydraFacial MD",
+      serviceChild:  "Hydrafacial MD - Face",
+      displayName:   "HydraFacial MD - Face",
+      link:          "/treatments/hydrafacial"
+    },
+    {
+      serviceParent: "Casmara Purifying Algae Facial",
+      serviceChild:  "Casmara Purifying Algae Facial",
+      displayName:   "Casmara Purifying Algae Facial",
+      link:          "/treatments/casmara-purifying"
+    },
+    {
+      serviceParent: "Microneedling Skin Renewal - Rejuran - Full Face",
+      serviceChild: "Microneedling Skin Renewal - Rejuran - Full Face",
+      displayName: "Microneedling Skin Renewal - Rejuran - Full Face",
+      link: "/treatments/microneedling"
     }
   ],
   expectations: {
