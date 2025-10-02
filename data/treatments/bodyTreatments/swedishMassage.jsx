@@ -43,7 +43,26 @@ export const swedishMassage = {
   treatableAreas: [
     "Full Body"
   ],
-  addOns: [],
+  addOns: [
+    {
+      serviceParent: "Wrinkle Reducer - Botox",
+      serviceChild:  "Any Zone",
+      displayName:   "Wrinkle Reducer - Botox",
+      link:          "/treatments/wrinkle-reducers-botox"
+    },
+    {
+      serviceParent: "HydraFacial MD",
+      serviceChild:  "Hydrafacial MD - Face",
+      displayName:   "HydraFacial MD - Face",
+      link:          "/treatments/hydrafacial"
+    },
+    {
+      serviceParent: "Casmara Purifying Algae Facial",
+      serviceChild:  "Casmara Purifying Algae Facial",
+      displayName:   "Casmara Purifying Algae Facial",
+      link:          "/treatments/casmara-purifying"
+    },
+  ],
   expectations: {
     preTreatment: [
       "Arrive well-hydrated.",
