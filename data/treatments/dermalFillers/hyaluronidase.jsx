@@ -1,24 +1,41 @@
 export const hyaluronidase = {
-  slug: "hyaluronidase",
+  urlSlug: "hyaluronidase",
   category: "dermal-fillers",
   categoryDisplayName: "Dermal Fillers (Hyaluronic Acid)",
   serviceDisplayName: "Hyaluronidase Filler Reversal",
   isPopular: false,
   isPromoEligible: false,
-  image: "/enzymes.jpg",
-  image2: "/enzymes2.jpg",
+  images: {
+    primary: "/enzymes.jpg",
+    secondary: "/enzymes2.jpg"
+  },
   description:
     "Dissolve misplaced or undesired hyaluronic acid fillers using hyaluronidase for safe and effective correction.",
-  standardPrice: "$45 USD",
-  promoPrice: null,
+  details:
+    "Hyaluronidase is an enzyme that breaks down hyaluronic acid-based fillers. It’s used to correct overfilled areas, migrated filler, or address complications like vascular compression. Treatment is quick, safe, and performed only by trained medical personnel at Mave.",
   notes: [
     "Price is per vial",
     "A patch test may be required to rule out allergy",
     "Multiple sessions may be needed for complete dissolution",
     "Follow-up correction with fresh filler is optional"
   ],
-  details:
-    "Hyaluronidase is an enzyme that breaks down hyaluronic acid-based fillers. It’s used to correct overfilled areas, migrated filler, or address complications like vascular compression. Treatment is quick, safe, and performed only by trained medical personnel at Mave.",
+  pricing: {
+    startingPrice: "$45",
+    startingPriceCurrency: "USD",
+    promoPrice: null,
+    promoPriceCurrency: null,
+    options: [
+      {
+        optionName: "Hyaluronidase Filler Reversal",
+        isPromoEligible: false,
+        optionPrice: "$45",
+        optionCurrency: "USD",
+        optionPromoPrice: null,
+        optionPromoPriceCurrency: null,
+        notes: ["Price is per vial"]
+      }
+    ]
+  },
   goals: [
     "Dissolve unwanted or poorly placed filler",
     "Correct asymmetry or migration",
@@ -32,15 +49,6 @@ export const hyaluronidase = {
     "Jawline",
     "Chin",
     "Any previously treated filler site"
-  ],
-  pricing: [
-    {
-      serviceChild: "Hyaluronidase Filler Reversal",
-      isPromoEligible: false,
-      standardPrice: "$45 USD",
-      promoPrice: null,
-      notes: ["Price is per vial"]
-    }
   ],
   addOns: [
     {
