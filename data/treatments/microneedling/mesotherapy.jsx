@@ -88,16 +88,16 @@ export const mesotherapy = {
   ],
   addOns: [
     {
-      serviceParent: "Microneedling Skin Renewal",
-      serviceChild: "Microneedling Skin Renewal",
-      displayName: "Microneedling Skin Renewal",
-      link: "/treatments/microneedling"
+      serviceParent: "HydraFacial MD",
+      serviceChild:  "Hydrafacial MD - Face",
+      displayName:   "HydraFacial MD - Face",
+      link:          "/treatments/hydrafacial"
     },
     {
-      serviceParent: "PDO Threads",
-      serviceChild: "PDO Thread Lift",
-      displayName: "PDO Thread Lift Add‑On",
-      link: "/treatments/skinTightSculpt/pdoThreads"
+      serviceParent: "PDO Thread Lift – Non-Surgical Facial Rejuvenation",
+      serviceChild: "Signature Lower Face Lift",
+      displayName: "PDO Thread Lift – Non-Surgical Facial Rejuvenation - Signature Lower Face Lift",
+      link: "/treatments/pdo-threads"
     }
   ],
   expectations: {
