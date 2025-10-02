@@ -29,6 +29,7 @@ import { toenailExtraction } from './treatments/podiatry/nailExtraction';
 import { enzymaticTherapy } from './treatments/skinTightSculpt/enzymaticRemodeling';
 import { pdoThreads } from './treatments/skinTightSculpt/pdoThreads';
 import { rfEnzymatic } from './treatments/skinTightSculpt/rfEnzymaticRemodeling';
+import { venusFreeze } from './treatments/skinTightSculpt/rfSculpting';
 
 export const allTreatments = [
     botox, 
@@ -60,5 +61,6 @@ export const allTreatments = [
     toenailExtraction,
     enzymaticTherapy,
     pdoThreads,
-    rfEnzymatic
+    rfEnzymatic,
+    venusFreeze
 ];
