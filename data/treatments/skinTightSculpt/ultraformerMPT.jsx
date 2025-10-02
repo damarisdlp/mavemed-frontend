@@ -29,7 +29,7 @@ export const ultraformerMPT = {
         notes: ["Includes Forehead, Orbicularis (around the eyes), Upper Cheeks"]
       },
       {
-        optionName: "360 Contour",
+        optionName: "Ultraformer MPT - 360 Contour",
         isPromoEligible: false,
         optionPrice: "$TBD USD",
         notes: ["Includes Lower Cheek, Jawline, Submentum (under chin), Neck"]
