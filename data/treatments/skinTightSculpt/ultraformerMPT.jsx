@@ -1,23 +1,113 @@
 export const ultraformerMPT = {
-  slug: "ultraformer-mpt",
+  urlSlug: "ultraformer-mpt",
   category: "skin-tightening",
   categoryDisplayName: "Skin Tightening & Sculpting",
   serviceDisplayName: "Ultraformer MPT Ultrasound Lift",
   isPopular: true,
   isPromoEligible: false,
-  image: "/hifu.jpg",
-  image2: "/hifu2.jpg",
+  images: {
+    primary: "/hifu.jpg",
+    secondary: "/hifu2.jpg"
+  },
   description:
     "Ultraformer MPT is a non-surgical facelift and body sculpting treatment that uses high-intensity focused ultrasound (HIFU) to tighten skin, reduce laxity, and contour key areas without downtime.",
-  standardPrice: "Price varies by zone and intensity",
-  promoPrice: null,
+  details:
+    "Ultraformer MPT is an advanced HIFU (High-Intensity Focused Ultrasound) system that delivers precise energy to stimulate collagen production in the SMAS layer, dermis, and subcutaneous tissues. This non-invasive treatment lifts and tightens the skin on the face, neck, and body with no downtime. Ideal for patients seeking visible facial rejuvenation or body contouring without surgery.",
   notes: [
     "Ideal for facial lifting, jowls, neck tightening, and body sculpting",
     "Results continue improving over 3–6 months",
     "Each treatment is personalized based on depth, zone, and clinical indications"
   ],
-  details:
-    "Ultraformer MPT is an advanced HIFU (High-Intensity Focused Ultrasound) system that delivers precise energy to stimulate collagen production in the SMAS layer, dermis, and subcutaneous tissues. This non-invasive treatment lifts and tightens the skin on the face, neck, and body with no downtime. Ideal for patients seeking visible facial rejuvenation or body contouring without surgery.",
+  pricing: {
+    startingPrice: "Price varies by zone and intensity",
+    promoPrice: null,
+    options: [
+      {
+        optionName: "Refreshing Lift",
+        isPromoEligible: false,
+        optionPrice: "$TBD USD",
+        notes: ["Includes Forehead, Orbicularis (around the eyes), Upper Cheeks"]
+      },
+      {
+        optionName: "360 Contour",
+        isPromoEligible: false,
+        optionPrice: "$TBD USD",
+        notes: ["Includes Lower Cheek, Jawline, Submentum (under chin), Neck"]
+      },
+      {
+        optionName: "Standard Facial Sculpting",
+        isPromoEligible: false,
+        optionPrice: "$TBD USD",
+        notes: ["Includes Forehead, Orbicularis (around the eyes), Full Cheeks, Chin, Jawline"]
+      },
+      {
+        optionName: "Total Facial Rejuvenation",
+        isPromoEligible: false,
+        optionPrice: "$TBD USD",
+        notes: ["Includes Full Face, Submentum, Front of Neck"]
+      },
+      {
+        optionName: "Deep Contour",
+        isPromoEligible: false,
+        optionPrice: "$TBD USD",
+        notes: ["Includes Jawline Area (jawline + lower cheek)"]
+      },
+      {
+        optionName: "Combined Protocol with F-Cartridge + Booster",
+        isPromoEligible: false,
+        optionPrice: "$TBD USD",
+        notes: ["Includes Submentum, Lower cheek or Jowl bags, Dermal Lifting"]
+      },
+      {
+        optionName: "Defined Arms",
+        isPromoEligible: false,
+        optionPrice: "$TBD USD",
+        notes: ["Includes Triceps, Biceps, Lateral Arms, Elbows, Deltoids"]
+      },
+      {
+        optionName: "Firm Abdomen",
+        isPromoEligible: false,
+        optionPrice: "$TBD USD",
+        notes: ["Includes Upper Abdomen, Lower Abdomen"]
+      },
+      {
+        optionName: "Thigh Sculpting",
+        isPromoEligible: false,
+        optionPrice: "$TBD USD",
+        notes: ["Includes Inner Thighs, Front of Thighs"]
+      },
+      {
+        optionName: "Glute Contour",
+        isPromoEligible: false,
+        optionPrice: "$TBD USD",
+        notes: ["Includes Glutes, Subgluteal Fold"]
+      },
+      {
+        optionName: "Express Back Glow",
+        isPromoEligible: false,
+        optionPrice: "$TBD USD",
+        notes: ["Includes Flanks/Sides"]
+      },
+      {
+        optionName: "Lower Back Sculpting",
+        isPromoEligible: false,
+        optionPrice: "$TBD USD",
+        notes: ["Includes Lumbar Region + Flanks"]
+      },
+      {
+        optionName: "Total Back Rejuvenation",
+        isPromoEligible: false,
+        optionPrice: "$TBD USD",
+        notes: ["Includes Upper, Mid, and Lower Back, Flanks"]
+      },
+      {
+        optionName: "Express Body Glow",
+        isPromoEligible: false,
+        optionPrice: "$TBD USD",
+        notes: ["Includes 1 Small Area: Elbows, Knees, etc"]
+      }
+    ]
+  },
   goals: [
     "Tighten and lift sagging skin",
     "Enhance jawline and facial contours",
@@ -38,106 +128,6 @@ export const ultraformerMPT = {
     "Lower Back",
     "Flanks",
     "Glutes"
-  ],
-  pricing: [
-    {
-      serviceChild: "Refreshing Lift",
-      isPromoEligible: false,
-      standardPrice: "$TBD USD",
-      promoPrice: null,
-      notes: ["Includes Forehead, Orbicularis (around the eyes), Upper Cheeks"]
-    },
-    {
-      serviceChild: "360 Contour",
-      isPromoEligible: false,
-      standardPrice: "$TBD USD",
-      promoPrice: null,
-      notes: ["Includes Lower Cheek, Jawline, Submentum (under chin), Neck"]
-    },
-    {
-      serviceChild: "Standard Facial Sculpting",
-      isPromoEligible: false,
-      standardPrice: "$TBD USD",
-      promoPrice: null,
-      notes: ["Includes Forehead, Orbicularis (around the eyes), Full Cheeks, Chin, Jawline"]
-    },
-    {
-      serviceChild: "Total Facial Rejuvenation",
-      isPromoEligible: false,
-      standardPrice: "$TBD USD",
-      promoPrice: null,
-      notes: ["Includes Full Face, Submentum, Front of Neck"]
-    },
-    {
-      serviceChild: "Deep Contour",
-      isPromoEligible: false,
-      standardPrice: "$TBD USD",
-      promoPrice: null,
-      notes: ["Includes Jawline Area (jawline + lower cheek)"]
-    },
-    {
-      serviceChild: "Combined Protocol with F-Cartridge + Booster",
-      isPromoEligible: false,
-      standardPrice: "$TBD USD",
-      promoPrice: null,
-      notes: ["Includes Submentum, Lower cheek or Jowl bags, Dermal Lifting"]
-    },
-    {
-      serviceChild: "Defined Arms",
-      isPromoEligible: false,
-      standardPrice: "$TBD USD",
-      promoPrice: null,
-      notes: ["Includes Triceps, Biceps, Lateral Arms, Elbows, Deltoids"]
-    },
-    {
-      serviceChild: "Firm Abdomen",
-      isPromoEligible: false,
-      standardPrice: "$TBD USD",
-      promoPrice: null,
-      notes: ["Includes Upper Abdomen, Lower Abdomen"]
-    },
-    {
-      serviceChild: "Thigh Sculpting",
-      isPromoEligible: false,
-      standardPrice: "$TBD USD",
-      promoPrice: null,
-      notes: ["Includes Inner Thighs, Front of Thighs"]
-    },
-    {
-      serviceChild: "Glute Contour",
-      isPromoEligible: false,
-      standardPrice: "$TBD USD",
-      promoPrice: null,
-      notes: ["Includes Glutes, Subgluteal Fold"]
-    },
-    {
-      serviceChild: "Express Back Glow",
-      isPromoEligible: false,
-      standardPrice: "$TBD USD",
-      promoPrice: null,
-      notes: ["Includes Flanks/Sides"]
-    },
-    {
-      serviceChild: "Lower Back Sculpting",
-      isPromoEligible: false,
-      standardPrice: "$TBD USD",
-      promoPrice: null,
-      notes: ["Includes Lumbar Region + Flanks"]
-    },
-    {
-      serviceChild: "Total Back Rejuvenation",
-      isPromoEligible: false,
-      standardPrice: "$TBD USD",
-      promoPrice: null,
-      notes: ["Includes Upper, Mid, and Lower Back, Flanks"]
-    },
-    {
-      serviceChild: "Express Body Glow",
-      isPromoEligible: false,
-      standardPrice: "$TBD USD",
-      promoPrice: null,
-      notes: ["Includes 1 Small Area: Elbows, Knees, etc"]
-    }
   ],
   addOns: [
     {
