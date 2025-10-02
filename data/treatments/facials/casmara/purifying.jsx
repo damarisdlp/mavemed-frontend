@@ -1,7 +1,7 @@
 export const casmaraPurifying = {
   urlSlug: "casmara-purifying",
   category: "facials",
-  categoryDisplayName: "Facials & Add-Ons",
+  categoryDisplayName: "Facials",
   serviceDisplayName: "Casmara Purifying Algae Facial",
   isPopular: true,
   isPromoEligible: false,
