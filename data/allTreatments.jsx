@@ -25,6 +25,7 @@ import { mesotherapy } from './treatments/microneedling/mesotherapy';
 import { calcanealSpur } from './treatments/podiatry/heelSpur';
 import { matrixectomy } from './treatments/podiatry/ingrownToenail';
 import { nailFungusLaser } from './treatments/podiatry/laserNail';
+import { toenailExtraction } from './treatments/podiatry/nailExtraction';
 
 export const allTreatments = [
     botox, 
@@ -52,5 +53,6 @@ export const allTreatments = [
     mesotherapy,
     calcanealSpur,
     matrixectomy,
-    nailFungusLaser
+    nailFungusLaser,
+    toenailExtraction
 ];
