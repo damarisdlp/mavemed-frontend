@@ -21,6 +21,7 @@ import { laserHairRemoval } from './treatments/laserTreatments/hairRemoval';
 import { ipl } from './treatments/laserTreatments/ipl';
 import { rfMicroneedling } from './treatments/laserTreatments/rfMicroneedling';
 import { microneedling } from './treatments/microneedling/microneedling';
+import { mesotherapy } from './treatments/microneedling/mesotherapy';
 
 export const allTreatments = [
     botox, 
@@ -44,5 +45,6 @@ export const allTreatments = [
     laserHairRemoval,
     ipl,
     rfMicroneedling,
-    microneedling
+    microneedling,
+    mesotherapy
 ];
