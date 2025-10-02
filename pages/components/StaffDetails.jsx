@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { allTreatments } from "@/data/allTreatments";
 
 export default function StaffDetails({ member }) {
   if (!member) return null;
@@ -9,7 +10,6 @@ export default function StaffDetails({ member }) {
   return (
     <div className="w-full bg-white">
       <main className="flex-grow max-w-6xl mx-auto px-6 py-12">
-
         {/* Breadcrumb */}
         <div className="mb-4">
           <p className="text-sm text-gray-500">
@@ -39,7 +39,7 @@ export default function StaffDetails({ member }) {
             />
           </div>
 
-          {/* Bio & Favorites */}
+          {/* Bio */}
           <div className="w-full md:w-1/2">
             <h1 className="text-4xl font-serif text-black font-medium mt-2 mb-2">
               {member.displayName}
@@ -48,49 +48,73 @@ export default function StaffDetails({ member }) {
             <p className="text-gray-700 text-base leading-relaxed whitespace-pre-line">
               {member.bio}
             </p>
-
-            {/* Favorite Treatments Section */}
-            {hasFavorites && (
-              <div className="space-y-4 mt-8">
-                <h2 className="text-2xl text-black font-serif font-medium mb-4">
-                  {member.displayName}'s Favorite Treatments
-                </h2>
-                <div className="space-y-4">
-                  {member.favorites.map((treatment, index) => (
-                    <div
-                      key={index}
-                      className="bg-gray-100 flex justify-between items-center px-4 py-3 rounded-md"
-                    >
-                      <div>
-                        <p className="font-medium text-black">
-                          {treatment.serviceName}
-                        </p>
-
-                        {(treatment.price || treatment.memberPrice) && (
-                          <p className="text-sm text-gray-600">
-                            {treatment.price && <>Starting at ${treatment.price}</>}{" "}
-                            {treatment.memberPrice && (
-                              <span className="text-black font-semibold">
-                                | Package Exclusive Pricing ${treatment.memberPrice}
-                              </span>
-                            )}
-                          </p>
-                        )}
-                      </div>
-
-                      <Link
-                        href={treatment.link}
-                        className="bg-[#374a44] text-white px-4 py-2 rounded-full text-sm hover:bg-black transition"
-                      >
-                        Book
-                      </Link>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            )}
           </div>
         </div>
+
+        {/* Favorite Treatments */}
+        {hasFavorites && (
+          <div className="mt-12">
+            <h2 className="text-2xl text-black font-serif font-medium mb-4">
+              {member.displayName}'s Favorite Treatments
+            </h2>
+
+            {member.favorites.map((favorite, idx) => {
+              const match =
+                allTreatments.find(
+                  (t) =>
+                    t.serviceDisplayName === favorite.serviceName ||
+                    t.urlSlug === favorite.link?.split("/").pop()
+                ) || {};
+
+              const hasPromo =
+                match?.isPromoEligible &&
+                match?.pricing?.promoPrice &&
+                match.pricing.promoPrice.trim() !== "";
+
+              return (
+                <div key={idx} className="mb-6 bg-gray-50 p-5 rounded-lg">
+                  <p className="text-lg font-semibold text-black">
+                    {favorite.serviceName}
+                  </p>
+
+                  {match?.description && (
+                    <p className="text-sm text-gray-700 mt-1">
+                      {match.description}
+                    </p>
+                  )}
+
+                  {match?.pricing?.startingPrice && (
+                    <p className="text-sm text-gray-700 mt-2">
+                      <span className="font-semibold">Price:</span>{" "}
+                      {match.pricing.startingPrice}{" "}
+                      {match.pricing.startingPriceCurrency}
+                      {hasPromo && (
+                        <>
+                          {" "}
+                          |{" "}
+                          <span className="font-semibold">
+                            Exclusive Pricing:
+                          </span>{" "}
+                          {match.pricing.promoPrice}{" "}
+                          {match.pricing.promoPriceCurrency}
+                        </>
+                      )}
+                    </p>
+                  )}
+
+                  {favorite.link && (
+                    <Link
+                      href={favorite.link}
+                      className="text-sm underline text-black mt-2 inline-block hover:text-[#731a2f]"
+                    >
+                      Learn more about {favorite.serviceName}
+                    </Link>
+                  )}
+                </div>
+              );
+            })}
+          </div>
+        )}
       </main>
     </div>
   );
