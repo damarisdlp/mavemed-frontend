@@ -4,7 +4,7 @@ export const nataly = {
     category: "Providers",
     title: "Provider",
     image: "/drnataly.jpg",
-    bio: "Dr.Nataly is a Doctor",
+    bio: "Dr. Nataly is a Doctor",
     favorites: [
       {
         serviceName: "HydraFacial MD - Face",
