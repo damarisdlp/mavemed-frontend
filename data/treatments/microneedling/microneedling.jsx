@@ -1,23 +1,67 @@
 export const microneedling = {
-  slug: "microneedling",
-  category: "microneedling-rf",
-  categoryDisplayName: "Microneedling & RF Skin Rejuvenation",
+  urlSlug: "microneedling",
+  category: "microneedling",
+  categoryDisplayName: "Microneedling & Mesotherapy",
   serviceDisplayName: "Microneedling Skin Renewal",
   isPopular: false,
-  isPromoEligible: true,
-  image: "/microneedling.jpg",
-  image2: "/microneedling2.jpg",
+  isPromoEligible: false,
+  images: {
+    primary: "/microneedling.jpg",
+    secondary: "/microneedling2.jpg",
+  },
   description:
-    "Refine texture, shrink pores, and stimulate collagen through precision microneedling using fine sterile needles.",
-  standardPrice: "$140USD per session",
-  promoPrice: "$120USD",
+    "Refine texture, shrink pores, and stimulate collagen through precision microneedling using fine sterile needles. Enhance results with powerful infusion options like PRP/PRFM, Rejuran, or Kiara Reju.",
+  details:
+    "Microneedling uses fine needles to create micro-channels in the skin, triggering the body’s natural healing response and promoting collagen, elastin, and skin cell regeneration. It improves texture, firmness, and reduces scarring over time. Options like PRP, Rejuran, and Kiara Reju can be infused for deeper regenerative benefits.",
   notes: [
     "3–6 sessions recommended for optimal results",
     "Safe for most skin types",
     "Downtime: 1–3 days of redness possible"
   ],
-  details:
-    "Microneedling uses fine needles to create micro-channels in the skin, triggering the body’s natural healing response and promoting collagen, elastin, and skin cell regeneration. It improves texture, firmness, and reduces scarring over time.",
+  pricing: {
+    startingPrice: "$140",
+    startingPriceCurrency: "USD",
+    promoPrice: "$120",
+    promoPriceCurrency: "USD",
+    options: [
+      {
+        optionName: "Microneedling Only (Base Treatment)",
+        isPromoEligible: false,
+        optionPrice: "$140",
+        optionCurrency: "USD",
+        optionPromoPrice: "$120",
+        optionPromoPriceCurrency: "USD",
+        notes: ["Includes Toskani Lumicen Gel serum infusion only"]
+      },
+      {
+        optionName: "Microneedling + PRP or PRFM",
+        isPromoEligible: false,
+        optionPrice: "$160",
+        optionCurrency: "USD",
+        optionPromoPrice: "$160",
+        optionPromoPriceCurrency: "USD",
+        notes: ["Uses patient's own plasma or fibrin matrix"]
+      },
+      {
+        optionName: "Microneedling + Kiara Reju",
+        isPromoEligible: false,
+        optionPrice: "$190",
+        optionCurrency: "USD",
+        optionPromoPrice: "$170",
+        optionPromoPriceCurrency: "USD",
+        notes: ["PN + HA + Niacinamide booster"]
+      },
+      {
+        optionName: "Microneedling + Rejuran",
+        isPromoEligible: false,
+        optionPrice: "$300",
+        optionCurrency: "USD",
+        optionPromoPrice: null,
+        optionPromoPriceCurrency: "USD",
+        notes: ["Salmon DNA-based cellular regeneration"]
+      },
+    ],
+  },
   goals: [
     "Improve skin texture and tone",
     "Reduce acne scars and fine lines",
@@ -30,31 +74,26 @@ export const microneedling = {
     "Back",
     "Hands"
   ],
-  pricing: [
+  addOns: [
     {
-      serviceChild: "Face",
-      isPromoEligible: true,
-      standardPrice: "$140USD",
-      promoPrice: "$120USD",
-      notes: null
+      serviceParent: "PRFM Upgrade",
+      serviceChild: "Replace PRP with PRFM",
+      displayName: "Upgrade to PRFM (Fibrin Matrix)",
+      link: "/treatments/mesotherapy/prp"
     },
     {
-      serviceChild: "Face + Neck",
-      isPromoEligible: true,
-      standardPrice: "$170USD",
-      promoPrice: "$150USD",
-      notes: null
+      serviceParent: "Rejuran Healer",
+      serviceChild: "Full Face",
+      displayName: "Rejuran Healer Infusion",
+      link: "/treatments/mesotherapy/rejuran"
     },
     {
-      serviceChild: "Face + Neck + Décolleté",
-      isPromoEligible: true,
-      standardPrice: "$190USD",
-      promoPrice: "$165USD",
-      notes: null
+      serviceParent: "Kiara Reju",
+      serviceChild: "1–3 Zones",
+      displayName: "Kiara Reju Booster Infusion",
+      link: "/treatments/mesotherapy/kiara-reju"
     }
   ],
-  addOns: [],
-
   expectations: {
     preTreatment: [
       "Avoid retinoids, AHAs/BHAs, and exfoliation for 3 days prior.",
@@ -65,7 +104,6 @@ export const microneedling = {
       "Avoid sun, sweating, and active skincare for 2–3 days post-treatment."
     ]
   },
-
   faq: [
     {
       question: "How many sessions will I need?",
@@ -73,14 +111,19 @@ export const microneedling = {
         "Most patients need 3–6 sessions spaced 4–6 weeks apart for best results."
     },
     {
-      question: "Can I wear makeup after?",
+      question: "Which infusion option is best for me?",
       answer:
-        "It’s recommended to wait 24–48 hours post-treatment before applying makeup."
+        "PRP/PRFM uses your own plasma for regeneration. Kiara Reju adds hydration and glow. Rejuran deeply repairs at the cellular level. Your provider will recommend based on your skin needs."
     },
     {
-      question: "Is it safe for darker skin?",
+      question: "Is this safe for all skin types?",
       answer:
-        "Yes, microneedling is generally safe for all skin tones with proper protocols."
+        "Yes, microneedling is safe for most skin tones. Rejuran and Kiara Reju are ideal for sensitive or aging skin."
+    },
+    {
+      question: "Can I combine this with other treatments?",
+      answer:
+        "Yes, microneedling pairs well with facials, laser, or RF for enhanced results. Always consult your provider."
     }
   ]
 };
