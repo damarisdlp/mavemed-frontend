@@ -54,56 +54,50 @@ export default function TeamPage() {
             "@type": "Person",
             "name": "Veronica",
             "jobTitle": "Founder",
-            "url": "https://www.mavemedspa.com/aboutus/veronica"
+            "url": "https://www.mavemedspa.com/ourteam/veronica"
           },
           {
             "@type": "Person",
             "name": "Damaris",
             "jobTitle": "Chief Executive Director",
-            "url": "https://www.mavemedspa.com/aboutus/damaris"
+            "url": "https://www.mavemedspa.com/ourteam/damaris"
           },
           {
             "@type": "Person",
             "name": "Dra. Nataly",
             "jobTitle": "MD",
-            "url": "https://www.mavemedspa.com/aboutus/dranataly"
+            "url": "https://www.mavemedspa.com/ourteam/dranataly"
           },
           {
             "@type": "Person",
             "name": "Dra. Jocelyn",
             "jobTitle": "MD",
-            "url": "https://www.mavemedspa.com/aboutus/drajocelyn"
+            "url": "https://www.mavemedspa.com/ourteam/drajocelyn"
           },
           {
             "@type": "Person",
             "name": "Vicky",
             "jobTitle": "Cosmetologist",
-            "url": "https://www.mavemedspa.com/aboutus/vicky"
+            "url": "https://www.mavemedspa.com/ourteam/vicky"
           },
           {
             "@type": "Person",
             "name": "Manuel",
             "jobTitle": "Cosmetologist & Masseur",
-            "url": "https://www.mavemedspa.com/aboutus/manuel"
+            "url": "https://www.mavemedspa.com/ourteam/manuel"
           },
           {
             "@type": "Person",
             "name": "Mayra",
             "jobTitle": "Cosmetologist",
-            "url": "https://www.mavemedspa.com/aboutus/mayra"
+            "url": "https://www.mavemedspa.com/ourteam/mayra"
           },
           {
             "@type": "Person",
             "name": "Zury",
             "jobTitle": "Receptionist",
-            "url": "https://www.mavemedspa.com/aboutus/zury"
+            "url": "https://www.mavemedspa.com/ourteam/zury"
           },
-          {
-            "@type": "Person",
-            "name": "Gabi",
-            "jobTitle": "Receptionist",
-            "url": "https://www.mavemedspa.com/aboutus/gabi"
-          }
         ],
         "geo": {
           "@type": "GeoCoordinates",
