@@ -1,6 +1,7 @@
 export const jocelyn = {
     name: "jocelyn",
     displayName: "Jocelyn",
+    category: "Providers",
     title: "Provider",
     image: "/jocelyn.jpg",
     bio: "Jocelyn is a cosmetologist",

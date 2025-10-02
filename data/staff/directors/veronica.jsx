@@ -1,7 +1,8 @@
 export const veronica = {
     name: "veronica",
     displayName: "Veronica",
-    title: "Director",
+    category: "Directors",
+    title: "Director & Founder",
     image: "/veronica.jpg",
     bio: "Veronica is a director",
     favorites: [

@@ -1,6 +1,7 @@
 export const nataly = {
     name: "nataly",
     displayName: "Nataly",
+    category: "Providers",
     title: "Provider",
     image: "/nataly.jpg",
     bio: "Nataly is a cosmetologist",
