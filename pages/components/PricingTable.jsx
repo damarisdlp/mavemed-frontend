@@ -51,18 +51,19 @@ export default function PricingTable({ treatment }) {
                         </ul>
                       )}
                     </div>
-                    <div className="text-sm leading-6 text-left max-w-[60%]">
-                      <p>
-                        <span className="font-semibold">Price:</span>{" "}
-                        {p.optionPrice} {p.optionCurrency}
-                      </p>
-                      {showPromo && (
-                        <p>
-                          <span className="font-semibold">Exclusive Pricing:</span>{" "}
-                          {p.optionPromoPrice} {p.optionCurrency}
-                        </p>
-                      )}
-                    </div>
+                    <div className="text-sm leading-6 text-right min-w-[180px]">
+                      <div className="flex justify-between">
+                        <span className="font-semibold text-left">Price:</span>
+                        <span>{p.optionPrice} {p.optionCurrency}</span>
+                        </div>
+                        
+                        {showPromo && (
+                          <div className="flex justify-between">
+                            <span className="font-semibold text-left">Exclusive Pricing:</span>
+                            <span>{p.optionPromoPrice} {p.optionCurrency}</span>
+                            </div>
+                          )}
+                          </div>
                   </div>
                 );
               })}
