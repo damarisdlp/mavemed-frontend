@@ -34,9 +34,7 @@ export const sculptra = {
         optionCurrency: "USD",
         optionPromoPrice: "$515",
         optionPromoPriceCurrency: "USD",
-        notes: [
-          "Exclusive pricing varies per quantity of sessions needed, listed price is applicable for 3 sessions"
-        ]
+        notes: null
       }
     ]
   },
