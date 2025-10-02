@@ -18,6 +18,7 @@ import { lipFillers } from './treatments/dermalFillers/lipFillers';
 import { hyaluronidase } from './treatments/dermalFillers/hyaluronidase';
 import { co2Laser } from './treatments/laserTreatments/co2Laser';
 import { laserHairRemoval } from './treatments/laserTreatments/hairRemoval';
+import { ipl } from './treatments/laserTreatments/ipl';
 
 export const allTreatments = [
     botox, 
@@ -38,5 +39,6 @@ export const allTreatments = [
     lipFillers,
     hyaluronidase,
     co2Laser,
-    laserHairRemoval
+    laserHairRemoval,
+    ipl
 ];
