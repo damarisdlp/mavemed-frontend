@@ -1,17 +1,17 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { allStaff } from "@/data/allStaff";  
+import { allStaff } from "@/data/allStaff";
 
 export default function Team() {
-  // Group staff by category
+  // Group staff by category (not title)
   const categoriesMap = {};
   allStaff.forEach((s) => {
-    const key = s.title;
+    const key = s.category || s.title || "Team";
     if (!categoriesMap[key]) {
       categoriesMap[key] = {
-        title: s.title,
-        staff: [] // ✅ must match usage below
+        category: key,
+        staff: []
       };
     }
     categoriesMap[key].staff.push({
@@ -26,7 +26,7 @@ export default function Team() {
   const categories = Object.values(categoriesMap);
 
   const [showScrollTop, setShowScrollTop] = useState(false);
-  
+
   useEffect(() => {
     const handleScroll = () => {
       setShowScrollTop(window.scrollY > 400);
@@ -38,7 +38,6 @@ export default function Team() {
   return (
     <div className="bg-white scroll-smooth relative">
       <div className="container mx-auto px-4 pt-12 pb-4">
-
         {/* Sticky Category Menu */}
         <div
           id="category-menu"
@@ -47,23 +46,23 @@ export default function Team() {
           {categories.map((category, i) => (
             <a
               key={i}
-              href={`#${category.title.replace(/\s+/g, "-").toLowerCase()}`}
+              href={`#${category.category.replace(/\s+/g, "-").toLowerCase()}`}
               className="text-sm md:text-base px-4 py-2 rounded-full border border-gray-300 text-black hover:border-black hover:text-[#731a2f] transition"
             >
-              {category.title}
+              {category.category}
             </a>
           ))}
         </div>
-        
+
         {/* Staff by Category */}
         {categories.map((category, i) => (
-          <div 
+          <div
             key={i}
-            id={category.title.replace(/\s+/g, "-").toLowerCase()}
+            id={category.category.replace(/\s+/g, "-").toLowerCase()}
             className="mb-16 scroll-mt-60"
           >
             <h2 className="text-2xl text-black md:text-3xl font-serif font-medium mb-6">
-              {category.title}
+              {category.category}
             </h2>
             <div className="grid md:grid-cols-3 gap-8">
               {category.staff.map((staff, j) => (
