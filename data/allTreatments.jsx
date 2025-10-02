@@ -27,6 +27,7 @@ import { matrixectomy } from './treatments/podiatry/ingrownToenail';
 import { nailFungusLaser } from './treatments/podiatry/laserNail';
 import { toenailExtraction } from './treatments/podiatry/nailExtraction';
 import { enzymaticTherapy } from './treatments/skinTightSculpt/enzymaticRemodeling';
+import { pdoThreads } from './treatments/skinTightSculpt/pdoThreads';
 
 export const allTreatments = [
     botox, 
@@ -56,5 +57,6 @@ export const allTreatments = [
     matrixectomy,
     nailFungusLaser,
     toenailExtraction,
-    enzymaticTherapy
+    enzymaticTherapy,
+    pdoThreads
 ];
