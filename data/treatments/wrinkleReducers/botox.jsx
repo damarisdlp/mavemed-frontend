@@ -51,7 +51,7 @@ export const botox = {
     "Eyebrow Lift",
     "Downturned Corners (Sad Smile)",
     "Perioral Lines",
-    "Masseters (Jaw Slimming)",
+    "Masseters (Jaw Slimming / TMJ treatment)",
     "Neck Bands (Platysma)",
     "Axillary Hyperhidrosis (Underarms)",
     "Palmar Hyperhidrosis (Hands)"
