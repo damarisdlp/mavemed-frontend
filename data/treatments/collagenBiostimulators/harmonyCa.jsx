@@ -4,7 +4,7 @@ export const harmonyca = {
   categoryDisplayName: "Collagen Biostimulators",
   serviceDisplayName: "HarmonyCA (HA + Calcium Hydroxyapatite)",
   isPopular: false,
-  isPromoEligible: false,
+  isPromoEligible: true,
   images: {
     primary: "/harmonyca.jpg",
     secondary: "/harmonyca2.jpg",
@@ -22,17 +22,17 @@ export const harmonyca = {
   pricing: {
     startingPrice: "$875",
     startingPriceCurrency: "USD",
-    promoPrice: "",
+    promoPrice: "$745",
     promoPriceCurrency: "USD",
     options: [
       {
         optionName: "Per Treatment",
-        isPromoEligible: false,
+        isPromoEligible: true,
         optionPrice: "$875",
         optionCurrency: "USD",
-        optionPromoPrice: "",
+        optionPromoPrice: "745",
         optionPromoPriceCurrency: "USD",
-        notes: null,
+        notes: ["Promo price based on treatment plan of 2 sessions"],
       }
     ],
   },
