@@ -66,6 +66,12 @@ export const harmonyca = {
       serviceChild: "Microneedling Skin Renewal - Rejuran - Full Face",
       displayName: "Microneedling Skin Renewal - Rejuran - Full Face",
       link: "/treatments/microneedling"
+    },
+    {
+      serviceParent: "Scarlet S RF Microneedling",
+      serviceChild:  "Scarlet S RF Microneedling - Face",
+      displayName:   "Scarlet S RF Microneedling - Face",
+      link:          "/treatments/rf-microneedling"
     }
   ],
   expectations: {
