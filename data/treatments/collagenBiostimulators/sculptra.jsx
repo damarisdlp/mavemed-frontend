@@ -19,7 +19,10 @@ export const sculptra = {
     "Excellent for long-term volume restoration without an overfilled look"
   ],
   notes: [
-          "Exclusive pricing varies per quantity of sessions needed, listed price is applicable for 3 sessions"
+          "Pricing is per vial", 
+          "Typically 1 vial is used per zone treated (e.g: Face Zone, Neck Zone, Neckline Zone, etc)",
+          "Exclusive pricing varies per quantity of sessions needed",
+          "Exclusive price displayed is applicable for 3 session treatment plans, 1 vial per session",
         ],
   pricing: {
     startingPrice: "$575",
@@ -34,7 +37,10 @@ export const sculptra = {
         optionCurrency: "USD",
         optionPromoPrice: "$515",
         optionPromoPriceCurrency: "USD",
-        notes: null
+        notes: ["This price is reflective of 1 vial per zone treated",
+          "Zones include, but not limited to: Face, Neck, Neckline, Hands",
+          "Vial quantity is subject to change based on zone size and/or zones treated",
+        "Exclusive price is based on a treatment plan of 3 sessions"]
       }
     ]
   },
@@ -53,6 +59,24 @@ export const sculptra = {
     "Neck"
   ],
   addOns: [
+    {
+      serviceParent: "HydraFacial MD",
+      serviceChild:  "Hydrafacial MD - Face",
+      displayName:   "HydraFacial MD - Face",
+      link:          "/treatments/hydrafacial"
+    },
+    {
+      serviceParent: "Casmara Purifying Algae Facial",
+      serviceChild:  "Casmara Purifying Algae Facial",
+      displayName:   "Casmara Purifying Algae Facial",
+      link:          "/treatments/casmara-purifying"
+    },
+    {
+      serviceParent: "Microneedling Skin Renewal - Rejuran - Full Face",
+      serviceChild: "Microneedling Skin Renewal - Rejuran - Full Face",
+      displayName: "Microneedling Skin Renewal - Rejuran - Full Face",
+      link: "/treatments/microneedling"
+    },
     {
       serviceParent: "Scarlet S RF Microneedling",
       serviceChild: "Scarlet S RF Microneedling - Face",
