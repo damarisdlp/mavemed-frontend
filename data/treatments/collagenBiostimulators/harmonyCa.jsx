@@ -17,7 +17,8 @@ export const harmonyca = {
     "Treatment includes 2 syringes (1.25 mL each)",
     "Delivers both instant lift and progressive collagen support",
     "Clinically effective for rejuvenating midface, jawline, and lower face",
-    "Recommended for patients seeking natural yet structural results"
+    "Recommended for patients seeking natural yet structural results",
+    "Exclusive pricing varies per quantity of sessions needed, listed price is applicable for 2 sessions, each with 2 syringes"
   ],
   pricing: {
     startingPrice: "$875",
