@@ -26,16 +26,16 @@ export const cupping = {
     startingPrice: "$10",
     startingPriceCurrency: "USD",
     promoPrice: "",
-    promoPriceCurrency: "USD",
+    promoPriceCurrency: "",
     options: [
       {
-        optionName: "Single Area (Add‑On)",
+        optionName: "Cupping Add‑On",
         isPromoEligible: false,
         optionPrice: "$10",
         optionCurrency: "USD",
         optionPromoPrice: "",
-        optionPromoPriceCurrency: "USD",
-        notes: ["Only available as an add-on to Swiss massage"]
+        optionPromoPriceCurrency: "",
+        notes: ["Only available as an add-on to Swedish massage"]
       },
     ],
   },
@@ -46,9 +46,16 @@ export const cupping = {
     "Support lymphatic detox"
   ],
 
-  treatableAreas: ["Back", "Shoulders", "Thighs"],
+  treatableAreas: ["Back", "Shoulders", "Thighs", "Calves", "Arms"],
 
-  addOns: [],
+  addOns: [
+    {
+      serviceParent: "Relaxing Swedish Massage - Full Body",
+      serviceChild:  "Relaxing Swedish Massage - Full Body",
+      displayName:   "Relaxing Swedish Massage - Full Body",
+      link:          "/treatments/swedish-massage"
+    },
+  ],
 
   expectations: {
     preTreatment: [
