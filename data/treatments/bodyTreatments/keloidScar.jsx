@@ -7,12 +7,12 @@ export const keloidInjection = {
   isPromoEligible: true,
 
   images: {
-    primary: "/podiatry.jpg",
-    secondary: "/podiatry2.jpg",
+    primary: "/keloid.jpg",
+    secondary: "/keloid2.jpg",
   },
 
   description:
-    "Targeted corticosteroid or antifibrotic injections to flatten and soften raised keloid scars.",
+    "Targeted corticosteroid or anti-fibrotic injections to flatten and soften raised keloid scars.",
   details:
     "This medical treatment involves injecting corticosteroids or specialized anti-fibrotic agents directly into keloid tissue. It helps reduce inflammation, pain, and scar thickness while improving cosmetic appearance over time.",
 
