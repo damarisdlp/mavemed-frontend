@@ -4,7 +4,7 @@ export const co2Laser = {
   categoryDisplayName: "Laser Treatments & Skin Resurfacing",
   serviceDisplayName: "CO₂ Laser Resurfacing (AcuPulse)",
   isPopular: true,
-  isPromoEligible: true,
+  isPromoEligible: false,
   images: {
     primary: "/laser-co2.jpg",
     secondary: "/laser-co2-2.jpg"
@@ -19,80 +19,125 @@ export const co2Laser = {
     "Most patients need 1–3 sessions spaced 2+ months apart"
   ],
   pricing: {
-    startingPrice: "$195",
+    startingPrice: "$185",
     startingPriceCurrency: "USD",
-    promoPrice: "$TBD",
+    promoPrice: "$",
     promoPriceCurrency: "USD",
     options: [
       {
-        optionName: "CO₂ Laser Resurfacing - Perioral Area (Smoker’s Lines)",
-        isPromoEligible: true,
-        optionPrice: "$195",
+        optionName: "CO₂ Laser - Custom Zone Size (Starting Price)",
+        isPromoEligible: false,
+        optionPrice: "$185",
         optionCurrency: "USD",
-        optionPromoPrice: "$165",
+        optionPromoPrice: "$",
         optionPromoPriceCurrency: "USD",
         notes: null
       },
       {
-        optionName: "CO₂ Laser Resurfacing - Under-Eyes",
-        isPromoEligible: true,
-        optionPrice: "$195",
+        optionName: "CO₂ Laser - Scars (Subject Evaluation)",
+        isPromoEligible: false,
+        optionPrice: "$200",
         optionCurrency: "USD",
-        optionPromoPrice: "$165",
+        optionPromoPrice: "$",
         optionPromoPriceCurrency: "USD",
         notes: null
       },
       {
-        optionName: "CO₂ Laser Resurfacing - Full Face",
-        isPromoEligible: true,
-        optionPrice: "$460",
+        optionName: "CO₂ Laser - Under Eye",
+        isPromoEligible: false,
+        optionPrice: "$250",
         optionCurrency: "USD",
-        optionPromoPrice: "$415",
+        optionPromoPrice: "$",
         optionPromoPriceCurrency: "USD",
         notes: null
       },
       {
-        optionName: "CO₂ Laser Resurfacing - Neck",
-        isPromoEligible: true,
-        optionPrice: "$225",
+        optionName: "CO₂ Laser - Décolleté",
+        isPromoEligible: false,
+        optionPrice: "$250",
         optionCurrency: "USD",
-        optionPromoPrice: "$200",
+        optionPromoPrice: "$",
         optionPromoPriceCurrency: "USD",
         notes: null
       },
       {
-        optionName: "CO₂ Laser Resurfacing - Décolleté",
-        isPromoEligible: true,
-        optionPrice: "$260",
+        optionName: "CO₂ Laser - Hands",
+        isPromoEligible: false,
+        optionPrice: "$300",
         optionCurrency: "USD",
-        optionPromoPrice: "$230",
+        optionPromoPrice: "$",
         optionPromoPriceCurrency: "USD",
         notes: null
       },
       {
-        optionName: "CO₂ Laser Resurfacing - Stretch Marks",
-        isPromoEligible: true,
-        optionPrice: "$260",
+        optionName: "CO₂ Laser - Neck",
+        isPromoEligible: false,
+        optionPrice: "$385",
         optionCurrency: "USD",
-        optionPromoPrice: "$230",
+        optionPromoPrice: "$",
         optionPromoPriceCurrency: "USD",
         notes: null
       },
       {
-        optionName: "CO₂ Laser Resurfacing - Scars",
-        isPromoEligible: true,
-        optionPrice: "$260",
+        optionName: "CO₂ Laser - Chest",
+        isPromoEligible: false,
+        optionPrice: "$400",
         optionCurrency: "USD",
-        optionPromoPrice: "$230",
+        optionPromoPrice: "$",
         optionPromoPriceCurrency: "USD",
         notes: null
       },
       {
-        optionName: "CO₂ Laser Resurfacing - Hands",
-        isPromoEligible: true,
-        optionPrice: "$260",
+        optionName: "CO₂ Laser - Full Face",
+        isPromoEligible: false,
+        optionPrice: "$550",
         optionCurrency: "USD",
-        optionPromoPrice: "$230",
+        optionPromoPrice: "$",
+        optionPromoPriceCurrency: "USD",
+        notes: null
+      },
+      {
+        optionName: "CO₂ Laser - Full Face + Neck",
+        isPromoEligible: false,
+        optionPrice: "$650",
+        optionCurrency: "USD",
+        optionPromoPrice: "$",
+        optionPromoPriceCurrency: "USD",
+        notes: null
+      },
+      {
+        optionName: "CO₂ Laser - Full Face + Neck",
+        isPromoEligible: false,
+        optionPrice: "$650",
+        optionCurrency: "USD",
+        optionPromoPrice: "$",
+        optionPromoPriceCurrency: "USD",
+        notes: null
+      },
+      {
+        optionName: "CO₂ Laser - Stretch Marks (Abdomen)",
+        isPromoEligible: false,
+        optionPrice: "$845",
+        optionCurrency: "USD",
+        optionPromoPrice: "$",
+        optionPromoPriceCurrency: "USD",
+        notes: ["Other zones treatable, price subject evaluation"]
+      },
+      {
+        optionName: "CO₂ Laser - Full Face + Neck + Décolleté",
+        isPromoEligible: false,
+        optionPrice: "$850",
+        optionCurrency: "USD",
+        optionPromoPrice: "$",
+        optionPromoPriceCurrency: "USD",
+        notes: null
+      },
+      {
+        optionName: "CO₂ Laser - Full Face + Neck + Décolleté + Chest",
+        isPromoEligible: false,
+        optionPrice: "$950",
+        optionCurrency: "USD",
+        optionPromoPrice: "$",
         optionPromoPriceCurrency: "USD",
         notes: null
       }
@@ -111,7 +156,8 @@ export const co2Laser = {
     "Décolleté",
     "Stretch Marks",
     "Scars",
-    "Hands"
+    "Hands",
+    "Other zones available upon request"
   ],
   addOns: [
     {
