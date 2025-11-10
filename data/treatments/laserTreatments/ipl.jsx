@@ -4,7 +4,7 @@ export const ipl = {
   categoryDisplayName: "Laser Treatments & Skin Resurfacing",
   serviceDisplayName: "IPL Photofacial (Harmony XL)",
   isPopular: false,
-  isPromoEligible: true,
+  isPromoEligible: false,
   images: {
     primary: "/ipl.jpg",
     secondary: "/ipl2.jpg"
@@ -19,35 +19,107 @@ export const ipl = {
     "No active tan or self-tanner before session"
   ],
   pricing: {
-    startingPrice: "$170",
+    startingPrice: "$30",
     startingPriceCurrency: "USD",
-    promoPrice: "$145",
+    promoPrice: "$",
     promoPriceCurrency: "USD",
     options: [
       {
-        optionName: "Full Face",
-        isPromoEligible: true,
-        optionPrice: "$170",
+        optionName: "IPL Photofacial - Scars (Subject Evaluation)",
+        isPromoEligible: false,
+        optionPrice: "$30",
         optionCurrency: "USD",
-        optionPromoPrice: "$145",
+        optionPromoPrice: "$",
         optionPromoPriceCurrency: "USD",
         notes: null
       },
       {
-        optionName: "Chest",
-        isPromoEligible: true,
-        optionPrice: "$185",
+        optionName: "IPL Photofacial - Neck",
+        isPromoEligible: false,
+        optionPrice: "$35",
         optionCurrency: "USD",
-        optionPromoPrice: "$160",
+        optionPromoPrice: "$",
         optionPromoPriceCurrency: "USD",
         notes: null
       },
       {
-        optionName: "Face + Neck + Chest",
-        isPromoEligible: true,
-        optionPrice: "$395",
+        optionName: "IPL Photofacial - Décolleté",
+        isPromoEligible: false,
+        optionPrice: "$35",
         optionCurrency: "USD",
         optionPromoPrice: "$350",
+        optionPromoPriceCurrency: "USD",
+        notes: null
+      },
+      {
+        optionName: "IPL Photofacial - Full Face",
+        isPromoEligible: false,
+        optionPrice: "$40",
+        optionCurrency: "USD",
+        optionPromoPrice: "$",
+        optionPromoPriceCurrency: "USD",
+        notes: null
+      },
+      {
+        optionName: "IPL Photofacial - Hands",
+        isPromoEligible: false,
+        optionPrice: "$40",
+        optionCurrency: "USD",
+        optionPromoPrice: "$",
+        optionPromoPriceCurrency: "USD",
+        notes: null
+      },
+      {
+        optionName: "IPL Photofacial - Chest",
+        isPromoEligible: false,
+        optionPrice: "$50",
+        optionCurrency: "USD",
+        optionPromoPrice: "$",
+        optionPromoPriceCurrency: "USD",
+        notes: null
+      },
+      {
+        optionName: "IPL Photofacial - Full Face + Neck",
+        isPromoEligible: false,
+        optionPrice: "$70",
+        optionCurrency: "USD",
+        optionPromoPrice: "$",
+        optionPromoPriceCurrency: "USD",
+        notes: null
+      },
+      {
+        optionName: "IPL Photofacial - Full Face + Neck + Décolleté",
+        isPromoEligible: false,
+        optionPrice: "$100",
+        optionCurrency: "USD",
+        optionPromoPrice: "$",
+        optionPromoPriceCurrency: "USD",
+        notes: null
+      },
+      {
+        optionName: "IPL Photofacial - Full Legs",
+        isPromoEligible: false,
+        optionPrice: "$125",
+        optionCurrency: "USD",
+        optionPromoPrice: "$",
+        optionPromoPriceCurrency: "USD",
+        notes: null
+      },
+      {
+        optionName: "IPL Photofacial - Full Face + Neck + Décolleté + Chest",
+        isPromoEligible: false,
+        optionPrice: "$140",
+        optionCurrency: "USD",
+        optionPromoPrice: "$",
+        optionPromoPriceCurrency: "USD",
+        notes: null
+      },
+      {
+        optionName: "IPL Photofacial - Hands + Full Legs",
+        isPromoEligible: false,
+        optionPrice: "$160",
+        optionCurrency: "USD",
+        optionPromoPrice: "$",
         optionPromoPriceCurrency: "USD",
         notes: null
       }
@@ -64,7 +136,8 @@ export const ipl = {
     "Chest",
     "Hands",
     "Shoulders",
-    "Arms"
+    "Arms",
+    "Other zones available upon request"
   ],
   addOns: [
     {
