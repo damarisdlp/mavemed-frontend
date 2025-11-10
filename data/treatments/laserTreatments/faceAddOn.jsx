@@ -19,7 +19,7 @@ export const serumAddOns = {
     "Safe for most skin types; select based on provider guidance"
   ],
   pricing: {
-    startingPrice: "$95",
+    startingPrice: "$135",
     startingPriceCurrency: "USD",
     promoPrice: "",
     promoPriceCurrency: "USD",
@@ -28,7 +28,7 @@ export const serumAddOns = {
         optionName:
           "Add-On - PRP or PRFM",
         isPromoEligible: false,
-        optionPrice: "$90",
+        optionPrice: "$135",
         optionCurrency: "USD",
         optionPromoPrice: "",
         optionPromoPriceCurrency: "USD",
@@ -37,18 +37,18 @@ export const serumAddOns = {
       {
         optionName: "Add-On - Kiara Reju",
         isPromoEligible: false,
-        optionPrice: "$190",
+        optionPrice: "$145",
         optionCurrency: "USD",
-        optionPromoPrice: "$170",
+        optionPromoPrice: "$",
         optionPromoPriceCurrency: "USD",
         notes: ["PN + HA + Niacinamide booster for hydration and radiance"]
       },
       {
         optionName: "Add-On - Rejuran",
         isPromoEligible: false,
-        optionPrice: "$300",
+        optionPrice: "$250",
         optionCurrency: "USD",
-        optionPromoPrice: null,
+        optionPromoPrice: "$",
         optionPromoPriceCurrency: "USD",
         notes: ["Salmon DNA-based cellular regeneration and repair"]
       },
