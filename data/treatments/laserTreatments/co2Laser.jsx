@@ -25,7 +25,7 @@ export const co2Laser = {
     promoPriceCurrency: "USD",
     options: [
       {
-        optionName: "CO₂ Laser - Custom Zone Size (Starting Price)",
+        optionName: "CO₂ Laser - Custom Zone (Starting Price)",
         isPromoEligible: false,
         optionPrice: "$185",
         optionCurrency: "USD",
