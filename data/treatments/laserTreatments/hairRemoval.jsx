@@ -4,7 +4,7 @@ export const laserHairRemoval = {
   categoryDisplayName: "Laser Treatments & Skin Resurfacing",
   serviceDisplayName: "Laser Hair Removal (Soprano Titanium ICE)",
   isPopular: true,
-  isPromoEligible: true,
+  isPromoEligible: false,
   images: {
     primary: "/hair-removal.jpg",
     secondary: "/hair-removal2.jpg"
@@ -19,56 +19,164 @@ export const laserHairRemoval = {
     "Safe for tanned and darker skin tones"
   ],
   pricing: {
-    startingPrice: "Starts at $39",
+    startingPrice: "Starts at $10",
     startingPriceCurrency: "USD",
     promoPrice: "Discounted packages available",
     promoPriceCurrency: "USD",
     options: [
       {
-        optionName: "Upper Lip",
-        isPromoEligible: true,
-        optionPrice: "$39",
+        optionName: "Laser Hair Removal - Custom Zone (Starting Price)",
+        isPromoEligible: false,
+        optionPrice: "$10",
         optionCurrency: "USD",
-        optionPromoPrice: "$35",
+        optionPromoPrice: "$",
         optionPromoPriceCurrency: "USD",
         notes: null
       },
       {
-        optionName: "Underarms",
-        isPromoEligible: true,
-        optionPrice: "$65",
+        optionName: "Laser Hair Removal - Hands",
+        isPromoEligible: false,
+        optionPrice: "$20",
         optionCurrency: "USD",
-        optionPromoPrice: "$55",
+        optionPromoPrice: "$",
         optionPromoPriceCurrency: "USD",
         notes: null
       },
       {
-        optionName: "Bikini Line",
-        isPromoEligible: true,
-        optionPrice: "$89",
+        optionName: "Laser Hair Removal - Feet",
+        isPromoEligible: false,
+        optionPrice: "$20",
         optionCurrency: "USD",
-        optionPromoPrice: "$75",
+        optionPromoPrice: "$",
         optionPromoPriceCurrency: "USD",
         notes: null
       },
       {
-        optionName: "Brazilian",
-        isPromoEligible: true,
-        optionPrice: "$120",
+        optionName: "Laser Hair Removal - Neck",
+        isPromoEligible: false,
+        optionPrice: "$25",
         optionCurrency: "USD",
-        optionPromoPrice: "$105",
+        optionPromoPrice: "$",
         optionPromoPriceCurrency: "USD",
         notes: null
       },
       {
-        optionName: "Full Legs",
-        isPromoEligible: true,
-        optionPrice: "$225",
+        optionName: "Laser Hair Removal - Bikini Line",
+        isPromoEligible: false,
+        optionPrice: "$25",
         optionCurrency: "USD",
-        optionPromoPrice: "$199",
+        optionPromoPrice: "$",
         optionPromoPriceCurrency: "USD",
         notes: null
-      }
+      },
+      {
+        optionName: "Laser Hair Removal - Shoulders",
+        isPromoEligible: false,
+        optionPrice: "$45",
+        optionCurrency: "USD",
+        optionPromoPrice: "$",
+        optionPromoPriceCurrency: "USD",
+        notes: null
+      },
+      {
+    optionName: "Laser Hair Removal - Buttocks",
+    isPromoEligible: false,
+    optionPrice: "$45",
+    optionCurrency: "USD",
+    optionPromoPrice: "$",
+    optionPromoPriceCurrency: "USD",
+    notes: null
+  },
+  {
+    optionName: "Laser Hair Removal - Lower Legs",
+    isPromoEligible: false,
+    optionPrice: "$50",
+    optionCurrency: "USD",
+    optionPromoPrice: "$",
+    optionPromoPriceCurrency: "USD",
+    notes: null
+  },
+  {
+    optionName: "Laser Hair Removal - Full Face",
+    isPromoEligible: false,
+    optionPrice: "$55",
+    optionCurrency: "USD",
+    optionPromoPrice: "$",
+    optionPromoPriceCurrency: "USD",
+    notes: null
+  },
+  {
+    optionName: "Laser Hair Removal - Chest",
+    isPromoEligible: false,
+    optionPrice: "$55",
+    optionCurrency: "USD",
+    optionPromoPrice: "$",
+    optionPromoPriceCurrency: "USD",
+    notes: null
+  },
+  {
+    optionName: "Laser Hair Removal - Abdomen",
+    isPromoEligible: false,
+    optionPrice: "$55",
+    optionCurrency: "USD",
+    optionPromoPrice: "$",
+    optionPromoPriceCurrency: "USD",
+    notes: null
+  },
+  {
+    optionName: "Laser Hair Removal - Thighs",
+    isPromoEligible: false,
+    optionPrice: "$55",
+    optionCurrency: "USD",
+    optionPromoPrice: "$",
+    optionPromoPriceCurrency: "USD",
+    notes: null
+  },
+  {
+    optionName: "Laser Hair Removal - Full Arms",
+    isPromoEligible: false,
+    optionPrice: "$60",
+    optionCurrency: "USD",
+    optionPromoPrice: "$",
+    optionPromoPriceCurrency: "USD",
+    notes: null
+  },
+  {
+    optionName: "Laser Hair Removal - Brazilian",
+    isPromoEligible: false,
+    optionPrice: "$65",
+    optionCurrency: "USD",
+    optionPromoPrice: "$",
+    optionPromoPriceCurrency: "USD",
+    notes: null
+  },
+  {
+    optionName: "Laser Hair Removal - Back",
+    isPromoEligible: false,
+    optionPrice: "$80",
+    optionCurrency: "USD",
+    optionPromoPrice: "$",
+    optionPromoPriceCurrency: "USD",
+    notes: null
+  },
+  {
+    optionName: "Laser Hair Removal - Full Legs",
+    isPromoEligible: false,
+    optionPrice: "$100",
+    optionCurrency: "USD",
+    optionPromoPrice: "$",
+    optionPromoPriceCurrency: "USD",
+    notes: null
+  },
+  {
+    optionName: "Laser Hair Removal - Full Body",
+    isPromoEligible: false,
+    optionPrice: "$545",
+    optionCurrency: "USD",
+    optionPromoPrice: "$",
+    optionPromoPriceCurrency: "USD",
+    notes: null
+  }
     ]
   },
   goals: [
@@ -87,9 +195,16 @@ export const laserHairRemoval = {
     "Back",
     "Chest",
     "Face",
-    "Neck"
+    "Neck",
+    "Other zones available upon request"
   ],
   addOns: [
+    {
+      serviceParent: "Wrinkle Reducer - Botox",
+      serviceChild:  "Any Zone",
+      displayName:   "Wrinkle Reducer - Botox",
+      link:          "/treatments/wrinkle-reducers-botox"
+    },
     {
       serviceParent: "HydraFacial MD",
       serviceChild:  "Hydrafacial MD - Face",
