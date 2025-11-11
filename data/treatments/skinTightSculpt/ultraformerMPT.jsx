@@ -19,94 +19,176 @@ export const ultraformerMPT = {
     "Each treatment is personalized based on depth, zone, and clinical indications"
   ],
   pricing: {
-    startingPrice: "Price varies by zone and intensity",
-    promoPrice: null,
+    startingPrice: "$235",
+    startingPriceCurrency: "USD",
+    promoPrice: "$",
+    promoPriceCurrency: "USD",
     options: [
       {
-        optionName: "Refreshing Lift",
-        isPromoEligible: false,
-        optionPrice: "$TBD USD",
-        notes: ["Includes Forehead, Orbicularis (around the eyes), Upper Cheeks"]
-      },
-      {
-        optionName: "Ultraformer MPT - 360 Contour",
-        isPromoEligible: false,
-        optionPrice: "$TBD USD",
-        notes: ["Includes Lower Cheek, Jawline, Submentum (under chin), Neck"]
-      },
-      {
-        optionName: "Standard Facial Sculpting",
-        isPromoEligible: false,
-        optionPrice: "$TBD USD",
-        notes: ["Includes Forehead, Orbicularis (around the eyes), Full Cheeks, Chin, Jawline"]
-      },
-      {
-        optionName: "Total Facial Rejuvenation",
-        isPromoEligible: false,
-        optionPrice: "$TBD USD",
-        notes: ["Includes Full Face, Submentum, Front of Neck"]
-      },
-      {
-        optionName: "Deep Contour",
-        isPromoEligible: false,
-        optionPrice: "$TBD USD",
-        notes: ["Includes Jawline Area (jawline + lower cheek)"]
-      },
-      {
-        optionName: "Combined Protocol with F-Cartridge + Booster",
-        isPromoEligible: false,
-        optionPrice: "$TBD USD",
-        notes: ["Includes Submentum, Lower cheek or Jowl bags, Dermal Lifting"]
-      },
-      {
-        optionName: "Defined Arms",
-        isPromoEligible: false,
-        optionPrice: "$TBD USD",
-        notes: ["Includes Triceps, Biceps, Lateral Arms, Elbows, Deltoids"]
-      },
-      {
-        optionName: "Firm Abdomen",
-        isPromoEligible: false,
-        optionPrice: "$TBD USD",
-        notes: ["Includes Upper Abdomen, Lower Abdomen"]
-      },
-      {
-        optionName: "Thigh Sculpting",
-        isPromoEligible: false,
-        optionPrice: "$TBD USD",
-        notes: ["Includes Inner Thighs, Front of Thighs"]
-      },
-      {
-        optionName: "Glute Contour",
-        isPromoEligible: false,
-        optionPrice: "$TBD USD",
-        notes: ["Includes Glutes, Subgluteal Fold"]
-      },
-      {
-        optionName: "Express Back Glow",
-        isPromoEligible: false,
-        optionPrice: "$TBD USD",
-        notes: ["Includes Flanks/Sides"]
-      },
-      {
-        optionName: "Lower Back Sculpting",
-        isPromoEligible: false,
-        optionPrice: "$TBD USD",
-        notes: ["Includes Lumbar Region + Flanks"]
-      },
-      {
-        optionName: "Total Back Rejuvenation",
-        isPromoEligible: false,
-        optionPrice: "$TBD USD",
-        notes: ["Includes Upper, Mid, and Lower Back, Flanks"]
-      },
-      {
-        optionName: "Express Body Glow",
-        isPromoEligible: false,
-        optionPrice: "$TBD USD",
-        notes: ["Includes 1 Small Area: Elbows, Knees, etc"]
-      }
-    ]
+  optionName: "Ultraformer MPT - Deep Synergy Booster",
+  isPromoEligible: false,
+  optionPrice: "$65",
+  optionCurrency: "USD",
+  optionPromoPrice: "$",
+  optionPromoPriceCurrency: "USD",
+  notes: [
+    "Enhances treatment results by stimulating deeper collagen remodeling, boosting elasticity, and improving skin density for longer-lasting lifting effects."
+  ]
+},
+  {
+    optionName: "Ultraformer MPT - Deep Contour (As Add-On Only)",
+    isPromoEligible: false,
+    optionPrice: "$235",
+    optionCurrency: "USD",
+    optionPromoPrice: "$",
+    optionPromoPriceCurrency: "USD",
+    notes: ["Includes Jawline Area (jawline + lower cheek)"]
+  },
+  {
+    optionName: "Ultraformer MPT - Express Body Glow",
+    isPromoEligible: false,
+    optionPrice: "$325",
+    optionCurrency: "USD",
+    optionPromoPrice: "$",
+    optionPromoPriceCurrency: "USD",
+    notes: ["Includes 1 Small Area: Elbows, Knees, etc"]
+  },
+  {
+    optionName: "Ultraformer MPT - Refreshing Foxy Eye Lift",
+    isPromoEligible: false,
+    optionPrice: "$350",
+    optionCurrency: "USD",
+    optionPromoPrice: "$",
+    optionPromoPriceCurrency: "USD",
+    notes: ["Includes Forehead, Orbicularis (around the eyes), Upper Cheeks"]
+  },
+  {
+    optionName: "Ultraformer MPT - Neck Sculpting",
+    isPromoEligible: false,
+    optionPrice: "$350",
+    optionCurrency: "USD",
+    optionPromoPrice: "$",
+    optionPromoPriceCurrency: "USD",
+    notes: ["Includes Submentum, Neck"]
+  },
+  {
+    optionName: "Ultraformer MPT - Jowl Lift ",
+    isPromoEligible: false,
+    optionPrice: "$375",
+    optionCurrency: "USD",
+    optionPromoPrice: "$",
+    optionPromoPriceCurrency: "USD",
+    notes: ["Includes Submentum, Lower cheek or Jowl bags, Dermal Lifting"]
+  },
+  {
+    optionName: "Ultraformer MPT - Décolletage Rejuvenation",
+    isPromoEligible: false,
+    optionPrice: "$395",
+    optionCurrency: "USD",
+    optionPromoPrice: "$",
+    optionPromoPriceCurrency: "USD",
+    notes: ["Includes Chest, Clavicles"]
+  },
+  {
+    optionName: "Ultraformer MPT - Thigh Sculpting",
+    isPromoEligible: false,
+    optionPrice: "$430",
+    optionCurrency: "USD",
+    optionPromoPrice: "$",
+    optionPromoPriceCurrency: "USD",
+    notes: ["Includes Inner Thighs, Front of Thighs"]
+  },
+  {
+    optionName: "Ultraformer MPT - Standard Facial Sculpting",
+    isPromoEligible: false,
+    optionPrice: "$435",
+    optionCurrency: "USD",
+    optionPromoPrice: "$",
+    optionPromoPriceCurrency: "USD",
+    notes: ["Includes Forehead, Orbicularis (around the eyes), Full Cheeks, Chin, Jawline", "Deep contour recommended for a more lifted result"]
+  },
+  {
+    optionName: "Ultraformer MPT - Express Back Glow",
+    isPromoEligible: false,
+    optionPrice: "$495",
+    optionCurrency: "USD",
+    optionPromoPrice: "$",
+    optionPromoPriceCurrency: "USD",
+    notes: ["Includes Flanks/Sides"]
+  },
+  {
+    optionName: "Ultraformer MPT - Total Facial Rejuvenation",
+    isPromoEligible: false,
+    optionPrice: "$550",
+    optionCurrency: "USD",
+    optionPromoPrice: "$",
+    optionPromoPriceCurrency: "USD",
+    notes: ["Includes Full Face, Submentum, Front of Neck"]
+  },
+  {
+    optionName: "Ultraformer MPT - Combo Lift and Smooth",
+    isPromoEligible: false,
+    optionPrice: "$595",
+    optionCurrency: "USD",
+    optionPromoPrice: "$",
+    optionPromoPriceCurrency: "USD",
+    notes: ["Includes Neck, Décolletage"]
+  },
+  {
+    optionName: "Ultraformer MPT - Defined Arms",
+    isPromoEligible: false,
+    optionPrice: "$625",
+    optionCurrency: "USD",
+    optionPromoPrice: "$",
+    optionPromoPriceCurrency: "USD",
+    notes: ["Includes Triceps, Biceps, Lateral Arms, Elbows, Deltoids"]
+  },
+  {
+    optionName: "Ultraformer MPT - 360 Contour",
+    isPromoEligible: false,
+    optionPrice: "$750",
+    optionCurrency: "USD",
+    optionPromoPrice: "$",
+    optionPromoPriceCurrency: "USD",
+    notes: ["Includes Lower Cheek, Jawline, Submentum (under chin), Neck"]
+  },
+  {
+    optionName: "Ultraformer MPT - Glute Contour",
+    isPromoEligible: false,
+    optionPrice: "$825",
+    optionCurrency: "USD",
+    optionPromoPrice: "$",
+    optionPromoPriceCurrency: "USD",
+    notes: ["Includes Glutes, Subgluteal Fold"]
+  },
+  {
+    optionName: "Ultraformer MPT - Firm Abdomen",
+    isPromoEligible: false,
+    optionPrice: "$850",
+    optionCurrency: "USD",
+    optionPromoPrice: "$",
+    optionPromoPriceCurrency: "USD",
+    notes: ["Includes Upper Abdomen, Lower Abdomen"]
+  },
+  {
+    optionName: "Ultraformer MPT - Lower Back Sculpting",
+    isPromoEligible: false,
+    optionPrice: "$875",
+    optionCurrency: "USD",
+    optionPromoPrice: "$",
+    optionPromoPriceCurrency: "USD",
+    notes: ["Includes Lumbar Region + Flanks"]
+  },
+  {
+    optionName: "Ultraformer MPT - Total Back Rejuvenation",
+    isPromoEligible: false,
+    optionPrice: "$1350",
+    optionCurrency: "USD",
+    optionPromoPrice: "$",
+    optionPromoPriceCurrency: "USD",
+    notes: ["Includes Upper, Mid, and Lower Back, Flanks"]
+  }
+]
   },
   goals: [
     "Tighten and lift sagging skin",
