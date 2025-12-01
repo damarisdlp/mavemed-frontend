@@ -19,15 +19,15 @@ export const sclerotherapy = {
     "Ideal for non-varicose surface veins"
   ],
   pricing: {
-    startingPrice: "$135",
+    startingPrice: "NEED PRICE",
     startingPriceCurrency: "USD",
     promoPrice: "",
     promoPriceCurrency: "USD",
     options: [
       {
-        optionName: "One Leg (Up to 3 zones)",
-        isPromoEligible: true,
-        optionPrice: "$135",
+        optionName: "NEED TO FIGURE OUT PRICING SECTIONS",
+        isPromoEligible: false,
+        optionPrice: "NEED PRICE",
         optionCurrency: "USD",
         optionPromoPrice: "",
         optionPromoPriceCurrency: "USD",
