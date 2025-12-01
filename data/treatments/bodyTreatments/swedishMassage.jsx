@@ -6,8 +6,8 @@ export const swedishMassage = {
   isPopular: false,
   isPromoEligible: false,
   images: {
-    primary: "/swiss-msg.jpg",
-    secondary: "/swiss-msg2.jpg",
+    primary: "/swissmsg.jpg",
+    secondary: "/swissmsg2.jpg",
   },
   description:
     "A gentle, full-body massage to relieve tension, improve circulation, and promote overall relaxation.",
@@ -19,15 +19,15 @@ export const swedishMassage = {
     "Ideal for stress relief and general wellness"
   ],
   pricing: {
-    startingPrice: "$65",
+    startingPrice: "$35",
     startingPriceCurrency: "USD",
-    promoPrice: "$55",
+    promoPrice: "",
     promoPriceCurrency: "USD",
     options: [
       {
         optionName: "Relaxing Swedish Massage - Full Body",
         isPromoEligible: false,
-        optionPrice: "$65",
+        optionPrice: "$35",
         optionCurrency: "USD",
         optionPromoPrice: "",
         optionPromoPriceCurrency: "USD",
