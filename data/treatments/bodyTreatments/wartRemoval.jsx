@@ -6,8 +6,8 @@ export const wartRemoval = {
   isPopular: false,
   isPromoEligible: false,
   images: {
-    primary: "/wart-removal.jpg",
-    secondary: "/wart-removal2.jpg",
+    primary: "/wartremoval.jpg",
+    secondary: "/wartremoval2.jpg",
   },
   description:
     "Safe clinical removal of warts, skin tags, and benign growths for a smoother, cleaner appearance.",
@@ -19,33 +19,15 @@ export const wartRemoval = {
     "Post-care instructions will be provided"
   ],
   pricing: {
-    startingPrice: "$45",
+    startingPrice: "Pricing requires consultation",
     startingPriceCurrency: "USD",
     promoPrice: "",
     promoPriceCurrency: "USD",
     options: [
       {
-        optionName: "Small (1–2 lesions)",
+        optionName: "Any Corporal Zone",
         isPromoEligible: false,
-        optionPrice: "$45",
-        optionCurrency: "USD",
-        optionPromoPrice: "",
-        optionPromoPriceCurrency: "USD",
-        notes: null,
-      },
-      {
-        optionName: "Medium (3–5 lesions)",
-        isPromoEligible: false,
-        optionPrice: "$70",
-        optionCurrency: "USD",
-        optionPromoPrice: "",
-        optionPromoPriceCurrency: "USD",
-        notes: null,
-      },
-      {
-        optionName: "Large (6+ lesions)",
-        isPromoEligible: false,
-        optionPrice: "$95",
+        optionPrice: "Pricing requires consultation",
         optionCurrency: "USD",
         optionPromoPrice: "",
         optionPromoPriceCurrency: "USD",
