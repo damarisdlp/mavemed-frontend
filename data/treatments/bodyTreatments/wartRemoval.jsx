@@ -19,7 +19,7 @@ export const wartRemoval = {
     "Post-care instructions will be provided"
   ],
   pricing: {
-    startingPrice: "Pricing based on consultation",
+    startingPrice: "Based on consultation",
     startingPriceCurrency: "",
     promoPrice: "",
     promoPriceCurrency: "USD",
@@ -27,7 +27,7 @@ export const wartRemoval = {
       {
         optionName: "Any Corporal Zone",
         isPromoEligible: false,
-        optionPrice: "Pricing based on consultation",
+        optionPrice: "Based on consultation",
         optionCurrency: "",
         optionPromoPrice: "",
         optionPromoPriceCurrency: "USD",
