@@ -34,7 +34,7 @@ export const keloidInjection = {
         optionPrice: "NEED PRICE",
         optionCurrency: "USD",
         optionPromoPrice: "",
-        optionPromoPriceCurrency: "",
+        optionPromoPriceCurrency: "USD",
         notes: null,
       },
     ],
