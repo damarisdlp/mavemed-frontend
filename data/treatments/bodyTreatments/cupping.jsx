@@ -26,7 +26,7 @@ export const cupping = {
     startingPrice: "$10",
     startingPriceCurrency: "USD",
     promoPrice: "",
-    promoPriceCurrency: "",
+    promoPriceCurrency: "USD",
     options: [
       {
         optionName: "Cupping Add‑On",
@@ -34,7 +34,7 @@ export const cupping = {
         optionPrice: "$10",
         optionCurrency: "USD",
         optionPromoPrice: "",
-        optionPromoPriceCurrency: "",
+        optionPromoPriceCurrency: "USD",
         notes: ["Only available as an add-on to Swedish massage"]
       },
     ],
