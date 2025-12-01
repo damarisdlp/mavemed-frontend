@@ -4,7 +4,7 @@ export const keloidInjection = {
   categoryDisplayName: "Body & Medical Treatments",
   serviceDisplayName: "Keloid Scar Injection",
   isPopular: false,
-  isPromoEligible: true,
+  isPromoEligible: false,
 
   images: {
     primary: "/keloid.jpg",
@@ -23,18 +23,18 @@ export const keloidInjection = {
   ],
 
   pricing: {
-    startingPrice: "$60 per session",
+    startingPrice: "NEED PRICE",
     startingPriceCurrency: "USD",
-    promoPrice: "$50 per session",
+    promoPrice: "",
     promoPriceCurrency: "USD",
     options: [
       {
         optionName: "Single Injection Area",
-        isPromoEligible: true,
-        optionPrice: "$60",
+        isPromoEligible: false,
+        optionPrice: "NEED PRICE",
         optionCurrency: "USD",
-        optionPromoPrice: "$50",
-        optionPromoPriceCurrency: "USD",
+        optionPromoPrice: "",
+        optionPromoPriceCurrency: "",
         notes: null,
       },
     ],
