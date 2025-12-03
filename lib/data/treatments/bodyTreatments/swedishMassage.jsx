@@ -1,22 +1,41 @@
 export const swedishMassage = {
   urlSlug: "swedish-massage",
   category: "body-medical-treatments",
-  categoryDisplayName: "Body & Medical Treatments",
-  serviceDisplayName: "Relaxing Swedish Massage",
+  categoryDisplayName: {
+    en: "Body & Medical Treatments",
+    es: "Tratamientos Corporales y Médicos"
+  },
+  serviceDisplayName: {
+    en: "Relaxing Swedish Massage",
+    es: "Masaje Sueco Relajante"
+  },
   isPopular: false,
   isPromoEligible: false,
   images: {
     primary: "/swissmsg.jpg",
     secondary: "/swissmsg2.jpg",
   },
-  description:
-    "A gentle, full-body massage to relieve tension, improve circulation, and promote overall relaxation.",
-  details:
-    "This classic Swedish massage uses light to moderate pressure with long, flowing strokes. It helps improve lymphatic flow, reduce stress, and increase oxygen levels in the blood.",
+  description: {
+    en: "A gentle, full-body massage to relieve tension, improve circulation, and promote overall relaxation.",
+    es: "Un masaje suave y completo del cuerpo para aliviar la tensión, mejorar la circulación y promover la relajación general."
+  },
+  details: {
+    en: "This classic Swedish massage uses light to moderate pressure with long, flowing strokes. It helps improve lymphatic flow, reduce stress, and increase oxygen levels in the blood.",
+    es: "Este clásico masaje sueco utiliza presión ligera a moderada con movimientos largos y fluidos. Ayuda a mejorar el flujo linfático, reducir el estrés y aumentar los niveles de oxígeno en la sangre."
+  },
   notes: [
-    "Includes aromatherapy upon request",
-    "Not a deep tissue massage",
-    "Ideal for stress relief and general wellness"
+    {
+      en: "Includes aromatherapy upon request",
+      es: "Incluye aromaterapia bajo petición"
+    },
+    {
+      en: "Not a deep tissue massage",
+      es: "No es un masaje de tejido profundo"
+    },
+    {
+      en: "Ideal for stress relief and general wellness",
+      es: "Ideal para alivio del estrés y bienestar general"
+    }
   ],
   pricing: {
     startingPrice: "$35",
@@ -25,7 +44,10 @@ export const swedishMassage = {
     promoPriceCurrency: "USD",
     options: [
       {
-        optionName: "Relaxing Swedish Massage - Full Body",
+        optionName: {
+          en: "Relaxing Swedish Massage - Full Body",
+          es: "Masaje Sueco Relajante - Cuerpo Completo"
+        },
         isPromoEligible: false,
         optionPrice: "$35",
         optionCurrency: "USD",
@@ -36,51 +58,96 @@ export const swedishMassage = {
     ],
   },
   goals: [
-    "Promote relaxation",
-    "Relieve muscular tension",
-    "Improve blood circulation"
+    {
+      en: "Promote relaxation",
+      es: "Promover relajación"
+    },
+    {
+      en: "Relieve muscular tension",
+      es: "Aliviar tensión muscular"
+    },
+    {
+      en: "Improve blood circulation",
+      es: "Mejorar circulación sanguínea"
+    }
   ],
   treatableAreas: [
-    "Full Body"
+    {
+      en: "Full Body",
+      es: "Cuerpo Completo"
+    }
   ],
   addOns: [
     {
       serviceParent: "Wrinkle Reducer - Botox",
       serviceChild:  "Any Zone",
-      displayName:   "Wrinkle Reducer - Botox",
+      displayName: {
+        en: "Wrinkle Reducer - Botox",
+        es: "Reductor de Arrugas - Botox"
+      },
       link:          "/treatments/wrinkle-reducers-botox"
     },
     {
       serviceParent: "HydraFacial MD",
       serviceChild:  "Hydrafacial MD - Face",
-      displayName:   "HydraFacial MD - Face",
+      displayName: {
+        en: "HydraFacial MD - Face",
+        es: "HydraFacial MD - Rostro"
+      },
       link:          "/treatments/hydrafacial"
     },
     {
       serviceParent: "Casmara Purifying Algae Facial",
       serviceChild:  "Casmara Purifying Algae Facial",
-      displayName:   "Casmara Purifying Algae Facial",
+      displayName: {
+        en: "Casmara Purifying Algae Facial",
+        es: "Facial Purificante de Algas Casmara"
+      },
       link:          "/treatments/casmara-purifying"
     },
   ],
   expectations: {
     preTreatment: [
-      "Arrive well-hydrated.",
-      "Avoid heavy meals beforehand."
+      {
+        en: "Arrive well-hydrated.",
+        es: "Llegue bien hidratado."
+      },
+      {
+        en: "Avoid heavy meals beforehand.",
+        es: "Evite comidas pesadas con anticipación."
+      }
     ],
     postTreatment: [
-      "Drink plenty of water to support lymphatic drainage.",
-      "Mild soreness may occur if it's your first massage."
+      {
+        en: "Drink plenty of water to support lymphatic drainage.",
+        es: "Beba mucha agua para apoyar el drenaje linfático."
+      },
+      {
+        en: "Mild soreness may occur if it's your first massage.",
+        es: "Puede ocurrir dolor leve si es su primer masaje."
+      }
     ]
   },
   faq: [
     {
-      question: "Is this massage good for chronic pain?",
-      answer: "While it helps with tension, Swedish massage is better for relaxation. Chronic pain may require a deeper modality."
+      question: {
+        en: "Is this massage good for chronic pain?",
+        es: "¿Este masaje es bueno para el dolor crónico?"
+      },
+      answer: {
+        en: "While it helps with tension, Swedish massage is better for relaxation. Chronic pain may require a deeper modality.",
+        es: "Aunque ayuda con la tensión, el masaje sueco es mejor para la relajación. El dolor crónico puede requerir una modalidad más profunda."
+      }
     },
     {
-      question: "Can I combine this with other treatments?",
-      answer: "Yes, many clients pair it with facials, RF therapy, or body sculpting for a holistic session."
+      question: {
+        en: "Can I combine this with other treatments?",
+        es: "¿Puedo combinar esto con otros tratamientos?"
+      },
+      answer: {
+        en: "Yes, many clients pair it with facials, RF therapy, or body sculpting for a holistic session.",
+        es: "Sí, muchos clientes lo combinan con faciales, terapia RF o escultura corporal para una sesión holística."
+      }
     }
   ]
 };
