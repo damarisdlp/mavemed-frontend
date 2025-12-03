@@ -1,6 +1,6 @@
 import { useRouter } from "next/router";
 import Head from "next/head";
-import { allTreatments } from "@/data/allTreatments";
+import { allTreatments } from "@/lib/data/allTreatments";
 
 import Header from "../components/Header";
 import Footer from "../components/Footer";
