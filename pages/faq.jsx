@@ -1,8 +1,8 @@
 import Head from "next/head";
-import Header from "../pages/components/Header";
-import Footer from "../pages/components/Footer";
-import PromoBanner from "../pages/components/PromoBanner";
-import FAQSection from "../pages/components/FAQSection";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import PromoBanner from "@/components/PromoBanner";
+import FAQSection from "@/components/FAQSection";
 
 import { generalFaqs } from "@/lib/data/faqs/faqs";
 
