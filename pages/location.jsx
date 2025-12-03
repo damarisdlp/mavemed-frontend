@@ -1,7 +1,7 @@
-import PromoBanner from "./components/PromoBanner";
-import Header from "./components/Header"
-import LocationSection from "./components/LocationSection"
-import Footer from "./components/Footer"
+import PromoBanner from "@/components/PromoBanner";
+import Header from "@/components/Header"
+import LocationSection from "@/components/LocationSection"
+import Footer from "@/components/Footer"
 import Head from "next/head";
 
 export default function Location() {
