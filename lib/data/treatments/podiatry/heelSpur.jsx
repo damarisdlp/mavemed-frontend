@@ -1,22 +1,41 @@
 export const calcanealSpur = {
   urlSlug: "calcaneal-spur",
   category: "podiatry",
-  categoryDisplayName: "Medical Podiatry Services",
-  serviceDisplayName: "Heel Spur Injection (Calcaneal Spur)",
+  categoryDisplayName: {
+    en: "Medical Podiatry Services",
+    es: "Servicios de podología médica"
+  },
+  serviceDisplayName: {
+    en: "Heel Spur Injection (Calcaneal Spur)",
+    es: "Inyección para espolón calcáneo"
+  },
   isPopular: false,
   isPromoEligible: true,
   images: {
     primary: "/podiatry.jpg",
-    secondary: "/podiatry2.jpg",
+    secondary: "/podiatry2.jpg"
   },
-  description:
-    "Targeted injection therapy to reduce inflammation and pain caused by calcaneal spurs and plantar fasciitis.",
-  details:
-    "A medical injection is administered to the inflamed tissue near the calcaneal spur to relieve pain, reduce swelling, and support healing. Depending on severity, treatment may include corticosteroids, anesthetics, or regenerative compounds. Often paired with rest, orthotic support, or physical therapy.",
+  description: {
+    en: "Targeted injection therapy to reduce inflammation and pain caused by calcaneal spurs and plantar fasciitis.",
+    es: "Terapia de inyección dirigida para reducir la inflamación y el dolor causados por espolones calcáneos y fascitis plantar."
+  },
+  details: {
+    en: "A medical injection is administered to the inflamed tissue near the calcaneal spur to relieve pain, reduce swelling, and support healing. Depending on severity, treatment may include corticosteroids, anesthetics, or regenerative compounds. Often paired with rest, orthotic support, or physical therapy.",
+    es: "Se administra una inyección médica en el tejido inflamado cerca del espolón calcáneo para aliviar el dolor, reducir la inflamación y apoyar el proceso de recuperación. Según la gravedad, el tratamiento puede incluir corticosteroides, anestésicos o compuestos regenerativos. Frecuentemente se complementa con reposo, soporte ortopédico o fisioterapia."
+  },
   notes: [
-    "Ultrasound-guided application available when needed",
-    "Administered by certified podiatric physician",
-    "May include corticosteroids, anesthetics, or biologics depending on diagnosis"
+    {
+      en: "Ultrasound-guided application available when needed",
+      es: "Aplicación guiada por ultrasonido disponible cuando sea necesario"
+    },
+    {
+      en: "Administered by certified podiatric physician",
+      es: "Administrado por un médico podólogo certificado"
+    },
+    {
+      en: "May include corticosteroids, anesthetics or biologics depending on diagnosis",
+      es: "Puede incluir corticosteroides, anestésicos o biológicos según el diagnóstico"
+    }
   ],
   pricing: {
     startingPrice: "$95 USD",
@@ -25,7 +44,10 @@ export const calcanealSpur = {
     promoPriceCurrency: "USD",
     options: [
       {
-        optionName: "Single Injection – Heel Spur",
+        optionName: {
+          en: "Single Injection – Heel Spur",
+          es: "Inyección única – Espolón calcáneo"
+        },
         isPromoEligible: true,
         optionPrice: "$95 USD",
         optionCurrency: "USD",
@@ -36,43 +58,96 @@ export const calcanealSpur = {
     ]
   },
   goals: [
-    "Reduce heel pain and inflammation",
-    "Treat plantar fasciitis symptoms",
-    "Improve walking comfort and mobility"
+    {
+      en: "Reduce heel pain and inflammation",
+      es: "Reducir dolor e inflamación en el talón"
+    },
+    {
+      en: "Treat plantar fasciitis symptoms",
+      es: "Tratar síntomas de fascitis plantar"
+    },
+    {
+      en: "Improve walking comfort and mobility",
+      es: "Mejorar comodidad al caminar y movilidad"
+    }
   ],
   treatableAreas: [
-    "Heel",
-    "Plantar fascia insertion"
+    {
+      en: "Heel",
+      es: "Talón"
+    },
+    {
+      en: "Plantar fascia insertion",
+      es: "Inserción de la fascia plantar"
+    }
   ],
-  addOns: [
-  ],
+  addOns: [],
   expectations: {
     preTreatment: [
-      "Avoid NSAIDs (e.g., ibuprofen) for 24 hours before your appointment unless directed otherwise.",
-      "Inform your provider of any current medications, blood thinners, or allergies."
+      {
+        en: "Avoid NSAIDs (e.g., ibuprofen) for 24 hours before your appointment unless directed otherwise.",
+        es: "Evite antiinflamatorios no esteroideos (ej. ibuprofeno) durante 24 horas antes de su cita, a menos que su médico indique lo contrario."
+      },
+      {
+        en: "Inform your provider of any current medications, blood thinners or allergies.",
+        es: "Informe a su médico sobre medicamentos actuales, anticoagulantes o alergias."
+      }
     ],
     postTreatment: [
-      "Avoid intense physical activity or pressure to the area for at least 48 hours.",
-      "Apply cold compress intermittently for the first day if swelling occurs.",
-      "Follow all aftercare instructions provided by your provider to support healing."
+      {
+        en: "Avoid intense physical activity or pressure to the area for at least 48 hours.",
+        es: "Evite actividad física intensa o presión en la zona durante al menos 48 horas."
+      },
+      {
+        en: "Apply cold compress intermittently for the first day if swelling occurs.",
+        es: "Aplique compresas frías de manera intermitente durante el primer día si hay inflamación."
+      },
+      {
+        en: "Follow all aftercare instructions provided by your provider to support healing.",
+        es: "Siga todas las indicaciones de cuidado posteriores brindadas por su médico para apoyar la recuperación."
+      }
     ]
   },
   faq: [
     {
-      question: "How quickly will I feel relief?",
-      answer: "Some patients experience pain relief within a few days, while others may require 1–2 additional sessions or adjunct therapies like physical therapy."
+      question: {
+        en: "How quickly will I feel relief?",
+        es: "¿Qué tan rápido sentiré alivio?"
+      },
+      answer: {
+        en: "Some patients experience relief within a few days, while others may require 1–2 additional sessions or adjunct therapies like physical therapy.",
+        es: "Algunos pacientes sienten alivio en pocos días, mientras que otros pueden necesitar 1–2 sesiones adicionales o terapias complementarias como fisioterapia."
+      }
     },
     {
-      question: "Is the injection safe?",
-      answer: "Yes. This is a well-established and commonly performed procedure. Our doctors use sterile techniques and may use ultrasound guidance when needed."
+      question: {
+        en: "Is the injection safe?",
+        es: "¿La inyección es segura?"
+      },
+      answer: {
+        en: "Yes. This is a well-established and commonly performed procedure. Our doctors use sterile techniques and may use ultrasound guidance when needed.",
+        es: "Sí. Es un procedimiento común y ampliamente establecido. Nuestros médicos utilizan técnicas estériles y pueden apoyarse en ultrasonido cuando es necesario."
+      }
     },
     {
-      question: "Can this be repeated?",
-      answer: "Yes, if symptoms return. Your provider will assess the cause and determine if additional treatment is appropriate or if alternative therapies are needed."
+      question: {
+        en: "Can this be repeated?",
+        es: "¿Se puede repetir este tratamiento?"
+      },
+      answer: {
+        en: "Yes, if symptoms return. Your provider will assess the cause and determine if additional treatment is appropriate or if alternative therapies are recommended.",
+        es: "Sí, si los síntomas regresan. Su médico evaluará la causa y determinará si es apropiado repetir el tratamiento o si se recomiendan terapias alternativas."
+      }
     },
     {
-      question: "Will I need rest or time off work?",
-      answer: "Most patients can resume light activity the same day. Avoid strenuous impact like running or jumping for at least 48 hours."
+      question: {
+        en: "Will I need rest or time off work?",
+        es: "¿Necesitaré descanso o ausentarme del trabajo?"
+      },
+      answer: {
+        en: "Most patients can resume light activity the same day. Avoid strenuous impact like running or jumping for at least 48 hours.",
+        es: "La mayoría de los pacientes puede retomar actividades ligeras el mismo día. Evite impactos fuertes como correr o saltar durante al menos 48 horas."
+      }
     }
   ]
 };
