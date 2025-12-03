@@ -1,57 +1,93 @@
-export const rfEnzymatic = {
-  urlSlug: "rf-enzymatic",
+export const venusFreeze = {
+  urlSlug: "venus-freeze",
   category: "skin-tightening",
   categoryDisplayName: {
     en: "Skin Tightening & Sculpting",
     es: "Reafirmación y Esculpido Corporal"
   },
   serviceDisplayName: {
-    en: "RF + Enzymatic Body Treatment",
-    es: "Tratamiento Corporal con RF + Enzimas"
+    en: "Radio Frequency Body Sculpting",
+    es: "Esculpido corporal con radiofrecuencia"
   },
   isPopular: false,
   isPromoEligible: true,
   images: {
-    primary: "/body.jpg",
-    secondary: "/rf-enzymatic2.jpg"
+    primary: "/radiofrequency.jpg",
+    secondary: "/venus-freeze2.jpg"
   },
   description: {
-    en: "Synergistic treatment combining radiofrequency and enzyme therapy to sculpt the body, reduce fibrosis, and tighten skin.",
-    es: "Tratamiento sinérgico que combina radiofrecuencia y terapia enzimática para esculpir el cuerpo, reducir fibrosis y tensar la piel."
+    en: "Non invasive radiofrequency therapy to smooth skin, reduce localized fat, and improve body contour.",
+    es: "Terapia de radiofrecuencia no invasiva para suavizar la piel, reducir grasa localizada y mejorar el contorno corporal."
   },
   details: {
-    en: "This treatment merges two powerful technologies: radiofrequency for dermal heating and collagen stimulation, and enzymatic injections for fat breakdown and fibrosis reduction. Recommended for post-lipo patients or individuals seeking body refinement without surgery.",
-    es: "Este tratamiento combina dos tecnologías potentes: radiofrecuencia para calentar la dermis y estimular colágeno, y enzimas inyectables para reducir grasa localizada y fibrosis. Recomendado para pacientes post-lipo o personas que buscan remodelación corporal sin cirugía."
+    en: "Venus Freeze uses multi polar radiofrequency and pulsed electromagnetic fields to deliver heat into the skin, stimulating collagen and elastin while reducing fat deposits. Ideal for patients seeking skin tightening and smoother contours without surgery.",
+    es: "Venus Freeze utiliza radiofrecuencia multipolar y campos electromagnéticos pulsados para generar calor en la piel, estimular colágeno y elastina y reducir depósitos de grasa. Es ideal para quienes buscan reafirmar la piel y suavizar el contorno sin cirugía."
   },
   notes: [
     {
-      en: "Ideal for post-liposuction fibrosis, uneven skin, and localized fat",
-      es: "Ideal para fibrosis post-liposucción, piel irregular y grasa localizada"
+      en: "Painless treatment with no downtime",
+      es: "Tratamiento cómodo, sin dolor y sin tiempo de recuperación"
     },
     {
-      en: "Combines RF-induced tightening with enzyme-based contouring",
-      es: "Combina el tensado de la RF con el contorno producido por enzimas"
+      en: "Multiple sessions recommended for optimal results",
+      es: "Se recomiendan varias sesiones para obtener resultados óptimos"
     },
     {
-      en: "Visible improvement in tone and smoothness with repeated sessions",
-      es: "Mejoras visibles en tono y suavidad con sesiones repetidas"
+      en: "Also improves cellulite and lymphatic drainage",
+      es: "También ayuda a mejorar la celulitis y el drenaje linfático"
     }
   ],
   pricing: {
-    startingPrice: "$190 USD per session",
+    startingPrice: "$110 USD per session",
     startingPriceCurrency: "USD",
-    promoPrice: "$165 USD per session with package",
+    promoPrice: "$95 USD per session with package",
     promoPriceCurrency: "USD",
     options: [
       {
         optionName: {
-          en: "Localized Combo Area",
-          es: "Zona localizada combinada"
+          en: "Abdomen",
+          es: "Abdomen"
         },
         isPromoEligible: true,
-        optionPrice: "$190 USD",
+        optionPrice: "$110 USD",
         optionCurrency: "USD",
-        optionPromoPrice: "$165 USD",
+        optionPromoPrice: "$95 USD",
+        optionPromoPriceCurrency: "USD",
+        notes: null
+      },
+      {
+        optionName: {
+          en: "Arms",
+          es: "Brazos"
+        },
+        isPromoEligible: true,
+        optionPrice: "$110 USD",
+        optionCurrency: "USD",
+        optionPromoPrice: "$95 USD",
+        optionPromoPriceCurrency: "USD",
+        notes: null
+      },
+      {
+        optionName: {
+          en: "Thighs (inner or outer)",
+          es: "Muslos (cara interna o externa)"
+        },
+        isPromoEligible: true,
+        optionPrice: "$120 USD",
+        optionCurrency: "USD",
+        optionPromoPrice: "$105 USD",
+        optionPromoPriceCurrency: "USD",
+        notes: null
+      },
+      {
+        optionName: {
+          en: "Buttocks",
+          es: "Glúteos"
+        },
+        isPromoEligible: true,
+        optionPrice: "$130 USD",
+        optionCurrency: "USD",
+        optionPromoPrice: "$115 USD",
         optionPromoPriceCurrency: "USD",
         notes: null
       }
@@ -59,102 +95,134 @@ export const rfEnzymatic = {
   },
   goals: [
     {
-      en: "Enhance skin tightening",
-      es: "Mejorar la firmeza y tensión de la piel"
+      en: "Tighten loose skin on abdomen, arms, or thighs",
+      es: "Reafirmar la piel laxa en abdomen, brazos o muslos"
     },
     {
-      en: "Reduce subcutaneous fibrosis",
-      es: "Reducir fibrosis subcutánea"
+      en: "Reduce appearance of cellulite",
+      es: "Reducir la apariencia de la celulitis"
     },
     {
-      en: "Refine body contour",
-      es: "Mejorar el contorno corporal"
+      en: "Stimulate collagen and lymphatic drainage",
+      es: "Estimular el colágeno y el drenaje linfático"
     }
   ],
   treatableAreas: [
-    { en: "Abdomen", es: "Abdomen" },
-    { en: "Arms", es: "Brazos" },
-    { en: "Thighs", es: "Muslos" },
-    { en: "Back", es: "Espalda" },
-    { en: "Flanks", es: "Laterales" },
-    { en: "Under Chin (Submental)", es: "Debajo del mentón (submentón)" }
+    {
+      en: "Abdomen",
+      es: "Abdomen"
+    },
+    {
+      en: "Arms",
+      es: "Brazos"
+    },
+    {
+      en: "Inner thighs",
+      es: "Muslos internos"
+    },
+    {
+      en: "Outer thighs",
+      es: "Muslos externos"
+    },
+    {
+      en: "Buttocks",
+      es: "Glúteos"
+    },
+    {
+      en: "Back (bra fat)",
+      es: "Espalda (zona del brasier)"
+    },
+    {
+      en: "Love handles",
+      es: "Lonjas o costados"
+    }
   ],
   addOns: [
     {
-      serviceParent: "Swedish Massage - Lymphatic Drainage",
+      serviceParent: "Enzymatic Therapy",
       serviceChild: null,
       displayName: {
-        en: "Lymphatic Drainage Massage",
-        es: "Drenaje linfático manual"
+        en: "Enzymatic Therapy",
+        es: "Terapia enzimática"
       },
-      link: "/treatments/swedish-massage"
+      link: "/treatments/enzymatic-therapy"
     }
   ],
   expectations: {
     preTreatment: [
       {
-        en: "Avoid anti-inflammatory meds and alcohol for 24 hours before your session.",
-        es: "Evite medicamentos antiinflamatorios y alcohol durante 24 horas antes del tratamiento."
+        en: "Hydrate well for 24 hours before treatment to aid lymphatic response.",
+        es: "Hidratación adecuada durante las 24 horas previas al tratamiento para apoyar la respuesta linfática."
       },
       {
-        en: "Drink plenty of water to support the body’s elimination process.",
-        es: "Beba suficiente agua para apoyar el proceso de eliminación del cuerpo."
+        en: "Avoid heavy meals and caffeine 2 hours before your session.",
+        es: "Evite comidas muy pesadas y cafeína 2 horas antes de la sesión."
       }
     ],
     postTreatment: [
       {
-        en: "Bruising, soreness, or heat in the treated area is normal and temporary.",
-        es: "Moretones, sensibilidad o calor en la zona tratada son normales y temporales."
+        en: "Slight redness or warmth may occur and usually resolves within a few hours.",
+        es: "Puede presentarse enrojecimiento leve o sensación de calor, que generalmente desaparece en pocas horas."
       },
       {
-        en: "Wear compression if advised and avoid strenuous workouts for 24 hours.",
-        es: "Use faja si se recomienda y evite ejercicio intenso durante 24 horas."
+        en: "Engage in light physical activity and drink water to help flush toxins.",
+        es: "Realice actividad física ligera y beba agua para ayudar a eliminar toxinas."
       },
       {
-        en: "Visible changes typically occur within 1–2 weeks with optimal results after 4+ sessions.",
-        es: "Los cambios suelen notarse en 1–2 semanas, con resultados óptimos después de 4 o más sesiones."
+        en: "Multiple sessions, typically 6–8, are recommended for long term contouring effects.",
+        es: "Se recomiendan varias sesiones, normalmente de 6 a 8, para efectos de contorno a largo plazo."
       }
     ]
   },
   faq: [
     {
       question: {
-        en: "Why combine RF and enzymes?",
-        es: "¿Por qué combinar RF y enzimas?"
+        en: "Is Venus Freeze painful?",
+        es: "¿Venus Freeze es doloroso?"
       },
       answer: {
-        en: "RF improves skin tightening and circulation, while enzymes reduce fat and fibrosis. The combo creates a stronger reshaping effect.",
-        es: "La RF mejora la firmeza de la piel y la circulación, mientras que las enzimas reducen grasa y fibrosis. La combinación logra un efecto de remodelación más potente."
+        en: "No, it is a comfortable treatment often described as similar to a warm stone massage.",
+        es: "No, es un tratamiento cómodo que muchas personas describen como similar a un masaje con piedras calientes."
       }
     },
     {
       question: {
-        en: "How often can I do this treatment?",
-        es: "¿Con qué frecuencia puedo hacerme este tratamiento?"
+        en: "How soon will I see results?",
+        es: "¿En cuánto tiempo veré resultados?"
       },
       answer: {
-        en: "Sessions can be done every 1–2 weeks depending on your provider’s recommendation.",
-        es: "Las sesiones pueden realizarse cada 1–2 semanas según la recomendación del especialista."
+        en: "You may notice some tightening after the first session, but full results usually develop over 6–8 treatments.",
+        es: "Puede notar algo de tensión desde la primera sesión, pero los resultados completos suelen lograrse tras 6 a 8 tratamientos."
       }
     },
     {
       question: {
-        en: "Is it painful?",
-        es: "¿Es doloroso?"
+        en: "How long do results last?",
+        es: "¿Cuánto tiempo duran los resultados?"
       },
       answer: {
-        en: "The RF portion feels like a warm massage. Enzymatic injections may cause brief stinging or tenderness afterward.",
-        es: "La RF se siente como un masaje tibio. Las inyecciones enzimáticas pueden causar leve escozor o sensibilidad después."
+        en: "Results can last several months, especially when paired with healthy habits and occasional maintenance sessions.",
+        es: "Los resultados pueden durar varios meses, especialmente si se acompañan de hábitos saludables y sesiones de mantenimiento ocasionales."
       }
     },
     {
       question: {
-        en: "Do I need compression wear?",
-        es: "¿Necesito usar faja?"
+        en: "Can this replace liposuction?",
+        es: "¿Este tratamiento sustituye a la liposucción?"
       },
       answer: {
-        en: "In many cases, yes. Your provider will guide you depending on the area treated and your response.",
-        es: "En muchos casos, sí. Su especialista le indicará según el área tratada y su respuesta al procedimiento."
+        en: "No, Venus Freeze is ideal for mild to moderate contouring. It is not a substitute for surgical fat removal.",
+        es: "No, Venus Freeze es ideal para contorno leve a moderado. No sustituye a la extracción quirúrgica de grasa."
+      }
+    },
+    {
+      question: {
+        en: "Is there downtime?",
+        es: "¿Hay tiempo de recuperación?"
+      },
+      answer: {
+        en: "There is no downtime. Patients can return to normal activities immediately after each session.",
+        es: "No hay tiempo de recuperación. Puede retomar sus actividades normales inmediatamente después de cada sesión."
       }
     }
   ]
