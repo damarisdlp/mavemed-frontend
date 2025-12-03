@@ -105,64 +105,116 @@ export const harmonyca = {
     {
       serviceParent: "HydraFacial MD",
       serviceChild:  "Hydrafacial MD - Face",
-      displayName:   "HydraFacial MD - Face",
+      displayName: {
+        en: "HydraFacial MD - Face",
+        es: "HydraFacial MD - Rostro"
+      },
       link:          "/treatments/hydrafacial"
     },
     {
       serviceParent: "Casmara Purifying Algae Facial",
       serviceChild:  "Casmara Purifying Algae Facial",
-      displayName:   "Casmara Purifying Algae Facial",
+      displayName: {
+        en: "Casmara Purifying Algae Facial",
+        es: "Facial Purificante de Algas Casmara"
+      },
       link:          "/treatments/casmara-purifying"
     },
     {
       serviceParent: "Microneedling Skin Renewal - Rejuran - Full Face",
       serviceChild: "Microneedling Skin Renewal - Rejuran - Full Face",
-      displayName: "Microneedling Skin Renewal - Rejuran - Full Face",
+      displayName: {
+        en: "Microneedling Skin Renewal - Rejuran - Full Face",
+        es: "Renovación de Piel con Microneedling - Rejuran - Rostro Completo"
+      },
       link: "/treatments/microneedling"
     },
     {
       serviceParent: "Scarlet S RF Microneedling",
       serviceChild:  "Scarlet S RF Microneedling - Face",
-      displayName:   "Scarlet S RF Microneedling - Face",
+      displayName: {
+        en: "Scarlet S RF Microneedling - Face",
+        es: "Microneedling RF Scarlet S - Rostro"
+      },
       link:          "/treatments/rf-microneedling"
     }
   ],
   expectations: {
     preTreatment: [
-      "Avoid alcohol, NSAIDs, and blood-thinning supplements (fish oil, garlic, ginkgo) for at least 24–48 hours.",
-      "Inform your provider of recent dental procedures, vaccinations, or laser treatments."
+      {
+        en: "Avoid alcohol, NSAIDs, and blood-thinning supplements (fish oil, garlic, ginkgo) for at least 24–48 hours.",
+        es: "Evite alcohol, AINE y suplementos anticoagulantes (aceite de pescado, ajo, ginkgo) durante al menos 24-48 horas."
+      },
+      {
+        en: "Inform your provider of recent dental procedures, vaccinations, or laser treatments.",
+        es: "Informe a su proveedor de procedimientos dentales recientes, vacunaciones o tratamientos láser."
+      }
     ],
     postTreatment: [
-      "Expect mild swelling or redness for 1–2 days.",
-      "Avoid facial massage, hot environments, or strenuous activity for 48 hours.",
-      "Visible lift is immediate; collagen-stimulating effects continue developing over 6–8 weeks."
+      {
+        en: "Expect mild swelling or redness for 1–2 days.",
+        es: "Espere hinchazón leve o enrojecimiento durante 1-2 días."
+      },
+      {
+        en: "Avoid facial massage, hot environments, or strenuous activity for 48 hours.",
+        es: "Evite masaje facial, ambientes calientes o actividad extenuante durante 48 horas."
+      },
+      {
+        en: "Visible lift is immediate; collagen-stimulating effects continue developing over 6–8 weeks.",
+        es: "El levantamiento visible es inmediato; los efectos estimuladores de colágeno continúan desarrollándose durante 6-8 semanas."
+      }
     ]
   },
   faq: [
     {
-      question: "How is HarmonyCA different from traditional dermal fillers?",
-      answer:
-        "HarmonyCA combines the immediate volume of HA with the collagen-boosting power of CaHA, providing both instant lift and long-term skin regeneration."
+      question: {
+        en: "How is HarmonyCA different from traditional dermal fillers?",
+        es: "¿En qué se diferencia HarmonyCA de los rellenos dérmicos tradicionales?"
+      },
+      answer: {
+        en: "HarmonyCA combines the immediate volume of HA with the collagen-boosting power of CaHA, providing both instant lift and long-term skin regeneration.",
+        es: "HarmonyCA combina el volumen inmediato del HA con el poder estimulador de colágeno del CaHA, proporcionando levantamiento instantáneo y regeneración de la piel a largo plazo."
+      }
     },
     {
-      question: "Which areas respond best to HarmonyCA?",
-      answer:
-        "Cheeks, jawline, chin, and the lower face benefit most, especially for patients with mild-to-moderate volume loss or skin laxity."
+      question: {
+        en: "Which areas respond best to HarmonyCA?",
+        es: "¿Qué áreas responden mejor a HarmonyCA?"
+      },
+      answer: {
+        en: "Cheeks, jawline, chin, and the lower face benefit most, especially for patients with mild-to-moderate volume loss or skin laxity.",
+        es: "Las mejillas, línea mandibular, barbilla y la cara inferior se benefician más, especialmente para pacientes con pérdida de volumen leve a moderada o laxitud de la piel."
+      }
     },
     {
-      question: "How long do HarmonyCA results last?",
-      answer:
-        "Most patients enjoy results that last 12–18 months, depending on their age, skin type, and lifestyle habits."
+      question: {
+        en: "How long do HarmonyCA results last?",
+        es: "¿Cuánto duran los resultados de HarmonyCA?"
+      },
+      answer: {
+        en: "Most patients enjoy results that last 12–18 months, depending on their age, skin type, and lifestyle habits.",
+        es: "La mayoría de los pacientes disfrutan resultados que duran 12-18 meses, dependiendo de su edad, tipo de piel y hábitos de vida."
+      }
     },
     {
-      question: "Is HarmonyCA approved and safe?",
-      answer:
-        "Yes. HarmonyCA is CE-certified and used widely across Europe. At Mave, it's administered exclusively by licensed medical providers."
+      question: {
+        en: "Is HarmonyCA approved and safe?",
+        es: "¿Está HarmonyCA aprobado y es seguro?"
+      },
+      answer: {
+        en: "Yes. HarmonyCA is CE-certified and used widely across Europe. At Mave, it's administered exclusively by licensed medical providers.",
+        es: "Sí. HarmonyCA está certificado CE y se usa ampliamente en Europa. En Mave, es administrado exclusivamente por proveedores médicos licenciados."
+      }
     },
     {
-      question: "Can I combine HarmonyCA with other procedures?",
-      answer:
-        "Absolutely. It pairs well with treatments like Ultraformer, RF microneedling, and skin boosters like Rejuran for comprehensive facial rejuvenation."
+      question: {
+        en: "Can I combine HarmonyCA with other procedures?",
+        es: "¿Puedo combinar HarmonyCA con otros procedimientos?"
+      },
+      answer: {
+        en: "Absolutely. It pairs well with treatments like Ultraformer, RF microneedling, and skin boosters like Rejuran for comprehensive facial rejuvenation.",
+        es: "Absolutamente. Se combina bien con tratamientos como Ultraformer, microneedling RF y potenciadores de piel como Rejuran para rejuvenecimiento facial completo."
+      }
     }
   ]
 };
