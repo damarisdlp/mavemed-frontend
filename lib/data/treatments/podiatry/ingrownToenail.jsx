@@ -3,7 +3,7 @@ export const matrixectomy = {
   category: "podiatry",
   categoryDisplayName: {
     en: "Medical Podiatry Services",
-    es: "Servicios de podología médica"
+    es: "Servicios de Podología Médica"
   },
   serviceDisplayName: {
     en: "Matrixectomy (Permanent Ingrown Nail Removal)",
