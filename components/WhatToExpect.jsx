@@ -6,6 +6,8 @@ export default function WhatToExpect({ expectations = {} }) {
   const { locale: routerLocale } = useRouter();
   const locale = routerLocale || "en";
 
+  console.log("📌 WhatToExpect locale:", locale);
+
   const getLocalized = (field) => {
     if (field == null) return ""; // null or undefined
     if (typeof field === "object") {
