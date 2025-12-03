@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { allTreatments } from "@/data/allTreatments";
+import { allTreatments } from "@/lib/data/allTreatments";
 
 export default function TreatmentCategories() {
   // Group treatments by category
