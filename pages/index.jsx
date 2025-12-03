@@ -2,19 +2,19 @@ import Head from "next/head";
 import Script from "next/script";
 import { useState } from "react";
 
-import LeadForm from "./components/LeadForm";
-import ApproachSection from "./components/ApproachSection";
-import PromoBanner from "./components/PromoBanner";
-import Header from "./components/Header";
-import HeroSection from "./components/HeroSection";
-import PopularTreatments from "./components/PopularTreatments";
-import ContactCTA from "./components/ContactCTA";
-import LocationMap from "./components/LocationSection";
-import InstagramFeed from "./components/InstagramFeed"
-import ReviewsSection from "./components/ReviewsSection";
-import PromoPackageSection from "./components/PromoPackageSection";
-import Footer from "./components/Footer";
-import ScrollToTopButton from "./components/ScrollToTop";
+import LeadForm from "../components/LeadForm";
+import ApproachSection from "../components/ApproachSection";
+import PromoBanner from "../components/PromoBanner";
+import Header from "../components/Header";
+import HeroSection from "../components/HeroSection";
+import PopularTreatments from "../components/PopularTreatments";
+import ContactCTA from "../components/ContactCTA";
+import LocationMap from "../components/LocationSection";
+import InstagramFeed from "../components/InstagramFeed"
+import ReviewsSection from "../components/ReviewsSection";
+import PromoPackageSection from "../components/PromoPackageSection";
+import Footer from "../components/Footer";
+import ScrollToTopButton from "../components/ScrollToTop";
 
 export default function Home() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
