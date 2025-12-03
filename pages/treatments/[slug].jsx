@@ -2,15 +2,15 @@ import { useRouter } from "next/router";
 import Head from "next/head";
 import { allTreatments } from "@/lib/data/allTreatments";
 
-import Header from "../../components/Header";
-import Footer from "../../components/Footer";
-import PromoBanner from "../../components/PromoBanner";
-import TreatmentDetails from "../../components/TreatmentDetails";
-import PricingTable from "../../components/PricingTable";
-import WhatToExpect from "../../components/WhatToExpect";
-import FAQSection from "../../components/FAQSection";
-import ContactCTA from "../../components/ContactCTA";
-import PromoPackageSection from "../../components/PromoPackageSection";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import PromoBanner from "@/components/PromoBanner";
+import TreatmentDetails from "@/components/TreatmentDetails";
+import PricingTable from "@/components/PricingTable";
+import WhatToExpect from "@/components/WhatToExpect";
+import FAQSection from "@/components/FAQSection";
+import ContactCTA from "@/components/ContactCTA";
+import PromoPackageSection from "@/components/PromoPackageSection";
 
 export default function TreatmentPage() {
   const router = useRouter();
