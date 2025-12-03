@@ -27,13 +27,13 @@ export const harmonyca = {
     promoPriceCurrency: "MXN",
     options: [
       {
-        optionName: "Per Treatment - 2 Syringes Total",
+        optionName: "Per Treatment - 2 x 1.25 mL Syringes Total",
         isPromoEligible: false,
         optionPrice: "$15,750",
         optionCurrency: "MXN",
-        optionPromoPrice: "745",
-        optionPromoPriceCurrency: "USD",
-        notes: ["Promo price based on treatment plan of 2 sessions"],
+        optionPromoPrice: "",
+        optionPromoPriceCurrency: "MXN",
+        notes: [],
       }
     ],
   },
