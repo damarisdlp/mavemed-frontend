@@ -53,7 +53,7 @@ export default function PricingTable({ treatment }) {
                       {p.notes?.length > 0 && (
                         <ul className="mt-1 text-xs text-gray-600 italic list-disc list-inside">
                           {p.notes.map((note, i) => (
-                            <li key={i}>{note}</li>
+                            <li key={i}>{getLocalized(note)}</li>
                           ))}
                         </ul>
                       )}
