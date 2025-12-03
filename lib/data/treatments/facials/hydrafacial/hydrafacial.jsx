@@ -1,23 +1,42 @@
 export const hydrafacial = {
   urlSlug: "hydrafacial",
   category: "facials",
-  categoryDisplayName: "Facials",
-  serviceDisplayName: "HydraFacial MD",
+  categoryDisplayName: {
+    en: "Facials",
+    es: "Faciales"
+  },
+  serviceDisplayName: {
+    en: "HydraFacial MD",
+    es: "HydraFacial MD"
+  },
   isPopular: true,
   isPromoEligible: false,
   images: {
     primary: "/hydrafacial.jpg",
-    secondary: "/hydrafacial2.jpg",
+    secondary: "/hydrafacial2.jpg"
   },
-  description: 
-  "Experience a medical-grade HydraFacial in Tijuana featuring patented Vortex-Fusion® technology for deep pore cleansing, painless extractions, and intense skin hydration. Perfect for acne-prone, dry, or congested skin.",
-  details: 
-  "HydraFacial MD is a multi-step, medical-grade facial that uses patented Vortex-Fusion® technology to deeply cleanse, exfoliate, and infuse hydrating serums into the skin. It’s ideal for clients with acne-prone, dull, or congested complexions seeking clearer, more radiant skin.",
+  description: {
+    en: "Experience a medical-grade HydraFacial in Tijuana featuring patented Vortex-Fusion® technology for deep pore cleansing, painless extractions, and intense skin hydration. Perfect for acne-prone, dry, or congested skin.",
+    es: "Experience a medical-grade HydraFacial in Tijuana featuring patented Vortex-Fusion® technology for deep pore cleansing, painless extractions, and intense skin hydration. Perfect for acne-prone, dry, or congested skin."
+  },
+  details: {
+    en: "HydraFacial MD is a multi-step, medical-grade facial that uses patented Vortex-Fusion® technology to deeply cleanse, exfoliate, and infuse hydrating serums into the skin. It’s ideal for clients with acne-prone, dull, or congested complexions seeking clearer, more radiant skin.",
+    es: "HydraFacial MD is a multi-step, medical-grade facial that uses patented Vortex-Fusion® technology to deeply cleanse, exfoliate, and infuse hydrating serums into the skin. It’s ideal for clients with acne-prone, dull, or congested complexions seeking clearer, more radiant skin."
+  },
   notes: [
-          "No downtime — makeup can be applied the same day",
-          "Safe for all skin tones and sensitive skin types",
-          "Includes optional manual extractions when needed"
-        ],
+    {
+      en: "No downtime — makeup can be applied the same day",
+      es: "No downtime — makeup can be applied the same day"
+    },
+    {
+      en: "Safe for all skin tones and sensitive skin types",
+      es: "Safe for all skin tones and sensitive skin types"
+    },
+    {
+      en: "Includes optional manual extractions when needed",
+      es: "Includes optional manual extractions when needed"
+    }
+  ],
   pricing: {
     startingPrice: "$95",
     startingPriceCurrency: "USD",
@@ -25,73 +44,130 @@ export const hydrafacial = {
     promoPriceCurrency: "USD",
     options: [
       {
-        optionName: "Hydrafacial MD - Face",
+        optionName: {
+          en: "Hydrafacial MD - Face",
+          es: "Hydrafacial MD - Face"
+        },
         isPromoEligible: false,
         optionPrice: "$95",
         optionCurrency: "USD",
         optionPromoPrice: "",
         optionPromoPriceCurrency: "USD",
-        notes: null
+        notes: []
       },
       {
-        optionName: "Hydrafacial MD - Shoulders",
+        optionName: {
+          en: "Hydrafacial MD - Shoulders",
+          es: "Hydrafacial MD - Shoulders"
+        },
         isPromoEligible: false,
         optionPrice: "$TBD",
         optionCurrency: "USD",
         optionPromoPrice: "",
         optionPromoPriceCurrency: "USD",
-        notes: null
+        notes: []
       },
       {
-        optionName: "Hydrafacial MD - Upper Back",
+        optionName: {
+          en: "Hydrafacial MD - Upper Back",
+          es: "Hydrafacial MD - Upper Back"
+        },
         isPromoEligible: false,
         optionPrice: "$TBD",
         optionCurrency: "USD",
         optionPromoPrice: "",
         optionPromoPriceCurrency: "USD",
-        notes: null
+        notes: []
       }
     ]
   },
   goals: [
-    "Deeply cleanse and exfoliate the skin",
-    "Unclog pores and remove blackheads",
-    "Hydrate and brighten dull or uneven skin"
+    {
+      en: "Deeply cleanse and exfoliate the skin",
+      es: "Deeply cleanse and exfoliate the skin"
+    },
+    {
+      en: "Unclog pores and remove blackheads",
+      es: "Unclog pores and remove blackheads"
+    },
+    {
+      en: "Hydrate and brighten dull or uneven skin",
+      es: "Hydrate and brighten dull or uneven skin"
+    }
   ],
   treatableAreas: [
-    "Face", 
-    "Shoulders",
-    "Upper Back",
-  ],  
+    {
+      en: "Face",
+      es: "Face"
+    },
+    {
+      en: "Shoulders",
+      es: "Shoulders"
+    },
+    {
+      en: "Upper Back",
+      es: "Upper Back"
+    }
+  ],
   addOns: [
     {
       serviceParent: "Wrinkle Reducer - Botox",
-      serviceChild:  "Any Zone",
-      displayName:   "Wrinkle Reducer - Botox",
-      link:          "/treatments/wrinkle-reducers-botox"
+      serviceChild: "Any Zone",
+      displayName: {
+        en: "Wrinkle Reducer - Botox",
+        es: "Wrinkle Reducer - Botox"
+      },
+      link: "/treatments/wrinkle-reducers-botox"
     }
   ],
   expectations: {
     preTreatment: [
-      "Avoid using retinol, acids, and exfoliants 48 hours before treatment."
+      {
+        en: "Avoid using retinol, acids, and exfoliants 48 hours before treatment.",
+        es: "Avoid using retinol, acids, and exfoliants 48 hours before treatment."
+      }
     ],
     postTreatment: [
-      "Enjoy immediate glow and hydration.",
-      "Avoid harsh skincare products for 24 hours and apply sunscreen."
+      {
+        en: "Enjoy immediate glow and hydration.",
+        es: "Enjoy immediate glow and hydration."
+      },
+      {
+        en: "Avoid harsh skincare products for 24 hours and apply sunscreen.",
+        es: "Avoid harsh skincare products for 24 hours and apply sunscreen."
+      }
     ]
   },
   faq: [
     {
-      question: "How often should I get a HydraFacial?",
-      answer: "For optimal results, we recommend a HydraFacial every 4 weeks to maintain clear, glowing skin."
+      question: {
+        en: "How often should I get a HydraFacial?",
+        es: "How often should I get a HydraFacial?"
+      },
+      answer: {
+        en: "For optimal results, we recommend a HydraFacial every 4 weeks to maintain clear, glowing skin.",
+        es: "For optimal results, we recommend a HydraFacial every 4 weeks to maintain clear, glowing skin."
+      }
     },
     {
-      question: "Is HydraFacial good for acne?",
-      answer: "Yes. HydraFacial gently removes impurities, clears pores, and delivers acne-fighting serums for smoother skin."
+      question: {
+        en: "Is HydraFacial good for acne?",
+        es: "Is HydraFacial good for acne?"
+      },
+      answer: {
+        en: "Yes. HydraFacial gently removes impurities, clears pores, and delivers acne-fighting serums for smoother skin.",
+        es: "Yes. HydraFacial gently removes impurities, clears pores, and delivers acne-fighting serums for smoother skin."
+      }
     },
     {
-      question: "Can I wear makeup after a HydraFacial?",
-      answer: "Yes. Makeup can be applied the same day, but many patients prefer to enjoy the natural post-treatment glow."
+      question: {
+        en: "Can I wear makeup after a HydraFacial?",
+        es: "Can I wear makeup after a HydraFacial?"
+      },
+      answer: {
+        en: "Yes. Makeup can be applied the same day, but many patients prefer to enjoy the natural post-treatment glow.",
+        es: "Yes. Makeup can be applied the same day, but many patients prefer to enjoy the natural post-treatment glow."
+      }
     }
   ]
 };
