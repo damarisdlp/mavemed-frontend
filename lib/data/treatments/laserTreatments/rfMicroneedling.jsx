@@ -3,7 +3,7 @@ export const rfMicroneedling = {
   category: "laser-resurfacing",
   categoryDisplayName: {
     en: "Laser Treatments & Skin Resurfacing",
-    es: "Tratamientos láser y rejuvenecimiento de la piel"
+    es: "Tratamientos Láser y Resurfacing Cutáneo"
   },
   serviceDisplayName: {
     en: "Scarlet S RF Microneedling",
