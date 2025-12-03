@@ -12,11 +12,30 @@ import FAQSection from "@/components/FAQSection";
 import ContactCTA from "@/components/ContactCTA";
 import PromoPackageSection from "@/components/PromoPackageSection";
 
+const getLocalized = (field, locale) => {
+  if (typeof field === 'object' && field[locale]) return field[locale];
+  if (typeof field === 'object' && field['en']) return field['en'];
+  return field;
+};
+import { useRouter } from "next/router";
+import Head from "next/head";
+import { allTreatments } from "@/lib/data/allTreatments";
+
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import PromoBanner from "@/components/PromoBanner";
+import TreatmentDetails from "@/components/TreatmentDetails";
+import PricingTable from "@/components/PricingTable";
+import WhatToExpect from "@/components/WhatToExpect";
+import FAQSection from "@/components/FAQSection";
+import ContactCTA from "@/components/ContactCTA";
+import PromoPackageSection from "@/components/PromoPackageSection";
+
 export default function TreatmentPage() {
   const router = useRouter();
+  const { slug } = router.query;
   console.log("Slug:", slug);
   console.log("All treatments:", allTreatments.map(t => t.urlSlug));
-  const { slug } = router.query;
 
   if (!router.isReady) {
     return <p className="text-center mt-10">Loading...</p>;
