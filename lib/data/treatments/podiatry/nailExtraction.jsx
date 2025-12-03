@@ -1,22 +1,41 @@
 export const toenailExtraction = {
   urlSlug: "toenail-extraction",
   category: "podiatry",
-  categoryDisplayName: "Medical Podiatry Services",
-  serviceDisplayName: "Toenail Extraction Procedure",
+  categoryDisplayName: {
+    en: "Medical Podiatry Services",
+    es: "Servicios de podología médica"
+  },
+  serviceDisplayName: {
+    en: "Toenail Extraction Procedure",
+    es: "Procedimiento de extracción de uña del pie"
+  },
   isPopular: false,
   isPromoEligible: true,
   images: {
     primary: "/podiatry.jpg",
-    secondary: "/podiatry2.jpg",
+    secondary: "/podiatry2.jpg"
   },
-  description:
-    "Partial or total nail removal to treat severely ingrown, infected, or damaged toenails with long-term relief.",
-  details:
-    "Performed under local anesthesia, this outpatient procedure removes part or all of the toenail to reduce pain, clear infection, and improve overall nail health. It is commonly recommended for chronic ingrown toenails, nail trauma, or persistent infections. Proper sterile technique is followed to ensure safety and healing.",
+  description: {
+    en: "Partial or total nail removal to treat severely ingrown, infected, or damaged toenails with long term relief.",
+    es: "Remoción parcial o total de la uña para tratar uñas encarnadas, infectadas o dañadas y brindar alivio a largo plazo."
+  },
+  details: {
+    en: "Performed under local anesthesia, this outpatient procedure removes part or all of the toenail to reduce pain, clear infection, and improve overall nail health. It is commonly recommended for chronic ingrown toenails, nail trauma, or persistent infections. Proper sterile technique is followed to ensure safety and healing.",
+    es: "Bajo anestesia local, este procedimiento ambulatorio remueve parte o la totalidad de la uña del pie para disminuir el dolor, controlar la infección y mejorar la salud de la uña. Se recomienda con frecuencia en casos de uñas encarnadas crónicas, traumatismos ungueales o infecciones persistentes. Se realiza con técnica estéril para asegurar seguridad y una buena recuperación."
+  },
   notes: [
-    "Performed by licensed medical professionals under sterile conditions",
-    "Topical antifungals or oral antibiotics may be prescribed post-procedure",
-    "Healing varies depending on procedure extent and patient care"
+    {
+      en: "Performed by licensed medical professionals under sterile conditions",
+      es: "Realizado por profesionales médicos certificados bajo condiciones estériles"
+    },
+    {
+      en: "Topical antifungals or oral antibiotics may be prescribed post procedure",
+      es: "Pueden recetarse antifúngicos tópicos o antibióticos orales después del procedimiento"
+    },
+    {
+      en: "Healing time varies depending on procedure extent and patient care",
+      es: "El tiempo de cicatrización varía según el alcance del procedimiento y el cuidado del paciente"
+    }
   ],
   pricing: {
     startingPrice: "$115 USD",
@@ -25,59 +44,112 @@ export const toenailExtraction = {
     promoPriceCurrency: "USD",
     options: [
       {
-        optionName: "Partial Extraction",
+        optionName: {
+          en: "Partial extraction",
+          es: "Extracción parcial"
+        },
         isPromoEligible: true,
         optionPrice: "$115 USD",
         optionCurrency: "USD",
         optionPromoPrice: "$95 USD",
         optionPromoPriceCurrency: "USD",
-        notes: null,
+        notes: null
       },
       {
-        optionName: "Total Extraction",
+        optionName: {
+          en: "Total extraction",
+          es: "Extracción total"
+        },
         isPromoEligible: true,
         optionPrice: "$135 USD",
         optionCurrency: "USD",
         optionPromoPrice: "$110 USD",
         optionPromoPriceCurrency: "USD",
-        notes: null,
+        notes: null
       }
     ]
   },
   goals: [
-    "Eliminate nail pain or infection",
-    "Prevent recurrent ingrown toenails",
-    "Improve nail health and appearance"
+    {
+      en: "Eliminate nail pain or infection",
+      es: "Eliminar el dolor o la infección en la uña"
+    },
+    {
+      en: "Prevent recurrent ingrown toenails",
+      es: "Prevenir uñas encarnadas recurrentes"
+    },
+    {
+      en: "Improve nail health and appearance",
+      es: "Mejorar la salud y apariencia de la uña"
+    }
   ],
   treatableAreas: [
-    "Big Toe",
-    "Lesser Toes"
+    {
+      en: "Big toe",
+      es: "Dedo gordo del pie"
+    },
+    {
+      en: "Lesser toes",
+      es: "Dedos menores del pie"
+    }
   ],
-  addOns: [
-  ],
+  addOns: [],
   expectations: {
     preTreatment: [
-      "Do not trim or alter the nail before your appointment.",
-      "Wear open-toe or loose footwear to accommodate bandaging post-treatment."
+      {
+        en: "Do not trim or alter the nail before your appointment.",
+        es: "No recorte ni modifique la uña antes de su cita."
+      },
+      {
+        en: "Wear open toe or loose footwear to accommodate post treatment bandaging.",
+        es: "Use sandalias o calzado amplio para acomodar el vendaje después del procedimiento."
+      }
     ],
     postTreatment: [
-      "Keep the area dry and covered for 24–48 hours, then follow wound care instructions.",
-      "Take any prescribed medications as directed.",
-      "Avoid strenuous activity or tight shoes until healing is underway."
+      {
+        en: "Keep the area dry and covered for 24–48 hours, then follow wound care instructions.",
+        es: "Mantenga la zona seca y cubierta durante 24 a 48 horas y luego siga las indicaciones de cuidado de la herida."
+      },
+      {
+        en: "Take any prescribed medications as directed.",
+        es: "Tome los medicamentos recetados según las indicaciones."
+      },
+      {
+        en: "Avoid strenuous activity or tight shoes until healing is underway.",
+        es: "Evite actividades intensas o calzado ajustado hasta que la cicatrización esté en marcha."
+      }
     ]
   },
   faq: [
     {
-      question: "Is toenail extraction painful?",
-      answer: "No. The toe is numbed using local anesthesia. Mild discomfort may occur afterward and can be managed with over-the-counter medication."
+      question: {
+        en: "Is toenail extraction painful?",
+        es: "¿Es dolorosa la extracción de la uña del pie?"
+      },
+      answer: {
+        en: "No. The toe is numbed using local anesthesia. Mild discomfort may occur afterward and can be managed with over the counter medication.",
+        es: "No. El dedo se adormece con anestesia local. Puede presentarse una molestia leve después, que suele controlarse con analgésicos de venta libre."
+      }
     },
     {
-      question: "Will the nail grow back?",
-      answer: "Partial extractions usually regrow. Total extractions may or may not, depending on whether the nail matrix is also removed."
+      question: {
+        en: "Will the nail grow back?",
+        es: "¿La uña volverá a crecer?"
+      },
+      answer: {
+        en: "Partial extractions usually regrow. Total extractions may or may not, depending on whether the nail matrix is also removed.",
+        es: "Las extracciones parciales suelen volver a crecer. En extracciones totales, la uña puede o no crecer de nuevo, según si se removió también la matriz ungueal."
+      }
     },
     {
-      question: "How long is the recovery time?",
-      answer: "Most patients recover within 1–2 weeks for partial, and up to 3 weeks for total extractions. Proper aftercare speeds up healing."
+      question: {
+        en: "How long is the recovery time?",
+        es: "¿Cuánto tiempo dura la recuperación?"
+      },
+      answer: {
+        en: "Most patients recover within one to two weeks for partial extractions, and up to three weeks for total extractions. Proper aftercare helps speed healing.",
+        es: "La mayoría de los pacientes se recupera en una a dos semanas en extracciones parciales y hasta tres semanas en extracciones totales. Un buen cuidado posterior ayuda a acelerar la cicatrización."
+      }
     }
   ]
 };
