@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
-import { allStaff } from "@/data/allStaff";
+import { allStaff } from "@/lib/data/allStaff";
 
 export default function AboutSection() {
 
