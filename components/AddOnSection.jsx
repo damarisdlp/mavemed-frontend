@@ -6,6 +6,8 @@ export default function AddOnSection({ addOns = [] }) {
   const { locale: routerLocale } = useRouter();
   const locale = routerLocale || "en";
 
+  console.log("📌 AddOnSection locale:", locale);
+
   const getLocalized = (field) => {
     if (field == null) return ""; // handles null / undefined
 
