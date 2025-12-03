@@ -4,7 +4,7 @@ export const harmonyca = {
   categoryDisplayName: "Collagen Biostimulators",
   serviceDisplayName: "HarmonyCA (HA + Calcium Hydroxyapatite)",
   isPopular: false,
-  isPromoEligible: true,
+  isPromoEligible: false,
   images: {
     primary: "/harmonyca.jpg",
     secondary: "/harmonyca2.jpg",
@@ -21,16 +21,16 @@ export const harmonyca = {
     "Exclusive pricing varies per quantity of sessions needed, listed price is applicable for 2 sessions, each with 2 syringes"
   ],
   pricing: {
-    startingPrice: "$875",
-    startingPriceCurrency: "USD",
-    promoPrice: "$745",
-    promoPriceCurrency: "USD",
+    startingPrice: "$15,750",
+    startingPriceCurrency: "MXN",
+    promoPrice: "",
+    promoPriceCurrency: "MXN",
     options: [
       {
-        optionName: "Per Treatment",
-        isPromoEligible: true,
-        optionPrice: "$875",
-        optionCurrency: "USD",
+        optionName: "Per Treatment - 2 Syringes Total",
+        isPromoEligible: false,
+        optionPrice: "$15,750",
+        optionCurrency: "MXN",
         optionPromoPrice: "745",
         optionPromoPriceCurrency: "USD",
         notes: ["Promo price based on treatment plan of 2 sessions"],
