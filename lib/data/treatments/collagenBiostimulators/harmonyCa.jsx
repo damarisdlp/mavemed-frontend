@@ -1,24 +1,49 @@
 export const harmonyca = {
   urlSlug: "harmonyca",
   category: "biostimulatory-fillers",
-  categoryDisplayName: "Collagen Biostimulators",
-  serviceDisplayName: "HarmonyCA (HA + Calcium Hydroxyapatite)",
+  categoryDisplayName: {
+    en: "Collagen Biostimulators",
+    es: "Biostimuladores de Colágeno"
+  },
+  serviceDisplayName: {
+    en: "HarmonyCA (HA + Calcium Hydroxyapatite)",
+    es: "HarmonyCA (HA + Hidroxiapatita de Calcio)"
+  },
   isPopular: false,
   isPromoEligible: false,
   images: {
     primary: "/harmonyca.jpg",
     secondary: "/harmonyca2.jpg",
   },
-  description:
-    "HarmonyCA is a next-generation biostimulatory filler that combines hyaluronic acid (HA) for immediate facial volume with calcium hydroxyapatite (CaHA) for long-term collagen stimulation. This hybrid injectable enhances facial contour, skin quality, and structural lift in a single treatment.",
-  details:
-    "HarmonyCA is a dual-phase injectable combining hyaluronic acid for immediate hydration and volume, with CaHA microspheres to boost collagen production over time. This advanced formula is ideal for enhancing cheekbones, defining the jawline, and restoring firmness in the lower face. Its bioregenerative effect helps improve skin density and elasticity, making it a top choice for long-lasting, natural-looking rejuvenation without heaviness or puffiness.",
+  description: {
+    en: "HarmonyCA is a next-generation biostimulatory filler that combines hyaluronic acid (HA) for immediate facial volume with calcium hydroxyapatite (CaHA) for long-term collagen stimulation. This hybrid injectable enhances facial contour, skin quality, and structural lift in a single treatment.",
+    es: "HarmonyCA es un relleno biostimulador de nueva generación que combina ácido hialurónico (HA) para volumen facial inmediato con hidroxiapatita de calcio (CaHA) para estimulación de colágeno a largo plazo. Este inyectable híbrido mejora el contorno facial, la calidad de la piel y el levantamiento estructural en un solo tratamiento."
+  },
+  details: {
+    en: "HarmonyCA is a dual-phase injectable combining hyaluronic acid for immediate hydration and volume, with CaHA microspheres to boost collagen production over time. This advanced formula is ideal for enhancing cheekbones, defining the jawline, and restoring firmness in the lower face. Its bioregenerative effect helps improve skin density and elasticity, making it a top choice for long-lasting, natural-looking rejuvenation without heaviness or puffiness.",
+    es: "HarmonyCA es un inyectable bifásico que combina ácido hialurónico para hidratación y volumen inmediato, con microesferas de CaHA para aumentar la producción de colágeno con el tiempo. Esta fórmula avanzada es ideal para realzar los pómulos, definir la línea mandibular y restaurar la firmeza en la cara inferior. Su efecto bioregenerativo ayuda a mejorar la densidad y elasticidad de la piel, convirtiéndolo en una opción principal para una rejuvenecimiento duradero, natural y sin pesadez ni hinchazón."
+  },
   notes: [
-    "Treatment includes 2 syringes (1.25 mL each)",
-    "Delivers both instant lift and progressive collagen support",
-    "Clinically effective for rejuvenating midface, jawline, and lower face",
-    "Recommended for patients seeking natural yet structural results",
-    "Exclusive pricing varies per quantity of sessions needed, listed price is applicable for 2 sessions, each with 2 syringes"
+    {
+      en: "Treatment includes 2 syringes (1.25 mL each)",
+      es: "El tratamiento incluye 2 jeringas (1.25 mL cada una)"
+    },
+    {
+      en: "Delivers both instant lift and progressive collagen support",
+      es: "Proporciona levantamiento instantáneo y soporte progresivo de colágeno"
+    },
+    {
+      en: "Clinically effective for rejuvenating midface, jawline, and lower face",
+      es: "Efectivo clínicamente para rejuvenecer la media cara, línea mandibular y cara inferior"
+    },
+    {
+      en: "Recommended for patients seeking natural yet structural results",
+      es: "Recomendado para pacientes que buscan resultados naturales pero estructurales"
+    },
+    {
+      en: "Exclusive pricing varies per quantity of sessions needed, listed price is applicable for 2 sessions, each with 2 syringes",
+      es: "El precio exclusivo varía según la cantidad de sesiones necesarias, el precio listado es aplicable para 2 sesiones, cada una con 2 jeringas"
+    }
   ],
   pricing: {
     startingPrice: "$15,750",
@@ -27,7 +52,10 @@ export const harmonyca = {
     promoPriceCurrency: "MXN",
     options: [
       {
-        optionName: "Per Treatment - 2 x 1.25 mL Syringes Total",
+        optionName: {
+          en: "Per Treatment - 2 x 1.25 mL Syringes Total",
+          es: "Por Tratamiento - 2 x 1.25 mL Jeringas Total"
+        },
         isPromoEligible: false,
         optionPrice: "$15,750",
         optionCurrency: "MXN",
@@ -38,16 +66,40 @@ export const harmonyca = {
     ],
   },
   goals: [
-    "Lift and contour midface and lower face",
-    "Stimulate collagen and improve skin architecture",
-    "Restore volume while enhancing skin density and elasticity"
+    {
+      en: "Lift and contour midface and lower face",
+      es: "Elevar y contornear la media cara y cara inferior"
+    },
+    {
+      en: "Stimulate collagen and improve skin architecture",
+      es: "Estimular el colágeno y mejorar la arquitectura de la piel"
+    },
+    {
+      en: "Restore volume while enhancing skin density and elasticity",
+      es: "Restaurar el volumen mientras se mejora la densidad y elasticidad de la piel"
+    }
   ],
   treatableAreas: [
-    "Cheeks",
-    "Jawline",
-    "Chin",
-    "Lower Face",
-    "Preauricular Hollow"
+    {
+      en: "Cheeks",
+      es: "Mejillas"
+    },
+    {
+      en: "Jawline",
+      es: "Línea Mandibular"
+    },
+    {
+      en: "Chin",
+      es: "Barbilla"
+    },
+    {
+      en: "Lower Face",
+      es: "Cara Inferior"
+    },
+    {
+      en: "Preauricular Hollow",
+      es: "Hundimiento Preauricular"
+    }
   ],
   addOns: [
     {
