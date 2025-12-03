@@ -1,6 +1,14 @@
 import { useState } from "react";
+import { useRouter } from 'next/router';
 
 export default function FAQSection({ faqs = [] }) {
+  const { locale } = useRouter();
+  const getLocalized = (field) => {
+    if (typeof field === 'object' && field[locale]) return field[locale];
+    if (typeof field === 'object' && field['en']) return field['en'];
+    return field;
+  };
+
   if (!faqs.length) return null;
 
   return (
@@ -11,7 +19,7 @@ export default function FAQSection({ faqs = [] }) {
         </h3>
         <div className="space-y-4">
           {faqs.map((faq, idx) => (
-            <ToggleItem key={idx} question={faq.question} answer={faq.answer} />
+            <ToggleItem key={idx} question={getLocalized(faq.question)} answer={getLocalized(faq.answer)} />
           ))}
         </div>
       </div>
