@@ -1,71 +1,127 @@
 export const casmaraPurifying = {
   urlSlug: "casmara-purifying",
   category: "facials",
-  categoryDisplayName: "Facials",
-  serviceDisplayName: "Casmara Purifying Algae Facial",
+  categoryDisplayName: {
+    en: "Facials",
+    es: "Faciales"
+  },
+  serviceDisplayName: {
+    en: "Casmara Purifying Algae Facial",
+    es: "Casmara Purifying Algae Facial"
+  },
   isPopular: true,
   isPromoEligible: false,
-   images: {
+  images: {
     primary: "/casmara-purifying.jpg",
-    secondary: "/casmara-purifying2.jpg",
+    secondary: "/casmara-purifying2.jpg"
   },
-  description: 
-  "A detoxifying facial treatment featuring Casmara’s purifying algae mask to target oily, acne-prone, and congested skin. This clarifying facial soothes inflammation and restores skin balance.",
-  details: 
-  "The Casmara Purifying Algae Facial is a professional-grade treatment designed to cleanse and rebalance oily, acne-prone, or inflamed skin. This facial includes steam, manual extractions, and high-frequency therapy when needed. The purifying algae mask helps reduce oil production, calm irritation, and decongest clogged pores for clearer, healthier skin.",
+  description: {
+    en: "A detoxifying facial treatment featuring Casmara’s purifying algae mask to target oily, acne-prone, and congested skin. This clarifying facial soothes inflammation and restores skin balance.",
+    es: "A detoxifying facial treatment featuring Casmara’s purifying algae mask to target oily, acne-prone, and congested skin. This clarifying facial soothes inflammation and restores skin balance."
+  },
+  details: {
+    en: "The Casmara Purifying Algae Facial is a professional-grade treatment designed to cleanse and rebalance oily, acne-prone, or inflamed skin. This facial includes steam, manual extractions, and high-frequency therapy when needed. The purifying algae mask helps reduce oil production, calm irritation, and decongest clogged pores for clearer, healthier skin.",
+    es: "The Casmara Purifying Algae Facial is a professional-grade treatment designed to cleanse and rebalance oily, acne-prone, or inflamed skin. This facial includes steam, manual extractions, and high-frequency therapy when needed. The purifying algae mask helps reduce oil production, calm irritation, and decongest clogged pores for clearer, healthier skin."
+  },
   notes: [
-          "Includes manual extractions and optional high-frequency therapy",
-          "Ideal for teens, oily or acne-prone skin, and congested pores",
-          "Soothing formula helps calm redness and inflammation"
-        ],
+    {
+      en: "Includes manual extractions and optional high-frequency therapy",
+      es: "Includes manual extractions and optional high-frequency therapy"
+    },
+    {
+      en: "Ideal for teens, oily or acne-prone skin, and congested pores",
+      es: "Ideal for teens, oily or acne-prone skin, and congested pores"
+    },
+    {
+      en: "Soothing formula helps calm redness and inflammation",
+      es: "Soothing formula helps calm redness and inflammation"
+    }
+  ],
   pricing: {
     startingPrice: "$85",
     startingPriceCurrency: "USD",
     promoPrice: "",
     promoPriceCurrency: "USD",
-    options:[
+    options: [
       {
-        optionName: "Casmara Purifying Algae Facial",
+        optionName: {
+          en: "Casmara Purifying Algae Facial",
+          es: "Casmara Purifying Algae Facial"
+        },
         isPromoEligible: false,
         optionPrice: "$85",
         optionCurrency: "USD",
         optionPromoPrice: "",
-        notes: null
+        optionPromoPriceCurrency: "USD",
+        notes: []
       }
     ]
   },
   goals: [
-    "Detoxify pores and remove impurities",
-    "Calm redness and reduce inflammation",
-    "Rebalance oily or congested skin types"
+    {
+      en: "Detoxify pores and remove impurities",
+      es: "Detoxify pores and remove impurities"
+    },
+    {
+      en: "Calm redness and reduce inflammation",
+      es: "Calm redness and reduce inflammation"
+    },
+    {
+      en: "Rebalance oily or congested skin types",
+      es: "Rebalance oily or congested skin types"
+    }
   ],
   treatableAreas: [
-    "Face"
+    {
+      en: "Face",
+      es: "Face"
+    }
   ],
   addOns: [
     {
       serviceParent: "Wrinkle Reducer - Botox",
-      serviceChild:  "Any Zone",
-      displayName:   "Wrinkle Reducer - Botox",
-      link:          "/treatments/wrinkle-reducers-botox"
+      serviceChild: "Any Zone",
+      displayName: {
+        en: "Wrinkle Reducer - Botox",
+        es: "Wrinkle Reducer - Botox"
+      },
+      link: "/treatments/wrinkle-reducers-botox"
     }
   ],
   expectations: {
     preTreatment: [
-      "Stop using retinoids, AHAs, or strong exfoliants at least 48 hours before your appointment."
+      {
+        en: "Stop using retinoids, AHAs, or strong exfoliants at least 48 hours before your appointment.",
+        es: "Stop using retinoids, AHAs, or strong exfoliants at least 48 hours before your appointment."
+      }
     ],
     postTreatment: [
-      "Avoid heavy makeup and direct sun exposure for 24–48 hours after treatment."
+      {
+        en: "Avoid heavy makeup and direct sun exposure for 24–48 hours after treatment.",
+        es: "Avoid heavy makeup and direct sun exposure for 24–48 hours after treatment."
+      }
     ]
   },
   faq: [
     {
-      question: "Is the Casmara facial good for sensitive or acne-prone skin?",
-      answer: "Yes. This treatment is gentle yet effective for sensitive, oily, or acne-prone skin and helps reduce inflammation and redness."
+      question: {
+        en: "Is the Casmara facial good for sensitive or acne-prone skin?",
+        es: "Is the Casmara facial good for sensitive or acne-prone skin?"
+      },
+      answer: {
+        en: "Yes. This treatment is gentle yet effective for sensitive, oily, or acne-prone skin and helps reduce inflammation and redness.",
+        es: "Yes. This treatment is gentle yet effective for sensitive, oily, or acne-prone skin and helps reduce inflammation and redness."
+      }
     },
     {
-      question: "Are extractions included with this facial?",
-      answer: "Yes. Manual extractions are performed as needed and followed by high-frequency therapy to reduce bacteria and calm the skin."
+      question: {
+        en: "Are extractions included with this facial?",
+        es: "Are extractions included with this facial?"
+      },
+      answer: {
+        en: "Yes. Manual extractions are performed as needed and followed by high-frequency therapy to reduce bacteria and calm the skin.",
+        es: "Yes. Manual extractions are performed as needed and followed by high-frequency therapy to reduce bacteria and calm the skin."
+      }
     }
   ]
 };
