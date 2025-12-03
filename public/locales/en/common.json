@@ -1,0 +1,55 @@
+{
+  "nav": {
+    "treatments": "Treatments",
+    "about": "About Us",
+    "contact": "Contact Us",
+    "location": "Location",
+    "bookWhatsApp": "Book via WhatsApp"
+  },
+  "hero": {
+    "title": "Experience Premium Medical Spa Services",
+    "subtitle": "Transform your wellness journey with our expert treatments",
+    "cta": "Explore Treatments"
+  },
+  "treatments": {
+    "popular": "Popular Treatments",
+    "all": "All Treatments",
+    "categories": {
+      "wrinkleReducers": "Wrinkle Reducers",
+      "collagenBiostimulators": "Collagen Biostimulators",
+      "dermalFillers": "Dermal Fillers",
+      "facials": "Facials",
+      "laserTreatments": "Laser Treatments",
+      "bodyTreatments": "Body Treatments",
+      "skinTightSculpt": "Skin Tightening & Sculpting",
+      "podiatry": "Podiatry"
+    },
+    "benefits": "Benefits",
+    "pricing": "Pricing",
+    "bookNow": "Book Now",
+    "learnMore": "Learn More"
+  },
+  "footer": {
+    "about": "About Mave Medical Spa",
+    "services": "Our Services",
+    "contact": "Contact Information",
+    "followUs": "Follow Us",
+    "rights": "© 2024 Mave Medical Spa. All rights reserved."
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "Ready to transform your wellness? Get in touch with our expert team.",
+    "name": "Your Name",
+    "email": "Email Address",
+    "phone": "Phone Number",
+    "message": "Message",
+    "send": "Send Message"
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Find answers to common questions about our treatments and services."
+  },
+  "language": "Language",
+  "english": "EN",
+  "spanish": "ES"
+}
