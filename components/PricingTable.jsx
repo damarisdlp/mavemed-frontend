@@ -1,7 +1,14 @@
 import Image from "next/image";
+import { useRouter } from 'next/router';
 import AddOnSection from "./AddOnSection";
 
 export default function PricingTable({ treatment }) {
+  const { locale } = useRouter();
+  const getLocalized = (field) => {
+    if (typeof field === 'object' && field[locale]) return field[locale];
+    if (typeof field === 'object' && field['en']) return field['en'];
+    return field;
+  };
   const pricingOptions = treatment?.pricing.options || [];
   const addOns = treatment?.addOns || [];
 
