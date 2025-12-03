@@ -3,7 +3,7 @@ export const nailFungusLaser = {
   category: "podiatry",
   categoryDisplayName: {
     en: "Medical Podiatry Services",
-    es: "Servicios de podología médica"
+    es: "Servicios de Podología Médica"
   },
   serviceDisplayName: {
     en: "Laser Nail Fungus Treatment",
