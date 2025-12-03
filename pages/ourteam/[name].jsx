@@ -2,11 +2,11 @@ import { useRouter } from "next/router";
 import Head from "next/head";
 import { allStaff } from "@/lib/data/allStaff"; 
 
-import Header from "../components/Header";
-import Footer from "../components/Footer";
-import PromoBanner from "../components/PromoBanner";
-import StaffDetails from "../components/StaffDetails";
-import ContactCTA from "../components/ContactCTA";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import PromoBanner from "@/components/PromoBanner";
+import StaffDetails from "@/components/StaffDetails";
+import ContactCTA from "@/components/ContactCTA";
 
 export default function TeamMemberPage() {
   const router = useRouter();
