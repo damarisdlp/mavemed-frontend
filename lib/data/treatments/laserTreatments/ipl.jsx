@@ -3,7 +3,7 @@ export const ipl = {
   category: "laser-resurfacing",
   categoryDisplayName: {
     en: "Laser Treatments & Skin Resurfacing",
-    es: "Tratamientos láser y rejuvenecimiento de la piel"
+    es: "Tratamientos Láser y Resurfacing Cutáneo"
   },
   serviceDisplayName: {
     en: "IPL Photofacial (Harmony XL)",
@@ -75,7 +75,7 @@ export const ipl = {
         isPromoEligible: false,
         optionPrice: "$35",
         optionCurrency: "USD",
-        optionPromoPrice: "$350",
+        optionPromoPrice: "",
         optionPromoPriceCurrency: "USD",
         notes: null
       },
