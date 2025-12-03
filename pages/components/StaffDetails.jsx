@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { allTreatments } from "@/data/allTreatments";
+import { allTreatments } from "@/lib/data/allTreatments";
 
 export default function StaffDetails({ member }) {
   if (!member) return null;
