@@ -1,7 +1,14 @@
 import "keen-slider/keen-slider.min.css";
 import { useKeenSlider } from "keen-slider/react";
+import { useRouter } from 'next/router';
 
 export default function WhatToExpect({ expectations = {} }) {
+  const { locale } = useRouter();
+  const getLocalized = (field) => {
+    if (typeof field === 'object' && field[locale]) return field[locale];
+    if (typeof field === 'object' && field['en']) return field['en'];
+    return field;
+  };
   const [sliderRef, slider] = useKeenSlider({
     loop: true,
     slides: {
