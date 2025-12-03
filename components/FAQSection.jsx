@@ -5,6 +5,8 @@ export default function FAQSection({ faqs = [], locale: propLocale }) {
   const router = useRouter();
   const locale = propLocale || router.locale || "en";
 
+  console.log("📌 FAQSection locale:", locale);
+
   const getLocalized = (field) => {
     if (typeof field === "object" && field !== null) {
       return field[locale] || field["en"] || "";
