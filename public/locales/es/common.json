@@ -1,0 +1,55 @@
+{
+  "nav": {
+    "treatments": "Tratamientos",
+    "about": "Sobre Nosotros",
+    "contact": "Contáctanos",
+    "location": "Ubicación",
+    "bookWhatsApp": "Reservar por WhatsApp"
+  },
+  "hero": {
+    "title": "Experimenta Servicios Premium de Spa Médico",
+    "subtitle": "Transforma tu viaje de bienestar con nuestros tratamientos expertos",
+    "cta": "Explorar Tratamientos"
+  },
+  "treatments": {
+    "popular": "Tratamientos Populares",
+    "all": "Todos los Tratamientos",
+    "categories": {
+      "wrinkleReducers": "Reductores de Arrugas",
+      "collagenBiostimulators": "Bioestimuladores de Colágeno",
+      "dermalFillers": "Rellenos Dérmicos",
+      "facials": "Tratamientos Faciales",
+      "laserTreatments": "Tratamientos Láser",
+      "bodyTreatments": "Tratamientos Corporales",
+      "skinTightSculpt": "Tensado y Esculpido de Piel",
+      "podiatry": "Podología"
+    },
+    "benefits": "Beneficios",
+    "pricing": "Precios",
+    "bookNow": "Reservar Ahora",
+    "learnMore": "Saber Más"
+  },
+  "footer": {
+    "about": "Sobre Mave Medical Spa",
+    "services": "Nuestros Servicios",
+    "contact": "Información de Contacto",
+    "followUs": "Síguenos",
+    "rights": "© 2024 Mave Medical Spa. Todos los derechos reservados."
+  },
+  "contact": {
+    "title": "Contáctanos",
+    "subtitle": "Listo para transformar tu bienestar? Ponte en contacto con nuestro equipo experto.",
+    "name": "Tu Nombre",
+    "email": "Dirección de Correo",
+    "phone": "Número de Teléfono",
+    "message": "Mensaje",
+    "send": "Enviar Mensaje"
+  },
+  "faq": {
+    "title": "Preguntas Frecuentes",
+    "subtitle": "Encuentra respuestas a preguntas comunes sobre nuestros tratamientos y servicios."
+  },
+  "language": "Idioma",
+  "english": "EN",
+  "spanish": "ES"
+}
