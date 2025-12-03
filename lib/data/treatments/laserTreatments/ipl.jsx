@@ -1,49 +1,77 @@
 export const ipl = {
   urlSlug: "ipl",
   category: "laser-resurfacing",
-  categoryDisplayName: "Laser Treatments & Skin Resurfacing",
-  serviceDisplayName: "IPL Photofacial (Harmony XL)",
+  categoryDisplayName: {
+    en: "Laser Treatments & Skin Resurfacing",
+    es: "Tratamientos láser y rejuvenecimiento de la piel"
+  },
+  serviceDisplayName: {
+    en: "IPL Photofacial (Harmony XL)",
+    es: "Fotofacial IPL (Harmony XL)"
+  },
   isPopular: false,
   isPromoEligible: false,
   images: {
     primary: "/ipl.jpg",
     secondary: "/ipl2.jpg"
   },
-  description:
-    "Light-based therapy to reduce sun damage, pigmentation, redness, and boost overall skin clarity.",
-  details:
-    "IPL (Intense Pulsed Light) delivers broad-spectrum light to target pigment, sun spots, redness, and broken capillaries. It gently resurfaces and revitalizes without damaging the top layer of skin.",
+  description: {
+    en: "Light based therapy to reduce sun damage, pigmentation, redness, and boost overall skin clarity.",
+    es: "Terapia basada en luz para reducir daño solar, manchas, enrojecimiento y mejorar la claridad general de la piel."
+  },
+  details: {
+    en: "IPL (Intense Pulsed Light) uses broad spectrum light to target pigment, sun spots, redness, and broken capillaries. It gently revitalizes the skin and improves tone without damaging the surface.",
+    es: "IPL (Luz Pulsada Intensa) utiliza luz de amplio espectro para tratar pigmento, manchas solares, enrojecimiento y vasitos rotos. Revitaliza la piel de manera suave y mejora el tono sin dañar la superficie."
+  },
   notes: [
-    "Package pricing available for multiple sessions",
-    "Requires photo evaluation for clearance",
-    "No active tan or self-tanner before session"
+    {
+      en: "Package pricing available for multiple sessions",
+      es: "Hay precios de paquete disponibles para múltiples sesiones"
+    },
+    {
+      en: "Requires photo evaluation for clearance",
+      es: "Requiere evaluación con fotografía previa para autorización"
+    },
+    {
+      en: "No active tan or self tanner before session",
+      es: "No debe haber bronceado activo ni autobronceador antes de la sesión"
+    }
   ],
   pricing: {
     startingPrice: "$30",
     startingPriceCurrency: "USD",
-    promoPrice: "$",
+    promoPrice: "",
     promoPriceCurrency: "USD",
     options: [
       {
-        optionName: "IPL Photofacial - Scars (Subject Evaluation)",
+        optionName: {
+          en: "IPL Photofacial – Scars (subject to evaluation)",
+          es: "Fotofacial IPL – Cicatrices (sujeto a evaluación)"
+        },
         isPromoEligible: false,
         optionPrice: "$30",
         optionCurrency: "USD",
-        optionPromoPrice: "$",
+        optionPromoPrice: "",
         optionPromoPriceCurrency: "USD",
         notes: null
       },
       {
-        optionName: "IPL Photofacial - Neck",
+        optionName: {
+          en: "IPL Photofacial – Neck",
+          es: "Fotofacial IPL – Cuello"
+        },
         isPromoEligible: false,
         optionPrice: "$35",
         optionCurrency: "USD",
-        optionPromoPrice: "$",
+        optionPromoPrice: "",
         optionPromoPriceCurrency: "USD",
         notes: null
       },
       {
-        optionName: "IPL Photofacial - Décolleté",
+        optionName: {
+          en: "IPL Photofacial – Décolleté",
+          es: "Fotofacial IPL – Escote"
+        },
         isPromoEligible: false,
         optionPrice: "$35",
         optionCurrency: "USD",
@@ -52,139 +80,238 @@ export const ipl = {
         notes: null
       },
       {
-        optionName: "IPL Photofacial - Full Face",
+        optionName: {
+          en: "IPL Photofacial – Full face",
+          es: "Fotofacial IPL – Rostro completo"
+        },
         isPromoEligible: false,
         optionPrice: "$40",
         optionCurrency: "USD",
-        optionPromoPrice: "$",
+        optionPromoPrice: "",
         optionPromoPriceCurrency: "USD",
         notes: null
       },
       {
-        optionName: "IPL Photofacial - Hands",
+        optionName: {
+          en: "IPL Photofacial – Hands",
+          es: "Fotofacial IPL – Manos"
+        },
         isPromoEligible: false,
         optionPrice: "$40",
         optionCurrency: "USD",
-        optionPromoPrice: "$",
+        optionPromoPrice: "",
         optionPromoPriceCurrency: "USD",
         notes: null
       },
       {
-        optionName: "IPL Photofacial - Chest",
+        optionName: {
+          en: "IPL Photofacial – Chest",
+          es: "Fotofacial IPL – Pecho"
+        },
         isPromoEligible: false,
         optionPrice: "$50",
         optionCurrency: "USD",
-        optionPromoPrice: "$",
+        optionPromoPrice: "",
         optionPromoPriceCurrency: "USD",
         notes: null
       },
       {
-        optionName: "IPL Photofacial - Full Face + Neck",
+        optionName: {
+          en: "IPL Photofacial – Full face and neck",
+          es: "Fotofacial IPL – Rostro y cuello"
+        },
         isPromoEligible: false,
         optionPrice: "$70",
         optionCurrency: "USD",
-        optionPromoPrice: "$",
+        optionPromoPrice: "",
         optionPromoPriceCurrency: "USD",
         notes: null
       },
       {
-        optionName: "IPL Photofacial - Full Face + Neck + Décolleté",
+        optionName: {
+          en: "IPL Photofacial – Full face, neck and décolleté",
+          es: "Fotofacial IPL – Rostro, cuello y escote"
+        },
         isPromoEligible: false,
         optionPrice: "$100",
         optionCurrency: "USD",
-        optionPromoPrice: "$",
+        optionPromoPrice: "",
         optionPromoPriceCurrency: "USD",
         notes: null
       },
       {
-        optionName: "IPL Photofacial - Full Legs",
+        optionName: {
+          en: "IPL Photofacial – Full legs",
+          es: "Fotofacial IPL – Piernas completas"
+        },
         isPromoEligible: false,
         optionPrice: "$125",
         optionCurrency: "USD",
-        optionPromoPrice: "$",
+        optionPromoPrice: "",
         optionPromoPriceCurrency: "USD",
         notes: null
       },
       {
-        optionName: "IPL Photofacial - Full Face + Neck + Décolleté + Chest",
+        optionName: {
+          en: "IPL Photofacial – Full face, neck, décolleté and chest",
+          es: "Fotofacial IPL – Rostro, cuello, escote y pecho"
+        },
         isPromoEligible: false,
         optionPrice: "$140",
         optionCurrency: "USD",
-        optionPromoPrice: "$",
+        optionPromoPrice: "",
         optionPromoPriceCurrency: "USD",
         notes: null
       },
       {
-        optionName: "IPL Photofacial - Hands + Full Legs",
+        optionName: {
+          en: "IPL Photofacial – Hands and full legs",
+          es: "Fotofacial IPL – Manos y piernas completas"
+        },
         isPromoEligible: false,
         optionPrice: "$160",
         optionCurrency: "USD",
-        optionPromoPrice: "$",
+        optionPromoPrice: "",
         optionPromoPriceCurrency: "USD",
         notes: null
       }
     ]
   },
   goals: [
-    "Reduce pigmentation and age spots",
-    "Minimize redness and rosacea",
-    "Brighten dull skin and improve tone"
+    {
+      en: "Reduce pigmentation and age spots",
+      es: "Reducir pigmentación y manchas de la edad"
+    },
+    {
+      en: "Minimize redness and rosacea",
+      es: "Minimizar enrojecimiento y rosácea"
+    },
+    {
+      en: "Brighten dull skin and improve tone",
+      es: "Aportar luminosidad a la piel opaca y mejorar el tono"
+    }
   ],
   treatableAreas: [
-    "Face",
-    "Neck",
-    "Chest",
-    "Hands",
-    "Shoulders",
-    "Arms",
-    "Other zones available upon request"
+    {
+      en: "Face",
+      es: "Rostro"
+    },
+    {
+      en: "Neck",
+      es: "Cuello"
+    },
+    {
+      en: "Chest",
+      es: "Pecho"
+    },
+    {
+      en: "Hands",
+      es: "Manos"
+    },
+    {
+      en: "Shoulders",
+      es: "Hombros"
+    },
+    {
+      en: "Arms",
+      es: "Brazos"
+    },
+    {
+      en: "Other zones available upon request",
+      es: "Otras zonas disponibles bajo solicitud"
+    }
   ],
   addOns: [
     {
       serviceParent: "Wrinkle Reducer - Botox",
-      serviceChild:  "Any Zone",
-      displayName:   "Wrinkle Reducer - Botox",
-      link:          "/treatments/wrinkle-reducers-botox"
+      serviceChild: "Any Zone",
+      displayName: {
+        en: "Wrinkle Reducer – Botox",
+        es: "Reductor de arrugas Botox"
+      },
+      link: "/treatments/wrinkle-reducers-botox"
     },
     {
       serviceParent: "HydraFacial MD",
-      serviceChild:  "Hydrafacial MD - Face",
-      displayName:   "HydraFacial MD - Face",
-      link:          "/treatments/hydrafacial"
+      serviceChild: "Hydrafacial MD - Face",
+      displayName: {
+        en: "HydraFacial MD – Face",
+        es: "HydraFacial MD – Rostro"
+      },
+      link: "/treatments/hydrafacial"
     },
     {
       serviceParent: "Relaxing Swedish Massage",
-      serviceChild:  "Relaxing Swedish Massage - Full Body",
-      displayName:   "Relaxing Swedish Massage - Full Body",
-      link:          "/treatments/swedish-massage"
-    },
+      serviceChild: "Relaxing Swedish Massage - Full Body",
+      displayName: {
+        en: "Relaxing Swedish Massage – Full body",
+        es: "Masaje sueco relajante cuerpo completo"
+      },
+      link: "/treatments/swedish-massage"
+    }
   ],
   expectations: {
     preTreatment: [
-      "Avoid sun exposure, tanning beds, and self-tanners for 2 weeks before treatment.",
-      "Discontinue retinoids or acids 3–5 days prior to your session."
+      {
+        en: "Avoid sun exposure, tanning beds and self tanners for 2 weeks before treatment.",
+        es: "Evite la exposición solar intensa, camas de bronceado y autobronceadores durante 2 semanas antes del tratamiento."
+      },
+      {
+        en: "Discontinue retinoids or acid based products 3–5 days prior to your session.",
+        es: "Suspenda retinoides o productos con ácidos de 3 a 5 días antes de su sesión."
+      }
     ],
     postTreatment: [
-      "Pigmented areas may darken temporarily before flaking off over 5–7 days.",
-      "Use SPF daily to maintain results and prevent new pigmentation."
+      {
+        en: "Pigmented areas may darken temporarily and then flake off over 5–7 days.",
+        es: "Las áreas pigmentadas pueden oscurecerse de forma temporal y luego descamarse en un periodo de 5 a 7 días."
+      },
+      {
+        en: "Use SPF daily to maintain results and help prevent new pigmentation.",
+        es: "Use protector solar todos los días para mantener los resultados y ayudar a prevenir nueva pigmentación."
+      }
     ]
   },
   faq: [
     {
-      question: "How many sessions will I need?",
-      answer: "Most patients need 3–5 sessions spaced 3–4 weeks apart for best results."
+      question: {
+        en: "How many sessions will I need?",
+        es: "¿Cuántas sesiones voy a necesitar?"
+      },
+      answer: {
+        en: "Most patients need 3–5 sessions spaced 3–4 weeks apart for best results.",
+        es: "La mayoría de los pacientes requiere de 3 a 5 sesiones, separadas cada 3 a 4 semanas, para obtener los mejores resultados."
+      }
     },
     {
-      question: "Is there downtime?",
-      answer: "There is no official downtime. However, pigmented areas may darken or flake for a few days post-treatment."
+      question: {
+        en: "Is there downtime?",
+        es: "¿Hay tiempo de recuperación?"
+      },
+      answer: {
+        en: "There is no formal downtime, but pigmented areas may darken or flake for a few days after treatment.",
+        es: "No hay un tiempo de recuperación estricto, aunque las áreas pigmentadas pueden oscurecerse o descamarse durante algunos días después del tratamiento."
+      }
     },
     {
-      question: "Can I wear makeup after IPL?",
-      answer: "Yes, makeup can be worn immediately unless otherwise advised by your provider."
+      question: {
+        en: "Can I wear makeup after IPL?",
+        es: "¿Puedo usar maquillaje después de un tratamiento IPL?"
+      },
+      answer: {
+        en: "Yes, makeup can usually be worn immediately, unless your provider gives you different instructions.",
+        es: "Sí, normalmente puede usar maquillaje de inmediato, a menos que su especialista le indique lo contrario."
+      }
     },
     {
-      question: "Does IPL hurt?",
-      answer: "Patients describe it as a warm snap—similar to a rubber band. It’s tolerable and quick."
+      question: {
+        en: "Does IPL hurt?",
+        es: "¿Duele el tratamiento con IPL?"
+      },
+      answer: {
+        en: "Most patients describe the sensation as a warm snap, similar to a quick rubber band on the skin. It is brief and well tolerated.",
+        es: "La mayoría de los pacientes describe la sensación como un chasquido cálido, similar a una ligera liga sobre la piel. Es rápido y bien tolerado."
+      }
     }
   ]
 };
