@@ -34,6 +34,21 @@ export default function TreatmentCategories() {
     return field;
   };
 
+  const translatedStrings = {
+    bookNow: { en: "Book Now", es: "Reservar Ahora" },
+    learnMore: { en: "Learn More", es: "Saber Más" },
+    top: { en: "↑ Top", es: "↑ Arriba" },
+    scrollToTop: { en: "Scroll to top category menu", es: "Desplazarse al menú de categorías superior" },
+    bookService: (serviceName) => ({
+      en: `Book ${getLocalized(serviceName)} at Mave Medical Spa in Tijuana`,
+      es: `Reservar ${getLocalized(serviceName)} en Mave Medical Spa en Tijuana`
+    }),
+    learnMoreAbout: (serviceName) => ({
+      en: `Learn more about ${getLocalized(serviceName)}`,
+      es: `Saber más sobre ${getLocalized(serviceName)}`
+    })
+  };
+
   // Show/hide scroll-to-top button
   const [showScrollTop, setShowScrollTop] = useState(false);
 
@@ -89,7 +104,7 @@ export default function TreatmentCategories() {
                       className="object-cover"
                     />
                   </div>
-                  <div className="p-6 flex flex-col justify-between h-[260px]">
+                  <div className="p-6 flex flex-col justify-between min-h-[260px]">
                     <div>
                       <h3 className="text-lg text-black font-serif font-medium mb-2">
                         {getLocalized(service.name)}
@@ -102,16 +117,16 @@ export default function TreatmentCategories() {
                       <Link
                         href="https://wa.me/+526642077675"
                         className="bg-black text-white px-4 py-2 rounded-full text-xs hover:bg-[#731a2f] transition"
-                        aria-label={`Book ${getLocalized(service.name)} at Mave Medical Spa in Tijuana`}
+                        aria-label={getLocalized(translatedStrings.bookService(service.name))}
                       >
-                        Book Now
+                        {getLocalized(translatedStrings.bookNow)}
                       </Link>
                       <Link
                         href={`/treatments/${service.slug}`}
                         className="border border-gray-300 text-black px-4 py-2 rounded-full text-xs hover:border-black transition"
-                        aria-label={`Learn more about ${getLocalized(service.name)}`}
+                        aria-label={getLocalized(translatedStrings.learnMoreAbout(service.name))}
                       >
-                        Learn More
+                        {getLocalized(translatedStrings.learnMore)}
                       </Link>
                     </div>
                   </div>
@@ -127,9 +142,9 @@ export default function TreatmentCategories() {
             onClick={() => {
               window.scrollTo({ top: 0, behavior: "smooth" });            }}
             className="fixed bottom-6 right-6 z-40 bg-black text-white px-4 py-2 rounded-full shadow-lg text-sm hover:bg-[#731a2f] transition"
-            aria-label="Scroll to top category menu"
+            aria-label={getLocalized(translatedStrings.scrollToTop)}
           >
-            ↑ Top
+            {getLocalized(translatedStrings.top)}
           </button>
         )}
       </div>
