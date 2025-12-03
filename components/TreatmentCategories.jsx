@@ -8,6 +8,7 @@ export default function TreatmentCategories() {
   // Group treatments by category
   const categoriesMap = {};
   allTreatments.forEach((t) => {
+    if (!t || !t.category) return;
     const key = t.category;
     if (!categoriesMap[key]) {
       categoriesMap[key] = {
