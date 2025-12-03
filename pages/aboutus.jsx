@@ -1,8 +1,8 @@
-import PromoBanner from "./components/PromoBanner";
-import Header from "./components/Header"
-import Footer from "./components/Footer"
-import AboutSection from "./components/AboutSection"
-import InstagramFeed from "./components/InstagramFeed"
+import PromoBanner from "../components/PromoBanner";
+import Header from "../components/Header"
+import Footer from "../components/Footer"
+import AboutSection from "../components/AboutSection"
+import InstagramFeed from "../components/InstagramFeed"
 import Head from "next/head";
 
 export default function AboutUs() {
