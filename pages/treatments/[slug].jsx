@@ -20,7 +20,7 @@ const getLocalized = (field, locale) => {
 
 export default function TreatmentPage() {
   const router = useRouter();
-  const { slug } = router.query;
+  const { slug, locale } = router.query;
   console.log("Slug:", slug);
   console.log("All treatments:", allTreatments.map(t => t.urlSlug));
 
