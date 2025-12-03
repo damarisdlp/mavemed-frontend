@@ -2,10 +2,10 @@ import Head from "next/head";
 import Image from "next/image";
 
 // Shared components
-import Header from "./components/Header";
-import PromoBanner from "./components/PromoBanner";
-import TreatmentCategories from "./components/TreatmentCategories";
-import Footer from "./components/Footer";
+import Header from "../components/Header";
+import PromoBanner from "../components/PromoBanner";
+import TreatmentCategories from "../components/TreatmentCategories";
+import Footer from "../components/Footer";
 
 
 export default function TreatmentsPage() {
