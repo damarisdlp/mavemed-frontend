@@ -1,22 +1,41 @@
 export const nailFungusLaser = {
   urlSlug: "nail-fungus-laser",
   category: "podiatry",
-  categoryDisplayName: "Medical Podiatry Services",
-  serviceDisplayName: "Laser Nail Fungus Treatment",
+  categoryDisplayName: {
+    en: "Medical Podiatry Services",
+    es: "Servicios de podología médica"
+  },
+  serviceDisplayName: {
+    en: "Laser Nail Fungus Treatment",
+    es: "Tratamiento láser para hongos en las uñas"
+  },
   isPopular: false,
   isPromoEligible: true,
   images: {
     primary: "/podiatry.jpg",
-    secondary: "/podiatry2.jpg",
+    secondary: "/podiatry2.jpg"
   },
-  description:
-    "Non-invasive laser therapy to eliminate toenail fungus and restore nail clarity without pain or medication.",
-  details:
-    "Laser nail fungus treatment uses targeted light energy (K-Laser Blue Derma) to penetrate the nail and destroy fungal infections at the root without harming surrounding tissue. The treatment is safe, effective, and requires no downtime. A typical protocol includes 6–8 sessions spaced 2–3 weeks apart for optimal results.",
+  description: {
+    en: "Non-invasive laser therapy to eliminate toenail fungus and restore nail clarity without pain or medication.",
+    es: "Terapia láser no invasiva para eliminar hongos en las uñas y mejorar la claridad de la uña sin dolor ni medicamentos."
+  },
+  details: {
+    en: "Laser nail fungus treatment uses targeted light energy (K-Laser Blue Derma) to penetrate the nail and destroy fungal infections at the root without harming surrounding tissue. The treatment is safe, effective, and requires no downtime. A typical protocol includes 6–8 sessions spaced 2–3 weeks apart for optimal results.",
+    es: "El tratamiento láser para hongos utiliza energía lumínica dirigida (K-Laser Blue Derma) que penetra la uña y destruye la infección fúngica desde la raíz sin dañar el tejido circundante. Es un tratamiento seguro, eficaz y sin tiempo de recuperación. El protocolo típico incluye de 6 a 8 sesiones cada 2 a 3 semanas."
+  },
   notes: [
-    "Ideal for mild to moderate onychomycosis",
-    "Painless, non-invasive, and drug-free",
-    "Full results may take months as healthy nail regrows",
+    {
+      en: "Ideal for mild to moderate onychomycosis",
+      es: "Ideal para onicomicosis leve a moderada"
+    },
+    {
+      en: "Painless, non-invasive, and drug-free",
+      es: "Indoloro, no invasivo y libre de medicamentos"
+    },
+    {
+      en: "Full results may take months as healthy nail regrows",
+      es: "Los resultados completos pueden tardar meses mientras la uña sana vuelve a crecer"
+    }
   ],
   pricing: {
     startingPrice: "$95 USD per session",
@@ -25,63 +44,122 @@ export const nailFungusLaser = {
     promoPriceCurrency: "USD",
     options: [
       {
-        optionName: "Single Nail",
+        optionName: {
+          en: "Single Nail",
+          es: "Una sola uña"
+        },
         isPromoEligible: true,
         optionPrice: "$25 USD",
         optionCurrency: "USD",
         optionPromoPrice: "$20 USD",
         optionPromoPriceCurrency: "USD",
-        notes: null,
+        notes: null
       },
       {
-        optionName: "Full Foot (5 Nails)",
+        optionName: {
+          en: "Full Foot (5 Nails)",
+          es: "Pie completo (5 uñas)"
+        },
         isPromoEligible: true,
         optionPrice: "$95 USD",
         optionCurrency: "USD",
         optionPromoPrice: "$80 USD",
         optionPromoPriceCurrency: "USD",
-        notes: null,
+        notes: null
       }
     ]
   },
   goals: [
-    "Eliminate fungal infection from nail bed",
-    "Improve nail clarity and texture",
-    "Prevent future recurrence of infection"
+    {
+      en: "Eliminate fungal infection from nail bed",
+      es: "Eliminar la infección fúngica del lecho ungueal"
+    },
+    {
+      en: "Improve nail clarity and texture",
+      es: "Mejorar la claridad y la textura de la uña"
+    },
+    {
+      en: "Prevent future recurrence of infection",
+      es: "Prevenir recurrencias futuras de infección"
+    }
   ],
   treatableAreas: [
-    "Toenails",
-    "Fingernails (case-by-case)"
+    {
+      en: "Toenails",
+      es: "Uñas de los pies"
+    },
+    {
+      en: "Fingernails (case-by-case)",
+      es: "Uñas de las manos (según evaluación)"
+    }
   ],
-  addOns: [
-  ],
+  addOns: [],
   expectations: {
     preTreatment: [
-      "Wash feet thoroughly before arrival. Remove any nail polish or artificial nails.",
-      "Notify your provider if you’ve recently taken oral or topical antifungal medications."
+      {
+        en: "Wash feet thoroughly before arrival. Remove any nail polish or artificial nails.",
+        es: "Lave bien los pies antes de su cita. Retire esmalte de uñas o uñas artificiales."
+      },
+      {
+        en: "Notify your provider if you’ve recently taken oral or topical antifungal medications.",
+        es: "Informe a su proveedor si ha usado medicamentos antifúngicos orales o tópicos recientemente."
+      }
     ],
     postTreatment: [
-      "Keep nails dry and clean to prevent reinfection.",
-      "Disinfect shoes and change socks daily. Avoid barefoot walking in public areas.",
-      "Nail appearance improves gradually as the nail grows out over several months."
+      {
+        en: "Keep nails dry and clean to prevent reinfection.",
+        es: "Mantenga las uñas secas y limpias para evitar la reinfección."
+      },
+      {
+        en: "Disinfect shoes and change socks daily. Avoid barefoot walking in public areas.",
+        es: "Desinfecte el calzado y cambie los calcetines diariamente. Evite andar descalzo en áreas públicas."
+      },
+      {
+        en: "Nail appearance improves gradually as the nail grows out over several months.",
+        es: "La apariencia de la uña mejora gradualmente conforme crece la uña sana durante varios meses."
+      }
     ]
   },
   faq: [
     {
-      question: "Does laser nail fungus treatment hurt?",
-      answer: "No. Most patients describe a gentle warmth or tingling. There is no pain or downtime involved."
+      question: {
+        en: "Does laser nail fungus treatment hurt?",
+        es: "¿Duele el tratamiento láser para hongos en las uñas?"
+      },
+      answer: {
+        en: "No. Most patients describe a gentle warmth or tingling. There is no pain or downtime.",
+        es: "No. La mayoría describe una sensación de calor suave o cosquilleo. No causa dolor ni requiere recuperación."
+      }
     },
     {
-      question: "When will I start to see clear nails?",
-      answer: "Visible improvement may start within weeks, but full nail clarity may take several months as healthy nail grows in."
+      question: {
+        en: "When will I start to see clear nails?",
+        es: "¿Cuándo comenzaré a ver las uñas más claras?"
+      },
+      answer: {
+        en: "Visible improvement may start within weeks, but full clarity can take several months as healthy nail grows in.",
+        es: "La mejoría puede verse en semanas, pero la claridad total puede tardar varios meses mientras crece la uña sana."
+      }
     },
     {
-      question: "How many sessions do I need?",
-      answer: "A standard protocol involves 6–8 sessions spaced 2–3 weeks apart. Severe cases may require additional follow-up."
+      question: {
+        en: "How many sessions do I need?",
+        es: "¿Cuántas sesiones necesito?"
+      },
+      answer: {
+        en: "A standard protocol involves 6–8 sessions spaced 2–3 weeks apart. Severe cases may require additional follow-up.",
+        es: "El protocolo estándar incluye de 6 a 8 sesiones cada 2 o 3 semanas. Casos severos pueden necesitar sesiones adicionales."
+      }
     },
     {
-      question: "Can the fungus come back?",
-      answer: "Yes, reinfection is possible if shoes, socks, or nail tools remain contaminated. Proper aftercare and hygiene are essential."
+      question: {
+        en: "Can the fungus come back?",
+        es: "¿Puede regresar el hongo?"
+      },
+      answer: {
+        en: "Yes, reinfection is possible if shoes, socks, or tools remain contaminated. Proper hygiene is essential.",
+        es: "Sí, la reinfección es posible si los zapatos, calcetines o herramientas siguen contaminados. Una buena higiene es esencial."
+      }
     }
   ]
 };
