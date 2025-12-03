@@ -2,7 +2,7 @@ import "keen-slider/keen-slider.min.css";
 import { useKeenSlider } from "keen-slider/react";
 import Link from "next/link";
 import Image from "next/image";
-import { allTreatments } from "@/data/allTreatments";
+import { allTreatments } from "@/lib/data/allTreatments";
 
 export default function PopularTreatments() {
   const popularTreatments = allTreatments.filter((t) => t.isPopular);
