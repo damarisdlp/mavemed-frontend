@@ -3,7 +3,7 @@ export const calcanealSpur = {
   category: "podiatry",
   categoryDisplayName: {
     en: "Medical Podiatry Services",
-    es: "Servicios de podología médica"
+    es: "Servicios de Podología Médica"
   },
   serviceDisplayName: {
     en: "Heel Spur Injection (Calcaneal Spur)",
