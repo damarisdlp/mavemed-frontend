@@ -1,22 +1,41 @@
 export const enzymaticTherapy = {
   urlSlug: "enzymatic-therapy",
   category: "skin-tightening",
-  categoryDisplayName: "Skin Tightening & Sculpting",
-  serviceDisplayName: "Enzymatic Remodeling Therapy",
+  categoryDisplayName: {
+    en: "Skin Tightening & Sculpting",
+    es: "Reafirmación y Esculpido Corporal"
+  },
+  serviceDisplayName: {
+    en: "Enzymatic Remodeling Therapy",
+    es: "Terapia de Remodelación Enzimática"
+  },
   isPopular: false,
   isPromoEligible: true,
   images: {
     primary: "/body.jpg",
-    secondary: "/enzymatic2.jpg",
+    secondary: "/enzymatic2.jpg"
   },
-  description:
-    "Localized fat reduction and fibrosis breakdown using targeted enzyme therapy for smoother contour and improved skin texture.",
-  details:
-    "Enzymatic therapy involves injecting lipolytic and anti-fibrotic enzymes into specific areas to break down dense tissue, improve circulation, and support localized fat metabolism. It is especially effective for post-liposuction fibrosis, stubborn fat pockets, and skin tone irregularities. Results build over time with multiple sessions and are enhanced when combined with drainage or radiofrequency therapy.",
+  description: {
+    en: "Localized fat reduction and fibrosis breakdown using targeted enzyme therapy for smoother contour and improved skin texture.",
+    es: "Reducción localizada de grasa y ruptura de fibrosis mediante terapia enzimática dirigida para lograr un contorno más uniforme y mejorar la textura de la piel."
+  },
+  details: {
+    en: "Enzymatic therapy involves injecting lipolytic and anti-fibrotic enzymes into specific areas to break down dense tissue, improve circulation, and support localized fat metabolism. It is especially effective for post-liposuction fibrosis, stubborn fat pockets, and skin tone irregularities. Results build progressively with multiple sessions and are enhanced when combined with drainage or radiofrequency therapy.",
+    es: "La terapia enzimática consiste en inyectar enzimas lipolíticas y antifibróticas en zonas específicas para romper tejido denso, mejorar la circulación y apoyar el metabolismo de grasa localizada. Es especialmente efectiva para fibrosis post-liposucción, acúmulos grasos rebeldes y alteraciones en la textura de la piel. Los resultados se construyen progresivamente con varias sesiones y se potencian cuando se combina con drenaje o radiofrecuencia."
+  },
   notes: [
-    "Non-surgical, injectable fat reduction treatment",
-    "Targets fibrosis, localized fat, and texture irregularities",
-    "Most effective in a series of 4–6 sessions",
+    {
+      en: "Non-surgical injectable fat reduction treatment",
+      es: "Tratamiento inyectable no quirúrgico para reducir grasa localizada"
+    },
+    {
+      en: "Targets fibrosis, localized fat, and texture irregularities",
+      es: "Dirigido a fibrosis, grasa localizada y alteraciones en la textura"
+    },
+    {
+      en: "Most effective in a series of 4–6 sessions",
+      es: "Más efectivo en una serie de 4 a 6 sesiones"
+    }
   ],
   pricing: {
     startingPrice: "$130 USD per session",
@@ -25,77 +44,158 @@ export const enzymaticTherapy = {
     promoPriceCurrency: "USD",
     options: [
       {
-        optionName: "Localized Area (any small zone)",
+        optionName: {
+          en: "Localized Area (any small zone)",
+          es: "Área localizada (cualquier zona pequeña)"
+        },
         isPromoEligible: true,
         optionPrice: "$130 USD",
         optionCurrency: "USD",
         optionPromoPrice: "$110 USD",
         optionPromoPriceCurrency: "USD",
-        notes: null,
+        notes: null
       },
       {
-        optionName: "Larger Zones (abdomen, thighs, flanks)",
+        optionName: {
+          en: "Larger Zones (abdomen, thighs, flanks)",
+          es: "Zonas grandes (abdomen, muslos, flancos)"
+        },
         isPromoEligible: true,
         optionPrice: "$160 USD",
         optionCurrency: "USD",
         optionPromoPrice: "$140 USD",
         optionPromoPriceCurrency: "USD",
-        notes: null,
-      },
-    ],
+        notes: null
+      }
+    ]
   },
   goals: [
-    "Break down post-lipo fibrosis",
-    "Reduce stubborn localized fat",
-    "Smooth and even skin texture"
+    {
+      en: "Break down post-lipo fibrosis",
+      es: "Romper la fibrosis post-liposucción"
+    },
+    {
+      en: "Reduce stubborn localized fat",
+      es: "Reducir grasa localizada rebelde"
+    },
+    {
+      en: "Smooth and even skin texture",
+      es: "Suavizar y uniformar la textura de la piel"
+    }
   ],
   treatableAreas: [
-    "Abdomen",
-    "Arms",
-    "Thighs",
-    "Back",
-    "Flanks",
-    "Under Chin (Submental)"
+    {
+      en: "Abdomen",
+      es: "Abdomen"
+    },
+    {
+      en: "Arms",
+      es: "Brazos"
+    },
+    {
+      en: "Thighs",
+      es: "Muslos"
+    },
+    {
+      en: "Back",
+      es: "Espalda"
+    },
+    {
+      en: "Flanks",
+      es: "Flancos"
+    },
+    {
+      en: "Under Chin (Submental)",
+      es: "Debajo del mentón (submental)"
+    }
   ],
   addOns: [
     {
       serviceParent: "RF Body Sculpting",
       serviceChild: null,
-      displayName: "RF Body Sculpting",
+      displayName: {
+        en: "RF Body Sculpting",
+        es: "Esculpido Corporal con RF"
+      },
       link: "/treatments/enzymaticRemodeling"
     }
   ],
   expectations: {
     preTreatment: [
-      "Avoid alcohol and anti-inflammatory medications for 24 hours prior to reduce the risk of bruising.",
-      "Drink plenty of water before treatment to support post-treatment lymphatic drainage."
+      {
+        en: "Avoid alcohol and anti-inflammatory medications for 24 hours prior to reduce bruising risk.",
+        es: "Evite el alcohol y medicamentos antiinflamatorios 24 horas antes para reducir el riesgo de moretones."
+      },
+      {
+        en: "Drink plenty of water to support post-treatment lymphatic drainage.",
+        es: "Hidratación adecuada para apoyar el drenaje linfático después del tratamiento."
+      }
     ],
     postTreatment: [
-      "Expect some soreness, swelling, or bruising in the treated area for 2–5 days.",
-      "Wear compression garments if recommended to enhance sculpting results.",
-      "Engage in gentle movement or lymphatic massage to accelerate enzyme clearance and optimize results."
+      {
+        en: "Expect soreness, swelling, or bruising for 2–5 days.",
+        es: "Espere sensibilidad, hinchazón o moretones por 2 a 5 días."
+      },
+      {
+        en: "Wear compression garments if recommended.",
+        es: "Use prendas de compresión si se le indica."
+      },
+      {
+        en: "Engage in gentle movement or lymphatic massage to accelerate enzyme clearance.",
+        es: "Realice movimiento suave o masaje linfático para acelerar la eliminación de enzimas."
+      }
     ]
   },
   faq: [
     {
-      question: "Is this the same as mesotherapy?",
-      answer: "Not exactly. Enzymatic therapy uses specific enzymes designed for fibrosis and post-lipo remodeling, whereas mesotherapy typically uses general lipolytic cocktails."
+      question: {
+        en: "Is this the same as mesotherapy?",
+        es: "¿Es lo mismo que la mesoterapia?"
+      },
+      answer: {
+        en: "Not exactly. Enzymatic therapy uses specific enzymes for fibrosis and post-lipo remodeling, while mesotherapy uses general lipolytic cocktails.",
+        es: "No exactamente. La terapia enzimática utiliza enzimas específicas para fibrosis y remodelación post-lipo, mientras que la mesoterapia usa cócteles lipolíticos generales."
+      }
     },
     {
-      question: "How many sessions are needed?",
-      answer: "Most patients benefit from 4–6 sessions, spaced 1–2 weeks apart, depending on treatment goals and area size."
+      question: {
+        en: "How many sessions are needed?",
+        es: "¿Cuántas sesiones se necesitan?"
+      },
+      answer: {
+        en: "Most patients benefit from 4–6 sessions spaced 1–2 weeks apart.",
+        es: "La mayoría de los pacientes requieren 4 a 6 sesiones, espaciadas de 1 a 2 semanas."
+      }
     },
     {
-      question: "Does the treatment hurt?",
-      answer: "You may feel slight stinging during injection and tenderness after. Discomfort is mild and temporary."
+      question: {
+        en: "Does the treatment hurt?",
+        es: "¿Duele el tratamiento?"
+      },
+      answer: {
+        en: "You may feel mild stinging during injections and tenderness after. Discomfort is temporary.",
+        es: "Puede sentir ardor leve durante las inyecciones y sensibilidad después. El malestar es temporal."
+      }
     },
     {
-      question: "When will I see results?",
-      answer: "Some smoothing is visible within 1–2 weeks. More dramatic results appear progressively across multiple sessions."
+      question: {
+        en: "When will I see results?",
+        es: "¿Cuándo veré resultados?"
+      },
+      answer: {
+        en: "Some smoothing appears within 1–2 weeks. More dramatic changes build across sessions.",
+        es: "Puede ver suavidad inicial en 1 a 2 semanas. Cambios más notorios se construyen con sesiones sucesivas."
+      }
     },
     {
-      question: "Can I combine this with other treatments?",
-      answer: "Yes. Combining enzymatic therapy with RF body sculpting or lymphatic massage improves both fat reduction and skin tightening outcomes."
+      question: {
+        en: "Can I combine this with other treatments?",
+        es: "¿Puedo combinarlo con otros tratamientos?"
+      },
+      answer: {
+        en: "Yes, pairing enzymatic therapy with RF sculpting or lymphatic massage improves results.",
+        es: "Sí, combinar la terapia enzimática con radiofrecuencia o masaje linfático mejora los resultados."
+      }
     }
   ]
 };
