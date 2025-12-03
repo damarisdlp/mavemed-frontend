@@ -1,14 +1,21 @@
 import "keen-slider/keen-slider.min.css";
 import { useKeenSlider } from "keen-slider/react";
-import { useRouter } from 'next/router';
+import { useRouter } from "next/router";
 
 export default function WhatToExpect({ expectations = {} }) {
-  const { locale } = useRouter();
+  const { locale: routerLocale } = useRouter();
+  const locale = routerLocale || "en";
+
   const getLocalized = (field) => {
-    if (typeof field === 'object' && field[locale]) return field[locale];
-    if (typeof field === 'object' && field['en']) return field['en'];
+    if (field == null) return ""; // null or undefined
+    if (typeof field === "object") {
+      if (field[locale]) return field[locale];
+      if (field.en) return field.en;
+      return "";
+    }
     return field;
   };
+
   const [sliderRef, slider] = useKeenSlider({
     loop: true,
     slides: {
@@ -25,24 +32,30 @@ export default function WhatToExpect({ expectations = {} }) {
     },
   });
 
+  const preLabel = locale === "es" ? "Antes del tratamiento" : "Pre Treatment";
+  const postLabel = locale === "es" ? "Después del tratamiento" : "Post Treatment";
+
   const combined = [
     ...(expectations.preTreatment || []).map((note) => ({
-      label: "Pre-Treatment",
+      label: preLabel,
       note,
     })),
     ...(expectations.postTreatment || []).map((note) => ({
-      label: "Post-Treatment",
+      label: postLabel,
       note,
     })),
   ];
 
   if (!combined.length) return null;
 
+  const sectionTitle =
+    locale === "es" ? "Qué puedes esperar" : "What to Expect";
+
   return (
     <section className="bg-[#c4b7a6] py-7">
       <div className="container mx-auto px-4 mb-3">
         <h2 className="text-3xl md:text-4xl font-serif text-white font-medium text-center">
-          What to Expect
+          {sectionTitle}
         </h2>
       </div>
 
@@ -73,7 +86,9 @@ export default function WhatToExpect({ expectations = {} }) {
               <h4 className="text-sm font-semibold text-gray-600 mb-1">
                 {item.label}
               </h4>
-              <p className="text-sm text-black leading-snug">{item.note}</p>
+              <p className="text-sm text-black leading-snug">
+                {getLocalized(item.note)}
+              </p>
             </div>
           </div>
         ))}
