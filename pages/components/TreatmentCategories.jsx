@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { useRouter } from 'next/router';
 import { allTreatments } from "@/lib/data/allTreatments";
 
 export default function TreatmentCategories() {
@@ -23,6 +24,14 @@ export default function TreatmentCategories() {
   });
 
   const categories = Object.values(categoriesMap);
+
+  const { locale } = useRouter();
+
+  const getLocalized = (field) => {
+    if (typeof field === 'object' && field[locale]) return field[locale];
+    if (typeof field === 'object' && field['en']) return field['en'];
+    return field;
+  };
 
   // Show/hide scroll-to-top button
   const [showScrollTop, setShowScrollTop] = useState(false);
@@ -47,10 +56,10 @@ export default function TreatmentCategories() {
           {categories.map((category, i) => (
             <a
               key={i}
-              href={`#${category.title.replace(/\s+/g, "-").toLowerCase()}`}
+              href={`#${getLocalized(category.title).replace(/\s+/g, "-").toLowerCase()}`}
               className="text-sm md:text-base px-4 py-2 rounded-full border border-gray-300 text-black hover:border-black hover:text-[#731a2f] transition"
             >
-              {category.title}
+              {getLocalized(category.title)}
             </a>
           ))}
         </div>
@@ -59,11 +68,11 @@ export default function TreatmentCategories() {
         {categories.map((category, i) => (
           <div
             key={i}
-            id={category.title.replace(/\s+/g, "-").toLowerCase()}
+            id={getLocalized(category.title).replace(/\s+/g, "-").toLowerCase()}
             className="mb-16 scroll-mt-60"
           >
             <h2 className="text-2xl text-black md:text-3xl font-serif font-medium mb-6">
-              {category.title}
+              {getLocalized(category.title)}
             </h2>
             <div className="grid md:grid-cols-3 gap-8">
               {category.services.map((service, j) => (
@@ -74,7 +83,7 @@ export default function TreatmentCategories() {
                   <div className="relative h-56 w-full">
                     <Image
                       src={service.image}
-                      alt={`${service.name} in Tijuana – ${service.description}`}
+                      alt={`${getLocalized(service.name)} in Tijuana – ${getLocalized(service.description)}`}
                       fill
                       className="object-cover"
                     />
@@ -82,24 +91,24 @@ export default function TreatmentCategories() {
                   <div className="p-6 flex flex-col justify-between h-[260px]">
                     <div>
                       <h3 className="text-lg text-black font-serif font-medium mb-2">
-                        {service.name}
+                        {getLocalized(service.name)}
                       </h3>
                       <p className="text-sm text-gray-600 mb-4">
-                        {service.description}
+                        {getLocalized(service.description)}
                       </p>
                     </div>
                     <div className="flex flex-col gap-2">
                       <Link
                         href="https://wa.me/+526642077675"
                         className="bg-black text-white px-4 py-2 rounded-full text-xs hover:bg-[#731a2f] transition"
-                        aria-label={`Book ${service.name} at Mave Medical Spa in Tijuana`}
+                        aria-label={`Book ${getLocalized(service.name)} at Mave Medical Spa in Tijuana`}
                       >
                         Book Now
                       </Link>
                       <Link
                         href={`/treatments/${service.slug}`}
                         className="border border-gray-300 text-black px-4 py-2 rounded-full text-xs hover:border-black transition"
-                        aria-label={`Learn more about ${service.name}`}
+                        aria-label={`Learn more about ${getLocalized(service.name)}`}
                       >
                         Learn More
                       </Link>
