@@ -1,15 +1,27 @@
 import Link from "next/link";
 import Image from "next/image";
-import { useRouter } from 'next/router';
+import { useRouter } from "next/router";
 import { AccordionToggle } from "./AccordionToggle";
 
 export default function TreatmentDetails({ treatment }) {
-  const { locale } = useRouter();
+  const { locale: routerLocale } = useRouter();
+  const locale = routerLocale || "en";
+
   const getLocalized = (field) => {
-    if (typeof field === 'object' && field[locale]) return field[locale];
-    if (typeof field === 'object' && field['en']) return field['en'];
+    if (field == null) return ""; // handles null and undefined
+
+    // If it is a localized object like { en: "...", es: "..." }
+    if (typeof field === "object") {
+      if (field[locale]) return field[locale];
+      if (field.en) return field.en;
+      // Explicitly avoid returning the object itself
+      return "";
+    }
+
+    // For plain strings or numbers
     return field;
   };
+
   const pricing = treatment?.pricing || {};
   const hasPromo =
     treatment?.isPromoEligible === true &&
@@ -19,12 +31,13 @@ export default function TreatmentDetails({ treatment }) {
   return (
     <div className="w-full bg-white">
       <div className="grid grid-cols-1 md:grid-cols-[3fr_2fr] min-h-[50vh]">
-        
         {/* Image */}
         <div className="relative w-full h-[60vh]">
           <Image
             src={treatment.images?.primary || "/placeholder.jpg"}
-            alt={`Treatment image for ${getLocalized(treatment.serviceDisplayName)}`}
+            alt={`Treatment image for ${getLocalized(
+              treatment.serviceDisplayName
+            )}`}
             fill
             className="object-cover [object-position:center_55%] [object-position:0%_60%]"
             priority
@@ -35,12 +48,19 @@ export default function TreatmentDetails({ treatment }) {
         <div className="w-full text-black px-6 md:px-12 py-5 flex flex-col justify-center">
           <div className="mb-4">
             <p className="text-sm text-gray-500">
-              <Link href="/treatments" className="hover:underline hover:text-black">
-                Treatments
+              <Link
+                href="/treatments"
+                className="hover:underline hover:text-black"
+              >
+                {locale === "es" ? "Tratamientos" : "Treatments"}
               </Link>{" "}
               /{" "}
               <Link
-                href={`/treatments/#${getLocalized(treatment.categoryDisplayName)?.replace(/\s+/g, "-").toLowerCase()}`}
+                href={`/treatments/#${getLocalized(
+                  treatment.categoryDisplayName
+                )
+                  ?.replace(/\s+/g, "-")
+                  .toLowerCase()}`}
                 className="hover:underline hover:text-black"
               >
                 {getLocalized(treatment.categoryDisplayName)}
@@ -63,29 +83,43 @@ export default function TreatmentDetails({ treatment }) {
           </div>
 
           {/* Pricing */}
-          <div className={`grid ${hasPromo ? "grid-cols-2" : "grid-cols-1"} gap-4 mb-6`}>
+          <div
+            className={`grid ${
+              hasPromo ? "grid-cols-2" : "grid-cols-1"
+            } gap-4 mb-6`}
+          >
             <div className="border p-4 rounded shadow-sm">
-              <h2 className="text-md font-semibold text-black">Price</h2>
-              <p className="text-gray-700">{pricing.startingPrice} {pricing.startingPriceCurrency}</p>
+              <h2 className="text-md font-semibold text-black">
+                {locale === "es" ? "Precio" : "Price"}
+              </h2>
+              <p className="text-gray-700">
+                {pricing.startingPrice} {pricing.startingPriceCurrency}
+              </p>
               <a
                 href="https://wa.me/+526642077675"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mt-3 inline-block w-full text-center bg-black hover:bg-[#731a2f] text-white font-medium py-2 rounded transition duration-200"
               >
-                Book Now
+                {locale === "es" ? "Agendar" : "Book Now"}
               </a>
             </div>
 
             {hasPromo && (
               <div className="border p-4 rounded shadow-sm">
-                <h2 className="text-md font-semibold text-black">Exclusive Pricing</h2>
-                <p className="text-gray-700">{pricing.promoPrice} {pricing.promoPriceCurrency}</p>
+                <h2 className="text-md font-semibold text-black">
+                  {locale === "es"
+                    ? "Precio exclusivo"
+                    : "Exclusive Pricing"}
+                </h2>
+                <p className="text-gray-700">
+                  {pricing.promoPrice} {pricing.promoPriceCurrency}
+                </p>
                 <a
                   href="https://wa.me/+526642077675"
                   className="mt-3 inline-block w-full text-center border border-gray-700 text-gray-800 hover:border-black hover:text-black font-medium py-2 rounded transition duration-200"
                 >
-                  Inquire
+                  {locale === "es" ? "Más información" : "Inquire"}
                 </a>
               </div>
             )}
@@ -102,13 +136,19 @@ export default function TreatmentDetails({ treatment }) {
 
           {/* Accordion Details */}
           {treatment.details && (
-            <AccordionToggle title="Details">
-              <p className="text-gray-700">{getLocalized(treatment.details)}</p>
+            <AccordionToggle
+              title={locale === "es" ? "Detalles" : "Details"}
+            >
+              <p className="text-gray-700">
+                {getLocalized(treatment.details)}
+              </p>
             </AccordionToggle>
           )}
 
           {treatment.goals?.length > 0 && (
-            <AccordionToggle title="Goals">
+            <AccordionToggle
+              title={locale === "es" ? "Objetivos" : "Goals"}
+            >
               <ul className="list-disc list-inside text-gray-700">
                 {treatment.goals.map((goal, idx) => (
                   <li key={idx}>{getLocalized(goal)}</li>
@@ -118,7 +158,13 @@ export default function TreatmentDetails({ treatment }) {
           )}
 
           {treatment.treatableAreas?.length > 0 && (
-            <AccordionToggle title="Treatable Areas">
+            <AccordionToggle
+              title={
+                locale === "es"
+                  ? "Zonas tratables"
+                  : "Treatable Areas"
+              }
+            >
               <ul className="list-disc list-inside text-gray-700">
                 {treatment.treatableAreas.map((area, idx) => (
                   <li key={idx}>{getLocalized(area)}</li>
@@ -127,7 +173,13 @@ export default function TreatmentDetails({ treatment }) {
             </AccordionToggle>
           )}
 
-          <AccordionToggle title="Available Locations">
+          <AccordionToggle
+            title={
+              locale === "es"
+                ? "Sucursales disponibles"
+                : "Available Locations"
+            }
+          >
             <p className="text-gray-700">Tijuana, B.C.</p>
           </AccordionToggle>
         </div>
