@@ -5,8 +5,9 @@ import { allTreatments } from "@/lib/data/allTreatments";
 export default function AddOnSection({ addOns }) {
   const { locale } = useRouter();
   const getLocalized = (field) => {
-    if (typeof field === 'object' && field[locale]) return field[locale];
-    if (typeof field === 'object' && field['en']) return field['en'];
+    if (typeof field === 'object' && field !== null) {
+      return field[locale] || field['en'] || '';
+    }
     return field;
   };
   if (!addOns?.length || !allTreatments?.length) return null;
