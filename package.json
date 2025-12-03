@@ -9,8 +9,10 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "i18next": "^25.7.1",
     "keen-slider": "^6.8.6",
     "next": "15.4.4",
+    "next-i18next": "^15.4.3",
     "react": "19.1.0",
     "react-dom": "19.1.0"
   },
