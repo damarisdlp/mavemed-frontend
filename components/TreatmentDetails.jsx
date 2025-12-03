@@ -3,7 +3,7 @@ import Image from "next/image";
 import { useRouter } from 'next/router';
 import { AccordionToggle } from "./AccordionToggle";
 
-export default function TreatmentDetail({ treatment }) {
+export default function TreatmentDetails({ treatment }) {
   const { locale } = useRouter();
   const getLocalized = (field) => {
     if (typeof field === 'object' && field[locale]) return field[locale];
