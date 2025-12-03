@@ -4,7 +4,7 @@ import Footer from "../pages/components/Footer";
 import PromoBanner from "../pages/components/PromoBanner";
 import FAQSection from "../pages/components/FAQSection";
 
-import { generalFaqs } from "@/data/faqs/faqs";
+import { generalFaqs } from "@/lib/data/faqs/faqs";
 
 export default function GeneralFaqPage() {
   return (
