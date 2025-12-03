@@ -7,6 +7,8 @@ export default function TreatmentDetails({ treatment }) {
   const { locale: routerLocale } = useRouter();
   const locale = routerLocale || "en";
 
+  console.log("🔥 TreatmentDetails locale:", locale);
+
   const getLocalized = (field) => {
     if (field == null) return ""; // handles null and undefined
 
