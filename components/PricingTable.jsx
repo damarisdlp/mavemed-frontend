@@ -6,6 +6,8 @@ export default function PricingTable({ treatment }) {
   const { locale: routerLocale } = useRouter();
   const locale = routerLocale || "en";
 
+  console.log("📌 PricingTable locale:", locale);
+
   const getLocalized = (field) => {
     if (field == null) return ""; // null or undefined
 
