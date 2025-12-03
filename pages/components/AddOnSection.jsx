@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { allTreatments } from "@/data/allTreatments";
+import { allTreatments } from "@/lib/data/allTreatments";
 
 export default function AddOnSection({ addOns }) {
   if (!addOns?.length || !allTreatments?.length) return null;
