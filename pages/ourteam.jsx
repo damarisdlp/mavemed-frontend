@@ -2,10 +2,10 @@ import Head from "next/head";
 import Image from "next/image";
 
 // Shared components
-import Header from "./components/Header";
-import PromoBanner from "./components/PromoBanner";
-import Footer from "./components/Footer";
-import Team from "./components/Team";
+import Header from "@/components/Header";
+import PromoBanner from "@/components/PromoBanner";
+import Footer from "@/components/Footer";
+import Team from "@/components/Team";
 
 
 export default function TeamPage() {
