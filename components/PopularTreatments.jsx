@@ -6,8 +6,8 @@ import { useRouter } from 'next/router';
 import { allTreatments } from "@/lib/data/allTreatments";
 
 export default function PopularTreatments() {
-  const { locale } = useRouter();
-  const popularTreatments = allTreatments.filter((t) => t.isPopular);
+   const { locale } = useRouter();
+   const popularTreatments = allTreatments.filter((t) => t && t.isPopular);
 
   console.log('Locale:', locale);
 
