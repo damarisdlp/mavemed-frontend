@@ -9,8 +9,12 @@ export default function PopularTreatments() {
   const { locale } = useRouter();
   const popularTreatments = allTreatments.filter((t) => t.isPopular);
 
+  console.log('Locale:', locale);
+
   const getLocalized = (field) => {
+    console.log('getLocalized called with:', field);
     if (typeof field === 'object' && field[locale]) return field[locale];
+    if (typeof field === 'object' && field['en']) return field['en'];
     return field;
   };
 
@@ -76,9 +80,9 @@ export default function PopularTreatments() {
               <div className="p-4 flex-1 flex flex-col justify-between">
                 <div>
                   <h3 className="text-lg font-serif text-black font-medium mb-1">
-                    {treatment.displayName || treatment.serviceDisplayName}
+                    {getLocalized(treatment.displayName || treatment.serviceDisplayName)}
                   </h3>
-                  <p className="text-sm text-gray-600 mb-3">{treatment.description}</p>
+                  <p className="text-sm text-gray-600 mb-3">{getLocalized(treatment.description)}</p>
                 </div>
                 <div className="flex flex-col gap-2">
                   <Link
