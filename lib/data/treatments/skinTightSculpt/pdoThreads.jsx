@@ -1,22 +1,41 @@
 export const pdoThreads = {
   urlSlug: "pdo-threads",
   category: "skin-tightening",
-  categoryDisplayName: "Skin Tightening & Sculpting",
-  serviceDisplayName: "PDO Thread Lift – Non-Surgical Facial Rejuvenation",
+  categoryDisplayName: {
+    en: "Skin Tightening & Sculpting",
+    es: "Reafirmación y Esculpido Corporal"
+  },
+  serviceDisplayName: {
+    en: "PDO Thread Lift – Non-Surgical Facial Rejuvenation",
+    es: "Lifting con hilos PDO – Rejuvenecimiento facial sin cirugía"
+  },
   isPopular: true,
   isPromoEligible: false,
   images: {
     primary: "/threads.jpg",
-    secondary: "/threads2.jpg",
+    secondary: "/threads2.jpg"
   },
-  description:
-    "Achieve a lifted, more defined look without surgery. PDO threads offer a non-invasive way to tighten skin, contour the face, and boost collagen over time.",
-  details:
-    "PDO (polydioxanone) thread lifts are a minimally invasive procedure that uses absorbable sutures to reposition tissue and stimulate collagen production. The treatment provides both immediate lifting and long-term skin rejuvenation. Common areas include the jawline, cheeks, neck, and brow. No general anesthesia or downtime required.",
+  description: {
+    en: "Achieve a lifted, more defined look without surgery. PDO threads offer a non-invasive way to tighten skin, contour the face, and boost collagen over time.",
+    es: "Logra un efecto lifting y un contorno más definido sin cirugía. Los hilos PDO ofrecen una forma poco invasiva de tensar la piel, perfilar el rostro y estimular el colágeno con el tiempo."
+  },
+  details: {
+    en: "PDO (polydioxanone) thread lifts are a minimally invasive procedure that uses absorbable sutures to reposition tissue and stimulate collagen production. The treatment provides both immediate lifting and long-term skin rejuvenation. Common areas include the jawline, cheeks, neck, and brow. No general anesthesia or downtime required.",
+    es: "El lifting con hilos PDO (polidioxanona) es un procedimiento mínimamente invasivo que utiliza suturas reabsorbibles para reposicionar el tejido y estimular la producción de colágeno. El tratamiento ofrece un efecto lifting inmediato y una rejuvenecimiento de la piel a largo plazo. Las zonas más tratadas incluyen la línea mandibular, mejillas, cuello y cejas. No requiere anestesia general ni tiempo prolongado de recuperación."
+  },
   notes: [
-    "Sterile, absorbable polydioxanone (PDO) threads are used",
-    "Stimulates natural collagen production for long-term firmness",
-    "Best for mild to moderate facial sagging and skin laxity"
+    {
+      en: "Sterile, absorbable polydioxanone (PDO) threads are used",
+      es: "Se utilizan hilos de polidioxanona (PDO) estériles y reabsorbibles"
+    },
+    {
+      en: "Stimulates natural collagen production for long-term firmness",
+      es: "Estimula la producción natural de colágeno para firmeza a largo plazo"
+    },
+    {
+      en: "Best for mild to moderate facial sagging and skin laxity",
+      es: "Ideal para flacidez facial leve a moderada y piel con pérdida de tono"
+    }
   ],
   pricing: {
     startingPrice: "Price varies by area and thread count",
@@ -25,106 +44,214 @@ export const pdoThreads = {
     promoPriceCurrency: "USD",
     options: [
       {
-        optionName: "Signature Lower Face Lift",
+        optionName: {
+          en: "Signature Lower Face Lift",
+          es: "Lifting facial inferior Signature"
+        },
         isPromoEligible: false,
         optionPrice: "$TBD",
         optionCurrency: "USD",
         optionPromoPrice: null,
         optionPromoPriceCurrency: null,
         notes: [
-          "Includes Jawline, Jowls, Nasolabial",
-          "Most popular package – delivers visible contouring"
+          {
+            en: "Includes jawline, jowls, and nasolabial folds",
+            es: "Incluye línea mandibular, papada y pliegues nasolabiales"
+          },
+          {
+            en: "Most popular package for visible contouring",
+            es: "Paquete más popular para lograr un contorno visible"
+          }
         ]
       },
       {
-        optionName: "Full Face Thread Lift",
+        optionName: {
+          en: "Full Face Thread Lift",
+          es: "Lifting con hilos en rostro completo"
+        },
         isPromoEligible: false,
         optionPrice: "$TBD",
         optionCurrency: "USD",
         optionPromoPrice: null,
         optionPromoPriceCurrency: null,
         notes: [
-          "Includes Midface, Jawline, Brows",
-          "Includes sculpting and lifting for top-to-bottom facial balance"
+          {
+            en: "Includes midface, jawline, and brows",
+            es: "Incluye tercio medio del rostro, línea mandibular y cejas"
+          },
+          {
+            en: "Provides sculpting and lifting for full facial balance",
+            es: "Ofrece esculpido y lifting para un equilibrio facial completo"
+          }
         ]
       },
       {
-        optionName: "Eyebrow Lift",
+        optionName: {
+          en: "Eyebrow Lift",
+          es: "Lifting de cejas"
+        },
         isPromoEligible: false,
         optionPrice: "$TBD",
         optionCurrency: "USD",
         optionPromoPrice: null,
         optionPromoPriceCurrency: null,
         notes: [
-          "Creates a subtle lateral brow lift and opens the eye area"
+          {
+            en: "Creates a subtle lateral brow lift and opens the eye area",
+            es: "Crea un lifting lateral sutil de la ceja y abre la mirada"
+          }
         ]
       },
       {
-        optionName: "Full Face & Neck Combo",
+        optionName: {
+          en: "Full Face & Neck Combo",
+          es: "Rostro completo y cuello"
+        },
         isPromoEligible: false,
         optionPrice: "$TBD USD",
         optionCurrency: "USD",
         optionPromoPrice: null,
         optionPromoPriceCurrency: null,
         notes: [
-          "Includes Midface, Jawline, Brows, and Neck"
+          {
+            en: "Includes midface, jawline, brows and neck",
+            es: "Incluye tercio medio del rostro, línea mandibular, cejas y cuello"
+          }
         ]
       }
     ]
   },
   goals: [
-    "Lift sagging jowls, cheeks, and midface",
-    "Improve skin laxity and smooth wrinkles",
-    "Enhance definition along the jawline and neck"
+    {
+      en: "Lift sagging jowls, cheeks, and midface",
+      es: "Elevar papada, mejillas y tercio medio del rostro"
+    },
+    {
+      en: "Improve skin laxity and smooth wrinkles",
+      es: "Mejorar la flacidez de la piel y suavizar arrugas"
+    },
+    {
+      en: "Enhance definition along the jawline and neck",
+      es: "Realzar la definición de la línea mandibular y el cuello"
+    }
   ],
   treatableAreas: [
-    "Jawline",
-    "Cheeks",
-    "Neck",
-    "Eyebrows",
-    "Nasolabial Folds",
-    "Marionette Lines",
-    "Under Eyes"
+    {
+      en: "Jawline",
+      es: "Línea mandibular"
+    },
+    {
+      en: "Cheeks",
+      es: "Mejillas"
+    },
+    {
+      en: "Neck",
+      es: "Cuello"
+    },
+    {
+      en: "Eyebrows",
+      es: "Cejas"
+    },
+    {
+      en: "Nasolabial folds",
+      es: "Pliegues nasolabiales"
+    },
+    {
+      en: "Marionette lines",
+      es: "Líneas de marioneta"
+    },
+    {
+      en: "Under eyes",
+      es: "Zona debajo de los ojos"
+    }
   ],
   addOns: [
     {
       serviceParent: "PN + Hyaluronic Acid Booster + Niacinamide",
       serviceChild: "Kiara Reju",
-      displayName: "Kiara Reju – PN + Hyaluronic Acid + Niacinamide",
+      displayName: {
+        en: "Kiara Reju – PN + Hyaluronic Acid + Niacinamide",
+        es: "Kiara Reju – PN + ácido hialurónico + niacinamida"
+      },
       link: "/treatments/mesotherapy/kiaraReju"
     }
   ],
   expectations: {
     preTreatment: [
-      "Avoid alcohol, NSAIDs, and blood-thinning supplements 24–48 hours before your appointment to reduce bruising.",
-      "Let your provider know about any recent Botox or filler procedures to plan your treatment accordingly."
+      {
+        en: "Avoid alcohol, NSAIDs and blood thinning supplements 24–48 hours before your appointment to reduce bruising.",
+        es: "Evite alcohol, antiinflamatorios y suplementos que adelgacen la sangre durante 24 a 48 horas antes de su cita para reducir el riesgo de moretones."
+      },
+      {
+        en: "Inform your provider about any recent Botox or filler procedures to plan your treatment safely.",
+        es: "Informe a su especialista sobre cualquier tratamiento reciente con Botox o rellenos para planear su procedimiento de forma segura."
+      }
     ],
     postTreatment: [
-      "Expect mild soreness, swelling, or bruising around thread entry points.",
-      "Avoid dental work, strenuous activity, or facial massage for 7 days.",
-      "Sleep on your back and minimize exaggerated facial movements for 5–7 days to ensure threads settle properly."
+      {
+        en: "Expect mild soreness, swelling or bruising around thread entry points.",
+        es: "Espere ligera molestia, hinchazón o moretones alrededor de los puntos de entrada de los hilos."
+      },
+      {
+        en: "Avoid dental work, strenuous activity, or facial massage for 7 days.",
+        es: "Evite trabajo dental, actividad física intensa o masajes faciales durante 7 días."
+      },
+      {
+        en: "Sleep on your back and minimize exaggerated facial movements for 5–7 days so threads can settle properly.",
+        es: "Duerma boca arriba y reduzca gestos faciales exagerados durante 5 a 7 días para que los hilos se asienten correctamente."
+      }
     ]
   },
   faq: [
     {
-      question: "What is a PDO thread lift?",
-      answer: "A PDO thread lift is a non-surgical treatment that uses dissolvable threads to lift, contour, and stimulate collagen in the face or neck. It offers natural-looking results with minimal downtime."
+      question: {
+        en: "What is a PDO thread lift?",
+        es: "¿Qué es un lifting con hilos PDO?"
+      },
+      answer: {
+        en: "A PDO thread lift is a non-surgical treatment that uses dissolvable threads to lift, contour and stimulate collagen in the face or neck. It offers natural looking results with minimal downtime.",
+        es: "El lifting con hilos PDO es un tratamiento no quirúrgico que utiliza hilos reabsorbibles para levantar, perfilar y estimular el colágeno en el rostro o el cuello. Ofrece resultados de aspecto natural con un tiempo de recuperación mínimo."
+      }
     },
     {
-      question: "How long do the results last?",
-      answer: "The threads dissolve within 6 months, but collagen stimulation continues, and results can last 12–18 months depending on lifestyle and skin condition."
+      question: {
+        en: "How long do the results last?",
+        es: "¿Cuánto duran los resultados?"
+      },
+      answer: {
+        en: "The threads dissolve within about 6 months, but collagen stimulation continues and results can last 12–18 months depending on lifestyle and skin condition.",
+        es: "Los hilos se disuelven alrededor de los 6 meses, pero la estimulación de colágeno continúa y los resultados pueden durar de 12 a 18 meses según el estilo de vida y el estado de la piel."
+      }
     },
     {
-      question: "Is the procedure painful?",
-      answer: "The area is numbed with lidocaine, so discomfort is minimal. Some tenderness or tightness may occur for a few days post-procedure."
+      question: {
+        en: "Is the procedure painful?",
+        es: "¿El procedimiento es doloroso?"
+      },
+      answer: {
+        en: "The area is numbed with lidocaine, so discomfort during the procedure is minimal. Some tenderness or tightness may be felt for a few days afterward.",
+        es: "La zona se anestesia con lidocaína, por lo que la molestia durante el procedimiento es mínima. Puede haber sensibilidad o sensación de tirantez durante algunos días después."
+      }
     },
     {
-      question: "Can threads be combined with other treatments?",
-      answer: "Yes. Thread lifts are often paired with biostimulators, dermal fillers, or RF microneedling for a full facial rejuvenation plan."
+      question: {
+        en: "Can threads be combined with other treatments?",
+        es: "¿Se pueden combinar los hilos con otros tratamientos?"
+      },
+      answer: {
+        en: "Yes. Thread lifts are often combined with biostimulators, dermal fillers or RF microneedling as part of a full facial rejuvenation plan.",
+        es: "Sí. Con frecuencia se combinan con biostimuladores, rellenos dérmicos o microneedling con radiofrecuencia como parte de un plan integral de rejuvenecimiento facial."
+      }
     },
     {
-      question: "When will I see results?",
-      answer: "Some lifting is visible immediately, while full collagen remodeling takes 6–12 weeks for optimal improvement."
+      question: {
+        en: "When will I see results?",
+        es: "¿Cuándo veré resultados?"
+      },
+      answer: {
+        en: "Some lifting is visible immediately, while full collagen remodeling takes 6–12 weeks for optimal improvement.",
+        es: "Parte del efecto lifting se ve de inmediato, mientras que la remodelación completa del colágeno tarda de 6 a 12 semanas para mostrar su máximo beneficio."
+      }
     }
   ]
 };
