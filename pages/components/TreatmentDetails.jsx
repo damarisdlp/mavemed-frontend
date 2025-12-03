@@ -1,8 +1,15 @@
 import Link from "next/link";
 import Image from "next/image";
+import { useRouter } from 'next/router';
 import { AccordionToggle } from "./AccordionToggle";
 
 export default function TreatmentDetail({ treatment }) {
+  const { locale } = useRouter();
+  const getLocalized = (field) => {
+    if (typeof field === 'object' && field[locale]) return field[locale];
+    if (typeof field === 'object' && field['en']) return field['en'];
+    return field;
+  };
   const pricing = treatment?.pricing || {};
   const hasPromo =
     treatment?.isPromoEligible === true &&
@@ -17,7 +24,7 @@ export default function TreatmentDetail({ treatment }) {
         <div className="relative w-full h-[60vh]">
           <Image
             src={treatment.images?.primary || "/placeholder.jpg"}
-            alt={`Treatment image for ${treatment.serviceDisplayName}`}
+            alt={`Treatment image for ${getLocalized(treatment.serviceDisplayName)}`}
             fill
             className="object-cover [object-position:center_55%] [object-position:0%_60%]"
             priority
@@ -33,25 +40,25 @@ export default function TreatmentDetail({ treatment }) {
               </Link>{" "}
               /{" "}
               <Link
-                href={`/treatments/#${treatment.categoryDisplayName?.replace(/\s+/g, "-").toLowerCase()}`}
+                href={`/treatments/#${getLocalized(treatment.categoryDisplayName)?.replace(/\s+/g, "-").toLowerCase()}`}
                 className="hover:underline hover:text-black"
               >
-                {treatment.categoryDisplayName}
+                {getLocalized(treatment.categoryDisplayName)}
               </Link>{" "}
               /{" "}
               <Link
                 href={`/treatments/${treatment.urlSlug}`}
                 className="text-gray-700 underline"
               >
-                {treatment.serviceDisplayName}
+                {getLocalized(treatment.serviceDisplayName)}
               </Link>{" "}
             </p>
 
             <h1 className="text-4xl font-serif text-black font-medium mt-2 mb-2">
-              {treatment.serviceDisplayName}
+              {getLocalized(treatment.serviceDisplayName)}
             </h1>
             <p className="text-gray-700 text-base leading-relaxed">
-              {treatment.description}
+              {getLocalized(treatment.description)}
             </p>
           </div>
 
@@ -88,7 +95,7 @@ export default function TreatmentDetail({ treatment }) {
           {treatment.notes?.length > 0 && (
             <ul className="text-sm text-gray-600 italic mb-4 space-y-1">
               {treatment.notes.map((note, idx) => (
-                <li key={idx}>{note}</li>
+                <li key={idx}>{getLocalized(note)}</li>
               ))}
             </ul>
           )}
@@ -96,7 +103,7 @@ export default function TreatmentDetail({ treatment }) {
           {/* Accordion Details */}
           {treatment.details && (
             <AccordionToggle title="Details">
-              <p className="text-gray-700">{treatment.details}</p>
+              <p className="text-gray-700">{getLocalized(treatment.details)}</p>
             </AccordionToggle>
           )}
 
@@ -104,7 +111,7 @@ export default function TreatmentDetail({ treatment }) {
             <AccordionToggle title="Goals">
               <ul className="list-disc list-inside text-gray-700">
                 {treatment.goals.map((goal, idx) => (
-                  <li key={idx}>{goal}</li>
+                  <li key={idx}>{getLocalized(goal)}</li>
                 ))}
               </ul>
             </AccordionToggle>
@@ -114,7 +121,7 @@ export default function TreatmentDetail({ treatment }) {
             <AccordionToggle title="Treatable Areas">
               <ul className="list-disc list-inside text-gray-700">
                 {treatment.treatableAreas.map((area, idx) => (
-                  <li key={idx}>{area}</li>
+                  <li key={idx}>{getLocalized(area)}</li>
                 ))}
               </ul>
             </AccordionToggle>
