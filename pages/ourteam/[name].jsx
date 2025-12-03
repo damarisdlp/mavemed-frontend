@@ -1,6 +1,6 @@
 import { useRouter } from "next/router";
 import Head from "next/head";
-import { allStaff } from "@/data/allStaff"; 
+import { allStaff } from "@/lib/data/allStaff"; 
 
 import Header from "../components/Header";
 import Footer from "../components/Footer";
