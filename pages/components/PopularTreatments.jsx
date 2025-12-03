@@ -2,10 +2,17 @@ import "keen-slider/keen-slider.min.css";
 import { useKeenSlider } from "keen-slider/react";
 import Link from "next/link";
 import Image from "next/image";
+import { useRouter } from 'next/router';
 import { allTreatments } from "@/lib/data/allTreatments";
 
 export default function PopularTreatments() {
+  const { locale } = useRouter();
   const popularTreatments = allTreatments.filter((t) => t.isPopular);
+
+  const getLocalized = (field) => {
+    if (typeof field === 'object' && field[locale]) return field[locale];
+    return field;
+  };
 
   const [sliderRef, slider] = useKeenSlider({
     loop: true,
