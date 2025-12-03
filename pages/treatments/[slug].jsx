@@ -14,6 +14,8 @@ import PromoPackageSection from "@/components/PromoPackageSection";
 
 export default function TreatmentPage() {
   const router = useRouter();
+  console.log("Slug:", slug);
+  console.log("All treatments:", allTreatments.map(t => t.urlSlug));
   const { slug } = router.query;
 
   if (!router.isReady) {
