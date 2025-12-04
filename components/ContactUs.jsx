@@ -1,7 +1,10 @@
 import Link from "next/link";
 import Image from "next/image";
+import { useTranslation } from "next-i18next";
 
 export default function ContactUs() {
+  const { t } = useTranslation("common");
+
   return (
     <section className="relative w-full bg-white">
       <div className="grid grid-cols-1 md:grid-cols-[2fr_3fr] min-h-[85vh]">
@@ -10,20 +13,20 @@ export default function ContactUs() {
         <div className="flex items-center justify-center px-6 py-10">
           <div className="w-full max-w-md mx-auto">
             <h2 className="text-3xl sm:text-4xl md:text-5xl text-black font-serif font-medium mb-10 leading-tight text-center md:text-left">
-              Chat with Us
+              {t("contactUs.title")}
             </h2>
 
             {/* Phone */}
             <div className="flex items-start gap-4 mb-8">
               <Image src="/WA.png" alt="Phone icon" width={35} height={35} className="mt-1" />
               <div>
-                <h3 className="text-lg md:text-xl text-black font-semibold">Text or Call Us</h3>
+                <h3 className="text-lg md:text-xl text-black font-semibold">{t("contactUs.phoneTitle")}</h3>
                 <p className="text-gray-700">
                   <a
                     href="https://wa.me/+526642077675"
                     className="underline hover:text-black transition"
                   >
-                    +52 664 207 7675
+                    {t("contactUs.phoneNumber")}
                   </a>
                 </p>
               </div>
@@ -33,13 +36,13 @@ export default function ContactUs() {
             <div className="flex items-start gap-4 mb-8">
               <Image src="/email.png" alt="Email icon" width={35} height={35} className="mt-1" />
               <div>
-                <h3 className="text-lg md:text-xl text-black font-semibold">Email Us</h3>
+                <h3 className="text-lg md:text-xl text-black font-semibold">{t("contactUs.emailTitle")}</h3>
                 <p className="text-gray-700">
                   <a
                     href="mailto:info@mavemedspa.com"
                     className="underline hover:text-black transition"
                   >
-                    info@mavemedspa.com
+                    {t("contactUs.email")}
                   </a>
                 </p>
               </div>
@@ -49,7 +52,7 @@ export default function ContactUs() {
             <div className="flex items-start gap-4 mb-8">
               <Image src="/location.png" alt="Location icon" width={35} height={35} className="mt-1" />
               <div>
-                <h3 className="text-lg md:text-xl text-black font-semibold">Location</h3>
+                <h3 className="text-lg md:text-xl text-black font-semibold">{t("contactUs.locationTitle")}</h3>
                 <p className="text-gray-700 mb-2">
                   <a
                     href="https://www.google.com/maps/dir/?api=1&destination=Blvrd+Gral+Rodolfo+Sánchez+Taboada+10512-Interior+8a+-+Segundo+Piso,+Revolucion,+22010+Tijuana,+B.C.,+Mexico"
@@ -57,14 +60,14 @@ export default function ContactUs() {
                     rel="noopener noreferrer"
                     className="underline hover:text-black transition block"
                   >
-                    Blvrd Gral Rodolfo Sánchez Taboada 10512-Interior 8a – Segundo Piso,<br />
-                    Revolución, 22010 Tijuana, B.C., Mexico
+                    {t("contactUs.addressLine1")}<br />
+                    {t("contactUs.addressLine2")}
                   </a>
                 </p>
                 <p className="text-gray-700">
-                  <strong>How to find us:</strong><br />
-                  Stairs facing Avenida Río Yaqui<br />
-                  Stairs facing Calle Río Nazas
+                  <strong>{t("contactUs.howToFindUs")}</strong><br />
+                  {t("contactUs.stairs1")}<br />
+                  {t("contactUs.stairs2")}
                 </p>
               </div>
             </div>
@@ -75,7 +78,7 @@ export default function ContactUs() {
                 href="/treatments"
                 className="inline-flex items-center justify-center bg-black text-white px-8 py-3 rounded-full hover:bg-[#731a2f] transition active:scale-95 text-center"
               >
-                Explore Our Med Spa Treatments
+                {t("contactUs.cta")}
               </Link>
             </div>
           </div>
