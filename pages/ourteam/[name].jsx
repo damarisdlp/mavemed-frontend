@@ -45,18 +45,18 @@ export default function TeamMemberPage() {
     <>
       <Head>
         <title>
-          {`${member.displayName} | ${member.title} at Mave Medical Spa in Tijuana`}
-          </title>
+          {`${getLocalized(member.displayName)} | ${getLocalized(member.title)} at Mave Medical Spa in Tijuana`}
+        </title>
         <meta
           name="description"
-          content={`Learn more about ${member.displayName}, our ${member.title} at Mave Medical Spa in Tijuana. Specializing in ${member.bio.slice(0, 120)}...`}
+          content={`Learn more about ${getLocalized(member.displayName)}, our ${getLocalized(member.title)} at Mave Medical Spa in Tijuana. Specializing in ${getLocalized(member.bio)?.slice?.(0, 120) || ""}...`}
         />
         <meta
           name="keywords"
-          content={`Mave Medical Spa, ${member.displayName}, ${member.title}, Tijuana Med Spa, Aesthetic Experts, Medical Aesthetics Mexico`}
+          content={`Mave Medical Spa, ${getLocalized(member.displayName)}, ${getLocalized(member.title)}, Tijuana Med Spa, Aesthetic Experts, Medical Aesthetics Mexico`}
         />
-        <meta property="og:title" content={`${member.displayName} | ${member.title} – Mave Medical Spa`} />
-        <meta property="og:description" content={`Meet ${member.displayName}, a valued member of our expert team delivering advanced aesthetic care in Tijuana.`} />
+        <meta property="og:title" content={`${getLocalized(member.displayName)} | ${getLocalized(member.title)} – Mave Medical Spa`} />
+        <meta property="og:description" content={`Meet ${getLocalized(member.displayName)}, a valued member of our expert team delivering advanced aesthetic care in Tijuana.`} />
         <meta property="og:image" content={`https://www.mavemedspa.com${member.image}`} />
         <meta property="og:url" content={`https://www.mavemedspa.com/ourteam/${member.name}`} />
         <meta property="og:type" content="profile" />
@@ -86,7 +86,19 @@ export default function TeamMemberPage() {
       <section className="bg-white">
         <PromoBanner />
         <Header />
-        <StaffDetails member={{ ...member, displayName: getLocalized(member.displayName), title: getLocalized(member.title), bio: getLocalized(member.bio) }} />
+        <StaffDetails
+          member={{
+            ...member,
+            displayName: getLocalized(member.displayName),
+            title: getLocalized(member.title),
+            category: getLocalized(member.category),
+            bio: getLocalized(member.bio),
+            favorites: member.favorites?.map((favorite) => ({
+              ...favorite,
+              serviceName: getLocalized(favorite.serviceName),
+            })),
+          }}
+        />
         <ContactCTA />
         <Footer />
       </section>
