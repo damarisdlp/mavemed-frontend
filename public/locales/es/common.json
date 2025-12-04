@@ -70,7 +70,7 @@
     "top": "↑ Arriba"
   },
   "contactUs": {
-    "title": "Chatea con Nosotros",
+    "title": "Comunícate con Nosotros",
     "phoneTitle": "Envíanos mensaje o llámanos",
     "phoneNumber": "+52 664 207 7675",
     "emailTitle": "Escríbenos",
@@ -165,7 +165,7 @@
     "line2": "Ofrecemos tratamientos avanzados de rejuvenecimiento como Sculptra, RF microneedling, hilos PDO y armonización facial.",
     "line3": "Agenda tu consulta y obtén un plan personalizado a tus metas.",
     "cta": "Agenda tu Consulta",
-    "aria": "Chatea con Mave Medical Spa por WhatsApp"
+    "aria": "Comunícate con Mave Medical Spa por WhatsApp"
   },
   "packages": {
     "title": "Paquetes de med spa flexibles con ahorros exclusivos",
@@ -183,6 +183,11 @@
   "reviews": {
     "title": "Lo que dicen nuestros pacientes",
     "subtitle": "Reseñas verificadas de clientes transfronterizos y locales que confían en Mave."
+  },
+  "team": {
+    "bannerTitle": "Nuestro Equipo",
+    "bannerSubtitle": "Especialistas en inyectables cosméticos, rejuvenecimiento de la piel y terapias de grado médico para una belleza enfocada en resultados.",
+    "learnMore": "Saber Más"
   },
   "instagram": {
     "title": "Síguenos",
