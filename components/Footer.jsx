@@ -4,7 +4,7 @@ import { useState } from "react";
 import { useTranslation } from "next-i18next";
 
 export default function Footer() {
-  const { t } = useTranslation("common");
+  const { t } = useTranslation("layout");
 
   const [formData, setFormData] = useState({
     firstName: "",
