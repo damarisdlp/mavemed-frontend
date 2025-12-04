@@ -6,7 +6,7 @@ import { useRouter } from "next/router";
 
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const { t } = useTranslation("common");
+  const { t } = useTranslation("layout");
   const router = useRouter();
   const { locale, asPath } = router;
 
