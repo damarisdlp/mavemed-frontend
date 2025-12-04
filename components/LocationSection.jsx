@@ -1,16 +1,19 @@
 // components/LocationSection.jsx
 import Image from "next/image";
+import { useTranslation } from "next-i18next";
 
 export default function LocationSection() {
+  const { t } = useTranslation("common");
+
   return (
     <section id="location" className="bg-[#efeee7] py-14 px-6">
       <div className="max-w-6xl mx-auto">
         {/* Heading */}
         <h2 className="text-4xl font-serif text-black text-center font-medium mb-4">
-          We Can't Wait to See You
+          {t("location.heading")}
         </h2>
         <p className="text-center text-gray-600 mb-10">
-          Convenient cross-border access, just minutes from the San Diego–Tijuana border.
+          {t("location.subheading")}
         </p>
 
         {/* Grid Layout */}
@@ -18,21 +21,23 @@ export default function LocationSection() {
           {/* Left Side: Text Block */}
           <div className="w-full max-w-md mx-auto text-left space-y-6">
             {/* Clinic Name */}
-            <h3 className="text-xl text-black font-semibold text-center md:text-left">Mave Medical Spa</h3>
+            <h3 className="text-xl text-black font-semibold text-center md:text-left">
+              {t("location.clinicName")}
+            </h3>
 
             {/* Address */}
             <div className="flex gap-4 items-start">
               <Image src="/location.png" alt="Location icon" width={40} height={40} />
               <div>
-                <h4 className="text-black font-semibold text-base">Address:</h4>
+                <h4 className="text-black font-semibold text-base">{t("location.addressLabel")}</h4>
                 <a
                   href="https://www.google.com/maps/dir/?api=1&destination=Blvrd+Gral+Rodolfo+Sánchez+Taboada+10512-Interior+8a+-+Segundo+Piso,+Revolucion,+22010+Tijuana,+B.C.,+Mexico"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="underline hover:text-black transition text-gray-700 block leading-relaxed"
                 >
-                  Blvrd Gral Rodolfo Sánchez Taboada 10512-Interior 8a – Segundo Piso,<br />
-                  Revolución, 22010 Tijuana, B.C., Mexico
+                  {t("location.addressLine1")}<br />
+                  {t("location.addressLine2")}
                 </a>
               </div>
             </div>
@@ -41,11 +46,11 @@ export default function LocationSection() {
             <div className="flex gap-4 items-start">
               <Image src="/date-icon.png" alt="Clock icon" width={40} height={40} />
               <div>
-                <h4 className="text-black font-semibold text-base">Hours:</h4>
+                <h4 className="text-black font-semibold text-base">{t("location.hoursLabel")}</h4>
                 <p className="text-gray-700">
-                  Monday–Friday: 9:00am – 6:00pm<br />
-                  Saturday: 9:00am – 4:00pm<br />
-                  Sunday: Closed
+                  {t("location.hoursWeekday")}<br />
+                  {t("location.hoursSaturday")}<br />
+                  {t("location.hoursSunday")}
                 </p>
               </div>
             </div>
@@ -54,12 +59,12 @@ export default function LocationSection() {
             <div className="flex gap-4 items-start">
               <Image src="/WA.png" alt="WhatsApp icon" width={40} height={40} />
               <div>
-                <h4 className="text-black font-semibold text-base">Phone:</h4>
+                <h4 className="text-black font-semibold text-base">{t("location.phoneLabel")}</h4>
                 <a
                   href="https://wa.me/+526642077675"
                   className="underline hover:text-black transition text-gray-700"
                 >
-                  +52 664 207 7675
+                  {t("location.phoneNumber")}
                 </a>
               </div>
             </div>
@@ -68,12 +73,12 @@ export default function LocationSection() {
             <div className="flex gap-4 items-start">
               <Image src="/email.png" alt="Email icon" width={40} height={40} />
               <div>
-                <h4 className="text-black font-semibold text-base">Email:</h4>
+                <h4 className="text-black font-semibold text-base">{t("location.emailLabel")}</h4>
                 <a
                   href="mailto:info@mavemedspa.com"
                   className="underline hover:text-black transition text-gray-700"
                 >
-                  info@mavemedspa.com
+                  {t("location.email")}
                 </a>
               </div>
             </div>
