@@ -2,7 +2,7 @@
 import { useTranslation } from "next-i18next";
 
 export default function HeroSection() {
-  const { t } = useTranslation("common");
+  const { t } = useTranslation("home");
 
   return (
     <section className="bg-white min-h-[65vh] md:min-h-[75vh] flex flex-col justify-center items-center px-6 py-6 text-center relative">
