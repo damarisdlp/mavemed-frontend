@@ -1,5 +1,5 @@
 export const nataly = {
-  name: "drnataly",
+  name: "dranataly",
   displayName: {
     en: "Dr. Nataly",
     es: "Dra. Nataly"
