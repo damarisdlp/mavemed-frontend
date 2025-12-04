@@ -3,6 +3,8 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import PromoBanner from "@/components/PromoBanner";
 import FAQSection from "@/components/FAQSection";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import nextI18NextConfig from "../next-i18next.config";
 
 import { generalFaqs } from "@/lib/data/faqs/faqs";
 
@@ -24,4 +26,12 @@ export default function GeneralFaqPage() {
       <Footer />
     </>
   );
+}
+
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale ?? "en", ["common"], nextI18NextConfig)),
+    },
+  };
 }
