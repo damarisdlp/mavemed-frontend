@@ -1,8 +1,11 @@
 "use client";
 
 import { useEffect } from "react";
+import { useTranslation } from "next-i18next";
 
 export default function InstagramFeed() {
+  const { t } = useTranslation("common");
+
   useEffect(() => {
     const script = document.createElement("script");
     script.src = "https://static.elfsight.com/platform/platform.js";
@@ -23,7 +26,7 @@ export default function InstagramFeed() {
         </a>
       </h2>
       <p className="text-gray-600 mb-6">
-        Follow us on Instagram to stay up to date and see the latest trends.
+        {t("instagram.subtitle")}
       </p>
 
       <div
