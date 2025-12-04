@@ -4,8 +4,10 @@ import Link from "next/link";
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
 import { allStaff } from "@/lib/data/allStaff";
+import { useTranslation } from "next-i18next";
 
 export default function AboutSection() {
+  const { t } = useTranslation("common");
 
   const [sliderRef, slider] = useKeenSlider({
     loop: true,
@@ -49,45 +51,34 @@ export default function AboutSection() {
         <div className="flex items-center justify-center px-6 py-10">
           <div className="w-full max-w-md mx-auto text-center md:text-left">
             <h2 className="text-3xl sm:text-4xl md:text-5xl text-black font-serif font-medium mb-2 leading-tight">
-              About Mave
+              {t("aboutSection.title")}
             </h2>
             <strong className="text-black text-xl block mb-4">
-              Trusted Aesthetic Clinic in Tijuana, Mexico
+              {t("aboutSection.subtitle")}
             </strong>
 
             <p className="text-gray-700 text-base md:text-lg leading-relaxed mb-4">
-              At Mave Medical Spa in Tijuana, we combine medical science, aesthetics,
-              and regenerative medicine to deliver personalized, results-driven
-              cosmetic care. Just minutes from the San Diego border, we serve both
-              local clients and patients traveling from across Southern California
-              and beyond; offering safe, ethical treatments with natural-looking
-              results.
+              {t("aboutSection.p1")}
             </p>
 
             <p className="text-gray-700 text-base md:text-lg leading-relaxed mb-4">
-              Our vision is to be a modern sanctuary for aesthetic wellness, where
-              treatments support confidence, healing, and long-term skin health. We
-              specialize in advanced procedures including:
+              {t("aboutSection.p2")}
             </p>
 
             <ul className="list-disc list-inside pl-4 text-left text-gray-700 text-base md:text-lg space-y-2 mb-4">
-              <li><strong>Botox®</strong> wrinkle reduction</li>
-              <li><strong>Sculptra®</strong> and other collagen biostimulators</li>
-              <li>Radiofrequency microneedling <span className="italic">(Scarlet S RF)</span></li>
-              <li>PDO thread lifts</li>
-              <li>Medical-grade CO2 lasers and IPL photofacials</li>
+              <li>{t("aboutSection.list.botox")}</li>
+              <li>{t("aboutSection.list.sculptra")}</li>
+              <li>{t("aboutSection.list.rfMicroneedling")}</li>
+              <li>{t("aboutSection.list.pdo")}</li>
+              <li>{t("aboutSection.list.lasers")}</li>
             </ul>
 
             <p className="text-gray-700 text-base md:text-lg leading-relaxed mb-4">
-              Our approach is grounded in COFEPRIS-compliant protocols, physician
-              oversight, and highly personalized treatment plans tailored to your
-              unique goals and facial anatomy.
+              {t("aboutSection.p3")}
             </p>
 
             <p className="text-gray-700 text-base md:text-lg leading-relaxed">
-              Every patient is treated with intention, clinical precision, and
-              compassionate care, because your transformation deserves both beauty
-              and integrity.
+              {t("aboutSection.p4")}
             </p>
           </div>
         </div>
@@ -96,13 +87,13 @@ export default function AboutSection() {
       {/* Team Section Header */}
       <div className="container mx-auto px-4 flex flex-row sm:flex-row justify-between items-center sm:items-center gap-3 mb-6">
         <h2 className="text-3xl md:text-4xl font-serif text-black font-medium mx-auto sm:mx-0 sm:ml-4">
-          Meet Our Team
+          {t("aboutSection.meetTeam")}
         </h2>
         <Link
           href="/ourteam"
           className="text-sm underline text-gray-600 hover:text-black"
         >
-          View All
+          {t("aboutSection.viewAll")}
         </Link>
       </div>
 
@@ -152,7 +143,7 @@ export default function AboutSection() {
                     href={`/ourteam/${s.name.toLowerCase()}`}
                     className="inline-block border border-gray-300 text-black px-4 py-2 rounded-full text-xs hover:border-black transition"
                   >
-                    Learn More
+                    {t("aboutSection.learnMore")}
                   </Link>
                 </div>
               </div>
@@ -169,9 +160,9 @@ export default function AboutSection() {
         <button
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
           className="fixed bottom-6 right-6 z-40 bg-black text-white px-4 py-2 rounded-full shadow-lg text-sm hover:bg-[#731a2f] transition"
-          aria-label="Scroll to top of page"
+          aria-label={t("aboutSection.scrollTop")}
         >
-          ↑ Top
+          {t("aboutSection.top")}
         </button>
       )}
     </section>
