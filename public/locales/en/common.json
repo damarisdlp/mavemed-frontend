@@ -49,6 +49,26 @@
     "title": "Frequently Asked Questions",
     "subtitle": "Find answers to common questions about our treatments and services."
   },
+  "aboutSection": {
+    "title": "About Mave",
+    "subtitle": "Trusted Aesthetic Clinic in Tijuana, Mexico",
+    "p1": "At Mave Medical Spa in Tijuana, we combine medical science, aesthetics, and regenerative medicine to deliver personalized, results-driven cosmetic care. Just minutes from the San Diego border, we serve both local clients and patients traveling from across Southern California and beyond; offering safe, ethical treatments with natural-looking results.",
+    "p2": "Our vision is to be a modern sanctuary for aesthetic wellness, where treatments support confidence, healing, and long-term skin health. We specialize in advanced procedures including:",
+    "p3": "Our approach is grounded in COFEPRIS-compliant protocols, physician oversight, and highly personalized treatment plans tailored to your unique goals and facial anatomy.",
+    "p4": "Every patient is treated with intention, clinical precision, and compassionate care, because your transformation deserves both beauty and integrity.",
+    "list": {
+      "botox": "Botox® wrinkle reduction",
+      "sculptra": "Sculptra® and other collagen biostimulators",
+      "rfMicroneedling": "Radiofrequency microneedling (Scarlet S RF)",
+      "pdo": "PDO thread lifts",
+      "lasers": "Medical-grade CO2 lasers and IPL photofacials"
+    },
+    "meetTeam": "Meet Our Team",
+    "viewAll": "View All",
+    "learnMore": "Learn More",
+    "scrollTop": "Scroll to top of page",
+    "top": "↑ Top"
+  },
   "language": "Language",
   "english": "EN",
   "spanish": "ES"
