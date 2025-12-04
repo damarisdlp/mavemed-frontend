@@ -3,7 +3,7 @@ import Image from "next/image";
 import { useTranslation } from "next-i18next";
 
 export default function LocationSection() {
-  const { t } = useTranslation("common");
+  const { t } = useTranslation("location");
 
   return (
     <section id="location" className="bg-[#efeee7] py-14 px-6">
