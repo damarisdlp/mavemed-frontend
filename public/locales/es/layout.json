@@ -1,0 +1,46 @@
+{
+  "nav": {
+    "treatments": "Tratamientos",
+    "about": "Sobre Nosotros",
+    "contact": "Contáctanos",
+    "location": "Ubicación",
+    "bookWhatsApp": "Reservar por WhatsApp"
+  },
+  "promoBanner": {
+    "text": "Accede a precios promocionales exclusivos en tratamientos seleccionados.",
+    "cta": "Pregunta Ahora"
+  },
+  "footer": {
+    "leadTitle": "Dale un refresh a tu bandeja",
+    "leadSubtitle": "10% de descuento en tu primer facial al suscribirte a nuestros emails y SMS sin spam y sin arrugas.",
+    "firstName": "Tu nombre",
+    "lastName": "Tus apellidos completos",
+    "email": "Tu correo electrónico",
+    "phone": "Tu número móvil",
+    "whatsappPrompt": "¿Usas WhatsApp?",
+    "whatsappYes": "Sí",
+    "whatsappNo": "No",
+    "disclaimer": "Mave Medical Spa necesita esta información para mantenerte al tanto de tratamientos y servicios. Puedes darte de baja en cualquier momento. Para saber más, revisa nuestra",
+    "privacyPolicy": "Política de Privacidad",
+    "subscribe": "Suscribirme",
+    "treatmentsTitle": "Tratamientos",
+    "allTreatments": "Todos los Tratamientos",
+    "aboutTitle": "Sobre Nosotros",
+    "aboutLink": "Sobre Nosotros",
+    "contactLink": "Contacto",
+    "faqLink": "FAQs",
+    "locationTitle": "Ubicación",
+    "locationLink": "Ubicación",
+    "rights": "Todos los derechos reservados.",
+    "privacy": "Privacidad",
+    "terms": "Términos",
+    "accessibility": "Accesibilidad"
+  },
+  "scrollTop": {
+    "aria": "Volver al inicio",
+    "label": "↑ Arriba"
+  },
+  "language": "Idioma",
+  "english": "EN",
+  "spanish": "ES"
+}
