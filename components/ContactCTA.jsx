@@ -2,7 +2,7 @@
 import { useTranslation } from "next-i18next";
 
 export default function ContactCTA() {
-  const { t } = useTranslation("common");
+  const { t } = useTranslation("home");
 
   return (
     <section
