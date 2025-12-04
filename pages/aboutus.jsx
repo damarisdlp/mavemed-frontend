@@ -96,7 +96,7 @@ export default function AboutUs() {
 export async function getStaticProps({ locale }) {
   return {
     props: {
-      ...(await serverSideTranslations(locale ?? "en", ["common"], nextI18NextConfig)),
+      ...(await serverSideTranslations(locale ?? "en", ["layout", "home"], nextI18NextConfig)),
     },
   };
 }
