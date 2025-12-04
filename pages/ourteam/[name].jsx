@@ -7,6 +7,8 @@ import Footer from "@/components/Footer";
 import PromoBanner from "@/components/PromoBanner";
 import StaffDetails from "@/components/StaffDetails";
 import ContactCTA from "@/components/ContactCTA";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import nextI18NextConfig from "../../next-i18next.config";
 
 export default function TeamMemberPage() {
   const router = useRouter();
@@ -82,4 +84,12 @@ export default function TeamMemberPage() {
       </section>
     </>
   );
+}
+
+export async function getServerSideProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale ?? "en", ["common"], nextI18NextConfig)),
+    },
+  };
 }
