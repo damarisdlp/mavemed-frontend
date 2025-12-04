@@ -8,7 +8,7 @@ import { useTranslation } from "next-i18next";
 import { useRouter } from "next/router";
 
 export default function AboutSection() {
-  const { t } = useTranslation("common");
+  const { t } = useTranslation("home");
   const { locale } = useRouter();
 
   const getLocalized = (field) => {
@@ -136,7 +136,7 @@ export default function AboutSection() {
                 <div className="relative h-[420px] w-full">
                   <Image
                     src={s.image}
-                    alt={`${s.displayName} – ${s.title}`}
+                    alt={`${getLocalized(s.displayName)} – ${getLocalized(s.title)}`}
                     fill
                     className="object-cover text-gray-600"
                   />
