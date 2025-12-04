@@ -11,6 +11,8 @@ import WhatToExpect from "@/components/WhatToExpect";
 import FAQSection from "@/components/FAQSection";
 import ContactCTA from "@/components/ContactCTA";
 import PromoPackageSection from "@/components/PromoPackageSection";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import nextI18NextConfig from "../../next-i18next.config";
 
 const getLocalized = (field, locale) => {
   if (typeof field === "object" && field !== null) {
@@ -74,4 +76,12 @@ export default function TreatmentPage() {
       </section>
     </>
   );
+}
+
+export async function getServerSideProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale ?? "en", ["common"], nextI18NextConfig)),
+    },
+  };
 }
