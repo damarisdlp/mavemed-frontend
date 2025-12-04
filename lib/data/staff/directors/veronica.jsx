@@ -1,5 +1,5 @@
 export const veronica = {
-  name: "dr.veronica",
+  name: "draveronica",
   displayName: {
     en: "Dr. Veronica",
     es: "Dra. Verónica"
@@ -12,7 +12,7 @@ export const veronica = {
     en: "Director & Founder",
     es: "Directora y fundadora"
   },
-  image: "/drveronica.jpg",
+  image: "/draveronica.jpg",
   bio: {
     en: "Dr. Veronica is a director.",
     es: "La doctora Verónica es directora."
