@@ -7,7 +7,7 @@ import { useTranslation } from "next-i18next";
 
 export default function Team() {
   const router = useRouter();
-  const { t, i18n } = useTranslation("common");
+  const { t, i18n } = useTranslation("team");
   const currentLocale =
     (typeof router?.locale === "string" && router.locale) ||
     (typeof i18n?.language === "string" && i18n.language) ||
