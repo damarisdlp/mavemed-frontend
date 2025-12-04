@@ -116,14 +116,14 @@ export default function TreatmentCategories() {
                     <div className="flex flex-col gap-2">
                       <Link
                         href="https://wa.me/+526642077675"
-                        className="bg-black text-white px-4 py-2 rounded-full text-xs hover:bg-[#731a2f] transition"
+                        className="bg-black text-white px-4 py-2 rounded-full text-xs hover:bg-[#731a2f] transition text-center"
                         aria-label={getLocalized(translatedStrings.bookService(service.name))}
                       >
                         {getLocalized(translatedStrings.bookNow)}
                       </Link>
                       <Link
                         href={`/treatments/${service.slug}`}
-                        className="border border-gray-300 text-black px-4 py-2 rounded-full text-xs hover:border-black transition"
+                        className="border border-gray-300 text-black px-4 py-2 rounded-full text-xs hover:border-black transition text-center"
                         aria-label={getLocalized(translatedStrings.learnMoreAbout(service.name))}
                       >
                         {getLocalized(translatedStrings.learnMore)}
