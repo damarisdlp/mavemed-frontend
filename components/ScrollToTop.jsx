@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import { useTranslation } from "next-i18next";
 
 export default function ScrollToTopButton() {
-  const { t } = useTranslation("common");
+  const { t } = useTranslation("layout");
   const [show, setShow] = useState(false);
 
   useEffect(() => {
