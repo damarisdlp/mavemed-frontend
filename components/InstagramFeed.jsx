@@ -15,7 +15,8 @@ export default function InstagramFeed() {
 
   return (
     <section className="bg-white px-6 text-center">
-      <h2 className="text-2xl md:text-3xl text-black font-serif font-medium py-5">
+      <h2 className="text-2xl md:text-3xl text-black font-serif font-medium py-5 flex items-center justify-center gap-2">
+        <span>{t("instagram.title")}</span>
         <a
           href="https://www.instagram.com/mavemedicalspa"
           target="_blank"
