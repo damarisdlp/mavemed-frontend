@@ -107,19 +107,18 @@ export default function LeadForm() {
           />
           
           <select
-          name="whatsapp"
-          value={formData.whatsapp}
-          onChange={handleChange}
-            className={`border border-gray-300 rounded px-4 py-3 focus:outline-none focus:ring-2 focus:ring-black ${
-              formData.whatsapp ? "text-black" : "text-gray-500"} appearance-none`}
+            name="whatsapp"
+            value={formData.whatsapp}
+            onChange={handleChange}
+            className="border border-gray-300 text-gray-500 rounded px-4 py-3 focus:outline-none focus:ring-2 focus:ring-black appearance-none"
             required
-            >
-              <option value="" disabled>
-                {t("leadForm.whatsappPrompt")}
-                </option>
-                <option value="Yes">{t("leadForm.whatsappYes")}</option>
-                <option value="No">{t("leadForm.whatsappNo")}</option>
-                </select>
+          >
+            <option value="" disabled>
+              {t("leadForm.whatsappPrompt")}
+            </option>
+            <option value="Yes">{t("leadForm.whatsappYes")}</option>
+            <option value="No">{t("leadForm.whatsappNo")}</option>
+          </select>
 
           <p className="text-xs text-gray-500 mt-2">
             {t("leadForm.disclaimer")} <a href="/privacy-policy" className="underline">{t("leadForm.privacyPolicy")}</a>.
