@@ -1,0 +1,81 @@
+{
+  "heroSection": {
+    "heading1": "Mave Medical Spa en Tijuana",
+    "heading2": "Botox, Rellenos, RF Microneedling y más",
+    "copy": "Cruza la frontera para obtener resultados naturales. Especialistas en Botox, Sculptra, rellenos dérmicos, hilos PDO, microneedling con radiofrecuencia y láseres — confiados por clientes de San Diego, Los Ángeles, Orange County, Tijuana y más.",
+    "cta": "Agenda tu Consulta"
+  },
+  "aboutSection": {
+    "title": "Sobre Mave",
+    "subtitle": "Clínica Estética de Confianza en Tijuana, México",
+    "p1": "En Mave Medical Spa en Tijuana, combinamos ciencia médica, estética y medicina regenerativa para ofrecer un cuidado cosmético personalizado y enfocado en resultados. A minutos de la frontera con San Diego, atendemos a clientes locales y pacientes que viajan desde todo el sur de California y más allá, brindando tratamientos seguros, éticos y con resultados naturales.",
+    "p2": "Nuestra visión es ser un santuario moderno para el bienestar estético, donde los tratamientos apoyen la confianza, la sanación y la salud duradera de la piel. Nos especializamos en procedimientos avanzados que incluyen:",
+    "p3": "Nuestro enfoque se basa en protocolos aprobados por COFEPRIS, supervisión médica y planes de tratamiento altamente personalizados adaptados a tus objetivos y anatomía facial.",
+    "p4": "Cada paciente es tratado con intención, precisión clínica y atención compasiva, porque tu transformación merece tanto belleza como integridad.",
+    "list": {
+      "botox": "Reducción de arrugas con Botox®",
+      "sculptra": "Sculptra® y otros bioestimuladores de colágeno",
+      "rfMicroneedling": "Microneedling con radiofrecuencia (Scarlet S RF)",
+      "pdo": "Lifting con hilos PDO",
+      "lasers": "Láseres de CO2 de grado médico e IPL fotofaciales"
+    },
+    "meetTeam": "Conoce a Nuestro Equipo",
+    "viewAll": "Ver Todos",
+    "learnMore": "Saber Más",
+    "scrollTop": "Desplazarse al inicio de la página",
+    "top": "↑ Arriba"
+  },
+  "leadForm": {
+    "title": "Mantente al día con Mave",
+    "subtitle": "Suscríbete a nuestro newsletter y SMS para obtener 10% de descuento en tu primer facial y recibir ofertas exclusivas, información médica y tendencias estéticas. Sé la primera en enterarte.",
+    "firstName": "Tu nombre",
+    "lastName": "Tus apellidos completos",
+    "email": "Tu correo electrónico",
+    "phone": "Tu número móvil",
+    "whatsappPrompt": "¿Usas WhatsApp?",
+    "whatsappYes": "Sí",
+    "whatsappNo": "No",
+    "disclaimer": "Mave Medical Spa necesita esta información para mantenerte al tanto de tratamientos y servicios. Puedes darte de baja en cualquier momento. Para saber más, revisa nuestra",
+    "privacyPolicy": "Política de Privacidad",
+    "subscribe": "Suscribirme"
+  },
+  "contactCta": {
+    "title": "Cuidado estético experto — a minutos de la frontera",
+    "line1": "Nuestro med spa en Tijuana atiende clientes de San Diego, LA, Tijuana y más —",
+    "line2": "Ofrecemos tratamientos avanzados de rejuvenecimiento como Sculptra, RF microneedling, hilos PDO y armonización facial.",
+    "line3": "Agenda tu consulta y obtén un plan personalizado a tus metas.",
+    "cta": "Agenda tu Consulta",
+    "aria": "Comunícate con Mave Medical Spa por WhatsApp"
+  },
+  "approach": {
+    "title": "Nuestra filosofía de cuidado de la piel con resultados en Tijuana",
+    "safetyTitle": "Seguridad de grado médico",
+    "safetyCopy": "Todos los procedimientos en Mave Medical Spa en Tijuana son realizados o supervisados por médicos estéticos con licencia. Cumplimos los estándares de seguridad COFEPRIS para tratamientos como Botox, RF microneedling, Sculptra y hilos PDO.",
+    "efficacyTitle": "Eficacia comprobada",
+    "efficacyCopy": "Desde estimulación de colágeno hasta tensado avanzado de la piel, usamos tecnologías aprobadas por la FDA y productos de alto desempeño con resultados clínicamente probados.",
+    "experienceTitle": "Experiencia estética personalizada",
+    "experienceCopy": "Tu viaje estético comienza con una consulta de piel adaptada a tus metas. Ya sea reducción de arrugas, tensado o rejuvenecimiento de colágeno, creamos un plan a medida con resultados reales.",
+    "cta": "Explora nuestros tratamientos"
+  },
+  "packages": {
+    "title": "Paquetes de med spa flexibles con ahorros exclusivos",
+    "subtitle": "Logra resultados estéticos duraderos sin pagar todo por adelantado. Nuestros paquetes de varias sesiones son ideales para pacientes de EE.UU. y locales de Tijuana.",
+    "planIncludes": "Tu plan incluye:",
+    "item1": "Precios especiales en servicios combinados que incluyen bioestimuladores de colágeno (como Sculptra), RF Microneedling (Scarlet S RF), Ultraformer MPT, rellenos dérmicos, hilos PDO y más.",
+    "item2": "Solo 20% de depósito por sesión para evitar la presión de prepagar todo. Tu depósito se acredita completamente a tu siguiente visita.",
+    "item3": "Planes personalizados que combinan tecnología avanzada y técnicas estéticas comprobadas para un rejuvenecimiento natural y duradero.",
+    "item4": "Cuidado liderado por médicos en cada etapa para garantizar resultados seguros y efectivos del med spa de confianza en Tijuana.",
+    "item5": "Beneficios VIP: agenda prioritaria, upgrades de cortesía, boosters de regalo y acceso a promociones de med spa por tiempo limitado.",
+    "bottomTitle": "¿Lista para empezar tu transformación?",
+    "bottomCopy": "Agenda tu consulta hoy y descubre lo que es posible con cuidado flexible en Mave Medical Spa.",
+    "cta": "Explorar Servicios"
+  },
+  "reviews": {
+    "title": "Lo que dicen nuestros pacientes",
+    "subtitle": "Reseñas verificadas de clientes transfronterizos y locales que confían en Mave."
+  },
+  "instagram": {
+    "title": "Síguenos",
+    "subtitle": "Síguenos en Instagram para estar al día y ver las últimas tendencias."
+  }
+}
