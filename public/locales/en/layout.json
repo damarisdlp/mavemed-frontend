@@ -1,0 +1,46 @@
+{
+  "nav": {
+    "treatments": "Treatments",
+    "about": "About Us",
+    "contact": "Contact Us",
+    "location": "Location",
+    "bookWhatsApp": "Book via WhatsApp"
+  },
+  "promoBanner": {
+    "text": "Access exclusive promo pricing on select treatments.",
+    "cta": "Inquire Now"
+  },
+  "footer": {
+    "leadTitle": "Give your inbox a refresh",
+    "leadSubtitle": "10% off your first facial when you sign up for our wrinkle-free, spam-free emails and SMS.",
+    "firstName": "Your First Name",
+    "lastName": "Your Full Last Name",
+    "email": "Your Email Address",
+    "phone": "Your Mobile Number",
+    "whatsappPrompt": "Are you on WhatsApp?",
+    "whatsappYes": "Yes",
+    "whatsappNo": "No",
+    "disclaimer": "Mave Medical Spa needs this contact info to keep you informed about treatments and services. You can unsubscribe at any time. To learn more, please review our",
+    "privacyPolicy": "Privacy Policy",
+    "subscribe": "Subscribe",
+    "treatmentsTitle": "Treatments",
+    "allTreatments": "All Treatments",
+    "aboutTitle": "About",
+    "aboutLink": "About Us",
+    "contactLink": "Contact",
+    "faqLink": "FAQs",
+    "locationTitle": "Location",
+    "locationLink": "Location",
+    "rights": "All rights reserved.",
+    "privacy": "Privacy",
+    "terms": "Terms",
+    "accessibility": "Accessibility"
+  },
+  "scrollTop": {
+    "aria": "Scroll to top",
+    "label": "↑ Top"
+  },
+  "language": "Language",
+  "english": "EN",
+  "spanish": "ES"
+}
