@@ -1,14 +1,29 @@
 export const damaris = {
-    name: "damaris",
-    displayName: "Damaris",
-    category: "Directors",
-    title: "Director",
-    image: "/damaris.jpg",
-    bio: "Damaris is a director",
-    favorites: [
-      {
-        serviceName: "HydraFacial MD - Face",
-        link: "/treatments/hydrafacial",
+  name: "damaris",
+  displayName: {
+    en: "Damaris",
+    es: "Damaris"
+  },
+  category: {
+    en: "Directors",
+    es: "Directoras"
+  },
+  title: {
+    en: "Director",
+    es: "Directora"
+  },
+  image: "/damaris.jpg",
+  bio: {
+    en: "Damaris is a director.",
+    es: "Damaris es una directora."
+  },
+  favorites: [
+    {
+      serviceName: {
+        en: "HydraFacial MD – Face",
+        es: "HydraFacial MD – Rostro"
       },
-    ],
-}
+      link: "/treatments/hydrafacial"
+    }
+  ]
+};
