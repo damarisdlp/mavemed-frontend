@@ -7,7 +7,7 @@ import { allTreatments } from "@/lib/data/allTreatments";
 import { useTranslation } from "next-i18next";
 
 export default function PopularTreatments() {
-  const { t } = useTranslation("common");
+  const { t } = useTranslation("treatments");
   const { locale } = useRouter();
   const popularTreatments = allTreatments.filter((t) => t && t.isPopular);
 
