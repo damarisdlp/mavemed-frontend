@@ -3,7 +3,7 @@ import Image from "next/image";
 import { useTranslation } from "next-i18next";
 
 export default function ContactUs() {
-  const { t } = useTranslation("common");
+  const { t } = useTranslation("contact");
 
   return (
     <section className="relative w-full bg-white">
