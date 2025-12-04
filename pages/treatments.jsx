@@ -8,9 +8,37 @@ import TreatmentCategories from "@/components/TreatmentCategories";
 import Footer from "@/components/Footer";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import nextI18NextConfig from "../next-i18next.config";
+import { useTranslation } from "next-i18next";
+import { useRouter } from "next/router";
 
 
 export default function TreatmentsPage() {
+  const { t } = useTranslation("common");
+  const { locale } = useRouter();
+  const currentLocale = typeof locale === "string" ? locale : "en";
+  const bannerTitle =
+    currentLocale?.startsWith("es")
+      ? t("treatmentsPage.bannerTitle", {
+          lng: "es",
+          defaultValue: "Nuestros Tratamientos",
+        })
+      : t("treatmentsPage.bannerTitle", {
+          lng: "en",
+          defaultValue: "Our Treatments",
+        });
+  const bannerSubtitle =
+    currentLocale?.startsWith("es")
+      ? t("treatmentsPage.bannerSubtitle", {
+          lng: "es",
+          defaultValue:
+            "Especialistas en inyectables cosméticos, rejuvenecimiento de la piel y terapias de grado médico para resultados que sí se notan.",
+        })
+      : t("treatmentsPage.bannerSubtitle", {
+          lng: "en",
+          defaultValue:
+            "Specializing in cosmetic injectables, skin rejuvenation, and medical-grade therapies for results-driven beauty.",
+        });
+
   return (
     <>
       <Head>
@@ -156,11 +184,10 @@ dangerouslySetInnerHTML={{
           <div className="absolute inset-0 bg-black/30 flex items-center justify-start px-10 md:px-20">
             <div className="text-white max-w-2xl">
               <h1 className="text-4xl md:text-5xl font-serif font-medium mb-4">
-                Our Treatments
+                {bannerTitle}
               </h1>
               <p className="text-base md:text-lg">
-                Specializing in cosmetic injectables, skin rejuvenation, and
-                medical-grade therapies for results-driven beauty.
+                {bannerSubtitle}
               </p>
             </div>
           </div>
