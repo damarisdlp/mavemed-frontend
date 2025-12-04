@@ -1,0 +1,24 @@
+{
+  "treatments": {
+    "popular": "Popular Treatments",
+    "all": "All Treatments",
+    "categories": {
+      "wrinkleReducers": "Wrinkle Reducers",
+      "collagenBiostimulators": "Collagen Biostimulators",
+      "dermalFillers": "Dermal Fillers",
+      "facials": "Facials",
+      "laserTreatments": "Laser Treatments",
+      "bodyTreatments": "Body Treatments",
+      "skinTightSculpt": "Skin Tightening & Sculpting",
+      "podiatry": "Podiatry"
+    },
+    "benefits": "Benefits",
+    "pricing": "Pricing",
+    "bookNow": "Book Now",
+    "learnMore": "Learn More"
+  },
+  "treatmentsPage": {
+    "bannerTitle": "Our Treatments",
+    "bannerSubtitle": "Specializing in cosmetic injectables, skin rejuvenation, and medical-grade therapies for results-driven beauty."
+  }
+}
