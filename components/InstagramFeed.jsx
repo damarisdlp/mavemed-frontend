@@ -4,7 +4,7 @@ import { useEffect } from "react";
 import { useTranslation } from "next-i18next";
 
 export default function InstagramFeed() {
-  const { t } = useTranslation("common");
+  const { t } = useTranslation("home");
 
   useEffect(() => {
     const script = document.createElement("script");
