@@ -8,9 +8,12 @@ import Footer from "@/components/Footer";
 import Team from "@/components/Team";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import nextI18NextConfig from "../next-i18next.config";
+import { useTranslation } from "next-i18next";
 
 
 export default function TeamPage() {
+  const { t } = useTranslation("common");
+
   return (
     <>
       <Head>
@@ -164,11 +167,10 @@ export default function TeamPage() {
           <div className="absolute inset-0 bg-black/30 flex items-center justify-start px-10 md:px-20">
             <div className="text-white max-w-2xl">
               <h1 className="text-4xl md:text-5xl font-serif font-medium mb-4">
-                Our Team
+                {t("team.bannerTitle")}
               </h1>
               <p className="text-base md:text-lg">
-                Specializing in cosmetic injectables, skin rejuvenation, and
-                medical-grade therapies for results-driven beauty.
+                {t("team.bannerSubtitle")}
               </p>
             </div>
           </div>
