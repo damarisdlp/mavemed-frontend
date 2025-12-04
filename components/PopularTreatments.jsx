@@ -4,15 +4,14 @@ import Link from "next/link";
 import Image from "next/image";
 import { useRouter } from 'next/router';
 import { allTreatments } from "@/lib/data/allTreatments";
+import { useTranslation } from "next-i18next";
 
 export default function PopularTreatments() {
-   const { locale } = useRouter();
-   const popularTreatments = allTreatments.filter((t) => t && t.isPopular);
-
-  console.log('Locale:', locale);
+  const { t } = useTranslation("common");
+  const { locale } = useRouter();
+  const popularTreatments = allTreatments.filter((t) => t && t.isPopular);
 
   const getLocalized = (field) => {
-    console.log('getLocalized called with:', field);
     if (typeof field === 'object' && field[locale]) return field[locale];
     if (typeof field === 'object' && field['en']) return field['en'];
     return field;
@@ -38,13 +37,13 @@ export default function PopularTreatments() {
     <section className="bg-white py-10 pb-2">
       <div className="container mx-auto px-4 flex flex-row sm:flex-row justify-between items-center sm:items-center gap-3 mb-6">
         <h2 className="text-3xl md:text-4xl font-serif text-black font-medium mx-auto sm:mx-0 sm:ml-4">
-          Popular Treatments
+          {t("treatments.popular")}
         </h2>
         <Link
           href="/treatments"
           className="text-sm underline text-gray-600 hover:text-black"
         >
-          View All
+          {t("treatments.all")}
         </Link>
       </div>
 
@@ -89,13 +88,13 @@ export default function PopularTreatments() {
                     href="https://wa.me/+526642077675"
                     className="bg-black text-white px-4 py-2 rounded-full text-xs hover:bg-[#731a2f] text-center"
                   >
-                    Book Now
+                    {t("treatments.bookNow")}
                   </Link>
                   <Link
                     href={`/treatments/${treatment.urlSlug}`}
                     className="border border-gray-300 text-black px-4 py-2 rounded-full text-xs hover:border-black text-center"
                   >
-                    Learn More
+                    {t("treatments.learnMore")}
                   </Link>
                 </div>
               </div>
