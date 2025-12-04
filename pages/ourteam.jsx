@@ -12,7 +12,7 @@ import { useTranslation } from "next-i18next";
 
 
 export default function TeamPage() {
-  const { t } = useTranslation("common");
+  const { t } = useTranslation("team");
 
   return (
     <>
@@ -188,7 +188,7 @@ export default function TeamPage() {
 export async function getStaticProps({ locale }) {
   return {
     props: {
-      ...(await serverSideTranslations(locale ?? "en", ["common"], nextI18NextConfig)),
+      ...(await serverSideTranslations(locale ?? "en", ["layout", "team"], nextI18NextConfig)),
     },
   };
 }
