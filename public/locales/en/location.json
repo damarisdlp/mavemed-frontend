@@ -1,0 +1,18 @@
+{
+  "location": {
+    "heading": "We Can't Wait to See You",
+    "subheading": "Convenient cross-border access, just minutes from the San Diego–Tijuana border.",
+    "clinicName": "Mave Medical Spa",
+    "addressLabel": "Address:",
+    "addressLine1": "Blvrd Gral Rodolfo Sánchez Taboada 10512-Interior 8a – Segundo Piso",
+    "addressLine2": "Revolución, 22010 Tijuana, B.C., Mexico",
+    "hoursLabel": "Hours:",
+    "hoursWeekday": "Monday–Friday: 9:00am – 6:00pm",
+    "hoursSaturday": "Saturday: 9:00am – 4:00pm",
+    "hoursSunday": "Sunday: Closed",
+    "phoneLabel": "Phone:",
+    "phoneNumber": "+52 664 207 7675",
+    "emailLabel": "Email:",
+    "email": "info@mavemedspa.com"
+  }
+}
