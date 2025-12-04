@@ -5,7 +5,18 @@ import { allTreatments } from "@/lib/data/allTreatments";
 export default function StaffDetails({ member }) {
   if (!member) return null;
 
+  const getLocalized = (field) => {
+    if (typeof field === "object" && field !== null) {
+      return field.en || Object.values(field)[0] || "";
+    }
+    return field ?? "";
+  };
+
   const hasFavorites = member.favorites?.length > 0;
+  const category = getLocalized(member.category);
+  const displayName = getLocalized(member.displayName);
+  const title = getLocalized(member.title);
+  const bio = getLocalized(member.bio);
 
   return (
     <div className="w-full bg-white">
@@ -18,13 +29,13 @@ export default function StaffDetails({ member }) {
             </Link>{" "}
             /{" "}
             <Link
-              href={`/ourteam/#${member.category?.replace(/\s+/g, "-").toLowerCase()}`}
+              href={`/ourteam/#${category.replace(/\s+/g, "-").toLowerCase()}`}
               className="hover:underline hover:text-black"
             >
-              {member.category}
+              {category}
             </Link>{" "}
             /{" "}
-            <span className="text-gray-700 underline">{member.displayName}</span>
+            <span className="text-gray-700 underline">{displayName}</span>
           </p>
         </div>
 
@@ -33,7 +44,7 @@ export default function StaffDetails({ member }) {
           <div className="relative w-full md:w-1/2 h-[500px] rounded overflow-hidden shadow-md">
             <Image
               src={member.image}
-              alt={member.displayName}
+              alt={displayName}
               fill
               className="object-cover"
             />
@@ -42,11 +53,11 @@ export default function StaffDetails({ member }) {
           {/* Bio */}
           <div className="w-full md:w-1/2">
             <h1 className="text-4xl font-serif text-black font-medium mt-2 mb-2">
-              {member.displayName}
+              {displayName}
             </h1>
-            <p className="text-xl text-gray-700 mb-8">{member.title}</p>
+            <p className="text-xl text-gray-700 mb-8">{title}</p>
             <p className="text-gray-700 text-base leading-relaxed whitespace-pre-line">
-              {member.bio}
+              {bio}
             </p>
           </div>
         </div>
@@ -55,16 +66,18 @@ export default function StaffDetails({ member }) {
         {hasFavorites && (
           <div className="mt-12">
             <h2 className="text-2xl text-black font-serif font-medium mb-4">
-              {member.displayName}'s Favorite Treatments
+              {displayName}'s Favorite Treatments
             </h2>
 
             {member.favorites.map((favorite, idx) => {
+              const serviceName = getLocalized(favorite.serviceName);
               const match =
                 allTreatments.find(
                   (t) =>
-                    t.serviceDisplayName === favorite.serviceName ||
+                    getLocalized(t.serviceDisplayName) === serviceName ||
                     t.urlSlug === favorite.link?.split("/").pop()
                 ) || {};
+              const matchDescription = getLocalized(match.description);
 
               const hasPromo =
                 match?.isPromoEligible &&
@@ -74,12 +87,12 @@ export default function StaffDetails({ member }) {
               return (
                 <div key={idx} className="mb-6">
                   <p className="text-md font-semibold text-black">
-                    {favorite.serviceName}
+                    {serviceName}
                   </p>
 
-                  {match?.description && (
+                  {matchDescription && (
                     <p className="text-sm text-gray-700 mt-1">
-                      {match.description}
+                      {matchDescription}
                     </p>
                   )}
 
@@ -102,7 +115,7 @@ export default function StaffDetails({ member }) {
                       href={favorite.link}
                       className="text-sm underline text-black mt-1 inline-block hover:text-[#731a2f]"
                     >
-                      Learn more about {favorite.serviceName}
+                      Learn more about {serviceName}
                     </Link>
                   )}
                 </div>
