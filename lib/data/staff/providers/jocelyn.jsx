@@ -1,5 +1,5 @@
 export const jocelyn = {
-  name: "drjocelyn",
+  name: "drajocelyn",
   displayName: {
     en: "Dr. Jocelyn",
     es: "Dra. Jocelyn"
