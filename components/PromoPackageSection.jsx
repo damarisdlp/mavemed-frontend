@@ -1,7 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
+import { useTranslation } from "next-i18next";
 
 export default function PromoPackageSection() {
+  const { t } = useTranslation("common");
+
   return (
     <section className="relative w-full bg-white">
       <div className="grid grid-cols-1 md:grid-cols-[2fr_3fr] min-h-[85vh]">
@@ -10,46 +13,46 @@ export default function PromoPackageSection() {
         <div className="flex items-center justify-center px-6 py-10">
           <div className="w-full max-w-md mx-auto text-center md:text-left">
             <h2 className="text-3xl sm:text-4xl md:text-5xl text-black font-serif font-medium mb-7 leading-tight">
-              Flexible Med Spa Packages with Exclusive Savings
+              {t("packages.title")}
             </h2>
 
             <p className="text-gray-700 mb-6 text-base md:text-lg leading-relaxed">
-              Get long-lasting aesthetic results without paying full price upfront. Our multi-session packages are perfect for U.S. patients crossing from San Diego and Tijuana locals alike.
+              {t("packages.subtitle")}
             </p>
 
             <p className="text-black mb-4 font-semibold text-base md:text-lg">
-              Your Plan Includes:
+              {t("packages.planIncludes")}
             </p>
 
             <ul className="space-y-6 text-base md:text-lg text-gray-700 text-left">
               <li className="flex items-start gap-4">
                 <Image src="/money-icon.png" alt="Special pricing on bundles" width={30} height={30} />
-                <span><strong>Special pricing on bundled services</strong> which include Collagen Stimulators (like Sculptra), RF Microneedling (Scarlet S RF), Ultraformer MPT, Dermal Fillers, PDO Threads, and more.</span>
+                <span>{t("packages.item1")}</span>
               </li>
               <li className="flex items-start gap-4">
                 <Image src="/percent-icon.png" alt="20% deposit" width={30} height={30} />
-                <span><strong>Only 20% deposit required per session</strong> so you can skip the financial pressure of full prepayment. Your deposit is fully credited toward your next visit.</span>
+                <span>{t("packages.item2")}</span>
               </li>
               <li className="flex items-start gap-4">
                 <Image src="/sparkle-icon.png" alt="20% deposit" width={30} height={30} />
-                <span><strong>Personalized plans</strong> combining advanced technologies and proven aesthetic techniques for natural-looking, long-term skin rejuvenation.</span>
+                <span>{t("packages.item3")}</span>
               </li>
               <li className="flex items-start gap-4">
                 <Image src="/dr-icon.png" alt="Custom plan" width={30} height={30} />
-                <span><strong>Doctor-led care</strong> at every stage to ensure safe, effective results from Tijuana’s trusted medical spa professionals.</span>
+                <span>{t("packages.item4")}</span>
               </li>
               <li className="flex items-start gap-4">
                 <Image src="/date-icon.png" alt="Custom plan" width={30} height={30} />
-                <span><strong>VIP treatment perks</strong> which include priority scheduling, complimentary upgrades, bonus boosters, and access to limited-time medical spa promotions.</span>
+                <span>{t("packages.item5")}</span>
               </li>
             </ul>
 
             <p className="text-black mt-8 mb-2 font-semibold text-base md:text-lg">
-              Ready to start your transformation?
+              {t("packages.bottomTitle")}
             </p>
 
             <p className="text-gray-700 text-base md:text-lg leading-relaxed">
-              Book your consultation today and discover what’s possible with flexible care at Mave Medical Spa.
+              {t("packages.bottomCopy")}
             </p>
 
             <div className="mt-6 flex justify-center">
@@ -57,7 +60,7 @@ export default function PromoPackageSection() {
                 href="/treatments"
                 className="inline-flex items-center justify-center bg-black text-white px-6 py-3 rounded-full hover:bg-[#731a2f] transition text-center"
               >
-                Explore Services
+                {t("packages.cta")}
               </Link>
             </div>
           </div>
