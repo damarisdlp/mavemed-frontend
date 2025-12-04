@@ -1,8 +1,10 @@
 "use client"; // add this if you're in app directory or Next.js 13+
 
 import { useState, useEffect } from "react";
+import { useTranslation } from "next-i18next";
 
 export default function ScrollToTopButton() {
+  const { t } = useTranslation("common");
   const [show, setShow] = useState(false);
 
   useEffect(() => {
@@ -17,9 +19,9 @@ export default function ScrollToTopButton() {
     <button
       onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
       className="fixed bottom-6 right-6 z-40 bg-black text-white px-4 py-2 rounded-full shadow-lg text-sm hover:bg-[#731a2f] transition"
-      aria-label="Scroll to top"
+      aria-label={t("scrollTop.aria")}
     >
-      ↑ Top
+      {t("scrollTop.label")}
     </button>
   );
 }
