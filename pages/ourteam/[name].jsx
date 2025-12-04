@@ -109,7 +109,11 @@ export default function TeamMemberPage() {
 export async function getServerSideProps({ locale }) {
   return {
     props: {
-      ...(await serverSideTranslations(locale ?? "en", ["common"], nextI18NextConfig)),
+      ...(await serverSideTranslations(
+        locale ?? "en",
+        ["layout", "team", "home"],
+        nextI18NextConfig
+      )),
     },
   };
 }
