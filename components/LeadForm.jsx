@@ -5,7 +5,7 @@ import { useState } from "react";
 import { useTranslation } from "next-i18next";
 
 export default function LeadForm() {
-  const { t } = useTranslation("common");
+  const { t } = useTranslation("home");
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
