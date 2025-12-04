@@ -5,9 +5,18 @@ import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
 import { allStaff } from "@/lib/data/allStaff";
 import { useTranslation } from "next-i18next";
+import { useRouter } from "next/router";
 
 export default function AboutSection() {
   const { t } = useTranslation("common");
+  const { locale } = useRouter();
+
+  const getLocalized = (field) => {
+    if (typeof field === "object" && field !== null) {
+      return field[locale] || field.en || Object.values(field)[0] || "";
+    }
+    return field;
+  };
 
   const [sliderRef, slider] = useKeenSlider({
     loop: true,
@@ -135,9 +144,9 @@ export default function AboutSection() {
                 <div className="p-4 flex-1 flex flex-col justify-between text-center">
                   <div>
                     <h3 className="text-lg font-serif text-black font-medium mb-1">
-                      {s.displayName}
+                      {getLocalized(s.displayName)}
                     </h3>
-                    <p className="text-sm text-gray-600 mb-3">{s.title}</p>
+                    <p className="text-sm text-gray-600 mb-3">{getLocalized(s.title)}</p>
                   </div>
                   <Link
                     href={`/ourteam/${s.name.toLowerCase()}`}
