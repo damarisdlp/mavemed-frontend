@@ -3,6 +3,8 @@ import Header from "@/components/Header"
 import LocationSection from "@/components/LocationSection"
 import Footer from "@/components/Footer"
 import Head from "next/head";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import nextI18NextConfig from "../next-i18next.config";
 
 export default function Location() {
   return (
@@ -106,4 +108,12 @@ export default function Location() {
     </div>
      </>
   )
+}
+
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale ?? "en", ["common"], nextI18NextConfig)),
+    },
+  };
 }
