@@ -1,0 +1,16 @@
+{
+  "contactUs": {
+    "title": "Chat with Us",
+    "phoneTitle": "Text or Call Us",
+    "phoneNumber": "+52 664 207 7675",
+    "emailTitle": "Email Us",
+    "email": "info@mavemedspa.com",
+    "locationTitle": "Location",
+    "addressLine1": "Blvrd Gral Rodolfo Sánchez Taboada 10512-Interior 8a – Segundo Piso",
+    "addressLine2": "Revolución, 22010 Tijuana, B.C., Mexico",
+    "howToFindUs": "How to find us:",
+    "stairs1": "Stairs facing Avenida Río Yaqui",
+    "stairs2": "Stairs facing Calle Río Nazas",
+    "cta": "Explore Our Med Spa Treatments"
+  }
+}
