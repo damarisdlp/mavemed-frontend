@@ -13,7 +13,7 @@ import { useRouter } from "next/router";
 
 
 export default function TreatmentsPage() {
-  const { t } = useTranslation("common");
+  const { t } = useTranslation("treatments");
   const { locale } = useRouter();
   const currentLocale = typeof locale === "string" ? locale : "en";
   const bannerTitle =
@@ -205,7 +205,7 @@ dangerouslySetInnerHTML={{
 export async function getStaticProps({ locale }) {
   return {
     props: {
-      ...(await serverSideTranslations(locale ?? "en", ["common"], nextI18NextConfig)),
+      ...(await serverSideTranslations(locale ?? "en", ["layout", "treatments"], nextI18NextConfig)),
     },
   };
 }
