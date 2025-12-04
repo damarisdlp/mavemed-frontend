@@ -5,9 +5,9 @@ module.exports = {
     defaultLocale: "en",
     locales: ["en", "es"],
   },
-  ns: ["common"],
+  ns: ["layout", "home", "treatments", "team", "contact", "location"],
   fallbackLng: "en",
-  defaultNS: "common",
+  defaultNS: "layout",
   localePath: path.resolve("./public/locales"),
   reloadOnPrerender: process.env.NODE_ENV === "development",
 };
