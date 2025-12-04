@@ -13,6 +13,14 @@ import nextI18NextConfig from "../../next-i18next.config";
 export default function TeamMemberPage() {
   const router = useRouter();
   const { name } = router.query;
+  const currentLocale = typeof router.locale === "string" ? router.locale : "en";
+
+  const getLocalized = (field) => {
+    if (typeof field === "object" && field !== null) {
+      return field[currentLocale] || field.en || Object.values(field)[0] || "";
+    }
+    return field;
+  };
   
   if (!router.isReady) {
     return <p className="text-center mt-10">Loading...</p>;
@@ -60,8 +68,8 @@ export default function TeamMemberPage() {
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Person",
-              "name": member.displayName,
-              "jobTitle": member.title,
+              "name": getLocalized(member.displayName),
+              "jobTitle": getLocalized(member.title),
               "image": `https://www.mavemedspa.com${member.image}`,
               "worksFor": {
                 "@type": "MedicalBusiness",
@@ -69,7 +77,7 @@ export default function TeamMemberPage() {
                 "url": "https://www.mavemedspa.com"
               },
               "url": `https://www.mavemedspa.com/ourteam/${member.name}`,
-              "description": member.bio.slice(0, 160)
+              "description": getLocalized(member.bio).slice(0, 160)
             })
           }}
         />
@@ -78,7 +86,7 @@ export default function TeamMemberPage() {
       <section className="bg-white">
         <PromoBanner />
         <Header />
-        <StaffDetails member={member} />
+        <StaffDetails member={{ ...member, displayName: getLocalized(member.displayName), title: getLocalized(member.title), bio: getLocalized(member.bio) }} />
         <ContactCTA />
         <Footer />
       </section>
