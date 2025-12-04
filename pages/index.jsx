@@ -1,6 +1,8 @@
 import Head from "next/head";
 import Script from "next/script";
 import { useState } from "react";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import nextI18NextConfig from "../next-i18next.config";
 
 import LeadForm from "@/components/LeadForm";
 import ApproachSection from "@/components/ApproachSection";
@@ -136,4 +138,12 @@ export default function Home() {
       <Footer />
     </>
   );
+}
+
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale ?? "en", ["common"], nextI18NextConfig)),
+    },
+  };
 }
