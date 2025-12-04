@@ -1,14 +1,29 @@
 export const vicky = {
-    name: "vicky",
-    displayName: "Vicky",
-    category: "Cosmetologists",
-    title: "Cosmetologist",
-    image: "/vicky.jpg",
-    bio: "Vicky is a cosmetologist",
-    favorites: [
-      {
-        serviceName: "HydraFacial MD - Face",
-        link: "/treatments/hydrafacial",
+  name: "vicky",
+  displayName: {
+    en: "Vicky",
+    es: "Vicky"
+  },
+  category: {
+  en: "Cosmetologists",
+    es: "Cosmetólogas"
+  },
+  title: {
+    en: "Cosmetologist",
+    es: "Cosmetóloga"
+  },
+  image: "/vicky.jpg",
+  bio: {
+    en: "Vicky is a cosmetologist.",
+    es: "Vicky es una cosmetóloga."
+  },
+  favorites: [
+    {
+      serviceName: {
+        en: "HydraFacial MD – Face",
+        es: "HydraFacial MD – Rostro"
       },
-    ],
-}
+      link: "/treatments/hydrafacial"
+    }
+  ]
+};
