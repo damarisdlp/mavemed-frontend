@@ -1,0 +1,24 @@
+{
+  "treatments": {
+    "popular": "Tratamientos Populares",
+    "all": "Todos los Tratamientos",
+    "categories": {
+      "wrinkleReducers": "Reductores de Arrugas",
+      "collagenBiostimulators": "Bioestimuladores de Colágeno",
+      "dermalFillers": "Rellenos Dérmicos",
+      "facials": "Tratamientos Faciales",
+      "laserTreatments": "Tratamientos Láser",
+      "bodyTreatments": "Tratamientos Corporales",
+      "skinTightSculpt": "Tensado y Esculpido de Piel",
+      "podiatry": "Podología"
+    },
+    "benefits": "Beneficios",
+    "pricing": "Precios",
+    "bookNow": "Reservar Ahora",
+    "learnMore": "Saber Más"
+  },
+  "treatmentsPage": {
+    "bannerTitle": "Nuestros Tratamientos",
+    "bannerSubtitle": "Especialistas en inyectables cosméticos, rejuvenecimiento de la piel y terapias de grado médico para resultados que sí se notan."
+  }
+}
