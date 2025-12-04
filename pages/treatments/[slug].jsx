@@ -29,13 +29,18 @@ export default function TreatmentPage() {
 
   console.log("Slug:", slug);
   console.log("Locale:", currentLocale);
-  console.log("All treatments:", allTreatments.map((t) => t.urlSlug));
+  console.log(
+    "All treatments:",
+    allTreatments.filter(Boolean).map((t) => t.urlSlug)
+  );
 
   if (!router.isReady) {
     return <p className="text-center mt-10">Loading...</p>;
   }
 
-  const treatment = allTreatments.find((t) => t.urlSlug === slug);
+  const treatment = allTreatments.find(
+    (t) => t && t.urlSlug === slug
+  );
 
   if (!treatment) {
     return (
@@ -81,7 +86,7 @@ export default function TreatmentPage() {
 export async function getServerSideProps({ locale }) {
   return {
     props: {
-      ...(await serverSideTranslations(locale ?? "en", ["common"], nextI18NextConfig)),
+      ...(await serverSideTranslations(locale ?? "en", ["layout", "home"], nextI18NextConfig)),
     },
   };
 }
