@@ -6,8 +6,8 @@ export const botox = {
     es: "Reductores de Arrugas"
   },
   serviceDisplayName: {
-    en: "Wrinkle Reducer - Botox",
-    es: "Reductor de Arrugas - Botox"
+    en: "Wrinkle Reducer - Botox®",
+    es: "Reductor de Arrugas - Botox®"
   },
   isPopular: true,
   isPromoEligible: true,
@@ -33,8 +33,8 @@ export const botox = {
       es: "Los retoques a esta tarifa solo son aplicables dentro de 1-2 semanas después de la aplicación inicial en el "
     },
     {
-      en: "Touch-ups on Botox application outside of the exclusive price option are subject to the standard base rate",
-      es: "Los retoques en la aplicación de Botox fuera de la opción de precio exclusivo están sujetos a la tarifa base estándar"
+      en: "Touch-ups on Botox® application outside of the exclusive price option are subject to the standard base rate",
+      es: "Los retoques en la aplicación de Botox® fuera de la opción de precio exclusivo están sujetos a la tarifa base estándar"
     }
   ],
   pricing: {
@@ -217,8 +217,8 @@ export const botox = {
   faq: [
     {
       question: {
-        en: "How long does Botox take to work?",
-        es: "¿Cuánto tiempo tarda el Botox en hacer efecto?"
+        en: "How long does Botox® take to work?",
+        es: "¿Cuánto tiempo tarda el Botox® en hacer efecto?"
       },
       answer: {
         en: "You may begin to see softening of lines within 3 to 5 days, but full results usually appear between 10 to 14 days after treatment.",
@@ -227,12 +227,12 @@ export const botox = {
     },
     {
       question: {
-        en: "How long do Botox results last?",
-        es: "¿Cuánto duran los resultados del Botox?"
+        en: "How long do Botox® results last?",
+        es: "¿Cuánto duran los resultados del Botox®?"
       },
       answer: {
-        en: "Botox typically lasts 3 to 4 months. Longevity may vary depending on your metabolism, lifestyle, and treatment area.",
-        es: "El Botox típicamente dura 3 a 4 meses. La longevidad puede variar dependiendo de su metabolismo, estilo de vida y área de tratamiento."
+        en: "Botox® typically lasts 3 to 4 months. Longevity may vary depending on your metabolism, lifestyle, and treatment area.",
+        es: "El Botox® típicamente dura 3 a 4 meses. La longevidad puede variar dependiendo de su metabolismo, estilo de vida y área de tratamiento."
       }
     },
     {
@@ -247,8 +247,8 @@ export const botox = {
     },
     {
       question: {
-        en: "Can I wear makeup or skincare after Botox?",
-        es: "¿Puedo usar maquillaje o cuidado de la piel después del Botox?"
+        en: "Can I wear makeup or skincare after Botox®?",
+        es: "¿Puedo usar maquillaje o cuidado de la piel después del Botox®?"
       },
       answer: {
         en: "Yes, but wait at least 4 hours before applying makeup and avoid rubbing the treated areas to prevent product migration.",
@@ -267,22 +267,22 @@ export const botox = {
     },
     {
       question: {
-        en: "Is Botox safe?",
-        es: "¿Es seguro el Botox?"
+        en: "Is Botox® safe?",
+        es: "¿Es seguro el Botox®?"
       },
       answer: {
-        en: "Botox is FDA-approved and considered very safe when administered by trained medical professionals. At Mave, treatments are performed under medical supervision using only certified products.",
-        es: "El Botox está aprobado por la FDA y se considera muy seguro cuando es administrado por profesionales médicos capacitados. En Mave, los tratamientos se realizan bajo supervisión médica utilizando solo productos certificados."
+        en: "Botox® is FDA-approved and considered very safe when administered by trained medical professionals. At Mave, treatments are performed under medical supervision using only certified products.",
+        es: "El Botox® está aprobado por la FDA y se considera muy seguro cuando es administrado por profesionales médicos capacitados. En Mave, los tratamientos se realizan bajo supervisión médica utilizando solo productos certificados."
       }
     },
     {
       question: {
-        en: "Can I combine Botox with other treatments?",
-        es: "¿Puedo combinar Botox con otros tratamientos?"
+        en: "Can I combine Botox® with other treatments?",
+        es: "¿Puedo combinar Botox® con otros tratamientos?"
       },
       answer: {
-        en: "Absolutely. Botox can be safely combined with treatments like HydraFacial, Sculptra, or laser resurfacing for enhanced results. Your provider will guide you on the ideal timing between procedures.",
-        es: "Absolutamente. El Botox se puede combinar de manera segura con tratamientos como HydraFacial, Sculptra o resurfacing láser para resultados mejorados. Su proveedor le guiará sobre el tiempo ideal entre procedimientos."
+        en: "Absolutely. Botox® can be safely combined with treatments like HydraFacial, Sculptra, or laser resurfacing for enhanced results. Your provider will guide you on the ideal timing between procedures.",
+        es: "Absolutamente. El Botox® se puede combinar de manera segura con tratamientos como HydraFacial, Sculptra o resurfacing láser para resultados mejorados. Su proveedor le guiará sobre el tiempo ideal entre procedimientos."
       }
     }
   ]
