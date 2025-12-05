@@ -23,12 +23,12 @@ export default function AddOnSection({ addOns = [] }) {
   if (!addOns.length || !allTreatments?.length) return null;
 
   const heading =
-    locale === "es" ? "Opciones de complemento" : "Add On Options";
+    locale === "es" ? "Opciones de Complemento" : "Add On Options";
   const priceLabel = locale === "es" ? "Precio:" : "Price:";
   const promoLabel =
-    locale === "es" ? "Precio exclusivo:" : "Exclusive pricing:";
+    locale === "es" ? "Precio Exclusivo:" : "Exclusive pricing:";
   const learnMorePrefix =
-    locale === "es" ? "Más información sobre " : "Learn more about ";
+    locale === "es" ? "Más Información Sobre " : "Learn More About ";
 
   return (
     <div className="mb-6 text-black">
