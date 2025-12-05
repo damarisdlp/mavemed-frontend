@@ -114,7 +114,7 @@ export const pdoThreads = {
           es: "Rostro completo y cuello"
         },
         isPromoEligible: false,
-        optionPrice: { en: "$TBD USD", es: "$TBD USD" },
+        optionPrice: { en: "$TBD", es: "$TBD" },
         optionCurrency: "USD",
         optionPromoPrice: "",
         optionPromoPriceCurrency: "USD",
