@@ -56,10 +56,10 @@ export default function LeadForm() {
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-5 items-center">
         {/* Text Section */}
         <div>
-          <h2 className=" text-black text-3xl md:text-4xl font-serif font-medium mb-4">
+          <h2 className=" text-black text-3xl md:text-3xl font-serif font-medium mb-4">
             {t("leadForm.title")}
           </h2>
-          <p className="text-gray-700 text-base md:text-lg">
+          <p className="text-gray-700 text-base md:text-m">
             {t("leadForm.subtitle")}
           </p>
         </div>
