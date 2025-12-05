@@ -1,3 +1,14 @@
+const parsePriceValue = (priceString) => {
+  if (typeof priceString !== "string") return Infinity;
+  const numeric = parseFloat(priceString.replace(/[^0-9.]/g, ""));
+  return Number.isFinite(numeric) ? numeric : Infinity;
+};
+
+const sortByPrice = (options = []) =>
+  [...options].sort(
+    (a, b) => parsePriceValue(a?.optionPrice) - parsePriceValue(b?.optionPrice)
+  );
+
 export const co2Laser = {
   urlSlug: "co2-laser",
   category: "laser-resurfacing",
@@ -42,19 +53,19 @@ export const co2Laser = {
   ],
 
   pricing: {
-    startingPrice: "$185",
+    startingPrice: "$250",
     startingPriceCurrency: "USD",
     promoPrice: "$",
     promoPriceCurrency: "USD",
 
-    options: [
+    options: sortByPrice([
       {
         optionName: {
-          en: "CO₂ Laser - Custom Zone (Starting Price)",
-          es: "Láser CO₂ - Zona Personalizada (Precio Inicial)"
+          en: "Décolleté",
+          es: "Escote"
         },
         isPromoEligible: false,
-        optionPrice: "$185",
+        optionPrice: "$315",
         optionCurrency: "USD",
         optionPromoPrice: "$",
         optionPromoPriceCurrency: "USD",
@@ -62,20 +73,8 @@ export const co2Laser = {
       },
       {
         optionName: {
-          en: "CO₂ Laser - Scars (Subject Evaluation)",
-          es: "Láser CO₂ - Cicatrices (Según Evaluación)"
-        },
-        isPromoEligible: false,
-        optionPrice: "$200",
-        optionCurrency: "USD",
-        optionPromoPrice: "$",
-        optionPromoPriceCurrency: "USD",
-        notes: []
-      },
-      {
-        optionName: {
-          en: "CO₂ Laser - Under Eye",
-          es: "Láser CO₂ - Debajo de los Ojos"
+          en: "Under Eye",
+          es: "Ojeras"
         },
         isPromoEligible: false,
         optionPrice: "$250",
@@ -86,20 +85,25 @@ export const co2Laser = {
       },
       {
         optionName: {
-          en: "CO₂ Laser - Décolleté",
-          es: "Láser CO₂ - Escote"
+          en: "Small Zone",
+          es: "Zona Pequeña"
         },
         isPromoEligible: false,
-        optionPrice: "$250",
+        optionPrice: "$325",
         optionCurrency: "USD",
         optionPromoPrice: "$",
         optionPromoPriceCurrency: "USD",
-        notes: []
+        notes: [
+          {
+            en: "Area total [16 in² - 64 in²]. Approximately one to two palms — similar to a credit card up to half a sheet of paper.",
+            es: "Área total [103 cm² - 413 cm²]. Aproximadamente de una a dos palmas de la mano, similar al tamaño de una tarjeta de crédito hasta media hoja de papel."
+          }
+        ]
       },
       {
         optionName: {
-          en: "CO₂ Laser - Hands",
-          es: "Láser CO₂ - Manos"
+          en: "Hands",
+          es: "Manos"
         },
         isPromoEligible: false,
         optionPrice: "$300",
@@ -110,8 +114,8 @@ export const co2Laser = {
       },
       {
         optionName: {
-          en: "CO₂ Laser - Neck",
-          es: "Láser CO₂ - Cuello"
+          en: "Neck",
+          es: "Cuello"
         },
         isPromoEligible: false,
         optionPrice: "$385",
@@ -122,8 +126,8 @@ export const co2Laser = {
       },
       {
         optionName: {
-          en: "CO₂ Laser - Chest",
-          es: "Láser CO₂ - Pecho"
+          en: "Chest",
+          es: "Pecho"
         },
         isPromoEligible: false,
         optionPrice: "$400",
@@ -132,11 +136,10 @@ export const co2Laser = {
         optionPromoPriceCurrency: "USD",
         notes: []
       },
-
       {
         optionName: {
-          en: "CO₂ Laser - Full Face",
-          es: "Láser CO₂ - Cara Completa"
+          en: "Face",
+          es: "Rostro"
         },
         isPromoEligible: false,
         optionPrice: "$550",
@@ -145,11 +148,10 @@ export const co2Laser = {
         optionPromoPriceCurrency: "USD",
         notes: []
       },
-
       {
         optionName: {
-          en: "CO₂ Laser - Full Face + Neck",
-          es: "Láser CO₂ - Cara Completa + Cuello"
+          en: "Face + Neck",
+          es: "Rostro + Cuello"
         },
         isPromoEligible: false,
         optionPrice: "$650",
@@ -158,29 +160,27 @@ export const co2Laser = {
         optionPromoPriceCurrency: "USD",
         notes: []
       },
-
       {
         optionName: {
-          en: "CO₂ Laser - Stretch Marks (Abdomen)",
-          es: "Láser CO₂ - Estrías (Abdomen)"
+          en: "Medium Zone",
+          es: "Zona Mediana"
         },
         isPromoEligible: false,
-        optionPrice: "$845",
+        optionPrice: "$675",
         optionCurrency: "USD",
         optionPromoPrice: "$",
         optionPromoPriceCurrency: "USD",
         notes: [
           {
-            en: "Other zones treatable, price subject to evaluation",
-            es: "Otras zonas disponibles, precio sujeto a evaluación"
+            en: "Area total [81 in² - 167 in²]. Four to six palms — roughly the size of a full sheet of paper.",
+            es: "Área total [523 cm² - 1080.3 cm²]. De cuatro a seis palmas de la mano, aproximadamente del tamaño de una hoja completa de papel."
           }
         ]
       },
-
       {
         optionName: {
-          en: "CO₂ Laser - Full Face + Neck + Décolleté",
-          es: "Láser CO₂ - Cara Completa + Cuello + Escote"
+          en: "Face + Neck + Décolleté",
+          es: "Rostro + Cuello + Escote"
         },
         isPromoEligible: false,
         optionPrice: "$850",
@@ -189,11 +189,10 @@ export const co2Laser = {
         optionPromoPriceCurrency: "USD",
         notes: []
       },
-
       {
         optionName: {
-          en: "CO₂ Laser - Full Face + Neck + Décolleté + Chest",
-          es: "Láser CO₂ - Cara Completa + Cuello + Escote + Pecho"
+          en: "Face + Neck + Décolleté + Chest",
+          es: "Rostro + Cuello + Escote + Pecho"
         },
         isPromoEligible: false,
         optionPrice: "$950",
@@ -201,8 +200,25 @@ export const co2Laser = {
         optionPromoPrice: "$",
         optionPromoPriceCurrency: "USD",
         notes: []
+      },
+      {
+        optionName: {
+          en: "Large Zone",
+          es: "Zona Grande"
+        },
+        isPromoEligible: false,
+        optionPrice: "$1,275",
+        optionCurrency: "USD",
+        optionPromoPrice: "$",
+        optionPromoPriceCurrency: "USD",
+        notes: [
+          {
+            en: "Area total [196 in² - 324 in²]. Eight to twelve palms — about the size of a square pillow or large square.",
+            es: "Área total [1264 cm² - 2090 cm²]. De ocho a doce palmas de la mano, aproximadamente del tamaño de un cojín cuadrado o un cuadrado grande."
+          }
+        ]
       }
-    ]
+    ])
   },
 
   goals: [
