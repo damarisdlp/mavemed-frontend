@@ -9,7 +9,7 @@ export const ipl = {
     en: "IPL Photofacial (Harmony XL)",
     es: "Fotofacial IPL (Harmony XL)"
   },
-  isPopular: false,
+  isPopular: true,
   isPromoEligible: false,
   images: {
     primary: "/ipl.jpg",
@@ -38,141 +38,222 @@ export const ipl = {
     }
   ],
   pricing: {
-    startingPrice: "$30",
-    startingPriceCurrency: "USD",
+    startingPrice: {
+      en: "$650",
+      es: "$650"
+    },
+    startingPriceCurrency: "MXN",
     promoPrice: "",
-    promoPriceCurrency: "USD",
+    promoPriceCurrency: "MXN",
     options: [
       {
         optionName: {
-          en: "IPL Photofacial – Scars (subject to evaluation)",
-          es: "Fotofacial IPL – Cicatrices (sujeto a evaluación)"
+          en: "Hands",
+          es: "Manos"
         },
         isPromoEligible: false,
-        optionPrice: "$30",
-        optionCurrency: "USD",
+        optionPrice: {
+          en: "$650",
+          es: "$650"
+        },
+        optionCurrency: "MXN",
         optionPromoPrice: "",
-        optionPromoPriceCurrency: "USD",
+        optionPromoPriceCurrency: "MXN",
         notes: null
       },
       {
         optionName: {
-          en: "IPL Photofacial – Neck",
-          es: "Fotofacial IPL – Cuello"
+          en: "Small Zone",
+          es: "Zona Pequeña"
         },
         isPromoEligible: false,
-        optionPrice: "$35",
-        optionCurrency: "USD",
+        optionPrice: {
+          en: "$675",
+          es: "$675"
+        },
+        optionCurrency: "MXN",
+        optionPromoPrice: "$",
+        optionPromoPriceCurrency: "MXN",
+        notes: [
+          {
+            en: "Area total [16 in² - 64 in²]. Approximately one to two palms — similar to a credit card up to half a sheet of paper.",
+            es: "Área total [103 cm² - 413 cm²]. Aproximadamente de una a dos palmas de la mano, similar al tamaño de una tarjeta de crédito hasta media hoja de papel."
+          }
+        ]
+      },
+      {
+        optionName: {
+          en: "Face",
+          es: "Rostro"
+        },
+        isPromoEligible: false,
+        optionPrice: {
+          en: "$700",
+          es: "$700"
+        },
+        optionCurrency: "MXN",
         optionPromoPrice: "",
-        optionPromoPriceCurrency: "USD",
+        optionPromoPriceCurrency: "MXN",
         notes: null
       },
       {
         optionName: {
-          en: "IPL Photofacial – Décolleté",
-          es: "Fotofacial IPL – Escote"
+          en: "Neck",
+          es: "Cuello"
         },
         isPromoEligible: false,
-        optionPrice: "$35",
-        optionCurrency: "USD",
+        optionPrice: {
+          en: "$700",
+          es: "$700"
+        },
+        optionCurrency: "MXN",
         optionPromoPrice: "",
-        optionPromoPriceCurrency: "USD",
+        optionPromoPriceCurrency: "MXN",
         notes: null
       },
       {
         optionName: {
-          en: "IPL Photofacial – Full face",
-          es: "Fotofacial IPL – Rostro completo"
+          en: "Décolleté",
+          es: "Escote"
         },
         isPromoEligible: false,
-        optionPrice: "$40",
-        optionCurrency: "USD",
+        optionPrice: {
+          en: "$700",
+          es: "$700"
+        },
+        optionCurrency: "MXN",
         optionPromoPrice: "",
-        optionPromoPriceCurrency: "USD",
+        optionPromoPriceCurrency: "MXN",
         notes: null
       },
       {
         optionName: {
-          en: "IPL Photofacial – Hands",
-          es: "Fotofacial IPL – Manos"
+          en: "Chest",
+          es: "Pecho"
         },
         isPromoEligible: false,
-        optionPrice: "$40",
-        optionCurrency: "USD",
+        optionPrice: {
+          en: "$700",
+          es: "$700"
+        },
+        optionCurrency: "MXN",
         optionPromoPrice: "",
-        optionPromoPriceCurrency: "USD",
+        optionPromoPriceCurrency: "MXN",
         notes: null
       },
       {
         optionName: {
-          en: "IPL Photofacial – Chest",
-          es: "Fotofacial IPL – Pecho"
+          en: "Face + Neck",
+          es: "Rostro + Cuello"
         },
         isPromoEligible: false,
-        optionPrice: "$50",
-        optionCurrency: "USD",
+        optionPrice: {
+          en: "$1,400",
+          es: "$1,400"
+        },
+        optionCurrency: "MXN",
         optionPromoPrice: "",
-        optionPromoPriceCurrency: "USD",
+        optionPromoPriceCurrency: "MXN",
         notes: null
       },
       {
         optionName: {
-          en: "IPL Photofacial – Full face and neck",
-          es: "Fotofacial IPL – Rostro y cuello"
+          en: "Medium Zone",
+          es: "Zona Mediana"
         },
         isPromoEligible: false,
-        optionPrice: "$70",
-        optionCurrency: "USD",
+        optionPrice: {
+          en: "$1,565",
+          es: "$1,565"
+        },
+        optionCurrency: "MXN",
         optionPromoPrice: "",
-        optionPromoPriceCurrency: "USD",
+        optionPromoPriceCurrency: "MXN",
+        notes: [
+          {
+            en: "Area total [81 in² - 167 in²]. Four to six palms — roughly the size of a full sheet of paper.",
+            es: "Área total [523 cm² - 1080.3 cm²]. De cuatro a seis palmas de la mano, aproximadamente del tamaño de una hoja completa de papel."
+          }
+        ]
+      },
+      {
+        optionName: {
+          en: "Face + Neck + Décolleté",
+          es: "Rostro + Cuello + Escote"
+        },
+        isPromoEligible: false,
+        optionPrice: {
+          en: "$2,100",
+          es: "$2,100"
+        },
+        optionCurrency: "MXN",
+        optionPromoPrice: "",
+        optionPromoPriceCurrency: "MXN",
         notes: null
       },
       {
         optionName: {
-          en: "IPL Photofacial – Full face, neck and décolleté",
-          es: "Fotofacial IPL – Rostro, cuello y escote"
+          en: "Face + Neck + Décolleté + Chest",
+          es: "Rostro + Cuello + Escote + Pecho"
         },
         isPromoEligible: false,
-        optionPrice: "$100",
-        optionCurrency: "USD",
+        optionPrice: {
+          en: "$2,800",
+          es: "$2,800"
+        },
+        optionCurrency: "MXN",
         optionPromoPrice: "",
-        optionPromoPriceCurrency: "USD",
+        optionPromoPriceCurrency: "MXN",
         notes: null
       },
       {
         optionName: {
-          en: "IPL Photofacial – Full legs",
-          es: "Fotofacial IPL – Piernas completas"
+          en: "Large Zone",
+          es: "Zona Grande"
         },
         isPromoEligible: false,
-        optionPrice: "$125",
-        optionCurrency: "USD",
+        optionPrice: {
+          en: "$3,450",
+          es: "$3,450"
+        },
+        optionCurrency: "MXN",
         optionPromoPrice: "",
-        optionPromoPriceCurrency: "USD",
+        optionPromoPriceCurrency: "MXN",
+        notes: [
+          {
+            en: "Area total [196 in² - 324 in²]. Eight to twelve palms — about the size of a square pillow or large square.",
+            es: "Área total [1264 cm² - 2090 cm²]. De ocho a doce palmas de la mano, aproximadamente del tamaño de un cojín cuadrado o un cuadrado grande."
+          }
+        ]
+      },
+      {
+        optionName: {
+          en: "Legs",
+          es: "Piernas"
+        },
+        isPromoEligible: false,
+        optionPrice: {
+          en: "$3,450",
+          es: "$3,450"
+        },
+        optionCurrency: "MXN",
+        optionPromoPrice: "",
+        optionPromoPriceCurrency: "MXN",
         notes: null
       },
       {
         optionName: {
-          en: "IPL Photofacial – Full face, neck, décolleté and chest",
-          es: "Fotofacial IPL – Rostro, cuello, escote y pecho"
+          en: "Hands + Legs",
+          es: "Manos + Piernas"
         },
         isPromoEligible: false,
-        optionPrice: "$140",
-        optionCurrency: "USD",
-        optionPromoPrice: "",
-        optionPromoPriceCurrency: "USD",
-        notes: null
-      },
-      {
-        optionName: {
-          en: "IPL Photofacial – Hands and full legs",
-          es: "Fotofacial IPL – Manos y piernas completas"
+        optionPrice: {
+          en: "$4,100",
+          es: "$4,100"
         },
-        isPromoEligible: false,
-        optionPrice: "$160",
-        optionCurrency: "USD",
+        optionCurrency: "MXN",
         optionPromoPrice: "",
-        optionPromoPriceCurrency: "USD",
+        optionPromoPriceCurrency: "MXN",
         notes: null
       }
     ]
