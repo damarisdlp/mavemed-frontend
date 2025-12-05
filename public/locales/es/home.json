@@ -6,18 +6,18 @@
     "cta": "Agenda tu Consulta"
   },
   "aboutSection": {
-    "title": "Sobre Mave",
-    "subtitle": "Clínica Estética de Confianza en Tijuana, México",
+    "title": "Conoce a Mave",
+    "subtitle": "Clínica Estética Médica de Confianza en Tijuana, México",
     "p1": "En Mave Medical Spa en Tijuana, combinamos ciencia médica, estética y medicina regenerativa para ofrecer un cuidado cosmético personalizado y enfocado en resultados. A minutos de la frontera con San Diego, atendemos a clientes locales y pacientes que viajan desde todo el sur de California y más allá, brindando tratamientos seguros, éticos y con resultados naturales.",
     "p2": "Nuestra visión es ser un santuario moderno para el bienestar estético, donde los tratamientos apoyen la confianza, la sanación y la salud duradera de la piel. Nos especializamos en procedimientos avanzados que incluyen:",
     "p3": "Nuestro enfoque se basa en protocolos aprobados por COFEPRIS, supervisión médica y planes de tratamiento altamente personalizados adaptados a tus objetivos y anatomía facial.",
     "p4": "Cada paciente es tratado con intención, precisión clínica y atención compasiva, porque tu transformación merece tanto belleza como integridad.",
     "list": {
       "botox": "Reducción de arrugas con Botox®",
-      "sculptra": "Sculptra® y otros bioestimuladores de colágeno",
-      "rfMicroneedling": "Microneedling con radiofrecuencia (Scarlet S RF)",
+      "biostimulators": "Sculptra®, HarmonyCa®, y otros bioestimuladores de colágeno",
+      "rfMicroneedling": "Microneedling con radiofrecuencia (Sylfirm X)",
       "pdo": "Lifting con hilos PDO",
-      "lasers": "Láseres de CO2 de grado médico e IPL fotofaciales"
+      "lasers": "Láser de CO₂ de grado médico e IPL fotofaciales"
     },
     "meetTeam": "Conoce a Nuestro Equipo",
     "viewAll": "Ver Todos",
@@ -76,6 +76,6 @@
   },
   "instagram": {
     "title": "Síguenos",
-    "subtitle": "Síguenos en Instagram para estar al día y ver las últimas tendencias."
+    "subtitle": "Síguenos en Instagram para estar al día y ver los últimos avances estéticos."
   }
 }
