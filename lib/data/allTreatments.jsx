@@ -1,5 +1,6 @@
 // data/allTreatments.js
 import { botox } from './treatments/wrinkleReducers/botox';
+import { dermawrinkle } from './treatments/wrinkleReducers/dermawrinkle';
 import { hydrafacial} from './treatments/facials/hydrafacial/hydrafacial';
 import { casmaraPurifying } from './treatments/facials/casmara/purifying';
 import { casmaraInfinity } from './treatments/facials/casmara/infinity';
@@ -35,6 +36,7 @@ import { serumAddOns } from './treatments/laserTreatments/faceAddOn';
 
 export const allTreatments = [
     botox,
+    dermawrinkle,
     harmonyca,
     sculptra,
     co2Laser,
