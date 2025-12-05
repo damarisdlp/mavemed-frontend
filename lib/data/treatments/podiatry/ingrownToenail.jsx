@@ -6,8 +6,8 @@ export const matrixectomy = {
     es: "Servicios de Podología Médica"
   },
   serviceDisplayName: {
-    en: "Matrixectomy (Permanent Ingrown Nail Removal)",
-    es: "Matriceptomía (Eliminación permanente de uña encarnada)"
+    en: "Matrixectomy",
+    es: "Matricectomía"
   },
   isPopular: false,
   isPromoEligible: true,
@@ -25,8 +25,8 @@ export const matrixectomy = {
   },
   notes: [
     {
-      en: "Performed under local anesthesia by a licensed podiatrist",
-      es: "Realizado bajo anestesia local por un podólogo certificado"
+      en: "Performed under local anesthesia by a licensed doctor",
+      es: "Realizado bajo anestesia local por un médico certificado"
     },
     {
       en: "Recommended after failed conservative treatments or chronic ingrown nails",
@@ -38,21 +38,72 @@ export const matrixectomy = {
     }
   ],
   pricing: {
-    startingPrice: "$160 USD",
-    startingPriceCurrency: "USD",
-    promoPrice: "$130 USD",
-    promoPriceCurrency: "USD",
+    startingPrice: {
+      en: "$2,500",
+      es: "$2,500"
+    },
+    startingPriceCurrency: "MXN",
+    promoPrice: "",
+    promoPriceCurrency: "MXN",
     options: [
       {
         optionName: {
-          en: "Single Toe Matrixectomy",
-          es: "Matriceptomía en un solo dedo"
+          en: "1 Side",
+          es: "1 Lado"
         },
-        isPromoEligible: true,
-        optionPrice: "$160 USD",
-        optionCurrency: "USD",
-        optionPromoPrice: "$130 USD",
-        optionPromoPriceCurrency: "USD",
+        isPromoEligible: false,
+        optionPrice: {
+          en: "$2,500",
+          es: "$2,500"
+        },
+        optionCurrency: "MXN",
+        optionPromoPrice: "",
+        optionPromoPriceCurrency: "MXN",
+        notes: null
+      },
+      {
+        optionName: {
+          en: "2 Sides",
+          es: "2 Lados"
+        },
+        isPromoEligible: false,
+        optionPrice: {
+          en: "$4,500",
+          es: "$4,500"
+        },
+        optionCurrency: "MXN",
+        optionPromoPrice: "",
+        optionPromoPriceCurrency: "MXN",
+        notes: null
+      },
+      {
+        optionName: {
+          en: "3 Sides",
+          es: "3 Lados"
+        },
+        isPromoEligible: false,
+        optionPrice: {
+          en: "$7,000",
+          es: "$7,000"
+        },
+        optionCurrency: "MXN",
+        optionPromoPrice: "",
+        optionPromoPriceCurrency: "MXN",
+        notes: null
+      },
+      {
+        optionName: {
+          en: "4 Sides",
+          es: "4 Lados"
+        },
+        isPromoEligible: false,
+        optionPrice: {
+          en: "$9,000",
+          es: "$9,000"
+        },
+        optionCurrency: "MXN",
+        optionPromoPrice: "",
+        optionPromoPriceCurrency: "MXN",
         notes: null
       }
     ]
