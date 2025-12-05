@@ -25,10 +25,6 @@ export const ipl = {
   },
   notes: [
     {
-      en: "Package pricing available for multiple sessions",
-      es: "Hay precios de paquete disponibles para múltiples sesiones"
-    },
-    {
       en: "Requires photo evaluation for clearance",
       es: "Requiere evaluación con fotografía previa para autorización"
     },
@@ -46,176 +42,106 @@ export const ipl = {
     promoPrice: "",
     promoPriceCurrency: "MXN",
     options: [
+      // Face / Neck combos
       {
-        optionName: {
-          en: "Hands",
-          es: "Manos"
-        },
+        optionName: { en: "Face", es: "Rostro" },
         isPromoEligible: false,
-        optionPrice: {
-          en: "$650",
-          es: "$650"
-        },
+        optionPrice: { en: "$700", es: "$700" },
         optionCurrency: "MXN",
         optionPromoPrice: "",
         optionPromoPriceCurrency: "MXN",
-        notes: null
+        notes: []
       },
       {
-        optionName: {
-          en: "Small Zone",
-          es: "Zona Pequeña"
-        },
+        optionName: { en: "Neck", es: "Cuello" },
         isPromoEligible: false,
-        optionPrice: {
-          en: "$675",
-          es: "$675"
-        },
+        optionPrice: { en: "$700", es: "$700" },
         optionCurrency: "MXN",
-        optionPromoPrice: "$",
+        optionPromoPrice: "",
+        optionPromoPriceCurrency: "MXN",
+        notes: []
+      },
+      {
+        optionName: { en: "Face + Neck", es: "Rostro + Cuello" },
+        isPromoEligible: false,
+        optionPrice: { en: "$1,400", es: "$1,400" },
+        optionCurrency: "MXN",
+        optionPromoPrice: "",
+        optionPromoPriceCurrency: "MXN",
+        notes: []
+      },
+      {
+        optionName: { en: "Face + Neck + Décolleté", es: "Rostro + Cuello + Escote" },
+        isPromoEligible: false,
+        optionPrice: { en: "$2,100", es: "$2,100" },
+        optionCurrency: "MXN",
+        optionPromoPrice: "",
+        optionPromoPriceCurrency: "MXN",
+        notes: []
+      },
+      {
+        optionName: { en: "Face + Neck + Décolleté + Chest", es: "Rostro + Cuello + Escote + Pecho" },
+        isPromoEligible: false,
+        optionPrice: { en: "$2,800", es: "$2,800" },
+        optionCurrency: "MXN",
+        optionPromoPrice: "",
+        optionPromoPriceCurrency: "MXN",
+        notes: []
+      },
+
+      // Chest / Décolleté
+      {
+        optionName: { en: "Décolleté", es: "Escote" },
+        isPromoEligible: false,
+        optionPrice: { en: "$700", es: "$700" },
+        optionCurrency: "MXN",
+        optionPromoPrice: "",
+        optionPromoPriceCurrency: "MXN",
+        notes: []
+      },
+      {
+        optionName: { en: "Chest", es: "Pecho" },
+        isPromoEligible: false,
+        optionPrice: { en: "$700", es: "$700" },
+        optionCurrency: "MXN",
+        optionPromoPrice: "",
+        optionPromoPriceCurrency: "MXN",
+        notes: []
+      },
+
+      // Zones
+      {
+        optionName: { en: "Small Zone", es: "Zona Pequeña" },
+        isPromoEligible: false,
+        optionPrice: { en: "$675", es: "$675" },
+        optionCurrency: "MXN",
+        optionPromoPrice: "",
         optionPromoPriceCurrency: "MXN",
         notes: [
           {
-            en: "Area total [16 in² - 64 in²]. Approximately one to two palms — similar to a credit card up to half a sheet of paper.",
+            en: "Area total [103 cm² - 413 cm²]. Approximately one to two palms — similar to a credit card up to half a sheet of paper.",
             es: "Área total [103 cm² - 413 cm²]. Aproximadamente de una a dos palmas de la mano, similar al tamaño de una tarjeta de crédito hasta media hoja de papel."
           }
         ]
       },
       {
-        optionName: {
-          en: "Face",
-          es: "Rostro"
-        },
+        optionName: { en: "Medium Zone", es: "Zona Mediana" },
         isPromoEligible: false,
-        optionPrice: {
-          en: "$700",
-          es: "$700"
-        },
-        optionCurrency: "MXN",
-        optionPromoPrice: "",
-        optionPromoPriceCurrency: "MXN",
-        notes: null
-      },
-      {
-        optionName: {
-          en: "Neck",
-          es: "Cuello"
-        },
-        isPromoEligible: false,
-        optionPrice: {
-          en: "$700",
-          es: "$700"
-        },
-        optionCurrency: "MXN",
-        optionPromoPrice: "",
-        optionPromoPriceCurrency: "MXN",
-        notes: null
-      },
-      {
-        optionName: {
-          en: "Décolleté",
-          es: "Escote"
-        },
-        isPromoEligible: false,
-        optionPrice: {
-          en: "$700",
-          es: "$700"
-        },
-        optionCurrency: "MXN",
-        optionPromoPrice: "",
-        optionPromoPriceCurrency: "MXN",
-        notes: null
-      },
-      {
-        optionName: {
-          en: "Chest",
-          es: "Pecho"
-        },
-        isPromoEligible: false,
-        optionPrice: {
-          en: "$700",
-          es: "$700"
-        },
-        optionCurrency: "MXN",
-        optionPromoPrice: "",
-        optionPromoPriceCurrency: "MXN",
-        notes: null
-      },
-      {
-        optionName: {
-          en: "Face + Neck",
-          es: "Rostro + Cuello"
-        },
-        isPromoEligible: false,
-        optionPrice: {
-          en: "$1,400",
-          es: "$1,400"
-        },
-        optionCurrency: "MXN",
-        optionPromoPrice: "",
-        optionPromoPriceCurrency: "MXN",
-        notes: null
-      },
-      {
-        optionName: {
-          en: "Medium Zone",
-          es: "Zona Mediana"
-        },
-        isPromoEligible: false,
-        optionPrice: {
-          en: "$1,565",
-          es: "$1,565"
-        },
+        optionPrice: { en: "$1,565", es: "$1,565" },
         optionCurrency: "MXN",
         optionPromoPrice: "",
         optionPromoPriceCurrency: "MXN",
         notes: [
           {
-            en: "Area total [81 in² - 167 in²]. Four to six palms — roughly the size of a full sheet of paper.",
+            en: "Area total [523 cm² - 1080.3 cm²]. Four to six palms — roughly the size of a full sheet of paper.",
             es: "Área total [523 cm² - 1080.3 cm²]. De cuatro a seis palmas de la mano, aproximadamente del tamaño de una hoja completa de papel."
           }
         ]
       },
       {
-        optionName: {
-          en: "Face + Neck + Décolleté",
-          es: "Rostro + Cuello + Escote"
-        },
+        optionName: { en: "Large Zone", es: "Zona Grande" },
         isPromoEligible: false,
-        optionPrice: {
-          en: "$2,100",
-          es: "$2,100"
-        },
-        optionCurrency: "MXN",
-        optionPromoPrice: "",
-        optionPromoPriceCurrency: "MXN",
-        notes: null
-      },
-      {
-        optionName: {
-          en: "Face + Neck + Décolleté + Chest",
-          es: "Rostro + Cuello + Escote + Pecho"
-        },
-        isPromoEligible: false,
-        optionPrice: {
-          en: "$2,800",
-          es: "$2,800"
-        },
-        optionCurrency: "MXN",
-        optionPromoPrice: "",
-        optionPromoPriceCurrency: "MXN",
-        notes: null
-      },
-      {
-        optionName: {
-          en: "Large Zone",
-          es: "Zona Grande"
-        },
-        isPromoEligible: false,
-        optionPrice: {
-          en: "$3,450",
-          es: "$3,450"
-        },
+        optionPrice: { en: "$3,450", es: "$3,450" },
         optionCurrency: "MXN",
         optionPromoPrice: "",
         optionPromoPriceCurrency: "MXN",
@@ -226,35 +152,34 @@ export const ipl = {
           }
         ]
       },
+
+      // Other areas
       {
-        optionName: {
-          en: "Legs",
-          es: "Piernas"
-        },
+        optionName: { en: "Hands", es: "Manos" },
         isPromoEligible: false,
-        optionPrice: {
-          en: "$3,450",
-          es: "$3,450"
-        },
+        optionPrice: { en: "$650", es: "$650" },
         optionCurrency: "MXN",
         optionPromoPrice: "",
         optionPromoPriceCurrency: "MXN",
-        notes: null
+        notes: []
       },
       {
-        optionName: {
-          en: "Hands + Legs",
-          es: "Manos + Piernas"
-        },
+        optionName: { en: "Legs", es: "Piernas" },
         isPromoEligible: false,
-        optionPrice: {
-          en: "$4,100",
-          es: "$4,100"
-        },
+        optionPrice: { en: "$3,450", es: "$3,450" },
         optionCurrency: "MXN",
         optionPromoPrice: "",
         optionPromoPriceCurrency: "MXN",
-        notes: null
+        notes: []
+      },
+      {
+        optionName: { en: "Hands + Legs", es: "Manos + Piernas" },
+        isPromoEligible: false,
+        optionPrice: { en: "$4,100", es: "$4,100" },
+        optionCurrency: "MXN",
+        optionPromoPrice: "",
+        optionPromoPriceCurrency: "MXN",
+        notes: []
       }
     ]
   },
