@@ -6,8 +6,8 @@ export const sculptra = {
     es: "Biostimuladores de Colágeno"
   },
   serviceDisplayName: {
-    en: "Sculptra (PLLA)",
-    es: "Sculptra (PLLA)"
+    en: "Sculptra® (PLLA)",
+    es: "Sculptra® (PLLA)"
   },
   isPopular: true,
   isPromoEligible: true,
@@ -16,12 +16,12 @@ export const sculptra = {
     secondary: "/sculptra2.jpg"
   },
   description: {
-    en: "Gradually restore youthful volume and firmness with Sculptra, a poly-L-lactic acid (PLLA) collagen stimulator that enhances skin texture and structure over time.",
-    es: "Restaure gradualmente el volumen y la firmeza juvenil con Sculptra, un estimulador de colágeno de ácido poli-L-láctico (PLLA) que mejora la textura y estructura de la piel con el tiempo."
+    en: "Gradually restore youthful volume and firmness with Sculptra®, a poly-L-lactic acid (PLLA) collagen stimulator that enhances skin texture and structure over time.",
+    es: "Restaure gradualmente el volumen y la firmeza juvenil con Sculptra®, un estimulador de colágeno de ácido poli-L-láctico (PLLA) que mejora la textura y estructura de la piel con el tiempo."
   },
   details: {
-    en: "Sculptra is an injectable biostimulant composed of poly-L-lactic acid (PLLA), designed to activate your skin’s natural collagen production. It gradually restores lost facial volume, improves skin density, and enhances definition in areas like the cheeks, jawline, and temples. Unlike traditional dermal fillers, Sculptra delivers subtle, progressive improvements that last up to two years.",
-    es: "Sculptra es un biostimulante inyectable compuesto de ácido poli-L-láctico (PLLA), diseñado para activar la producción natural de colágeno de la piel. Restaura gradualmente el volumen facial perdido, mejora la densidad de la piel y realza la definición en áreas como las mejillas, la línea mandibular y las sienes. A diferencia de los rellenos dérmicos tradicionales, Sculptra proporciona mejoras sutiles y progresivas que duran hasta dos años."
+    en: "Sculptra® is an injectable biostimulant composed of poly-L-lactic acid (PLLA), designed to activate your skin’s natural collagen production. It gradually restores lost facial volume, improves skin density, and enhances definition in areas like the cheeks, jawline, and temples. Unlike traditional dermal fillers, Sculptra® delivers subtle, progressive improvements that last up to two years.",
+    es: "Sculptra® es un biostimulante inyectable compuesto de ácido poli-L-láctico (PLLA), diseñado para activar la producción natural de colágeno de la piel. Restaura gradualmente el volumen facial perdido, mejora la densidad de la piel y realza la definición en áreas como las mejillas, la línea mandibular y las sienes. A diferencia de los rellenos dérmicos tradicionales, Sculptra® proporciona mejoras sutiles y progresivas que duran hasta dos años."
   },
   notes: [
     {
@@ -49,8 +49,8 @@ export const sculptra = {
     options: [
       {
         optionName: {
-          en: "PLLA - Sculptra (per vial)",
-          es: "PLLA - Sculptra (por vial)"
+          en: "PLLA - Sculptra® (per vial)",
+          es: "PLLA - Sculptra® (por vial)"
         },
         isPromoEligible: true,
         optionPrice: { en: "$575", es: "$575" },
@@ -216,12 +216,12 @@ export const sculptra = {
   faq: [
     {
       question: {
-        en: "What makes Sculptra different from traditional fillers?",
-        es: "¿Qué hace que Sculptra sea diferente de los rellenos tradicionales?"
+        en: "What makes Sculptra® different from traditional fillers?",
+        es: "¿Qué hace que Sculptra® sea diferente de los rellenos tradicionales?"
       },
       answer: {
-        en: "Sculptra stimulates your body’s own collagen production over time, rather than adding immediate volume like hyaluronic acid fillers. The result is longer-lasting, natural rejuvenation.",
-        es: "Sculptra estimula la producción propia de colágeno de su cuerpo con el tiempo, en lugar de agregar volumen inmediato como los rellenos de ácido hialurónico. El resultado es una rejuvenación natural de mayor duración."
+        en: "Sculptra® stimulates your body’s own collagen production over time, rather than adding immediate volume like hyaluronic acid fillers. The result is longer-lasting, natural rejuvenation.",
+        es: "Sculptra® estimula la producción propia de colágeno de su cuerpo con el tiempo, en lugar de agregar volumen inmediato como los rellenos de ácido hialurónico. El resultado es una rejuvenación natural de mayor duración."
       }
     },
     {
@@ -260,8 +260,8 @@ export const sculptra = {
         es: "¿Cuánto duran los resultados?"
       },
       answer: {
-        en: "Sculptra results typically last 2 years or longer with proper treatment and maintenance.",
-        es: "Los resultados de Sculptra típicamente duran 2 años o más con tratamiento y mantenimiento adecuados."
+        en: "Sculptra® results typically last 2 years or longer with proper treatment and maintenance.",
+        es: "Los resultados de Sculptra® típicamente duran 2 años o más con tratamiento y mantenimiento adecuados."
       }
     }
   ]
