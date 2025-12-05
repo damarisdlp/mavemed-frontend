@@ -30,6 +30,37 @@ export default function TreatmentDetails({ treatment }) {
     typeof pricing.promoPrice === "string" &&
     pricing.promoPrice.trim() !== "";
 
+  const parsePriceValue = (priceString) => {
+    if (typeof priceString !== "string") return Infinity;
+    const numeric = parseFloat(priceString.replace(/[^0-9.]/g, ""));
+    return Number.isFinite(numeric) ? numeric : Infinity;
+  };
+
+  const priceCandidates = [];
+  if (pricing?.startingPrice) {
+    priceCandidates.push({
+      value: parsePriceValue(pricing.startingPrice),
+      display: `${pricing.startingPrice} ${pricing.startingPriceCurrency || ""}`.trim()
+    });
+  }
+  (pricing?.options || []).forEach((opt) => {
+    if (opt?.optionPrice) {
+      priceCandidates.push({
+        value: parsePriceValue(opt.optionPrice),
+        display: `${opt.optionPrice} ${opt.optionCurrency || ""}`.trim()
+      });
+    }
+  });
+
+  const sortedPrices = priceCandidates.filter((p) => p.value !== Infinity).sort((a, b) => a.value - b.value);
+  const lowestPriceDisplay =
+    sortedPrices[0]?.display ||
+    `${pricing.startingPrice || ""} ${pricing.startingPriceCurrency || ""}`.trim();
+  const showStartingLabel = sortedPrices.length > 1;
+  const startingPriceText = showStartingLabel
+    ? `${locale === "es" ? "Desde" : "Starting from"} ${lowestPriceDisplay}`
+    : lowestPriceDisplay;
+
   return (
     <div className="w-full bg-white">
       <div className="grid grid-cols-1 md:grid-cols-[3fr_2fr] min-h-[50vh]">
@@ -95,7 +126,7 @@ export default function TreatmentDetails({ treatment }) {
                 {locale === "es" ? "Precio" : "Price"}
               </h2>
               <p className="text-gray-700">
-                {pricing.startingPrice} {pricing.startingPriceCurrency}
+                {startingPriceText}
               </p>
               <a
                 href="https://wa.me/+526642077675"
@@ -129,7 +160,7 @@ export default function TreatmentDetails({ treatment }) {
 
           {/* Notes */}
           {treatment.notes?.length > 0 && (
-            <ul className="text-sm text-gray-600 italic mb-4 space-y-1">
+            <ul className="text-sm text-gray-600 italic mb-4 space-y-1 list-disc list-inside">
               {treatment.notes.map((note, idx) => (
                 <li key={idx}>{getLocalized(note)}</li>
               ))}
