@@ -38,9 +38,15 @@ export const pdoThreads = {
     }
   ],
   pricing: {
-    startingPrice: "Price varies by area and thread count",
+    startingPrice: {
+      en: "Price varies by area and thread count",
+      es: "El precio varía según el área y la cantidad de hilos"
+    },
     startingPriceCurrency: "USD",
-    promoPrice: "Discounted packages available for multiple zones",
+    promoPrice: {
+      en: "Discounted packages available for multiple zones",
+      es: "Paquetes con descuento disponibles para múltiples zonas"
+    },
     promoPriceCurrency: "USD",
     options: [
       {
@@ -49,10 +55,10 @@ export const pdoThreads = {
           es: "Lifting facial inferior Signature"
         },
         isPromoEligible: false,
-        optionPrice: "$TBD",
+        optionPrice: { en: "$TBD", es: "$TBD" },
         optionCurrency: "USD",
-        optionPromoPrice: null,
-        optionPromoPriceCurrency: null,
+        optionPromoPrice: "",
+        optionPromoPriceCurrency: "USD",
         notes: [
           {
             en: "Includes jawline, jowls, and nasolabial folds",
@@ -70,10 +76,10 @@ export const pdoThreads = {
           es: "Lifting con hilos en rostro completo"
         },
         isPromoEligible: false,
-        optionPrice: "$TBD",
+        optionPrice: { en: "$TBD", es: "$TBD" },
         optionCurrency: "USD",
-        optionPromoPrice: null,
-        optionPromoPriceCurrency: null,
+        optionPromoPrice: "",
+        optionPromoPriceCurrency: "USD",
         notes: [
           {
             en: "Includes midface, jawline, and brows",
@@ -91,10 +97,10 @@ export const pdoThreads = {
           es: "Lifting de cejas"
         },
         isPromoEligible: false,
-        optionPrice: "$TBD",
+        optionPrice: { en: "$TBD", es: "$TBD" },
         optionCurrency: "USD",
-        optionPromoPrice: null,
-        optionPromoPriceCurrency: null,
+        optionPromoPrice: "",
+        optionPromoPriceCurrency: "USD",
         notes: [
           {
             en: "Creates a subtle lateral brow lift and opens the eye area",
@@ -108,10 +114,10 @@ export const pdoThreads = {
           es: "Rostro completo y cuello"
         },
         isPromoEligible: false,
-        optionPrice: "$TBD USD",
+        optionPrice: { en: "$TBD USD", es: "$TBD USD" },
         optionCurrency: "USD",
-        optionPromoPrice: null,
-        optionPromoPriceCurrency: null,
+        optionPromoPrice: "",
+        optionPromoPriceCurrency: "USD",
         notes: [
           {
             en: "Includes midface, jawline, brows and neck",
@@ -119,7 +125,21 @@ export const pdoThreads = {
           }
         ]
       }
-    ]
+    ].sort(
+      (a, b) =>
+        parseFloat(
+          (typeof a.optionPrice === "object" ? a.optionPrice.en : a.optionPrice).replace(
+            /[^0-9.]/g,
+            ""
+          )
+        ) -
+        parseFloat(
+          (typeof b.optionPrice === "object" ? b.optionPrice.en : b.optionPrice).replace(
+            /[^0-9.]/g,
+            ""
+          )
+        )
+    )
   },
   goals: [
     {
