@@ -7,7 +7,7 @@ export const pdoThreads = {
   },
   serviceDisplayName: {
     en: "PDO Thread Lifts & Contouring – Non-Surgical Facial Rejuvenation",
-    es: "Lifting y Contorno Facial con Hilos PDO – Rejuvenecimiento Facial sin Cirugía"
+    es: "Levantamiento y Contorno Facial con Hilos PDO – Rejuvenecimiento Facial sin Cirugía"
   },
   isPopular: true,
   isPromoEligible: false,
@@ -17,11 +17,11 @@ export const pdoThreads = {
   },
   description: {
     en: "Achieve a lifted, more defined look without surgery. PDO threads offer a non-invasive way to tighten skin, contour the face, and boost collagen over time.",
-    es: "Logra un efecto lifting y un contorno más definido sin cirugía. Los hilos PDO ofrecen una forma poco invasiva de tensar la piel, perfilar el rostro y estimular el colágeno con el tiempo."
+    es: "Logra un efecto de levantamiento y un contorno más definido sin cirugía. Los hilos PDO ofrecen una forma poco invasiva de tensar la piel, perfilar el rostro y estimular el colágeno con el tiempo."
   },
   details: {
     en: "PDO (polydioxanone) thread lifts are a minimally invasive procedure that uses absorbable sutures to reposition tissue and stimulate collagen production. The treatment provides both immediate lifting and long-term skin rejuvenation. Common areas include the jawline, cheeks, neck, and brow. No general anesthesia or downtime required.",
-    es: "El lifting con hilos PDO (polidioxanona) es un procedimiento mínimamente invasivo que utiliza suturas reabsorbibles para reposicionar el tejido y estimular la producción de colágeno. El tratamiento ofrece un efecto lifting inmediato y una rejuvenecimiento de la piel a largo plazo. Las zonas más tratadas incluyen la línea mandibular, mejillas, cuello y cejas. No requiere anestesia general ni tiempo prolongado de recuperación."
+    es: "El levantamiento con hilos PDO (polidioxanona) es un procedimiento mínimamente invasivo que utiliza suturas reabsorbibles para reposicionar el tejido y estimular la producción de colágeno. El tratamiento ofrece un efecto de levantamiento inmediato y una rejuvenecimiento de la piel a largo plazo. Las zonas más tratadas incluyen la línea mandibular, mejillas, cuello y cejas. No requiere anestesia general ni tiempo prolongado de recuperación."
   },
   notes: [
     {
@@ -52,7 +52,7 @@ export const pdoThreads = {
       {
         optionName: {
           en: "Signature Lower Face Lift",
-          es: "Lifting facial inferior Signature"
+          es: "Levantamiento Facial Inferior Signature"
         },
         isPromoEligible: false,
         optionPrice: { en: "$TBD", es: "$TBD" },
@@ -73,7 +73,7 @@ export const pdoThreads = {
       {
         optionName: {
           en: "Full Face Thread Lift",
-          es: "Lifting con hilos en rostro completo"
+          es: "Levantamiento en Rostro Completo"
         },
         isPromoEligible: false,
         optionPrice: { en: "$TBD", es: "$TBD" },
@@ -93,8 +93,29 @@ export const pdoThreads = {
       },
       {
         optionName: {
-          en: "Eyebrow Lift",
-          es: "Lifting de cejas"
+          en: "Jawline Contour",
+          es: "Contorno de Mandíbula"
+        },
+        isPromoEligible: false,
+        optionPrice: { en: "$TBD", es: "$TBD" },
+        optionCurrency: "USD",
+        optionPromoPrice: "",
+        optionPromoPriceCurrency: "USD",
+        notes: [
+          {
+            en: "Defines and lifts the jawline and lower face.",
+            es: "Define y eleva la línea mandibular y el tercio inferior del rostro."
+          },
+          {
+            en: "Ideal for softening jowls and improving profile.",
+            es: "Ideal para suavizar los jowls y mejorar el perfil."
+          }
+        ]
+      },
+      {
+        optionName: {
+          en: "Eyebrow and Eye Lift",
+          es: "Levantamiento de Cejas y Ojos"
         },
         isPromoEligible: false,
         optionPrice: { en: "$TBD", es: "$TBD" },
@@ -110,8 +131,8 @@ export const pdoThreads = {
       },
       {
         optionName: {
-          en: "Full Face & Neck Combo",
-          es: "Rostro completo y cuello"
+          en: "Full Face & Neck Combo Lift",
+          es: "Levantamiento de Rostro Completo y Cuello"
         },
         isPromoEligible: false,
         optionPrice: { en: "$TBD", es: "$TBD" },
