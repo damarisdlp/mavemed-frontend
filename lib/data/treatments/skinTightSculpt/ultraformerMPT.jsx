@@ -6,8 +6,8 @@ export const ultraformerMPT = {
     es: "Reafirmación y Esculpido Corporal"
   },
   serviceDisplayName: {
-    en: "Ultraformer MPT Ultrasound Lift",
-    es: "Lifting con ultrasonido Ultraformer MPT"
+    en: "Ultraformer MPT HIFU Lift",
+    es: "Lifting con HIFU Ultraformer MPT"
   },
   isPopular: true,
   isPromoEligible: false,
@@ -38,15 +38,15 @@ export const ultraformerMPT = {
     }
   ],
   pricing: {
-    startingPrice: { en: "$235", es: "$235" },
+    startingPrice: { en: "$65", es: "$65" },
     startingPriceCurrency: "USD",
     promoPrice: "",
     promoPriceCurrency: "USD",
     options: [
       {
         optionName: {
-          en: "Ultraformer MPT - Deep Synergy Booster",
-          es: "Ultraformer MPT - Refuerzo Deep Synergy"
+          en: "Deep Synergy Booster (Add-On)",
+          es: "Refuerzo Deep Synergy (Complemento)"
         },
         isPromoEligible: false,
         optionPrice: { en: "$65", es: "$65" },
@@ -62,8 +62,8 @@ export const ultraformerMPT = {
       },
       {
         optionName: {
-          en: "Ultraformer MPT - Deep Contour (As Add-On Only)",
-          es: "Ultraformer MPT - Contorno profundo (solo como complemento)"
+          en: "Deep Contour (Add-on)",
+          es: "Contorno Profundo (Complemento)"
         },
         isPromoEligible: false,
         optionPrice: { en: "$235", es: "$235" },
@@ -74,30 +74,17 @@ export const ultraformerMPT = {
           {
             en: "Includes jawline area (jawline and lower cheek).",
             es: "Incluye la zona de la línea mandibular y mejilla baja."
-          }
-        ]
-      },
-      {
-        optionName: {
-          en: "Ultraformer MPT - Express Body Glow",
-          es: "Ultraformer MPT - Body glow exprés"
-        },
-        isPromoEligible: false,
-        optionPrice: { en: "$325", es: "$325" },
-        optionCurrency: "USD",
-        optionPromoPrice: "",
-        optionPromoPriceCurrency: "USD",
-        notes: [
+          },
           {
-            en: "Includes one small area such as elbows or knees.",
-            es: "Incluye un área pequeña como codos o rodillas."
+            en: "This is an add-on to any other other lower face hifu treatment.",
+            es: "Este es un complemento a cualquier otro tratamiento HIFU para la parte inferior del rostro."
           }
         ]
       },
       {
         optionName: {
-          en: "Ultraformer MPT - Refreshing Foxy Eye Lift",
-          es: "Ultraformer MPT - Lifting refrescante Foxy Eye"
+          en: "Refreshing Lift",
+          es: "Lifting refrescante"
         },
         isPromoEligible: false,
         optionPrice: { en: "$350", es: "$350" },
@@ -106,32 +93,15 @@ export const ultraformerMPT = {
         optionPromoPriceCurrency: "USD",
         notes: [
           {
-            en: "Includes forehead, orbicularis (around the eyes), and upper cheeks.",
-            es: "Incluye frente, orbicular (alrededor de los ojos) y parte alta de las mejillas."
+            en: "Forehead, periocular area, and upper cheeks.",
+            es: "Frente, zona periocular y mejillas altas."
           }
         ]
       },
       {
         optionName: {
-          en: "Ultraformer MPT - Neck Sculpting",
-          es: "Ultraformer MPT - Esculpido de cuello"
-        },
-        isPromoEligible: false,
-        optionPrice: { en: "$350", es: "$350" },
-        optionCurrency: "USD",
-        optionPromoPrice: "",
-        optionPromoPriceCurrency: "USD",
-        notes: [
-          {
-            en: "Includes submentum and neck.",
-            es: "Incluye submentón y cuello."
-          }
-        ]
-      },
-      {
-        optionName: {
-          en: "Ultraformer MPT - Jowl Lift",
-          es: "Ultraformer MPT - Lifting de jowls y papada"
+          en: "Submentum & Lower Face Lift",
+          es: "Lifting de Submentón y Tercio Inferior"
         },
         isPromoEligible: false,
         optionPrice: { en: "$375", es: "$375" },
@@ -140,15 +110,15 @@ export const ultraformerMPT = {
         optionPromoPriceCurrency: "USD",
         notes: [
           {
-            en: "Includes submentum, lower cheek or jowl bags, and dermal lifting.",
-            es: "Incluye submentón, mejilla baja o bolsas de jowls y lifting dérmico."
+            en: "Submentum plus lower cheek/jowl bags with dermal lifting.",
+            es: "Submentón más mejilla baja o bolsas mandibulares con lifting dérmico."
           }
         ]
       },
       {
         optionName: {
-          en: "Ultraformer MPT - Décolletage Rejuvenation",
-          es: "Ultraformer MPT - Rejuvenecimiento de escote"
+          en: "360 Contour",
+          es: "Contorno 360"
         },
         isPromoEligible: false,
         optionPrice: { en: "$395", es: "$395" },
@@ -157,32 +127,15 @@ export const ultraformerMPT = {
         optionPromoPriceCurrency: "USD",
         notes: [
           {
-            en: "Includes chest and clavicles.",
-            es: "Incluye pecho y zona de clavículas."
+            en: "Lower cheek, jawline, submentum, and neck.",
+            es: "Mejilla baja, línea mandibular, submentón y cuello."
           }
         ]
       },
       {
         optionName: {
-          en: "Ultraformer MPT - Thigh Sculpting",
-          es: "Ultraformer MPT - Esculpido de muslos"
-        },
-        isPromoEligible: false,
-        optionPrice: { en: "$430", es: "$430" },
-        optionCurrency: "USD",
-        optionPromoPrice: "",
-        optionPromoPriceCurrency: "USD",
-        notes: [
-          {
-            en: "Includes inner thighs and front of thighs.",
-            es: "Incluye cara interna de muslos y frente de muslos."
-          }
-        ]
-      },
-      {
-        optionName: {
-          en: "Ultraformer MPT - Standard Facial Sculpting",
-          es: "Ultraformer MPT - Esculpido facial estándar"
+          en: "Premium Facial Sculpting",
+          es: "Escultura Facial Premium"
         },
         isPromoEligible: false,
         optionPrice: { en: "$435", es: "$435" },
@@ -191,36 +144,19 @@ export const ultraformerMPT = {
         optionPromoPriceCurrency: "USD",
         notes: [
           {
-            en: "Includes forehead, orbicularis (around the eyes), full cheeks, chin, and jawline.",
-            es: "Incluye frente, orbicular (alrededor de los ojos), mejillas completas, mentón y línea mandibular."
+            en: "Forehead, periocular area, full cheeks, chin, and jawline.",
+            es: "Frente, zona periocular, mejillas completas, mentón y línea mandibular."
           },
           {
-            en: "Deep contour is recommended for a more lifted result.",
+            en: "Deep contour add-on recommended for a more lifted result.",
             es: "Se recomienda agregar Contorno profundo para un resultado más lifting."
           }
         ]
       },
       {
         optionName: {
-          en: "Ultraformer MPT - Express Back Glow",
-          es: "Ultraformer MPT - Back glow exprés"
-        },
-        isPromoEligible: false,
-        optionPrice: { en: "$495", es: "$495" },
-        optionCurrency: "USD",
-        optionPromoPrice: "",
-        optionPromoPriceCurrency: "USD",
-        notes: [
-          {
-            en: "Includes flanks and sides of the back.",
-            es: "Incluye flancos y costados de la espalda."
-          }
-        ]
-      },
-      {
-        optionName: {
-          en: "Ultraformer MPT - Total Facial Rejuvenation",
-          es: "Ultraformer MPT - Rejuvenecimiento facial total"
+          en: "Total Facial Rejuvenation",
+          es: "Rejuvenecimiento Facial Total"
         },
         isPromoEligible: false,
         optionPrice: { en: "$550", es: "$550" },
@@ -229,32 +165,100 @@ export const ultraformerMPT = {
         optionPromoPriceCurrency: "USD",
         notes: [
           {
-            en: "Includes full face, submentum, and front of neck.",
-            es: "Incluye rostro completo, submentón y parte frontal del cuello."
+            en: "Full face, submentum, and front of neck.",
+            es: "Rostro completo, submentón y parte frontal del cuello."
           }
         ]
       },
       {
         optionName: {
-          en: "Ultraformer MPT - Combo Lift and Smooth",
-          es: "Ultraformer MPT - Combo lift and smooth"
+          en: "Neck Sculpting",
+          es: "Escultura de Cuello"
         },
         isPromoEligible: false,
-        optionPrice: { en: "$595", es: "$595" },
+        optionPrice: { en: "$350", es: "$350" },
         optionCurrency: "USD",
         optionPromoPrice: "",
         optionPromoPriceCurrency: "USD",
         notes: [
           {
-            en: "Includes neck and décolletage.",
-            es: "Incluye cuello y escote."
+            en: "Submentum and neck.",
+            es: "Submentón y cuello."
           }
         ]
       },
       {
         optionName: {
-          en: "Ultraformer MPT - Defined Arms",
-          es: "Ultraformer MPT - Brazos definidos"
+          en: "Décolletage Rejuvenation",
+          es: "Rejuvenecimiento de Escote"
+        },
+        isPromoEligible: false,
+        optionPrice: { en: "$395", es: "$395" },
+        optionCurrency: "USD",
+        optionPromoPrice: "",
+        optionPromoPriceCurrency: "USD",
+        notes: [
+          {
+            en: "Chest and clavicles.",
+            es: "Pecho y clavículas."
+          }
+        ]
+      },
+      {
+        optionName: {
+          en: "Combo Lift & Smooth",
+          es: "Combo Levantamiento & Suavidad"
+        },
+        isPromoEligible: false,
+        optionPrice: { en: "$545", es: "$545" },
+        optionCurrency: "USD",
+        optionPromoPrice: "",
+        optionPromoPriceCurrency: "USD",
+        notes: [
+          {
+            en: "Neck and décolletage.",
+            es: "Cuello y escote."
+          }
+        ]
+      },
+      {
+        optionName: {
+          en: "Express Body Glow",
+          es: "Brillo Corporal Exprés"
+        },
+        isPromoEligible: false,
+        optionPrice: { en: "$315", es: "$315" },
+        optionCurrency: "USD",
+        optionPromoPrice: "",
+        optionPromoPriceCurrency: "USD",
+        notes: [
+          {
+            en: "One small area (elbows, knees, or similar).",
+            es: "Una zona pequeña (codos, rodillas o similar)."
+          }
+        ]
+      },
+      {
+        optionName: {
+          en: "Express Back Glow",
+          es: "Brillo de Espalda Exprés"
+        },
+        isPromoEligible: false,
+        optionPrice: { en: "$495", es: "$495" },
+        optionCurrency: "USD",
+        optionPromoPrice: "",
+        optionPromoPriceCurrency: "USD",
+        notes: [
+          {
+            en: "Flanks and sides of the back.",
+            es: "Flancos y costados de la espalda."
+          }
+        ]
+      },
+      {
+        optionName: {
+          en: "Defined Arms",
+          es: "Brazos Definidos"
         },
         isPromoEligible: false,
         optionPrice: { en: "$625", es: "$625" },
@@ -270,25 +274,25 @@ export const ultraformerMPT = {
       },
       {
         optionName: {
-          en: "Ultraformer MPT - 360 Contour",
-          es: "Ultraformer MPT - Contorno 360"
+          en: "Thigh Sculpting",
+          es: "Escultura de Muslos"
         },
         isPromoEligible: false,
-        optionPrice: { en: "$750", es: "$750" },
+        optionPrice: { en: "$655", es: "$655" },
         optionCurrency: "USD",
         optionPromoPrice: "",
         optionPromoPriceCurrency: "USD",
         notes: [
           {
-            en: "Includes lower cheek, jawline, submentum (under chin), and neck.",
-            es: "Incluye mejilla baja, línea mandibular, submentón y cuello."
+            en: "Inner thighs and front of thighs.",
+            es: "Cara interna y frontal de muslos."
           }
         ]
       },
       {
         optionName: {
-          en: "Ultraformer MPT - Glute Contour",
-          es: "Ultraformer MPT - Contorno de glúteos"
+          en: "Glute Contour",
+          es: "Contorno de Glúteos"
         },
         isPromoEligible: false,
         optionPrice: { en: "$825", es: "$825" },
@@ -304,8 +308,8 @@ export const ultraformerMPT = {
       },
       {
         optionName: {
-          en: "Ultraformer MPT - Firm Abdomen",
-          es: "Ultraformer MPT - Abdomen firme"
+          en: "Firm Abdomen",
+          es: "Abdomen Firme"
         },
         isPromoEligible: false,
         optionPrice: { en: "$850", es: "$850" },
@@ -321,8 +325,8 @@ export const ultraformerMPT = {
       },
       {
         optionName: {
-          en: "Ultraformer MPT - Lower Back Sculpting",
-          es: "Ultraformer MPT - Esculpido de zona lumbar"
+          en: "Lower Back Sculpting",
+          es: "Escultura de Zona Lumbar"
         },
         isPromoEligible: false,
         optionPrice: { en: "$875", es: "$875" },
@@ -338,8 +342,8 @@ export const ultraformerMPT = {
       },
       {
         optionName: {
-          en: "Ultraformer MPT - Total Back Rejuvenation",
-          es: "Ultraformer MPT - Rejuvenecimiento total de espalda"
+          en: "Total Back Rejuvenation",
+          es: "Rejuvenecimiento Total de Espalda"
         },
         isPromoEligible: false,
         optionPrice: { en: "$1350", es: "$1350" },
@@ -353,21 +357,7 @@ export const ultraformerMPT = {
           }
         ]
       }
-    ].sort(
-      (a, b) =>
-        parseFloat(
-          (typeof a.optionPrice === "object" ? a.optionPrice.en : a.optionPrice).replace(
-            /[^0-9.]/g,
-            ""
-          )
-        ) -
-        parseFloat(
-          (typeof b.optionPrice === "object" ? b.optionPrice.en : b.optionPrice).replace(
-            /[^0-9.]/g,
-            ""
-          )
-        )
-    )
+    ]
   },
   goals: [
     {
