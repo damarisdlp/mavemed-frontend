@@ -1,14 +1,3 @@
-const parsePriceValue = (priceString) => {
-  if (typeof priceString !== "string") return Infinity;
-  const numeric = parseFloat(priceString.replace(/[^0-9.]/g, ""));
-  return Number.isFinite(numeric) ? numeric : Infinity;
-};
-
-const sortByPrice = (options = []) =>
-  [...options].sort(
-    (a, b) => parsePriceValue(a?.optionPrice) - parsePriceValue(b?.optionPrice)
-  );
-
 export const co2Laser = {
   urlSlug: "co2-laser",
   category: "laser-resurfacing",
@@ -53,172 +42,143 @@ export const co2Laser = {
   ],
 
   pricing: {
-    startingPrice: "$250",
+    startingPrice: { en: "$250", es: "$250" },
     startingPriceCurrency: "USD",
-    promoPrice: "$",
+    promoPrice: "",
     promoPriceCurrency: "USD",
 
-    options: sortByPrice([
+    options: [
+      // Face / Neck
       {
-        optionName: {
-          en: "Décolleté",
-          es: "Escote"
-        },
+        optionName: { en: "Under Eye", es: "Ojeras" },
         isPromoEligible: false,
-        optionPrice: "$315",
+        optionPrice: { en: "$250", es: "$250" },
         optionCurrency: "USD",
-        optionPromoPrice: "$",
+        optionPromoPrice: "",
         optionPromoPriceCurrency: "USD",
         notes: []
       },
       {
-        optionName: {
-          en: "Under Eye",
-          es: "Ojeras"
-        },
+        optionName: { en: "Neck", es: "Cuello" },
         isPromoEligible: false,
-        optionPrice: "$250",
+        optionPrice: { en: "$385", es: "$385" },
         optionCurrency: "USD",
-        optionPromoPrice: "$",
+        optionPromoPrice: "",
         optionPromoPriceCurrency: "USD",
         notes: []
       },
       {
-        optionName: {
-          en: "Small Zone",
-          es: "Zona Pequeña"
-        },
+        optionName: { en: "Face", es: "Rostro" },
         isPromoEligible: false,
-        optionPrice: "$325",
+        optionPrice: { en: "$550", es: "$550" },
         optionCurrency: "USD",
-        optionPromoPrice: "$",
+        optionPromoPrice: "",
+        optionPromoPriceCurrency: "USD",
+        notes: []
+      },
+      {
+        optionName: { en: "Face + Neck", es: "Rostro + Cuello" },
+        isPromoEligible: false,
+        optionPrice: { en: "$650", es: "$650" },
+        optionCurrency: "USD",
+        optionPromoPrice: "",
+        optionPromoPriceCurrency: "USD",
+        notes: []
+      },
+      {
+        optionName: { en: "Face + Neck + Décolleté", es: "Rostro + Cuello + Escote" },
+        isPromoEligible: false,
+        optionPrice: { en: "$850", es: "$850" },
+        optionCurrency: "USD",
+        optionPromoPrice: "",
+        optionPromoPriceCurrency: "USD",
+        notes: []
+      },
+      {
+        optionName: { en: "Face + Neck + Décolleté + Chest", es: "Rostro + Cuello + Escote + Pecho" },
+        isPromoEligible: false,
+        optionPrice: { en: "$950", es: "$950" },
+        optionCurrency: "USD",
+        optionPromoPrice: "",
+        optionPromoPriceCurrency: "USD",
+        notes: []
+      },
+
+      // Chest / Décolleté
+      {
+        optionName: { en: "Décolleté", es: "Escote" },
+        isPromoEligible: false,
+        optionPrice: { en: "$315", es: "$315" },
+        optionCurrency: "USD",
+        optionPromoPrice: "",
+        optionPromoPriceCurrency: "USD",
+        notes: []
+      },
+      {
+        optionName: { en: "Chest", es: "Pecho" },
+        isPromoEligible: false,
+        optionPrice: { en: "$400", es: "$400" },
+        optionCurrency: "USD",
+        optionPromoPrice: "",
+        optionPromoPriceCurrency: "USD",
+        notes: []
+      },
+
+      // Zone sizes
+      {
+        optionName: { en: "Small Zone", es: "Zona Pequeña" },
+        isPromoEligible: false,
+        optionPrice: { en: "$325", es: "$325" },
+        optionCurrency: "USD",
+        optionPromoPrice: "",
         optionPromoPriceCurrency: "USD",
         notes: [
           {
-            en: "Area total [16 in² - 64 in²]. Approximately one to two palms — similar to a credit card up to half a sheet of paper.",
+            en: "Area total [103 cm² - 413 cm²]. Approximately one to two palms — similar to a credit card up to half a sheet of paper.",
             es: "Área total [103 cm² - 413 cm²]. Aproximadamente de una a dos palmas de la mano, similar al tamaño de una tarjeta de crédito hasta media hoja de papel."
           }
         ]
       },
       {
-        optionName: {
-          en: "Hands",
-          es: "Manos"
-        },
+        optionName: { en: "Medium Zone", es: "Zona Mediana" },
         isPromoEligible: false,
-        optionPrice: "$300",
+        optionPrice: { en: "$675", es: "$675" },
         optionCurrency: "USD",
-        optionPromoPrice: "$",
-        optionPromoPriceCurrency: "USD",
-        notes: []
-      },
-      {
-        optionName: {
-          en: "Neck",
-          es: "Cuello"
-        },
-        isPromoEligible: false,
-        optionPrice: "$385",
-        optionCurrency: "USD",
-        optionPromoPrice: "$",
-        optionPromoPriceCurrency: "USD",
-        notes: []
-      },
-      {
-        optionName: {
-          en: "Chest",
-          es: "Pecho"
-        },
-        isPromoEligible: false,
-        optionPrice: "$400",
-        optionCurrency: "USD",
-        optionPromoPrice: "$",
-        optionPromoPriceCurrency: "USD",
-        notes: []
-      },
-      {
-        optionName: {
-          en: "Face",
-          es: "Rostro"
-        },
-        isPromoEligible: false,
-        optionPrice: "$550",
-        optionCurrency: "USD",
-        optionPromoPrice: "$",
-        optionPromoPriceCurrency: "USD",
-        notes: []
-      },
-      {
-        optionName: {
-          en: "Face + Neck",
-          es: "Rostro + Cuello"
-        },
-        isPromoEligible: false,
-        optionPrice: "$650",
-        optionCurrency: "USD",
-        optionPromoPrice: "$",
-        optionPromoPriceCurrency: "USD",
-        notes: []
-      },
-      {
-        optionName: {
-          en: "Medium Zone",
-          es: "Zona Mediana"
-        },
-        isPromoEligible: false,
-        optionPrice: "$675",
-        optionCurrency: "USD",
-        optionPromoPrice: "$",
+        optionPromoPrice: "",
         optionPromoPriceCurrency: "USD",
         notes: [
           {
-            en: "Area total [81 in² - 167 in²]. Four to six palms — roughly the size of a full sheet of paper.",
+            en: "Area total [523 cm² - 1080.3 cm²]. Four to six palms — roughly the size of a full sheet of paper.",
             es: "Área total [523 cm² - 1080.3 cm²]. De cuatro a seis palmas de la mano, aproximadamente del tamaño de una hoja completa de papel."
           }
         ]
       },
       {
-        optionName: {
-          en: "Face + Neck + Décolleté",
-          es: "Rostro + Cuello + Escote"
-        },
+        optionName: { en: "Large Zone", es: "Zona Grande" },
         isPromoEligible: false,
-        optionPrice: "$850",
+        optionPrice: { en: "$1,275", es: "$1,275" },
         optionCurrency: "USD",
-        optionPromoPrice: "$",
-        optionPromoPriceCurrency: "USD",
-        notes: []
-      },
-      {
-        optionName: {
-          en: "Face + Neck + Décolleté + Chest",
-          es: "Rostro + Cuello + Escote + Pecho"
-        },
-        isPromoEligible: false,
-        optionPrice: "$950",
-        optionCurrency: "USD",
-        optionPromoPrice: "$",
-        optionPromoPriceCurrency: "USD",
-        notes: []
-      },
-      {
-        optionName: {
-          en: "Large Zone",
-          es: "Zona Grande"
-        },
-        isPromoEligible: false,
-        optionPrice: "$1,275",
-        optionCurrency: "USD",
-        optionPromoPrice: "$",
+        optionPromoPrice: "",
         optionPromoPriceCurrency: "USD",
         notes: [
           {
-            en: "Area total [196 in² - 324 in²]. Eight to twelve palms — about the size of a square pillow or large square.",
+            en: "Area total [1264 cm² - 2090 cm²]. Eight to twelve palms — about the size of a square pillow or large square.",
             es: "Área total [1264 cm² - 2090 cm²]. De ocho a doce palmas de la mano, aproximadamente del tamaño de un cojín cuadrado o un cuadrado grande."
           }
         ]
+      },
+
+      // Other areas
+      {
+        optionName: { en: "Hands", es: "Manos" },
+        isPromoEligible: false,
+        optionPrice: { en: "$300", es: "$300" },
+        optionCurrency: "USD",
+        optionPromoPrice: "",
+        optionPromoPriceCurrency: "USD",
+        notes: []
       }
-    ])
+    ]
   },
 
   goals: [
