@@ -20,6 +20,12 @@ export default function AddOnSection({ addOns = [] }) {
     return field;
   };
 
+  const getLocalizedPrice = (field) => {
+    if (field == null) return "";
+    if (typeof field === "object") return getLocalized(field);
+    return field;
+  };
+
   if (!addOns.length || !allTreatments?.length) return null;
 
   const heading =
@@ -64,15 +70,16 @@ export default function AddOnSection({ addOns = [] }) {
           }) || null;
 
         const displayPrice =
-          matchedOption?.optionPrice || addon?.pricing?.startingPrice;
+          getLocalizedPrice(matchedOption?.optionPrice) ||
+          getLocalizedPrice(addon?.pricing?.startingPrice);
         const displayCurrency =
           matchedOption?.optionCurrency ||
           addon?.pricing?.startingPriceCurrency;
 
         const hasPromo =
           matchedOption?.isPromoEligible &&
-          typeof matchedOption.optionPromoPrice === "string" &&
-          matchedOption.optionPromoPrice.trim() !== "";
+          typeof getLocalizedPrice(matchedOption.optionPromoPrice) === "string" &&
+          getLocalizedPrice(matchedOption.optionPromoPrice).trim() !== "";
 
         const localizedAddOnName = getLocalized(
           addonRef.displayName || addon.serviceDisplayName
@@ -99,7 +106,7 @@ export default function AddOnSection({ addOns = [] }) {
                     {" "}
                     |{" "}
                     <span className="font-semibold">{promoLabel}</span>{" "}
-                    {matchedOption.optionPromoPrice}{" "}
+                    {getLocalizedPrice(matchedOption.optionPromoPrice)}{" "}
                     {matchedOption.optionPromoPriceCurrency}
                   </>
                 )}
