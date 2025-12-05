@@ -56,14 +56,14 @@ export default function PricingTable({ treatment }) {
     <div className="w-full bg-white">
       <div className="grid grid-cols-1 md:grid-cols-[3fr_2fr] mb-4">
         {/* Left: Dynamic Height Content */}
-        <div className="w-full max-w-5xl mx-auto text-black px-6 md:px-12 py-5 overflow-y-auto max-h-[600px]">
+        <div className="w-full mx-auto text-black px-6 md:px-12 py-5 overflow-y-auto max-h-[600px]">
           <h1 className="text-4xl font-serif font-medium mb-10">
             {headingText}
           </h1>
 
           {/* Package / General Zones Pricing */}
           {pricingOptions.length > 0 && (
-            <div className="space-y-4 mb-4">
+            <div className="space-y-4 mb-4 max-w-3xl mx-auto">
               {pricingOptions.map((p, idx) => {
                 const localizedPrice = getLocalizedPrice(p.optionPrice);
                 const localizedPromoPrice = getLocalizedPrice(
@@ -83,7 +83,7 @@ export default function PricingTable({ treatment }) {
                     <div className="text-lg font-medium">
                       {getLocalized(p.optionName)}
                       {p.notes?.length > 0 && (
-                        <ul className="mt-1 text-xs text-gray-600 italic list-inside">
+                        <ul className="mt-1 text-xs text-gray-600 italic list-inside mr-5">
                           {p.notes.map((note, i) => (
                             <li key={i}>{getLocalized(note)}</li>
                           ))}
@@ -111,11 +111,11 @@ export default function PricingTable({ treatment }) {
                   </div>
                 );
               })}
-            </div>
-          )}
-          <p className="text-xs text-gray-600 italic mb-4">
+              <p className="text-xs text-gray-600 italic mb-4">
             {disclaimerText}
           </p>
+            </div>
+          )}
 
           {/* Add On Section */}
           {addOns.length > 0 && (
