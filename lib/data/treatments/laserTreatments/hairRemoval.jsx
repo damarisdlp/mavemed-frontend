@@ -35,6 +35,10 @@ export const laserHairRemoval = {
     {
       en: "Safe for tanned and darker skin tones",
       es: "Seguro para pieles bronceadas y fototipos oscuros"
+    },
+    {
+      en: "Price is per session",
+      es: "Precio es por sesión"
     }
   ],
   pricing: {
