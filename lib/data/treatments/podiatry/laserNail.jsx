@@ -7,7 +7,7 @@ export const nailFungusLaser = {
   },
   serviceDisplayName: {
     en: "Laser Nail Fungus Treatment",
-    es: "Tratamiento láser para hongos en las uñas"
+    es: "Tratamiento Láser para Hongos en las Uñas"
   },
   isPopular: false,
   isPromoEligible: true,
@@ -38,33 +38,87 @@ export const nailFungusLaser = {
     }
   ],
   pricing: {
-    startingPrice: "$95 USD per session",
-    startingPriceCurrency: "USD",
-    promoPrice: "$80 USD per session",
-    promoPriceCurrency: "USD",
+    startingPrice: {
+      en: "$600",
+      es: "$600"
+    },
+    startingPriceCurrency: "MXN",
+    promoPrice: "",
+    promoPriceCurrency: "MXN",
     options: [
       {
         optionName: {
-          en: "Single Nail",
-          es: "Una sola uña"
+          en: "1 Nail",
+          es: "1 Uña"
         },
-        isPromoEligible: true,
-        optionPrice: "$25 USD",
-        optionCurrency: "USD",
-        optionPromoPrice: "$20 USD",
-        optionPromoPriceCurrency: "USD",
+        isPromoEligible: false,
+        optionPrice: {
+          en: "$600",
+          es: "$600"
+        },
+        optionCurrency: "MXN",
+        optionPromoPrice: "",
+        optionPromoPriceCurrency: "MXN",
         notes: null
       },
       {
         optionName: {
-          en: "Full Foot (5 Nails)",
-          es: "Pie completo (5 uñas)"
+          en: "2 Nails",
+          es: "2 Uñas"
         },
-        isPromoEligible: true,
-        optionPrice: "$95 USD",
-        optionCurrency: "USD",
-        optionPromoPrice: "$80 USD",
-        optionPromoPriceCurrency: "USD",
+        isPromoEligible: false,
+        optionPrice: {
+          en: "$800",
+          es: "$800"
+        },
+        optionCurrency: "MXN",
+        optionPromoPrice: "",
+        optionPromoPriceCurrency: "MXN",
+        notes: null
+      },
+      {
+        optionName: {
+          en: "3 - 5 Nails",
+          es: "3 - 5 Uñas"
+        },
+        isPromoEligible: false,
+        optionPrice: {
+          en: "$1,000",
+          es: "$1,000"
+        },
+        optionCurrency: "MXN",
+        optionPromoPrice: "",
+        optionPromoPriceCurrency: "MXN",
+        notes: null
+      },
+      {
+        optionName: {
+          en: "6 - 8 Nails",
+          es: "6 - 8 Uñas"
+        },
+        isPromoEligible: false,
+        optionPrice: {
+          en: "$1,200",
+          es: "$1,200"
+        },
+        optionCurrency: "MXN",
+        optionPromoPrice: "",
+        optionPromoPriceCurrency: "MXN",
+        notes: null
+      },
+      {
+        optionName: {
+          en: "9 - 10 Nails",
+          es: "9 - 10 Uñas"
+        },
+        isPromoEligible: false,
+        optionPrice: {
+          en: "$1,500",
+          es: "$1,500"
+        },
+        optionCurrency: "MXN",
+        optionPromoPrice: "",
+        optionPromoPriceCurrency: "MXN",
         notes: null
       }
     ]
