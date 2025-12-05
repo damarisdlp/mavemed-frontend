@@ -1,15 +1,12 @@
-import "keen-slider/keen-slider.min.css";
-import { useKeenSlider } from "keen-slider/react";
+import { useMemo, useState } from "react";
 import { useRouter } from "next/router";
 
-export default function WhatToExpect({ expectations = {} }) {
+export default function WhatToExpect({ expectations = {}, locale: propLocale }) {
   const { locale: routerLocale } = useRouter();
-  const locale = routerLocale || "en";
-
-  console.log("📌 WhatToExpect locale:", locale);
+  const locale = propLocale || routerLocale || "en";
 
   const getLocalized = (field) => {
-    if (field == null) return ""; // null or undefined
+    if (field == null) return "";
     if (typeof field === "object") {
       if (field[locale]) return field[locale];
       if (field.en) return field.en;
@@ -18,82 +15,78 @@ export default function WhatToExpect({ expectations = {} }) {
     return field;
   };
 
-  const [sliderRef, slider] = useKeenSlider({
-    loop: true,
-    slides: {
-      perView: 1,
-      spacing: 16,
-    },
-    breakpoints: {
-      "(min-width: 768px)": {
-        slides: { perView: 2.2, spacing: 16 },
-      },
-      "(min-width: 1024px)": {
-        slides: { perView: 3.1, spacing: 24 },
-      },
-    },
-  });
+  const tabs = useMemo(() => {
+    const beforeItems = expectations.beforeTreatment || expectations.preTreatment || [];
+    const duringItems = expectations.duringTreatment || [];
+    const afterItems = expectations.afterTreatment || expectations.postTreatment || [];
 
-  const preLabel = locale === "es" ? "Antes del tratamiento" : "Pre Treatment";
-  const postLabel = locale === "es" ? "Después del tratamiento" : "Post Treatment";
+    const beforeLabel = locale === "es" ? "Antes del tratamiento" : "Before Treatment";
+    const duringLabel = locale === "es" ? "Durante el tratamiento" : "During Treatment";
+    const afterLabel = locale === "es" ? "Después del tratamiento" : "After Treatment";
 
-  const combined = [
-    ...(expectations.preTreatment || []).map((note) => ({
-      label: preLabel,
-      note,
-    })),
-    ...(expectations.postTreatment || []).map((note) => ({
-      label: postLabel,
-      note,
-    })),
-  ];
+    return [
+      { key: "before", label: beforeLabel, items: beforeItems },
+      { key: "during", label: duringLabel, items: duringItems },
+      { key: "after", label: afterLabel, items: afterItems },
+    ];
+  }, [expectations, locale]);
 
-  if (!combined.length) return null;
+  const firstWithItems = tabs.find((tab) => tab.items?.length) || tabs[0];
+  const [activeKey, setActiveKey] = useState(firstWithItems.key);
 
-  const sectionTitle =
-    locale === "es" ? "Qué puedes esperar" : "What to Expect";
+  const activeTab = tabs.find((tab) => tab.key === activeKey) || firstWithItems;
+
+  const sectionTitle = locale === "es" ? "Qué puedes esperar" : "What to Expect";
 
   return (
-    <section className="bg-[#c4b7a6] py-7">
-      <div className="container mx-auto px-4 mb-3">
-        <h2 className="text-3xl md:text-4xl font-serif text-white font-medium text-center">
+    <section className="bg-white py-10">
+      <div className="container mx-auto px-4 mb-6">
+        <h2 className="text-3xl md:text-4xl font-serif text-black font-medium text-center">
           {sectionTitle}
         </h2>
       </div>
 
-      {slider && (
-        <div className="container mx-auto px-6 flex justify-end gap-4 mb-6">
-          <button
-            onClick={() => slider.current?.prev()}
-            className="bg-white hover:bg-gray-100 text-black p-2 rounded-full text-lg"
-          >
-            ←
-          </button>
-          <button
-            onClick={() => slider.current?.next()}
-            className="bg-white hover:bg-gray-100 text-black p-2 rounded-full text-lg"
-          >
-            →
-          </button>
-        </div>
-      )}
+      <div className="container mx-auto px-4">
+        <div className="flex flex-col gap-6 bg-[#efeee7] backdrop-blur-sm rounded-2xl p-6 shadow-sm">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+            {tabs.map((tab) => {
+              const isActive = tab.key === activeTab.key;
+              const hasItems = tab.items?.length > 0;
 
-      <div ref={sliderRef} className="keen-slider overflow-hidden">
-        {combined.map((item, index) => (
-          <div
-            key={index}
-            className="keen-slider__slide p-2 min-h-[180px] flex"
-          >
-            <div className="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition p-4 flex flex-col justify-center w-full">
-              <h4 className="text-sm font-semibold text-gray-600 mb-1">
-                {item.label}
-              </h4>
-              <p className="text-sm text-black leading-snug">
-                {getLocalized(item.note)}
-              </p>
-            </div>
+              return (
+                <button
+                  key={tab.key}
+                  type="button"
+                  onClick={() => setActiveKey(tab.key)}
+                  className={`w-full rounded-xl px-4 py-3 text-base font-semibold transition border ${
+                    isActive
+                      ? "bg-white text-black border-white shadow-md"
+                      : "bg-black text-white border-transparent hover:bg-white/80"
+                  } ${hasItems ? "" : "opacity-70 cursor-default"}`}
+                  disabled={!hasItems}
+                >
+                  {tab.label}
+                </button>
+              );
+            })}
           </div>
-        ))}
+
+          <div className="bg-white rounded-2xl p-6 shadow-sm">
+            {activeTab.items?.length ? (
+              <ul className="list-disc pl-5 space-y-3 text-base text-[#2f2316]">
+                {activeTab.items.map((item, idx) => (
+                  <li key={idx} className="leading-relaxed">
+                    {getLocalized(item)}
+                  </li>
+                ))}
+              </ul>
+            ) : (
+              <p className="text-[#2f2316] text-base">
+                {locale === "es" ? "Próximamente" : "Details coming soon."}
+              </p>
+            )}
+          </div>
+        </div>
       </div>
     </section>
   );
