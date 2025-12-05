@@ -13,6 +13,11 @@ export default function StaffDetails({ member }) {
   };
 
   const hasFavorites = member.favorites?.length > 0;
+  const getLocalizedPrice = (field) => {
+    if (field == null) return "";
+    if (typeof field === "object") return getLocalized(field);
+    return field;
+  };
   const category = getLocalized(member.category);
   const displayName = getLocalized(member.displayName);
   const title = getLocalized(member.title);
@@ -81,9 +86,11 @@ export default function StaffDetails({ member }) {
 
               const hasPromo =
                 match?.isPromoEligible &&
-                typeof match?.pricing?.promoPrice === "string" &&
-                match.pricing.promoPrice.trim() !== "";
+                typeof getLocalizedPrice(match?.pricing?.promoPrice) === "string" &&
+                getLocalizedPrice(match?.pricing?.promoPrice).trim() !== "";
 
+              const startingPrice = getLocalizedPrice(match?.pricing?.startingPrice);
+              const promoPrice = getLocalizedPrice(match?.pricing?.promoPrice);
               return (
                 <div key={idx} className="mb-6">
                   <p className="text-md font-semibold text-black">
@@ -99,12 +106,12 @@ export default function StaffDetails({ member }) {
                   {match?.pricing?.startingPrice && (
                     <p className="text-sm text-gray-700 mt-2">
                       <span className="font-semibold">Price:</span>{" "}
-                      {match.pricing.startingPrice} {match.pricing.startingPriceCurrency}
+                      {startingPrice} {match.pricing.startingPriceCurrency}
                       {hasPromo && (
                         <>
                           {" "} |{" "}
                           <span className="font-semibold">Exclusive Pricing:</span>{" "}
-                          {match.pricing.promoPrice} {match.pricing.promoPriceCurrency}
+                          {promoPrice} {match.pricing.promoPriceCurrency}
                         </>
                       )}
                     </p>
