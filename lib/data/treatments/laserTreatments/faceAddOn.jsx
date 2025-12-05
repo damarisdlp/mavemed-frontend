@@ -6,8 +6,8 @@ export const serumAddOns = {
     es: "Tratamientos Láser y Resurfacing Cutáneo"
   },
   serviceDisplayName: {
-    en: "Serum Add-Ons",
-    es: "Complementos de Suero"
+    en: "Serum Add-Ons (PRP, PDRN, PN)",
+    es: "Complementos de Suero (PRP, PDRN, PN)"
   },
   isPopular: false,
   isPromoEligible: false,
@@ -16,8 +16,8 @@ export const serumAddOns = {
     secondary: "/serum2.jpg"
   },
   description: {
-    en: "Enhance your treatment results with our specialty serums and boosters. These add-ons are applied immediately after procedures like RF microneedling or laser resurfacing to deliver targeted actives deep into the skin, amplifying healing and rejuvenation.",
-    es: "Potencia tus resultados con nuestros sueros y potenciadores especializados. Estos complementos se aplican inmediatamente después de procedimientos como microneedling con RF o resurfacing láser para llevar activos específicos a capas profundas de la piel, intensificando la reparación y la rejuveneción."
+    en: "Enhance your treatment results with our specialty serums and boosters. These add-ons are applied immediately after procedures like RF microneedling or CO₂ laser resurfacing to deliver targeted actives deep into the skin, amplifying healing and rejuvenation.",
+    es: "Potencia tus resultados con nuestros sueros y potenciadores especializados. Estos complementos se aplican inmediatamente después de procedimientos como microneedling con RF o resurfacing con láser CO₂ para llevar activos específicos a capas profundas de la piel, intensificando la reparación y la rejuveneción."
   },
   details: {
     en: "Serum add-ons are concentrated boosters that infuse the skin with powerful ingredients during the optimal post-treatment window. Each option targets different skin needs, from cellular repair and hydration to biostimulation and brightening, supporting faster recovery and superior outcomes.",
@@ -25,8 +25,8 @@ export const serumAddOns = {
   },
   notes: [
     {
-      en: "Recommended immediately after RF microneedling or CO₂ laser",
-      es: "Recomendados inmediatamente después de microneedling con RF o láser CO₂"
+      en: "Recommended with RF microneedling or CO₂ laser treatments",
+      es: "Recomendados complementariamente con tratamientos microneedling con RF o láser CO₂"
     },
     {
       en: "Boosts healing and enhances visible results",
@@ -38,62 +38,25 @@ export const serumAddOns = {
     }
   ],
   pricing: {
-    startingPrice: "$135",
+    startingPrice: { en: "$135", es: "$135" },
     startingPriceCurrency: "USD",
     promoPrice: "",
     promoPriceCurrency: "USD",
     options: [
-      {
-        optionName: {
-          en: "Add-On - PRP or PRFM",
-          es: "Complemento - PRP o PRFM"
-        },
-        isPromoEligible: false,
-        optionPrice: "$135",
-        optionCurrency: "USD",
-        optionPromoPrice: "",
-        optionPromoPriceCurrency: "USD",
-        notes: [
-          {
-            en: "Uses the patient’s own platelet-rich plasma or platelet-rich fibrin matrix to support natural healing and regeneration",
-            es: "Utiliza el propio plasma rico en plaquetas o matriz de fibrina rica en plaquetas del paciente para favorecer la reparación y regeneración natural"
-          }
-        ]
-      },
-      {
-        optionName: {
-          en: "Add-On - Kiara Reju",
-          es: "Complemento - Kiara Reju"
-        },
-        isPromoEligible: false,
-        optionPrice: "$145",
-        optionCurrency: "USD",
-        optionPromoPrice: "$",
-        optionPromoPriceCurrency: "USD",
-        notes: [
-          {
-            en: "PN + HA + niacinamide booster for hydration, elasticity, and glow",
-            es: "Potenciador con polinucleótidos, ácido hialurónico y niacinamida para hidratación, elasticidad y luminosidad"
-          }
-        ]
-      },
-      {
-        optionName: {
-          en: "Add-On - Rejuran",
-          es: "Complemento - Rejuran"
-        },
-        isPromoEligible: false,
-        optionPrice: "$250",
-        optionCurrency: "USD",
-        optionPromoPrice: "$",
-        optionPromoPriceCurrency: "USD",
-        notes: [
-          {
-            en: "Salmon DNA based polynucleotides for cellular repair, barrier recovery, and collagen support",
-            es: "Polinucleótidos derivados de ADN de salmón para reparar células, recuperar la barrera cutánea y estimular colágeno"
-          }
-        ]
-      }
+      // PRP
+      { optionName: { en: "PRP - Face", es: "PRP - Rostro" }, isPromoEligible: false, optionPrice: { en: "$135", es: "$135" }, optionCurrency: "USD", optionPromoPrice: "", optionPromoPriceCurrency: "USD", notes: [] },
+      { optionName: { en: "PRP - Face + Neck", es: "PRP - Rostro + Cuello" }, isPromoEligible: false, optionPrice: { en: "$150", es: "$150" }, optionCurrency: "USD", optionPromoPrice: "", optionPromoPriceCurrency: "USD", notes: [] },
+      { optionName: { en: "PRP - Face + Neck + Décolleté", es: "PRP - Rostro + Cuello + Escote" }, isPromoEligible: false, optionPrice: { en: "$170", es: "$170" }, optionCurrency: "USD", optionPromoPrice: "", optionPromoPriceCurrency: "USD", notes: [] },
+
+      // PDRN
+      { optionName: { en: "PDRN - Face", es: "PDRN - Rostro" }, isPromoEligible: false, optionPrice: { en: "$145", es: "$145" }, optionCurrency: "USD", optionPromoPrice: "", optionPromoPriceCurrency: "USD", notes: [] },
+      { optionName: { en: "PDRN - Face + Neck", es: "PDRN - Rostro + Cuello" }, isPromoEligible: false, optionPrice: { en: "$230", es: "$230" }, optionCurrency: "USD", optionPromoPrice: "", optionPromoPriceCurrency: "USD", notes: [] },
+      { optionName: { en: "PDRN - Face + Neck + Décolleté", es: "PDRN - Rostro + Cuello + Escote" }, isPromoEligible: false, optionPrice: { en: "$270", es: "$270" }, optionCurrency: "USD", optionPromoPrice: "", optionPromoPriceCurrency: "USD", notes: [] },
+
+      // PN
+      { optionName: { en: "PN - Face", es: "PN - Rostro" }, isPromoEligible: false, optionPrice: { en: "$250", es: "$250" }, optionCurrency: "USD", optionPromoPrice: "", optionPromoPriceCurrency: "USD", notes: [] },
+      { optionName: { en: "PN - Face + Neck", es: "PN - Rostro + Cuello" }, isPromoEligible: false, optionPrice: { en: "$370", es: "$370" }, optionCurrency: "USD", optionPromoPrice: "", optionPromoPriceCurrency: "USD", notes: [] },
+      { optionName: { en: "PN - Face + Neck + Décolleté", es: "PN - Rostro + Cuello + Escote" }, isPromoEligible: false, optionPrice: { en: "$520", es: "$520" }, optionCurrency: "USD", optionPromoPrice: "", optionPromoPriceCurrency: "USD", notes: [] }
     ]
   },
   goals: [
@@ -112,16 +75,8 @@ export const serumAddOns = {
   ],
   treatableAreas: [
     {
-      en: "Face",
-      es: "Rostro"
-    },
-    {
-      en: "Neck",
-      es: "Cuello"
-    },
-    {
-      en: "Décolleté",
-      es: "Escote"
+      en: "Any zone treated with RF microneedling or CO₂ laser",
+      es: "Cualquier zona tratada con microneedling de RF o láser de CO₂"
     }
   ],
   addOns: [
