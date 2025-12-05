@@ -38,9 +38,9 @@ export const venusFreeze = {
     }
   ],
   pricing: {
-    startingPrice: "$110 USD per session",
+    startingPrice: { en: "$110 USD per session", es: "$110 USD por sesión" },
     startingPriceCurrency: "USD",
-    promoPrice: "$95 USD per session with package",
+    promoPrice: { en: "$95 USD per session with package", es: "$95 USD por sesión con paquete" },
     promoPriceCurrency: "USD",
     options: [
       {
@@ -49,11 +49,11 @@ export const venusFreeze = {
           es: "Abdomen"
         },
         isPromoEligible: true,
-        optionPrice: "$110 USD",
+        optionPrice: { en: "$110 USD", es: "$110 USD" },
         optionCurrency: "USD",
         optionPromoPrice: "$95 USD",
         optionPromoPriceCurrency: "USD",
-        notes: null
+        notes: []
       },
       {
         optionName: {
@@ -61,11 +61,11 @@ export const venusFreeze = {
           es: "Brazos"
         },
         isPromoEligible: true,
-        optionPrice: "$110 USD",
+        optionPrice: { en: "$110 USD", es: "$110 USD" },
         optionCurrency: "USD",
         optionPromoPrice: "$95 USD",
         optionPromoPriceCurrency: "USD",
-        notes: null
+        notes: []
       },
       {
         optionName: {
@@ -73,11 +73,11 @@ export const venusFreeze = {
           es: "Muslos (cara interna o externa)"
         },
         isPromoEligible: true,
-        optionPrice: "$120 USD",
+        optionPrice: { en: "$120 USD", es: "$120 USD" },
         optionCurrency: "USD",
         optionPromoPrice: "$105 USD",
         optionPromoPriceCurrency: "USD",
-        notes: null
+        notes: []
       },
       {
         optionName: {
@@ -85,13 +85,27 @@ export const venusFreeze = {
           es: "Glúteos"
         },
         isPromoEligible: true,
-        optionPrice: "$130 USD",
+        optionPrice: { en: "$130 USD", es: "$130 USD" },
         optionCurrency: "USD",
         optionPromoPrice: "$115 USD",
         optionPromoPriceCurrency: "USD",
-        notes: null
+        notes: []
       }
-    ]
+    ].sort(
+      (a, b) =>
+        parseFloat(
+          (typeof a.optionPrice === "object" ? a.optionPrice.en : a.optionPrice).replace(
+            /[^0-9.]/g,
+            ""
+          )
+        ) -
+        parseFloat(
+          (typeof b.optionPrice === "object" ? b.optionPrice.en : b.optionPrice).replace(
+            /[^0-9.]/g,
+            ""
+          )
+        )
+    )
   },
   goals: [
     {
