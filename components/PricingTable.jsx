@@ -20,6 +20,12 @@ export default function PricingTable({ treatment }) {
     return field;
   };
 
+  const getLocalizedPrice = (field) => {
+    if (field == null) return "";
+    if (typeof field === "object") return getLocalized(field);
+    return field;
+  };
+
   const pricingOptions = treatment?.pricing?.options || [];
   const addOns = treatment?.addOns || [];
 
@@ -44,7 +50,7 @@ export default function PricingTable({ treatment }) {
       : "All prices are listed in either USD or MXN as indicated. If payment is made in a different currency than the one listed, for example paying in pesos for a USD listed price or vice versa, the final price will be calculated using Mave Medical Spa’s current internal exchange rate at the time of payment.";
 
   const priceLabel = locale === "es" ? "Precio:" : "Price:";
-  const promoLabel = locale === "es" ? "Precio exclusivo:" : "Exclusive pricing:";
+  const promoLabel = locale === "es" ? "Precio Exclusivo:" : "Exclusive pricing:";
 
   return (
     <div className="w-full bg-white">
@@ -59,10 +65,15 @@ export default function PricingTable({ treatment }) {
           {pricingOptions.length > 0 && (
             <div className="space-y-4 mb-4">
               {pricingOptions.map((p, idx) => {
+                const localizedPrice = getLocalizedPrice(p.optionPrice);
+                const localizedPromoPrice = getLocalizedPrice(
+                  p.optionPromoPrice
+                );
+
                 const showPromo =
                   p.isPromoEligible === true &&
-                  typeof p.optionPromoPrice === "string" &&
-                  p.optionPromoPrice.trim() !== "";
+                  typeof localizedPromoPrice === "string" &&
+                  localizedPromoPrice.trim() !== "";
 
                 return (
                   <div
@@ -84,7 +95,7 @@ export default function PricingTable({ treatment }) {
                       <div className="flex justify-between gap-2">
                         <span className="font-semibold text-left">{priceLabel}</span>
                         <span>
-                          {p.optionPrice} {p.optionCurrency}
+                          {localizedPrice} {p.optionCurrency}
                         </span>
                       </div>
 
@@ -92,7 +103,7 @@ export default function PricingTable({ treatment }) {
                         <div className="flex justify-between gap-2">
                           <span className="font-semibold text-left">{promoLabel}</span>
                           <span>
-                            {p.optionPromoPrice} {p.optionCurrency}
+                            {localizedPromoPrice} {p.optionCurrency}
                           </span>
                         </div>
                       )}
