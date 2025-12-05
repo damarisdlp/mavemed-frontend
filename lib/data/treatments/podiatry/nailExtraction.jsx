@@ -7,7 +7,7 @@ export const toenailExtraction = {
   },
   serviceDisplayName: {
     en: "Toenail Extraction Procedure",
-    es: "Procedimiento de extracción de uña del pie"
+    es: "Procedimiento de Extracción de Uña del Pie"
   },
   isPopular: false,
   isPromoEligible: true,
@@ -38,33 +38,27 @@ export const toenailExtraction = {
     }
   ],
   pricing: {
-    startingPrice: "$115 USD",
-    startingPriceCurrency: "USD",
-    promoPrice: "$95 USD",
-    promoPriceCurrency: "USD",
+    startingPrice: {
+      en: "$650",
+      es: "$650"
+    },
+    startingPriceCurrency: "MXN",
+    promoPrice: "",
+    promoPriceCurrency: "MXN",
     options: [
       {
         optionName: {
-          en: "Partial extraction",
-          es: "Extracción parcial"
+          en: "Extraction per Nail",
+          es: "Extracción por Uña"
         },
-        isPromoEligible: true,
-        optionPrice: "$115 USD",
-        optionCurrency: "USD",
-        optionPromoPrice: "$95 USD",
-        optionPromoPriceCurrency: "USD",
-        notes: null
-      },
-      {
-        optionName: {
-          en: "Total extraction",
-          es: "Extracción total"
+        isPromoEligible: false,
+        optionPrice: {
+          en: "$650",
+          es: "$650"
         },
-        isPromoEligible: true,
-        optionPrice: "$135 USD",
-        optionCurrency: "USD",
-        optionPromoPrice: "$110 USD",
-        optionPromoPriceCurrency: "USD",
+        optionCurrency: "MXN",
+        optionPromoPrice: "",
+        optionPromoPriceCurrency: "MXN",
         notes: null
       }
     ]
