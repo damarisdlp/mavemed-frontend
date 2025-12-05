@@ -10,9 +10,9 @@ export const enzymaticTherapy = {
     es: "Terapia de Remodelación Enzimática"
   },
   isPopular: false,
-  isPromoEligible: true,
+  isPromoEligible: false,
   images: {
-    primary: "/body.jpg",
+    primary: "/enzymatic.jpg",
     secondary: "/enzymatic2.jpg"
   },
   description: {
@@ -35,39 +35,95 @@ export const enzymaticTherapy = {
     {
       en: "Most effective in a series of 4–6 sessions",
       es: "Más efectivo en una serie de 4 a 6 sesiones"
+    },
+    {
+      en: "Most effective when combined with radiofrequency treatments",
+      es: "Más efectiva cuando se combina con tratamientos de radiofrecuencia."
     }
   ],
   pricing: {
-    startingPrice: "$130 USD per session",
+    startingPrice: { en: "$60", es: "$60" },
     startingPriceCurrency: "USD",
-    promoPrice: "$110 USD per session (with package)",
+    promoPrice: "",
     promoPriceCurrency: "USD",
     options: [
       {
         optionName: {
-          en: "Localized Area (any small zone)",
-          es: "Área localizada (cualquier zona pequeña)"
+          en: "PB Serum Slim+ - Lipase PB500",
+          es: "PB Serum Slim+ - Lipasa PB500"
         },
-        isPromoEligible: true,
-        optionPrice: "$130 USD",
+        isPromoEligible: false,
+        optionPrice: { en: "$60", es: "$60" },
         optionCurrency: "USD",
-        optionPromoPrice: "$110 USD",
+        optionPromoPrice: "",
         optionPromoPriceCurrency: "USD",
-        notes: null
+        notes: [
+          {
+          }
+        ]
       },
       {
         optionName: {
-          en: "Larger Zones (abdomen, thighs, flanks)",
-          es: "Zonas grandes (abdomen, muslos, flancos)"
+          en: "PB Serum Drain+ - Hyaluronidase PB3000",
+          es: "PB Serum Drain+ - Hialuronidasa PB3000"
         },
-        isPromoEligible: true,
-        optionPrice: "$160 USD",
+        isPromoEligible: false,
+        optionPrice: { en: "$60", es: "$60" },
         optionCurrency: "USD",
-        optionPromoPrice: "$140 USD",
+        optionPromoPrice: "",
         optionPromoPriceCurrency: "USD",
-        notes: null
+        notes: [
+          {
+          }
+        ]
+      },
+      {
+        optionName: {
+          en: "PB Serum Smooth+ - Collagenase GH PB220",
+          es: "PB Serum Smooth+ - Colagenasa GH PB220"
+        },
+        isPromoEligible: false,
+        optionPrice: { en: "$60", es: "$60" },
+        optionCurrency: "USD",
+        optionPromoPrice: "",
+        optionPromoPriceCurrency: "USD",
+        notes: [
+          {
+          }
+        ]
+      },
+      {
+        optionName: {
+          en: "PB Serum+ (Kit)",
+          es: "PB Serum+ (Kit)"
+        },
+        isPromoEligible: false,
+        optionPrice: { en: "$180", es: "$180" },
+        optionCurrency: "USD",
+        optionPromoPrice: "",
+        optionPromoPriceCurrency: "USD",
+        notes: [
+          {
+            en: "Kit includes 1 vial of each enzyme; ratios may be adjusted case by case, which can require additional vials.",
+            es: "El kit incluye 1 vial de cada enzima; las proporciones pueden ajustarse caso por caso, lo que puede requerir viales adicionales."
+          }
+        ]
       }
-    ]
+    ].sort(
+      (a, b) =>
+        parseFloat(
+          (typeof a.optionPrice === "object" ? a.optionPrice.en : a.optionPrice).replace(
+            /[^0-9.]/g,
+            ""
+          )
+        ) -
+        parseFloat(
+          (typeof b.optionPrice === "object" ? b.optionPrice.en : b.optionPrice).replace(
+            /[^0-9.]/g,
+            ""
+          )
+        )
+    )
   },
   goals: [
     {
