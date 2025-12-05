@@ -47,216 +47,35 @@ export const laserHairRemoval = {
     promoPrice: "",
     promoPriceCurrency: "USD",
     options: [
-      {
-        optionName: { en: "Hands", es: "Manos" },
-        optionPrice: { en: "$20", es: "$20" },
-        optionCurrency: "USD",
-        isPromoEligible: false,
-        optionPromoPrice: "",
-        optionPromoPriceCurrency: "USD",
-        notes: null
-      },
-      {
-        optionName: { en: "Feet", es: "Pies" },
-        optionPrice: { en: "$20", es: "$20" },
-        optionCurrency: "USD",
-        isPromoEligible: false,
-        optionPromoPrice: "",
-        optionPromoPriceCurrency: "USD",
-        notes: null
-      },
-      {
-        optionName: { en: "Small Zone", es: "Zona Pequeña" },
-        optionPrice: { en: "$25", es: "$25" },
-        optionCurrency: "USD",
-        isPromoEligible: false,
-        optionPromoPrice: "",
-        optionPromoPriceCurrency: "USD",
-        notes: [
-          {
-            en: "Area total [103 cm² - 413 cm²]. Approximately one to two palms — similar to a credit card up to half a sheet of paper.",
-            es: "Área total [103 cm² - 413 cm²]. Aproximadamente de una a dos palmas de la mano, similar al tamaño de una tarjeta de crédito hasta media hoja de papel."
-          }
-        ]
-      },
-      {
-        optionName: { en: "Bikini Line", es: "Línea de Bikini" },
-        optionPrice: { en: "$35", es: "$35" },
-        optionCurrency: "USD",
-        isPromoEligible: false,
-        optionPromoPrice: "",
-        optionPromoPriceCurrency: "USD",
-        notes: null
-      },
-      {
-        optionName: { en: "Axillas", es: "Axilas" },
-        optionPrice: { en: "$40", es: "$40" },
-        optionCurrency: "USD",
-        isPromoEligible: false,
-        optionPromoPrice: "",
-        optionPromoPriceCurrency: "USD",
-        notes: null
-      },
-      {
-        optionName: { en: "Medium Zone", es: "Zona Mediana" },
-        optionPrice: { en: "$45", es: "$45" },
-        optionCurrency: "USD",
-        isPromoEligible: false,
-        optionPromoPrice: "",
-        optionPromoPriceCurrency: "USD",
-        notes: [
-          {
-            en: "Area total [523 cm² - 1080.3 cm²]. Four to six palms — roughly the size of a full sheet of paper.",
-            es: "Área total [523 cm² - 1080.3 cm²]. De cuatro a seis palmas de la mano, aproximadamente del tamaño de una hoja completa de papel."
-          }
-        ]
-      },
-      {
-        optionName: { en: "Neck", es: "Cuello" },
-        optionPrice: { en: "$45", es: "$45" },
-        optionCurrency: "USD",
-        isPromoEligible: false,
-        optionPromoPrice: "",
-        optionPromoPriceCurrency: "USD",
-        notes: null
-      },
-      {
-        optionName: { en: "Shoulders", es: "Hombros" },
-        optionPrice: { en: "$55", es: "$55" },
-        optionCurrency: "USD",
-        isPromoEligible: false,
-        optionPromoPrice: "",
-        optionPromoPriceCurrency: "USD",
-        notes: null
-      },
-      {
-        optionName: { en: "Glutes", es: "Glúteos" },
-        optionPrice: { en: "$65", es: "$65" },
-        optionCurrency: "USD",
-        isPromoEligible: false,
-        optionPromoPrice: "",
-        optionPromoPriceCurrency: "USD",
-        notes: null
-      },
-      {
-        optionName: { en: "Face (Full)", es: "Rostro Completo" },
-        optionPrice: { en: "$75", es: "$75" },
-        optionCurrency: "USD",
-        isPromoEligible: false,
-        optionPromoPrice: "",
-        optionPromoPriceCurrency: "USD",
-        notes: null
-      },
-      {
-        optionName: { en: "Large Zone", es: "Zona Grande" },
-        optionPrice: { en: "$80", es: "$80" },
-        optionCurrency: "USD",
-        isPromoEligible: false,
-        optionPromoPrice: "",
-        optionPromoPriceCurrency: "USD",
-        notes: [
-          {
-            en: "Area total [1264 cm² - 2090 cm²]. Eight to twelve palms — about the size of a square pillow or large square.",
-            es: "Área total [1264 cm² - 2090 cm²]. De ocho a doce palmas de la mano, aproximadamente del tamaño de un cojín cuadrado o un cuadrado grande."
-          }
-        ]
-      },
-      {
-        optionName: { en: "Chest", es: "Pecho" },
-        optionPrice: { en: "$95", es: "$95" },
-        optionCurrency: "USD",
-        isPromoEligible: false,
-        optionPromoPrice: "",
-        optionPromoPriceCurrency: "USD",
-        notes: null
-      },
-      {
-        optionName: { en: "Abdomen", es: "Abdomen" },
-        optionPrice: { en: "$95", es: "$95" },
-        optionCurrency: "USD",
-        isPromoEligible: false,
-        optionPromoPrice: "",
-        optionPromoPriceCurrency: "USD",
-        notes: null
-      },
-      {
-        optionName: { en: "Lower Legs", es: "Piernas Inferiores" },
-        optionPrice: { en: "$105", es: "$105" },
-        optionCurrency: "USD",
-        isPromoEligible: false,
-        optionPromoPrice: "",
-        optionPromoPriceCurrency: "USD",
-        notes: null
-      },
-      {
-        optionName: { en: "Brazilian", es: "Brasileño" },
-        optionPrice: { en: "$110", es: "$110" },
-        optionCurrency: "USD",
-        isPromoEligible: false,
-        optionPromoPrice: "",
-        optionPromoPriceCurrency: "USD",
-        notes: null
-      },
-      {
-        optionName: { en: "Thighs", es: "Muslos" },
-        optionPrice: { en: "$110", es: "$110" },
-        optionCurrency: "USD",
-        isPromoEligible: false,
-        optionPromoPrice: "",
-        optionPromoPriceCurrency: "USD",
-        notes: null
-      },
-      {
-        optionName: { en: "Arms (Full)", es: "Brazos Completos" },
-        optionPrice: { en: "$125", es: "$125" },
-        optionCurrency: "USD",
-        isPromoEligible: false,
-        optionPromoPrice: "",
-        optionPromoPriceCurrency: "USD",
-        notes: null
-      },
-      {
-        optionName: { en: "Back (Full)", es: "Espalda Completa" },
-        optionPrice: { en: "$160", es: "$160" },
-        optionCurrency: "USD",
-        isPromoEligible: false,
-        optionPromoPrice: "",
-        optionPromoPriceCurrency: "USD",
-        notes: null
-      },
-      {
-        optionName: { en: "Legs (Full)", es: "Piernas Completas" },
-        optionPrice: { en: "$185", es: "$185" },
-        optionCurrency: "USD",
-        isPromoEligible: false,
-        optionPromoPrice: "",
-        optionPromoPriceCurrency: "USD",
-        notes: null
-      },
-      {
-        optionName: { en: "Full Body", es: "Cuerpo Completo" },
-        optionPrice: { en: "$750", es: "$750" },
-        optionCurrency: "USD",
-        isPromoEligible: false,
-        optionPromoPrice: "",
-        optionPromoPriceCurrency: "USD",
-        notes: null
-      }
-    ].sort(
-      (a, b) =>
-        parseFloat(
-          (typeof a.optionPrice === "object" ? a.optionPrice.en : a.optionPrice).replace(
-            /[^0-9.]/g,
-            ""
-          )
-        ) -
-        parseFloat(
-          (typeof b.optionPrice === "object" ? b.optionPrice.en : b.optionPrice).replace(
-            /[^0-9.]/g,
-            ""
-          )
-        )
-    )
+      // Face
+      { optionName: { en: "Face (Full)", es: "Rostro Completo" }, optionPrice: { en: "$75", es: "$75" }, optionCurrency: "USD", isPromoEligible: false, optionPromoPrice: "", optionPromoPriceCurrency: "USD", notes: [] },
+      { optionName: { en: "Neck", es: "Cuello" }, optionPrice: { en: "$45", es: "$45" }, optionCurrency: "USD", isPromoEligible: false, optionPromoPrice: "", optionPromoPriceCurrency: "USD", notes: [] },
+
+      // Torso & zones
+      { optionName: { en: "Chest", es: "Pecho" }, optionPrice: { en: "$95", es: "$95" }, optionCurrency: "USD", isPromoEligible: false, optionPromoPrice: "", optionPromoPriceCurrency: "USD", notes: [] },
+      { optionName: { en: "Arms (Full)", es: "Brazos Completos" }, optionPrice: { en: "$125", es: "$125" }, optionCurrency: "USD", isPromoEligible: false, optionPromoPrice: "", optionPromoPriceCurrency: "USD", notes: [] },
+      { optionName: { en: "Abdomen", es: "Abdomen" }, optionPrice: { en: "$95", es: "$95" }, optionCurrency: "USD", isPromoEligible: false, optionPromoPrice: "", optionPromoPriceCurrency: "USD", notes: [] },
+      { optionName: { en: "Shoulders", es: "Hombros" }, optionPrice: { en: "$55", es: "$55" }, optionCurrency: "USD", isPromoEligible: false, optionPromoPrice: "", optionPromoPriceCurrency: "USD", notes: [] },
+      { optionName: { en: "Axillas", es: "Axilas" }, optionPrice: { en: "$40", es: "$40" }, optionCurrency: "USD", isPromoEligible: false, optionPromoPrice: "", optionPromoPriceCurrency: "USD", notes: [] },
+      { optionName: { en: "Back (Full)", es: "Espalda Completa" }, optionPrice: { en: "$160", es: "$160" }, optionCurrency: "USD", isPromoEligible: false, optionPromoPrice: "", optionPromoPriceCurrency: "USD", notes: [] },
+      { optionName: { en: "Full Body", es: "Cuerpo Completo" }, optionPrice: { en: "$750", es: "$750" }, optionCurrency: "USD", isPromoEligible: false, optionPromoPrice: "", optionPromoPriceCurrency: "USD", notes: [] },
+      { optionName: { en: "Small Zone", es: "Zona Pequeña" }, optionPrice: { en: "$25", es: "$25" }, optionCurrency: "USD", isPromoEligible: false, optionPromoPrice: "", optionPromoPriceCurrency: "USD", notes: [{ en: "Area total [103 cm² - 413 cm²]. Approximately one to two palms — similar to a credit card up to half a sheet of paper.", es: "Área total [103 cm² - 413 cm²]. Aproximadamente de una a dos palmas de la mano, similar al tamaño de una tarjeta de crédito hasta media hoja de papel." }] },
+      { optionName: { en: "Medium Zone", es: "Zona Mediana" }, optionPrice: { en: "$45", es: "$45" }, optionCurrency: "USD", isPromoEligible: false, optionPromoPrice: "", optionPromoPriceCurrency: "USD", notes: [{ en: "Area total [523 cm² - 1080.3 cm²]. Four to six palms — roughly the size of a full sheet of paper.", es: "Área total [523 cm² - 1080.3 cm²]. De cuatro a seis palmas de la mano, aproximadamente del tamaño de una hoja completa de papel." }] },
+      { optionName: { en: "Large Zone", es: "Zona Grande" }, optionPrice: { en: "$80", es: "$80" }, optionCurrency: "USD", isPromoEligible: false, optionPromoPrice: "", optionPromoPriceCurrency: "USD", notes: [{ en: "Area total [1264 cm² - 2090 cm²]. Eight to twelve palms — about the size of a square pillow or large square.", es: "Área total [1264 cm² - 2090 cm²]. De ocho a doce palmas de la mano, aproximadamente del tamaño de un cojín cuadrado o un cuadrado grande." }] },
+
+      // Intimate
+      { optionName: { en: "Bikini Line", es: "Línea de Bikini" }, optionPrice: { en: "$35", es: "$35" }, optionCurrency: "USD", isPromoEligible: false, optionPromoPrice: "", optionPromoPriceCurrency: "USD", notes: [] },
+      { optionName: { en: "Brazilian", es: "Brasileño" }, optionPrice: { en: "$110", es: "$110" }, optionCurrency: "USD", isPromoEligible: false, optionPromoPrice: "", optionPromoPriceCurrency: "USD", notes: [] },
+
+      // Legs
+      { optionName: { en: "Thighs", es: "Muslos" }, optionPrice: { en: "$110", es: "$110" }, optionCurrency: "USD", isPromoEligible: false, optionPromoPrice: "", optionPromoPriceCurrency: "USD", notes: [] },
+      { optionName: { en: "Lower Legs", es: "Piernas Inferiores" }, optionPrice: { en: "$105", es: "$105" }, optionCurrency: "USD", isPromoEligible: false, optionPromoPrice: "", optionPromoPriceCurrency: "USD", notes: [] },
+      { optionName: { en: "Legs (Full)", es: "Piernas Completas" }, optionPrice: { en: "$185", es: "$185" }, optionCurrency: "USD", isPromoEligible: false, optionPromoPrice: "", optionPromoPriceCurrency: "USD", notes: [] },
+
+      // Hands & Feet
+      { optionName: { en: "Hands", es: "Manos" }, optionPrice: { en: "$20", es: "$20" }, optionCurrency: "USD", isPromoEligible: false, optionPromoPrice: "", optionPromoPriceCurrency: "USD", notes: [] },
+      { optionName: { en: "Feet", es: "Pies" }, optionPrice: { en: "$20", es: "$20" }, optionCurrency: "USD", isPromoEligible: false, optionPromoPrice: "", optionPromoPriceCurrency: "USD", notes: [] }
+    ]
   },
 
   goals: [
