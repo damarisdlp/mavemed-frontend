@@ -38,7 +38,7 @@ export const swedishMassage = {
     }
   ],
   pricing: {
-    startingPrice: "$35",
+    startingPrice: { en: "$35", es: "$35" },
     startingPriceCurrency: "USD",
     promoPrice: "",
     promoPriceCurrency: "USD",
@@ -49,13 +49,27 @@ export const swedishMassage = {
           es: "Masaje Sueco Relajante - Cuerpo Completo"
         },
         isPromoEligible: false,
-        optionPrice: "$35",
+        optionPrice: { en: "$35", es: "$35" },
         optionCurrency: "USD",
         optionPromoPrice: "",
         optionPromoPriceCurrency: "USD",
-        notes: null,
+        notes: [],
       }
-    ],
+    ].sort(
+      (a, b) =>
+        parseFloat(
+          (typeof a.optionPrice === "object" ? a.optionPrice.en : a.optionPrice).replace(
+            /[^0-9.]/g,
+            ""
+          )
+        ) -
+        parseFloat(
+          (typeof b.optionPrice === "object" ? b.optionPrice.en : b.optionPrice).replace(
+            /[^0-9.]/g,
+            ""
+          )
+        )
+    ),
   },
   goals: [
     {
