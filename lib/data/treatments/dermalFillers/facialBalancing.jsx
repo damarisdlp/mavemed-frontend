@@ -38,42 +38,21 @@ export const facialBalancing = {
     }
   ],
   pricing: {
-    startingPrice: "$305",
+    startingPrice: { en: "$360", es: "$360" },
     startingPriceCurrency: "USD",
-    promoPrice: null,
-    promoPriceCurrency: null,
+    promoPrice: "",
+    promoPriceCurrency: "USD",
     options: [
       {
         optionName: {
-          en: "Stylage M with Lidocaine",
-          es: "Stylage M con Lidocaína"
+          en: "Juvéderm Volift",
+          es: "Juvéderm Volift"
         },
         isPromoEligible: false,
-        optionPrice: "$305",
+        optionPrice: { en: "$360", es: "$360" },
         optionCurrency: "USD",
-        optionPromoPrice: null,
-        optionPromoPriceCurrency: null,
-        notes: [
-          {
-            en: "Price per 1ml syringe",
-            es: "Precio por jeringa de 1ml"
-          },
-          {
-            en: "Duration approx 9 to 12 months",
-            es: "Duración aproximada de 9 a 12 meses"
-          }
-        ]
-      },
-      {
-        optionName: {
-          en: "Juvéderm Volift with Lidocaine",
-          es: "Juvéderm Volift con Lidocaína"
-        },
-        isPromoEligible: false,
-        optionPrice: "$365",
-        optionCurrency: "USD",
-        optionPromoPrice: null,
-        optionPromoPriceCurrency: null,
+        optionPromoPrice: "",
+        optionPromoPriceCurrency: "USD",
         notes: [
           {
             en: "Price per 1ml syringe",
@@ -87,47 +66,40 @@ export const facialBalancing = {
       },
       {
         optionName: {
-          en: "Juvéderm Voluma with Lidocaine",
-          es: "Juvéderm Voluma con Lidocaína"
+          en: "Juvéderm Volbella",
+          es: "Juvéderm Volbella"
         },
         isPromoEligible: false,
-        optionPrice: "$370",
+        optionPrice: { en: "$370", es: "$370" },
         optionCurrency: "USD",
-        optionPromoPrice: null,
-        optionPromoPriceCurrency: null,
+        optionPromoPrice: "",
+        optionPromoPriceCurrency: "USD",
         notes: [
           {
             en: "Price per 1ml syringe",
             es: "Precio por jeringa de 1ml"
           },
           {
-            en: "Duration approx 12 to 15 months",
-            es: "Duración aproximada de 12 a 15 meses"
-          }
-        ]
-      },
-      {
-        optionName: {
-          en: "Juvéderm Volux with Lidocaine",
-          es: "Juvéderm Volux con Lidocaína"
-        },
-        isPromoEligible: false,
-        optionPrice: "$385",
-        optionCurrency: "USD",
-        optionPromoPrice: null,
-        optionPromoPriceCurrency: null,
-        notes: [
-          {
-            en: "Price per 1ml syringe",
-            es: "Precio por jeringa de 1ml"
-          },
-          {
-            en: "Duration approx 18 to 24 months",
-            es: "Duración aproximada de 18 a 24 meses"
+            en: "Duration approx 12 months",
+            es: "Duración aproximada de 12 meses"
           }
         ]
       }
-    ]
+    ].sort(
+      (a, b) =>
+        parseFloat(
+          (typeof a.optionPrice === "object" ? a.optionPrice.en : a.optionPrice).replace(
+            /[^0-9.]/g,
+            ""
+          )
+        ) -
+        parseFloat(
+          (typeof b.optionPrice === "object" ? b.optionPrice.en : b.optionPrice).replace(
+            /[^0-9.]/g,
+            ""
+          )
+        )
+    )
   },
   goals: [
     {
