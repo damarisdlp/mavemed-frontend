@@ -6,8 +6,8 @@ export const pdoThreads = {
     es: "Reafirmación y Esculpido Corporal"
   },
   serviceDisplayName: {
-    en: "PDO Thread Lift – Non-Surgical Facial Rejuvenation",
-    es: "Lifting con hilos PDO – Rejuvenecimiento facial sin cirugía"
+    en: "PDO Thread Lifts & Contouring – Non-Surgical Facial Rejuvenation",
+    es: "Lifting y Contorno Facial con Hilos PDO – Rejuvenecimiento Facial sin Cirugía"
   },
   isPopular: true,
   isPromoEligible: false,
@@ -42,12 +42,12 @@ export const pdoThreads = {
       en: "Price varies by area and thread count",
       es: "El precio varía según el área y la cantidad de hilos"
     },
-    startingPriceCurrency: "USD",
+    startingPriceCurrency: "",
     promoPrice: {
       en: "Discounted packages available for multiple zones",
       es: "Paquetes con descuento disponibles para múltiples zonas"
     },
-    promoPriceCurrency: "USD",
+    promoPriceCurrency: "",
     options: [
       {
         optionName: {
