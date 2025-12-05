@@ -42,21 +42,21 @@ export const hyaluronidase = {
     }
   ],
   pricing: {
-    startingPrice: "$45",
+    startingPrice: { en: "$60", es: "$60" },
     startingPriceCurrency: "USD",
-    promoPrice: null,
-    promoPriceCurrency: null,
+    promoPrice: "",
+    promoPriceCurrency: "USD",
     options: [
       {
         optionName: {
-          en: "Hyaluronidase Filler Reversal",
-          es: "Reversión de Rellenos con Hialuronidasa"
+          en: "Hyaluronidase",
+          es: "Hialuronidasa"
         },
         isPromoEligible: false,
-        optionPrice: "$45",
+        optionPrice: { en: "$60", es: "$60" },
         optionCurrency: "USD",
-        optionPromoPrice: null,
-        optionPromoPriceCurrency: null,
+        optionPromoPrice: "",
+        optionPromoPriceCurrency: "USD",
         notes: [
           {
             en: "Price is per vial",
@@ -64,7 +64,21 @@ export const hyaluronidase = {
           }
         ]
       }
-    ]
+    ].sort(
+      (a, b) =>
+        parseFloat(
+          (typeof a.optionPrice === "object" ? a.optionPrice.en : a.optionPrice).replace(
+            /[^0-9.]/g,
+            ""
+          )
+        ) -
+        parseFloat(
+          (typeof b.optionPrice === "object" ? b.optionPrice.en : b.optionPrice).replace(
+            /[^0-9.]/g,
+            ""
+          )
+        )
+    )
   },
   goals: [
     {
