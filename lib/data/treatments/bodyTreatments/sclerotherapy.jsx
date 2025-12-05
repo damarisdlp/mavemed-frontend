@@ -38,7 +38,7 @@ export const sclerotherapy = {
     }
   ],
   pricing: {
-    startingPrice: "Based on consultation",
+    startingPrice: { en: "Based on consultation", es: "Basado en consulta" },
     startingPriceCurrency: "",
     promoPrice: "",
     promoPriceCurrency: "USD",
@@ -49,13 +49,27 @@ export const sclerotherapy = {
           es: "Cualquier Zona Corporal"
         },
         isPromoEligible: false,
-        optionPrice: "Based on consultation",
+        optionPrice: { en: "Based on consultation", es: "Basado en consulta" },
         optionCurrency: "",
         optionPromoPrice: "",
         optionPromoPriceCurrency: "USD",
-        notes: null,
+        notes: [],
       },
-    ],
+    ].sort(
+      (a, b) =>
+        parseFloat(
+          (typeof a.optionPrice === "object" ? a.optionPrice.en : a.optionPrice).replace(
+            /[^0-9.]/g,
+            ""
+          )
+        ) -
+        parseFloat(
+          (typeof b.optionPrice === "object" ? b.optionPrice.en : b.optionPrice).replace(
+            /[^0-9.]/g,
+            ""
+          )
+        )
+    ),
   },
   goals: [
     {
