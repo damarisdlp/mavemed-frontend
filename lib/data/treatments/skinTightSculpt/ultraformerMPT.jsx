@@ -38,9 +38,9 @@ export const ultraformerMPT = {
     }
   ],
   pricing: {
-    startingPrice: "$235 USD",
+    startingPrice: { en: "$235", es: "$235" },
     startingPriceCurrency: "USD",
-    promoPrice: "$",
+    promoPrice: "",
     promoPriceCurrency: "USD",
     options: [
       {
@@ -49,9 +49,9 @@ export const ultraformerMPT = {
           es: "Ultraformer MPT - Refuerzo Deep Synergy"
         },
         isPromoEligible: false,
-        optionPrice: "$65 USD",
+        optionPrice: { en: "$65", es: "$65" },
         optionCurrency: "USD",
-        optionPromoPrice: "$",
+        optionPromoPrice: "",
         optionPromoPriceCurrency: "USD",
         notes: [
           {
@@ -66,9 +66,9 @@ export const ultraformerMPT = {
           es: "Ultraformer MPT - Contorno profundo (solo como complemento)"
         },
         isPromoEligible: false,
-        optionPrice: "$235 USD",
+        optionPrice: { en: "$235", es: "$235" },
         optionCurrency: "USD",
-        optionPromoPrice: "$",
+        optionPromoPrice: "",
         optionPromoPriceCurrency: "USD",
         notes: [
           {
@@ -83,9 +83,9 @@ export const ultraformerMPT = {
           es: "Ultraformer MPT - Body glow exprés"
         },
         isPromoEligible: false,
-        optionPrice: "$325 USD",
+        optionPrice: { en: "$325", es: "$325" },
         optionCurrency: "USD",
-        optionPromoPrice: "$",
+        optionPromoPrice: "",
         optionPromoPriceCurrency: "USD",
         notes: [
           {
@@ -100,9 +100,9 @@ export const ultraformerMPT = {
           es: "Ultraformer MPT - Lifting refrescante Foxy Eye"
         },
         isPromoEligible: false,
-        optionPrice: "$350 USD",
+        optionPrice: { en: "$350", es: "$350" },
         optionCurrency: "USD",
-        optionPromoPrice: "$",
+        optionPromoPrice: "",
         optionPromoPriceCurrency: "USD",
         notes: [
           {
@@ -117,9 +117,9 @@ export const ultraformerMPT = {
           es: "Ultraformer MPT - Esculpido de cuello"
         },
         isPromoEligible: false,
-        optionPrice: "$350 USD",
+        optionPrice: { en: "$350", es: "$350" },
         optionCurrency: "USD",
-        optionPromoPrice: "$",
+        optionPromoPrice: "",
         optionPromoPriceCurrency: "USD",
         notes: [
           {
@@ -134,9 +134,9 @@ export const ultraformerMPT = {
           es: "Ultraformer MPT - Lifting de jowls y papada"
         },
         isPromoEligible: false,
-        optionPrice: "$375 USD",
+        optionPrice: { en: "$375", es: "$375" },
         optionCurrency: "USD",
-        optionPromoPrice: "$",
+        optionPromoPrice: "",
         optionPromoPriceCurrency: "USD",
         notes: [
           {
@@ -151,9 +151,9 @@ export const ultraformerMPT = {
           es: "Ultraformer MPT - Rejuvenecimiento de escote"
         },
         isPromoEligible: false,
-        optionPrice: "$395 USD",
+        optionPrice: { en: "$395", es: "$395" },
         optionCurrency: "USD",
-        optionPromoPrice: "$",
+        optionPromoPrice: "",
         optionPromoPriceCurrency: "USD",
         notes: [
           {
@@ -168,9 +168,9 @@ export const ultraformerMPT = {
           es: "Ultraformer MPT - Esculpido de muslos"
         },
         isPromoEligible: false,
-        optionPrice: "$430 USD",
+        optionPrice: { en: "$430", es: "$430" },
         optionCurrency: "USD",
-        optionPromoPrice: "$",
+        optionPromoPrice: "",
         optionPromoPriceCurrency: "USD",
         notes: [
           {
@@ -185,9 +185,9 @@ export const ultraformerMPT = {
           es: "Ultraformer MPT - Esculpido facial estándar"
         },
         isPromoEligible: false,
-        optionPrice: "$435 USD",
+        optionPrice: { en: "$435", es: "$435" },
         optionCurrency: "USD",
-        optionPromoPrice: "$",
+        optionPromoPrice: "",
         optionPromoPriceCurrency: "USD",
         notes: [
           {
@@ -206,9 +206,9 @@ export const ultraformerMPT = {
           es: "Ultraformer MPT - Back glow exprés"
         },
         isPromoEligible: false,
-        optionPrice: "$495 USD",
+        optionPrice: { en: "$495", es: "$495" },
         optionCurrency: "USD",
-        optionPromoPrice: "$",
+        optionPromoPrice: "",
         optionPromoPriceCurrency: "USD",
         notes: [
           {
@@ -223,9 +223,9 @@ export const ultraformerMPT = {
           es: "Ultraformer MPT - Rejuvenecimiento facial total"
         },
         isPromoEligible: false,
-        optionPrice: "$550 USD",
+        optionPrice: { en: "$550", es: "$550" },
         optionCurrency: "USD",
-        optionPromoPrice: "$",
+        optionPromoPrice: "",
         optionPromoPriceCurrency: "USD",
         notes: [
           {
@@ -240,9 +240,9 @@ export const ultraformerMPT = {
           es: "Ultraformer MPT - Combo lift and smooth"
         },
         isPromoEligible: false,
-        optionPrice: "$595 USD",
+        optionPrice: { en: "$595", es: "$595" },
         optionCurrency: "USD",
-        optionPromoPrice: "$",
+        optionPromoPrice: "",
         optionPromoPriceCurrency: "USD",
         notes: [
           {
@@ -257,9 +257,9 @@ export const ultraformerMPT = {
           es: "Ultraformer MPT - Brazos definidos"
         },
         isPromoEligible: false,
-        optionPrice: "$625 USD",
+        optionPrice: { en: "$625", es: "$625" },
         optionCurrency: "USD",
-        optionPromoPrice: "$",
+        optionPromoPrice: "",
         optionPromoPriceCurrency: "USD",
         notes: [
           {
@@ -274,9 +274,9 @@ export const ultraformerMPT = {
           es: "Ultraformer MPT - Contorno 360"
         },
         isPromoEligible: false,
-        optionPrice: "$750 USD",
+        optionPrice: { en: "$750", es: "$750" },
         optionCurrency: "USD",
-        optionPromoPrice: "$",
+        optionPromoPrice: "",
         optionPromoPriceCurrency: "USD",
         notes: [
           {
@@ -291,9 +291,9 @@ export const ultraformerMPT = {
           es: "Ultraformer MPT - Contorno de glúteos"
         },
         isPromoEligible: false,
-        optionPrice: "$825 USD",
+        optionPrice: { en: "$825", es: "$825" },
         optionCurrency: "USD",
-        optionPromoPrice: "$",
+        optionPromoPrice: "",
         optionPromoPriceCurrency: "USD",
         notes: [
           {
@@ -308,9 +308,9 @@ export const ultraformerMPT = {
           es: "Ultraformer MPT - Abdomen firme"
         },
         isPromoEligible: false,
-        optionPrice: "$850 USD",
+        optionPrice: { en: "$850", es: "$850" },
         optionCurrency: "USD",
-        optionPromoPrice: "$",
+        optionPromoPrice: "",
         optionPromoPriceCurrency: "USD",
         notes: [
           {
@@ -325,9 +325,9 @@ export const ultraformerMPT = {
           es: "Ultraformer MPT - Esculpido de zona lumbar"
         },
         isPromoEligible: false,
-        optionPrice: "$875 USD",
+        optionPrice: { en: "$875", es: "$875" },
         optionCurrency: "USD",
-        optionPromoPrice: "$",
+        optionPromoPrice: "",
         optionPromoPriceCurrency: "USD",
         notes: [
           {
@@ -342,9 +342,9 @@ export const ultraformerMPT = {
           es: "Ultraformer MPT - Rejuvenecimiento total de espalda"
         },
         isPromoEligible: false,
-        optionPrice: "$1350 USD",
+        optionPrice: { en: "$1350", es: "$1350" },
         optionCurrency: "USD",
-        optionPromoPrice: "$",
+        optionPromoPrice: "",
         optionPromoPriceCurrency: "USD",
         notes: [
           {
@@ -353,7 +353,21 @@ export const ultraformerMPT = {
           }
         ]
       }
-    ]
+    ].sort(
+      (a, b) =>
+        parseFloat(
+          (typeof a.optionPrice === "object" ? a.optionPrice.en : a.optionPrice).replace(
+            /[^0-9.]/g,
+            ""
+          )
+        ) -
+        parseFloat(
+          (typeof b.optionPrice === "object" ? b.optionPrice.en : b.optionPrice).replace(
+            /[^0-9.]/g,
+            ""
+          )
+        )
+    )
   },
   goals: [
     {
