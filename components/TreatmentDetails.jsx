@@ -69,7 +69,7 @@ export default function TreatmentDetails({ treatment }) {
   const sortedPrices = priceCandidates.filter((p) => p.value !== Infinity).sort((a, b) => a.value - b.value);
   const lowestPriceDisplay =
     sortedPrices[0]?.display ||
-    `${pricing.startingPrice || ""} ${pricing.startingPriceCurrency || ""}`.trim();
+    `${getLocalizedPrice(pricing.startingPrice) || ""} ${pricing.startingPriceCurrency || ""}`.trim();
   const showStartingLabel = sortedPrices.length > 1;
   const startingPriceText = showStartingLabel
     ? `${locale === "es" ? "Desde" : "Starting from"} ${lowestPriceDisplay}`
