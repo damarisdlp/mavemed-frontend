@@ -35,12 +35,17 @@ export default function AddOnSection({ addOns = [] }) {
       <h3 className="text-xl font-medium mb-2">{heading}</h3>
 
       {addOns.map((addonRef, idx) => {
-        const addon = allTreatments.find(
-          (t) =>
-            // if serviceDisplayName is localized, you probably want to match on urlSlug only
-            t.serviceDisplayName === addonRef.serviceParent ||
-            t.urlSlug === addonRef.link?.split("/").pop()
-        );
+        const addon = allTreatments.find((t) => {
+          if (!t) return false;
+          const refName = getLocalized(addonRef.serviceParent || addonRef.displayName);
+          const serviceName = getLocalized(t.serviceDisplayName || t.displayName);
+          const slugMatch = t.urlSlug === addonRef.link?.split("/").pop();
+          const nameMatch =
+            serviceName &&
+            refName &&
+            serviceName.toLowerCase() === refName.toLowerCase();
+          return slugMatch || nameMatch;
+        });
 
         if (!addon) {
           console.warn("⚠️ No addon match found for:", addonRef.serviceParent);
@@ -48,17 +53,21 @@ export default function AddOnSection({ addOns = [] }) {
         }
 
         const matchedOption =
-          addon.pricing?.options?.find(
-            (opt) =>
-              opt.optionName === addonRef.serviceChild ||
-              opt.optionName === addonRef.displayName
-          ) || null;
+          addon?.pricing?.options?.find((opt) => {
+            const optName = getLocalized(opt.optionName);
+            const targetName = getLocalized(addonRef.serviceChild || addonRef.displayName);
+            return (
+              optName &&
+              targetName &&
+              optName.toLowerCase() === targetName.toLowerCase()
+            );
+          }) || null;
 
         const displayPrice =
-          matchedOption?.optionPrice || addon.pricing?.startingPrice;
+          matchedOption?.optionPrice || addon?.pricing?.startingPrice;
         const displayCurrency =
           matchedOption?.optionCurrency ||
-          addon.pricing?.startingPriceCurrency;
+          addon?.pricing?.startingPriceCurrency;
 
         const hasPromo =
           matchedOption?.isPromoEligible &&
