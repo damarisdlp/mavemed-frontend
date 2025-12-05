@@ -38,9 +38,9 @@ export const venusFreeze = {
     }
   ],
   pricing: {
-    startingPrice: { en: "$110 USD per session", es: "$110 USD por sesión" },
+    startingPrice: { en: "$110", es: "$110" },
     startingPriceCurrency: "USD",
-    promoPrice: { en: "$95 USD per session with package", es: "$95 USD por sesión con paquete" },
+    promoPrice: { en: "$95", es: "$95" },
     promoPriceCurrency: "USD",
     options: [
       {
@@ -49,9 +49,9 @@ export const venusFreeze = {
           es: "Abdomen"
         },
         isPromoEligible: true,
-        optionPrice: { en: "$110 USD", es: "$110 USD" },
+        optionPrice: { en: "$110", es: "$110" },
         optionCurrency: "USD",
-        optionPromoPrice: "$95 USD",
+        optionPromoPrice: { en: "$95", es: "$95" },
         optionPromoPriceCurrency: "USD",
         notes: []
       },
@@ -61,9 +61,9 @@ export const venusFreeze = {
           es: "Brazos"
         },
         isPromoEligible: true,
-        optionPrice: { en: "$110 USD", es: "$110 USD" },
+        optionPrice: { en: "$110", es: "$110" },
         optionCurrency: "USD",
-        optionPromoPrice: "$95 USD",
+        optionPromoPrice: { en: "$95", es: "$95" },
         optionPromoPriceCurrency: "USD",
         notes: []
       },
@@ -73,9 +73,9 @@ export const venusFreeze = {
           es: "Muslos (cara interna o externa)"
         },
         isPromoEligible: true,
-        optionPrice: { en: "$120 USD", es: "$120 USD" },
+        optionPrice: { en: "$120", es: "$120" },
         optionCurrency: "USD",
-        optionPromoPrice: "$105 USD",
+        optionPromoPrice: { en: "$105", es: "$105" },
         optionPromoPriceCurrency: "USD",
         notes: []
       },
@@ -85,9 +85,9 @@ export const venusFreeze = {
           es: "Glúteos"
         },
         isPromoEligible: true,
-        optionPrice: { en: "$130 USD", es: "$130 USD" },
+        optionPrice: { en: "$130", es: "$130" },
         optionCurrency: "USD",
-        optionPromoPrice: "$115 USD",
+        optionPromoPrice: { en: "$115", es: "$115" },
         optionPromoPriceCurrency: "USD",
         notes: []
       }
