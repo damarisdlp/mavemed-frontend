@@ -91,7 +91,7 @@ export default function PricingTable({ treatment }) {
                       )}
                     </div>
 
-                    <div className="text-sm leading-6 text-right min-w-[125px]">
+                    <div className="text-sm leading-6 text-right min-w-[135px]">
                       <div className="flex justify-between gap-2">
                         <span className="font-semibold text-left">{priceLabel}</span>
                         <span>
