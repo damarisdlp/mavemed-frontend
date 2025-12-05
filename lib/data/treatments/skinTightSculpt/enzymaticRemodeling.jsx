@@ -59,6 +59,8 @@ export const enzymaticTherapy = {
         optionPromoPriceCurrency: "USD",
         notes: [
           {
+            en: "Single vial; commonly paired with drainage.",
+            es: "Vial único; comúnmente combinado con drenaje."
           }
         ]
       },
@@ -74,6 +76,8 @@ export const enzymaticTherapy = {
         optionPromoPriceCurrency: "USD",
         notes: [
           {
+            en: "Single vial; used for edema and fibrosis.",
+            es: "Vial único; usado para edema y fibrosis."
           }
         ]
       },
@@ -89,6 +93,8 @@ export const enzymaticTherapy = {
         optionPromoPriceCurrency: "USD",
         notes: [
           {
+            en: "Single vial; targets fibrotic tissue.",
+            es: "Vial único; dirigido a tejido fibrótico."
           }
         ]
       },
