@@ -46,7 +46,7 @@ export default function AboutSection() {
   return (
     <section id="aboutus" className="bg-white min-h-screen w-full relative">
       {/* Top Section Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-[3fr_2fr] min-h-[85vh] mb-5">
+      <div className="grid grid-cols-1 md:grid-cols-[3fr_2fr] min-h-[85vh] mb-10">
         <div className="relative w-full h-[40vh] md:h-auto">
           <Image
             src="/logo-mave.png"
@@ -74,9 +74,9 @@ export default function AboutSection() {
               {t("aboutSection.p2")}
             </p>
 
-            <ul className="list-disc list-inside pl-4 text-left text-gray-700 text-base md:text-lg space-y-2 mb-4">
+            <ul className="list-disc list-outside pl-6 text-left text-gray-700 text-base md:text-lg space-y-2 mb-4">
               <li>{t("aboutSection.list.botox")}</li>
-              <li>{t("aboutSection.list.sculptra")}</li>
+              <li>{t("aboutSection.list.biostimulators")}</li>
               <li>{t("aboutSection.list.rfMicroneedling")}</li>
               <li>{t("aboutSection.list.pdo")}</li>
               <li>{t("aboutSection.list.lasers")}</li>
