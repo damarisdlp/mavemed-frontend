@@ -40,7 +40,10 @@ export const dermawrinkle = {
   pricing: {
     startingPrice: "$4.75",
     startingPriceCurrency: "USD",
-    promoPrice: "45 units for $200",
+    promoPrice: {
+      en: "45 units for $200",
+      es: "45 unidades por $200"
+    },
     promoPriceCurrency: "USD",
     options: [
       {
@@ -49,9 +52,15 @@ export const dermawrinkle = {
           es: "Cualquier Zona"
         },
         isPromoEligible: true,
-        optionPrice: "Each unit at $6.25",
+        optionPrice: {
+          en: "Each unit at $6.25",
+          es: "Cada unidad a $6.25"
+        },
         optionCurrency: "USD",
-        optionPromoPrice: "45 units for $250",
+        optionPromoPrice: {
+          en: "45 units for $250",
+          es: "45 unidades por $250"
+        },
         optionPromoPriceCurrency: "USD",
         notes: null,
       },
