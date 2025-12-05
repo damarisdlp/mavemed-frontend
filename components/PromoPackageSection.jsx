@@ -41,10 +41,6 @@ export default function PromoPackageSection() {
                 <Image src="/dr-icon.png" alt="Custom plan" width={30} height={30} />
                 <span>{t("packages.item4")}</span>
               </li>
-              <li className="flex items-start gap-4">
-                <Image src="/date-icon.png" alt="Custom plan" width={30} height={30} />
-                <span>{t("packages.item5")}</span>
-              </li>
             </ul>
 
             <p className="text-black mt-8 mb-2 font-semibold text-base md:text-lg">
