@@ -14,10 +14,10 @@
     "p4": "Every patient is treated with intention, clinical precision, and compassionate care, because your transformation deserves both beauty and integrity.",
     "list": {
       "botox": "Botox® wrinkle reduction",
-      "sculptra": "Sculptra® and other collagen biostimulators",
-      "rfMicroneedling": "Radiofrequency microneedling (Scarlet S RF)",
+      "biostimulators": "Sculptra®, HarmonyCa®, and other collagen biostimulators",
+      "rfMicroneedling": "Radiofrequency microneedling (Sylfirm X)",
       "pdo": "PDO thread lifts",
-      "lasers": "Medical-grade CO2 lasers and IPL photofacials"
+      "lasers": "Medical-grade CO₂ laser and IPL photofacials"
     },
     "meetTeam": "Meet Our Team",
     "viewAll": "View All",
@@ -29,7 +29,7 @@
     "title": "Stay Up to Date with Mave",
     "subtitle": "Sign up for our newsletter and SMS promos to get 10% off your first facial and exclusive offers, medical insights, and aesthetic trends. Be the first to know.",
     "firstName": "Your First Name",
-    "lastName": "Your Full Last Name",
+    "lastName": "Your Last Name",
     "email": "Your Email Address",
     "phone": "Your Mobile Number",
     "whatsappPrompt": "Are you on WhatsApp?",
@@ -76,6 +76,6 @@
   },
   "instagram": {
     "title": "Follow us",
-    "subtitle": "Follow us on Instagram to stay up to date and see the latest trends."
+    "subtitle": "Follow us on Instagram to stay up to date and see the latest aesthetic advancements."
   }
 }
