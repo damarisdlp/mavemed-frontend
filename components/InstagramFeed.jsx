@@ -15,9 +15,14 @@ export default function InstagramFeed() {
 
   return (
     <section className="bg-white px-6 text-center">
-      <h2 className="text-2xl md:text-3xl text-black font-serif font-medium py-5 flex items-center justify-center gap-2">
+      <h2 className="text-2xl md:text-3xl text-black font-serif font-medium py-3 flex items-center justify-center gap-2">
         <span>{t("instagram.title")}</span>
-        <a
+      </h2>
+      <p className="text-gray-600 mb-6">
+        {t("instagram.subtitle")}
+      </p>
+      <p className="text-gray-600 mb-3">
+      <a
           href="https://www.instagram.com/mavemedicalspa"
           target="_blank"
           rel="noopener noreferrer"
@@ -25,10 +30,7 @@ export default function InstagramFeed() {
         >
           @mavemedicalspa
         </a>
-      </h2>
-      <p className="text-gray-600 mb-6">
-        {t("instagram.subtitle")}
-      </p>
+        </p>
 
       <div
         className="elfsight-app-aaeae60b-b880-4154-b707-c3372df8a845"
