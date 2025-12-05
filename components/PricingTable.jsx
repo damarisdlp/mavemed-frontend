@@ -42,7 +42,7 @@ export default function PricingTable({ treatment }) {
   }
 
   const headingText =
-    locale === "es" ? "Opciones de precio y complementos" : "Pricing Options and Add Ons";
+    locale === "es" ? "Opciones de Precio y Complementos" : "Pricing Options and Add Ons";
 
   const disclaimerText =
     locale === "es"
