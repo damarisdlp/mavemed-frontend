@@ -6,27 +6,27 @@ export const rfMicroneedling = {
     es: "Tratamientos Láser y Resurfacing Cutáneo"
   },
   serviceDisplayName: {
-    en: "Scarlet S RF Microneedling",
-    es: "Microneedling con radiofrecuencia Scarlet S"
+    en: "Radiofrequency Microneedling (Sylfirm X)",
+    es: "Microneedling con Radiofrecuencia (Sylfirm X)"
   },
   isPopular: true,
   isPromoEligible: true,
   images: {
-    primary: "/scarlet.jpg",
-    secondary: "/scarlet2.jpg"
+    primary: "/sylfirmx.jpg",
+    secondary: "/sylfirmx2.jpg"
   },
   description: {
-    en: "Combines microneedling with fractional radiofrequency to lift, tighten, and resurface skin with minimal downtime.",
-    es: "Combina microneedling con radiofrecuencia fraccionada para levantar, tensar y renovar la piel con tiempo de recuperación mínimo."
+    en: "Sylfirm X combines ultrafast RF microneedling with dual-wave technology to lift, tighten, and resurface skin with minimal downtime.",
+    es: "Sylfirm X combina microneedling de radiofrecuencia ultrarrápido con tecnología de doble onda para levantar, tensar y renovar la piel con mínimo tiempo de recuperación."
   },
   details: {
-    en: "Scarlet S uses short pulse radiofrequency delivered through microneedles to stimulate deeper layers of skin for collagen remodeling, tightening, and scar reduction. It enhances firmness and texture without damaging the skin surface.",
-    es: "Scarlet S utiliza radiofrecuencia de pulso corto a través de microagujas para estimular las capas profundas de la piel, favoreciendo la remodelación del colágeno, el tensado y la mejora de cicatrices. Mejora la firmeza y la textura sin dañar la superficie de la piel."
+    en: "Sylfirm X delivers bipolar RF through ultrafine microneedles with both continuous and pulsed waveforms. It targets deeper dermal layers to remodel collagen, reduce laxity, soften scars, and improve overall skin tone and texture with precise energy delivery and minimal downtime.",
+    es: "Sylfirm X aplica RF bipolar a través de microagujas ultrafinas con modos continuo y pulsado. Llega a capas dérmicas profundas para remodelar colágeno, reducir la laxitud, suavizar cicatrices y mejorar el tono y la textura de la piel con energía precisa y poco tiempo de recuperación."
   },
   notes: [
     {
-      en: "3–4 sessions spaced 4–6 weeks apart recommended",
-      es: "Se recomiendan de 3 a 4 sesiones espaciadas cada 4–6 semanas"
+      en: "For scars, 3–4 sessions are typical; for rejuvenation and lifting, plan 2–3 sessions (spaced 4–6 weeks).",
+      es: "Para cicatrices, normalmente se realizan 3–4 sesiones; para rejuvenecimiento y lifting, planifique 2–3 sesiones (espaciadas cada 4–6 semanas)."
     },
     {
       en: "Safe for all skin types",
@@ -38,46 +38,139 @@ export const rfMicroneedling = {
     }
   ],
   pricing: {
-    startingPrice: "$265",
+    startingPrice: { en: "$425", es: "$425" },
     startingPriceCurrency: "USD",
-    promoPrice: "$225",
+    promoPrice: "",
     promoPriceCurrency: "USD",
     options: [
       {
         optionName: {
-          en: "Scarlet S RF Microneedling – Face",
-          es: "Microneedling RF Scarlet S – Rostro"
+          en: "Face",
+          es: "Rostro"
         },
-        isPromoEligible: true,
-        optionPrice: "$265",
+        isPromoEligible: false,
+        optionPrice: { en: "$900", es: "$900" },
         optionCurrency: "USD",
-        optionPromoPrice: "$225",
+        optionPromoPrice: "",
         optionPromoPriceCurrency: "USD",
-        notes: null
+        notes: []
       },
       {
         optionName: {
-          en: "Scarlet S RF Microneedling – Face and neck",
-          es: "Microneedling RF Scarlet S – Rostro y cuello"
+          en: "Neck",
+          es: "Cuello"
         },
-        isPromoEligible: true,
-        optionPrice: "$310",
+        isPromoEligible: false,
+        optionPrice: { en: "$600", es: "$600" },
         optionCurrency: "USD",
-        optionPromoPrice: "$275",
+        optionPromoPrice: "",
         optionPromoPriceCurrency: "USD",
-        notes: null
+        notes: []
       },
       {
         optionName: {
-          en: "Scarlet S RF Microneedling – Face, neck and décolleté",
-          es: "Microneedling RF Scarlet S – Rostro, cuello y escote"
+          en: "Décolleté",
+          es: "Escote"
         },
-        isPromoEligible: true,
-        optionPrice: "$350",
+        isPromoEligible: false,
+        optionPrice: { en: "$775", es: "$775" },
         optionCurrency: "USD",
-        optionPromoPrice: "$310",
+        optionPromoPrice: "",
         optionPromoPriceCurrency: "USD",
-        notes: null
+        notes: []
+      },
+      {
+        optionName: {
+          en: "Face + Neck",
+          es: "Rostro + Cuello"
+        },
+        isPromoEligible: false,
+        optionPrice: { en: "$1,375", es: "$1,375" },
+        optionCurrency: "USD",
+        optionPromoPrice: "",
+        optionPromoPriceCurrency: "USD",
+        notes: [
+        ]
+      },
+      {
+        optionName: {
+          en: "Face + Neck + Décolleté",
+          es: "Rostro + Cuello + Escote"
+        },
+        isPromoEligible: false,
+        optionPrice: { en: "$2,380", es: "$2,380" },
+        optionCurrency: "USD",
+        optionPromoPrice: "",
+        optionPromoPriceCurrency: "USD",
+        notes: [
+          {
+            en: "Includes complimentary hands treatment.",
+            es: "Incluye tratamiento de manos de cortesía."
+          }
+        ]
+      },
+      {
+        optionName: {
+          en: "Hands",
+          es: "Manos"
+        },
+        isPromoEligible: false,
+        optionPrice: { en: "$450", es: "$450" },
+        optionCurrency: "USD",
+        optionPromoPrice: "",
+        optionPromoPriceCurrency: "USD",
+        notes: []
+      },
+      {
+        optionName: {
+          en: "Small Zone",
+          es: "Zona Pequeña"
+        },
+        isPromoEligible: false,
+        optionPrice: { en: "$400", es: "$400" },
+        optionCurrency: "USD",
+        optionPromoPrice: "",
+        optionPromoPriceCurrency: "USD",
+        notes: [
+          {
+            en: "Area total [103 cm² - 413 cm²]. Approximately one to two palms — similar to a credit card up to half a sheet of paper.",
+            es: "Área total [103 cm² - 413 cm²]. Aproximadamente de una a dos palmas de la mano, similar al tamaño de una tarjeta de crédito hasta media hoja de papel."
+          }
+        ]
+      },
+      {
+        optionName: {
+          en: "Medium Zone",
+          es: "Zona Mediana"
+        },
+        isPromoEligible: false,
+        optionPrice: { en: "$700", es: "$700" },
+        optionCurrency: "USD",
+        optionPromoPrice: "",
+        optionPromoPriceCurrency: "USD",
+        notes: [
+          {
+            en: "Area total [523 cm² - 1080.3 cm²]. Four to six palms — roughly the size of a full sheet of paper.",
+            es: "Área total [523 cm² - 1080.3 cm²]. De cuatro a seis palmas de la mano, aproximadamente del tamaño de una hoja completa de papel."
+          }
+        ]
+      },
+      {
+        optionName: {
+          en: "Large Zone",
+          es: "Zona Grande"
+        },
+        isPromoEligible: false,
+        optionPrice: { en: "$1,100", es: "$1,100" },
+        optionCurrency: "USD",
+        optionPromoPrice: "",
+        optionPromoPriceCurrency: "USD",
+        notes: [
+          {
+            en: "Area total [1264 cm² - 2090 cm²]. Eight to twelve palms — about the size of a square pillow or large square.",
+            es: "Área total [1264 cm² - 2090 cm²]. De ocho a doce palmas de la mano, aproximadamente del tamaño de un cojín cuadrado o un cuadrado grande."
+          }
+        ]
       }
     ]
   },
@@ -185,12 +278,22 @@ export const rfMicroneedling = {
   faq: [
     {
       question: {
-        en: "How is this different from regular microneedling?",
-        es: "¿En qué se diferencia de un microneedling tradicional?"
+        en: "Is Sylfirm X safer than other RF microneedling devices?",
+        es: "¿Sylfirm X es más seguro que otros dispositivos de microneedling con RF?"
       },
       answer: {
-        en: "Scarlet RF adds radiofrequency energy to microneedling to reach deeper layers of the skin for more powerful collagen remodeling and tightening.",
-        es: "Scarlet RF añade energía de radiofrecuencia al microneedling para llegar a capas más profundas de la piel y lograr una remodelación de colágeno y un tensado más potentes."
+        en: "The FDA recently warned that some RF microneedling devices, when used outside cleared indications or by untrained providers, can cause burns, scars, and pigment changes. Sylfirm X delivers controlled bipolar RF with dual waveforms, is FDA-cleared for dermal remodeling, and is performed by licensed clinicians following strict protocols—reducing risk while improving outcomes.",
+        es: "La FDA advirtió recientemente que algunos dispositivos de microneedling con RF, usados fuera de indicaciones aprobadas o por personal no capacitado, pueden causar quemaduras, cicatrices y cambios de pigmento. Sylfirm X aplica RF bipolar controlada con doble onda, cuenta con autorización de la FDA para remodelación dérmica y se realiza por clínicos licenciados bajo protocolos estrictos, lo que reduce riesgos y mejora resultados."
+      }
+    },
+    {
+      question: {
+        en: "How is Sylfirm X different from regular microneedling?",
+        es: "¿En qué se diferencia Sylfirm X de un microneedling tradicional?"
+      },
+      answer: {
+        en: "It combines microneedling with precisely pulsed RF energy to stimulate deeper dermal remodeling, collagen production, and tightening—effects that traditional microneedling alone cannot achieve.",
+        es: "Combina microneedling con energía de RF de pulsos precisos para estimular una remodelación dérmica más profunda, producción de colágeno y tensado, efectos que el microneedling tradicional no logra por sí solo."
       }
     },
     {
@@ -201,16 +304,6 @@ export const rfMicroneedling = {
       answer: {
         en: "Most patients notice redness and tightness for 24–48 hours, with minimal flaking and very little interruption to daily activities.",
         es: "La mayoría de los pacientes presenta enrojecimiento y sensación de tirantez durante 24–48 horas, con muy poca descamación y mínima interrupción de sus actividades diarias."
-      }
-    },
-    {
-      question: {
-        en: "Does it hurt?",
-        es: "¿Duele el tratamiento?"
-      },
-      answer: {
-        en: "A topical numbing cream is applied before the procedure for comfort. Most patients describe the sensation as tolerable and brief.",
-        es: "Se aplica una crema anestésica tópica antes del procedimiento para mayor comodidad. La mayoría de los pacientes describe la sensación como tolerable y de corta duración."
       }
     }
   ]
