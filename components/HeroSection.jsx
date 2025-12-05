@@ -12,8 +12,14 @@ export default function HeroSection() {
       <h1 className="text-4xl text-black sm:text-4xl md:text-4xl font-serif font-medium leading-tight max-w-4xl">
         {t("heroSection.heading2")}
       </h1>
-      <p className="text-base sm:text-lg text-gray-600 mt-4 max-w-lg">
-        {t("heroSection.copy")}
+      <p className="text-base sm:text-lg text-gray-600 mt-4 max-w-4xl">
+        {t("heroSection.p1")}
+      </p>
+      <p className="text-base sm:text-lg text-gray-600 mt-2 max-w-4xl">
+        {t("heroSection.p2")}
+      </p>
+      <p className="text-base sm:text-lg text-gray-600 mt-2 max-w-4xl">
+        {t("heroSection.p3")}
       </p>
       <div className="mt-8 mb-4">
         <a
