@@ -6,8 +6,8 @@ export const harmonyca = {
     es: "Biostimuladores de Colágeno"
   },
   serviceDisplayName: {
-    en: "HarmonyCa (HA + Calcium Hydroxyapatite)",
-    es: "HarmonyCa (HA + Hidroxiapatita de Calcio)"
+    en: "HarmonyCa® (HA + Calcium Hydroxyapatite)",
+    es: "HarmonyCa® (HA + Hidroxiapatita de Calcio)"
   },
   isPopular: false,
   isPromoEligible: false,
@@ -16,12 +16,12 @@ export const harmonyca = {
     secondary: "/harmonyca2.jpg",
   },
   description: {
-    en: "HarmonyCA is a next-generation biostimulatory filler that combines hyaluronic acid (HA) for immediate facial volume with calcium hydroxyapatite (CaHA) for long-term collagen stimulation. This hybrid injectable enhances facial contour, skin quality, and structural lift in a single treatment.",
-    es: "HarmonyCA es un relleno biostimulador de nueva generación que combina ácido hialurónico (HA) para volumen facial inmediato con hidroxiapatita de calcio (CaHA) para estimulación de colágeno a largo plazo. Este inyectable híbrido mejora el contorno facial, la calidad de la piel y el levantamiento estructural en un solo tratamiento."
+    en: "HarmonyCa® is a next-generation biostimulatory filler that combines hyaluronic acid (HA) for immediate facial volume with calcium hydroxyapatite (CaHA) for long-term collagen stimulation. This hybrid injectable enhances facial contour, skin quality, and structural lift in a single treatment.",
+    es: "HarmonyCa® es un relleno biostimulador de nueva generación que combina ácido hialurónico (HA) para volumen facial inmediato con hidroxiapatita de calcio (CaHA) para estimulación de colágeno a largo plazo. Este inyectable híbrido mejora el contorno facial, la calidad de la piel y el levantamiento estructural en un solo tratamiento."
   },
   details: {
-    en: "HarmonyCA is a dual-phase injectable combining hyaluronic acid for immediate hydration and volume, with CaHA microspheres to boost collagen production over time. This advanced formula is ideal for enhancing cheekbones, defining the jawline, and restoring firmness in the lower face. Its bioregenerative effect helps improve skin density and elasticity, making it a top choice for long-lasting, natural-looking rejuvenation without heaviness or puffiness.",
-    es: "HarmonyCA es un inyectable bifásico que combina ácido hialurónico para hidratación y volumen inmediato, con microesferas de CaHA para aumentar la producción de colágeno con el tiempo. Esta fórmula avanzada es ideal para realzar los pómulos, definir la línea mandibular y restaurar la firmeza en la cara inferior. Su efecto bioregenerativo ayuda a mejorar la densidad y elasticidad de la piel, convirtiéndolo en una opción principal para una rejuvenecimiento duradero, natural y sin pesadez ni hinchazón."
+    en: "HarmonyCa® is a dual-phase injectable combining hyaluronic acid for immediate hydration and volume, with CaHA microspheres to boost collagen production over time. This advanced formula is ideal for enhancing cheekbones, defining the jawline, and restoring firmness in the lower face. Its bioregenerative effect helps improve skin density and elasticity, making it a top choice for long-lasting, natural-looking rejuvenation without heaviness or puffiness.",
+    es: "HarmonyCa® es un inyectable bifásico que combina ácido hialurónico para hidratación y volumen inmediato, con microesferas de CaHA para aumentar la producción de colágeno con el tiempo. Esta fórmula avanzada es ideal para realzar los pómulos, definir la línea mandibular y restaurar la firmeza en la cara inferior. Su efecto bioregenerativo ayuda a mejorar la densidad y elasticidad de la piel, convirtiéndolo en una opción principal para una rejuvenecimiento duradero, natural y sin pesadez ni hinchazón."
   },
   notes: [
     {
@@ -174,18 +174,18 @@ export const harmonyca = {
   faq: [
     {
       question: {
-        en: "How is HarmonyCA different from traditional dermal fillers?",
-        es: "¿En qué se diferencia HarmonyCA de los rellenos dérmicos tradicionales?"
+        en: "How is HarmonyCa® different from traditional dermal fillers?",
+        es: "¿En qué se diferencia HarmonyCa® de los rellenos dérmicos tradicionales?"
       },
       answer: {
-        en: "HarmonyCA combines the immediate volume of HA with the collagen-boosting power of CaHA, providing both instant lift and long-term skin regeneration.",
-        es: "HarmonyCA combina el volumen inmediato del HA con el poder estimulador de colágeno del CaHA, proporcionando levantamiento instantáneo y regeneración de la piel a largo plazo."
+        en: "HarmonyCa® combines the immediate volume of HA with the collagen-boosting power of CaHA, providing both instant lift and long-term skin regeneration.",
+        es: "HarmonyCa® combina el volumen inmediato del HA con el poder estimulador de colágeno del CaHA, proporcionando levantamiento instantáneo y regeneración de la piel a largo plazo."
       }
     },
     {
       question: {
-        en: "Which areas respond best to HarmonyCA?",
-        es: "¿Qué áreas responden mejor a HarmonyCA?"
+        en: "Which areas respond best to HarmonyCa®?",
+        es: "¿Qué áreas responden mejor a HarmonyCa®?"
       },
       answer: {
         en: "Cheeks, jawline, chin, and the lower face benefit most, especially for patients with mild-to-moderate volume loss or skin laxity.",
@@ -194,8 +194,8 @@ export const harmonyca = {
     },
     {
       question: {
-        en: "How long do HarmonyCA results last?",
-        es: "¿Cuánto duran los resultados de HarmonyCA?"
+        en: "How long do HarmonyCa® results last?",
+        es: "¿Cuánto duran los resultados de HarmonyCa®?"
       },
       answer: {
         en: "Most patients enjoy results that last 12–18 months, depending on their age, skin type, and lifestyle habits.",
@@ -204,18 +204,18 @@ export const harmonyca = {
     },
     {
       question: {
-        en: "Is HarmonyCA approved and safe?",
-        es: "¿Está HarmonyCA aprobado y es seguro?"
+        en: "Is HarmonyCa® approved and safe?",
+        es: "¿Está HarmonyCa® aprobado y es seguro?"
       },
       answer: {
-        en: "Yes. HarmonyCA is CE-certified and used widely across Europe. At Mave, it's administered exclusively by licensed medical providers.",
-        es: "Sí. HarmonyCA está certificado CE y se usa ampliamente en Europa. En Mave, es administrado exclusivamente por proveedores médicos licenciados."
+        en: "Yes. HarmonyCa® is CE-certified and used widely across Europe. At Mave, it's administered exclusively by licensed medical providers.",
+        es: "Sí. HarmonyCa® está certificado CE y se usa ampliamente en Europa. En Mave, es administrado exclusivamente por proveedores médicos licenciados."
       }
     },
     {
       question: {
-        en: "Can I combine HarmonyCA with other procedures?",
-        es: "¿Puedo combinar HarmonyCA con otros procedimientos?"
+        en: "Can I combine HarmonyCa® with other procedures?",
+        es: "¿Puedo combinar HarmonyCa® con otros procedimientos?"
       },
       answer: {
         en: "Absolutely. It pairs well with treatments like Ultraformer, RF microneedling, and skin boosters like Rejuran for comprehensive facial rejuvenation.",
