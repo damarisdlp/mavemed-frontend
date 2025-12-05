@@ -56,7 +56,7 @@ export default function PricingTable({ treatment }) {
     <div className="w-full bg-white">
       <div className="grid grid-cols-1 md:grid-cols-[3fr_2fr]">
         {/* Left: Dynamic Height Content */}
-        <div className="w-full max-w-3xl mx-auto text-black px-6 md:px-12 py-5">
+        <div className="w-full max-w-4xl mx-auto text-black px-6 md:px-12 py-5 overflow-y-auto max-h-[600px]">
           <h1 className="text-4xl font-serif font-medium mb-10">
             {headingText}
           </h1>
@@ -126,12 +126,12 @@ export default function PricingTable({ treatment }) {
         </div>
 
         {/* Right: Dynamically Sized Image */}
-        <div className="relative w-full h-full min-h-[400px] md:min-h-[600px]">
+        <div className="relative w-full min-h-[400px] md:min-h-[600px]">
           <Image
             src={treatment.images?.secondary || "/placeholder.jpg"}
             alt={`Treatment image for ${getLocalized(treatment.serviceDisplayName)}`}
             fill
-            className="object-cover object-center"
+            className="object-center object-contain"
             priority
           />
         </div>
