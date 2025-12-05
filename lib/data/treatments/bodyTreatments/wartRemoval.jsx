@@ -38,7 +38,7 @@ export const wartRemoval = {
     }
   ],
   pricing: {
-    startingPrice: "$50",
+    startingPrice: { en: "$50", es: "$50" },
     startingPriceCurrency: "USD",
     promoPrice: "",
     promoPriceCurrency: "USD",
@@ -49,13 +49,27 @@ export const wartRemoval = {
           es: "Por Verruga"
         },
         isPromoEligible: false,
-        optionPrice: "$50",
+        optionPrice: { en: "$50", es: "$50" },
         optionCurrency: "USD",
         optionPromoPrice: "",
         optionPromoPriceCurrency: "USD",
-        notes: null,
+        notes: [],
       },
-    ],
+    ].sort(
+      (a, b) =>
+        parseFloat(
+          (typeof a.optionPrice === "object" ? a.optionPrice.en : a.optionPrice).replace(
+            /[^0-9.]/g,
+            ""
+          )
+        ) -
+        parseFloat(
+          (typeof b.optionPrice === "object" ? b.optionPrice.en : b.optionPrice).replace(
+            /[^0-9.]/g,
+            ""
+          )
+        )
+    ),
   },
   goals: [
     {
