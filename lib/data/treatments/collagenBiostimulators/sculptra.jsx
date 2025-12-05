@@ -6,8 +6,8 @@ export const sculptra = {
     es: "Biostimuladores de Colágeno"
   },
   serviceDisplayName: {
-    en: "Sculptra PLLA Collagen Stimulator",
-    es: "Estimulador de Colágeno Sculptra PLLA"
+    en: "Sculptra (PLLA)",
+    es: "Sculptra (PLLA)"
   },
   isPopular: true,
   isPromoEligible: true,
@@ -16,8 +16,8 @@ export const sculptra = {
     secondary: "/sculptra2.jpg"
   },
   description: {
-    en: "Gradually restore youthful volume and firmness with Sculptra — a poly-L-lactic acid (PLLA) collagen stimulator that enhances skin texture and structure over time.",
-    es: "Restaure gradualmente el volumen y la firmeza juvenil con Sculptra — un estimulador de colágeno de ácido poli-L-láctico (PLLA) que mejora la textura y estructura de la piel con el tiempo."
+    en: "Gradually restore youthful volume and firmness with Sculptra, a poly-L-lactic acid (PLLA) collagen stimulator that enhances skin texture and structure over time.",
+    es: "Restaure gradualmente el volumen y la firmeza juvenil con Sculptra, un estimulador de colágeno de ácido poli-L-láctico (PLLA) que mejora la textura y estructura de la piel con el tiempo."
   },
   details: {
     en: "Sculptra is an injectable biostimulant composed of poly-L-lactic acid (PLLA), designed to activate your skin’s natural collagen production. It gradually restores lost facial volume, improves skin density, and enhances definition in areas like the cheeks, jawline, and temples. Unlike traditional dermal fillers, Sculptra delivers subtle, progressive improvements that last up to two years.",
@@ -25,31 +25,35 @@ export const sculptra = {
   },
   notes: [
     {
-      en: "Treatment plan typically includes 2–3 vials spaced 4–6 weeks apart",
-      es: "El plan de tratamiento generalmente incluye 2-3 viales espaciados 4-6 semanas"
-    },
-    {
-      en: "Full results build over 2–3 months as collagen regenerates",
-      es: "Los resultados completos se construyen en 2-3 meses a medida que el colágeno se regenera"
+      en: "Manufacturer protocol requires a minimum series of 3 sessions, typically spaced 4–6 weeks apart",
+      es: "El protocolo del fabricante requiere una serie mínima de 3 sesiones, normalmente espaciadas cada 4 a 6 semanas"
     },
     {
       en: "Excellent for long-term volume restoration without an overfilled look",
       es: "Excelente para la restauración de volumen a largo plazo sin apariencia sobrecargada"
+    },
+    {
+      en: "Single-session pricing at $575 is primarily for maintenance after a completed series",
+      es: "El precio de una sola sesión a $575 es principalmente para mantenimiento después de completar la serie"
+    },
+    {
+      en: "Pricing is per vial, not per session; total vials vary by area and plan",
+      es: "La tarifa es por vial, no por sesión; el número total de viales varía según el área y el plan"
     }
   ],
   pricing: {
-    startingPrice: "$575",
+    startingPrice: { en: "$575", es: "$575" },
     startingPriceCurrency: "USD",
     promoPrice: "$515",
     promoPriceCurrency: "USD",
     options: [
       {
         optionName: {
-          en: "Per Vial",
-          es: "Por Viales"
+          en: "PLLA - Sculptra (per vial)",
+          es: "PLLA - Sculptra (por vial)"
         },
         isPromoEligible: true,
-        optionPrice: "$575",
+        optionPrice: { en: "$575", es: "$575" },
         optionCurrency: "USD",
         optionPromoPrice: "$515",
         optionPromoPriceCurrency: "USD",
@@ -59,20 +63,34 @@ export const sculptra = {
             es: "Este precio refleja 1 vial por zona tratada"
           },
           {
-            en: "Zones include, but not limited to: Face, Neck, Neckline, Hands",
-            es: "Las zonas incluyen, pero no se limitan a: Rostro, Cuello, Escote, Manos"
+            en: "Zones include, but not limited to: Face, neck, neckline, hands",
+            es: "Las zonas incluyen, pero no se limitan a: rostro, cuello, escote, manos"
           },
           {
             en: "Vial quantity is subject to change based on zone size and/or zones treated",
             es: "La cantidad de viales está sujeta a cambios según el tamaño de la zona y/o zonas tratadas"
           },
           {
-            en: "Exclusive price is based on a treatment plan of 3 sessions",
-            es: "El precio exclusivo se basa en un plan de tratamiento de 3 sesiones"
+            en: "Exclusive $515 rate applies only when purchased as a 3-session plan (manufacturer-recommended minimum)",
+            es: "La tarifa exclusiva de $515 aplica solo al comprar el plan de 3 sesiones (mínimo recomendado por el fabricante)"
           }
         ]
       }
-    ]
+    ].sort(
+      (a, b) =>
+        parseFloat(
+          (typeof a.optionPrice === "object" ? a.optionPrice.en : a.optionPrice).replace(
+            /[^0-9.]/g,
+            ""
+          )
+        ) -
+        parseFloat(
+          (typeof b.optionPrice === "object" ? b.optionPrice.en : b.optionPrice).replace(
+            /[^0-9.]/g,
+            ""
+          )
+        )
+    )
   },
   goals: [
     {
@@ -116,6 +134,10 @@ export const sculptra = {
     {
       en: "Neck",
       es: "Cuello"
+    },
+    {
+      en: "Other zones may be treated upon request following medical evaluation",
+      es: "Otras zonas pueden tratarse a solicitud tras evaluación médica"
     }
   ],
   addOns: [
