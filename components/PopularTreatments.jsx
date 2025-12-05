@@ -69,19 +69,27 @@ export default function PopularTreatments() {
           <div key={index} className="keen-slider__slide min-h-[475px] flex p-2">
             <div className="mx-4 flex flex-col bg-[#f9f9f9] rounded-lg overflow-hidden shadow-sm hover:shadow-md transition">
               <div className="relative h-[200px] sm:h-[220px] md:h-[240px] w-full">
-                <Image
-                  src={treatment.images?.primary || "/placeholder.jpg"}
-                  alt={`${treatment.displayName || treatment.serviceDisplayName} – ${treatment.description}`}
-                  fill
-                  className="object-cover"
-                />
+                {(() => {
+                  const localizedName = getLocalized(treatment.displayName || treatment.serviceDisplayName);
+                  const localizedDesc = getLocalized(treatment.description);
+                  return (
+                    <Image
+                      src={treatment.images?.primary || "/placeholder.jpg"}
+                      alt={`${localizedName} – ${localizedDesc}`}
+                      fill
+                      className="object-cover"
+                    />
+                  );
+                })()}
               </div>
               <div className="p-4 flex-1 flex flex-col justify-between">
                 <div>
                   <h3 className="text-lg font-serif text-black font-medium mb-1">
                     {getLocalized(treatment.displayName || treatment.serviceDisplayName)}
                   </h3>
-                  <p className="text-sm text-gray-600 mb-3">{getLocalized(treatment.description)}</p>
+                  <p className="text-sm text-gray-600 mb-3">
+                    {getLocalized(treatment.description)}
+                  </p>
                 </div>
                 <div className="flex flex-col gap-2">
                   <Link
