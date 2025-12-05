@@ -24,15 +24,25 @@ export default function TreatmentDetails({ treatment }) {
     return field;
   };
 
+  const getLocalizedPrice = (field) => {
+    if (field == null) return "";
+    if (typeof field === "object") {
+      return getLocalized(field);
+    }
+    return field;
+  };
+
   const pricing = treatment?.pricing || {};
+  const localizedPromoPrice = getLocalizedPrice(pricing.promoPrice);
   const hasPromo =
     treatment?.isPromoEligible === true &&
-    typeof pricing.promoPrice === "string" &&
-    pricing.promoPrice.trim() !== "";
+    typeof localizedPromoPrice === "string" &&
+    localizedPromoPrice.trim() !== "";
 
   const parsePriceValue = (priceString) => {
-    if (typeof priceString !== "string") return Infinity;
-    const numeric = parseFloat(priceString.replace(/[^0-9.]/g, ""));
+    const priceText = getLocalizedPrice(priceString);
+    if (typeof priceText !== "string") return Infinity;
+    const numeric = parseFloat(priceText.replace(/[^0-9.]/g, ""));
     return Number.isFinite(numeric) ? numeric : Infinity;
   };
 
@@ -40,14 +50,18 @@ export default function TreatmentDetails({ treatment }) {
   if (pricing?.startingPrice) {
     priceCandidates.push({
       value: parsePriceValue(pricing.startingPrice),
-      display: `${pricing.startingPrice} ${pricing.startingPriceCurrency || ""}`.trim()
+      display: `${getLocalizedPrice(pricing.startingPrice)} ${
+        pricing.startingPriceCurrency || ""
+      }`.trim()
     });
   }
   (pricing?.options || []).forEach((opt) => {
     if (opt?.optionPrice) {
       priceCandidates.push({
         value: parsePriceValue(opt.optionPrice),
-        display: `${opt.optionPrice} ${opt.optionCurrency || ""}`.trim()
+        display: `${getLocalizedPrice(opt.optionPrice)} ${
+          opt.optionCurrency || ""
+        }`.trim()
       });
     }
   });
@@ -142,17 +156,17 @@ export default function TreatmentDetails({ treatment }) {
               <div className="border p-4 rounded shadow-sm">
                 <h2 className="text-md font-semibold text-black">
                   {locale === "es"
-                    ? "Precio exclusivo"
+                    ? "Precio Exclusivo"
                     : "Exclusive Pricing"}
                 </h2>
                 <p className="text-gray-700">
-                  {pricing.promoPrice} {pricing.promoPriceCurrency}
+                  {localizedPromoPrice} {pricing.promoPriceCurrency}
                 </p>
                 <a
                   href="https://wa.me/+526642077675"
-                  className="mt-3 inline-block w-full text-center border border-gray-700 text-gray-800 hover:border-black hover:text-black font-medium py-2 rounded transition duration-200"
+                  className="mt-3 inline-block w-full text-center border border-gray-700 text-gray-800 hover:bg-[#731a2f] hover:text-white font-medium py-2 rounded transition duration-200"
                 >
-                  {locale === "es" ? "Más información" : "Inquire"}
+                  {locale === "es" ? "Más Información" : "Inquire"}
                 </a>
               </div>
             )}
@@ -160,7 +174,7 @@ export default function TreatmentDetails({ treatment }) {
 
           {/* Notes */}
           {treatment.notes?.length > 0 && (
-            <ul className="text-sm text-gray-600 italic mb-4 space-y-1 list-disc list-inside">
+            <ul className="text-sm text-gray-600 italic mb-4 space-y-1 list-disc list-outside pl-5">
               {treatment.notes.map((note, idx) => (
                 <li key={idx}>{getLocalized(note)}</li>
               ))}
@@ -194,7 +208,7 @@ export default function TreatmentDetails({ treatment }) {
             <AccordionToggle
               title={
                 locale === "es"
-                  ? "Zonas tratables"
+                  ? "Zonas Tratables"
                   : "Treatable Areas"
               }
             >
@@ -209,7 +223,7 @@ export default function TreatmentDetails({ treatment }) {
           <AccordionToggle
             title={
               locale === "es"
-                ? "Sucursales disponibles"
+                ? "Sucursales Disponibles"
                 : "Available Locations"
             }
           >
