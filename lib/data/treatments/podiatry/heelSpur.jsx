@@ -7,7 +7,7 @@ export const calcanealSpur = {
   },
   serviceDisplayName: {
     en: "Heel Spur Injection (Calcaneal Spur)",
-    es: "Inyección para espolón calcáneo"
+    es: "Inyección para Espolón Calcáneo"
   },
   isPopular: false,
   isPromoEligible: true,
@@ -29,8 +29,8 @@ export const calcanealSpur = {
       es: "Aplicación guiada por ultrasonido disponible cuando sea necesario"
     },
     {
-      en: "Administered by certified podiatric physician",
-      es: "Administrado por un médico podólogo certificado"
+      en: "Administered by certified physician",
+      es: "Administrado por un médico certificado"
     },
     {
       en: "May include corticosteroids, anesthetics or biologics depending on diagnosis",
@@ -38,21 +38,27 @@ export const calcanealSpur = {
     }
   ],
   pricing: {
-    startingPrice: "$95 USD",
-    startingPriceCurrency: "USD",
-    promoPrice: "$80 USD",
-    promoPriceCurrency: "USD",
+    startingPrice: {
+      en: "$700",
+      es: "$700"
+    },
+    startingPriceCurrency: "MXN",
+    promoPrice: "",
+    promoPriceCurrency: "MXN",
     options: [
       {
         optionName: {
-          en: "Single Injection – Heel Spur",
-          es: "Inyección única – Espolón calcáneo"
+          en: "Treatment",
+          es: "Tratamiento"
         },
-        isPromoEligible: true,
-        optionPrice: "$95 USD",
-        optionCurrency: "USD",
-        optionPromoPrice: "$80 USD",
-        optionPromoPriceCurrency: "USD",
+        isPromoEligible: false,
+        optionPrice: {
+          en: "$700",
+          es: "$700"
+        },
+        optionCurrency: "MXN",
+        optionPromoPrice: "",
+        optionPromoPriceCurrency: "MXN",
         notes: null
       }
     ]
@@ -78,7 +84,7 @@ export const calcanealSpur = {
     },
     {
       en: "Plantar fascia insertion",
-      es: "Inserción de la fascia plantar"
+      es: "Inserción de la Fascia Plantar"
     }
   ],
   addOns: [],
