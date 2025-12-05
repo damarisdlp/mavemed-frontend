@@ -38,7 +38,7 @@ export const keloidInjection = {
     }
   ],
   pricing: {
-    startingPrice: "NEED PRICE",
+    startingPrice: { en: "Based on consultation", es: "Basado en consulta" },
     startingPriceCurrency: "USD",
     promoPrice: "",
     promoPriceCurrency: "USD",
@@ -49,13 +49,27 @@ export const keloidInjection = {
           es: "Área Única de Inyección"
         },
         isPromoEligible: false,
-        optionPrice: "NEED PRICE",
+        optionPrice: { en: "Based on consultation", es: "Basado en consulta" },
         optionCurrency: "USD",
         optionPromoPrice: "",
         optionPromoPriceCurrency: "USD",
-        notes: null,
+        notes: [],
       },
-    ],
+    ].sort(
+      (a, b) =>
+        parseFloat(
+          (typeof a.optionPrice === "object" ? a.optionPrice.en : a.optionPrice).replace(
+            /[^0-9.]/g,
+            ""
+          )
+        ) -
+        parseFloat(
+          (typeof b.optionPrice === "object" ? b.optionPrice.en : b.optionPrice).replace(
+            /[^0-9.]/g,
+            ""
+          )
+        )
+    ),
   },
   goals: [
     {
