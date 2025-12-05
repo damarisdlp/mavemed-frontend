@@ -6,14 +6,14 @@ export const lipFillers = {
     es: "Rellenos Dérmicos (Ácido Hialurónico)"
   },
   serviceDisplayName: {
-    en: "Hyaluronic Acid Lip Fillers",
-    es: "Rellenos de Labios con Ácido Hialurónico"
+    en: "Lip Fillers",
+    es: "Rellenos de Labios"
   },
   isPopular: true,
   isPromoEligible: false,
   images: {
-    primary: "/fillers.jpg",
-    secondary: "/fillers2.jpg"
+    primary: "/lipfillers.jpg",
+    secondary: "/lipfillers2.jpg"
   },
   description: {
     en: "Achieve fuller, more defined lips instantly with hyaluronic acid-based lip fillers. This non-surgical treatment enhances lip volume, symmetry, and hydration with natural-looking results.",
@@ -38,21 +38,21 @@ export const lipFillers = {
     }
   ],
   pricing: {
-    startingPrice: "$305",
+    startingPrice: { en: "$305", es: "$305" },
     startingPriceCurrency: "USD",
-    promoPrice: null,
-    promoPriceCurrency: null,
+    promoPrice: "",
+    promoPriceCurrency: "USD",
     options: [
       {
         optionName: {
-          en: "Stylage M with Lidocaine",
-          es: "Stylage M con Lidocaína"
+          en: "Dermal Filler - Hyaluronic Acid - Stylage M",
+          es: "Relleno Dérmico - Ácido Hialurónico - Stylage - M"
         },
         isPromoEligible: false,
-        optionPrice: "$305",
+        optionPrice: { en: "$305", es: "$305" },
         optionCurrency: "USD",
-        optionPromoPrice: null,
-        optionPromoPriceCurrency: null,
+        optionPromoPrice: "",
+        optionPromoPriceCurrency: "USD",
         notes: [
           {
             en: "Price per 1ml syringe",
@@ -67,13 +67,13 @@ export const lipFillers = {
       {
         optionName: {
           en: "Juvéderm Volift with Lidocaine",
-          es: "Juvéderm Volift con Lidocaína"
+          es: "Relleno Dérmico - Ácido Hialurónico - Juvederm - Volift"
         },
         isPromoEligible: false,
-        optionPrice: "$360",
+        optionPrice: { en: "$360", es: "$360" },
         optionCurrency: "USD",
-        optionPromoPrice: null,
-        optionPromoPriceCurrency: null,
+        optionPromoPrice: "",
+        optionPromoPriceCurrency: "USD",
         notes: [
           {
             en: "Price per 1ml syringe",
@@ -85,7 +85,21 @@ export const lipFillers = {
           }
         ]
       }
-    ]
+    ].sort(
+      (a, b) =>
+        parseFloat(
+          (typeof a.optionPrice === "object" ? a.optionPrice.en : a.optionPrice).replace(
+            /[^0-9.]/g,
+            ""
+          )
+        ) -
+        parseFloat(
+          (typeof b.optionPrice === "object" ? b.optionPrice.en : b.optionPrice).replace(
+            /[^0-9.]/g,
+            ""
+          )
+        )
+    )
   },
   goals: [
     {
