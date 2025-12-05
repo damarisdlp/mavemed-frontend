@@ -18,14 +18,14 @@ export default function AboutUs() {
   />
   <meta
     name="keywords"
-    content="About Mave Medical Spa, Tijuana Med Spa, Medical Aesthetics Mexico, Aesthetic Clinic Mission, Cross-Border Cosmetic Care"
+    content="About Mave Medical Spa, Tijuana Med Spa, Medical Aesthetics Mexico, Aesthetic Clinic Mission, Cross-Border Cosmetic Care, Medical Tourism, Tijuana Medical Tourism"
   />
   <meta property="og:title" content="About Us | Mave Medical Spa in Tijuana" />
   <meta property="og:description" content="Discover the philosophy behind Mave Medical Spa — blending ethical aesthetic care with cross-border accessibility and expert providers in Tijuana." />
   <meta property="og:image" content="https://www.mavemedspa.com/logo.png" />
-  <meta property="og:url" content="https://www.mavemedspa.com/about-us" />
+  <meta property="og:url" content="https://www.mavemedspa.com/aboutus" />
   <meta property="og:type" content="website" />
-  <link rel="canonical" href="https://www.mavemedspa.com/about-us" />
+  <link rel="canonical" href="https://www.mavemedspa.com/aboutus" />
 
   <script
     type="application/ld+json"
