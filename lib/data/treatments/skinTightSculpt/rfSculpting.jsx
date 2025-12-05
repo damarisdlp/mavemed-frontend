@@ -37,8 +37,8 @@ export const venusFreeze = {
       es: "También mejora la celulitis y el drenaje linfático"
     },
     {
-      en: "For facial rejuvenation/skin tightening we use RF microneedling with Sylfirm X. Venus Freeze is better suited for body contouring.",
-      es: "Para rejuvenecimiento y tensado facial usamos RF microneedling con Sylfirm X. Venus Freeze se adapta mejor al contorno corporal."
+      en: "For facial rejuvenation and skin tightening we prefer RF microneedling with Sylfirm X for controlled dermal remodeling. Venus Freeze is primarily indicated for body contouring and laxity.",
+      es: "Para rejuvenecimiento y tensado facial preferimos la radiofrecuencia fraccionada con microagujas Sylfirm X por su remodelación dérmica controlada. Venus Freeze se indica principalmente para contorno corporal y laxitud."
     }
   ],
   pricing: {
@@ -48,7 +48,7 @@ export const venusFreeze = {
     promoPriceCurrency: "USD",
     options: [
       {
-        optionName: { en: "Express Body Glow – Small Zone", es: "Brillo Corporal Exprés - 1 Zona Pequeña" },
+        optionName: { en: "Express Body Glow", es: "Brillo Corporal Exprés" },
         isPromoEligible: false,
         optionPrice: { en: "$25", es: "$25" },
         optionCurrency: "USD",
@@ -58,80 +58,120 @@ export const venusFreeze = {
           {
             en: "Area total [103 cm² - 413 cm²]. Approximately one to two palms — similar to a credit card up to half a sheet of paper.",
             es: "Área total [103 cm² - 413 cm²]. Aproximadamente de una a dos palmas de la mano, similar al tamaño de una tarjeta de crédito hasta media hoja de papel."
-          }
+          },
         ]
       },
       {
-        optionName: { en: "Décolleté Rejuvenation – Chest + Clavicles", es: "Rejuvenecimiento de Escote - Pecho + Clavículas" },
+        optionName: { en: "Décolleté Rejuvenation", es: "Rejuvenecimiento de Escote" },
         isPromoEligible: false,
         optionPrice: { en: "$30", es: "$30" },
         optionCurrency: "USD",
         optionPromoPrice: "",
         optionPromoPriceCurrency: "USD",
-        notes: null
+        notes: [
+          {
+            en: "Covers chest and clavicles.",
+            es: "Incluye pecho y clavículas."
+          }
+        ]
       },
       {
-        optionName: { en: "Express Back Glow – Flanks", es: "Brillo de Espalda Exprés - Flancos" },
+        optionName: { en: "Express Back Glow", es: "Brillo de Espalda Exprés" },
         isPromoEligible: false,
         optionPrice: { en: "$35", es: "$35" },
         optionCurrency: "USD",
         optionPromoPrice: "",
         optionPromoPriceCurrency: "USD",
-        notes: null
+        notes: [
+          {
+            en: "Targets flanks.",
+            es: "Tratamiento enfocado en los flancos."
+          }
+        ]
       },
       {
-        optionName: { en: "Glute Contour – Glutes + Subgluteal Line", es: "Contorno de Glúteos - Glúteos + Línea Subglútea" },
+        optionName: { en: "Glute Contour", es: "Contorno de Glúteos" },
         isPromoEligible: false,
         optionPrice: { en: "$45", es: "$45" },
         optionCurrency: "USD",
         optionPromoPrice: "",
         optionPromoPriceCurrency: "USD",
-        notes: null
+        notes: [
+          {
+            en: "Includes glutes and the subgluteal line.",
+            es: "Incluye glúteos y la línea subglútea."
+          }
+        ]
       },
       {
-        optionName: { en: "Defined Arms – Triceps + Biceps + Laterals + Elbow + Deltoid", es: "Brazos Definidos - Tríceps + Bíceps + Laterales + Codo + Deltoides" },
+        optionName: { en: "Defined Arms", es: "Brazos Definidos" },
         isPromoEligible: false,
         optionPrice: { en: "$50", es: "$50" },
         optionCurrency: "USD",
         optionPromoPrice: "",
         optionPromoPriceCurrency: "USD",
-        notes: null
+        notes: [
+          {
+            en: "Triceps, biceps, laterals, elbow, and deltoid.",
+            es: "Tríceps, bíceps, laterales, codo y deltoides."
+          }
+        ]
       },
       {
-        optionName: { en: "Thigh Sculpt – Inner + Front Thighs", es: "Escultura de Muslos - Cara Interna + Frontal de Muslos" },
+        optionName: { en: "Thigh Sculpt", es: "Escultura de Muslos" },
         isPromoEligible: false,
         optionPrice: { en: "$50", es: "$50" },
         optionCurrency: "USD",
         optionPromoPrice: "",
         optionPromoPriceCurrency: "USD",
-        notes: null
+        notes: [
+          {
+            en: "Inner and anterior thighs.",
+            es: "Cara interna y anterior de los muslos."
+          }
+        ]
       },
       {
-        optionName: { en: "Lumbar Sculpt – Lumbar + Flanks", es: "Escultura de Espalda Baja - Región Lumbar + Flancos" },
+        optionName: { en: "Lumbar Sculpt", es: "Escultura de Espalda Baja" },
         isPromoEligible: false,
         optionPrice: { en: "$50", es: "$50" },
         optionCurrency: "USD",
         optionPromoPrice: "",
         optionPromoPriceCurrency: "USD",
-        notes: null
+        notes: [
+          {
+            en: "Lumbar region and flanks.",
+            es: "Región lumbar y flancos."
+          }
+        ]
       },
       {
-        optionName: { en: "Abdomen Firming – Upper + Lower Abdomen", es: "Abdomen Firme - Abdomen Superior + Inferior" },
+        optionName: { en: "Abdomen Firming", es: "Abdomen Firme" },
         isPromoEligible: false,
         optionPrice: { en: "$70", es: "$70" },
         optionCurrency: "USD",
         optionPromoPrice: "",
         optionPromoPriceCurrency: "USD",
-        notes: null
+        notes: [
+          {
+            en: "Upper and lower abdomen.",
+            es: "Abdomen superior e inferior."
+          }
+        ]
       },
       {
-        optionName: { en: "Total Back Rejuvenation – Upper + Mid + Lower Back + Flanks", es: "Rejuvenecimiento Total de Espalda - Alta + Media + Baja + Flancos" },
+        optionName: { en: "Total Back Rejuvenation", es: "Rejuvenecimiento Total de Espalda" },
         isPromoEligible: false,
         optionPrice: { en: "$70", es: "$70" },
         optionCurrency: "USD",
         optionPromoPrice: "",
         optionPromoPriceCurrency: "USD",
-        notes: null
+        notes: [
+          {
+            en: "Upper, mid, and lower back with flanks.",
+            es: "Espalda alta, media y baja con flancos."
+          }
+        ]
       }
     ].sort(
       (a, b) =>
