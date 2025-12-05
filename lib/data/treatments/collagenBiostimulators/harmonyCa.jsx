@@ -6,8 +6,8 @@ export const harmonyca = {
     es: "Biostimuladores de Colágeno"
   },
   serviceDisplayName: {
-    en: "HarmonyCA (HA + Calcium Hydroxyapatite)",
-    es: "HarmonyCA (HA + Hidroxiapatita de Calcio)"
+    en: "HarmonyCa (HA + Calcium Hydroxyapatite)",
+    es: "HarmonyCa (HA + Hidroxiapatita de Calcio)"
   },
   isPopular: false,
   isPromoEligible: false,
@@ -29,24 +29,16 @@ export const harmonyca = {
       es: "El tratamiento incluye 2 jeringas (1.25 mL cada una)"
     },
     {
-      en: "Delivers both instant lift and progressive collagen support",
-      es: "Proporciona levantamiento instantáneo y soporte progresivo de colágeno"
-    },
-    {
       en: "Clinically effective for rejuvenating midface, jawline, and lower face",
       es: "Efectivo clínicamente para rejuvenecer la media cara, línea mandibular y cara inferior"
     },
     {
       en: "Recommended for patients seeking natural yet structural results",
       es: "Recomendado para pacientes que buscan resultados naturales pero estructurales"
-    },
-    {
-      en: "Exclusive pricing varies per quantity of sessions needed, listed price is applicable for 2 sessions, each with 2 syringes",
-      es: "El precio exclusivo varía según la cantidad de sesiones necesarias, el precio listado es aplicable para 2 sesiones, cada una con 2 jeringas"
     }
   ],
   pricing: {
-    startingPrice: "$15,750",
+    startingPrice: { en: "$15,750", es: "$15,750" },
     startingPriceCurrency: "MXN",
     promoPrice: "",
     promoPriceCurrency: "MXN",
@@ -57,13 +49,27 @@ export const harmonyca = {
           es: "Por Tratamiento - 2 x 1.25 mL Jeringas Total"
         },
         isPromoEligible: false,
-        optionPrice: "$15,750",
+        optionPrice: { en: "$15,750", es: "$15,750" },
         optionCurrency: "MXN",
         optionPromoPrice: "",
         optionPromoPriceCurrency: "MXN",
         notes: [],
       }
-    ],
+    ].sort(
+      (a, b) =>
+        parseFloat(
+          (typeof a.optionPrice === "object" ? a.optionPrice.en : a.optionPrice).replace(
+            /[^0-9.]/g,
+            ""
+          )
+        ) -
+        parseFloat(
+          (typeof b.optionPrice === "object" ? b.optionPrice.en : b.optionPrice).replace(
+            /[^0-9.]/g,
+            ""
+          )
+        )
+    ),
   },
   goals: [
     {
