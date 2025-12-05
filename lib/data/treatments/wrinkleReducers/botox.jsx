@@ -38,7 +38,7 @@ export const botox = {
     }
   ],
   pricing: {
-    startingPrice: "Each unit at $6.25",
+    startingPrice: "$6.25",
     startingPriceCurrency: "USD",
     promoPrice: "45 units for $250",
     promoPriceCurrency: "USD",
