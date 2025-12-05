@@ -38,7 +38,7 @@ export const cupping = {
     }
   ],
   pricing: {
-    startingPrice: "$10",
+    startingPrice: { en: "$10", es: "$10" },
     startingPriceCurrency: "USD",
     promoPrice: "",
     promoPriceCurrency: "USD",
@@ -49,7 +49,7 @@ export const cupping = {
           es: "Complemento de Ventosas"
         },
         isPromoEligible: false,
-        optionPrice: "$10",
+        optionPrice: { en: "$10", es: "$10" },
         optionCurrency: "USD",
         optionPromoPrice: "",
         optionPromoPriceCurrency: "USD",
@@ -60,7 +60,21 @@ export const cupping = {
           }
         ]
       },
-    ],
+    ].sort(
+      (a, b) =>
+        parseFloat(
+          (typeof a.optionPrice === "object" ? a.optionPrice.en : a.optionPrice).replace(
+            /[^0-9.]/g,
+            ""
+          )
+        ) -
+        parseFloat(
+          (typeof b.optionPrice === "object" ? b.optionPrice.en : b.optionPrice).replace(
+            /[^0-9.]/g,
+            ""
+          )
+        )
+    ),
   },
   goals: [
     {
