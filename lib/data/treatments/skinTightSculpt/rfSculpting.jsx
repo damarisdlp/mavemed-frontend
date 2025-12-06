@@ -214,8 +214,11 @@ export const venusFreeze = {
   ],
   addOns: [
     {
-      serviceParent: "Enzymatic Therapy",
-      serviceChild: null,
+      treatmentSlug: "enzymatic-therapy",
+      optionName: {
+        en: "PB Serum Slim+ - Lipase PB500",
+        es: "PB Serum Slim+ - Lipasa PB500"
+      },
       displayName: {
         en: "Enzymatic Therapy",
         es: "Terapia Enzimática"
