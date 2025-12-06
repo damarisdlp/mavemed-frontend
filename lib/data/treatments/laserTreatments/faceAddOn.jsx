@@ -81,8 +81,11 @@ export const serumAddOns = {
   ],
   addOns: [
     {
-      serviceParent: "Scarlet S RF Microneedling",
-      serviceChild: "Scarlet S RF Microneedling - Face",
+      treatmentSlug: "rf-microneedling",
+      optionName: {
+        en: "Face",
+        es: "Rostro"
+      },
       displayName: {
         en: "Scarlet S RF Microneedling - Face",
         es: "Microneedling con RF Scarlet S - Rostro"
