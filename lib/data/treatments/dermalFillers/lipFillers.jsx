@@ -140,10 +140,6 @@ export const lipFillers = {
         en: "Any Zone",
         es: "Cualquier Zona"
       },
-      displayName: {
-        en: "Botox - Lip Flip (Gummy Smile)",
-        es: "Botox - Volteo de Labios (Sonrisa de Encías)"
-      },
       link: "/treatments/wrinkleReducers/botox"
     }
   ],
