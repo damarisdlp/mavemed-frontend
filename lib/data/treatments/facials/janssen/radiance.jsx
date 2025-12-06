@@ -38,7 +38,7 @@ export const janssenRadianceBoost = {
     }
   ],
   pricing: {
-    startingPrice: "$70",
+    startingPrice: { en: "$45", es: "$45" },
     startingPriceCurrency: "USD",
     promoPrice: "",
     promoPriceCurrency: "USD",
@@ -49,9 +49,9 @@ export const janssenRadianceBoost = {
           es: "Face"
         },
         isPromoEligible: false,
-        optionPrice: "$70",
+        optionPrice: { en: "$45", es: "$45" },
         optionCurrency: "USD",
-        optionPromoPrice: "$40",
+        optionPromoPrice: "",
         optionPromoPriceCurrency: "USD",
         notes: []
       },
@@ -61,7 +61,7 @@ export const janssenRadianceBoost = {
           es: "Face + Neck"
         },
         isPromoEligible: false,
-        optionPrice: "$TBD",
+        optionPrice: { en: "$50", es: "$50" },
         optionCurrency: "USD",
         optionPromoPrice: "",
         optionPromoPriceCurrency: "USD",
@@ -73,7 +73,7 @@ export const janssenRadianceBoost = {
           es: "Face + Neck + Décolleté"
         },
         isPromoEligible: false,
-        optionPrice: "$TBD",
+        optionPrice: { en: "$55", es: "$55" },
         optionCurrency: "USD",
         optionPromoPrice: "",
         optionPromoPriceCurrency: "USD",
