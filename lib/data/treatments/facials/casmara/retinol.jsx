@@ -21,7 +21,7 @@ export const casmaraRetinolProAge = {
   },
   details: {
     en: "Casmara’s Pro-Age facial uses a high-potency 0.3% retinol complex to deeply renew the skin. Ideal for mature or sun-damaged skin in need of resurfacing and hydration. Includes antioxidants and post-treatment recovery mask.",
-    es: "El facial Pro-Age de Casmara utiliza un complejo de retinol al 0.3% de alta potencia para renovar la piel en profundidad. Ideal para piel madura o dañada por el sol que necesita resurface e hidratación. Incluye antioxidantes y una mascarilla de recuperación posterior al tratamiento."
+    es: "El facial Pro-Age de Casmara utiliza un complejo de retinol al 0.3% de alta potencia para renovar la piel en profundidad. Ideal para piel madura o dañada por el sol que necesita renovación superficial e hidratación. Incluye antioxidantes y una mascarilla de recuperación posterior al tratamiento."
   },
   notes: [
     {
@@ -83,7 +83,7 @@ export const casmaraRetinolProAge = {
       serviceChild: "Any Zone",
       displayName: {
         en: "Wrinkle Reducer - Botox",
-        es: "Wrinkle Reducer - Botox"
+        es: "Reductor de Arrugas - Botox"
       },
       link: "/treatments/wrinkle-reducers-botox"
     }
