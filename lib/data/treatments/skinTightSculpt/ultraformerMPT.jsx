@@ -437,12 +437,7 @@ export const ultraformerMPT = {
       optionName: {
         en: "PLLA - Sculptra® (per vial)",
         es: "PLLA - Sculptra® (por vial)"
-      },
-      displayName: {
-        en: "Sculptra PLLA Collagen Stimulator",
-        es: "Estimulador de Colágeno Sculptra PLLA"
-      },
-      link: "/treatments/collagenBiostimulator/sculptra"
+      }
     }
   ],
   expectations: {
