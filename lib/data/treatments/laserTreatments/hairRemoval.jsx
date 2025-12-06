@@ -148,36 +148,21 @@ export const laserHairRemoval = {
       optionName: {
         en: "Any Zone",
         es: "Cualquier Zona"
-      },
-      displayName: {
-        en: "Wrinkle Reducer – Botox",
-        es: "Reductor de arrugas Botox"
-      },
-      link: "/treatments/wrinkle-reducers-botox"
+      }
     },
     {
       treatmentSlug: "hydrafacial",
       optionName: {
         en: "Hydrafacial MD - Face",
         es: "Hydrafacial MD - Rostro"
-      },
-      displayName: {
-        en: "HydraFacial MD – Face",
-        es: "HydraFacial MD – Rostro"
-      },
-      link: "/treatments/hydrafacial"
+      }
     },
     {
       treatmentSlug: "swedish-massage",
       optionName: {
         en: "Relaxing Swedish Massage - Full Body",
         es: "Masaje sueco relajante cuerpo completo"
-      },
-      displayName: {
-        en: "Relaxing Swedish Massage – Full Body",
-        es: "Masaje sueco relajante cuerpo completo"
-      },
-      link: "/treatments/swedish-massage"
+      }
     }
   ],
   expectations: {
