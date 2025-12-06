@@ -114,8 +114,11 @@ export const cupping = {
   ],
   addOns: [
     {
-      serviceParent: "Relaxing Swedish Massage - Full Body",
-      serviceChild:  "Relaxing Swedish Massage - Full Body",
+      treatmentSlug: "swedish-massage",
+      optionName: {
+        en: "Relaxing Swedish Massage - Full Body",
+        es: "Masaje Sueco Relajante - Cuerpo Completo"
+      },
       displayName: {
         en: "Relaxing Swedish Massage - Full Body",
         es: "Masaje Sueco Relajante - Cuerpo Completo"
