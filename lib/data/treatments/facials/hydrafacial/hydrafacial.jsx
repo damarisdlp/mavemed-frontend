@@ -70,7 +70,7 @@ export const hydrafacial = {
       {
         optionName: {
           en: "Hydrafacial MD - Upper Back",
-          es: "Hydrafacial MD - Upper Back"
+          es: "Hydrafacial MD - Espalda superior"
         },
         isPromoEligible: false,
         optionPrice: { en: "$150", es: "$150" },
@@ -115,7 +115,7 @@ export const hydrafacial = {
       serviceChild: "Any Zone",
       displayName: {
         en: "Wrinkle Reducer - Botox",
-        es: "Wrinkle Reducer - Botox"
+        es: "Reductor de Arrugas - Botox"
       },
       link: "/treatments/wrinkle-reducers-botox"
     }
