@@ -116,8 +116,11 @@ export const mesotherapy = {
   ],
   addOns: [
     {
-      serviceParent: "HydraFacial MD",
-      serviceChild: "Hydrafacial MD - Face",
+      treatmentSlug: "hydrafacial",
+      optionName: {
+        en: "Hydrafacial MD - Face",
+        es: "Hydrafacial MD - Rostro"
+      },
       displayName: {
         en: "HydraFacial MD – Face",
         es: "HydraFacial MD – Rostro"
@@ -125,8 +128,11 @@ export const mesotherapy = {
       link: "/treatments/hydrafacial"
     },
     {
-      serviceParent: "PDO Thread Lift – Non-Surgical Facial Rejuvenation",
-      serviceChild: "Signature Lower Face Lift",
+      treatmentSlug: "pdo-threads",
+      optionName: {
+        en: "Signature Lower Face Lift",
+        es: "Levantamiento Facial Inferior Signature"
+      },
       displayName: {
         en: "PDO Thread Lift – Signature Lower Face Lift",
         es: "Hilos PDO – Lifting Facial Inferior Signature"
