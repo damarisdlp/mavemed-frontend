@@ -29,7 +29,6 @@ import { nailFungusLaser } from './treatments/podiatry/laserNail';
 import { toenailExtraction } from './treatments/podiatry/nailExtraction';
 import { enzymaticTherapy } from './treatments/skinTightSculpt/enzymaticRemodeling';
 import { pdoThreads } from './treatments/skinTightSculpt/pdoThreads';
-import { rfEnzymatic } from './treatments/skinTightSculpt/rfEnzymaticRemodeling';
 import { venusFreeze } from './treatments/skinTightSculpt/rfSculpting';
 import { ultraformerMPT } from './treatments/skinTightSculpt/ultraformerMPT';
 import { serumAddOns } from './treatments/laserTreatments/faceAddOn';
@@ -56,7 +55,6 @@ export const allTreatments = [
     hyaluronidase,
     enzymaticTherapy,
     pdoThreads,
-    rfEnzymatic,
     venusFreeze,
     ultraformerMPT,
     cupping,
