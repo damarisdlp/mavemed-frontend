@@ -7,7 +7,7 @@ export const harmonyca = {
   },
   serviceDisplayName: {
     en: "HarmonyCa® (HA + Calcium Hydroxyapatite)",
-    es: "HarmonyCa® (HA + Hidroxiapatita de Calcio)"
+    es: "HarmonyCa® (AH + Hidroxiapatita de Calcio)"
   },
   isPopular: false,
   isPromoEligible: false,
@@ -21,7 +21,7 @@ export const harmonyca = {
   },
   details: {
     en: "HarmonyCa® is a dual-phase injectable combining hyaluronic acid for immediate hydration and volume, with CaHA microspheres to boost collagen production over time. This advanced formula is ideal for enhancing cheekbones, defining the jawline, and restoring firmness in the lower face. Its bioregenerative effect helps improve skin density and elasticity, making it a top choice for long-lasting, natural-looking rejuvenation without heaviness or puffiness.",
-    es: "HarmonyCa® es un inyectable bifásico que combina ácido hialurónico para hidratación y volumen inmediato, con microesferas de CaHA para aumentar la producción de colágeno con el tiempo. Esta fórmula avanzada es ideal para realzar los pómulos, definir la línea mandibular y restaurar la firmeza en la cara inferior. Su efecto bioregenerativo ayuda a mejorar la densidad y elasticidad de la piel, convirtiéndolo en una opción principal para una rejuvenecimiento duradero, natural y sin pesadez ni hinchazón."
+    es: "HarmonyCa® es un inyectable bifásico que combina ácido hialurónico para hidratación y volumen inmediato, con microesferas de CaHA para aumentar la producción de colágeno con el tiempo. Esta fórmula avanzada es ideal para realzar los pómulos, definir la línea mandibular y restaurar la firmeza en la cara inferior. Su efecto bioregenerativo ayuda a mejorar la densidad y elasticidad de la piel, convirtiéndolo en una opción principal para un rejuvenecimiento duradero, natural y sin pesadez ni hinchazón."
   },
   notes: [
     {
