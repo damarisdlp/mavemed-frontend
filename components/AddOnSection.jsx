@@ -1,3 +1,4 @@
+import { useMemo } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { allTreatments } from "@/lib/data/allTreatments";
@@ -6,7 +7,21 @@ export default function AddOnSection({ addOns = [] }) {
   const { locale: routerLocale } = useRouter();
   const locale = routerLocale || "en";
 
-  console.log("📌 AddOnSection locale:", locale);
+  const labels = {
+    en: {
+      heading: "Add On Options",
+      price: "Price:",
+      promo: "Exclusive pricing:",
+      learn: "Learn More About ",
+    },
+    es: {
+      heading: "Opciones de Complemento",
+      price: "Precio:",
+      promo: "Precio Exclusivo:",
+      learn: "Más Información Sobre ",
+    },
+  };
+  const ui = labels[locale] || labels.en;
 
   const getLocalized = (field) => {
     if (field == null) return ""; // handles null / undefined
@@ -20,70 +35,73 @@ export default function AddOnSection({ addOns = [] }) {
     return field;
   };
 
-  const getLocalizedPrice = (field) => {
-    if (field == null) return "";
-    if (typeof field === "object") return getLocalized(field);
-    return field;
-  };
+  const normalize = (str) => (str || "").toLowerCase().trim();
 
   if (!addOns.length || !allTreatments?.length) return null;
 
-  const heading =
-    locale === "es" ? "Opciones de Complemento" : "Add On Options";
-  const priceLabel = locale === "es" ? "Precio:" : "Price:";
-  const promoLabel =
-    locale === "es" ? "Precio Exclusivo:" : "Exclusive pricing:";
-  const learnMorePrefix =
-    locale === "es" ? "Más Información Sobre " : "Learn More About ";
+  const treatmentMaps = useMemo(() => {
+    const bySlug = new Map();
+    const byName = new Map();
+    allTreatments.forEach((t) => {
+      if (!t) return;
+      if (t.urlSlug) bySlug.set(normalize(t.urlSlug), t);
+      const name = getLocalized(t.serviceDisplayName || t.displayName);
+      if (name) byName.set(normalize(name), t);
+    });
+    return { bySlug, byName };
+  }, [locale]);
+
+  const buildOptionMap = (treatment) => {
+    const map = new Map();
+    treatment?.pricing?.options?.forEach((opt) => {
+      const name = getLocalized(opt.optionName);
+      if (name) map.set(normalize(name), opt);
+    });
+    return map;
+  };
 
   return (
     <div className="mb-6 text-black">
-      <h3 className="text-xl font-medium mb-2">{heading}</h3>
+      <h3 className="text-xl font-medium mb-2">{ui.heading}</h3>
 
       {addOns.map((addonRef, idx) => {
-        const addon = allTreatments.find((t) => {
-          if (!t) return false;
-          const refName = getLocalized(addonRef.serviceParent || addonRef.displayName);
-          const serviceName = getLocalized(t.serviceDisplayName || t.displayName);
-          const slugMatch = t.urlSlug === addonRef.link?.split("/").pop();
-          const nameMatch =
-            serviceName &&
-            refName &&
-            serviceName.toLowerCase() === refName.toLowerCase();
-          return slugMatch || nameMatch;
-        });
+        const refName = getLocalized(
+          addonRef.serviceParent || addonRef.displayName || addonRef.optionName
+        );
+        const slugFromLink = addonRef.link
+          ? addonRef.link.split("/").filter(Boolean).pop()
+          : "";
+        const targetSlug = addonRef.treatmentSlug || slugFromLink;
+
+        const addon =
+          treatmentMaps.bySlug.get(normalize(targetSlug)) ||
+          treatmentMaps.byName.get(normalize(refName));
 
         if (!addon) {
           console.warn("⚠️ No addon match found for:", addonRef.serviceParent);
           return null;
         }
 
-        const matchedOption =
-          addon?.pricing?.options?.find((opt) => {
-            const optName = getLocalized(opt.optionName);
-            const targetName = getLocalized(addonRef.serviceChild || addonRef.displayName);
-            return (
-              optName &&
-              targetName &&
-              optName.toLowerCase() === targetName.toLowerCase()
-            );
-          }) || null;
+        const optionMap = buildOptionMap(addon);
+        const targetOptionName = getLocalized(
+          addonRef.optionName || addonRef.serviceChild || addonRef.displayName
+        );
+        const matchedOption = optionMap.get(normalize(targetOptionName)) || null;
 
         const displayPrice =
-          getLocalizedPrice(matchedOption?.optionPrice) ||
-          getLocalizedPrice(addon?.pricing?.startingPrice);
+          getLocalized(matchedOption?.optionPrice) ||
+          getLocalized(addon?.pricing?.startingPrice);
         const displayCurrency =
-          matchedOption?.optionCurrency ||
-          addon?.pricing?.startingPriceCurrency;
+          matchedOption?.optionCurrency || addon?.pricing?.startingPriceCurrency;
 
+        const promoPrice = getLocalized(matchedOption?.optionPromoPrice);
         const hasPromo =
-          matchedOption?.isPromoEligible &&
-          typeof getLocalizedPrice(matchedOption.optionPromoPrice) === "string" &&
-          getLocalizedPrice(matchedOption.optionPromoPrice).trim() !== "";
+          matchedOption?.isPromoEligible && typeof promoPrice === "string" && promoPrice.trim();
 
-        const localizedAddOnName = getLocalized(
-          addonRef.displayName || addon.serviceDisplayName
-        );
+        const localizedAddOnName =
+          getLocalized(addonRef.displayName) ||
+          getLocalized(addonRef.optionName) ||
+          getLocalized(addon.serviceDisplayName || addon.displayName);
         const localizedDescription = getLocalized(addon.description);
 
         return (
@@ -99,14 +117,14 @@ export default function AddOnSection({ addOns = [] }) {
             {/* Pricing */}
             {displayPrice && (
               <p className="text-sm text-gray-700 mt-1">
-                <span className="font-semibold">{priceLabel}</span>{" "}
+                <span className="font-semibold">{ui.price}</span>{" "}
                 {displayPrice} {displayCurrency}
                 {hasPromo && (
                   <>
                     {" "}
                     |{" "}
-                    <span className="font-semibold">{promoLabel}</span>{" "}
-                    {getLocalizedPrice(matchedOption.optionPromoPrice)}{" "}
+                    <span className="font-semibold">{ui.promo}</span>{" "}
+                    {promoPrice}{" "}
                     {matchedOption.optionPromoPriceCurrency}
                   </>
                 )}
@@ -119,7 +137,7 @@ export default function AddOnSection({ addOns = [] }) {
                 href={addonRef.link}
                 className="text-sm underline text-black mt-1 inline-block hover:text-[#731a2f]"
               >
-                {learnMorePrefix}
+                {ui.learn}
                 {localizedAddOnName}
               </Link>
             )}
