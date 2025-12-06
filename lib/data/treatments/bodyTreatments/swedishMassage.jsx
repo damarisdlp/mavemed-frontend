@@ -93,8 +93,11 @@ export const swedishMassage = {
   ],
   addOns: [
     {
-      serviceParent: "Wrinkle Reducer - Botox",
-      serviceChild:  "Any Zone",
+      treatmentSlug: "wrinkle-reducers-botox",
+      optionName: {
+        en: "Any Zone",
+        es: "Cualquier Zona"
+      },
       displayName: {
         en: "Wrinkle Reducer - Botox",
         es: "Reductor de Arrugas - Botox"
@@ -102,8 +105,11 @@ export const swedishMassage = {
       link:          "/treatments/wrinkle-reducers-botox"
     },
     {
-      serviceParent: "HydraFacial MD",
-      serviceChild:  "Hydrafacial MD - Face",
+      treatmentSlug: "hydrafacial",
+      optionName: {
+        en: "Hydrafacial MD - Face",
+        es: "Hydrafacial MD - Rostro"
+      },
       displayName: {
         en: "HydraFacial MD - Face",
         es: "HydraFacial MD - Rostro"
@@ -111,8 +117,11 @@ export const swedishMassage = {
       link:          "/treatments/hydrafacial"
     },
     {
-      serviceParent: "Casmara Purifying Algae Facial",
-      serviceChild:  "Casmara Purifying Algae Facial",
+      treatmentSlug: "casmara-purifying",
+      optionName: {
+        en: "Casmara Purifying Algae Facial",
+        es: "Facial Purificante de Algas Casmara"
+      },
       displayName: {
         en: "Casmara Purifying Algae Facial",
         es: "Facial Purificante de Algas Casmara"
