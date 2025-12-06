@@ -178,10 +178,6 @@ export const enzymaticTherapy = {
         en: "Express Body Glow",
         es: "Brillo Corporal Exprés"
       },
-      displayName: {
-        en: "RF Body Sculpting",
-        es: "Esculpido Corporal con RF"
-      },
       link: "/treatments/enzymaticRemodeling"
     }
   ],
