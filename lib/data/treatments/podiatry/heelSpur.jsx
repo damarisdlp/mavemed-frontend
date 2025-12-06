@@ -59,7 +59,7 @@ export const calcanealSpur = {
         optionCurrency: "MXN",
         optionPromoPrice: "",
         optionPromoPriceCurrency: "MXN",
-        notes: null
+        notes: []
       }
     ]
   },
