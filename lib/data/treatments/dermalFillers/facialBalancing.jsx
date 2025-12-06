@@ -152,10 +152,6 @@ export const facialBalancing = {
         en: "Any Zone",
         es: "Cualquier Zona"
       },
-      displayName: {
-        en: "Wrinkle Reducer - Botox - Lip Flip (Gummy Smile)",
-        es: "Reductor de Arrugas - Botox - Volteo de Labios (Sonrisa de Encías)"
-      },
       link: "/treatments/wrinkleReducers"
     },
     {
@@ -163,10 +159,6 @@ export const facialBalancing = {
       optionName: {
         en: "Casmara Retinol Pro‑Age Facial",
         es: "Casmara Retinol Pro‑Age Facial"
-      },
-      displayName: {
-        en: "Casmara Retinol Pro Age Facial",
-        es: "Tratamiento Facial Casmara Retinol Pro Edad"
       },
       link: "/treatments/facials/casmara/retinol"
     }
