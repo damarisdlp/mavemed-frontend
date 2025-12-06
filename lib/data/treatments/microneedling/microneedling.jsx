@@ -124,8 +124,11 @@ export const microneedling = {
   ],
   addOns: [
     {
-      serviceParent: "Wrinkle Reducer - Botox",
-      serviceChild: "Any Zone",
+      treatmentSlug: "wrinkle-reducers-botox",
+      optionName: {
+        en: "Any Zone",
+        es: "Cualquier Zona"
+      },
       displayName: {
         en: "Wrinkle Reducer – Botox",
         es: "Reductor de arrugas Botox"
@@ -133,8 +136,11 @@ export const microneedling = {
       link: "/treatments/wrinkle-reducers-botox"
     },
     {
-      serviceParent: "HydraFacial MD",
-      serviceChild: "Hydrafacial MD - Face",
+      treatmentSlug: "hydrafacial",
+      optionName: {
+        en: "Hydrafacial MD - Face",
+        es: "Hydrafacial MD - Rostro"
+      },
       displayName: {
         en: "HydraFacial MD – Face",
         es: "HydraFacial MD – Rostro"
