@@ -109,8 +109,11 @@ export const harmonyca = {
   ],
   addOns: [
     {
-      serviceParent: "HydraFacial MD",
-      serviceChild:  "Hydrafacial MD - Face",
+      treatmentSlug: "hydrafacial",
+      optionName: {
+        en: "Hydrafacial MD - Face",
+        es: "Hydrafacial MD - Rostro"
+      },
       displayName: {
         en: "HydraFacial MD - Face",
         es: "HydraFacial MD - Rostro"
@@ -118,8 +121,11 @@ export const harmonyca = {
       link:          "/treatments/hydrafacial"
     },
     {
-      serviceParent: "Casmara Purifying Algae Facial",
-      serviceChild:  "Casmara Purifying Algae Facial",
+      treatmentSlug: "casmara-purifying",
+      optionName: {
+        en: "Casmara Purifying Algae Facial",
+        es: "Facial Purificante de Algas Casmara"
+      },
       displayName: {
         en: "Casmara Purifying Algae Facial",
         es: "Facial Purificante de Algas Casmara"
@@ -127,8 +133,11 @@ export const harmonyca = {
       link:          "/treatments/casmara-purifying"
     },
     {
-      serviceParent: "Microneedling Skin Renewal - Rejuran - Full Face",
-      serviceChild: "Microneedling Skin Renewal - Rejuran - Full Face",
+      treatmentSlug: "microneedling",
+      optionName: {
+        en: "PDRN - Polydeoxyribonucleotide",
+        es: "PDRN - Polidesoxirribonucleótido"
+      },
       displayName: {
         en: "Microneedling Skin Renewal - Rejuran - Full Face",
         es: "Renovación de Piel con Microneedling - Rejuran - Rostro Completo"
@@ -136,8 +145,11 @@ export const harmonyca = {
       link: "/treatments/microneedling"
     },
     {
-      serviceParent: "Scarlet S RF Microneedling",
-      serviceChild:  "Scarlet S RF Microneedling - Face",
+      treatmentSlug: "rf-microneedling",
+      optionName: {
+        en: "Face",
+        es: "Rostro"
+      },
       displayName: {
         en: "Scarlet S RF Microneedling - Face",
         es: "Microneedling RF Scarlet S - Rostro"
