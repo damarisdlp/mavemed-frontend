@@ -101,22 +101,18 @@ export const sclerotherapy = {
   ],
   addOns: [
     {
-      serviceParent: "Relaxing Swedish Massage",
-      serviceChild:  "Full Body",
-      displayName: {
+      treatmentSlug: "swedish-massage",
+      optionName: {
         en: "Relaxing Swedish Massage - Full Body",
         es: "Masaje Sueco Relajante - Cuerpo Completo"
-      },
-      link:          "/treatments/swedish-massage"
+      }
     },
     {
-      serviceParent: "Cupping Therapy - Add‑On",
-      serviceChild:  "Cupping Therapy - Add‑On",
-      displayName: {
-        en: "Cupping Therapy - Add‑On",
-        es: "Terapia de Ventosas - Complemento"
-      },
-      link:          "/treatments/cupping"
+      treatmentSlug: "cupping",
+      optionName: {
+        en: "Cupping Add‑On",
+        es: "Complemento de Ventosas"
+      }
     },
   ],
   expectations: {
