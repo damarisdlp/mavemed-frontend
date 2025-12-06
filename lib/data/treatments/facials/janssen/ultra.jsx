@@ -24,7 +24,7 @@ export const janssenUltraRenewal = {
     es: "This advanced facial combines alpha hydroxy acids (AHAs) with peptides to exfoliate, stimulate cell turnover, and brighten the skin. It’s perfect for those seeking renewal without harsh downtime."
   },
   pricing: {
-    startingPrice: "$TBD",
+    startingPrice: { en: "$55", es: "$55" },
     startingPriceCurrency: "USD",
     promoPrice: "",
     promoPriceCurrency: "USD",
@@ -35,7 +35,7 @@ export const janssenUltraRenewal = {
           es: "Face"
         },
         isPromoEligible: false,
-        optionPrice: "$70",
+        optionPrice: { en: "$55", es: "$55" },
         optionCurrency: "USD",
         optionPromoPrice: "",
         optionPromoPriceCurrency: "USD",
@@ -47,7 +47,7 @@ export const janssenUltraRenewal = {
           es: "Face + Neck"
         },
         isPromoEligible: false,
-        optionPrice: "$TBD",
+        optionPrice: { en: "$65", es: "$65" },
         optionCurrency: "USD",
         optionPromoPrice: "",
         optionPromoPriceCurrency: "USD",
@@ -59,7 +59,7 @@ export const janssenUltraRenewal = {
           es: "Face + Neck + Décolleté"
         },
         isPromoEligible: false,
-        optionPrice: "$TBD",
+        optionPrice: { en: "$70", es: "$70" },
         optionCurrency: "USD",
         optionPromoPrice: "",
         optionPromoPriceCurrency: "USD",
