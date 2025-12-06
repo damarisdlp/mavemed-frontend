@@ -218,12 +218,7 @@ export const venusFreeze = {
       optionName: {
         en: "PB Serum Slim+ - Lipase PB500",
         es: "PB Serum Slim+ - Lipasa PB500"
-      },
-      displayName: {
-        en: "Enzymatic Therapy",
-        es: "Terapia Enzimática"
-      },
-      link: "/treatments/enzymatic-therapy"
+      }
     }
   ],
   expectations: {
