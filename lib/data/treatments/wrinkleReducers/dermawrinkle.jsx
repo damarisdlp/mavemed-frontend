@@ -144,48 +144,28 @@ export const dermawrinkle = {
       optionName: {
         en: "Hydrafacial MD - Face",
         es: "Hydrafacial MD - Rostro"
-      },
-      displayName: {
-        en: "HydraFacial MD - Face",
-        es: "HydraFacial MD - Rostro"
-      },
-      link: "/treatments/hydrafacial"
+      }
     },
     {
       treatmentSlug: "casmara-purifying",
       optionName: {
         en: "Casmara Purifying Algae Facial",
         es: "Tratamiento Facial Purificante de Algas Casmara"
-      },
-      displayName: {
-        en: "Casmara Purifying Algae Facial",
-        es: "Tratamiento Facial Purificante de Algas Casmara"
-      },
-      link: "/treatments/casmara-purifying"
+      }
     },
     {
       treatmentSlug: "casmara-infinity",
       optionName: {
         en: "Casmara Infinity Anti-Aging Facial",
         es: "Tratamiento Facial Anti-Envejecimiento Casmara Infinity"
-      },
-      displayName: {
-        en: "Casmara Infinity Anti-Aging Facial",
-        es: "Tratamiento Facial Anti-Envejecimiento Casmara Infinity"
-      },
-      link: "/treatments/casmara-infinity"
+      }
     },
     {
       treatmentSlug: "casmara-retinol-proage",
       optionName: {
         en: "Casmara Retinol Pro-Age Facial",
         es: "Casmara Retinol Pro-Age Facial"
-      },
-      displayName: {
-        en: "Casmara Retinol Pro-Age Facial",
-        es: "Tratamiento Facial Retinol Pro-Edad Casmara"
-      },
-      link: "/treatments/casmara-retinol-proage"
+      }
     },
   ],
   expectations: {
