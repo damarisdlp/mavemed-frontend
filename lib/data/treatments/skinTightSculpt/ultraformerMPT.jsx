@@ -433,11 +433,14 @@ export const ultraformerMPT = {
   ],
   addOns: [
     {
-      serviceParent: "Sculptra PLLA Collagen Stimulator",
-      serviceChild: "Per Vial",
+      treatmentSlug: "sculptra",
+      optionName: {
+        en: "PLLA - Sculptra® (per vial)",
+        es: "PLLA - Sculptra® (por vial)"
+      },
       displayName: {
         en: "Sculptra PLLA Collagen Stimulator",
-        es: "Estimulador de colágeno Sculptra PLLA"
+        es: "Estimulador de Colágeno Sculptra PLLA"
       },
       link: "/treatments/collagenBiostimulator/sculptra"
     }
