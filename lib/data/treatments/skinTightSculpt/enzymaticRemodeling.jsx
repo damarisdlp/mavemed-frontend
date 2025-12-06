@@ -173,8 +173,11 @@ export const enzymaticTherapy = {
   ],
   addOns: [
     {
-      serviceParent: "RF Body Sculpting",
-      serviceChild: null,
+      treatmentSlug: "venus-freeze",
+      optionName: {
+        en: "Express Body Glow",
+        es: "Brillo Corporal Exprés"
+      },
       displayName: {
         en: "RF Body Sculpting",
         es: "Esculpido Corporal con RF"
@@ -190,7 +193,7 @@ export const enzymaticTherapy = {
       },
       {
         en: "Drink plenty of water to support post-treatment lymphatic drainage.",
-        es: "Hidratación adecuada para apoyar el drenaje linfático después del tratamiento."
+        es: "Beba suficiente agua para apoyar el drenaje linfático después del tratamiento."
       }
     ],
     postTreatment: [
