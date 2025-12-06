@@ -111,8 +111,11 @@ export const janssenRadianceBoost = {
   ],
   addOns: [
     {
-      serviceParent: "Wrinkle Reducer - Botox",
-      serviceChild: "Any Zone",
+      treatmentSlug: "wrinkle-reducers-botox",
+      optionName: {
+        en: "Any Zone",
+        es: "Cualquier Zona"
+      },
       displayName: {
         en: "Wrinkle Reducer - Botox",
         es: "Reductor de Arrugas - Botox"
