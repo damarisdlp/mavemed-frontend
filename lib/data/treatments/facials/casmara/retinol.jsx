@@ -38,7 +38,7 @@ export const casmaraRetinolProAge = {
     }
   ],
   pricing: {
-    startingPrice: "$90",
+    startingPrice: { en: "$90", es: "$90" },
     startingPriceCurrency: "USD",
     promoPrice: "",
     promoPriceCurrency: "USD",
@@ -49,7 +49,7 @@ export const casmaraRetinolProAge = {
           es: "Casmara Retinol Pro‑Age Facial"
         },
         isPromoEligible: false,
-        optionPrice: "$90",
+        optionPrice: { en: "$90", es: "$90" },
         optionCurrency: "USD",
         optionPromoPrice: "",
         optionPromoPriceCurrency: "USD",
