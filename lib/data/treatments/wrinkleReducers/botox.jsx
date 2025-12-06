@@ -140,8 +140,11 @@ export const botox = {
   ],
   addOns: [
     {
-      serviceParent: "HydraFacial MD",
-      serviceChild: "Hydrafacial MD - Face",
+      treatmentSlug: "hydrafacial",
+      optionName: {
+        en: "Hydrafacial MD - Face",
+        es: "Hydrafacial MD - Rostro"
+      },
       displayName: {
         en: "HydraFacial MD - Face",
         es: "HydraFacial MD - Rostro"
@@ -149,8 +152,11 @@ export const botox = {
       link: "/treatments/hydrafacial"
     },
     {
-      serviceParent: "Casmara Purifying Algae Facial",
-      serviceChild: "Casmara Purifying Algae Facial",
+      treatmentSlug: "casmara-purifying",
+      optionName: {
+        en: "Casmara Purifying Algae Facial",
+        es: "Facial Casmara Purificante de Algas"
+      },
       displayName: {
         en: "Casmara Purifying Algae Facial",
         es: "Facial Casmara Purificante de Algas"
@@ -158,8 +164,11 @@ export const botox = {
       link: "/treatments/casmara-purifying"
     },
     {
-      serviceParent: "Casmara Infinity Anti‑Aging Facial",
-      serviceChild: "Casmara Infinity Anti‑Aging Facial",
+      treatmentSlug: "casmara-infinity",
+      optionName: {
+        en: "Casmara Infinity Anti‑Aging Facial",
+        es: "Facial Casmara Antienvejecimiento Infinity"
+      },
       displayName: {
         en: "Casmara Infinity Anti‑Aging Facial",
         es: "Tratamiento Facial Anti-Envejecimiento Casmara Infinity"
@@ -167,8 +176,11 @@ export const botox = {
       link: "/treatments/casmara-infinity"
     },
     {
-      serviceParent: "Casmara Retinol Pro‑Age Facial",
-      serviceChild: "Casmara Retinol Pro‑Age Facial",
+      treatmentSlug: "casmara-retinol-proage",
+      optionName: {
+        en: "Casmara Retinol Pro‑Age Facial",
+        es: "Casmara Retinol Pro‑Age Facial"
+      },
       displayName: {
         en: "Casmara Retinol Pro‑Age Facial",
         es: "Tratamiento Facial Retinol Pro-Edad Casmara"
