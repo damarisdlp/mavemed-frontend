@@ -126,8 +126,11 @@ export const hyaluronidase = {
   ],
   addOns: [
     {
-      serviceParent: "Hyaluronic Acid Lip Fillers",
-      serviceChild: "Stylage M with Lidocaine",
+      treatmentSlug: "hyaluronic-acid-lip-fillers",
+      optionName: {
+        en: "Dermal Filler - Hyaluronic Acid - Stylage M",
+        es: "Relleno Dérmico - Ácido Hialurónico - Stylage - M"
+      },
       displayName: {
         en: "Lip Fillers - Stylage M with Lidocaine",
         es: "Rellenos de Labios - Stylage M con Lidocaína"
@@ -135,8 +138,11 @@ export const hyaluronidase = {
       link: "/treatments/dermalFillers/lipFillers"
     },
     {
-      serviceParent: "Facial Balancing with Dermal Fillers",
-      serviceChild: "Juvéderm Voluma with Lidocaine",
+      treatmentSlug: "facial-balancing-fillers",
+      optionName: {
+        en: "Juvéderm Volift",
+        es: "Juvéderm Volift"
+      },
       displayName: {
         en: "Facial Balancing - Juvéderm Voluma with Lidocaine",
         es: "Equilibrio Facial - Juvéderm Voluma con Lidocaína"
