@@ -7,7 +7,7 @@ export const janssenRadianceBoost = {
   },
   serviceDisplayName: {
     en: "Janssen Radiance Boost Facial",
-    es: "Janssen Radiance Boost Facial"
+    es: "Facial Janssen Radiance Boost"
   },
   isPopular: false,
   isPromoEligible: false,
@@ -17,24 +17,24 @@ export const janssenRadianceBoost = {
   },
   description: {
     en: "Brightening antioxidant facial to restore luminosity, even tone, and improve hydration.",
-    es: "Brightening antioxidant facial to restore luminosity, even tone, and improve hydration."
+    es: "Facial antioxidante iluminador para recuperar luminosidad, unificar el tono y mejorar la hidratación."
   },
   details: {
     en: "The Radiance Boost Facial uses potent antioxidant serums, hydration masks, and oxygenating techniques to revitalize tired-looking skin. This is your go-to glow facial before any big event or seasonal change.",
-    es: "The Radiance Boost Facial uses potent antioxidant serums, hydration masks, and oxygenating techniques to revitalize tired-looking skin. This is your go-to glow facial before any big event or seasonal change."
+    es: "El Radiance Boost Facial utiliza sueros antioxidantes potentes, mascarillas hidratantes y técnicas oxigenantes para revitalizar la piel cansada. Es el facial ideal para lograr brillo antes de un evento o cambio de estación."
   },
   notes: [
     {
       en: "Great for dull, dehydrated, or tired skin",
-      es: "Great for dull, dehydrated, or tired skin"
+      es: "Ideal para piel apagada, deshidratada o fatigada"
     },
     {
       en: "Includes oxygenating and vitamin-rich serums",
-      es: "Includes oxygenating and vitamin-rich serums"
+      es: "Incluye sueros oxigenantes ricos en vitaminas"
     },
     {
       en: "No downtime—perfect before events",
-      es: "No downtime—perfect before events"
+      es: "Sin tiempo de inactividad—perfecto antes de eventos"
     }
   ],
   pricing: {
@@ -46,7 +46,7 @@ export const janssenRadianceBoost = {
       {
         optionName: {
           en: "Face",
-          es: "Face"
+          es: "Rostro"
         },
         isPromoEligible: false,
         optionPrice: { en: "$45", es: "$45" },
@@ -58,7 +58,7 @@ export const janssenRadianceBoost = {
       {
         optionName: {
           en: "Face + Neck",
-          es: "Face + Neck"
+          es: "Rostro + Cuello"
         },
         isPromoEligible: false,
         optionPrice: { en: "$50", es: "$50" },
@@ -70,7 +70,7 @@ export const janssenRadianceBoost = {
       {
         optionName: {
           en: "Face + Neck + Décolleté",
-          es: "Face + Neck + Décolleté"
+          es: "Rostro + Cuello + Escote"
         },
         isPromoEligible: false,
         optionPrice: { en: "$55", es: "$55" },
@@ -84,29 +84,29 @@ export const janssenRadianceBoost = {
   goals: [
     {
       en: "Re-energize dull skin",
-      es: "Re-energize dull skin"
+      es: "Reenergizar la piel apagada"
     },
     {
       en: "Hydrate and plump",
-      es: "Hydrate and plump"
+      es: "Hidratar y aportar volumen"
     },
     {
       en: "Even out skin tone and texture",
-      es: "Even out skin tone and texture"
+      es: "Unificar tono y textura de la piel"
     }
   ],
   treatableAreas: [
     {
       en: "Face",
-      es: "Face"
+      es: "Rostro"
     },
     {
       en: "Neck",
-      es: "Neck"
+      es: "Cuello"
     },
     {
       en: "Décolleté",
-      es: "Décolleté"
+      es: "Escote"
     }
   ],
   addOns: [
@@ -115,7 +115,7 @@ export const janssenRadianceBoost = {
       serviceChild: "Any Zone",
       displayName: {
         en: "Wrinkle Reducer - Botox",
-        es: "Wrinkle Reducer - Botox"
+        es: "Reductor de Arrugas - Botox"
       },
       link: "/treatments/wrinkle-reducers-botox"
     }
@@ -124,17 +124,17 @@ export const janssenRadianceBoost = {
     preTreatment: [
       {
         en: "Come with clean skin; no exfoliation needed before your appointment.",
-        es: "Come with clean skin; no exfoliation needed before your appointment."
+        es: "Acude con la piel limpia; no necesitas exfoliación previa a tu cita."
       }
     ],
     postTreatment: [
       {
         en: "No downtime expected.",
-        es: "No downtime expected."
+        es: "No se espera tiempo de inactividad."
       },
       {
         en: "Skin may look slightly pink from massage but should fade quickly.",
-        es: "Skin may look slightly pink from massage but should fade quickly."
+        es: "La piel puede verse ligeramente rosada por el masaje, pero se desvanece rápido."
       }
     ]
   },
@@ -142,21 +142,21 @@ export const janssenRadianceBoost = {
     {
       question: {
         en: "Will my skin glow immediately after?",
-        es: "Will my skin glow immediately after?"
+        es: "¿Mi piel se verá luminosa inmediatamente después?"
       },
       answer: {
         en: "Yes, the facial is designed to enhance radiance and hydration instantly.",
-        es: "Yes, the facial is designed to enhance radiance and hydration instantly."
+        es: "Sí, este facial está diseñado para aumentar la luminosidad e hidratación al instante."
       }
     },
     {
       question: {
         en: "Is this safe during pregnancy?",
-        es: "Is this safe during pregnancy?"
+        es: "¿Es seguro durante el embarazo?"
       },
       answer: {
         en: "Yes, this facial does not use any harsh acids or retinol, making it safe for pregnant clients.",
-        es: "Yes, this facial does not use any harsh acids or retinol, making it safe for pregnant clients."
+        es: "Sí, este facial no utiliza ácidos agresivos ni retinol, por lo que es seguro para pacientes embarazadas."
       }
     }
   ]
