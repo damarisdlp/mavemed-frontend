@@ -220,48 +220,28 @@ export const rfMicroneedling = {
       optionName: {
         en: "Any Zone",
         es: "Cualquier Zona"
-      },
-      displayName: {
-        en: "Wrinkle Reducer – Botox",
-        es: "Reductor de arrugas Botox"
-      },
-      link: "/treatments/wrinkle-reducers-botox"
+      }
     },
     {
       treatmentSlug: "hydrafacial",
       optionName: {
         en: "Hydrafacial MD - Face",
         es: "Hydrafacial MD - Rostro"
-      },
-      displayName: {
-        en: "HydraFacial MD – Face",
-        es: "HydraFacial MD – Rostro"
-      },
-      link: "/treatments/hydrafacial"
+      }
     },
     {
       treatmentSlug: "serum-add-ons",
       optionName: {
         en: "Add-On - Platelet-Rich Plasma (PRP) or Platelet-Rich Fibrin Matrix (PRFM)",
         es: "Complemento - Plasma Rico en Plaquetas (PRP) o Matriz de Fibrina Rica en Plaquetas (PRFM)"
-      },
-      displayName: {
-        en: "Add on – Platelet rich plasma (PRP) or platelet rich fibrin matrix (PRFM)",
-        es: "Complemento – Plasma rico en plaquetas (PRP) o matriz de fibrina rica en plaquetas (PRFM)"
-      },
-      link: "/treatments/serum-add-ons"
+      }
     },
     {
       treatmentSlug: "serum-add-ons",
       optionName: {
         en: "Add-On - Rejuran",
         es: "Complemento - Rejuran"
-      },
-      displayName: {
-        en: "Add on – Rejuran",
-        es: "Complemento – Rejuran"
-      },
-      link: "/treatments/serum-add-ons"
+      }
     }
   ],
   expectations: {
