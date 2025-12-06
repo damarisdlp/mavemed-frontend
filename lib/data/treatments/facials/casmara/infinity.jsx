@@ -34,7 +34,7 @@ export const casmaraInfinity = {
     }
   ],
   pricing: {
-    startingPrice: "$95",
+    startingPrice: { en: "$95", es: "$95" },
     startingPriceCurrency: "USD",
     promoPrice: "",
     promoPriceCurrency: "USD",
@@ -45,7 +45,7 @@ export const casmaraInfinity = {
           es: "Casmara Infinity Anti‑Aging Facial"
         },
         isPromoEligible: false,
-        optionPrice: "$95",
+        optionPrice: { en: "$95", es: "$95" },
         optionCurrency: "USD",
         optionPromoPrice: "",
         optionPromoPriceCurrency: "USD",
