@@ -147,8 +147,11 @@ export const facialBalancing = {
   ],
   addOns: [
     {
-      serviceParent: "Wrinkle Reducer - Botox",
-      serviceChild: "Lip Flip (Gummy Smile)",
+      treatmentSlug: "wrinkle-reducers-botox",
+      optionName: {
+        en: "Any Zone",
+        es: "Cualquier Zona"
+      },
       displayName: {
         en: "Wrinkle Reducer - Botox - Lip Flip (Gummy Smile)",
         es: "Reductor de Arrugas - Botox - Volteo de Labios (Sonrisa de Encías)"
@@ -156,8 +159,11 @@ export const facialBalancing = {
       link: "/treatments/wrinkleReducers"
     },
     {
-      serviceParent: "Casmara Retinol Pro Age Facial",
-      serviceChild: null,
+      treatmentSlug: "casmara-retinol-proage",
+      optionName: {
+        en: "Casmara Retinol Pro‑Age Facial",
+        es: "Casmara Retinol Pro‑Age Facial"
+      },
       displayName: {
         en: "Casmara Retinol Pro Age Facial",
         es: "Tratamiento Facial Casmara Retinol Pro Edad"
