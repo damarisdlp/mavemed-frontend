@@ -153,7 +153,7 @@ export const botox = {
       serviceChild: "Casmara Purifying Algae Facial",
       displayName: {
         en: "Casmara Purifying Algae Facial",
-        es: "Tratamiento Facial Purificante de Algas Casmara"
+        es: "Facial Casmara Purificante de Algas"
       },
       link: "/treatments/casmara-purifying"
     },
