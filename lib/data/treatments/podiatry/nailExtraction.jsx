@@ -59,7 +59,7 @@ export const toenailExtraction = {
         optionCurrency: "MXN",
         optionPromoPrice: "",
         optionPromoPriceCurrency: "MXN",
-        notes: null
+        notes: []
       }
     ]
   },
