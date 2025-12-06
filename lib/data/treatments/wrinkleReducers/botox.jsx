@@ -144,7 +144,7 @@ export const botox = {
       serviceChild: "Hydrafacial MD - Face",
       displayName: {
         en: "HydraFacial MD - Face",
-        es: "HydraFacial MD - Cara"
+        es: "HydraFacial MD - Rostro"
       },
       link: "/treatments/hydrafacial"
     },
