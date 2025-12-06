@@ -79,12 +79,7 @@ export const casmaraInfinity = {
       optionName: {
         en: "Any Zone",
         es: "Cualquier Zona"
-      },
-      displayName: {
-        en: "Wrinkle Reducer - Botox",
-        es: "Reductor de Arrugas - Botox"
-      },
-      link: "/treatments/wrinkle-reducers-botox"
+      }
     }
   ],
   expectations: {
