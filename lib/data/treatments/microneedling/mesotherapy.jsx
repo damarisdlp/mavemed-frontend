@@ -38,9 +38,9 @@ export const mesotherapy = {
     }
   ],
   pricing: {
-    startingPrice: "$100",
+    startingPrice: { en: "$100", es: "$100" },
     startingPriceCurrency: "USD",
-    promoPrice: "$95",
+    promoPrice: "",
     promoPriceCurrency: "USD",
     options: [
       {
@@ -49,9 +49,9 @@ export const mesotherapy = {
           es: "PRP o PRFM – 1 Zona"
         },
         isPromoEligible: true,
-        optionPrice: "$180",
+        optionPrice: { en: "$180", es: "$180" },
         optionCurrency: "USD",
-        optionPromoPrice: "$160",
+        optionPromoPrice: "",
         optionPromoPriceCurrency: "USD",
         notes: [
           {
@@ -66,9 +66,9 @@ export const mesotherapy = {
           es: "Kiara Reju – 1 Zona"
         },
         isPromoEligible: true,
-        optionPrice: "$180",
+        optionPrice: { en: "$180", es: "$180" },
         optionCurrency: "USD",
-        optionPromoPrice: "$160",
+        optionPromoPrice: "",
         optionPromoPriceCurrency: "USD",
         notes: [
           {
@@ -83,9 +83,9 @@ export const mesotherapy = {
           es: "Rejuran – Rostro Completo"
         },
         isPromoEligible: false,
-        optionPrice: "$300",
+        optionPrice: { en: "$300", es: "$300" },
         optionCurrency: "USD",
-        optionPromoPrice: null,
+        optionPromoPrice: "",
         optionPromoPriceCurrency: "USD",
         notes: [
           {
@@ -100,9 +100,9 @@ export const mesotherapy = {
           es: "SkinVive de Juvéderm – Mejillas"
         },
         isPromoEligible: true,
-        optionPrice: "$250",
+        optionPrice: { en: "$250", es: "$250" },
         optionCurrency: "USD",
-        optionPromoPrice: "$220",
+        optionPromoPrice: "",
         optionPromoPriceCurrency: "USD",
         notes: [
           {
@@ -117,9 +117,9 @@ export const mesotherapy = {
           es: "TKN HA-3 – Rostro Completo"
         },
         isPromoEligible: true,
-        optionPrice: "$155",
+        optionPrice: { en: "$155", es: "$155" },
         optionCurrency: "USD",
-        optionPromoPrice: "$135",
+        optionPromoPrice: "",
         optionPromoPriceCurrency: "USD",
         notes: [
           {
@@ -128,7 +128,21 @@ export const mesotherapy = {
           }
         ]
       }
-    ]
+    ].sort(
+      (a, b) =>
+        parseFloat(
+          (typeof a.optionPrice === "object" ? a.optionPrice.en : a.optionPrice).replace(
+            /[^0-9.]/g,
+            ""
+          )
+        ) -
+        parseFloat(
+          (typeof b.optionPrice === "object" ? b.optionPrice.en : b.optionPrice).replace(
+            /[^0-9.]/g,
+            ""
+          )
+        )
+    )
   },
   goals: [
     {
