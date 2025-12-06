@@ -146,60 +146,35 @@ export const sculptra = {
       optionName: {
         en: "Hydrafacial MD - Face",
         es: "Hydrafacial MD - Rostro"
-      },
-      displayName: {
-        en: "HydraFacial MD - Face",
-        es: "HydraFacial MD - Rostro"
-      },
-      link:          "/treatments/hydrafacial"
+      }
     },
     {
       treatmentSlug: "casmara-purifying",
       optionName: {
         en: "Casmara Purifying Algae Facial",
         es: "Facial Purificante de Algas Casmara"
-      },
-      displayName: {
-        en: "Casmara Purifying Algae Facial",
-        es: "Facial Purificante de Algas Casmara"
-      },
-      link:          "/treatments/casmara-purifying"
+      }
     },
     {
       treatmentSlug: "microneedling",
       optionName: {
         en: "PDRN - Polydeoxyribonucleotide",
         es: "PDRN - Polidesoxirribonucleótido"
-      },
-      displayName: {
-        en: "Microneedling Skin Renewal - Rejuran - Full Face",
-        es: "Renovación de Piel con Microneedling - Rejuran - Rostro Completo"
-      },
-      link: "/treatments/microneedling"
+      }
     },
     {
       treatmentSlug: "rf-microneedling",
       optionName: {
         en: "Face",
         es: "Rostro"
-      },
-      displayName: {
-        en: "Scarlet S RF Microneedling - Face",
-        es: "Microneedling RF Scarlet S - Rostro"
-      },
-      link: "/treatments/rf-microneedling"
+      }
     },
     {
       treatmentSlug: "ultraformer-mpt",
       optionName: {
         en: "360 Contour",
         es: "Contorno 360"
-      },
-      displayName: {
-        en: "Ultraformer MPT - 360 Contour",
-        es: "Ultraformer MPT - Contorno 360"
-      },
-      link: "/treatments/ultraformer-mpt"
+      }
     }
   ],
   expectations: {
