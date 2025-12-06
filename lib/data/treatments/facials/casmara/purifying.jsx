@@ -38,7 +38,7 @@ export const casmaraPurifying = {
     }
   ],
   pricing: {
-    startingPrice: "$85",
+    startingPrice: { en: "$85", es: "$85" },
     startingPriceCurrency: "USD",
     promoPrice: "",
     promoPriceCurrency: "USD",
@@ -49,7 +49,7 @@ export const casmaraPurifying = {
           es: "Casmara Purifying Algae Facial"
         },
         isPromoEligible: false,
-        optionPrice: "$85",
+        optionPrice: { en: "$85", es: "$85" },
         optionCurrency: "USD",
         optionPromoPrice: "",
         optionPromoPriceCurrency: "USD",
