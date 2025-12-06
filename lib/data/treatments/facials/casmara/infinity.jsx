@@ -26,11 +26,11 @@ export const casmaraInfinity = {
   notes: [
     {
       en: "Great for special events or regular anti-aging maintenance",
-      es: "Great for special events or regular anti-aging maintenance"
+      es: "Excelente para eventos especiales o mantenimiento antiedad regular"
     },
     {
       en: "Leaves skin glowing, firmer, and deeply nourished",
-      es: "Leaves skin glowing, firmer, and deeply nourished"
+      es: "Deja la piel luminosa, más firme y profundamente nutrida"
     }
   ],
   pricing: {
@@ -56,21 +56,21 @@ export const casmaraInfinity = {
   goals: [
     {
       en: "Firm and lift sagging skin",
-      es: "Firm and lift sagging skin"
+      es: "Reafirmar y levantar la piel flácida"
     },
     {
       en: "Hydrate deeply and nourish",
-      es: "Hydrate deeply and nourish"
+      es: "Hidratar en profundidad y nutrir"
     },
     {
       en: "Soften fine lines and signs of aging",
-      es: "Soften fine lines and signs of aging"
+      es: "Suavizar líneas finas y signos de envejecimiento"
     }
   ],
   treatableAreas: [
     {
       en: "Face",
-      es: "Face"
+      es: "Rostro"
     }
   ],
   addOns: [
@@ -79,7 +79,7 @@ export const casmaraInfinity = {
       serviceChild: "Any Zone",
       displayName: {
         en: "Wrinkle Reducer - Botox",
-        es: "Wrinkle Reducer - Botox"
+        es: "Reductor de Arrugas - Botox"
       },
       link: "/treatments/wrinkle-reducers-botox"
     }
@@ -88,21 +88,21 @@ export const casmaraInfinity = {
     preTreatment: [
       {
         en: "No special preparation needed.",
-        es: "No special preparation needed."
+        es: "No se requiere preparación especial."
       },
       {
         en: "Avoid retinoids or peels for 48 hours prior if possible.",
-        es: "Avoid retinoids or peels for 48 hours prior if possible."
+        es: "Evite retinoides o peelings 48 horas antes si es posible."
       }
     ],
     postTreatment: [
       {
         en: "Your skin will look lifted and luminous right after.",
-        es: "Your skin will look lifted and luminous right after."
+        es: "La piel lucirá más tersa y luminosa de inmediato."
       },
       {
         en: "Avoid harsh products or exfoliation for 24 hours.",
-        es: "Avoid harsh products or exfoliation for 24 hours."
+        es: "Evite productos agresivos o exfoliación durante 24 horas."
       }
     ]
   },
@@ -110,21 +110,21 @@ export const casmaraInfinity = {
     {
       question: {
         en: "Is this facial good for mature skin?",
-        es: "Is this facial good for mature skin?"
+        es: "¿Este facial es bueno para piel madura?"
       },
       answer: {
         en: "Yes, it’s specifically designed for aging skin to boost firmness, elasticity, and glow.",
-        es: "Yes, it’s specifically designed for aging skin to boost firmness, elasticity, and glow."
+        es: "Sí, está diseñado específicamente para piel envejecida para mejorar firmeza, elasticidad y luminosidad."
       }
     },
     {
       question: {
         en: "Can I wear makeup after this facial?",
-        es: "Can I wear makeup after this facial?"
+        es: "¿Puedo maquillarme después de este facial?"
       },
       answer: {
         en: "Yes, but we recommend letting your skin breathe for a few hours post-treatment for best results.",
-        es: "Yes, but we recommend letting your skin breathe for a few hours post-treatment for best results."
+        es: "Sí, aunque recomendamos dejar que la piel respire unas horas después para mejores resultados."
       }
     }
   ]
