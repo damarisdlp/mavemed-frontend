@@ -20,8 +20,8 @@ export const mesotherapy = {
     es: "Microinyecciones dirigidas de sustancias rejuvenecedoras como PRP, PDRN, ácido hialurónico y vitaminas para hidratar profundamente, reparar y devolver luminosidad a la piel."
   },
   details: {
-    en: "Mesotherapy is a minimally invasive treatment that delivers skin-boosting compounds directly into the dermis via microinjections. Common actives include PRP/PRFM (from your blood), polynucleotides (Rejuran), niacinamide boosters (Kiara Reju), and antioxidant-rich cocktails like TKN HA-3. SkinVive by Juvéderm is also offered for FDA-approved cheek hydration and glow.",
-    es: "La mesoterapia es un tratamiento mínimamente invasivo que introduce compuestos revitalizantes directamente en la dermis mediante microinyecciones. Los activos comunes incluyen PRP/PRFM (de tu propia sangre), polinucleótidos como Rejuran, boosters de niacinamida como Kiara Reju y cócteles antioxidantes como TKN HA-3. También ofrecemos SkinVive de Juvéderm para hidratación y luminosidad aprobada por la FDA en mejillas."
+    en: "Mesotherapy is a minimally invasive treatment that delivers skin-boosting compounds directly into the dermis via microinjections. Actives include PRP/PRFM from your blood, polynucleotides for regeneration, niacinamide and hyaluronic acid boosters for hydration and glow, antioxidant cocktails for revitalization, and FDA-cleared HA microdroplets for cheek smoothness and luminosity.",
+    es: "La mesoterapia es un tratamiento mínimamente invasivo que introduce compuestos revitalizantes directamente en la dermis mediante microinyecciones. Los activos incluyen PRP/PRFM de tu propia sangre, polinucleótidos para regeneración, potenciadores con niacinamida y ácido hialurónico para hidratación y luminosidad, cócteles antioxidantes para revitalización y microgotas de AH aprobadas por la FDA para suavizar y dar luminosidad a las mejillas."
   },
   notes: [
     {
@@ -38,111 +38,29 @@ export const mesotherapy = {
     }
   ],
   pricing: {
-    startingPrice: { en: "$100", es: "$100" },
+    startingPrice: { en: "$155", es: "$155" },
     startingPriceCurrency: "USD",
     promoPrice: "",
     promoPriceCurrency: "USD",
     options: [
-      {
-        optionName: {
-          en: "PRP or PRFM – 1 Zone",
-          es: "PRP o PRFM – 1 Zona"
-        },
-        isPromoEligible: true,
-        optionPrice: { en: "$180", es: "$180" },
-        optionCurrency: "USD",
-        optionPromoPrice: "",
-        optionPromoPriceCurrency: "USD",
-        notes: [
-          {
-            en: "Uses your own plasma or fibrin for natural regeneration",
-            es: "Utiliza tu propio plasma o fibrina para una regeneración natural"
-          }
-        ]
-      },
-      {
-        optionName: {
-          en: "Kiara Reju – 1 Zone",
-          es: "Kiara Reju – 1 Zona"
-        },
-        isPromoEligible: true,
-        optionPrice: { en: "$180", es: "$180" },
-        optionCurrency: "USD",
-        optionPromoPrice: "",
-        optionPromoPriceCurrency: "USD",
-        notes: [
-          {
-            en: "PN + HA + Niacinamide for glow and elasticity",
-            es: "PN + AH + Niacinamida para luminosidad y elasticidad"
-          }
-        ]
-      },
-      {
-        optionName: {
-          en: "Rejuran – Full Face",
-          es: "Rejuran – Rostro Completo"
-        },
-        isPromoEligible: false,
-        optionPrice: { en: "$300", es: "$300" },
-        optionCurrency: "USD",
-        optionPromoPrice: "",
-        optionPromoPriceCurrency: "USD",
-        notes: [
-          {
-            en: "Salmon DNA-based cellular repair and collagen support",
-            es: "Reparación celular basada en ADN de salmón y apoyo al colágeno"
-          }
-        ]
-      },
-      {
-        optionName: {
-          en: "SkinVive by Juvéderm – Cheeks",
-          es: "SkinVive de Juvéderm – Mejillas"
-        },
-        isPromoEligible: true,
-        optionPrice: { en: "$250", es: "$250" },
-        optionCurrency: "USD",
-        optionPromoPrice: "",
-        optionPromoPriceCurrency: "USD",
-        notes: [
-          {
-            en: "FDA-approved HA microdroplets for glow and smoothness",
-            es: "Microgotas de AH aprobadas por la FDA para luminosidad y suavidad"
-          }
-        ]
-      },
-      {
-        optionName: {
-          en: "TKN HA-3 – Full Face",
-          es: "TKN HA-3 – Rostro Completo"
-        },
-        isPromoEligible: true,
-        optionPrice: { en: "$155", es: "$155" },
-        optionCurrency: "USD",
-        optionPromoPrice: "",
-        optionPromoPriceCurrency: "USD",
-        notes: [
-          {
-            en: "Hydration + antioxidant meso-cocktail ideal for tired or sun-damaged skin",
-            es: "Cóctel hidratante y antioxidante ideal para piel cansada o dañada por el sol"
-          }
-        ]
-      }
-    ].sort(
-      (a, b) =>
-        parseFloat(
-          (typeof a.optionPrice === "object" ? a.optionPrice.en : a.optionPrice).replace(
-            /[^0-9.]/g,
-            ""
-          )
-        ) -
-        parseFloat(
-          (typeof b.optionPrice === "object" ? b.optionPrice.en : b.optionPrice).replace(
-            /[^0-9.]/g,
-            ""
-          )
-        )
-    )
+      // PRP
+      { optionName: { en: "PRP - Platelet Rich Plasma", es: "PRP - Plasma Rico en Plaquetas" }, isPromoEligible: false, optionPrice: { en: "$155", es: "$155" }, optionCurrency: "USD", optionPromoPrice: "", optionPromoPriceCurrency: "USD", notes: [{ en: "Zones: Face", es: "Zonas: Rostro" }, { en: "Benefits: Boosts collagen, healing, and overall skin renewal.", es: "Estimula colágeno, cicatrización y renovación global de la piel." }] },
+      { optionName: { en: "PRP - Platelet Rich Plasma", es: "PRP - Plasma Rico en Plaquetas" }, isPromoEligible: false, optionPrice: { en: "$170", es: "$170" }, optionCurrency: "USD", optionPromoPrice: "", optionPromoPriceCurrency: "USD", notes: [{ en: "Zones: Face + Neck", es: "Zonas: Rostro + Cuello" }, { en: "Benefits: Boosts collagen, healing, and overall skin renewal.", es: "Estimula colágeno, cicatrización y renovación global de la piel." }] },
+      { optionName: { en: "PRP - Platelet Rich Plasma", es: "PRP - Plasma Rico en Plaquetas" }, isPromoEligible: false, optionPrice: { en: "$185", es: "$185" }, optionCurrency: "USD", optionPromoPrice: "", optionPromoPriceCurrency: "USD", notes: [{ en: "Zones: Face + Neck + Décolleté", es: "Zonas: Rostro + Cuello + Escote" }, { en: "Benefits: Boosts collagen, healing, and overall skin renewal.", es: "Estimula colágeno, cicatrización y renovación global de la piel." }] },
+
+      // PN - Rejuran
+      { optionName: { en: "PN - Polynucleotide", es: "PN - Polinucleotido" }, isPromoEligible: false, optionPrice: { en: "$290", es: "$290" }, optionCurrency: "USD", optionPromoPrice: "", optionPromoPriceCurrency: "USD", notes: [{ en: "Zones: Face", es: "Zonas: Rostro" }, { en: "Benefits: Supports collagen, firmness, and smoother texture.", es: "Favorece colágeno, firmeza y una textura más suave." }] },
+      { optionName: { en: "PN - Polynucleotide", es: "PN - Polinucleotido" }, isPromoEligible: false, optionPrice: { en: "$405", es: "$405" }, optionCurrency: "USD", optionPromoPrice: "", optionPromoPriceCurrency: "USD", notes: [{ en: "Zones: Face + Neck", es: "Zonas: Rostro + Cuello" }, { en: "Benefits: Supports collagen, firmness, and smoother texture.", es: "Favorece colágeno, firmeza y una textura más suave." }] },
+      { optionName: { en: "PN - Polynucleotide", es: "PN - Polinucleotido" }, isPromoEligible: false, optionPrice: { en: "$520", es: "$520" }, optionCurrency: "USD", optionPromoPrice: "", optionPromoPriceCurrency: "USD", notes: [{ en: "Zones: Face + Neck + Décolleté", es: "Zonas: Rostro + Cuello + Escote" }, { en: "Benefits: Supports collagen, firmness, and smoother texture.", es: "Favorece colágeno, firmeza y una textura más suave." }] },
+
+      // PDRN - Kiara Reju
+      { optionName: { en: "PDRN - Polydeoxyribonucleotide", es: "PDRN - Polidesoxirribonucleotido" }, isPromoEligible: false, optionPrice: { en: "$180", es: "$180" }, optionCurrency: "USD", optionPromoPrice: "", optionPromoPriceCurrency: "USD", notes: [{ en: "Zones: Face", es: "Zonas: Rostro" }, { en: "PDRN + HA + Niacinamide", es: "PDRN + AH + Niacinamida" }, { en: "Benefits: Hydrates, boosts elasticity, and enhances glow.", es: "Hidrata, mejora la elasticidad y aporta luminosidad." }] },
+      { optionName: { en: "PDRN - Polydeoxyribonucleotide", es: "PDRN - Polidesoxirribonucleotido" }, isPromoEligible: false, optionPrice: { en: "$265", es: "$265" }, optionCurrency: "USD", optionPromoPrice: "", optionPromoPriceCurrency: "USD", notes: [{ en: "Zones: Face + Neck", es: "Zonas: Rostro + Cuello" }, { en: "PDRN + HA + Niacinamide", es: "PDRN + AH + Niacinamida" }, { en: "Benefits: Hydrates, boosts elasticity, and enhances glow.", es: "Hidrata, mejora la elasticidad y aporta luminosidad." }] },
+      { optionName: { en: "PDRN - Polydeoxyribonucleotide", es: "PDRN - Polidesoxirribonucleotido" }, isPromoEligible: false, optionPrice: { en: "$305", es: "$305" }, optionCurrency: "USD", optionPromoPrice: "", optionPromoPriceCurrency: "USD", notes: [{ en: "Zones: Face + Neck + Décolleté", es: "Zonas: Rostro + Cuello + Escote" }, { en: "PDRN + HA + Niacinamide", es: "PDRN + AH + Niacinamida" }, { en: "Benefits: Hydrates, boosts elasticity, and enhances glow.", es: "Hidrata, mejora la elasticidad y aporta luminosidad." }] },
+
+      // SkinVive
+      { optionName: { en: "SkinVive", es: "SkinVive" }, isPromoEligible: false, optionPrice: { en: "$525", es: "$525" }, optionCurrency: "USD", optionPromoPrice: "", optionPromoPriceCurrency: "USD", notes: [{ en: "Zones: Face", es: "Zonas: Rostro" }, { en: "Benefits: HA microdroplets to smooth and hydrate for lasting glow.", es: "Microgotas de AH que suavizan e hidratan para una luminosidad duradera." }] }
+    ]
   },
   goals: [
     {
@@ -190,6 +108,10 @@ export const mesotherapy = {
     {
       en: "Stretch marks",
       es: "Estrías"
+    },
+    {
+      en: "Other zones available upon request after medical evaluation",
+      es: "Otras zonas disponibles bajo solicitud tras evaluación médica"
     }
   ],
   addOns: [
