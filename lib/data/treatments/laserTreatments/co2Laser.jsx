@@ -330,7 +330,7 @@ export const co2Laser = {
     {
       question: {
         en: "How many sessions do I need?",
-    es: "¿Cuántas sesiones necesito?"
+        es: "¿Cuántas sesiones necesito?"
       },
       answer: {
         en: "Many patients see dramatic improvement after one session, but deeper scars or more advanced aging may require 2–3 sessions.",
