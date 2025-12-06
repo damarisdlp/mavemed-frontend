@@ -237,8 +237,11 @@ export const co2Laser = {
 
   addOns: [
     {
-      serviceParent: "Serum Add-Ons",
-      serviceChild: "Add-On - Platelet-Rich Plasma (PRP) or Platelet-Rich Fibrin Matrix (PRFM)",
+      treatmentSlug: "serum-add-ons",
+      optionName: {
+        en: "Add-On - Platelet-Rich Plasma (PRP) or Platelet-Rich Fibrin Matrix (PRFM)",
+        es: "Complemento - Plasma Rico en Plaquetas (PRP) o Matriz de Fibrina Rica en Plaquetas (PRFM)"
+      },
       displayName: {
         en: "Add-On - Platelet-Rich Plasma (PRP) or Platelet-Rich Fibrin Matrix (PRFM)",
         es: "Complemento - Plasma Rico en Plaquetas (PRP) o Matriz de Fibrina Rica en Plaquetas (PRFM)"
@@ -246,8 +249,11 @@ export const co2Laser = {
       link: "/treatments/serum-add-ons"
     },
     {
-      serviceParent: "Serum Add-Ons",
-      serviceChild: "Add-On - Rejuran",
+      treatmentSlug: "serum-add-ons",
+      optionName: {
+        en: "Add-On - Rejuran",
+        es: "Complemento - Rejuran"
+      },
       displayName: {
         en: "Add-On - Rejuran",
         es: "Complemento - Rejuran"
@@ -255,8 +261,11 @@ export const co2Laser = {
       link: "/treatments/serum-add-ons"
     },
     {
-      serviceParent: "Casmara Purifying Algae Facial",
-      serviceChild: "Casmara Purifying Algae Facial",
+      treatmentSlug: "casmara-purifying",
+      optionName: {
+        en: "Casmara Purifying Algae Facial",
+        es: "Facial Purificante de Algas Casmara"
+      },
       displayName: {
         en: "Casmara Purifying Algae Facial",
         es: "Facial Purificante de Algas Casmara"
