@@ -212,12 +212,7 @@ export const pdoThreads = {
       optionName: {
         en: "PDRN - Polydeoxyribonucleotide",
         es: "PDRN - Polidesoxirribonucleótido"
-      },
-      displayName: {
-        en: "Kiara Reju – PN + Hyaluronic Acid + Niacinamide",
-        es: "Kiara Reju – PN + ácido hialurónico + niacinamida"
-      },
-      link: "/treatments/mesotherapy/kiaraReju"
+      }
     }
   ],
   expectations: {
