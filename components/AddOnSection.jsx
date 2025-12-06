@@ -66,7 +66,7 @@ export default function AddOnSection({ addOns = [] }) {
 
       {addOns.map((addonRef, idx) => {
         const refName = getLocalized(
-          addonRef.serviceParent || addonRef.displayName || addonRef.optionName
+          addonRef.serviceParent || addonRef.optionName || addonRef.displayName
         );
         const slugFromLink = addonRef.link
           ? addonRef.link.split("/").filter(Boolean).pop()
@@ -99,8 +99,8 @@ export default function AddOnSection({ addOns = [] }) {
           matchedOption?.isPromoEligible && typeof promoPrice === "string" && promoPrice.trim();
 
         const localizedAddOnName =
-          getLocalized(addonRef.displayName) ||
           getLocalized(addonRef.optionName) ||
+          getLocalized(addonRef.displayName) ||
           getLocalized(addon.serviceDisplayName || addon.displayName);
         const localizedDescription = getLocalized(addon.description);
 
