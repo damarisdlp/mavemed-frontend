@@ -83,7 +83,7 @@ export const casmaraPurifying = {
       serviceChild: "Any Zone",
       displayName: {
         en: "Wrinkle Reducer - Botox",
-        es: "Wrinkle Reducer - Botox"
+        es: "Reductor de Arrugas - Botox"
       },
       link: "/treatments/wrinkle-reducers-botox"
     }
