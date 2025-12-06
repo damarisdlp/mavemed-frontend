@@ -104,6 +104,10 @@ export default function AddOnSection({ addOns = [] }) {
           getLocalized(addon.serviceDisplayName || addon.displayName);
         const localizedDescription = getLocalized(addon.description);
 
+        const href =
+          addonRef.link ||
+          (targetSlug ? `/treatments/${targetSlug}` : null);
+
         return (
           <div key={idx} className="mb-4">
             {/* Add on name */}
@@ -132,9 +136,9 @@ export default function AddOnSection({ addOns = [] }) {
             )}
 
             {/* Link */}
-            {addonRef.link && (
+            {href && (
               <Link
-                href={addonRef.link}
+                href={href}
                 className="text-sm underline text-black mt-1 inline-block hover:text-[#731a2f]"
               >
                 {ui.learn}
