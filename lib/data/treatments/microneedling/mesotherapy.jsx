@@ -120,24 +120,14 @@ export const mesotherapy = {
       optionName: {
         en: "Hydrafacial MD - Face",
         es: "Hydrafacial MD - Rostro"
-      },
-      displayName: {
-        en: "HydraFacial MD – Face",
-        es: "HydraFacial MD – Rostro"
-      },
-      link: "/treatments/hydrafacial"
+      }
     },
     {
       treatmentSlug: "pdo-threads",
       optionName: {
         en: "Signature Lower Face Lift",
         es: "Levantamiento Facial Inferior Signature"
-      },
-      displayName: {
-        en: "PDO Thread Lift – Signature Lower Face Lift",
-        es: "Hilos PDO – Lifting Facial Inferior Signature"
-      },
-      link: "/treatments/pdo-threads"
+      }
     }
   ],
   expectations: {
