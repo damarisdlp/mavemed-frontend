@@ -59,7 +59,7 @@ export const matrixectomy = {
         optionCurrency: "MXN",
         optionPromoPrice: "",
         optionPromoPriceCurrency: "MXN",
-        notes: null
+        notes: []
       },
       {
         optionName: {
@@ -74,7 +74,7 @@ export const matrixectomy = {
         optionCurrency: "MXN",
         optionPromoPrice: "",
         optionPromoPriceCurrency: "MXN",
-        notes: null
+        notes: []
       },
       {
         optionName: {
@@ -89,7 +89,7 @@ export const matrixectomy = {
         optionCurrency: "MXN",
         optionPromoPrice: "",
         optionPromoPriceCurrency: "MXN",
-        notes: null
+        notes: []
       },
       {
         optionName: {
@@ -104,7 +104,7 @@ export const matrixectomy = {
         optionCurrency: "MXN",
         optionPromoPrice: "",
         optionPromoPriceCurrency: "MXN",
-        notes: null
+        notes: []
       }
     ]
   },
