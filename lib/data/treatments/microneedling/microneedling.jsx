@@ -128,24 +128,14 @@ export const microneedling = {
       optionName: {
         en: "Any Zone",
         es: "Cualquier Zona"
-      },
-      displayName: {
-        en: "Wrinkle Reducer – Botox",
-        es: "Reductor de arrugas Botox"
-      },
-      link: "/treatments/wrinkle-reducers-botox"
+      }
     },
     {
       treatmentSlug: "hydrafacial",
       optionName: {
         en: "Hydrafacial MD - Face",
         es: "Hydrafacial MD - Rostro"
-      },
-      displayName: {
-        en: "HydraFacial MD – Face",
-        es: "HydraFacial MD – Rostro"
-      },
-      link: "/treatments/hydrafacial"
+      }
     }
   ],
   expectations: {
