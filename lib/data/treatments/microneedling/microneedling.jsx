@@ -7,7 +7,7 @@ export const microneedling = {
   },
   serviceDisplayName: {
     en: "Microneedling Skin Renewal",
-    es: "Renovación de piel con microneedling"
+    es: "Renovación de Piel con Microneedling"
   },
   isPopular: false,
   isPromoEligible: false,
@@ -16,12 +16,12 @@ export const microneedling = {
     secondary: "/microneedling2.jpg"
   },
   description: {
-    en: "Refine texture, shrink pores, and stimulate collagen through precision microneedling using fine sterile needles. Enhance results with powerful infusion options like PRP/PRFM, Rejuran, or Kiara Reju.",
-    es: "Mejora la textura, reduce la apariencia de poros y estimula el colágeno mediante microneedling de precisión con agujas estériles finas. Potencia los resultados con opciones de infusión como PRP/PRFM, Rejuran o Kiara Reju."
+    en: "Refine texture, shrink pores, and stimulate collagen through precision microneedling using fine sterile needles. Enhance results with powerful infusion options like PRP/PRFM, PN, or PDRN.",
+    es: "Mejora la textura, reduce la apariencia de poros y estimula el colágeno mediante microneedling de precisión con agujas estériles finas. Potencia los resultados con opciones de infusión como PRP/PRFM, PN o PDRN."
   },
   details: {
-    en: "Microneedling uses fine needles to create micro-channels in the skin, triggering the body’s natural healing response and promoting collagen, elastin, and skin cell regeneration. It improves texture, firmness, and reduces scarring over time. Options like PRP, Rejuran, and Kiara Reju can be infused for deeper regenerative benefits.",
-    es: "El microneedling utiliza agujas finas para crear microcanales en la piel, activando la respuesta natural de reparación del cuerpo y promoviendo la producción de colágeno, elastina y la regeneración celular. Con el tiempo mejora la textura, la firmeza y disminuye cicatrices. Opciones como PRP, Rejuran y Kiara Reju pueden infundirse para beneficios regenerativos más profundos."
+    en: "Microneedling uses fine needles to create micro-channels in the skin, triggering the body’s natural healing response and promoting collagen, elastin, and skin cell regeneration. It improves texture, firmness, and reduces scarring over time. Options like PRP, PN, and PDRN can be infused for deeper regenerative benefits.",
+    es: "El microneedling utiliza agujas finas para crear microcanales en la piel, activando la respuesta natural de reparación del cuerpo y promoviendo la producción de colágeno, elastina y la regeneración celular. Con el tiempo mejora la textura, la firmeza y disminuye cicatrices. Opciones como PRP, PN y PDRN pueden infundirse para beneficios regenerativos más profundos."
   },
   notes: [
     {
@@ -38,79 +38,52 @@ export const microneedling = {
     }
   ],
   pricing: {
-    startingPrice: "$140",
+    startingPrice: { en: "$120", es: "$120" },
     startingPriceCurrency: "USD",
-    promoPrice: "$120",
+    promoPrice: "",
     promoPriceCurrency: "USD",
     options: [
-      {
-        optionName: {
-          en: "Microneedling only (base treatment)",
-          es: "Microneedling solo (tratamiento base)"
-        },
-        isPromoEligible: false,
-        optionPrice: "$140",
-        optionCurrency: "USD",
-        optionPromoPrice: "$120",
-        optionPromoPriceCurrency: "USD",
-        notes: [
-          {
-            en: "Includes Toskani Lumicen Gel serum infusion only",
-            es: "Incluye únicamente infusión de suero Toskani Lumicen Gel"
-          }
-        ]
-      },
-      {
-        optionName: {
-          en: "Microneedling – PRP or PRFM",
-          es: "Microneedling – PRP o PRFM"
-        },
-        isPromoEligible: false,
-        optionPrice: "$160",
-        optionCurrency: "USD",
-        optionPromoPrice: "$160",
-        optionPromoPriceCurrency: "USD",
-        notes: [
-          {
-            en: "Uses patient’s own plasma or fibrin matrix",
-            es: "Utiliza el propio plasma o matriz de fibrina del paciente"
-          }
-        ]
-      },
-      {
-        optionName: {
-          en: "Microneedling – Kiara Reju",
-          es: "Microneedling – Kiara Reju"
-        },
-        isPromoEligible: false,
-        optionPrice: "$190",
-        optionCurrency: "USD",
-        optionPromoPrice: "$170",
-        optionPromoPriceCurrency: "USD",
-        notes: [
-          {
-            en: "PN + HA + Niacinamide booster",
-            es: "Booster de PN + AH + niacinamida"
-          }
-        ]
-      },
-      {
-        optionName: {
-          en: "Microneedling skin renewal – Rejuran – full face",
-          es: "Renovación de piel con microneedling – Rejuran – rostro completo"
-        },
-        isPromoEligible: false,
-        optionPrice: "$300",
-        optionCurrency: "USD",
-        optionPromoPrice: null,
-        optionPromoPriceCurrency: "USD",
-        notes: [
-          {
-            en: "Salmon DNA-based cellular regeneration",
-            es: "Regeneración celular basada en ADN de salmón"
-          }
-        ]
-      }
+      // PRP
+      { optionName: { en: "PRP - Platelet Rich Plasma", es: "PRP - Plasma Rico en Plaquetas" }, isPromoEligible: false, optionPrice: { en: "$165", es: "$165" }, optionCurrency: "USD", optionPromoPrice: "", optionPromoPriceCurrency: "USD", notes: [{ en: "Zones: Face", es: "Zonas: Rostro" }, { en: "Benefits: Boosts collagen, healing, and overall skin renewal.", es: "Estimula colágeno, cicatrización y renovación global de la piel." }] },
+      { optionName: { en: "PRP - Platelet Rich Plasma", es: "PRP - Plasma Rico en Plaquetas" }, isPromoEligible: false, optionPrice: { en: "$180", es: "$180" }, optionCurrency: "USD", optionPromoPrice: "", optionPromoPriceCurrency: "USD", notes: [{ en: "Zones: Face + Neck", es: "Zonas: Rostro + Cuello" }, { en: "Benefits: Boosts collagen, healing, and overall skin renewal.", es: "Estimula colágeno, cicatrización y renovación global de la piel." }] },
+      { optionName: { en: "PRP - Platelet Rich Plasma", es: "PRP - Plasma Rico en Plaquetas" }, isPromoEligible: false, optionPrice: { en: "$195", es: "$195" }, optionCurrency: "USD", optionPromoPrice: "", optionPromoPriceCurrency: "USD", notes: [{ en: "Zones: Face + Neck + Décolleté", es: "Zonas: Rostro + Cuello + Escote" }, { en: "Benefits: Boosts collagen, healing, and overall skin renewal.", es: "Estimula colágeno, cicatrización y renovación global de la piel." }] },
+
+      // PDRN
+      { optionName: { en: "PDRN - Polydeoxyribonucleotide", es: "PDRN - Polidesoxirribonucleotido" }, isPromoEligible: false, optionPrice: { en: "$190", es: "$190" }, optionCurrency: "USD", optionPromoPrice: "", optionPromoPriceCurrency: "USD", notes: [{ en: "Zones: Face", es: "Zonas: Rostro" }, { en: "Benefits: Promotes deep dermal repair, scar improvement, and elasticity.", es: "Favorece reparación dérmica profunda, mejora de cicatrices y elasticidad." }] },
+      { optionName: { en: "PDRN - Polydeoxyribonucleotide", es: "PDRN - Polidesoxirribonucleotido" }, isPromoEligible: false, optionPrice: { en: "$275", es: "$275" }, optionCurrency: "USD", optionPromoPrice: "", optionPromoPriceCurrency: "USD", notes: [{ en: "Zones: Face + Neck", es: "Zonas: Rostro + Cuello" }, { en: "Benefits: Promotes deep dermal repair, scar improvement, and elasticity.", es: "Favorece reparación dérmica profunda, mejora de cicatrices y elasticidad." }] },
+      { optionName: { en: "PDRN - Polydeoxyribonucleotide", es: "PDRN - Polidesoxirribonucleotido" }, isPromoEligible: false, optionPrice: { en: "$315", es: "$315" }, optionCurrency: "USD", optionPromoPrice: "", optionPromoPriceCurrency: "USD", notes: [{ en: "Zones: Face + Neck + Décolleté", es: "Zonas: Rostro + Cuello + Escote" }, { en: "Benefits: Promotes deep dermal repair, scar improvement, and elasticity.", es: "Favorece reparación dérmica profunda, mejora de cicatrices y elasticidad." }] },
+      { optionName: { en: "PDRN - Polydeoxyribonucleotide", es: "PDRN - Polidesoxirribonucleotido" }, isPromoEligible: false, optionPrice: { en: "$170", es: "$170" }, optionCurrency: "USD", optionPromoPrice: "", optionPromoPriceCurrency: "USD", notes: [{ en: "Zones: Hands", es: "Zonas: Manos" }, { en: "Benefits: Promotes deep dermal repair, scar improvement, and elasticity.", es: "Favorece reparación dérmica profunda, mejora de cicatrices y elasticidad." }] },
+
+      // PN
+      { optionName: { en: "PN - Polynucleotide", es: "PN - Polinucleotido" }, isPromoEligible: false, optionPrice: { en: "$300", es: "$300" }, optionCurrency: "USD", optionPromoPrice: "", optionPromoPriceCurrency: "USD", notes: [{ en: "Zones: Face", es: "Zonas: Rostro" }, { en: "Benefits: Supports collagen, firmness, and smoother texture.", es: "Favorece colágeno, firmeza y una textura más suave." }] },
+      { optionName: { en: "PN - Polynucleotide", es: "PN - Polinucleotido" }, isPromoEligible: false, optionPrice: { en: "$450", es: "$450" }, optionCurrency: "USD", optionPromoPrice: "", optionPromoPriceCurrency: "USD", notes: [{ en: "Zones: Face + Neck", es: "Zonas: Rostro + Cuello" }, { en: "Benefits: Supports collagen, firmness, and smoother texture.", es: "Favorece colágeno, firmeza y una textura más suave." }] },
+      { optionName: { en: "PN - Polynucleotide", es: "PN - Polinucleotido" }, isPromoEligible: false, optionPrice: { en: "$565", es: "$565" }, optionCurrency: "USD", optionPromoPrice: "", optionPromoPriceCurrency: "USD", notes: [{ en: "Zones: Face + Neck + Décolleté", es: "Zonas: Rostro + Cuello + Escote" }, { en: "Benefits: Supports collagen, firmness, and smoother texture.", es: "Favorece colágeno, firmeza y una textura más suave." }] },
+      { optionName: { en: "PN - Polynucleotide", es: "PN - Polinucleotido" }, isPromoEligible: false, optionPrice: { en: "$265", es: "$265" }, optionCurrency: "USD", optionPromoPrice: "", optionPromoPriceCurrency: "USD", notes: [{ en: "Zones: Hands", es: "Zonas: Manos" }, { en: "Benefits: Supports collagen, firmness, and smoother texture.", es: "Favorece colágeno, firmeza y una textura más suave." }] },
+
+      // Hydration & regeneration (TKN HA3+)
+      { optionName: { en: "Cellular Hydration & Deep Regeneration", es: "Hidratación Celular y Regeneración Profunda" }, isPromoEligible: false, optionPrice: { en: "$310", es: "$310" }, optionCurrency: "USD", optionPromoPrice: "", optionPromoPriceCurrency: "USD", notes: [{ en: "Zones: Face", es: "Zonas: Rostro" }, { en: "Product: TKN HA3+", es: "Producto: TKN HA3+" }, { en: "Benefits: Provides intensive hydration and supports deep regeneration.", es: "Aporta hidratación intensiva y favorece la regeneración profunda." }] },
+      { optionName: { en: "Cellular Hydration & Deep Regeneration", es: "Hidratación Celular y Regeneración Profunda" }, isPromoEligible: false, optionPrice: { en: "$375", es: "$375" }, optionCurrency: "USD", optionPromoPrice: "", optionPromoPriceCurrency: "USD", notes: [{ en: "Zones: Face + Neck", es: "Zonas: Rostro + Cuello" }, { en: "Product: TKN HA3+", es: "Producto: TKN HA3+" }, { en: "Benefits: Provides intensive hydration and supports deep regeneration.", es: "Aporta hidratación intensiva y favorece la regeneración profunda." }] },
+      { optionName: { en: "Cellular Hydration & Deep Regeneration", es: "Hidratación Celular y Regeneración Profunda" }, isPromoEligible: false, optionPrice: { en: "$450", es: "$450" }, optionCurrency: "USD", optionPromoPrice: "", optionPromoPriceCurrency: "USD", notes: [{ en: "Zones: Face + Neck + Décolleté", es: "Zonas: Rostro + Cuello + Escote" }, { en: "Product: TKN HA3+", es: "Producto: TKN HA3+" }, { en: "Benefits: Provides intensive hydration and supports deep regeneration.", es: "Aporta hidratación intensiva y favorece la regeneración profunda." }] },
+
+      // Glow
+      { optionName: { en: "Glow Revitalizing & Facial Definition", es: "Glow Revitalizante & Definición Facial" }, isPromoEligible: false, optionPrice: { en: "$195", es: "$195" }, optionCurrency: "USD", optionPromoPrice: "", optionPromoPriceCurrency: "USD", notes: [{ en: "Zones: Face", es: "Zonas: Rostro" }, { en: "Product: Toskani WCPR + ECPR + Radiance Cocktail", es: "Producto: Toskani WCPR + ECPR + Radiance Cocktail" }, { en: "Brightens, firms, and enhances facial definition.", es: "Aporta luminosidad, firmeza y realza la definición facial." }] },
+      { optionName: { en: "Glow Revitalizing & Facial Definition", es: "Glow Revitalizante & Definición Facial" }, isPromoEligible: false, optionPrice: { en: "$225", es: "$225" }, optionCurrency: "USD", optionPromoPrice: "", optionPromoPriceCurrency: "USD", notes: [{ en: "Zones: Face + Neck", es: "Zonas: Rostro + Cuello" }, { en: "Product: Toskani WCPR + ECPR + Radiance Cocktail", es: "Producto: Toskani WCPR + ECPR + Radiance Cocktail" }, { en: "Brightens, firms, and enhances facial definition.", es: "Aporta luminosidad, firmeza y realza la definición facial." }] },
+      { optionName: { en: "Glow Revitalizing & Facial Definition", es: "Glow Revitalizante & Definición Facial" }, isPromoEligible: false, optionPrice: { en: "$250", es: "$250" }, optionCurrency: "USD", optionPromoPrice: "", optionPromoPriceCurrency: "USD", notes: [{ en: "Zones: Face + Neck + Décolleté", es: "Zonas: Rostro + Cuello + Escote" }, { en: "Product: Toskani WCPR + ECPR + Radiance Cocktail", es: "Producto: Toskani WCPR + ECPR + Radiance Cocktail" }, { en: "Brightens, firms, and enhances facial definition.", es: "Aporta luminosidad, firmeza y realza la definición facial." }] },
+
+      // Repair
+      { optionName: { en: "Epidermal Repair & Cellular Renewal", es: "Reparación Epidérmica & Renovación Celular" }, isPromoEligible: false, optionPrice: { en: "$195", es: "$195" }, optionCurrency: "USD", optionPromoPrice: "", optionPromoPriceCurrency: "USD", notes: [{ en: "Zones: Face", es: "Zonas: Rostro" }, { en: "Product: Toskani NCPR + ECPR + Radiance Cocktail", es: "Producto: Toskani NCPR + ECPR + Radiance Cocktail" }, { en: "Strengthens the epidermis, calms inflammation, and supports renewal.", es: "Refuerza la epidermis, calma la inflamación y apoya la renovación." }] },
+      { optionName: { en: "Epidermal Repair & Cellular Renewal", es: "Reparación Epidérmica & Renovación Celular" }, isPromoEligible: false, optionPrice: { en: "$225", es: "$225" }, optionCurrency: "USD", optionPromoPrice: "", optionPromoPriceCurrency: "USD", notes: [{ en: "Zones: Face + Neck", es: "Zonas: Rostro + Cuello" }, { en: "Product: Toskani NCPR + ECPR + Radiance Cocktail", es: "Producto: Toskani NCPR + ECPR + Radiance Cocktail" }, { en: "Strengthens the epidermis, calms inflammation, and supports renewal.", es: "Refuerza la epidermis, calma la inflamación y apoya la renovación." }] },
+      { optionName: { en: "Epidermal Repair & Cellular Renewal", es: "Reparación Epidérmica & Renovación Celular" }, isPromoEligible: false, optionPrice: { en: "$250", es: "$250" }, optionCurrency: "USD", optionPromoPrice: "", optionPromoPriceCurrency: "USD", notes: [{ en: "Zones: Face + Neck + Décolleté", es: "Zonas: Rostro + Cuello + Escote" }, { en: "Product: Toskani NCPR + ECPR + Radiance Cocktail", es: "Producto: Toskani NCPR + ECPR + Radiance Cocktail" }, { en: "Strengthens the epidermis, calms inflammation, and supports renewal.", es: "Refuerza la epidermis, calma la inflamación y apoya la renovación." }] },
+
+      // Tone correction
+      { optionName: { en: "Tone Correction & Antispot", es: "Corrección de Tono & Antimanchas" }, isPromoEligible: false, optionPrice: { en: "$160", es: "$160" }, optionCurrency: "USD", optionPromoPrice: "", optionPromoPriceCurrency: "USD", notes: [{ en: "Zones: Face", es: "Zonas: Rostro" }, { en: "Product: Toskani Lumicen Gel", es: "Producto: Toskani Lumicen Gel" }, { en: "Targets discoloration and helps even skin tone.", es: "Combate la pigmentación y ayuda a uniformar el tono de la piel." }] },
+      { optionName: { en: "Tone Correction & Antispot", es: "Corrección de Tono & Antimanchas" }, isPromoEligible: false, optionPrice: { en: "$185", es: "$185" }, optionCurrency: "USD", optionPromoPrice: "", optionPromoPriceCurrency: "USD", notes: [{ en: "Zones: Face + Neck", es: "Zonas: Rostro + Cuello" }, { en: "Product: Toskani Lumicen Gel", es: "Producto: Toskani Lumicen Gel" }, { en: "Targets discoloration and helps even skin tone.", es: "Combate la pigmentación y ayuda a uniformar el tono de la piel." }] },
+      { optionName: { en: "Tone Correction & Antispot", es: "Corrección de Tono & Antimanchas" }, isPromoEligible: false, optionPrice: { en: "$200", es: "$200" }, optionCurrency: "USD", optionPromoPrice: "", optionPromoPriceCurrency: "USD", notes: [{ en: "Zones: Face + Neck + Décolleté", es: "Zonas: Rostro + Cuello + Escote" }, { en: "Product: Toskani Lumicen Gel", es: "Producto: Toskani Lumicen Gel" }, { en: "Targets discoloration and helps even skin tone.", es: "Combate la pigmentación y ayuda a uniformar el tono de la piel." }] },
+
+      // Caviar
+      { optionName: { en: "Caviar Extract", es: "Extracto de Caviar" }, isPromoEligible: false, optionPrice: { en: "$120", es: "$120" }, optionCurrency: "USD", optionPromoPrice: "", optionPromoPriceCurrency: "USD", notes: [{ en: "Zones: Face", es: "Zonas: Rostro" }, { en: "Product: Janssen Cosmetics caviar extract", es: "Producto: Extracto de caviar Janssen Cosmetics" }, { en: "Benefits: Nourishes, hydrates, and improves skin vitality.", es: "Nutre, hidrata y mejora la vitalidad de la piel." }] },
+      { optionName: { en: "Caviar Extract", es: "Extracto de Caviar" }, isPromoEligible: false, optionPrice: { en: "$135", es: "$135" }, optionCurrency: "USD", optionPromoPrice: "", optionPromoPriceCurrency: "USD", notes: [{ en: "Zones: Face + Neck", es: "Zonas: Rostro + Cuello" }, { en: "Product: Janssen Cosmetics caviar extract", es: "Producto: Extracto de caviar Janssen Cosmetics" }, { en: "Benefits: Nourishes, hydrates, and improves skin vitality.", es: "Nutre, hidrata y mejora la vitalidad de la piel." }] },
+      { optionName: { en: "Caviar Extract", es: "Extracto de Caviar" }, isPromoEligible: false, optionPrice: { en: "$145", es: "$145" }, optionCurrency: "USD", optionPromoPrice: "", optionPromoPriceCurrency: "USD", notes: [{ en: "Zones: Face + Neck + Décolleté", es: "Zonas: Rostro + Cuello + Escote" }, { en: "Product: Janssen Cosmetics caviar extract", es: "Producto: Extracto de caviar Janssen Cosmetics" }, { en: "Benefits: Nourishes, hydrates, and improves skin vitality.", es: "Nutre, hidrata y mejora la vitalidad de la piel." }] }
     ]
   },
   goals: [
@@ -141,12 +114,12 @@ export const microneedling = {
       es: "Escote"
     },
     {
-      en: "Back",
-      es: "Espalda"
-    },
-    {
       en: "Hands",
       es: "Manos"
+    },
+    {
+      en: "Other zones treatable upon request and medical evaluation.",
+      es: "Otras zonas tratables bajo solicitud y evaluación médica."
     }
   ],
   addOns: [
