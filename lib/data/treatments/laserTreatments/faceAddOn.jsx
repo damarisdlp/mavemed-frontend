@@ -85,12 +85,7 @@ export const serumAddOns = {
       optionName: {
         en: "Face",
         es: "Rostro"
-      },
-      displayName: {
-        en: "Scarlet S RF Microneedling - Face",
-        es: "Microneedling con RF Scarlet S - Rostro"
-      },
-      link: "/treatments/rf-microneedling"
+      }
     }
   ],
   expectations: {
