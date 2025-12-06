@@ -135,8 +135,11 @@ export const lipFillers = {
   ],
   addOns: [
     {
-      serviceParent: "Wrinkle Reducer - Botox",
-      serviceChild: "Lip Flip (Gummy Smile)",
+      treatmentSlug: "wrinkle-reducers-botox",
+      optionName: {
+        en: "Any Zone",
+        es: "Cualquier Zona"
+      },
       displayName: {
         en: "Botox - Lip Flip (Gummy Smile)",
         es: "Botox - Volteo de Labios (Sonrisa de Encías)"
