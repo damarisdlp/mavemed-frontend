@@ -40,7 +40,7 @@ export const pdoThreads = {
   pricing: {
     startingPrice: {
       en: "Price varies by area and thread count",
-      es: "El precio varía según el área y la cantidad de hilos"
+      es: "El precio varía según la zona y la cantidad de hilos"
     },
     startingPriceCurrency: "",
     promoPrice: {
@@ -208,8 +208,11 @@ export const pdoThreads = {
   ],
   addOns: [
     {
-      serviceParent: "PN + Hyaluronic Acid Booster + Niacinamide",
-      serviceChild: "Kiara Reju",
+      treatmentSlug: "mesotherapy-infusions",
+      optionName: {
+        en: "PDRN - Polydeoxyribonucleotide",
+        es: "PDRN - Polidesoxirribonucleótido"
+      },
       displayName: {
         en: "Kiara Reju – PN + Hyaluronic Acid + Niacinamide",
         es: "Kiara Reju – PN + ácido hialurónico + niacinamida"
