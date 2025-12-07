@@ -159,26 +159,40 @@ export const hyaluronidase = {
   expectations: {
     preTreatment: [
       {
-        en: "Discontinue blood thinners 48 hours before (with physician approval) to reduce bruising risk.",
-        es: "Suspenda anticoagulantes 48 horas antes (con aprobación médica) para reducir el riesgo de moretones."
+        en: "Avoid alcohol, NSAIDs/aspirin, and blood-thinning supplements for 48 hours if medically permitted.",
+        es: "Evite alcohol, AINE/aspirina y suplementos anticoagulantes durante 48 horas si su médico lo permite."
       },
       {
-        en: "Inform your provider of any prior allergic reactions or medical history involving hyaluronidase.",
-        es: "Informe a su proveedor sobre cualquier reacción alérgica previa o historial médico que involucre hialuronidasa."
+        en: "Inform your provider of prior allergic reactions to hyaluronidase, bee/wasp stings, or any previous filler complications.",
+        es: "Informe a su especialista sobre reacciones alérgicas previas a hialuronidasa, picaduras de abeja/avispa o complicaciones previas con rellenos."
+      },
+      {
+        en: "Pause retinoids/acids on treatment areas for 48 hours and arrive with clean skin.",
+        es: "Suspenda retinoides/ácidos en las zonas a tratar por 48 horas y llegue con la piel limpia."
+      }
+    ],
+    duringTreatment: [
+      {
+        en: "You’ll feel brief pinching and possible warmth or stinging as hyaluronidase is injected into the filler.",
+        es: "Sentirá pequeños pinchazos y posible calor o escozor mientras se inyecta la hialuronidasa en el relleno."
+      },
+      {
+        en: "Softening or contour change can begin within minutes as the enzyme disperses.",
+        es: "El ablandamiento o cambio de contorno puede iniciar en minutos a medida que la enzima se dispersa."
       }
     ],
     postTreatment: [
       {
-        en: "You may experience temporary swelling or redness at the injection site.",
-        es: "Puede experimentar hinchazón temporal o enrojecimiento en el sitio de inyección."
+        en: "Expect temporary swelling, redness, or tenderness for 24–72 hours; cool compresses can ease discomfort.",
+        es: "Espere hinchazón, enrojecimiento o sensibilidad temporal de 24 a 72 horas; las compresas frías pueden aliviar la molestia."
       },
       {
-        en: "Results can be seen within 24–72 hours as the filler dissolves and tissue settles.",
-        es: "Los resultados se pueden ver dentro de 24-72 horas mientras el relleno se disuelve y el tejido se asienta."
+        en: "Visible changes occur within 24–72 hours as filler dissolves; asymmetry may be temporary as tissue settles.",
+        es: "Los cambios visibles ocurren en 24–72 horas a medida que el relleno se disuelve; puede haber asimetría temporal mientras el tejido se asienta."
       },
       {
-        en: "Avoid massaging or pressing the treated area unless instructed otherwise.",
-        es: "Evite masajear o presionar el área tratada a menos que se indique lo contrario."
+        en: "Avoid massaging/pressing the area unless instructed; new filler is typically delayed 1–2 weeks.",
+        es: "Evite masajear/presionar el área salvo indicación; normalmente se retrasa la aplicación de nuevo relleno 1–2 semanas."
       }
     ]
   },
