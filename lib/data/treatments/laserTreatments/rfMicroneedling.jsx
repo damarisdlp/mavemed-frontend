@@ -260,8 +260,8 @@ export const rfMicroneedling = {
     {
       treatmentSlug: "casmara-retinol-proage",
       optionName: {
-        en: "Casmara Retinol Pro‑Age Facial",
-        es: "Casmara Retinol Pro‑Age Facial"
+        en: "Casmara - Retinol Pro‑Age Facial",
+        es: "Casmara - Facial Retinol Pro‑Age"
       }
     },
     {
