@@ -204,22 +204,36 @@ export const facialBalancing = {
         es: "Evite alcohol, aspirina, ibuprofeno y aceite de pescado 48 horas antes de su cita para reducir moretones."
       },
       {
-        en: "Stay hydrated and eat a light meal before arriving.",
-        es: "Manténgase hidratado y coma una comida ligera antes de llegar."
+        en: "Stay hydrated, eat a light meal, and arrive with clean skin; pause retinoids/acids for 48 hours.",
+        es: "Manténgase hidratado, coma algo ligero y llegue con la piel limpia; suspenda retinoides/ácidos por 48 horas."
+      },
+      {
+        en: "Disclose anticoagulants, autoimmune conditions, keloid tendency, and recent dental work/vaccines.",
+        es: "Informe sobre anticoagulantes, condiciones autoinmunes, tendencia a queloides y trabajos dentales/vacunas recientes."
+      }
+    ],
+    duringTreatment: [
+      {
+        en: "Topical numbing and/or cannula techniques are used; you may feel brief pinches and pressure.",
+        es: "Se usa anestesia tópica y/o técnica con cánula; puede sentir pequeños pinchazos y presión."
+      },
+      {
+        en: "Provider will mold and check symmetry throughout to balance the face.",
+        es: "El especialista modelará y revisará la simetría durante todo el procedimiento para equilibrar el rostro."
       }
     ],
     postTreatment: [
       {
-        en: "Mild swelling and tenderness are expected and typically subside within 2–3 days.",
-        es: "Se espera hinchazón leve y sensibilidad que generalmente disminuyen en 2-3 días."
+        en: "Mild swelling/tenderness are expected for 2–3 days; apply cool compresses in the first 24 hours.",
+        es: "Se esperan hinchazón/sensibilidad leves durante 2–3 días; aplique compresas frías en las primeras 24 horas."
       },
       {
-        en: "Avoid strenuous activity, alcohol, and facial pressure for at least 24 hours.",
-        es: "Evite actividad extenuante, alcohol y presión facial durante al menos 24 horas."
+        en: "Avoid strenuous exercise, alcohol, saunas, and facial pressure (facials/massage) for 48 hours.",
+        es: "Evite ejercicio intenso, alcohol, saunas y presión facial (faciales/masajes) durante 48 horas."
       },
       {
-        en: "Final results are visible once swelling settles, usually within 5–7 days.",
-        es: "Los resultados finales son visibles una vez que la hinchazón se asienta, generalmente en 5-7 días."
+        en: "Sleep with head elevated the first night; avoid dental work for 2 weeks. Results refine as swelling settles in ~1 week.",
+        es: "Duerma con la cabeza elevada la primera noche; evite trabajo dental por 2 semanas. Los resultados se afinan al bajar la hinchazón en ~1 semana."
       }
     ]
   },
