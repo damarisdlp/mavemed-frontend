@@ -7,6 +7,8 @@ import Footer from "@/components/Footer";
 import PromoBanner from "@/components/PromoBanner";
 import StaffDetails from "@/components/StaffDetails";
 import ContactCTA from "@/components/ContactCTA";
+import InstagramFeed from "@/components/InstagramFeed"
+import ReviewsSection from "@/components/ReviewsSection"
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import nextI18NextConfig from "../../next-i18next.config";
 
@@ -100,6 +102,8 @@ export default function TeamMemberPage() {
           }}
         />
         <ContactCTA />
+        <InstagramFeed />
+        <ReviewsSection />
         <Footer />
       </section>
     </>
