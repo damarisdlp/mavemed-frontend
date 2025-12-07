@@ -146,14 +146,36 @@ export const sclerotherapy = {
   expectations: {
     preTreatment: [
       {
-        en: "Avoid aspirin, ibuprofen, or alcohol 24 hours prior. Wear loose clothing.",
-        es: "Evite aspirina, ibuprofeno o alcohol 24 horas antes. Vista ropa holgada."
+        en: "Avoid aspirin, NSAIDs, and alcohol for 48 hours if medically permitted; skip moisturizers or oils on legs the day of treatment.",
+        es: "Evite aspirina, antiinflamatorios y alcohol por 48 horas si su médico lo permite; no use cremas u aceites en las piernas el día del tratamiento."
+      },
+      {
+        en: "Bring or wear compression stockings as instructed; avoid shaving or waxing legs 24 hours prior.",
+        es: "Traiga o use medias de compresión según se le indique; evite rasurar o depilar las piernas 24 horas antes."
+      }
+    ],
+    duringTreatment: [
+      {
+        en: "You’ll feel small needle pricks and brief stinging or cramping as the solution enters the vein.",
+        es: "Sentirá pequeños piquetes y un ardor o calambre breve mientras la solución entra en la vena."
+      },
+      {
+        en: "Leg elevation and immediate compression are applied; walking soon after the procedure is encouraged.",
+        es: "Se eleva la pierna y se aplica compresión de inmediato; se recomienda caminar poco después del procedimiento."
       }
     ],
     postTreatment: [
       {
-        en: "Wear compression stockings for 5–7 days. Avoid sun exposure and high-impact activity.",
-        es: "Vista medias de compresión durante 5-7 días. Evite exposición al sol y actividad de alto impacto."
+        en: "Wear compression stockings as directed (often 5–7 days during waking hours) and walk 10–20 minutes daily.",
+        es: "Use las medias de compresión según se indique (a menudo 5–7 días durante las horas de vigilia) y camine 10–20 minutos al día."
+      },
+      {
+        en: "Avoid hot baths, saunas, intense sun, and high-impact exercise for 7 days; avoid heavy lifting for 48 hours.",
+        es: "Evite baños calientes, saunas, sol intenso y ejercicio de alto impacto por 7 días; evite levantar peso por 48 horas."
+      },
+      {
+        en: "Mild bruising, itching, or lumps along the vein can occur and usually resolve over weeks; contact us for severe calf pain, swelling, or redness.",
+        es: "Moretones leves, comezón o nódulos a lo largo de la vena pueden ocurrir y suelen resolverse en semanas; contáctenos si presenta dolor de pantorrilla intenso, hinchazón o enrojecimiento."
       }
     ]
   },
