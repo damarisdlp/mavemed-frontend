@@ -4,6 +4,8 @@ import Image from "next/image";
 // Shared components
 import Header from "@/components/Header";
 import PromoBanner from "@/components/PromoBanner";
+import InstagramFeed from "@/components/InstagramFeed"
+import ReviewsSection from "@/components/ReviewsSection"
 import Footer from "@/components/Footer";
 import Team from "@/components/Team";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
@@ -178,6 +180,8 @@ export default function TeamPage() {
 
         {/* Team */}
         <Team />
+        <InstagramFeed />
+        <ReviewsSection />
         <Footer />
         
       </div>
