@@ -22,14 +22,14 @@ export default function AboutSection() {
     loop: true,
     slides: {
       perView: 1,
-      spacing: 16,
+      spacing: 10,
     },
     breakpoints: {
       "(min-width: 768px)": {
-        slides: { perView: 2, spacing: 24 },
+        slides: { perView: 2, spacing: 20 },
       },
       "(min-width: 1024px)": {
-        slides: { perView: 3, spacing: 32 },
+        slides: { perView: 3, spacing: 10 },
       },
     },
   });
@@ -106,38 +106,20 @@ export default function AboutSection() {
         </Link>
       </div>
 
-      {/* Slider Controls */}
-      {slider && (
-        <div className="container mx-auto px-6 flex justify-end gap-4 mb-6">
-          <button
-            onClick={() => slider.current?.prev()}
-            className="bg-gray-200 hover:bg-gray-300 text-black p-2 rounded-full text-lg"
-          >
-            ←
-          </button>
-          <button
-            onClick={() => slider.current?.next()}
-            className="bg-gray-200 hover:bg-gray-300 text-black p-2 rounded-full text-lg"
-          >
-            →
-          </button>
-        </div>
-      )}
-
-      {/* Slider Cards */}
-      <div className="w-full flex justify-center">
-        <div
-          ref={sliderRef}
-          className="keen-slider overflow-hidden px-4 mx-auto max-w-[1100px]"
-        >
-          {allStaff.map((s, index) => (
-            <div key={index} className="keen-slider__slide flex justify-center px-2">
-              <div className="w-[280px] sm:w-[300px] md:w-[320px] flex flex-col bg-[#f9f9f9] rounded-lg overflow-hidden shadow-sm hover:shadow-md transition mb-3">
-                <div className="relative h-[420px] w-full">
-                  <Image
-                    src={s.image}
-                    alt={`${getLocalized(s.displayName)} – ${getLocalized(s.title)}`}
-                    fill
+  {/* Slider Cards */}
+  <div className="w-full flex justify-center relative px-2 md:px-6">
+    <div
+      ref={sliderRef}
+      className="keen-slider overflow-hidden px-2 sm:px-4 mx-auto w-full max-w-[1400px]"
+    >
+      {allStaff.map((s, index) => (
+        <div key={index} className="keen-slider__slide flex justify-center px-2">
+          <div className="w-[320px] sm:w-[340px] md:w-[360px] lg:w-[380px] flex flex-col bg-[#f9f9f9] rounded-lg overflow-hidden shadow-sm hover:shadow-md transition mb-3">
+            <div className="relative h-[420px] w-full">
+              <Image
+                src={s.image}
+                alt={`${getLocalized(s.displayName)} – ${getLocalized(s.title)}`}
+                fill
                     className="object-cover text-gray-600"
                   />
                 </div>
@@ -156,10 +138,28 @@ export default function AboutSection() {
                   </Link>
                 </div>
               </div>
-            </div>
-          ))}
         </div>
-      </div>
+      ))}
+    </div>
+    {slider && (
+      <>
+        <button
+          type="button"
+          onClick={() => slider.current?.prev()}
+          className="absolute left-0 top-1/2 -translate-y-1/2 bg-white border border-gray-300 text-gray-700 rounded-full shadow px-3 py-2 hover:bg-gray-100"
+        >
+          ‹
+        </button>
+        <button
+          type="button"
+          onClick={() => slider.current?.next()}
+          className="absolute right-0 top-1/2 -translate-y-1/2 bg-white border border-gray-300 text-gray-700 rounded-full shadow px-3 py-2 hover:bg-gray-100"
+        >
+          ›
+        </button>
+      </>
+    )}
+  </div>
 
       {/* Spacer */}
       <div className="h-1 bg-white w-full" />
