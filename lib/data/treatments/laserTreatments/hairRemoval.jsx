@@ -144,13 +144,6 @@ export const laserHairRemoval = {
   ],
   addOns: [
     {
-      treatmentSlug: "wrinkle-reducers-botox",
-      optionName: {
-        en: "Any Zone",
-        es: "Cualquier Zona"
-      }
-    },
-    {
       treatmentSlug: "hydrafacial",
       optionName: {
         en: "Hydrafacial MD - Face",
@@ -158,10 +151,24 @@ export const laserHairRemoval = {
       }
     },
     {
-      treatmentSlug: "swedish-massage",
+      treatmentSlug: "casmara-purifying",
       optionName: {
-        en: "Relaxing Swedish Massage - Full Body",
-        es: "Masaje sueco relajante cuerpo completo"
+        en: "Casmara Purifying Algae Facial",
+        es: "Facial Casmara Purificante de Algas"
+      }
+    },
+    {
+      treatmentSlug: "microneedling",
+      optionName: {
+        en: "Microneedling - PRP - Platelet Rich Plasma",
+        es: "Microneedling - PRP - Plasma Rico en Plaquetas"
+      }
+    },
+    {
+      treatmentSlug: "microneedling",
+      optionName: {
+        en: "Microneedling - PN - Polynucleotide",
+        es: "Microneedling - PN - Polinucleótido"
       }
     }
   ],
