@@ -15,7 +15,7 @@ export default function ReviewsSection() {
       />
 
       {/* Reviews Section */}
-      <section className="bg-white px-6">
+      <section className="bg-white px-6 py-6">
         <div className="max-w-6xl mx-auto text-center">
           <h2 className="text-4xl font-serif text-black font-medium mb-6">
             {t("reviews.title")}
