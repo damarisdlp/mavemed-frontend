@@ -219,6 +219,34 @@ export const venusFreeze = {
         en: "PB Serum Slim+ - Lipase PB500",
         es: "PB Serum Slim+ - Lipasa PB500"
       }
+    },
+    {
+      treatmentSlug: "enzymatic-therapy",
+      optionName: {
+        en: "PB Serum+ (Kit)",
+        es: "PB Serum+ (Kit)"
+      }
+    },
+    {
+      treatmentSlug: "rf-microneedling",
+      optionName: {
+        en: "Sylfirm X - RF Microneedling - Face + Neck + Décolleté",
+        es: "Sylfirm X - Microagujas RF - Rostro + Cuello + Escote"
+      }
+    },
+    {
+      treatmentSlug: "hydrafacial",
+      optionName: {
+        en: "Hydrafacial MD - Face",
+        es: "Hydrafacial MD - Rostro"
+      }
+    },
+    {
+      treatmentSlug: "casmara-retinol-proage",
+      optionName: {
+        en: "Casmara Retinol Pro‑Age Facial",
+        es: "Casmara Retinol Pro‑Age Facial"
+      }
     }
   ],
   expectations: {
