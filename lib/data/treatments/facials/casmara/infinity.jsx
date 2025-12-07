@@ -106,22 +106,28 @@ export const casmaraInfinity = {
   expectations: {
     preTreatment: [
       {
-        en: "No special preparation needed.",
-        es: "No se requiere preparación especial."
+        en: "Avoid retinoids, acids, and exfoliation for 3–5 days; arrive with clean skin and no makeup.",
+        es: "Evite retinoides, ácidos y exfoliación durante 3–5 días; acuda con la piel limpia y sin maquillaje."
       },
       {
-        en: "Avoid retinoids or peels for 48 hours prior if possible.",
-        es: "Evite retinoides o peelings 48 horas antes si es posible."
+        en: "Reschedule if you have active infection, sunburn, or open lesions.",
+        es: "Reprograme si tiene infección activa, quemadura solar o lesiones abiertas."
+      }
+    ],
+    duringTreatment: [
+      {
+        en: "Expect gentle cleansing, massage, and mask application; mild tingling or warmth is normal.",
+        es: "Espere limpieza suave, masaje y aplicación de mascarilla; es normal un ligero cosquilleo o calor."
       }
     ],
     postTreatment: [
       {
-        en: "Your skin will look lifted and luminous right after.",
-        es: "La piel lucirá más tersa y luminosa de inmediato."
+        en: "Skin appears lifted and luminous immediately; mild redness can occur and resolves within hours.",
+        es: "La piel se ve más tersa y luminosa de inmediato; puede haber leve enrojecimiento que se resuelve en horas."
       },
       {
-        en: "Avoid harsh products or exfoliation for 24 hours.",
-        es: "Evite productos agresivos o exfoliación durante 24 horas."
+        en: "Avoid harsh products, heat, and vigorous exercise for 24 hours; apply SPF 30+ daily.",
+        es: "Evite productos agresivos, calor y ejercicio vigoroso durante 24 horas; aplique FPS 30+ a diario."
       }
     ]
   },
