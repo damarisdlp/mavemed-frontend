@@ -169,22 +169,40 @@ export const microneedling = {
   expectations: {
     preTreatment: [
       {
-        en: "Avoid retinoids, AHAs/BHAs and exfoliation for 3 days prior.",
-        es: "Evite retinoides, ácidos AHA/BHA y exfoliación durante los 3 días previos."
+        en: "Avoid retinoids, AHAs/BHAs, exfoliation, and waxing for 3–5 days prior; no recent sunburn or tanning.",
+        es: "Evite retinoides, AHA/BHA, exfoliación y depilación por 3–5 días previos; no acuda con quemadura solar ni bronceado reciente."
       },
       {
-        en: "No active acne, open wounds or infections at the treatment site.",
-        es: "No debe haber acné activo, heridas abiertas ni infecciones en la zona a tratar."
+        en: "Arrive with clean skin (no makeup); reschedule if you have active infection, open wounds, or flare of cold sores without prophylaxis.",
+        es: "Llegue con la piel limpia (sin maquillaje); reprograme si tiene infección activa, heridas abiertas o brote de herpes sin profilaxis."
+      },
+      {
+        en: "Limit alcohol, NSAIDs, and blood-thinning supplements 24–48 hours before if medically permitted.",
+        es: "Limite alcohol, AINE y suplementos anticoagulantes 24–48 horas antes si su médico lo permite."
+      }
+    ],
+    duringTreatment: [
+      {
+        en: "Topical numbing is applied; expect a scratching/pressure sensation with possible pinpoint bleeding.",
+        es: "Se aplica anestesia tópica; espere una sensación de raspado/presión con posible sangrado puntual."
+      },
+      {
+        en: "Channels are created evenly across the treated zones; serums are applied to enhance penetration.",
+        es: "Se crean microcanales de manera uniforme en las zonas tratadas; se aplican sueros para mejorar la penetración."
       }
     ],
     postTreatment: [
       {
-        en: "Expect redness similar to a sunburn for 24–72 hours.",
-        es: "Espere un enrojecimiento similar al de una quemadura solar durante 24–72 horas."
+        en: "Expect redness similar to a sunburn for 24–72 hours; mild swelling or tightness is normal.",
+        es: "Espere un enrojecimiento similar a una quemadura solar durante 24–72 horas; es normal hinchazón o tirantez leve."
       },
       {
-        en: "Avoid sun, sweating and active skincare for 2–3 days post-treatment.",
-        es: "Evite el sol directo, el sudor intenso y productos con activos fuertes durante 2–3 días después del tratamiento."
+        en: "Avoid sun, sweating, pools, and makeup for 24 hours; use gentle cleanser and hydrating serum only.",
+        es: "Evite el sol, el sudor, las albercas y el maquillaje durante 24 horas; use solo limpiador suave y suero hidratante."
+      },
+      {
+        en: "Do not use retinoids, acids, or scrubs for 5–7 days; apply SPF 30+ once reintroducing daytime products.",
+        es: "No use retinoides, ácidos ni exfoliantes por 5–7 días; aplique FPS 30+ al reintroducir productos diurnos."
       }
     ]
   },
