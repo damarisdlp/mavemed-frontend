@@ -153,20 +153,42 @@ export const harmonyca = {
       {
         en: "Inform your provider of recent dental procedures, vaccinations, or laser treatments.",
         es: "Informe a su proveedor de procedimientos dentales recientes, vacunaciones o tratamientos láser."
+      },
+      {
+        en: "Pause retinoids/acids on treatment areas for 48 hours and arrive with clean skin.",
+        es: "Suspenda retinoides/ácidos en las zonas a tratar por 48 horas y llegue con la piel limpia."
+      },
+      {
+        en: "Disclose autoimmune conditions, keloid history, or anticoagulant use to tailor your plan safely.",
+        es: "Informe sobre enfermedades autoinmunes, antecedentes de queloides o uso de anticoagulantes para adaptar el plan de forma segura."
+      }
+    ],
+    duringTreatment: [
+      {
+        en: "You may feel brief pinching and pressure during cannula/needle placement; numbing and cooling can be used for comfort.",
+        es: "Puede sentir pequeños pinchazos y presión durante el uso de cánula/aguja; se pueden usar anestesia y enfriamiento para mayor comodidad."
+      },
+      {
+        en: "Gentle molding/massage follows to shape and distribute the product evenly.",
+        es: "Se realiza moldeado/masaje suave para dar forma y distribuir el producto de manera uniforme."
       }
     ],
     postTreatment: [
       {
-        en: "Expect mild swelling or redness for 1–2 days.",
-        es: "Espere hinchazón leve o enrojecimiento durante 1-2 días."
+        en: "Expect mild swelling, redness, or tenderness for a few days; apply cool compresses for the first 24 hours.",
+        es: "Espere hinchazón leve, enrojecimiento o sensibilidad durante algunos días; aplique compresas frías las primeras 24 horas."
       },
       {
-        en: "Avoid facial massage, hot environments, or strenuous activity for 48 hours.",
-        es: "Evite masaje facial, ambientes calientes o actividad extenuante durante 48 horas."
+        en: "Avoid facial massage, dental work, high heat (saunas/hot yoga), and strenuous exercise for 48 hours.",
+        es: "Evite masaje facial, trabajo dental, calor intenso (saunas/yoga caliente) y ejercicio extenuante por 48 horas."
       },
       {
-        en: "Visible lift is immediate; collagen-stimulating effects continue developing over 6–8 weeks.",
-        es: "El levantamiento visible es inmediato; los efectos estimuladores de colágeno continúan desarrollándose durante 6-8 semanas."
+        en: "Visible lift is immediate; collagen-stimulating effects continue developing over 6–8 weeks—protect skin from sun during this period.",
+        es: "El levantamiento visible es inmediato; los efectos estimuladores de colágeno continúan desarrollándose durante 6–8 semanas; proteja la piel del sol en este periodo."
+      },
+      {
+        en: "Contact us for significant asymmetry, increasing pain, fever, or skin discoloration.",
+        es: "Contáctenos ante asimetría significativa, dolor en aumento, fiebre o cambios de color en la piel."
       }
     ]
   },
