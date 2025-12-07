@@ -252,6 +252,20 @@ export const pdoThreads = {
       {
         en: "Inform your provider about any recent Botox or filler procedures to plan your treatment safely.",
         es: "Informe a su especialista sobre cualquier tratamiento reciente con Botox o rellenos para planear su procedimiento de forma segura."
+      },
+      {
+        en: "Arrive with clean skin and no makeup; pause retinoids/acids for 3–5 days.",
+        es: "Acuda con la piel limpia y sin maquillaje; suspenda retinoides/ácidos durante 3–5 días."
+      }
+    ],
+    duringTreatment: [
+      {
+        en: "Local anesthesia is used; you’ll feel pressure and possible tugging as threads are placed and tightened.",
+        es: "Se utiliza anestesia local; sentirá presión y posible tirón mientras se colocan y tensan los hilos."
+      },
+      {
+        en: "Entry points are dressed; your provider will show you how to avoid disturbing thread paths.",
+        es: "Se cubren los puntos de entrada; su especialista le mostrará cómo evitar alterar la trayectoria de los hilos."
       }
     ],
     postTreatment: [
