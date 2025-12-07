@@ -48,7 +48,7 @@ export default function InstagramFeed() {
       <h2 className="text-2xl md:text-3xl text-black font-serif font-medium py-3 flex items-center justify-center gap-2">
         <span>{t("instagram.title")}</span>
       </h2>
-      <p className="text-gray-600 mb-6">{t("instagram.subtitle")}</p>
+      <p className="text-gray-600 mb-3">{t("instagram.subtitle")}</p>
       <p className="text-gray-600 mb-3">
         <a
           href="https://www.instagram.com/mavemedicalspa"
@@ -75,15 +75,23 @@ export default function InstagramFeed() {
                   href={post.permalink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex-shrink-0 basis-1/2 sm:basis-1/3 md:basis-1/4 lg:basis-1/4 xl:basis-1/5 min-w-[160px] max-w-[260px] snap-start block overflow-hidden rounded-lg border border-gray-200 hover:shadow-md transition"
+                  className="group relative flex-shrink-0 basis-1/2 sm:basis-1/3 md:basis-1/4 lg:basis-1/4 xl:basis-1/5 min-w-[160px] max-w-[260px] snap-start block overflow-hidden rounded-lg border border-gray-200 hover:shadow-md transition"
                 >
-                  <div className="aspect-square bg-gray-100">
+                  <div className="aspect-[3/4] bg-gray-100 relative">
                     <img
                       src={imageSrc}
                       alt={post.caption || "Instagram post"}
                       className="w-full h-full object-cover"
                       loading="lazy"
                     />
+                    <div className="absolute inset-0 bg-black/55 opacity-0 group-hover:opacity-100 transition flex flex-col justify-end p-3 text-left text-white">
+                      <div className="text-sm mb-1">
+                        ❤️ {post.like_count ?? "—"}
+                      </div>
+                      <div className="text-sm line-clamp-5">
+                        {post.caption || ""}
+                      </div>
+                    </div>
                   </div>
                 </a>
             );
