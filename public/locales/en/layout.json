@@ -4,7 +4,7 @@
     "about": "About Us",
     "contact": "Contact Us",
     "location": "Location",
-    "bookWhatsApp": "Book via WhatsApp"
+    "bookWhatsApp": "Book Appointment"
   },
   "promoBanner": {
     "text": "Access exclusive promo pricing on select treatments.",
@@ -42,5 +42,13 @@
   },
   "language": "Language",
   "english": "EN",
-  "spanish": "ES"
+  "spanish": "ES",
+  "chat": {
+    "open": "Chat with us",
+    "close": "Close",
+    "title": "Chat with us",
+    "subtitle": "Choose your preferred channel",
+    "whatsapp": "WhatsApp",
+    "instagram": "Instagram"
+  }
 }
