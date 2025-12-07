@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useTranslation } from "next-i18next";
+import { dispatchChatOpen } from "@/lib/utils/chat";
 
 export default function ContactUs() {
   const { t } = useTranslation("contact");
@@ -22,12 +23,13 @@ export default function ContactUs() {
               <div>
                 <h3 className="text-lg md:text-xl text-black font-semibold">{t("contactUs.phoneTitle")}</h3>
                 <p className="text-gray-700">
-                  <a
-                    href="https://wa.me/+526642077675"
+                  <button
+                    type="button"
+                    onClick={dispatchChatOpen}
                     className="underline hover:text-black transition"
                   >
                     {t("contactUs.phoneNumber")}
-                  </a>
+                  </button>
                 </p>
               </div>
             </div>
