@@ -210,8 +210,8 @@ export const pdoThreads = {
     {
       treatmentSlug: "mesotherapy-infusions",
       optionName: {
-        en: "Mesotherapy - PDRN - Polynucleotide",
-        es: "Mesoterapia - PDRN - Polinucleótido"
+        en: "Mesotherapy - PDRN - Polydeoxyribonucleotide",
+        es: "Mesoterapia - PDRN - Polidesoxirribonucleótido"
       }
     },
     {
