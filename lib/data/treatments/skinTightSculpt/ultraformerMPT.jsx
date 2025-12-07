@@ -438,6 +438,27 @@ export const ultraformerMPT = {
         en: "PLLA - Sculptra® (per vial)",
         es: "PLLA - Sculptra® (por vial)"
       }
+    },
+    {
+      treatmentSlug: "harmonyca",
+      optionName: {
+        en: "Per Treatment - 2 x 1.25 mL Syringes Total",
+        es: "Por Tratamiento - 2 x 1.25 mL Jeringas Total"
+      }
+    },
+    {
+      treatmentSlug: "facial-balancing-fillers",
+      optionName: {
+        en: "Juvéderm Volbella",
+        es: "Juvéderm Volbella"
+      }
+    },
+    {
+      treatmentSlug: "microneedling",
+      optionName: {
+        en: "PN - Polynucleotide",
+        es: "PN - Polinucleótido"
+      }
     }
   ],
   expectations: {
