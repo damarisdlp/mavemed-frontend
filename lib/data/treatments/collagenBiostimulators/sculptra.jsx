@@ -151,8 +151,8 @@ export const sculptra = {
     {
       treatmentSlug: "casmara-infinity",
       optionName: {
-        en: "Casmara Infinity Anti‑Aging Facial",
-        es: "Facial Casmara Antienvejecimiento Infinity"
+        en: "Casmara - Infinity Anti‑Aging Facial",
+        es: "Casmara - Facial Antienvejecimiento Infinity"
       }
     },
     {
