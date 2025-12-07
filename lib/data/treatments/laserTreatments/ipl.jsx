@@ -229,10 +229,10 @@ export const ipl = {
   ],
   addOns: [
     {
-      treatmentSlug: "wrinkle-reducers-botox",
+      treatmentSlug: "rf-microneedling",
       optionName: {
-        en: "Any Zone",
-        es: "Cualquier Zona"
+        en: "Sylfirm X - RF Microneedling - Face + Neck + Décolleté",
+        es: "Sylfirm X - Microagujas RF - Rostro + Cuello + Escote"
       }
     },
     {
@@ -243,10 +243,24 @@ export const ipl = {
       }
     },
     {
-      treatmentSlug: "swedish-massage",
+      treatmentSlug: "casmara-purifying",
       optionName: {
-        en: "Relaxing Swedish Massage - Full Body",
-        es: "Masaje sueco relajante cuerpo completo"
+        en: "Casmara Purifying Algae Facial",
+        es: "Facial Casmara Purificante de Algas"
+      }
+    },
+    {
+      treatmentSlug: "microneedling",
+      optionName: {
+        en: "Microneedling - PRP - Platelet Rich Plasma",
+        es: "Microneedling - PRP - Plasma Rico en Plaquetas"
+      }
+    },
+    {
+      treatmentSlug: "microneedling",
+      optionName: {
+        en: "Microneedling - PN - Polynucleotide",
+        es: "Microneedling - PN - Polinucleótido"
       }
     }
   ],
