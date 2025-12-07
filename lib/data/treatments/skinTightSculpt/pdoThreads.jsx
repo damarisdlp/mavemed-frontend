@@ -210,8 +210,36 @@ export const pdoThreads = {
     {
       treatmentSlug: "mesotherapy-infusions",
       optionName: {
-        en: "PDRN - Polydeoxyribonucleotide",
-        es: "PDRN - Polidesoxirribonucleótido"
+        en: "Mesotherapy - PDRN - Polynucleotide",
+        es: "Mesoterapia - PDRN - Polinucleótido"
+      }
+    },
+    {
+      treatmentSlug: "microneedling",
+      optionName: {
+        en: "Microneedling - PN - Polynucleotide",
+        es: "Microneedling - PN - Polinucleótido"
+      }
+    },
+    {
+      treatmentSlug: "rf-microneedling",
+      optionName: {
+        en: "Sylfirm X - RF Microneedling - Face + Neck + Décolleté",
+        es: "Sylfirm X - Microagujas RF - Rostro + Cuello + Escote"
+      }
+    },
+    {
+      treatmentSlug: "hydrafacial",
+      optionName: {
+        en: "Hydrafacial MD - Face",
+        es: "Hydrafacial MD - Rostro"
+      }
+    },
+    {
+      treatmentSlug: "casmara-retinol-proage",
+      optionName: {
+        en: "Casmara Retinol Pro‑Age Facial",
+        es: "Casmara Retinol Pro‑Age Facial"
       }
     }
   ],
