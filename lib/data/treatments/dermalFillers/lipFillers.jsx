@@ -137,10 +137,9 @@ export const lipFillers = {
     {
       treatmentSlug: "wrinkle-reducers-botox",
       optionName: {
-        en: "Any Zone",
-        es: "Cualquier Zona"
+        en: "Botox - Any Zone",
+        es: "Botox - Cualquier Zona"
       },
-      link: "/treatments/wrinkleReducers/botox"
     },
     {
       treatmentSlug: "microneedling",
