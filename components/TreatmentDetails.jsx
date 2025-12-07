@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useRouter } from "next/router";
 import { AccordionToggle } from "./AccordionToggle";
+import { dispatchChatOpen } from "@/lib/utils/chat";
 
 export default function TreatmentDetails({ treatment }) {
   const { locale: routerLocale } = useRouter();
@@ -142,14 +143,13 @@ export default function TreatmentDetails({ treatment }) {
               <p className="text-gray-700">
                 {startingPriceText}
               </p>
-              <a
-                href="https://wa.me/+526642077675"
-                target="_blank"
-                rel="noopener noreferrer"
+              <button
+                type="button"
+                onClick={dispatchChatOpen}
                 className="mt-3 inline-block w-full text-center bg-black hover:bg-[#731a2f] text-white font-medium py-2 rounded transition duration-200"
               >
                 {locale === "es" ? "Agendar" : "Book Now"}
-              </a>
+              </button>
             </div>
 
             {hasPromo && (
@@ -162,12 +162,13 @@ export default function TreatmentDetails({ treatment }) {
                 <p className="text-gray-700">
                   {localizedPromoPrice} {pricing.promoPriceCurrency}
                 </p>
-                <a
-                  href="https://wa.me/+526642077675"
+                <button
+                  type="button"
+                  onClick={dispatchChatOpen}
                   className="mt-3 inline-block w-full text-center border border-gray-700 text-gray-800 hover:bg-[#731a2f] hover:text-white font-medium py-2 rounded transition duration-200"
                 >
                   {locale === "es" ? "Más Información" : "Inquire"}
-                </a>
+                </button>
               </div>
             )}
           </div>
