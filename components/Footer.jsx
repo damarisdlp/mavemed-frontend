@@ -22,7 +22,7 @@ export default function Footer() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch("https://script.google.com/macros/s/AKfycbxJU8lIqKC_9LGFQcFO7gMTNYNZb11GirR4AQ8i_VUoYtR2Mepny2nNre-J3XhDcFs/exec", {
+      const response = await fetch("/api/lead", {
         method: "POST",
         body: JSON.stringify(formData),
         headers: { "Content-Type": "application/json" }
