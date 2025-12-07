@@ -2,6 +2,8 @@
 import Link from "next/link";
 import { useState } from "react";
 import { useTranslation } from "next-i18next";
+import dynamic from "next/dynamic";
+const ChatLauncher = dynamic(() => import("./ChatLauncher"), { ssr: false });
 
 export default function Footer() {
   const { t } = useTranslation("layout");
@@ -159,6 +161,7 @@ export default function Footer() {
         <Link href="/terms" className="hover:underline mx-2">{t("footer.terms")}</Link> |{" "}
         <Link href="/accessibility" className="hover:underline mx-2">{t("footer.accessibility")}</Link>
       </div>
+      <ChatLauncher />
     </footer>
   );
 }
