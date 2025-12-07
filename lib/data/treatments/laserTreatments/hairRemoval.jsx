@@ -12,8 +12,8 @@ export const laserHairRemoval = {
   isPopular: true,
   isPromoEligible: false,
   images: {
-    primary: "/hair-removal.jpg",
-    secondary: "/hair-removal2.jpg"
+    primary: "/hairremoval.jpg",
+    secondary: "/hairremoval2.jpg"
   },
   description: {
     en: "Pain free laser hair removal for all skin types using the Alma Soprano Titanium ICE system.",
