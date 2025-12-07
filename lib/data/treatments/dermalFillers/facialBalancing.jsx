@@ -149,16 +149,16 @@ export const facialBalancing = {
     {
       treatmentSlug: "wrinkle-reducers-botox",
       optionName: {
-        en: "Any Zone",
-        es: "Cualquier Zona"
+        en: "Botox - Any Zone",
+        es: "Botox - Cualquier Zona"
       },
-      link: "/treatments/wrinkleReducers"
+      link: "/treatments/wrinkle-reducers-botox"
     },
     {
       treatmentSlug: "hyaluronic-acid-lip-fillers",
       optionName: {
-        en: "Dermal Filler - Hyaluronic Acid - Stylage M",
-        es: "Relleno Dérmico - Ácido Hialurónico - Stylage - M"
+        en: "Lip Filler - Hyaluronic Acid - Stylage M",
+        es: "Relleno en Labios - Ácido Hialurónico - Stylage - M"
       }
     },
     {
