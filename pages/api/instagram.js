@@ -61,15 +61,29 @@ export default async function handler(req, res) {
       console.warn("Instagram account lookup failed:", text);
     }
 
-    const igRes = await fetch(url);
-    if (!igRes.ok) {
-      const text = await igRes.text();
-      console.error("Instagram API error:", text);
-      return res.status(502).json({ error: "Instagram fetch failed", detail: text, account });
-    }
-    const data = await igRes.json();
+    // Fetch all pages (limit ~100 items to avoid excessive calls)
+    let items = [];
+    let nextUrl = url;
+    const maxItems = 100;
+    const maxPages = 5;
+    let page = 0;
 
-    const sorted = Array.isArray(data?.data) ? [...data.data] : [];
+    while (nextUrl && items.length < maxItems && page < maxPages) {
+      page += 1;
+      const igRes = await fetch(nextUrl);
+      if (!igRes.ok) {
+        const text = await igRes.text();
+        console.error("Instagram API error:", text);
+        return res.status(502).json({ error: "Instagram fetch failed", detail: text, account });
+      }
+      const data = await igRes.json();
+      if (Array.isArray(data?.data)) {
+        items = items.concat(data.data);
+      }
+      nextUrl = data?.paging?.next || null;
+    }
+
+    const sorted = items.length ? [...items] : [];
     if (sorted.length) {
       sorted.sort((a, b) => {
         const aPinned = isPinned(a);
@@ -89,7 +103,7 @@ export default async function handler(req, res) {
       });
     }
 
-    const payload = { ...data, data: sorted, account };
+    const payload = { data: sorted, account };
     cache.data = payload;
     cache.timestamp = now;
     return res.status(200).json(payload);
