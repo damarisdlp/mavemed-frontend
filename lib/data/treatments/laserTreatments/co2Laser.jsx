@@ -12,8 +12,8 @@ export const co2Laser = {
   isPopular: true,
   isPromoEligible: false,
   images: {
-    primary: "/laser-co2.jpg",
-    secondary: "/laser-co2-2.jpg"
+    primary: "/laserco2.jpg",
+    secondary: "/laserco22.jpg"
   },
 
   description: {
