@@ -464,12 +464,22 @@ export const ultraformerMPT = {
   expectations: {
     preTreatment: [
       {
-        en: "Stay well hydrated and avoid alcohol or caffeine for 24 hours prior to your appointment.",
-        es: "Mantenga una buena hidratación y evite alcohol y cafeína durante las 24 horas previas a su cita."
+        en: "Stay well hydrated; avoid alcohol, caffeine, and NSAIDs for 24–48 hours if medically permitted.",
+        es: "Manténgase bien hidratado; evite alcohol, cafeína y AINE durante 24–48 horas si su médico lo permite."
       },
       {
-        en: "Notify your provider if you have received Botox or fillers in the treatment area within the last two weeks.",
-        es: "Informe a su especialista si ha recibido Botox o rellenos en la zona a tratar en las últimas dos semanas."
+        en: "Arrive with clean skin, no makeup; inform your provider of recent Botox/fillers, implants, or metal hardware in the area.",
+        es: "Acuda con la piel limpia y sin maquillaje; informe a su especialista sobre Botox/rellenos recientes, implantes o material metálico en la zona."
+      }
+    ],
+    duringTreatment: [
+      {
+        en: "You’ll feel tingling or heat with each ultrasound pulse; ultrasound gel and possible numbing help comfort.",
+        es: "Sentirá hormigueo o calor con cada pulso de ultrasonido; el gel y la anestesia opcional ayudan a la comodidad."
+      },
+      {
+        en: "Energy is delivered in passes at multiple depths for lifting and tightening.",
+        es: "La energía se aplica en pasadas a varias profundidades para levantar y tensar."
       }
     ],
     postTreatment: [
@@ -478,8 +488,8 @@ export const ultraformerMPT = {
         es: "Puede presentarse enrojecimiento leve, inflamación o sensibilidad, que generalmente se resuelve en horas o pocos días."
       },
       {
-        en: "Avoid hot showers, saunas, and intense exercise for 24 hours after treatment.",
-        es: "Evite duchas muy calientes, saunas y ejercicio intenso durante 24 horas después del tratamiento."
+        en: "Avoid hot showers, saunas, and intense exercise for 24–48 hours; hydrate well.",
+        es: "Evite duchas muy calientes, saunas y ejercicio intenso durante 24–48 horas; hidrátese bien."
       },
       {
         en: "An initial lift may be visible immediately, with full results building over 8 to 12 weeks.",
