@@ -93,26 +93,12 @@ export const swedishMassage = {
   ],
   addOns: [
     {
-      treatmentSlug: "wrinkle-reducers-botox",
+      treatmentSlug: "cupping",
       optionName: {
-        en: "Any Zone",
-        es: "Cualquier Zona"
+        en: "Cupping Add‑On",
+        es: "Complemento de Ventosas"
       }
-    },
-    {
-      treatmentSlug: "hydrafacial",
-      optionName: {
-        en: "Hydrafacial MD - Face",
-        es: "Hydrafacial MD - Rostro"
-      }
-    },
-    {
-      treatmentSlug: "casmara-purifying",
-      optionName: {
-        en: "Casmara Purifying Algae Facial",
-        es: "Facial Purificante de Algas Casmara"
-      }
-    },
+    }
   ],
   expectations: {
     preTreatment: [
