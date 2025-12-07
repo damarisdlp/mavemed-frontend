@@ -2,6 +2,8 @@ import PromoBanner from "@/components/PromoBanner";
 import Header from "@/components/Header"
 import Footer from "@/components/Footer"
 import ContactUs from "@/components/ContactUs"
+import InstagramFeed from "@/components/InstagramFeed"
+import ReviewsSection from "@/components/ReviewsSection"
 import Head from "next/head";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import nextI18NextConfig from "../next-i18next.config";
@@ -93,6 +95,8 @@ export default function Contact() {
       <PromoBanner/>
         <Header/>
         <ContactUs/>
+        <InstagramFeed />
+        <ReviewsSection />
         <Footer />
     </div>
     </>
