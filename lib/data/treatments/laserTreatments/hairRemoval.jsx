@@ -179,18 +179,32 @@ export const laserHairRemoval = {
         es: "Rasure el área a tratar un día antes de su sesión. No se depile con cera ni pinzas."
       },
       {
-        en: "Avoid sun exposure and tanning for 2 weeks prior to treatment.",
-        es: "Evite la exposición solar intensa y el bronceado durante 2 semanas antes del tratamiento."
+        en: "Avoid sun exposure and tanning for 2 weeks prior; skip self-tanner and harsh exfoliants for 5–7 days.",
+        es: "Evite la exposición solar y el bronceado por 2 semanas; no use autobronceador ni exfoliantes fuertes por 5–7 días."
+      },
+      {
+        en: "Do not apply heavy creams, deodorant, or makeup on the treatment day; arrive with clean skin.",
+        es: "No aplique cremas pesadas, desodorante ni maquillaje el día del tratamiento; acuda con la piel limpia."
+      }
+    ],
+    duringTreatment: [
+      {
+        en: "You’ll feel gentle warmth or quick snaps; cooling is used to keep the skin comfortable.",
+        es: "Sentirá calor suave o pequeños chasquidos; se usa enfriamiento para mantener la piel cómoda."
       }
     ],
     postTreatment: [
       {
-        en: "You may experience mild redness or warmth for a few hours. Avoid hot showers, saunas, and exfoliants for 24–48 hours.",
-        es: "Puede presentar enrojecimiento o sensación de calor leve durante algunas horas. Evite duchas muy calientes, saunas y exfoliantes durante 24 a 48 horas."
+        en: "Expect mild redness or warmth for a few hours. Avoid hot showers, saunas, and exfoliants for 24–48 hours.",
+        es: "Puede presentar enrojecimiento o sensación de calor leve durante algunas horas. Evite duchas muy calientes, saunas y exfoliantes durante 24–48 horas."
       },
       {
         en: "Hair will shed gradually over 1–3 weeks. Do not wax or pluck between sessions.",
         es: "El vello se irá desprendiendo de forma gradual entre 1 y 3 semanas. No use cera ni pinzas entre sesiones."
+      },
+      {
+        en: "Use SPF 30+ on exposed areas and avoid aggressive scrubs or retinoids for 5–7 days.",
+        es: "Use FPS 30+ en zonas expuestas y evite exfoliantes agresivos o retinoides durante 5–7 días."
       }
     ]
   },
