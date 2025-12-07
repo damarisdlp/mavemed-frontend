@@ -271,18 +271,32 @@ export const ipl = {
         es: "Evite la exposición solar intensa, camas de bronceado y autobronceadores durante 2 semanas antes del tratamiento."
       },
       {
-        en: "Discontinue retinoids or acid based products 3–5 days prior to your session.",
-        es: "Suspenda retinoides o productos con ácidos de 3 a 5 días antes de su sesión."
+        en: "Discontinue retinoids, acids, and exfoliation 5–7 days prior; arrive with clean skin, no makeup.",
+        es: "Suspenda retinoides, ácidos y exfoliación 5–7 días antes; acuda con la piel limpia y sin maquillaje."
+      },
+      {
+        en: "Avoid photosensitizing meds (per provider guidance) and inform us of any antibiotics or recent sunburn.",
+        es: "Evite medicamentos fotosensibilizantes (según indicación) e infórmenos sobre antibióticos recientes o quemadura solar."
+      }
+    ],
+    duringTreatment: [
+      {
+        en: "Expect a warm, quick snap sensation; cooling gel and chilled tip help comfort.",
+        es: "Espere una sensación de chasquido cálido y rápido; el gel frío y la punta refrigerada ayudan a la comodidad."
+      },
+      {
+        en: "Mild redness or darkening of spots can occur immediately as pigment absorbs the light.",
+        es: "Puede presentarse enrojecimiento leve u oscurecimiento inmediato de las manchas al absorber la luz."
       }
     ],
     postTreatment: [
       {
-        en: "Pigmented areas may darken temporarily and then flake off over 5–7 days.",
-        es: "Las áreas pigmentadas pueden oscurecerse de forma temporal y luego descamarse en un periodo de 5 a 7 días."
+        en: "Pigmented spots may darken and flake off over 5–7 days; avoid picking.",
+        es: "Las manchas pigmentadas pueden oscurecerse y descamarse en 5–7 días; evite manipularlas."
       },
       {
-        en: "Use SPF daily to maintain results and help prevent new pigmentation.",
-        es: "Use protector solar todos los días para mantener los resultados y ayudar a prevenir nueva pigmentación."
+        en: "Use SPF 30+ daily, avoid sun/heat for 72 hours, and pause active skincare for 3–5 days.",
+        es: "Use FPS 30+ a diario, evite sol/calor por 72 horas y suspenda activos de cuidado de la piel por 3–5 días."
       }
     ]
   },
