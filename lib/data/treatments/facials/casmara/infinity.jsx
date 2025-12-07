@@ -12,8 +12,8 @@ export const casmaraInfinity = {
   isPopular: false,
   isPromoEligible: false,
   images: {
-    primary: "/casmara-infinity.jpg",
-    secondary: "/casmara-infinity2.jpg"
+    primary: "/infinity.jpg",
+    secondary: "/infinity2.jpg"
   },
   description: {
     en: "Luxury anti-aging facial with growth factors, peptides, and Casmara's exclusive Infinity serum for firming and lifting mature skin.",
