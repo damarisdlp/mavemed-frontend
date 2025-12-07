@@ -6,7 +6,7 @@ export default async function handler(req, res) {
   const payload = typeof req.body === "string" ? safeParse(req.body) : req.body || {};
   const scriptUrl =
     process.env.GOOGLE_SCRIPT_URL ||
-    "https://script.google.com/macros/s/AKfycbxJU8lIqKC_9LGFQcFO7gMTNYNZb11GirR4AQ8i_VUoYtR2Mepny2nNre-J3XhDcFs/exec";
+"https://script.google.com/macros/s/AKfycbyrscQ6GGcXSbgl7IIdJsbDIEX0swrPoA8ZXynw7n9uiePCuYCKvBnuHOrAYLG2bWM/exec";
 
   try {
     const sheetResponse = await fetch(scriptUrl, {
