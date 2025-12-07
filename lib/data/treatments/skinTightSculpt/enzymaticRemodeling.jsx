@@ -177,8 +177,21 @@ export const enzymaticTherapy = {
       optionName: {
         en: "Express Body Glow",
         es: "Brillo Corporal Exprés"
-      },
-      link: "/treatments/enzymaticRemodeling"
+      }
+    },
+    {
+      treatmentSlug: "venus-freeze",
+      optionName: {
+        en: "RF Sculpting - Defined Arms",
+        es: "Escultura RF - Brazos Definidos"
+      }
+    },
+    {
+      treatmentSlug: "rf-microneedling",
+      optionName: {
+        en: "Sylfirm X - RF Microneedling - Face",
+        es: "Sylfirm X - Microagujas RF - Rostro"
+      }
     }
   ],
   expectations: {
