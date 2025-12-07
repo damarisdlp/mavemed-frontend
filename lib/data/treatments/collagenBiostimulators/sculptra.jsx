@@ -6,8 +6,8 @@ export const sculptra = {
     es: "Biostimuladores de Colágeno"
   },
   serviceDisplayName: {
-    en: "Sculptra® (PLLA)",
-    es: "Sculptra® (PLLA)"
+    en: "Sculptra® (PLLA) - Poly-L-Lactic Acid",
+    es: "Sculptra® (PLLA) - Poli-L-Láctico"
   },
   isPopular: true,
   isPromoEligible: true,
@@ -145,7 +145,7 @@ export const sculptra = {
       treatmentSlug: "microneedling",
       optionName: {
         en: "Microneedling - PN - Polynucleotide",
-        es: "Microneedling - PN - Polinucleótido"
+        es: "Microagujas - PN - Polinucleótido"
       }
     },
     {
