@@ -1,6 +1,7 @@
 // components/LocationSection.jsx
 import Image from "next/image";
 import { useTranslation } from "next-i18next";
+import { dispatchChatOpen } from "@/lib/utils/chat";
 
 export default function LocationSection() {
   const { t } = useTranslation("location");
@@ -60,12 +61,13 @@ export default function LocationSection() {
               <Image src="/WA.png" alt="WhatsApp icon" width={40} height={40} />
               <div>
                 <h4 className="text-black font-semibold text-base">{t("location.phoneLabel")}</h4>
-                <a
-                  href="https://wa.me/+526642077675"
+                <button
+                  type="button"
+                  onClick={dispatchChatOpen}
                   className="underline hover:text-black transition text-gray-700"
                 >
                   {t("location.phoneNumber")}
-                </a>
+                </button>
               </div>
             </div>
 
