@@ -141,6 +141,34 @@ export const lipFillers = {
         es: "Cualquier Zona"
       },
       link: "/treatments/wrinkleReducers/botox"
+    },
+    {
+      treatmentSlug: "microneedling",
+      optionName: {
+        en: "Microneedling - PRP - Platelet Rich Plasma",
+        es: "Microneedling - PRP - Plasma Rico en Plaquetas"
+      }
+    },
+    {
+      treatmentSlug: "mesotherapy-infusions",
+      optionName: {
+        en: "Mesotherapy - PN - Polynucleotide",
+        es: "Mesoterapia - PN - Polinucleótido"
+      }
+    },
+    {
+      treatmentSlug: "hydrafacial",
+      optionName: {
+        en: "Hydrafacial MD - Face",
+        es: "Hydrafacial MD - Rostro"
+      }
+    },
+    {
+      treatmentSlug: "casmara-purifying",
+      optionName: {
+        en: "Facial Casmara Purificante de Algas",
+        es: "Facial Casmara Purificante de Algas"
+      }
     }
   ],
   expectations: {
