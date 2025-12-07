@@ -12,8 +12,8 @@ export const calcanealSpur = {
   isPopular: false,
   isPromoEligible: true,
   images: {
-    primary: "/podiatry.jpg",
-    secondary: "/podiatry2.jpg"
+    primary: "/heelspur.jpg",
+    secondary: "/heelspur2.jpg"
   },
   description: {
     en: "Targeted injection therapy to reduce inflammation and pain caused by calcaneal spurs and plantar fasciitis.",
