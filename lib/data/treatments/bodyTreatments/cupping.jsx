@@ -120,6 +120,20 @@ export const cupping = {
         es: "Masaje Sueco Relajante - Cuerpo Completo"
       }
     },
+    {
+      treatmentSlug: "hydrafacial",
+      optionName: {
+        en: "Hydrafacial MD - Face",
+        es: "Hydrafacial MD - Rostro"
+      }
+    },
+    {
+      treatmentSlug: "casmara-retinol-proage",
+      optionName: {
+        en: "Casmara Retinol Pro‑Age Facial",
+        es: "Casmara Retinol Pro‑Age Facial"
+      }
+    }
   ],
   expectations: {
     preTreatment: [
