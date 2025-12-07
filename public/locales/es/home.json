@@ -72,8 +72,12 @@
     "cta": "Explorar Servicios"
   },
   "reviews": {
-    "title": "Lo que dicen nuestros pacientes",
-    "subtitle": "Reseñas verificadas de clientes transfronterizos y locales que confían en Mave."
+    "title": "Lo Que Dicen Nuestros Pacientes",
+    "subtitle": "Reseñas verificadas de clientes transfronterizos y locales que confían en Mave.",
+    "rating": "Calificación de Google {{rating}}/5 ({{total}} reseñas)",
+    "powered": "Con tecnología de Google",
+    "button": "Déjanos tu reseña en Google",
+    "viewAll": "Ver todas en Google"
   },
   "instagram": {
     "title": "Síguenos",
