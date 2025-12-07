@@ -110,18 +110,28 @@ export const casmaraRetinolProAge = {
   expectations: {
     preTreatment: [
       {
-        en: "Avoid retinoids, exfoliating acids, or waxing for 5 days before your session.",
-        es: "Evita retinoides, ácidos exfoliantes o depilación con cera durante 5 días antes de tu sesión."
+        en: "Avoid retinoids, exfoliating acids, or waxing for 5–7 days; arrive with clean skin and no makeup.",
+        es: "Evite retinoides, ácidos exfoliantes o depilación con cera por 5–7 días; acuda con la piel limpia y sin maquillaje."
+      },
+      {
+        en: "Reschedule if you have active infection or sunburn.",
+        es: "Reprograme si tiene infección activa o quemadura solar."
+      }
+    ],
+    duringTreatment: [
+      {
+        en: "You may feel mild tingling as the retinol/acid phases are applied; intensity can be adjusted for comfort.",
+        es: "Puede sentir un ligero cosquilleo al aplicar las fases de retinol/ácido; la intensidad puede ajustarse para su comodidad."
       }
     ],
     postTreatment: [
       {
-        en: "Use gentle, hydrating products and SPF daily.",
-        es: "Usa productos suaves e hidratantes y protector solar a diario."
+        en: "Use gentle, hydrating products and SPF daily; avoid heat, workouts, and makeup for 24 hours.",
+        es: "Use productos suaves e hidratantes y protector solar a diario; evite calor, ejercicio y maquillaje durante 24 horas."
       },
       {
-        en: "Peeling or flaking may occur within 2–4 days.",
-        es: "Puede presentarse descamación entre 2 y 4 días después."
+        en: "Peeling or flaking may occur within 2–4 days; do not pick or exfoliate—let skin shed naturally.",
+        es: "Puede presentarse descamación entre 2 y 4 días; no manipule ni exfolie, permita que la piel se desprenda de forma natural."
       }
     ]
   },
