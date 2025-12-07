@@ -193,6 +193,24 @@ export const sculptra = {
       {
         en: "Stay well-hydrated and eat a nutritious meal before your appointment.",
         es: "Manténgase bien hidratado y coma una comida nutritiva antes de su cita."
+      },
+      {
+        en: "Pause topical retinoids/acids on treatment areas for 48 hours and arrive with clean skin.",
+        es: "Suspenda retinoides/ácidos tópicos en las zonas a tratar por 48 horas y llegue con la piel limpia."
+      },
+      {
+        en: "Inform your provider about autoimmune conditions, keloid history, recent vaccines/dental work, or blood thinners.",
+        es: "Informe a su especialista sobre enfermedades autoinmunes, antecedentes de queloides, vacunas/trabajos dentales recientes o anticoagulantes."
+      }
+    ],
+    duringTreatment: [
+      {
+        en: "You may feel brief pinching and pressure during microcannula or needle placement; numbing and cold packs help comfort.",
+        es: "Puede sentir pequeños pinchazos y presión durante el uso de microcánula o aguja; la anestesia y compresas frías ayudan a la comodidad."
+      },
+      {
+        en: "Gentle massage is performed to disperse the product evenly in the treated area.",
+        es: "Se realiza un masaje suave para dispersar el producto uniformemente en la zona tratada."
       }
     ],
     postTreatment: [
@@ -201,12 +219,16 @@ export const sculptra = {
         es: "Masajee las áreas tratadas por 5 minutos, 5 veces al día, durante 5 días para apoyar la estimulación uniforme del colágeno."
       },
       {
-        en: "Mild swelling or bruising may occur and typically resolves in a few days.",
-        es: "Puede ocurrir hinchazón leve o moretones y típicamente se resuelve en pocos días."
+        en: "Use cool compresses for the first 24 hours and avoid strenuous exercise, saunas, or hot yoga for 48 hours.",
+        es: "Use compresas frías durante las primeras 24 horas y evite ejercicio intenso, saunas o yoga caliente por 48 horas."
       },
       {
-        en: "Results develop gradually over 4 to 8 weeks, with full improvements visible by 3 months.",
-        es: "Los resultados se desarrollan gradualmente en 4 a 8 semanas, con mejoras completas visibles en 3 meses."
+        en: "Expect swelling/bruising for a few days; protect from sun and avoid facial massages or dental work for 2 weeks.",
+        es: "Espere hinchazón/moretones por algunos días; proteja del sol y evite masajes faciales o trabajo dental por 2 semanas."
+      },
+      {
+        en: "Results build gradually over 4–8 weeks after each session; full effects often visible by 3–4 months.",
+        es: "Los resultados se desarrollan gradualmente en 4–8 semanas después de cada sesión; los efectos completos suelen verse en 3–4 meses."
       }
     ]
   },
