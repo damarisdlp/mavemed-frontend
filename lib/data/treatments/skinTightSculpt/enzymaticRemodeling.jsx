@@ -197,26 +197,36 @@ export const enzymaticTherapy = {
   expectations: {
     preTreatment: [
       {
-        en: "Avoid alcohol and anti-inflammatory medications for 24 hours prior to reduce bruising risk.",
-        es: "Evite el alcohol y medicamentos antiinflamatorios 24 horas antes para reducir el riesgo de moretones."
+        en: "Avoid alcohol and anti-inflammatory medications for 24–48 hours if medically permitted; hydrate well.",
+        es: "Evite alcohol y antiinflamatorios durante 24–48 horas si su médico lo permite; hidrátese bien."
       },
       {
-        en: "Drink plenty of water to support post-treatment lymphatic drainage.",
-        es: "Beba suficiente agua para apoyar el drenaje linfático después del tratamiento."
+        en: "Arrive with clean skin; avoid heavy creams on treatment areas the day of your session.",
+        es: "Acuda con la piel limpia; evite cremas pesadas en las zonas a tratar el día de su sesión."
+      }
+    ],
+    duringTreatment: [
+      {
+        en: "You may feel brief pinching or burning as enzymes are injected; numbing and cooling can be used for comfort.",
+        es: "Puede sentir pequeños pinchazos o ardor mientras se inyectan las enzimas; se pueden usar anestesia y enfriamiento para mayor comodidad."
+      },
+      {
+        en: "Massage or gentle manipulation is performed to disperse the product evenly.",
+        es: "Se realiza masaje o manipulación suave para dispersar el producto de manera uniforme."
       }
     ],
     postTreatment: [
       {
-        en: "Expect soreness, swelling, or bruising for 2–5 days.",
-        es: "Espere sensibilidad, hinchazón o moretones por 2 a 5 días."
+        en: "Expect soreness, swelling, or bruising for 2–5 days; apply cool compresses as needed.",
+        es: "Espere sensibilidad, hinchazón o moretones por 2 a 5 días; aplique compresas frías según necesidad."
       },
       {
-        en: "Wear compression garments if recommended.",
-        es: "Use prendas de compresión si se le indica."
+        en: "Wear compression garments if recommended and avoid saunas, hot tubs, or strenuous exercise for 48 hours.",
+        es: "Use prendas de compresión si se le indica y evite saunas, tinas calientes o ejercicio intenso durante 48 horas."
       },
       {
-        en: "Engage in gentle movement or lymphatic massage to accelerate enzyme clearance.",
-        es: "Realice movimiento suave o masaje linfático para acelerar la eliminación de enzimas."
+        en: "Engage in gentle movement or lymphatic massage as advised to accelerate enzyme clearance.",
+        es: "Realice movimiento suave o masaje linfático según se le indique para acelerar la eliminación de enzimas."
       }
     ]
   },
