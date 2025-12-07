@@ -132,7 +132,24 @@ export const matrixectomy = {
       es: "Dedos menores (según recomendación del especialista)"
     }
   ],
-  addOns: [],
+  addOns: [
+    {
+      treatmentSlug: "hydrafacial",
+      optionName: { en: "Hydrafacial MD - Face", es: "Hydrafacial MD - Rostro" }
+    },
+    {
+      treatmentSlug: "casmara-retinol-proage",
+      optionName: { en: "Casmara Retinol Pro‑Age Facial", es: "Casmara Retinol Pro‑Age Facial" }
+    },
+    {
+      treatmentSlug: "swedish-massage",
+      optionName: { en: "Relaxing Swedish Massage - Full Body", es: "Masaje Sueco Relajante - Cuerpo Completo" }
+    },
+    {
+      treatmentSlug: "cupping",
+      optionName: { en: "Cupping Add‑On", es: "Complemento de Ventosas" }
+    }
+  ],
   expectations: {
     preTreatment: [
       {
