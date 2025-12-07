@@ -142,22 +142,32 @@ export const janssenUltraRenewal = {
   expectations: {
     preTreatment: [
       {
-        en: "Avoid retinol, acids, or exfoliating agents for 3 days prior.",
-        es: "Evite retinol, ácidos o agentes exfoliantes durante 3 días previos."
+        en: "Avoid retinoids, acids, and exfoliation for 3–5 days; arrive with clean skin and no makeup.",
+        es: "Evite retinoides, ácidos y exfoliación durante 3–5 días; acuda con la piel limpia y sin maquillaje."
+      },
+      {
+        en: "Reschedule if you have active infection, sunburn, or open lesions.",
+        es: "Reprograme si tiene infección activa, quemadura solar o lesiones abiertas."
+      }
+    ],
+    duringTreatment: [
+      {
+        en: "Expect gentle cleansing, massage, and serum/mask application; mild warmth or tingling is normal.",
+        es: "Espere limpieza suave, masaje y aplicación de suero/mascarilla; es normal un ligero calor o cosquilleo."
       }
     ],
     postTreatment: [
       {
-        en: "Mild redness may occur.",
-        es: "Puede presentarse enrojecimiento leve."
+        en: "No downtime expected; mild redness can occur and resolves within hours.",
+        es: "No se espera tiempo de inactividad; puede haber leve enrojecimiento que se resuelve en horas."
       },
       {
-        en: "Use hydrating products and sunscreen",
-        es: "Use productos hidratantes y protector solar"
+        en: "Use hydrating products and sunscreen; avoid harsh products, heat, and strenuous exercise for 24 hours.",
+        es: "Use productos hidratantes y protector solar; evite productos agresivos, calor y ejercicio intenso durante 24 horas."
       },
       {
-        en: "Avoid exfoliating products for 3 days.",
-        es: "Evite productos exfoliantes durante 3 días."
+        en: "Avoid exfoliating products for 3–5 days and apply SPF 30+ daily.",
+        es: "Evite productos exfoliantes durante 3–5 días y aplique FPS 30+ a diario."
       }
     ]
   },
