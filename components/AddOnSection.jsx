@@ -39,6 +39,14 @@ export default function AddOnSection({ addOns = [] }) {
 
   if (!addOns.length || !allTreatments?.length) return null;
 
+  const getNumericPrice = (priceField) => {
+    const localized = getLocalized(priceField);
+    if (!localized) return null;
+    const cleaned = `${localized}`.replace(/[^0-9.,]/g, "").replace(/,/g, "");
+    const value = parseFloat(cleaned);
+    return Number.isFinite(value) ? value : null;
+  };
+
   const treatmentMaps = useMemo(() => {
     const bySlug = new Map();
     const byName = new Map();
@@ -89,14 +97,41 @@ export default function AddOnSection({ addOns = [] }) {
         const matchedOption = optionMap.get(normalize(targetOptionName)) || null;
 
         const displayPrice =
-          getLocalized(matchedOption?.optionPrice) ||
-          getLocalized(addon?.pricing?.startingPrice);
+          getLocalized(
+            matchedOption?.optionPrice ||
+              (addon?.pricing?.options || [])
+                .reduce((lowest, opt) => {
+                  const val = getNumericPrice(opt.optionPrice);
+                  if (val == null) return lowest;
+                  if (!lowest || val < lowest.val) {
+                    return { val, price: opt.optionPrice };
+                  }
+                  return lowest;
+                }, null)?.price ||
+              addon?.pricing?.startingPrice
+          );
+
+        const lowestOptionForCurrency =
+          (addon?.pricing?.options || []).reduce((lowest, opt) => {
+            const val = getNumericPrice(opt.optionPrice);
+            if (val == null) return lowest;
+            if (!lowest || val < lowest.val) {
+              return { val, currency: opt.optionCurrency };
+            }
+            return lowest;
+          }, null) || null;
+
         const displayCurrency =
-          matchedOption?.optionCurrency || addon?.pricing?.startingPriceCurrency;
+          matchedOption?.optionCurrency ||
+          lowestOptionForCurrency?.currency ||
+          addon?.pricing?.startingPriceCurrency;
 
         const promoPrice = getLocalized(matchedOption?.optionPromoPrice);
         const hasPromo =
           matchedOption?.isPromoEligible && typeof promoPrice === "string" && promoPrice.trim();
+
+        const hasMultipleOptions = (addon?.pricing?.options || []).length > 1;
+        const fromLabel = hasMultipleOptions ? (locale === "es" ? "Desde " : "From ") : "";
 
         const localizedAddOnName =
           getLocalized(addonRef.optionName) ||
@@ -122,6 +157,7 @@ export default function AddOnSection({ addOns = [] }) {
             {displayPrice && (
               <p className="text-sm text-gray-700 mt-1">
                 <span className="font-semibold">{ui.price}</span>{" "}
+                {fromLabel}
                 {displayPrice} {displayCurrency}
                 {hasPromo && (
                   <>
