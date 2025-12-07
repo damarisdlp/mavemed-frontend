@@ -1,6 +1,8 @@
 import PromoBanner from "@/components/PromoBanner";
 import Header from "@/components/Header"
 import LocationSection from "@/components/LocationSection"
+import InstagramFeed from "@/components/InstagramFeed"
+import ReviewsSection from "@/components/ReviewsSection"
 import Footer from "@/components/Footer"
 import Head from "next/head";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
@@ -104,6 +106,8 @@ export default function Location() {
       <PromoBanner/>
         <Header />
         <LocationSection />
+        <InstagramFeed />
+        <ReviewsSection />
         <Footer />
     </div>
      </>
