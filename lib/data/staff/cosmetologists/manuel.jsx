@@ -19,11 +19,11 @@ export const manuel = {
   },
   favorites: [
     {
-      serviceName: {
-        en: "HydraFacial MD – Face",
-        es: "HydraFacial MD – Rostro"
-      },
-      link: "/treatments/hydrafacial"
+      treatmentSlug: "hydrafacial",
+      optionName: {
+        en: "Hydrafacial MD - Face",
+        es: "Hydrafacial MD - Rostro"
+      }
     }
   ]
 };
