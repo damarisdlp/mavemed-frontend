@@ -142,18 +142,28 @@ export const janssenRadianceBoost = {
   expectations: {
     preTreatment: [
       {
-        en: "Come with clean skin; no exfoliation needed before your appointment.",
-        es: "Acude con la piel limpia; no necesitas exfoliación previa a tu cita."
+        en: "Avoid retinoids, acids, and exfoliation for 3–5 days; arrive with clean skin and no makeup.",
+        es: "Evite retinoides, ácidos y exfoliación durante 3–5 días; acuda con la piel limpia y sin maquillaje."
+      },
+      {
+        en: "Reschedule if you have active infection, sunburn, or open lesions.",
+        es: "Reprograme si tiene infección activa, quemadura solar o lesiones abiertas."
+      }
+    ],
+    duringTreatment: [
+      {
+        en: "Expect gentle cleansing, massage, and serum/mask application; mild warmth or tingling is normal.",
+        es: "Espere limpieza suave, masaje y aplicación de suero/mascarilla; es normal un ligero calor o cosquilleo."
       }
     ],
     postTreatment: [
       {
-        en: "No downtime expected.",
-        es: "No se espera tiempo de inactividad."
+        en: "No downtime expected; mild pinkness can occur and resolves within hours.",
+        es: "No se espera tiempo de inactividad; puede haber leve enrojecimiento que se resuelve en horas."
       },
       {
-        en: "Skin may look slightly pink from massage but should fade quickly.",
-        es: "La piel puede verse ligeramente rosada por el masaje, pero se desvanece rápido."
+        en: "Avoid harsh products, heat, and strenuous exercise for 24 hours; apply SPF 30+ daily.",
+        es: "Evite productos agresivos, calor y ejercicio intenso durante 24 horas; aplique FPS 30+ a diario."
       }
     ]
   },
