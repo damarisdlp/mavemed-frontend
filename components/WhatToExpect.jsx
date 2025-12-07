@@ -60,8 +60,8 @@ export default function WhatToExpect({ expectations = {}, locale: propLocale }) 
                   onClick={() => setActiveKey(tab.key)}
                   className={`w-full rounded-xl px-4 py-3 text-base font-semibold transition border ${
                     isActive
-                      ? "bg-white text-black border-white shadow-md"
-                      : "bg-black text-white border-transparent hover:bg-white/80"
+                      ? "bg-black text-white border-white shadow-md"
+                      : "bg-white text-black border-transparent hover:bg-white/80"
                   } ${hasItems ? "" : "opacity-70 cursor-default"}`}
                   disabled={!hasItems}
                 >
