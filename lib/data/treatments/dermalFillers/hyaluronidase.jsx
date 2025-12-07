@@ -140,6 +140,20 @@ export const hyaluronidase = {
         es: "Juvéderm Volift"
       },
       link: "/treatments/dermalFillers/facialBalancing"
+    },
+    {
+      treatmentSlug: "microneedling",
+      optionName: {
+        en: "Microneedling - PRP - Platelet Rich Plasma",
+        es: "Microneedling - PRP - Plasma Rico en Plaquetas"
+      }
+    },
+    {
+      treatmentSlug: "mesotherapy-infusions",
+      optionName: {
+        en: "Mesotherapy - PDRN - Polynucleotide",
+        es: "Mesoterapia - PDRN - Polinucleótido"
+      }
     }
   ],
   expectations: {
