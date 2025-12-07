@@ -173,26 +173,40 @@ export const lipFillers = {
   expectations: {
     preTreatment: [
       {
-        en: "Avoid alcohol, blood-thinning medications, and supplements like fish oil or vitamin E 48 hours prior to treatment.",
-        es: "Evite alcohol, medicamentos anticoagulantes y suplementos como aceite de pescado o vitamina E 48 horas antes del tratamiento."
+        en: "Avoid alcohol, NSAIDs/aspirin, and blood-thinning supplements (fish oil, vitamin E) for 48 hours if medically permitted.",
+        es: "Evite alcohol, AINE/aspirina y suplementos anticoagulantes (aceite de pescado, vitamina E) durante 48 horas si su médico lo permite."
       },
       {
-        en: "Come with clean skin and no makeup on the lips or surrounding area.",
-        es: "Venga con la piel limpia y sin maquillaje en los labios o área circundante."
+        en: "Arrive with clean skin and no makeup on lips or surrounding area; pause retinoids/acids for 48 hours.",
+        es: "Acuda con la piel limpia y sin maquillaje en labios o zona cercana; suspenda retinoides/ácidos por 48 horas."
+      },
+      {
+        en: "Tell your provider about anticoagulants, autoimmune issues, or history of cold sores (antiviral prophylaxis may be recommended).",
+        es: "Informe a su especialista sobre anticoagulantes, problemas autoinmunes o antecedentes de herpes labial (puede recomendarse profilaxis antiviral)."
+      }
+    ],
+    duringTreatment: [
+      {
+        en: "Topical numbing is applied; you’ll feel brief pinching and pressure as filler is placed.",
+        es: "Se aplica anestesia tópica; sentirá pequeños pinchazos y presión mientras se coloca el relleno."
+      },
+      {
+        en: "Gentle molding is done to shape the lips evenly.",
+        es: "Se realiza un modelado suave para dar forma uniforme a los labios."
       }
     ],
     postTreatment: [
       {
-        en: "Mild swelling or bruising may occur and typically resolves within 24–48 hours.",
-        es: "Puede ocurrir hinchazón leve o moretones y generalmente se resuelve en 24-48 horas."
+        en: "Expect swelling or bruising for 2–3 days; apply cool (not ice-cold) compresses intermittently for 24 hours.",
+        es: "Espere hinchazón o moretones por 2–3 días; aplique compresas frescas (no muy frías) de forma intermitente durante 24 horas."
       },
       {
-        en: "Avoid heat exposure, strenuous activity, and makeup on the treated area for 12 hours.",
-        es: "Evite exposición al calor, actividad extenuante y maquillaje en el área tratada durante 12 horas."
+        en: "Avoid strenuous exercise, saunas, alcohol, and makeup on lips for 24 hours; avoid kissing/straws for the first day.",
+        es: "Evite ejercicio intenso, saunas, alcohol y maquillaje en los labios por 24 horas; evite besar o usar popotes el primer día."
       },
       {
-        en: "Full results typically settle within one week.",
-        es: "Los resultados completos generalmente se asientan en una semana."
+        en: "Sleep with head elevated the first night and avoid pressing or massaging unless instructed; results settle in about 1 week.",
+        es: "Duerma con la cabeza elevada la primera noche y evite presionar o masajear salvo indicación; los resultados se asientan en ~1 semana."
       }
     ]
   },
