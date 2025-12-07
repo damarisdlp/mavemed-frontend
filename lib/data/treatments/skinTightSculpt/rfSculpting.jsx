@@ -216,15 +216,15 @@ export const venusFreeze = {
     {
       treatmentSlug: "enzymatic-therapy",
       optionName: {
-        en: "PB Serum Slim+ - Lipase PB500",
-        es: "PB Serum Slim+ - Lipasa PB500"
+        en: "Enzymatic Remodeling Therapy - PB Serum Slim+",
+        es: "Terapia de Remodelación Enzimática - PB Serum Slim+"
       }
     },
     {
       treatmentSlug: "enzymatic-therapy",
       optionName: {
-        en: "PB Serum+ (Kit)",
-        es: "PB Serum+ (Kit)"
+        en: "Enzymatic Remodeling Therapy - PB Serum+ (Kit)",
+        es: "Terapia de Remodelación Enzimática - PB Serum+ (Kit)"
       }
     },
     {
