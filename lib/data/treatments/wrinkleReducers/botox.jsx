@@ -149,22 +149,22 @@ export const botox = {
     {
       treatmentSlug: "casmara-purifying",
       optionName: {
-        en: "Casmara Purifying Algae Facial",
-        es: "Facial Casmara Purificante de Algas"
+        en: "Casmara - Purifying Algae Facial",
+        es: "Casmara - Facial Purificante de Algas"
       }
     },
     {
       treatmentSlug: "casmara-infinity",
       optionName: {
-        en: "Casmara Infinity Anti‑Aging Facial",
-        es: "Facial Casmara Antienvejecimiento Infinity"
+        en: "Casmara - Infinity Anti‑Aging Facial",
+        es: "Casmara - Facial Antienvejecimiento Infinity"
       }
     },
     {
       treatmentSlug: "casmara-retinol-proage",
       optionName: {
-        en: "Casmara Retinol Pro‑Age Facial",
-        es: "Casmara Retinol Pro‑Age Facial"
+        en: "Casmara - Retinol Pro‑Age Facial",
+        es: "Casmara - Facial Retinol Pro‑Age"
       }
     },
     {
