@@ -122,30 +122,44 @@ export const wartRemoval = {
   expectations: {
     preTreatment: [
       {
-        en: "Clean the area thoroughly before treatment.",
-        es: "Limpie el área a fondo antes del tratamiento."
+        en: "Keep the area clean and avoid topical acids/retinoids for 3–5 days before your visit.",
+        es: "Mantenga el área limpia y evite ácidos o retinoides tópicos durante 3–5 días antes de su visita."
       },
       {
-        en: "Avoid picking or scratching the wart.",
-        es: "Evite hurgar o rascar la verruga."
+        en: "Do not shave, wax, or pick the wart; cover if it tends to rub against clothing.",
+        es: "No afeite, depile ni manipule la verruga; cúbrala si roza con la ropa."
       },
       {
-        en: "Inform your provider of any medical conditions or medications.",
-        es: "Informe a su proveedor sobre cualquier condición médica o medicamentos."
+        en: "Tell your provider about pregnancy, diabetes, immune conditions, anticoagulants, or poor circulation.",
+        es: "Informe a su especialista sobre embarazo, diabetes, problemas inmunológicos, anticoagulantes o mala circulación."
+      }
+    ],
+    duringTreatment: [
+      {
+        en: "You may feel brief stinging, cold, or pressure depending on the method (cryotherapy, chemical, or excision).",
+        es: "Puede sentir ardor breve, frío o presión según el método (crioterapia, químico o escisión)."
+      },
+      {
+        en: "A white halo or mild blanching is expected during cryotherapy; a local anesthetic may be used for sensitivity.",
+        es: "En crioterapia es normal un halo blanco o blanqueamiento leve; se puede usar anestesia local si hay sensibilidad."
       }
     ],
     postTreatment: [
       {
-        en: "Keep the area clean and dry.",
-        es: "Mantenga el área limpia y seca."
+        en: "A blister or crust can form and typically resolves in 7–14 days; keep it clean and dry for the first 24 hours.",
+        es: "Puede formarse una ampolla o costra que suele resolverse en 7–14 días; manténgala limpia y seca las primeras 24 horas."
       },
       {
-        en: "Apply any prescribed ointment as directed.",
-        es: "Aplique cualquier ungüento prescrito según se indique."
+        en: "After 24 hours, cleanse gently with mild soap and water; apply prescribed ointment or dressing as directed.",
+        es: "Después de 24 horas, limpie suavemente con agua y jabón suave; aplique el ungüento o vendaje indicado."
       },
       {
-        en: "Avoid swimming or soaking the area until healed.",
-        es: "Evite nadar o remojar el área hasta que sane."
+        en: "Avoid pools, hot tubs, or soaking until the skin has healed; do not pick the crust.",
+        es: "Evite albercas, tinas calientes o remojar el área hasta que la piel haya sanado; no retire la costra."
+      },
+      {
+        en: "Contact us for increasing redness, pus, severe pain, or if the wart enlarges.",
+        es: "Contáctenos si presenta enrojecimiento creciente, pus, dolor intenso o si la verruga aumenta de tamaño."
       }
     ]
   },
