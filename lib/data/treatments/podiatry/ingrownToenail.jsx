@@ -12,8 +12,8 @@ export const matrixectomy = {
   isPopular: false,
   isPromoEligible: true,
   images: {
-    primary: "/podiatry.jpg",
-    secondary: "/podiatry2.jpg"
+    primary: "/ingrown.jpg",
+    secondary: "/ingrown2.jpg"
   },
   description: {
     en: "Surgical removal of part of the nail matrix to permanently prevent ingrown toenails and recurring infections.",
