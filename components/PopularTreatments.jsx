@@ -5,6 +5,7 @@ import Image from "next/image";
 import { useRouter } from 'next/router';
 import { allTreatments } from "@/lib/data/allTreatments";
 import { useTranslation } from "next-i18next";
+import { dispatchChatOpen } from "@/lib/utils/chat";
 
 export default function PopularTreatments() {
   const { t } = useTranslation("treatments");
@@ -76,12 +77,13 @@ export default function PopularTreatments() {
                     </p>
                   </div>
                   <div className="flex flex-col gap-2">
-                    <Link
-                      href="https://wa.me/+526642077675"
+                    <button
+                      type="button"
+                      onClick={dispatchChatOpen}
                       className="bg-black text-white px-4 py-2 rounded-full text-xs hover:bg-[#731a2f] text-center"
                     >
                       {t("treatments.bookNow")}
-                    </Link>
+                    </button>
                     <Link
                       href={`/treatments/${treatment.urlSlug}`}
                       className="border border-gray-300 text-black px-4 py-2 rounded-full text-xs hover:border-black text-center"
