@@ -12,8 +12,8 @@ export const venusFreeze = {
   isPopular: false,
   isPromoEligible: true,
   images: {
-    primary: "/radiofrequency.jpg",
-    secondary: "/radiofrequency2.jpg"
+    primary: "/rfsculpt.jpg",
+    secondary: "/rfsculpt2.jpg"
   },
   description: {
     en: "Non-invasive radiofrequency therapy to smooth skin, reduce localized fat, and improve body contour.",
