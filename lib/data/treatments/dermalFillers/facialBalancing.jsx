@@ -155,12 +155,46 @@ export const facialBalancing = {
       link: "/treatments/wrinkleReducers"
     },
     {
-      treatmentSlug: "casmara-retinol-proage",
+      treatmentSlug: "hyaluronic-acid-lip-fillers",
       optionName: {
-        en: "Casmara Retinol Pro‑Age Facial",
-        es: "Casmara Retinol Pro‑Age Facial"
-      },
-      link: "/treatments/facials/casmara/retinol"
+        en: "Dermal Filler - Hyaluronic Acid - Stylage M",
+        es: "Relleno Dérmico - Ácido Hialurónico - Stylage - M"
+      }
+    },
+    {
+      treatmentSlug: "microneedling",
+      optionName: {
+        en: "Microneedling - PDRN - Polynucleotide",
+        es: "Microneedling - PDRN - Polinucleótido"
+      }
+    },
+    {
+      treatmentSlug: "microneedling",
+      optionName: {
+        en: "Microneedling - Glow Revitalizing & Facial Definition",
+        es: "Microneedling - Glow Revitalizante & Definición Facial"
+      }
+    },
+    {
+      treatmentSlug: "pdo-threads",
+      optionName: {
+        en: "PDO Thread Lift - Signature Lower Face Lift",
+        es: "Hilos PDO - Levantamiento Facial Inferior Signature"
+      }
+    },
+    {
+      treatmentSlug: "enzymatic-therapy",
+      optionName: {
+        en: "Enzymatic Therapy - PB Serum+ (Kit)",
+        es: "Terapia Enzimática - PB Serum+ (Kit)"
+      }
+    },
+    {
+      treatmentSlug: "rf-microneedling",
+      optionName: {
+        en: "Sylfirm X - RF Microneedling - Face + Neck + Décolleté",
+        es: "Sylfirm X - Microagujas RF - Rostro + Cuello + Escote"
+      }
     }
   ],
   expectations: {
