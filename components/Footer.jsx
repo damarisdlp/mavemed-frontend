@@ -147,9 +147,9 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold mb-4">{t("footer.socialTitle", { defaultValue: "Social Media" })}</h4>
             <ul className="space-y-2">
-              <li><a href="https://www.instagram.com/mavemedical" target="_blank" rel="noopener noreferrer" className="hover:underline">Instagram</a></li>
-              <li><a href="https://www.facebook.com/mavemedical" target="_blank" rel="noopener noreferrer" className="hover:underline">Facebook</a></li>
-              <li><a href="https://www.tiktok.com/@mavemedical" target="_blank" rel="noopener noreferrer" className="hover:underline">TikTok</a></li>
+              <li><a href="https://www.instagram.com/mavemedicalspa" target="_blank" rel="noopener noreferrer" className="hover:underline">Instagram</a></li>
+              <li><a href="https://www.facebook.com/mavemedicalspa" target="_blank" rel="noopener noreferrer" className="hover:underline">Facebook</a></li>
+              <li><a href="https://www.tiktok.com/@mavemedicalspa" target="_blank" rel="noopener noreferrer" className="hover:underline">TikTok</a></li>
             </ul>
           </div>
         </div>
