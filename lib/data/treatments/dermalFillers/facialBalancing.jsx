@@ -158,7 +158,7 @@ export const facialBalancing = {
       treatmentSlug: "hyaluronic-acid-lip-fillers",
       optionName: {
         en: "Lip Filler - Hyaluronic Acid - Stylage M",
-        es: "Relleno en Labios - Ácido Hialurónico - Stylage - M"
+        es: "Relleno de Labios - Ácido Hialurónico - Stylage - M"
       }
     },
     {
