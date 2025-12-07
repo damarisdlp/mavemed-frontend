@@ -28,16 +28,13 @@ export default function Footer() {
         headers: { "Content-Type": "application/json" }
       });
 
+      const result = await response.json().catch(() => ({}));
+
       if (response.ok) {
-        await fetch("/api/send-whatsapp", {
-          method: "POST",
-          body: JSON.stringify(formData),
-          headers: { "Content-Type": "application/json" }
-        });
         alert("Thank you! We'll be in touch.");
         setFormData({ firstName: "", lastName: "", email: "", phone: "", whatsapp: "" });
       } else {
-        alert("There was an error. Please try again.");
+        alert(result?.error || "There was an error. Please try again.");
       }
     } catch (error) {
       console.error("Submission error:", error);
