@@ -149,22 +149,22 @@ export const dermawrinkle = {
     {
       treatmentSlug: "casmara-purifying",
       optionName: {
-        en: "Casmara Purifying Algae Facial",
-        es: "Tratamiento Facial Purificante de Algas Casmara"
+        en: "Casmara - Purifying Algae Facial",
+        es: "Casmara - Facial Purificante de Algas"
       }
     },
     {
       treatmentSlug: "casmara-infinity",
       optionName: {
-        en: "Casmara Infinity Anti-Aging Facial",
-        es: "Tratamiento Facial Anti-Envejecimiento Casmara Infinity"
+        en: "Casmara - Infinity Anti-Aging Facial",
+        es: "Casmara - Facial Antienvejecimiento Infinity"
       }
     },
     {
       treatmentSlug: "casmara-retinol-proage",
       optionName: {
-        en: "Casmara Retinol Pro-Age Facial",
-        es: "Casmara Retinol Pro-Age Facial"
+        en: "Casmara - Retinol Pro-Age Facial",
+        es: "Casmara - Facial Retinol Pro-Age"
       }
     },
     {
