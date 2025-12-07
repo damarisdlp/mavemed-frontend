@@ -20,37 +20,28 @@ export default function LeadForm() {
   };
 
   const handleSubmit = async (e) => {
-  e.preventDefault();
+    e.preventDefault();
 
-  try {
-    const response = await fetch("https://script.google.com/macros/s/AKfycbxJU8lIqKC_9LGFQcFO7gMTNYNZb11GirR4AQ8i_VUoYtR2Mepny2nNre-J3XhDcFs/exec", {
-      method: "POST",
-      body: JSON.stringify(formData),
-      headers: {
-        "Content-Type": "application/json"
-      }
-    });
-
-    if (response.ok) {
-      // ✅ Also send WhatsApp alert to reception
-      await fetch("/api/send-whatsapp", {
+    try {
+      const response = await fetch("/api/lead", {
         method: "POST",
         body: JSON.stringify(formData),
         headers: {
-          "Content-Type": "application/json"
-        }
+          "Content-Type": "application/json",
+        },
       });
 
-      alert("Thank you! We'll be in touch.");
-      setFormData({ firstName: "", lastName: "", email: "", phone: "", whatsapp: "" });
-    } else {
-      alert("There was an error. Please try again.");
+      if (response.ok) {
+        alert("Thank you! We'll be in touch.");
+        setFormData({ firstName: "", lastName: "", email: "", phone: "", whatsapp: "" });
+      } else {
+        alert("There was an error. Please try again.");
+      }
+    } catch (error) {
+      console.error("Submission error:", error);
+      alert("There was an error submitting your form.");
     }
-  } catch (error) {
-    console.error("Submission error:", error);
-    alert("There was an error submitting your form.");
-  }
-};
+  };
   return (
     <section className="bg-[#f3efec] px-6 py-6 justify-center items-center text-center relative">
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-5 items-center">
