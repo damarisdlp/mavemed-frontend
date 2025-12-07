@@ -128,18 +128,18 @@ export const hyaluronidase = {
     {
       treatmentSlug: "hyaluronic-acid-lip-fillers",
       optionName: {
-        en: "Dermal Filler - Hyaluronic Acid - Stylage M",
-        es: "Relleno Dérmico - Ácido Hialurónico - Stylage - M"
+        en: "Lip Filler - Hyaluronic Acid - Stylage M",
+        es: "Relleno de Labios - Ácido Hialurónico - Stylage M"
       },
-      link: "/treatments/dermalFillers/lipFillers"
+      link: "/treatments/hyaluronic-acid-lip-fillers"
     },
     {
       treatmentSlug: "facial-balancing-fillers",
       optionName: {
-        en: "Juvéderm Volift",
-        es: "Juvéderm Volift"
+        en: "Dermal Filler - Hyaluronic Acid - Juvéderm Volift",
+        es: "Relleno Dermal - Ácido Hialurónico - Juvéderm Volift"
       },
-      link: "/treatments/dermalFillers/facialBalancing"
+      link: "/treatments/facial-balancing-fillers"
     },
     {
       treatmentSlug: "microneedling",
