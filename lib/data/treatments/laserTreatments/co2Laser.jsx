@@ -239,22 +239,15 @@ export const co2Laser = {
     {
       treatmentSlug: "serum-add-ons",
       optionName: {
-        en: "Add-On - Platelet-Rich Plasma (PRP) or Platelet-Rich Fibrin Matrix (PRFM)",
-        es: "Complemento - Plasma Rico en Plaquetas (PRP) o Matriz de Fibrina Rica en Plaquetas (PRFM)"
+        en: "Serum Add-On - PRP (Face)",
+        es: "Complemento de Suero - PRP (Rostro)"
       }
     },
     {
       treatmentSlug: "serum-add-ons",
       optionName: {
-        en: "Add-On - Rejuran",
-        es: "Complemento - Rejuran"
-      }
-    },
-    {
-      treatmentSlug: "casmara-purifying",
-      optionName: {
-        en: "Casmara Purifying Algae Facial",
-        es: "Facial Purificante de Algas Casmara"
+        en: "Serum Add-On - PN (Face)",
+        es: "Complemento de Suero - PN (Rostro)"
       }
     }
   ],
