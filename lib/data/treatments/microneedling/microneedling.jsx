@@ -136,6 +136,34 @@ export const microneedling = {
         en: "Hydrafacial MD - Face",
         es: "Hydrafacial MD - Rostro"
       }
+    },
+    {
+      treatmentSlug: "casmara-retinol-proage",
+      optionName: {
+        en: "Casmara Retinol Pro‑Age Facial",
+        es: "Casmara Retinol Pro‑Age Facial"
+      }
+    },
+    {
+      treatmentSlug: "facials-janssen-ultra-renewal",
+      optionName: {
+        en: "Janssen Ultra Renewal Facial - Face",
+        es: "Facial Janssen Ultra Renewal - Rostro"
+      }
+    },
+    {
+      treatmentSlug: "pdo-threads",
+      optionName: {
+        en: "PDO Thread Lift - Signature Lower Face Lift",
+        es: "Hilos PDO - Levantamiento Facial Inferior Signature"
+      }
+    },
+    {
+      treatmentSlug: "rf-microneedling",
+      optionName: {
+        en: "Sylfirm X - RF Microneedling - Face",
+        es: "Sylfirm X - Microagujas RF - Rostro"
+      }
     }
   ],
   expectations: {
