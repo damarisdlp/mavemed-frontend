@@ -48,7 +48,7 @@ export const dermawrinkle = {
     options: [
       {
         optionName: {
-          en: "Any Zone",
+          en: "Dermawrinkle - Any Zone",
           es: "Cualquier Zona"
         },
         isPromoEligible: true,
@@ -165,6 +165,13 @@ export const dermawrinkle = {
       optionName: {
         en: "Casmara Retinol Pro-Age Facial",
         es: "Casmara Retinol Pro-Age Facial"
+      }
+    },
+    {
+      treatmentSlug: "pdo-threads",
+      optionName: {
+        en: "PDO Thread Lift - Eyebrow and Eye Lift",
+        es: "Hilos PDO - Levantamiento de Cejas y Ojos"
       }
     },
   ],
