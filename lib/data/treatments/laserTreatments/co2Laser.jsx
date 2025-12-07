@@ -255,30 +255,44 @@ export const co2Laser = {
   expectations: {
     preTreatment: [
       {
-        en: "Avoid sun exposure, retinoids, and acids for 7 days before treatment.",
-        es: "Evita exposición solar, retinoides y ácidos durante 7 días antes del tratamiento."
+        en: "Avoid sun exposure, retinoids, acids, and exfoliation for 7–10 days before treatment; no recent tanning or self-tanner.",
+        es: "Evite exposición solar, retinoides, ácidos y exfoliación durante 7–10 días antes del tratamiento; no acuda bronceado ni con autobronceador."
       },
       {
-        en: "Discontinue exfoliating treatments or harsh products before your laser session.",
-        es: "Suspende exfoliantes y productos irritantes antes de tu sesión láser."
+        en: "Arrive with clean skin, no makeup; disclose isotretinoin use, photosensitizing meds, or history of keloids.",
+        es: "Llegue con la piel limpia, sin maquillaje; informe sobre uso de isotretinoína, medicamentos fotosensibilizantes o antecedentes de queloides."
+      },
+      {
+        en: "Stop blood-thinning meds/supplements and smoking if medically permitted to reduce healing risks.",
+        es: "Suspenda anticoagulantes y suplementos que adelgacen la sangre, y evite fumar si su médico lo permite para reducir riesgos de cicatrización."
+      }
+    ],
+    duringTreatment: [
+      {
+        en: "Topical/local anesthetic is applied; you’ll feel warmth and snapping as the laser pulses across the skin.",
+        es: "Se aplica anestesia tópica/local; sentirá calor y pequeños destellos mientras el láser recorre la piel."
+      },
+      {
+        en: "Cooling and occlusive ointment are applied immediately after to protect the skin barrier.",
+        es: "Se aplican enfriamiento y ungüento oclusivo de inmediato para proteger la barrera cutánea."
       }
     ],
     postTreatment: [
       {
-        en: "Redness, swelling, and peeling are normal parts of the healing process.",
-        es: "El enrojecimiento, la hinchazón y la descamación son normales durante la recuperación."
+        en: "Redness, swelling, oozing, and peeling are normal for 5–10 days; keep the area moist with the prescribed ointment.",
+        es: "Enrojecimiento, hinchazón, exudado y descamación son normales durante 5–10 días; mantenga el área humectada con el ungüento indicado."
       },
       {
-        en: "Keep skin moisturized and avoid direct sun until fully healed.",
-        es: "Mantén la piel hidratada y evita el sol directo hasta que la piel haya sanado."
+        en: "Cleanse gently with tepid water; avoid sun, heat, pools, saunas, and sweating until re-epithelialized.",
+        es: "Limpie suavemente con agua tibia; evite sol, calor, albercas, saunas y sudor hasta que la piel re-epitelice."
       },
       {
-        en: "Use only provider-recommended skincare during recovery.",
-        es: "Usa únicamente los productos recomendados por tu proveedor."
+        en: "Use only provider-recommended products; no makeup until peeling resolves (usually 5–7+ days).",
+        es: "Use solo productos recomendados por su especialista; no use maquillaje hasta que termine la descamación (generalmente 5–7+ días)."
       },
       {
-        en: "Makeup can be used after 5–7 days once the skin has re-epithelialized.",
-        es: "El maquillaje puede usarse después de 5 a 7 días, cuando la piel haya cicatrizado."
+        en: "Strict SPF 30+ once skin closes; contact us for pus, fever, spreading redness, or severe pain.",
+        es: "Use FPS 30+ estricto cuando la piel haya cerrado; contáctenos ante pus, fiebre, enrojecimiento extenso o dolor severo."
       }
     ]
   },
