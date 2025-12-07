@@ -239,15 +239,15 @@ export const co2Laser = {
     {
       treatmentSlug: "serum-add-ons",
       optionName: {
-        en: "Serum Add-On - PRP (Face)",
-        es: "Complemento de Suero - PRP (Rostro)"
+        en: "Serum Add-On - PRP (Face) - Platelet Rich Plasma",
+        es: "Complemento de Suero - PRP (Rostro) - Plasma Rico en Plaquetas"
       }
     },
     {
       treatmentSlug: "serum-add-ons",
       optionName: {
-        en: "Serum Add-On - PN (Face)",
-        es: "Complemento de Suero - PN (Rostro)"
+        en: "Serum Add-On - PN (Face) - Polynucleotide",
+        es: "Complemento de Suero - PN (Rostro) - Polinucleótido"
       }
     }
   ],
