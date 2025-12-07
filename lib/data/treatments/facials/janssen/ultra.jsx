@@ -6,8 +6,8 @@ export const janssenUltraRenewal = {
     es: "Faciales"
   },
   serviceDisplayName: {
-    en: "Janssen Ultra Renewal Facial",
-    es: "Facial Janssen Ultra Renewal"
+    en: "Janssen - Ultra Renewal Facial",
+    es: "Janssen - Facial Ultra Renewal"
   },
   isPopular: false,
   isPromoEligible: false,
