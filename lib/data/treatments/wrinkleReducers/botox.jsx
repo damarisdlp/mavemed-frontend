@@ -178,16 +178,26 @@ export const botox = {
   expectations: {
     preTreatment: [
       {
-        en: "Avoid alcohol, ibuprofen, aspirin, or any blood thinners for 24 hours prior to treatment to reduce the risk of bruising.",
-        es: "Evite alcohol, ibuprofeno, aspirina o cualquier anticoagulante durante 24 horas antes del tratamiento para reducir el riesgo de moretones."
+        en: "Avoid alcohol, NSAIDs/aspirin, and blood-thinning supplements for 24–48 hours if medically permitted to reduce bruising.",
+        es: "Evite alcohol, AINE/aspirina y suplementos anticoagulantes durante 24–48 horas si su médico lo permite para reducir moretones."
       },
       {
-        en: "Refrain from intense physical activity on the day of your appointment.",
-        es: "Absténgase de actividad física intensa el día de su cita."
+        en: "Arrive with clean skin (no makeup on treatment areas) and avoid intense exercise on the day of treatment.",
+        es: "Acuda con la piel limpia (sin maquillaje en las zonas a tratar) y evite ejercicio intenso el día del tratamiento."
       },
       {
-        en: "Inform your provider of any recent vaccinations, medications, or medical conditions.",
-        es: "Informe a su proveedor sobre cualquier vacunación reciente, medicamentos o condiciones médicas."
+        en: "Inform your provider of recent vaccines, antibiotics, neuromuscular disorders, pregnancy/breastfeeding, or anticoagulant use.",
+        es: "Informe a su especialista sobre vacunas recientes, antibióticos, trastornos neuromusculares, embarazo/lactancia o uso de anticoagulantes."
+      }
+    ],
+    duringTreatment: [
+      {
+        en: "Tiny injections cause brief pinches or pressure; ice or numbing can be used for comfort.",
+        es: "Las microinyecciones generan pequeños pinchazos o presión; se pueden usar hielo o anestesia para mayor comodidad."
+      },
+      {
+        en: "Muscles are treated in specific patterns; you can typically return to light activities right after.",
+        es: "Los músculos se tratan en patrones específicos; normalmente puede retomar actividades ligeras inmediatamente después."
       }
     ],
     postTreatment: [
@@ -200,12 +210,12 @@ export const botox = {
         es: "Manténgase erguido y evite acostarse plano durante 4 horas después del tratamiento."
       },
       {
-        en: "Skip intense physical activity, alcohol, and saunas for 24 hours post-treatment to reduce the risk of swelling and migration.",
-        es: "Omita actividad física intensa, alcohol y saunas durante 24 horas después del tratamiento para reducir el riesgo de hinchazón y migración."
+        en: "Skip intense physical activity, alcohol, and saunas for 24 hours to reduce swelling and migration risk.",
+        es: "Omita actividad física intensa, alcohol y saunas durante 24 horas para reducir el riesgo de hinchazón y migración."
       },
       {
-        en: "Mild swelling or bruising may occur and typically resolves within a few days. Ice can be applied gently if needed.",
-        es: "Puede ocurrir hinchazón leve o moretones y generalmente se resuelve en pocos días. Se puede aplicar hielo suavemente si es necesario."
+        en: "Mild swelling or bruising may occur and typically resolves within a few days; apply cool compresses as needed.",
+        es: "Puede ocurrir hinchazón leve o moretones y generalmente se resuelve en pocos días; aplique compresas frías si es necesario."
       },
       {
         en: "Results begin to appear within 3–5 days, with full effect visible at 10–14 days.",
