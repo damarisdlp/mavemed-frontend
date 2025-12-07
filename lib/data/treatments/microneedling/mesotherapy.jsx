@@ -140,26 +140,36 @@ export const mesotherapy = {
   expectations: {
     preTreatment: [
       {
-        en: "Avoid alcohol, aspirin, anti-inflammatories and blood thinners 24–48 hours before your session.",
-        es: "Evite alcohol, aspirina, antiinflamatorios y anticoagulantes 24–48 horas antes del tratamiento."
+        en: "Avoid alcohol, NSAIDs/aspirin, and blood-thinning supplements for 24–48 hours if medically permitted.",
+        es: "Evite alcohol, AINE/aspirina y suplementos anticoagulantes durante 24–48 horas si su médico lo permite."
       },
       {
-        en: "Arrive with clean skin — no makeup or active skincare on the day of treatment.",
-        es: "Acuda con la piel limpia — sin maquillaje ni productos activos el día del tratamiento."
+        en: "Arrive with clean skin, no makeup; pause retinoids/acids for 3–5 days; reschedule if active infection or cold sore.",
+        es: "Llegue con la piel limpia, sin maquillaje; suspenda retinoides/ácidos por 3–5 días; reprograme si hay infección activa o herpes."
+      }
+    ],
+    duringTreatment: [
+      {
+        en: "Topical numbing is applied; you’ll feel quick pinches or pressure with each microinjection.",
+        es: "Se aplica anestesia tópica; sentirá pequeños pinchazos o presión con cada microinyección."
+      },
+      {
+        en: "Small blebs or papules are expected initially and flatten within hours to a day.",
+        es: "Es normal que se formen pequeñas pápulas o elevaciones iniciales que se aplanan en horas hasta un día."
       }
     ],
     postTreatment: [
       {
-        en: "Mild redness or small bumps may occur and typically resolve within 24–72 hours.",
-        es: "Puede aparecer enrojecimiento leve o pequeñas pápulas que suelen desaparecer en 24–72 horas."
+        en: "Mild redness or small bumps can last 24–72 hours; avoid rubbing the area.",
+        es: "El enrojecimiento o pequeñas pápulas pueden durar 24–72 horas; evite frotar la zona."
       },
       {
-        en: "Avoid sun exposure, sweating and makeup for 24 hours.",
-        es: "Evite el sol directo, el sudor y el uso de maquillaje durante 24 horas."
+        en: "Avoid sun, sweating, pools, and makeup for 24 hours; cleanse gently with mild soap and water.",
+        es: "Evite sol, sudor, albercas y maquillaje durante 24 horas; limpie suavemente con agua y jabón suave."
       },
       {
-        en: "Do not exfoliate or use retinoids/acids for 3 days post-treatment.",
-        es: "No exfolie ni utilice retinoides o ácidos durante 3 días después del tratamiento."
+        en: "Do not exfoliate or use retinoids/acids for 5–7 days; apply broad-spectrum SPF 30+ once you resume daytime products.",
+        es: "No exfolie ni use retinoides/ácidos por 5–7 días; aplique FPS 30+ al reanudar productos diurnos."
       }
     ]
   },
