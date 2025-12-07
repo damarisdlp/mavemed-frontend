@@ -175,8 +175,8 @@ export const enzymaticTherapy = {
     {
       treatmentSlug: "venus-freeze",
       optionName: {
-        en: "Express Body Glow",
-        es: "Brillo Corporal Exprés"
+        en: "RF Sculpting - Express Body Glow",
+        es: "Escultura RF - Brillo Corporal Exprés"
       }
     },
     {
