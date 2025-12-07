@@ -79,10 +79,31 @@ export const casmaraPurifying = {
   ],
   addOns: [
     {
-      treatmentSlug: "wrinkle-reducers-botox",
+      treatmentSlug: "microneedling",
       optionName: {
-        en: "Any Zone",
-        es: "Cualquier Zona"
+        en: "Microneedling - PN - Polynucleotide",
+        es: "Microneedling - PN - Polinucleótido"
+      }
+    },
+    {
+      treatmentSlug: "mesotherapy-infusions",
+      optionName: {
+        en: "Mesotherapy - PN - Polynucleotide",
+        es: "Mesoterapia - PN - Polinucleótido"
+      }
+    },
+    {
+      treatmentSlug: "rf-microneedling",
+      optionName: {
+        en: "Sylfirm X - RF Microneedling - Face + Neck + Décolleté",
+        es: "Sylfirm X - Microagujas RF - Rostro + Cuello + Escote"
+      }
+    },
+    {
+      treatmentSlug: "pdo-threads",
+      optionName: {
+        en: "PDO Thread Lift - Signature Lower Face Lift",
+        es: "Hilos PDO - Levantamiento Facial Inferior Signature"
       }
     }
   ],
