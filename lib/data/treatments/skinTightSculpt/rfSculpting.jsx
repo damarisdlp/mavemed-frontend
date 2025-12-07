@@ -252,12 +252,18 @@ export const venusFreeze = {
   expectations: {
     preTreatment: [
       {
-        en: "Hydrate well for 24 hours before treatment to aid lymphatic response.",
-        es: "Hidrátese bien durante 24 horas antes del tratamiento para apoyar la respuesta linfática."
+        en: "Hydrate well for 24 hours and avoid alcohol/NSAIDs for 24–48 hours if medically permitted.",
+        es: "Hidrátese bien durante 24 horas y evite alcohol/AINE por 24–48 horas si su médico lo permite."
       },
       {
-        en: "Avoid heavy meals and caffeine 2 hours before session.",
-        es: "Evite comidas pesadas y cafeína 2 horas antes de la sesión."
+        en: "Arrive with clean skin; avoid heavy creams or oils on treatment areas the day of your session.",
+        es: "Acuda con la piel limpia; evite cremas u aceites pesados en las zonas a tratar el día de su sesión."
+      }
+    ],
+    duringTreatment: [
+      {
+        en: "You’ll feel warmth and mild suction/pressure as RF and pulsed magnetic fields work; intensity is adjusted for comfort.",
+        es: "Sentirá calor y ligera succión/presión mientras actúan la RF y los campos magnéticos pulsados; la intensidad se ajusta para su comodidad."
       }
     ],
     postTreatment: [
@@ -266,8 +272,8 @@ export const venusFreeze = {
         es: "Puede presentarse enrojecimiento o calor leve que suele resolverse en pocas horas."
       },
       {
-        en: "Engage in light physical activity and drink water to help flush toxins.",
-        es: "Realice actividad ligera y beba agua para ayudar a eliminar toxinas."
+        en: "Avoid very hot showers/saunas and strenuous workouts for 24 hours; hydrate well.",
+        es: "Evite duchas muy calientes/saunas y ejercicio intenso durante 24 horas; hidrátese bien."
       },
       {
         en: "Multiple sessions (typically 6–8) are recommended for long-term contouring effects.",
