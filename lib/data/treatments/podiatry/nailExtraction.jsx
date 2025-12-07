@@ -128,8 +128,22 @@ export const toenailExtraction = {
         es: "No recorte ni modifique la uña antes de su cita."
       },
       {
-        en: "Wear open toe or loose footwear to accommodate post treatment bandaging.",
+        en: "Wear open-toe or loose footwear to accommodate post treatment bandaging.",
         es: "Use sandalias o calzado amplio para acomodar el vendaje después del procedimiento."
+      },
+      {
+        en: "Clean the toe gently before arrival; avoid applying creams or antibiotic ointments unless instructed.",
+        es: "Limpie el dedo suavemente antes de acudir; evite aplicar cremas o ungüentos antibióticos salvo indicación."
+      }
+    ],
+    duringTreatment: [
+      {
+        en: "Local anesthesia is used; you’ll feel pressure but no pain during nail removal.",
+        es: "Se utiliza anestesia local; sentirá presión pero no dolor durante la extracción de la uña."
+      },
+      {
+        en: "The nail or fragment is removed and the area is dressed; walking precautions are reviewed before you leave.",
+        es: "Se retira la uña o fragmento y se coloca un vendaje; se revisan las precauciones para caminar antes de que se retire."
       }
     ],
     postTreatment: [
