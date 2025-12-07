@@ -121,7 +121,7 @@ export default function Footer() {
         </div>
 
         {/* Footer Links */}
-        <div className="order-2 md:order-1 grid grid-cols-2 sm:grid-cols-3 gap-10 text-sm">
+        <div className="order-2 md:order-1 grid grid-cols-2 sm:grid-cols-4 gap-10 text-sm">
           <div>
             <h4 className="font-semibold mb-4">{t("footer.treatmentsTitle")}</h4>
             <ul className="space-y-2">
@@ -142,6 +142,14 @@ export default function Footer() {
             <h4 className="font-semibold mb-4">{t("footer.locationTitle")}</h4>
             <ul className="space-y-2">
               <li><Link href="/location" className="hover:underline">{t("footer.locationLink")}</Link></li>
+            </ul>
+          </div>
+          <div>
+            <h4 className="font-semibold mb-4">{t("footer.socialTitle", { defaultValue: "Social Media" })}</h4>
+            <ul className="space-y-2">
+              <li><a href="https://www.instagram.com/mavemedical" target="_blank" rel="noopener noreferrer" className="hover:underline">Instagram</a></li>
+              <li><a href="https://www.facebook.com/mavemedical" target="_blank" rel="noopener noreferrer" className="hover:underline">Facebook</a></li>
+              <li><a href="https://www.tiktok.com/@mavemedical" target="_blank" rel="noopener noreferrer" className="hover:underline">TikTok</a></li>
             </ul>
           </div>
         </div>
