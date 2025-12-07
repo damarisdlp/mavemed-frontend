@@ -166,8 +166,8 @@ export const lipFillers = {
     {
       treatmentSlug: "casmara-purifying",
       optionName: {
-        en: "Facial Casmara Purificante de Algas",
-        es: "Facial Casmara Purificante de Algas"
+        en: "Casmara - Purifying Algae Facial",
+        es: "Casmara - Facial Purificante de Algas"
       }
     }
   ],
