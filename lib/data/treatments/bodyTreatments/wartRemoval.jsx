@@ -45,8 +45,8 @@ export const wartRemoval = {
     options: [
       {
         optionName: {
-          en: "Per Wart",
-          es: "Por Verruga"
+          en: "Per Zone",
+          es: "Por Zona"
         },
         isPromoEligible: false,
         optionPrice: { en: "$50", es: "$50" },
@@ -103,7 +103,22 @@ export const wartRemoval = {
       es: "Cualquier área con verrugas"
     }
   ],
-  addOns: [],
+  addOns: [
+    {
+      treatmentSlug: "hydrafacial",
+      optionName: {
+        en: "Hydrafacial MD - Face",
+        es: "Hydrafacial MD - Rostro"
+      }
+    },
+    {
+      treatmentSlug: "casmara-purifying",
+      optionName: {
+        en: "Casmara Purifying Algae Facial",
+        es: "Facial Casmara Purificante de Algas"
+      }
+    }
+  ],
   expectations: {
     preTreatment: [
       {
