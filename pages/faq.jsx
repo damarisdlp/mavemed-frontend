@@ -19,7 +19,7 @@ export default function GeneralFaqPage() {
       <PromoBanner />
       <Header />
 
-      <main className="px-4 pt-10 pb-20 max-w-4xl mx-auto">
+      <main className="px-4 pt-10 pb-20 max-w-4xl mx-auto bg-white">
         <FAQSection faqs={generalFaqs} />
       </main>
 
