@@ -12,8 +12,8 @@ export const toenailExtraction = {
   isPopular: false,
   isPromoEligible: true,
   images: {
-    primary: "/podiatry.jpg",
-    secondary: "/podiatry2.jpg"
+    primary: "/nailext.jpg",
+    secondary: "/nailext2.jpg"
   },
   description: {
     en: "Partial or total nail removal to treat severely ingrown, infected, or damaged toenails with long term relief.",
