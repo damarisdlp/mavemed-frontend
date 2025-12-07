@@ -188,14 +188,28 @@ export const nailFungusLaser = {
         es: "Lave bien los pies antes de su cita. Retire esmalte de uñas o uñas artificiales."
       },
       {
-        en: "Notify your provider if you’ve recently taken oral or topical antifungal medications.",
-        es: "Informe a su proveedor si ha usado medicamentos antifúngicos orales o tópicos recientemente."
+        en: "Notify your provider if you’ve recently taken oral/topical antifungals or antibiotics; trim nails lightly but avoid aggressive clipping.",
+        es: "Informe a su proveedor si ha usado antifúngicos orales/tópicos o antibióticos recientemente; recorte las uñas ligeramente pero evite cortes agresivos."
+      },
+      {
+        en: "Bring clean socks and breathable footwear; avoid heavy lotions on the day of treatment.",
+        es: "Lleve calcetines limpios y calzado transpirable; evite lociones pesadas el día del tratamiento."
+      }
+    ],
+    duringTreatment: [
+      {
+        en: "You may feel gentle warmth or tingling as the laser passes over the nail; no anesthesia is typically needed.",
+        es: "Puede sentir calor suave o cosquilleo mientras el láser pasa sobre la uña; normalmente no se necesita anestesia."
+      },
+      {
+        en: "Multiple passes ensure full coverage of the nail plate and surrounding skin.",
+        es: "Se realizan varias pasadas para asegurar cobertura completa de la lámina ungueal y la piel circundante."
       }
     ],
     postTreatment: [
       {
-        en: "Keep nails dry and clean to prevent reinfection.",
-        es: "Mantenga las uñas secas y limpias para evitar la reinfección."
+        en: "Keep nails dry and clean to prevent reinfection; apply antifungal solution if prescribed.",
+        es: "Mantenga las uñas secas y limpias para evitar reinfección; aplique solución antifúngica si se le receta."
       },
       {
         en: "Disinfect shoes and change socks daily. Avoid barefoot walking in public areas.",
