@@ -109,6 +109,20 @@ export const harmonyca = {
   ],
   addOns: [
     {
+      treatmentSlug: "microneedling",
+      optionName: {
+        en: "Microneedling - PN - Polynucleotide",
+        es: "Microneedling - PN - Polinucleótido"
+      }
+    },
+    {
+      treatmentSlug: "casmara-infinity",
+      optionName: {
+        en: "Casmara Infinity Anti‑Aging Facial",
+        es: "Facial Casmara Antienvejecimiento Infinity"
+      }
+    },
+    {
       treatmentSlug: "hydrafacial",
       optionName: {
         en: "Hydrafacial MD - Face",
@@ -116,24 +130,17 @@ export const harmonyca = {
       }
     },
     {
-      treatmentSlug: "casmara-purifying",
-      optionName: {
-        en: "Casmara Purifying Algae Facial",
-        es: "Facial Purificante de Algas Casmara"
-      }
-    },
-    {
-      treatmentSlug: "microneedling",
-      optionName: {
-        en: "PDRN - Polydeoxyribonucleotide",
-        es: "PDRN - Polidesoxirribonucleótido"
-      }
-    },
-    {
       treatmentSlug: "rf-microneedling",
       optionName: {
-        en: "Face",
-        es: "Rostro"
+        en: "Sylfirm X - RF Microneedling - Face + Neck + Décolleté",
+        es: "Sylfirm X - Microagujas RF - Rostro + Cuello + Escote"
+      }
+    },
+    {
+      treatmentSlug: "pdo-threads",
+      optionName: {
+        en: "PDO Thread Lift - Signature Lower Face Lift",
+        es: "Hilos PDO - Levantamiento Facial Inferior Signature"
       }
     }
   ],
