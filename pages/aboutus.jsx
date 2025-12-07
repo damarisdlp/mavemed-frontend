@@ -3,6 +3,7 @@ import Header from "@/components/Header"
 import Footer from "@/components/Footer"
 import AboutSection from "@/components/AboutSection"
 import InstagramFeed from "@/components/InstagramFeed"
+import ReviewsSection from "@/components/ReviewsSection"
 import Head from "next/head";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import nextI18NextConfig from "../next-i18next.config";
@@ -87,6 +88,7 @@ export default function AboutUs() {
         <Header />
         <AboutSection />
         <InstagramFeed />
+        <ReviewsSection />
         <Footer />
     </section>
     </>
