@@ -1,5 +1,6 @@
 // components/HeroSection.jsx
 import { useTranslation } from "next-i18next";
+import { dispatchChatOpen } from "@/lib/utils/chat";
 
 export default function HeroSection() {
   const { t } = useTranslation("home");
@@ -22,12 +23,13 @@ export default function HeroSection() {
         {t("heroSection.p3")}
       </p>
       <div className="mt-8 mb-4">
-        <a
-          href="https://wa.me/+526642077675"
+        <button
+          type="button"
+          onClick={dispatchChatOpen}
           className="bg-black text-white px-8 py-3 rounded-full hover:bg-[#731a2f] transition active:scale-95"
         >
           {t("heroSection.cta")}
-        </a>
+        </button>
       </div>
     </section>
   );
