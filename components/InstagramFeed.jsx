@@ -54,16 +54,18 @@ export default function InstagramFeed() {
         <span>{t("instagram.title")}</span>
       </h2>
       <p className="text-gray-600 mb-3">{t("instagram.subtitle")}</p>
-      <p className="text-gray-600 mb-3">
+      <div className="mb-6">
         <a
           href="https://www.instagram.com/mavemedicalspa"
           target="_blank"
           rel="noopener noreferrer"
-          className="hover:underline"
+          className="inline-flex items-center gap-2 px-5 py-2 rounded-full text-white text-sm font-medium shadow"
+          style={{ background: "linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%)" }}
         >
-          @mavemedicalspa
+          <span className="text-lg">📷</span>
+          <span>{t("instagram.follow", { defaultValue: "Follow us: @mavemedicalspa" })}</span>
         </a>
-      </p>
+      </div>
 
       {posts.length > 0 ? (
         <div className="relative">
