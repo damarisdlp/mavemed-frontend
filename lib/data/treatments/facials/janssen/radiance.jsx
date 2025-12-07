@@ -6,8 +6,8 @@ export const janssenRadianceBoost = {
     es: "Faciales"
   },
   serviceDisplayName: {
-    en: "Janssen Radiance Boost Facial",
-    es: "Facial Janssen Radiance Boost"
+    en: "Janssen - Radiance Boost Facial",
+    es: "Janssen - Facial Radiance Boost"
   },
   isPopular: false,
   isPromoEligible: false,
