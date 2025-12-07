@@ -1,5 +1,6 @@
 // components/ContactCTA.jsx
 import { useTranslation } from "next-i18next";
+import { dispatchChatOpen } from "@/lib/utils/chat";
 
 export default function ContactCTA() {
   const { t } = useTranslation("home");
@@ -19,18 +20,14 @@ export default function ContactCTA() {
         {t("contactCta.line3")}
       </p>
 
-      <a
-        href="https://wa.me/+526642077675"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="bg-white text-black px-8 py-3 rounded-full inline-block transition duration-300"
-        style={{ backgroundColor: "#ffffff" }}
-        onMouseOver={(e) => (e.currentTarget.style.backgroundColor = "#efeee7")}
-        onMouseOut={(e) => (e.currentTarget.style.backgroundColor = "#ffffff")}
+      <button
+        type="button"
+        onClick={dispatchChatOpen}
+        className="bg-white text-black px-8 py-3 rounded-full inline-block transition duration-300 hover:bg-[#efeee7]"
         aria-label={t("contactCta.aria")}
       >
         {t("contactCta.cta")}
-      </a>
+      </button>
     </section>
   );
 }
