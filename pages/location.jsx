@@ -117,7 +117,7 @@ export default function Location() {
 export async function getStaticProps({ locale }) {
   return {
     props: {
-      ...(await serverSideTranslations(locale ?? "en", ["layout", "location"], nextI18NextConfig)),
+      ...(await serverSideTranslations(locale ?? "en", ["layout", "location", "home"], nextI18NextConfig)),
     },
   };
 }
