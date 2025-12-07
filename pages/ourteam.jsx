@@ -192,7 +192,7 @@ export default function TeamPage() {
 export async function getStaticProps({ locale }) {
   return {
     props: {
-      ...(await serverSideTranslations(locale ?? "en", ["layout", "team"], nextI18NextConfig)),
+      ...(await serverSideTranslations(locale ?? "en", ["layout", "team", "home"], nextI18NextConfig)),
     },
   };
 }
