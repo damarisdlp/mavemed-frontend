@@ -435,29 +435,29 @@ export const ultraformerMPT = {
     {
       treatmentSlug: "sculptra",
       optionName: {
-        en: "PLLA - Sculptra® (per vial)",
-        es: "PLLA - Sculptra® (por vial)"
+        en: "Sculptra® (PLLA) - Poly-L-Lactic Acid",
+        es: "Sculptra® (PLLA) - Poli-L-Láctico"
       }
     },
     {
       treatmentSlug: "harmonyca",
       optionName: {
-        en: "Per Treatment - 2 x 1.25 mL Syringes Total",
-        es: "Por Tratamiento - 2 x 1.25 mL Jeringas Total"
+        en: "HarmonyCa® (HA + CAHA) - Hyaluronic Acid + Calcium Hydroxyapatite",
+        es: "HarmonyCa® (AH + CAHA) - Ácido Hialurónico + Hidroxiapatita de Calcio"
       }
     },
     {
       treatmentSlug: "facial-balancing-fillers",
       optionName: {
-        en: "Juvéderm Volbella",
-        es: "Juvéderm Volbella"
+        en: "Facial Balancing - Juvéderm Volbella",
+        es: "Equilibrio Facial - Juvéderm Volbella"
       }
     },
     {
       treatmentSlug: "microneedling",
       optionName: {
-        en: "PN - Polynucleotide",
-        es: "PN - Polinucleótido"
+        en: "Microneedling - PN - Polynucleotide",
+        es: "Microagujas - PN - Polinucleótido"
       }
     }
   ],
