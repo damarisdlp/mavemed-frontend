@@ -3,6 +3,7 @@ import NextLink from "next/link";
 import Image from "next/image";
 import { useTranslation } from "next-i18next";
 import { useRouter } from "next/router";
+import { dispatchChatOpen } from "@/lib/utils/chat";
 
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -67,12 +68,13 @@ export default function Header() {
               ES
             </NextLink>
           </div>
-          <a
-            href="https://wa.me/+526642077675"
+          <button
+            onClick={dispatchChatOpen}
             className="bg-black text-white px-4 py-2 rounded-full text-sm hover:bg-[#731a2f]"
+            type="button"
           >
             {t("nav.bookWhatsApp")}
-          </a>
+          </button>
         </div>
       </div>
 
@@ -112,12 +114,13 @@ export default function Header() {
           <NextLink href="/location" className="text-sm text-gray-700 hover:text-black">
             {t("nav.location")}
           </NextLink>
-          <a
-            href="https://wa.me/+526642077675"
+          <button
+            onClick={dispatchChatOpen}
             className="bg-black text-white px-6 py-2 rounded-full text-sm hover:bg-[#731a2f]"
+            type="button"
           >
             {t("nav.bookWhatsApp")}
-          </a>
+          </button>
         </nav>
       )}
     </header>
