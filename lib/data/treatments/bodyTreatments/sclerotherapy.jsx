@@ -101,6 +101,34 @@ export const sclerotherapy = {
   ],
   addOns: [
     {
+      treatmentSlug: "hydrafacial",
+      optionName: {
+        en: "Hydrafacial MD - Face",
+        es: "Hydrafacial MD - Rostro"
+      }
+    },
+    {
+      treatmentSlug: "wrinkle-reducers-botox",
+      optionName: {
+        en: "Botox - Any Zone",
+        es: "Botox - Cualquier Zona"
+      }
+    },
+    {
+      treatmentSlug: "wrinkle-reducers-dermawrinkle",
+      optionName: {
+        en: "Dermawrinkle - Any Zone",
+        es: "Dermawrinkle - Cualquier Zona"
+      }
+    },
+    {
+      treatmentSlug: "microneedling",
+      optionName: {
+        en: "Microneedling - PRP - Platelet Rich Plasma",
+        es: "Microneedling - PRP - Plasma Rico en Plaquetas"
+      }
+    },
+    {
       treatmentSlug: "swedish-massage",
       optionName: {
         en: "Relaxing Swedish Massage - Full Body",
