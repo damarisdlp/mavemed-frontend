@@ -142,18 +142,32 @@ export const hydrafacial = {
   expectations: {
     preTreatment: [
       {
-        en: "Avoid using retinol, acids, and exfoliants 48 hours before treatment.",
-        es: "Evita usar retinol, ácidos y exfoliantes 48 horas antes del tratamiento."
+        en: "Avoid retinoids, acids, and exfoliants for 3–5 days; arrive with clean skin and no makeup.",
+        es: "Evite retinoides, ácidos y exfoliantes durante 3–5 días; acuda con la piel limpia y sin maquillaje."
+      },
+      {
+        en: "Delay if you have active infection, sunburn, or recent waxing/laser in the area.",
+        es: "Reprograme si tiene infección activa, quemadura solar o depilación/láser reciente en la zona."
+      }
+    ],
+    duringTreatment: [
+      {
+        en: "You’ll feel gentle suction and fluid infusion during cleansing, exfoliation, and extractions.",
+        es: "Sentirá una succión suave e infusión de fluidos durante la limpieza, exfoliación y extracciones."
+      },
+      {
+        en: "Mild tingling from acids/boosters is normal; intensity can be adjusted for comfort.",
+        es: "El ligero cosquilleo por ácidos/boosters es normal; la intensidad se puede ajustar para su comodidad."
       }
     ],
     postTreatment: [
       {
-        en: "Enjoy immediate glow and hydration.",
-        es: "Disfruta de luminosidad e hidratación inmediatas."
+        en: "Mild pinkness can last a few hours; enjoy the immediate glow and hydration.",
+        es: "Puede haber leve enrojecimiento por algunas horas; disfrute el brillo e hidratación inmediatos."
       },
       {
-        en: "Avoid harsh skincare products for 24 hours and apply sunscreen.",
-        es: "Evita productos agresivos durante 24 horas y aplica protector solar."
+        en: "Avoid harsh products, saunas, and strenuous exercise for 24 hours; apply SPF 30+ daily.",
+        es: "Evite productos agresivos, saunas y ejercicio intenso durante 24 horas; aplique FPS 30+ a diario."
       }
     ]
   },
