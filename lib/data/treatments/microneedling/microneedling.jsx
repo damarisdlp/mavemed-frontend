@@ -126,8 +126,8 @@ export const microneedling = {
     {
       treatmentSlug: "wrinkle-reducers-botox",
       optionName: {
-        en: "Any Zone",
-        es: "Cualquier Zona"
+        en: "Botox - Any Zone",
+        es: "Botox - Cualquier Zona"
       }
     },
     {
