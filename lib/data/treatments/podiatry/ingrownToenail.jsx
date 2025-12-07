@@ -179,6 +179,20 @@ export const matrixectomy = {
       {
         en: "Notify your provider of any medications or circulation issues.",
         es: "Informe a su médico sobre medicamentos actuales o problemas de circulación."
+      },
+      {
+        en: "Clean the toe gently and avoid applying antibiotic ointments the day of your visit unless directed.",
+        es: "Limpie el dedo suavemente y evite aplicar ungüentos antibióticos el día de la visita salvo indicación."
+      }
+    ],
+    duringTreatment: [
+      {
+        en: "Local anesthesia is administered; you may feel pressure but should not feel pain during nail edge removal/matrix treatment.",
+        es: "Se administra anestesia local; puede sentir presión, pero no debería sentir dolor durante la retirada del borde ungueal/tratamiento de la matriz."
+      },
+      {
+        en: "A chemical or mechanical matrixectomy may be performed to prevent regrowth; a dressing is applied afterward.",
+        es: "Se puede realizar una matriceptomía química o mecánica para evitar el recrecimiento; luego se coloca un vendaje."
       }
     ],
     postTreatment: [
