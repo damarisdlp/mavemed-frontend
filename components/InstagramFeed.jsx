@@ -5,7 +5,7 @@ import { useTranslation } from "next-i18next";
 import Link from "next/link";
 
 export default function InstagramFeed() {
-  const { t } = useTranslation("home");
+  const { t, ready } = useTranslation("home");
   const [posts, setPosts] = useState([]);
   const [error, setError] = useState(null);
   const sliderRef = useRef(null);
@@ -23,9 +23,12 @@ export default function InstagramFeed() {
           setError("No posts available right now.");
           return;
         }
-        const filtered = data.data
-          .filter((item) => item.media_type === "IMAGE" || item.media_type === "CAROUSEL_ALBUM" || item.media_type === "VIDEO")
-          .slice(0, 8);
+        const filtered = data.data.filter(
+          (item) =>
+            item.media_type === "IMAGE" ||
+            item.media_type === "CAROUSEL_ALBUM" ||
+            item.media_type === "VIDEO"
+        );
         setPosts(filtered);
       } catch (err) {
         setError("Error loading feed");
@@ -33,6 +36,8 @@ export default function InstagramFeed() {
     };
     loadPosts();
   }, []);
+
+  if (!ready) return null;
 
   const scroll = (direction) => {
     if (!sliderRef.current) return;
