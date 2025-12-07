@@ -130,6 +130,20 @@ export const calcanealSpur = {
       {
         en: "Inform your provider of any current medications, blood thinners or allergies.",
         es: "Informe a su médico sobre medicamentos actuales, anticoagulantes o alergias."
+      },
+      {
+        en: "Wear or bring supportive footwear; avoid applying topical analgesics on the day of treatment.",
+        es: "Use o traiga calzado de soporte; evite aplicar analgésicos tópicos el día del tratamiento."
+      }
+    ],
+    duringTreatment: [
+      {
+        en: "You may feel brief pressure or discomfort during the injection; numbing spray or local anesthesia can be used.",
+        es: "Puede sentir presión o molestia breve durante la inyección; se puede usar spray anestésico o anestesia local."
+      },
+      {
+        en: "A small bandage is applied; you’ll be advised on immediate weight-bearing based on your case.",
+        es: "Se coloca un pequeño vendaje; se le indicará sobre el apoyo inmediato del pie según su caso."
       }
     ],
     postTreatment: [
