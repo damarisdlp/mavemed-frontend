@@ -209,7 +209,7 @@ dangerouslySetInnerHTML={{
 export async function getStaticProps({ locale }) {
   return {
     props: {
-      ...(await serverSideTranslations(locale ?? "en", ["layout", "treatments"], nextI18NextConfig)),
+      ...(await serverSideTranslations(locale ?? "en", ["layout", "treatments", "home"], nextI18NextConfig)),
     },
   };
 }
