@@ -114,8 +114,8 @@ export const wartRemoval = {
     {
       treatmentSlug: "casmara-purifying",
       optionName: {
-        en: "Casmara Purifying Algae Facial",
-        es: "Facial Casmara Purificante de Algas"
+        en: "Casmara - Purifying Algae Facial",
+        es: "Casmara - Facial Purificante de Algas"
       }
     }
   ],
