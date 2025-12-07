@@ -110,14 +110,28 @@ export const casmaraPurifying = {
   expectations: {
     preTreatment: [
       {
-        en: "Stop using retinoids, AHAs, or strong exfoliants at least 48 hours before your appointment.",
-        es: "Deja de usar retinoides, AHAs o exfoliantes fuertes al menos 48 horas antes de tu cita."
+        en: "Avoid retinoids, acids, and exfoliants for 3–5 days; arrive with clean skin and no makeup.",
+        es: "Evite retinoides, ácidos y exfoliantes durante 3–5 días; acuda con la piel limpia y sin maquillaje."
+      },
+      {
+        en: "Reschedule if you have active infection, sunburn, or open lesions.",
+        es: "Reprograme si tiene infección activa, quemadura solar o lesiones abiertas."
+      }
+    ],
+    duringTreatment: [
+      {
+        en: "Expect gentle cleansing, extractions, and the purifying algae mask; slight tingling or coolness is normal.",
+        es: "Espere limpieza suave, extracciones y la mascarilla de algas purificantes; es normal un ligero cosquilleo o frescor."
       }
     ],
     postTreatment: [
       {
-        en: "Avoid heavy makeup and direct sun exposure for 24–48 hours after treatment.",
-        es: "Evita maquillaje pesado y la exposición solar directa durante 24–48 horas después del tratamiento."
+        en: "Mild redness or tingling can occur and typically resolves within hours.",
+        es: "Puede haber leve enrojecimiento o cosquilleo que suele resolverse en horas."
+      },
+      {
+        en: "Avoid heavy makeup, heat (sauna/exercise), and harsh products for 24 hours; apply SPF 30+ daily.",
+        es: "Evite maquillaje pesado, calor (sauna/ejercicio) y productos agresivos durante 24 horas; use FPS 30+ a diario."
       }
     ]
   },
