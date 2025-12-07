@@ -12,8 +12,8 @@ export const nailFungusLaser = {
   isPopular: false,
   isPromoEligible: true,
   images: {
-    primary: "/podiatry.jpg",
-    secondary: "/podiatry2.jpg"
+    primary: "/lasernail.jpg",
+    secondary: "/lasernail2.jpg"
   },
   description: {
     en: "Non-invasive laser therapy to eliminate toenail fungus and restore nail clarity without pain or medication.",
