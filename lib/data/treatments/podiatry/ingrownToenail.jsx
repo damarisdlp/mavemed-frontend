@@ -135,19 +135,35 @@ export const matrixectomy = {
   addOns: [
     {
       treatmentSlug: "hydrafacial",
-      optionName: { en: "Hydrafacial MD - Face", es: "Hydrafacial MD - Rostro" }
+      optionName: 
+      { 
+        en: "Hydrafacial MD - Face", 
+        es: "Hydrafacial MD - Rostro" 
+      }
     },
     {
       treatmentSlug: "casmara-retinol-proage",
-      optionName: { en: "Casmara - Retinol Pro‑Age Facial", es: "Casmara - Facial Retinol Pro‑Age" }
+      optionName: 
+      { 
+        en: "Casmara - Retinol Pro‑Age Facial", 
+        es: "Casmara - Facial Retinol Pro‑Age" 
+      }
     },
     {
       treatmentSlug: "swedish-massage",
-      optionName: { en: "Relaxing Swedish Massage - Full Body", es: "Masaje Sueco Relajante - Cuerpo Completo" }
+      optionName: 
+      { 
+        en: "Relaxing Swedish Massage - Full Body", 
+        es: "Masaje Sueco Relajante - Cuerpo Completo" 
+      }
     },
     {
       treatmentSlug: "cupping",
-      optionName: { en: "Cupping Add‑On", es: "Complemento de Ventosas" }
+      optionName: 
+      { 
+        en: "Cupping Add‑On", 
+        es: "Complemento de Ventosas" 
+      }
     }
   ],
   expectations: {
