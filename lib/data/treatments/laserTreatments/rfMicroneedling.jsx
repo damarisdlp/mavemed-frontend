@@ -223,6 +223,34 @@ export const rfMicroneedling = {
       }
     },
     {
+      treatmentSlug: "serum-add-ons",
+      optionName: {
+        en: "Serum Add-On - PN (Face)",
+        es: "Complemento de Suero - PN (Rostro)"
+      }
+    },
+    {
+      treatmentSlug: "serum-add-ons",
+      optionName: {
+        en: "Serum Add-On - PRP (Face)",
+        es: "Complemento de Suero - PRP (Rostro)"
+      }
+    },
+    {
+      treatmentSlug: "serum-add-ons",
+      optionName: {
+        en: "Serum Add-On - PDRN (Face)",
+        es: "Complemento de Suero - PDRN (Rostro)"
+      }
+    },
+    {
+      treatmentSlug: "pdo-threads",
+      optionName: {
+        en: "PDO Thread Lift - Signature Lower Face Lift",
+        es: "Hilos PDO - Levantamiento Facial Inferior Signature"
+      }
+    },
+    {
       treatmentSlug: "hydrafacial",
       optionName: {
         en: "Hydrafacial MD - Face",
@@ -230,17 +258,17 @@ export const rfMicroneedling = {
       }
     },
     {
-      treatmentSlug: "serum-add-ons",
+      treatmentSlug: "casmara-retinol-proage",
       optionName: {
-        en: "Add-On - Platelet-Rich Plasma (PRP) or Platelet-Rich Fibrin Matrix (PRFM)",
-        es: "Complemento - Plasma Rico en Plaquetas (PRP) o Matriz de Fibrina Rica en Plaquetas (PRFM)"
+        en: "Casmara Retinol Pro‑Age Facial",
+        es: "Casmara Retinol Pro‑Age Facial"
       }
     },
     {
-      treatmentSlug: "serum-add-ons",
+      treatmentSlug: "rf-microneedling",
       optionName: {
-        en: "Add-On - Rejuran",
-        es: "Complemento - Rejuran"
+        en: "Sylfirm X - RF Microneedling - Face",
+        es: "Sylfirm X - Microagujas RF - Rostro"
       }
     }
   ],
