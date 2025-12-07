@@ -5,6 +5,8 @@ import Image from "next/image";
 import Header from "@/components/Header";
 import PromoBanner from "@/components/PromoBanner";
 import TreatmentCategories from "@/components/TreatmentCategories";
+import InstagramFeed from "@/components/InstagramFeed"
+import ReviewsSection from "@/components/ReviewsSection"
 import Footer from "@/components/Footer";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import nextI18NextConfig from "../next-i18next.config";
@@ -195,6 +197,8 @@ dangerouslySetInnerHTML={{
 
         {/* Treatment Categories */}
         <TreatmentCategories />
+        <InstagramFeed />
+        <ReviewsSection />
         <Footer />
         
       </div>
