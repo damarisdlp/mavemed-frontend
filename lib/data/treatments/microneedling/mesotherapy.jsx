@@ -123,10 +123,17 @@ export const mesotherapy = {
       }
     },
     {
-      treatmentSlug: "pdo-threads",
+      treatmentSlug: "casmara-retinol-proage",
       optionName: {
-        en: "Signature Lower Face Lift",
-        es: "Levantamiento Facial Inferior Signature"
+        en: "Casmara Retinol Pro‑Age Facial",
+        es: "Casmara Retinol Pro‑Age Facial"
+      }
+    },
+    {
+      treatmentSlug: "microneedling",
+      optionName: {
+        en: "Sylfirm X - RF Microneedling - Face",
+        es: "Sylfirm X - Microagujas RF - Rostro"
       }
     }
   ],
