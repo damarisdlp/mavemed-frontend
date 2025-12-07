@@ -4,7 +4,7 @@
     "about": "Sobre Nosotros",
     "contact": "Contáctanos",
     "location": "Ubicación",
-    "bookWhatsApp": "Reservar por WhatsApp"
+    "bookWhatsApp": "Reserva tu Cita"
   },
   "promoBanner": {
     "text": "Accede a precios promocionales exclusivos en tratamientos seleccionados.",
@@ -42,5 +42,13 @@
   },
   "language": "Idioma",
   "english": "EN",
-  "spanish": "ES"
+  "spanish": "ES",
+  "chat": {
+    "open": "Chatea con nosotros",
+    "close": "Cerrar",
+    "title": "Chatea con nosotros",
+    "subtitle": "Elige tu canal preferido",
+    "whatsapp": "WhatsApp",
+    "instagram": "Instagram"
+  }
 }
