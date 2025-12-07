@@ -44,6 +44,7 @@ export default async function handler(req, res) {
     "thumbnail_url",
     "timestamp",
     "username",
+    "like_count"
   ].join(",");
 
   const url = `https://graph.instagram.com/${userId}/media?fields=${fields}&access_token=${token}`;
