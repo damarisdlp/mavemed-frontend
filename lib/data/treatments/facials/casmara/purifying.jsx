@@ -12,8 +12,8 @@ export const casmaraPurifying = {
   isPopular: true,
   isPromoEligible: false,
   images: {
-    primary: "/casmara-purifying.jpg",
-    secondary: "/casmara-purifying2.jpg"
+    primary: "/purifying.jpg",
+    secondary: "/purifying2.jpg"
   },
   description: {
     en: "A detoxifying facial treatment featuring Casmara’s purifying algae mask to target oily, acne-prone, and congested skin. This clarifying facial soothes inflammation and restores skin balance.",
