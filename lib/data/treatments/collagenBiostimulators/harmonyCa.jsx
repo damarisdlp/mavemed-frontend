@@ -6,8 +6,8 @@ export const harmonyca = {
     es: "Biostimuladores de Colágeno"
   },
   serviceDisplayName: {
-    en: "HarmonyCa® (HA + Calcium Hydroxyapatite)",
-    es: "HarmonyCa® (AH + Hidroxiapatita de Calcio)"
+    en: "HarmonyCa® (Hyaluronic Acid + Calcium Hydroxyapatite)",
+    es: "HarmonyCa® (Ácido Hialurónico + Hidroxiapatita de Calcio)"
   },
   isPopular: false,
   isPromoEligible: false,
@@ -17,7 +17,7 @@ export const harmonyca = {
   },
   description: {
     en: "HarmonyCa® is a next-generation biostimulatory filler that combines hyaluronic acid (HA) for immediate facial volume with calcium hydroxyapatite (CaHA) for long-term collagen stimulation. This hybrid injectable enhances facial contour, skin quality, and structural lift in a single treatment.",
-    es: "HarmonyCa® es un relleno biostimulador de nueva generación que combina ácido hialurónico (HA) para volumen facial inmediato con hidroxiapatita de calcio (CaHA) para estimulación de colágeno a largo plazo. Este inyectable híbrido mejora el contorno facial, la calidad de la piel y el levantamiento estructural en un solo tratamiento."
+    es: "HarmonyCa® es un relleno biostimulador de nueva generación que combina ácido hialurónico (AH) para volumen facial inmediato con hidroxiapatita de calcio (CaHA) para estimulación de colágeno a largo plazo. Este inyectable híbrido mejora el contorno facial, la calidad de la piel y el levantamiento estructural en un solo tratamiento."
   },
   details: {
     en: "HarmonyCa® is a dual-phase injectable combining hyaluronic acid for immediate hydration and volume, with CaHA microspheres to boost collagen production over time. This advanced formula is ideal for enhancing cheekbones, defining the jawline, and restoring firmness in the lower face. Its bioregenerative effect helps improve skin density and elasticity, making it a top choice for long-lasting, natural-looking rejuvenation without heaviness or puffiness.",
