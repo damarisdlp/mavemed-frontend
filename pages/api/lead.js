@@ -3,7 +3,7 @@ export default async function handler(req, res) {
     return res.status(405).json({ error: "Method not allowed" });
   }
 
-  const payload = req.body;
+  const payload = typeof req.body === "string" ? safeParse(req.body) : req.body || {};
   const scriptUrl =
     process.env.GOOGLE_SCRIPT_URL ||
     "https://script.google.com/macros/s/AKfycbxJU8lIqKC_9LGFQcFO7gMTNYNZb11GirR4AQ8i_VUoYtR2Mepny2nNre-J3XhDcFs/exec";
@@ -20,7 +20,7 @@ export default async function handler(req, res) {
     if (!sheetResponse.ok) {
       const text = await sheetResponse.text();
       console.error("Sheet submission failed:", text);
-      return res.status(502).json({ error: "Sheet submission failed" });
+      return res.status(502).json({ error: "Sheet submission failed", detail: text });
     }
 
     // Optional: notify reception via WhatsApp if endpoint is available
@@ -37,6 +37,14 @@ export default async function handler(req, res) {
     return res.status(200).json({ success: true });
   } catch (error) {
     console.error("Lead submission error:", error);
-    return res.status(500).json({ error: "Internal server error" });
+    return res.status(500).json({ error: "Internal server error", detail: error?.message });
+  }
+}
+
+function safeParse(str) {
+  try {
+    return JSON.parse(str);
+  } catch (e) {
+    return {};
   }
 }
