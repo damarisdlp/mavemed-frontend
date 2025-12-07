@@ -3,6 +3,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { useRouter } from 'next/router';
 import { allTreatments } from "@/lib/data/allTreatments";
+import { dispatchChatOpen } from "@/lib/utils/chat";
 
 export default function TreatmentCategories() {
   // Group treatments by category
@@ -114,13 +115,14 @@ export default function TreatmentCategories() {
                       </p>
                     </div>
                     <div className="flex flex-col gap-2">
-                      <Link
-                        href="https://wa.me/+526642077675"
+                      <button
+                        type="button"
+                        onClick={dispatchChatOpen}
                         className="bg-black text-white px-4 py-2 rounded-full text-xs hover:bg-[#731a2f] transition text-center"
                         aria-label={getLocalized(translatedStrings.bookService(service.name))}
                       >
                         {getLocalized(translatedStrings.bookNow)}
-                      </Link>
+                      </button>
                       <Link
                         href={`/treatments/${service.slug}`}
                         className="border border-gray-300 text-black px-4 py-2 rounded-full text-xs hover:border-black transition text-center"
