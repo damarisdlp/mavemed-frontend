@@ -139,7 +139,7 @@ export const matrixectomy = {
     },
     {
       treatmentSlug: "casmara-retinol-proage",
-      optionName: { en: "Casmara Retinol Pro‑Age Facial", es: "Casmara Retinol Pro‑Age Facial" }
+      optionName: { en: "Casmara - Retinol Pro‑Age Facial", es: "Casmara - Facial Retinol Pro‑Age" }
     },
     {
       treatmentSlug: "swedish-massage",
