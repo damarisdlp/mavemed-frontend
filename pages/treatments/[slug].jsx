@@ -11,6 +11,8 @@ import WhatToExpect from "@/components/WhatToExpect";
 import FAQSection from "@/components/FAQSection";
 import ContactCTA from "@/components/ContactCTA";
 import PromoPackageSection from "@/components/PromoPackageSection";
+import InstagramFeed from "@/components/InstagramFeed"
+import ReviewsSection from "@/components/ReviewsSection"
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import nextI18NextConfig from "../../next-i18next.config";
 
@@ -77,6 +79,8 @@ export default function TreatmentPage() {
         <FAQSection faqs={treatment.faq} locale={currentLocale} />
         <ContactCTA />
         <PromoPackageSection />
+        <InstagramFeed />
+        <ReviewsSection />
         <Footer />
       </section>
     </>
