@@ -272,18 +272,28 @@ export const rfMicroneedling = {
         es: "Evite anticoagulantes, alcohol y cafeína durante las 24 horas previas a su sesión."
       },
       {
-        en: "Discontinue active skincare products for 3 days prior to treatment.",
-        es: "Suspenda productos de cuidado de la piel con activos fuertes (ácidos, retinoides, etcétera) durante 3 días antes del tratamiento."
+        en: "Discontinue active skincare (retinoids, acids, exfoliants) for 3–5 days; arrive with clean skin, no makeup or self-tanner.",
+        es: "Suspenda productos activos (retinoides, ácidos, exfoliantes) por 3–5 días; acuda con la piel limpia, sin maquillaje ni autobronceador."
+      }
+    ],
+    duringTreatment: [
+      {
+        en: "Topical anesthetic is applied; expect pressure, heat, and pinpoint sensation as RF energy is delivered.",
+        es: "Se aplica anestesia tópica; espere presión, calor y sensación de puntos finos mientras se entrega la energía de RF."
+      },
+      {
+        en: "Mild pinpoint bleeding can occur; cooling and serum application help soothe the skin.",
+        es: "Puede haber leve sangrado puntual; el enfriamiento y la aplicación de sueros ayudan a calmar la piel."
       }
     ],
     postTreatment: [
       {
-        en: "Expect redness, swelling or tightness for 1–2 days after treatment.",
-        es: "Espere enrojecimiento, ligera inflamación o sensación de tirantez durante 1–2 días después del tratamiento."
+        en: "Expect redness, swelling or tightness for 1–3 days; avoid makeup, sun, heat, and sweating for 24 hours.",
+        es: "Espere enrojecimiento, hinchazón o tirantez por 1–3 días; evite maquillaje, sol, calor y sudor durante 24 horas."
       },
       {
-        en: "Avoid sun exposure and heat based treatments for 72 hours.",
-        es: "Evite la exposición solar intensa y tratamientos que generen calor (sauna, vapor, ejercicio intenso) durante 72 horas."
+        en: "Use gentle cleanser/moisturizer, avoid retinoids/acids for 5–7 days, and apply SPF 30+ once you resume daytime products.",
+        es: "Use limpiador/hidratante suaves, evite retinoides/ácidos por 5–7 días y aplique FPS 30+ al reanudar productos diurnos."
       }
     ]
   },
