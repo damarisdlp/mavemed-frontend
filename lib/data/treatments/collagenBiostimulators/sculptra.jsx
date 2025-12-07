@@ -142,6 +142,20 @@ export const sculptra = {
   ],
   addOns: [
     {
+      treatmentSlug: "microneedling",
+      optionName: {
+        en: "Microneedling - PN - Polynucleotide",
+        es: "Microneedling - PN - Polinucleótido"
+      }
+    },
+    {
+      treatmentSlug: "casmara-infinity",
+      optionName: {
+        en: "Casmara Infinity Anti‑Aging Facial",
+        es: "Facial Casmara Antienvejecimiento Infinity"
+      }
+    },
+    {
       treatmentSlug: "hydrafacial",
       optionName: {
         en: "Hydrafacial MD - Face",
@@ -149,31 +163,24 @@ export const sculptra = {
       }
     },
     {
-      treatmentSlug: "casmara-purifying",
-      optionName: {
-        en: "Casmara Purifying Algae Facial",
-        es: "Facial Purificante de Algas Casmara"
-      }
-    },
-    {
-      treatmentSlug: "microneedling",
-      optionName: {
-        en: "PDRN - Polydeoxyribonucleotide",
-        es: "PDRN - Polidesoxirribonucleótido"
-      }
-    },
-    {
       treatmentSlug: "rf-microneedling",
       optionName: {
-        en: "Face",
-        es: "Rostro"
+        en: "Sylfirm X - RF Microneedling - Face + Neck + Décolleté",
+        es: "Sylfirm X - Microagujas RF - Rostro + Cuello + Escote"
       }
     },
     {
-      treatmentSlug: "ultraformer-mpt",
+      treatmentSlug: "pdo-threads",
       optionName: {
-        en: "360 Contour",
-        es: "Contorno 360"
+        en: "PDO Thread Lift - Signature Lower Face Lift",
+        es: "Hilos PDO - Levantamiento Facial Inferior Signature"
+      }
+    },
+    {
+      treatmentSlug: "facial-balancing-fillers",
+      optionName: {
+        en: "Facial Balancing - Juvéderm Volbella",
+        es: "Equilibrio Facial - Juvéderm Volbella"
       }
     }
   ],
