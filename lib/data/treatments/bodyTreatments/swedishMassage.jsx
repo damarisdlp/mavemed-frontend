@@ -103,22 +103,32 @@ export const swedishMassage = {
   expectations: {
     preTreatment: [
       {
-        en: "Arrive well-hydrated.",
-        es: "Llegue bien hidratado."
+        en: "Arrive well hydrated and have a light meal 1–2 hours before.",
+        es: "Llegue bien hidratado y coma algo ligero 1–2 horas antes."
       },
       {
-        en: "Avoid heavy meals beforehand.",
-        es: "Evite comidas pesadas con anticipación."
+        en: "Share any recent injuries, surgeries, or areas of discomfort so pressure can be adjusted.",
+        es: "Informe sobre lesiones o cirugías recientes y zonas sensibles para ajustar la presión."
+      }
+    ],
+    duringTreatment: [
+      {
+        en: "Expect gentle to moderate pressure with long, flowing strokes; communicate if you prefer lighter or deeper work.",
+        es: "Espere presión suave a moderada con pases largos y fluidos; comunique si prefiere un trabajo más ligero o más profundo."
+      },
+      {
+        en: "Normal sensations include warmth and relaxation; tell your therapist if you feel pain or dizziness.",
+        es: "Son normales sensaciones de calor y relajación; avise a su terapeuta si siente dolor o mareo."
       }
     ],
     postTreatment: [
       {
-        en: "Drink plenty of water to support lymphatic drainage.",
-        es: "Beba mucha agua para apoyar el drenaje linfático."
+        en: "Drink water to support lymphatic drainage and avoid heavy workouts for the rest of the day.",
+        es: "Beba agua para apoyar el drenaje linfático y evite entrenamientos intensos el resto del día."
       },
       {
-        en: "Mild soreness may occur if it's your first massage.",
-        es: "Puede ocurrir dolor leve si es su primer masaje."
+        en: "Mild soreness can occur after your first or deeper session; gentle stretching and a warm (not hot) shower can help.",
+        es: "Puede presentarse dolor leve después de la primera sesión o de una más profunda; estiramientos suaves y una ducha tibia (no caliente) pueden ayudar."
       }
     ]
   },
