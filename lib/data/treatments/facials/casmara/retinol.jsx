@@ -12,8 +12,8 @@ export const casmaraRetinolProAge = {
   isPopular: false,
   isPromoEligible: true,
   images: {
-    primary: "/casmara-retinol.jpg",
-    secondary: "/casmara-retinol2.jpg"
+    primary: "/retinol.jpg",
+    secondary: "/retinol2.jpg"
   },
   description: {
     en: "Professional-strength retinol treatment designed to promote cellular renewal, improve texture, and reduce fine lines.",
