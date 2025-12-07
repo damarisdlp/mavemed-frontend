@@ -138,22 +138,44 @@ export const cupping = {
   expectations: {
     preTreatment: [
       {
-        en: "Wear loose clothing.",
-        es: "Vista ropa holgada."
+        en: "Arrive well hydrated and eat a light meal 1–2 hours before your session.",
+        es: "Llegue bien hidratado y coma algo ligero 1–2 horas antes de la sesión."
       },
       {
-        en: "Notify your provider of any skin conditions or medications that affect clotting.",
-        es: "Notifique a su proveedor sobre cualquier condición de piel o medicamentos que afecten la coagulación."
+        en: "Avoid heavy lotions or oils on the areas to be treated on the day of your appointment.",
+        es: "Evite lociones o aceites pesados en las zonas a tratar el día de su cita."
+      },
+      {
+        en: "Let your provider know about blood thinners, recent sunburn, pregnancy, or skin conditions (eczema, psoriasis, wounds).",
+        es: "Informe a su especialista si usa anticoagulantes, tiene quemaduras solares recientes, embarazo o afecciones cutáneas (eczema, psoriasis, heridas)."
+      }
+    ],
+    duringTreatment: [
+      {
+        en: "You will feel a firm pulling/suction sensation; intensity can be adjusted for comfort.",
+        es: "Sentirá una sensación firme de succión o tirón; la intensidad puede ajustarse para su comodidad."
+      },
+      {
+        en: "Expect temporary circular marks to form as cups draw blood flow to the surface.",
+        es: "Es normal que se formen marcas circulares temporales cuando las ventosas llevan flujo sanguíneo a la superficie."
+      },
+      {
+        en: "Mild warmth or pressure is common; tell your provider immediately if you feel sharp pain or dizziness.",
+        es: "El calor o la presión leves son comunes; informe de inmediato si siente dolor agudo o mareo."
       }
     ],
     postTreatment: [
       {
-        en: "Mild soreness or redness is normal.",
-        es: "Dolor leve o enrojecimiento es normal."
+        en: "Mild soreness, redness, or circular bruising can last 3–7 days; this is expected.",
+        es: "Dolor leve, enrojecimiento o moretones circulares pueden durar de 3 a 7 días; es esperado."
       },
       {
-        en: "Stay hydrated to support detox.",
-        es: "Manténgase hidratado para apoyar la desintoxicación."
+        en: "Stay hydrated and avoid hot tubs, saunas, or vigorous exercise for 24 hours.",
+        es: "Manténgase hidratado y evite tinas calientes, saunas o ejercicio intenso por 24 horas."
+      },
+      {
+        en: "Keep treated skin clean, avoid harsh exfoliants, and protect marks from direct sun until they fade.",
+        es: "Mantenga la piel tratada limpia, evite exfoliantes agresivos y proteja las marcas del sol directo hasta que desaparezcan."
       }
     ]
   },
