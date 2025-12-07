@@ -218,29 +218,29 @@ export const rfMicroneedling = {
     {
       treatmentSlug: "wrinkle-reducers-botox",
       optionName: {
-        en: "Any Zone",
-        es: "Cualquier Zona"
+        en: "Botox - Any Zone",
+        es: "Botox - Cualquier Zona"
       }
     },
     {
       treatmentSlug: "serum-add-ons",
       optionName: {
-        en: "Serum Add-On - PN (Face)",
-        es: "Complemento de Suero - PN (Rostro)"
+        en: "Serum Add-On - PN (Face) - Polynucleotide",
+        es: "Complemento de Suero - PN (Rostro) - Polinucleótido"
       }
     },
     {
       treatmentSlug: "serum-add-ons",
       optionName: {
-        en: "Serum Add-On - PRP (Face)",
-        es: "Complemento de Suero - PRP (Rostro)"
+        en: "Serum Add-On - PRP (Face) - Platelet Rich Plasma",
+        es: "Complemento de Suero - PRP (Rostro) - Plasma Rico en Plaquetas"
       }
     },
     {
       treatmentSlug: "serum-add-ons",
       optionName: {
-        en: "Serum Add-On - PDRN (Face)",
-        es: "Complemento de Suero - PDRN (Rostro)"
+        en: "Serum Add-On - PDRN (Face) - Polydeoxyribonucleotide",
+        es: "Complemento de Suero - PDRN (Rostro) - Polidesoxirribonucleótido"
       }
     },
     {
@@ -262,13 +262,6 @@ export const rfMicroneedling = {
       optionName: {
         en: "Casmara - Retinol Pro‑Age Facial",
         es: "Casmara - Facial Retinol Pro‑Age"
-      }
-    },
-    {
-      treatmentSlug: "rf-microneedling",
-      optionName: {
-        en: "Sylfirm X - RF Microneedling - Face",
-        es: "Sylfirm X - Microagujas RF - Rostro"
       }
     }
   ],
