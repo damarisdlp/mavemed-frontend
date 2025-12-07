@@ -111,7 +111,22 @@ export const keloidInjection = {
       es: "Cualquier área con cicatriz queloide"
     }
   ],
-  addOns: [],
+  addOns: [
+    {
+      treatmentSlug: "venus-freeze",
+      optionName: {
+        en: "RF Body Sculpting - Abdomen Firming",
+        es: "Escultura Corporal RF - Abdomen Firme"
+      }
+    },
+    {
+      treatmentSlug: "rf-microneedling",
+      optionName: {
+        en: "Sylfirm X - RF Microneedling - Medium Zone",
+        es: "Sylfirm X - Microagujas RF - Zona Mediana"
+      }
+    }
+  ],
   expectations: {
     preTreatment: [
       {
