@@ -73,7 +73,11 @@
   },
   "reviews": {
     "title": "What Our Patients Say",
-    "subtitle": "Verified reviews from cross-border clients and locals who’ve trusted Mave."
+    "subtitle": "Verified reviews from cross-border clients and locals who’ve trusted Mave.",
+    "rating": "Google rating {{rating}}/5 ({{total}} reviews)",
+    "powered": "Powered by Google",
+    "button": "Review us on Google",
+    "viewAll": "View all on Google"
   },
   "instagram": {
     "title": "Follow us",
