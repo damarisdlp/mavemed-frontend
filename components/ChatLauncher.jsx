@@ -4,13 +4,12 @@ import { useEffect, useRef, useState } from "react";
 import { useTranslation } from "next-i18next";
 
 const WHATSAPP_PHONE = "+526642077675";
-const WHATSAPP_MESSAGE = encodeURIComponent("Hi! I'd like to learn more about your treatments.");
 const INSTAGRAM_HANDLE = "mavemedicalspa";
 const BRAND_COLOR = "#731a2f"; // matches promo banner
 const MIN_TOP = 88; // keep chat popover below header
 
 export default function ChatLauncher() {
-  const { t } = useTranslation("layout");
+  const { t, i18n } = useTranslation("layout");
   const [open, setOpen] = useState(false);
   const [anchor, setAnchor] = useState(null);
   const popoverRef = useRef(null);
@@ -94,7 +93,14 @@ export default function ChatLauncher() {
           </div>
           <div className="flex flex-col">
             <a
-              href={`https://wa.me/${WHATSAPP_PHONE.replace(/\D/g, "")}?text=${WHATSAPP_MESSAGE}`}
+              href={`https://wa.me/${WHATSAPP_PHONE.replace(/\D/g, "")}?text=${encodeURIComponent(
+                t("chat.whatsappMessage", {
+                  defaultValue:
+                    i18n.language === "es"
+                      ? "Hola, me gustaría saber más sobre sus tratamientos."
+                      : "Hi! I'd like to learn more about your treatments.",
+                })
+              )}`}
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-3 px-4 py-3 hover:bg-gray-50 transition text-sm text-gray-900"
