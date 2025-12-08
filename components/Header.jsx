@@ -27,6 +27,9 @@ export default function Header() {
           <NextLink href="/treatments" className="hover:text-black">
             {t("nav.treatments")}
           </NextLink>
+          <NextLink href="/promos" className="hover:text-black">
+            {t("nav.promos") || "Promos"}
+          </NextLink>
           <NextLink href="/aboutus" className="hover:text-black">
             {t("nav.about")}
           </NextLink>
@@ -104,6 +107,9 @@ export default function Header() {
           </div>
           <NextLink href="/treatments" className="text-sm text-gray-700 hover:text-black">
             {t("nav.treatments")}
+          </NextLink>
+          <NextLink href="/promos" className="text-sm text-gray-700 hover:text-black">
+            {t("nav.promos") || "Promos"}
           </NextLink>
           <NextLink href="/aboutus" className="text-sm text-gray-700 hover:text-black">
             {t("nav.about")}
