@@ -696,8 +696,8 @@ export default function TreatmentDetails({ treatment }) {
                       <option value={locale === "es" ? "Días de semana" : "Weekdays"}>
                         {locale === "es" ? "Días de semana" : "Weekdays"}
                       </option>
-                      <option value={locale === "es" ? "Sábados (día ocupado)" : "Saturdays, busy day"}>
-                        {locale === "es" ? "Sábados (día ocupado)" : "Saturdays, busy day"}
+                      <option value={locale === "es" ? "Sábados" : "Saturdays"}>
+                        {locale === "es" ? "Sábados" : "Saturdays"}
                       </option>
                       <option value={locale === "es" ? "Disponibilidad abierta" : "Open availability"}>
                         {locale === "es" ? "Disponibilidad abierta" : "Open availability"}
