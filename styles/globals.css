@@ -17,6 +17,25 @@ body {
   background: #ffffff;
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Hide scrollbars on small screens while keeping scrollable areas usable */
+@media (max-width: 640px) {
+  * {
+    scrollbar-width: none;
+  }
+  *::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/* Utility: hide scrollbars for targeted containers */
+.no-scrollbar {
+  scrollbar-width: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
 }
 /* Tailwind styles (optional override) */
 .btn-primary {
