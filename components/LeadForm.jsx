@@ -1,8 +1,10 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useTranslation } from "next-i18next";
 
 export default function LeadForm() {
   const { t } = useTranslation("home");
+  const phoneRef = useRef(null);
+  const emailRef = useRef(null);
   const [formData, setFormData] = useState({
     firstName: "",
     email: "",
@@ -47,11 +49,37 @@ export default function LeadForm() {
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
+    if (name === "phone" && phoneRef.current) {
+      phoneRef.current.setCustomValidity("");
+    }
+    if (name === "email" && emailRef.current) {
+      emailRef.current.setCustomValidity("");
+    }
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
+      const phoneEl = phoneRef.current;
+      const digitsOnly = (formData.phone || "").replace(/\D/g, "");
+      if (digitsOnly.length < 7) {
+        if (phoneEl) {
+          phoneEl.setCustomValidity(
+            t("leadForm.phoneInvalid", {
+              defaultValue: "Please enter a valid phone number.",
+            })
+          );
+          phoneEl.reportValidity();
+        }
+        return;
+      }
+      if (phoneEl) {
+        phoneEl.setCustomValidity("");
+      }
+      if (emailRef.current) {
+        emailRef.current.setCustomValidity("");
+      }
+
       const submitData = {
         firstName: formData.firstName,
         email: formData.email,
@@ -95,7 +123,6 @@ export default function LeadForm() {
           visitTiming: "",
           locationOrigin: "",
           locationOriginOther: "",
-          whatsapp: "",
         });
         setShowThanks(true);
       } else {
@@ -155,6 +182,15 @@ export default function LeadForm() {
               value={formData.email}
               onChange={handleChange}
               placeholder={t("leadForm.email")}
+              ref={emailRef}
+              onInvalid={(e) =>
+                e.currentTarget.setCustomValidity(
+                  t("leadForm.emailInvalid", {
+                    defaultValue: "Please enter a valid email address.",
+                  })
+                )
+              }
+              onInput={(e) => e.currentTarget.setCustomValidity("")}
               className="border border-gray-300 text-black placeholder:text-black rounded px-4 py-3 focus:outline-none focus:ring-2 focus:ring-black"
               required
             />
@@ -184,16 +220,26 @@ export default function LeadForm() {
                   {t("leadForm.phone")}
                   <span className="text-[#731a2f]">*</span>
                 </label>
-                <input
-                  type="tel"
-                  name="phone"
-                  value={formData.phone}
-                  onChange={handleChange}
-                  placeholder={t("leadForm.phone")}
-                  className="border border-gray-300 text-gray-700 rounded px-4 py-3 focus:outline-none focus:ring-2 focus:ring-black"
-                  required
-                />
-              </div>
+            <input
+              type="tel"
+              name="phone"
+              value={formData.phone}
+              onChange={handleChange}
+              placeholder={t("leadForm.phone")}
+              ref={phoneRef}
+              pattern="[0-9\\s\\-()+]{7,}"
+              onInvalid={(e) =>
+                e.currentTarget.setCustomValidity(
+                  t("leadForm.phoneInvalid", {
+                    defaultValue: "Please enter a valid phone number.",
+                  })
+                )
+              }
+              onInput={(e) => e.currentTarget.setCustomValidity("")}
+              className="border border-gray-300 text-gray-700 rounded px-4 py-3 focus:outline-none focus:ring-2 focus:ring-black"
+              required
+            />
+          </div>
             </div>
 
             <div className="flex flex-col">
