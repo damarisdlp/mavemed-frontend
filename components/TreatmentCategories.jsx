@@ -1,9 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { useRouter } from 'next/router';
+import { useRouter } from "next/router";
 import { allTreatments } from "@/lib/data/allTreatments";
-import { dispatchChatOpen } from "@/lib/utils/chat";
 
 export default function TreatmentCategories() {
   // Group treatments by category
@@ -27,7 +26,8 @@ export default function TreatmentCategories() {
 
   const categories = Object.values(categoriesMap);
 
-  const { locale } = useRouter();
+  const router = useRouter();
+  const { locale } = router;
 
   const getLocalized = (field) => {
     if (typeof field === 'object' && field[locale]) return field[locale];
@@ -117,7 +117,7 @@ export default function TreatmentCategories() {
                     <div className="flex flex-col gap-2">
                       <button
                         type="button"
-                        onClick={dispatchChatOpen}
+                        onClick={() => router.push(`/treatments/${service.slug}?lead=open`)}
                         className="bg-black text-white px-4 py-2 rounded-full text-xs hover:bg-[#731a2f] transition text-center"
                         aria-label={getLocalized(translatedStrings.bookService(service.name))}
                       >
