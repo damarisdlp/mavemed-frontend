@@ -1,10 +1,99 @@
 import Image from "next/image";
 import Link from "next/link";
+import "keen-slider/keen-slider.min.css";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
+import { useKeenSlider } from "keen-slider/react";
 import { allTreatments } from "@/lib/data/allTreatments";
 
 export default function TreatmentCategories() {
+  const CategorySlider = ({ services }) => {
+    const router = useRouter();
+    const { locale } = router;
+    const getLocalized = (field) => {
+      if (typeof field === "object" && field[locale]) return field[locale];
+      if (typeof field === "object" && field["en"]) return field["en"];
+      return field;
+    };
+    const [sliderRef, slider] = useKeenSlider({
+      loop: false,
+      slides: {
+        perView: 1.05,
+        spacing: 12,
+      },
+      breakpoints: {
+        "(min-width: 640px)": {
+          slides: { perView: 2.1, spacing: 14 },
+        },
+      },
+    });
+
+    return (
+      <div className="relative block md:hidden mb-8">
+        <div ref={sliderRef} className="keen-slider overflow-visible">
+          {services.map((service, idx) => (
+            <div key={idx} className="keen-slider__slide px-1">
+              <div className="bg-[#f9f9f9] rounded-lg overflow-hidden shadow-sm hover:shadow-md transition">
+                <div className="relative h-56 w-full">
+                  <Image
+                    src={service.image}
+                    alt={`${getLocalized(service.name)} – ${getLocalized(service.description)}`}
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <div className="p-4 flex flex-col gap-3">
+                  <div>
+                    <h3 className="text-lg text-black font-serif font-medium mb-1">
+                      {getLocalized(service.name)}
+                    </h3>
+                    <p className="text-sm text-gray-600">
+                      {getLocalized(service.description)}
+                    </p>
+                  </div>
+                  <div className="flex flex-col gap-2">
+                    <button
+                      type="button"
+                      onClick={() => router.push(`/treatments/${service.slug}?lead=open`)}
+                      className="bg-black text-white px-4 py-2 rounded-full text-xs hover:bg-[#731a2f] transition text-center"
+                      aria-label={getLocalized(translatedStrings.bookService(service.name))}
+                    >
+                      {getLocalized(translatedStrings.bookNow)}
+                    </button>
+                    <Link
+                      href={`/treatments/${service.slug}`}
+                      className="border border-gray-300 text-black px-4 py-2 rounded-full text-xs hover:border-black transition text-center"
+                      aria-label={getLocalized(translatedStrings.learnMoreAbout(service.name))}
+                    >
+                      {getLocalized(translatedStrings.learnMore)}
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+        {slider && (
+          <>
+            <button
+              type="button"
+              onClick={() => slider.current?.prev()}
+              className="absolute left-0 top-[40%] sm:top-1/2 -translate-y-1/2 bg-white border border-gray-300 text-gray-700 rounded-full shadow px-3 py-2 hover:bg-gray-100"
+            >
+              ‹
+            </button>
+            <button
+              type="button"
+              onClick={() => slider.current?.next()}
+              className="absolute right-0 top-[40%] sm:top-1/2 -translate-y-1/2 bg-white border border-gray-300 text-gray-700 rounded-full shadow px-3 py-2 hover:bg-gray-100"
+            >
+              ›
+            </button>
+          </>
+        )}
+      </div>
+    );
+  };
   // Group treatments by category
   const categoriesMap = {};
   allTreatments.forEach((t) => {
@@ -25,7 +114,6 @@ export default function TreatmentCategories() {
   });
 
   const categories = Object.values(categoriesMap);
-
   const router = useRouter();
   const { locale } = router;
 
@@ -63,18 +151,18 @@ export default function TreatmentCategories() {
 
   return (
     <div className="bg-white scroll-smooth relative">
-      <div className="container mx-auto px-4 pt-12 pb-4">
+      <div className="w-full max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-4">
 
         {/* Sticky Category Menu */}
         <div
           id="category-menu"
-          className="flex flex-wrap gap-4 mb-12 justify-center sticky top-[90px] bg-white z-20 py-4 border-b border-gray-200"
+          className="flex flex-nowrap items-center gap-3 sm:gap-4 mb-12 justify-start sticky top-[102px] sm:top-[95px] bg-white z-30 py-2 sm:py-3 border-b border-gray-200 overflow-x-auto no-scrollbar px-3"
         >
           {categories.map((category, i) => (
             <a
               key={i}
               href={`#${getLocalized(category.title).replace(/\s+/g, "-").toLowerCase()}`}
-              className="text-sm md:text-base px-4 py-2 rounded-full border border-gray-300 text-black hover:border-black hover:text-[#731a2f] transition"
+              className="inline-flex shrink-0 items-center text-sm md:text-base px-4 py-1.5 sm:py-2 rounded-full border border-gray-300 text-black hover:border-black hover:text-[#731a2f] transition whitespace-nowrap min-h-[36px]"
             >
               {getLocalized(category.title)}
             </a>
@@ -91,7 +179,12 @@ export default function TreatmentCategories() {
             <h2 className="text-2xl text-black md:text-3xl font-serif font-medium mb-6">
               {getLocalized(category.title)}
             </h2>
-            <div className="grid md:grid-cols-3 gap-8">
+
+            {/* Mobile slider per category */}
+            <CategorySlider services={category.services} />
+
+            {/* Desktop grid */}
+            <div className="hidden md:grid md:grid-cols-3 gap-8">
               {category.services.map((service, j) => (
                 <div
                   key={j}
