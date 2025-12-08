@@ -5,7 +5,8 @@ import { useEffect, useRef, useState } from "react";
 import { AccordionToggle } from "./AccordionToggle";
 
 export default function TreatmentDetails({ treatment }) {
-  const { locale: routerLocale } = useRouter();
+  const router = useRouter();
+  const { locale: routerLocale } = router;
   const locale = routerLocale || "en";
 
   const [leadOpen, setLeadOpen] = useState(false);
@@ -148,6 +149,16 @@ export default function TreatmentDetails({ treatment }) {
     setLeadStep("form1");
     setLeadOpen(true);
   };
+
+  useEffect(() => {
+    if (router?.query?.lead === "open") {
+      openLeadForm(false);
+      // remove query to avoid reopening on navigation/refresh
+      const cleanPath = router.asPath.replace(/\?.*/, "");
+      router.replace(cleanPath, undefined, { shallow: true }).catch(() => {});
+    }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [router?.query?.lead]);
 
   const parsePriceValue = (priceString) => {
     const priceText = getLocalizedPrice(priceString);
