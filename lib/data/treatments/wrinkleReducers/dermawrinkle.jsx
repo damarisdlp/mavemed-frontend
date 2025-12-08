@@ -10,7 +10,7 @@ export const dermawrinkle = {
     es: "Reductor de Arrugas - Dermawrinkle"
   },
   isPopular: true,
-  isPromoEligible: true,
+  isPromoActive: true,
   images: {
     primary: "/dermawrinkle.jpg",
     secondary: "/dermawrinkle2.jpg",
@@ -40,31 +40,54 @@ export const dermawrinkle = {
   pricing: {
     startingPrice: "$4.75",
     startingPriceCurrency: "USD",
-    promoPrice: {
-      en: "45 units for $200",
-      es: "45 unidades por $200"
-    },
-    promoPriceCurrency: "USD",
     options: [
       {
         optionName: {
           en: "Dermawrinkle - Any Zone",
-          es: "Cualquier Zona"
+          es: "Dermawrinkle - Cualquier Zona"
         },
-        isPromoEligible: true,
         optionPrice: {
-          en: "Each unit at $6.25",
-          es: "Cada unidad a $6.25"
+          en: "Each unit at $4.75",
+          es: "Cada unidad a $4.75"
         },
         optionCurrency: "USD",
-        optionPromoPrice: {
-          en: "45 units for $250",
-          es: "45 unidades por $250"
-        },
-        optionPromoPriceCurrency: "USD",
         notes: null,
       },
     ],
+  },
+  promoDetails: {
+    validTill: {
+      en: "Valid through 2025-12-31",
+      es: "Válido hasta 2025-12-31"
+    },
+    headline: {
+      en: "Exclusive Dermawrinkle Savings",
+      es: "Ahorro Exclusivo en Dermawrinkle"
+    },
+    description: {
+      en: "Limited-time per-unit discount with our 45-unit exclusive pack—ideal for multiple areas or maintenance.",
+      es: "Descuento por unidad por tiempo limitado con nuestro paquete exclusivo de 45 unidades, ideal para varias zonas o mantenimiento."
+    },
+    options: [
+      {
+        optionName: {
+          en: "Dermawrinkle - 45-Unit Exclusive Pack",
+          es: "Dermawrinkle - Paquete Exclusivo de 45 Unidades"
+        },
+        optionPromoPrice: "200",
+        optionPromoPriceCurrency: "USD",
+        notes: [
+          {
+            en: "Equivalent to $4.44 per unit when purchased as the 45-unit pack.",
+            es: "Equivale a $4.44 por unidad al comprar el paquete de 45 unidades."
+          },
+          {
+            en: "Touch-ups at this rate apply only within 1–2 weeks of the initial application.",
+            es: "Los retoques a esta tarifa aplican solo dentro de 1–2 semanas de la aplicación inicial."
+          }
+        ]
+      }
+    ]
   },
   goals: [
     {
