@@ -7,11 +7,11 @@ export default function HeroSection() {
 
   return (
     <section className="bg-white min-h-[65vh] md:min-h-[75vh] flex flex-col justify-center items-center px-6 py-6 text-center relative">
-      <h1 className="text-4xl text-black sm:text-5xl md:text-6xl font-serif font-medium leading-tight max-w-4xl">
+      <h1
+        className="text-black font-serif font-medium leading-tight max-w-[92vw] sm:max-w-4xl text-[clamp(1.6rem,4.5vw,3rem)] mt-2 break-words"
+        style={{ textWrap: "balance" }}
+      >
         {t("heroSection.heading1")}
-      </h1>
-      <h1 className="text-4xl text-black sm:text-4xl md:text-4xl font-serif font-medium leading-tight max-w-4xl">
-        {t("heroSection.heading2")}
       </h1>
       <p className="text-base sm:text-lg text-gray-600 mt-4 max-w-4xl">
         {t("heroSection.p1")}
