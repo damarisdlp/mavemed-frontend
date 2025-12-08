@@ -10,7 +10,7 @@ export const botox = {
     es: "Reductor de Arrugas - Botox®"
   },
   isPopular: true,
-  isPromoEligible: true,
+  isPromoActive: true,
   images: {
     primary: "/botox.jpg",
     secondary: "/botox2.jpg",
@@ -40,31 +40,54 @@ export const botox = {
   pricing: {
     startingPrice: "$6.25",
     startingPriceCurrency: "USD",
-    promoPrice: {
-      en: "45 units for $250",
-      es: "45 unidades por $250"
-    },
-    promoPriceCurrency: "USD",
     options: [
       {
         optionName: {
           en: "Botox - Any Zone",
-          es: "Cualquier Zona"
+          es: "Botox - Cualquier Zona"
         },
-        isPromoEligible: true,
         optionPrice: {
           en: "Each unit at $6.25",
           es: "Cada unidad a $6.25"
         },
         optionCurrency: "USD",
-        optionPromoPrice: {
-          en: "45 units for $250",
-          es: "45 unidades por $250"
-        },
-        optionPromoPriceCurrency: "USD",
         notes: null,
       },
     ],
+  },
+  promoDetails: {
+    validTill: {
+      en: "Valid through 2025-12-31",
+      es: "Válido hasta 2025-12-31"
+    },
+    headline: {
+      en: "Exclusive Botox® Savings",
+      es: "Ahorro Exclusivo en Botox®"
+    },
+    description: {
+      en: "Lock in a limited-time per-unit discount with our 45-unit exclusive pack. Ideal for treating multiple areas or maintaining results.",
+      es: "Aprovecha un descuento por unidad por tiempo limitado con nuestro paquete exclusivo de 45 unidades. Ideal para tratar varias zonas o mantener resultados."
+    },
+    options: [
+      {
+        optionName: {
+          en: "Botox® - 45-Unit Exclusive Pack",
+          es: "Botox® - Paquete Exclusivo de 45 Unidades"
+        },
+        optionPromoPrice: "250",
+        optionPromoPriceCurrency: "USD",
+        notes: [
+          {
+            en: "Equivalent to $5.55 per unit when purchased as the 45-unit pack.",
+            es: "Equivale a $5.55 por unidad al comprar el paquete de 45 unidades."
+          },
+          {
+            en: "Touch-ups at this rate apply only within 1–2 weeks of the initial application.",
+            es: "Los retoques a esta tarifa aplican solo dentro de 1–2 semanas de la aplicación inicial."
+          }
+        ]
+      }
+    ]
   },
   goals: [
     {
