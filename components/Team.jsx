@@ -1,7 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
+import "keen-slider/keen-slider.min.css";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
+import { useKeenSlider } from "keen-slider/react";
 import { allStaff } from "@/lib/data/allStaff";
 import { useTranslation } from "next-i18next";
 
@@ -66,11 +68,11 @@ export default function Team() {
 
   return (
     <div className="bg-white scroll-smooth relative">
-      <div className="container mx-auto px-4 pt-12 pb-4">
+      <div className="w-full max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-4">
         {/* Sticky Category Menu */}
         <div
           id="category-menu"
-          className="flex flex-wrap gap-4 mb-12 justify-center sticky top-[95px] bg-white z-20 py-4 border-b border-gray-200"
+          className="flex flex-nowrap items-center gap-3 sm:gap-4 mb-12 justify-start sticky top-[100px] sm:top-[105px] bg-white z-30 py-2 sm:py-3 border-b border-gray-200 overflow-x-auto no-scrollbar px-3"
         >
           {categories.map((category, i) => (
             <CategoryLink key={i} category={category.category} />
@@ -124,6 +126,16 @@ function CategorySection({ category, staff, learnMoreLabel }) {
     .replace(/\s+/g, "-")
     .toLowerCase();
 
+  const [sliderRef, slider] = useKeenSlider({
+    loop: false,
+    slides: { perView: 1.05, spacing: 12 },
+    breakpoints: {
+      "(min-width: 640px)": {
+        slides: { perView: 2.1, spacing: 14 },
+      },
+    },
+  });
+
   return (
     <div
       id={categorySlug}
@@ -132,7 +144,66 @@ function CategorySection({ category, staff, learnMoreLabel }) {
       <h2 className="text-2xl text-black md:text-3xl font-serif font-medium mb-6">
         {category}
       </h2>
-      <div className="grid md:grid-cols-3 gap-8">
+
+      {/* Mobile slider */}
+      <div className="relative block md:hidden mb-10">
+        <div ref={sliderRef} className="keen-slider overflow-visible">
+          {staff.map((staffMember, j) => (
+            <div key={j} className="keen-slider__slide px-1">
+              <div className="bg-[#f9f9f9] rounded-lg overflow-hidden shadow-sm hover:shadow-md transition">
+                <div className="relative h-[360px] w-full">
+                  <Image
+                    src={staffMember.image}
+                    alt={`${staffMember.name} in Tijuana – ${staffMember.title}`}
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <div className="p-4 text-center flex flex-col gap-2">
+                  <div>
+                    <h3 className="text-lg text-black font-serif font-medium mb-1">
+                      {staffMember.name}
+                    </h3>
+                    <p className="text-sm text-gray-600 mb-2">
+                      {staffMember.title}
+                    </p>
+                  </div>
+                  <div className="flex justify-center">
+                    <Link
+                      href={`/ourteam/${staffMember.slug.toLowerCase()}`}
+                      className="inline-block border border-gray-300 text-black px-4 py-2 rounded-full text-xs hover:border-black transition"
+                      aria-label={`${learnMoreLabel} ${staffMember.name}`}
+                    >
+                      {learnMoreLabel}
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+        {slider && (
+          <>
+            <button
+              type="button"
+              onClick={() => slider.current?.prev()}
+              className="absolute left-0 top-[40%] sm:top-1/2 -translate-y-1/2 bg-white border border-gray-300 text-gray-700 rounded-full shadow px-3 py-2 hover:bg-gray-100"
+            >
+              ‹
+            </button>
+            <button
+              type="button"
+              onClick={() => slider.current?.next()}
+              className="absolute right-0 top-[40%] sm:top-1/2 -translate-y-1/2 bg-white border border-gray-300 text-gray-700 rounded-full shadow px-3 py-2 hover:bg-gray-100"
+            >
+              ›
+            </button>
+          </>
+        )}
+      </div>
+
+      {/* Desktop grid */}
+      <div className="hidden md:grid md:grid-cols-3 gap-8">
         {staff.map((staffMember, j) => (
           <div
             key={j}
