@@ -11,7 +11,10 @@ export default function ContactCTA() {
       style={{ backgroundColor: "#731a2f" }}
       className="text-white text-center py-16 px-6"
     >
-      <h2 className="text-3xl font-medium font-serif mb-2">
+      <h2
+        className="font-medium font-serif mb-3 leading-tight text-[clamp(2rem,5vw,2.6rem)] max-w-[92vw] mx-auto"
+        style={{ textWrap: "balance" }}
+      >
         {t("contactCta.title")}
       </h2>
       <p className="text-gray-100 text-lg">{t("contactCta.line1")}</p>
