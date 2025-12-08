@@ -1,5 +1,6 @@
 "use client";
 
+import "keen-slider/keen-slider.min.css";
 import { useEffect, useState } from "react";
 import { useKeenSlider } from "keen-slider/react";
 import { useTranslation } from "next-i18next";
