@@ -21,8 +21,8 @@ export default async function handler(req, res) {
   };
   const scriptUrl =
     process.env.GOOGLE_SCRIPT_URL ||
-"https://script.google.com/macros/s/AKfycby6s-AnbrPpBvel2wtHZNbk_PDboWf-DFcWWoLBhpovYwO96eFGQiQ7_h94Dd98m98/exec";
-    try {
+    "https://script.google.com/macros/s/AKfycby6s-AnbrPpBvel2wtHZNbk_PDboWf-DFcWWoLBhpovYwO96eFGQiQ7_h94Dd98m98/exec";
+  try {
     const sheetResponse = await fetch(scriptUrl, {
       method: "POST",
       headers: {
