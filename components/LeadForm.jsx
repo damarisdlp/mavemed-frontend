@@ -146,7 +146,10 @@ export default function LeadForm() {
       <section className="bg-[#efeee7] w-full px-4 sm:px-6 py-6 justify-center items-center text-center relative">
         <div className="w-full max-w-screen-xl mx-auto grid md:grid-cols-2 gap-6 items-center">
           <div>
-            <h2 className="text-black text-3xl md:text-3xl font-serif font-medium mb-4">
+            <h2
+              className="text-black font-serif font-medium mb-3 leading-snug text-[clamp(1.6rem,4.5vw,2.3rem)] max-w-full break-words"
+              style={{ textWrap: "balance" }}
+            >
               {t("leadForm.title")}
             </h2>
             <p className="text-gray-700 text-base md:text-m">
