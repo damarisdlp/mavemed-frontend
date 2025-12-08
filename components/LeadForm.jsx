@@ -143,8 +143,8 @@ export default function LeadForm() {
 
   return (
     <>
-      <section className="bg-[#efeee7] px-6 py-6 justify-center items-center text-center relative">
-        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-5 items-center">
+      <section className="bg-[#efeee7] w-full px-4 sm:px-6 py-6 justify-center items-center text-center relative">
+        <div className="w-full max-w-screen-xl mx-auto grid md:grid-cols-2 gap-6 items-center">
           <div>
             <h2 className="text-black text-3xl md:text-3xl font-serif font-medium mb-4">
               {t("leadForm.title")}
@@ -195,7 +195,7 @@ export default function LeadForm() {
               required
             />
 
-            <div className="grid grid-cols-[1fr_2fr] gap-3">
+            <div className="grid grid-cols-1 sm:grid-cols-[1fr_2fr] gap-3">
               <div className="flex flex-col">
                 <label className="text-sm text-gray-700 flex items-center gap-1">
                   {t("leadForm.countryCode") || "Country Code"}
