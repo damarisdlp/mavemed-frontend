@@ -10,7 +10,10 @@ export default function LocationSection() {
     <section id="location" className="bg-[#efeee7] py-14 px-6">
       <div className="max-w-6xl mx-auto">
         {/* Heading */}
-        <h2 className="text-4xl font-serif text-black text-center font-medium mb-4">
+        <h2
+          className="font-serif text-black text-center font-medium mb-4 leading-snug text-[clamp(1.8rem,4.5vw,2.5rem)] whitespace-normal"
+          style={{ textWrap: "balance" }}
+        >
           {t("location.heading")}
         </h2>
         <p className="text-center text-gray-600 mb-10">
