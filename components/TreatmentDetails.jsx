@@ -11,6 +11,8 @@ export default function TreatmentDetails({ treatment }) {
   const [leadOpen, setLeadOpen] = useState(false);
   const [leadStep, setLeadStep] = useState("form1");
   const [leadService, setLeadService] = useState("");
+  const [leadOptions, setLeadOptions] = useState([]);
+  const [leadSelectedOptions, setLeadSelectedOptions] = useState([]);
   const initialLeadForm = {
     firstName: "",
     email: "",
@@ -91,6 +93,61 @@ export default function TreatmentDetails({ treatment }) {
   const pricing = treatment?.pricing || {};
   const promoDetails =
     treatment?.isPromoActive && treatment?.promoDetails ? treatment.promoDetails : null;
+
+  const buildLeadOptions = () => {
+    const options = [];
+    // Promo options first if exist
+    if (promoDetails?.options?.length) {
+      promoDetails.options.forEach((opt) => {
+        const name = getLocalized(opt.optionName) || getLocalized(treatment.serviceDisplayName);
+        const price =
+          opt.optionPromoPrice != null
+            ? `${opt.optionPromoPrice}${opt.optionPromoPriceCurrency ? ` ${opt.optionPromoPriceCurrency}` : ""}`
+            : "";
+        const label = price ? `${name} – ${price}` : name;
+        options.push(label);
+      });
+    }
+
+    // Regular options
+    if (pricing?.options?.length) {
+      pricing.options.forEach((opt) => {
+        const name = getLocalized(opt.optionName) || getLocalized(treatment.serviceDisplayName);
+        const price =
+          opt.optionPrice != null
+            ? `${getLocalizedPrice(opt.optionPrice)}${opt.optionCurrency ? ` ${opt.optionCurrency}` : ""}`
+            : "";
+        const label = price ? `${name} – ${price}` : name;
+        options.push(label);
+      });
+    } else {
+      const name = getLocalized(treatment.serviceDisplayName);
+      const price =
+        getLocalizedPrice(pricing?.startingPrice) && pricing?.startingPriceCurrency
+          ? `${getLocalizedPrice(pricing.startingPrice)} ${pricing.startingPriceCurrency}`
+          : getLocalizedPrice(pricing?.startingPrice) || "";
+      const label = price ? `${name} – ${price}` : name;
+      options.push(label);
+    }
+
+    return options;
+  };
+
+  const openLeadForm = (preferPromo = false) => {
+    const options = buildLeadOptions();
+    setLeadOptions(options);
+    const defaultSelection = (() => {
+      if (preferPromo && promoDetails?.options?.length) {
+        return [options[0]].filter(Boolean);
+      }
+      return options.length ? [options[0]] : [];
+    })();
+    setLeadSelectedOptions(defaultSelection);
+    const serviceText = `${getLocalized(treatment.serviceDisplayName)}`;
+    setLeadService(serviceText);
+    setLeadStep("form1");
+    setLeadOpen(true);
+  };
 
   const parsePriceValue = (priceString) => {
     const priceText = getLocalizedPrice(priceString);
@@ -194,10 +251,7 @@ export default function TreatmentDetails({ treatment }) {
               <button
                 type="button"
                 onClick={() => {
-                  const serviceText = `${getLocalized(treatment.serviceDisplayName)}`;
-                  setLeadService(serviceText);
-                  setLeadStep("form1");
-                  setLeadOpen(true);
+                  openLeadForm(false);
                 }}
                 className="mt-2 inline-block w-full text-center bg-white text-black border border-black hover:bg-black hover:text-white font-medium py-2 rounded transition duration-200"
               >
@@ -248,22 +302,7 @@ export default function TreatmentDetails({ treatment }) {
                 <button
                   type="button"
                   onClick={() => {
-                    const firstOptionName = promoDetails.options?.[0]?.optionName
-                      ? getLocalized(promoDetails.options[0].optionName)
-                      : getLocalized(treatment.serviceDisplayName);
-                    const priceText = promoDetails.options?.[0]?.optionPromoPrice
-                      ? `${promoDetails.options[0].optionPromoPrice}${
-                          promoDetails.options[0].optionPromoPriceCurrency
-                            ? ` ${promoDetails.options[0].optionPromoPriceCurrency}`
-                            : ""
-                        }`
-                      : "";
-                    const serviceText = priceText
-                      ? `${firstOptionName} – ${priceText}`
-                      : `${firstOptionName}`;
-                    setLeadService(serviceText || getLocalized(treatment.serviceDisplayName));
-                    setLeadStep("form1");
-                    setLeadOpen(true);
+                    openLeadForm(true);
                   }}
                   className="mt-2 inline-block w-full text-center bg-white text-black border border-white hover:bg-transparent hover:text-white font-medium py-2 rounded transition duration-200"
                 >
@@ -346,6 +385,7 @@ export default function TreatmentDetails({ treatment }) {
                 setLeadStep("form1");
                 setLeadForm(initialLeadForm);
                 setLeadSnapshot(null);
+                setLeadSelectedOptions([]);
               }}
               className="absolute top-3 right-3 text-gray-500 hover:text-black"
               aria-label="Close"
@@ -367,14 +407,28 @@ export default function TreatmentDetails({ treatment }) {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                   <div className="md:col-span-2">
                     <label className="block text-sm text-gray-700 mb-1">
-                      {locale === "es" ? "Tratamiento" : "Treatment"}
+                      {locale === "es" ? "Selecciona tratamiento" : "Select treatment option"}
                     </label>
-                    <input
-                      type="text"
-                      value={leadService}
-                      readOnly
-                      className="w-full border border-gray-300 rounded px-3 py-2 bg-gray-100 text-gray-700 cursor-not-allowed"
-                    />
+                    <select
+                      multiple
+                      value={leadSelectedOptions}
+                      onChange={(e) => {
+                        const values = Array.from(e.target.selectedOptions).map((opt) => opt.value);
+                        setLeadSelectedOptions(values);
+                      }}
+                      className="w-full border border-gray-300 rounded px-3 py-2 text-gray-700 h-28"
+                    >
+                      {leadOptions.map((opt) => (
+                        <option key={opt} value={opt}>
+                          {opt}
+                        </option>
+                      ))}
+                    </select>
+                    <p className="text-xs text-gray-500 mt-1">
+                      {locale === "es"
+                        ? "Puedes elegir una o varias opciones."
+                        : "You can choose one or multiple options."}
+                    </p>
                   </div>
 
                   <div>
@@ -715,7 +769,10 @@ export default function TreatmentDetails({ treatment }) {
                           countryCode: leadForm.countryCode,
                           phone: leadForm.phone,
                           phoneNumber: leadForm.phone,
-                          treatmentInterest: leadService,
+                          treatmentInterest:
+                            leadSelectedOptions.length > 0
+                              ? leadSelectedOptions.join(" | ")
+                              : leadService,
                           whenToVisit: leadForm.visitTiming,
                           visitingFrom,
                           prefCom: leadForm.preferredChannel,
@@ -736,6 +793,10 @@ export default function TreatmentDetails({ treatment }) {
                           firstName: leadForm.firstName,
                           bestDay: leadForm.bestDays,
                           bestTime: leadForm.bestTimes,
+                          treatmentInterest:
+                            leadSelectedOptions.length > 0
+                              ? leadSelectedOptions.join(" | ")
+                              : leadService,
                         });
                         setLeadStep("channels");
                       } catch (err) {
@@ -788,7 +849,7 @@ export default function TreatmentDetails({ treatment }) {
                       const msg =
                         locale === "es"
                           ? [
-                              `Hola, me interesa ${leadService}.`,
+                              `Hola, me interesa ${leadSnapshot?.treatmentInterest || leadService}.`,
                               leadSnapshot?.firstName || leadForm.firstName
                                 ? `Mi nombre es ${leadSnapshot?.firstName || leadForm.firstName}.`
                                 : null,
@@ -799,7 +860,7 @@ export default function TreatmentDetails({ treatment }) {
                               .filter(Boolean)
                               .join(" ")
                           : [
-                              `Hi, I'm interested in ${leadService}.`,
+                              `Hi, I'm interested in ${leadSnapshot?.treatmentInterest || leadService}.`,
                               leadSnapshot?.firstName || leadForm.firstName
                                 ? `My name is ${leadSnapshot?.firstName || leadForm.firstName}.`
                                 : null,
@@ -814,6 +875,7 @@ export default function TreatmentDetails({ treatment }) {
                       setLeadOpen(false);
                       setLeadForm(initialLeadForm);
                       setLeadSnapshot(null);
+                      setLeadSelectedOptions([]);
                       setLeadStep("form1");
                     }}
                   >
@@ -827,6 +889,7 @@ export default function TreatmentDetails({ treatment }) {
                       setLeadOpen(false);
                       setLeadForm(initialLeadForm);
                       setLeadSnapshot(null);
+                      setLeadSelectedOptions([]);
                       setLeadStep("form1");
                     }}
                   >
