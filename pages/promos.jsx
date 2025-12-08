@@ -58,10 +58,16 @@ export default function PromosPage() {
   return (
     <>
       <Head>
-        <title>Promotions | Mave Medical Spa</title>
+        <title>
+          {locale === "es" ? "Promociones | Mave Medical Spa" : "Promotions | Mave Medical Spa"}
+        </title>
         <meta
           name="description"
-          content="Current promotions and special offers at Mave Medical Spa."
+          content={
+            locale === "es"
+              ? "Promociones y ofertas especiales vigentes en Mave Medical Spa."
+              : "Current promotions and special offers at Mave Medical Spa."
+          }
         />
       </Head>
 
@@ -71,10 +77,12 @@ export default function PromosPage() {
       <main className="bg-white">
         <section className="w-full max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
           <h1 className="text-black font-serif font-medium mb-4 leading-tight text-[clamp(2rem,5vw,3rem)]">
-            Current Promotions
+            {locale === "es" ? "Promociones Vigentes" : "Current Promotions"}
           </h1>
           <p className="text-gray-700 mb-8 max-w-3xl">
-            Explore our current promo-eligible services. Reserve now or learn more about each treatment.
+            {locale === "es"
+              ? "Explora nuestros servicios con precio promocional. Reserva ahora o conoce más sobre cada tratamiento."
+              : "Explore our current promo-eligible services. Reserve now or learn more about each treatment."}
           </p>
 
           {categories.length === 0 && (
@@ -122,13 +130,13 @@ export default function PromosPage() {
                           onClick={() => router.push(`/treatments/${card.slug}?lead=open`)}
                           className="bg-black text-white px-4 py-2 rounded-full text-xs hover:bg-[#731a2f] transition text-center"
                         >
-                          Reserve Now
+                          {locale === "es" ? "Reservar ahora" : "Reserve Now"}
                         </button>
                         <Link
                           href={`/treatments/${card.slug}`}
                           className="border border-gray-300 text-black px-4 py-2 rounded-full text-xs hover:border-black transition text-center"
                         >
-                          Learn More
+                          {locale === "es" ? "Más información" : "Learn More"}
                         </Link>
                       </div>
                     </div>
