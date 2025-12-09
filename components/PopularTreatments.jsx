@@ -82,7 +82,9 @@ export default function PopularTreatments() {
                   <div className="flex flex-col gap-2">
                     <button
                       type="button"
-                      onClick={dispatchChatOpen}
+                      onClick={() => {
+                        router.push(`/treatments/${treatment.urlSlug}?lead=open`);
+                      }}
                       className="bg-black text-white px-4 py-2 rounded-full text-xs hover:bg-[#731a2f] text-center"
                     >
                       {t("treatments.bookNow")}
