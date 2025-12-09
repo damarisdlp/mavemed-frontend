@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-import { allTreatments } from "@/lib/data/allTreatments";
 import { useRouter } from "next/router";
+import StaffFavorites from "./StaffFavorites";
 
 export default function StaffDetails({ member }) {
   if (!member) return null;
@@ -14,12 +14,6 @@ export default function StaffDetails({ member }) {
     return field ?? "";
   };
 
-  const hasFavorites = member.favorites?.length > 0;
-  const getLocalizedPrice = (field) => {
-    if (field == null) return "";
-    if (typeof field === "object") return getLocalized(field);
-    return field;
-  };
   const category = getLocalized(member.category);
   const displayName = getLocalized(member.displayName);
   const title = getLocalized(member.title);
@@ -69,77 +63,7 @@ export default function StaffDetails({ member }) {
           </div>
         </div>
 
-        {/* Favorite Treatments */}
-        {hasFavorites && (
-          <div className="mt-12">
-            <h2 className="text-2xl text-black font-serif font-medium mb-4">
-              {locale === "es"
-                ? `Tratamientos favoritos de ${displayName}`
-                : `${displayName}'s Favorite Treatments`}
-            </h2>
-
-            {member.favorites.map((favorite, idx) => {
-              const serviceName = getLocalized(favorite.serviceName);
-              const match =
-                allTreatments.find(
-                  (t) =>
-                    getLocalized(t.serviceDisplayName) === serviceName ||
-                    t.urlSlug === favorite.link?.split("/").pop()
-                ) || {};
-              const matchDescription = getLocalized(match.description);
-
-              const hasPromo =
-                match?.isPromoEligible &&
-                typeof getLocalizedPrice(match?.pricing?.promoPrice) === "string" &&
-                getLocalizedPrice(match?.pricing?.promoPrice).trim() !== "";
-
-              const startingPrice = getLocalizedPrice(match?.pricing?.startingPrice);
-              const promoPrice = getLocalizedPrice(match?.pricing?.promoPrice);
-              return (
-                <div key={idx} className="mb-6">
-                  <p className="text-md font-semibold text-black">
-                    {serviceName}
-                  </p>
-
-                  {matchDescription && (
-                    <p className="text-sm text-gray-700 mt-1">
-                      {matchDescription}
-                    </p>
-                  )}
-
-                  {match?.pricing?.startingPrice && (
-                    <p className="text-sm text-gray-700 mt-2">
-                      <span className="font-semibold">
-                        {locale === "es" ? "Precio:" : "Price:"}
-                      </span>{" "}
-                      {startingPrice} {match.pricing.startingPriceCurrency}
-                      {hasPromo && (
-                        <>
-                          {" "} |{" "}
-                          <span className="font-semibold">
-                            {locale === "es" ? "Precio exclusivo:" : "Exclusive Pricing:"}
-                          </span>{" "}
-                          {promoPrice} {match.pricing.promoPriceCurrency}
-                        </>
-                      )}
-                    </p>
-                  )}
-
-                  {favorite.link && (
-                    <Link
-                      href={favorite.link}
-                      className="text-sm underline text-black mt-1 inline-block hover:text-[#731a2f]"
-                    >
-                      {locale === "es"
-                        ? `Conoce más sobre ${serviceName}`
-                        : `Learn more about ${serviceName}`}
-                    </Link>
-                  )}
-                </div>
-              );
-            })}
-          </div>
-        )}
+        <StaffFavorites favorites={member.favorites || []} locale={locale} displayName={displayName} />
       </main>
     </div>
   );
