@@ -1,13 +1,15 @@
 import Image from "next/image";
 import Link from "next/link";
 import { allTreatments } from "@/lib/data/allTreatments";
+import { useRouter } from "next/router";
 
 export default function StaffDetails({ member }) {
   if (!member) return null;
+  const { locale = "en" } = useRouter();
 
   const getLocalized = (field) => {
     if (typeof field === "object" && field !== null) {
-      return field.en || Object.values(field)[0] || "";
+      return field[locale] || field.en || Object.values(field)[0] || "";
     }
     return field ?? "";
   };
@@ -30,7 +32,7 @@ export default function StaffDetails({ member }) {
         <div className="mb-4">
           <p className="text-sm text-gray-500">
             <Link href="/ourteam" className="hover:underline hover:text-black">
-              Our Team
+              {locale === "es" ? "Nuestro Equipo" : "Our Team"}
             </Link>{" "}
             /{" "}
             <Link
@@ -71,7 +73,9 @@ export default function StaffDetails({ member }) {
         {hasFavorites && (
           <div className="mt-12">
             <h2 className="text-2xl text-black font-serif font-medium mb-4">
-              {displayName}'s Favorite Treatments
+              {locale === "es"
+                ? `Tratamientos favoritos de ${displayName}`
+                : `${displayName}'s Favorite Treatments`}
             </h2>
 
             {member.favorites.map((favorite, idx) => {
@@ -105,12 +109,16 @@ export default function StaffDetails({ member }) {
 
                   {match?.pricing?.startingPrice && (
                     <p className="text-sm text-gray-700 mt-2">
-                      <span className="font-semibold">Price:</span>{" "}
+                      <span className="font-semibold">
+                        {locale === "es" ? "Precio:" : "Price:"}
+                      </span>{" "}
                       {startingPrice} {match.pricing.startingPriceCurrency}
                       {hasPromo && (
                         <>
                           {" "} |{" "}
-                          <span className="font-semibold">Exclusive Pricing:</span>{" "}
+                          <span className="font-semibold">
+                            {locale === "es" ? "Precio exclusivo:" : "Exclusive Pricing:"}
+                          </span>{" "}
                           {promoPrice} {match.pricing.promoPriceCurrency}
                         </>
                       )}
@@ -122,7 +130,9 @@ export default function StaffDetails({ member }) {
                       href={favorite.link}
                       className="text-sm underline text-black mt-1 inline-block hover:text-[#731a2f]"
                     >
-                      Learn more about {serviceName}
+                      {locale === "es"
+                        ? `Conoce más sobre ${serviceName}`
+                        : `Learn more about ${serviceName}`}
                     </Link>
                   )}
                 </div>
