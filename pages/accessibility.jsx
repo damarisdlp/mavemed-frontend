@@ -9,25 +9,10 @@ import Footer from "@/components/Footer";
 import InstagramFeed from "@/components/InstagramFeed";
 import ReviewsSection from "@/components/ReviewsSection";
 import LocationSection from "@/components/LocationSection";
+import { accessibilityContent } from "@/lib/data/pages/accessibility";
 
 export default function AccessibilityPage() {
   const { locale = "en" } = useRouter();
-
-  const strings = {
-    title: locale === "es" ? "Accesibilidad" : "Accessibility",
-    desc:
-      locale === "es"
-        ? "Conoce el compromiso de Mave Medical Spa con la accesibilidad para todos los visitantes y pacientes."
-        : "Learn about Mave Medical Spa's commitment to accessibility for all visitors and patients.",
-    body1:
-      locale === "es"
-        ? "Nuestra clínica cuenta con acceso por elevador, entradas amplias y personal disponible para apoyar con necesidades de movilidad. La accesibilidad digital es un esfuerzo continuo; agradecemos tus comentarios."
-        : "Our facility features elevator access, wide entryways, and staff available to assist with mobility needs. Digital accessibility is an ongoing effort; feedback is welcome.",
-    body2:
-      locale === "es"
-        ? "Contáctanos por teléfono, WhatsApp o correo para solicitar asistencia o compartir comentarios sobre accesibilidad para seguir mejorando."
-        : "Contact us through phone, WhatsApp, or email to request assistance or share accessibility feedback so we can continue to improve.",
-  };
 
   return (
     <>
@@ -35,7 +20,10 @@ export default function AccessibilityPage() {
         <title>
           {locale === "es" ? "Accesibilidad | Mave Medical Spa" : "Accessibility | Mave Medical Spa"}
         </title>
-        <meta name="description" content={strings.desc} />
+        <meta
+          name="description"
+          content={accessibilityContent.intro[locale] || accessibilityContent.intro.en}
+        />
       </Head>
 
       <PromoBanner />
@@ -43,15 +31,29 @@ export default function AccessibilityPage() {
 
       <main className="bg-white">
         <section className="w-full max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-          <h1 className="text-black font-serif font-medium mb-4 leading-tight text-[clamp(2rem,5vw,3rem)]">
-            {strings.title}
+          <h1 className="text-black font-serif font-medium mb-2 leading-tight text-[clamp(2rem,5vw,3rem)]">
+            {accessibilityContent.title[locale] || accessibilityContent.title.en}
           </h1>
-          <p className="text-gray-700 mb-6">
-            {strings.desc}
+          <p className="text-sm text-gray-500 mb-3">
+            {accessibilityContent.lastUpdated[locale] || accessibilityContent.lastUpdated.en}
           </p>
-          <div className="space-y-4 text-gray-700 leading-relaxed">
-            <p>{strings.body1}</p>
-            <p>{strings.body2}</p>
+          <p className="text-gray-700 mb-6">
+            {accessibilityContent.intro[locale] || accessibilityContent.intro.en}
+          </p>
+
+          <div className="space-y-8 text-gray-700 leading-relaxed">
+            {accessibilityContent.sections.map((section, idx) => (
+              <div key={idx} className="space-y-3">
+                <h2 className="text-lg font-semibold text-black">
+                  {section.heading[locale] || section.heading.en}
+                </h2>
+                <div className="space-y-2">
+                  {(section.body[locale] || section.body.en).map((para, pIdx) => (
+                    <p key={pIdx}>{para}</p>
+                  ))}
+                </div>
+              </div>
+            ))}
           </div>
         </section>
 
