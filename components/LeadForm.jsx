@@ -1,8 +1,10 @@
 import { useEffect, useRef, useState } from "react";
 import { useTranslation } from "next-i18next";
+import Link from "next/link";
 
 export default function LeadForm() {
-  const { t } = useTranslation("home");
+  const { t, i18n } = useTranslation("home");
+  const locale = (i18n?.language || "en").toString();
   const phoneRef = useRef(null);
   const emailRef = useRef(null);
   const [formData, setFormData] = useState({
@@ -350,9 +352,9 @@ export default function LeadForm() {
               <span className="text-[#731a2f]">*</span>
               <br />
               {t("leadForm.disclaimer")}{" "}
-              <a href="/privacy-policy" className="underline">
+              <Link href="/privacy" locale={locale} className="underline">
                 {t("leadForm.privacyPolicy")}
-              </a>
+              </Link>
               .
             </p>
 
