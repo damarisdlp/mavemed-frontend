@@ -72,7 +72,7 @@ export default function Team() {
         {/* Sticky Category Menu */}
         <div
           id="category-menu"
-          className="flex flex-nowrap items-center gap-3 sm:gap-4 mb-12 justify-start sticky top-[100px] sm:top-[105px] bg-white z-30 py-2 sm:py-3 border-b border-gray-200 overflow-x-auto no-scrollbar px-3"
+          className="flex flex-nowrap items-center gap-3 sm:gap-4 mb-12 justify-start sticky top-[102px] sm:top-[95px] bg-white z-30 py-2 sm:py-3 border-b border-gray-200 overflow-x-auto no-scrollbar px-3"
         >
           {categories.map((category, i) => (
             <CategoryLink key={i} category={category.category} />
