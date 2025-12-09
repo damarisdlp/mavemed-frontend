@@ -2,14 +2,15 @@ import "keen-slider/keen-slider.min.css";
 import { useKeenSlider } from "keen-slider/react";
 import Link from "next/link";
 import Image from "next/image";
-import { useRouter } from 'next/router';
+import { useRouter } from "next/router";
 import { allTreatments } from "@/lib/data/allTreatments";
 import { useTranslation } from "next-i18next";
 import { dispatchChatOpen } from "@/lib/utils/chat";
 
 export default function PopularTreatments() {
   const { t } = useTranslation("treatments");
-  const { locale } = useRouter();
+  const router = useRouter();
+  const { locale } = router;
   const popularTreatments = allTreatments.filter((t) => t && t.isPopular);
 
   const getLocalized = (field) => {
