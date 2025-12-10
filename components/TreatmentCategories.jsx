@@ -18,23 +18,26 @@ export default function TreatmentCategories() {
     const [sliderRef, slider] = useKeenSlider({
       loop: false,
       slides: {
-        perView: 1.05,
-        spacing: 12,
+        perView: 1,
+        spacing: 10,
       },
       breakpoints: {
         "(min-width: 640px)": {
-          slides: { perView: 2.1, spacing: 14 },
+          slides: { perView: 2, spacing: 20 },
+        },
+        "(min-width: 1024px)": {
+          slides: { perView: 3, spacing: 10 },
         },
       },
     });
 
     return (
       <div className="relative block md:hidden mb-8">
-        <div ref={sliderRef} className="keen-slider overflow-visible">
+        <div ref={sliderRef} className="keen-slider overflow-hidden">
           {services.map((service, idx) => (
-            <div key={idx} className="keen-slider__slide px-1">
-              <div className="bg-[#f9f9f9] rounded-lg overflow-hidden shadow-sm hover:shadow-md transition">
-                <div className="relative h-56 w-full">
+            <div key={idx} className="keen-slider__slide flex justify-center px-2">
+              <div className="w-[320px] sm:w-[340px] md:w-[360px] lg:w-[380px] flex flex-col bg-[#f9f9f9] rounded-lg overflow-hidden shadow-sm hover:shadow-md transition mb-3">
+                <div className="relative h-[420px] w-full">
                   <Image
                     src={service.image}
                     alt={`${getLocalized(service.name)} – ${getLocalized(service.description)}`}
