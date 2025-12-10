@@ -146,7 +146,7 @@ function CategorySection({ category, staff, learnMoreLabel }) {
       </h2>
 
       {/* Mobile slider */}
-      <div className="relative block md:hidden mb-10">
+      <div className="relative block md:hidden mb-8">
         <div ref={sliderRef} className="keen-slider overflow-visible">
           {staff.map((staffMember, j) => (
             <div key={j} className="keen-slider__slide px-1">
