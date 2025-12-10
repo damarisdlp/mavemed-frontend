@@ -128,10 +128,13 @@ function CategorySection({ category, staff, learnMoreLabel }) {
 
   const [sliderRef, slider] = useKeenSlider({
     loop: false,
-    slides: { perView: 1.05, spacing: 12 },
+    slides: { perView: 1, spacing: 10 },
     breakpoints: {
       "(min-width: 640px)": {
-        slides: { perView: 2.1, spacing: 14 },
+        slides: { perView: 2, spacing: 20 },
+      },
+      "(min-width: 1024px)": {
+        slides: { perView: 3, spacing: 10 },
       },
     },
   });
@@ -147,11 +150,11 @@ function CategorySection({ category, staff, learnMoreLabel }) {
 
       {/* Mobile slider */}
       <div className="relative block md:hidden mb-8">
-        <div ref={sliderRef} className="keen-slider overflow-visible">
+        <div ref={sliderRef} className="keen-slider overflow-hidden">
           {staff.map((staffMember, j) => (
-            <div key={j} className="keen-slider__slide px-1">
-              <div className="bg-[#f9f9f9] rounded-lg overflow-hidden shadow-sm hover:shadow-md transition">
-                <div className="relative h-56 w-full">
+            <div key={j} className="keen-slider__slide flex justify-center px-2">
+              <div className="w-[320px] sm:w-[340px] md:w-[360px] lg:w-[380px] flex flex-col bg-[#f9f9f9] rounded-lg overflow-hidden shadow-sm hover:shadow-md transition mb-3">
+                <div className="relative h-[420px] w-full">
                   <Image
                     src={staffMember.image}
                     alt={`${staffMember.name} in Tijuana – ${staffMember.title}`}
@@ -159,7 +162,7 @@ function CategorySection({ category, staff, learnMoreLabel }) {
                     className="object-cover"
                   />
                 </div>
-                <div className="p-4 text-center flex flex-col gap-2">
+                <div className="p-4 text-center flex flex-col gap-2 flex-1 justify-between">
                   <div>
                     <h3 className="text-lg text-black font-serif font-medium mb-1">
                       {staffMember.name}
