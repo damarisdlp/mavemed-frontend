@@ -1,7 +1,7 @@
 {
   "treatments": {
     "popular": "Tratamientos Populares",
-    "all": "Todos los Tratamientos",
+    "all": "Ver Todos",
     "categories": {
       "wrinkleReducers": "Reductores de Arrugas",
       "collagenBiostimulators": "Bioestimuladores de Colágeno",
@@ -14,8 +14,8 @@
     },
     "benefits": "Beneficios",
     "pricing": "Precios",
-    "bookNow": "Reservar Ahora",
-    "learnMore": "Saber Más"
+    "bookNow": "Reservear Ahora",
+    "learnMore": "Más Información"
   },
   "treatmentsPage": {
     "bannerTitle": "Nuestros Tratamientos",
