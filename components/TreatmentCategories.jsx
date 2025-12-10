@@ -10,13 +10,14 @@ export default function TreatmentCategories() {
   const CategorySlider = ({ services }) => {
     const router = useRouter();
     const { locale } = router;
+    
     const getLocalized = (field) => {
       if (typeof field === "object" && field[locale]) return field[locale];
       if (typeof field === "object" && field["en"]) return field["en"];
       return field;
     };
     const [sliderRef, slider] = useKeenSlider({
-      loop: false,
+      loop: true,
       slides: {
         perView: 1,
         spacing: 10,
@@ -33,11 +34,14 @@ export default function TreatmentCategories() {
 
     return (
       <div className="relative block md:hidden mb-8">
-        <div ref={sliderRef} className="keen-slider overflow-hidden">
+        <div
+          ref={sliderRef}
+          className="keen-slider overflow-hidden"
+        >
           {services.map((service, idx) => (
-            <div key={idx} className="keen-slider__slide flex justify-center px-2">
+            <div key={idx} className="keen-slider__slide flex justify-center px-1">
               <div className="w-[320px] sm:w-[340px] md:w-[360px] lg:w-[380px] flex flex-col bg-[#f9f9f9] rounded-lg overflow-hidden shadow-sm hover:shadow-md transition mb-3">
-                <div className="relative h-[420px] w-full">
+                <div className="relative h-50 w-full">
                   <Image
                     src={service.image}
                     alt={`${getLocalized(service.name)} – ${getLocalized(service.description)}`}
@@ -45,8 +49,8 @@ export default function TreatmentCategories() {
                     className="object-cover"
                   />
                 </div>
-                <div className="p-4 flex flex-col gap-3">
-                  <div>
+                <div className="p-4 flex-1 flex flex-col justify-between">
+                  <div className="mb-8">
                     <h3 className="text-lg text-black font-serif font-medium mb-1">
                       {getLocalized(service.name)}
                     </h3>
@@ -81,14 +85,14 @@ export default function TreatmentCategories() {
             <button
               type="button"
               onClick={() => slider.current?.prev()}
-              className="absolute left-0 top-[40%] sm:top-1/2 -translate-y-1/2 bg-white border border-gray-300 text-gray-700 rounded-full shadow px-3 py-2 hover:bg-gray-100"
+              className="absolute left-1 sm:left-2 top-[35%] sm:top-1/2 -translate-y-1/2 bg-white border border-gray-300 text-gray-700 rounded-full shadow px-3 py-2 hover:bg-gray-100 z-10"
             >
               ‹
             </button>
             <button
               type="button"
               onClick={() => slider.current?.next()}
-              className="absolute right-0 top-[40%] sm:top-1/2 -translate-y-1/2 bg-white border border-gray-300 text-gray-700 rounded-full shadow px-3 py-2 hover:bg-gray-100"
+              className="absolute right-1 sm:right-2 top-[35%] sm:top-1/2 -translate-y-1/2 bg-white border border-gray-300 text-gray-700 rounded-full shadow px-3 py-2 hover:bg-gray-100 z-10"
             >
               ›
             </button>
