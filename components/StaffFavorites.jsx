@@ -60,7 +60,7 @@ export default function StaffFavorites({ favorites = [], locale = "en", displayN
       <h2 className="text-2xl text-black font-serif font-medium mb-4">
         {locale === "es" ? `Tratamientos favoritos de ${displayName}` : `${displayName}'s Favorite Treatments`}
       </h2>
-      <div className="relative">
+      <div className="relative block md:hidden mb-8">
         <div ref={sliderRef} className="keen-slider overflow-hidden">
           {favoriteCards.map((card, idx) => (
             <div key={idx} className="keen-slider__slide min-h-[475px] flex p-1">
@@ -118,14 +118,14 @@ export default function StaffFavorites({ favorites = [], locale = "en", displayN
             <button
               type="button"
               onClick={() => slider.current?.prev()}
-              className="absolute left-0 top-[35%] sm:top-1/2 -translate-y-1/2 bg-white border border-gray-300 text-gray-700 rounded-full shadow px-3 py-2 hover:bg-gray-100 z-10"
+              className="absolute left-0 top-[40%] sm:top-1/2 -translate-y-1/2 bg-white border border-gray-300 text-gray-700 rounded-full shadow px-3 py-2 hover:bg-gray-100"
             >
               ‹
             </button>
             <button
               type="button"
               onClick={() => slider.current?.next()}
-              className="absolute right-0 top-[35%] sm:top-1/2 -translate-y-1/2 bg-white border border-gray-300 text-gray-700 rounded-full shadow px-3 py-2 hover:bg-gray-100 z-10"
+              className="absolute right-0 top-[40%] sm:top-1/2 -translate-y-1/2 bg-white border border-gray-300 text-gray-700 rounded-full shadow px-3 py-2 hover:bg-gray-100"
             >
               ›
             </button>
