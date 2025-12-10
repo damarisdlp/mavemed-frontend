@@ -145,8 +145,8 @@ export default function LeadForm() {
 
   return (
     <>
-      <section className="bg-[#efeee7] w-full px-4 sm:px-6 py-6 justify-center items-center text-center relative">
-        <div className="w-full max-w-screen-xl mx-auto grid md:grid-cols-2 gap-6 items-center">
+      <section className="bg-[#efeee7] w-full px-4 sm:px-6 py-4 justify-center items-center text-center relative">
+        <div className="w-full max-w-screen-xl mx-auto grid md:grid-cols-2 gap-4 items-center">
           <div>
             <h2
               className="text-black font-serif font-medium mb-3 leading-snug text-[clamp(1.6rem,4.5vw,2.3rem)] max-w-full break-words"
@@ -154,14 +154,14 @@ export default function LeadForm() {
             >
               {t("leadForm.title")}
             </h2>
-            <p className="text-gray-700 text-base md:text-m">
+            <p className="text-gray-700 text-sm md:text-base">
               {t("leadForm.subtitle")}
             </p>
           </div>
 
           <form
             onSubmit={handleSubmit}
-            className="bg-white p-6 rounded-lg shadow-md grid gap-4 text-left"
+            className="bg-white p-4 rounded-lg shadow-md grid gap-3 text-left"
           >
             <label className="text-sm text-gray-700 flex items-center gap-1">
               {t("leadForm.firstName")}
@@ -173,7 +173,7 @@ export default function LeadForm() {
               value={formData.firstName}
               onChange={handleChange}
               placeholder={t("leadForm.firstName")}
-              className="border border-gray-300 text-black placeholder:text-black rounded px-4 py-3 focus:outline-none focus:ring-2 focus:ring-black"
+              className="border border-gray-300 text-black placeholder:text-black rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-black"
               required
             />
 
@@ -196,7 +196,7 @@ export default function LeadForm() {
                 )
               }
               onInput={(e) => e.currentTarget.setCustomValidity("")}
-              className="border border-gray-300 text-black placeholder:text-black rounded px-4 py-3 focus:outline-none focus:ring-2 focus:ring-black"
+              className="border border-gray-300 text-black placeholder:text-black rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-black"
               required
             />
 
@@ -210,7 +210,7 @@ export default function LeadForm() {
                   name="countryCode"
                   value={formData.countryCode}
                   onChange={handleChange}
-                  className="border border-gray-300 text-gray-700 rounded px-4 py-3 focus:outline-none focus:ring-2 focus:ring-black"
+                  className="border border-gray-300 text-gray-700 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-black"
                   required
                 >
                   {countryOptions.map((opt) => (
@@ -241,7 +241,7 @@ export default function LeadForm() {
                 )
               }
               onInput={(e) => e.currentTarget.setCustomValidity("")}
-              className="border border-gray-300 text-gray-700 rounded px-4 py-3 focus:outline-none focus:ring-2 focus:ring-black"
+              className="border border-gray-300 text-gray-700 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-black"
               required
             />
           </div>
@@ -256,7 +256,7 @@ export default function LeadForm() {
                 name="primaryTreatment"
                 value={formData.primaryTreatment}
                 onChange={handleChange}
-                className="border border-gray-300 text-gray-700 rounded px-4 py-3 focus:outline-none focus:ring-2 focus:ring-black"
+                className="border border-gray-300 text-gray-700 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-black"
                 required
               >
                 <option value="" disabled>
@@ -288,7 +288,7 @@ export default function LeadForm() {
                   value={formData.primaryTreatmentOther}
                   onChange={handleChange}
                   placeholder={t("leadForm.otherPrompt") || "Tell us more"}
-                  className="mt-2 border border-gray-300 text-gray-700 rounded px-4 py-3 focus:outline-none focus:ring-2 focus:ring-black"
+                  className="mt-2 border border-gray-300 text-gray-700 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-black"
                 />
               )}
             </div>
@@ -302,7 +302,7 @@ export default function LeadForm() {
                 name="visitTiming"
                 value={formData.visitTiming}
                 onChange={handleChange}
-                className="border border-gray-300 text-gray-700 rounded px-4 py-3 focus:outline-none focus:ring-2 focus:ring-black"
+                className="border border-gray-300 text-gray-700 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-black"
                 required
               >
                 <option value="" disabled>
@@ -324,7 +324,7 @@ export default function LeadForm() {
                 name="locationOrigin"
                 value={formData.locationOrigin}
                 onChange={handleChange}
-                className="border border-gray-300 text-gray-700 rounded px-4 py-3 focus:outline-none focus:ring-2 focus:ring-black"
+                className="border border-gray-300 text-gray-700 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-black"
                 required
               >
                 <option value="" disabled>
@@ -342,7 +342,7 @@ export default function LeadForm() {
                   value={formData.locationOriginOther}
                   onChange={handleChange}
                   placeholder={t("leadForm.otherLocationPrompt") || "City or region"}
-                  className="mt-2 border border-gray-300 text-gray-700 rounded px-4 py-3 focus:outline-none focus:ring-2 focus:ring-black"
+                  className="mt-2 border border-gray-300 text-gray-700 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-black"
                 />
               )}
             </div>
@@ -360,7 +360,7 @@ export default function LeadForm() {
 
             <button
               type="submit"
-              className="bg-black text-white py-3 rounded-full hover:bg-[#731a2f] transition"
+              className="bg-black text-white py-2.5 rounded-full hover:bg-[#731a2f] transition"
             >
               {t("leadForm.subscribe")}
             </button>
@@ -374,7 +374,7 @@ export default function LeadForm() {
           onClick={() => setShowThanks(false)}
         >
           <div
-            className="bg-white rounded-xl shadow-xl max-w-sm w-full p-6 relative text-center"
+          className="bg-white rounded-xl shadow-xl max-w-sm w-full p-4 relative text-center"
             onClick={(e) => e.stopPropagation()}
           >
             <button
