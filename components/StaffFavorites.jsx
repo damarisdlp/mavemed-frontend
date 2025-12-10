@@ -16,37 +16,28 @@ export default function StaffFavorites({ favorites = [], locale = "en", displayN
   if (!favorites.length) return null;
   const router = useRouter();
 
-  const favoriteCards = favorites.map((fav) => {
-    const serviceName = getLocalized(fav.serviceName, locale);
-    const match =
-      allTreatments.find(
-        (t) =>
-          getLocalized(t.serviceDisplayName, locale) === serviceName ||
-          t.urlSlug === fav.link?.split("/").pop()
-      ) || {};
-    const description = getLocalized(match.description, locale);
-    const image = match.images?.primary || "/placeholder.jpg";
-    const slug = match.urlSlug || fav.link || "#";
-    const startingPrice = match?.pricing?.startingPrice
-      ? `${getLocalized(match.pricing.startingPrice, locale)} ${match.pricing.startingPriceCurrency || ""}`.trim()
-      : "";
-    const promoPrice = match?.promoDetails?.options?.[0]?.optionPromoPrice
-      ? `${match.promoDetails.options[0].optionPromoPrice}${
-          match.promoDetails.options[0].optionPromoPriceCurrency
-            ? ` ${match.promoDetails.options[0].optionPromoPriceCurrency}`
-            : ""
-        }`
-      : "";
-
-    return {
-      serviceName,
-      description,
-      image,
-      slug,
-      startingPrice,
-      promoPrice,
-    };
-  });
+  const favoriteCards = favorites
+    .map((fav) => {
+      const serviceName = getLocalized(fav.serviceName, locale);
+      const match =
+        allTreatments.find(
+          (t) =>
+            getLocalized(t.serviceDisplayName, locale) === serviceName ||
+            getLocalized(t.displayName, locale) === serviceName ||
+            t.urlSlug === fav.link?.split("/").pop()
+        ) || {};
+      const title = getLocalized(match.displayName || match.serviceDisplayName || serviceName, locale);
+      const description = getLocalized(match.description, locale);
+      const image = match.images?.primary || "/placeholder.jpg";
+      const slug = match.urlSlug || fav.link || "#";
+      return {
+        serviceName: title,
+        description,
+        image,
+        slug,
+      };
+    })
+    .filter((c) => c.serviceName);
 
   const [sliderRef, slider] = useKeenSlider({
     loop: false,
@@ -56,10 +47,10 @@ export default function StaffFavorites({ favorites = [], locale = "en", displayN
     },
     breakpoints: {
       "(min-width: 768px)": {
-        slides: { perView: 2.2, spacing: 16 },
+        slides: { perView: 2.05, spacing: 18 },
       },
       "(min-width: 1024px)": {
-        slides: { perView: 3.1, spacing: 24 },
+        slides: { perView: 2.65, spacing: 22 },
       },
     },
   });
@@ -72,8 +63,8 @@ export default function StaffFavorites({ favorites = [], locale = "en", displayN
       <div className="relative">
         <div ref={sliderRef} className="keen-slider overflow-hidden">
           {favoriteCards.map((card, idx) => (
-            <div key={idx} className="keen-slider__slide min-h-[475px] flex p-2">
-              <div className="mx-4 flex flex-col bg-[#f9f9f9] rounded-lg overflow-hidden shadow-sm hover:shadow-md transition">
+            <div key={idx} className="keen-slider__slide min-h-[475px] flex p-1">
+              <div className="mx-3 flex flex-col bg-[#f9f9f9] rounded-lg overflow-hidden shadow-sm hover:shadow-md transition">
                 <div className="relative h-[200px] sm:h-[220px] md:h-[240px] w-full">
                   <Image
                     src={card.image}
