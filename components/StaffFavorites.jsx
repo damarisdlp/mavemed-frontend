@@ -65,7 +65,7 @@ export default function StaffFavorites({ favorites = [], locale = "en", displayN
           {favoriteCards.map((card, idx) => (
             <div key={idx} className="keen-slider__slide flex justify-center px-2">
               <div className="w-[320px] sm:w-[340px] md:w-[360px] lg:w-[380px] flex flex-col bg-[#f9f9f9] rounded-lg overflow-hidden shadow-sm hover:shadow-md transition mb-3">
-                <div className="relative h-[420px] w-full">
+                <div className="relative h-80 w-full">
                   <Image
                     src={card.image}
                     alt={card.serviceName}
