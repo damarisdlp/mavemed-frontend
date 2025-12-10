@@ -53,7 +53,7 @@ export default function Team() {
   const categories = Object.values(categoriesMap);
   const learnMoreLabel =
     currentLocale?.startsWith("es")
-      ? t("team.learnMore", { lng: "es", defaultValue: "Saber Más" })
+      ? t("team.learnMore", { lng: "es", defaultValue: "Más Información" })
       : t("team.learnMore", { lng: "en", defaultValue: "Learn More" });
 
   const [showScrollTop, setShowScrollTop] = useState(false);
@@ -144,7 +144,10 @@ function CategorySection({ category, staff, learnMoreLabel }) {
       id={categorySlug}
       className="mb-16 scroll-mt-60"
     >
-      <h2 className="text-2xl text-black md:text-3xl font-serif font-medium mb-6">
+      <h2
+        className="text-black font-serif font-medium mb-6 leading-snug text-[clamp(1.8rem,4vw,2.6rem)] whitespace-nowrap"
+        style={{ textWrap: "balance" }}
+      >
         {category}
       </h2>
 
