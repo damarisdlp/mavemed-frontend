@@ -43,14 +43,14 @@ export default function StaffFavorites({ favorites = [], locale = "en", displayN
     loop: false,
     slides: {
       perView: 1,
-      spacing: 16,
+      spacing: 10,
     },
     breakpoints: {
       "(min-width: 768px)": {
-        slides: { perView: 2.05, spacing: 18 },
+        slides: { perView: 2, spacing: 20 },
       },
       "(min-width: 1024px)": {
-        slides: { perView: 2.65, spacing: 22 },
+        slides: { perView: 3, spacing: 10 },
       },
     },
   });
@@ -63,9 +63,9 @@ export default function StaffFavorites({ favorites = [], locale = "en", displayN
       <div className="relative block md:hidden mb-8">
         <div ref={sliderRef} className="keen-slider overflow-hidden">
           {favoriteCards.map((card, idx) => (
-            <div key={idx} className="keen-slider__slide min-h-[475px] flex p-1">
-              <div className="mx-3 flex flex-col bg-[#f9f9f9] rounded-lg overflow-hidden shadow-sm hover:shadow-md transition">
-                <div className="relative h-[200px] sm:h-[220px] md:h-[240px] w-full">
+            <div key={idx} className="keen-slider__slide flex justify-center px-2">
+              <div className="w-[320px] sm:w-[340px] md:w-[360px] lg:w-[380px] flex flex-col bg-[#f9f9f9] rounded-lg overflow-hidden shadow-sm hover:shadow-md transition mb-3">
+                <div className="relative h-[420px] w-full">
                   <Image
                     src={card.image}
                     alt={card.serviceName}
