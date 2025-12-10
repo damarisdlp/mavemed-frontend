@@ -52,7 +52,7 @@ export default function PopularTreatments() {
         </Link>
       </div>
 
-      <div className="relative">
+      <div className="relative block md:hidden mb-8">
         <div ref={sliderRef} className="keen-slider overflow-hidden">
           {popularTreatments.map((treatment, index) => (
             <div key={index} className="keen-slider__slide min-h-[475px] flex p-2">
@@ -107,14 +107,14 @@ export default function PopularTreatments() {
             <button
               type="button"
               onClick={() => slider.current?.prev()}
-              className="absolute left-0 top-[35%] sm:top-1/2 -translate-y-1/2 bg-white border border-gray-300 text-gray-700 rounded-full shadow px-3 py-2 hover:bg-gray-100 z-10"
+              className="absolute left-0 top-[40%] sm:top-1/2 -translate-y-1/2 bg-white border border-gray-300 text-gray-700 rounded-full shadow px-3 py-2 hover:bg-gray-100 z-10"
             >
               ‹
             </button>
             <button
               type="button"
               onClick={() => slider.current?.next()}
-              className="absolute right-0 top-[35%] sm:top-1/2 -translate-y-1/2 bg-white border border-gray-300 text-gray-700 rounded-full shadow px-3 py-2 hover:bg-gray-100 z-10"
+              className="absolute right-0 top-[40%] sm:top-1/2 -translate-y-1/2 bg-white border border-gray-300 text-gray-700 rounded-full shadow px-3 py-2 hover:bg-gray-100 z-10"
             >
               ›
             </button>
