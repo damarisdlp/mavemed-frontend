@@ -127,7 +127,7 @@ function CategorySection({ category, staff, learnMoreLabel }) {
     .toLowerCase();
 
   const [sliderRef, slider] = useKeenSlider({
-    loop: false,
+    loop: true,
     slides: { perView: 1, spacing: 10 },
     breakpoints: {
       "(min-width: 640px)": {
@@ -154,7 +154,7 @@ function CategorySection({ category, staff, learnMoreLabel }) {
           {staff.map((staffMember, j) => (
             <div key={j} className="keen-slider__slide flex justify-center px-2">
               <div className="w-[320px] sm:w-[340px] md:w-[360px] lg:w-[380px] flex flex-col bg-[#f9f9f9] rounded-lg overflow-hidden shadow-sm hover:shadow-md transition mb-3">
-                <div className="relative h-[420px] w-full">
+                <div className="relative h-80 w-full">
                   <Image
                     src={staffMember.image}
                     alt={`${staffMember.name} in Tijuana – ${staffMember.title}`}
@@ -163,7 +163,7 @@ function CategorySection({ category, staff, learnMoreLabel }) {
                   />
                 </div>
                 <div className="p-4 text-center flex flex-col gap-2 flex-1 justify-between">
-                  <div>
+                  <div className="mb-6">
                     <h3 className="text-lg text-black font-serif font-medium mb-1">
                       {staffMember.name}
                     </h3>
@@ -190,14 +190,14 @@ function CategorySection({ category, staff, learnMoreLabel }) {
             <button
               type="button"
               onClick={() => slider.current?.prev()}
-              className="absolute left-3 top-[35%] sm:top-1/2 -translate-y-1/2 bg-white border border-gray-300 text-gray-700 rounded-full shadow px-3 py-2 hover:bg-gray-100 z-10"
+              className="absolute left-0.125 top-[35%] sm:top-1/2 -translate-y-1/2 bg-white border border-gray-300 text-gray-700 rounded-full shadow px-3 py-2 hover:bg-gray-100 z-10"
             >
               ‹
             </button>
             <button
               type="button"
               onClick={() => slider.current?.next()}
-              className="absolute right-3 top-[35%] sm:top-1/2 -translate-y-1/2 bg-white border border-gray-300 text-gray-700 rounded-full shadow px-3 py-2 hover:bg-gray-100 z-10"
+              className="absolute right-0.25 top-[35%] sm:top-1/2 -translate-y-1/2 bg-white border border-gray-300 text-gray-700 rounded-full shadow px-3 py-2 hover:bg-gray-100 z-10"
             >
               ›
             </button>
