@@ -140,11 +140,16 @@ export default function ReviewsSection() {
       </div>
 
       {reviews.length > 0 ? (
-        <div className="relative">
-          <div ref={sliderRef} className="keen-slider">
+        <div className="relative flex justify-center">
+          <div
+            ref={sliderRef}
+            className="keen-slider overflow-hidden w-full max-w-[1100px]"
+          >
             {reviews.map((rev, idx) => (
-              <div key={idx} className="keen-slider__slide px-2">
-                <ReviewCard review={rev} />
+              <div key={idx} className="keen-slider__slide px-2 flex justify-center">
+                <div className="w-[300px] sm:w-[320px] md:w-[340px] lg:w-[360px]">
+                  <ReviewCard review={rev} />
+                </div>
               </div>
             ))}
           </div>
@@ -153,14 +158,14 @@ export default function ReviewsSection() {
               <button
                 type="button"
                 onClick={() => sliderInstanceRef.current?.prev()}
-                className="absolute left-0 top-1/2 -translate-y-1/2 bg-white border border-gray-300 text-gray-700 rounded-full shadow px-3 py-2 hover:bg-gray-100"
+                className="absolute left-1 sm:left-2 top-[42%] sm:top-1/2 -translate-y-1/2 bg-white border border-gray-300 text-gray-700 rounded-full shadow px-3 py-2 hover:bg-gray-100 z-10"
               >
                 ‹
               </button>
               <button
                 type="button"
                 onClick={() => sliderInstanceRef.current?.next()}
-                className="absolute right-0 top-1/2 -translate-y-1/2 bg-white border border-gray-300 text-gray-700 rounded-full shadow px-3 py-2 hover:bg-gray-100"
+                className="absolute right-1 sm:right-2 top-[42%] sm:top-1/2 -translate-y-1/2 bg-white border border-gray-300 text-gray-700 rounded-full shadow px-3 py-2 hover:bg-gray-100 z-10"
               >
                 ›
               </button>
