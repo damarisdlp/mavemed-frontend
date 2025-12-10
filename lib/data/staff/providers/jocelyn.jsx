@@ -24,13 +24,6 @@ export const jocelyn = {
         en: "Hydrafacial MD - Face",
         es: "Hydrafacial MD - Rostro"
       }
-    },
-    {
-      treatmentSlug: "hydrafacial",
-      optionName: {
-        en: "Hydrafacial MD - Face",
-        es: "Hydrafacial MD - Rostro"
-      }
     }
   ]
 };
