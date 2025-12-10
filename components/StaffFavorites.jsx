@@ -58,7 +58,7 @@ export default function StaffFavorites({ favorites = [], locale = "en", displayN
   return (
     <div className="mt-12">
       <h2 className="text-2xl text-black font-serif font-medium mb-4">
-        {locale === "es" ? `Tratamientos favoritos de ${displayName}` : `${displayName}'s Favorite Treatments`}
+        {locale === "es" ? `Tratamientos Favoritos de ${displayName}` : `${displayName}'s Favorite Treatments`}
       </h2>
       <div className="relative block md:hidden mb-8">
         <div ref={sliderRef} className="keen-slider overflow-hidden">
