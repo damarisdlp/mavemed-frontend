@@ -110,12 +110,12 @@ export default function AboutSection() {
   <div className="w-full flex justify-center relative px-2 md:px-6">
     <div
       ref={sliderRef}
-      className="keen-slider overflow-hidden px-2 sm:px-4 mx-auto w-full max-w-[1400px]"
+      className="keen-slider overflow-hidden px-0.5 sm:px-1.5 mx-auto w-full max-w-[1400px]"
     >
       {allStaff.map((s, index) => (
         <div key={index} className="keen-slider__slide flex justify-center px-2">
           <div className="w-[320px] sm:w-[340px] md:w-[360px] lg:w-[380px] flex flex-col bg-[#f9f9f9] rounded-lg overflow-hidden shadow-sm hover:shadow-md transition mb-3">
-            <div className="relative h-[420px] w-full">
+            <div className="relative h-80 w-full">
               <Image
                 src={s.image}
                 alt={`${getLocalized(s.displayName)} – ${getLocalized(s.title)}`}
@@ -146,14 +146,14 @@ export default function AboutSection() {
         <button
           type="button"
           onClick={() => slider.current?.prev()}
-          className="absolute left-0 top-1/2 -translate-y-1/2 bg-white border border-gray-300 text-gray-700 rounded-full shadow px-3 py-2 hover:bg-gray-100"
+          className="absolute left-2 top-1/2 -translate-y-1/2 bg-white border border-gray-300 text-gray-700 rounded-full shadow px-3 py-2 hover:bg-gray-100"
         >
           ‹
         </button>
         <button
           type="button"
           onClick={() => slider.current?.next()}
-          className="absolute right-0 top-1/2 -translate-y-1/2 bg-white border border-gray-300 text-gray-700 rounded-full shadow px-3 py-2 hover:bg-gray-100"
+          className="absolute right-2 top-1/2 -translate-y-1/2 bg-white border border-gray-300 text-gray-700 rounded-full shadow px-3 py-2 hover:bg-gray-100"
         >
           ›
         </button>
