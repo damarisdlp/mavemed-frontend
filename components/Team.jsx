@@ -151,7 +151,7 @@ function CategorySection({ category, staff, learnMoreLabel }) {
           {staff.map((staffMember, j) => (
             <div key={j} className="keen-slider__slide px-1">
               <div className="bg-[#f9f9f9] rounded-lg overflow-hidden shadow-sm hover:shadow-md transition">
-                <div className="relative h-[360px] w-full">
+                <div className="relative h-56 w-full">
                   <Image
                     src={staffMember.image}
                     alt={`${staffMember.name} in Tijuana – ${staffMember.title}`}
