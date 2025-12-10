@@ -131,8 +131,8 @@ export default function TreatmentCategories() {
   };
 
   const translatedStrings = {
-    bookNow: { en: "Book Now", es: "Reservar Ahora" },
-    learnMore: { en: "Learn More", es: "Saber Más" },
+    bookNow: { en: "Book Now", es: "Reservear Ahora" },
+    learnMore: { en: "Learn More", es: "Más Información" },
     top: { en: "↑ Top", es: "↑ Arriba" },
     scrollToTop: { en: "Scroll to top category menu", es: "Desplazarse al menú de categorías superior" },
     bookService: (serviceName) => ({
@@ -183,7 +183,9 @@ export default function TreatmentCategories() {
             id={getLocalized(category.title).replace(/\s+/g, "-").toLowerCase()}
             className="mb-16 scroll-mt-60"
           >
-            <h2 className="text-2xl text-black md:text-3xl font-serif font-medium mb-6">
+            <h2
+              className="text-black font-serif font-medium mb-6 leading-snug text-[clamp(1.6rem,3.8vw,2.6rem)]"
+            >
               {getLocalized(category.title)}
             </h2>
 
