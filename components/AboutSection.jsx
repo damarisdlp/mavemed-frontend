@@ -94,13 +94,15 @@ export default function AboutSection() {
       </div>
 
       {/* Team Section Header */}
-      <div className="container mx-auto px-4 flex flex-row sm:flex-row justify-between items-center sm:items-center gap-3 mb-6">
-        <h2 className="text-3xl md:text-4xl font-serif text-black font-medium mx-auto sm:mx-0 sm:ml-4">
+      <div className="container mx-auto px-4 flex flex-row sm:flex-row justify-between items-center sm:items-center gap-6 mb-8">
+        <h2
+          className="font-serif text-black font-medium mx-auto sm:mx-0 sm:ml-4 leading-snug text-[clamp(1.5rem,3.5vw,2.5rem)] whitespace-nowrap"
+        >
           {t("aboutSection.meetTeam")}
         </h2>
         <Link
           href="/ourteam"
-          className="text-sm underline text-gray-600 hover:text-black"
+          className="text-sm underline text-gray-600 hover:text-black whitespace-nowrap"
         >
           {t("aboutSection.viewAll")}
         </Link>
