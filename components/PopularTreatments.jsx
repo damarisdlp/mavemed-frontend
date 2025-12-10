@@ -52,12 +52,15 @@ export default function PopularTreatments() {
         </Link>
       </div>
 
-      <div className="relative block md:hidden mb-8">
-        <div ref={sliderRef} className="keen-slider overflow-hidden">
+      <div className="relative mb-8">
+        <div
+          ref={sliderRef}
+          className="keen-slider overflow-hidden px-0.5 sm:px-1.5 mx-auto w-full max-w-[1400px]"
+        >
           {popularTreatments.map((treatment, index) => (
             <div key={index} className="keen-slider__slide flex justify-center px-2">
               <div className="w-[320px] sm:w-[340px] md:w-[360px] lg:w-[380px] flex flex-col bg-[#f9f9f9] rounded-lg overflow-hidden shadow-sm hover:shadow-md transition mb-3">
-                <div className="relative h-[420px] w-full">
+              <div className="relative h-50 w-full">
                   {(() => {
                     const localizedName = getLocalized(treatment.displayName || treatment.serviceDisplayName);
                     const localizedDesc = getLocalized(treatment.description);
@@ -107,14 +110,14 @@ export default function PopularTreatments() {
             <button
               type="button"
               onClick={() => slider.current?.prev()}
-              className="absolute left-0 top-[40%] sm:top-1/2 -translate-y-1/2 bg-white border border-gray-300 text-gray-700 rounded-full shadow px-3 py-2 hover:bg-gray-100 z-10"
+              className="absolute left-3 sm:left-4 top-[35%] sm:top-1/2 -translate-y-1/2 bg-white border border-gray-300 text-gray-700 rounded-full shadow px-3 py-2 hover:bg-gray-100 z-10"
             >
               ‹
             </button>
             <button
               type="button"
               onClick={() => slider.current?.next()}
-              className="absolute right-0 top-[40%] sm:top-1/2 -translate-y-1/2 bg-white border border-gray-300 text-gray-700 rounded-full shadow px-3 py-2 hover:bg-gray-100 z-10"
+              className="absolute right-3 sm:right-4 top-[35%] sm:top-1/2 -translate-y-1/2 bg-white border border-gray-300 text-gray-700 rounded-full shadow px-3 py-2 hover:bg-gray-100 z-10"
             >
               ›
             </button>
