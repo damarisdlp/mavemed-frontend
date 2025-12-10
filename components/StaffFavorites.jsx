@@ -97,13 +97,13 @@ export default function StaffFavorites({ favorites = [], locale = "en", displayN
                       }}
                       className="bg-black text-white px-4 py-2 rounded-full text-xs hover:bg-[#731a2f] text-center"
                     >
-                      {locale === "es" ? "Reservar" : "Book Now"}
+                      {locale === "es" ? "Reservar Ahora" : "Book Now"}
                     </button>
                     <Link
                       href={card.slug.startsWith("/treatments") ? card.slug : `/treatments/${card.slug}`}
                       className="border border-gray-300 text-black px-4 py-2 rounded-full text-xs hover:border-black transition text-center"
                     >
-                      {locale === "es" ? "Más información" : "Learn More"}
+                      {locale === "es" ? "Más Información" : "Learn More"}
                     </Link>
                   </div>
                 </div>
