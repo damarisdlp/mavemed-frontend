@@ -160,6 +160,20 @@ export default function TreatmentDetails({ treatment }) {
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [router?.query?.lead]);
 
+  // expose lead-open state to the rest of the app (e.g., hide chat button on mobile)
+  useEffect(() => {
+    if (leadOpen) {
+      document.body.classList.add("lead-open");
+    } else {
+      document.body.classList.remove("lead-open");
+    }
+    const evt = new CustomEvent("lead-open-change", { detail: { open: leadOpen } });
+    window.dispatchEvent(evt);
+    return () => {
+      document.body.classList.remove("lead-open");
+    };
+  }, [leadOpen]);
+
   const parsePriceValue = (priceString) => {
     const priceText = getLocalizedPrice(priceString);
     if (typeof priceText !== "string") return Infinity;
@@ -202,7 +216,7 @@ export default function TreatmentDetails({ treatment }) {
     <div className="w-full bg-white">
       <div className="grid grid-cols-1 md:grid-cols-[3fr_2fr] min-h-[50vh]">
         {/* Image */}
-        <div className="relative w-full h-[80vh]">
+        <div className="relative w-full h-[56vh]">
           <Image
             src={treatment.images?.primary || "/placeholder.jpg"}
             alt={`Treatment image for ${getLocalized(
@@ -253,8 +267,8 @@ export default function TreatmentDetails({ treatment }) {
           </div>
 
           {/* Pricing */}
-          <div className={`grid ${promoDetails ? "grid-cols-2" : "grid-cols-1"} gap-4 mb-6 items-start`}>
-            <div className="border border-gray-200 bg-[#f9f9f9] p-5 rounded-lg shadow-sm flex flex-col items-center text-left space-y-2">
+          <div className="grid grid-cols-1 gap-4 mb-6 items-start">
+            <div className="border border-gray-200 bg-[#f9f9f9] p-5 rounded-lg shadow-sm flex flex-col text-left space-y-2">
               <h2 className="text-md font-semibold text-black">
                 {locale === "es" ? "Precio" : "Price"}
               </h2>
@@ -271,7 +285,7 @@ export default function TreatmentDetails({ treatment }) {
             </div>
 
             {promoDetails && (
-              <div className="border border-[#731a2f] bg-[#731a2f] text-white p-5 rounded-lg shadow-md flex flex-col items-center text-center space-y-2">
+              <div className="border border-[#731a2f] bg-[#731a2f] text-white p-5 rounded-lg shadow-md flex flex-col text-left space-y-2">
                 <h2 className="text-md font-semibold">
                   {getLocalized(promoDetails.headline) ||
                     (locale === "es" ? "Precio Exclusivo" : "Exclusive Pricing")}
@@ -317,7 +331,7 @@ export default function TreatmentDetails({ treatment }) {
                   }}
                   className="mt-2 inline-block w-full text-center bg-white text-black border border-white hover:bg-transparent hover:text-white font-medium py-2 rounded transition duration-200"
                 >
-                  {locale === "es" ? "Consultar Promo" : "Inquire about promo"}
+                  {locale === "es" ? "Consultar Promo" : "Inquire"}
                 </button>
               </div>
             )}
@@ -386,7 +400,7 @@ export default function TreatmentDetails({ treatment }) {
       {leadOpen && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 px-4">
           <div
-            className="bg-white rounded-lg shadow-xl w-full max-w-2xl p-6 relative"
+            className="bg-white rounded-lg shadow-xl w-full max-w-2xl p-5 md:p-6 relative"
             onClick={(e) => e.stopPropagation()}
           >
             <button
@@ -427,7 +441,7 @@ export default function TreatmentDetails({ treatment }) {
                         const values = Array.from(e.target.selectedOptions).map((opt) => opt.value);
                         setLeadSelectedOptions(values);
                       }}
-                      className="w-full border border-gray-300 rounded px-3 py-2 text-gray-700 h-28"
+                      className="w-full border border-gray-300 rounded px-3 py-2 text-gray-700 h-24"
                     >
                       {leadOptions.map((opt) => (
                         <option key={opt} value={opt}>
