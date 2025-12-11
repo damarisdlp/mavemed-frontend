@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react"; // ⬅️ make sure these are imported
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useKeenSlider } from "keen-slider/react";
@@ -12,7 +12,8 @@ export default function AboutSection() {
   const { locale } = useRouter();
 
   const getLocalized = (field) => {
-    if (typeof field === "object" && field !== null) {
+    if (field === null || field === undefined) return "";
+    if (typeof field === "object") {
       return field[locale] || field.en || Object.values(field)[0] || "";
     }
     return field;
@@ -34,7 +35,7 @@ export default function AboutSection() {
     },
   });
 
-  // ⬅️ Scroll-to-top state + effect
+  // Scroll-to-top state + effect
   const [showScrollTop, setShowScrollTop] = useState(false);
 
   useEffect(() => {
@@ -95,9 +96,7 @@ export default function AboutSection() {
 
       {/* Team Section Header */}
       <div className="container mx-auto px-4 flex flex-row sm:flex-row justify-between items-center sm:items-center gap-6 mb-8">
-        <h2
-          className="font-serif text-black font-medium mx-auto sm:mx-0 sm:ml-4 leading-snug text-[clamp(1.5rem,3.5vw,2.5rem)] whitespace-nowrap"
-        >
+        <h2 className="font-serif text-black font-medium mx-auto sm:mx-0 sm:ml-4 leading-snug text-[clamp(1.5rem,3.5vw,2.5rem)] whitespace-nowrap">
           {t("aboutSection.meetTeam")}
         </h2>
         <Link
@@ -108,60 +107,80 @@ export default function AboutSection() {
         </Link>
       </div>
 
-  {/* Slider Cards */}
-  <div className="w-full flex justify-center relative px-2 md:px-6">
-    <div
-      ref={sliderRef}
-      className="keen-slider overflow-hidden px-0.5 sm:px-1.5 mx-auto w-full max-w-[1400px]"
-    >
-      {allStaff.map((s, index) => (
-        <div key={index} className="keen-slider__slide flex justify-center px-2">
-          <div className="w-[320px] sm:w-[340px] md:w-[360px] lg:w-[380px] flex flex-col bg-[#f9f9f9] rounded-lg overflow-hidden shadow-sm hover:shadow-md transition mb-3">
-            <div className="relative h-80 w-full">
-              <Image
-                src={s.image}
-                alt={`${getLocalized(s.displayName)} – ${getLocalized(s.title)}`}
-                fill
-                    className="object-cover text-gray-600"
-                  />
-                </div>
-                <div className="p-4 flex-1 flex flex-col justify-between text-center">
-                  <div>
-                    <h3 className="text-lg font-serif text-black font-medium mb-1">
-                      {getLocalized(s.displayName)}
-                    </h3>
-                    <p className="text-sm text-gray-600 mb-3">{getLocalized(s.title)}</p>
+      {/* Slider Cards */}
+      <div className="w-full flex justify-center px-2 md:px-6 mb-4">
+        {/* Inner wrapper: constrained width + relative, arrows anchor here */}
+        <div className="relative mx-auto w-full max-w-[1400px]">
+          <div ref={sliderRef} className="keen-slider overflow-hidden w-full">
+            {allStaff.map((s, index) => (
+              <div
+                key={index}
+                className="keen-slider__slide flex justify-center px-2"
+              >
+                <div className="w-[320px] sm:w-[340px] md:w-[360px] lg:w-[380px] flex flex-col bg-[#f9f9f9] rounded-lg overflow-hidden shadow-sm hover:shadow-md transition mb-3">
+                  <div className="relative h-80 w-full">
+                    <Image
+                      src={s.image}
+                      alt={`${getLocalized(s.displayName)} – ${getLocalized(
+                        s.title
+                      )}`}
+                      fill
+                      className="object-cover text-gray-600"
+                    />
                   </div>
-                  <Link
-                    href={`/ourteam/${s.name.toLowerCase()}`}
-                    className="inline-block border border-gray-300 text-black px-4 py-2 rounded-full text-xs hover:border-black transition"
-                  >
-                    {t("aboutSection.learnMore")}
-                  </Link>
+                  <div className="p-4 flex-1 flex flex-col justify-between text-center">
+                    <div>
+                      <h3 className="text-lg font-serif text-black font-medium mb-1">
+                        {getLocalized(s.displayName)}
+                      </h3>
+                      <p className="text-sm text-gray-600 mb-3">
+                        {getLocalized(s.title)}
+                      </p>
+                    </div>
+                    <Link
+                      href={`/ourteam/${s.name.toLowerCase()}`}
+                      className="inline-block border border-gray-300 text-black px-4 py-2 rounded-full text-xs hover:border-black transition"
+                    >
+                      {t("aboutSection.learnMore")}
+                    </Link>
+                  </div>
                 </div>
               </div>
+            ))}
+          </div>
+
+          {slider && (
+            <>
+              <button
+                type="button"
+                onClick={() => slider.current?.prev()}
+                className="
+                  absolute
+                  -left-4 md:-left-6
+                  top-1/2 -translate-y-1/2
+                  bg-white border border-gray-300 text-gray-700
+                  rounded-full shadow px-3 py-2 hover:bg-gray-100 z-20
+                "
+              >
+                ‹
+              </button>
+              <button
+                type="button"
+                onClick={() => slider.current?.next()}
+                className="
+                  absolute
+                  -right-4 md:-right-6
+                  top-1/2 -translate-y-1/2
+                  bg-white border border-gray-300 text-gray-700
+                  rounded-full shadow px-3 py-2 hover:bg-gray-100 z-20
+                "
+              >
+                ›
+              </button>
+            </>
+          )}
         </div>
-      ))}
-    </div>
-    {slider && (
-      <>
-        <button
-          type="button"
-          onClick={() => slider.current?.prev()}
-          className="absolute left-2 top-1/2 -translate-y-1/2 bg-white border border-gray-300 text-gray-700 rounded-full shadow px-3 py-2 hover:bg-gray-100"
-        >
-          ‹
-        </button>
-        <button
-          type="button"
-          onClick={() => slider.current?.next()}
-          className="absolute right-2 top-1/2 -translate-y-1/2 bg-white border border-gray-300 text-gray-700 rounded-full shadow px-3 py-2 hover:bg-gray-100"
-        >
-          ›
-        </button>
-      </>
-    )}
-  </div>
+      </div>
 
       {/* Spacer */}
       <div className="h-1 bg-white w-full" />
