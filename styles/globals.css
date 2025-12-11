@@ -37,6 +37,23 @@ body {
 .no-scrollbar::-webkit-scrollbar {
   display: none;
 }
+
+/* Utility: force scrollbars visible even on small screens */
+.show-scrollbar {
+  scrollbar-width: auto !important;
+}
+.show-scrollbar::-webkit-scrollbar {
+  display: block;
+  width: 8px;
+  height: 8px;
+}
+.show-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 9999px;
+}
+.show-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
 /* Tailwind styles (optional override) */
 .btn-primary {
   @apply bg-black text-white px-4 py-2 rounded hover:bg-[#731a2f] transition;
