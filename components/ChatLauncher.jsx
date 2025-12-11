@@ -12,7 +12,9 @@ export default function ChatLauncher() {
   const { t, i18n } = useTranslation("layout");
   const [open, setOpen] = useState(false);
   const [anchor, setAnchor] = useState(null);
+  const [hideOnMobile, setHideOnMobile] = useState(false);
   const popoverRef = useRef(null);
+  const lastLeadOpen = useRef(false);
 
   // allow external triggers with optional anchor location
   useEffect(() => {
@@ -29,6 +31,25 @@ export default function ChatLauncher() {
     };
     window.addEventListener("open-chat", handler);
     return () => window.removeEventListener("open-chat", handler);
+  }, []);
+
+  // react to lead modal state to hide chat button on small screens
+  useEffect(() => {
+    const computeHide = (leadOpen) => {
+      lastLeadOpen.current = leadOpen;
+      const isMobile = typeof window !== "undefined" ? window.innerWidth < 768 : false;
+      setHideOnMobile(Boolean(leadOpen && isMobile));
+    };
+    const handleLeadChange = (e) => computeHide(e?.detail?.open);
+    const handleResize = () => computeHide(lastLeadOpen.current);
+    window.addEventListener("lead-open-change", handleLeadChange);
+    window.addEventListener("resize", handleResize);
+    // initialize from body class
+    computeHide(document.body.classList.contains("lead-open"));
+    return () => {
+      window.removeEventListener("lead-open-change", handleLeadChange);
+      window.removeEventListener("resize", handleResize);
+    };
   }, []);
 
   // close on outside click or scroll
@@ -126,7 +147,9 @@ export default function ChatLauncher() {
           setAnchor(null);
           setOpen((prev) => !prev);
         }}
-        className="inline-flex items-center gap-2 text-white px-4 py-3 rounded-full shadow-lg transition"
+        className={`inline-flex items-center gap-2 text-white px-4 py-3 rounded-full shadow-lg transition ${
+          hideOnMobile ? "opacity-0 pointer-events-none" : ""
+        }`}
         style={{ backgroundColor: BRAND_COLOR }}
       >
         <span className="text-lg">{open ? "✕" : "✉️"}</span>
