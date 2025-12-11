@@ -63,17 +63,19 @@ export default function StaffFavorites({ favorites = [], locale = "en", displayN
 
   return (
     <div className="mt-12">
-      <h2 className="text-2xl text-black font-serif font-medium mb-4">
-        {locale === "es" ? `Tratamientos Favoritos de ${displayName}` : `${displayName}'s Favorite Treatments`}
+      <h2 className="text-2xl text-black font-serif font-medium mb-4 leading-snug">
+        {locale === "es" ? "Tratamientos Favoritos de" : "Favorite Treatments of"}
+        <br />
+        {displayName}
       </h2>
-      <div className="relative block md:hidden mb-8">
+      <div className="relative block mb-8">
         <div
           ref={sliderRef}
           className="keen-slider overflow-hidden px-0.5 sm:px-1.5 mx-auto w-full max-w-[1400px]"
         >
           {favoriteCards.map((card, idx) => (
             <div key={idx} className="keen-slider__slide flex justify-center px-2">
-              <div className="w-[320px] sm:w-[340px] md:w-[360px] lg:w-[380px] flex flex-col bg-[#f9f9f9] rounded-lg overflow-hidden shadow-sm hover:shadow-md transition mb-3">
+              <div className="w-[280px] sm:w-[300px] md:w-[320px] lg:w-[340px] flex flex-col bg-[#f9f9f9] rounded-lg overflow-hidden shadow-sm hover:shadow-md transition mb-3">
                 <div className="relative h-50 w-full">
                   <Image src={card.image} alt={card.serviceName} fill className="object-cover" />
                 </div>
@@ -116,14 +118,14 @@ export default function StaffFavorites({ favorites = [], locale = "en", displayN
             <button
               type="button"
               onClick={() => slider.current?.prev()}
-              className="absolute left-0 sm:left-1 top-[35%] sm:top-1/2 -translate-y-1/2 bg-white border border-gray-300 text-gray-700 rounded-full shadow px-3 py-2 hover:bg-gray-100 z-10"
+              className="absolute -left-4 sm:-left-6 top-[35%] sm:top-1/2 -translate-y-1/2 bg-white border border-gray-300 text-gray-700 rounded-full shadow px-3 py-2 hover:bg-gray-100 z-10"
             >
               ‹
             </button>
             <button
               type="button"
               onClick={() => slider.current?.next()}
-              className="absolute right-0 sm:right-1 top-[35%] sm:top-1/2 -translate-y-1/2 bg-white border border-gray-300 text-gray-700 rounded-full shadow px-3 py-2 hover:bg-gray-100 z-10"
+              className="absolute -right-5 sm:-right-8 top-[35%] sm:top-1/2 -translate-y-1/2 bg-white border border-gray-300 text-gray-700 rounded-full shadow px-3 py-2 hover:bg-gray-100 z-10"
             >
               ›
             </button>
