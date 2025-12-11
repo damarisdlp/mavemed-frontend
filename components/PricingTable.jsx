@@ -56,8 +56,11 @@ export default function PricingTable({ treatment }) {
     <div className="w-full bg-white">
       <div className="grid grid-cols-1 md:grid-cols-[3fr_2fr] mb-4">
         {/* Left: Dynamic Height Content */}
-        <div className="w-full mx-auto text-black px-6 md:px-12 py-5 overflow-y-auto max-h-[600px]">
-          <h1 className="text-4xl font-serif font-medium mb-10">
+        <div className="w-full mx-auto text-black px-6 md:px-12 py-5 overflow-y-auto max-h-[600px] show-scrollbar">
+          <h1
+            className="font-serif font-medium mb-10 leading-snug text-[clamp(1.6rem,4vw,2.4rem)] break-words"
+            style={{ textWrap: "balance" }}
+          >
             {headingText}
           </h1>
 
