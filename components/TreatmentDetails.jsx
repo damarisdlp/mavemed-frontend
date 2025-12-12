@@ -400,7 +400,7 @@ export default function TreatmentDetails({ treatment }) {
       {leadOpen && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 px-4">
           <div
-            className="bg-white rounded-lg shadow-xl w-full max-w-2xl p-5 md:p-6 relative"
+            className="bg-white rounded-lg shadow-xl w-full max-w-xl p-5 md:p-6 relative"
             onClick={(e) => e.stopPropagation()}
           >
             <button
