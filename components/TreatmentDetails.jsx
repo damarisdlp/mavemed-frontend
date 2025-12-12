@@ -14,6 +14,7 @@ export default function TreatmentDetails({ treatment }) {
   const [leadService, setLeadService] = useState("");
   const [leadOptions, setLeadOptions] = useState([]);
   const [leadSelectedOptions, setLeadSelectedOptions] = useState([]);
+
   const initialLeadForm = {
     firstName: "",
     email: "",
@@ -32,6 +33,7 @@ export default function TreatmentDetails({ treatment }) {
   const [leadForm, setLeadForm] = useState(initialLeadForm);
   const [leadSnapshot, setLeadSnapshot] = useState(null);
   const [submitting, setSubmitting] = useState(false);
+
   const phoneRef = useRef(null);
   const emailRef = useRef(null);
 
@@ -51,44 +53,41 @@ export default function TreatmentDetails({ treatment }) {
     if (typeof window === "undefined") return;
     const localeStr = navigator?.language || "";
     if (localeStr.startsWith("en-US") || localeStr.startsWith("en-CA")) {
-      setLeadForm((prev) => ({ ...prev, countryCode: "+1", preferredChannel: "WhatsApp" }));
+      setLeadForm((prev) => ({
+        ...prev,
+        countryCode: "+1",
+        preferredChannel: "WhatsApp",
+      }));
     } else if (localeStr.startsWith("es-MX")) {
-      setLeadForm((prev) => ({ ...prev, countryCode: "+52", preferredChannel: "WhatsApp" }));
+      setLeadForm((prev) => ({
+        ...prev,
+        countryCode: "+52",
+        preferredChannel: "WhatsApp",
+      }));
     }
   }, []);
 
   const getLocalized = (field) => {
-    if (field == null) return ""; // handles null and undefined
-
-    // If it is a localized object like { en: "...", es: "..." }
+    if (field == null) return "";
     if (typeof field === "object") {
       if (field[locale]) return field[locale];
       if (field.en) return field.en;
-      // Explicitly avoid returning the object itself
       return "";
     }
-
-    // For plain strings or numbers
     return field;
   };
 
   const getLocalizedPrice = (field) => {
     if (field == null) return "";
-    if (typeof field === "object") {
-      return getLocalized(field);
-    }
+    if (typeof field === "object") return getLocalized(field);
     return field;
   };
 
   const handleLeadChange = (e) => {
     const { name, value } = e.target;
     setLeadForm((prev) => ({ ...prev, [name]: value }));
-    if (name === "phone" && phoneRef.current) {
-      phoneRef.current.setCustomValidity("");
-    }
-    if (name === "email" && emailRef.current) {
-      emailRef.current.setCustomValidity("");
-    }
+    if (name === "phone" && phoneRef.current) phoneRef.current.setCustomValidity("");
+    if (name === "email" && emailRef.current) emailRef.current.setCustomValidity("");
   };
 
   const pricing = treatment?.pricing || {};
@@ -97,26 +96,29 @@ export default function TreatmentDetails({ treatment }) {
 
   const buildLeadOptions = () => {
     const options = [];
-    // Promo options first if exist
+
     if (promoDetails?.options?.length) {
       promoDetails.options.forEach((opt) => {
         const name = getLocalized(opt.optionName) || getLocalized(treatment.serviceDisplayName);
         const price =
           opt.optionPromoPrice != null
-            ? `${opt.optionPromoPrice}${opt.optionPromoPriceCurrency ? ` ${opt.optionPromoPriceCurrency}` : ""}`
+            ? `${opt.optionPromoPrice}${
+                opt.optionPromoPriceCurrency ? ` ${opt.optionPromoPriceCurrency}` : ""
+              }`
             : "";
         const label = price ? `${name} – ${price}` : name;
         options.push(label);
       });
     }
 
-    // Regular options
     if (pricing?.options?.length) {
       pricing.options.forEach((opt) => {
         const name = getLocalized(opt.optionName) || getLocalized(treatment.serviceDisplayName);
         const price =
           opt.optionPrice != null
-            ? `${getLocalizedPrice(opt.optionPrice)}${opt.optionCurrency ? ` ${opt.optionCurrency}` : ""}`
+            ? `${getLocalizedPrice(opt.optionPrice)}${
+                opt.optionCurrency ? ` ${opt.optionCurrency}` : ""
+              }`
             : "";
         const label = price ? `${name} – ${price}` : name;
         options.push(label);
@@ -137,38 +139,45 @@ export default function TreatmentDetails({ treatment }) {
   const openLeadForm = (preferPromo = false) => {
     const options = buildLeadOptions();
     setLeadOptions(options);
+
     const defaultSelection = (() => {
-      if (preferPromo && promoDetails?.options?.length) {
-        return [options[0]].filter(Boolean);
-      }
+      if (preferPromo && promoDetails?.options?.length) return [options[0]].filter(Boolean);
       return options.length ? [options[0]] : [];
     })();
+
     setLeadSelectedOptions(defaultSelection);
+
     const serviceText = `${getLocalized(treatment.serviceDisplayName)}`;
     setLeadService(serviceText);
+
     setLeadStep("form1");
     setLeadOpen(true);
+  };
+
+  const handleCloseLead = () => {
+    setLeadOpen(false);
+    setLeadStep("form1");
+    setLeadForm(initialLeadForm);
+    setLeadSnapshot(null);
+    setLeadSelectedOptions([]);
   };
 
   useEffect(() => {
     if (router?.query?.lead === "open") {
       openLeadForm(false);
-      // remove query to avoid reopening on navigation/refresh
       const cleanPath = router.asPath.replace(/\?.*/, "");
       router.replace(cleanPath, undefined, { shallow: true }).catch(() => {});
     }
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [router?.query?.lead]);
 
-  // expose lead-open state to the rest of the app (e.g., hide chat button on mobile)
   useEffect(() => {
-    if (leadOpen) {
-      document.body.classList.add("lead-open");
-    } else {
-      document.body.classList.remove("lead-open");
-    }
+    if (leadOpen) document.body.classList.add("lead-open");
+    else document.body.classList.remove("lead-open");
+
     const evt = new CustomEvent("lead-open-change", { detail: { open: leadOpen } });
     window.dispatchEvent(evt);
+
     return () => {
       document.body.classList.remove("lead-open");
     };
@@ -187,16 +196,14 @@ export default function TreatmentDetails({ treatment }) {
       value: parsePriceValue(pricing.startingPrice),
       display: `${getLocalizedPrice(pricing.startingPrice)} ${
         pricing.startingPriceCurrency || ""
-      }`.trim()
+      }`.trim(),
     });
   }
   (pricing?.options || []).forEach((opt) => {
     if (opt?.optionPrice) {
       priceCandidates.push({
         value: parsePriceValue(opt.optionPrice),
-        display: `${getLocalizedPrice(opt.optionPrice)} ${
-          opt.optionCurrency || ""
-        }`.trim()
+        display: `${getLocalizedPrice(opt.optionPrice)} ${opt.optionCurrency || ""}`.trim(),
       });
     }
   });
@@ -204,9 +211,11 @@ export default function TreatmentDetails({ treatment }) {
   const sortedPrices = priceCandidates
     .filter((p) => p.value !== Infinity)
     .sort((a, b) => a.value - b.value);
+
   const lowestPriceDisplay =
     sortedPrices[0]?.display ||
     `${getLocalizedPrice(pricing.startingPrice) || ""} ${pricing.startingPriceCurrency || ""}`.trim();
+
   const showStartingLabel = sortedPrices.length > 1;
   const startingPriceText = showStartingLabel
     ? `${locale === "es" ? "Desde" : "Starting from"} ${lowestPriceDisplay}`
@@ -219,9 +228,7 @@ export default function TreatmentDetails({ treatment }) {
         <div className="relative w-full h-[56vh]">
           <Image
             src={treatment.images?.primary || "/placeholder.jpg"}
-            alt={`Treatment image for ${getLocalized(
-              treatment.serviceDisplayName
-            )}`}
+            alt={`Treatment image for ${getLocalized(treatment.serviceDisplayName)}`}
             fill
             className="object-cover [object-position:center_55%] [object-position:0%_60%]"
             priority
@@ -232,17 +239,12 @@ export default function TreatmentDetails({ treatment }) {
         <div className="w-full text-black px-6 md:px-12 py-5 flex flex-col justify-center">
           <div className="mb-4">
             <p className="text-sm text-gray-500">
-              <Link
-                href="/treatments"
-                className="hover:underline hover:text-black"
-              >
+              <Link href="/treatments" className="hover:underline hover:text-black">
                 {locale === "es" ? "Tratamientos" : "Treatments"}
               </Link>{" "}
               /{" "}
               <Link
-                href={`/treatments/#${getLocalized(
-                  treatment.categoryDisplayName
-                )
+                href={`/treatments/#${getLocalized(treatment.categoryDisplayName)
                   ?.replace(/\s+/g, "-")
                   .toLowerCase()}`}
                 className="hover:underline hover:text-black"
@@ -250,10 +252,7 @@ export default function TreatmentDetails({ treatment }) {
                 {getLocalized(treatment.categoryDisplayName)}
               </Link>{" "}
               /{" "}
-              <Link
-                href={`/treatments/${treatment.urlSlug}`}
-                className="text-gray-700 underline"
-              >
+              <Link href={`/treatments/${treatment.urlSlug}`} className="text-gray-700 underline">
                 {getLocalized(treatment.serviceDisplayName)}
               </Link>{" "}
             </p>
@@ -275,9 +274,7 @@ export default function TreatmentDetails({ treatment }) {
               <p className="text-gray-700">{startingPriceText}</p>
               <button
                 type="button"
-                onClick={() => {
-                  openLeadForm(false);
-                }}
+                onClick={() => openLeadForm(false)}
                 className="mt-2 inline-block w-full text-center bg-white text-black border border-black hover:bg-black hover:text-white font-medium py-2 rounded transition duration-200"
               >
                 {locale === "es" ? "Agendar" : "Book Now"}
@@ -290,17 +287,18 @@ export default function TreatmentDetails({ treatment }) {
                   {getLocalized(promoDetails.headline) ||
                     (locale === "es" ? "Precio Exclusivo" : "Exclusive Pricing")}
                 </h2>
+
                 {promoDetails.validTill && (
                   <p className="text-xs text-white/80">
                     {locale === "es" ? "Válido hasta" : "Valid until"}{" "}
                     {getLocalized(promoDetails.validTill)}
                   </p>
                 )}
+
                 {promoDetails.description && (
-                  <p className="text-white text-sm">
-                    {getLocalized(promoDetails.description)}
-                  </p>
+                  <p className="text-white text-sm">{getLocalized(promoDetails.description)}</p>
                 )}
+
                 {Array.isArray(promoDetails.options) && promoDetails.options.length > 0 && (
                   <div className="mt-1 space-y-2 w-full text-left">
                     {promoDetails.options.map((opt, idx) => (
@@ -324,11 +322,10 @@ export default function TreatmentDetails({ treatment }) {
                     ))}
                   </div>
                 )}
+
                 <button
                   type="button"
-                  onClick={() => {
-                    openLeadForm(true);
-                  }}
+                  onClick={() => openLeadForm(true)}
                   className="mt-2 inline-block w-full text-center bg-white text-black border border-white hover:bg-transparent hover:text-white font-medium py-2 rounded transition duration-200"
                 >
                   {locale === "es" ? "Consultar Promo" : "Inquire"}
@@ -346,21 +343,14 @@ export default function TreatmentDetails({ treatment }) {
             </ul>
           )}
 
-          {/* Accordion Details */}
           {treatment.details && (
-            <AccordionToggle
-              title={locale === "es" ? "Detalles" : "Details"}
-            >
-              <p className="text-gray-700">
-                {getLocalized(treatment.details)}
-              </p>
+            <AccordionToggle title={locale === "es" ? "Detalles" : "Details"}>
+              <p className="text-gray-700">{getLocalized(treatment.details)}</p>
             </AccordionToggle>
           )}
 
           {treatment.goals?.length > 0 && (
-            <AccordionToggle
-              title={locale === "es" ? "Objetivos" : "Goals"}
-            >
+            <AccordionToggle title={locale === "es" ? "Objetivos" : "Goals"}>
               <ul className="list-disc list-inside text-gray-700">
                 {treatment.goals.map((goal, idx) => (
                   <li key={idx}>{getLocalized(goal)}</li>
@@ -370,13 +360,7 @@ export default function TreatmentDetails({ treatment }) {
           )}
 
           {treatment.treatableAreas?.length > 0 && (
-            <AccordionToggle
-              title={
-                locale === "es"
-                  ? "Zonas Tratables"
-                  : "Treatable Areas"
-              }
-            >
+            <AccordionToggle title={locale === "es" ? "Zonas Tratables" : "Treatable Areas"}>
               <ul className="list-disc list-inside text-gray-700">
                 {treatment.treatableAreas.map((area, idx) => (
                   <li key={idx}>{getLocalized(area)}</li>
@@ -385,240 +369,442 @@ export default function TreatmentDetails({ treatment }) {
             </AccordionToggle>
           )}
 
-          <AccordionToggle
-            title={
-              locale === "es"
-                ? "Sucursales Disponibles"
-                : "Available Locations"
-            }
-          >
+          <AccordionToggle title={locale === "es" ? "Sucursales Disponibles" : "Available Locations"}>
             <p className="text-gray-700">Tijuana, B.C.</p>
           </AccordionToggle>
         </div>
       </div>
 
+      {/* Lead Modal (fixed height + scroll body + sticky footer) */}
       {leadOpen && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 px-4 py-8">
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 px-4 py-6"
+          onClick={handleCloseLead}
+        >
           <div
-            className="bg-white rounded-lg shadow-xl w-full max-w-xl p-5 md:p-6 relative max-h-[calc(100vh-4rem)] overflow-y-auto"
+            className="bg-white rounded-lg shadow-xl w-full max-w-xl relative h-[92vh] sm:h-[88vh] md:h-[84vh] flex flex-col overflow-hidden"
             onClick={(e) => e.stopPropagation()}
           >
-            <button
-              type="button"
-              onClick={() => {
-                setLeadOpen(false);
-                setLeadStep("form1");
-                setLeadForm(initialLeadForm);
-                setLeadSnapshot(null);
-                setLeadSelectedOptions([]);
-              }}
-              className="absolute top-3 right-3 text-gray-500 hover:text-black"
-              aria-label="Close"
-            >
-              ✕
-            </button>
+            {/* Sticky Header */}
+            <div className="sticky top-0 z-10 bg-white border-b border-gray-100 px-5 py-4">
+              <button
+                type="button"
+                onClick={handleCloseLead}
+                className="absolute top-3 right-3 text-gray-500 hover:text-black"
+                aria-label="Close"
+              >
+                ✕
+              </button>
 
-            {leadStep === "form1" && (
-              <div className="space-y-4">
-                <h3 className="text-xl font-semibold text-black text-center">
-                  {locale === "es" ? "Solicitar información" : "Request information"}
-                </h3>
-                <p className="text-sm text-gray-600 text-center">
-                  {locale === "es"
-                    ? "Comparte tus datos y te contactaremos enseguida."
-                    : "Share your details and we’ll reach out right away."}
-                </p>
+              {leadStep === "form1" && (
+                <>
+                  <h3 className="text-lg md:text-xl font-semibold text-black text-center leading-snug">
+                    {locale === "es" ? "Solicitar información" : "Request information"}
+                  </h3>
+                  <p className="text-sm text-gray-600 text-center leading-snug mt-1">
+                    {locale === "es"
+                      ? "Comparte tus datos y te contactaremos enseguida."
+                      : "Share your details and we’ll reach out right away."}
+                  </p>
+                </>
+              )}
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-                  <div className="md:col-span-2">
-                    <label className="block text-sm text-gray-700 mb-1 break-words">
-                      {locale === "es" ? "Selecciona tratamiento" : "Select treatment option"}
-                    </label>
-                    <select
-                      multiple
-                      value={leadSelectedOptions}
-                      onChange={(e) => {
-                        const values = Array.from(e.target.selectedOptions).map((opt) => opt.value);
-                        setLeadSelectedOptions(values);
-                      }}
-                      className="w-full border border-gray-300 rounded px-3 py-2 text-gray-700 h-32 leading-snug"
-                    >
-                      {leadOptions.map((opt) => (
-                        <option key={opt} value={opt}>
-                          <span className="whitespace-normal">{opt}</span>
-                        </option>
-                      ))}
-                    </select>
-                    <p className="text-xs text-gray-500 mt-1">
-                      {locale === "es"
-                        ? "Puedes elegir una o varias opciones."
-                        : "You can choose one or multiple options."}
-                    </p>
-                  </div>
+              {leadStep === "form2" && (
+                <>
+                  <h3 className="text-lg md:text-xl font-semibold text-black text-center leading-snug">
+                    {locale === "es" ? "Detalles adicionales" : "Additional details"}
+                  </h3>
+                  <p className="text-sm text-gray-600 text-center leading-snug mt-1">
+                    {locale === "es" ? "Ayúdanos a preparar tu visita." : "Help us tailor your visit."}
+                  </p>
+                </>
+              )}
 
-                  <div>
-                    <label className="block text-sm text-gray-700 mb-1 flex items-center gap-1">
-                      {locale === "es" ? "Nombre" : "First Name"}
-                      <span className="text-[#731a2f]">*</span>
-                    </label>
-                    <input
-                      type="text"
-                      name="firstName"
-                      value={leadForm.firstName}
-                      onChange={handleLeadChange}
-                      placeholder={locale === "es" ? "Nombre" : "First Name"}
-                      className="w-full border border-gray-300 rounded px-3 py-2 text-black placeholder:text-black"
-                      required
-                    />
-                  </div>
+              {leadStep === "channels" && (
+                <>
+                  <h3 className="text-lg md:text-xl font-semibold text-black text-center leading-snug">
+                    {locale === "es" ? "Elige cómo chatear" : "Choose how to chat"}
+                  </h3>
+                  <p className="text-sm text-gray-600 text-center leading-snug mt-1">
+                    {locale === "es"
+                      ? "Selecciona WhatsApp o Instagram para continuar la conversación."
+                      : "Pick WhatsApp or Instagram to continue the conversation."}
+                  </p>
+                </>
+              )}
+            </div>
 
-                  <div>
-                    <label className="block text-sm text-gray-700 mb-1 flex items-center gap-1">
-                      Email <span className="text-[#731a2f]">*</span>
-                    </label>
-                    <input
-                      type="email"
-                      name="email"
-                      value={leadForm.email}
-                      onChange={handleLeadChange}
-                      placeholder="Email"
-                      ref={emailRef}
-                      onInvalid={(e) =>
-                        e.currentTarget.setCustomValidity(
-                          locale === "es"
-                            ? "Por favor ingresa un correo válido."
-                            : "Please enter a valid email address."
-                        )
-                      }
-                      onInput={(e) => e.currentTarget.setCustomValidity("")}
-                      className="w-full border border-gray-300 rounded px-3 py-2 text-black placeholder:text-black"
-                      required
-                    />
-                  </div>
+            {/* Scrollable Body */}
+            <div className="flex-1 overflow-y-auto px-5 py-4">
+              {leadStep === "form1" && (
+                <div className="space-y-3">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
+                    <div className="md:col-span-2">
+                      <label className="block text-sm text-gray-700 mb-1 break-words">
+                        {locale === "es" ? "Selecciona tratamiento" : "Select treatment option"}
+                      </label>
 
-                  <div>
-                    <label className="block text-sm text-gray-700 mb-1 flex items-center gap-1">
-                      {locale === "es" ? "Código de país" : "Country code"}
-                      <span className="text-[#731a2f]">*</span>
-                    </label>
-                    <select
-                      name="countryCode"
-                      value={leadForm.countryCode}
-                      onChange={handleLeadChange}
-                      className="w-full border border-gray-300 rounded px-3 py-2 text-gray-700"
-                      required
-                    >
-                      {countryOptions.map((opt) => (
-                        <option key={opt.code} value={opt.code}>
-                          {opt.code} — {opt.label}
-                        </option>
-                      ))}
-                    </select>
-                  </div>
+                      <div className="w-full max-w-full border border-gray-300 rounded px-3 py-2 bg-white">
+                        <div className="text-xs text-gray-500 mb-2">
+                          {locale === "es"
+                            ? "Selecciona una o varias opciones."
+                            : "Select one or multiple options."}
+                        </div>
 
-                  <div>
-                    <label className="block text-sm text-gray-700 mb-1 flex items-center gap-1">
-                      {locale === "es" ? "Teléfono" : "Phone"}
-                      <span className="text-[#731a2f]">*</span>
-                    </label>
-                    <input
-                      type="tel"
-                      name="phone"
-                      value={leadForm.phone}
-                      onChange={handleLeadChange}
-                      placeholder={locale === "es" ? "Teléfono" : "Phone"}
-                      ref={phoneRef}
-                      pattern="[0-9\\s\\-()+]{7,}"
-                      onInvalid={(e) =>
-                        e.currentTarget.setCustomValidity(
-                          locale === "es"
-                            ? "Ingresa un número telefónico válido."
-                            : "Please enter a valid phone number."
-                        )
-                      }
-                      onInput={(e) => e.currentTarget.setCustomValidity("")}
-                      className="w-full border border-gray-300 rounded px-3 py-2 text-black placeholder:text-black"
-                      required
-                    />
-                  </div>
+                        <div className="max-h-40 overflow-y-auto pr-1 space-y-2">
+                          {leadOptions.map((opt) => {
+                            const checked = leadSelectedOptions.includes(opt);
+                            return (
+                              <label key={opt} className="flex items-start gap-3 cursor-pointer select-none">
+                                <input
+                                  type="checkbox"
+                                  checked={checked}
+                                  onChange={() => {
+                                    setLeadSelectedOptions((prev) => {
+                                      if (prev.includes(opt)) return prev.filter((x) => x !== opt);
+                                      return [...prev, opt];
+                                    });
+                                  }}
+                                  className="mt-1"
+                                />
+                                <span className="text-sm text-gray-800 whitespace-normal break-words leading-snug">
+                                  {opt}
+                                </span>
+                              </label>
+                            );
+                          })}
+                        </div>
+                      </div>
 
-                  <div>
-                    <label className="block text-sm text-gray-700 mb-1 flex items-center gap-1">
-                      {locale === "es" ? "¿Cuándo deseas visitar?" : "When would you like to visit?"}
-                      <span className="text-[#731a2f]">*</span>
-                    </label>
-                    <select
-                      name="visitTiming"
-                      value={leadForm.visitTiming}
-                      onChange={handleLeadChange}
-                      className="w-full border border-gray-300 rounded px-3 py-2 text-gray-700"
-                      required
-                    >
-                      <option value="">{locale === "es" ? "Selecciona" : "Select"}</option>
-                      <option value={locale === "es" ? "Esta semana" : "This week"}>
-                        {locale === "es" ? "Esta semana" : "This week"}
-                      </option>
-                      <option value={locale === "es" ? "Este mes" : "This month"}>
-                        {locale === "es" ? "Este mes" : "This month"}
-                      </option>
-                      <option value={locale === "es" ? "Dentro de tres meses" : "Within three months"}>
-                        {locale === "es" ? "Dentro de tres meses" : "Within three months"}
-                      </option>
-                      <option value={locale === "es" ? "Solo investigando" : "Just gathering information"}>
-                        {locale === "es" ? "Solo investigando" : "Just gathering information"}
-                      </option>
-                    </select>
-                  </div>
+                      <p className="text-xs text-gray-500 mt-1">
+                        {locale === "es"
+                          ? "Puedes elegir una o varias opciones."
+                          : "You can choose one or multiple options."}
+                      </p>
+                    </div>
 
-                  <div>
-                    <label className="block text-sm text-gray-700 mb-1 flex items-center gap-1">
-                      {locale === "es" ? "¿De dónde nos visitas?" : "Are you local or traveling from the U.S.?"}
-                      <span className="text-[#731a2f]">*</span>
-                    </label>
-                    <select
-                      name="locationOrigin"
-                      value={leadForm.locationOrigin}
-                      onChange={handleLeadChange}
-                      className="w-full border border-gray-300 rounded px-3 py-2 text-gray-700"
-                      required
-                    >
-                      <option value="">{locale === "es" ? "Selecciona" : "Select"}</option>
-                      <option value="Tijuana">Tijuana</option>
-                      <option value="San Diego">San Diego</option>
-                      <option value="Los Angeles">Los Angeles</option>
-                      <option value="Other">{locale === "es" ? "Otro" : "Other"}</option>
-                    </select>
-                    {leadForm.locationOrigin === "Other" && (
+                    <div>
+                      <label className="block text-sm text-gray-700 mb-1 flex items-center gap-1">
+                        {locale === "es" ? "Nombre" : "Name"} <span className="text-[#731a2f]">*</span>
+                      </label>
                       <input
                         type="text"
-                        name="locationOriginOther"
-                        value={leadForm.locationOriginOther}
+                        name="firstName"
+                        value={leadForm.firstName}
                         onChange={handleLeadChange}
-                        placeholder={locale === "es" ? "¿De dónde nos visitas?" : "Where are you visiting from?"}
-                        className="mt-2 w-full border border-gray-300 rounded px-3 py-2 text-black placeholder:text-black"
+                        placeholder={locale === "es" ? "Nombre" : "Name"}
+                        className="w-full border border-gray-300 rounded px-3 py-2 text-gray-900 placeholder:text-gray-400"
+                        required
                       />
-                    )}
-                  </div>
+                    </div>
 
-                  <div>
-                    <label className="block text-sm text-gray-700 mb-1">
-                      {locale === "es" ? "Método de contacto preferido" : "Preferred communication method"}
-                    </label>
-                    <select
-                      name="preferredChannel"
-                      value={leadForm.preferredChannel}
-                      onChange={handleLeadChange}
-                      className="w-full border border-gray-300 rounded px-3 py-2 text-gray-700"
-                    >
-                      <option value="WhatsApp">WhatsApp</option>
-                      <option value="Phone call">{locale === "es" ? "Llamada" : "Phone call"}</option>
-                      <option value="Text message">{locale === "es" ? "Mensaje de texto" : "Text message"}</option>
-                      <option value="Email">Email</option>
-                    </select>
+                    <div>
+                      <label className="block text-sm text-gray-700 mb-1 flex items-center gap-1">
+                        Email <span className="text-[#731a2f]">*</span>
+                      </label>
+                      <input
+                        type="email"
+                        name="email"
+                        value={leadForm.email}
+                        onChange={handleLeadChange}
+                        placeholder="Email"
+                        ref={emailRef}
+                        onInvalid={(e) =>
+                          e.currentTarget.setCustomValidity(
+                            locale === "es"
+                              ? "Por favor ingresa un correo válido."
+                              : "Please enter a valid email address."
+                          )
+                        }
+                        onInput={(e) => e.currentTarget.setCustomValidity("")}
+                        className="w-full border border-gray-300 rounded px-3 py-2 text-gray-900 placeholder:text-gray-400"
+                        required
+                      />
+                    </div>
+
+                    <div>
+                      <label className="block text-sm text-gray-700 mb-1 flex items-center gap-1">
+                        {locale === "es" ? "Código de país" : "Country code"}{" "}
+                        <span className="text-[#731a2f]">*</span>
+                      </label>
+                      <select
+                        name="countryCode"
+                        value={leadForm.countryCode}
+                        onChange={handleLeadChange}
+                        className="w-full border border-gray-300 rounded px-3 py-2 text-gray-900"
+                        required
+                      >
+                        {countryOptions.map((opt) => (
+                          <option key={opt.code} value={opt.code}>
+                            {opt.code} — {opt.label}
+                          </option>
+                        ))}
+                      </select>
+                    </div>
+
+                    <div>
+                      <label className="block text-sm text-gray-700 mb-1 flex items-center gap-1">
+                        {locale === "es" ? "Teléfono" : "Phone"} <span className="text-[#731a2f]">*</span>
+                      </label>
+                      <input
+                        type="tel"
+                        name="phone"
+                        value={leadForm.phone}
+                        onChange={handleLeadChange}
+                        placeholder={locale === "es" ? "Teléfono" : "Phone"}
+                        ref={phoneRef}
+                        pattern="[0-9\\s\\-()+]{7,}"
+                        onInvalid={(e) =>
+                          e.currentTarget.setCustomValidity(
+                            locale === "es"
+                              ? "Ingresa un número telefónico válido."
+                              : "Please enter a valid phone number."
+                          )
+                        }
+                        onInput={(e) => e.currentTarget.setCustomValidity("")}
+                        className="w-full border border-gray-300 rounded px-3 py-2 text-gray-900 placeholder:text-gray-400"
+                        required
+                      />
+                    </div>
+
+                    <div>
+                      <label className="block text-sm text-gray-700 mb-1 flex items-center gap-1">
+                        {locale === "es" ? "¿Cuándo deseas visitar?" : "When would you like to visit?"}
+                        <span className="text-[#731a2f]">*</span>
+                      </label>
+                      <select
+                        name="visitTiming"
+                        value={leadForm.visitTiming}
+                        onChange={handleLeadChange}
+                        className="w-full border border-gray-300 rounded px-3 py-2 text-gray-700"
+                        required
+                      >
+                        <option value="">{locale === "es" ? "Selecciona" : "Select"}</option>
+                        <option value={locale === "es" ? "Esta semana" : "This week"}>
+                          {locale === "es" ? "Esta semana" : "This week"}
+                        </option>
+                        <option value={locale === "es" ? "Este mes" : "This month"}>
+                          {locale === "es" ? "Este mes" : "This month"}
+                        </option>
+                        <option value={locale === "es" ? "Dentro de tres meses" : "Within three months"}>
+                          {locale === "es" ? "Dentro de tres meses" : "Within three months"}
+                        </option>
+                        <option value={locale === "es" ? "Solo investigando" : "Just gathering information"}>
+                          {locale === "es" ? "Solo investigando" : "Just gathering information"}
+                        </option>
+                      </select>
+                    </div>
+
+                    <div>
+                      <label className="block text-sm text-gray-700 mb-1 flex items-center gap-1">
+                        {locale === "es" ? "¿De dónde nos visitas?" : "Are you local or traveling from the U.S.?"}
+                        <span className="text-[#731a2f]">*</span>
+                      </label>
+                      <select
+                        name="locationOrigin"
+                        value={leadForm.locationOrigin}
+                        onChange={handleLeadChange}
+                        className="w-full border border-gray-300 rounded px-3 py-2 text-gray-700"
+                        required
+                      >
+                        <option value="">{locale === "es" ? "Selecciona" : "Select"}</option>
+                        <option value="Tijuana">Tijuana</option>
+                        <option value="San Diego">San Diego</option>
+                        <option value="Los Angeles">Los Angeles</option>
+                        <option value="Other">{locale === "es" ? "Otro" : "Other"}</option>
+                      </select>
+
+                      {leadForm.locationOrigin === "Other" && (
+                        <input
+                          type="text"
+                          name="locationOriginOther"
+                          value={leadForm.locationOriginOther}
+                          onChange={handleLeadChange}
+                          placeholder={locale === "es" ? "¿De dónde nos visitas?" : "Where are you visiting from?"}
+                          className="mt-2 w-full border border-gray-300 rounded px-3 py-2 text-gray-900 placeholder:text-gray-400"
+                        />
+                      )}
+                    </div>
+
+                    <div>
+                      <label className="block text-sm text-gray-700 mb-1">
+                        {locale === "es" ? "Método de contacto preferido" : "Preferred communication method"}
+                      </label>
+                      <select
+                        name="preferredChannel"
+                        value={leadForm.preferredChannel}
+                        onChange={handleLeadChange}
+                        className="w-full border border-gray-300 rounded px-3 py-2 text-gray-700"
+                      >
+                        <option value="WhatsApp">WhatsApp</option>
+                        <option value="Phone call">{locale === "es" ? "Llamada" : "Phone call"}</option>
+                        <option value="Text message">{locale === "es" ? "Mensaje de texto" : "Text message"}</option>
+                        <option value="Email">Email</option>
+                      </select>
+                    </div>
                   </div>
                 </div>
+              )}
 
-                <div className="flex gap-3 pt-2">
+              {leadStep === "form2" && (
+                <div className="space-y-4">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                    <div>
+                      <label className="block text-sm text-gray-700 mb-1">
+                        {locale === "es"
+                          ? "¿Has tenido este tratamiento?"
+                          : "Have you had this treatment before?"}
+                      </label>
+                      <select
+                        name="hadTreatmentBefore"
+                        value={leadForm.hadTreatmentBefore}
+                        onChange={handleLeadChange}
+                        className="w-full border border-gray-300 rounded px-3 py-2 text-gray-700"
+                      >
+                        <option value="">{locale === "es" ? "Selecciona" : "Select"}</option>
+                        <option value={locale === "es" ? "Sí" : "Yes"}>{locale === "es" ? "Sí" : "Yes"}</option>
+                        <option value={locale === "es" ? "No" : "No"}>{locale === "es" ? "No" : "No"}</option>
+                        <option value={locale === "es" ? "No estoy seguro" : "Not sure"}>
+                          {locale === "es" ? "No estoy seguro" : "Not sure"}
+                        </option>
+                      </select>
+                    </div>
+
+                    <div>
+                      <label className="block text-sm text-gray-700 mb-1">
+                        {locale === "es" ? "Mejores días" : "Best days"}
+                      </label>
+                      <select
+                        name="bestDays"
+                        value={leadForm.bestDays}
+                        onChange={handleLeadChange}
+                        className="w-full border border-gray-300 rounded px-3 py-2 text-gray-700"
+                      >
+                        <option value="">{locale === "es" ? "Selecciona" : "Select"}</option>
+                        <option value={locale === "es" ? "Días de semana" : "Weekdays"}>
+                          {locale === "es" ? "Días de semana" : "Weekdays"}
+                        </option>
+                        <option value={locale === "es" ? "Sábados" : "Saturdays"}>
+                          {locale === "es" ? "Sábados" : "Saturdays"}
+                        </option>
+                        <option value={locale === "es" ? "Disponibilidad abierta" : "Open availability"}>
+                          {locale === "es" ? "Disponibilidad abierta" : "Open availability"}
+                        </option>
+                      </select>
+                    </div>
+
+                    <div>
+                      <label className="block text-sm text-gray-700 mb-1">
+                        {locale === "es" ? "Mejores horarios" : "Best times"}
+                      </label>
+                      <select
+                        name="bestTimes"
+                        value={leadForm.bestTimes}
+                        onChange={handleLeadChange}
+                        className="w-full border border-gray-300 rounded px-3 py-2 text-gray-700"
+                      >
+                        <option value="">{locale === "es" ? "Selecciona" : "Select"}</option>
+                        <option value={locale === "es" ? "Mañanas" : "Mornings"}>
+                          {locale === "es" ? "Mañanas" : "Mornings"}
+                        </option>
+                        <option value={locale === "es" ? "Mediodía" : "Noon"}>
+                          {locale === "es" ? "Mediodía" : "Noon"}
+                        </option>
+                        <option value={locale === "es" ? "Tardes" : "Afternoons"}>
+                          {locale === "es" ? "Tardes" : "Afternoons"}
+                        </option>
+                        <option value={locale === "es" ? "Disponibilidad abierta" : "Open availability"}>
+                          {locale === "es" ? "Disponibilidad abierta" : "Open availability"}
+                        </option>
+                      </select>
+                    </div>
+
+                    <div className="md:col-span-2">
+                      <label className="block text-sm text-gray-700 mb-1">
+                        {locale === "es"
+                          ? "¿Cuál es tu principal preocupación u objetivo?"
+                          : "What is your main concern or goal?"}
+                      </label>
+                      <input
+                        type="text"
+                        name="mainConcern"
+                        value={leadForm.mainConcern}
+                        onChange={handleLeadChange}
+                        placeholder={
+                          locale === "es"
+                            ? "Ej. líneas de expresión, flacidez mandibular, cicatrices, manchas..."
+                            : "E.g., forehead lines, sagging jawline, acne scars, melasma..."
+                        }
+                        className="w-full border border-gray-300 rounded px-3 py-2 text-gray-900 placeholder:text-gray-400"
+                      />
+                    </div>
+                  </div>
+                </div>
+              )}
+
+              {leadStep === "channels" && (
+                <div className="space-y-4">
+                  <div className="flex flex-col gap-3">
+                    <button
+                      type="button"
+                      className="w-full bg-[#25D366] text-white py-2 rounded font-medium hover:opacity-90 transition"
+                      onClick={() => {
+                        const msg =
+                          locale === "es"
+                            ? [
+                                `Hola, me interesa ${leadSnapshot?.treatmentInterest || leadService}.`,
+                                leadSnapshot?.firstName || leadForm.firstName
+                                  ? `Mi nombre es ${leadSnapshot?.firstName || leadForm.firstName}.`
+                                  : null,
+                                leadSnapshot?.bestDay || leadSnapshot?.bestTime || leadForm.bestDays || leadForm.bestTimes
+                                  ? `Prefiero ${leadSnapshot?.bestDay || leadForm.bestDays || "cualquier día"} y ${
+                                      leadSnapshot?.bestTime || leadForm.bestTimes || "cualquier horario"
+                                    }.`
+                                  : null,
+                              ]
+                                .filter(Boolean)
+                                .join(" ")
+                            : [
+                                `Hi, I'm interested in ${leadSnapshot?.treatmentInterest || leadService}.`,
+                                leadSnapshot?.firstName || leadForm.firstName
+                                  ? `My name is ${leadSnapshot?.firstName || leadForm.firstName}.`
+                                  : null,
+                                leadSnapshot?.bestDay || leadSnapshot?.bestTime || leadForm.bestDays || leadForm.bestTimes
+                                  ? `I prefer ${leadSnapshot?.bestDay || leadForm.bestDays || "any day"} and ${
+                                      leadSnapshot?.bestTime || leadForm.bestTimes || "any time"
+                                    }.`
+                                  : null,
+                              ]
+                                .filter(Boolean)
+                                .join(" ");
+
+                        const link = `https://wa.me/+526642077675?text=${encodeURIComponent(msg)}`;
+                        window.open(link, "_blank");
+                        handleCloseLead();
+                      }}
+                    >
+                      WhatsApp
+                    </button>
+
+                    <button
+                      type="button"
+                      className="w-full bg-gradient-to-r from-[#f09433] via-[#e6683c] via-[#dc2743] via-[#cc2366] to-[#bc1888] text-white py-2 rounded font-medium hover:opacity-90 transition"
+                      onClick={() => {
+                        window.open("https://www.instagram.com/mavemedicalspa", "_blank");
+                        handleCloseLead();
+                      }}
+                    >
+                      Instagram
+                    </button>
+                  </div>
+                </div>
+              )}
+            </div>
+
+            {/* Sticky Footer */}
+            {leadStep === "form1" && (
+              <div className="sticky bottom-0 bg-white border-t border-gray-100 px-5 py-4">
+                <div className="flex gap-3">
                   <button
                     type="button"
                     onClick={() => {
@@ -658,12 +844,10 @@ export default function TreatmentDetails({ treatment }) {
                   >
                     {locale === "es" ? "Continuar" : "Continue"}
                   </button>
+
                   <button
                     type="button"
-                    onClick={() => {
-                      setLeadOpen(false);
-                      setLeadStep("form1");
-                    }}
+                    onClick={handleCloseLead}
                     className="flex-1 border border-gray-300 text-gray-700 py-2 rounded hover:border-black transition"
                   >
                     {locale === "es" ? "Cancelar" : "Cancel"}
@@ -673,111 +857,8 @@ export default function TreatmentDetails({ treatment }) {
             )}
 
             {leadStep === "form2" && (
-              <div className="space-y-4">
-                <h3 className="text-xl font-semibold text-black text-center">
-                  {locale === "es" ? "Detalles adicionales" : "Additional details"}
-                </h3>
-                <p className="text-sm text-gray-600 text-center">
-                  {locale === "es"
-                    ? "Ayúdanos a preparar tu visita."
-                    : "Help us tailor your visit."}
-                </p>
-
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-                  <div>
-                    <label className="block text-sm text-gray-700 mb-1">
-                      {locale === "es" ? "¿Has tenido este tratamiento?" : "Have you had this treatment before?"}
-                    </label>
-                    <select
-                      name="hadTreatmentBefore"
-                      value={leadForm.hadTreatmentBefore}
-                      onChange={handleLeadChange}
-                      className="w-full border border-gray-300 rounded px-3 py-2 text-gray-700"
-                    >
-                      <option value="">{locale === "es" ? "Selecciona" : "Select"}</option>
-                      <option value={locale === "es" ? "Sí" : "Yes"}>
-                        {locale === "es" ? "Sí" : "Yes"}
-                      </option>
-                      <option value={locale === "es" ? "No" : "No"}>
-                        {locale === "es" ? "No" : "No"}
-                      </option>
-                      <option value={locale === "es" ? "No estoy seguro" : "Not sure"}>
-                        {locale === "es" ? "No estoy seguro" : "Not sure"}
-                      </option>
-                    </select>
-                  </div>
-
-                  <div>
-                    <label className="block text-sm text-gray-700 mb-1">
-                      {locale === "es" ? "Mejores días" : "Best days"}
-                    </label>
-                    <select
-                      name="bestDays"
-                      value={leadForm.bestDays}
-                      onChange={handleLeadChange}
-                      className="w-full border border-gray-300 rounded px-3 py-2 text-gray-700"
-                    >
-                      <option value="">{locale === "es" ? "Selecciona" : "Select"}</option>
-                      <option value={locale === "es" ? "Días de semana" : "Weekdays"}>
-                        {locale === "es" ? "Días de semana" : "Weekdays"}
-                      </option>
-                      <option value={locale === "es" ? "Sábados" : "Saturdays"}>
-                        {locale === "es" ? "Sábados" : "Saturdays"}
-                      </option>
-                      <option value={locale === "es" ? "Disponibilidad abierta" : "Open availability"}>
-                        {locale === "es" ? "Disponibilidad abierta" : "Open availability"}
-                      </option>
-                    </select>
-                  </div>
-
-                  <div>
-                    <label className="block text-sm text-gray-700 mb-1">
-                      {locale === "es" ? "Mejores horarios" : "Best times"}
-                    </label>
-                    <select
-                      name="bestTimes"
-                      value={leadForm.bestTimes}
-                      onChange={handleLeadChange}
-                      className="w-full border border-gray-300 rounded px-3 py-2 text-gray-700"
-                    >
-                      <option value="">{locale === "es" ? "Selecciona" : "Select"}</option>
-                      <option value={locale === "es" ? "Mañanas" : "Mornings"}>
-                        {locale === "es" ? "Mañanas" : "Mornings"}
-                      </option>
-                      <option value={locale === "es" ? "Mediodía" : "Noon"}>
-                        {locale === "es" ? "Mediodía" : "Noon"}
-                      </option>
-                      <option value={locale === "es" ? "Tardes" : "Afternoons"}>
-                        {locale === "es" ? "Tardes" : "Afternoons"}
-                      </option>
-                      <option value={locale === "es" ? "Disponibilidad abierta" : "Open availability"}>
-                        {locale === "es" ? "Disponibilidad abierta" : "Open availability"}
-                      </option>
-                    </select>
-                  </div>
-
-                  <div className="md:col-span-2">
-                    <label className="block text-sm text-gray-700 mb-1">
-                      {locale === "es"
-                        ? "¿Cuál es tu principal preocupación u objetivo?"
-                        : "What is your main concern or goal?"}
-                    </label>
-                    <input
-                      type="text"
-                      name="mainConcern"
-                      value={leadForm.mainConcern}
-                      onChange={handleLeadChange}
-                      placeholder={
-                        locale === "es"
-                          ? "Ej. líneas de expresión, flacidez mandibular, cicatrices, manchas..."
-                          : "E.g., forehead lines, sagging jawline, acne scars, melasma..."
-                      }
-                      className="w-full border border-gray-300 rounded px-3 py-2 text-black placeholder:text-black"
-                    />
-                  </div>
-                </div>
-
-                <div className="flex gap-3 pt-2">
+              <div className="sticky bottom-0 bg-white border-t border-gray-100 px-5 py-4">
+                <div className="flex gap-3">
                   <button
                     type="button"
                     disabled={submitting}
@@ -786,6 +867,7 @@ export default function TreatmentDetails({ treatment }) {
                         leadForm.locationOrigin === "Other"
                           ? leadForm.locationOriginOther || "Other"
                           : leadForm.locationOrigin;
+
                       setSubmitting(true);
                       try {
                         const payload = {
@@ -814,6 +896,7 @@ export default function TreatmentDetails({ treatment }) {
                           headers: { "Content-Type": "application/json" },
                           body: JSON.stringify(payload),
                         });
+
                         setLeadSnapshot({
                           firstName: leadForm.firstName,
                           bestDay: leadForm.bestDays,
@@ -823,6 +906,7 @@ export default function TreatmentDetails({ treatment }) {
                               ? leadSelectedOptions.join(" | ")
                               : leadService,
                         });
+
                         setLeadStep("channels");
                       } catch (err) {
                         console.error("Lead submit error", err);
@@ -845,6 +929,7 @@ export default function TreatmentDetails({ treatment }) {
                       ? "Enviar"
                       : "Submit"}
                   </button>
+
                   <button
                     type="button"
                     onClick={() => setLeadStep("form1")}
@@ -857,70 +942,14 @@ export default function TreatmentDetails({ treatment }) {
             )}
 
             {leadStep === "channels" && (
-              <div className="space-y-4">
-                <h3 className="text-xl font-semibold text-black text-center">
-                  {locale === "es" ? "Elige cómo chatear" : "Choose how to chat"}
-                </h3>
-                <p className="text-sm text-gray-600 text-center">
-                  {locale === "es"
-                    ? "Selecciona WhatsApp o Instagram para continuar la conversación."
-                    : "Pick WhatsApp or Instagram to continue the conversation."}
-                </p>
-                <div className="flex flex-col gap-3">
-                  <button
-                    type="button"
-                    className="w-full bg-[#25D366] text-white py-2 rounded font-medium hover:opacity-90 transition"
-                    onClick={() => {
-                      const msg =
-                        locale === "es"
-                          ? [
-                              `Hola, me interesa ${leadSnapshot?.treatmentInterest || leadService}.`,
-                              leadSnapshot?.firstName || leadForm.firstName
-                                ? `Mi nombre es ${leadSnapshot?.firstName || leadForm.firstName}.`
-                                : null,
-                              leadSnapshot?.bestDay || leadSnapshot?.bestTime || leadForm.bestDays || leadForm.bestTimes
-                                ? `Prefiero ${leadSnapshot?.bestDay || leadForm.bestDays || "cualquier día"} y ${leadSnapshot?.bestTime || leadForm.bestTimes || "cualquier horario"}.`
-                                : null,
-                            ]
-                              .filter(Boolean)
-                              .join(" ")
-                          : [
-                              `Hi, I'm interested in ${leadSnapshot?.treatmentInterest || leadService}.`,
-                              leadSnapshot?.firstName || leadForm.firstName
-                                ? `My name is ${leadSnapshot?.firstName || leadForm.firstName}.`
-                                : null,
-                              leadSnapshot?.bestDay || leadSnapshot?.bestTime || leadForm.bestDays || leadForm.bestTimes
-                                ? `I prefer ${leadSnapshot?.bestDay || leadForm.bestDays || "any day"} and ${leadSnapshot?.bestTime || leadForm.bestTimes || "any time"}.`
-                                : null,
-                            ]
-                              .filter(Boolean)
-                              .join(" ");
-                      const link = `https://wa.me/+526642077675?text=${encodeURIComponent(msg)}`;
-                      window.open(link, "_blank");
-                      setLeadOpen(false);
-                      setLeadForm(initialLeadForm);
-                      setLeadSnapshot(null);
-                      setLeadSelectedOptions([]);
-                      setLeadStep("form1");
-                    }}
-                  >
-                    WhatsApp
-                  </button>
-                  <button
-                    type="button"
-                    className="w-full bg-gradient-to-r from-[#f09433] via-[#e6683c] via-[#dc2743] via-[#cc2366] to-[#bc1888] text-white py-2 rounded font-medium hover:opacity-90 transition"
-                    onClick={() => {
-                      window.open("https://www.instagram.com/mavemedicalspa", "_blank");
-                      setLeadOpen(false);
-                      setLeadForm(initialLeadForm);
-                      setLeadSnapshot(null);
-                      setLeadSelectedOptions([]);
-                      setLeadStep("form1");
-                    }}
-                  >
-                    Instagram
-                  </button>
-                </div>
+              <div className="sticky bottom-0 bg-white border-t border-gray-100 px-5 py-4">
+                <button
+                  type="button"
+                  onClick={handleCloseLead}
+                  className="w-full border border-gray-300 text-gray-700 py-2 rounded hover:border-black transition"
+                >
+                  {locale === "es" ? "Cerrar" : "Close"}
+                </button>
               </div>
             )}
           </div>
