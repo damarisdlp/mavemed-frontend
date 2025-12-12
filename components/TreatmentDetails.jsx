@@ -398,9 +398,9 @@ export default function TreatmentDetails({ treatment }) {
       </div>
 
       {leadOpen && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 px-4">
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 px-4 py-8">
           <div
-            className="bg-white rounded-lg shadow-xl w-full max-w-xl p-5 md:p-6 relative"
+            className="bg-white rounded-lg shadow-xl w-full max-w-xl p-5 md:p-6 relative max-h-[calc(100vh-4rem)] overflow-y-auto"
             onClick={(e) => e.stopPropagation()}
           >
             <button
@@ -431,7 +431,7 @@ export default function TreatmentDetails({ treatment }) {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                   <div className="md:col-span-2">
-                    <label className="block text-sm text-gray-700 mb-1">
+                    <label className="block text-sm text-gray-700 mb-1 break-words">
                       {locale === "es" ? "Selecciona tratamiento" : "Select treatment option"}
                     </label>
                     <select
@@ -441,11 +441,11 @@ export default function TreatmentDetails({ treatment }) {
                         const values = Array.from(e.target.selectedOptions).map((opt) => opt.value);
                         setLeadSelectedOptions(values);
                       }}
-                      className="w-full border border-gray-300 rounded px-3 py-2 text-gray-700 h-24"
+                      className="w-full border border-gray-300 rounded px-3 py-2 text-gray-700 h-32 leading-snug"
                     >
                       {leadOptions.map((opt) => (
                         <option key={opt} value={opt}>
-                          {opt}
+                          <span className="whitespace-normal">{opt}</span>
                         </option>
                       ))}
                     </select>
