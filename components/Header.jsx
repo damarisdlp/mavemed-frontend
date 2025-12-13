@@ -7,52 +7,38 @@ import { dispatchChatOpen } from "@/lib/utils/chat";
 
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [showMobileToggle, setShowMobileToggle] = useState(true);
+  const [scrolled, setScrolled] = useState(false);
   const { t } = useTranslation("layout");
   const router = useRouter();
   const { locale, asPath } = router;
 
-  // Hide the mobile toggle when scrolling on mobile
+  // Close mobile menu on scroll
   useEffect(() => {
     const handleScroll = () => {
-      const isMobile = typeof window !== "undefined" ? window.innerWidth < 1024 : false;
-      if (isMobile && window.scrollY > 0) {
-        setShowMobileToggle(false);
-        setIsMobileMenuOpen(false);
-      } else {
-        setShowMobileToggle(true);
-      }
-    };
-    const handleResize = () => {
-      const isMobile = typeof window !== "undefined" ? window.innerWidth < 1024 : false;
-      if (!isMobile) {
-        setShowMobileToggle(true);
-      } else if (window.scrollY > 0) {
-        setShowMobileToggle(false);
-        setIsMobileMenuOpen(false);
-      }
+      setIsMobileMenuOpen(false);
+      setScrolled(window.scrollY > 0);
     };
     window.addEventListener("scroll", handleScroll, { passive: true });
-    window.addEventListener("resize", handleResize);
-    handleResize();
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-      window.removeEventListener("resize", handleResize);
-    };
+    handleScroll();
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
     <header className="sticky top-0 z-50 bg-white border-b border-gray-100 shadow-sm">
-      <div className="relative max-w-7xl mx-auto px-6 py-6 md:py-5 flex justify-between items-center">
+      <div
+        className={`relative max-w-7xl mx-auto px-6 py-6 md:py-5 flex items-center ${
+          scrolled ? "justify-center md:justify-between" : "justify-between"
+        }`}
+      >
         {/* Mobile Menu Toggle */}
-        {showMobileToggle && (
-          <button
-            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="lg:hidden text-gray-600 focus:outline-none"
-          >
-            ☰
-          </button>
-        )}
+        <button
+          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+          className={`lg:hidden text-gray-600 focus:outline-none transition ${
+            scrolled ? "opacity-0 pointer-events-none" : "opacity-100"
+          }`}
+        >
+          ☰
+        </button>
 
         {/* Left Nav - Desktop */}
         <div className="flex-1 hidden lg:flex gap-5 text-base text-gray-600 whitespace-nowrap">
@@ -153,7 +139,10 @@ export default function Header() {
             {t("nav.location")}
           </NextLink>
           <button
-            onClick={dispatchChatOpen}
+            onClick={() => {
+              setIsMobileMenuOpen(false);
+              dispatchChatOpen();
+            }}
             className="bg-black text-white px-6 py-2 rounded-full text-sm hover:bg-[#731a2f]"
             type="button"
           >
