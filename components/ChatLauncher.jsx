@@ -147,7 +147,7 @@ export default function ChatLauncher() {
           setAnchor(null);
           setOpen((prev) => !prev);
         }}
-        className={`inline-flex items-center gap-2 text-white px-4 py-3 rounded-full shadow-lg transition ${
+        className={`inline-flex items-center gap-2 text-white px-3 py-2.5 rounded-full shadow-lg transition ${
           hideOnMobile ? "opacity-0 pointer-events-none" : ""
         }`}
         style={{ backgroundColor: BRAND_COLOR }}
@@ -156,7 +156,9 @@ export default function ChatLauncher() {
         <span className="text-sm font-semibold">
           {open
             ? t("chat.close", { defaultValue: "Close" })
-            : t("chat.open", { defaultValue: "Chat with us" })}
+            : i18n.language?.startsWith("es")
+            ? "Chatea"
+            : "Chat"}
         </span>
       </button>
     </div>
