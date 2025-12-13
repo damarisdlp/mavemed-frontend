@@ -145,11 +145,14 @@ export default function LeadForm() {
 
   return (
     <>
-      <section className="bg-[#efeee7] w-full px-4 sm:px-6 py-4 justify-center items-center text-center relative">
-        <div className="w-full max-w-screen-xl mx-auto grid md:grid-cols-2 gap-4 items-center">
+      <section
+        className="bg-[#efeee7] w-full px-4 sm:px-6 py-3 justify-center items-center text-center relative"
+        data-lead-form
+      >
+        <div className="w-full max-w-screen-xl mx-auto grid md:grid-cols-2 gap-3 items-center">
           <div>
             <h2
-              className="text-black font-serif font-medium mb-3 leading-snug text-[clamp(1.6rem,4.5vw,2.3rem)] max-w-full break-words"
+              className="text-black font-serif font-medium mb-2 leading-snug text-[clamp(1.5rem,4vw,2.1rem)] max-w-full break-words"
               style={{ textWrap: "balance" }}
             >
               {t("leadForm.title")}
@@ -161,7 +164,7 @@ export default function LeadForm() {
 
           <form
             onSubmit={handleSubmit}
-            className="bg-white p-4 rounded-lg shadow-md grid gap-3 text-left"
+            className="bg-white p-3 rounded-lg shadow-md grid gap-2.5 text-left"
           >
             <label className="text-sm text-gray-700 flex items-center gap-1">
               {t("leadForm.firstName")}
