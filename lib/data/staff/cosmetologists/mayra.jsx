@@ -19,11 +19,16 @@ export const mayra = {
   },
   favorites: [
     {
-      treatmentSlug: "hydrafacial",
-      optionName: {
-        en: "Hydrafacial MD - Face",
-        es: "Hydrafacial MD - Rostro"
-      }
+      treatmentSlug: "microneedling",
+    },
+    {
+      treatmentSlug: "mesotherapy-infusions"
+    },
+    {
+      treatmentSlug: "hydrafacial"
+    },
+    {
+      treatmentSlug: "casmara-purifying"
     }
   ]
 };
