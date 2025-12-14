@@ -76,7 +76,7 @@ export default function StaffFavorites({ favorites = [], locale = "en", displayN
           {favoriteCards.map((card, idx) => (
             <div key={idx} className="keen-slider__slide flex justify-center px-2">
               <div className="w-[280px] sm:w-[300px] md:w-[320px] lg:w-[340px] flex flex-col bg-[#f9f9f9] rounded-lg overflow-hidden shadow-sm hover:shadow-md transition mb-3">
-                <div className="relative h-50 w-full">
+                <div className="relative h-[200px] w-full">
                   <Image src={card.image} alt={card.serviceName} fill className="object-cover" />
                 </div>
                 <div className="p-4 flex-1 flex flex-col justify-between">
@@ -93,9 +93,12 @@ export default function StaffFavorites({ favorites = [], locale = "en", displayN
                         const target = card.slug.startsWith("/treatments")
                           ? card.slug
                           : `/treatments/${card.slug}`;
-                        router?.push
-                          ? router.push(`${target}?lead=open`)
-                          : (window.location.href = `${target}?lead=open`);
+                        const href = `${target}?lead=open`;
+                        if (router?.push) {
+                          router.push(href);
+                        } else {
+                          window.location.href = href;
+                        }
                       }}
                       className="bg-black text-white px-4 py-2 rounded-full text-xs hover:bg-[#731a2f] text-center"
                     >
