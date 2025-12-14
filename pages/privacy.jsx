@@ -70,13 +70,13 @@ export default function PrivacyPage() {
             </p>
             <p className="mt-2">
               Email:{" "}
-              <a href={`mailto:${strings.contactEmail}`} className="underline text-black">
+              <a href={`mailto:${strings.contactEmail}`} className="underline text-[#731a2f]">
                 {strings.contactEmail}
               </a>
             </p>
             <p>
               {locale === "es" ? "Teléfono:" : "Phone:"}{" "}
-              <a href={`tel:${strings.contactPhone}`} className="underline text-black">
+              <a href={`tel:${strings.contactPhone}`} className="underline text-[#731a2f]">
                 {strings.contactPhone}
               </a>
             </p>
