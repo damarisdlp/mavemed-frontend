@@ -19,39 +19,22 @@ export const jocelyn = {
   },
   favorites: [
     {
-      treatmentSlug: "hydrafacial",
-      optionName: {
-        en: "Hydrafacial MD - Face",
-        es: "Hydrafacial MD - Rostro"
-      }
+      treatmentSlug: "wrinkle-reducers-botox",
+    },
+    {
+      treatmentSlug: "microneedling",
+    },
+    {
+      treatmentSlug: "sculptra",
     },
     {
       treatmentSlug: "hydrafacial",
-      optionName: {
-        en: "Hydrafacial MD - Face",
-        es: "Hydrafacial MD - Rostro"
-      }
     },
     {
-      treatmentSlug: "hydrafacial",
-      optionName: {
-        en: "Hydrafacial MD - Face",
-        es: "Hydrafacial MD - Rostro"
-      }
+      treatmentSlug: "sylfirm-rf-microneedling",
     },
     {
-      treatmentSlug: "hydrafacial",
-      optionName: {
-        en: "Hydrafacial MD - Face",
-        es: "Hydrafacial MD - Rostro"
-      }
-    },
-    {
-      treatmentSlug: "hydrafacial",
-      optionName: {
-        en: "Hydrafacial MD - Face",
-        es: "Hydrafacial MD - Rostro"
-      }
+      treatmentSlug: "serum-add-ons"
     }
   ]
 };
