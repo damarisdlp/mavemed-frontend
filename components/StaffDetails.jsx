@@ -21,7 +21,7 @@ export default function StaffDetails({ member }) {
 
   return (
     <div className="w-full bg-white">
-      <main className="flex-grow max-w-6xl mx-auto px-6 py-12">
+      <main className="flex-grow max-w-7xl mx-auto px-6 py-12">        
         {/* Breadcrumb */}
         <div className="mb-4">
           <p className="text-sm text-gray-500">
@@ -42,7 +42,7 @@ export default function StaffDetails({ member }) {
 
         <div className="flex flex-col md:flex-row gap-10 items-start mt-6">
           {/* Profile Image */}
-          <div className="relative w-full md:w-1/2 h-80 md:h-125 rounded overflow-hidden shadow-md">
+          <div className="relative w-full md:w-2/5 h-80 md:h-125 rounded overflow-hidden shadow-md">
             <Image
               src={member.image}
               alt={displayName}
@@ -50,9 +50,9 @@ export default function StaffDetails({ member }) {
               className="object-[50%_20%] object-cover"
             />
           </div>
-
+          
           {/* Bio */}
-          <div className="w-full md:w-1/2">
+          <div className="w-full md:w-3/5">
             <h1 className="text-4xl font-serif text-black font-medium mt-2 mb-2">
               {displayName}
             </h1>
