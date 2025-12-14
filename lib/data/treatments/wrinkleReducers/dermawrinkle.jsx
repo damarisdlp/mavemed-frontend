@@ -43,15 +43,20 @@ export const dermawrinkle = {
     options: [
       {
         optionName: {
-          en: "Dermawrinkle - Any Zone",
-          es: "Dermawrinkle - Cualquier Zona"
+          en: "Per Unit",
+          es: "Por Unidad"
         },
         optionPrice: {
-          en: "Each unit at $4.75",
-          es: "Cada unidad a $4.75"
+          en: "$4.75",
+          es: "4.75"
         },
         optionCurrency: "USD",
-        notes: null,
+        notes: [
+          {
+            en: "Any zone",
+            es: "Cualquier zona"
+          }
+        ],
       },
     ],
   },
