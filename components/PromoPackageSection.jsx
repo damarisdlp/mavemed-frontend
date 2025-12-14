@@ -13,7 +13,7 @@ export default function PromoPackageSection() {
         <div className="flex items-center justify-center px-6 py-10">
           <div className="w-full max-w-md mx-auto text-center md:text-left">
             <h2
-              className="text-black font-serif font-medium mb-6 leading-tight text-[clamp(2rem,5vw,3.1rem)] max-w-[92vw] sm:max-w-xl break-words"
+              className="text-black font-serif font-medium mb-6 leading-tight text-[clamp(1.75rem,4.5vw,2.8rem)] max-w-[92vw] sm:max-w-xl break-words"
               style={{ textWrap: "balance" }}
             >
               {t("packages.title")}
