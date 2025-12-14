@@ -118,7 +118,7 @@ export default function AboutSection() {
                 className="keen-slider__slide flex justify-center px-2"
               >
                 <div className="w-[320px] sm:w-[340px] md:w-[360px] lg:w-[380px] flex flex-col bg-[#f9f9f9] rounded-lg overflow-hidden shadow-sm hover:shadow-md transition mb-3">
-                  <div className="relative h-80 w-full">
+                  <div className="relative h-100 w-full">
                     <Image
                       src={s.image}
                       alt={`${getLocalized(s.displayName)} – ${getLocalized(
