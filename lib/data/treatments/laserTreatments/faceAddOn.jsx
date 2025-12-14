@@ -6,8 +6,8 @@ export const serumAddOns = {
     es: "Tratamientos Láser y Resurfacing Cutáneo"
   },
   serviceDisplayName: {
-    en: "Serum Add-Ons (PRP, PDRN, PN)",
-    es: "Complementos de Suero (PRP, PDRN, PN)"
+    en: "Serum Add-Ons (PRP, PN, PDRN)",
+    es: "Complementos de Suero (PRP, PN, PDRN)"
   },
   isPopular: false,
   isPromoEligible: false,
