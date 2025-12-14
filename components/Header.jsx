@@ -7,7 +7,7 @@ import { dispatchChatOpen } from "@/lib/utils/chat";
 
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
+  const [hideToggle, setHideToggle] = useState(false);
   const { t } = useTranslation("layout");
   const router = useRouter();
   const { locale, asPath } = router;
@@ -16,25 +16,20 @@ export default function Header() {
   useEffect(() => {
     const handleScroll = () => {
       setIsMobileMenuOpen(false);
-      setScrolled(window.scrollY > 0);
+      setHideToggle(window.scrollY > 0);
     };
     window.addEventListener("scroll", handleScroll, { passive: true });
-    handleScroll();
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
     <header className="sticky top-0 z-50 bg-white border-b border-gray-100 shadow-sm">
-      <div
-        className={`relative max-w-7xl mx-auto px-6 py-6 md:py-5 flex items-center ${
-          scrolled ? "justify-center md:justify-between" : "justify-between"
-        }`}
-      >
+      <div className="relative max-w-7xl mx-auto px-6 pt-9 pb-4 md:pt-7 pb-5 flex items-center justify-between">
         {/* Mobile Menu Toggle */}
         <button
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           className={`lg:hidden text-gray-600 focus:outline-none transition ${
-            scrolled ? "opacity-0 pointer-events-none" : "opacity-100"
+            hideToggle ? "opacity-0 pointer-events-none" : "opacity-100"
           }`}
         >
           ☰
