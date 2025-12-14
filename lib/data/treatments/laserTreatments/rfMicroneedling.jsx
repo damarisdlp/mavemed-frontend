@@ -1,5 +1,5 @@
 export const rfMicroneedling = {
-  urlSlug: "rf-microneedling",
+  urlSlug: "sylfirm-rf-microneedling",
   category: "laser-resurfacing",
   categoryDisplayName: {
     en: "Laser Treatments & Skin Resurfacing",
