@@ -43,15 +43,20 @@ export const botox = {
     options: [
       {
         optionName: {
-          en: "Botox - Any Zone",
-          es: "Botox - Cualquier Zona"
+          en: "Per Unit",
+          es: "Por Unidad"
         },
         optionPrice: {
-          en: "Each unit at $6.25",
-          es: "Cada unidad a $6.25"
+          en: "$6.25",
+          es: "6.25"
         },
         optionCurrency: "USD",
-        notes: null,
+        notes: [
+          {
+            en: "Any zone",
+            es: "Cualquier zona"
+          }
+        ],
       },
     ],
   },
