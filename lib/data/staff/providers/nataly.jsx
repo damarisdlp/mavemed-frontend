@@ -20,10 +20,16 @@ export const nataly = {
   favorites: [
     {
       treatmentSlug: "hydrafacial",
-      optionName: {
-        en: "Hydrafacial MD - Face",
-        es: "Hydrafacial MD - Rostro"
-      }
+    },
+    {
+      treatmentSlug: "mesotherapy-infusions",
+    },
+    {
+      treatmentSlug: "hyaluronic-acid-lip-fillers"
+    },
+    {
+      treatmentSlug: "sculptra"
     }
+
   ]
 };
