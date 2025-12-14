@@ -14,6 +14,42 @@ import { accessibilityContent } from "@/lib/data/pages/accessibility";
 export default function AccessibilityPage() {
   const { locale = "en" } = useRouter();
 
+  const renderParagraph = (para, key) => {
+    const email = "info@mavemedspa.com";
+    const phoneDisplay = "+52 (664) 207 7675";
+    const phoneHref = "+526642077675";
+
+    if (para.includes(email)) {
+      const [label = "", rest = ""] = para.split(":");
+      return (
+        <p key={key}>
+          {label || para.replace(email, "").trim()}
+          {label ? ":" : ""}{" "}
+          <a href={`mailto:${email}`} className="text-[#731a2f] underline">
+            {email}
+          </a>
+          {rest && rest.replace(email, "")}
+        </p>
+      );
+    }
+
+    if (para.includes(phoneDisplay)) {
+      const [label = "", rest = ""] = para.split(":");
+      return (
+        <p key={key}>
+          {label || para.replace(phoneDisplay, "").trim()}
+          {label ? ":" : ""}{" "}
+          <a href={`tel:${phoneHref}`} className="text-[#731a2f] underline">
+            {phoneDisplay}
+          </a>
+          {rest && rest.replace(phoneDisplay, "")}
+        </p>
+      );
+    }
+
+    return <p key={key}>{para}</p>;
+  };
+
   return (
     <>
       <Head>
@@ -48,9 +84,9 @@ export default function AccessibilityPage() {
                   {section.heading[locale] || section.heading.en}
                 </h2>
                 <div className="space-y-2">
-                  {(section.body[locale] || section.body.en).map((para, pIdx) => (
-                    <p key={pIdx}>{para}</p>
-                  ))}
+                  {(section.body[locale] || section.body.en).map((para, pIdx) =>
+                    renderParagraph(para, pIdx)
+                  )}
                 </div>
               </div>
             ))}
