@@ -8,7 +8,6 @@ import { jocelyn } from "./staff/providers/jocelyn"
 import { zury } from "./staff/receptionists/zury"
 
 export const allStaff = [
-    veronica,
     damaris,
     nataly,
     jocelyn,
