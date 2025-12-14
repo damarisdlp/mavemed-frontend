@@ -55,10 +55,21 @@ export default function Header() {
         </div>
 
         {/* Centered Logo */}
-        <div className="flex-shrink-0 mx-auto">
+        <div className="flex-shrink-0 mx-auto md:mx-auto lg:mx-auto pl-13">
           <NextLink href="/" className="flex justify-center items-center">
             <Image src="/logo-mave.png" alt="Mave Logo" width={130} height={30} />
           </NextLink>
+        </div>
+
+        {/* Mobile CTA */}
+        <div className="lg:hidden flex items-center">
+          <button
+            onClick={dispatchChatOpen}
+            className="bg-black text-white px-3 py-2 rounded-full text-xs hover:bg-[#731a2f]"
+            type="button"
+          >
+            {t("nav.bookWhatsApp")}
+          </button>
         </div>
 
         {/* Right CTA - Desktop */}
