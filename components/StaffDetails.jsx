@@ -42,12 +42,12 @@ export default function StaffDetails({ member }) {
 
         <div className="flex flex-col md:flex-row gap-10 items-start mt-6">
           {/* Profile Image */}
-          <div className="relative w-full md:w-1/2 h-[500px] rounded overflow-hidden shadow-md">
+          <div className="relative w-full md:w-1/2 h-80 md:h-125 rounded overflow-hidden shadow-md">
             <Image
               src={member.image}
               alt={displayName}
               fill
-              className="object-cover"
+              className="object-[50%_20%] object-cover"
             />
           </div>
 
