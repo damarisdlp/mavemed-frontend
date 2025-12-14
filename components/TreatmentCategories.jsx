@@ -40,7 +40,7 @@ export default function TreatmentCategories() {
         >
           {services.map((service, idx) => (
             <div key={idx} className="keen-slider__slide flex justify-center px-1">
-              <div className="w-[320px] sm:w-[340px] md:w-[360px] lg:w-[380px] flex flex-col bg-[#f9f9f9] rounded-lg overflow-hidden shadow-sm hover:shadow-md transition mb-3">
+              <div className="w-[300px] sm:w-[340px] md:w-[360px] lg:w-[380px] flex flex-col bg-[#f9f9f9] rounded-lg overflow-hidden shadow-sm hover:shadow-md transition mb-3">
                 <div className="relative h-50 w-full">
                   <Image
                     src={service.image}
@@ -85,14 +85,14 @@ export default function TreatmentCategories() {
             <button
               type="button"
               onClick={() => slider.current?.prev()}
-              className="absolute left-1 sm:left-2 top-[35%] sm:top-1/2 -translate-y-1/2 bg-white border border-gray-300 text-gray-700 rounded-full shadow px-3 py-2 hover:bg-gray-100 z-10"
+              className="absolute -left-3 sm:-left-6 top-[35%] sm:top-1/2 -translate-y-1/2 bg-white border border-gray-300 text-gray-700 rounded-full shadow px-3 py-2 hover:bg-gray-100 z-10"
             >
               ‹
             </button>
             <button
               type="button"
               onClick={() => slider.current?.next()}
-              className="absolute right-1 sm:right-2 top-[35%] sm:top-1/2 -translate-y-1/2 bg-white border border-gray-300 text-gray-700 rounded-full shadow px-3 py-2 hover:bg-gray-100 z-10"
+              className="absolute -right-3 sm:-right-6 top-[35%] sm:top-1/2 -translate-y-1/2 bg-white border border-gray-300 text-gray-700 rounded-full shadow px-3 py-2 hover:bg-gray-100 z-10"
             >
               ›
             </button>
@@ -163,7 +163,7 @@ export default function TreatmentCategories() {
         {/* Sticky Category Menu */}
         <div
           id="category-menu"
-          className="flex flex-nowrap items-center gap-3 sm:gap-4 mb-12 justify-start sticky top-[102px] sm:top-[95px] bg-white z-30 py-2 sm:py-3 border-b border-gray-200 overflow-x-auto no-scrollbar px-3"
+          className="flex flex-nowrap items-center gap-3 sm:gap-4 mb-12 justify-start sticky top-[112px] sm:top-[100px] bg-white z-30 py-2 sm:py-3 border-b border-gray-200 overflow-x-auto no-scrollbar px-3"
         >
           {categories.map((category, i) => (
             <a
