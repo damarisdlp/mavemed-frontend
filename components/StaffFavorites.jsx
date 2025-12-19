@@ -128,7 +128,7 @@ export default function StaffFavorites({ favorites = [], locale = "en", displayN
             <button
               type="button"
               onClick={() => slider.current?.next()}
-              className="absolute -right-5 sm:-right-8 top-[35%] sm:top-1/2 -translate-y-1/2 bg-white border border-gray-300 text-gray-700 rounded-full shadow px-3 py-2 hover:bg-gray-100 z-10"
+              className="absolute -right-4 sm:-right-6 top-[35%] sm:top-1/2 -translate-y-1/2 bg-white border border-gray-300 text-gray-700 rounded-full shadow px-3 py-2 hover:bg-gray-100 z-10"
             >
               ›
             </button>
