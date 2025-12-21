@@ -1,3 +1,5 @@
+"use client";
+
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
@@ -9,7 +11,8 @@ import { useRouter } from "next/router";
 
 export default function AboutSection() {
   const { t } = useTranslation("home");
-  const { locale } = useRouter();
+  const router = useRouter();
+  const { locale = "en" } = router;
 
   const getLocalized = (field) => {
     if (field === null || field === undefined) return "";
@@ -19,23 +22,15 @@ export default function AboutSection() {
     return field;
   };
 
-  const [sliderRef, slider] = useKeenSlider({
+  const [sliderRef, sliderInstanceRef] = useKeenSlider({
     loop: true,
-    slides: {
-      perView: 1,
-      spacing: 10,
-    },
+    slides: { perView: 1, spacing: 16 },
     breakpoints: {
-      "(min-width: 768px)": {
-        slides: { perView: 2, spacing: 20 },
-      },
-      "(min-width: 1024px)": {
-        slides: { perView: 3, spacing: 10 },
-      },
+      "(min-width: 768px)": { slides: { perView: 2.2, spacing: 16 } },
+      "(min-width: 1024px)": { slides: { perView: 3.1, spacing: 24 } },
     },
   });
 
-  // Scroll-to-top state + effect
   const [showScrollTop, setShowScrollTop] = useState(false);
 
   useEffect(() => {
@@ -94,69 +89,68 @@ export default function AboutSection() {
         </div>
       </div>
 
-      {/* Team Section Header */}
-      <div className="container mx-auto px-4 flex flex-row sm:flex-row justify-between items-center sm:items-center gap-6 mb-8">
-        <h2 className="font-serif text-black font-medium mx-auto sm:mx-0 sm:ml-4 leading-snug text-[clamp(1.5rem,3.5vw,2.5rem)] whitespace-nowrap">
+      {/* Team header, now same centered header pattern as ReviewsSection */}
+      <div className="max-w-6xl mx-auto text-center mb-8 px-6">
+        <h2 className="text-2xl md:text-3xl text-black font-serif font-medium">
           {t("aboutSection.meetTeam")}
         </h2>
-        <Link
-          href="/ourteam"
-          className="text-sm underline text-gray-600 hover:text-black whitespace-nowrap"
-        >
-          {t("aboutSection.viewAll")}
-        </Link>
+
+        <div className="mt-3 flex items-center justify-center">
+          <Link
+            href="/ourteam"
+            className="text-sm underline text-black hover:text-[#731a2f]"
+          >
+            {t("aboutSection.viewAll")}
+          </Link>
+        </div>
       </div>
 
-      {/* Slider Cards */}
-      <div className="w-full flex justify-center px-2 md:px-6 mb-4">
-        {/* Inner wrapper: constrained width + relative, arrows anchor here */}
-        <div className="relative mx-auto w-full max-w-[1400px]">
+      {/* Slider wrapper matches ReviewsSection */}
+      <div className="flex justify-center px-6">
+        <div className="relative w-full max-w-[1100px]">
           <div ref={sliderRef} className="keen-slider overflow-hidden w-full">
             {allStaff.map((s, index) => (
-              <div
-                key={index}
-                className="keen-slider__slide flex justify-center px-2"
-              >
-                <div className="w-[320px] sm:w-[340px] md:w-[360px] lg:w-[380px] flex flex-col bg-[#f9f9f9] rounded-lg overflow-hidden shadow-sm hover:shadow-md transition mb-3">
-                  <div className="relative h-100 w-full">
-                    <Image
-                      src={s.image}
-                      alt={`${getLocalized(s.displayName)} – ${getLocalized(
-                        s.title
-                      )}`}
-                      fill
-                      className="object-cover text-gray-600"
-                    />
-                  </div>
-                  <div className="p-4 flex-1 flex flex-col justify-between text-center">
-                    <div>
+              <div key={index} className="keen-slider__slide px-2 flex justify-center">
+                <div className="w-[300px] sm:w-[320px] md:w-[340px] lg:w-[360px]">
+                  <div className="border border-gray-200 rounded-lg overflow-hidden shadow-sm bg-white">
+                    <div className="relative h-[300px] w-full">
+                      <Image
+                        src={s.image}
+                        alt={`${getLocalized(s.displayName)}, ${getLocalized(s.title)}`}
+                        fill
+                        className="object-cover"
+                      />
+                    </div>
+
+                    <div className="p-4 text-center">
                       <h3 className="text-lg font-serif text-black font-medium mb-1">
                         {getLocalized(s.displayName)}
                       </h3>
-                      <p className="text-sm text-gray-600 mb-3">
+                      <p className="text-sm text-gray-600 mb-4">
                         {getLocalized(s.title)}
                       </p>
+
+                      <Link
+                        href={`/ourteam/${s.name.toLowerCase()}`}
+                        className="inline-flex items-center justify-center border border-gray-300 text-black px-4 py-2 rounded-full text-xs hover:border-black transition w-full"
+                      >
+                        {t("aboutSection.learnMore")}
+                      </Link>
                     </div>
-                    <Link
-                      href={`/ourteam/${s.name.toLowerCase()}`}
-                      className="inline-block border border-gray-300 text-black px-4 py-2 rounded-full text-xs hover:border-black transition"
-                    >
-                      {t("aboutSection.learnMore")}
-                    </Link>
                   </div>
                 </div>
               </div>
             ))}
           </div>
 
-          {slider && (
+          {allStaff.length > 1 && (
             <>
               <button
                 type="button"
-                onClick={() => slider.current?.prev()}
+                onClick={() => sliderInstanceRef.current?.prev()}
                 className="
                   absolute
-                  -left-4 md:-left-6
+                  -left-5 md:-left-6
                   top-1/2 -translate-y-1/2
                   bg-white border border-gray-300 text-gray-700
                   rounded-full shadow px-3 py-2 hover:bg-gray-100 z-20
@@ -166,10 +160,10 @@ export default function AboutSection() {
               </button>
               <button
                 type="button"
-                onClick={() => slider.current?.next()}
+                onClick={() => sliderInstanceRef.current?.next()}
                 className="
                   absolute
-                  -right-4 md:-right-6
+                  -right-5 md:-right-6
                   top-1/2 -translate-y-1/2
                   bg-white border border-gray-300 text-gray-700
                   rounded-full shadow px-3 py-2 hover:bg-gray-100 z-20
@@ -182,10 +176,8 @@ export default function AboutSection() {
         </div>
       </div>
 
-      {/* Spacer */}
       <div className="h-1 bg-white w-full" />
 
-      {/* Scroll to Top Button */}
       {showScrollTop && (
         <button
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
