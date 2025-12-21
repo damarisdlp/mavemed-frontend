@@ -7,100 +7,126 @@ import { useKeenSlider } from "keen-slider/react";
 import { allTreatments } from "@/lib/data/allTreatments";
 
 export default function TreatmentCategories() {
-  const CategorySlider = ({ services }) => {
-    const router = useRouter();
-    const { locale } = router;
-    
-    const getLocalized = (field) => {
-      if (typeof field === "object" && field[locale]) return field[locale];
-      if (typeof field === "object" && field["en"]) return field["en"];
-      return field;
-    };
-    const [sliderRef, slider] = useKeenSlider({
-      loop: true,
-      slides: {
-        perView: 1,
-        spacing: 10,
-      },
-      breakpoints: {
-        "(min-width: 640px)": {
-          slides: { perView: 2, spacing: 20 },
-        },
-        "(min-width: 1024px)": {
-          slides: { perView: 3, spacing: 10 },
-        },
-      },
-    });
+const CategorySlider = ({ services }) => {
+  const router = useRouter();
+  const { locale = "en" } = router;
 
-    return (
-      <div className="relative block md:hidden mb-8">
-        <div
-          ref={sliderRef}
-          className="keen-slider overflow-hidden"
-        >
-          {services.map((service, idx) => (
-            <div key={idx} className="keen-slider__slide flex justify-center px-1">
-              <div className="w-[300px] sm:w-[340px] md:w-[360px] lg:w-[380px] flex flex-col bg-[#f9f9f9] rounded-lg overflow-hidden shadow-sm hover:shadow-md transition mb-3">
-                <div className="relative h-50 w-full">
-                  <Image
-                    src={service.image}
-                    alt={`${getLocalized(service.name)} – ${getLocalized(service.description)}`}
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-                <div className="p-4 flex-1 flex flex-col justify-between">
-                  <div className="mb-8">
-                    <h3 className="text-lg text-black font-serif font-medium mb-1">
-                      {getLocalized(service.name)}
-                    </h3>
-                    <p className="text-sm text-gray-600">
-                      {getLocalized(service.description)}
-                    </p>
-                  </div>
-                  <div className="flex flex-col gap-2">
-                    <button
-                      type="button"
-                      onClick={() => router.push(`/treatments/${service.slug}?lead=open`)}
-                      className="bg-black text-white px-4 py-2 rounded-full text-xs hover:bg-[#731a2f] transition text-center"
-                      aria-label={getLocalized(translatedStrings.bookService(service.name))}
-                    >
-                      {getLocalized(translatedStrings.bookNow)}
-                    </button>
-                    <Link
-                      href={`/treatments/${service.slug}`}
-                      className="border border-gray-300 text-black px-4 py-2 rounded-full text-xs hover:border-black transition text-center"
-                      aria-label={getLocalized(translatedStrings.learnMoreAbout(service.name))}
-                    >
-                      {getLocalized(translatedStrings.learnMore)}
-                    </Link>
+  const getLocalized = (field) => {
+    if (typeof field === "object" && field?.[locale]) return field[locale];
+    if (typeof field === "object" && field?.en) return field.en;
+    return field ?? "";
+  };
+
+  // ReviewsSection slider behavior
+  const [sliderRef, sliderInstanceRef] = useKeenSlider({
+    loop: true,
+    slides: { perView: 1, spacing: 16 },
+    breakpoints: {
+      "(min-width: 768px)": { slides: { perView: 2.2, spacing: 16 } },
+      "(min-width: 1024px)": { slides: { perView: 3.1, spacing: 24 } },
+    },
+  });
+
+  return (
+    <div className="md:hidden">
+      <div className="flex justify-center">
+        <div className="relative w-full max-w-[1100px]">
+          <div ref={sliderRef} className="keen-slider overflow-hidden w-full">
+            {services.map((service, idx) => (
+              <div
+                key={idx}
+                className="keen-slider__slide px-2 flex justify-center"
+              >
+                <div className="w-[275px] sm:w-[320px] md:w-[340px] lg:w-[360px]">
+                  <div className="border border-gray-200 rounded-lg overflow-hidden shadow-sm bg-white">
+                    <div className="relative h-[200px] w-full">
+                      <Image
+                        src={service.image}
+                        alt={`${getLocalized(service.name)} – ${getLocalized(
+                          service.description
+                        )}`}
+                        fill
+                        className="object-cover"
+                      />
+                    </div>
+
+                    <div className="p-4 flex-1 flex flex-col justify-between">
+                      <div className="mb-4">
+                        <h3 className="text-lg text-black font-serif font-medium mb-1">
+                          {getLocalized(service.name)}
+                        </h3>
+                        <p className="text-sm text-gray-700 line-clamp-4">
+                          {getLocalized(service.description)}
+                        </p>
+                      </div>
+
+                      <div className="flex flex-col gap-2">
+                        <button
+                          type="button"
+                          onClick={() =>
+                            router.push(`/treatments/${service.slug}?lead=open`)
+                          }
+                          className="bg-black text-white px-4 py-2 rounded-full text-xs hover:bg-[#731a2f] transition text-center"
+                          aria-label={getLocalized(
+                            translatedStrings.bookService(service.name)
+                          )}
+                        >
+                          {getLocalized(translatedStrings.bookNow)}
+                        </button>
+
+                        <Link
+                          href={`/treatments/${service.slug}`}
+                          className="border border-gray-300 text-black px-4 py-2 rounded-full text-xs hover:border-black transition text-center"
+                          aria-label={getLocalized(
+                            translatedStrings.learnMoreAbout(service.name)
+                          )}
+                        >
+                          {getLocalized(translatedStrings.learnMore)}
+                        </Link>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
+
+          {services.length > 1 && (
+            <>
+              <button
+                type="button"
+                onClick={() => sliderInstanceRef.current?.prev()}
+                className="
+                  absolute
+                  -left-2 md:-left-6
+                  top-1/2 -translate-y-1/2
+                  bg-white border border-gray-300 text-gray-700
+                  rounded-full shadow px-3 py-2 hover:bg-gray-100 z-20
+                "
+              >
+                ‹
+              </button>
+              <button
+                type="button"
+                onClick={() => sliderInstanceRef.current?.next()}
+                className="
+                  absolute
+                  -right-2 md:-right-6
+                  top-1/2 -translate-y-1/2
+                  bg-white border border-gray-300 text-gray-700
+                  rounded-full shadow px-3 py-2 hover:bg-gray-100 z-20
+                "
+              >
+                ›
+              </button>
+            </>
+          )}
         </div>
-        {slider && (
-          <>
-            <button
-              type="button"
-              onClick={() => slider.current?.prev()}
-              className="absolute -left-3 sm:-left-6 top-[35%] sm:top-1/2 -translate-y-1/2 bg-white border border-gray-300 text-gray-700 rounded-full shadow px-3 py-2 hover:bg-gray-100 z-10"
-            >
-              ‹
-            </button>
-            <button
-              type="button"
-              onClick={() => slider.current?.next()}
-              className="absolute -right-3 sm:-right-6 top-[35%] sm:top-1/2 -translate-y-1/2 bg-white border border-gray-300 text-gray-700 rounded-full shadow px-3 py-2 hover:bg-gray-100 z-10"
-            >
-              ›
-            </button>
-          </>
-        )}
       </div>
-    );
-  };
+    </div>
+  );
+};
+
   // Group treatments by category
   const categoriesMap = {};
   allTreatments.forEach((t) => {
