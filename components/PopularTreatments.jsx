@@ -88,7 +88,7 @@ export default function PopularTreatments() {
   return (
     <section className="bg-white px-6 py-12">
       {/* Centered header style, like ReviewsSection */}
-      <div className="max-w-6xl mx-auto mb-8">
+      <div className="max-w-6xl mx-auto text-center mb-8">
         <h2 className="text-2xl md:text-3xl text-black font-serif font-medium">
           {t("treatments.popular")}
         </h2>
