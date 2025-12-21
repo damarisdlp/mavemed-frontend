@@ -7,7 +7,7 @@ export default function HeroSection() {
   const { t } = useTranslation("home");
 
   return (
-    <section className="w-full bg-transparent -mt-24 pt-24 sm:-mt-28 sm:pt-28">
+    <section className="w-full bg-[#efeee7]">
       <div className="relative min-h-screen rounded-b-[40px] sm:rounded-b-[56px] md:rounded-b-[72px] overflow-hidden">
         {/* Background Image */}
         <Image
