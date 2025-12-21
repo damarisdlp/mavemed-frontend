@@ -9,21 +9,44 @@ export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
+  const [isDesktop, setIsDesktop] = useState(false);
 
   const { t } = useTranslation("layout");
   const router = useRouter();
   const { locale, asPath } = router;
 
+  // Detect "desktop" where hover is meaningful
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+
+    const mq = window.matchMedia("(hover: hover) and (pointer: fine)");
+    const update = () => setIsDesktop(Boolean(mq.matches));
+
+    update();
+    if (mq.addEventListener) mq.addEventListener("change", update);
+    else mq.addListener(update);
+
+    return () => {
+      if (mq.removeEventListener) mq.removeEventListener("change", update);
+      else mq.removeListener(update);
+    };
+  }, []);
+
+  // Scroll handling
   useEffect(() => {
     const handleScroll = () => {
-      setScrolled(window.scrollY > 10);
+      const s = window.scrollY > 10;
+      setScrolled(s);
       if (window.scrollY > 0) setIsMobileMenuOpen(false);
     };
     window.addEventListener("scroll", handleScroll, { passive: true });
+    handleScroll();
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const isSolid = scrolled || isHovered || isMobileMenuOpen;
+  // Desktop: solid on scroll OR hover
+  // Mobile: solid ONLY on scroll
+  const isSolid = scrolled || (isDesktop && isHovered);
 
   return (
     <header
@@ -124,7 +147,7 @@ export default function Header() {
         </div>
       </div>
 
-      {/* Mobile Menu */}
+      {/* Mobile Menu stays white (overlay), regardless of header background */}
       {isMobileMenuOpen && (
         <nav className="lg:hidden flex flex-col items-center gap-4 py-4 bg-white border-t border-gray-200">
           <NextLink href="/treatments" className="text-sm text-gray-700 hover:text-black">
