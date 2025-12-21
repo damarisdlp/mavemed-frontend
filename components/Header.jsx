@@ -10,25 +10,38 @@ export default function Header() {
   const [scrolled, setScrolled] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
   const [isDesktop, setIsDesktop] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
 
   const { t } = useTranslation("layout");
   const router = useRouter();
   const { locale, asPath } = router;
 
-  // Detect "desktop" where hover is meaningful
+  // Detect hover-capable desktop AND coarse-pointer mobile/touch devices
   useEffect(() => {
     if (typeof window === "undefined") return;
 
-    const mq = window.matchMedia("(hover: hover) and (pointer: fine)");
-    const update = () => setIsDesktop(Boolean(mq.matches));
+    const mqDesktop = window.matchMedia("(hover: hover) and (pointer: fine)");
+    const mqMobile = window.matchMedia("(hover: none) and (pointer: coarse)");
+
+    const update = () => {
+      setIsDesktop(Boolean(mqDesktop.matches));
+      setIsMobile(Boolean(mqMobile.matches));
+    };
 
     update();
-    if (mq.addEventListener) mq.addEventListener("change", update);
-    else mq.addListener(update);
+
+    if (mqDesktop.addEventListener) mqDesktop.addEventListener("change", update);
+    else mqDesktop.addListener(update);
+
+    if (mqMobile.addEventListener) mqMobile.addEventListener("change", update);
+    else mqMobile.addListener(update);
 
     return () => {
-      if (mq.removeEventListener) mq.removeEventListener("change", update);
-      else mq.removeListener(update);
+      if (mqDesktop.removeEventListener) mqDesktop.removeEventListener("change", update);
+      else mqDesktop.removeListener(update);
+
+      if (mqMobile.removeEventListener) mqMobile.removeEventListener("change", update);
+      else mqMobile.removeListener(update);
     };
   }, []);
 
@@ -46,7 +59,7 @@ export default function Header() {
 
   // Desktop: solid on scroll OR hover
   // Mobile: solid ONLY on scroll
-  const isSolid = scrolled || (isDesktop && isHovered);
+  const isSolid = isMobile ? scrolled : scrolled || (isDesktop && isHovered);
 
   return (
     <header
@@ -147,7 +160,7 @@ export default function Header() {
         </div>
       </div>
 
-      {/* Mobile Menu stays white (overlay), regardless of header background */}
+      {/* Mobile Menu stays white (overlay) */}
       {isMobileMenuOpen && (
         <nav className="lg:hidden flex flex-col items-center gap-4 py-4 bg-white border-t border-gray-200">
           <NextLink href="/treatments" className="text-sm text-gray-700 hover:text-black">
