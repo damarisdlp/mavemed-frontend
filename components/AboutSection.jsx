@@ -95,7 +95,7 @@ export default function AboutSection() {
           {t("aboutSection.meetTeam")}
         </h2>
 
-        <div className="mt-3 flex items-center justify-center">
+        <div className="mt-3 flex items-center justify-end">
           <Link
             href="/ourteam"
             className="text-sm underline text-black hover:text-[#731a2f]"
