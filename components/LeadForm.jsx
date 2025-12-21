@@ -310,61 +310,6 @@ export default function LeadForm() {
               )}
             </div>
 
-            <div className="flex flex-col min-w-0">
-              <label className="text-sm text-gray-700 flex items-center gap-1">
-                {t("leadForm.visitTiming") || "When would you like to visit?"}
-                <span className="text-[#731a2f]">*</span>
-              </label>
-              <select
-                name="visitTiming"
-                value={formData.visitTiming}
-                onChange={handleChange}
-                className={selectClass}
-                required
-              >
-                <option value="" disabled>
-                  {t("leadForm.visitTimingPrompt") || "Select one"}
-                </option>
-                <option value="This week">This week</option>
-                <option value="This month">This month</option>
-                <option value="Within 3 months">Within 3 months</option>
-                <option value="Just gathering information">Just gathering information</option>
-              </select>
-            </div>
-
-            <div className="flex flex-col min-w-0">
-              <label className="text-sm text-gray-700 flex items-center gap-1">
-                {t("leadForm.locationOrigin") || "Are you local or traveling?"}
-                <span className="text-[#731a2f]">*</span>
-              </label>
-              <select
-                name="locationOrigin"
-                value={formData.locationOrigin}
-                onChange={handleChange}
-                className={selectClass}
-                required
-              >
-                <option value="" disabled>
-                  {t("leadForm.locationOriginPrompt") || "Select one"}
-                </option>
-                <option value="Tijuana">Tijuana</option>
-                <option value="San Diego">San Diego</option>
-                <option value="Los Angeles">Los Angeles</option>
-                <option value="Other">Other</option>
-              </select>
-
-              {formData.locationOrigin === "Other" && (
-                <input
-                  type="text"
-                  name="locationOriginOther"
-                  value={formData.locationOriginOther}
-                  onChange={handleChange}
-                  placeholder={t("leadForm.otherLocationPrompt") || "City or region"}
-                  className={`mt-2 ${inputGrayClass}`}
-                />
-              )}
-            </div>
-
             <p className="text-xs text-gray-500 mt-2">
               {t("leadForm.requiredNote", { defaultValue: "Required fields" })}{" "}
               <span className="text-[#731a2f]">*</span>
