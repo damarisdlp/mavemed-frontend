@@ -126,24 +126,18 @@ function CategorySection({ category, staff, learnMoreLabel }) {
     .replace(/\s+/g, "-")
     .toLowerCase();
 
-  const [sliderRef, slider] = useKeenSlider({
+  // ReviewsSection slider behavior
+  const [sliderRef, sliderInstanceRef] = useKeenSlider({
     loop: true,
-    slides: { perView: 1, spacing: 10 },
+    slides: { perView: 1, spacing: 16 },
     breakpoints: {
-      "(min-width: 640px)": {
-        slides: { perView: 2, spacing: 20 },
-      },
-      "(min-width: 1024px)": {
-        slides: { perView: 3, spacing: 10 },
-      },
+      "(min-width: 768px)": { slides: { perView: 2.2, spacing: 16 } },
+      "(min-width: 1024px)": { slides: { perView: 3.1, spacing: 24 } },
     },
   });
 
   return (
-    <div
-      id={categorySlug}
-      className="mb-16 scroll-mt-60"
-    >
+    <div id={categorySlug} className="mb-16 scroll-mt-60">
       <h2
         className="text-black font-serif font-medium mb-6 leading-snug text-[clamp(1.8rem,4vw,2.6rem)] whitespace-nowrap"
         style={{ textWrap: "balance" }}
@@ -151,64 +145,84 @@ function CategorySection({ category, staff, learnMoreLabel }) {
         {category}
       </h2>
 
-      {/* Mobile slider */}
-      <div className="relative block md:hidden mb-8">
-        <div ref={sliderRef} className="keen-slider overflow-hidden">
-          {staff.map((staffMember, j) => (
-            <div key={j} className="keen-slider__slide flex justify-center px-2">
-              <div className="w-[320px] sm:w-[340px] md:w-[360px] lg:w-[380px] flex flex-col bg-[#f9f9f9] rounded-lg overflow-hidden shadow-sm hover:shadow-md transition mb-3">
-                <div className="relative h-80 w-full">
-                  <Image
-                    src={staffMember.image}
-                    alt={`${staffMember.name} in Tijuana – ${staffMember.title}`}
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-                <div className="p-4 text-center flex flex-col gap-2 flex-1 justify-between">
-                  <div className="mb-6">
-                    <h3 className="text-lg text-black font-serif font-medium mb-1">
-                      {staffMember.name}
-                    </h3>
-                    <p className="text-sm text-gray-600 mb-2">
-                      {staffMember.title}
-                    </p>
+      {/* Mobile slider, now matches ReviewsSection wrapper + arrows */}
+      <div className="md:hidden">
+        <div className="flex justify-center">
+          <div className="relative w-full max-w-[1100px]">
+            <div ref={sliderRef} className="keen-slider overflow-hidden w-full">
+              {staff.map((staffMember, j) => (
+                <div
+                  key={j}
+                  className="keen-slider__slide px-2 flex justify-center"
+                >
+                  <div className="w-[300px] sm:w-[320px] md:w-[340px] lg:w-[360px]">
+                    <div className="border border-gray-200 rounded-lg overflow-hidden shadow-sm bg-white">
+                      <div className="relative h-[300px] w-full">
+                        <Image
+                          src={staffMember.image}
+                          alt={`${staffMember.name} in Tijuana, ${staffMember.title}`}
+                          fill
+                          className="object-cover"
+                        />
+                      </div>
+
+                      <div className="p-4 text-center">
+                        <h3 className="text-lg text-black font-serif font-medium mb-1">
+                          {staffMember.name}
+                        </h3>
+                        <p className="text-sm text-gray-600 mb-4">
+                          {staffMember.title}
+                        </p>
+
+                        <Link
+                          href={`/ourteam/${staffMember.slug.toLowerCase()}`}
+                          className="inline-flex items-center justify-center border border-gray-300 text-black px-4 py-2 rounded-full text-xs hover:border-black transition w-full"
+                          aria-label={`${learnMoreLabel} ${staffMember.name}`}
+                        >
+                          {learnMoreLabel}
+                        </Link>
+                      </div>
+                    </div>
                   </div>
-                  <div className="flex justify-center">
-                    <Link
-                      href={`/ourteam/${staffMember.slug.toLowerCase()}`}
-                      className="inline-block border border-gray-300 text-black px-4 py-2 rounded-full text-xs hover:border-black transition"
-                      aria-label={`${learnMoreLabel} ${staffMember.name}`}
-                    >
-                      {learnMoreLabel}
-                    </Link>
-                  </div>
                 </div>
-              </div>
+              ))}
             </div>
-          ))}
+
+            {staff.length > 1 && (
+              <>
+                <button
+                  type="button"
+                  onClick={() => sliderInstanceRef.current?.prev()}
+                  className="
+                    absolute
+                    -left-3 md:-left-6
+                    top-1/2 -translate-y-1/2
+                    bg-white border border-gray-300 text-gray-700
+                    rounded-full shadow px-3 py-2 hover:bg-gray-100 z-20
+                  "
+                >
+                  ‹
+                </button>
+                <button
+                  type="button"
+                  onClick={() => sliderInstanceRef.current?.next()}
+                  className="
+                    absolute
+                    -right-3 md:-right-6
+                    top-1/2 -translate-y-1/2
+                    bg-white border border-gray-300 text-gray-700
+                    rounded-full shadow px-3 py-2 hover:bg-gray-100 z-20
+                  "
+                >
+                  ›
+                </button>
+              </>
+            )}
+          </div>
         </div>
-        {slider && (
-          <>
-            <button
-              type="button"
-              onClick={() => slider.current?.prev()}
-              className="absolute left-0.125 top-[35%] sm:top-1/2 -translate-y-1/2 bg-white border border-gray-300 text-gray-700 rounded-full shadow px-3 py-2 hover:bg-gray-100 z-10"
-            >
-              ‹
-            </button>
-            <button
-              type="button"
-              onClick={() => slider.current?.next()}
-              className="absolute right-0.25 top-[35%] sm:top-1/2 -translate-y-1/2 bg-white border border-gray-300 text-gray-700 rounded-full shadow px-3 py-2 hover:bg-gray-100 z-10"
-            >
-              ›
-            </button>
-          </>
-        )}
       </div>
 
-      {/* Desktop grid */}
+      {/* Desktop grid, unchanged */}
       <div className="hidden md:grid md:grid-cols-3 gap-8">
         {staff.map((staffMember, j) => (
           <div
