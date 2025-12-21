@@ -7,36 +7,48 @@ import { dispatchChatOpen } from "@/lib/utils/chat";
 
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [hideToggle, setHideToggle] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+  const [isHovered, setIsHovered] = useState(false);
+
   const { t } = useTranslation("layout");
   const router = useRouter();
   const { locale, asPath } = router;
 
-  // Close mobile menu on scroll
   useEffect(() => {
     const handleScroll = () => {
-      setIsMobileMenuOpen(false);
-      setHideToggle(window.scrollY > 0);
+      setScrolled(window.scrollY > 10);
+      if (window.scrollY > 0) setIsMobileMenuOpen(false);
     };
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const isSolid = scrolled || isHovered || isMobileMenuOpen;
+
   return (
-    <header className="sticky top-0 z-50 bg-white border-b border-gray-100 shadow-sm">
-      <div className="relative max-w-7xl mx-auto px-6 pt-9 pb-4 md:pt-7 pb-5 flex items-center justify-between">
+    <header
+      className={`
+        sticky top-0 z-50 transition-all duration-300
+        ${isSolid
+          ? "bg-white border-b border-gray-200 shadow-sm"
+          : "bg-transparent border-b border-transparent"}
+      `}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+    >
+      <div className="relative max-w-7xl mx-auto px-6 pt-8 pb-4 md:pt-6 md:pb-5 flex items-center justify-between">
         {/* Mobile Menu Toggle */}
         <button
-          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-          className={`lg:hidden text-gray-600 focus:outline-none transition ${
-            hideToggle ? "opacity-0 pointer-events-none" : "opacity-100"
-          }`}
+          onClick={() => setIsMobileMenuOpen((v) => !v)}
+          className="lg:hidden text-gray-700 focus:outline-none"
+          aria-label="Open menu"
+          type="button"
         >
           ☰
         </button>
 
         {/* Left Nav - Desktop */}
-        <div className="flex-1 hidden lg:flex gap-5 text-base text-gray-600 whitespace-nowrap">
+        <div className="flex-1 hidden lg:flex gap-5 text-base text-gray-700 whitespace-nowrap">
           <NextLink href="/treatments" className="hover:text-black">
             {t("nav.treatments")}
           </NextLink>
@@ -54,10 +66,16 @@ export default function Header() {
           </NextLink>
         </div>
 
-        {/* Centered Logo */}
-        <div className="flex-shrink-0 mx-auto md:mx-auto lg:mx-auto pl-13">
-          <NextLink href="/" className="flex justify-center items-center">
-            <Image src="/logo-mave.png" alt="Mave Logo" width={130} height={30} />
+        {/* Center Logo */}
+        <div className="flex-shrink-0 mx-auto">
+          <NextLink href="/" className="flex items-center justify-center">
+            <Image
+              src="/logo-mave.png"
+              alt="Mave Logo"
+              width={130}
+              height={30}
+              priority
+            />
           </NextLink>
         </div>
 
@@ -95,6 +113,7 @@ export default function Header() {
               ES
             </NextLink>
           </div>
+
           <button
             onClick={dispatchChatOpen}
             className="bg-black text-white px-4 py-2 rounded-full text-sm hover:bg-[#731a2f]"
@@ -107,28 +126,7 @@ export default function Header() {
 
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <nav className="lg:hidden flex flex-col items-center gap-4 py-4 bg-white border-t border-gray-300">
-          <div className="flex items-center gap-2 mb-2">
-            <NextLink
-              href={asPath}
-              locale="en"
-              className={`text-sm hover:text-black ${
-                locale === "en" ? "text-black font-semibold" : "text-gray-600"
-              }`}
-            >
-              EN
-            </NextLink>
-            <span className="text-gray-400">|</span>
-            <NextLink
-              href={asPath}
-              locale="es"
-              className={`text-sm hover:text-black ${
-                locale === "es" ? "text-black font-semibold" : "text-gray-600"
-              }`}
-            >
-              ES
-            </NextLink>
-          </div>
+        <nav className="lg:hidden flex flex-col items-center gap-4 py-4 bg-white border-t border-gray-200">
           <NextLink href="/treatments" className="text-sm text-gray-700 hover:text-black">
             {t("nav.treatments")}
           </NextLink>
@@ -144,6 +142,7 @@ export default function Header() {
           <NextLink href="/location" className="text-sm text-gray-700 hover:text-black">
             {t("nav.location")}
           </NextLink>
+
           <button
             onClick={() => {
               setIsMobileMenuOpen(false);
