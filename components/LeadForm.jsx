@@ -7,6 +7,7 @@ export default function LeadForm() {
   const locale = (i18n?.language || "en").toString();
   const phoneRef = useRef(null);
   const emailRef = useRef(null);
+
   const [formData, setFormData] = useState({
     firstName: "",
     email: "",
@@ -18,7 +19,9 @@ export default function LeadForm() {
     locationOrigin: "",
     locationOriginOther: "",
   });
+
   const [showThanks, setShowThanks] = useState(false);
+
   useEffect(() => {
     if (!showThanks) return;
     const onScroll = () => setShowThanks(false);
@@ -40,10 +43,10 @@ export default function LeadForm() {
 
   useEffect(() => {
     if (typeof window === "undefined") return;
-    const locale = navigator?.language || "";
-    if (locale.startsWith("en-US") || locale.startsWith("en-CA")) {
+    const navLocale = navigator?.language || "";
+    if (navLocale.startsWith("en-US") || navLocale.startsWith("en-CA")) {
       setFormData((prev) => ({ ...prev, countryCode: "+1" }));
-    } else if (locale.startsWith("es-MX")) {
+    } else if (navLocale.startsWith("es-MX")) {
       setFormData((prev) => ({ ...prev, countryCode: "+52" }));
     }
   }, []);
@@ -51,12 +54,9 @@ export default function LeadForm() {
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
-    if (name === "phone" && phoneRef.current) {
-      phoneRef.current.setCustomValidity("");
-    }
-    if (name === "email" && emailRef.current) {
-      emailRef.current.setCustomValidity("");
-    }
+
+    if (name === "phone" && phoneRef.current) phoneRef.current.setCustomValidity("");
+    if (name === "email" && emailRef.current) emailRef.current.setCustomValidity("");
   };
 
   const handleSubmit = async (e) => {
@@ -75,19 +75,15 @@ export default function LeadForm() {
         }
         return;
       }
-      if (phoneEl) {
-        phoneEl.setCustomValidity("");
-      }
-      if (emailRef.current) {
-        emailRef.current.setCustomValidity("");
-      }
+      if (phoneEl) phoneEl.setCustomValidity("");
+      if (emailRef.current) emailRef.current.setCustomValidity("");
 
       const submitData = {
         firstName: formData.firstName,
         email: formData.email,
         countryCode: formData.countryCode,
         phone: formData.phone,
-        phoneNumber: formData.phone, // sheet expects phoneNumber without combining country code
+        phoneNumber: formData.phone,
         primaryTreatmentInterest:
           formData.primaryTreatment === "Other"
             ? formData.primaryTreatmentOther || "Other"
@@ -107,6 +103,7 @@ export default function LeadForm() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(submitData),
       });
+
       const resultText = await response.text();
       let result;
       try {
@@ -114,6 +111,7 @@ export default function LeadForm() {
       } catch {
         result = { raw: resultText };
       }
+
       if (response.ok) {
         setFormData({
           firstName: "",
@@ -129,28 +127,42 @@ export default function LeadForm() {
         setShowThanks(true);
       } else {
         alert(
-          t("leadForm.error", {
-            defaultValue: "There was an error. Please try again.",
-          }) +
+          t("leadForm.error", { defaultValue: "There was an error. Please try again." }) +
             (result?.detail ? ` (${result.detail})` : "")
         );
       }
     } catch (error) {
       console.error("Submission error:", error);
       alert(
-        t("leadForm.error", { defaultValue: "There was an error submitting your form." })
+        t("leadForm.error", {
+          defaultValue: "There was an error submitting your form.",
+        })
       );
     }
+  };
+
+  const inputClass =
+    "border border-gray-300 text-black placeholder:text-black rounded px-3 py-2 w-full min-w-0 max-w-full focus:outline-none focus:ring-2 focus:ring-black";
+  const inputGrayClass =
+    "border border-gray-300 text-gray-700 rounded px-3 py-2 w-full min-w-0 max-w-full focus:outline-none focus:ring-2 focus:ring-black";
+  const selectClass =
+    "border border-gray-300 text-gray-700 rounded px-3 py-2 w-full min-w-0 max-w-full truncate focus:outline-none focus:ring-2 focus:ring-black";
+
+  const translatedStrings = {
+    scrollToTop: {
+      en: "Scroll to top category menu",
+      es: "Desplazarse al menú de categorías superior",
+    },
   };
 
   return (
     <>
       <section
-        className="bg-[#efeee7] w-full px-4 sm:px-6 py-3 justify-center items-center text-center relative"
+        className="bg-[#efeee7] w-full px-4 sm:px-6 py-3 justify-center items-center text-center relative overflow-x-hidden"
         data-lead-form
       >
-        <div className="w-full max-w-screen-xl mx-auto grid md:grid-cols-2 gap-3 items-center">
-          <div>
+        <div className="w-full max-w-screen-xl mx-auto grid md:grid-cols-2 gap-3 items-center min-w-0">
+          <div className="min-w-0">
             <h2
               className="text-black font-serif font-medium mb-2 leading-snug text-[clamp(1.5rem,4vw,2.1rem)] max-w-full break-words"
               style={{ textWrap: "balance" }}
@@ -164,7 +176,7 @@ export default function LeadForm() {
 
           <form
             onSubmit={handleSubmit}
-            className="bg-white p-3 rounded-lg shadow-md grid gap-2.5 text-left"
+            className="bg-white p-3 rounded-lg shadow-md grid gap-2.5 text-left w-full min-w-0 overflow-x-hidden"
           >
             <label className="text-sm text-gray-700 flex items-center gap-1">
               {t("leadForm.firstName")}
@@ -176,7 +188,7 @@ export default function LeadForm() {
               value={formData.firstName}
               onChange={handleChange}
               placeholder={t("leadForm.firstName")}
-              className="border border-gray-300 text-black placeholder:text-black rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-black"
+              className={inputClass}
               required
             />
 
@@ -199,12 +211,12 @@ export default function LeadForm() {
                 )
               }
               onInput={(e) => e.currentTarget.setCustomValidity("")}
-              className="border border-gray-300 text-black placeholder:text-black rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-black"
+              className={inputClass}
               required
             />
 
-            <div className="grid grid-cols-1 sm:grid-cols-[1fr_2fr] gap-3">
-              <div className="flex flex-col">
+            <div className="grid grid-cols-1 sm:grid-cols-[minmax(0,1fr)_minmax(0,2fr)] gap-3 min-w-0">
+              <div className="flex flex-col min-w-0">
                 <label className="text-sm text-gray-700 flex items-center gap-1">
                   {t("leadForm.countryCode") || "Country Code"}
                   <span className="text-[#731a2f]">*</span>
@@ -213,7 +225,7 @@ export default function LeadForm() {
                   name="countryCode"
                   value={formData.countryCode}
                   onChange={handleChange}
-                  className="border border-gray-300 text-gray-700 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-black"
+                  className={selectClass}
                   required
                 >
                   {countryOptions.map((opt) => (
@@ -223,34 +235,35 @@ export default function LeadForm() {
                   ))}
                 </select>
               </div>
-              <div className="flex flex-col">
+
+              <div className="flex flex-col min-w-0">
                 <label className="text-sm text-gray-700 flex items-center gap-1">
                   {t("leadForm.phone")}
                   <span className="text-[#731a2f]">*</span>
                 </label>
-            <input
-              type="tel"
-              name="phone"
-              value={formData.phone}
-              onChange={handleChange}
-              placeholder={t("leadForm.phone")}
-              ref={phoneRef}
-              pattern="[0-9\\s\\-()+]{7,}"
-              onInvalid={(e) =>
-                e.currentTarget.setCustomValidity(
-                  t("leadForm.phoneInvalid", {
-                    defaultValue: "Please enter a valid phone number.",
-                  })
-                )
-              }
-              onInput={(e) => e.currentTarget.setCustomValidity("")}
-              className="border border-gray-300 text-gray-700 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-black"
-              required
-            />
-          </div>
+                <input
+                  type="tel"
+                  name="phone"
+                  value={formData.phone}
+                  onChange={handleChange}
+                  placeholder={t("leadForm.phone")}
+                  ref={phoneRef}
+                  pattern="[0-9\\s\\-()+]{7,}"
+                  onInvalid={(e) =>
+                    e.currentTarget.setCustomValidity(
+                      t("leadForm.phoneInvalid", {
+                        defaultValue: "Please enter a valid phone number.",
+                      })
+                    )
+                  }
+                  onInput={(e) => e.currentTarget.setCustomValidity("")}
+                  className={inputGrayClass}
+                  required
+                />
+              </div>
             </div>
 
-            <div className="flex flex-col">
+            <div className="flex flex-col min-w-0">
               <label className="text-sm text-gray-700 flex items-center gap-1">
                 {t("leadForm.primaryTreatment") || "Primary Treatment of Interest"}
                 <span className="text-[#731a2f]">*</span>
@@ -259,7 +272,7 @@ export default function LeadForm() {
                 name="primaryTreatment"
                 value={formData.primaryTreatment}
                 onChange={handleChange}
-                className="border border-gray-300 text-gray-700 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-black"
+                className={selectClass}
                 required
               >
                 <option value="" disabled>
@@ -284,6 +297,7 @@ export default function LeadForm() {
                   </option>
                 ))}
               </select>
+
               {formData.primaryTreatment === "Other" && (
                 <input
                   type="text"
@@ -291,12 +305,12 @@ export default function LeadForm() {
                   value={formData.primaryTreatmentOther}
                   onChange={handleChange}
                   placeholder={t("leadForm.otherPrompt") || "Tell us more"}
-                  className="mt-2 border border-gray-300 text-gray-700 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-black"
+                  className={`mt-2 ${inputGrayClass}`}
                 />
               )}
             </div>
 
-            <div className="flex flex-col">
+            <div className="flex flex-col min-w-0">
               <label className="text-sm text-gray-700 flex items-center gap-1">
                 {t("leadForm.visitTiming") || "When would you like to visit?"}
                 <span className="text-[#731a2f]">*</span>
@@ -305,7 +319,7 @@ export default function LeadForm() {
                 name="visitTiming"
                 value={formData.visitTiming}
                 onChange={handleChange}
-                className="border border-gray-300 text-gray-700 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-black"
+                className={selectClass}
                 required
               >
                 <option value="" disabled>
@@ -318,7 +332,7 @@ export default function LeadForm() {
               </select>
             </div>
 
-            <div className="flex flex-col">
+            <div className="flex flex-col min-w-0">
               <label className="text-sm text-gray-700 flex items-center gap-1">
                 {t("leadForm.locationOrigin") || "Are you local or traveling?"}
                 <span className="text-[#731a2f]">*</span>
@@ -327,7 +341,7 @@ export default function LeadForm() {
                 name="locationOrigin"
                 value={formData.locationOrigin}
                 onChange={handleChange}
-                className="border border-gray-300 text-gray-700 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-black"
+                className={selectClass}
                 required
               >
                 <option value="" disabled>
@@ -338,6 +352,7 @@ export default function LeadForm() {
                 <option value="Los Angeles">Los Angeles</option>
                 <option value="Other">Other</option>
               </select>
+
               {formData.locationOrigin === "Other" && (
                 <input
                   type="text"
@@ -345,7 +360,7 @@ export default function LeadForm() {
                   value={formData.locationOriginOther}
                   onChange={handleChange}
                   placeholder={t("leadForm.otherLocationPrompt") || "City or region"}
-                  className="mt-2 border border-gray-300 text-gray-700 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-black"
+                  className={`mt-2 ${inputGrayClass}`}
                 />
               )}
             </div>
@@ -363,7 +378,7 @@ export default function LeadForm() {
 
             <button
               type="submit"
-              className="bg-black text-white py-2.5 rounded-full hover:bg-[#731a2f] transition"
+              className="bg-black text-white py-2.5 rounded-full hover:bg-[#731a2f] transition w-full"
             >
               {t("leadForm.subscribe")}
             </button>
@@ -377,7 +392,7 @@ export default function LeadForm() {
           onClick={() => setShowThanks(false)}
         >
           <div
-          className="bg-white rounded-xl shadow-xl max-w-sm w-full p-4 relative text-center"
+            className="bg-white rounded-xl shadow-xl max-w-sm w-full p-4 relative text-center"
             onClick={(e) => e.stopPropagation()}
           >
             <button
