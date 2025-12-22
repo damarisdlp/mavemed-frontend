@@ -94,6 +94,11 @@ export default function Contact() {
     <div>
       <PromoBanner/>
         <Header/>
+           {/* Hero Banner for Team Member */}
+              <div className="bg-white">
+                <div className="relative w-full h-[50px] md:h-[60px]">
+                        </div>
+                </div>
         <ContactUs/>
         <InstagramFeed />
         <ReviewsSection />
