@@ -105,6 +105,11 @@ export default function Location() {
     <div>
       <PromoBanner/>
         <Header />
+           {/* Hero Banner for Team Member */}
+              <div className="bg-[#efeee7]">
+                <div className="relative w-full h-[50px] md:h-[60px]">
+                        </div>
+                </div>
         <LocationSection />
         <InstagramFeed />
         <ReviewsSection />
