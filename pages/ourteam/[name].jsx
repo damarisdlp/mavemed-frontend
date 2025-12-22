@@ -109,25 +109,7 @@ export default function TeamMemberPage() {
 
         {/* Hero Banner for Team Member */}
         <div className="bg-white">
-          <div className="relative w-full h-[380px] md:h-[460px]">
-            <Image
-              src={member.image || "/logo-mave.jpg"}
-              alt={`${displayName} – ${title}`}
-              fill
-              priority
-              className="object-cover object-[50%_18%]"
-              sizes="100vw"
-            />
-            <div className="absolute inset-0 bg-black/35" />
-
-            <div className="absolute inset-0 flex items-end px-6 md:px-20 pb-8 md:pb-12">
-              <div className="text-white max-w-3xl">
-                <h1 className="text-4xl md:text-5xl font-serif font-medium leading-tight">
-                  {displayName}
-                </h1>
-                <p className="text-base md:text-lg text-white/90 mt-3">{title}</p>
-              </div>
-            </div>
+          <div className="relative w-full h-[50px] md:h-[60px]">
           </div>
         </div>
 
