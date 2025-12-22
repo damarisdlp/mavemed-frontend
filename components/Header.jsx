@@ -16,6 +16,9 @@ export default function Header() {
   const { t } = useTranslation("layout");
   const router = useRouter();
   const { locale, asPath } = router;
+  const forceSolid = ["/promos", "/contact", "/location", "/privacy", "/terms", "/accessibility"].some((path) =>
+    (asPath || "").startsWith(path)
+  );
 
   useEffect(() => {
     if (typeof window === "undefined") return;
@@ -47,8 +50,8 @@ export default function Header() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Background: solid on scroll, on hover (desktop), or mobile menu open
-  const isSolid = scrolled || isMobileMenuOpen || (canHover && isHovered);
+  // Background: solid on scroll, on hover (desktop), mobile menu open, or forced by page
+  const isSolid = forceSolid || scrolled || isMobileMenuOpen || (canHover && isHovered);
   const isTransparent = !isSolid;
 
   // Text colors invert while transparent
