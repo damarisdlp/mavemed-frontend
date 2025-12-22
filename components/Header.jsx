@@ -16,7 +16,7 @@ export default function Header() {
   const { t } = useTranslation("layout");
   const router = useRouter();
   const { locale, asPath } = router;
-  const forceSolid = ["/promos", "/contact", "/location", "/privacy", "/terms", "/accessibility"].some((path) =>
+  const forceSolid = ["/promos", "/contact", "/location", "/privacy", "/terms", "/accessibility", "/aboutus", "/ourteam"].some((path) =>
     (asPath || "").startsWith(path)
   );
 
