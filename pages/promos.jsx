@@ -74,6 +74,12 @@ export default function PromosPage() {
       <PromoBanner />
       <Header />
 
+              {/* Hero Banner for Team Member */}
+              <div className="bg-white">
+                <div className="relative w-full h-[50px] md:h-[60px]">
+                        </div>
+                </div>
+
       <main className="bg-white">
         <section className="w-full max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
           <h1 className="text-black font-serif font-medium mb-4 leading-tight text-[clamp(2rem,5vw,3rem)]">
