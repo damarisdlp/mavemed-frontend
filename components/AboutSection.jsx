@@ -45,7 +45,7 @@ export default function AboutSection() {
       <div className="grid grid-cols-1 md:grid-cols-[3fr_2fr] min-h-[85vh] mb-10">
         <div className="relative w-full h-[40vh] md:h-auto">
           <Image
-            src="/logo-mave.png"
+            src="/drs.png"
             alt="Shot of outside of Mave Medical Spa in Tijuana"
             fill
             className="object-contain md:object-cover"
