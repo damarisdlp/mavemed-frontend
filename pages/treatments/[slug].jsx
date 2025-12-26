@@ -72,6 +72,11 @@ export default function TreatmentPage() {
       <section className="bg-white">
         <PromoBanner />
         <Header />
+            {/* Hero Banner for Team Member */}
+        <div className="bg-white">
+          <div className="relative w-full h-[90px] md:h-[100px]">
+          </div>
+        </div>
         {/* locale prop is optional but useful if children need to localize too */}
         <TreatmentDetails treatment={treatment} locale={currentLocale} />
         <PricingTable treatment={treatment} locale={currentLocale} />
