@@ -81,7 +81,7 @@ export default function Header() {
       >
         <div
           className={`
-            relative max-w-7xl mx-auto px-6
+            relative max-w-8xl mx-auto px-6
             pt-10 pb-3 mb-3 md:pt-6 md:pb-5
             grid grid-cols-3 items-center
             lg:flex lg:items-center lg:justify-between
