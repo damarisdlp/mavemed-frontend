@@ -225,7 +225,7 @@ export default function TreatmentDetails({ treatment }) {
     <div className="w-full bg-white mt-3">
       <div className="grid grid-cols-1 md:grid-cols-[3fr_2fr] min-h-[50vh]">
         {/* Image */}
-        <div className="relative w-full h-[80vh]">
+        <div className="relative w-full h-[50vh] md:h-[80vh]">
           <Image
             src={treatment.images?.primary || "/placeholder.jpg"}
             alt={`Treatment image for ${getLocalized(treatment.serviceDisplayName)}`}
