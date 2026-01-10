@@ -38,7 +38,7 @@ export const botox = {
     }
   ],
   pricing: {
-    startingPrice: "$6.25",
+    startingPrice: "$7.75",
     startingPriceCurrency: "USD",
     options: [
       {
@@ -47,8 +47,8 @@ export const botox = {
           es: "Por Unidad"
         },
         optionPrice: {
-          en: "$6.25",
-          es: "6.25"
+          en: "7.75",
+          es: "7.75"
         },
         optionCurrency: "USD",
         notes: [
@@ -62,8 +62,8 @@ export const botox = {
   },
   promoDetails: {
     validTill: {
-      en: "Valid through 2025-12-31",
-      es: "Válido hasta 2025-12-31"
+      en: "Valid through 2026-12-31",
+      es: "Válido hasta 2026-12-31"
     },
     headline: {
       en: "Exclusive Botox® Savings",
@@ -83,8 +83,8 @@ export const botox = {
         optionPromoPriceCurrency: "USD",
         notes: [
           {
-            en: "Equivalent to $5.55 per unit when purchased as the 45-unit pack.",
-            es: "Equivale a $5.55 por unidad al comprar el paquete de 45 unidades."
+            en: "Equivalent to $7.11 per unit when purchased as the 45-unit pack.",
+            es: "Equivale a $7.11 por unidad al comprar el paquete de 45 unidades."
           },
           {
             en: "Touch-ups at this rate apply only within 1–2 weeks of the initial application.",
