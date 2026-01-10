@@ -38,7 +38,7 @@ export const dermawrinkle = {
     }
   ],
   pricing: {
-    startingPrice: "$4.75",
+    startingPrice: "$5.25",
     startingPriceCurrency: "USD",
     options: [
       {
@@ -47,8 +47,8 @@ export const dermawrinkle = {
           es: "Por Unidad"
         },
         optionPrice: {
-          en: "$4.75",
-          es: "4.75"
+          en: "$5.25",
+          es: "5.25"
         },
         optionCurrency: "USD",
         notes: [
@@ -62,8 +62,8 @@ export const dermawrinkle = {
   },
   promoDetails: {
     validTill: {
-      en: "Valid through 2025-12-31",
-      es: "Válido hasta 2025-12-31"
+      en: "Valid through 2026-12-31",
+      es: "Válido hasta 2026-12-31"
     },
     headline: {
       en: "Exclusive Dermawrinkle Savings",
@@ -83,8 +83,8 @@ export const dermawrinkle = {
         optionPromoPriceCurrency: "USD",
         notes: [
           {
-            en: "Equivalent to $4.44 per unit when purchased as the 45-unit pack.",
-            es: "Equivale a $4.44 por unidad al comprar el paquete de 45 unidades."
+            en: "Equivalent to $5.00 per unit when purchased as the 45-unit pack.",
+            es: "Equivale a $5.00 por unidad al comprar el paquete de 45 unidades."
           },
           {
             en: "Touch-ups at this rate apply only within 1–2 weeks of the initial application.",
