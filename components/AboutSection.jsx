@@ -53,7 +53,7 @@ export default function AboutSection() {
           />
         </div>
 
-        <div className="flex items-center justify-center px-6 py-10">
+        <div className="flex items-center justify-center px-6 py-15">
           <div className="w-full max-w-md mx-auto text-center md:text-left">
             <h2 className="text-3xl sm:text-4xl md:text-5xl text-black font-serif font-medium mb-2 leading-tight">
               {t("aboutSection.title")}
