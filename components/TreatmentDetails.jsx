@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useRouter } from "next/router";
 import { useEffect, useRef, useState } from "react";
-import { AccordionToggle } from "./AccordionToggle";
+import TreatmentInfoTabs from "./TreatmentInfoTabs";
 
 export default function TreatmentDetails({ treatment }) {
   const router = useRouter();
@@ -343,37 +343,10 @@ export default function TreatmentDetails({ treatment }) {
             </ul>
           )}
 
-          {treatment.details && (
-            <AccordionToggle title={locale === "es" ? "Detalles" : "Details"}>
-              <p className="text-gray-700">{getLocalized(treatment.details)}</p>
-            </AccordionToggle>
-          )}
-
-          {treatment.goals?.length > 0 && (
-            <AccordionToggle title={locale === "es" ? "Objetivos" : "Goals"}>
-              <ul className="list-disc list-inside text-gray-700">
-                {treatment.goals.map((goal, idx) => (
-                  <li key={idx}>{getLocalized(goal)}</li>
-                ))}
-              </ul>
-            </AccordionToggle>
-          )}
-
-          {treatment.treatableAreas?.length > 0 && (
-            <AccordionToggle title={locale === "es" ? "Zonas Tratables" : "Treatable Areas"}>
-              <ul className="list-disc list-inside text-gray-700">
-                {treatment.treatableAreas.map((area, idx) => (
-                  <li key={idx}>{getLocalized(area)}</li>
-                ))}
-              </ul>
-            </AccordionToggle>
-          )}
-
-          <AccordionToggle title={locale === "es" ? "Sucursales Disponibles" : "Available Locations"}>
-            <p className="text-gray-700">Tijuana, B.C.</p>
-          </AccordionToggle>
         </div>
       </div>
+
+      <TreatmentInfoTabs treatment={treatment} locale={locale} />
 
       {/* Lead Modal (fixed height + scroll body + sticky footer) */}
       {leadOpen && (
