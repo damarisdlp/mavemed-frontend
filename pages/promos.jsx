@@ -81,7 +81,7 @@ export default function PromosPage() {
                 </div>
 
       <main className="bg-white">
-        <section className="w-full max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <section className="w-full max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 py-15">
           <h1 className="text-black font-serif font-medium mb-4 leading-tight text-[clamp(2rem,5vw,3rem)]">
             {locale === "es" ? "Promociones Vigentes" : "Current Promotions"}
           </h1>
