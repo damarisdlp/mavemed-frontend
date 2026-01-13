@@ -7,6 +7,13 @@ import { dispatchChatOpen } from "@/lib/utils/chat";
 
 export default function Header() {
   const PROMO_H = 35;
+  const PHONE_NUMBER = "+526642077675";
+  const PHONE_DISPLAY = "(664) 207 - 7675";
+  const SOCIAL_LINKS = {
+    instagram: "https://www.instagram.com/mavemedicalspa",
+    facebook: "https://www.facebook.com/mavemedicalspa",
+    tiktok: "https://www.tiktok.com/@mavemedicalspa",
+  };
 
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -180,6 +187,50 @@ export default function Header() {
             >
               {t("nav.bookWhatsApp")}
             </button>
+
+            <div className={`flex flex-col items-center gap-2 ${navText} ${navGlow}`}>
+              <div className="flex items-center justify-center gap-3">
+                <a
+                  href={SOCIAL_LINKS.instagram}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Instagram"
+                  className="hover:opacity-80 transition"
+                >
+                  <svg viewBox="0 0 24 24" className="h-5 w-5" fill="currentColor" aria-hidden="true">
+                    <path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm5 3.5a5.5 5.5 0 1 1 0 11 5.5 5.5 0 0 1 0-11zm0 2a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7zM18 6.25a1.25 1.25 0 1 1-2.5 0 1.25 1.25 0 0 1 2.5 0z" />
+                  </svg>
+                </a>
+                <a
+                  href={SOCIAL_LINKS.facebook}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Facebook"
+                  className="hover:opacity-80 transition"
+                >
+                  <svg viewBox="0 0 24 24" className="h-5 w-5" fill="currentColor" aria-hidden="true">
+                    <path d="M13 9h3V6h-3c-2.2 0-4 1.8-4 4v3H6v3h3v5h3v-5h3l1-3h-4v-3c0-.6.4-1 1-1z" />
+                  </svg>
+                </a>
+                <a
+                  href={SOCIAL_LINKS.tiktok}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="TikTok"
+                  className="hover:opacity-80 transition"
+                >
+                  <svg viewBox="0 0 24 24" className="h-5 w-5" fill="currentColor" aria-hidden="true">
+                    <path d="M16 3a5 5 0 0 0 3 1v3a8 8 0 0 1-3-.6V14a5 5 0 1 1-5-5h1v3h-1a2 2 0 1 0 2 2V3h3z" />
+                  </svg>
+                </a>
+              </div>
+              <a
+                href={`https://wa.me/${PHONE_NUMBER.replace(/\D/g, "")}`}
+                className="flex items-center gap-2 text-sm hover:opacity-80 transition whitespace-nowrap"
+              >
+                {PHONE_DISPLAY}
+              </a>
+            </div>
           </div>
         </div>
       </header>
