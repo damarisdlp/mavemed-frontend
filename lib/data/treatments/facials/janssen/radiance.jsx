@@ -12,8 +12,8 @@ export const janssenRadianceBoost = {
   isPopular: false,
   isPromoEligible: false,
   images: {
-    primary: "/janssen-radiance.jpg",
-    secondary: "/janssen-radiance2.jpg"
+    primary: "/janssenradiance.jpg",
+    secondary: "/janssenradiance2.jpg"
   },
   description: {
     en: "Brightening antioxidant facial to restore luminosity, even tone, and improve hydration.",
