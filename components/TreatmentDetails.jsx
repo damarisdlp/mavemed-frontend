@@ -225,7 +225,7 @@ export default function TreatmentDetails({ treatment }) {
     <div className="w-full bg-white mt-3">
       <div className="grid grid-cols-1 md:grid-cols-[3fr_2fr] min-h-[50vh]">
         {/* Image */}
-        <div className="relative w-full h-[50vh] md:h-[80vh]">
+        <div className="relative w-full h-[50vh] md:h-[80vh] rounded-br-2xl overflow-hidden">
           <Image
             src={treatment.images?.primary || "/placeholder.jpg"}
             alt={`Treatment image for ${getLocalized(treatment.serviceDisplayName)}`}
@@ -236,7 +236,7 @@ export default function TreatmentDetails({ treatment }) {
         </div>
 
         {/* Content */}
-        <div className="w-full text-black px-6 md:px-12 py-5 flex flex-col justify-center">
+        <div className="w-full text-black px-6 md:px-12 py-[15px] flex flex-col justify-start">
           <div className="mb-4">
             <p className="text-sm text-gray-500">
               <Link href="/treatments" className="hover:underline hover:text-black">
