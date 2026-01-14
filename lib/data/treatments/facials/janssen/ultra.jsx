@@ -12,8 +12,8 @@ export const janssenUltraRenewal = {
   isPopular: false,
   isPromoEligible: false,
   images: {
-    primary: "/janssen-ultra.jpg",
-    secondary: "/janssen-ultra2.jpg"
+    primary: "/janssenultra.jpg",
+    secondary: "/janssenultra2.jpg"
   },
   description: {
     en: "A gentle yet effective AHA and peptide-based peel that stimulates skin renewal and refines texture.",
