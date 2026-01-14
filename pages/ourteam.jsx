@@ -159,19 +159,12 @@ export default function TeamPage() {
       {/* Hero Banner */}
       <div className="bg-white">
         <div className="relative w-full h-[250px] md:h-[300px]">
-          <Image
-            src="/logo-mave.jpg"
-            alt="Our Team"
-            layout="fill"
-            objectFit="cover"
-            priority
-          />
-          <div className="absolute inset-0 bg-black/30 flex items-center justify-start pt-20 px-10 md:px-20">
+          <div className="absolute inset-0 bg-white flex items-center justify-start pt-20 px-10 md:px-20">
             <div className="text-white max-w-2xl">
-              <h1 className="text-4xl md:text-5xl font-serif font-medium mb-4">
+              <h1 className="text-4xl md:text-5xl text-black font-serif font-medium mb-4">
                 {t("team.bannerTitle")}
               </h1>
-              <p className="text-base md:text-lg">
+              <p className="text-base md:text-lg text-black">
                 {t("team.bannerSubtitle")}
               </p>
             </div>
