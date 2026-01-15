@@ -7,7 +7,7 @@ export default function LocationSection() {
   const { t } = useTranslation("location");
 
   return (
-    <section id="location" className="bg-[#efeee7] py-14 px-6">
+    <section id="location" className="bg-[#efeee7] pt-20 pb-14 px-6 md:pt-14">
       <div className="max-w-6xl mx-auto">
         {/* Heading */}
         <h2
