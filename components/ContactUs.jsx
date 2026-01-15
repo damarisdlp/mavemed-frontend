@@ -89,7 +89,7 @@ export default function ContactUs() {
         {/* Right: Image */}
         <div className="relative w-full h-[40vh] md:h-auto">
           <Image
-            src="/group.jpg"
+            src="/equipo.jpg"
             alt="Group picture of the team at Mave Medical Spa in Tijuana"
             fill
             className="object-cover object-[30%_40%]"
