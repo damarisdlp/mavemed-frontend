@@ -207,7 +207,7 @@ const CategorySlider = ({ services }) => {
           <div
             key={i}
             id={getLocalized(category.title).replace(/\s+/g, "-").toLowerCase()}
-            className="mb-16 scroll-mt-[200px] sm:scroll-mt-[190px]"
+            className="mb-16 scroll-mt-[200px] sm:scroll-mt-[210px]"
           >
             <h2
               className="text-black font-serif font-medium mb-6 leading-snug text-[clamp(1.6rem,3.8vw,2.6rem)]"
