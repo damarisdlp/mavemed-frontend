@@ -30,10 +30,7 @@ export default function HeroSection() {
         />
 
         {/* Content */}
-        <div
-          className="relative min-h-screen flex flex-col justify-center items-center px-6 py-10 text-center"
-          style={{ transform: "translateY(-5%)" }}
-        >
+        <div className="relative min-h-screen flex flex-col justify-center items-center px-6 py-10 text-center translate-y-8 md:translate-y-0">
           <h1
             className="text-white font-serif font-medium leading-tight max-w-[92vw] sm:max-w-4xl text-[clamp(1.6rem,4.5vw,3rem)] mt-2 break-words"
             style={{ textWrap: "balance" }}
