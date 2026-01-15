@@ -43,7 +43,7 @@ export default function AboutSection() {
     <section id="aboutus" className="bg-white min-h-screen w-full relative">
       {/* Top Section Grid */}
       <div className="grid grid-cols-1 md:grid-cols-[3fr_2fr] min-h-[85vh] mb-10">
-        <div className="relative w-full h-[40vh] md:h-auto">
+        <div className="relative w-full h-[40vh] md:h-auto mt-8 md:mt-0">
           <Image
             src="/drs.jpg"
             alt="Shot of outside of Mave Medical Spa in Tijuana"
@@ -53,7 +53,7 @@ export default function AboutSection() {
           />
         </div>
 
-        <div className="flex items-center justify-center px-6 py-15">
+        <div className="flex items-center justify-center px-6 pt-3 md:pt-24">
           <div className="w-full max-w-md mx-auto text-center md:text-left">
             <h2 className="text-3xl sm:text-4xl md:text-5xl text-black font-serif font-medium mb-2 leading-tight">
               {t("aboutSection.title")}
