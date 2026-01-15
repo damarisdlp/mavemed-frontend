@@ -176,7 +176,7 @@ dangerouslySetInnerHTML={{
       {/* Hero Banner */}
       <div className="bg-white">
         <div className="relative w-full h-[250px] md:h-[300px]">
-          <div className="absolute inset-0 bg-white flex items-center justify-start pt-20 px-10 md:px-20">
+          <div className="absolute inset-0 bg-white flex items-center justify-start pt-40 md:pt-24 px-10 md:px-20">
             <div className="text-white max-w-2xl">
               <h1 className="text-4xl md:text-5xl text-black font-serif font-medium mb-4">
                 {bannerTitle}
