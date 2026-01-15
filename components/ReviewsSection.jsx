@@ -160,7 +160,7 @@ export default function ReviewsSection() {
                   key={idx}
                   className="keen-slider__slide px-2 flex justify-center"
                 >
-                  <div className="w-[300px] sm:w-[320px] md:w-[340px] lg:w-[360px]">
+                  <div className="w-[260px] sm:w-[320px] md:w-[340px] lg:w-[360px]">
                     <ReviewCard review={rev} />
                   </div>
                 </div>
@@ -174,7 +174,7 @@ export default function ReviewsSection() {
                   onClick={() => sliderInstanceRef.current?.prev()}
                   className="
                     absolute
-                    -left-4 md:-left-6
+                    -left-4 md:-left-10
                     top-1/2 -translate-y-1/2
                     bg-white border border-gray-300 text-gray-700
                     rounded-full shadow px-3 py-2 hover:bg-gray-100 z-20
