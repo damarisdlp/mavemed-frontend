@@ -142,17 +142,63 @@ export default function Header() {
           {/* Mobile CTA */}
           <div className="justify-self-end lg:hidden">
             {!isMobileMenuOpen && (
-              <button
-                onClick={dispatchChatOpen}
-                className={
-                  isTransparent
-                    ? "bg-white text-black px-3 py-2 rounded-full text-xs hover:bg-gray-100"
-                    : "bg-black text-white px-3 py-2 rounded-full text-xs hover:bg-[#731a2f]"
-                }
-                type="button"
-              >
-                {t("nav.bookWhatsApp")}
-              </button>
+              <div className="flex flex-col items-end gap-2">
+                <div className={`grid grid-cols-2 gap-x-3 gap-y-2 ${navText} ${navGlow}`}>
+                  <a
+                    href={SOCIAL_LINKS.instagram}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Instagram"
+                    className="hover:opacity-80 transition"
+                  >
+                    <svg viewBox="0 0 24 24" className="h-4 w-4" fill="currentColor" aria-hidden="true">
+                      <path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm5 3.5a5.5 5.5 0 1 1 0 11 5.5 5.5 0 0 1 0-11zm0 2a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7zM18 6.25a1.25 1.25 0 1 1-2.5 0 1.25 1.25 0 0 1 2.5 0z" />
+                    </svg>
+                  </a>
+                  <a
+                  href={SOCIAL_LINKS.facebook}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Facebook"
+                  className="hover:opacity-80 transition"
+                >
+                  <svg viewBox="0 0 24 24" className="h-4 w-4" fill="currentColor" aria-hidden="true">
+                    <path d="M13 9h3V6h-3c-2.2 0-4 1.8-4 4v3H6v3h3v5h3v-5h3l1-3h-4v-3c0-.6.4-1 1-1z" />
+                  </svg>
+                </a>
+                  <a
+                    href={SOCIAL_LINKS.tiktok}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="TikTok"
+                    className="hover:opacity-80 transition"
+                  >
+                    <svg viewBox="0 0 24 24" className="h-4 w-4" fill="currentColor" aria-hidden="true">
+                      <path d="M14 3h2c.2 1.6 1.1 3 2.6 3.7.7.3 1.5.5 2.4.5v2.2c-1.2 0-2.3-.3-3.3-.8-.6-.3-1.1-.7-1.5-1.1V15a6 6 0 1 1-6-6c.2 0 .4 0 .6.1v2.4a3.6 3.6 0 1 0 3.4 3.6V3z" />
+                    </svg>
+                  </a>
+                  <a
+                    href={`https://wa.me/${PHONE_NUMBER.replace(/\D/g, "")}`}
+                    aria-label="Phone"
+                    className="hover:opacity-80 transition"
+                  >
+                    <svg viewBox="0 0 24 24" className="h-4 w-4" fill="currentColor" aria-hidden="true">
+                      <path d="M6.6 3.6c.4-.4 1-.4 1.4 0l2.2 2.2c.4.4.4 1 0 1.4l-1.2 1.2c-.2.2-.3.6-.2.9.5 1.6 1.8 3.4 3.4 5 .6.6 1.2 1.1 1.9 1.6.3.2.7.2.9 0l1.3-1.3c.4-.4 1-.4 1.4 0l2.2 2.2c.4.4.4 1 0 1.4l-1.6 1.6c-.7.7-1.8 1-2.8.7-2.2-.7-4.6-2.2-6.7-4.3-2.1-2.1-3.6-4.5-4.3-6.7-.3-1 0-2.1.7-2.8l1.5-1.5z" />
+                    </svg>
+                  </a>
+                </div>
+                <button
+                  onClick={dispatchChatOpen}
+                  className={
+                    isTransparent
+                      ? "bg-white text-black px-3 py-2 rounded-full text-xs hover:bg-gray-100"
+                      : "bg-black text-white px-3 py-2 rounded-full text-xs hover:bg-[#731a2f]"
+                  }
+                  type="button"
+                >
+                  {t("nav.bookWhatsApp")}
+                </button>
+              </div>
             )}
           </div>
 
@@ -239,7 +285,7 @@ export default function Header() {
       {isMobileMenuOpen && (
         <nav
           className="lg:hidden fixed left-0 right-0 flex flex-col items-center gap-4 py-3 bg-white border-t border-gray-200 max-h-[calc(100vh-120px)] overflow-y-auto shadow-md z-50"
-          style={{ top: (promoVisible ? PROMO_H : 0) + 120 }}
+          style={{ top: (promoVisible ? PROMO_H : 0) + 105 }}
         >
           <div className="flex items-center gap-2 mb-1">
             <NextLink
