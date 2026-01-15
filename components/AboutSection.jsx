@@ -43,7 +43,7 @@ export default function AboutSection() {
     <section id="aboutus" className="bg-white min-h-screen w-full relative">
       {/* Top Section Grid */}
       <div className="grid grid-cols-1 md:grid-cols-[3fr_2fr] min-h-[85vh] mb-10">
-        <div className="relative w-full h-[40vh] md:h-auto mt-8 md:mt-0">
+        <div className="relative w-full h-[40vh] md:h-auto mt-12 md:mt-0">
           <Image
             src="/drs.jpg"
             alt="Shot of outside of Mave Medical Spa in Tijuana"
@@ -111,9 +111,9 @@ export default function AboutSection() {
           <div ref={sliderRef} className="keen-slider overflow-hidden w-full">
             {allStaff.map((s, index) => (
               <div key={index} className="keen-slider__slide px-2 flex justify-center">
-                <div className="w-[300px] sm:w-[320px] md:w-[340px] lg:w-[360px]">
+                <div className="w-[250px] sm:w-[320px] md:w-[340px] lg:w-[360px]">
                   <div className="border border-gray-200 rounded-lg overflow-hidden shadow-sm bg-white">
-                    <div className="relative h-[300px] w-full">
+                    <div className="relative h-[240px] sm:h-[300px] w-full">
                       <Image
                         src={s.image}
                         alt={`${getLocalized(s.displayName)}, ${getLocalized(s.title)}`}
@@ -150,7 +150,7 @@ export default function AboutSection() {
                 onClick={() => sliderInstanceRef.current?.prev()}
                 className="
                   absolute
-                  -left-5 md:-left-6
+                  -left-3 md:-left-10
                   top-1/2 -translate-y-1/2
                   bg-white border border-gray-300 text-gray-700
                   rounded-full shadow px-3 py-2 hover:bg-gray-100 z-20
@@ -163,7 +163,7 @@ export default function AboutSection() {
                 onClick={() => sliderInstanceRef.current?.next()}
                 className="
                   absolute
-                  -right-5 md:-right-6
+                  -right-3 md:-right-10
                   top-1/2 -translate-y-1/2
                   bg-white border border-gray-300 text-gray-700
                   rounded-full shadow px-3 py-2 hover:bg-gray-100 z-20
