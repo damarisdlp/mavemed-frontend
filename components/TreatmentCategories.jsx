@@ -189,7 +189,7 @@ const CategorySlider = ({ services }) => {
         {/* Sticky Category Menu */}
         <div
           id="category-menu"
-          className="flex flex-nowrap items-center gap-3 sm:gap-4 mt-10 justify-start sticky top-[145px] sm:top-[130px] bg-white z-30 py-2 sm:py-3 border-b border-gray-200 overflow-x-auto no-scrollbar px-3"
+          className="flex flex-nowrap items-center gap-3 sm:gap-4 mt-10 justify-start sticky top-[145px] sm:top-[110px] bg-white z-30 py-2 sm:py-3 border-b border-gray-200 overflow-x-auto no-scrollbar px-3"
         >
           {categories.map((category, i) => (
             <a
@@ -207,7 +207,7 @@ const CategorySlider = ({ services }) => {
           <div
             key={i}
             id={getLocalized(category.title).replace(/\s+/g, "-").toLowerCase()}
-            className="mb-16 scroll-mt-[170px]"
+            className="mb-16 scroll-mt-[200px] sm:scroll-mt-[190px]"
           >
             <h2
               className="text-black font-serif font-medium mb-6 leading-snug text-[clamp(1.6rem,3.8vw,2.6rem)]"
