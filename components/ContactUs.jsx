@@ -11,7 +11,7 @@ export default function ContactUs() {
       <div className="grid grid-cols-1 md:grid-cols-[2fr_3fr] min-h-[85vh]">
         
         {/* Left: Text Content */}
-        <div className="flex items-center justify-center px-6 py-10">
+        <div className="flex items-center justify-center px-6 pt-20 pb-10 md:py-10">
           <div className="w-full max-w-md mx-auto">
             <h2 className="text-3xl sm:text-4xl md:text-5xl text-black font-serif font-medium mb-10 leading-tight text-center md:text-left">
               {t("contactUs.title")}
