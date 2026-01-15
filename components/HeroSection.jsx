@@ -11,7 +11,7 @@ export default function HeroSection() {
       <div className="relative min-h-screen rounded-b-[40px] sm:rounded-b-[56px] md:rounded-b-[72px] overflow-hidden">
         {/* Background Image */}
         <Image
-          src="/hero.jpg"
+          src="/equipo.jpg"
           alt="Hero background"
           fill
           priority
