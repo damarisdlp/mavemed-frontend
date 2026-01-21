@@ -10,7 +10,6 @@ export const hydrafacial = {
     es: "HydraFacial MD"
   },
   isPopular: true,
-  isPromoEligible: false,
   images: {
     primary: "/hydrafacial.jpg",
     secondary: "/hydrafacial2.jpg"
@@ -48,7 +47,6 @@ export const hydrafacial = {
           en: "Hydrafacial MD - Face",
           es: "Hydrafacial MD - Rostro"
         },
-        isPromoEligible: false,
         optionPrice: { en: "$95", es: "$95" },
         optionCurrency: "USD",
         optionPromoPrice: "",
@@ -60,7 +58,6 @@ export const hydrafacial = {
           en: "Hydrafacial MD - Shoulders",
           es: "Hydrafacial MD - Hombros"
         },
-        isPromoEligible: false,
         optionPrice: { en: "$130", es: "$130" },
         optionCurrency: "USD",
         optionPromoPrice: "",
@@ -72,7 +69,6 @@ export const hydrafacial = {
           en: "Hydrafacial MD - Upper Back",
           es: "Hydrafacial MD - Espalda superior"
         },
-        isPromoEligible: false,
         optionPrice: { en: "$150", es: "$150" },
         optionCurrency: "USD",
         optionPromoPrice: "",
