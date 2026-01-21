@@ -128,7 +128,9 @@ export default function AddOnSection({ addOns = [] }) {
 
         const promoPrice = getLocalized(matchedOption?.optionPromoPrice);
         const hasPromo =
-          matchedOption?.isPromoEligible && typeof promoPrice === "string" && promoPrice.trim();
+          addon?.isPromoActive === true &&
+          typeof promoPrice === "string" &&
+          promoPrice.trim();
 
         const hasMultipleOptions = (addon?.pricing?.options || []).length > 1;
         const fromLabel = hasMultipleOptions ? (locale === "es" ? "Desde " : "From ") : "";
