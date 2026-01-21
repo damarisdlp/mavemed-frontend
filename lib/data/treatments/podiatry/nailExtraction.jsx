@@ -10,7 +10,6 @@ export const toenailExtraction = {
     es: "Procedimiento de Extracción de Uña del Pie"
   },
   isPopular: false,
-  isPromoEligible: true,
   images: {
     primary: "/nailext.jpg",
     secondary: "/nailext2.jpg"
@@ -51,7 +50,6 @@ export const toenailExtraction = {
           en: "Extraction per Nail",
           es: "Extracción por Uña"
         },
-        isPromoEligible: false,
         optionPrice: {
           en: "$650",
           es: "$650"
