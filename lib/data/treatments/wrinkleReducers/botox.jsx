@@ -51,10 +51,16 @@ export const botox = {
           es: "$6.25"
         },
         optionCurrency: "USD",
+        optionPromoPrice: "$5.56",
+        optionPromoPriceCurrency: "USD",
         notes: [
           {
             en: "Any zone",
             es: "Cualquier zona"
+          },
+          {
+            en: "Exclusive pricing only valid in package deals",
+            es: "Precio exclusivo solo valido en paquetes"
           }
         ],
       },
