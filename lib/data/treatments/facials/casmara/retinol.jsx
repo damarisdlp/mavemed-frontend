@@ -37,7 +37,7 @@ export const casmaraRetinolProAge = {
     }
   ],
   pricing: {
-    startingPrice: { en: "$90", es: "$90" },
+    startingPrice: "$90",
     startingPriceCurrency: "USD",
     promoPrice: "",
     promoPriceCurrency: "USD",

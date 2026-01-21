@@ -41,7 +41,7 @@ export const co2Laser = {
   ],
 
   pricing: {
-    startingPrice: { en: "$250", es: "$250" },
+    startingPrice: "$250",
     startingPriceCurrency: "USD",
     promoPrice: "",
     promoPriceCurrency: "USD",

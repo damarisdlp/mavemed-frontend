@@ -41,7 +41,7 @@ export const venusFreeze = {
     }
   ],
   pricing: {
-    startingPrice: { en: "$25", es: "$25" },
+    startingPrice: "$25",
     startingPriceCurrency: "USD",
     promoPrice: "",
     promoPriceCurrency: "USD",

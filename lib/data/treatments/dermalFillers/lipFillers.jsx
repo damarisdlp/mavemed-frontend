@@ -37,7 +37,7 @@ export const lipFillers = {
     }
   ],
   pricing: {
-    startingPrice: { en: "$305", es: "$305" },
+    startingPrice: "$305",
     startingPriceCurrency: "USD",
     promoPrice: "",
     promoPriceCurrency: "USD",

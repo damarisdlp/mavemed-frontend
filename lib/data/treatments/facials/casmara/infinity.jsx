@@ -33,7 +33,7 @@ export const casmaraInfinity = {
     }
   ],
   pricing: {
-    startingPrice: { en: "$95", es: "$95" },
+    startingPrice: "$95",
     startingPriceCurrency: "USD",
     promoPrice: "",
     promoPriceCurrency: "USD",

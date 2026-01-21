@@ -37,10 +37,7 @@ export const pdoThreads = {
     }
   ],
   pricing: {
-    startingPrice: {
-      en: "Price varies by area and thread count",
-      es: "El precio varía según la zona y la cantidad de hilos"
-    },
+    startingPrice: "Price varies by area and thread count",
     startingPriceCurrency: "",
     promoPrice: {
       en: "Discounted packages available for multiple zones",

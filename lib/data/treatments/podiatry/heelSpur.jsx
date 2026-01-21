@@ -37,10 +37,7 @@ export const calcanealSpur = {
     }
   ],
   pricing: {
-    startingPrice: {
-      en: "$700",
-      es: "$700"
-    },
+    startingPrice: "$700",
     startingPriceCurrency: "MXN",
     promoPrice: "",
     promoPriceCurrency: "MXN",

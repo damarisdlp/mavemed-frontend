@@ -37,7 +37,7 @@ export const facialBalancing = {
     }
   ],
   pricing: {
-    startingPrice: { en: "$360", es: "$360" },
+    startingPrice: "$360",
     startingPriceCurrency: "USD",
     promoPrice: "",
     promoPriceCurrency: "USD",

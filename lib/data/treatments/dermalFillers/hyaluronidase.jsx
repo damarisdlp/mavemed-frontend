@@ -41,7 +41,7 @@ export const hyaluronidase = {
     }
   ],
   pricing: {
-    startingPrice: { en: "$60", es: "$60" },
+    startingPrice: "$60",
     startingPriceCurrency: "USD",
     promoPrice: "",
     promoPriceCurrency: "USD",

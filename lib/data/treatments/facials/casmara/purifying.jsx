@@ -37,7 +37,7 @@ export const casmaraPurifying = {
     }
   ],
   pricing: {
-    startingPrice: { en: "$85", es: "$85" },
+    startingPrice: "$85",
     startingPriceCurrency: "USD",
     promoPrice: "",
     promoPriceCurrency: "USD",

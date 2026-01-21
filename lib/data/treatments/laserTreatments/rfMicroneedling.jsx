@@ -37,7 +37,7 @@ export const rfMicroneedling = {
     }
   ],
   pricing: {
-    startingPrice: { en: "$425", es: "$425" },
+    startingPrice: "$425",
     startingPriceCurrency: "USD",
     promoPrice: "",
     promoPriceCurrency: "USD",

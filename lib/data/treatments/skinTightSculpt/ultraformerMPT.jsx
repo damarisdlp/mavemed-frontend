@@ -37,7 +37,7 @@ export const ultraformerMPT = {
     }
   ],
   pricing: {
-    startingPrice: { en: "$65", es: "$65" },
+    startingPrice: "$65",
     startingPriceCurrency: "USD",
     promoPrice: "",
     promoPriceCurrency: "USD",

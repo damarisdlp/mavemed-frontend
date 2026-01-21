@@ -23,7 +23,7 @@ export const janssenUltraRenewal = {
     es: "Este facial avanzado combina ácidos alfa hidroxi (AHAs) con péptidos para exfoliar, estimular la renovación celular e iluminar la piel. Es perfecto para quienes buscan renovación sin tiempo de inactividad agresivo."
   },
   pricing: {
-    startingPrice: { en: "$55", es: "$55" },
+    startingPrice: "$55",
     startingPriceCurrency: "USD",
     promoPrice: "",
     promoPriceCurrency: "USD",

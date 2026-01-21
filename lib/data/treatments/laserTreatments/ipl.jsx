@@ -33,10 +33,7 @@ export const ipl = {
     }
   ],
   pricing: {
-    startingPrice: {
-      en: "$650",
-      es: "$650"
-    },
+    startingPrice: "$650",
     startingPriceCurrency: "MXN",
     promoPrice: "",
     promoPriceCurrency: "MXN",

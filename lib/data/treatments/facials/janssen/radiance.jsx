@@ -37,7 +37,7 @@ export const janssenRadianceBoost = {
     }
   ],
   pricing: {
-    startingPrice: { en: "$45", es: "$45" },
+    startingPrice: "$45",
     startingPriceCurrency: "USD",
     promoPrice: "",
     promoPriceCurrency: "USD",

@@ -37,10 +37,7 @@ export const nailFungusLaser = {
     }
   ],
   pricing: {
-    startingPrice: {
-      en: "$600",
-      es: "$600"
-    },
+    startingPrice: "$600",
     startingPriceCurrency: "MXN",
     promoPrice: "",
     promoPriceCurrency: "MXN",
