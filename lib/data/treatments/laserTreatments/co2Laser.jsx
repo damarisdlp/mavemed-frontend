@@ -10,6 +10,7 @@ export const co2Laser = {
     es: "Resurfacing Láser CO₂ (AcuPulse)"
   },
   isPopular: true,
+  isPromoActive: true,
   images: {
     primary: "/laserco2.jpg",
     secondary: "/laserco22.jpg"
@@ -43,8 +44,6 @@ export const co2Laser = {
   pricing: {
     startingPrice: "$250",
     startingPriceCurrency: "USD",
-    promoPrice: "",
-    promoPriceCurrency: "USD",
 
     options: [
       // Face / Neck
@@ -52,7 +51,8 @@ export const co2Laser = {
         optionName: { en: "Under Eye", es: "Ojeras" },
         optionPrice: { en: "$250", es: "$250" },
         optionCurrency: "USD",
-        optionPromoPrice: "",
+        isOptionPromoActive: true,
+        optionPromoPrice: "$150",
         optionPromoPriceCurrency: "USD",
         notes: []
       },
