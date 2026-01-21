@@ -10,7 +10,6 @@ export const lipFillers = {
     es: "Rellenos de Labios"
   },
   isPopular: true,
-  isPromoEligible: false,
   images: {
     primary: "/lipfillers.jpg",
     secondary: "/lipfillers2.jpg"
@@ -48,7 +47,6 @@ export const lipFillers = {
           en: "Dermal Filler - Hyaluronic Acid - Stylage M",
           es: "Relleno Dérmico - Ácido Hialurónico - Stylage - M"
         },
-        isPromoEligible: false,
         optionPrice: { en: "$305", es: "$305" },
         optionCurrency: "USD",
         optionPromoPrice: "",
@@ -69,7 +67,6 @@ export const lipFillers = {
           en: "Juvéderm Volift with Lidocaine",
           es: "Relleno Dérmico - Ácido Hialurónico - Juvederm - Volift"
         },
-        isPromoEligible: false,
         optionPrice: { en: "$360", es: "$360" },
         optionCurrency: "USD",
         optionPromoPrice: "",
