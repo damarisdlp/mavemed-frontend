@@ -10,7 +10,6 @@ export const swedishMassage = {
     es: "Masaje Sueco Relajante"
   },
   isPopular: false,
-  isPromoEligible: false,
   images: {
     primary: "/swissmsg.jpg",
     secondary: "/swissmsg2.jpg",
@@ -48,7 +47,6 @@ export const swedishMassage = {
           en: "Relaxing Swedish Massage - Full Body",
           es: "Masaje Sueco Relajante - Cuerpo Completo"
         },
-        isPromoEligible: false,
         optionPrice: { en: "$35", es: "$35" },
         optionCurrency: "USD",
         optionPromoPrice: "",
