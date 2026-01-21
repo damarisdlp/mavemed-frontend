@@ -37,7 +37,7 @@ export const cupping = {
     }
   ],
   pricing: {
-    startingPrice: { en: "$10", es: "$10" },
+    startingPrice: "$10",
     startingPriceCurrency: "USD",
     promoPrice: "",
     promoPriceCurrency: "USD",
