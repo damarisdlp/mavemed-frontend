@@ -37,7 +37,7 @@ export const wartRemoval = {
     }
   ],
   pricing: {
-    startingPrice: { en: "$50", es: "$50" },
+    startingPrice: "$50",
     startingPriceCurrency: "USD",
     promoPrice: "",
     promoPriceCurrency: "USD",
