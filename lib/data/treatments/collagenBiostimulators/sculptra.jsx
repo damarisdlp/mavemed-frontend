@@ -10,7 +10,7 @@ export const sculptra = {
     es: "Sculptra® (PLLA) - Poli-L-Láctico"
   },
   isPopular: true,
-  isPromoEligible: true,
+  isPromoActive: true,
   images: {
     primary: "/sculptra.jpg",
     secondary: "/sculptra2.jpg"
@@ -33,8 +33,8 @@ export const sculptra = {
       es: "Excelente para la restauración de volumen a largo plazo sin apariencia sobrecargada"
     },
     {
-      en: "Single-session pricing at $575 is primarily for maintenance after a completed series",
-      es: "El precio de una sola sesión a $575 es principalmente para mantenimiento después de completar la serie"
+      en: "Single-session pricing is $575 when there is no commitment to a full rejuvenation treatment plan, or when the session is used as a maintenance treatment.",
+      es: "El precio por una sola sesión es de $575 cuando no hay compromiso con un plan completo de rejuvenecimiento, o cuando la sesión se utiliza como tratamiento de mantenimiento."
     },
     {
       en: "Pricing is per vial, not per session; total vials vary by area and plan",
@@ -42,55 +42,73 @@ export const sculptra = {
     }
   ],
   pricing: {
-    startingPrice: { en: "$575", es: "$575" },
+    startingPrice: "$575",
     startingPriceCurrency: "USD",
-    promoPrice: "$515",
-    promoPriceCurrency: "USD",
     options: [
       {
         optionName: {
           en: "PLLA - Sculptra® (per vial)",
           es: "PLLA - Sculptra® (por vial)"
         },
-        isPromoEligible: true,
-        optionPrice: { en: "$575", es: "$575" },
+        optionPrice: { 
+          en: "$575", 
+          es: "$575" 
+        },
         optionCurrency: "USD",
-        optionPromoPrice: "$515",
-        optionPromoPriceCurrency: "USD",
         notes: [
           {
-            en: "This price is reflective of 1 vial per zone treated",
-            es: "Este precio refleja 1 vial por zona tratada"
-          },
-          {
-            en: "Zones include, but not limited to: Face, neck, neckline, hands",
-            es: "Las zonas incluyen, pero no se limitan a: rostro, cuello, escote, manos"
+            en: "This price is reflective of 1 vial",
+            es: "Este precio refleja 1 vial"
           },
           {
             en: "Vial quantity is subject to change based on zone size and/or zones treated",
             es: "La cantidad de viales está sujeta a cambios según el tamaño de la zona y/o zonas tratadas"
           },
-          {
+        ]
+      }
+    ]
+  },
+  promoDetails: {
+    validTill: {
+      en: "2026-01-31",
+      es: "2026-01-31"
+    },
+    headline: {
+      en: "Exclusive Sculptra® Savings",
+      es: "Ahorro Exclusivo en Sculptra®"
+    },
+    description: {
+      en: "Lock in a limited-time per-vial advantage with our full Sculptra rejuvenation program, designed as a 3-session protocol to support long-term collagen regeneration, skin quality, and natural-looking rejuvenation.",
+      es: "Asegura un beneficio especial por vial con nuestro programa completo de rejuvenecimiento con Sculptra, diseñado como un protocolo de 3 sesiones para estimular colágeno a largo plazo, mejorar la calidad de la piel y lograr un rejuvenecimiento natural y progresivo."
+    },
+    options: [
+      {
+        optionName: {
+          en: "Sculptra® - Rejuvenation Treatment Plan",
+          es: "Sculptra® - Tratamiento de Rejuvenecimiento"
+        },
+        optionPromoPrice: "$515",
+        optionPromoPriceCurrency: "USD",
+        notes: [
+         {
             en: "Exclusive $515 rate applies only when purchased as a 3-session plan (manufacturer-recommended minimum)",
             es: "La tarifa exclusiva de $515 aplica solo al comprar el plan de 3 sesiones (mínimo recomendado por el fabricante)"
+          },
+          {
+            en: "Price shown is per vial.",
+            es: "El precio mostrado es por vial."
+          },
+          {
+            en: "Final cost will depend on the number of vials required to treat the selected zone. Typically, one vial per zone is used, though this may vary based on zone size and individual needs.",
+            es: "El costo final dependerá de la cantidad de viales necesarios para tratar la zona seleccionada. Generalmente se utiliza un vial por zona, aunque puede variar según el tamaño del área y las necesidades individuales."
+          },
+          {
+            en: "Each vial used within the treatment plan is offered at the same exclusive rate.",
+            es: "Cada vial utilizado dentro del plan se ofrece a la misma tarifa exclusiva."
           }
         ]
       }
-    ].sort(
-      (a, b) =>
-        parseFloat(
-          (typeof a.optionPrice === "object" ? a.optionPrice.en : a.optionPrice).replace(
-            /[^0-9.]/g,
-            ""
-          )
-        ) -
-        parseFloat(
-          (typeof b.optionPrice === "object" ? b.optionPrice.en : b.optionPrice).replace(
-            /[^0-9.]/g,
-            ""
-          )
-        )
-    )
+    ]
   },
   goals: [
     {
