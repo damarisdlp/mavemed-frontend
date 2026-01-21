@@ -5,6 +5,7 @@ import { useRouter } from "next/router";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import nextI18NextConfig from "../next-i18next.config";
 import { allTreatments } from "@/lib/data/allTreatments";
+import { getPromoSummary } from "@/lib/utils/promo";
 
 import PromoBanner from "@/components/PromoBanner";
 import Header from "@/components/Header";
@@ -24,12 +25,12 @@ export default function PromosPage() {
   const router = useRouter();
   const locale = router.locale || "en";
 
-  const promoTreatments = allTreatments.filter(
-    (t) => t?.isPromoActive && t?.promoDetails?.options?.length
-  );
+  const promoTreatments = allTreatments.filter((t) => getPromoSummary(t, locale).isPromoActive);
 
   const categoriesMap = {};
   promoTreatments.forEach((t) => {
+    const promoSummary = getPromoSummary(t, locale);
+    if (!promoSummary.priceText) return;
     const catKey = t.category || getLocalized(t.categoryDisplayName, locale) || "Other";
     if (!categoriesMap[catKey]) {
       categoriesMap[catKey] = {
@@ -37,19 +38,20 @@ export default function PromosPage() {
         cards: [],
       };
     }
-    t.promoDetails.options.forEach((opt) => {
-      const optionName = getLocalized(opt.optionName, locale) || getLocalized(t.serviceDisplayName, locale);
-      const description = getLocalized(t.description, locale);
-      const price = opt.optionPromoPrice
-        ? `${opt.optionPromoPrice}${opt.optionPromoPriceCurrency ? ` ${opt.optionPromoPriceCurrency}` : ""}`
-        : "";
-      categoriesMap[catKey].cards.push({
-        optionName,
-        description,
-        price,
-        image: t.images?.primary || "/placeholder.jpg",
-        slug: t.urlSlug,
-      });
+    const optionName = getLocalized(t.serviceDisplayName, locale);
+    const description = getLocalized(t.description, locale);
+    const pricePrefix = promoSummary.showStartingFrom
+      ? locale === "es"
+        ? "Desde "
+        : "Starting from "
+      : "";
+    const price = `${pricePrefix}${promoSummary.priceText}`;
+    categoriesMap[catKey].cards.push({
+      optionName,
+      description,
+      price,
+      image: t.images?.primary || "/placeholder.jpg",
+      slug: t.urlSlug,
     });
   });
 
