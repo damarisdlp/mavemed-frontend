@@ -37,7 +37,7 @@ export const keloidInjection = {
     }
   ],
   pricing: {
-    startingPrice: { en: "Based on consultation", es: "Basado en consulta" },
+    startingPrice: "Based on consultation",
     startingPriceCurrency: "USD",
     promoPrice: "",
     promoPriceCurrency: "USD",
