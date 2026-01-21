@@ -10,7 +10,6 @@ export const cupping = {
     es: "Terapia de Ventosas - Complemento"
   },
   isPopular: false,
-  isPromoEligible: false,
   images: {
     primary: "/cupping.jpg",
     secondary: "/cupping2.jpg",
@@ -48,7 +47,6 @@ export const cupping = {
           en: "Cupping Add‑On",
           es: "Complemento de Ventosas"
         },
-        isPromoEligible: false,
         optionPrice: { en: "$10", es: "$10" },
         optionCurrency: "USD",
         optionPromoPrice: "",
