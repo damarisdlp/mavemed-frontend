@@ -10,7 +10,6 @@ export const keloidInjection = {
     es: "Inyección para Cicatriz Queloides"
   },
   isPopular: false,
-  isPromoEligible: false,
   images: {
     primary: "/keloid.jpg",
     secondary: "/keloid2.jpg",
@@ -48,7 +47,6 @@ export const keloidInjection = {
           en: "Single Injection Area",
           es: "Área Única de Inyección"
         },
-        isPromoEligible: false,
         optionPrice: { en: "Based on consultation", es: "Basado en consulta" },
         optionCurrency: "USD",
         optionPromoPrice: "",
