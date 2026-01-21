@@ -10,7 +10,6 @@ export const casmaraPurifying = {
     es: "Facial Casmara Purificante de Algas"
   },
   isPopular: true,
-  isPromoEligible: false,
   images: {
     primary: "/purifying.jpg",
     secondary: "/purifying2.jpg"
@@ -48,7 +47,6 @@ export const casmaraPurifying = {
           en: "Casmara Purifying Algae Facial",
           es: "Facial Casmara Purificante de Algas"
         },
-        isPromoEligible: false,
         optionPrice: { en: "$85", es: "$85" },
         optionCurrency: "USD",
         optionPromoPrice: "",
