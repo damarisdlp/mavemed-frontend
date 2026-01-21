@@ -312,7 +312,7 @@ export default function TreatmentDetails({ treatment }) {
                           {opt.optionPromoPriceCurrency ? ` ${opt.optionPromoPriceCurrency}` : ""}
                         </div>
                         {opt.notes?.length > 0 && (
-                          <ul className="text-xs text-white/80 list-disc list-inside mt-1 space-y-1">
+                          <ul className="text-xs text-white/80 list-disc list-outside pl-4 mt-1 space-y-1">
                             {opt.notes.map((note, nIdx) => (
                               <li key={nIdx}>{getLocalized(note)}</li>
                             ))}
@@ -333,15 +333,6 @@ export default function TreatmentDetails({ treatment }) {
               </div>
             )}
           </div>
-
-          {/* Notes */}
-          {treatment.notes?.length > 0 && (
-            <ul className="text-sm text-gray-600 italic mb-4 space-y-1 list-disc list-outside pl-5">
-              {treatment.notes.map((note, idx) => (
-                <li key={idx}>{getLocalized(note)}</li>
-              ))}
-            </ul>
-          )}
 
         </div>
       </div>
