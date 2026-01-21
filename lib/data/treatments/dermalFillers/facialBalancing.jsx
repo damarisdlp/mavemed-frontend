@@ -10,7 +10,6 @@ export const facialBalancing = {
     es: "Equilibrio Facial con Rellenos Dérmicos"
   },
   isPopular: false,
-  isPromoEligible: false,
   images: {
     primary: "/facialfillers.jpg",
     secondary: "/facialfillers2.jpg"
@@ -48,7 +47,6 @@ export const facialBalancing = {
           en: "Juvéderm Volift",
           es: "Juvéderm Volift"
         },
-        isPromoEligible: false,
         optionPrice: { en: "$360", es: "$360" },
         optionCurrency: "USD",
         optionPromoPrice: "",
@@ -69,7 +67,6 @@ export const facialBalancing = {
           en: "Juvéderm Volbella",
           es: "Juvéderm Volbella"
         },
-        isPromoEligible: false,
         optionPrice: { en: "$370", es: "$370" },
         optionCurrency: "USD",
         optionPromoPrice: "",
