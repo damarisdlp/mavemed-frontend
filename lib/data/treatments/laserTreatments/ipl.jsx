@@ -10,7 +10,6 @@ export const ipl = {
     es: "Fotofacial IPL (Harmony XL)"
   },
   isPopular: true,
-  isPromoEligible: false,
   images: {
     primary: "/ipl.jpg",
     secondary: "/ipl2.jpg"
@@ -45,7 +44,6 @@ export const ipl = {
       // Face / Neck combos
       {
         optionName: { en: "Face", es: "Rostro" },
-        isPromoEligible: false,
         optionPrice: { en: "$700", es: "$700" },
         optionCurrency: "MXN",
         optionPromoPrice: "",
@@ -54,7 +52,6 @@ export const ipl = {
       },
       {
         optionName: { en: "Neck", es: "Cuello" },
-        isPromoEligible: false,
         optionPrice: { en: "$700", es: "$700" },
         optionCurrency: "MXN",
         optionPromoPrice: "",
@@ -63,7 +60,6 @@ export const ipl = {
       },
       {
         optionName: { en: "Face + Neck", es: "Rostro + Cuello" },
-        isPromoEligible: false,
         optionPrice: { en: "$1,400", es: "$1,400" },
         optionCurrency: "MXN",
         optionPromoPrice: "",
@@ -72,7 +68,6 @@ export const ipl = {
       },
       {
         optionName: { en: "Face + Neck + Décolleté", es: "Rostro + Cuello + Escote" },
-        isPromoEligible: false,
         optionPrice: { en: "$2,100", es: "$2,100" },
         optionCurrency: "MXN",
         optionPromoPrice: "",
@@ -81,7 +76,6 @@ export const ipl = {
       },
       {
         optionName: { en: "Face + Neck + Décolleté + Chest", es: "Rostro + Cuello + Escote + Pecho" },
-        isPromoEligible: false,
         optionPrice: { en: "$2,800", es: "$2,800" },
         optionCurrency: "MXN",
         optionPromoPrice: "",
@@ -92,7 +86,6 @@ export const ipl = {
       // Chest / Décolleté
       {
         optionName: { en: "Décolleté", es: "Escote" },
-        isPromoEligible: false,
         optionPrice: { en: "$700", es: "$700" },
         optionCurrency: "MXN",
         optionPromoPrice: "",
@@ -101,7 +94,6 @@ export const ipl = {
       },
       {
         optionName: { en: "Chest", es: "Pecho" },
-        isPromoEligible: false,
         optionPrice: { en: "$700", es: "$700" },
         optionCurrency: "MXN",
         optionPromoPrice: "",
@@ -112,7 +104,6 @@ export const ipl = {
       // Zones
       {
         optionName: { en: "Small Zone", es: "Zona Pequeña" },
-        isPromoEligible: false,
         optionPrice: { en: "$675", es: "$675" },
         optionCurrency: "MXN",
         optionPromoPrice: "",
@@ -126,7 +117,6 @@ export const ipl = {
       },
       {
         optionName: { en: "Medium Zone", es: "Zona Mediana" },
-        isPromoEligible: false,
         optionPrice: { en: "$1,565", es: "$1,565" },
         optionCurrency: "MXN",
         optionPromoPrice: "",
@@ -140,7 +130,6 @@ export const ipl = {
       },
       {
         optionName: { en: "Large Zone", es: "Zona Grande" },
-        isPromoEligible: false,
         optionPrice: { en: "$3,450", es: "$3,450" },
         optionCurrency: "MXN",
         optionPromoPrice: "",
@@ -156,7 +145,6 @@ export const ipl = {
       // Other areas
       {
         optionName: { en: "Hands", es: "Manos" },
-        isPromoEligible: false,
         optionPrice: { en: "$650", es: "$650" },
         optionCurrency: "MXN",
         optionPromoPrice: "",
@@ -165,7 +153,6 @@ export const ipl = {
       },
       {
         optionName: { en: "Legs", es: "Piernas" },
-        isPromoEligible: false,
         optionPrice: { en: "$3,450", es: "$3,450" },
         optionCurrency: "MXN",
         optionPromoPrice: "",
@@ -174,7 +161,6 @@ export const ipl = {
       },
       {
         optionName: { en: "Hands + Legs", es: "Manos + Piernas" },
-        isPromoEligible: false,
         optionPrice: { en: "$4,100", es: "$4,100" },
         optionCurrency: "MXN",
         optionPromoPrice: "",
