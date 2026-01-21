@@ -10,7 +10,6 @@ export const calcanealSpur = {
     es: "Inyección para Espolón Calcáneo"
   },
   isPopular: false,
-  isPromoEligible: true,
   images: {
     primary: "/heelspur.jpg",
     secondary: "/heelspur2.jpg"
@@ -51,7 +50,6 @@ export const calcanealSpur = {
           en: "Treatment",
           es: "Tratamiento"
         },
-        isPromoEligible: false,
         optionPrice: {
           en: "$700",
           es: "$700"
