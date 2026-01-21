@@ -37,7 +37,7 @@ export const sclerotherapy = {
     }
   ],
   pricing: {
-    startingPrice: { en: "Based on consultation", es: "Basado en consulta" },
+    startingPrice: "Based on consultation",
     startingPriceCurrency: "",
     promoPrice: "",
     promoPriceCurrency: "USD",
