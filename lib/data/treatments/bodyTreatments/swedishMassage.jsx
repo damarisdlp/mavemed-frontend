@@ -37,7 +37,7 @@ export const swedishMassage = {
     }
   ],
   pricing: {
-    startingPrice: { en: "$35", es: "$35" },
+    startingPrice: "$35",
     startingPriceCurrency: "USD",
     promoPrice: "",
     promoPriceCurrency: "USD",
