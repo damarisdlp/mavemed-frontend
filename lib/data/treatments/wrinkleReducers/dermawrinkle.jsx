@@ -51,10 +51,16 @@ export const dermawrinkle = {
           es: "$4.75"
         },
         optionCurrency: "USD",
+        optionPromoPrice: "$4.44",
+        optionPromoPriceCurrency: "USD",
         notes: [
           {
             en: "Any zone",
             es: "Cualquier zona"
+          },
+          {
+            en: "Exclusive pricing only valid in package deals",
+            es: "Precio exclusivo solo valido en paquetes"
           }
         ],
       },
