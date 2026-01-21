@@ -10,7 +10,6 @@ export const pdoThreads = {
     es: "Levantamiento y Contorno Facial con Hilos PDO – Rejuvenecimiento Facial sin Cirugía"
   },
   isPopular: true,
-  isPromoEligible: false,
   images: {
     primary: "/threads.jpg",
     secondary: "/threads2.jpg"
@@ -54,7 +53,6 @@ export const pdoThreads = {
           en: "Signature Lower Face Lift",
           es: "Levantamiento Facial Inferior Signature"
         },
-        isPromoEligible: false,
         optionPrice: { en: "$TBD", es: "$TBD" },
         optionCurrency: "USD",
         optionPromoPrice: "",
@@ -75,7 +73,6 @@ export const pdoThreads = {
           en: "Full Face Thread Lift",
           es: "Levantamiento en Rostro Completo"
         },
-        isPromoEligible: false,
         optionPrice: { en: "$TBD", es: "$TBD" },
         optionCurrency: "USD",
         optionPromoPrice: "",
@@ -96,7 +93,6 @@ export const pdoThreads = {
           en: "Jawline Contour",
           es: "Contorno de Mandíbula"
         },
-        isPromoEligible: false,
         optionPrice: { en: "$TBD", es: "$TBD" },
         optionCurrency: "USD",
         optionPromoPrice: "",
@@ -117,7 +113,6 @@ export const pdoThreads = {
           en: "Eyebrow and Eye Lift",
           es: "Levantamiento de Cejas y Ojos"
         },
-        isPromoEligible: false,
         optionPrice: { en: "$TBD", es: "$TBD" },
         optionCurrency: "USD",
         optionPromoPrice: "",
@@ -134,7 +129,6 @@ export const pdoThreads = {
           en: "Full Face & Neck Combo Lift",
           es: "Levantamiento de Rostro Completo y Cuello"
         },
-        isPromoEligible: false,
         optionPrice: { en: "$TBD", es: "$TBD" },
         optionCurrency: "USD",
         optionPromoPrice: "",
