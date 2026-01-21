@@ -10,7 +10,6 @@ export const enzymaticTherapy = {
     es: "Terapia de Remodelación Enzimática"
   },
   isPopular: false,
-  isPromoEligible: false,
   images: {
     primary: "/enzymatic.jpg",
     secondary: "/enzymatic2.jpg"
@@ -52,7 +51,6 @@ export const enzymaticTherapy = {
           en: "PB Serum Slim+ - Lipase PB500",
           es: "PB Serum Slim+ - Lipasa PB500"
         },
-        isPromoEligible: false,
         optionPrice: { en: "$60", es: "$60" },
         optionCurrency: "USD",
         optionPromoPrice: "",
@@ -69,7 +67,6 @@ export const enzymaticTherapy = {
           en: "PB Serum Drain+ - Hyaluronidase PB3000",
           es: "PB Serum Drain+ - Hialuronidasa PB3000"
         },
-        isPromoEligible: false,
         optionPrice: { en: "$60", es: "$60" },
         optionCurrency: "USD",
         optionPromoPrice: "",
@@ -86,7 +83,6 @@ export const enzymaticTherapy = {
           en: "PB Serum Smooth+ - Collagenase GH PB220",
           es: "PB Serum Smooth+ - Colagenasa GH PB220"
         },
-        isPromoEligible: false,
         optionPrice: { en: "$60", es: "$60" },
         optionCurrency: "USD",
         optionPromoPrice: "",
@@ -103,7 +99,6 @@ export const enzymaticTherapy = {
           en: "PB Serum+ (Kit)",
           es: "PB Serum+ (Kit)"
         },
-        isPromoEligible: false,
         optionPrice: { en: "$180", es: "$180" },
         optionCurrency: "USD",
         optionPromoPrice: "",
