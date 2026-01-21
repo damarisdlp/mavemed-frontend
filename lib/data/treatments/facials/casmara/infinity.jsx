@@ -10,7 +10,6 @@ export const casmaraInfinity = {
     es: "Facial Casmara Antienvejecimiento Infinity"
   },
   isPopular: false,
-  isPromoEligible: false,
   images: {
     primary: "/infinity.jpg",
     secondary: "/infinity2.jpg"
@@ -44,7 +43,6 @@ export const casmaraInfinity = {
           en: "Casmara Infinity Anti‑Aging Facial",
           es: "Facial Casmara Antienvejecimiento Infinity"
         },
-        isPromoEligible: false,
         optionPrice: { en: "$95", es: "$95" },
         optionCurrency: "USD",
         optionPromoPrice: "",
