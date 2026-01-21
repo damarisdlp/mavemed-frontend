@@ -10,7 +10,6 @@ export const janssenRadianceBoost = {
     es: "Janssen - Facial Radiance Boost"
   },
   isPopular: false,
-  isPromoEligible: false,
   images: {
     primary: "/janssenradiance.jpg",
     secondary: "/janssenradiance2.jpg"
@@ -48,7 +47,6 @@ export const janssenRadianceBoost = {
           en: "Face",
           es: "Rostro"
         },
-        isPromoEligible: false,
         optionPrice: { en: "$45", es: "$45" },
         optionCurrency: "USD",
         optionPromoPrice: "",
@@ -60,7 +58,6 @@ export const janssenRadianceBoost = {
           en: "Face + Neck",
           es: "Rostro + Cuello"
         },
-        isPromoEligible: false,
         optionPrice: { en: "$50", es: "$50" },
         optionCurrency: "USD",
         optionPromoPrice: "",
@@ -72,7 +69,6 @@ export const janssenRadianceBoost = {
           en: "Face + Neck + Décolleté",
           es: "Rostro + Cuello + Escote"
         },
-        isPromoEligible: false,
         optionPrice: { en: "$55", es: "$55" },
         optionCurrency: "USD",
         optionPromoPrice: "",
