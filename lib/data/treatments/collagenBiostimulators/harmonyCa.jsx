@@ -10,7 +10,7 @@ export const harmonyca = {
     es: "HarmonyCa® (Ácido Hialurónico + Hidroxiapatita de Calcio)"
   },
   isPopular: false,
-  isPromoEligible: false,
+  isPromoActive: false,
   images: {
     primary: "/harmonyca.jpg",
     secondary: "/harmonyca2.jpg",
@@ -38,21 +38,19 @@ export const harmonyca = {
     }
   ],
   pricing: {
-    startingPrice: { en: "$15,750", es: "$15,750" },
+    startingPrice: "$15,750",
     startingPriceCurrency: "MXN",
-    promoPrice: "",
-    promoPriceCurrency: "MXN",
     options: [
       {
         optionName: {
-          en: "Per Treatment - 2 x 1.25 mL Syringes Total",
-          es: "Por Tratamiento - 2 x 1.25 mL Jeringas Total"
+          en: "Per Treatment",
+          es: "Por Tratamiento"
         },
-        isPromoEligible: false,
-        optionPrice: { en: "$15,750", es: "$15,750" },
+        optionPrice: { 
+          en: "$15,750", 
+          es: "$15,750" 
+        },
         optionCurrency: "MXN",
-        optionPromoPrice: "",
-        optionPromoPriceCurrency: "MXN",
         notes: [],
       }
     ].sort(
