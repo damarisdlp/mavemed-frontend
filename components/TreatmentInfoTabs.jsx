@@ -22,6 +22,7 @@ export default function TreatmentInfoTabs({ treatment, locale: propLocale }) {
     const locationsLabel = locale === "es" ? "Sucursales Disponibles" : "Available Locations";
 
     const details = getLocalized(treatment?.details);
+    const notes = treatment?.notes || [];
     const goals = treatment?.goals || [];
     const areas = treatment?.treatableAreas || [];
     const locations = treatment?.locations || [
@@ -29,7 +30,13 @@ export default function TreatmentInfoTabs({ treatment, locale: propLocale }) {
     ];
 
     return [
-      { key: "details", label: detailsLabel, type: "text", items: details ? [details] : [] },
+      {
+        key: "details",
+        label: detailsLabel,
+        type: "text",
+        items: details ? [details] : [],
+        notes,
+      },
       { key: "goals", label: goalsLabel, type: "list", items: goals },
       { key: "areas", label: areasLabel, type: "list", items: areas },
       { key: "locations", label: locationsLabel, type: "list", items: locations },
@@ -70,9 +77,20 @@ export default function TreatmentInfoTabs({ treatment, locale: propLocale }) {
           <div className="bg-white rounded-2xl p-6 shadow-sm">
             {activeTab.items?.length ? (
               activeTab.type === "text" ? (
-                <p className="text-base text-[#2f2316] leading-relaxed">
-                  {getLocalized(activeTab.items[0])}
-                </p>
+                <div className="space-y-4">
+                  <p className="text-base text-[#2f2316] leading-relaxed">
+                    {getLocalized(activeTab.items[0])}
+                  </p>
+                  {activeTab.notes?.length > 0 && (
+                    <ul className="list-disc list-outside pl-5 space-y-2 text-base text-[#2f2316] italic">
+                      {activeTab.notes.map((note, idx) => (
+                        <li key={idx} className="leading-relaxed">
+                          {getLocalized(note)}
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+                </div>
               ) : (
                 <ul
                   className={`list-disc pl-5 space-y-3 text-base text-[#2f2316] ${
