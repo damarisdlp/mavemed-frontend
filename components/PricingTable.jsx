@@ -74,7 +74,7 @@ export default function PricingTable({ treatment }) {
                 );
 
                 const showPromo =
-                  p.isPromoEligible === true &&
+                  treatment?.isPromoActive === true &&
                   typeof localizedPromoPrice === "string" &&
                   localizedPromoPrice.trim() !== "";
 
@@ -83,7 +83,7 @@ export default function PricingTable({ treatment }) {
                     key={`zone-${idx}`}
                     className="flex flex-row justify-between items-start bg-[#f9f9f9] border p-4 rounded-lg shadow-sm hover:shadow-md transition"
                   >
-                    <div className="text-lg font-medium">
+                    <div className="text-lg font-medium flex-1">
                       {getLocalized(p.optionName)}
                       {p.notes?.length > 0 && (
                         <ul className="mt-1 text-xs text-gray-600 italic list-inside mr-5">
@@ -94,9 +94,11 @@ export default function PricingTable({ treatment }) {
                       )}
                     </div>
 
-                    <div className="text-sm leading-6 text-right min-w-[150px]">
+                    <div className="text-sm leading-6 text-right w-max flex-shrink-0">
                       <div className="flex justify-between gap-2">
-                        <span className="font-semibold text-left">{priceLabel}</span>
+                        <span className="font-semibold text-left whitespace-nowrap">
+                          {priceLabel}
+                        </span>
                         <span>
                           {localizedPrice} {p.optionCurrency}
                         </span>
@@ -104,7 +106,9 @@ export default function PricingTable({ treatment }) {
 
                       {showPromo && (
                         <div className="flex justify-between gap-2">
-                          <span className="font-semibold text-left">{promoLabel}</span>
+                          <span className="font-semibold text-left whitespace-nowrap">
+                            {promoLabel}
+                          </span>
                           <span>
                             {localizedPromoPrice} {p.optionCurrency}
                           </span>
