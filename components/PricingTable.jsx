@@ -74,7 +74,6 @@ export default function PricingTable({ treatment }) {
                 );
 
                 const showPromo =
-                  treatment?.isPromoActive === true &&
                   typeof localizedPromoPrice === "string" &&
                   localizedPromoPrice.trim() !== "";
 
@@ -105,7 +104,7 @@ export default function PricingTable({ treatment }) {
                       </div>
 
                       {showPromo && (
-                        <div className="flex justify-between gap-2">
+                        <div className="flex justify-between gap-2 text-[#731a2f]">
                           <span className="font-semibold text-left whitespace-nowrap">
                             {promoLabel}
                           </span>
