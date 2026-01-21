@@ -10,7 +10,6 @@ export const ultraformerMPT = {
     es: "Lifting con HIFU Ultraformer MPT"
   },
   isPopular: true,
-  isPromoEligible: false,
   images: {
     primary: "/hifu.jpg",
     secondary: "/hifu2.jpg"
@@ -48,7 +47,6 @@ export const ultraformerMPT = {
           en: "Deep Synergy Booster (Add-On)",
           es: "Refuerzo Deep Synergy (Complemento)"
         },
-        isPromoEligible: false,
         optionPrice: { en: "$65", es: "$65" },
         optionCurrency: "USD",
         optionPromoPrice: "",
@@ -65,7 +63,6 @@ export const ultraformerMPT = {
           en: "Deep Contour (Add-on)",
           es: "Contorno Profundo (Complemento)"
         },
-        isPromoEligible: false,
         optionPrice: { en: "$235", es: "$235" },
         optionCurrency: "USD",
         optionPromoPrice: "",
@@ -86,7 +83,6 @@ export const ultraformerMPT = {
           en: "Refreshing Lift",
           es: "Lifting refrescante"
         },
-        isPromoEligible: false,
         optionPrice: { en: "$350", es: "$350" },
         optionCurrency: "USD",
         optionPromoPrice: "",
@@ -103,7 +99,6 @@ export const ultraformerMPT = {
           en: "Submentum & Lower Face Lift",
           es: "Lifting de Submentón y Tercio Inferior"
         },
-        isPromoEligible: false,
         optionPrice: { en: "$375", es: "$375" },
         optionCurrency: "USD",
         optionPromoPrice: "",
@@ -120,7 +115,6 @@ export const ultraformerMPT = {
           en: "360 Contour",
           es: "Contorno 360"
         },
-        isPromoEligible: false,
         optionPrice: { en: "$395", es: "$395" },
         optionCurrency: "USD",
         optionPromoPrice: "",
@@ -137,7 +131,6 @@ export const ultraformerMPT = {
           en: "Premium Facial Sculpting",
           es: "Escultura Facial Premium"
         },
-        isPromoEligible: false,
         optionPrice: { en: "$435", es: "$435" },
         optionCurrency: "USD",
         optionPromoPrice: "",
@@ -158,7 +151,6 @@ export const ultraformerMPT = {
           en: "Total Facial Rejuvenation",
           es: "Rejuvenecimiento Facial Total"
         },
-        isPromoEligible: false,
         optionPrice: { en: "$550", es: "$550" },
         optionCurrency: "USD",
         optionPromoPrice: "",
@@ -175,7 +167,6 @@ export const ultraformerMPT = {
           en: "Neck Sculpting",
           es: "Escultura de Cuello"
         },
-        isPromoEligible: false,
         optionPrice: { en: "$350", es: "$350" },
         optionCurrency: "USD",
         optionPromoPrice: "",
@@ -192,7 +183,6 @@ export const ultraformerMPT = {
           en: "Décolletage Rejuvenation",
           es: "Rejuvenecimiento de Escote"
         },
-        isPromoEligible: false,
         optionPrice: { en: "$395", es: "$395" },
         optionCurrency: "USD",
         optionPromoPrice: "",
@@ -209,7 +199,6 @@ export const ultraformerMPT = {
           en: "Combo Lift & Smooth",
           es: "Combo Levantamiento & Suavidad"
         },
-        isPromoEligible: false,
         optionPrice: { en: "$545", es: "$545" },
         optionCurrency: "USD",
         optionPromoPrice: "",
@@ -226,7 +215,6 @@ export const ultraformerMPT = {
           en: "Express Body Glow",
           es: "Brillo Corporal Exprés"
         },
-        isPromoEligible: false,
         optionPrice: { en: "$315", es: "$315" },
         optionCurrency: "USD",
         optionPromoPrice: "",
@@ -243,7 +231,6 @@ export const ultraformerMPT = {
           en: "Express Back Glow",
           es: "Brillo de Espalda Exprés"
         },
-        isPromoEligible: false,
         optionPrice: { en: "$495", es: "$495" },
         optionCurrency: "USD",
         optionPromoPrice: "",
@@ -260,7 +247,6 @@ export const ultraformerMPT = {
           en: "Defined Arms",
           es: "Brazos Definidos"
         },
-        isPromoEligible: false,
         optionPrice: { en: "$625", es: "$625" },
         optionCurrency: "USD",
         optionPromoPrice: "",
@@ -277,7 +263,6 @@ export const ultraformerMPT = {
           en: "Thigh Sculpting",
           es: "Escultura de Muslos"
         },
-        isPromoEligible: false,
         optionPrice: { en: "$655", es: "$655" },
         optionCurrency: "USD",
         optionPromoPrice: "",
@@ -294,7 +279,6 @@ export const ultraformerMPT = {
           en: "Glute Contour",
           es: "Contorno de Glúteos"
         },
-        isPromoEligible: false,
         optionPrice: { en: "$825", es: "$825" },
         optionCurrency: "USD",
         optionPromoPrice: "",
@@ -311,7 +295,6 @@ export const ultraformerMPT = {
           en: "Firm Abdomen",
           es: "Abdomen Firme"
         },
-        isPromoEligible: false,
         optionPrice: { en: "$850", es: "$850" },
         optionCurrency: "USD",
         optionPromoPrice: "",
@@ -328,7 +311,6 @@ export const ultraformerMPT = {
           en: "Lower Back Sculpting",
           es: "Escultura de Zona Lumbar"
         },
-        isPromoEligible: false,
         optionPrice: { en: "$875", es: "$875" },
         optionCurrency: "USD",
         optionPromoPrice: "",
@@ -345,7 +327,6 @@ export const ultraformerMPT = {
           en: "Total Back Rejuvenation",
           es: "Rejuvenecimiento Total de Espalda"
         },
-        isPromoEligible: false,
         optionPrice: { en: "$1350", es: "$1350" },
         optionCurrency: "USD",
         optionPromoPrice: "",
