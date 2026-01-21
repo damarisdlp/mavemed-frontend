@@ -10,7 +10,6 @@ export const matrixectomy = {
     es: "Matricectomía"
   },
   isPopular: false,
-  isPromoEligible: true,
   images: {
     primary: "/ingrown.jpg",
     secondary: "/ingrown2.jpg"
@@ -51,7 +50,6 @@ export const matrixectomy = {
           en: "1 Side",
           es: "1 Lado"
         },
-        isPromoEligible: false,
         optionPrice: {
           en: "$2,500",
           es: "$2,500"
@@ -66,7 +64,6 @@ export const matrixectomy = {
           en: "2 Sides",
           es: "2 Lados"
         },
-        isPromoEligible: false,
         optionPrice: {
           en: "$4,500",
           es: "$4,500"
@@ -81,7 +78,6 @@ export const matrixectomy = {
           en: "3 Sides",
           es: "3 Lados"
         },
-        isPromoEligible: false,
         optionPrice: {
           en: "$7,000",
           es: "$7,000"
@@ -96,7 +92,6 @@ export const matrixectomy = {
           en: "4 Sides",
           es: "4 Lados"
         },
-        isPromoEligible: false,
         optionPrice: {
           en: "$9,000",
           es: "$9,000"
