@@ -127,10 +127,7 @@ export default function AddOnSection({ addOns = [] }) {
           addon?.pricing?.startingPriceCurrency;
 
         const promoPrice = getLocalized(matchedOption?.optionPromoPrice);
-        const hasPromo =
-          addon?.isPromoActive === true &&
-          typeof promoPrice === "string" &&
-          promoPrice.trim();
+        const hasPromo = typeof promoPrice === "string" && promoPrice.trim();
 
         const hasMultipleOptions = (addon?.pricing?.options || []).length > 1;
         const fromLabel = hasMultipleOptions ? (locale === "es" ? "Desde " : "From ") : "";
@@ -165,9 +162,10 @@ export default function AddOnSection({ addOns = [] }) {
                   <>
                     {" "}
                     |{" "}
-                    <span className="font-semibold">{ui.promo}</span>{" "}
-                    {promoPrice}{" "}
-                    {matchedOption.optionPromoPriceCurrency}
+                    <span className="font-semibold text-[#731a2f]">{ui.promo}</span>{" "}
+                    <span className="text-[#731a2f]">
+                      {promoPrice} {matchedOption.optionPromoPriceCurrency}
+                    </span>
                   </>
                 )}
               </p>
