@@ -10,7 +10,6 @@ export const rfMicroneedling = {
     es: "Microneedling con Radiofrecuencia (Sylfirm X)"
   },
   isPopular: true,
-  isPromoEligible: true,
   images: {
     primary: "/sylfirmx.jpg",
     secondary: "/sylfirmx2.jpg"
@@ -48,7 +47,6 @@ export const rfMicroneedling = {
           en: "Face",
           es: "Rostro"
         },
-        isPromoEligible: false,
         optionPrice: { en: "$900", es: "$900" },
         optionCurrency: "USD",
         optionPromoPrice: "",
@@ -60,7 +58,6 @@ export const rfMicroneedling = {
           en: "Neck",
           es: "Cuello"
         },
-        isPromoEligible: false,
         optionPrice: { en: "$600", es: "$600" },
         optionCurrency: "USD",
         optionPromoPrice: "",
@@ -72,7 +69,6 @@ export const rfMicroneedling = {
           en: "Décolleté",
           es: "Escote"
         },
-        isPromoEligible: false,
         optionPrice: { en: "$775", es: "$775" },
         optionCurrency: "USD",
         optionPromoPrice: "",
@@ -84,7 +80,6 @@ export const rfMicroneedling = {
           en: "Face + Neck",
           es: "Rostro + Cuello"
         },
-        isPromoEligible: false,
         optionPrice: { en: "$1,375", es: "$1,375" },
         optionCurrency: "USD",
         optionPromoPrice: "",
@@ -97,7 +92,6 @@ export const rfMicroneedling = {
           en: "Face + Neck + Décolleté",
           es: "Rostro + Cuello + Escote"
         },
-        isPromoEligible: false,
         optionPrice: { en: "$2,380", es: "$2,380" },
         optionCurrency: "USD",
         optionPromoPrice: "",
@@ -114,7 +108,6 @@ export const rfMicroneedling = {
           en: "Hands",
           es: "Manos"
         },
-        isPromoEligible: false,
         optionPrice: { en: "$450", es: "$450" },
         optionCurrency: "USD",
         optionPromoPrice: "",
@@ -126,7 +119,6 @@ export const rfMicroneedling = {
           en: "Small Zone",
           es: "Zona Pequeña"
         },
-        isPromoEligible: false,
         optionPrice: { en: "$400", es: "$400" },
         optionCurrency: "USD",
         optionPromoPrice: "",
@@ -143,7 +135,6 @@ export const rfMicroneedling = {
           en: "Medium Zone",
           es: "Zona Mediana"
         },
-        isPromoEligible: false,
         optionPrice: { en: "$700", es: "$700" },
         optionCurrency: "USD",
         optionPromoPrice: "",
@@ -160,7 +151,6 @@ export const rfMicroneedling = {
           en: "Large Zone",
           es: "Zona Grande"
         },
-        isPromoEligible: false,
         optionPrice: { en: "$1,100", es: "$1,100" },
         optionCurrency: "USD",
         optionPromoPrice: "",
