@@ -3,6 +3,7 @@ import Image from "next/image";
 import { useRouter } from "next/router";
 import { useEffect, useRef, useState } from "react";
 import TreatmentInfoTabs from "./TreatmentInfoTabs";
+import { getPromoSummary } from "@/lib/utils/promo";
 
 export default function TreatmentDetails({ treatment }) {
   const router = useRouter();
@@ -91,8 +92,9 @@ export default function TreatmentDetails({ treatment }) {
   };
 
   const pricing = treatment?.pricing || {};
+  const promoSummary = getPromoSummary(treatment, locale);
   const promoDetails =
-    treatment?.isPromoActive && treatment?.promoDetails ? treatment.promoDetails : null;
+    promoSummary.isPromoActive && treatment?.promoDetails ? treatment.promoDetails : null;
 
   const buildLeadOptions = () => {
     const options = [];
