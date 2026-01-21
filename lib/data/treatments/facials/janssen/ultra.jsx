@@ -10,7 +10,6 @@ export const janssenUltraRenewal = {
     es: "Janssen - Facial Ultra Renewal"
   },
   isPopular: false,
-  isPromoEligible: false,
   images: {
     primary: "/janssenultra.jpg",
     secondary: "/janssenultra2.jpg"
@@ -34,7 +33,6 @@ export const janssenUltraRenewal = {
           en: "Face",
           es: "Rostro"
         },
-        isPromoEligible: false,
         optionPrice: { en: "$55", es: "$55" },
         optionCurrency: "USD",
         optionPromoPrice: "",
@@ -46,7 +44,6 @@ export const janssenUltraRenewal = {
           en: "Face + Neck",
           es: "Rostro + Cuello"
         },
-        isPromoEligible: false,
         optionPrice: { en: "$65", es: "$65" },
         optionCurrency: "USD",
         optionPromoPrice: "",
@@ -58,7 +55,6 @@ export const janssenUltraRenewal = {
           en: "Face + Neck + Décolleté",
           es: "Rostro + Cuello + Escote"
         },
-        isPromoEligible: false,
         optionPrice: { en: "$70", es: "$70" },
         optionCurrency: "USD",
         optionPromoPrice: "",
