@@ -10,7 +10,6 @@ export const sclerotherapy = {
     es: "Escleroterapia para Eliminación de Venas"
   },
   isPopular: false,
-  isPromoEligible: false,
   images: {
     primary: "/sclerotherapy.jpg",
     secondary: "/sclerotherapy2.jpg",
@@ -48,7 +47,6 @@ export const sclerotherapy = {
           en: "Any Corporal Zone",
           es: "Cualquier Zona Corporal"
         },
-        isPromoEligible: false,
         optionPrice: { en: "Based on consultation", es: "Basado en consulta" },
         optionCurrency: "",
         optionPromoPrice: "",
