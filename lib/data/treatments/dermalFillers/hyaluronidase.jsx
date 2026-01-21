@@ -10,7 +10,6 @@ export const hyaluronidase = {
     es: "Reversión de Rellenos con Hialuronidasa"
   },
   isPopular: false,
-  isPromoEligible: false,
   images: {
     primary: "/enzymes.jpg",
     secondary: "/enzymes2.jpg"
@@ -52,7 +51,6 @@ export const hyaluronidase = {
           en: "Hyaluronidase",
           es: "Hialuronidasa"
         },
-        isPromoEligible: false,
         optionPrice: { en: "$60", es: "$60" },
         optionCurrency: "USD",
         optionPromoPrice: "",
