@@ -10,7 +10,6 @@ export const wartRemoval = {
     es: "Eliminación de Verrugas"
   },
   isPopular: false,
-  isPromoEligible: false,
   images: {
     primary: "/wart.jpg",
     secondary: "/wart2.jpg",
@@ -48,7 +47,6 @@ export const wartRemoval = {
           en: "Per Zone",
           es: "Por Zona"
         },
-        isPromoEligible: false,
         optionPrice: { en: "$50", es: "$50" },
         optionCurrency: "USD",
         optionPromoPrice: "",
