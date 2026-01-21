@@ -10,7 +10,6 @@ export const venusFreeze = {
     es: "Escultura Corporal con Radiofrecuencia"
   },
   isPopular: false,
-  isPromoEligible: true,
   images: {
     primary: "/rfsculpt.jpg",
     secondary: "/rfsculpt2.jpg"
@@ -49,7 +48,6 @@ export const venusFreeze = {
     options: [
       {
         optionName: { en: "Express Body Glow", es: "Brillo Corporal Exprés" },
-        isPromoEligible: false,
         optionPrice: { en: "$25", es: "$25" },
         optionCurrency: "USD",
         optionPromoPrice: "",
@@ -63,7 +61,6 @@ export const venusFreeze = {
       },
       {
         optionName: { en: "Décolleté Rejuvenation", es: "Rejuvenecimiento de Escote" },
-        isPromoEligible: false,
         optionPrice: { en: "$30", es: "$30" },
         optionCurrency: "USD",
         optionPromoPrice: "",
@@ -77,7 +74,6 @@ export const venusFreeze = {
       },
       {
         optionName: { en: "Express Back Glow", es: "Brillo de Espalda Exprés" },
-        isPromoEligible: false,
         optionPrice: { en: "$35", es: "$35" },
         optionCurrency: "USD",
         optionPromoPrice: "",
@@ -91,7 +87,6 @@ export const venusFreeze = {
       },
       {
         optionName: { en: "Glute Contour", es: "Contorno de Glúteos" },
-        isPromoEligible: false,
         optionPrice: { en: "$45", es: "$45" },
         optionCurrency: "USD",
         optionPromoPrice: "",
@@ -105,7 +100,6 @@ export const venusFreeze = {
       },
       {
         optionName: { en: "Defined Arms", es: "Brazos Definidos" },
-        isPromoEligible: false,
         optionPrice: { en: "$50", es: "$50" },
         optionCurrency: "USD",
         optionPromoPrice: "",
@@ -119,7 +113,6 @@ export const venusFreeze = {
       },
       {
         optionName: { en: "Thigh Sculpt", es: "Escultura de Muslos" },
-        isPromoEligible: false,
         optionPrice: { en: "$50", es: "$50" },
         optionCurrency: "USD",
         optionPromoPrice: "",
@@ -133,7 +126,6 @@ export const venusFreeze = {
       },
       {
         optionName: { en: "Lumbar Sculpt", es: "Escultura de Espalda Baja" },
-        isPromoEligible: false,
         optionPrice: { en: "$50", es: "$50" },
         optionCurrency: "USD",
         optionPromoPrice: "",
@@ -147,7 +139,6 @@ export const venusFreeze = {
       },
       {
         optionName: { en: "Abdomen Firming", es: "Abdomen Firme" },
-        isPromoEligible: false,
         optionPrice: { en: "$70", es: "$70" },
         optionCurrency: "USD",
         optionPromoPrice: "",
@@ -161,7 +152,6 @@ export const venusFreeze = {
       },
       {
         optionName: { en: "Total Back Rejuvenation", es: "Rejuvenecimiento Total de Espalda" },
-        isPromoEligible: false,
         optionPrice: { en: "$70", es: "$70" },
         optionCurrency: "USD",
         optionPromoPrice: "",
