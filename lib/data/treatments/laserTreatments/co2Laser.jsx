@@ -10,7 +10,6 @@ export const co2Laser = {
     es: "Resurfacing Láser CO₂ (AcuPulse)"
   },
   isPopular: true,
-  isPromoEligible: false,
   images: {
     primary: "/laserco2.jpg",
     secondary: "/laserco22.jpg"
@@ -51,7 +50,6 @@ export const co2Laser = {
       // Face / Neck
       {
         optionName: { en: "Under Eye", es: "Ojeras" },
-        isPromoEligible: false,
         optionPrice: { en: "$250", es: "$250" },
         optionCurrency: "USD",
         optionPromoPrice: "",
@@ -60,7 +58,6 @@ export const co2Laser = {
       },
       {
         optionName: { en: "Neck", es: "Cuello" },
-        isPromoEligible: false,
         optionPrice: { en: "$385", es: "$385" },
         optionCurrency: "USD",
         optionPromoPrice: "",
@@ -69,7 +66,6 @@ export const co2Laser = {
       },
       {
         optionName: { en: "Face", es: "Rostro" },
-        isPromoEligible: false,
         optionPrice: { en: "$550", es: "$550" },
         optionCurrency: "USD",
         optionPromoPrice: "",
@@ -78,7 +74,6 @@ export const co2Laser = {
       },
       {
         optionName: { en: "Face + Neck", es: "Rostro + Cuello" },
-        isPromoEligible: false,
         optionPrice: { en: "$650", es: "$650" },
         optionCurrency: "USD",
         optionPromoPrice: "",
@@ -87,7 +82,6 @@ export const co2Laser = {
       },
       {
         optionName: { en: "Face + Neck + Décolleté", es: "Rostro + Cuello + Escote" },
-        isPromoEligible: false,
         optionPrice: { en: "$850", es: "$850" },
         optionCurrency: "USD",
         optionPromoPrice: "",
@@ -96,7 +90,6 @@ export const co2Laser = {
       },
       {
         optionName: { en: "Face + Neck + Décolleté + Chest", es: "Rostro + Cuello + Escote + Pecho" },
-        isPromoEligible: false,
         optionPrice: { en: "$950", es: "$950" },
         optionCurrency: "USD",
         optionPromoPrice: "",
@@ -107,7 +100,6 @@ export const co2Laser = {
       // Chest / Décolleté
       {
         optionName: { en: "Décolleté", es: "Escote" },
-        isPromoEligible: false,
         optionPrice: { en: "$315", es: "$315" },
         optionCurrency: "USD",
         optionPromoPrice: "",
@@ -116,7 +108,6 @@ export const co2Laser = {
       },
       {
         optionName: { en: "Chest", es: "Pecho" },
-        isPromoEligible: false,
         optionPrice: { en: "$400", es: "$400" },
         optionCurrency: "USD",
         optionPromoPrice: "",
@@ -127,7 +118,6 @@ export const co2Laser = {
       // Zone sizes
       {
         optionName: { en: "Small Zone", es: "Zona Pequeña" },
-        isPromoEligible: false,
         optionPrice: { en: "$325", es: "$325" },
         optionCurrency: "USD",
         optionPromoPrice: "",
@@ -141,7 +131,6 @@ export const co2Laser = {
       },
       {
         optionName: { en: "Medium Zone", es: "Zona Mediana" },
-        isPromoEligible: false,
         optionPrice: { en: "$675", es: "$675" },
         optionCurrency: "USD",
         optionPromoPrice: "",
@@ -155,7 +144,6 @@ export const co2Laser = {
       },
       {
         optionName: { en: "Large Zone", es: "Zona Grande" },
-        isPromoEligible: false,
         optionPrice: { en: "$1,275", es: "$1,275" },
         optionCurrency: "USD",
         optionPromoPrice: "",
@@ -171,7 +159,6 @@ export const co2Laser = {
       // Other areas
       {
         optionName: { en: "Hands", es: "Manos" },
-        isPromoEligible: false,
         optionPrice: { en: "$300", es: "$300" },
         optionCurrency: "USD",
         optionPromoPrice: "",
