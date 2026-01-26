@@ -31,7 +31,7 @@ export const damaris = {
       treatmentSlug: "casmara-purifying"
     },
     {
-      treatmentSlug: "pdo-threads"
+      treatmentSlug: "pdo-threads-biostimulating"
     }
   ]
 };
