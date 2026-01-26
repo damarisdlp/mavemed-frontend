@@ -3,7 +3,6 @@ import { appWithTranslation } from "next-i18next";
 import nextI18NextConfig from "../next-i18next.config";
 import ScrollToTopButton from "@/components/ScrollToTop";
 import { Manrope } from "next/font/google";
-import Script from "next/script";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
 
@@ -30,23 +29,6 @@ function App({ Component, pageProps }) {
 
   return (
     <div className={manrope.className}>
-      {gaId && (
-        <>
-          <Script
-            src={`https://www.googletagmanager.com/gtag/js?id=${gaId}`}
-            strategy="afterInteractive"
-          />
-          <Script id="ga4-init" strategy="afterInteractive">
-            {`
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              window.gtag = window.gtag || gtag;
-              gtag('js', new Date());
-              gtag('config', '${gaId}', { page_path: window.location.pathname });
-            `}
-          </Script>
-        </>
-      )}
       <Component {...pageProps} />
       <ScrollToTopButton />
     </div>
