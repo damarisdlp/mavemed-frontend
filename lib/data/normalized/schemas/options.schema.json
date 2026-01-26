@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Service Options",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["id", "serviceId", "nameKey", "price"],
+    "additionalProperties": false,
+    "properties": {
+      "id": { "type": "string", "pattern": "^opt_" },
+      "serviceId": { "type": "string", "pattern": "^svc_" },
+      "nameKey": { "type": "string" },
+      "price": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "amount": { "type": ["number", "null"] },
+          "minAmount": { "type": ["number", "null"] },
+          "maxAmount": { "type": ["number", "null"] },
+          "currency": { "type": ["string", "null"] },
+          "text": {
+            "type": "object",
+            "required": ["en", "es"],
+            "additionalProperties": false,
+            "properties": {
+              "en": { "type": "string" },
+              "es": { "type": "string" }
+            }
+          }
+        },
+        "required": ["currency"],
+        "oneOf": [{ "required": ["amount"] }, { "required": ["minAmount", "maxAmount"] }]
+      },
+      "isOptionPromoActive": { "type": "boolean", "default": false },
+      "promoPrice": {
+        "type": ["object", "null"],
+        "required": ["amount", "currency"],
+        "additionalProperties": false,
+        "properties": {
+          "amount": { "type": "number" },
+          "currency": { "type": "string" }
+        }
+      },
+      "priceTextKey": { "type": "string" },
+      "notesKeys": { "type": "array", "items": { "type": "string" } }
+      ,
+      "filterGroupKey": { "type": "string" }
+    }
+  }
+}
