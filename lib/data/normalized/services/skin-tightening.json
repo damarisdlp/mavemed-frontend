@@ -1,0 +1,185 @@
+[
+  {
+    "id": "svc_ultraformer_mpt",
+    "slug": "ultraformer-mpt",
+    "categoryId": "cat_skin_tight_sculpting",
+    "nameKey": "svc.ultraformer_mpt.name",
+    "descriptionKey": "svc.ultraformer_mpt.desc",
+    "detailsKey": "svc.ultraformer_mpt.details",
+    "isPopular": true,
+    "isPromoActive": false,
+    "images": {
+      "primary": "/hifu.jpg",
+      "secondary": "/hifu2.jpg"
+    },
+    "notesKeys": [
+      "note.ultraformer_mpt.lifting",
+      "note.ultraformer_mpt.results",
+      "note.ultraformer_mpt.personalized"
+    ],
+    "goalsKeys": [
+      "goal.ultraformer_mpt.tighten",
+      "goal.ultraformer_mpt.jawline",
+      "goal.ultraformer_mpt.body",
+      "goal.ultraformer_mpt.collagen"
+    ],
+    "treatableAreaKeys": [
+      "area.ultraformer_mpt.full_face",
+      "area.ultraformer_mpt.jawline",
+      "area.ultraformer_mpt.neck_decollete",
+      "area.ultraformer_mpt.submentum",
+      "area.ultraformer_mpt.eye_area",
+      "area.ultraformer_mpt.forehead",
+      "area.ultraformer_mpt.abdomen",
+      "area.ultraformer_mpt.inner_thighs",
+      "area.ultraformer_mpt.upper_arms",
+      "area.ultraformer_mpt.knees",
+      "area.ultraformer_mpt.lower_back",
+      "area.ultraformer_mpt.flanks",
+      "area.ultraformer_mpt.glutes"
+    ]
+  },
+  {
+    "id": "svc_venus_freeze",
+    "slug": "venus-freeze",
+    "categoryId": "cat_skin_tight_sculpting",
+    "nameKey": "svc.venus_freeze.name",
+    "descriptionKey": "svc.venus_freeze.desc",
+    "detailsKey": "svc.venus_freeze.details",
+    "isPopular": false,
+    "isPromoActive": false,
+    "images": {
+      "primary": "/rfsculpt.jpg",
+      "secondary": "/rfsculpt2.jpg"
+    },
+    "notesKeys": [
+      "note.venus_freeze.painless",
+      "note.venus_freeze.sessions",
+      "note.venus_freeze.cellulite",
+      "note.venus_freeze.rf_preference"
+    ],
+    "goalsKeys": [
+      "goal.venus_freeze.tighten",
+      "goal.venus_freeze.cellulite",
+      "goal.venus_freeze.collagen"
+    ],
+    "treatableAreaKeys": [
+      "area.venus_freeze.abdomen",
+      "area.venus_freeze.arms",
+      "area.venus_freeze.inner_thighs",
+      "area.venus_freeze.outer_thighs",
+      "area.venus_freeze.buttocks",
+      "area.venus_freeze.back_bra_fat",
+      "area.venus_freeze.love_handles"
+    ],
+    "filterConfig": {
+      "defaultKey": "all",
+      "viewAllLabelKey": "filter.view_all",
+      "filters": [
+        { "key": "face", "labelKey": "filter.venus.face" },
+        { "key": "body", "labelKey": "filter.venus.body" }
+      ]
+    }
+  },
+  {
+    "id": "svc_enzymatic_therapy",
+    "slug": "enzymatic-therapy",
+    "categoryId": "cat_skin_tight_sculpting",
+    "nameKey": "svc.enzymatic_therapy.name",
+    "descriptionKey": "svc.enzymatic_therapy.desc",
+    "detailsKey": "svc.enzymatic_therapy.details",
+    "isPopular": false,
+    "isPromoActive": false,
+    "images": {
+      "primary": "/enzymatic.jpg",
+      "secondary": "/enzymatic2.jpg"
+    },
+    "notesKeys": [
+      "note.enzymatic_therapy.non_surgical",
+      "note.enzymatic_therapy.targets",
+      "note.enzymatic_therapy.series",
+      "note.enzymatic_therapy.rf_combo"
+    ],
+    "goalsKeys": [
+      "goal.enzymatic_therapy.fibrosis",
+      "goal.enzymatic_therapy.fat",
+      "goal.enzymatic_therapy.texture"
+    ],
+    "treatableAreaKeys": [
+      "area.enzymatic_therapy.abdomen",
+      "area.enzymatic_therapy.arms",
+      "area.enzymatic_therapy.thighs",
+      "area.enzymatic_therapy.back",
+      "area.enzymatic_therapy.flanks",
+      "area.enzymatic_therapy.submental"
+    ]
+  },
+  {
+    "id": "svc_pdo_biostimulating_threads",
+    "slug": "pdo-threads-biostimulating",
+    "categoryId": "cat_skin_tight_sculpting",
+    "nameKey": "svc.pdo_biostim.name",
+    "descriptionKey": "svc.pdo_biostim.desc",
+    "detailsKey": "svc.pdo_biostim.details",
+    "isPopular": true,
+    "isPromoActive": false,
+    "images": {
+      "primary": "/threads2.jpg",
+      "secondary": "/threads.jpg"
+    },
+    "notesKeys": [
+      "note.pdo_biostim.uses_smooth",
+      "note.pdo_biostim.skin_quality",
+      "note.pdo_biostim.gradual",
+      "note.pdo_biostim.ideal_prevention"
+    ],
+    "goalsKeys": [
+      "goal.pdo_biostim.firmness",
+      "goal.pdo_biostim.texture",
+      "goal.pdo_biostim.collagen",
+      "goal.pdo_biostim.natural_movement"
+    ],
+    "treatableAreaKeys": [
+      "area.pdo_biostim.face",
+      "area.pdo_biostim.neck",
+      "area.pdo_biostim.jawline_laxity",
+      "area.pdo_biostim.under_eye",
+      "area.pdo_biostim.perioral",
+      "area.pdo_biostim.decolletage"
+    ]
+  },
+  {
+    "id": "svc_pdo_lift_threads",
+    "slug": "pdo-threads-lift",
+    "categoryId": "cat_skin_tight_sculpting",
+    "nameKey": "svc.pdo_lift.name",
+    "descriptionKey": "svc.pdo_lift.desc",
+    "detailsKey": "svc.pdo_lift.details",
+    "isPopular": true,
+    "isPromoActive": false,
+    "images": {
+      "primary": "/threads.jpg",
+      "secondary": "/threads2.jpg"
+    },
+    "notesKeys": [
+      "note.pdo_lift.uses_barbed",
+      "note.pdo_lift.lift_support",
+      "note.pdo_lift.immediate_collagen",
+      "note.pdo_lift.not_surgical"
+    ],
+    "goalsKeys": [
+      "goal.pdo_lift.lift",
+      "goal.pdo_lift.contour",
+      "goal.pdo_lift.support",
+      "goal.pdo_lift.balance"
+    ],
+    "treatableAreaKeys": [
+      "area.pdo_lift.midface",
+      "area.pdo_lift.jawline",
+      "area.pdo_lift.jowls",
+      "area.pdo_lift.chin",
+      "area.pdo_lift.neck_submental",
+      "area.pdo_lift.brow"
+    ]
+  }
+]
