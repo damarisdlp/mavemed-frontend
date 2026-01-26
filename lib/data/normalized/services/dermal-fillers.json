@@ -1,0 +1,100 @@
+[
+  {
+    "id": "svc_facial_balancing",
+    "slug": "facial-balancing-fillers",
+    "categoryId": "cat_dermal_fillers",
+    "nameKey": "svc.facial_balancing.name",
+    "descriptionKey": "svc.facial_balancing.desc",
+    "detailsKey": "svc.facial_balancing.details",
+    "isPopular": false,
+    "isPromoActive": false,
+    "images": {
+      "primary": "/facialfillers.jpg",
+      "secondary": "/facialfillers2.jpg"
+    },
+    "notesKeys": [
+      "note.facial_balancing.pricing",
+      "note.facial_balancing.syringes",
+      "note.facial_balancing.subtle"
+    ],
+    "goalsKeys": [
+      "goal.facial_balancing.symmetry",
+      "goal.facial_balancing.midface",
+      "goal.facial_balancing.jawline"
+    ],
+    "treatableAreaKeys": [
+      "area.facial_balancing.jawline",
+      "area.facial_balancing.chin",
+      "area.facial_balancing.cheeks",
+      "area.facial_balancing.temples",
+      "area.facial_balancing.nasolabial_folds",
+      "area.facial_balancing.marionette_lines",
+      "area.facial_balancing.midface"
+    ]
+  },
+  {
+    "id": "svc_lip_fillers",
+    "slug": "hyaluronic-acid-lip-fillers",
+    "categoryId": "cat_dermal_fillers",
+    "nameKey": "svc.lip_fillers.name",
+    "descriptionKey": "svc.lip_fillers.desc",
+    "detailsKey": "svc.lip_fillers.details",
+    "isPopular": true,
+    "isPromoActive": false,
+    "images": {
+      "primary": "/lipfillers.jpg",
+      "secondary": "/lipfillers2.jpg"
+    },
+    "notesKeys": [
+      "note.lip_fillers.immediate",
+      "note.lip_fillers.tailored",
+      "note.lip_fillers.touchups"
+    ],
+    "goalsKeys": [
+      "goal.lip_fillers.volume",
+      "goal.lip_fillers.hydration",
+      "goal.lip_fillers.definition"
+    ],
+    "treatableAreaKeys": [
+      "area.lip_fillers.lips",
+      "area.lip_fillers.upper",
+      "area.lip_fillers.lower",
+      "area.lip_fillers.cupid",
+      "area.lip_fillers.vermilion"
+    ]
+  },
+  {
+    "id": "svc_hyaluronidase",
+    "slug": "hyaluronidase",
+    "categoryId": "cat_dermal_fillers",
+    "nameKey": "svc.hyaluronidase.name",
+    "descriptionKey": "svc.hyaluronidase.desc",
+    "detailsKey": "svc.hyaluronidase.details",
+    "isPopular": false,
+    "isPromoActive": false,
+    "images": {
+      "primary": "/enzymes.jpg",
+      "secondary": "/enzymes2.jpg"
+    },
+    "notesKeys": [
+      "note.hyaluronidase.price_per_vial",
+      "note.hyaluronidase.patch_test",
+      "note.hyaluronidase.multiple_sessions",
+      "note.hyaluronidase.follow_up"
+    ],
+    "goalsKeys": [
+      "goal.hyaluronidase.dissolve",
+      "goal.hyaluronidase.correct_asymmetry",
+      "goal.hyaluronidase.resolve_nodules"
+    ],
+    "treatableAreaKeys": [
+      "area.hyaluronidase.lips",
+      "area.hyaluronidase.under_eyes",
+      "area.hyaluronidase.cheeks",
+      "area.hyaluronidase.nasolabial_folds",
+      "area.hyaluronidase.jawline",
+      "area.hyaluronidase.chin",
+      "area.hyaluronidase.any_site"
+    ]
+  }
+]

@@ -1,0 +1,146 @@
+[
+  {
+    "id": "addon_hydrafacial_microneedling_pn",
+    "parentServiceId": "svc_hydrafacial",
+    "childServiceId": "svc_microneedling",
+    "optionNameKey": "addon.hydrafacial.microneedling_pn"
+  },
+  {
+    "id": "addon_hydrafacial_mesotherapy_pn",
+    "parentServiceId": "svc_hydrafacial",
+    "childServiceId": "svc_mesotherapy_infusions",
+    "optionNameKey": "addon.hydrafacial.mesotherapy_pn"
+  },
+  {
+    "id": "addon_hydrafacial_rf_microneedling",
+    "parentServiceId": "svc_hydrafacial",
+    "childServiceId": "svc_rf_microneedling",
+    "optionNameKey": "addon.hydrafacial.rf_microneedling"
+  },
+  {
+    "id": "addon_hydrafacial_pdo_threads",
+    "parentServiceId": "svc_hydrafacial",
+    "childServiceId": "svc_pdo_biostimulating_threads",
+    "optionNameKey": "addon.hydrafacial.pdo_threads"
+  },
+  {
+    "id": "addon_casmara_infinity_microneedling_pn",
+    "parentServiceId": "svc_casmara_infinity",
+    "childServiceId": "svc_microneedling",
+    "optionNameKey": "addon.casmara_infinity.microneedling_pn"
+  },
+  {
+    "id": "addon_casmara_infinity_mesotherapy_pn",
+    "parentServiceId": "svc_casmara_infinity",
+    "childServiceId": "svc_mesotherapy_infusions",
+    "optionNameKey": "addon.casmara_infinity.mesotherapy_pn"
+  },
+  {
+    "id": "addon_casmara_infinity_rf_microneedling",
+    "parentServiceId": "svc_casmara_infinity",
+    "childServiceId": "svc_rf_microneedling",
+    "optionNameKey": "addon.casmara_infinity.rf_microneedling"
+  },
+  {
+    "id": "addon_casmara_infinity_pdo_threads",
+    "parentServiceId": "svc_casmara_infinity",
+    "childServiceId": "svc_pdo_biostimulating_threads",
+    "optionNameKey": "addon.casmara_infinity.pdo_threads"
+  },
+  {
+    "id": "addon_casmara_purifying_microneedling_pn",
+    "parentServiceId": "svc_casmara_purifying",
+    "childServiceId": "svc_microneedling",
+    "optionNameKey": "addon.casmara_purifying.microneedling_pn"
+  },
+  {
+    "id": "addon_casmara_purifying_mesotherapy_pn",
+    "parentServiceId": "svc_casmara_purifying",
+    "childServiceId": "svc_mesotherapy_infusions",
+    "optionNameKey": "addon.casmara_purifying.mesotherapy_pn"
+  },
+  {
+    "id": "addon_casmara_purifying_rf_microneedling",
+    "parentServiceId": "svc_casmara_purifying",
+    "childServiceId": "svc_rf_microneedling",
+    "optionNameKey": "addon.casmara_purifying.rf_microneedling"
+  },
+  {
+    "id": "addon_casmara_purifying_pdo_threads",
+    "parentServiceId": "svc_casmara_purifying",
+    "childServiceId": "svc_pdo_biostimulating_threads",
+    "optionNameKey": "addon.casmara_purifying.pdo_threads"
+  },
+  {
+    "id": "addon_casmara_retinol_microneedling_pn",
+    "parentServiceId": "svc_casmara_retinol_proage",
+    "childServiceId": "svc_microneedling",
+    "optionNameKey": "addon.casmara_retinol.microneedling_pn"
+  },
+  {
+    "id": "addon_casmara_retinol_mesotherapy_pn",
+    "parentServiceId": "svc_casmara_retinol_proage",
+    "childServiceId": "svc_mesotherapy_infusions",
+    "optionNameKey": "addon.casmara_retinol.mesotherapy_pn"
+  },
+  {
+    "id": "addon_casmara_retinol_rf_microneedling",
+    "parentServiceId": "svc_casmara_retinol_proage",
+    "childServiceId": "svc_rf_microneedling",
+    "optionNameKey": "addon.casmara_retinol.rf_microneedling"
+  },
+  {
+    "id": "addon_casmara_retinol_pdo_threads",
+    "parentServiceId": "svc_casmara_retinol_proage",
+    "childServiceId": "svc_pdo_biostimulating_threads",
+    "optionNameKey": "addon.casmara_retinol.pdo_threads"
+  },
+  {
+    "id": "addon_janssen_ultra_microneedling_pn",
+    "parentServiceId": "svc_janssen_ultra_renewal",
+    "childServiceId": "svc_microneedling",
+    "optionNameKey": "addon.janssen_ultra.microneedling_pn"
+  },
+  {
+    "id": "addon_janssen_ultra_mesotherapy_pn",
+    "parentServiceId": "svc_janssen_ultra_renewal",
+    "childServiceId": "svc_mesotherapy_infusions",
+    "optionNameKey": "addon.janssen_ultra.mesotherapy_pn"
+  },
+  {
+    "id": "addon_janssen_ultra_rf_microneedling",
+    "parentServiceId": "svc_janssen_ultra_renewal",
+    "childServiceId": "svc_rf_microneedling",
+    "optionNameKey": "addon.janssen_ultra.rf_microneedling"
+  },
+  {
+    "id": "addon_janssen_ultra_pdo_threads",
+    "parentServiceId": "svc_janssen_ultra_renewal",
+    "childServiceId": "svc_pdo_biostimulating_threads",
+    "optionNameKey": "addon.janssen_ultra.pdo_threads"
+  },
+  {
+    "id": "addon_janssen_radiance_microneedling_pn",
+    "parentServiceId": "svc_janssen_radiance_boost",
+    "childServiceId": "svc_microneedling",
+    "optionNameKey": "addon.janssen_radiance.microneedling_pn"
+  },
+  {
+    "id": "addon_janssen_radiance_mesotherapy_pn",
+    "parentServiceId": "svc_janssen_radiance_boost",
+    "childServiceId": "svc_mesotherapy_infusions",
+    "optionNameKey": "addon.janssen_radiance.mesotherapy_pn"
+  },
+  {
+    "id": "addon_janssen_radiance_rf_microneedling",
+    "parentServiceId": "svc_janssen_radiance_boost",
+    "childServiceId": "svc_rf_microneedling",
+    "optionNameKey": "addon.janssen_radiance.rf_microneedling"
+  },
+  {
+    "id": "addon_janssen_radiance_pdo_threads",
+    "parentServiceId": "svc_janssen_radiance_boost",
+    "childServiceId": "svc_pdo_biostimulating_threads",
+    "optionNameKey": "addon.janssen_radiance.pdo_threads"
+  }
+]

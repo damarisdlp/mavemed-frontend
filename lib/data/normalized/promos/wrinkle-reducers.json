@@ -1,0 +1,36 @@
+[
+  {
+    "id": "promo_botox_2026",
+    "serviceId": "svc_botox",
+    "headlineKey": "promo.botox.headline",
+    "descriptionKey": "promo.botox.description",
+    "validFrom": "2026-01-01",
+    "validTill": "2026-01-31",
+    "options": [
+      {
+        "optionNameKey": "promo.botox.option_name",
+        "notesKeys": [
+          "promo.botox.note1",
+          "promo.botox.note2"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "promo_dermawrinkle_2026",
+    "serviceId": "svc_dermawrinkle",
+    "headlineKey": "promo.dermawrinkle.headline",
+    "descriptionKey": "promo.dermawrinkle.description",
+    "validFrom": "2026-01-01",
+    "validTill": "2026-01-31",
+    "options": [
+      {
+        "optionNameKey": "promo.dermawrinkle.option_name",
+        "notesKeys": [
+          "promo.dermawrinkle.note1",
+          "promo.dermawrinkle.note2"
+        ]
+      }
+    ]
+  }
+]

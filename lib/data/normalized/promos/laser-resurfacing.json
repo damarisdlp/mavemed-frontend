@@ -1,0 +1,54 @@
+[
+  {
+    "id": "promo_co2_2026",
+    "serviceId": "svc_co2_laser",
+    "headlineKey": "promo.co2.headline",
+    "descriptionKey": "promo.co2.description",
+    "validFrom": "2026-01-01",
+    "validTill": "2026-01-31",
+    "options": [
+      {
+        "optionNameKey": "promo.co2.option_name",
+        "notesKeys": [
+          "promo.co2.note1"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "promo_laser_hair_removal",
+    "serviceId": "svc_laser_hair_removal",
+    "headlineKey": "",
+    "descriptionKey": "",
+    "validFrom": null,
+    "validTill": null,
+    "options": []
+  },
+  {
+    "id": "promo_ipl",
+    "serviceId": "svc_ipl",
+    "headlineKey": "",
+    "descriptionKey": "",
+    "validFrom": null,
+    "validTill": null,
+    "options": []
+  },
+  {
+    "id": "promo_rf_microneedling",
+    "serviceId": "svc_rf_microneedling",
+    "headlineKey": "",
+    "descriptionKey": "",
+    "validFrom": null,
+    "validTill": null,
+    "options": []
+  },
+  {
+    "id": "promo_serum_add_ons",
+    "serviceId": "svc_serum_add_ons",
+    "headlineKey": "",
+    "descriptionKey": "",
+    "validFrom": null,
+    "validTill": null,
+    "options": []
+  }
+]

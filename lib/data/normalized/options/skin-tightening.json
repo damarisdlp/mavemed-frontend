@@ -1,0 +1,525 @@
+[
+  {
+    "id": "opt_ultraformer_deep_synergy_booster",
+    "serviceId": "svc_ultraformer_mpt",
+    "nameKey": "opt.ultraformer.deep_synergy_booster",
+    "price": { "amount": 65.0, "currency": "USD" },
+    "isOptionPromoActive": false,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "notesKeys": ["note.ultraformer.deep_synergy_booster"]
+  },
+  {
+    "id": "opt_ultraformer_deep_contour",
+    "serviceId": "svc_ultraformer_mpt",
+    "nameKey": "opt.ultraformer.deep_contour",
+    "price": { "amount": 235.0, "currency": "USD" },
+    "isOptionPromoActive": false,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "notesKeys": [
+      "note.ultraformer.deep_contour.included",
+      "note.ultraformer.deep_contour.add_on"
+    ]
+  },
+  {
+    "id": "opt_ultraformer_refreshing_lift",
+    "serviceId": "svc_ultraformer_mpt",
+    "nameKey": "opt.ultraformer.refreshing_lift",
+    "price": { "amount": 350.0, "currency": "USD" },
+    "isOptionPromoActive": false,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "notesKeys": ["note.ultraformer.refreshing_lift"]
+  },
+  {
+    "id": "opt_ultraformer_submentum_lower_face",
+    "serviceId": "svc_ultraformer_mpt",
+    "nameKey": "opt.ultraformer.submentum_lower_face",
+    "price": { "amount": 375.0, "currency": "USD" },
+    "isOptionPromoActive": false,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "notesKeys": ["note.ultraformer.submentum_lower_face"]
+  },
+  {
+    "id": "opt_ultraformer_360_contour",
+    "serviceId": "svc_ultraformer_mpt",
+    "nameKey": "opt.ultraformer.360_contour",
+    "price": { "amount": 395.0, "currency": "USD" },
+    "isOptionPromoActive": false,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "notesKeys": ["note.ultraformer.360_contour"]
+  },
+  {
+    "id": "opt_ultraformer_premium_facial_sculpting",
+    "serviceId": "svc_ultraformer_mpt",
+    "nameKey": "opt.ultraformer.premium_facial_sculpting",
+    "price": { "amount": 435.0, "currency": "USD" },
+    "isOptionPromoActive": false,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "notesKeys": [
+      "note.ultraformer.premium_facial_sculpting",
+      "note.ultraformer.premium_facial_recommend"
+    ]
+  },
+  {
+    "id": "opt_ultraformer_total_facial_rejuvenation",
+    "serviceId": "svc_ultraformer_mpt",
+    "nameKey": "opt.ultraformer.total_facial_rejuvenation",
+    "price": { "amount": 550.0, "currency": "USD" },
+    "isOptionPromoActive": false,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "notesKeys": ["note.ultraformer.total_facial_rejuvenation"]
+  },
+  {
+    "id": "opt_ultraformer_neck_sculpting",
+    "serviceId": "svc_ultraformer_mpt",
+    "nameKey": "opt.ultraformer.neck_sculpting",
+    "price": { "amount": 350.0, "currency": "USD" },
+    "isOptionPromoActive": false,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "notesKeys": ["note.ultraformer.neck_sculpting"]
+  },
+  {
+    "id": "opt_ultraformer_decolletage_rejuvenation",
+    "serviceId": "svc_ultraformer_mpt",
+    "nameKey": "opt.ultraformer.decolletage_rejuvenation",
+    "price": { "amount": 395.0, "currency": "USD" },
+    "isOptionPromoActive": false,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "notesKeys": ["note.ultraformer.decolletage_rejuvenation"]
+  },
+  {
+    "id": "opt_ultraformer_combo_lift_smooth",
+    "serviceId": "svc_ultraformer_mpt",
+    "nameKey": "opt.ultraformer.combo_lift_smooth",
+    "price": { "amount": 545.0, "currency": "USD" },
+    "isOptionPromoActive": false,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "notesKeys": ["note.ultraformer.combo_lift_smooth"]
+  },
+  {
+    "id": "opt_ultraformer_express_body_glow",
+    "serviceId": "svc_ultraformer_mpt",
+    "nameKey": "opt.ultraformer.express_body_glow",
+    "price": { "amount": 315.0, "currency": "USD" },
+    "isOptionPromoActive": false,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "notesKeys": ["note.ultraformer.express_body_glow"]
+  },
+  {
+    "id": "opt_ultraformer_express_back_glow",
+    "serviceId": "svc_ultraformer_mpt",
+    "nameKey": "opt.ultraformer.express_back_glow",
+    "price": { "amount": 495.0, "currency": "USD" },
+    "isOptionPromoActive": false,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "notesKeys": ["note.ultraformer.express_back_glow"]
+  },
+  {
+    "id": "opt_ultraformer_defined_arms",
+    "serviceId": "svc_ultraformer_mpt",
+    "nameKey": "opt.ultraformer.defined_arms",
+    "price": { "amount": 625.0, "currency": "USD" },
+    "isOptionPromoActive": false,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "notesKeys": ["note.ultraformer.defined_arms"]
+  },
+  {
+    "id": "opt_ultraformer_thigh_sculpting",
+    "serviceId": "svc_ultraformer_mpt",
+    "nameKey": "opt.ultraformer.thigh_sculpting",
+    "price": { "amount": 655.0, "currency": "USD" },
+    "isOptionPromoActive": false,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "notesKeys": ["note.ultraformer.thigh_sculpting"]
+  },
+  {
+    "id": "opt_ultraformer_glute_contour",
+    "serviceId": "svc_ultraformer_mpt",
+    "nameKey": "opt.ultraformer.glute_contour",
+    "price": { "amount": 825.0, "currency": "USD" },
+    "isOptionPromoActive": false,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "notesKeys": ["note.ultraformer.glute_contour"]
+  },
+  {
+    "id": "opt_ultraformer_firm_abdomen",
+    "serviceId": "svc_ultraformer_mpt",
+    "nameKey": "opt.ultraformer.firm_abdomen",
+    "price": { "amount": 850.0, "currency": "USD" },
+    "isOptionPromoActive": false,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "notesKeys": ["note.ultraformer.firm_abdomen"]
+  },
+  {
+    "id": "opt_ultraformer_lower_back_sculpting",
+    "serviceId": "svc_ultraformer_mpt",
+    "nameKey": "opt.ultraformer.lower_back_sculpting",
+    "price": { "amount": 875.0, "currency": "USD" },
+    "isOptionPromoActive": false,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "notesKeys": ["note.ultraformer.lower_back_sculpting"]
+  },
+  {
+    "id": "opt_ultraformer_total_back_rejuvenation",
+    "serviceId": "svc_ultraformer_mpt",
+    "nameKey": "opt.ultraformer.total_back_rejuvenation",
+    "price": { "amount": 1350.0, "currency": "USD" },
+    "isOptionPromoActive": false,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "notesKeys": ["note.ultraformer.total_back_rejuvenation"]
+  },
+  {
+    "id": "opt_venus_refreshing_lift",
+    "serviceId": "svc_venus_freeze",
+    "nameKey": "opt.venus.refreshing_lift",
+    "price": { "amount": 35.0, "currency": "USD" },
+    "isOptionPromoActive": false,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "filterGroupKey": "face",
+    "notesKeys": ["note.venus.refreshing_lift"]
+  },
+  {
+    "id": "opt_venus_standard_facial_sculpting",
+    "serviceId": "svc_venus_freeze",
+    "nameKey": "opt.venus.standard_facial_sculpting",
+    "price": { "amount": 45.0, "currency": "USD" },
+    "isOptionPromoActive": false,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "filterGroupKey": "face",
+    "notesKeys": ["note.venus.standard_facial_sculpting"]
+  },
+  {
+    "id": "opt_venus_deep_contour",
+    "serviceId": "svc_venus_freeze",
+    "nameKey": "opt.venus.deep_contour",
+    "price": { "amount": 50.0, "currency": "USD" },
+    "isOptionPromoActive": false,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "filterGroupKey": "face",
+    "notesKeys": ["note.venus.deep_contour"]
+  },
+  {
+    "id": "opt_venus_total_facial_rejuvenation",
+    "serviceId": "svc_venus_freeze",
+    "nameKey": "opt.venus.total_facial_rejuvenation",
+    "price": { "amount": 60.0, "currency": "USD" },
+    "isOptionPromoActive": false,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "filterGroupKey": "face",
+    "notesKeys": ["note.venus.total_facial_rejuvenation"]
+  },
+  {
+    "id": "opt_venus_neck_sculpting",
+    "serviceId": "svc_venus_freeze",
+    "nameKey": "opt.venus.neck_sculpting",
+    "price": { "amount": 25.0, "currency": "USD" },
+    "isOptionPromoActive": false,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "filterGroupKey": "face",
+    "notesKeys": ["note.venus.neck_sculpting"]
+  },
+  {
+    "id": "opt_venus_decollete_rejuvenation",
+    "serviceId": "svc_venus_freeze",
+    "nameKey": "opt.venus.decollete_rejuvenation",
+    "price": { "amount": 30.0, "currency": "USD" },
+    "isOptionPromoActive": false,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "filterGroupKey": "body",
+    "notesKeys": ["note.venus.decollete_rejuvenation"]
+  },
+  {
+    "id": "opt_venus_combo_lift_smooth",
+    "serviceId": "svc_venus_freeze",
+    "nameKey": "opt.venus.combo_lift_smooth",
+    "price": { "amount": 40.0, "currency": "USD" },
+    "isOptionPromoActive": false,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "filterGroupKey": "body",
+    "notesKeys": ["note.venus.combo_lift_smooth"]
+  },
+  {
+    "id": "opt_venus_defined_arms",
+    "serviceId": "svc_venus_freeze",
+    "nameKey": "opt.venus.defined_arms",
+    "price": { "amount": 50.0, "currency": "USD" },
+    "isOptionPromoActive": false,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "filterGroupKey": "body",
+    "notesKeys": ["note.venus.defined_arms"]
+  },
+  {
+    "id": "opt_venus_abdomen_firming",
+    "serviceId": "svc_venus_freeze",
+    "nameKey": "opt.venus.abdomen_firming",
+    "price": { "amount": 70.0, "currency": "USD" },
+    "isOptionPromoActive": false,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "filterGroupKey": "body",
+    "notesKeys": ["note.venus.abdomen_firming"]
+  },
+  {
+    "id": "opt_venus_thigh_sculpt",
+    "serviceId": "svc_venus_freeze",
+    "nameKey": "opt.venus.thigh_sculpt",
+    "price": { "amount": 50.0, "currency": "USD" },
+    "isOptionPromoActive": false,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "filterGroupKey": "body",
+    "notesKeys": ["note.venus.thigh_sculpt"]
+  },
+  {
+    "id": "opt_venus_glute_contour",
+    "serviceId": "svc_venus_freeze",
+    "nameKey": "opt.venus.glute_contour",
+    "price": { "amount": 45.0, "currency": "USD" },
+    "isOptionPromoActive": false,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "filterGroupKey": "body",
+    "notesKeys": ["note.venus.glute_contour"]
+  },
+  {
+    "id": "opt_venus_express_back_glow",
+    "serviceId": "svc_venus_freeze",
+    "nameKey": "opt.venus.express_back_glow",
+    "price": { "amount": 35.0, "currency": "USD" },
+    "isOptionPromoActive": false,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "filterGroupKey": "body",
+    "notesKeys": ["note.venus.express_back_glow"]
+  },
+  {
+    "id": "opt_venus_lumbar_sculpt",
+    "serviceId": "svc_venus_freeze",
+    "nameKey": "opt.venus.lumbar_sculpt",
+    "price": { "amount": 50.0, "currency": "USD" },
+    "isOptionPromoActive": false,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "filterGroupKey": "body",
+    "notesKeys": ["note.venus.lumbar_sculpt"]
+  },
+  {
+    "id": "opt_venus_total_back_rejuvenation",
+    "serviceId": "svc_venus_freeze",
+    "nameKey": "opt.venus.total_back_rejuvenation",
+    "price": { "amount": 70.0, "currency": "USD" },
+    "isOptionPromoActive": false,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "filterGroupKey": "body",
+    "notesKeys": ["note.venus.total_back_rejuvenation"]
+  },
+  {
+    "id": "opt_venus_small_zone",
+    "serviceId": "svc_venus_freeze",
+    "nameKey": "opt.venus.small_zone",
+    "price": { "amount": 25.0, "currency": "USD" },
+    "isOptionPromoActive": false,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "filterGroupKey": "body",
+    "notesKeys": ["note.venus.small_zone"]
+  },
+  {
+    "id": "opt_venus_medium_zone",
+    "serviceId": "svc_venus_freeze",
+    "nameKey": "opt.venus.medium_zone",
+    "price": { "amount": 80.0, "currency": "USD" },
+    "isOptionPromoActive": false,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "filterGroupKey": "body",
+    "notesKeys": ["note.venus.medium_zone"]
+  },
+  {
+    "id": "opt_venus_large_zone",
+    "serviceId": "svc_venus_freeze",
+    "nameKey": "opt.venus.large_zone",
+    "price": { "amount": 95.0, "currency": "USD" },
+    "isOptionPromoActive": false,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "filterGroupKey": "body",
+    "notesKeys": ["note.venus.large_zone"]
+  },
+  {
+    "id": "opt_enzymatic_kit",
+    "serviceId": "svc_enzymatic_therapy",
+    "nameKey": "opt.enzymatic.kit",
+    "price": { "amount": 180.0, "currency": "USD" },
+    "isOptionPromoActive": false,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "notesKeys": ["note.enzymatic.kit"]
+  },
+  {
+    "id": "opt_enzymatic_slim",
+    "serviceId": "svc_enzymatic_therapy",
+    "nameKey": "opt.enzymatic.slim",
+    "price": { "amount": 60.0, "currency": "USD" },
+    "isOptionPromoActive": false,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "notesKeys": ["note.enzymatic.slim"]
+  },
+  {
+    "id": "opt_enzymatic_drain",
+    "serviceId": "svc_enzymatic_therapy",
+    "nameKey": "opt.enzymatic.drain",
+    "price": { "amount": 60.0, "currency": "USD" },
+    "isOptionPromoActive": false,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "notesKeys": ["note.enzymatic.drain"]
+  },
+  {
+    "id": "opt_enzymatic_smooth",
+    "serviceId": "svc_enzymatic_therapy",
+    "nameKey": "opt.enzymatic.smooth",
+    "price": { "amount": 60.0, "currency": "USD" },
+    "isOptionPromoActive": false,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "notesKeys": ["note.enzymatic.smooth"]
+  },
+  {
+    "id": "opt_pdo_biostim_periorbital",
+    "serviceId": "svc_pdo_biostimulating_threads",
+    "nameKey": "opt.pdo_biostim.periorbital",
+    "price": { "minAmount": 75, "maxAmount": 155, "currency": "USD" },
+    "isOptionPromoActive": false,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "notesKeys": ["note.pdo.price_variation"]
+  },
+  {
+    "id": "opt_pdo_biostim_cheeks",
+    "serviceId": "svc_pdo_biostimulating_threads",
+    "nameKey": "opt.pdo_biostim.cheeks",
+    "price": { "minAmount": 155, "maxAmount": 305, "currency": "USD" },
+    "isOptionPromoActive": false,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "notesKeys": ["note.pdo.price_variation"]
+  },
+  {
+    "id": "opt_pdo_biostim_jawline",
+    "serviceId": "svc_pdo_biostimulating_threads",
+    "nameKey": "opt.pdo_biostim.jawline",
+    "price": { "minAmount": 155, "maxAmount": 305, "currency": "USD" },
+    "isOptionPromoActive": false,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "notesKeys": ["note.pdo.price_variation"]
+  },
+  {
+    "id": "opt_pdo_biostim_neck",
+    "serviceId": "svc_pdo_biostimulating_threads",
+    "nameKey": "opt.pdo_biostim.neck",
+    "price": { "minAmount": 230, "maxAmount": 460, "currency": "USD" },
+    "isOptionPromoActive": false,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "notesKeys": ["note.pdo.price_variation"]
+  },
+  {
+    "id": "opt_pdo_biostim_full_face",
+    "serviceId": "svc_pdo_biostimulating_threads",
+    "nameKey": "opt.pdo_biostim.full_face",
+    "price": { "minAmount": 460, "maxAmount": 765, "currency": "USD" },
+    "isOptionPromoActive": false,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "notesKeys": ["note.pdo.price_variation"]
+  },
+  {
+    "id": "opt_pdo_lift_lower_third",
+    "serviceId": "svc_pdo_lift_threads",
+    "nameKey": "opt.pdo_lift.lower_third",
+    "price": { "minAmount": 90, "maxAmount": 270, "currency": "USD" },
+    "isOptionPromoActive": false,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "notesKeys": ["note.pdo.price_variation"]
+  },
+  {
+    "id": "opt_pdo_lift_jowls",
+    "serviceId": "svc_pdo_lift_threads",
+    "nameKey": "opt.pdo_lift.jowls",
+    "price": { "minAmount": 90, "maxAmount": 270, "currency": "USD" },
+    "isOptionPromoActive": false,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "notesKeys": ["note.pdo.price_variation"]
+  },
+  {
+    "id": "opt_pdo_lift_jawline",
+    "serviceId": "svc_pdo_lift_threads",
+    "nameKey": "opt.pdo_lift.jawline",
+    "price": { "minAmount": 90, "maxAmount": 270, "currency": "USD" },
+    "isOptionPromoActive": false,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "notesKeys": ["note.pdo.price_variation"]
+  },
+  {
+    "id": "opt_pdo_lift_brow",
+    "serviceId": "svc_pdo_lift_threads",
+    "nameKey": "opt.pdo_lift.brow",
+    "price": { "minAmount": 90, "maxAmount": 180, "currency": "USD" },
+    "isOptionPromoActive": false,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "notesKeys": ["note.pdo.price_variation"]
+  },
+  {
+    "id": "opt_pdo_lift_lateral_periocular",
+    "serviceId": "svc_pdo_lift_threads",
+    "nameKey": "opt.pdo_lift.lateral_periocular",
+    "price": { "minAmount": 90, "maxAmount": 180, "currency": "USD" },
+    "isOptionPromoActive": false,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "notesKeys": ["note.pdo.price_variation"]
+  },
+  {
+    "id": "opt_pdo_lift_neck_submental",
+    "serviceId": "svc_pdo_lift_threads",
+    "nameKey": "opt.pdo_lift.neck_submental",
+    "price": { "minAmount": 180, "maxAmount": 450, "currency": "USD" },
+    "isOptionPromoActive": false,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "notesKeys": ["note.pdo.price_variation"]
+  }
+]

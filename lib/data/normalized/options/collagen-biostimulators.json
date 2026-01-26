@@ -1,0 +1,34 @@
+[
+  {
+    "id": "opt_sculptra_per_vial",
+    "serviceId": "svc_sculptra",
+    "nameKey": "opt.sculptra.per_vial",
+    "price": {
+      "amount": 575,
+      "currency": "USD"
+    },
+    "isOptionPromoActive": true,
+    "promoPrice": {
+      "amount": 515,
+      "currency": "USD"
+    },
+    "priceTextKey": "",
+    "notesKeys": [
+      "note.sculptra.vial_price",
+      "note.sculptra.vial_quantity"
+    ]
+  },
+  {
+    "id": "opt_harmonyca_per_treatment",
+    "serviceId": "svc_harmonyca",
+    "nameKey": "opt.harmonyca.per_treatment",
+    "price": {
+      "amount": 875,
+      "currency": "USD"
+    },
+    "isOptionPromoActive": false,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "notesKeys": []
+  }
+]

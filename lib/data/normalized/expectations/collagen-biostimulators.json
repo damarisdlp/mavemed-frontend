@@ -1,0 +1,122 @@
+[
+  {
+    "id": "exp_sculptra_pre_1",
+    "serviceId": "svc_sculptra",
+    "phase": "pre",
+    "textKey": "exp.sculptra.pre.1"
+  },
+  {
+    "id": "exp_sculptra_pre_2",
+    "serviceId": "svc_sculptra",
+    "phase": "pre",
+    "textKey": "exp.sculptra.pre.2"
+  },
+  {
+    "id": "exp_sculptra_pre_3",
+    "serviceId": "svc_sculptra",
+    "phase": "pre",
+    "textKey": "exp.sculptra.pre.3"
+  },
+  {
+    "id": "exp_sculptra_pre_4",
+    "serviceId": "svc_sculptra",
+    "phase": "pre",
+    "textKey": "exp.sculptra.pre.4"
+  },
+  {
+    "id": "exp_sculptra_during_1",
+    "serviceId": "svc_sculptra",
+    "phase": "during",
+    "textKey": "exp.sculptra.during.1"
+  },
+  {
+    "id": "exp_sculptra_during_2",
+    "serviceId": "svc_sculptra",
+    "phase": "during",
+    "textKey": "exp.sculptra.during.2"
+  },
+  {
+    "id": "exp_sculptra_post_1",
+    "serviceId": "svc_sculptra",
+    "phase": "post",
+    "textKey": "exp.sculptra.post.1"
+  },
+  {
+    "id": "exp_sculptra_post_2",
+    "serviceId": "svc_sculptra",
+    "phase": "post",
+    "textKey": "exp.sculptra.post.2"
+  },
+  {
+    "id": "exp_sculptra_post_3",
+    "serviceId": "svc_sculptra",
+    "phase": "post",
+    "textKey": "exp.sculptra.post.3"
+  },
+  {
+    "id": "exp_sculptra_post_4",
+    "serviceId": "svc_sculptra",
+    "phase": "post",
+    "textKey": "exp.sculptra.post.4"
+  },
+  {
+    "id": "exp_harmonyca_pre_1",
+    "serviceId": "svc_harmonyca",
+    "phase": "pre",
+    "textKey": "exp.harmonyca.pre.1"
+  },
+  {
+    "id": "exp_harmonyca_pre_2",
+    "serviceId": "svc_harmonyca",
+    "phase": "pre",
+    "textKey": "exp.harmonyca.pre.2"
+  },
+  {
+    "id": "exp_harmonyca_pre_3",
+    "serviceId": "svc_harmonyca",
+    "phase": "pre",
+    "textKey": "exp.harmonyca.pre.3"
+  },
+  {
+    "id": "exp_harmonyca_pre_4",
+    "serviceId": "svc_harmonyca",
+    "phase": "pre",
+    "textKey": "exp.harmonyca.pre.4"
+  },
+  {
+    "id": "exp_harmonyca_during_1",
+    "serviceId": "svc_harmonyca",
+    "phase": "during",
+    "textKey": "exp.harmonyca.during.1"
+  },
+  {
+    "id": "exp_harmonyca_during_2",
+    "serviceId": "svc_harmonyca",
+    "phase": "during",
+    "textKey": "exp.harmonyca.during.2"
+  },
+  {
+    "id": "exp_harmonyca_post_1",
+    "serviceId": "svc_harmonyca",
+    "phase": "post",
+    "textKey": "exp.harmonyca.post.1"
+  },
+  {
+    "id": "exp_harmonyca_post_2",
+    "serviceId": "svc_harmonyca",
+    "phase": "post",
+    "textKey": "exp.harmonyca.post.2"
+  },
+  {
+    "id": "exp_harmonyca_post_3",
+    "serviceId": "svc_harmonyca",
+    "phase": "post",
+    "textKey": "exp.harmonyca.post.3"
+  },
+  {
+    "id": "exp_harmonyca_post_4",
+    "serviceId": "svc_harmonyca",
+    "phase": "post",
+    "textKey": "exp.harmonyca.post.4"
+  }
+]

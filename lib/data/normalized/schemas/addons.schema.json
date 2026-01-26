@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Addons",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["id", "parentServiceId", "childServiceId", "optionNameKey"],
+    "additionalProperties": false,
+    "properties": {
+      "id": { "type": "string", "pattern": "^addon_" },
+      "parentServiceId": { "type": "string", "pattern": "^svc_" },
+      "childServiceId": { "type": "string", "pattern": "^svc_" },
+      "optionNameKey": { "type": "string" }
+    }
+  }
+}

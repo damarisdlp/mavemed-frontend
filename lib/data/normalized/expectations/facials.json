@@ -1,0 +1,194 @@
+[
+  {
+    "id": "exp_hydrafacial_pre_1",
+    "serviceId": "svc_hydrafacial",
+    "phase": "pre",
+    "textKey": "exp.hydrafacial.pre.1"
+  },
+  {
+    "id": "exp_hydrafacial_pre_2",
+    "serviceId": "svc_hydrafacial",
+    "phase": "pre",
+    "textKey": "exp.hydrafacial.pre.2"
+  },
+  {
+    "id": "exp_hydrafacial_during_1",
+    "serviceId": "svc_hydrafacial",
+    "phase": "during",
+    "textKey": "exp.hydrafacial.during.1"
+  },
+  {
+    "id": "exp_hydrafacial_during_2",
+    "serviceId": "svc_hydrafacial",
+    "phase": "during",
+    "textKey": "exp.hydrafacial.during.2"
+  },
+  {
+    "id": "exp_hydrafacial_post_1",
+    "serviceId": "svc_hydrafacial",
+    "phase": "post",
+    "textKey": "exp.hydrafacial.post.1"
+  },
+  {
+    "id": "exp_hydrafacial_post_2",
+    "serviceId": "svc_hydrafacial",
+    "phase": "post",
+    "textKey": "exp.hydrafacial.post.2"
+  },
+  {
+    "id": "exp_casmara_infinity_pre_1",
+    "serviceId": "svc_casmara_infinity",
+    "phase": "pre",
+    "textKey": "exp.casmara_infinity.pre.1"
+  },
+  {
+    "id": "exp_casmara_infinity_pre_2",
+    "serviceId": "svc_casmara_infinity",
+    "phase": "pre",
+    "textKey": "exp.casmara_infinity.pre.2"
+  },
+  {
+    "id": "exp_casmara_infinity_during_1",
+    "serviceId": "svc_casmara_infinity",
+    "phase": "during",
+    "textKey": "exp.casmara_infinity.during.1"
+  },
+  {
+    "id": "exp_casmara_infinity_post_1",
+    "serviceId": "svc_casmara_infinity",
+    "phase": "post",
+    "textKey": "exp.casmara_infinity.post.1"
+  },
+  {
+    "id": "exp_casmara_infinity_post_2",
+    "serviceId": "svc_casmara_infinity",
+    "phase": "post",
+    "textKey": "exp.casmara_infinity.post.2"
+  },
+  {
+    "id": "exp_casmara_purifying_pre_1",
+    "serviceId": "svc_casmara_purifying",
+    "phase": "pre",
+    "textKey": "exp.casmara_purifying.pre.1"
+  },
+  {
+    "id": "exp_casmara_purifying_pre_2",
+    "serviceId": "svc_casmara_purifying",
+    "phase": "pre",
+    "textKey": "exp.casmara_purifying.pre.2"
+  },
+  {
+    "id": "exp_casmara_purifying_during_1",
+    "serviceId": "svc_casmara_purifying",
+    "phase": "during",
+    "textKey": "exp.casmara_purifying.during.1"
+  },
+  {
+    "id": "exp_casmara_purifying_post_1",
+    "serviceId": "svc_casmara_purifying",
+    "phase": "post",
+    "textKey": "exp.casmara_purifying.post.1"
+  },
+  {
+    "id": "exp_casmara_purifying_post_2",
+    "serviceId": "svc_casmara_purifying",
+    "phase": "post",
+    "textKey": "exp.casmara_purifying.post.2"
+  },
+  {
+    "id": "exp_casmara_retinol_pre_1",
+    "serviceId": "svc_casmara_retinol_proage",
+    "phase": "pre",
+    "textKey": "exp.casmara_retinol.pre.1"
+  },
+  {
+    "id": "exp_casmara_retinol_pre_2",
+    "serviceId": "svc_casmara_retinol_proage",
+    "phase": "pre",
+    "textKey": "exp.casmara_retinol.pre.2"
+  },
+  {
+    "id": "exp_casmara_retinol_during_1",
+    "serviceId": "svc_casmara_retinol_proage",
+    "phase": "during",
+    "textKey": "exp.casmara_retinol.during.1"
+  },
+  {
+    "id": "exp_casmara_retinol_post_1",
+    "serviceId": "svc_casmara_retinol_proage",
+    "phase": "post",
+    "textKey": "exp.casmara_retinol.post.1"
+  },
+  {
+    "id": "exp_casmara_retinol_post_2",
+    "serviceId": "svc_casmara_retinol_proage",
+    "phase": "post",
+    "textKey": "exp.casmara_retinol.post.2"
+  },
+  {
+    "id": "exp_janssen_ultra_pre_1",
+    "serviceId": "svc_janssen_ultra_renewal",
+    "phase": "pre",
+    "textKey": "exp.janssen_ultra.pre.1"
+  },
+  {
+    "id": "exp_janssen_ultra_pre_2",
+    "serviceId": "svc_janssen_ultra_renewal",
+    "phase": "pre",
+    "textKey": "exp.janssen_ultra.pre.2"
+  },
+  {
+    "id": "exp_janssen_ultra_during_1",
+    "serviceId": "svc_janssen_ultra_renewal",
+    "phase": "during",
+    "textKey": "exp.janssen_ultra.during.1"
+  },
+  {
+    "id": "exp_janssen_ultra_post_1",
+    "serviceId": "svc_janssen_ultra_renewal",
+    "phase": "post",
+    "textKey": "exp.janssen_ultra.post.1"
+  },
+  {
+    "id": "exp_janssen_ultra_post_2",
+    "serviceId": "svc_janssen_ultra_renewal",
+    "phase": "post",
+    "textKey": "exp.janssen_ultra.post.2"
+  },
+  {
+    "id": "exp_janssen_ultra_post_3",
+    "serviceId": "svc_janssen_ultra_renewal",
+    "phase": "post",
+    "textKey": "exp.janssen_ultra.post.3"
+  },
+  {
+    "id": "exp_janssen_radiance_pre_1",
+    "serviceId": "svc_janssen_radiance_boost",
+    "phase": "pre",
+    "textKey": "exp.janssen_radiance.pre.1"
+  },
+  {
+    "id": "exp_janssen_radiance_pre_2",
+    "serviceId": "svc_janssen_radiance_boost",
+    "phase": "pre",
+    "textKey": "exp.janssen_radiance.pre.2"
+  },
+  {
+    "id": "exp_janssen_radiance_during_1",
+    "serviceId": "svc_janssen_radiance_boost",
+    "phase": "during",
+    "textKey": "exp.janssen_radiance.during.1"
+  },
+  {
+    "id": "exp_janssen_radiance_post_1",
+    "serviceId": "svc_janssen_radiance_boost",
+    "phase": "post",
+    "textKey": "exp.janssen_radiance.post.1"
+  },
+  {
+    "id": "exp_janssen_radiance_post_2",
+    "serviceId": "svc_janssen_radiance_boost",
+    "phase": "post",
+    "textKey": "exp.janssen_radiance.post.2"
+  }
+]

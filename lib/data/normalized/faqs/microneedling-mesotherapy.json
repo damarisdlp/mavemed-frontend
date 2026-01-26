@@ -1,0 +1,56 @@
+[
+  {
+    "id": "faq_microneedling_1",
+    "serviceId": "svc_microneedling",
+    "questionKey": "faq.microneedling.q1",
+    "answerKey": "faq.microneedling.a1"
+  },
+  {
+    "id": "faq_microneedling_2",
+    "serviceId": "svc_microneedling",
+    "questionKey": "faq.microneedling.q2",
+    "answerKey": "faq.microneedling.a2"
+  },
+  {
+    "id": "faq_microneedling_3",
+    "serviceId": "svc_microneedling",
+    "questionKey": "faq.microneedling.q3",
+    "answerKey": "faq.microneedling.a3"
+  },
+  {
+    "id": "faq_microneedling_4",
+    "serviceId": "svc_microneedling",
+    "questionKey": "faq.microneedling.q4",
+    "answerKey": "faq.microneedling.a4"
+  },
+  {
+    "id": "faq_mesotherapy_1",
+    "serviceId": "svc_mesotherapy_infusions",
+    "questionKey": "faq.mesotherapy.q1",
+    "answerKey": "faq.mesotherapy.a1"
+  },
+  {
+    "id": "faq_mesotherapy_2",
+    "serviceId": "svc_mesotherapy_infusions",
+    "questionKey": "faq.mesotherapy.q2",
+    "answerKey": "faq.mesotherapy.a2"
+  },
+  {
+    "id": "faq_mesotherapy_3",
+    "serviceId": "svc_mesotherapy_infusions",
+    "questionKey": "faq.mesotherapy.q3",
+    "answerKey": "faq.mesotherapy.a3"
+  },
+  {
+    "id": "faq_mesotherapy_4",
+    "serviceId": "svc_mesotherapy_infusions",
+    "questionKey": "faq.mesotherapy.q4",
+    "answerKey": "faq.mesotherapy.a4"
+  },
+  {
+    "id": "faq_mesotherapy_5",
+    "serviceId": "svc_mesotherapy_infusions",
+    "questionKey": "faq.mesotherapy.q5",
+    "answerKey": "faq.mesotherapy.a5"
+  }
+]

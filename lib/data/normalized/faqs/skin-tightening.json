@@ -1,0 +1,134 @@
+[
+  {
+    "id": "faq_ultraformer_q1",
+    "serviceId": "svc_ultraformer_mpt",
+    "questionKey": "faq.ultraformer.q1",
+    "answerKey": "faq.ultraformer.a1"
+  },
+  {
+    "id": "faq_ultraformer_q2",
+    "serviceId": "svc_ultraformer_mpt",
+    "questionKey": "faq.ultraformer.q2",
+    "answerKey": "faq.ultraformer.a2"
+  },
+  {
+    "id": "faq_ultraformer_q3",
+    "serviceId": "svc_ultraformer_mpt",
+    "questionKey": "faq.ultraformer.q3",
+    "answerKey": "faq.ultraformer.a3"
+  },
+  {
+    "id": "faq_ultraformer_q4",
+    "serviceId": "svc_ultraformer_mpt",
+    "questionKey": "faq.ultraformer.q4",
+    "answerKey": "faq.ultraformer.a4"
+  },
+  {
+    "id": "faq_ultraformer_q5",
+    "serviceId": "svc_ultraformer_mpt",
+    "questionKey": "faq.ultraformer.q5",
+    "answerKey": "faq.ultraformer.a5"
+  },
+  {
+    "id": "faq_ultraformer_q6",
+    "serviceId": "svc_ultraformer_mpt",
+    "questionKey": "faq.ultraformer.q6",
+    "answerKey": "faq.ultraformer.a6"
+  },
+  {
+    "id": "faq_venus_q1",
+    "serviceId": "svc_venus_freeze",
+    "questionKey": "faq.venus.q1",
+    "answerKey": "faq.venus.a1"
+  },
+  {
+    "id": "faq_venus_q2",
+    "serviceId": "svc_venus_freeze",
+    "questionKey": "faq.venus.q2",
+    "answerKey": "faq.venus.a2"
+  },
+  {
+    "id": "faq_venus_q3",
+    "serviceId": "svc_venus_freeze",
+    "questionKey": "faq.venus.q3",
+    "answerKey": "faq.venus.a3"
+  },
+  {
+    "id": "faq_venus_q4",
+    "serviceId": "svc_venus_freeze",
+    "questionKey": "faq.venus.q4",
+    "answerKey": "faq.venus.a4"
+  },
+  {
+    "id": "faq_venus_q5",
+    "serviceId": "svc_venus_freeze",
+    "questionKey": "faq.venus.q5",
+    "answerKey": "faq.venus.a5"
+  },
+  {
+    "id": "faq_enzymatic_q1",
+    "serviceId": "svc_enzymatic_therapy",
+    "questionKey": "faq.enzymatic.q1",
+    "answerKey": "faq.enzymatic.a1"
+  },
+  {
+    "id": "faq_enzymatic_q2",
+    "serviceId": "svc_enzymatic_therapy",
+    "questionKey": "faq.enzymatic.q2",
+    "answerKey": "faq.enzymatic.a2"
+  },
+  {
+    "id": "faq_enzymatic_q3",
+    "serviceId": "svc_enzymatic_therapy",
+    "questionKey": "faq.enzymatic.q3",
+    "answerKey": "faq.enzymatic.a3"
+  },
+  {
+    "id": "faq_enzymatic_q4",
+    "serviceId": "svc_enzymatic_therapy",
+    "questionKey": "faq.enzymatic.q4",
+    "answerKey": "faq.enzymatic.a4"
+  },
+  {
+    "id": "faq_enzymatic_q5",
+    "serviceId": "svc_enzymatic_therapy",
+    "questionKey": "faq.enzymatic.q5",
+    "answerKey": "faq.enzymatic.a5"
+  },
+  {
+    "id": "faq_pdo_biostim_q1",
+    "serviceId": "svc_pdo_biostimulating_threads",
+    "questionKey": "faq.pdo_biostim.q1",
+    "answerKey": "faq.pdo_biostim.a1"
+  },
+  {
+    "id": "faq_pdo_biostim_q2",
+    "serviceId": "svc_pdo_biostimulating_threads",
+    "questionKey": "faq.pdo_biostim.q2",
+    "answerKey": "faq.pdo_biostim.a2"
+  },
+  {
+    "id": "faq_pdo_biostim_q3",
+    "serviceId": "svc_pdo_biostimulating_threads",
+    "questionKey": "faq.pdo_biostim.q3",
+    "answerKey": "faq.pdo_biostim.a3"
+  },
+  {
+    "id": "faq_pdo_lift_q1",
+    "serviceId": "svc_pdo_lift_threads",
+    "questionKey": "faq.pdo_lift.q1",
+    "answerKey": "faq.pdo_lift.a1"
+  },
+  {
+    "id": "faq_pdo_lift_q2",
+    "serviceId": "svc_pdo_lift_threads",
+    "questionKey": "faq.pdo_lift.q2",
+    "answerKey": "faq.pdo_lift.a2"
+  },
+  {
+    "id": "faq_pdo_lift_q3",
+    "serviceId": "svc_pdo_lift_threads",
+    "questionKey": "faq.pdo_lift.q3",
+    "answerKey": "faq.pdo_lift.a3"
+  }
+]

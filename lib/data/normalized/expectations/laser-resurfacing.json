@@ -1,0 +1,200 @@
+[
+  {
+    "id": "exp_co2_pre_1",
+    "serviceId": "svc_co2_laser",
+    "phase": "pre",
+    "textKey": "exp.co2.pre.1"
+  },
+  {
+    "id": "exp_co2_pre_2",
+    "serviceId": "svc_co2_laser",
+    "phase": "pre",
+    "textKey": "exp.co2.pre.2"
+  },
+  {
+    "id": "exp_co2_pre_3",
+    "serviceId": "svc_co2_laser",
+    "phase": "pre",
+    "textKey": "exp.co2.pre.3"
+  },
+  {
+    "id": "exp_co2_during_1",
+    "serviceId": "svc_co2_laser",
+    "phase": "during",
+    "textKey": "exp.co2.during.1"
+  },
+  {
+    "id": "exp_co2_during_2",
+    "serviceId": "svc_co2_laser",
+    "phase": "during",
+    "textKey": "exp.co2.during.2"
+  },
+  {
+    "id": "exp_co2_post_1",
+    "serviceId": "svc_co2_laser",
+    "phase": "post",
+    "textKey": "exp.co2.post.1"
+  },
+  {
+    "id": "exp_co2_post_2",
+    "serviceId": "svc_co2_laser",
+    "phase": "post",
+    "textKey": "exp.co2.post.2"
+  },
+  {
+    "id": "exp_co2_post_3",
+    "serviceId": "svc_co2_laser",
+    "phase": "post",
+    "textKey": "exp.co2.post.3"
+  },
+  {
+    "id": "exp_co2_post_4",
+    "serviceId": "svc_co2_laser",
+    "phase": "post",
+    "textKey": "exp.co2.post.4"
+  },
+  {
+    "id": "exp_laser_hair_pre_1",
+    "serviceId": "svc_laser_hair_removal",
+    "phase": "pre",
+    "textKey": "exp.laser_hair.pre.1"
+  },
+  {
+    "id": "exp_laser_hair_pre_2",
+    "serviceId": "svc_laser_hair_removal",
+    "phase": "pre",
+    "textKey": "exp.laser_hair.pre.2"
+  },
+  {
+    "id": "exp_laser_hair_pre_3",
+    "serviceId": "svc_laser_hair_removal",
+    "phase": "pre",
+    "textKey": "exp.laser_hair.pre.3"
+  },
+  {
+    "id": "exp_laser_hair_during_1",
+    "serviceId": "svc_laser_hair_removal",
+    "phase": "during",
+    "textKey": "exp.laser_hair.during.1"
+  },
+  {
+    "id": "exp_laser_hair_post_1",
+    "serviceId": "svc_laser_hair_removal",
+    "phase": "post",
+    "textKey": "exp.laser_hair.post.1"
+  },
+  {
+    "id": "exp_laser_hair_post_2",
+    "serviceId": "svc_laser_hair_removal",
+    "phase": "post",
+    "textKey": "exp.laser_hair.post.2"
+  },
+  {
+    "id": "exp_laser_hair_post_3",
+    "serviceId": "svc_laser_hair_removal",
+    "phase": "post",
+    "textKey": "exp.laser_hair.post.3"
+  },
+  {
+    "id": "exp_ipl_pre_1",
+    "serviceId": "svc_ipl",
+    "phase": "pre",
+    "textKey": "exp.ipl.pre.1"
+  },
+  {
+    "id": "exp_ipl_pre_2",
+    "serviceId": "svc_ipl",
+    "phase": "pre",
+    "textKey": "exp.ipl.pre.2"
+  },
+  {
+    "id": "exp_ipl_pre_3",
+    "serviceId": "svc_ipl",
+    "phase": "pre",
+    "textKey": "exp.ipl.pre.3"
+  },
+  {
+    "id": "exp_ipl_during_1",
+    "serviceId": "svc_ipl",
+    "phase": "during",
+    "textKey": "exp.ipl.during.1"
+  },
+  {
+    "id": "exp_ipl_during_2",
+    "serviceId": "svc_ipl",
+    "phase": "during",
+    "textKey": "exp.ipl.during.2"
+  },
+  {
+    "id": "exp_ipl_post_1",
+    "serviceId": "svc_ipl",
+    "phase": "post",
+    "textKey": "exp.ipl.post.1"
+  },
+  {
+    "id": "exp_ipl_post_2",
+    "serviceId": "svc_ipl",
+    "phase": "post",
+    "textKey": "exp.ipl.post.2"
+  },
+  {
+    "id": "exp_rf_pre_1",
+    "serviceId": "svc_rf_microneedling",
+    "phase": "pre",
+    "textKey": "exp.rf.pre.1"
+  },
+  {
+    "id": "exp_rf_pre_2",
+    "serviceId": "svc_rf_microneedling",
+    "phase": "pre",
+    "textKey": "exp.rf.pre.2"
+  },
+  {
+    "id": "exp_rf_during_1",
+    "serviceId": "svc_rf_microneedling",
+    "phase": "during",
+    "textKey": "exp.rf.during.1"
+  },
+  {
+    "id": "exp_rf_during_2",
+    "serviceId": "svc_rf_microneedling",
+    "phase": "during",
+    "textKey": "exp.rf.during.2"
+  },
+  {
+    "id": "exp_rf_post_1",
+    "serviceId": "svc_rf_microneedling",
+    "phase": "post",
+    "textKey": "exp.rf.post.1"
+  },
+  {
+    "id": "exp_rf_post_2",
+    "serviceId": "svc_rf_microneedling",
+    "phase": "post",
+    "textKey": "exp.rf.post.2"
+  },
+  {
+    "id": "exp_serum_pre_1",
+    "serviceId": "svc_serum_add_ons",
+    "phase": "pre",
+    "textKey": "exp.serum.pre.1"
+  },
+  {
+    "id": "exp_serum_pre_2",
+    "serviceId": "svc_serum_add_ons",
+    "phase": "pre",
+    "textKey": "exp.serum.pre.2"
+  },
+  {
+    "id": "exp_serum_post_1",
+    "serviceId": "svc_serum_add_ons",
+    "phase": "post",
+    "textKey": "exp.serum.post.1"
+  },
+  {
+    "id": "exp_serum_post_2",
+    "serviceId": "svc_serum_add_ons",
+    "phase": "post",
+    "textKey": "exp.serum.post.2"
+  }
+]

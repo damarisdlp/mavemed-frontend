@@ -1,0 +1,110 @@
+[
+  {
+    "id": "faq_co2_1",
+    "serviceId": "svc_co2_laser",
+    "questionKey": "faq.co2.q1",
+    "answerKey": "faq.co2.a1"
+  },
+  {
+    "id": "faq_co2_2",
+    "serviceId": "svc_co2_laser",
+    "questionKey": "faq.co2.q2",
+    "answerKey": "faq.co2.a2"
+  },
+  {
+    "id": "faq_co2_3",
+    "serviceId": "svc_co2_laser",
+    "questionKey": "faq.co2.q3",
+    "answerKey": "faq.co2.a3"
+  },
+  {
+    "id": "faq_co2_4",
+    "serviceId": "svc_co2_laser",
+    "questionKey": "faq.co2.q4",
+    "answerKey": "faq.co2.a4"
+  },
+  {
+    "id": "faq_laser_hair_1",
+    "serviceId": "svc_laser_hair_removal",
+    "questionKey": "faq.laser_hair.q1",
+    "answerKey": "faq.laser_hair.a1"
+  },
+  {
+    "id": "faq_laser_hair_2",
+    "serviceId": "svc_laser_hair_removal",
+    "questionKey": "faq.laser_hair.q2",
+    "answerKey": "faq.laser_hair.a2"
+  },
+  {
+    "id": "faq_laser_hair_3",
+    "serviceId": "svc_laser_hair_removal",
+    "questionKey": "faq.laser_hair.q3",
+    "answerKey": "faq.laser_hair.a3"
+  },
+  {
+    "id": "faq_laser_hair_4",
+    "serviceId": "svc_laser_hair_removal",
+    "questionKey": "faq.laser_hair.q4",
+    "answerKey": "faq.laser_hair.a4"
+  },
+  {
+    "id": "faq_ipl_1",
+    "serviceId": "svc_ipl",
+    "questionKey": "faq.ipl.q1",
+    "answerKey": "faq.ipl.a1"
+  },
+  {
+    "id": "faq_ipl_2",
+    "serviceId": "svc_ipl",
+    "questionKey": "faq.ipl.q2",
+    "answerKey": "faq.ipl.a2"
+  },
+  {
+    "id": "faq_ipl_3",
+    "serviceId": "svc_ipl",
+    "questionKey": "faq.ipl.q3",
+    "answerKey": "faq.ipl.a3"
+  },
+  {
+    "id": "faq_ipl_4",
+    "serviceId": "svc_ipl",
+    "questionKey": "faq.ipl.q4",
+    "answerKey": "faq.ipl.a4"
+  },
+  {
+    "id": "faq_rf_1",
+    "serviceId": "svc_rf_microneedling",
+    "questionKey": "faq.rf.q1",
+    "answerKey": "faq.rf.a1"
+  },
+  {
+    "id": "faq_rf_2",
+    "serviceId": "svc_rf_microneedling",
+    "questionKey": "faq.rf.q2",
+    "answerKey": "faq.rf.a2"
+  },
+  {
+    "id": "faq_rf_3",
+    "serviceId": "svc_rf_microneedling",
+    "questionKey": "faq.rf.q3",
+    "answerKey": "faq.rf.a3"
+  },
+  {
+    "id": "faq_serum_1",
+    "serviceId": "svc_serum_add_ons",
+    "questionKey": "faq.serum.q1",
+    "answerKey": "faq.serum.a1"
+  },
+  {
+    "id": "faq_serum_2",
+    "serviceId": "svc_serum_add_ons",
+    "questionKey": "faq.serum.q2",
+    "answerKey": "faq.serum.a2"
+  },
+  {
+    "id": "faq_serum_3",
+    "serviceId": "svc_serum_add_ons",
+    "questionKey": "faq.serum.q3",
+    "answerKey": "faq.serum.a3"
+  }
+]

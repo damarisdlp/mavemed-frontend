@@ -1,0 +1,20 @@
+[
+  {
+    "id": "promo_microneedling",
+    "serviceId": "svc_microneedling",
+    "headlineKey": "",
+    "descriptionKey": "",
+    "validFrom": null,
+    "validTill": null,
+    "options": []
+  },
+  {
+    "id": "promo_mesotherapy",
+    "serviceId": "svc_mesotherapy_infusions",
+    "headlineKey": "",
+    "descriptionKey": "",
+    "validFrom": null,
+    "validTill": null,
+    "options": []
+  }
+]

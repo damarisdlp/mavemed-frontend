@@ -1,0 +1,92 @@
+[
+  {
+    "id": "faq_calcaneal_q1",
+    "serviceId": "svc_calcaneal_spur",
+    "questionKey": "faq.calcaneal.q1",
+    "answerKey": "faq.calcaneal.a1"
+  },
+  {
+    "id": "faq_calcaneal_q2",
+    "serviceId": "svc_calcaneal_spur",
+    "questionKey": "faq.calcaneal.q2",
+    "answerKey": "faq.calcaneal.a2"
+  },
+  {
+    "id": "faq_calcaneal_q3",
+    "serviceId": "svc_calcaneal_spur",
+    "questionKey": "faq.calcaneal.q3",
+    "answerKey": "faq.calcaneal.a3"
+  },
+  {
+    "id": "faq_calcaneal_q4",
+    "serviceId": "svc_calcaneal_spur",
+    "questionKey": "faq.calcaneal.q4",
+    "answerKey": "faq.calcaneal.a4"
+  },
+  {
+    "id": "faq_matrixectomy_q1",
+    "serviceId": "svc_matrixectomy",
+    "questionKey": "faq.matrixectomy.q1",
+    "answerKey": "faq.matrixectomy.a1"
+  },
+  {
+    "id": "faq_matrixectomy_q2",
+    "serviceId": "svc_matrixectomy",
+    "questionKey": "faq.matrixectomy.q2",
+    "answerKey": "faq.matrixectomy.a2"
+  },
+  {
+    "id": "faq_matrixectomy_q3",
+    "serviceId": "svc_matrixectomy",
+    "questionKey": "faq.matrixectomy.q3",
+    "answerKey": "faq.matrixectomy.a3"
+  },
+  {
+    "id": "faq_matrixectomy_q4",
+    "serviceId": "svc_matrixectomy",
+    "questionKey": "faq.matrixectomy.q4",
+    "answerKey": "faq.matrixectomy.a4"
+  },
+  {
+    "id": "faq_nail_fungus_q1",
+    "serviceId": "svc_nail_fungus_laser",
+    "questionKey": "faq.nail_fungus.q1",
+    "answerKey": "faq.nail_fungus.a1"
+  },
+  {
+    "id": "faq_nail_fungus_q2",
+    "serviceId": "svc_nail_fungus_laser",
+    "questionKey": "faq.nail_fungus.q2",
+    "answerKey": "faq.nail_fungus.a2"
+  },
+  {
+    "id": "faq_nail_fungus_q3",
+    "serviceId": "svc_nail_fungus_laser",
+    "questionKey": "faq.nail_fungus.q3",
+    "answerKey": "faq.nail_fungus.a3"
+  },
+  {
+    "id": "faq_nail_fungus_q4",
+    "serviceId": "svc_nail_fungus_laser",
+    "questionKey": "faq.nail_fungus.q4",
+    "answerKey": "faq.nail_fungus.a4"
+  },
+  {
+    "id": "faq_toenail_q1",
+    "serviceId": "svc_toenail_extraction",
+    "questionKey": "faq.toenail.q1",
+    "answerKey": "faq.toenail.a1"
+  },
+  {
+    "id": "faq_toenail_q2",
+    "serviceId": "svc_toenail_extraction",
+    "questionKey": "faq.toenail.q2",
+    "answerKey": "faq.toenail.a2"
+  },
+  {
+    "id": "faq_toenail_q3",
+    "serviceId": "svc_toenail_extraction",
+    "questionKey": "faq.toenail.q3",
+    "answerKey": "faq.toenail.a3"
+  }
+]

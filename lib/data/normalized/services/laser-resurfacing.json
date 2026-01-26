@@ -1,0 +1,209 @@
+[
+  {
+    "id": "svc_co2_laser",
+    "slug": "co2-laser",
+    "categoryId": "cat_laser_resurfacing",
+    "nameKey": "svc.co2.name",
+    "descriptionKey": "svc.co2.desc",
+    "detailsKey": "svc.co2.details",
+    "isPopular": true,
+    "isPromoActive": true,
+    "images": {
+      "primary": "/laserco2.jpg",
+      "secondary": "/laserco22.jpg"
+    },
+    "notesKeys": [
+      "note.co2.consult",
+      "note.co2.downtime",
+      "note.co2.sessions"
+    ],
+    "goalsKeys": [
+      "goal.co2.wrinkles",
+      "goal.co2.scars",
+      "goal.co2.tone"
+    ],
+    "treatableAreaKeys": [
+      "area.co2.perioral",
+      "area.co2.under_eyes",
+      "area.co2.full_face",
+      "area.co2.neck",
+      "area.co2.decollete",
+      "area.co2.stretch_marks",
+      "area.co2.scars",
+      "area.co2.hands",
+      "area.co2.other"
+    ],
+    "filterConfig": {
+      "defaultKey": "all",
+      "viewAllLabelKey": "filter.view_all",
+      "filters": [
+        { "key": "face", "labelKey": "filter.co2.face" },
+        { "key": "body", "labelKey": "filter.co2.body" }
+      ]
+    }
+  },
+  {
+    "id": "svc_laser_hair_removal",
+    "slug": "laser-hair-removal",
+    "categoryId": "cat_laser_resurfacing",
+    "nameKey": "svc.laser_hair_removal.name",
+    "descriptionKey": "svc.laser_hair_removal.desc",
+    "detailsKey": "svc.laser_hair_removal.details",
+    "isPopular": true,
+    "isPromoActive": false,
+    "images": {
+      "primary": "/hairremoval.jpg",
+      "secondary": "/hairremoval2.jpg"
+    },
+    "notesKeys": [
+      "note.laser_hair.sessions",
+      "note.laser_hair.maintenance",
+      "note.laser_hair.safe_tones",
+      "note.laser_hair.per_session"
+    ],
+    "goalsKeys": [
+      "goal.laser_hair.reduce",
+      "goal.laser_hair.texture",
+      "goal.laser_hair.safe"
+    ],
+    "treatableAreaKeys": [
+      "area.laser_hair.upper_lip",
+      "area.laser_hair.chin",
+      "area.laser_hair.underarms",
+      "area.laser_hair.bikini",
+      "area.laser_hair.brazilian",
+      "area.laser_hair.full_legs",
+      "area.laser_hair.arms",
+      "area.laser_hair.back",
+      "area.laser_hair.chest",
+      "area.laser_hair.face",
+      "area.laser_hair.neck",
+      "area.laser_hair.other"
+    ],
+    "filterConfig": {
+      "defaultKey": "all",
+      "viewAllLabelKey": "filter.view_all",
+      "filters": [
+        { "key": "face", "labelKey": "filter.laser_hair.face" },
+        { "key": "body", "labelKey": "filter.laser_hair.body" },
+        { "key": "intimate", "labelKey": "filter.laser_hair.intimate" }
+      ]
+    }
+  },
+  {
+    "id": "svc_ipl",
+    "slug": "ipl",
+    "categoryId": "cat_laser_resurfacing",
+    "nameKey": "svc.ipl.name",
+    "descriptionKey": "svc.ipl.desc",
+    "detailsKey": "svc.ipl.details",
+    "isPopular": true,
+    "isPromoActive": false,
+    "images": {
+      "primary": "/ipl.jpg",
+      "secondary": "/ipl2.jpg"
+    },
+    "notesKeys": [
+      "note.ipl.photo_eval",
+      "note.ipl.no_tan"
+    ],
+    "goalsKeys": [
+      "goal.ipl.pigment",
+      "goal.ipl.redness",
+      "goal.ipl.brighten"
+    ],
+    "treatableAreaKeys": [
+      "area.ipl.face",
+      "area.ipl.neck",
+      "area.ipl.chest",
+      "area.ipl.hands",
+      "area.ipl.shoulders",
+      "area.ipl.arms",
+      "area.ipl.other"
+    ],
+    "filterConfig": {
+      "defaultKey": "all",
+      "viewAllLabelKey": "filter.view_all",
+      "filters": [
+        { "key": "face", "labelKey": "filter.ipl.face" },
+        { "key": "body", "labelKey": "filter.ipl.body" }
+      ]
+    }
+  },
+  {
+    "id": "svc_rf_microneedling",
+    "slug": "sylfirm-rf-microneedling",
+    "categoryId": "cat_laser_resurfacing",
+    "nameKey": "svc.rf_microneedling.name",
+    "descriptionKey": "svc.rf_microneedling.desc",
+    "detailsKey": "svc.rf_microneedling.details",
+    "isPopular": true,
+    "isPromoActive": false,
+    "images": {
+      "primary": "/sylfirmx.jpg",
+      "secondary": "/sylfirmx2.jpg"
+    },
+    "notesKeys": [
+      "note.rf_microneedling.sessions",
+      "note.rf_microneedling.safe",
+      "note.rf_microneedling.redness"
+    ],
+    "goalsKeys": [
+      "goal.rf_microneedling.lift",
+      "goal.rf_microneedling.scars",
+      "goal.rf_microneedling.lines"
+    ],
+    "treatableAreaKeys": [
+      "area.rf_microneedling.face",
+      "area.rf_microneedling.neck",
+      "area.rf_microneedling.decollete",
+      "area.rf_microneedling.jawline",
+      "area.rf_microneedling.acne_scars",
+      "area.rf_microneedling.stretch_marks"
+    ],
+    "filterConfig": {
+      "defaultKey": "all",
+      "viewAllLabelKey": "filter.view_all",
+      "filters": [
+        { "key": "face", "labelKey": "filter.rf.face" },
+        { "key": "body", "labelKey": "filter.rf.body" }
+      ]
+    }
+  },
+  {
+    "id": "svc_serum_add_ons",
+    "slug": "serum-add-ons",
+    "categoryId": "cat_laser_resurfacing",
+    "nameKey": "svc.serum_add_ons.name",
+    "descriptionKey": "svc.serum_add_ons.desc",
+    "detailsKey": "svc.serum_add_ons.details",
+    "isPopular": false,
+    "isPromoActive": false,
+    "images": {
+      "primary": "/serum.jpg",
+      "secondary": "/serum2.jpg"
+    },
+    "notesKeys": [
+      "note.serum_add_ons.recommended",
+      "note.serum_add_ons.boosts",
+      "note.serum_add_ons.safe"
+    ],
+    "goalsKeys": [
+      "goal.serum_add_ons.heal",
+      "goal.serum_add_ons.hydrate",
+      "goal.serum_add_ons.enhance"
+    ],
+    "treatableAreaKeys": [
+      "area.serum_add_ons.any_zone"
+    ],
+    "filterConfig": {
+      "defaultKey": "all",
+      "viewAllLabelKey": "filter.view_all",
+      "filters": [
+        { "key": "prp", "labelKey": "filter.serum.prp" },
+        { "key": "pn", "labelKey": "filter.serum.pn" },
+        { "key": "pdrn", "labelKey": "filter.serum.pdrn" }
+      ]
+    }
+  }
+]

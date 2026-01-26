@@ -1,0 +1,56 @@
+[
+  {
+    "id": "addon_microneedling_botox",
+    "parentServiceId": "svc_microneedling",
+    "childServiceId": "svc_botox",
+    "optionNameKey": "addon.microneedling.botox"
+  },
+  {
+    "id": "addon_microneedling_hydrafacial",
+    "parentServiceId": "svc_microneedling",
+    "childServiceId": "svc_hydrafacial",
+    "optionNameKey": "addon.microneedling.hydrafacial"
+  },
+  {
+    "id": "addon_microneedling_casmara_retinol",
+    "parentServiceId": "svc_microneedling",
+    "childServiceId": "svc_casmara_retinol_proage",
+    "optionNameKey": "addon.microneedling.casmara_retinol"
+  },
+  {
+    "id": "addon_microneedling_janssen_ultra",
+    "parentServiceId": "svc_microneedling",
+    "childServiceId": "svc_janssen_ultra_renewal",
+    "optionNameKey": "addon.microneedling.janssen_ultra"
+  },
+  {
+    "id": "addon_microneedling_pdo_threads",
+    "parentServiceId": "svc_microneedling",
+    "childServiceId": "svc_pdo_biostimulating_threads",
+    "optionNameKey": "addon.microneedling.pdo_threads"
+  },
+  {
+    "id": "addon_microneedling_rf_face",
+    "parentServiceId": "svc_microneedling",
+    "childServiceId": "svc_rf_microneedling",
+    "optionNameKey": "addon.microneedling.rf_face"
+  },
+  {
+    "id": "addon_mesotherapy_hydrafacial",
+    "parentServiceId": "svc_mesotherapy_infusions",
+    "childServiceId": "svc_hydrafacial",
+    "optionNameKey": "addon.mesotherapy.hydrafacial"
+  },
+  {
+    "id": "addon_mesotherapy_casmara_retinol",
+    "parentServiceId": "svc_mesotherapy_infusions",
+    "childServiceId": "svc_casmara_retinol_proage",
+    "optionNameKey": "addon.mesotherapy.casmara_retinol"
+  },
+  {
+    "id": "addon_mesotherapy_rf_face",
+    "parentServiceId": "svc_mesotherapy_infusions",
+    "childServiceId": "svc_rf_microneedling",
+    "optionNameKey": "addon.mesotherapy.rf_face"
+  }
+]

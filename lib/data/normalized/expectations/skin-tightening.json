@@ -1,0 +1,230 @@
+[
+  {
+    "id": "exp_ultraformer_pre_1",
+    "serviceId": "svc_ultraformer_mpt",
+    "phase": "pre",
+    "textKey": "exp.ultraformer.pre.1"
+  },
+  {
+    "id": "exp_ultraformer_pre_2",
+    "serviceId": "svc_ultraformer_mpt",
+    "phase": "pre",
+    "textKey": "exp.ultraformer.pre.2"
+  },
+  {
+    "id": "exp_ultraformer_during_1",
+    "serviceId": "svc_ultraformer_mpt",
+    "phase": "during",
+    "textKey": "exp.ultraformer.during.1"
+  },
+  {
+    "id": "exp_ultraformer_during_2",
+    "serviceId": "svc_ultraformer_mpt",
+    "phase": "during",
+    "textKey": "exp.ultraformer.during.2"
+  },
+  {
+    "id": "exp_ultraformer_post_1",
+    "serviceId": "svc_ultraformer_mpt",
+    "phase": "post",
+    "textKey": "exp.ultraformer.post.1"
+  },
+  {
+    "id": "exp_ultraformer_post_2",
+    "serviceId": "svc_ultraformer_mpt",
+    "phase": "post",
+    "textKey": "exp.ultraformer.post.2"
+  },
+  {
+    "id": "exp_ultraformer_post_3",
+    "serviceId": "svc_ultraformer_mpt",
+    "phase": "post",
+    "textKey": "exp.ultraformer.post.3"
+  },
+  {
+    "id": "exp_venus_pre_1",
+    "serviceId": "svc_venus_freeze",
+    "phase": "pre",
+    "textKey": "exp.venus.pre.1"
+  },
+  {
+    "id": "exp_venus_pre_2",
+    "serviceId": "svc_venus_freeze",
+    "phase": "pre",
+    "textKey": "exp.venus.pre.2"
+  },
+  {
+    "id": "exp_venus_during_1",
+    "serviceId": "svc_venus_freeze",
+    "phase": "during",
+    "textKey": "exp.venus.during.1"
+  },
+  {
+    "id": "exp_venus_post_1",
+    "serviceId": "svc_venus_freeze",
+    "phase": "post",
+    "textKey": "exp.venus.post.1"
+  },
+  {
+    "id": "exp_venus_post_2",
+    "serviceId": "svc_venus_freeze",
+    "phase": "post",
+    "textKey": "exp.venus.post.2"
+  },
+  {
+    "id": "exp_venus_post_3",
+    "serviceId": "svc_venus_freeze",
+    "phase": "post",
+    "textKey": "exp.venus.post.3"
+  },
+  {
+    "id": "exp_enzymatic_pre_1",
+    "serviceId": "svc_enzymatic_therapy",
+    "phase": "pre",
+    "textKey": "exp.enzymatic.pre.1"
+  },
+  {
+    "id": "exp_enzymatic_pre_2",
+    "serviceId": "svc_enzymatic_therapy",
+    "phase": "pre",
+    "textKey": "exp.enzymatic.pre.2"
+  },
+  {
+    "id": "exp_enzymatic_during_1",
+    "serviceId": "svc_enzymatic_therapy",
+    "phase": "during",
+    "textKey": "exp.enzymatic.during.1"
+  },
+  {
+    "id": "exp_enzymatic_during_2",
+    "serviceId": "svc_enzymatic_therapy",
+    "phase": "during",
+    "textKey": "exp.enzymatic.during.2"
+  },
+  {
+    "id": "exp_enzymatic_post_1",
+    "serviceId": "svc_enzymatic_therapy",
+    "phase": "post",
+    "textKey": "exp.enzymatic.post.1"
+  },
+  {
+    "id": "exp_enzymatic_post_2",
+    "serviceId": "svc_enzymatic_therapy",
+    "phase": "post",
+    "textKey": "exp.enzymatic.post.2"
+  },
+  {
+    "id": "exp_enzymatic_post_3",
+    "serviceId": "svc_enzymatic_therapy",
+    "phase": "post",
+    "textKey": "exp.enzymatic.post.3"
+  },
+  {
+    "id": "exp_pdo_biostim_pre_1",
+    "serviceId": "svc_pdo_biostimulating_threads",
+    "phase": "pre",
+    "textKey": "exp.pdo_biostim.pre.1"
+  },
+  {
+    "id": "exp_pdo_biostim_pre_2",
+    "serviceId": "svc_pdo_biostimulating_threads",
+    "phase": "pre",
+    "textKey": "exp.pdo_biostim.pre.2"
+  },
+  {
+    "id": "exp_pdo_biostim_pre_3",
+    "serviceId": "svc_pdo_biostimulating_threads",
+    "phase": "pre",
+    "textKey": "exp.pdo_biostim.pre.3"
+  },
+  {
+    "id": "exp_pdo_biostim_during_1",
+    "serviceId": "svc_pdo_biostimulating_threads",
+    "phase": "during",
+    "textKey": "exp.pdo_biostim.during.1"
+  },
+  {
+    "id": "exp_pdo_biostim_during_2",
+    "serviceId": "svc_pdo_biostimulating_threads",
+    "phase": "during",
+    "textKey": "exp.pdo_biostim.during.2"
+  },
+  {
+    "id": "exp_pdo_biostim_during_3",
+    "serviceId": "svc_pdo_biostimulating_threads",
+    "phase": "during",
+    "textKey": "exp.pdo_biostim.during.3"
+  },
+  {
+    "id": "exp_pdo_biostim_post_1",
+    "serviceId": "svc_pdo_biostimulating_threads",
+    "phase": "post",
+    "textKey": "exp.pdo_biostim.post.1"
+  },
+  {
+    "id": "exp_pdo_biostim_post_2",
+    "serviceId": "svc_pdo_biostimulating_threads",
+    "phase": "post",
+    "textKey": "exp.pdo_biostim.post.2"
+  },
+  {
+    "id": "exp_pdo_biostim_post_3",
+    "serviceId": "svc_pdo_biostimulating_threads",
+    "phase": "post",
+    "textKey": "exp.pdo_biostim.post.3"
+  },
+  {
+    "id": "exp_pdo_lift_pre_1",
+    "serviceId": "svc_pdo_lift_threads",
+    "phase": "pre",
+    "textKey": "exp.pdo_lift.pre.1"
+  },
+  {
+    "id": "exp_pdo_lift_pre_2",
+    "serviceId": "svc_pdo_lift_threads",
+    "phase": "pre",
+    "textKey": "exp.pdo_lift.pre.2"
+  },
+  {
+    "id": "exp_pdo_lift_pre_3",
+    "serviceId": "svc_pdo_lift_threads",
+    "phase": "pre",
+    "textKey": "exp.pdo_lift.pre.3"
+  },
+  {
+    "id": "exp_pdo_lift_during_1",
+    "serviceId": "svc_pdo_lift_threads",
+    "phase": "during",
+    "textKey": "exp.pdo_lift.during.1"
+  },
+  {
+    "id": "exp_pdo_lift_during_2",
+    "serviceId": "svc_pdo_lift_threads",
+    "phase": "during",
+    "textKey": "exp.pdo_lift.during.2"
+  },
+  {
+    "id": "exp_pdo_lift_during_3",
+    "serviceId": "svc_pdo_lift_threads",
+    "phase": "during",
+    "textKey": "exp.pdo_lift.during.3"
+  },
+  {
+    "id": "exp_pdo_lift_post_1",
+    "serviceId": "svc_pdo_lift_threads",
+    "phase": "post",
+    "textKey": "exp.pdo_lift.post.1"
+  },
+  {
+    "id": "exp_pdo_lift_post_2",
+    "serviceId": "svc_pdo_lift_threads",
+    "phase": "post",
+    "textKey": "exp.pdo_lift.post.2"
+  },
+  {
+    "id": "exp_pdo_lift_post_3",
+    "serviceId": "svc_pdo_lift_threads",
+    "phase": "post",
+    "textKey": "exp.pdo_lift.post.3"
+  }
+]

@@ -1,0 +1,68 @@
+[
+  {
+    "id": "svc_sculptra",
+    "slug": "sculptra",
+    "categoryId": "cat_collagen_biostimulators",
+    "nameKey": "svc.sculptra.name",
+    "descriptionKey": "svc.sculptra.desc",
+    "detailsKey": "svc.sculptra.details",
+    "isPopular": true,
+    "isPromoActive": true,
+    "images": {
+      "primary": "/sculptra.jpg",
+      "secondary": "/sculptra2.jpg"
+    },
+    "notesKeys": [
+      "note.sculptra.protocol",
+      "note.sculptra.long_term",
+      "note.sculptra.single_session",
+      "note.sculptra.per_vial"
+    ],
+    "goalsKeys": [
+      "goal.sculptra.collagen",
+      "goal.sculptra.volume",
+      "goal.sculptra.texture"
+    ],
+    "treatableAreaKeys": [
+      "area.sculptra.cheeks",
+      "area.sculptra.temples",
+      "area.sculptra.jawline",
+      "area.sculptra.nasolabial_folds",
+      "area.sculptra.marionette_lines",
+      "area.sculptra.chin",
+      "area.sculptra.neck",
+      "area.sculptra.other"
+    ]
+  },
+  {
+    "id": "svc_harmonyca",
+    "slug": "harmonyca",
+    "categoryId": "cat_collagen_biostimulators",
+    "nameKey": "svc.harmonyca.name",
+    "descriptionKey": "svc.harmonyca.desc",
+    "detailsKey": "svc.harmonyca.details",
+    "isPopular": false,
+    "isPromoActive": false,
+    "images": {
+      "primary": "/harmonyca.jpg",
+      "secondary": "/harmonyca2.jpg"
+    },
+    "notesKeys": [
+      "note.harmonyca.syringes",
+      "note.harmonyca.zones",
+      "note.harmonyca.natural_results"
+    ],
+    "goalsKeys": [
+      "goal.harmonyca.lift",
+      "goal.harmonyca.collagen",
+      "goal.harmonyca.volume"
+    ],
+    "treatableAreaKeys": [
+      "area.harmonyca.cheeks",
+      "area.harmonyca.jawline",
+      "area.harmonyca.chin",
+      "area.harmonyca.lower_face",
+      "area.harmonyca.preauricular"
+    ]
+  }
+]

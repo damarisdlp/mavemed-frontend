@@ -1,0 +1,86 @@
+[
+  {
+    "id": "addon_cupping_swedish_full_body",
+    "parentServiceId": "svc_cupping",
+    "childServiceId": "svc_swedish_massage",
+    "optionNameKey": "addon.cupping.swedish_full_body"
+  },
+  {
+    "id": "addon_cupping_hydrafacial",
+    "parentServiceId": "svc_cupping",
+    "childServiceId": "svc_hydrafacial",
+    "optionNameKey": "addon.cupping.hydrafacial"
+  },
+  {
+    "id": "addon_cupping_casmara_retinol",
+    "parentServiceId": "svc_cupping",
+    "childServiceId": "svc_casmara_retinol_proage",
+    "optionNameKey": "addon.cupping.casmara_retinol"
+  },
+  {
+    "id": "addon_keloid_venus_freeze",
+    "parentServiceId": "svc_keloid_injection",
+    "childServiceId": "svc_venus_freeze",
+    "optionNameKey": "addon.keloid.venus_freeze"
+  },
+  {
+    "id": "addon_keloid_rf_microneedling",
+    "parentServiceId": "svc_keloid_injection",
+    "childServiceId": "svc_rf_microneedling",
+    "optionNameKey": "addon.keloid.rf_microneedling_medium"
+  },
+  {
+    "id": "addon_sclerotherapy_hydrafacial",
+    "parentServiceId": "svc_sclerotherapy",
+    "childServiceId": "svc_hydrafacial",
+    "optionNameKey": "addon.sclerotherapy.hydrafacial"
+  },
+  {
+    "id": "addon_sclerotherapy_botox",
+    "parentServiceId": "svc_sclerotherapy",
+    "childServiceId": "svc_botox",
+    "optionNameKey": "addon.sclerotherapy.botox"
+  },
+  {
+    "id": "addon_sclerotherapy_dermawrinkle",
+    "parentServiceId": "svc_sclerotherapy",
+    "childServiceId": "svc_dermawrinkle",
+    "optionNameKey": "addon.sclerotherapy.dermawrinkle"
+  },
+  {
+    "id": "addon_sclerotherapy_microneedling_prp",
+    "parentServiceId": "svc_sclerotherapy",
+    "childServiceId": "svc_microneedling",
+    "optionNameKey": "addon.sclerotherapy.microneedling_prp"
+  },
+  {
+    "id": "addon_sclerotherapy_swedish",
+    "parentServiceId": "svc_sclerotherapy",
+    "childServiceId": "svc_swedish_massage",
+    "optionNameKey": "addon.sclerotherapy.swedish"
+  },
+  {
+    "id": "addon_sclerotherapy_cupping",
+    "parentServiceId": "svc_sclerotherapy",
+    "childServiceId": "svc_cupping",
+    "optionNameKey": "addon.sclerotherapy.cupping"
+  },
+  {
+    "id": "addon_swedish_cupping",
+    "parentServiceId": "svc_swedish_massage",
+    "childServiceId": "svc_cupping",
+    "optionNameKey": "addon.swedish.cupping"
+  },
+  {
+    "id": "addon_wart_hydrafacial",
+    "parentServiceId": "svc_wart_removal",
+    "childServiceId": "svc_hydrafacial",
+    "optionNameKey": "addon.wart.hydrafacial"
+  },
+  {
+    "id": "addon_wart_casmara_purifying",
+    "parentServiceId": "svc_wart_removal",
+    "childServiceId": "svc_casmara_purifying",
+    "optionNameKey": "addon.wart.casmara_purifying"
+  }
+]

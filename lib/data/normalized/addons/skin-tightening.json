@@ -1,0 +1,146 @@
+[
+  {
+    "id": "addon_ultraformer_sculptra",
+    "parentServiceId": "svc_ultraformer_mpt",
+    "childServiceId": "svc_sculptra",
+    "optionNameKey": "addon.ultraformer.sculptra"
+  },
+  {
+    "id": "addon_ultraformer_harmonyca",
+    "parentServiceId": "svc_ultraformer_mpt",
+    "childServiceId": "svc_harmonyca",
+    "optionNameKey": "addon.ultraformer.harmonyca"
+  },
+  {
+    "id": "addon_ultraformer_facial_balancing",
+    "parentServiceId": "svc_ultraformer_mpt",
+    "childServiceId": "svc_facial_balancing",
+    "optionNameKey": "addon.ultraformer.facial_balancing"
+  },
+  {
+    "id": "addon_ultraformer_microneedling_pn",
+    "parentServiceId": "svc_ultraformer_mpt",
+    "childServiceId": "svc_microneedling",
+    "optionNameKey": "addon.ultraformer.microneedling_pn"
+  },
+  {
+    "id": "addon_venus_enzymatic_slim",
+    "parentServiceId": "svc_venus_freeze",
+    "childServiceId": "svc_enzymatic_therapy",
+    "optionNameKey": "addon.venus_freeze.enzymatic_slim"
+  },
+  {
+    "id": "addon_venus_enzymatic_kit",
+    "parentServiceId": "svc_venus_freeze",
+    "childServiceId": "svc_enzymatic_therapy",
+    "optionNameKey": "addon.venus_freeze.enzymatic_kit"
+  },
+  {
+    "id": "addon_venus_rf_microneedling",
+    "parentServiceId": "svc_venus_freeze",
+    "childServiceId": "svc_rf_microneedling",
+    "optionNameKey": "addon.venus_freeze.rf_microneedling"
+  },
+  {
+    "id": "addon_venus_hydrafacial",
+    "parentServiceId": "svc_venus_freeze",
+    "childServiceId": "svc_hydrafacial",
+    "optionNameKey": "addon.venus_freeze.hydrafacial"
+  },
+  {
+    "id": "addon_venus_casmara_retinol",
+    "parentServiceId": "svc_venus_freeze",
+    "childServiceId": "svc_casmara_retinol_proage",
+    "optionNameKey": "addon.venus_freeze.casmara_retinol"
+  },
+  {
+    "id": "addon_enzymatic_venus_express_body",
+    "parentServiceId": "svc_enzymatic_therapy",
+    "childServiceId": "svc_venus_freeze",
+    "optionNameKey": "addon.enzymatic.venus_express_body"
+  },
+  {
+    "id": "addon_enzymatic_venus_defined_arms",
+    "parentServiceId": "svc_enzymatic_therapy",
+    "childServiceId": "svc_venus_freeze",
+    "optionNameKey": "addon.enzymatic.venus_defined_arms"
+  },
+  {
+    "id": "addon_enzymatic_rf_microneedling",
+    "parentServiceId": "svc_enzymatic_therapy",
+    "childServiceId": "svc_rf_microneedling",
+    "optionNameKey": "addon.enzymatic.rf_microneedling"
+  },
+  {
+    "id": "addon_pdo_biostim_mesotherapy_pdrn",
+    "parentServiceId": "svc_pdo_biostimulating_threads",
+    "childServiceId": "svc_mesotherapy_infusions",
+    "optionNameKey": "addon.pdo.mesotherapy_pdrn"
+  },
+  {
+    "id": "addon_pdo_biostim_microneedling_pn",
+    "parentServiceId": "svc_pdo_biostimulating_threads",
+    "childServiceId": "svc_microneedling",
+    "optionNameKey": "addon.pdo.microneedling_pn"
+  },
+  {
+    "id": "addon_pdo_biostim_rf_microneedling",
+    "parentServiceId": "svc_pdo_biostimulating_threads",
+    "childServiceId": "svc_rf_microneedling",
+    "optionNameKey": "addon.pdo.rf_microneedling"
+  },
+  {
+    "id": "addon_pdo_biostim_hydrafacial",
+    "parentServiceId": "svc_pdo_biostimulating_threads",
+    "childServiceId": "svc_hydrafacial",
+    "optionNameKey": "addon.pdo.hydrafacial"
+  },
+  {
+    "id": "addon_pdo_biostim_casmara_retinol",
+    "parentServiceId": "svc_pdo_biostimulating_threads",
+    "childServiceId": "svc_casmara_retinol_proage",
+    "optionNameKey": "addon.pdo.casmara_retinol"
+  },
+  {
+    "id": "addon_pdo_biostim_lift_threads",
+    "parentServiceId": "svc_pdo_biostimulating_threads",
+    "childServiceId": "svc_pdo_lift_threads",
+    "optionNameKey": "addon.pdo.lift_threads"
+  },
+  {
+    "id": "addon_pdo_lift_mesotherapy_pdrn",
+    "parentServiceId": "svc_pdo_lift_threads",
+    "childServiceId": "svc_mesotherapy_infusions",
+    "optionNameKey": "addon.pdo.mesotherapy_pdrn"
+  },
+  {
+    "id": "addon_pdo_lift_microneedling_pn",
+    "parentServiceId": "svc_pdo_lift_threads",
+    "childServiceId": "svc_microneedling",
+    "optionNameKey": "addon.pdo.microneedling_pn"
+  },
+  {
+    "id": "addon_pdo_lift_rf_microneedling",
+    "parentServiceId": "svc_pdo_lift_threads",
+    "childServiceId": "svc_rf_microneedling",
+    "optionNameKey": "addon.pdo.rf_microneedling"
+  },
+  {
+    "id": "addon_pdo_lift_hydrafacial",
+    "parentServiceId": "svc_pdo_lift_threads",
+    "childServiceId": "svc_hydrafacial",
+    "optionNameKey": "addon.pdo.hydrafacial"
+  },
+  {
+    "id": "addon_pdo_lift_casmara_retinol",
+    "parentServiceId": "svc_pdo_lift_threads",
+    "childServiceId": "svc_casmara_retinol_proage",
+    "optionNameKey": "addon.pdo.casmara_retinol"
+  },
+  {
+    "id": "addon_pdo_lift_biostim_threads",
+    "parentServiceId": "svc_pdo_lift_threads",
+    "childServiceId": "svc_pdo_biostimulating_threads",
+    "optionNameKey": "addon.pdo.biostim_threads"
+  }
+]

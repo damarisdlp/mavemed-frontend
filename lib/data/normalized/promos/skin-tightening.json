@@ -1,0 +1,47 @@
+[
+  {
+    "id": "promo_ultraformer_mpt",
+    "serviceId": "svc_ultraformer_mpt",
+    "headlineKey": "",
+    "descriptionKey": "",
+    "validFrom": null,
+    "validTill": null,
+    "options": []
+  },
+  {
+    "id": "promo_venus_freeze",
+    "serviceId": "svc_venus_freeze",
+    "headlineKey": "",
+    "descriptionKey": "",
+    "validFrom": null,
+    "validTill": null,
+    "options": []
+  },
+  {
+    "id": "promo_enzymatic_therapy",
+    "serviceId": "svc_enzymatic_therapy",
+    "headlineKey": "",
+    "descriptionKey": "",
+    "validFrom": null,
+    "validTill": null,
+    "options": []
+  },
+  {
+    "id": "promo_pdo_biostimulating_threads",
+    "serviceId": "svc_pdo_biostimulating_threads",
+    "headlineKey": "",
+    "descriptionKey": "",
+    "validFrom": null,
+    "validTill": null,
+    "options": []
+  },
+  {
+    "id": "promo_pdo_lift_threads",
+    "serviceId": "svc_pdo_lift_threads",
+    "headlineKey": "",
+    "descriptionKey": "",
+    "validFrom": null,
+    "validTill": null,
+    "options": []
+  }
+]

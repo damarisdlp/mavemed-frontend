@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Translations",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["id", "en", "es"],
+    "additionalProperties": false,
+    "properties": {
+      "id": { "type": "string" },
+      "en": { "type": "string" },
+      "es": { "type": "string" }
+    }
+  }
+}

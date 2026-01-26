@@ -1,0 +1,98 @@
+[
+  {
+    "id": "addon_calcaneal_hydrafacial",
+    "parentServiceId": "svc_calcaneal_spur",
+    "childServiceId": "svc_hydrafacial",
+    "optionNameKey": "addon.podiatry.hydrafacial"
+  },
+  {
+    "id": "addon_calcaneal_casmara_retinol",
+    "parentServiceId": "svc_calcaneal_spur",
+    "childServiceId": "svc_casmara_retinol_proage",
+    "optionNameKey": "addon.podiatry.casmara_retinol"
+  },
+  {
+    "id": "addon_calcaneal_swedish_massage",
+    "parentServiceId": "svc_calcaneal_spur",
+    "childServiceId": "svc_swedish_massage",
+    "optionNameKey": "addon.podiatry.swedish_massage"
+  },
+  {
+    "id": "addon_calcaneal_cupping",
+    "parentServiceId": "svc_calcaneal_spur",
+    "childServiceId": "svc_cupping",
+    "optionNameKey": "addon.podiatry.cupping"
+  },
+  {
+    "id": "addon_matrixectomy_hydrafacial",
+    "parentServiceId": "svc_matrixectomy",
+    "childServiceId": "svc_hydrafacial",
+    "optionNameKey": "addon.podiatry.hydrafacial"
+  },
+  {
+    "id": "addon_matrixectomy_casmara_retinol",
+    "parentServiceId": "svc_matrixectomy",
+    "childServiceId": "svc_casmara_retinol_proage",
+    "optionNameKey": "addon.podiatry.casmara_retinol"
+  },
+  {
+    "id": "addon_matrixectomy_swedish_massage",
+    "parentServiceId": "svc_matrixectomy",
+    "childServiceId": "svc_swedish_massage",
+    "optionNameKey": "addon.podiatry.swedish_massage"
+  },
+  {
+    "id": "addon_matrixectomy_cupping",
+    "parentServiceId": "svc_matrixectomy",
+    "childServiceId": "svc_cupping",
+    "optionNameKey": "addon.podiatry.cupping"
+  },
+  {
+    "id": "addon_nail_fungus_hydrafacial",
+    "parentServiceId": "svc_nail_fungus_laser",
+    "childServiceId": "svc_hydrafacial",
+    "optionNameKey": "addon.podiatry.hydrafacial"
+  },
+  {
+    "id": "addon_nail_fungus_casmara_retinol",
+    "parentServiceId": "svc_nail_fungus_laser",
+    "childServiceId": "svc_casmara_retinol_proage",
+    "optionNameKey": "addon.podiatry.casmara_retinol"
+  },
+  {
+    "id": "addon_nail_fungus_swedish_massage",
+    "parentServiceId": "svc_nail_fungus_laser",
+    "childServiceId": "svc_swedish_massage",
+    "optionNameKey": "addon.podiatry.swedish_massage"
+  },
+  {
+    "id": "addon_nail_fungus_cupping",
+    "parentServiceId": "svc_nail_fungus_laser",
+    "childServiceId": "svc_cupping",
+    "optionNameKey": "addon.podiatry.cupping"
+  },
+  {
+    "id": "addon_toenail_extraction_hydrafacial",
+    "parentServiceId": "svc_toenail_extraction",
+    "childServiceId": "svc_hydrafacial",
+    "optionNameKey": "addon.podiatry.hydrafacial"
+  },
+  {
+    "id": "addon_toenail_extraction_casmara_retinol",
+    "parentServiceId": "svc_toenail_extraction",
+    "childServiceId": "svc_casmara_retinol_proage",
+    "optionNameKey": "addon.podiatry.casmara_retinol"
+  },
+  {
+    "id": "addon_toenail_extraction_swedish_massage",
+    "parentServiceId": "svc_toenail_extraction",
+    "childServiceId": "svc_swedish_massage",
+    "optionNameKey": "addon.podiatry.swedish_massage"
+  },
+  {
+    "id": "addon_toenail_extraction_cupping",
+    "parentServiceId": "svc_toenail_extraction",
+    "childServiceId": "svc_cupping",
+    "optionNameKey": "addon.podiatry.cupping"
+  }
+]

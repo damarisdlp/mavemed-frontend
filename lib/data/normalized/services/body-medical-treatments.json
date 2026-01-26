@@ -1,0 +1,151 @@
+[
+  {
+    "id": "svc_cupping",
+    "slug": "cupping",
+    "categoryId": "cat_body_medical_treatments",
+    "nameKey": "svc.cupping.name",
+    "descriptionKey": "svc.cupping.desc",
+    "detailsKey": "svc.cupping.details",
+    "isPopular": false,
+    "isPromoActive": false,
+    "images": {
+      "primary": "/cupping.jpg",
+      "secondary": "/cupping2.jpg"
+    },
+    "notesKeys": [
+      "note.cupping.addon_only",
+      "note.cupping.marks",
+      "note.cupping.pressure"
+    ],
+    "goalsKeys": [
+      "goal.cupping.circulation",
+      "goal.cupping.tension",
+      "goal.cupping.detox"
+    ],
+    "treatableAreaKeys": [
+      "area.cupping.back",
+      "area.cupping.shoulders",
+      "area.cupping.thighs",
+      "area.cupping.calves",
+      "area.cupping.arms"
+    ]
+  },
+  {
+    "id": "svc_keloid_injection",
+    "slug": "keloid-injection",
+    "categoryId": "cat_body_medical_treatments",
+    "nameKey": "svc.keloid_injection.name",
+    "descriptionKey": "svc.keloid_injection.desc",
+    "detailsKey": "svc.keloid_injection.details",
+    "isPopular": false,
+    "isPromoActive": false,
+    "images": {
+      "primary": "/keloid.jpg",
+      "secondary": "/keloid2.jpg"
+    },
+    "notesKeys": [
+      "note.keloid.sessions",
+      "note.keloid.supervision",
+      "note.keloid.relief"
+    ],
+    "goalsKeys": [
+      "goal.keloid.reduce_thickness",
+      "goal.keloid.improve_appearance",
+      "goal.keloid.relieve"
+    ],
+    "treatableAreaKeys": [
+      "area.keloid.ears",
+      "area.keloid.chest",
+      "area.keloid.shoulders",
+      "area.keloid.back",
+      "area.keloid.jawline",
+      "area.keloid.any"
+    ]
+  },
+  {
+    "id": "svc_sclerotherapy",
+    "slug": "sclerotherapy",
+    "categoryId": "cat_body_medical_treatments",
+    "nameKey": "svc.sclerotherapy.name",
+    "descriptionKey": "svc.sclerotherapy.desc",
+    "detailsKey": "svc.sclerotherapy.details",
+    "isPopular": false,
+    "isPromoActive": false,
+    "images": {
+      "primary": "/sclerotherapy.jpg",
+      "secondary": "/sclerotherapy2.jpg"
+    },
+    "notesKeys": [
+      "note.sclerotherapy.sessions",
+      "note.sclerotherapy.compression",
+      "note.sclerotherapy.non_varicose"
+    ],
+    "goalsKeys": [
+      "goal.sclerotherapy.reduce_spider",
+      "goal.sclerotherapy.improve_legs",
+      "goal.sclerotherapy.prevent"
+    ],
+    "treatableAreaKeys": [
+      "area.sclerotherapy.thighs",
+      "area.sclerotherapy.calves",
+      "area.sclerotherapy.ankles"
+    ]
+  },
+  {
+    "id": "svc_swedish_massage",
+    "slug": "swedish-massage",
+    "categoryId": "cat_body_medical_treatments",
+    "nameKey": "svc.swedish_massage.name",
+    "descriptionKey": "svc.swedish_massage.desc",
+    "detailsKey": "svc.swedish_massage.details",
+    "isPopular": false,
+    "isPromoActive": false,
+    "images": {
+      "primary": "/swissmsg.jpg",
+      "secondary": "/swissmsg2.jpg"
+    },
+    "notesKeys": [
+      "note.swedish.aroma",
+      "note.swedish.not_deep",
+      "note.swedish.stress"
+    ],
+    "goalsKeys": [
+      "goal.swedish.relax",
+      "goal.swedish.relieve_tension",
+      "goal.swedish.circulation"
+    ],
+    "treatableAreaKeys": [
+      "area.swedish.full_body"
+    ]
+  },
+  {
+    "id": "svc_wart_removal",
+    "slug": "wart-removal",
+    "categoryId": "cat_body_medical_treatments",
+    "nameKey": "svc.wart_removal.name",
+    "descriptionKey": "svc.wart_removal.desc",
+    "detailsKey": "svc.wart_removal.details",
+    "isPopular": false,
+    "isPromoActive": false,
+    "images": {
+      "primary": "/wart.jpg",
+      "secondary": "/wart2.jpg"
+    },
+    "notesKeys": [
+      "note.wart.sessions",
+      "note.wart.professionals",
+      "note.wart.results"
+    ],
+    "goalsKeys": [
+      "goal.wart.eliminate",
+      "goal.wart.prevent_spread",
+      "goal.wart.confidence"
+    ],
+    "treatableAreaKeys": [
+      "area.wart.hands",
+      "area.wart.feet",
+      "area.wart.face",
+      "area.wart.any"
+    ]
+  }
+]

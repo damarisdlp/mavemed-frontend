@@ -1,0 +1,218 @@
+[
+  {
+    "id": "svc_hydrafacial",
+    "slug": "hydrafacial",
+    "categoryId": "cat_facials",
+    "nameKey": "svc.hydrafacial.name",
+    "descriptionKey": "svc.hydrafacial.desc",
+    "detailsKey": "svc.hydrafacial.details",
+    "isPopular": true,
+    "isPromoActive": false,
+    "images": {
+      "primary": "/hydrafacial.jpg",
+      "secondary": "/hydrafacial2.jpg"
+    },
+    "notesKeys": [
+      "note.hydrafacial.no_downtime",
+      "note.hydrafacial.safe_skin",
+      "note.hydrafacial.extractions"
+    ],
+    "goalsKeys": [
+      "goal.hydrafacial.cleanse",
+      "goal.hydrafacial.unclog",
+      "goal.hydrafacial.hydrate"
+    ],
+    "treatableAreaKeys": [
+      "area.hydrafacial.face",
+      "area.hydrafacial.shoulders",
+      "area.hydrafacial.upper_back"
+    ],
+    "filterConfig": {
+      "defaultKey": "all",
+      "viewAllLabelKey": "filter.view_all",
+      "filters": [
+        { "key": "face", "labelKey": "filter.hydrafacial.face" },
+        { "key": "body", "labelKey": "filter.hydrafacial.body" },
+        { "key": "boosters", "labelKey": "filter.hydrafacial.boosters" }
+      ]
+    }
+  },
+  {
+    "id": "svc_casmara_infinity",
+    "slug": "casmara-infinity",
+    "categoryId": "cat_facials",
+    "nameKey": "svc.casmara_infinity.name",
+    "descriptionKey": "svc.casmara_infinity.desc",
+    "detailsKey": "svc.casmara_infinity.details",
+    "isPopular": false,
+    "isPromoActive": false,
+    "images": {
+      "primary": "/infinity.jpg",
+      "secondary": "/infinity2.jpg"
+    },
+    "notesKeys": [
+      "note.casmara_infinity.events",
+      "note.casmara_infinity.glow"
+    ],
+    "goalsKeys": [
+      "goal.casmara_infinity.firm",
+      "goal.casmara_infinity.hydrate",
+      "goal.casmara_infinity.soften"
+    ],
+    "treatableAreaKeys": [
+      "area.casmara_infinity.face"
+    ],
+    "filterConfig": {
+      "defaultKey": "all",
+      "viewAllLabelKey": "filter.view_all",
+      "filters": [
+        { "key": "face", "labelKey": "filter.casmara.face" },
+        { "key": "boosters", "labelKey": "filter.casmara.boosters" }
+      ]
+    }
+  },
+  {
+    "id": "svc_casmara_purifying",
+    "slug": "casmara-purifying",
+    "categoryId": "cat_facials",
+    "nameKey": "svc.casmara_purifying.name",
+    "descriptionKey": "svc.casmara_purifying.desc",
+    "detailsKey": "svc.casmara_purifying.details",
+    "isPopular": true,
+    "isPromoActive": false,
+    "images": {
+      "primary": "/purifying.jpg",
+      "secondary": "/purifying2.jpg"
+    },
+    "notesKeys": [
+      "note.casmara_purifying.extractions",
+      "note.casmara_purifying.ideal",
+      "note.casmara_purifying.soothing"
+    ],
+    "goalsKeys": [
+      "goal.casmara_purifying.detox",
+      "goal.casmara_purifying.calm",
+      "goal.casmara_purifying.rebalance"
+    ],
+    "treatableAreaKeys": [
+      "area.casmara_purifying.face"
+    ],
+    "filterConfig": {
+      "defaultKey": "all",
+      "viewAllLabelKey": "filter.view_all",
+      "filters": [
+        { "key": "face", "labelKey": "filter.casmara.face" },
+        { "key": "boosters", "labelKey": "filter.casmara.boosters" }
+      ]
+    }
+  },
+  {
+    "id": "svc_casmara_retinol_proage",
+    "slug": "casmara-retinol-proage",
+    "categoryId": "cat_facials",
+    "nameKey": "svc.casmara_retinol_proage.name",
+    "descriptionKey": "svc.casmara_retinol_proage.desc",
+    "detailsKey": "svc.casmara_retinol_proage.details",
+    "isPopular": false,
+    "isPromoActive": false,
+    "images": {
+      "primary": "/retinol.jpg",
+      "secondary": "/retinol2.jpg"
+    },
+    "notesKeys": [
+      "note.casmara_retinol.flaking",
+      "note.casmara_retinol.not_with_retinol",
+      "note.casmara_retinol.safe"
+    ],
+    "goalsKeys": [
+      "goal.casmara_retinol.turnover",
+      "goal.casmara_retinol.reduce_lines",
+      "goal.casmara_retinol.radiance"
+    ],
+    "treatableAreaKeys": [
+      "area.casmara_retinol.face"
+    ],
+    "filterConfig": {
+      "defaultKey": "all",
+      "viewAllLabelKey": "filter.view_all",
+      "filters": [
+        { "key": "face", "labelKey": "filter.casmara.face" },
+        { "key": "boosters", "labelKey": "filter.casmara.boosters" }
+      ]
+    }
+  },
+  {
+    "id": "svc_janssen_ultra_renewal",
+    "slug": "facials-janssen-ultra-renewal",
+    "categoryId": "cat_facials",
+    "nameKey": "svc.janssen_ultra_renewal.name",
+    "descriptionKey": "svc.janssen_ultra_renewal.desc",
+    "detailsKey": "svc.janssen_ultra_renewal.details",
+    "isPopular": false,
+    "isPromoActive": false,
+    "images": {
+      "primary": "/janssenultra.jpg",
+      "secondary": "/janssenultra2.jpg"
+    },
+    "notesKeys": [
+      "note.janssen_ultra.minimal_downtime",
+      "note.janssen_ultra.dull_skin",
+      "note.janssen_ultra.monthly"
+    ],
+    "goalsKeys": [
+      "goal.janssen_ultra.tone",
+      "goal.janssen_ultra.collagen",
+      "goal.janssen_ultra.pores"
+    ],
+    "treatableAreaKeys": [
+      "area.janssen_ultra.face",
+      "area.janssen_ultra.neck",
+      "area.janssen_ultra.decollete"
+    ],
+    "filterConfig": {
+      "defaultKey": "all",
+      "viewAllLabelKey": "filter.view_all",
+      "filters": [
+        { "key": "face", "labelKey": "filter.janssen.face" },
+        { "key": "boosters", "labelKey": "filter.janssen.boosters" }
+      ]
+    }
+  },
+  {
+    "id": "svc_janssen_radiance_boost",
+    "slug": "facials-janssen-radiance-boost",
+    "categoryId": "cat_facials",
+    "nameKey": "svc.janssen_radiance_boost.name",
+    "descriptionKey": "svc.janssen_radiance_boost.desc",
+    "detailsKey": "svc.janssen_radiance_boost.details",
+    "isPopular": false,
+    "isPromoActive": false,
+    "images": {
+      "primary": "/janssenradiance.jpg",
+      "secondary": "/janssenradiance2.jpg"
+    },
+    "notesKeys": [
+      "note.janssen_radiance.dull_skin",
+      "note.janssen_radiance.oxygenating",
+      "note.janssen_radiance.no_downtime"
+    ],
+    "goalsKeys": [
+      "goal.janssen_radiance.energize",
+      "goal.janssen_radiance.hydrate",
+      "goal.janssen_radiance.even_tone"
+    ],
+    "treatableAreaKeys": [
+      "area.janssen_radiance.face",
+      "area.janssen_radiance.neck",
+      "area.janssen_radiance.decollete"
+    ],
+    "filterConfig": {
+      "defaultKey": "all",
+      "viewAllLabelKey": "filter.view_all",
+      "filters": [
+        { "key": "face", "labelKey": "filter.janssen.face" },
+        { "key": "boosters", "labelKey": "filter.janssen.boosters" }
+      ]
+    }
+  }
+]

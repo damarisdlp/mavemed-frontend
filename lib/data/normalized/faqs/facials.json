@@ -1,0 +1,80 @@
+[
+  {
+    "id": "faq_hydrafacial_1",
+    "serviceId": "svc_hydrafacial",
+    "questionKey": "faq.hydrafacial.q1",
+    "answerKey": "faq.hydrafacial.a1"
+  },
+  {
+    "id": "faq_hydrafacial_2",
+    "serviceId": "svc_hydrafacial",
+    "questionKey": "faq.hydrafacial.q2",
+    "answerKey": "faq.hydrafacial.a2"
+  },
+  {
+    "id": "faq_hydrafacial_3",
+    "serviceId": "svc_hydrafacial",
+    "questionKey": "faq.hydrafacial.q3",
+    "answerKey": "faq.hydrafacial.a3"
+  },
+  {
+    "id": "faq_casmara_infinity_1",
+    "serviceId": "svc_casmara_infinity",
+    "questionKey": "faq.casmara_infinity.q1",
+    "answerKey": "faq.casmara_infinity.a1"
+  },
+  {
+    "id": "faq_casmara_infinity_2",
+    "serviceId": "svc_casmara_infinity",
+    "questionKey": "faq.casmara_infinity.q2",
+    "answerKey": "faq.casmara_infinity.a2"
+  },
+  {
+    "id": "faq_casmara_purifying_1",
+    "serviceId": "svc_casmara_purifying",
+    "questionKey": "faq.casmara_purifying.q1",
+    "answerKey": "faq.casmara_purifying.a1"
+  },
+  {
+    "id": "faq_casmara_purifying_2",
+    "serviceId": "svc_casmara_purifying",
+    "questionKey": "faq.casmara_purifying.q2",
+    "answerKey": "faq.casmara_purifying.a2"
+  },
+  {
+    "id": "faq_casmara_retinol_1",
+    "serviceId": "svc_casmara_retinol_proage",
+    "questionKey": "faq.casmara_retinol.q1",
+    "answerKey": "faq.casmara_retinol.a1"
+  },
+  {
+    "id": "faq_casmara_retinol_2",
+    "serviceId": "svc_casmara_retinol_proage",
+    "questionKey": "faq.casmara_retinol.q2",
+    "answerKey": "faq.casmara_retinol.a2"
+  },
+  {
+    "id": "faq_janssen_ultra_1",
+    "serviceId": "svc_janssen_ultra_renewal",
+    "questionKey": "faq.janssen_ultra.q1",
+    "answerKey": "faq.janssen_ultra.a1"
+  },
+  {
+    "id": "faq_janssen_ultra_2",
+    "serviceId": "svc_janssen_ultra_renewal",
+    "questionKey": "faq.janssen_ultra.q2",
+    "answerKey": "faq.janssen_ultra.a2"
+  },
+  {
+    "id": "faq_janssen_radiance_1",
+    "serviceId": "svc_janssen_radiance_boost",
+    "questionKey": "faq.janssen_radiance.q1",
+    "answerKey": "faq.janssen_radiance.a1"
+  },
+  {
+    "id": "faq_janssen_radiance_2",
+    "serviceId": "svc_janssen_radiance_boost",
+    "questionKey": "faq.janssen_radiance.q2",
+    "answerKey": "faq.janssen_radiance.a2"
+  }
+]

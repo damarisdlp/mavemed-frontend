@@ -1,0 +1,883 @@
+[
+  {
+    "id": "opt_co2_face",
+    "serviceId": "svc_co2_laser",
+    "nameKey": "opt.co2.face",
+    "price": {
+      "amount": 550,
+      "currency": "USD"
+    },
+    "isOptionPromoActive": false,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "filterGroupKey": "face",
+    "notesKeys": []
+  },
+  {
+    "id": "opt_co2_neck",
+    "serviceId": "svc_co2_laser",
+    "nameKey": "opt.co2.neck",
+    "price": {
+      "amount": 385,
+      "currency": "USD"
+    },
+    "isOptionPromoActive": false,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "filterGroupKey": "face",
+    "notesKeys": []
+  },
+  {
+    "id": "opt_co2_decollete",
+    "serviceId": "svc_co2_laser",
+    "nameKey": "opt.co2.decollete",
+    "price": {
+      "amount": 315,
+      "currency": "USD"
+    },
+    "isOptionPromoActive": false,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "filterGroupKey": "face",
+    "notesKeys": []
+  },
+  {
+    "id": "opt_co2_chest",
+    "serviceId": "svc_co2_laser",
+    "nameKey": "opt.co2.chest",
+    "price": {
+      "amount": 400,
+      "currency": "USD"
+    },
+    "isOptionPromoActive": false,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "filterGroupKey": "body",
+    "notesKeys": [
+      "note.co2.chest"
+    ]
+  },
+  {
+    "id": "opt_co2_face_neck",
+    "serviceId": "svc_co2_laser",
+    "nameKey": "opt.co2.face_neck",
+    "price": {
+      "amount": 650,
+      "currency": "USD"
+    },
+    "isOptionPromoActive": false,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "filterGroupKey": "face",
+    "notesKeys": []
+  },
+  {
+    "id": "opt_co2_face_neck_decollete",
+    "serviceId": "svc_co2_laser",
+    "nameKey": "opt.co2.face_neck_decollete",
+    "price": {
+      "amount": 850,
+      "currency": "USD"
+    },
+    "isOptionPromoActive": false,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "filterGroupKey": "face",
+    "notesKeys": [
+      "note.co2.face_neck_decollete"
+    ]
+  },
+  {
+    "id": "opt_co2_face_neck_decollete_chest",
+    "serviceId": "svc_co2_laser",
+    "nameKey": "opt.co2.face_neck_decollete_chest",
+    "price": {
+      "amount": 950,
+      "currency": "USD"
+    },
+    "isOptionPromoActive": false,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "filterGroupKey": "face",
+    "notesKeys": [
+      "note.co2.face_neck_decollete_chest"
+    ]
+  },
+  {
+    "id": "opt_co2_hands",
+    "serviceId": "svc_co2_laser",
+    "nameKey": "opt.co2.hands",
+    "price": {
+      "amount": 300,
+      "currency": "USD"
+    },
+    "isOptionPromoActive": false,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "filterGroupKey": "body",
+    "notesKeys": []
+  },
+  {
+    "id": "opt_co2_under_eye",
+    "serviceId": "svc_co2_laser",
+    "nameKey": "opt.co2.under_eye",
+    "price": {
+      "amount": 250,
+      "currency": "USD"
+    },
+    "isOptionPromoActive": false,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "filterGroupKey": "face",
+    "notesKeys": [
+      "note.co2.under_eye"
+    ]
+  },
+  {
+    "id": "opt_co2_small_zone",
+    "serviceId": "svc_co2_laser",
+    "nameKey": "opt.co2.small_zone",
+    "price": {
+      "amount": 325,
+      "currency": "USD"
+    },
+    "isOptionPromoActive": false,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "filterGroupKey": "body",
+    "notesKeys": [
+      "note.co2.small_zone"
+    ]
+  },
+  {
+    "id": "opt_co2_medium_zone",
+    "serviceId": "svc_co2_laser",
+    "nameKey": "opt.co2.medium_zone",
+    "price": {
+      "amount": 675,
+      "currency": "USD"
+    },
+    "isOptionPromoActive": false,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "filterGroupKey": "body",
+    "notesKeys": [
+      "note.co2.medium_zone"
+    ]
+  },
+  {
+    "id": "opt_co2_large_zone",
+    "serviceId": "svc_co2_laser",
+    "nameKey": "opt.co2.large_zone",
+    "price": {
+      "amount": 1275,
+      "currency": "USD"
+    },
+    "isOptionPromoActive": false,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "filterGroupKey": "body",
+    "notesKeys": [
+      "note.co2.large_zone"
+    ]
+  },
+  {
+    "id": "opt_ipl_face",
+    "serviceId": "svc_ipl",
+    "nameKey": "opt.ipl.face",
+    "price": {
+      "amount": 700,
+      "currency": "MXN"
+    },
+    "isOptionPromoActive": false,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "filterGroupKey": "face",
+    "notesKeys": []
+  },
+  {
+    "id": "opt_ipl_neck",
+    "serviceId": "svc_ipl",
+    "nameKey": "opt.ipl.neck",
+    "price": {
+      "amount": 700,
+      "currency": "MXN"
+    },
+    "isOptionPromoActive": false,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "filterGroupKey": "face",
+    "notesKeys": []
+  },
+  {
+    "id": "opt_ipl_decollete",
+    "serviceId": "svc_ipl",
+    "nameKey": "opt.ipl.decollete",
+    "price": {
+      "amount": 700,
+      "currency": "MXN"
+    },
+    "isOptionPromoActive": false,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "filterGroupKey": "face",
+    "notesKeys": []
+  },
+  {
+    "id": "opt_ipl_chest",
+    "serviceId": "svc_ipl",
+    "nameKey": "opt.ipl.chest",
+    "price": {
+      "amount": 700,
+      "currency": "MXN"
+    },
+    "isOptionPromoActive": false,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "filterGroupKey": "body",
+    "notesKeys": []
+  },
+  {
+    "id": "opt_ipl_face_neck",
+    "serviceId": "svc_ipl",
+    "nameKey": "opt.ipl.face_neck",
+    "price": {
+      "amount": 1400,
+      "currency": "MXN"
+    },
+    "isOptionPromoActive": false,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "filterGroupKey": "face",
+    "notesKeys": []
+  },
+  {
+    "id": "opt_ipl_face_neck_decollete",
+    "serviceId": "svc_ipl",
+    "nameKey": "opt.ipl.face_neck_decollete",
+    "price": {
+      "amount": 2100,
+      "currency": "MXN"
+    },
+    "isOptionPromoActive": false,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "filterGroupKey": "face",
+    "notesKeys": []
+  },
+  {
+    "id": "opt_ipl_face_neck_decollete_chest",
+    "serviceId": "svc_ipl",
+    "nameKey": "opt.ipl.face_neck_decollete_chest",
+    "price": {
+      "amount": 2800,
+      "currency": "MXN"
+    },
+    "isOptionPromoActive": false,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "filterGroupKey": "body",
+    "notesKeys": []
+  },
+  {
+    "id": "opt_ipl_hands",
+    "serviceId": "svc_ipl",
+    "nameKey": "opt.ipl.hands",
+    "price": {
+      "amount": 650,
+      "currency": "MXN"
+    },
+    "isOptionPromoActive": false,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "filterGroupKey": "body",
+    "notesKeys": []
+  },
+  {
+    "id": "opt_ipl_legs",
+    "serviceId": "svc_ipl",
+    "nameKey": "opt.ipl.legs",
+    "price": {
+      "amount": 3450,
+      "currency": "MXN"
+    },
+    "isOptionPromoActive": false,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "filterGroupKey": "body",
+    "notesKeys": []
+  },
+  {
+    "id": "opt_ipl_hands_legs",
+    "serviceId": "svc_ipl",
+    "nameKey": "opt.ipl.hands_legs",
+    "price": {
+      "amount": 4100,
+      "currency": "MXN"
+    },
+    "isOptionPromoActive": false,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "filterGroupKey": "body",
+    "notesKeys": []
+  },
+  {
+    "id": "opt_ipl_small_zone",
+    "serviceId": "svc_ipl",
+    "nameKey": "opt.ipl.small_zone",
+    "price": {
+      "amount": 675,
+      "currency": "MXN"
+    },
+    "isOptionPromoActive": false,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "filterGroupKey": "body",
+    "notesKeys": [
+      "note.ipl.small_zone"
+    ]
+  },
+  {
+    "id": "opt_ipl_medium_zone",
+    "serviceId": "svc_ipl",
+    "nameKey": "opt.ipl.medium_zone",
+    "price": {
+      "amount": 1565,
+      "currency": "MXN"
+    },
+    "isOptionPromoActive": false,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "filterGroupKey": "body",
+    "notesKeys": [
+      "note.ipl.medium_zone"
+    ]
+  },
+  {
+    "id": "opt_ipl_large_zone",
+    "serviceId": "svc_ipl",
+    "nameKey": "opt.ipl.large_zone",
+    "price": {
+      "amount": 3450,
+      "currency": "MXN"
+    },
+    "isOptionPromoActive": false,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "filterGroupKey": "body",
+    "notesKeys": [
+      "note.ipl.large_zone"
+    ]
+  },
+  {
+    "id": "opt_laser_hair_full_face",
+    "serviceId": "svc_laser_hair_removal",
+    "nameKey": "opt.laser_hair.full_face",
+    "price": {
+      "amount": 75,
+      "currency": "USD"
+    },
+    "isOptionPromoActive": false,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "filterGroupKey": "face",
+    "notesKeys": []
+  },
+  {
+    "id": "opt_laser_hair_neck",
+    "serviceId": "svc_laser_hair_removal",
+    "nameKey": "opt.laser_hair.neck",
+    "price": {
+      "amount": 45,
+      "currency": "USD"
+    },
+    "isOptionPromoActive": false,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "filterGroupKey": "face",
+    "notesKeys": []
+  },
+  {
+    "id": "opt_laser_hair_chest",
+    "serviceId": "svc_laser_hair_removal",
+    "nameKey": "opt.laser_hair.chest",
+    "price": {
+      "amount": 95,
+      "currency": "USD"
+    },
+    "isOptionPromoActive": false,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "filterGroupKey": "body",
+    "notesKeys": []
+  },
+  {
+    "id": "opt_laser_hair_full_arms",
+    "serviceId": "svc_laser_hair_removal",
+    "nameKey": "opt.laser_hair.full_arms",
+    "price": {
+      "amount": 125,
+      "currency": "USD"
+    },
+    "isOptionPromoActive": false,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "filterGroupKey": "body",
+    "notesKeys": []
+  },
+  {
+    "id": "opt_laser_hair_abdomen",
+    "serviceId": "svc_laser_hair_removal",
+    "nameKey": "opt.laser_hair.abdomen",
+    "price": {
+      "amount": 95,
+      "currency": "USD"
+    },
+    "isOptionPromoActive": false,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "filterGroupKey": "body",
+    "notesKeys": []
+  },
+  {
+    "id": "opt_laser_hair_shoulders",
+    "serviceId": "svc_laser_hair_removal",
+    "nameKey": "opt.laser_hair.shoulders",
+    "price": {
+      "amount": 55,
+      "currency": "USD"
+    },
+    "isOptionPromoActive": false,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "filterGroupKey": "body",
+    "notesKeys": []
+  },
+  {
+    "id": "opt_laser_hair_underarms",
+    "serviceId": "svc_laser_hair_removal",
+    "nameKey": "opt.laser_hair.underarms",
+    "price": {
+      "amount": 40,
+      "currency": "USD"
+    },
+    "isOptionPromoActive": false,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "filterGroupKey": "body",
+    "notesKeys": []
+  },
+  {
+    "id": "opt_laser_hair_full_back",
+    "serviceId": "svc_laser_hair_removal",
+    "nameKey": "opt.laser_hair.full_back",
+    "price": {
+      "amount": 160,
+      "currency": "USD"
+    },
+    "isOptionPromoActive": false,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "filterGroupKey": "body",
+    "notesKeys": []
+  },
+  {
+    "id": "opt_laser_hair_bikini",
+    "serviceId": "svc_laser_hair_removal",
+    "nameKey": "opt.laser_hair.bikini",
+    "price": {
+      "amount": 35,
+      "currency": "USD"
+    },
+    "isOptionPromoActive": false,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "filterGroupKey": "intimate",
+    "notesKeys": []
+  },
+  {
+    "id": "opt_laser_hair_brazilian",
+    "serviceId": "svc_laser_hair_removal",
+    "nameKey": "opt.laser_hair.brazilian",
+    "price": {
+      "amount": 110,
+      "currency": "USD"
+    },
+    "isOptionPromoActive": false,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "filterGroupKey": "intimate",
+    "notesKeys": []
+  },
+  {
+    "id": "opt_laser_hair_glutes",
+    "serviceId": "svc_laser_hair_removal",
+    "nameKey": "opt.laser_hair.glutes",
+    "price": {
+      "amount": 65,
+      "currency": "USD"
+    },
+    "isOptionPromoActive": false,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "filterGroupKey": "intimate",
+    "notesKeys": []
+  },
+  {
+    "id": "opt_laser_hair_thighs",
+    "serviceId": "svc_laser_hair_removal",
+    "nameKey": "opt.laser_hair.thighs",
+    "price": {
+      "amount": 110,
+      "currency": "USD"
+    },
+    "isOptionPromoActive": false,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "filterGroupKey": "body",
+    "notesKeys": []
+  },
+  {
+    "id": "opt_laser_hair_lower_legs",
+    "serviceId": "svc_laser_hair_removal",
+    "nameKey": "opt.laser_hair.lower_legs",
+    "price": {
+      "amount": 105,
+      "currency": "USD"
+    },
+    "isOptionPromoActive": false,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "filterGroupKey": "body",
+    "notesKeys": []
+  },
+  {
+    "id": "opt_laser_hair_full_legs",
+    "serviceId": "svc_laser_hair_removal",
+    "nameKey": "opt.laser_hair.full_legs",
+    "price": {
+      "amount": 185,
+      "currency": "USD"
+    },
+    "isOptionPromoActive": false,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "filterGroupKey": "body",
+    "notesKeys": []
+  },
+  {
+    "id": "opt_laser_hair_hands",
+    "serviceId": "svc_laser_hair_removal",
+    "nameKey": "opt.laser_hair.hands",
+    "price": {
+      "amount": 20,
+      "currency": "USD"
+    },
+    "isOptionPromoActive": false,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "filterGroupKey": "body",
+    "notesKeys": []
+  },
+  {
+    "id": "opt_laser_hair_feet",
+    "serviceId": "svc_laser_hair_removal",
+    "nameKey": "opt.laser_hair.feet",
+    "price": {
+      "amount": 20,
+      "currency": "USD"
+    },
+    "isOptionPromoActive": false,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "filterGroupKey": "body",
+    "notesKeys": []
+  },
+  {
+    "id": "opt_laser_hair_full_body",
+    "serviceId": "svc_laser_hair_removal",
+    "nameKey": "opt.laser_hair.full_body",
+    "price": {
+      "amount": 750,
+      "currency": "USD"
+    },
+    "isOptionPromoActive": false,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "filterGroupKey": "body",
+    "notesKeys": []
+  },
+  {
+    "id": "opt_laser_hair_small_zone",
+    "serviceId": "svc_laser_hair_removal",
+    "nameKey": "opt.laser_hair.small_zone",
+    "price": {
+      "amount": 25,
+      "currency": "USD"
+    },
+    "isOptionPromoActive": false,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "filterGroupKey": "body",
+    "notesKeys": []
+  },
+  {
+    "id": "opt_laser_hair_medium_zone",
+    "serviceId": "svc_laser_hair_removal",
+    "nameKey": "opt.laser_hair.medium_zone",
+    "price": {
+      "amount": 45,
+      "currency": "USD"
+    },
+    "isOptionPromoActive": false,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "filterGroupKey": "body",
+    "notesKeys": []
+  },
+  {
+    "id": "opt_laser_hair_large_zone",
+    "serviceId": "svc_laser_hair_removal",
+    "nameKey": "opt.laser_hair.large_zone",
+    "price": {
+      "amount": 80,
+      "currency": "USD"
+    },
+    "isOptionPromoActive": false,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "filterGroupKey": "body",
+    "notesKeys": []
+  },
+  {
+    "id": "opt_rf_face",
+    "serviceId": "svc_rf_microneedling",
+    "nameKey": "opt.rf.face",
+    "price": {
+      "amount": 900,
+      "currency": "USD"
+    },
+    "isOptionPromoActive": false,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "filterGroupKey": "face",
+    "notesKeys": []
+  },
+  {
+    "id": "opt_rf_neck",
+    "serviceId": "svc_rf_microneedling",
+    "nameKey": "opt.rf.neck",
+    "price": {
+      "amount": 600,
+      "currency": "USD"
+    },
+    "isOptionPromoActive": false,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "filterGroupKey": "face",
+    "notesKeys": []
+  },
+  {
+    "id": "opt_rf_decollete",
+    "serviceId": "svc_rf_microneedling",
+    "nameKey": "opt.rf.decollete",
+    "price": {
+      "amount": 775,
+      "currency": "USD"
+    },
+    "isOptionPromoActive": false,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "filterGroupKey": "face",
+    "notesKeys": []
+  },
+  {
+    "id": "opt_rf_face_neck",
+    "serviceId": "svc_rf_microneedling",
+    "nameKey": "opt.rf.face_neck",
+    "price": {
+      "amount": 1375,
+      "currency": "USD"
+    },
+    "isOptionPromoActive": false,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "filterGroupKey": "face",
+    "notesKeys": []
+  },
+  {
+    "id": "opt_rf_face_neck_decollete",
+    "serviceId": "svc_rf_microneedling",
+    "nameKey": "opt.rf.face_neck_decollete",
+    "price": {
+      "amount": 2380,
+      "currency": "USD"
+    },
+    "isOptionPromoActive": false,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "filterGroupKey": "face",
+    "notesKeys": ["note.rf.face_neck_decollete"]
+  },
+  {
+    "id": "opt_rf_hands",
+    "serviceId": "svc_rf_microneedling",
+    "nameKey": "opt.rf.hands",
+    "price": {
+      "amount": 450,
+      "currency": "USD"
+    },
+    "isOptionPromoActive": false,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "filterGroupKey": "body",
+    "notesKeys": ["note.rf.hands_biostim"]
+  },
+  {
+    "id": "opt_rf_small_zone",
+    "serviceId": "svc_rf_microneedling",
+    "nameKey": "opt.rf.small_zone",
+    "price": {
+      "amount": 400,
+      "currency": "USD"
+    },
+    "isOptionPromoActive": false,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "filterGroupKey": "body",
+    "notesKeys": [
+      "note.rf.small_zone"
+    ]
+  },
+  {
+    "id": "opt_rf_medium_zone",
+    "serviceId": "svc_rf_microneedling",
+    "nameKey": "opt.rf.medium_zone",
+    "price": {
+      "amount": 700,
+      "currency": "USD"
+    },
+    "isOptionPromoActive": false,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "filterGroupKey": "body",
+    "notesKeys": [
+      "note.rf.medium_zone"
+    ]
+  },
+  {
+    "id": "opt_rf_large_zone",
+    "serviceId": "svc_rf_microneedling",
+    "nameKey": "opt.rf.large_zone",
+    "price": {
+      "amount": 1100,
+      "currency": "USD"
+    },
+    "isOptionPromoActive": false,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "filterGroupKey": "body",
+    "notesKeys": [
+      "note.rf.large_zone"
+    ]
+  },
+  {
+    "id": "opt_serum_prp_face",
+    "serviceId": "svc_serum_add_ons",
+    "nameKey": "opt.serum.prp_face",
+    "price": { "amount": 135, "currency": "USD" },
+    "isOptionPromoActive": false,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "filterGroupKey": "prp",
+    "notesKeys": ["note.microneedling.prp_benefit"]
+  },
+  {
+    "id": "opt_serum_prp_face_neck",
+    "serviceId": "svc_serum_add_ons",
+    "nameKey": "opt.serum.prp_face_neck",
+    "price": { "amount": 150, "currency": "USD" },
+    "isOptionPromoActive": false,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "filterGroupKey": "prp",
+    "notesKeys": ["note.microneedling.prp_benefit"]
+  },
+  {
+    "id": "opt_serum_prp_face_neck_decollete",
+    "serviceId": "svc_serum_add_ons",
+    "nameKey": "opt.serum.prp_face_neck_decollete",
+    "price": { "amount": 170, "currency": "USD" },
+    "isOptionPromoActive": false,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "filterGroupKey": "prp",
+    "notesKeys": ["note.microneedling.prp_benefit"]
+  },
+  {
+    "id": "opt_serum_pn_face",
+    "serviceId": "svc_serum_add_ons",
+    "nameKey": "opt.serum.pn_face",
+    "price": { "amount": 290, "currency": "USD" },
+    "isOptionPromoActive": false,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "filterGroupKey": "pn",
+    "notesKeys": ["note.microneedling.pn_full", "note.microneedling.pn_benefit"]
+  },
+  {
+    "id": "opt_serum_pn_face_neck",
+    "serviceId": "svc_serum_add_ons",
+    "nameKey": "opt.serum.pn_face_neck",
+    "price": { "amount": 405, "currency": "USD" },
+    "isOptionPromoActive": false,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "filterGroupKey": "pn",
+    "notesKeys": ["note.microneedling.pn_full", "note.microneedling.pn_benefit"]
+  },
+  {
+    "id": "opt_serum_pn_face_neck_decollete",
+    "serviceId": "svc_serum_add_ons",
+    "nameKey": "opt.serum.pn_face_neck_decollete",
+    "price": { "amount": 520, "currency": "USD" },
+    "isOptionPromoActive": false,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "filterGroupKey": "pn",
+    "notesKeys": ["note.microneedling.pn_full", "note.microneedling.pn_benefit"]
+  },
+  {
+    "id": "opt_serum_pdrn_face",
+    "serviceId": "svc_serum_add_ons",
+    "nameKey": "opt.serum.pdrn_face",
+    "price": { "amount": 145, "currency": "USD" },
+    "isOptionPromoActive": false,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "filterGroupKey": "pdrn",
+    "notesKeys": ["note.microneedling.pdrn_full", "note.microneedling.pdrn_benefit"]
+  },
+  {
+    "id": "opt_serum_pdrn_face_neck",
+    "serviceId": "svc_serum_add_ons",
+    "nameKey": "opt.serum.pdrn_face_neck",
+    "price": { "amount": 230, "currency": "USD" },
+    "isOptionPromoActive": false,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "filterGroupKey": "pdrn",
+    "notesKeys": ["note.microneedling.pdrn_full", "note.microneedling.pdrn_benefit"]
+  },
+  {
+    "id": "opt_serum_pdrn_face_neck_decollete",
+    "serviceId": "svc_serum_add_ons",
+    "nameKey": "opt.serum.pdrn_face_neck_decollete",
+    "price": { "amount": 270, "currency": "USD" },
+    "isOptionPromoActive": false,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "filterGroupKey": "pdrn",
+    "notesKeys": ["note.microneedling.pdrn_full", "note.microneedling.pdrn_benefit"]
+  }
+]

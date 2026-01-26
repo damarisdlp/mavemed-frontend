@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Services",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": [
+      "id",
+      "slug",
+      "categoryId",
+      "nameKey",
+      "descriptionKey",
+      "detailsKey",
+      "images"
+    ],
+    "additionalProperties": false,
+    "properties": {
+      "id": { "type": "string", "pattern": "^svc_" },
+      "slug": { "type": "string" },
+      "categoryId": { "type": "string", "pattern": "^cat_" },
+      "nameKey": { "type": "string" },
+      "descriptionKey": { "type": "string" },
+      "detailsKey": { "type": "string" },
+      "isPopular": { "type": "boolean", "default": false },
+      "isPromoActive": { "type": "boolean", "default": false },
+      "images": {
+        "type": "object",
+        "required": ["primary", "secondary"],
+        "additionalProperties": false,
+        "properties": {
+          "primary": { "type": "string" },
+          "secondary": { "type": "string" }
+        }
+      },
+      "notesKeys": { "type": "array", "items": { "type": "string" } },
+      "goalsKeys": { "type": "array", "items": { "type": "string" } },
+      "treatableAreaKeys": { "type": "array", "items": { "type": "string" } }
+      ,
+      "filterConfig": {
+        "type": "object",
+        "required": ["defaultKey", "viewAllLabelKey", "filters"],
+        "additionalProperties": false,
+        "properties": {
+          "defaultKey": { "type": "string" },
+          "viewAllLabelKey": { "type": "string" },
+          "filters": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["key", "labelKey"],
+              "additionalProperties": false,
+              "properties": {
+                "key": { "type": "string" },
+                "labelKey": { "type": "string" }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

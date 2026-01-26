@@ -1,0 +1,68 @@
+[
+  {
+    "id": "addon_sculptra_microneedling",
+    "parentServiceId": "svc_sculptra",
+    "childServiceId": "svc_microneedling",
+    "optionNameKey": "addon.sculptra.microneedling"
+  },
+  {
+    "id": "addon_sculptra_casmara_infinity",
+    "parentServiceId": "svc_sculptra",
+    "childServiceId": "svc_casmara_infinity",
+    "optionNameKey": "addon.sculptra.casmara_infinity"
+  },
+  {
+    "id": "addon_sculptra_hydrafacial",
+    "parentServiceId": "svc_sculptra",
+    "childServiceId": "svc_hydrafacial",
+    "optionNameKey": "addon.sculptra.hydrafacial"
+  },
+  {
+    "id": "addon_sculptra_rf_microneedling",
+    "parentServiceId": "svc_sculptra",
+    "childServiceId": "svc_rf_microneedling",
+    "optionNameKey": "addon.sculptra.rf_microneedling"
+  },
+  {
+    "id": "addon_sculptra_pdo_threads",
+    "parentServiceId": "svc_sculptra",
+    "childServiceId": "svc_pdo_biostimulating_threads",
+    "optionNameKey": "addon.sculptra.pdo_threads"
+  },
+  {
+    "id": "addon_sculptra_facial_balancing",
+    "parentServiceId": "svc_sculptra",
+    "childServiceId": "svc_facial_balancing_fillers",
+    "optionNameKey": "addon.sculptra.facial_balancing"
+  },
+  {
+    "id": "addon_harmonyca_microneedling",
+    "parentServiceId": "svc_harmonyca",
+    "childServiceId": "svc_microneedling",
+    "optionNameKey": "addon.harmonyca.microneedling"
+  },
+  {
+    "id": "addon_harmonyca_casmara_infinity",
+    "parentServiceId": "svc_harmonyca",
+    "childServiceId": "svc_casmara_infinity",
+    "optionNameKey": "addon.harmonyca.casmara_infinity"
+  },
+  {
+    "id": "addon_harmonyca_hydrafacial",
+    "parentServiceId": "svc_harmonyca",
+    "childServiceId": "svc_hydrafacial",
+    "optionNameKey": "addon.harmonyca.hydrafacial"
+  },
+  {
+    "id": "addon_harmonyca_rf_microneedling",
+    "parentServiceId": "svc_harmonyca",
+    "childServiceId": "svc_rf_microneedling",
+    "optionNameKey": "addon.harmonyca.rf_microneedling"
+  },
+  {
+    "id": "addon_harmonyca_pdo_threads",
+    "parentServiceId": "svc_harmonyca",
+    "childServiceId": "svc_pdo_biostimulating_threads",
+    "optionNameKey": "addon.harmonyca.pdo_threads"
+  }
+]

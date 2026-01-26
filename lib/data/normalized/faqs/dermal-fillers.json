@@ -1,0 +1,68 @@
+[
+  {
+    "id": "faq_facial_balancing_1",
+    "serviceId": "svc_facial_balancing",
+    "questionKey": "faq.facial_balancing.q1",
+    "answerKey": "faq.facial_balancing.a1"
+  },
+  {
+    "id": "faq_facial_balancing_2",
+    "serviceId": "svc_facial_balancing",
+    "questionKey": "faq.facial_balancing.q2",
+    "answerKey": "faq.facial_balancing.a2"
+  },
+  {
+    "id": "faq_facial_balancing_3",
+    "serviceId": "svc_facial_balancing",
+    "questionKey": "faq.facial_balancing.q3",
+    "answerKey": "faq.facial_balancing.a3"
+  },
+  {
+    "id": "faq_lip_fillers_1",
+    "serviceId": "svc_lip_fillers",
+    "questionKey": "faq.lip_fillers.q1",
+    "answerKey": "faq.lip_fillers.a1"
+  },
+  {
+    "id": "faq_lip_fillers_2",
+    "serviceId": "svc_lip_fillers",
+    "questionKey": "faq.lip_fillers.q2",
+    "answerKey": "faq.lip_fillers.a2"
+  },
+  {
+    "id": "faq_lip_fillers_3",
+    "serviceId": "svc_lip_fillers",
+    "questionKey": "faq.lip_fillers.q3",
+    "answerKey": "faq.lip_fillers.a3"
+  },
+  {
+    "id": "faq_lip_fillers_4",
+    "serviceId": "svc_lip_fillers",
+    "questionKey": "faq.lip_fillers.q4",
+    "answerKey": "faq.lip_fillers.a4"
+  },
+  {
+    "id": "faq_hyaluronidase_1",
+    "serviceId": "svc_hyaluronidase",
+    "questionKey": "faq.hyaluronidase.q1",
+    "answerKey": "faq.hyaluronidase.a1"
+  },
+  {
+    "id": "faq_hyaluronidase_2",
+    "serviceId": "svc_hyaluronidase",
+    "questionKey": "faq.hyaluronidase.q2",
+    "answerKey": "faq.hyaluronidase.a2"
+  },
+  {
+    "id": "faq_hyaluronidase_3",
+    "serviceId": "svc_hyaluronidase",
+    "questionKey": "faq.hyaluronidase.q3",
+    "answerKey": "faq.hyaluronidase.a3"
+  },
+  {
+    "id": "faq_hyaluronidase_4",
+    "serviceId": "svc_hyaluronidase",
+    "questionKey": "faq.hyaluronidase.q4",
+    "answerKey": "faq.hyaluronidase.a4"
+  }
+]

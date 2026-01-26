@@ -1,0 +1,122 @@
+[
+  {
+    "id": "addon_co2_prp_face",
+    "parentServiceId": "svc_co2_laser",
+    "childServiceId": "svc_serum_add_ons",
+    "optionNameKey": "addon.co2.prp_face"
+  },
+  {
+    "id": "addon_co2_pn_face",
+    "parentServiceId": "svc_co2_laser",
+    "childServiceId": "svc_serum_add_ons",
+    "optionNameKey": "addon.co2.pn_face"
+  },
+  {
+    "id": "addon_co2_pdrn_face",
+    "parentServiceId": "svc_co2_laser",
+    "childServiceId": "svc_serum_add_ons",
+    "optionNameKey": "addon.co2.pdrn_face"
+  },
+  {
+    "id": "addon_laser_hair_hydrafacial",
+    "parentServiceId": "svc_laser_hair_removal",
+    "childServiceId": "svc_hydrafacial",
+    "optionNameKey": "addon.laser_hair.hydrafacial"
+  },
+  {
+    "id": "addon_laser_hair_casmara_purifying",
+    "parentServiceId": "svc_laser_hair_removal",
+    "childServiceId": "svc_casmara_purifying",
+    "optionNameKey": "addon.laser_hair.casmara_purifying"
+  },
+  {
+    "id": "addon_laser_hair_microneedling_prp",
+    "parentServiceId": "svc_laser_hair_removal",
+    "childServiceId": "svc_microneedling",
+    "optionNameKey": "addon.laser_hair.microneedling_prp"
+  },
+  {
+    "id": "addon_laser_hair_microneedling_pn",
+    "parentServiceId": "svc_laser_hair_removal",
+    "childServiceId": "svc_microneedling",
+    "optionNameKey": "addon.laser_hair.microneedling_pn"
+  },
+  {
+    "id": "addon_ipl_rf_face_neck_decollete",
+    "parentServiceId": "svc_ipl",
+    "childServiceId": "svc_rf_microneedling",
+    "optionNameKey": "addon.ipl.rf_face_neck_decollete"
+  },
+  {
+    "id": "addon_ipl_hydrafacial",
+    "parentServiceId": "svc_ipl",
+    "childServiceId": "svc_hydrafacial",
+    "optionNameKey": "addon.ipl.hydrafacial"
+  },
+  {
+    "id": "addon_ipl_casmara_purifying",
+    "parentServiceId": "svc_ipl",
+    "childServiceId": "svc_casmara_purifying",
+    "optionNameKey": "addon.ipl.casmara_purifying"
+  },
+  {
+    "id": "addon_ipl_microneedling_prp",
+    "parentServiceId": "svc_ipl",
+    "childServiceId": "svc_microneedling",
+    "optionNameKey": "addon.ipl.microneedling_prp"
+  },
+  {
+    "id": "addon_ipl_microneedling_pn",
+    "parentServiceId": "svc_ipl",
+    "childServiceId": "svc_microneedling",
+    "optionNameKey": "addon.ipl.microneedling_pn"
+  },
+  {
+    "id": "addon_rf_botox",
+    "parentServiceId": "svc_rf_microneedling",
+    "childServiceId": "svc_botox",
+    "optionNameKey": "addon.rf.botox_any_zone"
+  },
+  {
+    "id": "addon_rf_serum_pn",
+    "parentServiceId": "svc_rf_microneedling",
+    "childServiceId": "svc_serum_add_ons",
+    "optionNameKey": "addon.rf.serum_pn"
+  },
+  {
+    "id": "addon_rf_serum_prp",
+    "parentServiceId": "svc_rf_microneedling",
+    "childServiceId": "svc_serum_add_ons",
+    "optionNameKey": "addon.rf.serum_prp"
+  },
+  {
+    "id": "addon_rf_serum_pdrn",
+    "parentServiceId": "svc_rf_microneedling",
+    "childServiceId": "svc_serum_add_ons",
+    "optionNameKey": "addon.rf.serum_pdrn"
+  },
+  {
+    "id": "addon_rf_pdo_threads",
+    "parentServiceId": "svc_rf_microneedling",
+    "childServiceId": "svc_pdo_biostimulating_threads",
+    "optionNameKey": "addon.rf.pdo_threads"
+  },
+  {
+    "id": "addon_rf_hydrafacial",
+    "parentServiceId": "svc_rf_microneedling",
+    "childServiceId": "svc_hydrafacial",
+    "optionNameKey": "addon.rf.hydrafacial"
+  },
+  {
+    "id": "addon_rf_casmara_retinol",
+    "parentServiceId": "svc_rf_microneedling",
+    "childServiceId": "svc_casmara_retinol_proage",
+    "optionNameKey": "addon.rf.casmara_retinol"
+  },
+  {
+    "id": "addon_serum_rf_face",
+    "parentServiceId": "svc_serum_add_ons",
+    "childServiceId": "svc_rf_microneedling",
+    "optionNameKey": "addon.serum_add_ons.face"
+  }
+]

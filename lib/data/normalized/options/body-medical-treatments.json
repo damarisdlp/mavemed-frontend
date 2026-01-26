@@ -1,0 +1,54 @@
+[
+  {
+    "id": "opt_cupping_addon",
+    "serviceId": "svc_cupping",
+    "nameKey": "opt.cupping.addon",
+    "price": { "amount": 10, "currency": "USD" },
+    "isOptionPromoActive": false,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "notesKeys": [
+      "note.cupping.only_with_swedish"
+    ]
+  },
+  {
+    "id": "opt_keloid_single_area",
+    "serviceId": "svc_keloid_injection",
+    "nameKey": "opt.keloid.single_area",
+    "price": { "amount": 100, "currency": "USD" },
+    "isOptionPromoActive": false,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "notesKeys": []
+  },
+  {
+    "id": "opt_sclerotherapy_any_zone",
+    "serviceId": "svc_sclerotherapy",
+    "nameKey": "opt.sclerotherapy.any_zone",
+    "price": { "amount": 1500, "currency": "MXN" },
+    "isOptionPromoActive": false,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "notesKeys": ["note.sclerotherapy.starting_per_syringe"]
+  },
+  {
+    "id": "opt_swedish_full_body",
+    "serviceId": "svc_swedish_massage",
+    "nameKey": "opt.swedish.full_body",
+    "price": { "amount": 35, "currency": "USD" },
+    "isOptionPromoActive": false,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "notesKeys": []
+  },
+  {
+    "id": "opt_wart_per_zone",
+    "serviceId": "svc_wart_removal",
+    "nameKey": "opt.wart.per_zone",
+    "price": { "amount": 500, "currency": "MXN" },
+    "isOptionPromoActive": false,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "notesKeys": ["note.wart.starting_price"]
+  }
+]

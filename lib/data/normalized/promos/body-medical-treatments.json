@@ -1,0 +1,47 @@
+[
+  {
+    "id": "promo_cupping",
+    "serviceId": "svc_cupping",
+    "headlineKey": "",
+    "descriptionKey": "",
+    "validFrom": null,
+    "validTill": null,
+    "options": []
+  },
+  {
+    "id": "promo_keloid",
+    "serviceId": "svc_keloid_injection",
+    "headlineKey": "",
+    "descriptionKey": "",
+    "validFrom": null,
+    "validTill": null,
+    "options": []
+  },
+  {
+    "id": "promo_sclerotherapy",
+    "serviceId": "svc_sclerotherapy",
+    "headlineKey": "",
+    "descriptionKey": "",
+    "validFrom": null,
+    "validTill": null,
+    "options": []
+  },
+  {
+    "id": "promo_swedish_massage",
+    "serviceId": "svc_swedish_massage",
+    "headlineKey": "",
+    "descriptionKey": "",
+    "validFrom": null,
+    "validTill": null,
+    "options": []
+  },
+  {
+    "id": "promo_wart_removal",
+    "serviceId": "svc_wart_removal",
+    "headlineKey": "",
+    "descriptionKey": "",
+    "validFrom": null,
+    "validTill": null,
+    "options": []
+  }
+]

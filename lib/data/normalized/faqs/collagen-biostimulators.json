@@ -1,0 +1,62 @@
+[
+  {
+    "id": "faq_sculptra_1",
+    "serviceId": "svc_sculptra",
+    "questionKey": "faq.sculptra.q1",
+    "answerKey": "faq.sculptra.a1"
+  },
+  {
+    "id": "faq_sculptra_2",
+    "serviceId": "svc_sculptra",
+    "questionKey": "faq.sculptra.q2",
+    "answerKey": "faq.sculptra.a2"
+  },
+  {
+    "id": "faq_sculptra_3",
+    "serviceId": "svc_sculptra",
+    "questionKey": "faq.sculptra.q3",
+    "answerKey": "faq.sculptra.a3"
+  },
+  {
+    "id": "faq_sculptra_4",
+    "serviceId": "svc_sculptra",
+    "questionKey": "faq.sculptra.q4",
+    "answerKey": "faq.sculptra.a4"
+  },
+  {
+    "id": "faq_sculptra_5",
+    "serviceId": "svc_sculptra",
+    "questionKey": "faq.sculptra.q5",
+    "answerKey": "faq.sculptra.a5"
+  },
+  {
+    "id": "faq_harmonyca_1",
+    "serviceId": "svc_harmonyca",
+    "questionKey": "faq.harmonyca.q1",
+    "answerKey": "faq.harmonyca.a1"
+  },
+  {
+    "id": "faq_harmonyca_2",
+    "serviceId": "svc_harmonyca",
+    "questionKey": "faq.harmonyca.q2",
+    "answerKey": "faq.harmonyca.a2"
+  },
+  {
+    "id": "faq_harmonyca_3",
+    "serviceId": "svc_harmonyca",
+    "questionKey": "faq.harmonyca.q3",
+    "answerKey": "faq.harmonyca.a3"
+  },
+  {
+    "id": "faq_harmonyca_4",
+    "serviceId": "svc_harmonyca",
+    "questionKey": "faq.harmonyca.q4",
+    "answerKey": "faq.harmonyca.a4"
+  },
+  {
+    "id": "faq_harmonyca_5",
+    "serviceId": "svc_harmonyca",
+    "questionKey": "faq.harmonyca.q5",
+    "answerKey": "faq.harmonyca.a5"
+  }
+]

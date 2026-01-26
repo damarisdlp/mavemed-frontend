@@ -1,0 +1,98 @@
+[
+  {
+    "id": "addon_facial_balancing_botox",
+    "parentServiceId": "svc_facial_balancing",
+    "childServiceId": "svc_botox",
+    "optionNameKey": "addon.facial_balancing.botox_any_zone"
+  },
+  {
+    "id": "addon_facial_balancing_lip_fillers",
+    "parentServiceId": "svc_facial_balancing",
+    "childServiceId": "svc_lip_fillers",
+    "optionNameKey": "addon.facial_balancing.lip_filler_stylage"
+  },
+  {
+    "id": "addon_facial_balancing_microneedling_pdrn",
+    "parentServiceId": "svc_facial_balancing",
+    "childServiceId": "svc_microneedling",
+    "optionNameKey": "addon.facial_balancing.microneedling_pdrn"
+  },
+  {
+    "id": "addon_facial_balancing_microneedling_glow",
+    "parentServiceId": "svc_facial_balancing",
+    "childServiceId": "svc_microneedling",
+    "optionNameKey": "addon.facial_balancing.microneedling_glow"
+  },
+  {
+    "id": "addon_facial_balancing_pdo_threads",
+    "parentServiceId": "svc_facial_balancing",
+    "childServiceId": "svc_pdo_biostimulating_threads",
+    "optionNameKey": "addon.facial_balancing.pdo_threads"
+  },
+  {
+    "id": "addon_facial_balancing_enzymatic_therapy",
+    "parentServiceId": "svc_facial_balancing",
+    "childServiceId": "svc_enzymatic_therapy",
+    "optionNameKey": "addon.facial_balancing.enzymatic_therapy"
+  },
+  {
+    "id": "addon_facial_balancing_rf_microneedling",
+    "parentServiceId": "svc_facial_balancing",
+    "childServiceId": "svc_rf_microneedling",
+    "optionNameKey": "addon.facial_balancing.rf_microneedling"
+  },
+  {
+    "id": "addon_lip_fillers_botox",
+    "parentServiceId": "svc_lip_fillers",
+    "childServiceId": "svc_botox",
+    "optionNameKey": "addon.lip_fillers.botox_any_zone"
+  },
+  {
+    "id": "addon_lip_fillers_microneedling_prp",
+    "parentServiceId": "svc_lip_fillers",
+    "childServiceId": "svc_microneedling",
+    "optionNameKey": "addon.lip_fillers.microneedling_prp"
+  },
+  {
+    "id": "addon_lip_fillers_mesotherapy_pn",
+    "parentServiceId": "svc_lip_fillers",
+    "childServiceId": "svc_mesotherapy_infusions",
+    "optionNameKey": "addon.lip_fillers.mesotherapy_pn"
+  },
+  {
+    "id": "addon_lip_fillers_hydrafacial",
+    "parentServiceId": "svc_lip_fillers",
+    "childServiceId": "svc_hydrafacial",
+    "optionNameKey": "addon.lip_fillers.hydrafacial"
+  },
+  {
+    "id": "addon_lip_fillers_casmara_purifying",
+    "parentServiceId": "svc_lip_fillers",
+    "childServiceId": "svc_casmara_purifying",
+    "optionNameKey": "addon.lip_fillers.casmara_purifying"
+  },
+  {
+    "id": "addon_hyaluronidase_lip_fillers",
+    "parentServiceId": "svc_hyaluronidase",
+    "childServiceId": "svc_lip_fillers",
+    "optionNameKey": "addon.hyaluronidase.lip_filler_stylage"
+  },
+  {
+    "id": "addon_hyaluronidase_facial_balancing",
+    "parentServiceId": "svc_hyaluronidase",
+    "childServiceId": "svc_facial_balancing",
+    "optionNameKey": "addon.hyaluronidase.facial_balancing_volift"
+  },
+  {
+    "id": "addon_hyaluronidase_microneedling_prp",
+    "parentServiceId": "svc_hyaluronidase",
+    "childServiceId": "svc_microneedling",
+    "optionNameKey": "addon.hyaluronidase.microneedling_prp"
+  },
+  {
+    "id": "addon_hyaluronidase_mesotherapy_pdrn",
+    "parentServiceId": "svc_hyaluronidase",
+    "childServiceId": "svc_mesotherapy_infusions",
+    "optionNameKey": "addon.hyaluronidase.mesotherapy_pdrn"
+  }
+]

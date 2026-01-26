@@ -1,0 +1,92 @@
+[
+  {
+    "id": "exp_microneedling_pre_1",
+    "serviceId": "svc_microneedling",
+    "phase": "pre",
+    "textKey": "exp.microneedling.pre.1"
+  },
+  {
+    "id": "exp_microneedling_pre_2",
+    "serviceId": "svc_microneedling",
+    "phase": "pre",
+    "textKey": "exp.microneedling.pre.2"
+  },
+  {
+    "id": "exp_microneedling_pre_3",
+    "serviceId": "svc_microneedling",
+    "phase": "pre",
+    "textKey": "exp.microneedling.pre.3"
+  },
+  {
+    "id": "exp_microneedling_during_1",
+    "serviceId": "svc_microneedling",
+    "phase": "during",
+    "textKey": "exp.microneedling.during.1"
+  },
+  {
+    "id": "exp_microneedling_during_2",
+    "serviceId": "svc_microneedling",
+    "phase": "during",
+    "textKey": "exp.microneedling.during.2"
+  },
+  {
+    "id": "exp_microneedling_post_1",
+    "serviceId": "svc_microneedling",
+    "phase": "post",
+    "textKey": "exp.microneedling.post.1"
+  },
+  {
+    "id": "exp_microneedling_post_2",
+    "serviceId": "svc_microneedling",
+    "phase": "post",
+    "textKey": "exp.microneedling.post.2"
+  },
+  {
+    "id": "exp_microneedling_post_3",
+    "serviceId": "svc_microneedling",
+    "phase": "post",
+    "textKey": "exp.microneedling.post.3"
+  },
+  {
+    "id": "exp_mesotherapy_pre_1",
+    "serviceId": "svc_mesotherapy_infusions",
+    "phase": "pre",
+    "textKey": "exp.mesotherapy.pre.1"
+  },
+  {
+    "id": "exp_mesotherapy_pre_2",
+    "serviceId": "svc_mesotherapy_infusions",
+    "phase": "pre",
+    "textKey": "exp.mesotherapy.pre.2"
+  },
+  {
+    "id": "exp_mesotherapy_during_1",
+    "serviceId": "svc_mesotherapy_infusions",
+    "phase": "during",
+    "textKey": "exp.mesotherapy.during.1"
+  },
+  {
+    "id": "exp_mesotherapy_during_2",
+    "serviceId": "svc_mesotherapy_infusions",
+    "phase": "during",
+    "textKey": "exp.mesotherapy.during.2"
+  },
+  {
+    "id": "exp_mesotherapy_post_1",
+    "serviceId": "svc_mesotherapy_infusions",
+    "phase": "post",
+    "textKey": "exp.mesotherapy.post.1"
+  },
+  {
+    "id": "exp_mesotherapy_post_2",
+    "serviceId": "svc_mesotherapy_infusions",
+    "phase": "post",
+    "textKey": "exp.mesotherapy.post.2"
+  },
+  {
+    "id": "exp_mesotherapy_post_3",
+    "serviceId": "svc_mesotherapy_infusions",
+    "phase": "post",
+    "textKey": "exp.mesotherapy.post.3"
+  }
+]

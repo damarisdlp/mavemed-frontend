@@ -1,0 +1,68 @@
+[
+  {
+    "id": "faq_cupping_1",
+    "serviceId": "svc_cupping",
+    "questionKey": "faq.cupping.q1",
+    "answerKey": "faq.cupping.a1"
+  },
+  {
+    "id": "faq_cupping_2",
+    "serviceId": "svc_cupping",
+    "questionKey": "faq.cupping.q2",
+    "answerKey": "faq.cupping.a2"
+  },
+  {
+    "id": "faq_keloid_1",
+    "serviceId": "svc_keloid_injection",
+    "questionKey": "faq.keloid.q1",
+    "answerKey": "faq.keloid.a1"
+  },
+  {
+    "id": "faq_keloid_2",
+    "serviceId": "svc_keloid_injection",
+    "questionKey": "faq.keloid.q2",
+    "answerKey": "faq.keloid.a2"
+  },
+  {
+    "id": "faq_sclerotherapy_1",
+    "serviceId": "svc_sclerotherapy",
+    "questionKey": "faq.sclerotherapy.q1",
+    "answerKey": "faq.sclerotherapy.a1"
+  },
+  {
+    "id": "faq_sclerotherapy_2",
+    "serviceId": "svc_sclerotherapy",
+    "questionKey": "faq.sclerotherapy.q2",
+    "answerKey": "faq.sclerotherapy.a2"
+  },
+  {
+    "id": "faq_swedish_1",
+    "serviceId": "svc_swedish_massage",
+    "questionKey": "faq.swedish.q1",
+    "answerKey": "faq.swedish.a1"
+  },
+  {
+    "id": "faq_swedish_2",
+    "serviceId": "svc_swedish_massage",
+    "questionKey": "faq.swedish.q2",
+    "answerKey": "faq.swedish.a2"
+  },
+  {
+    "id": "faq_wart_1",
+    "serviceId": "svc_wart_removal",
+    "questionKey": "faq.wart.q1",
+    "answerKey": "faq.wart.a1"
+  },
+  {
+    "id": "faq_wart_2",
+    "serviceId": "svc_wart_removal",
+    "questionKey": "faq.wart.q2",
+    "answerKey": "faq.wart.a2"
+  },
+  {
+    "id": "faq_wart_3",
+    "serviceId": "svc_wart_removal",
+    "questionKey": "faq.wart.q3",
+    "answerKey": "faq.wart.a3"
+  }
+]

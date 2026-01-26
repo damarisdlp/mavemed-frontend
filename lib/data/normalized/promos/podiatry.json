@@ -1,0 +1,38 @@
+[
+  {
+    "id": "promo_calcaneal_spur",
+    "serviceId": "svc_calcaneal_spur",
+    "headlineKey": "",
+    "descriptionKey": "",
+    "validFrom": null,
+    "validTill": null,
+    "options": []
+  },
+  {
+    "id": "promo_matrixectomy",
+    "serviceId": "svc_matrixectomy",
+    "headlineKey": "",
+    "descriptionKey": "",
+    "validFrom": null,
+    "validTill": null,
+    "options": []
+  },
+  {
+    "id": "promo_nail_fungus_laser",
+    "serviceId": "svc_nail_fungus_laser",
+    "headlineKey": "",
+    "descriptionKey": "",
+    "validFrom": null,
+    "validTill": null,
+    "options": []
+  },
+  {
+    "id": "promo_toenail_extraction",
+    "serviceId": "svc_toenail_extraction",
+    "headlineKey": "",
+    "descriptionKey": "",
+    "validFrom": null,
+    "validTill": null,
+    "options": []
+  }
+]

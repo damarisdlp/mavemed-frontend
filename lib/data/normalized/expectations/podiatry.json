@@ -1,0 +1,206 @@
+[
+  {
+    "id": "exp_calcaneal_pre_1",
+    "serviceId": "svc_calcaneal_spur",
+    "phase": "pre",
+    "textKey": "exp.calcaneal.pre.1"
+  },
+  {
+    "id": "exp_calcaneal_pre_2",
+    "serviceId": "svc_calcaneal_spur",
+    "phase": "pre",
+    "textKey": "exp.calcaneal.pre.2"
+  },
+  {
+    "id": "exp_calcaneal_pre_3",
+    "serviceId": "svc_calcaneal_spur",
+    "phase": "pre",
+    "textKey": "exp.calcaneal.pre.3"
+  },
+  {
+    "id": "exp_calcaneal_during_1",
+    "serviceId": "svc_calcaneal_spur",
+    "phase": "during",
+    "textKey": "exp.calcaneal.during.1"
+  },
+  {
+    "id": "exp_calcaneal_during_2",
+    "serviceId": "svc_calcaneal_spur",
+    "phase": "during",
+    "textKey": "exp.calcaneal.during.2"
+  },
+  {
+    "id": "exp_calcaneal_post_1",
+    "serviceId": "svc_calcaneal_spur",
+    "phase": "post",
+    "textKey": "exp.calcaneal.post.1"
+  },
+  {
+    "id": "exp_calcaneal_post_2",
+    "serviceId": "svc_calcaneal_spur",
+    "phase": "post",
+    "textKey": "exp.calcaneal.post.2"
+  },
+  {
+    "id": "exp_calcaneal_post_3",
+    "serviceId": "svc_calcaneal_spur",
+    "phase": "post",
+    "textKey": "exp.calcaneal.post.3"
+  },
+  {
+    "id": "exp_matrixectomy_pre_1",
+    "serviceId": "svc_matrixectomy",
+    "phase": "pre",
+    "textKey": "exp.matrixectomy.pre.1"
+  },
+  {
+    "id": "exp_matrixectomy_pre_2",
+    "serviceId": "svc_matrixectomy",
+    "phase": "pre",
+    "textKey": "exp.matrixectomy.pre.2"
+  },
+  {
+    "id": "exp_matrixectomy_pre_3",
+    "serviceId": "svc_matrixectomy",
+    "phase": "pre",
+    "textKey": "exp.matrixectomy.pre.3"
+  },
+  {
+    "id": "exp_matrixectomy_pre_4",
+    "serviceId": "svc_matrixectomy",
+    "phase": "pre",
+    "textKey": "exp.matrixectomy.pre.4"
+  },
+  {
+    "id": "exp_matrixectomy_during_1",
+    "serviceId": "svc_matrixectomy",
+    "phase": "during",
+    "textKey": "exp.matrixectomy.during.1"
+  },
+  {
+    "id": "exp_matrixectomy_during_2",
+    "serviceId": "svc_matrixectomy",
+    "phase": "during",
+    "textKey": "exp.matrixectomy.during.2"
+  },
+  {
+    "id": "exp_matrixectomy_post_1",
+    "serviceId": "svc_matrixectomy",
+    "phase": "post",
+    "textKey": "exp.matrixectomy.post.1"
+  },
+  {
+    "id": "exp_matrixectomy_post_2",
+    "serviceId": "svc_matrixectomy",
+    "phase": "post",
+    "textKey": "exp.matrixectomy.post.2"
+  },
+  {
+    "id": "exp_matrixectomy_post_3",
+    "serviceId": "svc_matrixectomy",
+    "phase": "post",
+    "textKey": "exp.matrixectomy.post.3"
+  },
+  {
+    "id": "exp_matrixectomy_post_4",
+    "serviceId": "svc_matrixectomy",
+    "phase": "post",
+    "textKey": "exp.matrixectomy.post.4"
+  },
+  {
+    "id": "exp_nail_fungus_pre_1",
+    "serviceId": "svc_nail_fungus_laser",
+    "phase": "pre",
+    "textKey": "exp.nail_fungus.pre.1"
+  },
+  {
+    "id": "exp_nail_fungus_pre_2",
+    "serviceId": "svc_nail_fungus_laser",
+    "phase": "pre",
+    "textKey": "exp.nail_fungus.pre.2"
+  },
+  {
+    "id": "exp_nail_fungus_pre_3",
+    "serviceId": "svc_nail_fungus_laser",
+    "phase": "pre",
+    "textKey": "exp.nail_fungus.pre.3"
+  },
+  {
+    "id": "exp_nail_fungus_during_1",
+    "serviceId": "svc_nail_fungus_laser",
+    "phase": "during",
+    "textKey": "exp.nail_fungus.during.1"
+  },
+  {
+    "id": "exp_nail_fungus_during_2",
+    "serviceId": "svc_nail_fungus_laser",
+    "phase": "during",
+    "textKey": "exp.nail_fungus.during.2"
+  },
+  {
+    "id": "exp_nail_fungus_post_1",
+    "serviceId": "svc_nail_fungus_laser",
+    "phase": "post",
+    "textKey": "exp.nail_fungus.post.1"
+  },
+  {
+    "id": "exp_nail_fungus_post_2",
+    "serviceId": "svc_nail_fungus_laser",
+    "phase": "post",
+    "textKey": "exp.nail_fungus.post.2"
+  },
+  {
+    "id": "exp_nail_fungus_post_3",
+    "serviceId": "svc_nail_fungus_laser",
+    "phase": "post",
+    "textKey": "exp.nail_fungus.post.3"
+  },
+  {
+    "id": "exp_toenail_pre_1",
+    "serviceId": "svc_toenail_extraction",
+    "phase": "pre",
+    "textKey": "exp.toenail.pre.1"
+  },
+  {
+    "id": "exp_toenail_pre_2",
+    "serviceId": "svc_toenail_extraction",
+    "phase": "pre",
+    "textKey": "exp.toenail.pre.2"
+  },
+  {
+    "id": "exp_toenail_pre_3",
+    "serviceId": "svc_toenail_extraction",
+    "phase": "pre",
+    "textKey": "exp.toenail.pre.3"
+  },
+  {
+    "id": "exp_toenail_during_1",
+    "serviceId": "svc_toenail_extraction",
+    "phase": "during",
+    "textKey": "exp.toenail.during.1"
+  },
+  {
+    "id": "exp_toenail_during_2",
+    "serviceId": "svc_toenail_extraction",
+    "phase": "during",
+    "textKey": "exp.toenail.during.2"
+  },
+  {
+    "id": "exp_toenail_post_1",
+    "serviceId": "svc_toenail_extraction",
+    "phase": "post",
+    "textKey": "exp.toenail.post.1"
+  },
+  {
+    "id": "exp_toenail_post_2",
+    "serviceId": "svc_toenail_extraction",
+    "phase": "post",
+    "textKey": "exp.toenail.post.2"
+  },
+  {
+    "id": "exp_toenail_post_3",
+    "serviceId": "svc_toenail_extraction",
+    "phase": "post",
+    "textKey": "exp.toenail.post.3"
+  }
+]

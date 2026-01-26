@@ -1,0 +1,146 @@
+[
+  {
+    "id": "exp_facial_balancing_pre_1",
+    "serviceId": "svc_facial_balancing",
+    "phase": "pre",
+    "textKey": "exp.facial_balancing.pre.1"
+  },
+  {
+    "id": "exp_facial_balancing_pre_2",
+    "serviceId": "svc_facial_balancing",
+    "phase": "pre",
+    "textKey": "exp.facial_balancing.pre.2"
+  },
+  {
+    "id": "exp_facial_balancing_pre_3",
+    "serviceId": "svc_facial_balancing",
+    "phase": "pre",
+    "textKey": "exp.facial_balancing.pre.3"
+  },
+  {
+    "id": "exp_facial_balancing_during_1",
+    "serviceId": "svc_facial_balancing",
+    "phase": "during",
+    "textKey": "exp.facial_balancing.during.1"
+  },
+  {
+    "id": "exp_facial_balancing_during_2",
+    "serviceId": "svc_facial_balancing",
+    "phase": "during",
+    "textKey": "exp.facial_balancing.during.2"
+  },
+  {
+    "id": "exp_facial_balancing_post_1",
+    "serviceId": "svc_facial_balancing",
+    "phase": "post",
+    "textKey": "exp.facial_balancing.post.1"
+  },
+  {
+    "id": "exp_facial_balancing_post_2",
+    "serviceId": "svc_facial_balancing",
+    "phase": "post",
+    "textKey": "exp.facial_balancing.post.2"
+  },
+  {
+    "id": "exp_facial_balancing_post_3",
+    "serviceId": "svc_facial_balancing",
+    "phase": "post",
+    "textKey": "exp.facial_balancing.post.3"
+  },
+  {
+    "id": "exp_lip_fillers_pre_1",
+    "serviceId": "svc_lip_fillers",
+    "phase": "pre",
+    "textKey": "exp.lip_fillers.pre.1"
+  },
+  {
+    "id": "exp_lip_fillers_pre_2",
+    "serviceId": "svc_lip_fillers",
+    "phase": "pre",
+    "textKey": "exp.lip_fillers.pre.2"
+  },
+  {
+    "id": "exp_lip_fillers_pre_3",
+    "serviceId": "svc_lip_fillers",
+    "phase": "pre",
+    "textKey": "exp.lip_fillers.pre.3"
+  },
+  {
+    "id": "exp_lip_fillers_during_1",
+    "serviceId": "svc_lip_fillers",
+    "phase": "during",
+    "textKey": "exp.lip_fillers.during.1"
+  },
+  {
+    "id": "exp_lip_fillers_during_2",
+    "serviceId": "svc_lip_fillers",
+    "phase": "during",
+    "textKey": "exp.lip_fillers.during.2"
+  },
+  {
+    "id": "exp_lip_fillers_post_1",
+    "serviceId": "svc_lip_fillers",
+    "phase": "post",
+    "textKey": "exp.lip_fillers.post.1"
+  },
+  {
+    "id": "exp_lip_fillers_post_2",
+    "serviceId": "svc_lip_fillers",
+    "phase": "post",
+    "textKey": "exp.lip_fillers.post.2"
+  },
+  {
+    "id": "exp_lip_fillers_post_3",
+    "serviceId": "svc_lip_fillers",
+    "phase": "post",
+    "textKey": "exp.lip_fillers.post.3"
+  },
+  {
+    "id": "exp_hyaluronidase_pre_1",
+    "serviceId": "svc_hyaluronidase",
+    "phase": "pre",
+    "textKey": "exp.hyaluronidase.pre.1"
+  },
+  {
+    "id": "exp_hyaluronidase_pre_2",
+    "serviceId": "svc_hyaluronidase",
+    "phase": "pre",
+    "textKey": "exp.hyaluronidase.pre.2"
+  },
+  {
+    "id": "exp_hyaluronidase_pre_3",
+    "serviceId": "svc_hyaluronidase",
+    "phase": "pre",
+    "textKey": "exp.hyaluronidase.pre.3"
+  },
+  {
+    "id": "exp_hyaluronidase_during_1",
+    "serviceId": "svc_hyaluronidase",
+    "phase": "during",
+    "textKey": "exp.hyaluronidase.during.1"
+  },
+  {
+    "id": "exp_hyaluronidase_during_2",
+    "serviceId": "svc_hyaluronidase",
+    "phase": "during",
+    "textKey": "exp.hyaluronidase.during.2"
+  },
+  {
+    "id": "exp_hyaluronidase_post_1",
+    "serviceId": "svc_hyaluronidase",
+    "phase": "post",
+    "textKey": "exp.hyaluronidase.post.1"
+  },
+  {
+    "id": "exp_hyaluronidase_post_2",
+    "serviceId": "svc_hyaluronidase",
+    "phase": "post",
+    "textKey": "exp.hyaluronidase.post.2"
+  },
+  {
+    "id": "exp_hyaluronidase_post_3",
+    "serviceId": "svc_hyaluronidase",
+    "phase": "post",
+    "textKey": "exp.hyaluronidase.post.3"
+  }
+]

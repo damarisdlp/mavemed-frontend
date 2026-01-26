@@ -1,0 +1,242 @@
+[
+  {
+    "id": "exp_cupping_pre_1",
+    "serviceId": "svc_cupping",
+    "phase": "pre",
+    "textKey": "exp.cupping.pre.1"
+  },
+  {
+    "id": "exp_cupping_pre_2",
+    "serviceId": "svc_cupping",
+    "phase": "pre",
+    "textKey": "exp.cupping.pre.2"
+  },
+  {
+    "id": "exp_cupping_pre_3",
+    "serviceId": "svc_cupping",
+    "phase": "pre",
+    "textKey": "exp.cupping.pre.3"
+  },
+  {
+    "id": "exp_cupping_during_1",
+    "serviceId": "svc_cupping",
+    "phase": "during",
+    "textKey": "exp.cupping.during.1"
+  },
+  {
+    "id": "exp_cupping_during_2",
+    "serviceId": "svc_cupping",
+    "phase": "during",
+    "textKey": "exp.cupping.during.2"
+  },
+  {
+    "id": "exp_cupping_during_3",
+    "serviceId": "svc_cupping",
+    "phase": "during",
+    "textKey": "exp.cupping.during.3"
+  },
+  {
+    "id": "exp_cupping_post_1",
+    "serviceId": "svc_cupping",
+    "phase": "post",
+    "textKey": "exp.cupping.post.1"
+  },
+  {
+    "id": "exp_cupping_post_2",
+    "serviceId": "svc_cupping",
+    "phase": "post",
+    "textKey": "exp.cupping.post.2"
+  },
+  {
+    "id": "exp_cupping_post_3",
+    "serviceId": "svc_cupping",
+    "phase": "post",
+    "textKey": "exp.cupping.post.3"
+  },
+  {
+    "id": "exp_keloid_pre_1",
+    "serviceId": "svc_keloid_injection",
+    "phase": "pre",
+    "textKey": "exp.keloid.pre.1"
+  },
+  {
+    "id": "exp_keloid_pre_2",
+    "serviceId": "svc_keloid_injection",
+    "phase": "pre",
+    "textKey": "exp.keloid.pre.2"
+  },
+  {
+    "id": "exp_keloid_pre_3",
+    "serviceId": "svc_keloid_injection",
+    "phase": "pre",
+    "textKey": "exp.keloid.pre.3"
+  },
+  {
+    "id": "exp_keloid_during_1",
+    "serviceId": "svc_keloid_injection",
+    "phase": "during",
+    "textKey": "exp.keloid.during.1"
+  },
+  {
+    "id": "exp_keloid_during_2",
+    "serviceId": "svc_keloid_injection",
+    "phase": "during",
+    "textKey": "exp.keloid.during.2"
+  },
+  {
+    "id": "exp_keloid_post_1",
+    "serviceId": "svc_keloid_injection",
+    "phase": "post",
+    "textKey": "exp.keloid.post.1"
+  },
+  {
+    "id": "exp_keloid_post_2",
+    "serviceId": "svc_keloid_injection",
+    "phase": "post",
+    "textKey": "exp.keloid.post.2"
+  },
+  {
+    "id": "exp_keloid_post_3",
+    "serviceId": "svc_keloid_injection",
+    "phase": "post",
+    "textKey": "exp.keloid.post.3"
+  },
+  {
+    "id": "exp_keloid_post_4",
+    "serviceId": "svc_keloid_injection",
+    "phase": "post",
+    "textKey": "exp.keloid.post.4"
+  },
+  {
+    "id": "exp_sclerotherapy_pre_1",
+    "serviceId": "svc_sclerotherapy",
+    "phase": "pre",
+    "textKey": "exp.sclerotherapy.pre.1"
+  },
+  {
+    "id": "exp_sclerotherapy_pre_2",
+    "serviceId": "svc_sclerotherapy",
+    "phase": "pre",
+    "textKey": "exp.sclerotherapy.pre.2"
+  },
+  {
+    "id": "exp_sclerotherapy_during_1",
+    "serviceId": "svc_sclerotherapy",
+    "phase": "during",
+    "textKey": "exp.sclerotherapy.during.1"
+  },
+  {
+    "id": "exp_sclerotherapy_during_2",
+    "serviceId": "svc_sclerotherapy",
+    "phase": "during",
+    "textKey": "exp.sclerotherapy.during.2"
+  },
+  {
+    "id": "exp_sclerotherapy_post_1",
+    "serviceId": "svc_sclerotherapy",
+    "phase": "post",
+    "textKey": "exp.sclerotherapy.post.1"
+  },
+  {
+    "id": "exp_sclerotherapy_post_2",
+    "serviceId": "svc_sclerotherapy",
+    "phase": "post",
+    "textKey": "exp.sclerotherapy.post.2"
+  },
+  {
+    "id": "exp_sclerotherapy_post_3",
+    "serviceId": "svc_sclerotherapy",
+    "phase": "post",
+    "textKey": "exp.sclerotherapy.post.3"
+  },
+  {
+    "id": "exp_swedish_pre_1",
+    "serviceId": "svc_swedish_massage",
+    "phase": "pre",
+    "textKey": "exp.swedish.pre.1"
+  },
+  {
+    "id": "exp_swedish_pre_2",
+    "serviceId": "svc_swedish_massage",
+    "phase": "pre",
+    "textKey": "exp.swedish.pre.2"
+  },
+  {
+    "id": "exp_swedish_during_1",
+    "serviceId": "svc_swedish_massage",
+    "phase": "during",
+    "textKey": "exp.swedish.during.1"
+  },
+  {
+    "id": "exp_swedish_during_2",
+    "serviceId": "svc_swedish_massage",
+    "phase": "during",
+    "textKey": "exp.swedish.during.2"
+  },
+  {
+    "id": "exp_swedish_post_1",
+    "serviceId": "svc_swedish_massage",
+    "phase": "post",
+    "textKey": "exp.swedish.post.1"
+  },
+  {
+    "id": "exp_swedish_post_2",
+    "serviceId": "svc_swedish_massage",
+    "phase": "post",
+    "textKey": "exp.swedish.post.2"
+  },
+  {
+    "id": "exp_wart_pre_1",
+    "serviceId": "svc_wart_removal",
+    "phase": "pre",
+    "textKey": "exp.wart.pre.1"
+  },
+  {
+    "id": "exp_wart_pre_2",
+    "serviceId": "svc_wart_removal",
+    "phase": "pre",
+    "textKey": "exp.wart.pre.2"
+  },
+  {
+    "id": "exp_wart_pre_3",
+    "serviceId": "svc_wart_removal",
+    "phase": "pre",
+    "textKey": "exp.wart.pre.3"
+  },
+  {
+    "id": "exp_wart_during_1",
+    "serviceId": "svc_wart_removal",
+    "phase": "during",
+    "textKey": "exp.wart.during.1"
+  },
+  {
+    "id": "exp_wart_during_2",
+    "serviceId": "svc_wart_removal",
+    "phase": "during",
+    "textKey": "exp.wart.during.2"
+  },
+  {
+    "id": "exp_wart_post_1",
+    "serviceId": "svc_wart_removal",
+    "phase": "post",
+    "textKey": "exp.wart.post.1"
+  },
+  {
+    "id": "exp_wart_post_2",
+    "serviceId": "svc_wart_removal",
+    "phase": "post",
+    "textKey": "exp.wart.post.2"
+  },
+  {
+    "id": "exp_wart_post_3",
+    "serviceId": "svc_wart_removal",
+    "phase": "post",
+    "textKey": "exp.wart.post.3"
+  },
+  {
+    "id": "exp_wart_post_4",
+    "serviceId": "svc_wart_removal",
+    "phase": "post",
+    "textKey": "exp.wart.post.4"
+  }
+]

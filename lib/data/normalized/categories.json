@@ -1,0 +1,47 @@
+[
+  {
+    "id": "cat_laser_resurfacing",
+    "slug": "laser-resurfacing",
+    "nameKey": "cat.laser_resurfacing.name"
+  },
+  {
+    "id": "cat_wrinkle_reducers",
+    "slug": "wrinkle-reducers",
+    "nameKey": "cat.wrinkle_reducers.name"
+  },
+  {
+    "id": "cat_collagen_biostimulators",
+    "slug": "collagen-biostimulators",
+    "nameKey": "cat.collagen_biostimulators.name"
+  },
+  {
+    "id": "cat_skin_tight_sculpting",
+    "slug": "skin-tightening",
+    "nameKey": "cat.skin_tight_sculpting.name"
+  },
+  {
+    "id": "cat_microneedling_mesotherapy",
+    "slug": "microneedling-mesotherapy",
+    "nameKey": "cat.microneedling_mesotherapy.name"
+  },
+  {
+    "id": "cat_dermal_fillers",
+    "slug": "dermal-fillers",
+    "nameKey": "cat.dermal_fillers.name"
+  },
+  {
+    "id": "cat_facials",
+    "slug": "facials",
+    "nameKey": "cat.facials.name"
+  },
+  {
+    "id": "cat_body_medical_treatments",
+    "slug": "body-medical-treatments",
+    "nameKey": "cat.body_medical_treatments.name"
+  },
+  {
+    "id": "cat_podiatry",
+    "slug": "podiatry",
+    "nameKey": "cat.podiatry.name"
+  }
+]

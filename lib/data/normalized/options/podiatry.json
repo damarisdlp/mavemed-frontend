@@ -1,0 +1,112 @@
+[
+  {
+    "id": "opt_calcaneal_spur_treatment",
+    "serviceId": "svc_calcaneal_spur",
+    "nameKey": "opt.calcaneal_spur.treatment",
+    "price": { "amount": 700.0, "currency": "MXN" },
+    "isOptionPromoActive": false,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "notesKeys": []
+  },
+  {
+    "id": "opt_matrixectomy_1_side",
+    "serviceId": "svc_matrixectomy",
+    "nameKey": "opt.matrixectomy.1_side",
+    "price": { "amount": 2500.0, "currency": "MXN" },
+    "isOptionPromoActive": false,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "notesKeys": []
+  },
+  {
+    "id": "opt_matrixectomy_2_sides",
+    "serviceId": "svc_matrixectomy",
+    "nameKey": "opt.matrixectomy.2_sides",
+    "price": { "amount": 4500.0, "currency": "MXN" },
+    "isOptionPromoActive": false,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "notesKeys": []
+  },
+  {
+    "id": "opt_matrixectomy_3_sides",
+    "serviceId": "svc_matrixectomy",
+    "nameKey": "opt.matrixectomy.3_sides",
+    "price": { "amount": 7000.0, "currency": "MXN" },
+    "isOptionPromoActive": false,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "notesKeys": []
+  },
+  {
+    "id": "opt_matrixectomy_4_sides",
+    "serviceId": "svc_matrixectomy",
+    "nameKey": "opt.matrixectomy.4_sides",
+    "price": { "amount": 9000.0, "currency": "MXN" },
+    "isOptionPromoActive": false,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "notesKeys": []
+  },
+  {
+    "id": "opt_nail_fungus_1",
+    "serviceId": "svc_nail_fungus_laser",
+    "nameKey": "opt.nail_fungus.1_nail",
+    "price": { "amount": 600.0, "currency": "MXN" },
+    "isOptionPromoActive": false,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "notesKeys": []
+  },
+  {
+    "id": "opt_nail_fungus_2",
+    "serviceId": "svc_nail_fungus_laser",
+    "nameKey": "opt.nail_fungus.2_nails",
+    "price": { "amount": 800.0, "currency": "MXN" },
+    "isOptionPromoActive": false,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "notesKeys": []
+  },
+  {
+    "id": "opt_nail_fungus_3_5",
+    "serviceId": "svc_nail_fungus_laser",
+    "nameKey": "opt.nail_fungus.3_5",
+    "price": { "amount": 1000.0, "currency": "MXN" },
+    "isOptionPromoActive": false,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "notesKeys": []
+  },
+  {
+    "id": "opt_nail_fungus_6_8",
+    "serviceId": "svc_nail_fungus_laser",
+    "nameKey": "opt.nail_fungus.6_8",
+    "price": { "amount": 1200.0, "currency": "MXN" },
+    "isOptionPromoActive": false,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "notesKeys": []
+  },
+  {
+    "id": "opt_nail_fungus_9_10",
+    "serviceId": "svc_nail_fungus_laser",
+    "nameKey": "opt.nail_fungus.9_10",
+    "price": { "amount": 1500.0, "currency": "MXN" },
+    "isOptionPromoActive": false,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "notesKeys": []
+  },
+  {
+    "id": "opt_toenail_extraction",
+    "serviceId": "svc_toenail_extraction",
+    "nameKey": "opt.toenail_extraction.per_nail",
+    "price": { "amount": 650.0, "currency": "MXN" },
+    "isOptionPromoActive": false,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "notesKeys": []
+  }
+]

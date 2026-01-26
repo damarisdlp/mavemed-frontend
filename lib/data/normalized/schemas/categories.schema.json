@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Categories",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["id", "slug", "nameKey"],
+    "additionalProperties": false,
+    "properties": {
+      "id": { "type": "string", "pattern": "^cat_" },
+      "slug": { "type": "string" },
+      "nameKey": { "type": "string" }
+    }
+  }
+}

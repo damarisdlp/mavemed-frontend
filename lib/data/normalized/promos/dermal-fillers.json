@@ -1,0 +1,29 @@
+[
+  {
+    "id": "promo_facial_balancing",
+    "serviceId": "svc_facial_balancing",
+    "headlineKey": "",
+    "descriptionKey": "",
+    "validFrom": null,
+    "validTill": null,
+    "options": []
+  },
+  {
+    "id": "promo_lip_fillers",
+    "serviceId": "svc_lip_fillers",
+    "headlineKey": "",
+    "descriptionKey": "",
+    "validFrom": null,
+    "validTill": null,
+    "options": []
+  },
+  {
+    "id": "promo_hyaluronidase",
+    "serviceId": "svc_hyaluronidase",
+    "headlineKey": "",
+    "descriptionKey": "",
+    "validFrom": null,
+    "validTill": null,
+    "options": []
+  }
+]

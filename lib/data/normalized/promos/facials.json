@@ -1,0 +1,56 @@
+[
+  {
+    "id": "promo_hydrafacial",
+    "serviceId": "svc_hydrafacial",
+    "headlineKey": "",
+    "descriptionKey": "",
+    "validFrom": null,
+    "validTill": null,
+    "options": []
+  },
+  {
+    "id": "promo_casmara_infinity",
+    "serviceId": "svc_casmara_infinity",
+    "headlineKey": "",
+    "descriptionKey": "",
+    "validFrom": null,
+    "validTill": null,
+    "options": []
+  },
+  {
+    "id": "promo_casmara_purifying",
+    "serviceId": "svc_casmara_purifying",
+    "headlineKey": "",
+    "descriptionKey": "",
+    "validFrom": null,
+    "validTill": null,
+    "options": []
+  },
+  {
+    "id": "promo_casmara_retinol_proage",
+    "serviceId": "svc_casmara_retinol_proage",
+    "headlineKey": "",
+    "descriptionKey": "",
+    "validFrom": null,
+    "validTill": null,
+    "options": []
+  },
+  {
+    "id": "promo_janssen_ultra_renewal",
+    "serviceId": "svc_janssen_ultra_renewal",
+    "headlineKey": "",
+    "descriptionKey": "",
+    "validFrom": null,
+    "validTill": null,
+    "options": []
+  },
+  {
+    "id": "promo_janssen_radiance_boost",
+    "serviceId": "svc_janssen_radiance_boost",
+    "headlineKey": "",
+    "descriptionKey": "",
+    "validFrom": null,
+    "validTill": null,
+    "options": []
+  }
+]
