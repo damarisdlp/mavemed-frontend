@@ -1,0 +1,752 @@
+[
+  {
+    "id": "cat.body_medical_treatments.name",
+    "en": "Body & Medical Treatments",
+    "es": "Tratamientos Corporales y Médicos"
+  },
+  {
+    "id": "svc.cupping.name",
+    "en": "Cupping Therapy - Add‑On",
+    "es": "Terapia de Ventosas - Complemento"
+  },
+  {
+    "id": "svc.cupping.desc",
+    "en": "Therapeutic cupping paired with massage to enhance circulation, relieve tension, and support detoxification.",
+    "es": "Terapia de ventosas terapéutica combinada con masaje para mejorar la circulación, aliviar tensión y apoyar la desintoxicación."
+  },
+  {
+    "id": "svc.cupping.details",
+    "en": "Cupping therapy uses suction to draw blood flow to targeted areas, reducing inflammation and promoting muscle recovery. It is commonly integrated into massage sessions for added therapeutic benefit.",
+    "es": "La terapia de ventosas utiliza succión para dirigir el flujo sanguíneo a áreas específicas, reduciendo la inflamación y promoviendo la recuperación muscular. Se integra comúnmente en sesiones de masaje para beneficio terapéutico adicional."
+  },
+  {
+    "id": "note.cupping.addon_only",
+    "en": "Add-on service only, not available as a standalone treatment",
+    "es": "Servicio complementario únicamente, no disponible como tratamiento independiente"
+  },
+  {
+    "id": "note.cupping.marks",
+    "en": "May leave temporary circular marks on the skin",
+    "es": "Puede dejar marcas circulares temporales en la piel"
+  },
+  {
+    "id": "note.cupping.pressure",
+    "en": "Customizable pressure based on comfort level",
+    "es": "Presión personalizable según nivel de comodidad"
+  },
+  {
+    "id": "goal.cupping.circulation",
+    "en": "Stimulate circulation",
+    "es": "Estimular la circulación"
+  },
+  {
+    "id": "goal.cupping.tension",
+    "en": "Relieve muscle tension",
+    "es": "Aliviar tensión muscular"
+  },
+  {
+    "id": "goal.cupping.detox",
+    "en": "Support lymphatic detox",
+    "es": "Apoyar desintoxicación linfática"
+  },
+  {
+    "id": "area.cupping.back",
+    "en": "Back",
+    "es": "Espalda"
+  },
+  {
+    "id": "area.cupping.shoulders",
+    "en": "Shoulders",
+    "es": "Hombros"
+  },
+  {
+    "id": "area.cupping.thighs",
+    "en": "Thighs",
+    "es": "Muslos"
+  },
+  {
+    "id": "area.cupping.calves",
+    "en": "Calves",
+    "es": "Pantorrillas"
+  },
+  {
+    "id": "area.cupping.arms",
+    "en": "Arms",
+    "es": "Brazos"
+  },
+  {
+    "id": "opt.cupping.addon",
+    "en": "Body - Cupping",
+    "es": "Corporal - Ventosas"
+  },
+  {
+    "id": "note.cupping.only_with_swedish",
+    "en": "Only available as an add-on to Swedish massage",
+    "es": "Solo disponible como complemento al masaje sueco"
+  },
+  {
+    "id": "svc.keloid_injection.name",
+    "en": "Keloid Scar Injection",
+    "es": "Inyección para Cicatriz Queloides"
+  },
+  {
+    "id": "svc.keloid_injection.desc",
+    "en": "Targeted corticosteroid or anti-fibrotic injections to flatten and soften raised keloid scars.",
+    "es": "Inyecciones específicas de corticosteroides o anti-fibróticos para aplanar y suavizar cicatrices queloides elevadas."
+  },
+  {
+    "id": "svc.keloid_injection.details",
+    "en": "This medical treatment involves injecting corticosteroids or specialized anti-fibrotic agents directly into keloid tissue. It helps reduce inflammation, pain, and scar thickness while improving cosmetic appearance over time.",
+    "es": "Este tratamiento médico implica inyectar corticosteroides o agentes anti-fibróticos especializados directamente en el tejido queloide. Ayuda a reducir la inflamación, dolor y grosor de la cicatriz mientras mejora la apariencia cosmética con el tiempo."
+  },
+  {
+    "id": "note.keloid.sessions",
+    "en": "Multiple sessions may be required depending on size and response",
+    "es": "Pueden ser requeridas múltiples sesiones dependiendo del tamaño y respuesta"
+  },
+  {
+    "id": "note.keloid.supervision",
+    "en": "Performed only under medical supervision",
+    "es": "Realizado solo bajo supervisión médica"
+  },
+  {
+    "id": "note.keloid.relief",
+    "en": "Available for cosmetic or symptomatic relief",
+    "es": "Disponible para alivio cosmético o sintomático"
+  },
+  {
+    "id": "goal.keloid.reduce_thickness",
+    "en": "Reduce raised scar thickness",
+    "es": "Reducir el grosor de cicatriz elevada"
+  },
+  {
+    "id": "goal.keloid.improve_appearance",
+    "en": "Improve scar appearance",
+    "es": "Mejorar apariencia de cicatriz"
+  },
+  {
+    "id": "goal.keloid.relieve",
+    "en": "Relieve itching or discomfort",
+    "es": "Aliviar picazón o incomodidad"
+  },
+  {
+    "id": "area.keloid.ears",
+    "en": "Ears",
+    "es": "Orejas"
+  },
+  {
+    "id": "area.keloid.chest",
+    "en": "Chest",
+    "es": "Pecho"
+  },
+  {
+    "id": "area.keloid.shoulders",
+    "en": "Shoulders",
+    "es": "Hombros"
+  },
+  {
+    "id": "area.keloid.back",
+    "en": "Back",
+    "es": "Espalda"
+  },
+  {
+    "id": "area.keloid.jawline",
+    "en": "Jawline",
+    "es": "Línea Mandibular"
+  },
+  {
+    "id": "area.keloid.any",
+    "en": "Any area with a keloid scar",
+    "es": "Cualquier área con cicatriz queloide"
+  },
+  {
+    "id": "opt.keloid.single_area",
+    "en": "Kenalog Injection",
+    "es": "Inyección de Kenalog"
+  },
+  {
+    "id": "svc.sclerotherapy.name",
+    "en": "Sclerotherapy for Vein Removal",
+    "es": "Escleroterapia para Eliminación de Venas"
+  },
+  {
+    "id": "svc.sclerotherapy.desc",
+    "en": "Minimally invasive injection treatment to eliminate spider veins and improve leg appearance.",
+    "es": "Tratamiento mínimamente invasivo de inyecciones para eliminar venas de araña y mejorar la apariencia de las piernas."
+  },
+  {
+    "id": "svc.sclerotherapy.details",
+    "en": "Sclerotherapy involves injecting a sclerosing agent into small superficial veins, causing them to collapse and fade from view. It is commonly used to treat spider veins and small varicose veins on the legs.",
+    "es": "La escleroterapia implica inyectar un agente esclerotizante en venas superficiales pequeñas, causando que colapsen y se desvanezcan de la vista. Se usa comúnmente para tratar venas de araña y venas varicosas pequeñas en las piernas."
+  },
+  {
+    "id": "note.sclerotherapy.sessions",
+    "en": "Multiple sessions may be needed for optimal results",
+    "es": "Pueden ser necesarias múltiples sesiones para resultados óptimos"
+  },
+  {
+    "id": "note.sclerotherapy.compression",
+    "en": "Compression stockings required post-treatment",
+    "es": "Medias de compresión requeridas después del tratamiento"
+  },
+  {
+    "id": "note.sclerotherapy.non_varicose",
+    "en": "Ideal for non-varicose surface veins",
+    "es": "Ideal para venas superficiales no varicosas"
+  },
+  {
+    "id": "goal.sclerotherapy.reduce_spider",
+    "en": "Reduce visibility of spider veins",
+    "es": "Reducir visibilidad de venas de araña"
+  },
+  {
+    "id": "goal.sclerotherapy.improve_legs",
+    "en": "Improve leg aesthetics",
+    "es": "Mejorar estética de piernas"
+  },
+  {
+    "id": "goal.sclerotherapy.prevent",
+    "en": "Prevent worsening of vascular issues",
+    "es": "Prevenir empeoramiento de problemas vasculares"
+  },
+  {
+    "id": "area.sclerotherapy.thighs",
+    "en": "Thighs",
+    "es": "Muslos"
+  },
+  {
+    "id": "area.sclerotherapy.calves",
+    "en": "Calves",
+    "es": "Pantorrillas"
+  },
+  {
+    "id": "area.sclerotherapy.ankles",
+    "en": "Ankles",
+    "es": "Tobillos"
+  },
+  {
+    "id": "opt.sclerotherapy.any_zone",
+    "en": "Body - Sclerotherapy",
+    "es": "Corporal - Escleroterapia"
+  },
+  {
+    "id": "note.sclerotherapy.starting_per_syringe",
+    "en": "Starting at 1500 MXN per syringe. One syringe is typically enough for both legs if vein quantity is mild to mild-moderate.",
+    "es": "Desde 1500 MXN por jeringa. Una jeringa suele ser suficiente para ambas piernas si la cantidad de venas es leve a leve-moderada."
+  },
+  {
+    "id": "svc.swedish_massage.name",
+    "en": "Relaxing Swedish Massage",
+    "es": "Masaje Sueco Relajante"
+  },
+  {
+    "id": "svc.swedish_massage.desc",
+    "en": "A gentle, full-body massage to relieve tension, improve circulation, and promote overall relaxation.",
+    "es": "Un masaje suave y completo del cuerpo para aliviar la tensión, mejorar la circulación y promover la relajación general."
+  },
+  {
+    "id": "svc.swedish_massage.details",
+    "en": "This classic Swedish massage uses light to moderate pressure with long, flowing strokes. It helps improve lymphatic flow, reduce stress, and increase oxygen levels in the blood.",
+    "es": "Este clásico masaje sueco utiliza presión ligera a moderada con movimientos largos y fluidos. Ayuda a mejorar el flujo linfático, reducir el estrés y aumentar los niveles de oxígeno en la sangre."
+  },
+  {
+    "id": "note.swedish.aroma",
+    "en": "Includes aromatherapy upon request",
+    "es": "Incluye aromaterapia bajo petición"
+  },
+  {
+    "id": "note.swedish.not_deep",
+    "en": "Not a deep tissue massage",
+    "es": "No es un masaje de tejido profundo"
+  },
+  {
+    "id": "note.swedish.stress",
+    "en": "Ideal for stress relief and general wellness",
+    "es": "Ideal para alivio del estrés y bienestar general"
+  },
+  {
+    "id": "goal.swedish.relax",
+    "en": "Promote relaxation",
+    "es": "Promover relajación"
+  },
+  {
+    "id": "goal.swedish.relieve_tension",
+    "en": "Relieve muscular tension",
+    "es": "Aliviar tensión muscular"
+  },
+  {
+    "id": "goal.swedish.circulation",
+    "en": "Improve blood circulation",
+    "es": "Mejorar circulación sanguínea"
+  },
+  {
+    "id": "area.swedish.full_body",
+    "en": "Full Body",
+    "es": "Cuerpo Completo"
+  },
+  {
+    "id": "opt.swedish.full_body",
+    "en": "Body - Swedish Massage",
+    "es": "Corporal - Masaje Sueco"
+  },
+  {
+    "id": "svc.wart_removal.name",
+    "en": "Wart / Skin Tag Removal",
+    "es": "Eliminación de Verrugas y Acrocordones"
+  },
+  {
+    "id": "svc.wart_removal.desc",
+    "en": "Safe and effective removal of warts and skin tags using advanced medical techniques for clear, smooth skin.",
+    "es": "Eliminación segura y efectiva de verrugas y acrocordones con técnicas médicas avanzadas para una piel limpia y uniforme."
+  },
+  {
+    "id": "svc.wart_removal.details",
+    "en": "Wart and skin tag removal may use cryotherapy, targeted topical agents, or minor procedures. The method is selected based on lesion type, location, and patient needs for optimal results.",
+    "es": "La eliminación de verrugas y acrocordones puede realizarse con crioterapia, agentes tópicos dirigidos o procedimientos menores. El método se elige según el tipo de lesión, la ubicación y las necesidades del paciente para resultados óptimos."
+  },
+  {
+    "id": "note.wart.sessions",
+    "en": "Treatment may require multiple sessions",
+    "es": "El tratamiento puede requerir múltiples sesiones"
+  },
+  {
+    "id": "note.wart.professionals",
+    "en": "Performed by licensed medical professionals",
+    "es": "Realizado por profesionales médicos licenciados"
+  },
+  {
+    "id": "note.wart.results",
+    "en": "Results may vary based on lesion type and size",
+    "es": "Los resultados pueden variar según el tipo y tamaño de la lesión"
+  },
+  {
+    "id": "goal.wart.eliminate",
+    "en": "Remove warts and skin tags safely and effectively",
+    "es": "Eliminar verrugas y acrocordones de manera segura y efectiva"
+  },
+  {
+    "id": "goal.wart.prevent_spread",
+    "en": "Prevent spread to surrounding areas",
+    "es": "Prevenir propagación a áreas circundantes"
+  },
+  {
+    "id": "goal.wart.confidence",
+    "en": "Improve skin appearance and confidence",
+    "es": "Mejorar apariencia de la piel y confianza"
+  },
+  {
+    "id": "area.wart.hands",
+    "en": "Hands",
+    "es": "Manos"
+  },
+  {
+    "id": "area.wart.feet",
+    "en": "Feet",
+    "es": "Pies"
+  },
+  {
+    "id": "area.wart.face",
+    "en": "Face",
+    "es": "Cara"
+  },
+  {
+    "id": "area.wart.any",
+    "en": "Any area with warts or skin tags",
+    "es": "Cualquier área con verrugas o acrocordones"
+  },
+  {
+    "id": "opt.wart.per_zone",
+    "en": "Body - Wart / Skin Tag Removal",
+    "es": "Corporal - Eliminación de Verrugas y Acrocordones"
+  },
+  {
+    "id": "note.wart.starting_price",
+    "en": "Starting at 500 MXN.",
+    "es": "Desde 500 MXN."
+  },
+  {
+    "id": "price.body.consultation",
+    "en": "Based on consultation",
+    "es": "Basado en consulta"
+  },
+  {
+    "id": "addon.cupping.swedish_full_body",
+    "en": "Relaxing Swedish Massage - Full Body",
+    "es": "Masaje Sueco Relajante - Cuerpo Completo"
+  },
+  {
+    "id": "addon.cupping.hydrafacial",
+    "en": "Hydrafacial MD - Face",
+    "es": "Hydrafacial MD - Rostro"
+  },
+  {
+    "id": "addon.cupping.casmara_retinol",
+    "en": "Casmara - Retinol Pro‑Age Facial",
+    "es": "Casmara - Facial Retinol Pro‑Age"
+  },
+  {
+    "id": "addon.keloid.venus_freeze",
+    "en": "RF Body Sculpting - Abdomen Firming",
+    "es": "Escultura Corporal RF - Abdomen Firme"
+  },
+  {
+    "id": "addon.keloid.rf_microneedling_medium",
+    "en": "Sylfirm X - RF Microneedling - Medium Zone",
+    "es": "Sylfirm X - Microagujas RF - Zona Mediana"
+  },
+  {
+    "id": "addon.sclerotherapy.hydrafacial",
+    "en": "Hydrafacial MD - Face",
+    "es": "Hydrafacial MD - Rostro"
+  },
+  {
+    "id": "addon.sclerotherapy.botox",
+    "en": "Botox - Any Zone",
+    "es": "Botox - Cualquier Zona"
+  },
+  {
+    "id": "addon.sclerotherapy.dermawrinkle",
+    "en": "Dermawrinkle - Any Zone",
+    "es": "Dermawrinkle - Cualquier Zona"
+  },
+  {
+    "id": "addon.sclerotherapy.microneedling_prp",
+    "en": "Microneedling - PRP - Platelet Rich Plasma",
+    "es": "Microneedling - PRP - Plasma Rico en Plaquetas"
+  },
+  {
+    "id": "addon.sclerotherapy.swedish",
+    "en": "Relaxing Swedish Massage - Full Body",
+    "es": "Masaje Sueco Relajante - Cuerpo Completo"
+  },
+  {
+    "id": "addon.sclerotherapy.cupping",
+    "en": "Cupping Add‑On",
+    "es": "Complemento de Ventosas"
+  },
+  {
+    "id": "addon.swedish.cupping",
+    "en": "Cupping Add‑On",
+    "es": "Complemento de Ventosas"
+  },
+  {
+    "id": "addon.wart.hydrafacial",
+    "en": "Hydrafacial MD - Face",
+    "es": "Hydrafacial MD - Rostro"
+  },
+  {
+    "id": "addon.wart.casmara_purifying",
+    "en": "Casmara - Purifying Algae Facial",
+    "es": "Casmara - Facial Purificante de Algas"
+  },
+  {
+    "id": "exp.cupping.pre.1",
+    "en": "Arrive well hydrated and eat a light meal 1–2 hours before your session.",
+    "es": "Llegue bien hidratado y coma algo ligero 1–2 horas antes de la sesión."
+  },
+  {
+    "id": "exp.cupping.pre.2",
+    "en": "Avoid heavy lotions or oils on the areas to be treated on the day of your appointment.",
+    "es": "Evite lociones o aceites pesados en las zonas a tratar el día de su cita."
+  },
+  {
+    "id": "exp.cupping.pre.3",
+    "en": "Let your provider know about blood thinners, recent sunburn, pregnancy, or skin conditions (eczema, psoriasis, wounds).",
+    "es": "Informe a su especialista si usa anticoagulantes, tiene quemaduras solares recientes, embarazo o afecciones cutáneas (eczema, psoriasis, heridas)."
+  },
+  {
+    "id": "exp.cupping.during.1",
+    "en": "You will feel a firm pulling/suction sensation; intensity can be adjusted for comfort.",
+    "es": "Sentirá una sensación firme de succión o tirón; la intensidad puede ajustarse para su comodidad."
+  },
+  {
+    "id": "exp.cupping.during.2",
+    "en": "Expect temporary circular marks to form as cups draw blood flow to the surface.",
+    "es": "Es normal que se formen marcas circulares temporales cuando las ventosas llevan flujo sanguíneo a la superficie."
+  },
+  {
+    "id": "exp.cupping.during.3",
+    "en": "Mild warmth or pressure is common; tell your provider immediately if you feel sharp pain or dizziness.",
+    "es": "El calor o la presión leves son comunes; informe de inmediato si siente dolor agudo o mareo."
+  },
+  {
+    "id": "exp.cupping.post.1",
+    "en": "Mild soreness, redness, or circular bruising can last 3–7 days; this is expected.",
+    "es": "Dolor leve, enrojecimiento o moretones circulares pueden durar de 3 a 7 días; es esperado."
+  },
+  {
+    "id": "exp.cupping.post.2",
+    "en": "Stay hydrated and avoid hot tubs, saunas, or vigorous exercise for 24 hours.",
+    "es": "Manténgase hidratado y evite tinas calientes, saunas o ejercicio intenso por 24 horas."
+  },
+  {
+    "id": "exp.cupping.post.3",
+    "en": "Keep treated skin clean, avoid harsh exfoliants, and protect marks from direct sun until they fade.",
+    "es": "Mantenga la piel tratada limpia, evite exfoliantes agresivos y proteja las marcas del sol directo hasta que desaparezcan."
+  },
+  {
+    "id": "exp.keloid.pre.1",
+    "en": "Avoid NSAIDs, aspirin, and blood thinners for 3–5 days if medically permitted; inform your provider if you cannot stop them.",
+    "es": "Evite antiinflamatorios, aspirina y anticoagulantes durante 3–5 días si su médico lo permite; informe a su especialista si no puede suspenderlos."
+  },
+  {
+    "id": "exp.keloid.pre.2",
+    "en": "Do not apply irritating products (retinoids, acids) on or near the scar for 48 hours prior.",
+    "es": "No aplique productos irritantes (retinoides, ácidos) en o cerca de la cicatriz durante 48 horas previas."
+  },
+  {
+    "id": "exp.keloid.pre.3",
+    "en": "Reschedule if you have active infection, open wounds, or sunburn on the treatment area.",
+    "es": "Reprograme si tiene infección activa, heridas abiertas o quemadura solar en la zona a tratar."
+  },
+  {
+    "id": "exp.keloid.during.1",
+    "en": "You’ll feel a brief pinch and pressure as the medication is injected directly into the scar; numbing cream may be used for comfort.",
+    "es": "Sentirá un pequeño pinchazo y presión mientras se inyecta el medicamento directamente en la cicatriz; se puede usar crema anestésica para mayor comodidad."
+  },
+  {
+    "id": "exp.keloid.during.2",
+    "en": "Mild blanching or fullness at the site is expected as the steroid/anti-fibrotic disperses.",
+    "es": "Es normal un ligero blanqueamiento o sensación de llenado en el sitio mientras se dispersa el esteroide/anti-fibrótico."
+  },
+  {
+    "id": "exp.keloid.post.1",
+    "en": "Expect mild tenderness, swelling, or redness for 24–72 hours; apply cool compresses if needed.",
+    "es": "Espere sensibilidad, hinchazón o enrojecimiento leve de 24 a 72 horas; aplique compresas frías si es necesario."
+  },
+  {
+    "id": "exp.keloid.post.2",
+    "en": "Keep the area clean, avoid picking or scratching, and skip tight clothing or friction over the site for 48 hours.",
+    "es": "Mantenga el área limpia, evite rascarse o manipularla y no use ropa ajustada ni genere fricción sobre la zona durante 48 horas."
+  },
+  {
+    "id": "exp.keloid.post.3",
+    "en": "Protect the area from sun with SPF 30+ and consider silicone gel/sheeting if recommended to support remodeling.",
+    "es": "Proteja la zona del sol con FPS 30+ y considere gel/láminas de silicona si se recomienda para apoyar la remodelación."
+  },
+  {
+    "id": "exp.keloid.post.4",
+    "en": "Results are gradual over multiple sessions; report any increasing pain, heat, pus, or rapid swelling.",
+    "es": "Los resultados son graduales en múltiples sesiones; informe cualquier aumento de dolor, calor, pus o hinchazón rápida."
+  },
+  {
+    "id": "exp.sclerotherapy.pre.1",
+    "en": "Avoid aspirin, NSAIDs, and alcohol for 48 hours if medically permitted; skip moisturizers or oils on legs the day of treatment.",
+    "es": "Evite aspirina, antiinflamatorios y alcohol por 48 horas si su médico lo permite; no use cremas u aceites en las piernas el día del tratamiento."
+  },
+  {
+    "id": "exp.sclerotherapy.pre.2",
+    "en": "Bring or wear compression stockings as instructed; avoid shaving or waxing legs 24 hours prior.",
+    "es": "Traiga o use medias de compresión según se le indique; evite rasurar o depilar las piernas 24 horas antes."
+  },
+  {
+    "id": "exp.sclerotherapy.during.1",
+    "en": "You’ll feel small needle pricks and brief stinging or cramping as the solution enters the vein.",
+    "es": "Sentirá pequeños piquetes y un ardor o calambre breve mientras la solución entra en la vena."
+  },
+  {
+    "id": "exp.sclerotherapy.during.2",
+    "en": "Leg elevation and immediate compression are applied; walking soon after the procedure is encouraged.",
+    "es": "Se eleva la pierna y se aplica compresión de inmediato; se recomienda caminar poco después del procedimiento."
+  },
+  {
+    "id": "exp.sclerotherapy.post.1",
+    "en": "Wear compression stockings as directed (often 5–7 days during waking hours) and walk 10–20 minutes daily.",
+    "es": "Use las medias de compresión según se indique (a menudo 5–7 días durante las horas de vigilia) y camine 10–20 minutos al día."
+  },
+  {
+    "id": "exp.sclerotherapy.post.2",
+    "en": "Avoid hot baths, saunas, intense sun, and high-impact exercise for 7 days; avoid heavy lifting for 48 hours.",
+    "es": "Evite baños calientes, saunas, sol intenso y ejercicio de alto impacto por 7 días; evite levantar peso por 48 horas."
+  },
+  {
+    "id": "exp.sclerotherapy.post.3",
+    "en": "Mild bruising, itching, or lumps along the vein can occur and usually resolve over weeks; contact us for severe calf pain, swelling, or redness.",
+    "es": "Moretones leves, comezón o nódulos a lo largo de la vena pueden ocurrir y suelen resolverse en semanas; contáctenos si presenta dolor de pantorrilla intenso, hinchazón o enrojecimiento."
+  },
+  {
+    "id": "exp.swedish.pre.1",
+    "en": "Arrive well hydrated and have a light meal 1–2 hours before.",
+    "es": "Llegue bien hidratado y coma algo ligero 1–2 horas antes."
+  },
+  {
+    "id": "exp.swedish.pre.2",
+    "en": "Share any recent injuries, surgeries, or areas of discomfort so pressure can be adjusted.",
+    "es": "Informe sobre lesiones o cirugías recientes y zonas sensibles para ajustar la presión."
+  },
+  {
+    "id": "exp.swedish.during.1",
+    "en": "Expect gentle to moderate pressure with long, flowing strokes; communicate if you prefer lighter or deeper work.",
+    "es": "Espere presión suave a moderada con pases largos y fluidos; comunique si prefiere un trabajo más ligero o más profundo."
+  },
+  {
+    "id": "exp.swedish.during.2",
+    "en": "Normal sensations include warmth and relaxation; tell your therapist if you feel pain or dizziness.",
+    "es": "Son normales sensaciones de calor y relajación; avise a su terapeuta si siente dolor o mareo."
+  },
+  {
+    "id": "exp.swedish.post.1",
+    "en": "Drink water to support lymphatic drainage and avoid heavy workouts for the rest of the day.",
+    "es": "Beba agua para apoyar el drenaje linfático y evite entrenamientos intensos el resto del día."
+  },
+  {
+    "id": "exp.swedish.post.2",
+    "en": "Mild soreness can occur after your first or deeper session; gentle stretching and a warm (not hot) shower can help.",
+    "es": "Puede presentarse dolor leve después de la primera sesión o de una más profunda; estiramientos suaves y una ducha tibia (no caliente) pueden ayudar."
+  },
+  {
+    "id": "exp.wart.pre.1",
+    "en": "Keep the area clean and avoid topical acids/retinoids for 3–5 days before your visit.",
+    "es": "Mantenga el área limpia y evite ácidos o retinoides tópicos durante 3–5 días antes de su visita."
+  },
+  {
+    "id": "exp.wart.pre.2",
+    "en": "Do not shave, wax, or pick the wart; cover if it tends to rub against clothing.",
+    "es": "No afeite, depile ni manipule la verruga; cúbrala si roza con la ropa."
+  },
+  {
+    "id": "exp.wart.pre.3",
+    "en": "Tell your provider about pregnancy, diabetes, immune conditions, anticoagulants, or poor circulation.",
+    "es": "Informe a su especialista sobre embarazo, diabetes, problemas inmunológicos, anticoagulantes o mala circulación."
+  },
+  {
+    "id": "exp.wart.during.1",
+    "en": "You may feel brief stinging, cold, or pressure depending on the method (cryotherapy, chemical, or excision).",
+    "es": "Puede sentir ardor breve, frío o presión según el método (crioterapia, químico o escisión)."
+  },
+  {
+    "id": "exp.wart.during.2",
+    "en": "A white halo or mild blanching is expected during cryotherapy; a local anesthetic may be used for sensitivity.",
+    "es": "En crioterapia es normal un halo blanco o blanqueamiento leve; se puede usar anestesia local si hay sensibilidad."
+  },
+  {
+    "id": "exp.wart.post.1",
+    "en": "A blister or crust can form and typically resolves in 7–14 days; keep it clean and dry for the first 24 hours.",
+    "es": "Puede formarse una ampolla o costra que suele resolverse en 7–14 días; manténgala limpia y seca las primeras 24 horas."
+  },
+  {
+    "id": "exp.wart.post.2",
+    "en": "After 24 hours, cleanse gently with mild soap and water; apply prescribed ointment or dressing as directed.",
+    "es": "Después de 24 horas, limpie suavemente con agua y jabón suave; aplique el ungüento o vendaje indicado."
+  },
+  {
+    "id": "exp.wart.post.3",
+    "en": "Avoid pools, hot tubs, or soaking until the skin has healed; do not pick the crust.",
+    "es": "Evite albercas, tinas calientes o remojar el área hasta que la piel haya sanado; no retire la costra."
+  },
+  {
+    "id": "exp.wart.post.4",
+    "en": "Contact us for increasing redness, pus, severe pain, or if the wart enlarges.",
+    "es": "Contáctenos si presenta enrojecimiento creciente, pus, dolor intenso o si la verruga aumenta de tamaño."
+  },
+  {
+    "id": "faq.cupping.q1",
+    "en": "Does cupping hurt?",
+    "es": "¿Duele la terapia de ventosas?"
+  },
+  {
+    "id": "faq.cupping.a1",
+    "en": "Most clients feel a tight pulling sensation, not pain. It's generally well tolerated.",
+    "es": "La mayoría de los clientes sienten una sensación de tirón apretado, no dolor. Generalmente se tolera bien."
+  },
+  {
+    "id": "faq.cupping.q2",
+    "en": "Will I have marks afterward?",
+    "es": "¿Tendré marcas después?"
+  },
+  {
+    "id": "faq.cupping.a2",
+    "en": "Yes, cupping often leaves painless circular marks that fade within a few days.",
+    "es": "Sí, la terapia de ventosas a menudo deja marcas circulares indoloras que se desvanecen en pocos días."
+  },
+  {
+    "id": "faq.keloid.q1",
+    "en": "How many sessions are needed?",
+    "es": "¿Cuántas sesiones se necesitan?"
+  },
+  {
+    "id": "faq.keloid.a1",
+    "en": "It depends on the scar. Some keloids flatten in 2–3 sessions, while others may need 4 or more spaced over several weeks.",
+    "es": "Depende de la cicatriz. Algunas queloides se aplanan en 2–3 sesiones, mientras que otras pueden necesitar 4 o más espaciadas en varias semanas."
+  },
+  {
+    "id": "faq.keloid.q2",
+    "en": "Are results permanent?",
+    "es": "¿Los resultados son permanentes?"
+  },
+  {
+    "id": "faq.keloid.a2",
+    "en": "Improvement is usually long-lasting, though recurrence can happen. We monitor each case and adjust treatment as needed.",
+    "es": "La mejora generalmente es duradera, aunque puede haber recurrencia. Monitoreamos cada caso y ajustamos el tratamiento según sea necesario."
+  },
+  {
+    "id": "faq.sclerotherapy.q1",
+    "en": "How long before I see results?",
+    "es": "¿Cuánto tiempo antes de ver resultados?"
+  },
+  {
+    "id": "faq.sclerotherapy.a1",
+    "en": "Veins typically fade over 3–6 weeks. Larger veins may take longer or require more sessions.",
+    "es": "Las venas generalmente se desvanecen en 3–6 semanas. Las venas más grandes pueden tomar más tiempo o requerir más sesiones."
+  },
+  {
+    "id": "faq.sclerotherapy.q2",
+    "en": "Is the procedure painful?",
+    "es": "¿El procedimiento es doloroso?"
+  },
+  {
+    "id": "faq.sclerotherapy.a2",
+    "en": "There may be a slight stinging or cramping sensation, but most patients tolerate it well.",
+    "es": "Puede haber una ligera sensación de picazón o calambres, pero la mayoría de los pacientes lo toleran bien."
+  },
+  {
+    "id": "faq.swedish.q1",
+    "en": "Is this massage good for chronic pain?",
+    "es": "¿Este masaje es bueno para el dolor crónico?"
+  },
+  {
+    "id": "faq.swedish.a1",
+    "en": "While it helps with tension, Swedish massage is better for relaxation. Chronic pain may require a deeper modality.",
+    "es": "Aunque ayuda con la tensión, el masaje sueco es mejor para la relajación. El dolor crónico puede requerir una modalidad más profunda."
+  },
+  {
+    "id": "faq.swedish.q2",
+    "en": "Can I combine this with other treatments?",
+    "es": "¿Puedo combinar esto con otros tratamientos?"
+  },
+  {
+    "id": "faq.swedish.a2",
+    "en": "Yes, many clients pair it with facials, RF therapy, or body sculpting for a holistic session.",
+    "es": "Sí, muchos clientes lo combinan con faciales, terapia RF o escultura corporal para una sesión holística."
+  },
+  {
+    "id": "faq.wart.q1",
+    "en": "How long does it take to remove a wart or skin tag?",
+    "es": "¿Cuánto tiempo toma eliminar una verruga o acrocordón?"
+  },
+  {
+    "id": "faq.wart.a1",
+    "en": "Removal time varies by method and lesion size. Smaller lesions may clear in 1-2 sessions, while larger or stubborn ones can take several weeks.",
+    "es": "El tiempo de eliminación varía según el método y el tamaño de la lesión. Las lesiones pequeñas pueden aclararse en 1-2 sesiones, mientras que las más grandes o persistentes pueden tomar varias semanas."
+  },
+  {
+    "id": "faq.wart.q2",
+    "en": "Will it come back?",
+    "es": "¿Puede volver?"
+  },
+  {
+    "id": "faq.wart.a2",
+    "en": "While we aim for complete removal, warts can recur if the virus remains and skin tags can reappear over time. Following post-treatment care instructions helps minimize this risk.",
+    "es": "Aunque buscamos una eliminación completa, las verrugas pueden recurrir si el virus permanece y los acrocordones pueden reaparecer con el tiempo. Seguir las indicaciones de cuidado post-tratamiento ayuda a minimizar este riesgo."
+  },
+  {
+    "id": "faq.wart.q3",
+    "en": "Does wart or skin tag removal hurt?",
+    "es": "¿Duele la eliminación de verrugas o acrocordones?"
+  },
+  {
+    "id": "faq.wart.a3",
+    "en": "Discomfort varies by method. Cryotherapy may cause a brief burning sensation, while other methods are generally well-tolerated with minimal discomfort.",
+    "es": "El malestar varía según el método. La crioterapia puede causar una sensación breve de ardor, mientras que otros métodos generalmente se toleran bien con incomodidad mínima."
+  }
+]
