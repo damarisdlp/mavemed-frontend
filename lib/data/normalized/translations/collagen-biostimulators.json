@@ -1,0 +1,477 @@
+[
+  {
+    "id": "cat.collagen_biostimulators.name",
+    "en": "Collagen Biostimulators",
+    "es": "Biostimuladores de Colágeno"
+  },
+  {
+    "id": "svc.sculptra.name",
+    "en": "Sculptra® (PLLA) - Poly-L-Lactic Acid",
+    "es": "Sculptra® (PLLA) - Poli-L-Láctico"
+  },
+  {
+    "id": "svc.sculptra.desc",
+    "en": "Gradually restore youthful volume and firmness with Sculptra®, a poly-L-lactic acid (PLLA) collagen stimulator that enhances skin texture and structure over time.",
+    "es": "Restaure gradualmente el volumen y la firmeza juvenil con Sculptra®, un estimulador de colágeno de ácido poli-L-láctico (PLLA) que mejora la textura y estructura de la piel con el tiempo."
+  },
+  {
+    "id": "svc.sculptra.details",
+    "en": "Sculptra® is an injectable biostimulant composed of poly-L-lactic acid (PLLA), designed to activate your skin’s natural collagen production. It gradually restores lost facial volume, improves skin density, and enhances definition in areas like the cheeks, jawline, and temples. Unlike traditional dermal fillers, Sculptra® delivers subtle, progressive improvements that last up to two years.",
+    "es": "Sculptra® es un biostimulante inyectable compuesto de ácido poli-L-láctico (PLLA), diseñado para activar la producción natural de colágeno de la piel. Restaura gradualmente el volumen facial perdido, mejora la densidad de la piel y realza la definición en áreas como las mejillas, la línea mandibular y las sienes. A diferencia de los rellenos dérmicos tradicionales, Sculptra® proporciona mejoras sutiles y progresivas que duran hasta dos años."
+  },
+  {
+    "id": "note.sculptra.protocol",
+    "en": "Manufacturer protocol requires a minimum series of 3 sessions, typically spaced 4–6 weeks apart",
+    "es": "El protocolo del fabricante requiere una serie mínima de 3 sesiones, normalmente espaciadas cada 4 a 6 semanas"
+  },
+  {
+    "id": "note.sculptra.long_term",
+    "en": "Excellent for long-term volume restoration without an overfilled look",
+    "es": "Excelente para la restauración de volumen a largo plazo sin apariencia sobrecargada"
+  },
+  {
+    "id": "note.sculptra.single_session",
+    "en": "Single-session pricing is $575 when there is no commitment to a full rejuvenation treatment plan, or when the session is used as a maintenance treatment.",
+    "es": "El precio por una sola sesión es de $575 cuando no hay compromiso con un plan completo de rejuvenecimiento, o cuando la sesión se utiliza como tratamiento de mantenimiento."
+  },
+  {
+    "id": "note.sculptra.per_vial",
+    "en": "Pricing is per vial, not per session; total vials vary by area and plan",
+    "es": "La tarifa es por vial, no por sesión; el número total de viales varía según el área y el plan"
+  },
+  {
+    "id": "goal.sculptra.collagen",
+    "en": "Stimulate natural collagen growth",
+    "es": "Estimular el crecimiento natural del colágeno"
+  },
+  {
+    "id": "goal.sculptra.volume",
+    "en": "Rebuild facial volume lost to aging",
+    "es": "Reconstruir el volumen facial perdido por el envejecimiento"
+  },
+  {
+    "id": "goal.sculptra.texture",
+    "en": "Improve skin texture, elasticity, and structure",
+    "es": "Mejorar la textura, elasticidad y estructura de la piel"
+  },
+  {
+    "id": "area.sculptra.cheeks",
+    "en": "Cheeks",
+    "es": "Mejillas"
+  },
+  {
+    "id": "area.sculptra.temples",
+    "en": "Temples",
+    "es": "Sienes"
+  },
+  {
+    "id": "area.sculptra.jawline",
+    "en": "Jawline",
+    "es": "Línea Mandibular"
+  },
+  {
+    "id": "area.sculptra.nasolabial_folds",
+    "en": "Nasolabial Folds",
+    "es": "Pliegues Nasolabiales"
+  },
+  {
+    "id": "area.sculptra.marionette_lines",
+    "en": "Marionette Lines",
+    "es": "Líneas de Marioneta"
+  },
+  {
+    "id": "area.sculptra.chin",
+    "en": "Chin",
+    "es": "Barbilla"
+  },
+  {
+    "id": "area.sculptra.neck",
+    "en": "Neck",
+    "es": "Cuello"
+  },
+  {
+    "id": "area.sculptra.other",
+    "en": "Other zones may be treated upon request following medical evaluation",
+    "es": "Otras zonas pueden tratarse a solicitud tras evaluación médica"
+  },
+  {
+    "id": "opt.sculptra.per_vial",
+    "en": "Sculptra",
+    "es": "Sculptra"
+  },
+  {
+    "id": "note.sculptra.vial_price",
+    "en": "This price is reflective of 1 vial",
+    "es": "Este precio refleja 1 vial"
+  },
+  {
+    "id": "note.sculptra.vial_quantity",
+    "en": "Vial quantity is subject to change based on zone size and/or zones treated",
+    "es": "La cantidad de viales está sujeta a cambios según el tamaño de la zona y/o zonas tratadas"
+  },
+  {
+    "id": "promo.sculptra.headline",
+    "en": "Exclusive Sculptra® Savings",
+    "es": "Ahorro Exclusivo en Sculptra®"
+  },
+  {
+    "id": "promo.sculptra.description",
+    "en": "Lock in a limited-time per-vial advantage with our full Sculptra rejuvenation program, designed as a 3-session protocol to support long-term collagen regeneration, skin quality, and natural-looking rejuvenation.",
+    "es": "Asegura un beneficio especial por vial con nuestro programa completo de rejuvenecimiento con Sculptra, diseñado como un protocolo de 3 sesiones para estimular colágeno a largo plazo, mejorar la calidad de la piel y lograr un rejuvenecimiento natural y progresivo."
+  },
+  {
+    "id": "promo.sculptra.option_name",
+    "en": "Sculptra® - Rejuvenation Treatment Plan",
+    "es": "Sculptra® - Tratamiento de Rejuvenecimiento"
+  },
+  {
+    "id": "promo.sculptra.note1",
+    "en": "Exclusive $515 rate applies only when purchased as a 3-session plan (manufacturer-recommended minimum)",
+    "es": "La tarifa exclusiva de $515 aplica solo al comprar el plan de 3 sesiones (mínimo recomendado por el fabricante)"
+  },
+  {
+    "id": "promo.sculptra.note2",
+    "en": "Price shown is per vial.",
+    "es": "El precio mostrado es por vial."
+  },
+  {
+    "id": "promo.sculptra.note3",
+    "en": "Final cost will depend on the number of vials required to treat the selected zone. Typically, one vial per zone is used, though this may vary based on zone size and individual needs.",
+    "es": "El costo final dependerá de la cantidad de viales necesarios para tratar la zona seleccionada. Generalmente se utiliza un vial por zona, aunque puede variar según el tamaño del área y las necesidades individuales."
+  },
+  {
+    "id": "promo.sculptra.note4",
+    "en": "Each vial used within the treatment plan is offered at the same exclusive rate.",
+    "es": "Cada vial utilizado dentro del plan se ofrece a la misma tarifa exclusiva."
+  },
+  {
+    "id": "addon.sculptra.microneedling",
+    "en": "Microneedling - PN - Polynucleotide",
+    "es": "Microagujas - PN - Polinucleótido"
+  },
+  {
+    "id": "addon.sculptra.casmara_infinity",
+    "en": "Casmara - Infinity Anti‑Aging Facial",
+    "es": "Casmara - Facial Antienvejecimiento Infinity"
+  },
+  {
+    "id": "addon.sculptra.hydrafacial",
+    "en": "Hydrafacial MD - Face",
+    "es": "Hydrafacial MD - Rostro"
+  },
+  {
+    "id": "addon.sculptra.rf_microneedling",
+    "en": "Sylfirm X - RF Microneedling - Face + Neck + Décolleté",
+    "es": "Sylfirm X - Microagujas RF - Rostro + Cuello + Escote"
+  },
+  {
+    "id": "addon.sculptra.pdo_threads",
+    "en": "PDO Thread Lift - Signature Lower Face Lift",
+    "es": "Hilos PDO - Levantamiento Facial Inferior Signature"
+  },
+  {
+    "id": "addon.sculptra.facial_balancing",
+    "en": "Facial Balancing - Juvéderm Volbella",
+    "es": "Equilibrio Facial - Juvéderm Volbella"
+  },
+  {
+    "id": "exp.sculptra.pre.1",
+    "en": "Avoid alcohol, aspirin, ibuprofen, and fish oil supplements 24–48 hours before treatment to minimize bruising.",
+    "es": "Evite alcohol, aspirina, ibuprofeno y suplementos de aceite de pescado 24-48 horas antes del tratamiento para minimizar moretones."
+  },
+  {
+    "id": "exp.sculptra.pre.2",
+    "en": "Stay well-hydrated and eat a nutritious meal before your appointment.",
+    "es": "Manténgase bien hidratado y coma una comida nutritiva antes de su cita."
+  },
+  {
+    "id": "exp.sculptra.pre.3",
+    "en": "Pause topical retinoids/acids on treatment areas for 48 hours and arrive with clean skin.",
+    "es": "Suspenda retinoides/ácidos tópicos en las zonas a tratar por 48 horas y llegue con la piel limpia."
+  },
+  {
+    "id": "exp.sculptra.pre.4",
+    "en": "Inform your provider about autoimmune conditions, keloid history, recent vaccines/dental work, or blood thinners.",
+    "es": "Informe a su especialista sobre enfermedades autoinmunes, antecedentes de queloides, vacunas/trabajos dentales recientes o anticoagulantes."
+  },
+  {
+    "id": "exp.sculptra.during.1",
+    "en": "You may feel brief pinching and pressure during microcannula or needle placement; numbing and cold packs help comfort.",
+    "es": "Puede sentir pequeños pinchazos y presión durante el uso de microcánula o aguja; la anestesia y compresas frías ayudan a la comodidad."
+  },
+  {
+    "id": "exp.sculptra.during.2",
+    "en": "Gentle massage is performed to disperse the product evenly in the treated area.",
+    "es": "Se realiza un masaje suave para dispersar el producto uniformemente en la zona tratada."
+  },
+  {
+    "id": "exp.sculptra.post.1",
+    "en": "Massage treated areas for 5 minutes, 5 times a day, for 5 days to support even collagen stimulation.",
+    "es": "Masajee las áreas tratadas por 5 minutos, 5 veces al día, durante 5 días para apoyar la estimulación uniforme del colágeno."
+  },
+  {
+    "id": "exp.sculptra.post.2",
+    "en": "Use cool compresses for the first 24 hours and avoid strenuous exercise, saunas, or hot yoga for 48 hours.",
+    "es": "Use compresas frías durante las primeras 24 horas y evite ejercicio intenso, saunas o yoga caliente por 48 horas."
+  },
+  {
+    "id": "exp.sculptra.post.3",
+    "en": "Expect swelling/bruising for a few days; protect from sun and avoid facial massages or dental work for 2 weeks.",
+    "es": "Espere hinchazón/moretones por algunos días; proteja del sol y evite masajes faciales o trabajo dental por 2 semanas."
+  },
+  {
+    "id": "exp.sculptra.post.4",
+    "en": "Results build gradually over 4–8 weeks after each session; full effects often visible by 3–4 months.",
+    "es": "Los resultados se desarrollan gradualmente en 4–8 semanas después de cada sesión; los efectos completos suelen verse en 3–4 meses."
+  },
+  {
+    "id": "faq.sculptra.q1",
+    "en": "What makes Sculptra® different from traditional fillers?",
+    "es": "¿Qué hace que Sculptra® sea diferente de los rellenos tradicionales?"
+  },
+  {
+    "id": "faq.sculptra.a1",
+    "en": "Sculptra® stimulates your body’s own collagen production over time, rather than adding immediate volume like hyaluronic acid fillers. The result is longer-lasting, natural rejuvenation.",
+    "es": "Sculptra® estimula la producción propia de colágeno de su cuerpo con el tiempo, en lugar de agregar volumen inmediato como los rellenos de ácido hialurónico. El resultado es una rejuvenación natural de mayor duración."
+  },
+  {
+    "id": "faq.sculptra.q2",
+    "en": "How many vials are typically needed?",
+    "es": "¿Cuántos viales se necesitan típicamente?"
+  },
+  {
+    "id": "faq.sculptra.a2",
+    "en": "Most patients need 2–3 vials over the course of multiple sessions, depending on age, facial volume loss, and treatment goals.",
+    "es": "La mayoría de los pacientes necesitan 2-3 viales durante el curso de múltiples sesiones, dependiendo de la edad, la pérdida de volumen facial y los objetivos del tratamiento."
+  },
+  {
+    "id": "faq.sculptra.q3",
+    "en": "Is there any downtime?",
+    "es": "¿Hay algún tiempo de inactividad?"
+  },
+  {
+    "id": "faq.sculptra.a3",
+    "en": "There may be mild swelling, redness, or bruising, but most patients return to daily activities immediately after treatment.",
+    "es": "Puede haber hinchazón leve, enrojecimiento o moretones, pero la mayoría de los pacientes regresan a las actividades diarias inmediatamente después del tratamiento."
+  },
+  {
+    "id": "faq.sculptra.q4",
+    "en": "When will I see results?",
+    "es": "¿Cuándo veré los resultados?"
+  },
+  {
+    "id": "faq.sculptra.a4",
+    "en": "Results appear gradually over several weeks as collagen builds, with continued improvement up to 6 months.",
+    "es": "Los resultados aparecen gradualmente en varias semanas a medida que el colágeno se acumula, con mejora continua hasta 6 meses."
+  },
+  {
+    "id": "faq.sculptra.q5",
+    "en": "How long do the results last?",
+    "es": "¿Cuánto duran los resultados?"
+  },
+  {
+    "id": "faq.sculptra.a5",
+    "en": "Sculptra® results typically last 2 years or longer with proper treatment and maintenance.",
+    "es": "Los resultados de Sculptra® típicamente duran 2 años o más con tratamiento y mantenimiento adecuados."
+  },
+  {
+    "id": "svc.harmonyca.name",
+    "en": "HarmonyCa® (Hyaluronic Acid + Calcium Hydroxyapatite)",
+    "es": "HarmonyCa® (Ácido Hialurónico + Hidroxiapatita de Calcio)"
+  },
+  {
+    "id": "svc.harmonyca.desc",
+    "en": "HarmonyCa® is a next-generation biostimulatory filler that combines hyaluronic acid (HA) for immediate facial volume with calcium hydroxyapatite (CaHA) for long-term collagen stimulation. This hybrid injectable enhances facial contour, skin quality, and structural lift in a single treatment.",
+    "es": "HarmonyCa® es un relleno biostimulador de nueva generación que combina ácido hialurónico (AH) para volumen facial inmediato con hidroxiapatita de calcio (CaHA) para estimulación de colágeno a largo plazo. Este inyectable híbrido mejora el contorno facial, la calidad de la piel y el levantamiento estructural en un solo tratamiento."
+  },
+  {
+    "id": "svc.harmonyca.details",
+    "en": "HarmonyCa® is a dual-phase injectable combining hyaluronic acid for immediate hydration and volume, with CaHA microspheres to boost collagen production over time. This advanced formula is ideal for enhancing cheekbones, defining the jawline, and restoring firmness in the lower face. Its bioregenerative effect helps improve skin density and elasticity, making it a top choice for long-lasting, natural-looking rejuvenation without heaviness or puffiness.",
+    "es": "HarmonyCa® es un inyectable bifásico que combina ácido hialurónico para hidratación y volumen inmediato, con microesferas de CaHA para aumentar la producción de colágeno con el tiempo. Esta fórmula avanzada es ideal para realzar los pómulos, definir la línea mandibular y restaurar la firmeza en la cara inferior. Su efecto bioregenerativo ayuda a mejorar la densidad y elasticidad de la piel, convirtiéndolo en una opción principal para un rejuvenecimiento duradero, natural y sin pesadez ni hinchazón."
+  },
+  {
+    "id": "note.harmonyca.syringes",
+    "en": "Treatment includes 2 syringes (1.25 mL each)",
+    "es": "El tratamiento incluye 2 jeringas (1.25 mL cada una)"
+  },
+  {
+    "id": "note.harmonyca.zones",
+    "en": "Clinically effective for rejuvenating midface, jawline, and lower face",
+    "es": "Efectivo clínicamente para rejuvenecer la media cara, línea mandibular y cara inferior"
+  },
+  {
+    "id": "note.harmonyca.natural_results",
+    "en": "Recommended for patients seeking natural yet structural results",
+    "es": "Recomendado para pacientes que buscan resultados naturales pero estructurales"
+  },
+  {
+    "id": "goal.harmonyca.lift",
+    "en": "Lift and contour midface and lower face",
+    "es": "Elevar y contornear la media cara y cara inferior"
+  },
+  {
+    "id": "goal.harmonyca.collagen",
+    "en": "Stimulate collagen and improve skin architecture",
+    "es": "Estimular el colágeno y mejorar la arquitectura de la piel"
+  },
+  {
+    "id": "goal.harmonyca.volume",
+    "en": "Restore volume while enhancing skin density and elasticity",
+    "es": "Restaurar el volumen mientras se mejora la densidad y elasticidad de la piel"
+  },
+  {
+    "id": "area.harmonyca.cheeks",
+    "en": "Cheeks",
+    "es": "Mejillas"
+  },
+  {
+    "id": "area.harmonyca.jawline",
+    "en": "Jawline",
+    "es": "Línea Mandibular"
+  },
+  {
+    "id": "area.harmonyca.chin",
+    "en": "Chin",
+    "es": "Barbilla"
+  },
+  {
+    "id": "area.harmonyca.lower_face",
+    "en": "Lower Face",
+    "es": "Cara Inferior"
+  },
+  {
+    "id": "area.harmonyca.preauricular",
+    "en": "Preauricular Hollow",
+    "es": "Hundimiento Preauricular"
+  },
+  {
+    "id": "opt.harmonyca.per_treatment",
+    "en": "HarmonyCa",
+    "es": "HarmonyCa"
+  },
+  {
+    "id": "addon.harmonyca.microneedling",
+    "en": "Microneedling - PN - Polynucleotide",
+    "es": "Microneedling - PN - Polinucleótido"
+  },
+  {
+    "id": "addon.harmonyca.casmara_infinity",
+    "en": "Casmara - Infinity Anti‑Aging Facial",
+    "es": "Casmara - Facial Antienvejecimiento Infinity"
+  },
+  {
+    "id": "addon.harmonyca.hydrafacial",
+    "en": "Hydrafacial MD - Face",
+    "es": "Hydrafacial MD - Rostro"
+  },
+  {
+    "id": "addon.harmonyca.rf_microneedling",
+    "en": "Sylfirm X - RF Microneedling - Face + Neck + Décolleté",
+    "es": "Sylfirm X - Microagujas RF - Rostro + Cuello + Escote"
+  },
+  {
+    "id": "addon.harmonyca.pdo_threads",
+    "en": "PDO Thread Lift - Signature Lower Face Lift",
+    "es": "Hilos PDO - Levantamiento Facial Inferior Signature"
+  },
+  {
+    "id": "exp.harmonyca.pre.1",
+    "en": "Avoid alcohol, NSAIDs, and blood-thinning supplements (fish oil, garlic, ginkgo) for at least 24–48 hours.",
+    "es": "Evite alcohol, AINE y suplementos anticoagulantes (aceite de pescado, ajo, ginkgo) durante al menos 24-48 horas."
+  },
+  {
+    "id": "exp.harmonyca.pre.2",
+    "en": "Inform your provider of recent dental procedures, vaccinations, or laser treatments.",
+    "es": "Informe a su proveedor de procedimientos dentales recientes, vacunaciones o tratamientos láser."
+  },
+  {
+    "id": "exp.harmonyca.pre.3",
+    "en": "Pause retinoids/acids on treatment areas for 48 hours and arrive with clean skin.",
+    "es": "Suspenda retinoides/ácidos en las zonas a tratar por 48 horas y llegue con la piel limpia."
+  },
+  {
+    "id": "exp.harmonyca.pre.4",
+    "en": "Disclose autoimmune conditions, keloid history, or anticoagulant use to tailor your plan safely.",
+    "es": "Informe sobre enfermedades autoinmunes, antecedentes de queloides o uso de anticoagulantes para adaptar el plan de forma segura."
+  },
+  {
+    "id": "exp.harmonyca.during.1",
+    "en": "You may feel brief pinching and pressure during cannula/needle placement; numbing and cooling can be used for comfort.",
+    "es": "Puede sentir pequeños pinchazos y presión durante el uso de cánula/aguja; se pueden usar anestesia y enfriamiento para mayor comodidad."
+  },
+  {
+    "id": "exp.harmonyca.during.2",
+    "en": "Gentle molding/massage follows to shape and distribute the product evenly.",
+    "es": "Se realiza moldeado/masaje suave para dar forma y distribuir el producto de manera uniforme."
+  },
+  {
+    "id": "exp.harmonyca.post.1",
+    "en": "Expect mild swelling, redness, or tenderness for a few days; apply cool compresses for the first 24 hours.",
+    "es": "Espere hinchazón leve, enrojecimiento o sensibilidad durante algunos días; aplique compresas frías las primeras 24 horas."
+  },
+  {
+    "id": "exp.harmonyca.post.2",
+    "en": "Avoid facial massage, dental work, high heat (saunas/hot yoga), and strenuous exercise for 48 hours.",
+    "es": "Evite masaje facial, trabajo dental, calor intenso (saunas/yoga caliente) y ejercicio extenuante por 48 horas."
+  },
+  {
+    "id": "exp.harmonyca.post.3",
+    "en": "Visible lift is immediate; collagen-stimulating effects continue developing over 6–8 weeks—protect skin from sun during this period.",
+    "es": "El levantamiento visible es inmediato; los efectos estimuladores de colágeno continúan desarrollándose durante 6–8 semanas; proteja la piel del sol en este periodo."
+  },
+  {
+    "id": "exp.harmonyca.post.4",
+    "en": "Contact us for significant asymmetry, increasing pain, fever, or skin discoloration.",
+    "es": "Contáctenos ante asimetría significativa, dolor en aumento, fiebre o cambios de color en la piel."
+  },
+  {
+    "id": "faq.harmonyca.q1",
+    "en": "How is HarmonyCa® different from traditional dermal fillers?",
+    "es": "¿En qué se diferencia HarmonyCa® de los rellenos dérmicos tradicionales?"
+  },
+  {
+    "id": "faq.harmonyca.a1",
+    "en": "HarmonyCa® combines the immediate volume of HA with the collagen-boosting power of CaHA, providing both instant lift and long-term skin regeneration.",
+    "es": "HarmonyCa® combina el volumen inmediato del HA con el poder estimulador de colágeno del CaHA, proporcionando levantamiento instantáneo y regeneración de la piel a largo plazo."
+  },
+  {
+    "id": "faq.harmonyca.q2",
+    "en": "Which areas respond best to HarmonyCa®?",
+    "es": "¿Qué áreas responden mejor a HarmonyCa®?"
+  },
+  {
+    "id": "faq.harmonyca.a2",
+    "en": "Cheeks, jawline, chin, and the lower face benefit most, especially for patients with mild-to-moderate volume loss or skin laxity.",
+    "es": "Las mejillas, línea mandibular, barbilla y la cara inferior se benefician más, especialmente para pacientes con pérdida de volumen leve a moderada o laxitud de la piel."
+  },
+  {
+    "id": "faq.harmonyca.q3",
+    "en": "How long do HarmonyCa® results last?",
+    "es": "¿Cuánto duran los resultados de HarmonyCa®?"
+  },
+  {
+    "id": "faq.harmonyca.a3",
+    "en": "Most patients enjoy results that last 12–18 months, depending on their age, skin type, and lifestyle habits.",
+    "es": "La mayoría de los pacientes disfrutan resultados que duran 12-18 meses, dependiendo de su edad, tipo de piel y hábitos de vida."
+  },
+  {
+    "id": "faq.harmonyca.q4",
+    "en": "Is HarmonyCa® approved and safe?",
+    "es": "¿Está HarmonyCa® aprobado y es seguro?"
+  },
+  {
+    "id": "faq.harmonyca.a4",
+    "en": "Yes. HarmonyCa® is CE-certified and used widely across Europe. At Mave, it's administered exclusively by licensed medical providers.",
+    "es": "Sí. HarmonyCa® está certificado CE y se usa ampliamente en Europa. En Mave, es administrado exclusivamente por proveedores médicos licenciados."
+  },
+  {
+    "id": "faq.harmonyca.q5",
+    "en": "Can I combine HarmonyCa® with other procedures?",
+    "es": "¿Puedo combinar HarmonyCa® con otros procedimientos?"
+  },
+  {
+    "id": "faq.harmonyca.a5",
+    "en": "Absolutely. It pairs well with treatments like Ultraformer, RF microneedling, and skin boosters like Rejuran for comprehensive facial rejuvenation.",
+    "es": "Absolutamente. Se combina bien con tratamientos como Ultraformer, microneedling RF y potenciadores de piel como Rejuran para rejuvenecimiento facial completo."
+  }
+]
