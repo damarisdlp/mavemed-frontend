@@ -1,0 +1,114 @@
+[
+  {
+    "id": "svc_calcaneal_spur",
+    "slug": "calcaneal-spur",
+    "categoryId": "cat_podiatry",
+    "nameKey": "svc.calcaneal_spur.name",
+    "descriptionKey": "svc.calcaneal_spur.desc",
+    "detailsKey": "svc.calcaneal_spur.details",
+    "isPopular": false,
+    "isPromoActive": false,
+    "images": {
+      "primary": "/heelspur.jpg",
+      "secondary": "/heelspur2.jpg"
+    },
+    "notesKeys": [
+      "note.calcaneal_spur.ultrasound",
+      "note.calcaneal_spur.certified",
+      "note.calcaneal_spur.medication"
+    ],
+    "goalsKeys": [
+      "goal.calcaneal_spur.pain",
+      "goal.calcaneal_spur.fasciitis",
+      "goal.calcaneal_spur.mobility"
+    ],
+    "treatableAreaKeys": [
+      "area.calcaneal_spur.heel",
+      "area.calcaneal_spur.fascia"
+    ]
+  },
+  {
+    "id": "svc_matrixectomy",
+    "slug": "matrixectomy",
+    "categoryId": "cat_podiatry",
+    "nameKey": "svc.matrixectomy.name",
+    "descriptionKey": "svc.matrixectomy.desc",
+    "detailsKey": "svc.matrixectomy.details",
+    "isPopular": false,
+    "isPromoActive": false,
+    "images": {
+      "primary": "/ingrown.jpg",
+      "secondary": "/ingrown2.jpg"
+    },
+    "notesKeys": [
+      "note.matrixectomy.anesthesia",
+      "note.matrixectomy.chronic",
+      "note.matrixectomy.sides"
+    ],
+    "goalsKeys": [
+      "goal.matrixectomy.resolve",
+      "goal.matrixectomy.pain",
+      "goal.matrixectomy.comfort"
+    ],
+    "treatableAreaKeys": [
+      "area.matrixectomy.big_toe",
+      "area.matrixectomy.lesser_toes"
+    ]
+  },
+  {
+    "id": "svc_nail_fungus_laser",
+    "slug": "nail-fungus-laser",
+    "categoryId": "cat_podiatry",
+    "nameKey": "svc.nail_fungus_laser.name",
+    "descriptionKey": "svc.nail_fungus_laser.desc",
+    "detailsKey": "svc.nail_fungus_laser.details",
+    "isPopular": false,
+    "isPromoActive": false,
+    "images": {
+      "primary": "/lasernail.jpg",
+      "secondary": "/lasernail2.jpg"
+    },
+    "notesKeys": [
+      "note.nail_fungus_laser.mild",
+      "note.nail_fungus_laser.painless",
+      "note.nail_fungus_laser.regrowth"
+    ],
+    "goalsKeys": [
+      "goal.nail_fungus_laser.eliminate",
+      "goal.nail_fungus_laser.clarity",
+      "goal.nail_fungus_laser.prevent"
+    ],
+    "treatableAreaKeys": [
+      "area.nail_fungus_laser.toenails",
+      "area.nail_fungus_laser.fingernails"
+    ]
+  },
+  {
+    "id": "svc_toenail_extraction",
+    "slug": "toenail-extraction",
+    "categoryId": "cat_podiatry",
+    "nameKey": "svc.toenail_extraction.name",
+    "descriptionKey": "svc.toenail_extraction.desc",
+    "detailsKey": "svc.toenail_extraction.details",
+    "isPopular": false,
+    "isPromoActive": false,
+    "images": {
+      "primary": "/nailext.jpg",
+      "secondary": "/nailext2.jpg"
+    },
+    "notesKeys": [
+      "note.toenail_extraction.sterile",
+      "note.toenail_extraction.antifungal",
+      "note.toenail_extraction.healing"
+    ],
+    "goalsKeys": [
+      "goal.toenail_extraction.eliminate",
+      "goal.toenail_extraction.prevent",
+      "goal.toenail_extraction.health"
+    ],
+    "treatableAreaKeys": [
+      "area.toenail_extraction.big_toe",
+      "area.toenail_extraction.lesser_toes"
+    ]
+  }
+]
