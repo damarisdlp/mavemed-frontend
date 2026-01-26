@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Expectations",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["id", "serviceId", "phase", "textKey"],
+    "additionalProperties": false,
+    "properties": {
+      "id": { "type": "string", "pattern": "^exp_" },
+      "serviceId": { "type": "string", "pattern": "^svc_" },
+      "phase": { "type": "string", "enum": ["pre", "during", "post"] },
+      "textKey": { "type": "string" }
+    }
+  }
+}
