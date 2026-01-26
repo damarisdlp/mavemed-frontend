@@ -1,0 +1,1722 @@
+[
+  {
+    "id": "cat.skin_tight_sculpting.name",
+    "en": "Skin Tightening & Sculpting",
+    "es": "Reafirmación y Esculpido Corporal"
+  },
+  {
+    "id": "svc.ultraformer_mpt.name",
+    "en": "Ultraformer MPT HIFU Lift",
+    "es": "Lifting con HIFU Ultraformer MPT"
+  },
+  {
+    "id": "svc.ultraformer_mpt.desc",
+    "en": "Ultraformer MPT is a non-surgical facelift and body sculpting treatment that uses high-intensity focused ultrasound (HIFU) to tighten skin, reduce laxity, and contour key areas without downtime.",
+    "es": "Ultraformer MPT es un tratamiento de lifting facial y esculpido corporal no quirúrgico que utiliza ultrasonido focalizado de alta intensidad (HIFU) para tensar la piel, reducir la flacidez y contornear zonas clave sin tiempo de recuperación."
+  },
+  {
+    "id": "svc.ultraformer_mpt.details",
+    "en": "Ultraformer MPT is an advanced HIFU (High-Intensity Focused Ultrasound) system that delivers precise energy to stimulate collagen production in the SMAS layer, dermis, and subcutaneous tissues. This non-invasive treatment lifts and tightens the skin on the face, neck, and body with no downtime. Ideal for patients seeking visible facial rejuvenation or body contouring without surgery.",
+    "es": "Ultraformer MPT es un sistema avanzado de HIFU (ultrasonido focalizado de alta intensidad) que entrega energía precisa para estimular la producción de colágeno en la capa SMAS, la dermis y los tejidos subcutáneos. Este tratamiento no invasivo eleva y tensa la piel del rostro, cuello y cuerpo sin tiempo de inactividad. Es ideal para personas que buscan un rejuvenecimiento facial visible o contorno corporal sin cirugía."
+  },
+  {
+    "id": "svc.venus_freeze.name",
+    "en": "Radiofrequency Body Sculpting",
+    "es": "Escultura Corporal con Radiofrecuencia"
+  },
+  {
+    "id": "svc.venus_freeze.desc",
+    "en": "Non-invasive radiofrequency therapy to smooth skin, reduce localized fat, and improve body contour.",
+    "es": "Terapia de radiofrecuencia no invasiva para suavizar la piel, reducir grasa localizada y mejorar el contorno corporal."
+  },
+  {
+    "id": "svc.venus_freeze.details",
+    "en": "Venus Freeze uses multi-polar radiofrequency and pulsed electromagnetic fields to deliver heat into the skin, stimulating collagen and elastin while reducing fat deposits. Ideal for patients seeking skin tightening and smoother contours without surgery.",
+    "es": "Venus Freeze utiliza radiofrecuencia multipolar y campos electromagnéticos pulsados para calentar la piel, estimular colágeno y elastina y reducir depósitos de grasa. Ideal para quienes buscan tensar la piel y suavizar el contorno sin cirugía."
+  },
+  {
+    "id": "svc.enzymatic_therapy.name",
+    "en": "Enzymatic Remodeling Therapy",
+    "es": "Terapia de Remodelación Enzimática"
+  },
+  {
+    "id": "svc.enzymatic_therapy.desc",
+    "en": "Localized fat reduction and fibrosis breakdown using targeted enzyme therapy for smoother contour and improved skin texture.",
+    "es": "Reducción localizada de grasa y ruptura de fibrosis mediante terapia enzimática dirigida para lograr un contorno más uniforme y mejorar la textura de la piel."
+  },
+  {
+    "id": "svc.enzymatic_therapy.details",
+    "en": "Enzymatic therapy involves injecting lipolytic and anti-fibrotic enzymes into specific areas to break down dense tissue, improve circulation, and support localized fat metabolism. It is especially effective for post-liposuction fibrosis, stubborn fat pockets, and skin tone irregularities. Results build progressively with multiple sessions and are enhanced when combined with drainage or radiofrequency therapy.",
+    "es": "La terapia enzimática consiste en inyectar enzimas lipolíticas y antifibróticas en zonas específicas para romper tejido denso, mejorar la circulación y apoyar el metabolismo de grasa localizada. Es especialmente efectiva para fibrosis post-liposucción, acúmulos grasos rebeldes y alteraciones en la textura de la piel. Los resultados se construyen progresivamente con varias sesiones y se potencian cuando se combina con drenaje o radiofrecuencia."
+  },
+  {
+    "id": "svc.pdo_threads.name",
+    "en": "PDO Thread Lifts & Contouring – Non-Surgical Facial Rejuvenation",
+    "es": "Levantamiento y Contorno Facial con Hilos PDO – Rejuvenecimiento Facial sin Cirugía"
+  },
+  {
+    "id": "svc.pdo_threads.desc",
+    "en": "Achieve a lifted, more defined look without surgery. PDO threads offer a non-invasive way to tighten skin, contour the face, and boost collagen over time.",
+    "es": "Logra un efecto de levantamiento y un contorno más definido sin cirugía. Los hilos PDO ofrecen una forma poco invasiva de tensar la piel, perfilar el rostro y estimular el colágeno con el tiempo."
+  },
+  {
+    "id": "svc.pdo_threads.details",
+    "en": "PDO (polydioxanone) thread lifts are a minimally invasive procedure that uses absorbable sutures to reposition tissue and stimulate collagen production. The treatment provides both immediate lifting and long-term skin rejuvenation. Common areas include the jawline, cheeks, neck, and brow. No general anesthesia or downtime required.",
+    "es": "El levantamiento con hilos PDO (polidioxanona) es un procedimiento mínimamente invasivo que utiliza suturas reabsorbibles para reposicionar el tejido y estimular la producción de colágeno. El tratamiento ofrece un efecto de levantamiento inmediato y una rejuvenecimiento de la piel a largo plazo. Las zonas más tratadas incluyen la línea mandibular, mejillas, cuello y cejas. No requiere anestesia general ni tiempo prolongado de recuperación."
+  },
+  {
+    "id": "note.ultraformer_mpt.lifting",
+    "en": "Ideal for facial lifting, jowls, neck tightening, and body sculpting",
+    "es": "Ideal para lifting facial, papada, tensado de cuello y esculpido corporal"
+  },
+  {
+    "id": "note.ultraformer_mpt.results",
+    "en": "Results continue improving over 3–6 months",
+    "es": "Los resultados continúan mejorando durante 3 a 6 meses"
+  },
+  {
+    "id": "note.ultraformer_mpt.personalized",
+    "en": "Each treatment is personalized based on depth, zone, and clinical indications",
+    "es": "Cada tratamiento se personaliza según profundidad, zona y necesidades clínicas"
+  },
+  {
+    "id": "note.venus_freeze.painless",
+    "en": "Painless treatment with no downtime",
+    "es": "Tratamiento indoloro sin tiempo de inactividad"
+  },
+  {
+    "id": "note.venus_freeze.sessions",
+    "en": "Multiple sessions recommended for optimal results",
+    "es": "Se recomiendan múltiples sesiones para resultados óptimos"
+  },
+  {
+    "id": "note.venus_freeze.cellulite",
+    "en": "Also improves cellulite and lymphatic drainage",
+    "es": "También mejora la celulitis y el drenaje linfático"
+  },
+  {
+    "id": "note.venus_freeze.rf_preference",
+    "en": "For facial rejuvenation and skin tightening we prefer RF microneedling with Sylfirm X for controlled dermal remodeling. Venus Freeze is primarily indicated for body contouring and laxity.",
+    "es": "Para rejuvenecimiento y tensado facial preferimos la radiofrecuencia fraccionada con microagujas Sylfirm X por su remodelación dérmica controlada. Venus Freeze se indica principalmente para contorno corporal y laxitud."
+  },
+  {
+    "id": "note.enzymatic_therapy.non_surgical",
+    "en": "Non-surgical injectable fat reduction treatment",
+    "es": "Tratamiento inyectable no quirúrgico para reducir grasa localizada"
+  },
+  {
+    "id": "note.enzymatic_therapy.targets",
+    "en": "Targets fibrosis, localized fat, and texture irregularities",
+    "es": "Dirigido a fibrosis, grasa localizada y alteraciones en la textura"
+  },
+  {
+    "id": "note.enzymatic_therapy.series",
+    "en": "Most effective in a series of 4–6 sessions",
+    "es": "Más efectivo en una serie de 4 a 6 sesiones"
+  },
+  {
+    "id": "note.enzymatic_therapy.rf_combo",
+    "en": "Most effective when combined with radiofrequency treatments",
+    "es": "Más efectiva cuando se combina con tratamientos de radiofrecuencia."
+  },
+  {
+    "id": "note.pdo_threads.sterile",
+    "en": "Sterile, absorbable polydioxanone (PDO) threads are used",
+    "es": "Se utilizan hilos de polidioxanona (PDO) estériles y reabsorbibles"
+  },
+  {
+    "id": "note.pdo_threads.collagen",
+    "en": "Stimulates natural collagen production for long-term firmness",
+    "es": "Estimula la producción natural de colágeno para firmeza a largo plazo"
+  },
+  {
+    "id": "note.pdo_threads.mild_moderate",
+    "en": "Best for mild to moderate facial sagging and skin laxity",
+    "es": "Ideal para flacidez facial leve a moderada y piel con pérdida de tono"
+  },
+  {
+    "id": "goal.ultraformer_mpt.tighten",
+    "en": "Tighten and lift sagging skin",
+    "es": "Tensar y elevar la piel flácida"
+  },
+  {
+    "id": "goal.ultraformer_mpt.jawline",
+    "en": "Enhance jawline and facial contours",
+    "es": "Definir la línea mandibular y los contornos faciales"
+  },
+  {
+    "id": "goal.ultraformer_mpt.body",
+    "en": "Reduce skin laxity on the body",
+    "es": "Reducir la laxitud de la piel en el cuerpo"
+  },
+  {
+    "id": "goal.ultraformer_mpt.collagen",
+    "en": "Stimulate natural collagen and elastin production",
+    "es": "Estimular la producción natural de colágeno y elastina"
+  },
+  {
+    "id": "goal.venus_freeze.tighten",
+    "en": "Tighten loose skin on abdomen, arms, or thighs",
+    "es": "Tensar la piel flácida en abdomen, brazos o muslos"
+  },
+  {
+    "id": "goal.venus_freeze.cellulite",
+    "en": "Reduce appearance of cellulite",
+    "es": "Reducir la apariencia de la celulitis"
+  },
+  {
+    "id": "goal.venus_freeze.collagen",
+    "en": "Stimulate collagen and lymphatic drainage",
+    "es": "Estimular el colágeno y el drenaje linfático"
+  },
+  {
+    "id": "goal.enzymatic_therapy.fibrosis",
+    "en": "Break down post-lipo fibrosis",
+    "es": "Romper la fibrosis post-liposucción"
+  },
+  {
+    "id": "goal.enzymatic_therapy.fat",
+    "en": "Reduce stubborn localized fat",
+    "es": "Reducir grasa localizada rebelde"
+  },
+  {
+    "id": "goal.enzymatic_therapy.texture",
+    "en": "Smooth and even skin texture",
+    "es": "Suavizar y uniformar la textura de la piel"
+  },
+  {
+    "id": "goal.pdo_threads.lift",
+    "en": "Lift sagging jowls, cheeks, and midface",
+    "es": "Elevar papada, mejillas y tercio medio del rostro"
+  },
+  {
+    "id": "goal.pdo_threads.laxity",
+    "en": "Improve skin laxity and smooth wrinkles",
+    "es": "Mejorar la flacidez de la piel y suavizar arrugas"
+  },
+  {
+    "id": "goal.pdo_threads.jawline",
+    "en": "Enhance definition along the jawline and neck",
+    "es": "Realzar la definición de la línea mandibular y el cuello"
+  },
+  {
+    "id": "area.ultraformer_mpt.full_face",
+    "en": "Full face",
+    "es": "Rostro completo"
+  },
+  {
+    "id": "area.ultraformer_mpt.jawline",
+    "en": "Jawline and jowls",
+    "es": "Línea mandibular y papada"
+  },
+  {
+    "id": "area.ultraformer_mpt.neck_decollete",
+    "en": "Neck and décolleté",
+    "es": "Cuello y escote"
+  },
+  {
+    "id": "area.ultraformer_mpt.submentum",
+    "en": "Under chin (submentum)",
+    "es": "Debajo del mentón (submentón)"
+  },
+  {
+    "id": "area.ultraformer_mpt.eye_area",
+    "en": "Eyelids and eye area",
+    "es": "Párpados y contorno de ojos"
+  },
+  {
+    "id": "area.ultraformer_mpt.forehead",
+    "en": "Forehead",
+    "es": "Frente"
+  },
+  {
+    "id": "area.ultraformer_mpt.abdomen",
+    "en": "Abdomen",
+    "es": "Abdomen"
+  },
+  {
+    "id": "area.ultraformer_mpt.inner_thighs",
+    "en": "Inner thighs",
+    "es": "Muslos internos"
+  },
+  {
+    "id": "area.ultraformer_mpt.upper_arms",
+    "en": "Upper arms",
+    "es": "Brazos superiores"
+  },
+  {
+    "id": "area.ultraformer_mpt.knees",
+    "en": "Knees",
+    "es": "Rodillas"
+  },
+  {
+    "id": "area.ultraformer_mpt.lower_back",
+    "en": "Lower back",
+    "es": "Zona lumbar"
+  },
+  {
+    "id": "area.ultraformer_mpt.flanks",
+    "en": "Flanks",
+    "es": "Flancos"
+  },
+  {
+    "id": "area.ultraformer_mpt.glutes",
+    "en": "Glutes",
+    "es": "Glúteos"
+  },
+  {
+    "id": "area.venus_freeze.abdomen",
+    "en": "Abdomen",
+    "es": "Abdomen"
+  },
+  {
+    "id": "area.venus_freeze.arms",
+    "en": "Arms",
+    "es": "Brazos"
+  },
+  {
+    "id": "area.venus_freeze.inner_thighs",
+    "en": "Inner Thighs",
+    "es": "Muslos internos"
+  },
+  {
+    "id": "area.venus_freeze.outer_thighs",
+    "en": "Outer Thighs",
+    "es": "Muslos externos"
+  },
+  {
+    "id": "area.venus_freeze.buttocks",
+    "en": "Buttocks",
+    "es": "Glúteos"
+  },
+  {
+    "id": "area.venus_freeze.back_bra_fat",
+    "en": "Back (Bra Fat)",
+    "es": "Espalda (rollo del sostén)"
+  },
+  {
+    "id": "area.venus_freeze.love_handles",
+    "en": "Love Handles",
+    "es": "Costados (flancos)"
+  },
+  {
+    "id": "area.enzymatic_therapy.abdomen",
+    "en": "Abdomen",
+    "es": "Abdomen"
+  },
+  {
+    "id": "area.enzymatic_therapy.arms",
+    "en": "Arms",
+    "es": "Brazos"
+  },
+  {
+    "id": "area.enzymatic_therapy.thighs",
+    "en": "Thighs",
+    "es": "Muslos"
+  },
+  {
+    "id": "area.enzymatic_therapy.back",
+    "en": "Back",
+    "es": "Espalda"
+  },
+  {
+    "id": "area.enzymatic_therapy.flanks",
+    "en": "Flanks",
+    "es": "Flancos"
+  },
+  {
+    "id": "area.enzymatic_therapy.submental",
+    "en": "Under Chin (Submental)",
+    "es": "Debajo del mentón (submental)"
+  },
+  {
+    "id": "area.pdo_threads.jawline",
+    "en": "Jawline",
+    "es": "Línea mandibular"
+  },
+  {
+    "id": "area.pdo_threads.cheeks",
+    "en": "Cheeks",
+    "es": "Mejillas"
+  },
+  {
+    "id": "area.pdo_threads.neck",
+    "en": "Neck",
+    "es": "Cuello"
+  },
+  {
+    "id": "area.pdo_threads.eyebrows",
+    "en": "Eyebrows",
+    "es": "Cejas"
+  },
+  {
+    "id": "area.pdo_threads.nasolabial_folds",
+    "en": "Nasolabial folds",
+    "es": "Pliegues nasolabiales"
+  },
+  {
+    "id": "area.pdo_threads.marionette_lines",
+    "en": "Marionette lines",
+    "es": "Líneas de marioneta"
+  },
+  {
+    "id": "area.pdo_threads.under_eyes",
+    "en": "Under eyes",
+    "es": "Zona debajo de los ojos"
+  },
+  {
+    "id": "opt.ultraformer.deep_synergy_booster",
+    "en": "Deep Synergy Booster (Add-On)",
+    "es": "Refuerzo Deep Synergy (Complemento)"
+  },
+  {
+    "id": "opt.ultraformer.deep_contour",
+    "en": "Deep Contour (Add-on)",
+    "es": "Contorno Profundo (Complemento)"
+  },
+  {
+    "id": "opt.ultraformer.refreshing_lift",
+    "en": "Refreshing Lift",
+    "es": "Lifting refrescante"
+  },
+  {
+    "id": "opt.ultraformer.submentum_lower_face",
+    "en": "Submentum & Lower Face Lift",
+    "es": "Lifting de Submentón y Tercio Inferior"
+  },
+  {
+    "id": "opt.ultraformer.360_contour",
+    "en": "360 Contour",
+    "es": "Contorno 360"
+  },
+  {
+    "id": "opt.ultraformer.premium_facial_sculpting",
+    "en": "Premium Facial Sculpting",
+    "es": "Escultura Facial Premium"
+  },
+  {
+    "id": "opt.ultraformer.total_facial_rejuvenation",
+    "en": "Total Facial Rejuvenation",
+    "es": "Rejuvenecimiento Facial Total"
+  },
+  {
+    "id": "opt.ultraformer.neck_sculpting",
+    "en": "Neck Sculpting",
+    "es": "Escultura de Cuello"
+  },
+  {
+    "id": "opt.ultraformer.decolletage_rejuvenation",
+    "en": "Décolletage Rejuvenation",
+    "es": "Rejuvenecimiento de Escote"
+  },
+  {
+    "id": "opt.ultraformer.combo_lift_smooth",
+    "en": "Combo Lift & Smooth",
+    "es": "Combo Levantamiento & Suavidad"
+  },
+  {
+    "id": "opt.ultraformer.express_body_glow",
+    "en": "Express Body Glow",
+    "es": "Brillo Corporal Exprés"
+  },
+  {
+    "id": "opt.ultraformer.express_back_glow",
+    "en": "Express Back Glow",
+    "es": "Brillo de Espalda Exprés"
+  },
+  {
+    "id": "opt.ultraformer.defined_arms",
+    "en": "Defined Arms",
+    "es": "Brazos Definidos"
+  },
+  {
+    "id": "opt.ultraformer.thigh_sculpting",
+    "en": "Thigh Sculpting",
+    "es": "Escultura de Muslos"
+  },
+  {
+    "id": "opt.ultraformer.glute_contour",
+    "en": "Glute Contour",
+    "es": "Contorno de Glúteos"
+  },
+  {
+    "id": "opt.ultraformer.firm_abdomen",
+    "en": "Firm Abdomen",
+    "es": "Abdomen Firme"
+  },
+  {
+    "id": "opt.ultraformer.lower_back_sculpting",
+    "en": "Lower Back Sculpting",
+    "es": "Escultura de Zona Lumbar"
+  },
+  {
+    "id": "opt.ultraformer.total_back_rejuvenation",
+    "en": "Total Back Rejuvenation",
+    "es": "Rejuvenecimiento Total de Espalda"
+  },
+  {
+    "id": "opt.venus.refreshing_lift",
+    "en": "Refreshing Lift",
+    "es": "Lifting Refrescante"
+  },
+  {
+    "id": "opt.venus.standard_facial_sculpting",
+    "en": "Standard Facial Sculpting",
+    "es": "Escultura Facial Estándar"
+  },
+  {
+    "id": "opt.venus.deep_contour",
+    "en": "Deep Contour",
+    "es": "Contorno Profundo"
+  },
+  {
+    "id": "opt.venus.total_facial_rejuvenation",
+    "en": "Total Facial Rejuvenation",
+    "es": "Rejuvenecimiento Facial Total"
+  },
+  {
+    "id": "opt.venus.neck_sculpting",
+    "en": "Neck Sculpting",
+    "es": "Escultura de Cuello"
+  },
+  {
+    "id": "opt.venus.decollete_rejuvenation",
+    "en": "Décolleté Rejuvenation",
+    "es": "Rejuvenecimiento de Escote"
+  },
+  {
+    "id": "opt.venus.combo_lift_smooth",
+    "en": "Combo Lift & Smooth",
+    "es": "Combo Lifting & Suavidad"
+  },
+  {
+    "id": "opt.venus.defined_arms",
+    "en": "Defined Arms",
+    "es": "Brazos Definidos"
+  },
+  {
+    "id": "opt.venus.abdomen_firming",
+    "en": "Firm Abdomen",
+    "es": "Abdomen Firme"
+  },
+  {
+    "id": "opt.venus.thigh_sculpt",
+    "en": "Thigh Sculpting",
+    "es": "Escultura de Muslos"
+  },
+  {
+    "id": "opt.venus.glute_contour",
+    "en": "Glute Contour",
+    "es": "Contorno de Gluteos"
+  },
+  {
+    "id": "opt.venus.express_back_glow",
+    "en": "Express Back Glow",
+    "es": "Brillo de Espalda Exprés"
+  },
+  {
+    "id": "opt.venus.lumbar_sculpt",
+    "en": "Lower Back Sculpting",
+    "es": "Escultura de Espalda Baja"
+  },
+  {
+    "id": "opt.venus.total_back_rejuvenation",
+    "en": "Total Back Rejuvenation",
+    "es": "Rejuvenecimiento Total de Espalda"
+  },
+  {
+    "id": "opt.venus.small_zone",
+    "en": "Small Zone",
+    "es": "Zona Pequeña"
+  },
+  {
+    "id": "opt.venus.medium_zone",
+    "en": "Medium Zone",
+    "es": "Zona Mediana"
+  },
+  {
+    "id": "opt.venus.large_zone",
+    "en": "Large Zone",
+    "es": "Zona Grande"
+  },
+  {
+    "id": "note.venus.refreshing_lift",
+    "en": "Eyes + Cheeks + Forehead",
+    "es": "Ojos + Mejillas + Frente"
+  },
+  {
+    "id": "note.venus.standard_facial_sculpting",
+    "en": "Full Face",
+    "es": "Rostro Completo"
+  },
+  {
+    "id": "note.venus.deep_contour",
+    "en": "Full Face + Jawline",
+    "es": "Rostro Completo + Linea Mandibular"
+  },
+  {
+    "id": "note.venus.total_facial_rejuvenation",
+    "en": "Full Face + Neck",
+    "es": "Rostro Completo + Cuello"
+  },
+  {
+    "id": "note.venus.neck_sculpting",
+    "en": "Submentum + Neck",
+    "es": "Submeton + Cuello"
+  },
+  {
+    "id": "note.venus.decollete_rejuvenation",
+    "en": "Chest + Clavicles",
+    "es": "Pecho + Claviculas"
+  },
+  {
+    "id": "note.venus.combo_lift_smooth",
+    "en": "Neck + Décolleté",
+    "es": "Cuello + Escote"
+  },
+  {
+    "id": "note.venus.defined_arms",
+    "en": "Triceps + Biceps + Laterals + Elbow + Deltoids",
+    "es": "Tríceps + Bíceps + Laterales + Codo + Deltoides"
+  },
+  {
+    "id": "note.venus.abdomen_firming",
+    "en": "Upper + Lower Abdomen",
+    "es": "Abdomen Superior + Inferior"
+  },
+  {
+    "id": "note.venus.thigh_sculpt",
+    "en": "Inner + Front Thighs",
+    "es": "Cara Interna + Frontal de Muslos"
+  },
+  {
+    "id": "note.venus.glute_contour",
+    "en": "Glutes + Subgluteal Line",
+    "es": "Gluteos + Linea Subglutea"
+  },
+  {
+    "id": "note.venus.express_back_glow",
+    "en": "Flanks (Sides)",
+    "es": "Flancos (laterales)"
+  },
+  {
+    "id": "note.venus.lumbar_sculpt",
+    "en": "Lumbar Region + Flanks",
+    "es": "Región Lumbar + Flancos"
+  },
+  {
+    "id": "note.venus.total_back_rejuvenation",
+    "en": "Upper + Mid + Lower Back + Flanks",
+    "es": "Espalda Alta + Media + Baja + Flancos"
+  },
+  {
+    "id": "note.venus.small_zone",
+    "en": "Total area [103 cm² - 413 cm²]",
+    "es": "Área total [103 cm² - 413 cm²]"
+  },
+  {
+    "id": "note.venus.medium_zone",
+    "en": "Total area [523 cm² - 1080.3 cm²]",
+    "es": "Área total [523 cm² - 1080.3 cm²]"
+  },
+  {
+    "id": "note.venus.large_zone",
+    "en": "Total area [1264 cm² - 2090 cm²]",
+    "es": "Área total [1264 cm² - 2090 cm²]"
+  },
+  {
+    "id": "opt.enzymatic.slim",
+    "en": "PB Serum Slim+ - Lipase PB500",
+    "es": "PB Serum Slim+ - Lipasa PB500"
+  },
+  {
+    "id": "opt.enzymatic.drain",
+    "en": "PB Serum Drain+ - Hyaluronidase PB3000",
+    "es": "PB Serum Drain+ - Hialuronidasa PB3000"
+  },
+  {
+    "id": "opt.enzymatic.smooth",
+    "en": "PB Serum Smooth+ - Collagenase GH PB220",
+    "es": "PB Serum Smooth+ - Colagenasa GH PB220"
+  },
+  {
+    "id": "opt.enzymatic.kit",
+    "en": "PB Serum+ (Kit)",
+    "es": "PB Serum+ (Kit)"
+  },
+  {
+    "id": "opt.pdo.signature_lower_face",
+    "en": "Signature Lower Face Lift",
+    "es": "Levantamiento Facial Inferior Signature"
+  },
+  {
+    "id": "opt.pdo.full_face",
+    "en": "Full Face Thread Lift",
+    "es": "Levantamiento en Rostro Completo"
+  },
+  {
+    "id": "opt.pdo.jawline_contour",
+    "en": "Jawline Contour",
+    "es": "Contorno de Mandíbula"
+  },
+  {
+    "id": "opt.pdo.eyebrow_eye",
+    "en": "Eyebrow and Eye Lift",
+    "es": "Levantamiento de Cejas y Ojos"
+  },
+  {
+    "id": "opt.pdo.full_face_neck",
+    "en": "Full Face & Neck Combo Lift",
+    "es": "Levantamiento de Rostro Completo y Cuello"
+  },
+  {
+    "id": "note.ultraformer.deep_synergy_booster",
+    "en": "Enhances treatment results by stimulating deeper collagen remodeling, boosting elasticity, and improving skin density for longer lasting lifting effects.",
+    "es": "Potencia los resultados al estimular una remodelación más profunda del colágeno, mejorar la elasticidad y aumentar la densidad de la piel para efectos de lifting más duraderos."
+  },
+  {
+    "id": "note.ultraformer.deep_contour.included",
+    "en": "Includes jawline area (jawline and lower cheek).",
+    "es": "Incluye la zona de la línea mandibular y mejilla baja."
+  },
+  {
+    "id": "note.ultraformer.deep_contour.add_on",
+    "en": "This is an add-on to any other other lower face hifu treatment.",
+    "es": "Este es un complemento a cualquier otro tratamiento HIFU para la parte inferior del rostro."
+  },
+  {
+    "id": "note.ultraformer.refreshing_lift",
+    "en": "Forehead, periocular area, and upper cheeks.",
+    "es": "Frente, zona periocular y mejillas altas."
+  },
+  {
+    "id": "note.ultraformer.submentum_lower_face",
+    "en": "Submentum plus lower cheek/jowl bags with dermal lifting.",
+    "es": "Submentón más mejilla baja o bolsas mandibulares con lifting dérmico."
+  },
+  {
+    "id": "note.ultraformer.360_contour",
+    "en": "Lower cheek, jawline, submentum, and neck.",
+    "es": "Mejilla baja, línea mandibular, submentón y cuello."
+  },
+  {
+    "id": "note.ultraformer.premium_facial_sculpting",
+    "en": "Forehead, periocular area, full cheeks, chin, and jawline.",
+    "es": "Frente, zona periocular, mejillas completas, mentón y línea mandibular."
+  },
+  {
+    "id": "note.ultraformer.premium_facial_recommend",
+    "en": "Deep contour add-on recommended for a more lifted result.",
+    "es": "Se recomienda agregar Contorno profundo para un resultado más lifting."
+  },
+  {
+    "id": "note.ultraformer.total_facial_rejuvenation",
+    "en": "Full face, submentum, and front of neck.",
+    "es": "Rostro completo, submentón y parte frontal del cuello."
+  },
+  {
+    "id": "note.ultraformer.neck_sculpting",
+    "en": "Submentum and neck.",
+    "es": "Submentón y cuello."
+  },
+  {
+    "id": "note.ultraformer.decolletage_rejuvenation",
+    "en": "Chest and clavicles.",
+    "es": "Pecho y clavículas."
+  },
+  {
+    "id": "note.ultraformer.combo_lift_smooth",
+    "en": "Neck and décolletage.",
+    "es": "Cuello y escote."
+  },
+  {
+    "id": "note.ultraformer.express_body_glow",
+    "en": "One small area (elbows, knees, or similar).",
+    "es": "Una zona pequeña (codos, rodillas o similar)."
+  },
+  {
+    "id": "note.ultraformer.express_back_glow",
+    "en": "Flanks and sides of the back.",
+    "es": "Flancos y costados de la espalda."
+  },
+  {
+    "id": "note.ultraformer.defined_arms",
+    "en": "Includes triceps, biceps, lateral arms, elbows, and deltoids.",
+    "es": "Incluye tríceps, bíceps, cara lateral de brazos, codos y deltoides."
+  },
+  {
+    "id": "note.ultraformer.thigh_sculpting",
+    "en": "Inner thighs and front of thighs.",
+    "es": "Cara interna y frontal de muslos."
+  },
+  {
+    "id": "note.ultraformer.glute_contour",
+    "en": "Includes glutes and subgluteal fold.",
+    "es": "Incluye glúteos y pliegue subglúteo."
+  },
+  {
+    "id": "note.ultraformer.firm_abdomen",
+    "en": "Includes upper and lower abdomen.",
+    "es": "Incluye abdomen superior e inferior."
+  },
+  {
+    "id": "note.ultraformer.lower_back_sculpting",
+    "en": "Includes lumbar region and flanks.",
+    "es": "Incluye región lumbar y flancos."
+  },
+  {
+    "id": "note.ultraformer.total_back_rejuvenation",
+    "en": "Includes upper, mid, and lower back, plus flanks.",
+    "es": "Incluye espalda alta, media y baja, además de flancos."
+  },
+  {
+    "id": "note.venus.express_body_glow",
+    "en": "Total area [103 cm² - 413 cm²]. Approximately one to two palms — similar to a credit card up to half a sheet of paper.",
+    "es": "Área total [103 cm² - 413 cm²]. Aproximadamente de una a dos palmas de la mano, similar al tamaño de una tarjeta de crédito hasta media hoja de papel."
+  },
+  {
+    "id": "note.venus.decollete_rejuvenation",
+    "en": "Covers chest and clavicles.",
+    "es": "Incluye pecho y clavículas."
+  },
+  {
+    "id": "note.venus.express_back_glow",
+    "en": "Targets flanks.",
+    "es": "Tratamiento enfocado en los flancos."
+  },
+  {
+    "id": "note.venus.glute_contour",
+    "en": "Includes glutes and the subgluteal line.",
+    "es": "Incluye glúteos y la línea subglútea."
+  },
+  {
+    "id": "note.venus.defined_arms",
+    "en": "Triceps, biceps, laterals, elbow, and deltoid.",
+    "es": "Tríceps, bíceps, laterales, codo y deltoides."
+  },
+  {
+    "id": "note.venus.thigh_sculpt",
+    "en": "Inner and anterior thighs.",
+    "es": "Cara interna y anterior de los muslos."
+  },
+  {
+    "id": "note.venus.lumbar_sculpt",
+    "en": "Lumbar region and flanks.",
+    "es": "Región lumbar y flancos."
+  },
+  {
+    "id": "note.venus.abdomen_firming",
+    "en": "Upper and lower abdomen.",
+    "es": "Abdomen superior e inferior."
+  },
+  {
+    "id": "note.venus.total_back_rejuvenation",
+    "en": "Upper, mid, and lower back with flanks.",
+    "es": "Espalda alta, media y baja con flancos."
+  },
+  {
+    "id": "note.enzymatic.slim",
+    "en": "Single vial; commonly paired with drainage.",
+    "es": "Vial único; comúnmente combinado con drenaje."
+  },
+  {
+    "id": "note.enzymatic.drain",
+    "en": "Single vial; used for edema and fibrosis.",
+    "es": "Vial único; usado para edema y fibrosis."
+  },
+  {
+    "id": "note.enzymatic.smooth",
+    "en": "Single vial; targets fibrotic tissue.",
+    "es": "Vial único; dirigido a tejido fibrótico."
+  },
+  {
+    "id": "note.enzymatic.kit",
+    "en": "Kit includes 1 vial of each enzyme; ratios may be adjusted case by case, which can require additional vials.",
+    "es": "El kit incluye 1 vial de cada enzima; las proporciones pueden ajustarse caso por caso, lo que puede requerir viales adicionales."
+  },
+  {
+    "id": "note.pdo.signature_includes",
+    "en": "Includes jawline, jowls, and nasolabial folds",
+    "es": "Incluye línea mandibular, papada y pliegues nasolabiales"
+  },
+  {
+    "id": "note.pdo.signature_popular",
+    "en": "Most popular package for visible contouring",
+    "es": "Paquete más popular para lograr un contorno visible"
+  },
+  {
+    "id": "note.pdo.full_face_includes",
+    "en": "Includes midface, jawline, and brows",
+    "es": "Incluye tercio medio del rostro, línea mandibular y cejas"
+  },
+  {
+    "id": "note.pdo.full_face_sculpting",
+    "en": "Provides sculpting and lifting for full facial balance",
+    "es": "Ofrece esculpido y lifting para un equilibrio facial completo"
+  },
+  {
+    "id": "note.pdo.jawline_defines",
+    "en": "Defines and lifts the jawline and lower face.",
+    "es": "Define y eleva la línea mandibular y el tercio inferior del rostro."
+  },
+  {
+    "id": "note.pdo.jawline_profile",
+    "en": "Ideal for softening jowls and improving profile.",
+    "es": "Ideal para suavizar los jowls y mejorar el perfil."
+  },
+  {
+    "id": "note.pdo.eyebrow_lift",
+    "en": "Creates a subtle lateral brow lift and opens the eye area",
+    "es": "Crea un lifting lateral sutil de la ceja y abre la mirada"
+  },
+  {
+    "id": "note.pdo.full_face_neck_includes",
+    "en": "Includes midface, jawline, brows and neck",
+    "es": "Incluye tercio medio del rostro, línea mandibular, cejas y cuello"
+  },
+  {
+    "id": "addon.ultraformer.sculptra",
+    "en": "Sculptra® (PLLA) - Poly-L-Lactic Acid",
+    "es": "Sculptra® (PLLA) - Poli-L-Láctico"
+  },
+  {
+    "id": "addon.ultraformer.harmonyca",
+    "en": "HarmonyCa® (HA + CAHA) - Hyaluronic Acid + Calcium Hydroxyapatite",
+    "es": "HarmonyCa® (AH + CAHA) - Ácido Hialurónico + Hidroxiapatita de Calcio"
+  },
+  {
+    "id": "addon.ultraformer.facial_balancing",
+    "en": "Facial Balancing - Juvéderm Volbella",
+    "es": "Equilibrio Facial - Juvéderm Volbella"
+  },
+  {
+    "id": "addon.ultraformer.microneedling_pn",
+    "en": "Microneedling - PN - Polynucleotide",
+    "es": "Microagujas - PN - Polinucleótido"
+  },
+  {
+    "id": "addon.venus_freeze.enzymatic_slim",
+    "en": "Enzymatic Remodeling Therapy - PB Serum Slim+",
+    "es": "Terapia de Remodelación Enzimática - PB Serum Slim+"
+  },
+  {
+    "id": "addon.venus_freeze.enzymatic_kit",
+    "en": "Enzymatic Remodeling Therapy - PB Serum+ (Kit)",
+    "es": "Terapia de Remodelación Enzimática - PB Serum+ (Kit)"
+  },
+  {
+    "id": "addon.venus_freeze.rf_microneedling",
+    "en": "Sylfirm X - RF Microneedling - Face + Neck + Décolleté",
+    "es": "Sylfirm X - Microagujas RF - Rostro + Cuello + Escote"
+  },
+  {
+    "id": "addon.venus_freeze.hydrafacial",
+    "en": "Hydrafacial MD - Face",
+    "es": "Hydrafacial MD - Rostro"
+  },
+  {
+    "id": "addon.venus_freeze.casmara_retinol",
+    "en": "Casmara - Retinol Pro‑Age Facial",
+    "es": "Casmara - Facial Retinol Pro‑Age"
+  },
+  {
+    "id": "addon.enzymatic.venus_express_body",
+    "en": "RF Sculpting - Express Body Glow",
+    "es": "Escultura RF - Brillo Corporal Exprés"
+  },
+  {
+    "id": "addon.enzymatic.venus_defined_arms",
+    "en": "RF Sculpting - Defined Arms",
+    "es": "Escultura RF - Brazos Definidos"
+  },
+  {
+    "id": "addon.enzymatic.rf_microneedling",
+    "en": "Sylfirm X - RF Microneedling - Face",
+    "es": "Sylfirm X - Microagujas RF - Rostro"
+  },
+  {
+    "id": "addon.pdo.mesotherapy_pdrn",
+    "en": "Mesotherapy - PDRN - Polydeoxyribonucleotide",
+    "es": "Mesoterapia - PDRN - Polidesoxirribonucleótido"
+  },
+  {
+    "id": "addon.pdo.microneedling_pn",
+    "en": "Microneedling - PN - Polynucleotide",
+    "es": "Microagujas - PN - Polinucleótido"
+  },
+  {
+    "id": "addon.pdo.rf_microneedling",
+    "en": "Sylfirm X - RF Microneedling - Face + Neck + Décolleté",
+    "es": "Sylfirm X - Microagujas RF - Rostro + Cuello + Escote"
+  },
+  {
+    "id": "addon.pdo.hydrafacial",
+    "en": "Hydrafacial MD - Face",
+    "es": "Hydrafacial MD - Rostro"
+  },
+  {
+    "id": "addon.pdo.casmara_retinol",
+    "en": "Casmara - Retinol Pro‑Age Facial",
+    "es": "Casmara - Facial Retinol Pro‑Age"
+  },
+  {
+    "id": "exp.ultraformer.pre.1",
+    "en": "Stay well hydrated; avoid alcohol, caffeine, and NSAIDs for 24–48 hours if medically permitted.",
+    "es": "Manténgase bien hidratado; evite alcohol, cafeína y AINE durante 24–48 horas si su médico lo permite."
+  },
+  {
+    "id": "exp.ultraformer.pre.2",
+    "en": "Arrive with clean skin, no makeup; inform your provider of recent Botox/fillers, implants, or metal hardware in the area.",
+    "es": "Acuda con la piel limpia y sin maquillaje; informe a su especialista sobre Botox/rellenos recientes, implantes o material metálico en la zona."
+  },
+  {
+    "id": "exp.ultraformer.during.1",
+    "en": "You’ll feel tingling or heat with each ultrasound pulse; ultrasound gel and possible numbing help comfort.",
+    "es": "Sentirá hormigueo o calor con cada pulso de ultrasonido; el gel y la anestesia opcional ayudan a la comodidad."
+  },
+  {
+    "id": "exp.ultraformer.during.2",
+    "en": "Energy is delivered in passes at multiple depths for lifting and tightening.",
+    "es": "La energía se aplica en pasadas a varias profundidades para levantar y tensar."
+  },
+  {
+    "id": "exp.ultraformer.post.1",
+    "en": "Mild redness, swelling, or tenderness may occur and usually resolves within hours to a few days.",
+    "es": "Puede presentarse enrojecimiento leve, inflamación o sensibilidad, que generalmente se resuelve en horas o pocos días."
+  },
+  {
+    "id": "exp.ultraformer.post.2",
+    "en": "Avoid hot showers, saunas, and intense exercise for 24–48 hours; hydrate well.",
+    "es": "Evite duchas muy calientes, saunas y ejercicio intenso durante 24–48 horas; hidrátese bien."
+  },
+  {
+    "id": "exp.ultraformer.post.3",
+    "en": "An initial lift may be visible immediately, with full results building over 8 to 12 weeks.",
+    "es": "Un efecto lifting inicial puede verse de inmediato, y los resultados completos se construyen entre 8 y 12 semanas."
+  },
+  {
+    "id": "exp.venus.pre.1",
+    "en": "Hydrate well for 24 hours and avoid alcohol/NSAIDs for 24–48 hours if medically permitted.",
+    "es": "Hidrátese bien durante 24 horas y evite alcohol/AINE por 24–48 horas si su médico lo permite."
+  },
+  {
+    "id": "exp.venus.pre.2",
+    "en": "Arrive with clean skin; avoid heavy creams or oils on treatment areas the day of your session.",
+    "es": "Acuda con la piel limpia; evite cremas u aceites pesados en las zonas a tratar el día de su sesión."
+  },
+  {
+    "id": "exp.venus.during.1",
+    "en": "You’ll feel warmth and mild suction/pressure as RF and pulsed magnetic fields work; intensity is adjusted for comfort.",
+    "es": "Sentirá calor y ligera succión/presión mientras actúan la RF y los campos magnéticos pulsados; la intensidad se ajusta para su comodidad."
+  },
+  {
+    "id": "exp.venus.post.1",
+    "en": "Slight redness or warmth may occur and usually resolves within a few hours.",
+    "es": "Puede presentarse enrojecimiento o calor leve que suele resolverse en pocas horas."
+  },
+  {
+    "id": "exp.venus.post.2",
+    "en": "Avoid very hot showers/saunas and strenuous workouts for 24 hours; hydrate well.",
+    "es": "Evite duchas muy calientes/saunas y ejercicio intenso durante 24 horas; hidrátese bien."
+  },
+  {
+    "id": "exp.venus.post.3",
+    "en": "Multiple sessions (typically 6–8) are recommended for long-term contouring effects.",
+    "es": "Se recomiendan múltiples sesiones (usualmente 6–8) para efectos de contorno a largo plazo."
+  },
+  {
+    "id": "exp.enzymatic.pre.1",
+    "en": "Avoid alcohol and anti-inflammatory medications for 24–48 hours if medically permitted; hydrate well.",
+    "es": "Evite alcohol y antiinflamatorios durante 24–48 horas si su médico lo permite; hidrátese bien."
+  },
+  {
+    "id": "exp.enzymatic.pre.2",
+    "en": "Arrive with clean skin; avoid heavy creams on treatment areas the day of your session.",
+    "es": "Acuda con la piel limpia; evite cremas pesadas en las zonas a tratar el día de su sesión."
+  },
+  {
+    "id": "exp.enzymatic.during.1",
+    "en": "You may feel brief pinching or burning as enzymes are injected; numbing and cooling can be used for comfort.",
+    "es": "Puede sentir pequeños pinchazos o ardor mientras se inyectan las enzimas; se pueden usar anestesia y enfriamiento para mayor comodidad."
+  },
+  {
+    "id": "exp.enzymatic.during.2",
+    "en": "Massage or gentle manipulation is performed to disperse the product evenly.",
+    "es": "Se realiza masaje o manipulación suave para dispersar el producto de manera uniforme."
+  },
+  {
+    "id": "exp.enzymatic.post.1",
+    "en": "Expect soreness, swelling, or bruising for 2–5 days; apply cool compresses as needed.",
+    "es": "Espere sensibilidad, hinchazón o moretones por 2 a 5 días; aplique compresas frías según necesidad."
+  },
+  {
+    "id": "exp.enzymatic.post.2",
+    "en": "Wear compression garments if recommended and avoid saunas, hot tubs, or strenuous exercise for 48 hours.",
+    "es": "Use prendas de compresión si se le indica y evite saunas, tinas calientes o ejercicio intenso durante 48 horas."
+  },
+  {
+    "id": "exp.enzymatic.post.3",
+    "en": "Engage in gentle movement or lymphatic massage as advised to accelerate enzyme clearance.",
+    "es": "Realice movimiento suave o masaje linfático según se le indique para acelerar la eliminación de enzimas."
+  },
+  {
+    "id": "exp.pdo.pre.1",
+    "en": "Avoid alcohol, NSAIDs and blood thinning supplements 24–48 hours before your appointment to reduce bruising.",
+    "es": "Evite alcohol, antiinflamatorios y suplementos que adelgacen la sangre durante 24 a 48 horas antes de su cita para reducir el riesgo de moretones."
+  },
+  {
+    "id": "exp.pdo.pre.2",
+    "en": "Inform your provider about any recent Botox or filler procedures to plan your treatment safely.",
+    "es": "Informe a su especialista sobre cualquier tratamiento reciente con Botox o rellenos para planear su procedimiento de forma segura."
+  },
+  {
+    "id": "exp.pdo.pre.3",
+    "en": "Arrive with clean skin and no makeup; pause retinoids/acids for 3–5 days.",
+    "es": "Acuda con la piel limpia y sin maquillaje; suspenda retinoides/ácidos durante 3–5 días."
+  },
+  {
+    "id": "exp.pdo.during.1",
+    "en": "Local anesthesia is used; you’ll feel pressure and possible tugging as threads are placed and tightened.",
+    "es": "Se utiliza anestesia local; sentirá presión y posible tirón mientras se colocan y tensan los hilos."
+  },
+  {
+    "id": "exp.pdo.during.2",
+    "en": "Entry points are dressed; your provider will show you how to avoid disturbing thread paths.",
+    "es": "Se cubren los puntos de entrada; su especialista le mostrará cómo evitar alterar la trayectoria de los hilos."
+  },
+  {
+    "id": "exp.pdo.post.1",
+    "en": "Expect mild soreness, swelling or bruising around thread entry points.",
+    "es": "Espere ligera molestia, hinchazón o moretones alrededor de los puntos de entrada de los hilos."
+  },
+  {
+    "id": "exp.pdo.post.2",
+    "en": "Avoid dental work, strenuous activity, or facial massage for 7 days.",
+    "es": "Evite trabajo dental, actividad física intensa o masajes faciales durante 7 días."
+  },
+  {
+    "id": "exp.pdo.post.3",
+    "en": "Sleep on your back and minimize exaggerated facial movements for 5–7 days so threads can settle properly.",
+    "es": "Duerma boca arriba y reduzca gestos faciales exagerados durante 5 a 7 días para que los hilos se asienten correctamente."
+  },
+  {
+    "id": "faq.ultraformer.q1",
+    "en": "Is Ultraformer MPT painful?",
+    "es": "¿Ultraformer MPT es doloroso?"
+  },
+  {
+    "id": "faq.ultraformer.a1",
+    "en": "Most patients tolerate the treatment well. Deep tingling or heat may be felt during the procedure; we recommend numbing for additional comfort if needed.",
+    "es": "La mayoría de los pacientes tolera bien el tratamiento. Puede sentir calor profundo u hormigueo durante la sesión y, si es necesario, podemos aplicar anestesia tópica para mayor comodidad."
+  },
+  {
+    "id": "faq.ultraformer.q2",
+    "en": "How many sessions of Ultraformer MPT do I need?",
+    "es": "¿Cuántas sesiones de Ultraformer MPT necesito?"
+  },
+  {
+    "id": "faq.ultraformer.a2",
+    "en": "Some patients see improvement after a single session, but a series of two to three treatments is ideal for long term tightening and lifting.",
+    "es": "Algunas personas notan mejoría con una sola sesión, pero una serie de dos a tres tratamientos suele ser ideal para un tensado y lifting a largo plazo."
+  },
+  {
+    "id": "faq.ultraformer.q3",
+    "en": "How long do Ultraformer MPT results last?",
+    "es": "¿Cuánto duran los resultados de Ultraformer MPT?"
+  },
+  {
+    "id": "faq.ultraformer.a3",
+    "en": "Results typically last 12 to 18 months depending on age, skin condition, and maintenance habits.",
+    "es": "Los resultados suelen durar de 12 a 18 meses, según la edad, el estado de la piel y los hábitos de mantenimiento."
+  },
+  {
+    "id": "faq.ultraformer.q4",
+    "en": "Can Ultraformer MPT be combined with other treatments?",
+    "es": "¿Ultraformer MPT se puede combinar con otros tratamientos?"
+  },
+  {
+    "id": "faq.ultraformer.a4",
+    "en": "Yes. Ultraformer MPT pairs well with injectables, microneedling, and collagen stimulators such as Sculptra for enhanced rejuvenation.",
+    "es": "Sí. Ultraformer MPT se combina muy bien con inyectables, microneedling y estimuladores de colágeno como Sculptra para un rejuvenecimiento potenciado."
+  },
+  {
+    "id": "faq.ultraformer.q5",
+    "en": "Is there any downtime after Ultraformer MPT?",
+    "es": "¿Hay tiempo de recuperación después de Ultraformer MPT?"
+  },
+  {
+    "id": "faq.ultraformer.a5",
+    "en": "There is no formal downtime. Most patients return to normal activities the same day, though mild swelling or redness can appear for one to three days.",
+    "es": "No existe un tiempo de recuperación obligatorio. La mayoría de los pacientes retoma sus actividades el mismo día, aunque puede haber ligera inflamación o enrojecimiento durante uno a tres días."
+  },
+  {
+    "id": "faq.ultraformer.q6",
+    "en": "What areas can Ultraformer MPT treat?",
+    "es": "¿Qué zonas se pueden tratar con Ultraformer MPT?"
+  },
+  {
+    "id": "faq.ultraformer.a6",
+    "en": "Ultraformer MPT can be used on the face, neck, chin, abdomen, arms, thighs, and back for non-invasive tightening and contouring.",
+    "es": "Ultraformer MPT puede utilizarse en rostro, cuello, mentón, abdomen, brazos, muslos y espalda para tensado y contorno no invasivo."
+  },
+  {
+    "id": "faq.venus.q1",
+    "en": "Is Venus Freeze painful?",
+    "es": "¿Es doloroso Venus Freeze?"
+  },
+  {
+    "id": "faq.venus.a1",
+    "en": "No, it’s a comfortable treatment often described as a hot stone massage.",
+    "es": "No, es un tratamiento cómodo que suele describirse como un masaje con piedras calientes."
+  },
+  {
+    "id": "faq.venus.q2",
+    "en": "How soon will I see results?",
+    "es": "¿Cuándo veré resultados?"
+  },
+  {
+    "id": "faq.venus.a2",
+    "en": "You may notice some tightening after the first session, but full results develop over 6–8 treatments.",
+    "es": "Puede notar algo de tensión después de la primera sesión, pero los resultados completos se desarrollan en 6–8 sesiones."
+  },
+  {
+    "id": "faq.venus.q3",
+    "en": "How long do results last?",
+    "es": "¿Cuánto duran los resultados?"
+  },
+  {
+    "id": "faq.venus.a3",
+    "en": "Results can last several months, especially when paired with healthy habits and maintenance sessions.",
+    "es": "Los resultados pueden durar varios meses, especialmente si se acompañan de hábitos saludables y sesiones de mantenimiento."
+  },
+  {
+    "id": "faq.venus.q4",
+    "en": "Can this replace liposuction?",
+    "es": "¿Puede reemplazar la liposucción?"
+  },
+  {
+    "id": "faq.venus.a4",
+    "en": "No, Venus Freeze is ideal for mild to moderate contouring. It is not a substitute for surgical fat removal.",
+    "es": "No, Venus Freeze es ideal para contornos leves a moderados. No es un sustituto de la extracción quirúrgica de grasa."
+  },
+  {
+    "id": "faq.venus.q5",
+    "en": "Is there downtime?",
+    "es": "¿Hay tiempo de recuperación?"
+  },
+  {
+    "id": "faq.venus.a5",
+    "en": "No downtime—patients return to normal activities immediately after each session.",
+    "es": "No hay tiempo de recuperación: los pacientes retoman sus actividades de inmediato."
+  },
+  {
+    "id": "faq.enzymatic.q1",
+    "en": "Is this the same as mesotherapy?",
+    "es": "¿Es lo mismo que la mesoterapia?"
+  },
+  {
+    "id": "faq.enzymatic.a1",
+    "en": "Not exactly. Enzymatic therapy uses specific enzymes for fibrosis and post-lipo remodeling, while mesotherapy uses general lipolytic cocktails.",
+    "es": "No exactamente. La terapia enzimática utiliza enzimas específicas para fibrosis y remodelación post-lipo, mientras que la mesoterapia usa cócteles lipolíticos generales."
+  },
+  {
+    "id": "faq.enzymatic.q2",
+    "en": "How many sessions are needed?",
+    "es": "¿Cuántas sesiones se necesitan?"
+  },
+  {
+    "id": "faq.enzymatic.a2",
+    "en": "Most patients benefit from 4–6 sessions spaced 1–2 weeks apart.",
+    "es": "La mayoría de los pacientes requieren 4 a 6 sesiones, espaciadas de 1 a 2 semanas."
+  },
+  {
+    "id": "faq.enzymatic.q3",
+    "en": "Does the treatment hurt?",
+    "es": "¿Duele el tratamiento?"
+  },
+  {
+    "id": "faq.enzymatic.a3",
+    "en": "You may feel mild stinging during injections and tenderness after. Discomfort is temporary.",
+    "es": "Puede sentir ardor leve durante las inyecciones y sensibilidad después. El malestar es temporal."
+  },
+  {
+    "id": "faq.enzymatic.q4",
+    "en": "When will I see results?",
+    "es": "¿Cuándo veré resultados?"
+  },
+  {
+    "id": "faq.enzymatic.a4",
+    "en": "Some smoothing appears within 1–2 weeks. More dramatic changes build across sessions.",
+    "es": "Puede ver suavidad inicial en 1 a 2 semanas. Cambios más notorios se construyen con sesiones sucesivas."
+  },
+  {
+    "id": "faq.enzymatic.q5",
+    "en": "Can I combine this with other treatments?",
+    "es": "¿Puedo combinarlo con otros tratamientos?"
+  },
+  {
+    "id": "faq.enzymatic.a5",
+    "en": "Yes, pairing enzymatic therapy with RF sculpting or lymphatic massage improves results.",
+    "es": "Sí, combinar la terapia enzimática con radiofrecuencia o masaje linfático mejora los resultados."
+  },
+  {
+    "id": "faq.pdo.q1",
+    "en": "What is a PDO thread lift?",
+    "es": "¿Qué es un lifting con hilos PDO?"
+  },
+  {
+    "id": "faq.pdo.a1",
+    "en": "A PDO thread lift is a non-surgical treatment that uses dissolvable threads to lift, contour and stimulate collagen in the face or neck. It offers natural looking results with minimal downtime.",
+    "es": "El lifting con hilos PDO es un tratamiento no quirúrgico que utiliza hilos reabsorbibles para levantar, perfilar y estimular el colágeno en el rostro o el cuello. Ofrece resultados de aspecto natural con un tiempo de recuperación mínimo."
+  },
+  {
+    "id": "faq.pdo.q2",
+    "en": "How long do the results last?",
+    "es": "¿Cuánto duran los resultados?"
+  },
+  {
+    "id": "faq.pdo.a2",
+    "en": "The threads dissolve within about 6 months, but collagen stimulation continues and results can last 12–18 months depending on lifestyle and skin condition.",
+    "es": "Los hilos se disuelven alrededor de los 6 meses, pero la estimulación de colágeno continúa y los resultados pueden durar de 12 a 18 meses según el estilo de vida y el estado de la piel."
+  },
+  {
+    "id": "faq.pdo.q3",
+    "en": "Is the procedure painful?",
+    "es": "¿El procedimiento es doloroso?"
+  },
+  {
+    "id": "faq.pdo.a3",
+    "en": "The area is numbed with lidocaine, so discomfort during the procedure is minimal. Some tenderness or tightness may be felt for a few days afterward.",
+    "es": "La zona se anestesia con lidocaína, por lo que la molestia durante el procedimiento es mínima. Puede haber sensibilidad o sensación de tirantez durante algunos días después."
+  },
+  {
+    "id": "faq.pdo.q4",
+    "en": "Can threads be combined with other treatments?",
+    "es": "¿Se pueden combinar los hilos con otros tratamientos?"
+  },
+  {
+    "id": "faq.pdo.a4",
+    "en": "Yes. Thread lifts are often combined with biostimulators, dermal fillers or RF microneedling as part of a full facial rejuvenation plan.",
+    "es": "Sí. Con frecuencia se combinan con biostimuladores, rellenos dérmicos o microneedling con radiofrecuencia como parte de un plan integral de rejuvenecimiento facial."
+  },
+  {
+    "id": "faq.pdo.q5",
+    "en": "When will I see results?",
+    "es": "¿Cuándo veré resultados?"
+  },
+  {
+    "id": "faq.pdo.a5",
+    "en": "Some lifting is visible immediately, while full collagen remodeling takes 6–12 weeks for optimal improvement.",
+    "es": "Parte del efecto lifting se ve de inmediato, mientras que la remodelación completa del colágeno tarda de 6 a 12 semanas para mostrar su máximo beneficio."
+  },
+  {
+    "id": "price.pdo.tbd",
+    "en": "$TBD",
+    "es": "$TBD"
+  },
+  {
+    "id": "svc.pdo_biostim.name",
+    "en": "PDO Threads - Biostimulating Treatment Plan",
+    "es": "Hilos PDO - Plan de Tratamiento Bioestimulante"
+  },
+  {
+    "id": "svc.pdo_biostim.desc",
+    "en": "PDO biostimulating threads are designed to improve skin quality from within by activating the body’s natural collagen production. This treatment focuses on firmness, texture, and long-term skin health rather than lifting or repositioning tissue.",
+    "es": "Los hilos PDO bioestimulantes están diseñados para mejorar la calidad de la piel desde el interior, activando la producción natural de colágeno. Este tratamiento se enfoca en firmeza, textura y salud cutánea a largo plazo, no en levantar o reposicionar tejidos."
+  },
+  {
+    "id": "svc.pdo_biostim.details",
+    "en": "This treatment uses smooth PDO threads placed superficially in the skin to stimulate collagen, elastin, and dermal regeneration. Results develop gradually over several weeks and are ideal for patients seeking prevention, early intervention, or subtle skin strengthening with natural movement preserved.",
+    "es": "Este tratamiento utiliza hilos PDO lisos colocados de forma superficial para estimular colágeno, elastina y regeneración dérmica. Los resultados aparecen de manera progresiva durante varias semanas y son ideales para pacientes que buscan prevención, intervención temprana o fortalecimiento cutáneo sutil manteniendo una apariencia natural."
+  },
+  {
+    "id": "note.pdo_biostim.uses_smooth",
+    "en": "Uses smooth PDO threads to stimulate collagen, elastin, and dermal regeneration",
+    "es": "Utiliza hilos PDO lisos para estimular colágeno, elastina y regeneración dérmica"
+  },
+  {
+    "id": "note.pdo_biostim.skin_quality",
+    "en": "Focuses on skin quality improvement, not lifting or repositioning",
+    "es": "Enfocado en mejorar la calidad de la piel, no en levantar tejidos"
+  },
+  {
+    "id": "note.pdo_biostim.gradual",
+    "en": "Results develop gradually over time",
+    "es": "Los resultados aparecen de forma progresiva"
+  },
+  {
+    "id": "note.pdo_biostim.ideal_prevention",
+    "en": "Ideal as prevention or early intervention",
+    "es": "Ideal como prevención o intervención temprana"
+  },
+  {
+    "id": "goal.pdo_biostim.firmness",
+    "en": "Improve skin firmness and elasticity",
+    "es": "Mejorar firmeza y elasticidad de la piel"
+  },
+  {
+    "id": "goal.pdo_biostim.texture",
+    "en": "Enhance texture and overall skin quality",
+    "es": "Optimizar textura y calidad cutánea"
+  },
+  {
+    "id": "goal.pdo_biostim.collagen",
+    "en": "Support long-term collagen production",
+    "es": "Estimular producción de colágeno a largo plazo"
+  },
+  {
+    "id": "goal.pdo_biostim.natural_movement",
+    "en": "Maintain natural facial movement",
+    "es": "Mantener expresión facial natural"
+  },
+  {
+    "id": "area.pdo_biostim.face",
+    "en": "Face",
+    "es": "Rostro"
+  },
+  {
+    "id": "area.pdo_biostim.neck",
+    "en": "Neck",
+    "es": "Cuello"
+  },
+  {
+    "id": "area.pdo_biostim.jawline_laxity",
+    "en": "Jawline skin laxity",
+    "es": "Flacidez cutánea mandibular"
+  },
+  {
+    "id": "area.pdo_biostim.under_eye",
+    "en": "Under-eye fine lines",
+    "es": "Líneas finas perioculares"
+  },
+  {
+    "id": "area.pdo_biostim.perioral",
+    "en": "Perioral lines",
+    "es": "Líneas peribucales"
+  },
+  {
+    "id": "area.pdo_biostim.decolletage",
+    "en": "Décolletage",
+    "es": "Escote"
+  },
+  {
+    "id": "svc.pdo_lift.name",
+    "en": "PDO Threads - Non-Surgical Lifting Treatment Plan",
+    "es": "Hilos PDO - Plan de Lifting No Quirúrgico"
+  },
+  {
+    "id": "svc.pdo_lift.desc",
+    "en": "PDO non-surgical lifting threads are designed to lift and support sagging facial tissues, restoring contour and definition without surgery. This treatment provides immediate structural support with continued improvement over time.",
+    "es": "Los hilos PDO de lifting no quirúrgico están diseñados para elevar y sostener tejidos faciales descendidos, restaurando contorno y definición sin necesidad de cirugía. Este tratamiento ofrece soporte estructural inmediato con mejoría progresiva."
+  },
+  {
+    "id": "svc.pdo_lift.details",
+    "en": "This treatment uses barbed PDO threads strategically placed to reposition tissue and enhance facial structure. A lifting effect is visible immediately, while collagen stimulation continues to improve firmness and support over time. Results are natural, balanced, and tailored to each patient’s anatomy.",
+    "es": "Este tratamiento utiliza hilos PDO con espículas colocados estratégicamente para reposicionar tejidos y mejorar la estructura facial. El efecto lifting es visible de forma inmediata, mientras que la estimulación de colágeno continúa fortaleciendo el soporte con el tiempo. Los resultados son naturales, equilibrados y personalizados según la anatomía del paciente."
+  },
+  {
+    "id": "note.pdo_lift.uses_barbed",
+    "en": "Uses barbed PDO threads for tissue repositioning",
+    "es": "Utiliza hilos PDO con espículas para reposicionamiento tisular"
+  },
+  {
+    "id": "note.pdo_lift.lift_support",
+    "en": "Designed to lift and support sagging structures",
+    "es": "Diseñado para levantar y sostener estructuras flácidas"
+  },
+  {
+    "id": "note.pdo_lift.immediate_collagen",
+    "en": "Provides immediate lifting with progressive collagen support",
+    "es": "Ofrece efecto lifting inmediato con soporte progresivo de colágeno"
+  },
+  {
+    "id": "note.pdo_lift.not_surgical",
+    "en": "Does not replace surgical facelift procedures",
+    "es": "No sustituye un lifting quirúrgico"
+  },
+  {
+    "id": "goal.pdo_lift.lift",
+    "en": "Lift sagging facial tissues",
+    "es": "Elevar tejidos faciales descendidos"
+  },
+  {
+    "id": "goal.pdo_lift.contour",
+    "en": "Improve facial contour and definition",
+    "es": "Mejorar contorno y definición facial"
+  },
+  {
+    "id": "goal.pdo_lift.support",
+    "en": "Restore structural support",
+    "es": "Restaurar soporte estructural"
+  },
+  {
+    "id": "goal.pdo_lift.balance",
+    "en": "Achieve natural, balanced facial proportions",
+    "es": "Lograr proporciones faciales armónicas"
+  },
+  {
+    "id": "area.pdo_lift.midface",
+    "en": "Midface",
+    "es": "Tercio medio facial"
+  },
+  {
+    "id": "area.pdo_lift.jawline",
+    "en": "Jawline",
+    "es": "Línea mandibular"
+  },
+  {
+    "id": "area.pdo_lift.jowls",
+    "en": "Jowls",
+    "es": "Bolsas mandibulares"
+  },
+  {
+    "id": "area.pdo_lift.chin",
+    "en": "Chin",
+    "es": "Mentón"
+  },
+  {
+    "id": "area.pdo_lift.neck_submental",
+    "en": "Neck and submental area",
+    "es": "Cuello y submentón"
+  },
+  {
+    "id": "area.pdo_lift.brow",
+    "en": "Eyebrow and lateral brow",
+    "es": "Ceja y región lateral"
+  },
+  {
+    "id": "opt.pdo_biostim.periorbital",
+    "en": "Periorbital (Eyes)",
+    "es": "Periorbital (Ojos)"
+  },
+  {
+    "id": "opt.pdo_biostim.cheeks",
+    "en": "Cheeks",
+    "es": "Mejillas"
+  },
+  {
+    "id": "opt.pdo_biostim.jawline",
+    "en": "Jawline",
+    "es": "Línea Mandibular"
+  },
+  {
+    "id": "opt.pdo_biostim.neck",
+    "en": "Neck",
+    "es": "Cuello"
+  },
+  {
+    "id": "opt.pdo_biostim.full_face",
+    "en": "Full Face",
+    "es": "Rostro Completo"
+  },
+  {
+    "id": "opt.pdo_lift.lower_third",
+    "en": "Lower Third",
+    "es": "Tercio Inferior"
+  },
+  {
+    "id": "opt.pdo_lift.jowls",
+    "en": "Jowls",
+    "es": "Bolsas mandibulares"
+  },
+  {
+    "id": "opt.pdo_lift.jawline",
+    "en": "Jawline",
+    "es": "Línea Mandibular"
+  },
+  {
+    "id": "opt.pdo_lift.brow",
+    "en": "Brow",
+    "es": "Ceja"
+  },
+  {
+    "id": "opt.pdo_lift.lateral_periocular",
+    "en": "Lateral Periocular",
+    "es": "Periocular Lateral"
+  },
+  {
+    "id": "opt.pdo_lift.neck_submental",
+    "en": "Neck + Submental",
+    "es": "Cuello + Submentón"
+  },
+  {
+    "id": "note.pdo.price_variation",
+    "en": "Prices may vary slightly if additional customization is needed to achieve the desired rejuvenated result and look.",
+    "es": "Los precios pueden variar ligeramente si se requiere una personalización adicional para lograr el resultado y la apariencia rejuvenecida deseada."
+  },
+  {
+    "id": "addon.pdo.lift_threads",
+    "en": "PDO Threads - Non-Surgical Lifting Treatment Plan",
+    "es": "Hilos PDO - Plan de Lifting No Quirúrgico"
+  },
+  {
+    "id": "addon.pdo.biostim_threads",
+    "en": "PDO Threads - Biostimulating Treatment Plan",
+    "es": "Hilos PDO - Plan de Tratamiento Bioestimulante"
+  },
+  {
+    "id": "exp.pdo_biostim.pre.1",
+    "en": "Avoid blood-thinning medications when medically appropriate",
+    "es": "Evitar medicamentos anticoagulantes cuando sea médicamente apropiado"
+  },
+  {
+    "id": "exp.pdo_biostim.pre.2",
+    "en": "Arrive with clean skin, no makeup",
+    "es": "Acudir con piel limpia, sin maquillaje"
+  },
+  {
+    "id": "exp.pdo_biostim.pre.3",
+    "en": "Mild swelling or bruising is possible",
+    "es": "Puede presentarse inflamación o moretones leves"
+  },
+  {
+    "id": "exp.pdo_biostim.during.1",
+    "en": "Local anesthesia is used for comfort",
+    "es": "Se utiliza anestesia local para mayor comodidad"
+  },
+  {
+    "id": "exp.pdo_biostim.during.2",
+    "en": "Sensation of pressure or light pulling may occur",
+    "es": "Puede sentirse presión o tensión ligera"
+  },
+  {
+    "id": "exp.pdo_biostim.during.3",
+    "en": "Procedure is typically well tolerated",
+    "es": "Procedimiento generalmente bien tolerado"
+  },
+  {
+    "id": "exp.pdo_biostim.post.1",
+    "en": "Mild swelling or tenderness may last a few days",
+    "es": "Inflamación o sensibilidad leve por algunos días"
+  },
+  {
+    "id": "exp.pdo_biostim.post.2",
+    "en": "Avoid facial massage or excessive movement for several days",
+    "es": "Evitar masajes faciales o movimientos excesivos por algunos días"
+  },
+  {
+    "id": "exp.pdo_biostim.post.3",
+    "en": "Collagen stimulation develops over weeks to months",
+    "es": "La estimulación de colágeno se desarrolla en semanas a meses"
+  },
+  {
+    "id": "exp.pdo_lift.pre.1",
+    "en": "Avoid alcohol and blood-thinning agents prior to treatment",
+    "es": "Evitar alcohol y anticoagulantes antes del tratamiento"
+  },
+  {
+    "id": "exp.pdo_lift.pre.2",
+    "en": "Arrive without makeup",
+    "es": "Acudir sin maquillaje"
+  },
+  {
+    "id": "exp.pdo_lift.pre.3",
+    "en": "Mild swelling or bruising is expected",
+    "es": "Inflamación o moretones leves son esperados"
+  },
+  {
+    "id": "exp.pdo_lift.during.1",
+    "en": "Local anesthesia is administered",
+    "es": "Se administra anestesia local"
+  },
+  {
+    "id": "exp.pdo_lift.during.2",
+    "en": "Sensation of tension or pulling may be felt",
+    "es": "Puede sentirse tensión o tracción"
+  },
+  {
+    "id": "exp.pdo_lift.during.3",
+    "en": "Procedure duration varies by area treated",
+    "es": "La duración depende de la zona tratada"
+  },
+  {
+    "id": "exp.pdo_lift.post.1",
+    "en": "Temporary swelling, tightness, or asymmetry may occur",
+    "es": "Puede haber inflamación, tensión o asimetría temporal"
+  },
+  {
+    "id": "exp.pdo_lift.post.2",
+    "en": "Avoid exaggerated facial movements for 1 to 2 weeks",
+    "es": "Evitar gestos faciales exagerados por 1 a 2 semanas"
+  },
+  {
+    "id": "exp.pdo_lift.post.3",
+    "en": "Lifting effect is immediate, with continued improvement over time",
+    "es": "El efecto lifting es inmediato, con mejoría progresiva"
+  },
+  {
+    "id": "faq.pdo_biostim.q1",
+    "en": "Will this lift my face?",
+    "es": "¿Este tratamiento levanta el rostro?"
+  },
+  {
+    "id": "faq.pdo_biostim.a1",
+    "en": "No. This treatment improves skin quality and firmness but does not reposition tissue.",
+    "es": "No. Mejora la calidad y firmeza de la piel, pero no reposiciona tejidos."
+  },
+  {
+    "id": "faq.pdo_biostim.q2",
+    "en": "When will I see results?",
+    "es": "¿Cuándo veré resultados?"
+  },
+  {
+    "id": "faq.pdo_biostim.a2",
+    "en": "Gradual improvement begins in 4 to 6 weeks as collagen production increases.",
+    "es": "La mejoría comienza de forma gradual entre 4 y 6 semanas."
+  },
+  {
+    "id": "faq.pdo_biostim.q3",
+    "en": "How long do results last?",
+    "es": "¿Cuánto duran los resultados?"
+  },
+  {
+    "id": "faq.pdo_biostim.a3",
+    "en": "Results may last 12 months or longer depending on skin quality and aging factors.",
+    "es": "Pueden durar 12 meses o más, dependiendo de la piel y el envejecimiento."
+  },
+  {
+    "id": "faq.pdo_lift.q1",
+    "en": "Is this a facelift?",
+    "es": "¿Es un lifting facial quirúrgico?"
+  },
+  {
+    "id": "faq.pdo_lift.a1",
+    "en": "No. This is a non-surgical lifting option that provides moderate lift without surgery.",
+    "es": "No. Es una opción no quirúrgica con efecto lifting moderado."
+  },
+  {
+    "id": "faq.pdo_lift.q2",
+    "en": "How long does the lift last?",
+    "es": "¿Cuánto dura el efecto lifting?"
+  },
+  {
+    "id": "faq.pdo_lift.a2",
+    "en": "Results typically last 12 to 18 months depending on technique and tissue quality.",
+    "es": "Generalmente entre 12 y 18 meses, según la técnica y la calidad del tejido."
+  },
+  {
+    "id": "faq.pdo_lift.q3",
+    "en": "Will the threads be visible or felt?",
+    "es": "¿Se sienten o se ven los hilos?"
+  },
+  {
+    "id": "faq.pdo_lift.a3",
+    "en": "Threads are placed in deeper layers and are not visible. Mild awareness may occur initially.",
+    "es": "No son visibles. Puede haber una leve sensación temporal al inicio."
+  },
+  {
+    "id": "filter.view_all",
+    "en": "View all",
+    "es": "Ver todo"
+  },
+  {
+    "id": "filter.venus.face",
+    "en": "Face",
+    "es": "Rostro"
+  },
+  {
+    "id": "filter.venus.body",
+    "en": "Body",
+    "es": "Cuerpo"
+  }
+]
