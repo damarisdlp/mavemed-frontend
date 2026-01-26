@@ -1,0 +1,622 @@
+[
+  {
+    "id": "cat.podiatry.name",
+    "en": "Medical Podiatry Services",
+    "es": "Servicios de Podología Médica"
+  },
+  {
+    "id": "svc.calcaneal_spur.name",
+    "en": "Heel Spur Injection (Calcaneal Spur)",
+    "es": "Inyección para Espolón Calcáneo"
+  },
+  {
+    "id": "svc.calcaneal_spur.desc",
+    "en": "Targeted injection therapy to reduce inflammation and pain caused by calcaneal spurs and plantar fasciitis.",
+    "es": "Terapia de inyección dirigida para reducir la inflamación y el dolor causados por espolones calcáneos y fascitis plantar."
+  },
+  {
+    "id": "svc.calcaneal_spur.details",
+    "en": "A medical injection is administered to the inflamed tissue near the calcaneal spur to relieve pain, reduce swelling, and support healing. Depending on severity, treatment may include corticosteroids, anesthetics, or regenerative compounds. Often paired with rest, orthotic support, or physical therapy.",
+    "es": "Se administra una inyección médica en el tejido inflamado cerca del espolón calcáneo para aliviar el dolor, reducir la inflamación y apoyar el proceso de recuperación. Según la gravedad, el tratamiento puede incluir corticosteroides, anestésicos o compuestos regenerativos. Frecuentemente se complementa con reposo, soporte ortopédico o fisioterapia."
+  },
+  {
+    "id": "svc.matrixectomy.name",
+    "en": "Matrixectomy",
+    "es": "Matricectomía"
+  },
+  {
+    "id": "svc.matrixectomy.desc",
+    "en": "Surgical removal of part of the nail matrix to permanently prevent ingrown toenails and recurring infections.",
+    "es": "Procedimiento quirúrgico para remover parte de la matriz ungueal y prevenir de forma permanente las uñas encarnadas y las infecciones recurrentes."
+  },
+  {
+    "id": "svc.matrixectomy.details",
+    "en": "Matrixectomy is a minor outpatient procedure that permanently removes or destroys part of the nail’s growth center (matrix), preventing the ingrown portion from growing back. It is performed under local anesthesia and is typically recommended for patients with repeated ingrown toenails or infection. Healing is relatively quick, and most patients return to daily activities within a few days.",
+    "es": "La matriceptomía es un procedimiento ambulatorio menor que elimina o destruye de forma permanente una parte del centro de crecimiento de la uña (matriz), evitando que el borde encarnado vuelva a crecer. Se realiza bajo anestesia local y suele recomendarse en pacientes con uñas encarnadas recurrentes o infecciones repetidas. La recuperación es rápida y la mayoría de los pacientes retoman actividades diarias en pocos días."
+  },
+  {
+    "id": "svc.nail_fungus_laser.name",
+    "en": "Laser Nail Fungus Treatment",
+    "es": "Tratamiento Láser para Hongos en las Uñas"
+  },
+  {
+    "id": "svc.nail_fungus_laser.desc",
+    "en": "Non-invasive laser therapy to eliminate toenail fungus and restore nail clarity without pain or medication.",
+    "es": "Terapia láser no invasiva para eliminar hongos en las uñas y mejorar la claridad de la uña sin dolor ni medicamentos."
+  },
+  {
+    "id": "svc.nail_fungus_laser.details",
+    "en": "Laser nail fungus treatment uses targeted light energy (K-Laser Blue Derma) to penetrate the nail and destroy fungal infections at the root without harming surrounding tissue. The treatment is safe, effective, and requires no downtime. A typical protocol includes 6–8 sessions spaced 2–3 weeks apart for optimal results.",
+    "es": "El tratamiento láser para hongos utiliza energía lumínica dirigida (K-Laser Blue Derma) que penetra la uña y destruye la infección fúngica desde la raíz sin dañar el tejido circundante. Es un tratamiento seguro, eficaz y sin tiempo de recuperación. El protocolo típico incluye de 6 a 8 sesiones cada 2 a 3 semanas."
+  },
+  {
+    "id": "svc.toenail_extraction.name",
+    "en": "Toenail Extraction Procedure",
+    "es": "Procedimiento de Extracción de Uña del Pie"
+  },
+  {
+    "id": "svc.toenail_extraction.desc",
+    "en": "Partial or total nail removal to treat severely ingrown, infected, or damaged toenails with long term relief.",
+    "es": "Remoción parcial o total de la uña para tratar uñas encarnadas, infectadas o dañadas y brindar alivio a largo plazo."
+  },
+  {
+    "id": "svc.toenail_extraction.details",
+    "en": "Performed under local anesthesia, this outpatient procedure removes part or all of the toenail to reduce pain, clear infection, and improve overall nail health. It is commonly recommended for chronic ingrown toenails, nail trauma, or persistent infections. Proper sterile technique is followed to ensure safety and healing.",
+    "es": "Bajo anestesia local, este procedimiento ambulatorio remueve parte o la totalidad de la uña del pie para disminuir el dolor, controlar la infección y mejorar la salud de la uña. Se recomienda con frecuencia en casos de uñas encarnadas crónicas, traumatismos ungueales o infecciones persistentes. Se realiza con técnica estéril para asegurar seguridad y una buena recuperación."
+  },
+  {
+    "id": "note.calcaneal_spur.ultrasound",
+    "en": "Ultrasound-guided application available when needed",
+    "es": "Aplicación guiada por ultrasonido disponible cuando sea necesario"
+  },
+  {
+    "id": "note.calcaneal_spur.certified",
+    "en": "Administered by certified physician",
+    "es": "Administrado por un médico certificado"
+  },
+  {
+    "id": "note.calcaneal_spur.medication",
+    "en": "May include corticosteroids, anesthetics or biologics depending on diagnosis",
+    "es": "Puede incluir corticosteroides, anestésicos o biológicos según el diagnóstico"
+  },
+  {
+    "id": "note.matrixectomy.anesthesia",
+    "en": "Performed under local anesthesia by a licensed doctor",
+    "es": "Realizado bajo anestesia local por un médico certificado"
+  },
+  {
+    "id": "note.matrixectomy.chronic",
+    "en": "Recommended after failed conservative treatments or chronic ingrown nails",
+    "es": "Recomendado después de tratamientos conservadores fallidos o uñas encarnadas crónicas"
+  },
+  {
+    "id": "note.matrixectomy.sides",
+    "en": "May be performed on one or both sides of the nail depending on severity",
+    "es": "Puede realizarse en uno o ambos lados de la uña según la gravedad"
+  },
+  {
+    "id": "note.nail_fungus_laser.mild",
+    "en": "Ideal for mild to moderate onychomycosis",
+    "es": "Ideal para onicomicosis leve a moderada"
+  },
+  {
+    "id": "note.nail_fungus_laser.painless",
+    "en": "Painless, non-invasive, and drug-free",
+    "es": "Indoloro, no invasivo y libre de medicamentos"
+  },
+  {
+    "id": "note.nail_fungus_laser.regrowth",
+    "en": "Full results may take months as healthy nail regrows",
+    "es": "Los resultados completos pueden tardar meses mientras la uña sana vuelve a crecer"
+  },
+  {
+    "id": "note.toenail_extraction.sterile",
+    "en": "Performed by licensed medical professionals under sterile conditions",
+    "es": "Realizado por profesionales médicos certificados bajo condiciones estériles"
+  },
+  {
+    "id": "note.toenail_extraction.antifungal",
+    "en": "Topical antifungals or oral antibiotics may be prescribed post procedure",
+    "es": "Pueden recetarse antifúngicos tópicos o antibióticos orales después del procedimiento"
+  },
+  {
+    "id": "note.toenail_extraction.healing",
+    "en": "Healing time varies depending on procedure extent and patient care",
+    "es": "El tiempo de cicatrización varía según el alcance del procedimiento y el cuidado del paciente"
+  },
+  {
+    "id": "goal.calcaneal_spur.pain",
+    "en": "Reduce heel pain and inflammation",
+    "es": "Reducir dolor e inflamación en el talón"
+  },
+  {
+    "id": "goal.calcaneal_spur.fasciitis",
+    "en": "Treat plantar fasciitis symptoms",
+    "es": "Tratar síntomas de fascitis plantar"
+  },
+  {
+    "id": "goal.calcaneal_spur.mobility",
+    "en": "Improve walking comfort and mobility",
+    "es": "Mejorar comodidad al caminar y movilidad"
+  },
+  {
+    "id": "goal.matrixectomy.resolve",
+    "en": "Permanently resolve chronic ingrown toenails",
+    "es": "Resolver de forma permanente las uñas encarnadas crónicas"
+  },
+  {
+    "id": "goal.matrixectomy.pain",
+    "en": "Eliminate recurring pain and infections",
+    "es": "Eliminar dolor e infecciones recurrentes"
+  },
+  {
+    "id": "goal.matrixectomy.comfort",
+    "en": "Improve comfort in walking and wearing shoes",
+    "es": "Mejorar la comodidad al caminar y al usar calzado"
+  },
+  {
+    "id": "goal.nail_fungus_laser.eliminate",
+    "en": "Eliminate fungal infection from nail bed",
+    "es": "Eliminar la infección fúngica del lecho ungueal"
+  },
+  {
+    "id": "goal.nail_fungus_laser.clarity",
+    "en": "Improve nail clarity and texture",
+    "es": "Mejorar la claridad y la textura de la uña"
+  },
+  {
+    "id": "goal.nail_fungus_laser.prevent",
+    "en": "Prevent future recurrence of infection",
+    "es": "Prevenir recurrencias futuras de infección"
+  },
+  {
+    "id": "goal.toenail_extraction.eliminate",
+    "en": "Eliminate nail pain or infection",
+    "es": "Eliminar el dolor o la infección en la uña"
+  },
+  {
+    "id": "goal.toenail_extraction.prevent",
+    "en": "Prevent recurrent ingrown toenails",
+    "es": "Prevenir uñas encarnadas recurrentes"
+  },
+  {
+    "id": "goal.toenail_extraction.health",
+    "en": "Improve nail health and appearance",
+    "es": "Mejorar la salud y apariencia de la uña"
+  },
+  {
+    "id": "area.calcaneal_spur.heel",
+    "en": "Heel",
+    "es": "Talón"
+  },
+  {
+    "id": "area.calcaneal_spur.fascia",
+    "en": "Plantar fascia insertion",
+    "es": "Inserción de la Fascia Plantar"
+  },
+  {
+    "id": "area.matrixectomy.big_toe",
+    "en": "Big Toe",
+    "es": "Dedo gordo del pie"
+  },
+  {
+    "id": "area.matrixectomy.lesser_toes",
+    "en": "Lesser Toes (as recommended by provider)",
+    "es": "Dedos menores (según recomendación del especialista)"
+  },
+  {
+    "id": "area.nail_fungus_laser.toenails",
+    "en": "Toenails",
+    "es": "Uñas de los pies"
+  },
+  {
+    "id": "area.nail_fungus_laser.fingernails",
+    "en": "Fingernails (case-by-case)",
+    "es": "Uñas de las manos (según evaluación)"
+  },
+  {
+    "id": "area.toenail_extraction.big_toe",
+    "en": "Big toe",
+    "es": "Dedo gordo del pie"
+  },
+  {
+    "id": "area.toenail_extraction.lesser_toes",
+    "en": "Lesser toes",
+    "es": "Dedos menores del pie"
+  },
+  {
+    "id": "opt.calcaneal_spur.treatment",
+    "en": "Calcaneal Spur Treatment",
+    "es": "Tratamiento de Espolón Calcáneo"
+  },
+  {
+    "id": "opt.matrixectomy.1_side",
+    "en": "1 Side",
+    "es": "1 Lado"
+  },
+  {
+    "id": "opt.matrixectomy.2_sides",
+    "en": "2 Sides",
+    "es": "2 Lados"
+  },
+  {
+    "id": "opt.matrixectomy.3_sides",
+    "en": "3 Sides",
+    "es": "3 Lados"
+  },
+  {
+    "id": "opt.matrixectomy.4_sides",
+    "en": "4 Sides",
+    "es": "4 Lados"
+  },
+  {
+    "id": "opt.nail_fungus.1_nail",
+    "en": "1 Nail",
+    "es": "1 Uña"
+  },
+  {
+    "id": "opt.nail_fungus.2_nails",
+    "en": "2 Nails",
+    "es": "2 Uñas"
+  },
+  {
+    "id": "opt.nail_fungus.3_5",
+    "en": "3 to 5 Nails",
+    "es": "3 a 5 Uñas"
+  },
+  {
+    "id": "opt.nail_fungus.6_8",
+    "en": "6 to 8 Nails",
+    "es": "6 a 8 Uñas"
+  },
+  {
+    "id": "opt.nail_fungus.9_10",
+    "en": "9 to 10 Nails",
+    "es": "9 a 10 Uñas"
+  },
+  {
+    "id": "opt.toenail_extraction.per_nail",
+    "en": "Toenail Extraction",
+    "es": "Extracción de Uña"
+  },
+  {
+    "id": "addon.podiatry.hydrafacial",
+    "en": "Hydrafacial MD - Face",
+    "es": "Hydrafacial MD - Rostro"
+  },
+  {
+    "id": "addon.podiatry.casmara_retinol",
+    "en": "Casmara - Retinol Pro-Age Facial",
+    "es": "Casmara - Facial Retinol Pro-Age"
+  },
+  {
+    "id": "addon.podiatry.swedish_massage",
+    "en": "Relaxing Swedish Massage - Full Body",
+    "es": "Masaje Sueco Relajante - Cuerpo Completo"
+  },
+  {
+    "id": "addon.podiatry.cupping",
+    "en": "Cupping Add-On",
+    "es": "Complemento de Ventosas"
+  },
+  {
+    "id": "exp.calcaneal.pre.1",
+    "en": "Avoid NSAIDs (e.g., ibuprofen) for 24 hours before your appointment unless directed otherwise.",
+    "es": "Evite antiinflamatorios no esteroideos (ej. ibuprofeno) durante 24 horas antes de su cita, a menos que su médico indique lo contrario."
+  },
+  {
+    "id": "exp.calcaneal.pre.2",
+    "en": "Inform your provider of any current medications, blood thinners or allergies.",
+    "es": "Informe a su médico sobre medicamentos actuales, anticoagulantes o alergias."
+  },
+  {
+    "id": "exp.calcaneal.pre.3",
+    "en": "Wear or bring supportive footwear; avoid applying topical analgesics on the day of treatment.",
+    "es": "Use o traiga calzado de soporte; evite aplicar analgésicos tópicos el día del tratamiento."
+  },
+  {
+    "id": "exp.calcaneal.during.1",
+    "en": "You may feel brief pressure or discomfort during the injection; numbing spray or local anesthesia can be used.",
+    "es": "Puede sentir presión o molestia breve durante la inyección; se puede usar spray anestésico o anestesia local."
+  },
+  {
+    "id": "exp.calcaneal.during.2",
+    "en": "A small bandage is applied; you’ll be advised on immediate weight-bearing based on your case.",
+    "es": "Se coloca un pequeño vendaje; se le indicará sobre el apoyo inmediato del pie según su caso."
+  },
+  {
+    "id": "exp.calcaneal.post.1",
+    "en": "Avoid intense physical activity or pressure to the area for at least 48 hours.",
+    "es": "Evite actividad física intensa o presión en la zona durante al menos 48 horas."
+  },
+  {
+    "id": "exp.calcaneal.post.2",
+    "en": "Apply cold compress intermittently for the first day if swelling occurs.",
+    "es": "Aplique compresas frías de manera intermitente durante el primer día si hay inflamación."
+  },
+  {
+    "id": "exp.calcaneal.post.3",
+    "en": "Follow all aftercare instructions provided by your provider to support healing.",
+    "es": "Siga todas las indicaciones de cuidado posteriores brindadas por su médico para apoyar la recuperación."
+  },
+  {
+    "id": "exp.matrixectomy.pre.1",
+    "en": "Do not trim the affected toenail before your appointment.",
+    "es": "No recorte la uña afectada antes de su cita."
+  },
+  {
+    "id": "exp.matrixectomy.pre.2",
+    "en": "Bring open-toed sandals or loose footwear to accommodate post-procedure bandaging.",
+    "es": "Traiga sandalias abiertas o calzado amplio para acomodar el vendaje después del procedimiento."
+  },
+  {
+    "id": "exp.matrixectomy.pre.3",
+    "en": "Notify your provider of any medications or circulation issues.",
+    "es": "Informe a su médico sobre medicamentos actuales o problemas de circulación."
+  },
+  {
+    "id": "exp.matrixectomy.pre.4",
+    "en": "Clean the toe gently and avoid applying antibiotic ointments the day of your visit unless directed.",
+    "es": "Limpie el dedo suavemente y evite aplicar ungüentos antibióticos el día de la visita salvo indicación."
+  },
+  {
+    "id": "exp.matrixectomy.during.1",
+    "en": "Local anesthesia is administered; you may feel pressure but should not feel pain during nail edge removal/matrix treatment.",
+    "es": "Se administra anestesia local; puede sentir presión, pero no debería sentir dolor durante la retirada del borde ungueal/tratamiento de la matriz."
+  },
+  {
+    "id": "exp.matrixectomy.during.2",
+    "en": "A chemical or mechanical matrixectomy may be performed to prevent regrowth; a dressing is applied afterward.",
+    "es": "Se puede realizar una matriceptomía química o mecánica para evitar el recrecimiento; luego se coloca un vendaje."
+  },
+  {
+    "id": "exp.matrixectomy.post.1",
+    "en": "Elevate your foot for 24 hours and rest as much as possible.",
+    "es": "Eleve su pie durante 24 horas y descanse lo más posible."
+  },
+  {
+    "id": "exp.matrixectomy.post.2",
+    "en": "Change the dressing daily or as instructed by your provider.",
+    "es": "Cambie el vendaje diariamente o según las indicaciones del podólogo."
+  },
+  {
+    "id": "exp.matrixectomy.post.3",
+    "en": "Avoid tight footwear and strenuous activities for at least 3–5 days.",
+    "es": "Evite calzado ajustado y actividades intensas durante al menos 3 a 5 días."
+  },
+  {
+    "id": "exp.matrixectomy.post.4",
+    "en": "Mild drainage or redness is normal. Contact us if pain or swelling worsens.",
+    "es": "Un poco de drenaje o enrojecimiento es normal. Contáctenos si el dolor o la inflamación empeoran."
+  },
+  {
+    "id": "exp.nail_fungus.pre.1",
+    "en": "Wash feet thoroughly before arrival. Remove any nail polish or artificial nails.",
+    "es": "Lave bien los pies antes de su cita. Retire esmalte de uñas o uñas artificiales."
+  },
+  {
+    "id": "exp.nail_fungus.pre.2",
+    "en": "Notify your provider if you’ve recently taken oral/topical antifungals or antibiotics; trim nails lightly but avoid aggressive clipping.",
+    "es": "Informe a su proveedor si ha usado antifúngicos orales/tópicos o antibióticos recientemente; recorte las uñas ligeramente pero evite cortes agresivos."
+  },
+  {
+    "id": "exp.nail_fungus.pre.3",
+    "en": "Bring clean socks and breathable footwear; avoid heavy lotions on the day of treatment.",
+    "es": "Lleve calcetines limpios y calzado transpirable; evite lociones pesadas el día del tratamiento."
+  },
+  {
+    "id": "exp.nail_fungus.during.1",
+    "en": "You may feel gentle warmth or tingling as the laser passes over the nail; no anesthesia is typically needed.",
+    "es": "Puede sentir calor suave o cosquilleo mientras el láser pasa sobre la uña; normalmente no se necesita anestesia."
+  },
+  {
+    "id": "exp.nail_fungus.during.2",
+    "en": "Multiple passes ensure full coverage of the nail plate and surrounding skin.",
+    "es": "Se realizan varias pasadas para asegurar cobertura completa de la lámina ungueal y la piel circundante."
+  },
+  {
+    "id": "exp.nail_fungus.post.1",
+    "en": "Keep nails dry and clean to prevent reinfection; apply antifungal solution if prescribed.",
+    "es": "Mantenga las uñas secas y limpias para evitar reinfección; aplique solución antifúngica si se le receta."
+  },
+  {
+    "id": "exp.nail_fungus.post.2",
+    "en": "Disinfect shoes and change socks daily. Avoid barefoot walking in public areas.",
+    "es": "Desinfecte el calzado y cambie los calcetines diariamente. Evite andar descalzo en áreas públicas."
+  },
+  {
+    "id": "exp.nail_fungus.post.3",
+    "en": "Nail appearance improves gradually as the nail grows out over several months.",
+    "es": "La apariencia de la uña mejora gradualmente conforme crece la uña sana durante varios meses."
+  },
+  {
+    "id": "exp.toenail.pre.1",
+    "en": "Do not trim or alter the nail before your appointment.",
+    "es": "No recorte ni modifique la uña antes de su cita."
+  },
+  {
+    "id": "exp.toenail.pre.2",
+    "en": "Wear open-toe or loose footwear to accommodate post treatment bandaging.",
+    "es": "Use sandalias o calzado amplio para acomodar el vendaje después del procedimiento."
+  },
+  {
+    "id": "exp.toenail.pre.3",
+    "en": "Clean the toe gently before arrival; avoid applying creams or antibiotic ointments unless instructed.",
+    "es": "Limpie el dedo suavemente antes de acudir; evite aplicar cremas o ungüentos antibióticos salvo indicación."
+  },
+  {
+    "id": "exp.toenail.during.1",
+    "en": "Local anesthesia is used; you’ll feel pressure but no pain during nail removal.",
+    "es": "Se utiliza anestesia local; sentirá presión pero no dolor durante la extracción de la uña."
+  },
+  {
+    "id": "exp.toenail.during.2",
+    "en": "The nail or fragment is removed and the area is dressed; walking precautions are reviewed before you leave.",
+    "es": "Se retira la uña o fragmento y se coloca un vendaje; se revisan las precauciones para caminar antes de que se retire."
+  },
+  {
+    "id": "exp.toenail.post.1",
+    "en": "Keep the area dry and covered for 24–48 hours, then follow wound care instructions.",
+    "es": "Mantenga la zona seca y cubierta durante 24 a 48 horas y luego siga las indicaciones de cuidado de la herida."
+  },
+  {
+    "id": "exp.toenail.post.2",
+    "en": "Take any prescribed medications as directed.",
+    "es": "Tome los medicamentos recetados según las indicaciones."
+  },
+  {
+    "id": "exp.toenail.post.3",
+    "en": "Avoid strenuous activity or tight shoes until healing is underway.",
+    "es": "Evite actividades intensas o calzado ajustado hasta que la cicatrización esté en marcha."
+  },
+  {
+    "id": "faq.calcaneal.q1",
+    "en": "How quickly will I feel relief?",
+    "es": "¿Qué tan rápido sentiré alivio?"
+  },
+  {
+    "id": "faq.calcaneal.a1",
+    "en": "Some patients experience relief within a few days, while others may require 1–2 additional sessions or adjunct therapies like physical therapy.",
+    "es": "Algunos pacientes sienten alivio en pocos días, mientras que otros pueden necesitar 1–2 sesiones adicionales o terapias complementarias como fisioterapia."
+  },
+  {
+    "id": "faq.calcaneal.q2",
+    "en": "Is the injection safe?",
+    "es": "¿La inyección es segura?"
+  },
+  {
+    "id": "faq.calcaneal.a2",
+    "en": "Yes. This is a well-established and commonly performed procedure. Our doctors use sterile techniques and may use ultrasound guidance when needed.",
+    "es": "Sí. Es un procedimiento común y ampliamente establecido. Nuestros médicos utilizan técnicas estériles y pueden apoyarse en ultrasonido cuando es necesario."
+  },
+  {
+    "id": "faq.calcaneal.q3",
+    "en": "Can this be repeated?",
+    "es": "¿Se puede repetir este tratamiento?"
+  },
+  {
+    "id": "faq.calcaneal.a3",
+    "en": "Yes, if symptoms return. Your provider will assess the cause and determine if additional treatment is appropriate or if alternative therapies are recommended.",
+    "es": "Sí, si los síntomas regresan. Su médico evaluará la causa y determinará si es apropiado repetir el tratamiento o si se recomiendan terapias alternativas."
+  },
+  {
+    "id": "faq.calcaneal.q4",
+    "en": "Will I need rest or time off work?",
+    "es": "¿Necesitaré descanso o ausentarme del trabajo?"
+  },
+  {
+    "id": "faq.calcaneal.a4",
+    "en": "Most patients can resume light activity the same day. Avoid strenuous impact like running or jumping for at least 48 hours.",
+    "es": "La mayoría de los pacientes puede retomar actividades ligeras el mismo día. Evite impactos fuertes como correr o saltar durante al menos 48 horas."
+  },
+  {
+    "id": "faq.matrixectomy.q1",
+    "en": "Is matrixectomy a permanent solution?",
+    "es": "¿La matriceptomía es una solución permanente?"
+  },
+  {
+    "id": "faq.matrixectomy.a1",
+    "en": "Yes, the goal is to destroy the nail matrix on the affected side so that portion of the nail does not grow back.",
+    "es": "Sí, el objetivo es destruir la matriz ungueal del lado afectado para que esa porción de la uña no vuelva a crecer."
+  },
+  {
+    "id": "faq.matrixectomy.q2",
+    "en": "How painful is the procedure?",
+    "es": "¿Qué tan doloroso es el procedimiento?"
+  },
+  {
+    "id": "faq.matrixectomy.a2",
+    "en": "The procedure itself is painless due to local anesthesia. Post-procedure discomfort is usually mild and manageable with OTC pain relievers.",
+    "es": "El procedimiento en sí no duele debido a la anestesia local. La molestia posterior suele ser leve y manejable con analgésicos de venta libre."
+  },
+  {
+    "id": "faq.matrixectomy.q3",
+    "en": "How long is recovery?",
+    "es": "¿Cuánto dura la recuperación?"
+  },
+  {
+    "id": "faq.matrixectomy.a3",
+    "en": "Most patients return to regular activities in 2–3 days, though full healing may take up to 2 weeks.",
+    "es": "La mayoría de los pacientes retoman sus actividades en 2 a 3 días, aunque la recuperación completa puede tomar hasta 2 semanas."
+  },
+  {
+    "id": "faq.matrixectomy.q4",
+    "en": "Can I get both sides of the nail treated?",
+    "es": "¿Puedo tratar ambos lados de la uña?"
+  },
+  {
+    "id": "faq.matrixectomy.a4",
+    "en": "Yes, bilateral matrixectomy is an option if both edges are affected.",
+    "es": "Sí, la matriceptomía bilateral es una opción si ambos bordes están afectados."
+  },
+  {
+    "id": "faq.nail_fungus.q1",
+    "en": "Does laser nail fungus treatment hurt?",
+    "es": "¿Duele el tratamiento láser para hongos en las uñas?"
+  },
+  {
+    "id": "faq.nail_fungus.a1",
+    "en": "No. Most patients describe a gentle warmth or tingling. There is no pain or downtime.",
+    "es": "No. La mayoría describe una sensación de calor suave o cosquilleo. No causa dolor ni requiere recuperación."
+  },
+  {
+    "id": "faq.nail_fungus.q2",
+    "en": "When will I start to see clear nails?",
+    "es": "¿Cuándo comenzaré a ver las uñas más claras?"
+  },
+  {
+    "id": "faq.nail_fungus.a2",
+    "en": "Visible improvement may start within weeks, but full clarity can take several months as healthy nail grows in.",
+    "es": "La mejoría puede verse en semanas, pero la claridad total puede tardar varios meses mientras crece la uña sana."
+  },
+  {
+    "id": "faq.nail_fungus.q3",
+    "en": "How many sessions do I need?",
+    "es": "¿Cuántas sesiones necesito?"
+  },
+  {
+    "id": "faq.nail_fungus.a3",
+    "en": "A standard protocol involves 6–8 sessions spaced 2–3 weeks apart. Severe cases may require additional follow-up.",
+    "es": "El protocolo estándar incluye de 6 a 8 sesiones cada 2 o 3 semanas. Casos severos pueden necesitar sesiones adicionales."
+  },
+  {
+    "id": "faq.nail_fungus.q4",
+    "en": "Can the fungus come back?",
+    "es": "¿Puede regresar el hongo?"
+  },
+  {
+    "id": "faq.nail_fungus.a4",
+    "en": "Yes, reinfection is possible if shoes, socks, or tools remain contaminated. Proper hygiene is essential.",
+    "es": "Sí, la reinfección es posible si los zapatos, calcetines o herramientas siguen contaminados. Una buena higiene es esencial."
+  },
+  {
+    "id": "faq.toenail.q1",
+    "en": "Is toenail extraction painful?",
+    "es": "¿Es dolorosa la extracción de la uña del pie?"
+  },
+  {
+    "id": "faq.toenail.a1",
+    "en": "No. The toe is numbed using local anesthesia. Mild discomfort may occur afterward and can be managed with over the counter medication.",
+    "es": "No. El dedo se adormece con anestesia local. Puede presentarse una molestia leve después, que suele controlarse con analgésicos de venta libre."
+  },
+  {
+    "id": "faq.toenail.q2",
+    "en": "Will the nail grow back?",
+    "es": "¿La uña volverá a crecer?"
+  },
+  {
+    "id": "faq.toenail.a2",
+    "en": "Partial extractions usually regrow. Total extractions may or may not, depending on whether the nail matrix is also removed.",
+    "es": "Las extracciones parciales suelen volver a crecer. En extracciones totales, la uña puede o no crecer de nuevo, según si se removió también la matriz ungueal."
+  },
+  {
+    "id": "faq.toenail.q3",
+    "en": "How long is the recovery time?",
+    "es": "¿Cuánto tiempo dura la recuperación?"
+  },
+  {
+    "id": "faq.toenail.a3",
+    "en": "Most patients recover within one to two weeks for partial extractions, and up to three weeks for total extractions. Proper aftercare helps speed healing.",
+    "es": "La mayoría de los pacientes se recupera en una a dos semanas en extracciones parciales y hasta tres semanas en extracciones totales. Un buen cuidado posterior ayuda a acelerar la cicatrización."
+  }
+]
