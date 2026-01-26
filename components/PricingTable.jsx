@@ -1,10 +1,19 @@
 import Image from "next/image";
+import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import AddOnSection from "./AddOnSection";
+import { optionHasPromo } from "@/lib/utils/promo";
+import { formatMoney, formatMoneyRange } from "@/lib/utils/price";
 
 export default function PricingTable({ treatment }) {
   const { locale: routerLocale } = useRouter();
   const locale = routerLocale || "en";
+  const filterConfig = treatment?.filterConfig || null;
+  const [activeFilter, setActiveFilter] = useState(filterConfig?.defaultKey || "all");
+
+  useEffect(() => {
+    setActiveFilter(filterConfig?.defaultKey || "all");
+  }, [filterConfig?.defaultKey, treatment?.urlSlug]);
 
   console.log("📌 PricingTable locale:", locale);
 
@@ -22,11 +31,24 @@ export default function PricingTable({ treatment }) {
 
   const getLocalizedPrice = (field) => {
     if (field == null) return "";
-    if (typeof field === "object") return getLocalized(field);
+    if (typeof field === "object") {
+      if (field.text && typeof field.text === "object") {
+        return field.text[locale] || field.text.en || "";
+      }
+      if ("minAmount" in field || "maxAmount" in field) {
+        return formatMoneyRange(field.minAmount, field.maxAmount);
+      }
+      if ("amount" in field) return formatMoney(field.amount);
+      return getLocalized(field);
+    }
     return field;
   };
 
   const pricingOptions = treatment?.pricing?.options || [];
+  const filteredPricingOptions =
+    filterConfig && activeFilter !== "all"
+      ? pricingOptions.filter((opt) => opt.filterGroupKey === activeFilter)
+      : pricingOptions;
   const addOns = treatment?.addOns || [];
 
   const hasPricing = pricingOptions.length > 0;
@@ -67,15 +89,40 @@ export default function PricingTable({ treatment }) {
           {/* Package / General Zones Pricing */}
           {pricingOptions.length > 0 && (
             <div className="space-y-4 mb-4 max-w-3xl mx-auto">
-              {pricingOptions.map((p, idx) => {
+              {filterConfig?.filters?.length > 0 && (
+                <div className="flex flex-wrap items-center gap-2 mb-2">
+                  {filterConfig.filters.map((filter) => (
+                    <button
+                      key={filter.key}
+                      type="button"
+                      onClick={() => setActiveFilter(filter.key)}
+                      className={`px-3 py-1 rounded-full border text-xs font-medium transition ${
+                        activeFilter === filter.key
+                          ? "bg-black text-white border-black"
+                          : "bg-white text-black border-black/20 hover:border-black"
+                      }`}
+                    >
+                      {getLocalized(filter.label)}
+                    </button>
+                  ))}
+                  <button
+                    type="button"
+                    onClick={() => setActiveFilter("all")}
+                    className="text-xs underline text-gray-600 hover:text-black ml-1"
+                  >
+                    {getLocalized(filterConfig.viewAllLabel) ||
+                      (locale === "es" ? "Ver todo" : "View all")}
+                  </button>
+                </div>
+              )}
+              {filteredPricingOptions.map((p, idx) => {
                 const localizedPrice = getLocalizedPrice(p.optionPrice);
-                const localizedPromoPrice = getLocalizedPrice(
-                  p.optionPromoPrice
-                );
+                const localizedPromoPrice = getLocalizedPrice(p.optionPromoPrice);
+                const optionCurrency = p.optionPrice?.currency || "";
+                const promoCurrency =
+                  p.optionPromoPrice?.currency || optionCurrency;
 
-                const showPromo =
-                  typeof localizedPromoPrice === "string" &&
-                  localizedPromoPrice.trim() !== "";
+                const showPromo = optionHasPromo(p, locale);
 
                 return (
                   <div
@@ -85,7 +132,7 @@ export default function PricingTable({ treatment }) {
                     <div className="text-lg font-medium flex-1">
                       {getLocalized(p.optionName)}
                       {p.notes?.length > 0 && (
-                        <ul className="mt-1 text-xs text-gray-600 italic list-inside mr-5">
+                        <ul className="mt-1 text-xs text-gray-600 italic list-disc list-outside pl-4 mr-5">
                           {p.notes.map((note, i) => (
                             <li key={i}>{getLocalized(note)}</li>
                           ))}
@@ -99,7 +146,7 @@ export default function PricingTable({ treatment }) {
                           {priceLabel}
                         </span>
                         <span>
-                          {localizedPrice} {p.optionCurrency}
+                          {localizedPrice} {optionCurrency}
                         </span>
                       </div>
 
@@ -109,7 +156,7 @@ export default function PricingTable({ treatment }) {
                             {promoLabel}
                           </span>
                           <span>
-                            {localizedPromoPrice} {p.optionCurrency}
+                            {localizedPromoPrice} {promoCurrency}
                           </span>
                         </div>
                       )}
