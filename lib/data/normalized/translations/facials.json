@@ -1,0 +1,857 @@
+[
+  {
+    "id": "cat.facials.name",
+    "en": "Facials",
+    "es": "Faciales"
+  },
+  {
+    "id": "svc.hydrafacial.name",
+    "en": "HydraFacial MD",
+    "es": "HydraFacial MD"
+  },
+  {
+    "id": "svc.hydrafacial.desc",
+    "en": "Experience a medical-grade HydraFacial in Tijuana featuring patented Vortex-Fusion® technology for deep pore cleansing, painless extractions, and intense skin hydration. Perfect for acne-prone, dry, or congested skin.",
+    "es": "Vive un HydraFacial de grado médico en Tijuana con la tecnología patentada Vortex-Fusion® para limpiar poros en profundidad, realizar extracciones indoloras e hidratar intensamente. Perfecto para piel con acné, seca o congestionada."
+  },
+  {
+    "id": "svc.hydrafacial.details",
+    "en": "HydraFacial MD is a multi-step, medical-grade facial that uses patented Vortex-Fusion® technology to deeply cleanse, exfoliate, and infuse hydrating serums into the skin. It’s ideal for clients with acne-prone, dull, or congested complexions seeking clearer, more radiant skin.",
+    "es": "HydraFacial MD es un facial de varios pasos y grado médico que utiliza la tecnología patentada Vortex-Fusion® para limpiar, exfoliar y perfundir sueros hidratantes en la piel. Es ideal para piel con tendencia a acné, opaca o congestionada que busca mayor claridad y luminosidad."
+  },
+  {
+    "id": "note.hydrafacial.no_downtime",
+    "en": "No downtime — makeup can be applied the same day",
+    "es": "Sin tiempo de recuperación; puedes maquillarte el mismo día"
+  },
+  {
+    "id": "note.hydrafacial.safe_skin",
+    "en": "Safe for all skin tones and sensitive skin types",
+    "es": "Seguro para todos los tonos de piel y pieles sensibles"
+  },
+  {
+    "id": "note.hydrafacial.extractions",
+    "en": "Includes optional manual extractions when needed",
+    "es": "Incluye extracciones manuales opcionales según necesidad"
+  },
+  {
+    "id": "goal.hydrafacial.cleanse",
+    "en": "Deeply cleanse and exfoliate the skin",
+    "es": "Limpiar y exfoliar profundamente la piel"
+  },
+  {
+    "id": "goal.hydrafacial.unclog",
+    "en": "Unclog pores and remove blackheads",
+    "es": "Desobstruir poros y eliminar puntos negros"
+  },
+  {
+    "id": "goal.hydrafacial.hydrate",
+    "en": "Hydrate and brighten dull or uneven skin",
+    "es": "Hidratar e iluminar la piel apagada o con tono desigual"
+  },
+  {
+    "id": "area.hydrafacial.face",
+    "en": "Face",
+    "es": "Rostro"
+  },
+  {
+    "id": "area.hydrafacial.shoulders",
+    "en": "Shoulders",
+    "es": "Hombros"
+  },
+  {
+    "id": "area.hydrafacial.upper_back",
+    "en": "Upper Back",
+    "es": "Espalda alta"
+  },
+  {
+    "id": "opt.hydrafacial.face",
+    "en": "HydraFacial MD - Face",
+    "es": "HydraFacial MD - Rostro"
+  },
+  {
+    "id": "opt.hydrafacial.shoulders",
+    "en": "HydraFacial MD - Shoulders",
+    "es": "HydraFacial MD - Hombros"
+  },
+  {
+    "id": "opt.hydrafacial.upper_back",
+    "en": "HydraFacial MD - Upper Back",
+    "es": "HydraFacial MD - Espalda superior"
+  },
+  {
+    "id": "opt.facial_booster.melafadin",
+    "en": "Skin Booster Add-On - Brightening & Even Tone",
+    "es": "Complemento Skin Booster - Iluminación y Uniformidad"
+  },
+  {
+    "id": "opt.facial_booster.contour_fluid",
+    "en": "Skin Booster Add-On - Firming & Contour",
+    "es": "Complemento Skin Booster - Reafirmante & Contorno"
+  },
+  {
+    "id": "opt.facial_booster.caviar",
+    "en": "Skin Booster Add-On - Premium Anti-Aging Nutrition",
+    "es": "Complemento Skin Booster - Nutrición Premium Anti-Edad"
+  },
+  {
+    "id": "addon.hydrafacial.microneedling_pn",
+    "en": "Microneedling - PN - Polynucleotide",
+    "es": "Microneedling - PN - Polinucleótido"
+  },
+  {
+    "id": "addon.hydrafacial.mesotherapy_pn",
+    "en": "Mesotherapy - PN - Polynucleotide",
+    "es": "Mesoterapia - PN - Polinucleótido"
+  },
+  {
+    "id": "addon.hydrafacial.rf_microneedling",
+    "en": "Sylfirm X - RF Microneedling - Face + Neck + Décolleté",
+    "es": "Sylfirm X - Microagujas RF - Rostro + Cuello + Escote"
+  },
+  {
+    "id": "addon.hydrafacial.pdo_threads",
+    "en": "PDO Thread Lift - Signature Lower Face Lift",
+    "es": "Hilos PDO - Levantamiento Facial Inferior Signature"
+  },
+  {
+    "id": "exp.hydrafacial.pre.1",
+    "en": "Avoid retinoids, acids, and exfoliants for 3–5 days; arrive with clean skin and no makeup.",
+    "es": "Evite retinoides, ácidos y exfoliantes durante 3–5 días; acuda con la piel limpia y sin maquillaje."
+  },
+  {
+    "id": "exp.hydrafacial.pre.2",
+    "en": "Delay if you have active infection, sunburn, or recent waxing/laser in the area.",
+    "es": "Reprograme si tiene infección activa, quemadura solar o depilación/láser reciente en la zona."
+  },
+  {
+    "id": "exp.hydrafacial.during.1",
+    "en": "You’ll feel gentle suction and fluid infusion during cleansing, exfoliation, and extractions.",
+    "es": "Sentirá una succión suave e infusión de fluidos durante la limpieza, exfoliación y extracciones."
+  },
+  {
+    "id": "exp.hydrafacial.during.2",
+    "en": "Mild tingling from acids/boosters is normal; intensity can be adjusted for comfort.",
+    "es": "El ligero cosquilleo por ácidos/boosters es normal; la intensidad se puede ajustar para su comodidad."
+  },
+  {
+    "id": "exp.hydrafacial.post.1",
+    "en": "Mild pinkness can last a few hours; enjoy the immediate glow and hydration.",
+    "es": "Puede haber leve enrojecimiento por algunas horas; disfrute el brillo e hidratación inmediatos."
+  },
+  {
+    "id": "exp.hydrafacial.post.2",
+    "en": "Avoid harsh products, saunas, and strenuous exercise for 24 hours; apply SPF 30+ daily.",
+    "es": "Evite productos agresivos, saunas y ejercicio intenso durante 24 horas; aplique FPS 30+ a diario."
+  },
+  {
+    "id": "faq.hydrafacial.q1",
+    "en": "How often should I get a HydraFacial?",
+    "es": "¿Con qué frecuencia debo hacerme un HydraFacial?"
+  },
+  {
+    "id": "faq.hydrafacial.a1",
+    "en": "For optimal results, we recommend a HydraFacial every 4 weeks to maintain clear, glowing skin.",
+    "es": "Para obtener mejores resultados, recomendamos un HydraFacial cada 4 semanas para mantener la piel clara y luminosa."
+  },
+  {
+    "id": "faq.hydrafacial.q2",
+    "en": "Is HydraFacial good for acne?",
+    "es": "¿El HydraFacial es bueno para el acné?"
+  },
+  {
+    "id": "faq.hydrafacial.a2",
+    "en": "Yes. HydraFacial gently removes impurities, clears pores, and delivers acne-fighting serums for smoother skin.",
+    "es": "Sí. HydraFacial elimina impurezas, limpia poros y aplica sueros que combaten el acné para lograr una piel más suave."
+  },
+  {
+    "id": "faq.hydrafacial.q3",
+    "en": "Can I wear makeup after a HydraFacial?",
+    "es": "¿Puedo usar maquillaje después de un HydraFacial?"
+  },
+  {
+    "id": "faq.hydrafacial.a3",
+    "en": "Yes. Makeup can be applied the same day, but many patients prefer to enjoy the natural post-treatment glow.",
+    "es": "Sí. Puedes maquillarte el mismo día, aunque muchos pacientes prefieren lucir el brillo natural posterior al tratamiento."
+  },
+  {
+    "id": "svc.casmara_infinity.name",
+    "en": "Casmara Infinity Anti‑Aging Facial",
+    "es": "Facial Casmara Antienvejecimiento Infinity"
+  },
+  {
+    "id": "svc.casmara_infinity.desc",
+    "en": "Luxury anti-aging facial with growth factors, peptides, and Casmara's exclusive Infinity serum for firming and lifting mature skin.",
+    "es": "Facial de lujo antienvejecimiento con factores de crecimiento, péptidos y el suero exclusivo Infinity de Casmara para firmar y levantar la piel madura."
+  },
+  {
+    "id": "svc.casmara_infinity.details",
+    "en": "This high-end anti-aging protocol combines biomimetic peptides, firming actives, and Casmara’s potent Infinity serum to visibly firm, hydrate, and restore mature skin. Includes facial massage and lifting mask for enhanced effect.",
+    "es": "Este protocolo antienvejecimiento de alta gama combina péptidos biomiméticos, activos firmadores y el potente suero Infinity de Casmara para firmar visiblemente, hidratar y restaurar la piel madura. Incluye masaje facial y máscara levantadora para efecto mejorado."
+  },
+  {
+    "id": "note.casmara_infinity.events",
+    "en": "Great for special events or regular anti-aging maintenance",
+    "es": "Excelente para eventos especiales o mantenimiento antiedad regular"
+  },
+  {
+    "id": "note.casmara_infinity.glow",
+    "en": "Leaves skin glowing, firmer, and deeply nourished",
+    "es": "Deja la piel luminosa, más firme y profundamente nutrida"
+  },
+  {
+    "id": "goal.casmara_infinity.firm",
+    "en": "Firm and lift sagging skin",
+    "es": "Reafirmar y levantar la piel flácida"
+  },
+  {
+    "id": "goal.casmara_infinity.hydrate",
+    "en": "Hydrate deeply and nourish",
+    "es": "Hidratar en profundidad y nutrir"
+  },
+  {
+    "id": "goal.casmara_infinity.soften",
+    "en": "Soften fine lines and signs of aging",
+    "es": "Suavizar líneas finas y signos de envejecimiento"
+  },
+  {
+    "id": "area.casmara_infinity.face",
+    "en": "Face",
+    "es": "Rostro"
+  },
+  {
+    "id": "opt.casmara_infinity",
+    "en": "Casmara Infinity Anti‑Aging Facial",
+    "es": "Facial Casmara Antienvejecimiento Infinity"
+  },
+  {
+    "id": "addon.casmara_infinity.microneedling_pn",
+    "en": "Microneedling - PN - Polynucleotide",
+    "es": "Microneedling - PN - Polinucleótido"
+  },
+  {
+    "id": "addon.casmara_infinity.mesotherapy_pn",
+    "en": "Mesotherapy - PN - Polynucleotide",
+    "es": "Mesoterapia - PN - Polinucleótido"
+  },
+  {
+    "id": "addon.casmara_infinity.rf_microneedling",
+    "en": "Sylfirm X - RF Microneedling - Face + Neck + Décolleté",
+    "es": "Sylfirm X - Microagujas RF - Rostro + Cuello + Escote"
+  },
+  {
+    "id": "addon.casmara_infinity.pdo_threads",
+    "en": "PDO Thread Lift - Signature Lower Face Lift",
+    "es": "Hilos PDO - Levantamiento Facial Inferior Signature"
+  },
+  {
+    "id": "exp.casmara_infinity.pre.1",
+    "en": "Avoid retinoids, acids, and exfoliation for 3–5 days; arrive with clean skin and no makeup.",
+    "es": "Evite retinoides, ácidos y exfoliación durante 3–5 días; acuda con la piel limpia y sin maquillaje."
+  },
+  {
+    "id": "exp.casmara_infinity.pre.2",
+    "en": "Reschedule if you have active infection, sunburn, or open lesions.",
+    "es": "Reprograme si tiene infección activa, quemadura solar o lesiones abiertas."
+  },
+  {
+    "id": "exp.casmara_infinity.during.1",
+    "en": "Expect gentle cleansing, massage, and mask application; mild tingling or warmth is normal.",
+    "es": "Espere limpieza suave, masaje y aplicación de mascarilla; es normal un ligero cosquilleo o calor."
+  },
+  {
+    "id": "exp.casmara_infinity.post.1",
+    "en": "Skin appears lifted and luminous immediately; mild redness can occur and resolves within hours.",
+    "es": "La piel se ve más tersa y luminosa de inmediato; puede haber leve enrojecimiento que se resuelve en horas."
+  },
+  {
+    "id": "exp.casmara_infinity.post.2",
+    "en": "Avoid harsh products, heat, and vigorous exercise for 24 hours; apply SPF 30+ daily.",
+    "es": "Evite productos agresivos, calor y ejercicio vigoroso durante 24 horas; aplique FPS 30+ a diario."
+  },
+  {
+    "id": "faq.casmara_infinity.q1",
+    "en": "Is this facial good for mature skin?",
+    "es": "¿Este facial es bueno para piel madura?"
+  },
+  {
+    "id": "faq.casmara_infinity.a1",
+    "en": "Yes, it’s specifically designed for aging skin to boost firmness, elasticity, and glow.",
+    "es": "Sí, está diseñado específicamente para piel envejecida para mejorar firmeza, elasticidad y luminosidad."
+  },
+  {
+    "id": "faq.casmara_infinity.q2",
+    "en": "Can I wear makeup after this facial?",
+    "es": "¿Puedo maquillarme después de este facial?"
+  },
+  {
+    "id": "faq.casmara_infinity.a2",
+    "en": "Yes, but we recommend letting the skin breathe for a few hours post-treatment for best results.",
+    "es": "Sí, aunque recomendamos dejar que la piel respire unas horas después para mejores resultados."
+  },
+  {
+    "id": "svc.casmara_purifying.name",
+    "en": "Casmara Purifying Algae Facial",
+    "es": "Facial Casmara Purificante de Algas"
+  },
+  {
+    "id": "svc.casmara_purifying.desc",
+    "en": "A detoxifying facial treatment featuring Casmara’s purifying algae mask to target oily, acne-prone, and congested skin. This clarifying facial soothes inflammation and restores skin balance.",
+    "es": "Tratamiento facial detox con la mascarilla de algas purificantes de Casmara para piel grasa, con acné o congestionada. Este facial clarificante calma la inflamación y restaura el equilibrio de la piel."
+  },
+  {
+    "id": "svc.casmara_purifying.details",
+    "en": "The Casmara Purifying Algae Facial is a professional-grade treatment designed to cleanse and rebalance oily, acne-prone, or inflamed skin. This facial includes steam, manual extractions, and high-frequency therapy when needed. The purifying algae mask helps reduce oil production, calm irritation, and decongest clogged pores for clearer, healthier skin.",
+    "es": "El facial de algas purificantes Casmara es un tratamiento profesional diseñado para limpiar y reequilibrar piel grasa, con acné o inflamada. Incluye vapor, extracciones manuales y alta frecuencia cuando se necesita. La mascarilla de algas purificantes ayuda a reducir el sebo, calmar la irritación y descongestionar los poros para una piel más clara y saludable."
+  },
+  {
+    "id": "note.casmara_purifying.extractions",
+    "en": "Includes manual extractions and optional high-frequency therapy",
+    "es": "Incluye extracciones manuales y terapia de alta frecuencia opcional"
+  },
+  {
+    "id": "note.casmara_purifying.ideal",
+    "en": "Ideal for teens, oily or acne-prone skin, and congested pores",
+    "es": "Ideal para adolescentes, piel grasa o con acné y poros congestionados"
+  },
+  {
+    "id": "note.casmara_purifying.soothing",
+    "en": "Soothing formula helps calm redness and inflammation",
+    "es": "La fórmula calmante ayuda a reducir el enrojecimiento y la inflamación"
+  },
+  {
+    "id": "goal.casmara_purifying.detox",
+    "en": "Detoxify pores and remove impurities",
+    "es": "Detoxificar poros y eliminar impurezas"
+  },
+  {
+    "id": "goal.casmara_purifying.calm",
+    "en": "Calm redness and reduce inflammation",
+    "es": "Calmar el enrojecimiento y reducir la inflamación"
+  },
+  {
+    "id": "goal.casmara_purifying.rebalance",
+    "en": "Rebalance oily or congested skin types",
+    "es": "Reequilibrar pieles grasas o congestionadas"
+  },
+  {
+    "id": "area.casmara_purifying.face",
+    "en": "Face",
+    "es": "Rostro"
+  },
+  {
+    "id": "opt.casmara_purifying",
+    "en": "Casmara Purifying Algae Facial",
+    "es": "Facial Casmara Purificante de Algas"
+  },
+  {
+    "id": "addon.casmara_purifying.microneedling_pn",
+    "en": "Microneedling - PN - Polynucleotide",
+    "es": "Microneedling - PN - Polinucleótido"
+  },
+  {
+    "id": "addon.casmara_purifying.mesotherapy_pn",
+    "en": "Mesotherapy - PN - Polynucleotide",
+    "es": "Mesoterapia - PN - Polinucleótido"
+  },
+  {
+    "id": "addon.casmara_purifying.rf_microneedling",
+    "en": "Sylfirm X - RF Microneedling - Face + Neck + Décolleté",
+    "es": "Sylfirm X - Microagujas RF - Rostro + Cuello + Escote"
+  },
+  {
+    "id": "addon.casmara_purifying.pdo_threads",
+    "en": "PDO Thread Lift - Signature Lower Face Lift",
+    "es": "Hilos PDO - Levantamiento Facial Inferior Signature"
+  },
+  {
+    "id": "exp.casmara_purifying.pre.1",
+    "en": "Avoid retinoids, acids, and exfoliants for 3–5 days; arrive with clean skin and no makeup.",
+    "es": "Evite retinoides, ácidos y exfoliantes durante 3–5 días; acuda con la piel limpia y sin maquillaje."
+  },
+  {
+    "id": "exp.casmara_purifying.pre.2",
+    "en": "Reschedule if you have active infection, sunburn, or open lesions.",
+    "es": "Reprograme si tiene infección activa, quemadura solar o lesiones abiertas."
+  },
+  {
+    "id": "exp.casmara_purifying.during.1",
+    "en": "Expect gentle cleansing, extractions, and the purifying algae mask; slight tingling or coolness is normal.",
+    "es": "Espere limpieza suave, extracciones y la mascarilla de algas purificantes; es normal un ligero cosquilleo o frescor."
+  },
+  {
+    "id": "exp.casmara_purifying.post.1",
+    "en": "Mild redness or tingling can occur and typically resolves within hours.",
+    "es": "Puede haber leve enrojecimiento o cosquilleo que suele resolverse en horas."
+  },
+  {
+    "id": "exp.casmara_purifying.post.2",
+    "en": "Avoid heavy makeup, heat (sauna/exercise), and harsh products for 24 hours; apply SPF 30+ daily.",
+    "es": "Evite maquillaje pesado, calor (sauna/ejercicio) y productos agresivos durante 24 horas; use FPS 30+ a diario."
+  },
+  {
+    "id": "faq.casmara_purifying.q1",
+    "en": "Is the Casmara facial good for sensitive or acne-prone skin?",
+    "es": "¿Este facial Casmara es bueno para piel sensible o con acné?"
+  },
+  {
+    "id": "faq.casmara_purifying.a1",
+    "en": "Yes. This treatment is gentle yet effective for sensitive, oily, or acne-prone skin and helps reduce inflammation and redness.",
+    "es": "Sí. Este tratamiento es suave pero eficaz para piel sensible, grasa o con acné y ayuda a reducir la inflamación y el enrojecimiento."
+  },
+  {
+    "id": "faq.casmara_purifying.q2",
+    "en": "Are extractions included with this facial?",
+    "es": "¿Se incluyen extracciones en este facial?"
+  },
+  {
+    "id": "faq.casmara_purifying.a2",
+    "en": "Yes. Manual extractions are performed as needed and followed by high-frequency therapy to reduce bacteria and calm the skin.",
+    "es": "Sí. Se realizan extracciones manuales según necesidad y se complementan con alta frecuencia para reducir bacterias y calmar la piel."
+  },
+  {
+    "id": "svc.casmara_retinol_proage.name",
+    "en": "Casmara Retinol Pro‑Age Facial",
+    "es": "Casmara Retinol Pro‑Age Facial"
+  },
+  {
+    "id": "svc.casmara_retinol_proage.desc",
+    "en": "Professional-strength retinol treatment designed to promote cellular renewal, improve texture, and reduce fine lines.",
+    "es": "Tratamiento con retinol de grado profesional para promover la renovación celular, mejorar la textura y reducir líneas finas."
+  },
+  {
+    "id": "svc.casmara_retinol_proage.details",
+    "en": "Casmara’s Pro-Age facial uses a high-potency 0.3% retinol complex to deeply renew the skin. Ideal for mature or sun-damaged skin in need of resurfacing and hydration. Includes antioxidants and post-treatment recovery mask.",
+    "es": "El facial Pro-Age de Casmara utiliza un complejo de retinol al 0.3% de alta potencia para renovar la piel en profundidad. Ideal para piel madura o dañada por el sol que necesita renovación superficial e hidratación. Incluye antioxidantes y una mascarilla de recuperación posterior al tratamiento."
+  },
+  {
+    "id": "note.casmara_retinol.flaking",
+    "en": "Mild flaking may occur after treatment",
+    "es": "Puede presentarse descamación leve después del tratamiento"
+  },
+  {
+    "id": "note.casmara_retinol.not_with_retinol",
+    "en": "Not suitable for use with other retinol products at home",
+    "es": "No es compatible con el uso de otros productos con retinol en casa"
+  },
+  {
+    "id": "note.casmara_retinol.safe",
+    "en": "Safe for aging skin, sun damage, and uneven tone",
+    "es": "Seguro para piel madura, con daño solar o tono desigual"
+  },
+  {
+    "id": "goal.casmara_retinol.turnover",
+    "en": "Stimulate cell turnover and collagen",
+    "es": "Estimular la renovación celular y el colágeno"
+  },
+  {
+    "id": "goal.casmara_retinol.reduce_lines",
+    "en": "Reduce fine lines and wrinkles",
+    "es": "Reducir líneas finas y arrugas"
+  },
+  {
+    "id": "goal.casmara_retinol.radiance",
+    "en": "Improve tone, texture, and radiance",
+    "es": "Mejorar el tono, la textura y la luminosidad"
+  },
+  {
+    "id": "area.casmara_retinol.face",
+    "en": "Face",
+    "es": "Rostro"
+  },
+  {
+    "id": "opt.casmara_retinol_proage",
+    "en": "Casmara Retinol Pro‑Age Facial",
+    "es": "Casmara Retinol Pro‑Age Facial"
+  },
+  {
+    "id": "addon.casmara_retinol.microneedling_pn",
+    "en": "Microneedling - PN - Polynucleotide",
+    "es": "Microneedling - PN - Polinucleótido"
+  },
+  {
+    "id": "addon.casmara_retinol.mesotherapy_pn",
+    "en": "Mesotherapy - PN - Polynucleotide",
+    "es": "Mesoterapia - PN - Polinucleótido"
+  },
+  {
+    "id": "addon.casmara_retinol.rf_microneedling",
+    "en": "Sylfirm X - RF Microneedling - Face + Neck + Décolleté",
+    "es": "Sylfirm X - Microagujas RF - Rostro + Cuello + Escote"
+  },
+  {
+    "id": "addon.casmara_retinol.pdo_threads",
+    "en": "PDO Thread Lift - Signature Lower Face Lift",
+    "es": "Hilos PDO - Levantamiento Facial Inferior Signature"
+  },
+  {
+    "id": "exp.casmara_retinol.pre.1",
+    "en": "Avoid retinoids, exfoliating acids, or waxing for 5–7 days; arrive with clean skin and no makeup.",
+    "es": "Evite retinoides, ácidos exfoliantes o depilación con cera por 5–7 días; acuda con la piel limpia y sin maquillaje."
+  },
+  {
+    "id": "exp.casmara_retinol.pre.2",
+    "en": "Reschedule if you have active infection or sunburn.",
+    "es": "Reprograme si tiene infección activa o quemadura solar."
+  },
+  {
+    "id": "exp.casmara_retinol.during.1",
+    "en": "You may feel mild tingling as the retinol/acid phases are applied; intensity can be adjusted for comfort.",
+    "es": "Puede sentir un ligero cosquilleo al aplicar las fases de retinol/ácido; la intensidad puede ajustarse para su comodidad."
+  },
+  {
+    "id": "exp.casmara_retinol.post.1",
+    "en": "Use gentle, hydrating products and SPF daily; avoid heat, workouts, and makeup for 24 hours.",
+    "es": "Use productos suaves e hidratantes y protector solar a diario; evite calor, ejercicio y maquillaje durante 24 horas."
+  },
+  {
+    "id": "exp.casmara_retinol.post.2",
+    "en": "Peeling or flaking may occur within 2–4 days; do not pick or exfoliate—let skin shed naturally.",
+    "es": "Puede presentarse descamación entre 2 y 4 días; no manipule ni exfolie, permita que la piel se desprenda de forma natural."
+  },
+  {
+    "id": "faq.casmara_retinol.q1",
+    "en": "Will I peel after this treatment?",
+    "es": "¿Tendré descamación después de este tratamiento?"
+  },
+  {
+    "id": "faq.casmara_retinol.a1",
+    "en": "You may experience light flaking or dryness 2–4 days after. This is part of the skin’s renewal process.",
+    "es": "Puede haber descamación o sequedad ligera de 2 a 4 días después; forma parte del proceso de renovación de la piel."
+  },
+  {
+    "id": "faq.casmara_retinol.q2",
+    "en": "How often can I get this facial?",
+    "es": "¿Con qué frecuencia puedo realizarme este facial?"
+  },
+  {
+    "id": "faq.casmara_retinol.a2",
+    "en": "Most clients schedule treatments every 4–6 weeks, depending on skin tolerance and goals.",
+    "es": "La mayoría agenda sesiones cada 4 a 6 semanas, según tolerancia y objetivos de la piel."
+  },
+  {
+    "id": "svc.janssen_ultra_renewal.name",
+    "en": "Janssen - Ultra Renewal Facial",
+    "es": "Janssen - Facial Ultra Renewal"
+  },
+  {
+    "id": "svc.janssen_ultra_renewal.desc",
+    "en": "A gentle yet effective AHA and peptide-based peel that stimulates skin renewal and refines texture.",
+    "es": "Peeling suave pero eficaz con AHAs y péptidos que estimula la renovación de la piel y mejora la textura."
+  },
+  {
+    "id": "svc.janssen_ultra_renewal.details",
+    "en": "This advanced facial combines alpha hydroxy acids (AHAs) with peptides to exfoliate, stimulate cell turnover, and brighten the skin. It’s perfect for those seeking renewal without harsh downtime.",
+    "es": "Este facial avanzado combina ácidos alfa hidroxi (AHAs) con péptidos para exfoliar, estimular la renovación celular e iluminar la piel. Es perfecto para quienes buscan renovación sin tiempo de inactividad agresivo."
+  },
+  {
+    "id": "note.janssen_ultra.minimal_downtime",
+    "en": "Minimal downtime and safe for most skin types",
+    "es": "Mínimo tiempo de recuperación y seguro para la mayoría de los tipos de piel"
+  },
+  {
+    "id": "note.janssen_ultra.dull_skin",
+    "en": "Ideal for dull or uneven skin tone",
+    "es": "Ideal para piel apagada o con tono desigual"
+  },
+  {
+    "id": "note.janssen_ultra.monthly",
+    "en": "Great monthly maintenance option",
+    "es": "Excelente opción de mantenimiento mensual"
+  },
+  {
+    "id": "goal.janssen_ultra.tone",
+    "en": "Improve skin tone and clarity",
+    "es": "Mejorar el tono y la claridad de la piel"
+  },
+  {
+    "id": "goal.janssen_ultra.collagen",
+    "en": "Stimulate collagen and cell renewal",
+    "es": "Estimular el colágeno y la renovación celular"
+  },
+  {
+    "id": "goal.janssen_ultra.pores",
+    "en": "Minimize the appearance of pores and fine lines",
+    "es": "Minimizar la apariencia de poros y líneas finas"
+  },
+  {
+    "id": "area.janssen_ultra.face",
+    "en": "Face",
+    "es": "Rostro"
+  },
+  {
+    "id": "area.janssen_ultra.neck",
+    "en": "Neck",
+    "es": "Cuello"
+  },
+  {
+    "id": "area.janssen_ultra.decollete",
+    "en": "Décolleté",
+    "es": "Escote"
+  },
+  {
+    "id": "opt.janssen_ultra.face",
+    "en": "Face",
+    "es": "Rostro"
+  },
+  {
+    "id": "opt.janssen_ultra.face_neck",
+    "en": "Face + Neck",
+    "es": "Rostro + Cuello"
+  },
+  {
+    "id": "opt.janssen_ultra.face_neck_decollete",
+    "en": "Face + Neck + Décolleté",
+    "es": "Rostro + Cuello + Escote"
+  },
+  {
+    "id": "addon.janssen_ultra.microneedling_pn",
+    "en": "Microneedling - PN - Polynucleotide",
+    "es": "Microneedling - PN - Polinucleótido"
+  },
+  {
+    "id": "addon.janssen_ultra.mesotherapy_pn",
+    "en": "Mesotherapy - PN - Polynucleotide",
+    "es": "Mesoterapia - PN - Polinucleótido"
+  },
+  {
+    "id": "addon.janssen_ultra.rf_microneedling",
+    "en": "Sylfirm X - RF Microneedling - Face + Neck + Décolleté",
+    "es": "Sylfirm X - Microagujas RF - Rostro + Cuello + Escote"
+  },
+  {
+    "id": "addon.janssen_ultra.pdo_threads",
+    "en": "PDO Thread Lift - Signature Lower Face Lift",
+    "es": "Hilos PDO - Levantamiento Facial Inferior Signature"
+  },
+  {
+    "id": "exp.janssen_ultra.pre.1",
+    "en": "Avoid retinoids, acids, and exfoliation for 3–5 days; arrive with clean skin and no makeup.",
+    "es": "Evite retinoides, ácidos y exfoliación durante 3–5 días; acuda con la piel limpia y sin maquillaje."
+  },
+  {
+    "id": "exp.janssen_ultra.pre.2",
+    "en": "Reschedule if you have active infection, sunburn, or open lesions.",
+    "es": "Reprograme si tiene infección activa, quemadura solar o lesiones abiertas."
+  },
+  {
+    "id": "exp.janssen_ultra.during.1",
+    "en": "Expect gentle cleansing, massage, and serum/mask application; mild warmth or tingling is normal.",
+    "es": "Espere limpieza suave, masaje y aplicación de suero/mascarilla; es normal un ligero calor o cosquilleo."
+  },
+  {
+    "id": "exp.janssen_ultra.post.1",
+    "en": "No downtime expected; mild redness can occur and resolves within hours.",
+    "es": "No se espera tiempo de inactividad; puede haber leve enrojecimiento que se resuelve en horas."
+  },
+  {
+    "id": "exp.janssen_ultra.post.2",
+    "en": "Use hydrating products and sunscreen; avoid harsh products, heat, and strenuous exercise for 24 hours.",
+    "es": "Use productos hidratantes y protector solar; evite productos agresivos, calor y ejercicio intenso durante 24 horas."
+  },
+  {
+    "id": "exp.janssen_ultra.post.3",
+    "en": "Avoid exfoliating products for 3–5 days and apply SPF 30+ daily.",
+    "es": "Evite productos exfoliantes durante 3–5 días y aplique FPS 30+ a diario."
+  },
+  {
+    "id": "faq.janssen_ultra.q1",
+    "en": "Is this facial suitable for sensitive skin?",
+    "es": "¿Este facial es adecuado para piel sensible?"
+  },
+  {
+    "id": "faq.janssen_ultra.a1",
+    "en": "Yes, it’s formulated to be effective yet gentle enough for most skin types.",
+    "es": "Sí, está formulado para ser efectivo pero lo suficientemente suave para la mayoría de los tipos de piel."
+  },
+  {
+    "id": "faq.janssen_ultra.q2",
+    "en": "How often should I get this facial?",
+    "es": "¿Con qué frecuencia debo hacerme este facial?"
+  },
+  {
+    "id": "faq.janssen_ultra.a2",
+    "en": "It can be done monthly as part of your regular skincare routine.",
+    "es": "Puede realizarse mensualmente como parte de su rutina regular de cuidado de la piel."
+  },
+  {
+    "id": "svc.janssen_radiance_boost.name",
+    "en": "Janssen - Radiance Boost Facial",
+    "es": "Janssen - Facial Radiance Boost"
+  },
+  {
+    "id": "svc.janssen_radiance_boost.desc",
+    "en": "Brightening antioxidant facial to restore luminosity, even tone, and improve hydration.",
+    "es": "Facial antioxidante iluminador para recuperar luminosidad, unificar el tono y mejorar la hidratación."
+  },
+  {
+    "id": "svc.janssen_radiance_boost.details",
+    "en": "The Radiance Boost Facial uses potent antioxidant serums, hydration masks, and oxygenating techniques to revitalize tired-looking skin. This is your go-to glow facial before any big event or seasonal change.",
+    "es": "El Radiance Boost Facial utiliza sueros antioxidantes potentes, mascarillas hidratantes y técnicas oxigenantes para revitalizar la piel cansada. Es el facial ideal para lograr brillo antes de un evento o cambio de estación."
+  },
+  {
+    "id": "note.janssen_radiance.dull_skin",
+    "en": "Great for dull, dehydrated, or tired skin",
+    "es": "Ideal para piel apagada, deshidratada o fatigada"
+  },
+  {
+    "id": "note.janssen_radiance.oxygenating",
+    "en": "Includes oxygenating and vitamin-rich serums",
+    "es": "Incluye sueros oxigenantes ricos en vitaminas"
+  },
+  {
+    "id": "note.janssen_radiance.no_downtime",
+    "en": "No downtime—perfect before events",
+    "es": "Sin tiempo de inactividad—perfecto antes de eventos"
+  },
+  {
+    "id": "goal.janssen_radiance.energize",
+    "en": "Re-energize dull skin",
+    "es": "Reenergizar la piel apagada"
+  },
+  {
+    "id": "goal.janssen_radiance.hydrate",
+    "en": "Hydrate and plump",
+    "es": "Hidratar y aportar volumen"
+  },
+  {
+    "id": "goal.janssen_radiance.even_tone",
+    "en": "Even out skin tone and texture",
+    "es": "Unificar tono y textura de la piel"
+  },
+  {
+    "id": "area.janssen_radiance.face",
+    "en": "Face",
+    "es": "Rostro"
+  },
+  {
+    "id": "area.janssen_radiance.neck",
+    "en": "Neck",
+    "es": "Cuello"
+  },
+  {
+    "id": "area.janssen_radiance.decollete",
+    "en": "Décolleté",
+    "es": "Escote"
+  },
+  {
+    "id": "opt.janssen_radiance.face",
+    "en": "Face",
+    "es": "Rostro"
+  },
+  {
+    "id": "opt.janssen_radiance.face_neck",
+    "en": "Face + Neck",
+    "es": "Rostro + Cuello"
+  },
+  {
+    "id": "opt.janssen_radiance.face_neck_decollete",
+    "en": "Face + Neck + Décolleté",
+    "es": "Rostro + Cuello + Escote"
+  },
+  {
+    "id": "addon.janssen_radiance.microneedling_pn",
+    "en": "Microneedling - PN - Polynucleotide",
+    "es": "Microneedling - PN - Polinucleótido"
+  },
+  {
+    "id": "addon.janssen_radiance.mesotherapy_pn",
+    "en": "Mesotherapy - PN - Polynucleotide",
+    "es": "Mesoterapia - PN - Polinucleótido"
+  },
+  {
+    "id": "addon.janssen_radiance.rf_microneedling",
+    "en": "Sylfirm X - RF Microneedling - Face + Neck + Décolleté",
+    "es": "Sylfirm X - Microagujas RF - Rostro + Cuello + Escote"
+  },
+  {
+    "id": "filter.view_all",
+    "en": "View all",
+    "es": "Ver todo"
+  },
+  {
+    "id": "filter.hydrafacial.face",
+    "en": "Face",
+    "es": "Rostro"
+  },
+  {
+    "id": "filter.hydrafacial.body",
+    "en": "Body",
+    "es": "Cuerpo"
+  },
+  {
+    "id": "filter.hydrafacial.boosters",
+    "en": "Skin Boosters",
+    "es": "Potenciadores de Piel"
+  },
+  {
+    "id": "filter.casmara.face",
+    "en": "Face",
+    "es": "Rostro"
+  },
+  {
+    "id": "filter.casmara.boosters",
+    "en": "Skin Boosters",
+    "es": "Potenciadores de Piel"
+  },
+  {
+    "id": "filter.janssen.face",
+    "en": "Face",
+    "es": "Rostro"
+  },
+  {
+    "id": "filter.janssen.boosters",
+    "en": "Skin Boosters",
+    "es": "Potenciadores de Piel"
+  },
+  {
+    "id": "addon.janssen_radiance.pdo_threads",
+    "en": "PDO Thread Lift - Signature Lower Face Lift",
+    "es": "Hilos PDO - Levantamiento Facial Inferior Signature"
+  },
+  {
+    "id": "exp.janssen_radiance.pre.1",
+    "en": "Avoid retinoids, acids, and exfoliation for 3–5 days; arrive with clean skin and no makeup.",
+    "es": "Evite retinoides, ácidos y exfoliación durante 3–5 días; acuda con la piel limpia y sin maquillaje."
+  },
+  {
+    "id": "exp.janssen_radiance.pre.2",
+    "en": "Reschedule if you have active infection, sunburn, or open lesions.",
+    "es": "Reprograme si tiene infección activa, quemadura solar o lesiones abiertas."
+  },
+  {
+    "id": "exp.janssen_radiance.during.1",
+    "en": "Expect gentle cleansing, massage, and serum/mask application; mild warmth or tingling is normal.",
+    "es": "Espere limpieza suave, masaje y aplicación de suero/mascarilla; es normal un ligero calor o cosquilleo."
+  },
+  {
+    "id": "exp.janssen_radiance.post.1",
+    "en": "No downtime expected; mild pinkness can occur and resolves within hours.",
+    "es": "No se espera tiempo de inactividad; puede haber leve enrojecimiento que se resuelve en horas."
+  },
+  {
+    "id": "exp.janssen_radiance.post.2",
+    "en": "Avoid harsh products, heat, and strenuous exercise for 24 hours; apply SPF 30+ daily.",
+    "es": "Evite productos agresivos, calor y ejercicio intenso durante 24 horas; aplique FPS 30+ a diario."
+  },
+  {
+    "id": "faq.janssen_radiance.q1",
+    "en": "Will my skin glow immediately after?",
+    "es": "¿Mi piel se verá luminosa inmediatamente después?"
+  },
+  {
+    "id": "faq.janssen_radiance.a1",
+    "en": "Yes, the facial is designed to enhance radiance and hydration instantly.",
+    "es": "Sí, este facial está diseñado para aumentar la luminosidad e hidratación al instante."
+  },
+  {
+    "id": "faq.janssen_radiance.q2",
+    "en": "Is this safe during pregnancy?",
+    "es": "¿Es seguro durante el embarazo?"
+  },
+  {
+    "id": "faq.janssen_radiance.a2",
+    "en": "Yes, this facial does not use any harsh acids or retinol, making it safe for pregnant clients.",
+    "es": "Sí, este facial no utiliza ácidos agresivos ni retinol, por lo que es seguro para pacientes embarazadas."
+  }
+]
