@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Promos",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["id", "serviceId", "headlineKey", "descriptionKey", "validTill"],
+    "additionalProperties": false,
+    "properties": {
+      "id": { "type": "string", "pattern": "^promo_" },
+      "serviceId": { "type": "string", "pattern": "^svc_" },
+      "headlineKey": { "type": "string" },
+      "descriptionKey": { "type": "string" },
+      "validFrom": { "type": ["string", "null"], "format": "date" },
+      "validTill": { "type": ["string", "null"], "format": "date" },
+      "options": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": ["optionNameKey"],
+          "additionalProperties": false,
+          "properties": {
+            "optionNameKey": { "type": "string" },
+            "notesKeys": { "type": "array", "items": { "type": "string" } }
+          }
+        }
+      }
+    }
+  }
+}
