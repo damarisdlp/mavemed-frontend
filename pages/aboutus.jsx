@@ -33,7 +33,7 @@ export default function AboutUs() {
           property="og:description"
           content="Discover the philosophy behind Mave Medical Spa — blending ethical aesthetic care with cross-border accessibility and expert providers in Tijuana."
         />
-        <meta property="og:image" content="https://www.mavemedspa.com/logo-mave.png" />
+        <meta property="og:image" content="https://www.mavemedspa.com/site_icon.png" />
         <meta property="og:url" content="https://www.mavemedspa.com/aboutus" />
         <meta property="og:type" content="website" />
         <link rel="canonical" href="https://www.mavemedspa.com/aboutus" />
@@ -46,7 +46,7 @@ export default function AboutUs() {
               "@type": "MedicalBusiness",
               name: "Mave Medical Spa",
               url: "https://www.mavemedspa.com",
-              logo: "https://www.mavemedspa.com/logo-mave.png",
+              logo: "https://www.mavemedspa.com/site_icon.png",
               description:
                 "Mave Medical Spa blends aesthetic expertise with ethical care, offering Botox, fillers, lasers, and regenerative treatments in Tijuana, Mexico — just minutes from the San Diego border.",
               address: {
