@@ -43,7 +43,7 @@ export default function PromosPage() {
     const pricePrefix = promoSummary.showStartingFrom
       ? locale === "es"
         ? "Desde "
-        : "Starting from "
+        : "Starting From "
       : "";
     const price = `${pricePrefix}${promoSummary.priceText}`;
     categoriesMap[catKey].cards.push({
