@@ -238,19 +238,38 @@ const CategorySlider = ({ services }) => {
     <div className="bg-white scroll-smooth relative">
       <div className="w-full max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 sm:pt-8 md:pt-12 pb-4">
         {/* Sticky Search + Category Menu */}
-        <div className="mt-6 sm:mt-8 sticky top-[145px] sm:top-[110px] bg-white z-30 border-b border-gray-200">
+        <div className="-mx-4 sm:-mx-6 lg:-mx-8 mt-6 sm:mt-8 sticky top-[143px] sm:top-[110px] bg-white z-30 border-b border-gray-200 px-4 sm:px-6 lg:px-8">
           <div className="py-2 sm:py-3">
             <label className="sr-only" htmlFor="treatment-search">
               {getLocalized(translatedStrings.searchPlaceholder)}
             </label>
-            <input
-              id="treatment-search"
-              type="search"
-              value={searchTerm}
-              onChange={(event) => setSearchTerm(event.target.value)}
-              placeholder={getLocalized(translatedStrings.searchPlaceholder)}
-              className="w-full rounded-full border border-gray-300 px-4 py-2 text-sm md:text-base focus:border-black focus:outline-none"
-            />
+            <div className="relative mx-auto w-full md:w-1/2">
+              <input
+                id="treatment-search"
+                type="text"
+                inputMode="search"
+                enterKeyHint="search"
+                value={searchTerm}
+                onChange={(event) => setSearchTerm(event.target.value)}
+                onKeyDown={(event) => {
+                  if (event.key === "Enter") {
+                    event.currentTarget.blur();
+                  }
+                }}
+                placeholder={getLocalized(translatedStrings.searchPlaceholder)}
+                className="w-full rounded-full border border-gray-300 px-4 py-2 pr-12 text-sm md:text-base focus:border-black focus:outline-none"
+              />
+              {searchTerm ? (
+                <button
+                  type="button"
+                  onClick={() => setSearchTerm("")}
+                  aria-label="Clear search"
+                  className="absolute right-3 top-1/2 -translate-y-1/2 h-7 w-7 rounded-full text-lg font-semibold text-gray-500 hover:text-black flex items-center justify-center"
+                >
+                  ×
+                </button>
+              ) : null}
+            </div>
           </div>
           <div
             id="category-menu"
