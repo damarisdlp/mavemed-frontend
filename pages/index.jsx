@@ -41,14 +41,14 @@ export default function Home() {
   <meta property="og:title" content="Mave Medical Spa – Tijuana’s Best Med Spa for U.S. Clients" />
   <meta property="og:description" content="Experience expert facial rejuvenation at our modern Tijuana clinic. Botox, fillers, threads, microneedling, and lasers — just minutes from the U.S. border." />
   <meta property="og:url" content="https://www.mavemedspa.com/" />
-  <meta property="og:image" content="https://www.mavemedspa.com/logo.png" />
+  <meta property="og:image" content="https://www.mavemedspa.com/logo-mave.png" />
   <meta property="og:type" content="website" />
 
   {/* Twitter */}
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Mave Medical Spa | Tijuana Aesthetic Experts for U.S. Patients" />
   <meta name="twitter:description" content="Top-rated med spa for Botox, Sculptra, PDO threads, and more — serving SoCal & Tijuana patients looking for safe, natural results in Mexico." />
-  <meta name="twitter:image" content="https://www.mavemedspa.com/logo.png" />
+  <meta name="twitter:image" content="https://www.mavemedspa.com/logo-mave.png" />
 
   {/* Structured Data */}
   <script
@@ -59,7 +59,7 @@ export default function Home() {
         "@type": "MedicalBusiness",
         "name": "Mave Medical Spa",
         "url": "https://www.mavemedspa.com",
-        "image": "https://www.mavemedspa.com/logo.png",
+        "image": "https://www.mavemedspa.com/logo-mave.png",
         "description": "Cross-border med spa offering injectables, laser treatments, and non-surgical rejuvenation for patients from the U.S. and Mexico.",
         "telephone": "+52 664 207 7675",
         "priceRange": "$$",

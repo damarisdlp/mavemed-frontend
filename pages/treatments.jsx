@@ -55,7 +55,7 @@ export default function TreatmentsPage() {
         />
         <meta property="og:title" content="Advanced Aesthetic Treatments in Tijuana | Mave Medical Spa" />
         <meta property="og:description" content="Non-surgical aesthetic solutions: Botox, fillers, lasers, and more at Mave Medical Spa. Serving cross-border clients from Southern California." />
-        <meta property="og:image" content="https://www.mavemedspa.com/logo.png" />
+        <meta property="og:image" content="https://www.mavemedspa.com/logo-mave.png" />
         <meta property="og:url" content="https://www.mavemedspa.com/treatments" />
         <meta property="og:type" content="website" />
         <link rel="canonical" href="https://www.mavemedspa.com/treatments" />
@@ -66,7 +66,7 @@ dangerouslySetInnerHTML={{
         "@context": "https://schema.org",
         "@type": "MedicalBusiness",
         "name": "Mave Medical Spa",
-        "image": "https://www.mavemedspa.com/logo.png",
+        "image": "https://www.mavemedspa.com/logo-mave.png",
         "url": "https://www.mavemedspa.com",
         "telephone": "+52-664-207-7675",
         "address": {

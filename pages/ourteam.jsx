@@ -30,7 +30,7 @@ export default function TeamPage() {
         />
         <meta property="og:title" content="Meet Our Expert Team | Mave Medical Spa in Tijuana" />
         <meta property="og:description" content="Discover the talented team of doctors and specialists behind Mave Medical Spa — Tijuana’s top destination for natural, ethical cosmetic results." />
-        <meta property="og:image" content="https://www.mavemedspa.com/logo.png" />
+        <meta property="og:image" content="https://www.mavemedspa.com/logo-mave.png" />
         <meta property="og:url" content="https://www.mavemedspa.com/aboutus" />
         <meta property="og:type" content="website" />
         <link rel="canonical" href="https://www.mavemedspa.com/aboutus" />
@@ -43,7 +43,7 @@ export default function TeamPage() {
         "@type": "MedicalOrganization",
         "name": "Mave Medical Spa",
         "url": "https://www.mavemedspa.com/aboutus",
-        "logo": "https://www.mavemedspa.com/logo.png",
+        "logo": "https://www.mavemedspa.com/logo-mave.png",
         "image": "https://www.mavemedspa.com/logo-mave.jpg",
         "description":
           "Meet the expert team behind Mave Medical Spa — a physician-led medical spa in Tijuana, Mexico, specializing in Botox, biostimulators, microneedling, lasers, and regenerative aesthetics.",

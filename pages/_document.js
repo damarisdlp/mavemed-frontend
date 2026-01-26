@@ -4,6 +4,8 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
+        <link rel="icon" href="/logo-mave.png" type="image/png" />
+        <link rel="apple-touch-icon" href="/logo-mave.png" />
         <script
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-E77724XQYV"
