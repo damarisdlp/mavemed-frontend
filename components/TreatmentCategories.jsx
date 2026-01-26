@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import { useKeenSlider } from "keen-slider/react";
 import { allTreatments } from "@/lib/data/allTreatments";
+import categoryOrder from "@/lib/data/normalized/categories.json";
 
 export default function TreatmentCategories() {
 const CategorySlider = ({ services }) => {
@@ -138,15 +139,30 @@ const CategorySlider = ({ services }) => {
         services: []
       };
     }
+    const optionFields = (t.pricing?.options || []).flatMap((opt) => [
+      opt.optionName,
+      ...(opt.notes || []),
+    ]);
     categoriesMap[key].services.push({
       name: t.displayName || t.serviceDisplayName,
       slug: t.urlSlug,
       image: t.images?.primary || "/placeholder.jpg",
-      description: t.description
+      description: t.description,
+      searchFields: [
+        t.displayName || t.serviceDisplayName,
+        t.description,
+        t.details,
+        ...(t.notes || []),
+        ...(t.goals || []),
+        ...(t.treatableAreas || []),
+        ...optionFields,
+      ],
     });
   });
 
-  const categories = Object.values(categoriesMap);
+  const categories = categoryOrder
+    .map((entry) => categoriesMap[entry.slug])
+    .filter(Boolean);
   const router = useRouter();
   const { locale } = router;
 
@@ -168,11 +184,14 @@ const CategorySlider = ({ services }) => {
     learnMoreAbout: (serviceName) => ({
       en: `Learn more about ${getLocalized(serviceName)}`,
       es: `Saber más sobre ${getLocalized(serviceName)}`
-    })
+    }),
+    searchPlaceholder: { en: "Search treatments", es: "Buscar tratamientos" },
+    noResults: { en: "No treatments match your search.", es: "No hay tratamientos que coincidan con tu búsqueda." }
   };
 
   // Show/hide scroll-to-top button
   const [showScrollTop, setShowScrollTop] = useState(false);
+  const [searchTerm, setSearchTerm] = useState("");
 
   useEffect(() => {
     const handleScroll = () => {
@@ -182,28 +201,75 @@ const CategorySlider = ({ services }) => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const normalizeText = (value) =>
+    (value || "")
+      .toLowerCase()
+      .replace(/₂/g, "2")
+      .replace(/₀/g, "0")
+      .replace(/₁/g, "1")
+      .replace(/₃/g, "3")
+      .replace(/₄/g, "4")
+      .replace(/₅/g, "5")
+      .replace(/₆/g, "6")
+      .replace(/₇/g, "7")
+      .replace(/₈/g, "8")
+      .replace(/₉/g, "9");
+  const normalizedQuery = normalizeText(searchTerm.trim());
+  const visibleCategories = categories
+    .map((category) => {
+      const services = category.services.filter((service) => {
+        if (!normalizedQuery) return true;
+        const name = normalizeText(getLocalized(service.name));
+        const description = normalizeText(getLocalized(service.description));
+        const extra = normalizeText(
+          (service.searchFields || []).map((field) => getLocalized(field)).join(" ")
+        );
+        return (
+          name.toLowerCase().includes(normalizedQuery) ||
+          description.toLowerCase().includes(normalizedQuery) ||
+          extra.includes(normalizedQuery)
+        );
+      });
+      return { ...category, services };
+    })
+    .filter((category) => category.services.length > 0);
+
   return (
     <div className="bg-white scroll-smooth relative">
       <div className="w-full max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 sm:pt-8 md:pt-12 pb-4">
-
-        {/* Sticky Category Menu */}
-        <div
-          id="category-menu"
-          className="flex flex-nowrap items-center gap-3 sm:gap-4 mt-10 justify-start sticky top-[145px] sm:top-[110px] bg-white z-30 py-2 sm:py-3 border-b border-gray-200 overflow-x-auto no-scrollbar px-3"
-        >
-          {categories.map((category, i) => (
-            <a
-              key={i}
-              href={`#${getLocalized(category.title).replace(/\s+/g, "-").toLowerCase()}`}
-              className="inline-flex shrink-0 items-center text-sm md:text-base px-4 py-1.5 sm:py-2 rounded-full border border-gray-300 text-black hover:border-black hover:text-[#731a2f] transition whitespace-nowrap min-h-[36px]"
-            >
-              {getLocalized(category.title)}
-            </a>
-          ))}
+        {/* Sticky Search + Category Menu */}
+        <div className="mt-6 sm:mt-8 sticky top-[145px] sm:top-[110px] bg-white z-30 border-b border-gray-200">
+          <div className="py-2 sm:py-3">
+            <label className="sr-only" htmlFor="treatment-search">
+              {getLocalized(translatedStrings.searchPlaceholder)}
+            </label>
+            <input
+              id="treatment-search"
+              type="search"
+              value={searchTerm}
+              onChange={(event) => setSearchTerm(event.target.value)}
+              placeholder={getLocalized(translatedStrings.searchPlaceholder)}
+              className="w-full rounded-full border border-gray-300 px-4 py-2 text-sm md:text-base focus:border-black focus:outline-none"
+            />
+          </div>
+          <div
+            id="category-menu"
+            className="flex flex-nowrap items-center gap-3 sm:gap-4 justify-start overflow-x-auto no-scrollbar px-3 pb-2 sm:pb-3"
+          >
+            {visibleCategories.map((category, i) => (
+              <a
+                key={i}
+                href={`#${getLocalized(category.title).replace(/\s+/g, "-").toLowerCase()}`}
+                className="inline-flex shrink-0 items-center text-sm md:text-base px-4 py-1.5 sm:py-2 rounded-full border border-gray-300 text-black hover:border-black hover:text-[#731a2f] transition whitespace-nowrap min-h-[36px]"
+              >
+                {getLocalized(category.title)}
+              </a>
+            ))}
+          </div>
         </div>
 
         {/* Services by Category */}
-        {categories.map((category, i) => (
+        {visibleCategories.map((category, i) => (
           <div
             key={i}
             id={getLocalized(category.title).replace(/\s+/g, "-").toLowerCase()}
@@ -265,6 +331,12 @@ const CategorySlider = ({ services }) => {
             </div>
           </div>
         ))}
+
+        {!visibleCategories.length && (
+          <p className="mt-10 text-sm text-gray-600">
+            {getLocalized(translatedStrings.noResults)}
+          </p>
+        )}
 
         {/* Scroll to Top Button */}
         {showScrollTop && (
