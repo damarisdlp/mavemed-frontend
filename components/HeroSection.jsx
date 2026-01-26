@@ -30,21 +30,21 @@ export default function HeroSection() {
         />
 
         {/* Content */}
-        <div className="relative min-h-screen flex flex-col justify-center items-center px-6 py-10 text-center translate-y-8 md:translate-y-0">
+        <div className="relative min-h-screen flex flex-col justify-center items-center px-6 py-10 text-center -translate-y-[5%] md:translate-y-0">
           <h1
-            className="text-white font-serif font-medium leading-tight max-w-[92vw] sm:max-w-4xl text-[clamp(1.6rem,4.5vw,3rem)] mt-2 break-words"
+            className="text-white font-serif font-medium mb-5 leading-tight max-w-[92vw] sm:max-w-4xl text-[clamp(1.6rem,4.5vw,3rem)] mt-2 break-words"
             style={{ textWrap: "balance" }}
           >
             {t("heroSection.heading1")}
           </h1>
 
-          <p className="text-base sm:text-lg text-white/90 mt-4 max-w-4xl">
+          <p className="text-base mb-2 sm:text-lg text-white/90 mt-4 max-w-4xl">
             {t("heroSection.p1")}
           </p>
-          <p className="text-base sm:text-lg text-white/90 mt-2 max-w-4xl">
+          <p className="text-base mb-2 sm:text-lg text-white/90 mt-2 max-w-4xl">
             {t("heroSection.p2")}
           </p>
-          <p className="text-base sm:text-lg text-white/90 mt-2 max-w-4xl">
+          <p className="text-base mb-5 sm:text-lg text-white/90 mt-2 max-w-4xl">
             {t("heroSection.p3")}
           </p>
 
