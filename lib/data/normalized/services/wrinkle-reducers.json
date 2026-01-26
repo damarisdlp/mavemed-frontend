@@ -1,0 +1,82 @@
+[
+  {
+    "id": "svc_botox",
+    "slug": "wrinkle-reducers-botox",
+    "categoryId": "cat_wrinkle_reducers",
+    "nameKey": "svc.botox.name",
+    "descriptionKey": "svc.botox.desc",
+    "detailsKey": "svc.botox.details",
+    "isPopular": true,
+    "isPromoActive": true,
+    "images": {
+      "primary": "/botox.jpg",
+      "secondary": "/botox2.jpg"
+    },
+    "notesKeys": [
+      "note.botox.exclusive_rate",
+      "note.botox.touchups_window",
+      "note.botox.standard_rate"
+    ],
+    "goalsKeys": [
+      "goal.botox.smooth_lines",
+      "goal.botox.lift",
+      "goal.botox.prevent"
+    ],
+    "treatableAreaKeys": [
+      "area.botox.forehead",
+      "area.botox.glabella",
+      "area.botox.crows_feet",
+      "area.botox.bunny_lines",
+      "area.botox.chin_dimples",
+      "area.botox.perioral_package",
+      "area.botox.lip_flip",
+      "area.botox.eyebrow_lift",
+      "area.botox.downturned_corners",
+      "area.botox.perioral_lines",
+      "area.botox.masseters",
+      "area.botox.neck_bands",
+      "area.botox.axillary_hyperhidrosis",
+      "area.botox.palmar_hyperhidrosis"
+    ]
+  },
+  {
+    "id": "svc_dermawrinkle",
+    "slug": "wrinkle-reducers-dermawrinkle",
+    "categoryId": "cat_wrinkle_reducers",
+    "nameKey": "svc.dermawrinkle.name",
+    "descriptionKey": "svc.dermawrinkle.desc",
+    "detailsKey": "svc.dermawrinkle.details",
+    "isPopular": true,
+    "isPromoActive": true,
+    "images": {
+      "primary": "/dermawrinkle.jpg",
+      "secondary": "/dermawrinkle2.jpg"
+    },
+    "notesKeys": [
+      "note.dermawrinkle.exclusive_rate",
+      "note.dermawrinkle.touchups_window",
+      "note.dermawrinkle.standard_rate"
+    ],
+    "goalsKeys": [
+      "goal.dermawrinkle.smooth_lines",
+      "goal.dermawrinkle.lift",
+      "goal.dermawrinkle.prevent"
+    ],
+    "treatableAreaKeys": [
+      "area.dermawrinkle.forehead",
+      "area.dermawrinkle.glabella",
+      "area.dermawrinkle.crows_feet",
+      "area.dermawrinkle.bunny_lines",
+      "area.dermawrinkle.chin_dimples",
+      "area.dermawrinkle.perioral_package",
+      "area.dermawrinkle.lip_flip",
+      "area.dermawrinkle.eyebrow_lift",
+      "area.dermawrinkle.downturned_corners",
+      "area.dermawrinkle.perioral_lines",
+      "area.dermawrinkle.masseters",
+      "area.dermawrinkle.neck_bands",
+      "area.dermawrinkle.axillary_hyperhidrosis",
+      "area.dermawrinkle.palmar_hyperhidrosis"
+    ]
+  }
+]
