@@ -4,6 +4,7 @@ import { useRouter } from "next/router";
 import { useEffect, useRef, useState } from "react";
 import TreatmentInfoTabs from "./TreatmentInfoTabs";
 import { getPromoSummary } from "@/lib/utils/promo";
+import { formatMoney, formatMoneyRange, getPriceMinValue } from "@/lib/utils/price";
 
 export default function TreatmentDetails({ treatment }) {
   const router = useRouter();
@@ -22,8 +23,6 @@ export default function TreatmentDetails({ treatment }) {
     countryCode: "+52",
     phone: "",
     visitTiming: "",
-    locationOrigin: "",
-    locationOriginOther: "",
     preferredChannel: "WhatsApp",
     hadTreatmentBefore: "",
     bestDays: "",
@@ -80,7 +79,16 @@ export default function TreatmentDetails({ treatment }) {
 
   const getLocalizedPrice = (field) => {
     if (field == null) return "";
-    if (typeof field === "object") return getLocalized(field);
+    if (typeof field === "object") {
+      if (field.text && typeof field.text === "object") {
+        return field.text[locale] || field.text.en || "";
+      }
+      if ("minAmount" in field || "maxAmount" in field) {
+        return formatMoneyRange(field.minAmount, field.maxAmount);
+      }
+      if ("amount" in field) return formatMoney(field.amount);
+      return getLocalized(field);
+    }
     return field;
   };
 
@@ -93,20 +101,72 @@ export default function TreatmentDetails({ treatment }) {
 
   const pricing = treatment?.pricing || {};
   const promoSummary = getPromoSummary(treatment, locale);
-  const promoDetails =
-    promoSummary.isPromoActive && treatment?.promoDetails ? treatment.promoDetails : null;
+  const promoDetails = treatment?.promoDetails || null;
+  const fallbackPromo = promoSummary.lowestPromo || null;
+  const hasMultiplePromoOptions = promoSummary.promoOptions.length > 1;
+  const hasSinglePromoOption = promoSummary.promoOptions.length === 1;
+
+  const buildPromoDisplayOptions = () => {
+    const cleanNotes = (notes) => {
+      if (!Array.isArray(notes)) return [];
+      return notes.filter((note) => {
+        const text = getLocalized(note);
+        return typeof text === "string" && text.trim() !== "";
+      });
+    };
+
+    const promoOptionNotesByName = new Map(
+      promoSummary.promoOptions
+        .map((promoOpt) => {
+          const name = getLocalized(promoOpt.option?.optionName);
+          return name ? [name.toLowerCase(), cleanNotes(promoOpt.option?.notes)] : null;
+        })
+        .filter(Boolean)
+    );
+
+    if (Array.isArray(promoDetails?.options) && promoDetails.options.length > 0) {
+      return promoDetails.options.map((opt) => {
+        const normalizedName = getLocalized(opt?.optionName).toLowerCase();
+        const optNotes = cleanNotes(opt?.notes);
+        const matchedNotes = promoOptionNotesByName.get(normalizedName) || [];
+        const promoPrice = fallbackPromo?.promoPrice;
+        const currency = fallbackPromo?.currency;
+        const notes =
+          hasMultiplePromoOptions
+            ? optNotes
+            : hasSinglePromoOption && cleanNotes(fallbackPromo?.option?.notes).length > 0
+            ? cleanNotes(fallbackPromo?.option?.notes)
+            : optNotes.length === 0 && matchedNotes.length > 0
+            ? matchedNotes
+            : optNotes;
+        return {
+          optionName: opt?.optionName,
+          promoPrice,
+          currency,
+          notes,
+        };
+      });
+    }
+
+    return promoSummary.promoOptions.map((promoOpt) => ({
+      optionName: promoOpt.option?.optionName,
+      promoPrice: promoOpt.promoPrice,
+      currency: promoOpt.currency,
+      notes: promoOpt.option?.notes,
+    }));
+  };
+
+  const promoDisplayOptions = buildPromoDisplayOptions();
 
   const buildLeadOptions = () => {
     const options = [];
 
-    if (promoDetails?.options?.length) {
-      promoDetails.options.forEach((opt) => {
+    if (promoDisplayOptions.length) {
+      promoDisplayOptions.forEach((opt) => {
         const name = getLocalized(opt.optionName) || getLocalized(treatment.serviceDisplayName);
         const price =
-          opt.optionPromoPrice != null
-            ? `${opt.optionPromoPrice}${
-                opt.optionPromoPriceCurrency ? ` ${opt.optionPromoPriceCurrency}` : ""
-              }`
+          opt.promoPrice != null
+            ? `${opt.promoPrice}${opt.currency ? ` ${opt.currency}` : ""}`
             : "";
         const label = price ? `${name} – ${price}` : name;
         options.push(label);
@@ -119,20 +179,12 @@ export default function TreatmentDetails({ treatment }) {
         const price =
           opt.optionPrice != null
             ? `${getLocalizedPrice(opt.optionPrice)}${
-                opt.optionCurrency ? ` ${opt.optionCurrency}` : ""
+                opt.optionPrice?.currency ? ` ${opt.optionPrice.currency}` : ""
               }`
             : "";
         const label = price ? `${name} – ${price}` : name;
         options.push(label);
       });
-    } else {
-      const name = getLocalized(treatment.serviceDisplayName);
-      const price =
-        getLocalizedPrice(pricing?.startingPrice) && pricing?.startingPriceCurrency
-          ? `${getLocalizedPrice(pricing.startingPrice)} ${pricing.startingPriceCurrency}`
-          : getLocalizedPrice(pricing?.startingPrice) || "";
-      const label = price ? `${name} – ${price}` : name;
-      options.push(label);
     }
 
     return options;
@@ -186,6 +238,10 @@ export default function TreatmentDetails({ treatment }) {
   }, [leadOpen]);
 
   const parsePriceValue = (priceString) => {
+    if (priceString && typeof priceString === "object") {
+      const value = getPriceMinValue(priceString);
+      return Number.isFinite(value) ? value : Infinity;
+    }
     const priceText = getLocalizedPrice(priceString);
     if (typeof priceText !== "string") return Infinity;
     const numeric = parseFloat(priceText.replace(/[^0-9.]/g, ""));
@@ -193,19 +249,12 @@ export default function TreatmentDetails({ treatment }) {
   };
 
   const priceCandidates = [];
-  if (pricing?.startingPrice) {
-    priceCandidates.push({
-      value: parsePriceValue(pricing.startingPrice),
-      display: `${getLocalizedPrice(pricing.startingPrice)} ${
-        pricing.startingPriceCurrency || ""
-      }`.trim(),
-    });
-  }
   (pricing?.options || []).forEach((opt) => {
     if (opt?.optionPrice) {
+      const currency = opt.optionPrice?.currency || "";
       priceCandidates.push({
         value: parsePriceValue(opt.optionPrice),
-        display: `${getLocalizedPrice(opt.optionPrice)} ${opt.optionCurrency || ""}`.trim(),
+        display: `${getLocalizedPrice(opt.optionPrice)} ${currency}`.trim(),
       });
     }
   });
@@ -214,9 +263,7 @@ export default function TreatmentDetails({ treatment }) {
     .filter((p) => p.value !== Infinity)
     .sort((a, b) => a.value - b.value);
 
-  const lowestPriceDisplay =
-    sortedPrices[0]?.display ||
-    `${getLocalizedPrice(pricing.startingPrice) || ""} ${pricing.startingPriceCurrency || ""}`.trim();
+  const lowestPriceDisplay = sortedPrices[0]?.display || "";
 
   const showStartingLabel = sortedPrices.length > 1;
   const startingPriceText = showStartingLabel
@@ -283,35 +330,43 @@ export default function TreatmentDetails({ treatment }) {
               </button>
             </div>
 
-            {promoDetails && (
+            {promoSummary.isPromoActive && (
               <div className="border border-[#731a2f] bg-[#731a2f] text-white p-5 rounded-lg shadow-md flex flex-col text-left space-y-2">
                 <h2 className="text-md font-semibold">
-                  {getLocalized(promoDetails.headline) ||
+                  {getLocalized(promoDetails?.headline) ||
                     (locale === "es" ? "Precio Exclusivo" : "Exclusive Pricing")}
                 </h2>
 
-                {promoDetails.validTill && (
+                {promoDetails?.validTill && (
                   <p className="text-xs text-white/80">
                     {locale === "es" ? "Válido hasta" : "Valid until"}{" "}
                     {getLocalized(promoDetails.validTill)}
                   </p>
                 )}
 
-                {promoDetails.description && (
+                {promoDetails?.description && (
                   <p className="text-white text-sm">{getLocalized(promoDetails.description)}</p>
                 )}
 
-                {Array.isArray(promoDetails.options) && promoDetails.options.length > 0 && (
+                {promoDisplayOptions.length > 0 && (
                   <div className="mt-1 space-y-2 w-full text-left">
-                    {promoDetails.options.map((opt, idx) => (
+                    {promoDisplayOptions.map((opt, idx) => (
                       <div
                         key={idx}
                         className="text-sm text-white border border-white/30 rounded p-2 bg-white/10"
                       >
-                        <div className="font-semibold">{getLocalized(opt.optionName)}</div>
+                        <div className="font-semibold">
+                          {getLocalized(opt.optionName) ||
+                            getLocalized(treatment?.serviceDisplayName)}
+                        </div>
                         <div className="text-white">
-                          {opt.optionPromoPrice ? opt.optionPromoPrice : ""}
-                          {opt.optionPromoPriceCurrency ? ` ${opt.optionPromoPriceCurrency}` : ""}
+                          {promoSummary.promoOptions.length > 1
+                            ? locale === "es"
+                              ? "Desde "
+                              : "Starting from "
+                            : ""}
+                          {opt.promoPrice ? opt.promoPrice : ""}
+                          {opt.currency ? ` ${opt.currency}` : ""}
                         </div>
                         {opt.notes?.length > 0 && (
                           <ul className="text-xs text-white/80 list-disc list-outside pl-4 mt-1 space-y-1">
@@ -348,7 +403,7 @@ export default function TreatmentDetails({ treatment }) {
           onClick={handleCloseLead}
         >
           <div
-            className="bg-white rounded-lg shadow-xl w-full max-w-xl relative h-[92vh] sm:h-[88vh] md:h-[84vh] flex flex-col overflow-hidden"
+            className="bg-white rounded-lg shadow-xl w-full max-w-xl relative max-h-[92vh] sm:max-h-[88vh] md:max-h-[84vh] flex flex-col overflow-hidden"
             onClick={(e) => e.stopPropagation()}
           >
             {/* Sticky Header */}
@@ -401,7 +456,7 @@ export default function TreatmentDetails({ treatment }) {
             </div>
 
             {/* Scrollable Body */}
-            <div className="flex-1 overflow-y-auto px-5 py-4">
+            <div className="flex-1 min-h-0 overflow-y-auto px-5 py-4">
               {leadStep === "form1" && (
                 <div className="space-y-3">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
@@ -559,37 +614,6 @@ export default function TreatmentDetails({ treatment }) {
                           {locale === "es" ? "Solo investigando" : "Just gathering information"}
                         </option>
                       </select>
-                    </div>
-
-                    <div>
-                      <label className="block text-sm text-gray-700 mb-1 flex items-center gap-1">
-                        {locale === "es" ? "¿De dónde nos visitas?" : "Are you local or traveling from the U.S.?"}
-                        <span className="text-[#731a2f]">*</span>
-                      </label>
-                      <select
-                        name="locationOrigin"
-                        value={leadForm.locationOrigin}
-                        onChange={handleLeadChange}
-                        className="w-full border border-gray-300 rounded px-3 py-2 text-gray-700"
-                        required
-                      >
-                        <option value="">{locale === "es" ? "Selecciona" : "Select"}</option>
-                        <option value="Tijuana">Tijuana</option>
-                        <option value="San Diego">San Diego</option>
-                        <option value="Los Angeles">Los Angeles</option>
-                        <option value="Other">{locale === "es" ? "Otro" : "Other"}</option>
-                      </select>
-
-                      {leadForm.locationOrigin === "Other" && (
-                        <input
-                          type="text"
-                          name="locationOriginOther"
-                          value={leadForm.locationOriginOther}
-                          onChange={handleLeadChange}
-                          placeholder={locale === "es" ? "¿De dónde nos visitas?" : "Where are you visiting from?"}
-                          className="mt-2 w-full border border-gray-300 rounded px-3 py-2 text-gray-900 placeholder:text-gray-400"
-                        />
-                      )}
                     </div>
 
                     <div>
@@ -782,7 +806,7 @@ export default function TreatmentDetails({ treatment }) {
                         emailRef.current.reportValidity();
                         return;
                       }
-                      if (!leadForm.visitTiming || !leadForm.locationOrigin) {
+                      if (!leadForm.visitTiming) {
                         alert(
                           locale === "es"
                             ? "Completa los campos requeridos."
@@ -829,11 +853,6 @@ export default function TreatmentDetails({ treatment }) {
                     type="button"
                     disabled={submitting}
                     onClick={async () => {
-                      const visitingFrom =
-                        leadForm.locationOrigin === "Other"
-                          ? leadForm.locationOriginOther || "Other"
-                          : leadForm.locationOrigin;
-
                       setSubmitting(true);
                       try {
                         const payload = {
@@ -847,7 +866,6 @@ export default function TreatmentDetails({ treatment }) {
                               ? leadSelectedOptions.join(" | ")
                               : leadService,
                           whenToVisit: leadForm.visitTiming,
-                          visitingFrom,
                           prefCom: leadForm.preferredChannel,
                           treatmentBefore: leadForm.hadTreatmentBefore,
                           bestDay: leadForm.bestDays,
