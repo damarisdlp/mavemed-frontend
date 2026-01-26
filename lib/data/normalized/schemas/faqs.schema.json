@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "FAQs",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["id", "serviceId", "questionKey", "answerKey"],
+    "additionalProperties": false,
+    "properties": {
+      "id": { "type": "string", "pattern": "^faq_" },
+      "serviceId": { "type": "string", "pattern": "^svc_" },
+      "questionKey": { "type": "string" },
+      "answerKey": { "type": "string" }
+    }
+  }
+}
