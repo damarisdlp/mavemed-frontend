@@ -2,6 +2,8 @@ import { useMemo } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { allTreatments } from "@/lib/data/allTreatments";
+import { getPromoSummary, optionHasPromo } from "@/lib/utils/promo";
+import { formatMoney, formatMoneyRange, getPriceMinValue } from "@/lib/utils/price";
 
 export default function AddOnSection({ addOns = [] }) {
   const { locale: routerLocale } = useRouter();
@@ -13,12 +15,14 @@ export default function AddOnSection({ addOns = [] }) {
       price: "Price:",
       promo: "Exclusive pricing:",
       learn: "Learn More About ",
+      promoAvailable: "EXCLUSIVE PROMO AVAILABLE",
     },
     es: {
       heading: "Opciones de Complemento",
       price: "Precio:",
       promo: "Precio Exclusivo:",
       learn: "Más Información Sobre ",
+      promoAvailable: "PROMO EXCLUSIVA DISPONIBLE",
     },
   };
   const ui = labels[locale] || labels.en;
@@ -27,6 +31,13 @@ export default function AddOnSection({ addOns = [] }) {
     if (field == null) return ""; // handles null / undefined
 
     if (typeof field === "object") {
+      if (field.text && typeof field.text === "object") {
+        return field.text[locale] || field.text.en || "";
+      }
+      if ("minAmount" in field || "maxAmount" in field) {
+        return formatMoneyRange(field.minAmount, field.maxAmount);
+      }
+      if ("amount" in field) return formatMoney(field.amount);
       if (field[locale]) return field[locale];
       if (field.en) return field.en;
       return "";
@@ -40,10 +51,8 @@ export default function AddOnSection({ addOns = [] }) {
   if (!addOns.length || !allTreatments?.length) return null;
 
   const getNumericPrice = (priceField) => {
-    const localized = getLocalized(priceField);
-    if (!localized) return null;
-    const cleaned = `${localized}`.replace(/[^0-9.,]/g, "").replace(/,/g, "");
-    const value = parseFloat(cleaned);
+    if (!priceField || typeof priceField !== "object") return null;
+    const value = getPriceMinValue(priceField);
     return Number.isFinite(value) ? value : null;
   };
 
@@ -107,8 +116,7 @@ export default function AddOnSection({ addOns = [] }) {
                     return { val, price: opt.optionPrice };
                   }
                   return lowest;
-                }, null)?.price ||
-              addon?.pricing?.startingPrice
+                }, null)?.price
           );
 
         const lowestOptionForCurrency =
@@ -116,18 +124,18 @@ export default function AddOnSection({ addOns = [] }) {
             const val = getNumericPrice(opt.optionPrice);
             if (val == null) return lowest;
             if (!lowest || val < lowest.val) {
-              return { val, currency: opt.optionCurrency };
+              return { val, currency: opt.optionPrice?.currency || "" };
             }
             return lowest;
           }, null) || null;
 
         const displayCurrency =
-          matchedOption?.optionCurrency ||
+          matchedOption?.optionPrice?.currency ||
           lowestOptionForCurrency?.currency ||
-          addon?.pricing?.startingPriceCurrency;
+          "";
 
         const promoPrice = getLocalized(matchedOption?.optionPromoPrice);
-        const hasPromo = typeof promoPrice === "string" && promoPrice.trim();
+        const hasPromo = optionHasPromo(matchedOption, locale);
 
         const hasMultipleOptions = (addon?.pricing?.options || []).length > 1;
         const fromLabel = hasMultipleOptions ? (locale === "es" ? "Desde " : "From ") : "";
@@ -137,6 +145,8 @@ export default function AddOnSection({ addOns = [] }) {
           getLocalized(addonRef.displayName) ||
           getLocalized(addon.serviceDisplayName || addon.displayName);
         const localizedDescription = getLocalized(addon.description);
+        const promoSummary = getPromoSummary(addon, locale);
+        const hasPromoBanner = promoSummary?.isPromoActive;
 
         const href =
           addonRef.link ||
@@ -146,6 +156,11 @@ export default function AddOnSection({ addOns = [] }) {
           <div key={idx} className="mb-4">
             {/* Add on name */}
             <p className="text-md font-semibold">{localizedAddOnName}</p>
+            {hasPromoBanner && (
+              <p className="text-xs uppercase tracking-wide text-[#731a2f] mt-0.5">
+                {ui.promoAvailable}
+              </p>
+            )}
 
             {/* Add on description */}
             {localizedDescription && (
@@ -164,7 +179,7 @@ export default function AddOnSection({ addOns = [] }) {
                     |{" "}
                     <span className="font-semibold text-[#731a2f]">{ui.promo}</span>{" "}
                     <span className="text-[#731a2f]">
-                      {promoPrice} {matchedOption.optionPromoPriceCurrency}
+                      {promoPrice} {matchedOption?.optionPromoPrice?.currency}
                     </span>
                   </>
                 )}
