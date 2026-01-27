@@ -188,8 +188,8 @@ export default function FreebiePopup() {
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 px-4">
-      <div className="w-full max-w-lg rounded-2xl bg-white p-6 shadow-xl">
+    <div className="fixed inset-0 z-50 flex items-start justify-center bg-black/50 px-4 pt-[20vh] sm:items-center sm:pt-0">
+      <div className="w-full max-w-[92vw] sm:max-w-lg rounded-2xl bg-white p-4 sm:p-6 shadow-xl">
         <div className="flex items-start justify-between gap-4">
           <div>
             <p className="text-sm uppercase tracking-widest text-[#731a2f]">
