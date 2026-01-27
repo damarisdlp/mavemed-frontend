@@ -19,6 +19,7 @@ import PromoPackageSection from "@/components/PromoPackageSection";
 import Footer from "@/components/Footer";
 import ScrollToTopButton from "@/components/ScrollToTop";
 import SeoLinks from "@/components/SeoLinks";
+import FreebiePopup from "@/components/FreebiePopup";
 
 export default function Home() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -51,6 +52,7 @@ export default function Home() {
 
 </Head>
       <ScrollToTopButton />
+      <FreebiePopup />
       <PromoBanner />
       <Header isMobileMenuOpen={isMobileMenuOpen} setIsMobileMenuOpen={setIsMobileMenuOpen} />
       <HeroSection />
