@@ -1,4 +1,5 @@
 import "@/styles/globals.css";
+import Head from "next/head";
 import { appWithTranslation } from "next-i18next";
 import Script from "next/script";
 import nextI18NextConfig from "../next-i18next.config";
@@ -55,6 +56,9 @@ function App({ Component, pageProps }) {
 
   return (
     <div className={manrope.className}>
+      <Head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+      </Head>
       {gaId ? (
         <>
           <Script
