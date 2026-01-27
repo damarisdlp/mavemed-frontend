@@ -1,5 +1,6 @@
 import "@/styles/globals.css";
 import { appWithTranslation } from "next-i18next";
+import Script from "next/script";
 import nextI18NextConfig from "../next-i18next.config";
 import ScrollToTopButton from "@/components/ScrollToTop";
 import CookieBanner from "@/components/CookieBanner";
@@ -54,6 +55,33 @@ function App({ Component, pageProps }) {
 
   return (
     <div className={manrope.className}>
+      {gaId ? (
+        <>
+          <Script
+            src={`https://www.googletagmanager.com/gtag/js?id=${gaId}`}
+            strategy="afterInteractive"
+          />
+          <Script
+            id="gtag-consent-default"
+            strategy="afterInteractive"
+            dangerouslySetInnerHTML={{
+              __html: `
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('consent', 'default', {
+                  analytics_storage: 'denied',
+                  ad_storage: 'denied',
+                  ad_user_data: 'denied',
+                  ad_personalization: 'denied',
+                  functionality_storage: 'granted',
+                  security_storage: 'granted'
+                });
+                gtag('js', new Date());
+              `,
+            }}
+          />
+        </>
+      ) : null}
       <OrganizationSchema />
       <Component {...pageProps} />
       <ScrollToTopButton />
