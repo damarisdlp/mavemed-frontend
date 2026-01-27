@@ -236,9 +236,9 @@ const CategorySlider = ({ services }) => {
 
   return (
     <div className="bg-white scroll-smooth relative">
-      <div className="w-full max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 sm:pt-8 md:pt-12 pb-4">
+      <div className="w-full max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 pb-4">
         {/* Sticky Search + Category Menu */}
-        <div className="-mx-4 sm:-mx-6 lg:-mx-8 mt-6 sm:mt-8 sticky top-[143px] sm:top-[110px] bg-white z-30 border-b border-gray-200 px-4 sm:px-6 lg:px-8">
+        <div className="-mx-4 sm:-mx-6 lg:-mx-8 -mt-5 sm:mt-0 sticky top-[143px] sm:top-[110px] bg-white z-30 border-b border-gray-200 px-4 sm:px-6 lg:px-8">
           <div className="py-2 sm:py-3">
             <label className="sr-only" htmlFor="treatment-search">
               {getLocalized(translatedStrings.searchPlaceholder)}
@@ -264,7 +264,7 @@ const CategorySlider = ({ services }) => {
                   type="button"
                   onClick={() => setSearchTerm("")}
                   aria-label="Clear search"
-                  className="absolute right-3 top-1/2 -translate-y-1/2 h-7 w-7 rounded-full text-lg font-semibold text-gray-500 hover:text-black flex items-center justify-center"
+                  className="absolute right-3 top-1/2 -translate-y-1/2 h-8 w-8 rounded-full text-2xl font-semibold text-gray-500 hover:text-black flex items-center justify-center"
                 >
                   ×
                 </button>
@@ -292,7 +292,7 @@ const CategorySlider = ({ services }) => {
           <div
             key={i}
             id={getLocalized(category.title).replace(/\s+/g, "-").toLowerCase()}
-            className="mb-16 scroll-mt-[200px] sm:scroll-mt-[210px]"
+            className="mb-16 mt-8 scroll-mt-[200px] sm:scroll-mt-[210px]"
           >
             <h2
               className="text-black font-serif font-medium mb-6 leading-snug text-[clamp(1.6rem,3.8vw,2.6rem)]"
