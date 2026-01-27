@@ -13,6 +13,7 @@ import ContactCTA from "@/components/ContactCTA";
 import PromoPackageSection from "@/components/PromoPackageSection";
 import InstagramFeed from "@/components/InstagramFeed"
 import ReviewsSection from "@/components/ReviewsSection"
+import Breadcrumbs from "@/components/Breadcrumbs";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import nextI18NextConfig from "../../next-i18next.config";
 
@@ -63,11 +64,19 @@ export default function TreatmentPage() {
     treatment.displayName || treatment.serviceDisplayName,
     currentLocale
   );
+  const localizedDescription = getLocalized(treatment.description, currentLocale);
 
   return (
     <>
       <Head>
         <title>{localizedName} | Mave Medical Spa</title>
+        <meta name="description" content={localizedDescription || `${localizedName} at Mave Medical Spa.`} />
+        <meta property="og:title" content={`${localizedName} | Mave Medical Spa`} />
+        <meta property="og:description" content={localizedDescription || `${localizedName} at Mave Medical Spa.`} />
+        <meta property="og:image" content="https://www.mavemedspa.com/site_icon.png" />
+        <meta property="og:url" content={`https://www.mavemedspa.com/treatments/${treatment.urlSlug}`} />
+        <meta property="og:type" content="website" />
+        <link rel="canonical" href={`https://www.mavemedspa.com/treatments/${treatment.urlSlug}`} />
       </Head>
       <section className="bg-white">
         <PromoBanner />
@@ -76,6 +85,15 @@ export default function TreatmentPage() {
         <div className="bg-white">
           <div className="relative w-full h-[90px] md:h-[100px]">
           </div>
+        </div>
+        <div className="w-full max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 pt-4 md:pt-6">
+          <Breadcrumbs
+            items={[
+              { label: "Home", href: "/" },
+              { label: "Treatments", href: "/treatments" },
+              { label: localizedName },
+            ]}
+          />
         </div>
         {/* locale prop is optional but useful if children need to localize too */}
         <TreatmentDetails treatment={treatment} locale={currentLocale} />

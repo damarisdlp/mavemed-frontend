@@ -124,6 +124,9 @@ export default function Header() {
             <NextLink href="/location" className={`${navHover} ${navGlow}`}>
               {t("nav.location")}
             </NextLink>
+            <NextLink href="/faq" className={`${navHover} ${navGlow}`}>
+              {t("nav.faq") || "FAQs"}
+            </NextLink>
           </div>
 
           {/* Logo – truly centered on mobile */}
@@ -322,6 +325,9 @@ export default function Header() {
           </NextLink>
           <NextLink href="/location" className="text-sm text-gray-700 hover:text-black" onClick={() => setIsMobileMenuOpen(false)}>
             {t("nav.location")}
+          </NextLink>
+          <NextLink href="/faq" className="text-sm text-gray-700 hover:text-black" onClick={() => setIsMobileMenuOpen(false)}>
+            {t("nav.faq") || "FAQs"}
           </NextLink>
 
           <button

@@ -10,6 +10,7 @@ import InstagramFeed from "@/components/InstagramFeed";
 import ReviewsSection from "@/components/ReviewsSection";
 import LocationSection from "@/components/LocationSection";
 import { accessibilityContent } from "@/lib/data/pages/accessibility";
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 export default function AccessibilityPage() {
   const { locale = "en" } = useRouter();
@@ -60,6 +61,18 @@ export default function AccessibilityPage() {
           name="description"
           content={accessibilityContent.intro[locale] || accessibilityContent.intro.en}
         />
+        <meta
+          property="og:title"
+          content={locale === "es" ? "Accesibilidad | Mave Medical Spa" : "Accessibility | Mave Medical Spa"}
+        />
+        <meta
+          property="og:description"
+          content={accessibilityContent.intro[locale] || accessibilityContent.intro.en}
+        />
+        <meta property="og:image" content="https://www.mavemedspa.com/site_icon.png" />
+        <meta property="og:url" content="https://www.mavemedspa.com/accessibility" />
+        <meta property="og:type" content="website" />
+        <link rel="canonical" href="https://www.mavemedspa.com/accessibility" />
       </Head>
 
       <PromoBanner />
@@ -70,6 +83,17 @@ export default function AccessibilityPage() {
                 <div className="relative w-full h-[50px] md:h-[60px]">
                         </div>
                 </div>
+
+      <div className="bg-white">
+        <div className="w-full max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 pt-4 md:pt-6">
+          <Breadcrumbs
+            items={[
+              { label: "Home", href: "/" },
+              { label: locale === "es" ? "Accesibilidad" : "Accessibility", href: "/accessibility" },
+            ]}
+          />
+        </div>
+      </div>
 
       <main className="bg-white">
         <section className="w-full max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 pt-28 md:pt-15 pb-15">

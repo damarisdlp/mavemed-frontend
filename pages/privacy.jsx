@@ -10,6 +10,7 @@ import InstagramFeed from "@/components/InstagramFeed";
 import ReviewsSection from "@/components/ReviewsSection";
 import LocationSection from "@/components/LocationSection";
 import { privacyContent } from "@/lib/data/pages/privacy";
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 export default function PrivacyPage() {
   const { locale = "en" } = useRouter();
@@ -30,6 +31,15 @@ export default function PrivacyPage() {
           {locale === "es" ? "Política de Privacidad | Mave Medical Spa" : "Privacy Policy | Mave Medical Spa"}
         </title>
         <meta name="description" content={strings.desc} />
+        <meta
+          property="og:title"
+          content={locale === "es" ? "Política de Privacidad | Mave Medical Spa" : "Privacy Policy | Mave Medical Spa"}
+        />
+        <meta property="og:description" content={strings.desc} />
+        <meta property="og:image" content="https://www.mavemedspa.com/site_icon.png" />
+        <meta property="og:url" content="https://www.mavemedspa.com/privacy" />
+        <meta property="og:type" content="website" />
+        <link rel="canonical" href="https://www.mavemedspa.com/privacy" />
       </Head>
 
       <PromoBanner />
@@ -40,6 +50,17 @@ export default function PrivacyPage() {
                 <div className="relative w-full h-[50px] md:h-[60px]">
                         </div>
                 </div>
+
+      <div className="bg-white">
+        <div className="w-full max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 pt-4 md:pt-6">
+          <Breadcrumbs
+            items={[
+              { label: "Home", href: "/" },
+              { label: locale === "es" ? "Privacidad" : "Privacy", href: "/privacy" },
+            ]}
+          />
+        </div>
+      </div>
 
       <main className="bg-white">
         <section className="w-full max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 pt-28 md:pt-15 pb-15">

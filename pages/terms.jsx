@@ -10,6 +10,7 @@ import InstagramFeed from "@/components/InstagramFeed";
 import ReviewsSection from "@/components/ReviewsSection";
 import LocationSection from "@/components/LocationSection";
 import { termsContent } from "@/lib/data/pages/terms";
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 export default function TermsPage() {
   const { locale = "en" } = useRouter();
@@ -30,6 +31,15 @@ export default function TermsPage() {
           {locale === "es" ? "Términos y Condiciones | Mave Medical Spa" : "Terms & Conditions | Mave Medical Spa"}
         </title>
         <meta name="description" content={strings.desc} />
+        <meta
+          property="og:title"
+          content={locale === "es" ? "Términos y Condiciones | Mave Medical Spa" : "Terms & Conditions | Mave Medical Spa"}
+        />
+        <meta property="og:description" content={strings.desc} />
+        <meta property="og:image" content="https://www.mavemedspa.com/site_icon.png" />
+        <meta property="og:url" content="https://www.mavemedspa.com/terms" />
+        <meta property="og:type" content="website" />
+        <link rel="canonical" href="https://www.mavemedspa.com/terms" />
       </Head>
 
       <PromoBanner />
@@ -40,6 +50,17 @@ export default function TermsPage() {
                 <div className="relative w-full h-[50px] md:h-[60px]">
                         </div>
                 </div>
+
+      <div className="bg-white">
+        <div className="w-full max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 pt-4 md:pt-6">
+          <Breadcrumbs
+            items={[
+              { label: "Home", href: "/" },
+              { label: locale === "es" ? "Términos" : "Terms", href: "/terms" },
+            ]}
+          />
+        </div>
+      </div>
 
       <main className="bg-white">
         <section className="w-full max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 pt-28 md:pt-15 pb-15">

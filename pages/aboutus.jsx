@@ -6,6 +6,7 @@ import InstagramFeed from "@/components/InstagramFeed";
 import ReviewsSection from "@/components/ReviewsSection";
 import Image from "next/image";
 import Head from "next/head";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import nextI18NextConfig from "../next-i18next.config";
 import { useTranslation } from "next-i18next";
@@ -103,6 +104,17 @@ export default function AboutUs() {
         {/* Hero Banner */}
         <div className="bg-white">
           <div className="relative w-full h-[50px] md:h-[60px]">
+          </div>
+        </div>
+
+        <div className="bg-white">
+          <div className="w-full max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 pt-4 md:pt-6">
+            <Breadcrumbs
+              items={[
+                { label: "Home", href: "/" },
+                { label: "About Us", href: "/aboutus" },
+              ]}
+            />
           </div>
         </div>
 

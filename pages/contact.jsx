@@ -7,6 +7,7 @@ import ReviewsSection from "@/components/ReviewsSection"
 import Head from "next/head";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import nextI18NextConfig from "../next-i18next.config";
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 export default function Contact() {
   return (
@@ -94,6 +95,16 @@ export default function Contact() {
     <div>
       <PromoBanner/>
         <Header/>
+        <div className="bg-white">
+          <div className="w-full max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 pt-4 md:pt-6">
+            <Breadcrumbs
+              items={[
+                { label: "Home", href: "/" },
+                { label: "Contact", href: "/contact" },
+              ]}
+            />
+          </div>
+        </div>
            {/* Hero Banner for Team Member */}
               <div className="bg-white">
                 <div className="relative w-full h-[50px] md:h-[60px]">

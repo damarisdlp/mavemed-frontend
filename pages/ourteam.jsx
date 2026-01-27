@@ -8,6 +8,7 @@ import InstagramFeed from "@/components/InstagramFeed"
 import ReviewsSection from "@/components/ReviewsSection"
 import Footer from "@/components/Footer";
 import Team from "@/components/Team";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import nextI18NextConfig from "../next-i18next.config";
 import { useTranslation } from "next-i18next";
@@ -31,9 +32,9 @@ export default function TeamPage() {
         <meta property="og:title" content="Meet Our Expert Team | Mave Medical Spa in Tijuana" />
         <meta property="og:description" content="Discover the talented team of doctors and specialists behind Mave Medical Spa — Tijuana’s top destination for natural, ethical cosmetic results." />
         <meta property="og:image" content="https://www.mavemedspa.com/site_icon.png" />
-        <meta property="og:url" content="https://www.mavemedspa.com/aboutus" />
+        <meta property="og:url" content="https://www.mavemedspa.com/ourteam" />
         <meta property="og:type" content="website" />
-        <link rel="canonical" href="https://www.mavemedspa.com/aboutus" />
+        <link rel="canonical" href="https://www.mavemedspa.com/ourteam" />
 
         <script
     type="application/ld+json"
@@ -42,7 +43,7 @@ export default function TeamPage() {
         "@context": "https://schema.org",
         "@type": "MedicalOrganization",
         "name": "Mave Medical Spa",
-        "url": "https://www.mavemedspa.com/aboutus",
+        "url": "https://www.mavemedspa.com/ourteam",
         "logo": "https://www.mavemedspa.com/site_icon.png",
         "image": "https://www.mavemedspa.com/site_icon.png",
         "description":
@@ -112,7 +113,6 @@ export default function TeamPage() {
           "longitude": -117.038
         },
         "priceRange": "$$",
-        "description": "Meet the team behind Mave Medical Spa in Tijuana — expert doctors and licensed providers specializing in Botox, Sculptra, laser treatments, and microneedling. Serving patients from San Diego, Los Angeles, and across Southern California.",
         "openingHoursSpecification": [
           {
             "@type": "OpeningHoursSpecification",
@@ -161,6 +161,13 @@ export default function TeamPage() {
         <div className="relative w-full h-[250px] md:h-[300px]">
           <div className="absolute inset-0 bg-white flex items-center justify-start pt-20 px-10 md:px-20">
             <div className="text-white max-w-2xl">
+              <Breadcrumbs
+                className="mb-4"
+                items={[
+                  { label: "Home", href: "/" },
+                  { label: "Our Team", href: "/ourteam" },
+                ]}
+              />
               <h1 className="text-4xl md:text-5xl text-black font-serif font-medium mb-4">
                 {t("team.bannerTitle")}
               </h1>

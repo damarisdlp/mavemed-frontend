@@ -13,6 +13,7 @@ import Footer from "@/components/Footer";
 import InstagramFeed from "@/components/InstagramFeed";
 import ReviewsSection from "@/components/ReviewsSection";
 import LocationSection from "@/components/LocationSection";
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 const getLocalized = (field, locale) => {
   if (field && typeof field === "object") {
@@ -71,6 +72,22 @@ export default function PromosPage() {
               : "Current promotions and special offers at Mave Medical Spa."
           }
         />
+        <meta
+          property="og:title"
+          content={locale === "es" ? "Promociones | Mave Medical Spa" : "Promotions | Mave Medical Spa"}
+        />
+        <meta
+          property="og:description"
+          content={
+            locale === "es"
+              ? "Promociones y ofertas especiales vigentes en Mave Medical Spa."
+              : "Current promotions and special offers at Mave Medical Spa."
+          }
+        />
+        <meta property="og:image" content="https://www.mavemedspa.com/site_icon.png" />
+        <meta property="og:url" content="https://www.mavemedspa.com/promos" />
+        <meta property="og:type" content="website" />
+        <link rel="canonical" href="https://www.mavemedspa.com/promos" />
       </Head>
 
       <PromoBanner />
@@ -81,6 +98,17 @@ export default function PromosPage() {
                 <div className="relative w-full h-[50px] md:h-[60px]">
                         </div>
                 </div>
+
+      <div className="bg-white">
+        <div className="w-full max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 pt-4 md:pt-6">
+          <Breadcrumbs
+            items={[
+              { label: "Home", href: "/" },
+              { label: "Promos", href: "/promos" },
+            ]}
+          />
+        </div>
+      </div>
 
       <main className="bg-white">
         <section className="w-full max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 pt-25 md:pt-24">

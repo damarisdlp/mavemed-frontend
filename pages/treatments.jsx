@@ -8,6 +8,7 @@ import TreatmentCategories from "@/components/TreatmentCategories";
 import InstagramFeed from "@/components/InstagramFeed"
 import ReviewsSection from "@/components/ReviewsSection"
 import Footer from "@/components/Footer";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import nextI18NextConfig from "../next-i18next.config";
 import { useTranslation } from "next-i18next";
@@ -175,6 +176,14 @@ dangerouslySetInnerHTML={{
 
       {/* Hero Banner */}
       <div className="bg-white pt-[4%] md:pt-0 md:mt-15">
+        <div className="w-full max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 pt-4 md:pt-6">
+          <Breadcrumbs
+            items={[
+              { label: "Home", href: "/" },
+              { label: "Our Treatments", href: "/treatments" },
+            ]}
+          />
+        </div>
         <div className="relative w-full h-[320px] md:h-[300px]">
           <div className="absolute inset-0 bg-white flex items-center justify-start mt-20 px-10 md:px-20">
             <div className="text-white max-w-2xl">
