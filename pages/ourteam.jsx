@@ -157,7 +157,7 @@ export default function TeamPage() {
       <Header />
 
       {/* Hero Banner */}
-      <div className="bg-white">
+      <div className="bg-white mt-15">
         <div className="relative w-full h-[250px] md:h-[300px]">
           <div className="absolute inset-0 bg-white flex items-center justify-start pt-20 px-10 md:px-20">
             <div className="text-white max-w-2xl">
