@@ -63,11 +63,19 @@ export default function StaffFavorites({ favorites = [], locale = "en", displayN
 
   return (
     <div className="mt-12">
-      <h2 className="text-2xl text-black font-serif font-medium mb-4 leading-snug">
-        {locale === "es" ? "Tratamientos Favoritos de" : "Favorite Treatments of"}
-        <br />
-        {displayName}
-      </h2>
+      <div className="flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between mb-4">
+        <h2 className="text-2xl text-black font-serif font-medium leading-snug">
+          {locale === "es" ? "Tratamientos Favoritos de" : "Favorite Treatments of"}
+          <br />
+          {displayName}
+        </h2>
+        <Link
+          href="/treatments"
+          className="text-sm underline text-black hover:text-[#731a2f] transition"
+        >
+          {locale === "es" ? "Ver todos los tratamientos" : "View all treatments"}
+        </Link>
+      </div>
       <div className="relative block mb-8">
         <div
           ref={sliderRef}
