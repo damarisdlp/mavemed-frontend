@@ -8,6 +8,7 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import nextI18NextConfig from "../next-i18next.config";
 
 import { generalFaqs } from "@/lib/data/faqs/faqs";
+import SeoLinks from "@/components/SeoLinks";
 
 export default function GeneralFaqPage() {
   return (
@@ -23,7 +24,7 @@ export default function GeneralFaqPage() {
         <meta property="og:image" content="https://www.mavemedspa.com/site_icon.png" />
         <meta property="og:url" content="https://www.mavemedspa.com/faq" />
         <meta property="og:type" content="website" />
-        <link rel="canonical" href="https://www.mavemedspa.com/faq" />
+        <SeoLinks />
       </Head>
 
       <PromoBanner />

@@ -8,6 +8,7 @@ import Head from "next/head";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import nextI18NextConfig from "../next-i18next.config";
 import Breadcrumbs from "@/components/Breadcrumbs";
+import SeoLinks from "@/components/SeoLinks";
 
 export default function Location() {
   return (
@@ -30,7 +31,7 @@ export default function Location() {
         <meta property="og:image" content="https://www.mavemedspa.com/site_icon.png" />
         <meta property="og:url" content="https://www.mavemedspa.com/location" />
         <meta property="og:type" content="place" />
-        <link rel="canonical" href="https://www.mavemedspa.com/location" />
+        <SeoLinks />
 
         <script
           type="application/ld+json"

@@ -11,6 +11,7 @@ import ReviewsSection from "@/components/ReviewsSection";
 import LocationSection from "@/components/LocationSection";
 import { accessibilityContent } from "@/lib/data/pages/accessibility";
 import Breadcrumbs from "@/components/Breadcrumbs";
+import SeoLinks from "@/components/SeoLinks";
 
 export default function AccessibilityPage() {
   const { locale = "en" } = useRouter();
@@ -72,7 +73,7 @@ export default function AccessibilityPage() {
         <meta property="og:image" content="https://www.mavemedspa.com/site_icon.png" />
         <meta property="og:url" content="https://www.mavemedspa.com/accessibility" />
         <meta property="og:type" content="website" />
-        <link rel="canonical" href="https://www.mavemedspa.com/accessibility" />
+        <SeoLinks />
       </Head>
 
       <PromoBanner />

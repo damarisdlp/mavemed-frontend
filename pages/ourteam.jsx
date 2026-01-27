@@ -9,6 +9,7 @@ import ReviewsSection from "@/components/ReviewsSection"
 import Footer from "@/components/Footer";
 import Team from "@/components/Team";
 import Breadcrumbs from "@/components/Breadcrumbs";
+import SeoLinks from "@/components/SeoLinks";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import nextI18NextConfig from "../next-i18next.config";
 import { useTranslation } from "next-i18next";
@@ -34,7 +35,7 @@ export default function TeamPage() {
         <meta property="og:image" content="https://www.mavemedspa.com/site_icon.png" />
         <meta property="og:url" content="https://www.mavemedspa.com/ourteam" />
         <meta property="og:type" content="website" />
-        <link rel="canonical" href="https://www.mavemedspa.com/ourteam" />
+        <SeoLinks />
 
         <script
           type="application/ld+json"

@@ -11,6 +11,7 @@ import ContactCTA from "@/components/ContactCTA";
 import InstagramFeed from "@/components/InstagramFeed";
 import ReviewsSection from "@/components/ReviewsSection";
 import Breadcrumbs from "@/components/Breadcrumbs";
+import SeoLinks from "@/components/SeoLinks";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import nextI18NextConfig from "../../next-i18next.config";
 
@@ -78,10 +79,7 @@ export default function TeamMemberPage() {
           content={`https://www.mavemedspa.com/ourteam/${member.name}`}
         />
         <meta property="og:type" content="profile" />
-        <link
-          rel="canonical"
-          href={`https://www.mavemedspa.com/ourteam/${member.name}`}
-        />
+        <SeoLinks />
 
         <script
           type="application/ld+json"

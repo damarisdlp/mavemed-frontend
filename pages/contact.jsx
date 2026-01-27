@@ -8,6 +8,7 @@ import Head from "next/head";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import nextI18NextConfig from "../next-i18next.config";
 import Breadcrumbs from "@/components/Breadcrumbs";
+import SeoLinks from "@/components/SeoLinks";
 
 export default function Contact() {
   return (
@@ -31,7 +32,7 @@ export default function Contact() {
         <meta property="og:url" content="https://www.mavemedspa.com/contact" />
         <meta property="og:type" content="website" />
         <meta name="email" content="info@mavemedspa.com" />
-        <link rel="canonical" href="https://www.mavemedspa.com/contact" />
+        <SeoLinks />
 
         <script
           type="application/ld+json"

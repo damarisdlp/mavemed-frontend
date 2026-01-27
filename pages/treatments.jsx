@@ -9,6 +9,7 @@ import InstagramFeed from "@/components/InstagramFeed"
 import ReviewsSection from "@/components/ReviewsSection"
 import Footer from "@/components/Footer";
 import Breadcrumbs from "@/components/Breadcrumbs";
+import SeoLinks from "@/components/SeoLinks";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import nextI18NextConfig from "../next-i18next.config";
 import { useTranslation } from "next-i18next";
@@ -59,7 +60,7 @@ export default function TreatmentsPage() {
         <meta property="og:image" content="https://www.mavemedspa.com/site_icon.png" />
         <meta property="og:url" content="https://www.mavemedspa.com/treatments" />
         <meta property="og:type" content="website" />
-        <link rel="canonical" href="https://www.mavemedspa.com/treatments" />
+        <SeoLinks />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
