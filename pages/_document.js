@@ -13,27 +13,6 @@ export default function Document() {
         <link rel="icon" type="image/png" sizes="32x32" href="/site_icon.png" />
         <link rel="icon" type="image/png" sizes="48x48" href="/site_icon.png" />
         <link rel="apple-touch-icon" sizes="180x180" href="/site_icon.png" />
-        <script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=G-E77724XQYV"
-        />
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('consent', 'default', {
-                analytics_storage: 'denied',
-                ad_storage: 'denied',
-                ad_user_data: 'denied',
-                ad_personalization: 'denied',
-                functionality_storage: 'granted',
-                security_storage: 'granted'
-              });
-              gtag('js', new Date());
-            `,
-          }}
-        />
       </Head>
       <body className="antialiased">
         <Main />
