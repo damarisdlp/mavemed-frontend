@@ -92,7 +92,7 @@ export default function ContactUs() {
             src="/equipo.jpg"
             alt="Group picture of the team at Mave Medical Spa in Tijuana"
             fill
-            className="object-cover object-[30%_40%]"
+            className="object-cover object-center md:object-[30%_40%]"
             priority
           />
         </div>
