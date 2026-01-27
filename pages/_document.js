@@ -4,7 +4,7 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
-        <link rel="icon" href="/logo-mave.png" type="image/png" />
+        <link rel="icon" href="/site_icon.png" type="image/png" />
         <link rel="apple-touch-icon" href="/site_icon.png" />
         <script
           async
