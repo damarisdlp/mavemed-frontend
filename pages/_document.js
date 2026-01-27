@@ -7,9 +7,9 @@ export default function Document() {
         <meta name="robots" content="index, follow" />
         <meta property="og:site_name" content="Mave Medical Spa" />
         <meta name="twitter:card" content="summary_large_image" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.ico?v=2" />
         <link rel="icon" type="image/png" sizes="16x16" href="/site_icon.png" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/site_icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/site_icon.png?v=2" />
         <link rel="icon" type="image/png" sizes="48x48" href="/site_icon.png" />
         <link rel="apple-touch-icon" sizes="180x180" href="/site_icon.png" />
       </Head>
