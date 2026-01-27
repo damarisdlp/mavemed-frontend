@@ -21,7 +21,7 @@ export default function StaffDetails({ member }) {
 
   return (
     <div className="w-full bg-white">
-      <main className="flex-grow max-w-7xl mx-auto px-6 py-12">        
+      <main className="flex-grow max-w-7xl mx-auto px-6 py-12">
         {/* Breadcrumb */}
         <div className="mb-4">
           <p className="text-sm text-gray-500">
