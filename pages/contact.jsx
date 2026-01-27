@@ -38,56 +38,23 @@ export default function Contact() {
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
-              "@type": "MedicalBusiness",
-              "name": "Mave Medical Spa",
-              "url": "https://www.mavemedspa.com/contact",
-              "image": "https://www.mavemedspa.com/site_icon.png",
-              "email": "info@mavemedspa.com",
-              "telephone": "+52-664-207-7675",
-              "address": {
-                "@type": "PostalAddress",
-                "streetAddress":
-                  "Blvd Gral Rodolfo Sánchez Taboada 10512-Interior 8a, Segundo Piso",
-                "addressLocality": "Tijuana",
-                "addressRegion": "Baja California",
-                "postalCode": "22010",
-                "addressCountry": "MX"
+              "@type": "ContactPage",
+              "@id": "https://www.mavemedspa.com/contact#webpage",
+              name: "Contact Us | Mave Medical Spa in Tijuana",
+              url: "https://www.mavemedspa.com/contact",
+              description:
+                "Call, WhatsApp, or email Mave Medical Spa in Tijuana to book your next appointment.",
+              about: {
+                "@id": "https://www.mavemedspa.com/#organization",
               },
-              "geo": {
-                "@type": "GeoCoordinates",
-                "latitude": 32.521,
-                "longitude": -117.038
-              },
-              "openingHoursSpecification": [
-                {
-                  "@type": "OpeningHoursSpecification",
-                  "dayOfWeek": [
-                    "Monday",
-                    "Tuesday",
-                    "Wednesday",
-                    "Thursday",
-                    "Friday"
-                  ],
-                  "opens": "09:00",
-                  "closes": "18:00"
-                },
-                {
-                  "@type": "OpeningHoursSpecification",
-                  "dayOfWeek": "Saturday",
-                  "opens": "09:00",
-                  "closes": "16:00"
-                }
-              ],
-              "contactPoint": {
+              mainEntity: {
                 "@type": "ContactPoint",
-                "telephone": "+52-664-207-7675",
-                "email": "info@mavemedspa.com",
-                "contactType": "Customer Service",
-                "areaServed": "MX",
-                "availableLanguage": ["English", "Spanish"]
+                telephone: "+52-664-207-7675",
+                email: "info@mavemedspa.com",
+                contactType: "Customer Service",
+                areaServed: "MX",
+                availableLanguage: ["English", "Spanish"],
               },
-              "description":
-                "Reach out to Mave Medical Spa — Tijuana’s trusted medical aesthetics team. Cross-border access, expert staff, and easy appointment scheduling via WhatsApp or email."
             })
           }}
         />

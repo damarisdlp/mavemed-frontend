@@ -37,117 +37,73 @@ export default function TeamPage() {
         <link rel="canonical" href="https://www.mavemedspa.com/ourteam" />
 
         <script
-    type="application/ld+json"
-    dangerouslySetInnerHTML={{
-      __html: JSON.stringify({
-        "@context": "https://schema.org",
-        "@type": "MedicalOrganization",
-        "name": "Mave Medical Spa",
-        "url": "https://www.mavemedspa.com/ourteam",
-        "logo": "https://www.mavemedspa.com/site_icon.png",
-        "image": "https://www.mavemedspa.com/site_icon.png",
-        "description":
-          "Meet the expert team behind Mave Medical Spa — a physician-led medical spa in Tijuana, Mexico, specializing in Botox, biostimulators, microneedling, lasers, and regenerative aesthetics.",
-        "telephone": "+52-664-207-7675",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "Blvd Gral Rodolfo Sánchez Taboada 10512-Interior 8a, Segundo Piso",
-          "addressLocality": "Tijuana",
-          "addressRegion": "Baja California",
-          "postalCode": "22010",
-          "addressCountry": "MX"
-        },
-        "employee": [
-          {
-            "@type": "Person",
-            "name": "Veronica",
-            "jobTitle": "Founder",
-            "url": "https://www.mavemedspa.com/ourteam/veronica"
-          },
-          {
-            "@type": "Person",
-            "name": "Damaris",
-            "jobTitle": "Chief Executive Director",
-            "url": "https://www.mavemedspa.com/ourteam/damaris"
-          },
-          {
-            "@type": "Person",
-            "name": "Dra. Nataly",
-            "jobTitle": "MD",
-            "url": "https://www.mavemedspa.com/ourteam/drnataly"
-          },
-          {
-            "@type": "Person",
-            "name": "Dra. Jocelyn",
-            "jobTitle": "MD",
-            "url": "https://www.mavemedspa.com/ourteam/drjocelyn"
-          },
-          {
-            "@type": "Person",
-            "name": "Vicky",
-            "jobTitle": "Cosmetologist",
-            "url": "https://www.mavemedspa.com/ourteam/vicky"
-          },
-          {
-            "@type": "Person",
-            "name": "Manuel",
-            "jobTitle": "Cosmetologist & Masseur",
-            "url": "https://www.mavemedspa.com/ourteam/manuel"
-          },
-          {
-            "@type": "Person",
-            "name": "Mayra",
-            "jobTitle": "Cosmetologist",
-            "url": "https://www.mavemedspa.com/ourteam/mayra"
-          },
-          {
-            "@type": "Person",
-            "name": "Zury",
-            "jobTitle": "Receptionist",
-            "url": "https://www.mavemedspa.com/ourteam/zury"
-          },
-        ],
-        "geo": {
-          "@type": "GeoCoordinates",
-          "latitude": 32.521,
-          "longitude": -117.038
-        },
-        "priceRange": "$$",
-        "openingHoursSpecification": [
-          {
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-            "opens": "09:00",
-            "closes": "18:00"
-          },
-          {
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": "Saturday",
-            "opens": "09:00",
-            "closes": "16:00"
-          }
-              ],
-              "areaServed": [
-                { "@type": "Place", "name": "Tijuana, Mexico" },
-                { "@type": "Place", "name": "San Diego, California" },
-                { "@type": "Place", "name": "Chula Vista, California" },
-                { "@type": "Place", "name": "Los Angeles, California" },
-                { "@type": "Place", "name": "East Los Angeles, California" },
-                { "@type": "Place", "name": "Santa Ana, California" },
-                { "@type": "Place", "name": "Anaheim, California" },
-                { "@type": "Place", "name": "Long Beach, California" },
-                { "@type": "Place", "name": "Riverside, California" },
-                { "@type": "Place", "name": "Ontario, California" },
-                { "@type": "Place", "name": "El Centro, California" },
-                { "@type": "Place", "name": "Calexico, California" },
-                { "@type": "Place", "name": "Brawley, California" },
-                { "@type": "Place", "name": "Oxnard, California" },
-                { "@type": "Place", "name": "Bakersfield, California" },
-                { "@type": "Place", "name": "Fontana, California" },
-                { "@type": "Place", "name": "Pomona, California" },
-                { "@type": "Place", "name": "San Bernardino, California" }
-              ],
-            })
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "CollectionPage",
+              "@id": "https://www.mavemedspa.com/ourteam#webpage",
+              name: "Meet Our Expert Team | Mave Medical Spa in Tijuana",
+              url: "https://www.mavemedspa.com/ourteam",
+              description:
+                "Meet the expert team behind Mave Medical Spa — a physician-led medical spa in Tijuana, Mexico.",
+              about: {
+                "@id": "https://www.mavemedspa.com/#organization",
+              },
+              mainEntity: {
+                "@type": "ItemList",
+                itemListElement: [
+                  {
+                    "@type": "Person",
+                    name: "Veronica",
+                    jobTitle: "Founder",
+                    url: "https://www.mavemedspa.com/ourteam/veronica",
+                  },
+                  {
+                    "@type": "Person",
+                    name: "Damaris",
+                    jobTitle: "Chief Executive Director",
+                    url: "https://www.mavemedspa.com/ourteam/damaris",
+                  },
+                  {
+                    "@type": "Person",
+                    name: "Dra. Nataly",
+                    jobTitle: "MD",
+                    url: "https://www.mavemedspa.com/ourteam/drnataly",
+                  },
+                  {
+                    "@type": "Person",
+                    name: "Dra. Jocelyn",
+                    jobTitle: "MD",
+                    url: "https://www.mavemedspa.com/ourteam/drjocelyn",
+                  },
+                  {
+                    "@type": "Person",
+                    name: "Vicky",
+                    jobTitle: "Cosmetologist",
+                    url: "https://www.mavemedspa.com/ourteam/vicky",
+                  },
+                  {
+                    "@type": "Person",
+                    name: "Manuel",
+                    jobTitle: "Cosmetologist & Masseur",
+                    url: "https://www.mavemedspa.com/ourteam/manuel",
+                  },
+                  {
+                    "@type": "Person",
+                    name: "Mayra",
+                    jobTitle: "Cosmetologist",
+                    url: "https://www.mavemedspa.com/ourteam/mayra",
+                  },
+                  {
+                    "@type": "Person",
+                    name: "Zury",
+                    jobTitle: "Receptionist",
+                    url: "https://www.mavemedspa.com/ourteam/zury",
+                  },
+                ],
+              },
+            }),
           }}
         />
       </Head>

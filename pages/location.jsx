@@ -37,68 +37,33 @@ export default function Location() {
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
-              "@type": "MedicalBusiness",
-              "name": "Mave Medical Spa",
-              "image": "https://www.mavemedspa.com/site_icon.png",
-              "url": "https://www.mavemedspa.com/location",
-              "telephone": "+52-664-207-7675",
-              "address": {
-                "@type": "PostalAddress",
-                "streetAddress":
-                  "Blvd Gral Rodolfo Sánchez Taboada 10512-Interior 8a, Segundo Piso",
-                "addressLocality": "Tijuana",
-                "addressRegion": "Baja California",
-                "postalCode": "22010",
-                "addressCountry": "MX"
+              "@type": "WebPage",
+              "@id": "https://www.mavemedspa.com/location#webpage",
+              name: "Location | Visit Mave Medical Spa in Tijuana",
+              url: "https://www.mavemedspa.com/location",
+              description:
+                "Plan your visit to Mave Medical Spa — conveniently located in Tijuana’s Zona Río, just minutes from the San Diego border.",
+              about: {
+                "@id": "https://www.mavemedspa.com/#organization",
               },
-              "geo": {
-                "@type": "GeoCoordinates",
-                "latitude": 32.521,
-                "longitude": -117.038
-              },
-              "openingHoursSpecification": [
-                {
-                  "@type": "OpeningHoursSpecification",
-                  "dayOfWeek": [
-                    "Monday",
-                    "Tuesday",
-                    "Wednesday",
-                    "Thursday",
-                    "Friday"
-                  ],
-                  "opens": "09:00",
-                  "closes": "18:00"
+              mainEntity: {
+                "@type": "Place",
+                name: "Mave Medical Spa",
+                address: {
+                  "@type": "PostalAddress",
+                  streetAddress:
+                    "Blvd Gral Rodolfo Sánchez Taboada 10512-Interior 8a, Segundo Piso",
+                  addressLocality: "Tijuana",
+                  addressRegion: "Baja California",
+                  postalCode: "22010",
+                  addressCountry: "MX",
                 },
-                {
-                  "@type": "OpeningHoursSpecification",
-                  "dayOfWeek": "Saturday",
-                  "opens": "09:00",
-                  "closes": "16:00"
-                }
-              ],
-              "priceRange": "$$",
-              "description":
-                "Visit Mave Medical Spa in Tijuana’s Zona Río — just minutes from the San Diego–Tijuana border. Trusted for advanced facial aesthetics and medical skincare.",
-              "areaServed": [
-                { "@type": "Place", "name": "Tijuana, Mexico" },
-                { "@type": "Place", "name": "San Diego, California" },
-                { "@type": "Place", "name": "Chula Vista, California" },
-                { "@type": "Place", "name": "Los Angeles, California" },
-                { "@type": "Place", "name": "East Los Angeles, California" },
-                { "@type": "Place", "name": "Santa Ana, California" },
-                { "@type": "Place", "name": "Anaheim, California" },
-                { "@type": "Place", "name": "Long Beach, California" },
-                { "@type": "Place", "name": "Riverside, California" },
-                { "@type": "Place", "name": "Ontario, California" },
-                { "@type": "Place", "name": "El Centro, California" },
-                { "@type": "Place", "name": "Calexico, California" },
-                { "@type": "Place", "name": "Brawley, California" },
-                { "@type": "Place", "name": "Oxnard, California" },
-                { "@type": "Place", "name": "Bakersfield, California" },
-                { "@type": "Place", "name": "Fontana, California" },
-                { "@type": "Place", "name": "Pomona, California" },
-                { "@type": "Place", "name": "San Bernardino, California" }
-              ],
+                geo: {
+                  "@type": "GeoCoordinates",
+                  latitude: 32.521,
+                  longitude: -117.038,
+                },
+              },
             })
           }}
         />

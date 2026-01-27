@@ -93,9 +93,7 @@ export default function TeamMemberPage() {
               jobTitle: title,
               image: `https://www.mavemedspa.com${member.image}`,
               worksFor: {
-                "@type": "MedicalBusiness",
-                name: "Mave Medical Spa",
-                url: "https://www.mavemedspa.com",
+                "@id": "https://www.mavemedspa.com/#organization",
               },
               url: `https://www.mavemedspa.com/ourteam/${member.name}`,
               description: (bio || "").slice(0, 160),

@@ -3,6 +3,7 @@ import { appWithTranslation } from "next-i18next";
 import nextI18NextConfig from "../next-i18next.config";
 import ScrollToTopButton from "@/components/ScrollToTop";
 import CookieBanner from "@/components/CookieBanner";
+import OrganizationSchema from "@/components/OrganizationSchema";
 import { Manrope } from "next/font/google";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
@@ -53,6 +54,7 @@ function App({ Component, pageProps }) {
 
   return (
     <div className={manrope.className}>
+      <OrganizationSchema />
       <Component {...pageProps} />
       <ScrollToTopButton />
       <CookieBanner gaId={gaId} onConsentChange={setConsent} />

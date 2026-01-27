@@ -62,110 +62,70 @@ export default function TreatmentsPage() {
         <link rel="canonical" href="https://www.mavemedspa.com/treatments" />
         <script
           type="application/ld+json"
-dangerouslySetInnerHTML={{
-      __html: JSON.stringify({
-        "@context": "https://schema.org",
-        "@type": "MedicalBusiness",
-        "name": "Mave Medical Spa",
-        "image": "https://www.mavemedspa.com/site_icon.png",
-        "url": "https://www.mavemedspa.com",
-        "telephone": "+52-664-207-7675",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "Blvd Gral Rodolfo Sánchez Taboada 10512-Interior 8a, Segundo Piso",
-          "addressLocality": "Tijuana",
-          "addressRegion": "Baja California",
-          "postalCode": "22010",
-          "addressCountry": "MX"
-        },
-        "geo": {
-          "@type": "GeoCoordinates",
-          "latitude": 32.521,
-          "longitude": -117.038
-        },
-        "priceRange": "$$",
-        "description": "Mave Medical Spa in Tijuana offers advanced non-surgical aesthetic treatments including Botox, fillers, CO2 lasers, microneedling, and thread lifts. Just 7 minutes from San Diego.",
-        "openingHoursSpecification": [
-          {
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-            "opens": "09:00",
-            "closes": "18:00"
-          },
-          {
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": "Saturday",
-            "opens": "09:00",
-            "closes": "16:00"
-          }
-              ],
-              "areaServed": [
-                { "@type": "Place", "name": "Tijuana, Mexico" },
-                { "@type": "Place", "name": "San Diego, California" },
-                { "@type": "Place", "name": "Chula Vista, California" },
-                { "@type": "Place", "name": "Los Angeles, California" },
-                { "@type": "Place", "name": "East Los Angeles, California" },
-                { "@type": "Place", "name": "Santa Ana, California" },
-                { "@type": "Place", "name": "Anaheim, California" },
-                { "@type": "Place", "name": "Long Beach, California" },
-                { "@type": "Place", "name": "Riverside, California" },
-                { "@type": "Place", "name": "Ontario, California" },
-                { "@type": "Place", "name": "El Centro, California" },
-                { "@type": "Place", "name": "Calexico, California" },
-                { "@type": "Place", "name": "Brawley, California" },
-                { "@type": "Place", "name": "Oxnard, California" },
-                { "@type": "Place", "name": "Bakersfield, California" },
-                { "@type": "Place", "name": "Fontana, California" },
-                { "@type": "Place", "name": "Pomona, California" },
-                { "@type": "Place", "name": "San Bernardino, California" }
-              ],
-  "hasOfferCatalog": {
-          "@type": "OfferCatalog",
-          "name": "Advanced Aesthetic Services",
-          "itemListElement": [
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "Botox for Wrinkle Reduction",
-                "description": "FDA-approved wrinkle relaxing injections to smooth frown lines, crow’s feet, and forehead lines."
-              }
-            },
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "Facial Balancing Fillers",
-                "description": "Strategically placed hyaluronic acid fillers to restore facial symmetry, enhance contours, and create harmonious proportions."
-              }
-            },
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "RF Microneedling (Scarlet S)",
-                "description": "Radiofrequency microneedling for skin tightening, pore reduction, and scar remodeling."
-              }
-            },
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "PDO Thread Lifts",
-                "description": "Minimally invasive skin lifting using dissolvable threads to redefine facial contours and stimulate collagen."
-              }
-            },
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "CO2 Laser Resurfacing",
-                "description": "Fractional ablative laser to improve texture, fine lines, sun damage, and skin laxity."
-              }
-                    }
-                ]
-              }
-            })
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "CollectionPage",
+              "@id": "https://www.mavemedspa.com/treatments#webpage",
+              name: "Advanced Aesthetic Treatments in Tijuana | Mave Medical Spa",
+              url: "https://www.mavemedspa.com/treatments",
+              description:
+                "Explore Botox, dermal fillers, microneedling, CO2 lasers, and thread lifts at Mave Medical Spa.",
+              about: {
+                "@id": "https://www.mavemedspa.com/#organization",
+              },
+              mainEntity: {
+                "@type": "OfferCatalog",
+                name: "Advanced Aesthetic Services",
+                itemListElement: [
+                  {
+                    "@type": "Offer",
+                    itemOffered: {
+                      "@type": "Service",
+                      name: "Botox for Wrinkle Reduction",
+                      description:
+                        "FDA-approved wrinkle relaxing injections to smooth frown lines, crow’s feet, and forehead lines.",
+                    },
+                  },
+                  {
+                    "@type": "Offer",
+                    itemOffered: {
+                      "@type": "Service",
+                      name: "Facial Balancing Fillers",
+                      description:
+                        "Strategically placed hyaluronic acid fillers to restore facial symmetry, enhance contours, and create harmonious proportions.",
+                    },
+                  },
+                  {
+                    "@type": "Offer",
+                    itemOffered: {
+                      "@type": "Service",
+                      name: "RF Microneedling (Scarlet S)",
+                      description:
+                        "Radiofrequency microneedling for skin tightening, pore reduction, and scar remodeling.",
+                    },
+                  },
+                  {
+                    "@type": "Offer",
+                    itemOffered: {
+                      "@type": "Service",
+                      name: "PDO Thread Lifts",
+                      description:
+                        "Minimally invasive skin lifting using dissolvable threads to redefine facial contours and stimulate collagen.",
+                    },
+                  },
+                  {
+                    "@type": "Offer",
+                    itemOffered: {
+                      "@type": "Service",
+                      name: "CO2 Laser Resurfacing",
+                      description:
+                        "Fractional ablative laser to improve texture, fine lines, sun damage, and skin laxity.",
+                    },
+                  },
+                ],
+              },
+            }),
           }}
         />
       </Head>
@@ -185,7 +145,7 @@ dangerouslySetInnerHTML={{
           />
         </div>
         <div className="relative w-full h-[320px] md:h-[300px]">
-          <div className="absolute inset-0 bg-white flex items-center justify-start mt-20 px-10 md:px-20">
+          <div className="absolute inset-0 bg-white flex items-center justify-start px-10 md:px-20">
             <div className="text-white max-w-2xl">
               <h1 className="text-4xl md:text-5xl text-black font-serif font-medium mt-15 mb-4">
                 {bannerTitle}
