@@ -20,7 +20,7 @@ export default function StaffDetails({ member }) {
   const bio = getLocalized(member.bio);
 
   return (
-    <div className="w-full bg-white">
+    <div className="w-full bg-white mt-15">
       <main className="flex-grow max-w-7xl mx-auto px-6 py-12">
         {/* Breadcrumb */}
         <div className="mb-4">
