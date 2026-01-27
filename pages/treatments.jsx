@@ -176,12 +176,12 @@ dangerouslySetInnerHTML={{
       {/* Hero Banner */}
       <div className="bg-white pt-[4%] md:pt-0 md:mt-15">
         <div className="relative w-full h-[320px] md:h-[300px]">
-          <div className="absolute inset-0 bg-white flex items-center justify-start pt-20 px-10 md:px-20">
+          <div className="absolute inset-0 bg-white flex items-center justify-start mt-20 px-10 md:px-20">
             <div className="text-white max-w-2xl">
-              <h1 className="text-4xl md:text-5xl text-black font-serif font-medium mb-4">
+              <h1 className="text-4xl md:text-5xl text-black font-serif font-medium mt-15 mb-4">
                 {bannerTitle}
               </h1>
-              <p className="text-base md:text-lg text-black">
+              <p className="mb-6 text-base md:text-lg text-black">
                 {bannerSubtitle}
               </p>
             </div>
