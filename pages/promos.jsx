@@ -86,7 +86,6 @@ export default function PromosPage() {
           }
         />
         <meta property="og:image" content="https://www.mavemedspa.com/site_icon.png" />
-        <meta property="og:url" content="https://www.mavemedspa.com/promos" />
         <meta property="og:type" content="website" />
         <SeoLinks />
       </Head>

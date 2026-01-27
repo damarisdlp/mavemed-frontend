@@ -39,7 +39,6 @@ export default function Home() {
   {/* Open Graph for Facebook/LinkedIn */}
   <meta property="og:title" content="Mave Medical Spa – Tijuana’s Best Med Spa for U.S. Clients" />
   <meta property="og:description" content="Experience expert facial rejuvenation at our modern Tijuana clinic. Botox, fillers, threads, microneedling, and lasers — just minutes from the U.S. border." />
-  <meta property="og:url" content="https://www.mavemedspa.com/" />
   <meta property="og:image" content="https://www.mavemedspa.com/logo-mave.png" />
   <meta property="og:type" content="website" />
 

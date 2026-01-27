@@ -29,7 +29,6 @@ export default function Contact() {
           content="Call, WhatsApp, or email Mave Medical Spa in Tijuana to book your next appointment. Easy access for patients visiting from San Diego and beyond."
         />
         <meta property="og:image" content="https://www.mavemedspa.com/site_icon.png" />
-        <meta property="og:url" content="https://www.mavemedspa.com/contact" />
         <meta property="og:type" content="website" />
         <meta name="email" content="info@mavemedspa.com" />
         <SeoLinks />

@@ -33,7 +33,6 @@ export default function TeamPage() {
         <meta property="og:title" content="Meet Our Expert Team | Mave Medical Spa in Tijuana" />
         <meta property="og:description" content="Discover the talented team of doctors and specialists behind Mave Medical Spa — Tijuana’s top destination for natural, ethical cosmetic results." />
         <meta property="og:image" content="https://www.mavemedspa.com/site_icon.png" />
-        <meta property="og:url" content="https://www.mavemedspa.com/ourteam" />
         <meta property="og:type" content="website" />
         <SeoLinks />
 

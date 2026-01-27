@@ -37,6 +37,7 @@ export default function SeoLinks() {
   return (
     <>
       <link rel="canonical" href={canonicalUrl} />
+      <meta property="og:url" content={canonicalUrl} />
       {locales.map((loc) => {
         const href = `${SITE_URL}${buildLocalePath(cleanPath, loc, defaultLocale)}`;
         return <link key={loc} rel="alternate" hrefLang={loc} href={href} />;

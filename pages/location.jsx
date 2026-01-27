@@ -29,7 +29,6 @@ export default function Location() {
           content="Plan your visit to Mave Medical Spa — conveniently located in Tijuana’s Zona Río, just 5 minutes from the San Diego border. Cross-border patients welcome."
         />
         <meta property="og:image" content="https://www.mavemedspa.com/site_icon.png" />
-        <meta property="og:url" content="https://www.mavemedspa.com/location" />
         <meta property="og:type" content="place" />
         <SeoLinks />
 

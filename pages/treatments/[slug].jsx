@@ -75,7 +75,6 @@ export default function TreatmentPage() {
         <meta property="og:title" content={`${localizedName} | Mave Medical Spa`} />
         <meta property="og:description" content={localizedDescription || `${localizedName} at Mave Medical Spa.`} />
         <meta property="og:image" content="https://www.mavemedspa.com/site_icon.png" />
-        <meta property="og:url" content={`https://www.mavemedspa.com/treatments/${treatment.urlSlug}`} />
         <meta property="og:type" content="website" />
         <SeoLinks />
       </Head>

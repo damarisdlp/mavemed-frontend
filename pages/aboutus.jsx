@@ -36,7 +36,6 @@ export default function AboutUs() {
           content="Discover the philosophy behind Mave Medical Spa — blending ethical aesthetic care with cross-border accessibility and expert providers in Tijuana."
         />
         <meta property="og:image" content="https://www.mavemedspa.com/site_icon.png" />
-        <meta property="og:url" content="https://www.mavemedspa.com/aboutus" />
         <meta property="og:type" content="website" />
         <SeoLinks />
 

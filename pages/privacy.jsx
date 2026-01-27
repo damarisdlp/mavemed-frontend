@@ -38,7 +38,6 @@ export default function PrivacyPage() {
         />
         <meta property="og:description" content={strings.desc} />
         <meta property="og:image" content="https://www.mavemedspa.com/site_icon.png" />
-        <meta property="og:url" content="https://www.mavemedspa.com/privacy" />
         <meta property="og:type" content="website" />
         <SeoLinks />
       </Head>

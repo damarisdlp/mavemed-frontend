@@ -22,7 +22,6 @@ export default function GeneralFaqPage() {
           content="General questions about payments, scheduling, policies and more at Mave Medical Spa."
         />
         <meta property="og:image" content="https://www.mavemedspa.com/site_icon.png" />
-        <meta property="og:url" content="https://www.mavemedspa.com/faq" />
         <meta property="og:type" content="website" />
         <SeoLinks />
       </Head>

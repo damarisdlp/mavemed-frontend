@@ -74,10 +74,6 @@ export default function TeamMemberPage() {
           property="og:image"
           content={`https://www.mavemedspa.com${member.image}`}
         />
-        <meta
-          property="og:url"
-          content={`https://www.mavemedspa.com/ourteam/${member.name}`}
-        />
         <meta property="og:type" content="profile" />
         <SeoLinks />
 

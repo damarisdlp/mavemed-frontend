@@ -71,7 +71,6 @@ export default function AccessibilityPage() {
           content={accessibilityContent.intro[locale] || accessibilityContent.intro.en}
         />
         <meta property="og:image" content="https://www.mavemedspa.com/site_icon.png" />
-        <meta property="og:url" content="https://www.mavemedspa.com/accessibility" />
         <meta property="og:type" content="website" />
         <SeoLinks />
       </Head>
