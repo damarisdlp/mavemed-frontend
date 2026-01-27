@@ -30,6 +30,7 @@ export default function TreatmentPage() {
   const { slug } = router.query;
 
   const currentLocale = typeof router.locale === "string" ? router.locale : "en";
+  const { asPath } = router;
 
   console.log("Slug:", slug);
   console.log("Locale:", currentLocale);
@@ -76,7 +77,7 @@ export default function TreatmentPage() {
         <meta property="og:description" content={localizedDescription || `${localizedName} at Mave Medical Spa.`} />
         <meta property="og:image" content="https://www.mavemedspa.com/site_icon.png" />
         <meta property="og:type" content="website" />
-        <SeoLinks />
+        <SeoLinks asPath={asPath} locale={currentLocale} />
       </Head>
       <section className="bg-white">
         <PromoBanner />

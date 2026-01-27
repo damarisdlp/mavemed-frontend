@@ -1,4 +1,3 @@
-import { useRouter } from "next/router";
 import nextI18NextConfig from "../next-i18next.config";
 
 const SITE_URL = "https://www.mavemedspa.com";
@@ -21,31 +20,45 @@ const buildLocalePath = (path, locale, defaultLocale) => {
   return path === "/" ? `/${locale}` : `/${locale}${path}`;
 };
 
-export default function SeoLinks() {
-  const { asPath, locale } = useRouter();
-  const defaultLocale = nextI18NextConfig?.i18n?.defaultLocale || "en";
-  const locales = nextI18NextConfig?.i18n?.locales || [defaultLocale];
+export default function SeoLinks({
+  asPath = "/",
+  locale,
+  locales,
+  defaultLocale,
+  siteUrl = SITE_URL,
+}) {
+  const defaultLoc = nextI18NextConfig?.i18n?.defaultLocale || "en";
+  const allLocales = locales || nextI18NextConfig?.i18n?.locales || [defaultLoc];
+  const activeLocale = locale || defaultLoc;
 
-  const cleanPath = stripLocalePrefix(normalizePath(asPath), locales);
+  const cleanPath = stripLocalePrefix(normalizePath(asPath), allLocales);
   const canonicalPath = buildLocalePath(
     cleanPath,
-    locale || defaultLocale,
-    defaultLocale
+    activeLocale,
+    defaultLocale || defaultLoc
   );
-  const canonicalUrl = `${SITE_URL}${canonicalPath}`;
+  const canonicalUrl = `${siteUrl}${canonicalPath}`;
 
   return (
     <>
       <link rel="canonical" href={canonicalUrl} />
       <meta property="og:url" content={canonicalUrl} />
-      {locales.map((loc) => {
-        const href = `${SITE_URL}${buildLocalePath(cleanPath, loc, defaultLocale)}`;
+      {allLocales.map((loc) => {
+        const href = `${siteUrl}${buildLocalePath(
+          cleanPath,
+          loc,
+          defaultLocale || defaultLoc
+        )}`;
         return <link key={loc} rel="alternate" hrefLang={loc} href={href} />;
       })}
       <link
         rel="alternate"
         hrefLang="x-default"
-        href={`${SITE_URL}${buildLocalePath(cleanPath, defaultLocale, defaultLocale)}`}
+        href={`${siteUrl}${buildLocalePath(
+          cleanPath,
+          defaultLocale || defaultLoc,
+          defaultLocale || defaultLoc
+        )}`}
       />
     </>
   );

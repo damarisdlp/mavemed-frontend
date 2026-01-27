@@ -18,7 +18,7 @@ import { useRouter } from "next/router";
 
 export default function TreatmentsPage() {
   const { t } = useTranslation("treatments");
-  const { locale } = useRouter();
+  const { locale, asPath } = useRouter();
   const currentLocale = typeof locale === "string" ? locale : "en";
   const bannerTitle =
     currentLocale?.startsWith("es")
@@ -59,7 +59,7 @@ export default function TreatmentsPage() {
         <meta property="og:description" content="Non-surgical aesthetic solutions: Botox, fillers, lasers, and more at Mave Medical Spa. Serving cross-border clients from Southern California." />
         <meta property="og:image" content="https://www.mavemedspa.com/site_icon.png" />
         <meta property="og:type" content="website" />
-        <SeoLinks />
+        <SeoLinks asPath={asPath} locale={locale} />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

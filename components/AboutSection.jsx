@@ -43,7 +43,7 @@ export default function AboutSection() {
     <section id="aboutus" className="bg-white min-h-screen w-full relative">
       {/* Top Section Grid */}
       <div className="grid grid-cols-1 md:grid-cols-[3fr_2fr] min-h-[85vh] mb-10">
-        <div className="relative w-full h-[40vh] md:h-auto mt-12 md:mt-0">
+        <div className="relative w-full h-[40vh] md:h-auto mt-9 md:mt-0">
           <Image
             src="/drs.jpg"
             alt="Shot of outside of Mave Medical Spa in Tijuana"

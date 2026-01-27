@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Script from "next/script";
 import { useState } from "react";
+import { useRouter } from "next/router";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import nextI18NextConfig from "../next-i18next.config";
 
@@ -21,6 +22,7 @@ import SeoLinks from "@/components/SeoLinks";
 
 export default function Home() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const { asPath, locale } = useRouter();
 
   return (
     <>
@@ -34,7 +36,7 @@ export default function Home() {
     name="keywords"
     content="Tijuana med spa, Botox Tijuana, Fillers Mexico, Sculptra Tijuana, RF microneedling, facial balancing, PDO threads, CO2 laser, laser treatments Tijuana, medical tourism, cross-border med spa"
   />
-  <SeoLinks />
+  <SeoLinks asPath={asPath} locale={locale} />
 
   {/* Open Graph for Facebook/LinkedIn */}
   <meta property="og:title" content="Mave Medical Spa – Tijuana’s Best Med Spa for U.S. Clients" />

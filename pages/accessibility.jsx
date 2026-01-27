@@ -14,7 +14,7 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import SeoLinks from "@/components/SeoLinks";
 
 export default function AccessibilityPage() {
-  const { locale = "en" } = useRouter();
+  const { locale = "en", asPath } = useRouter();
 
   const renderParagraph = (para, key) => {
     const email = "info@mavemedspa.com";
@@ -72,7 +72,7 @@ export default function AccessibilityPage() {
         />
         <meta property="og:image" content="https://www.mavemedspa.com/site_icon.png" />
         <meta property="og:type" content="website" />
-        <SeoLinks />
+        <SeoLinks asPath={asPath} locale={locale} />
       </Head>
 
       <PromoBanner />

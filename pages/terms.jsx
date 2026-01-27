@@ -14,7 +14,7 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import SeoLinks from "@/components/SeoLinks";
 
 export default function TermsPage() {
-  const { locale = "en" } = useRouter();
+  const { locale = "en", asPath } = useRouter();
 
   const strings = {
     title: termsContent.title[locale] || termsContent.title.en,
@@ -39,7 +39,7 @@ export default function TermsPage() {
         <meta property="og:description" content={strings.desc} />
         <meta property="og:image" content="https://www.mavemedspa.com/site_icon.png" />
         <meta property="og:type" content="website" />
-        <SeoLinks />
+        <SeoLinks asPath={asPath} locale={locale} />
       </Head>
 
       <PromoBanner />

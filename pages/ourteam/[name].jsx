@@ -19,6 +19,7 @@ export default function TeamMemberPage() {
   const router = useRouter();
   const { name } = router.query;
   const currentLocale = typeof router.locale === "string" ? router.locale : "en";
+  const { asPath } = router;
 
   const getLocalized = (field) => {
     if (typeof field === "object" && field !== null) {
@@ -75,7 +76,7 @@ export default function TeamMemberPage() {
           content={`https://www.mavemedspa.com${member.image}`}
         />
         <meta property="og:type" content="profile" />
-        <SeoLinks />
+        <SeoLinks asPath={asPath} locale={currentLocale} />
 
         <script
           type="application/ld+json"

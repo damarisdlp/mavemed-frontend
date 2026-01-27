@@ -13,10 +13,12 @@ import SeoLinks from "@/components/SeoLinks";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import nextI18NextConfig from "../next-i18next.config";
 import { useTranslation } from "next-i18next";
+import { useRouter } from "next/router";
 
 
 export default function TeamPage() {
   const { t } = useTranslation("team");
+  const { asPath, locale } = useRouter();
 
   return (
     <>
@@ -34,7 +36,7 @@ export default function TeamPage() {
         <meta property="og:description" content="Discover the talented team of doctors and specialists behind Mave Medical Spa — Tijuana’s top destination for natural, ethical cosmetic results." />
         <meta property="og:image" content="https://www.mavemedspa.com/site_icon.png" />
         <meta property="og:type" content="website" />
-        <SeoLinks />
+        <SeoLinks asPath={asPath} locale={locale} />
 
         <script
           type="application/ld+json"

@@ -1,4 +1,5 @@
 import Head from "next/head";
+import { useRouter } from "next/router";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import PromoBanner from "@/components/PromoBanner";
@@ -11,6 +12,8 @@ import { generalFaqs } from "@/lib/data/faqs/faqs";
 import SeoLinks from "@/components/SeoLinks";
 
 export default function GeneralFaqPage() {
+  const { asPath, locale } = useRouter();
+
   return (
     <>
       <Head>
@@ -23,7 +26,7 @@ export default function GeneralFaqPage() {
         />
         <meta property="og:image" content="https://www.mavemedspa.com/site_icon.png" />
         <meta property="og:type" content="website" />
-        <SeoLinks />
+        <SeoLinks asPath={asPath} locale={locale} />
       </Head>
 
       <PromoBanner />

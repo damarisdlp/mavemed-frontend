@@ -5,12 +5,15 @@ import InstagramFeed from "@/components/InstagramFeed"
 import ReviewsSection from "@/components/ReviewsSection"
 import Footer from "@/components/Footer"
 import Head from "next/head";
+import { useRouter } from "next/router";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import nextI18NextConfig from "../next-i18next.config";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import SeoLinks from "@/components/SeoLinks";
 
 export default function Location() {
+  const { asPath, locale } = useRouter();
+
   return (
     <>
     <Head>
@@ -30,7 +33,7 @@ export default function Location() {
         />
         <meta property="og:image" content="https://www.mavemedspa.com/site_icon.png" />
         <meta property="og:type" content="place" />
-        <SeoLinks />
+        <SeoLinks asPath={asPath} locale={locale} />
 
         <script
           type="application/ld+json"

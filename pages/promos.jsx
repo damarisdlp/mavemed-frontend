@@ -26,6 +26,7 @@ const getLocalized = (field, locale) => {
 export default function PromosPage() {
   const router = useRouter();
   const locale = router.locale || "en";
+  const { asPath } = router;
 
   const promoTreatments = allTreatments.filter((t) => getPromoSummary(t, locale).isPromoActive);
 
@@ -87,7 +88,7 @@ export default function PromosPage() {
         />
         <meta property="og:image" content="https://www.mavemedspa.com/site_icon.png" />
         <meta property="og:type" content="website" />
-        <SeoLinks />
+        <SeoLinks asPath={asPath} locale={locale} />
       </Head>
 
       <PromoBanner />

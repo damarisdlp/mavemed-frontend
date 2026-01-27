@@ -11,9 +11,11 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import nextI18NextConfig from "../next-i18next.config";
 import { useTranslation } from "next-i18next";
 import SeoLinks from "@/components/SeoLinks";
+import { useRouter } from "next/router";
 
 export default function AboutUs() {
   const { t } = useTranslation("home");
+  const { asPath, locale } = useRouter();
 
   const bannerTitle = t("aboutHero.title");
   const bannerSubtitle = t("aboutHero.subtitle");
@@ -37,7 +39,7 @@ export default function AboutUs() {
         />
         <meta property="og:image" content="https://www.mavemedspa.com/site_icon.png" />
         <meta property="og:type" content="website" />
-        <SeoLinks />
+        <SeoLinks asPath={asPath} locale={locale} />
 
         <script
           type="application/ld+json"
