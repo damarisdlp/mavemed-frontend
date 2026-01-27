@@ -238,7 +238,7 @@ const CategorySlider = ({ services }) => {
     <div className="bg-white scroll-smooth relative">
       <div className="w-full max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 pb-4">
         {/* Sticky Search + Category Menu */}
-        <div className="-mx-4 sm:-mx-6 lg:-mx-8 -mt-5 sm:mt-0 sticky top-[143px] sm:top-[110px] bg-white z-30 border-b border-gray-200 px-4 sm:px-6 lg:px-8">
+        <div className="-mx-4 sm:-mx-6 lg:-mx-8 -mt-0 sm:mt-0 sticky top-[143px] sm:top-[110px] bg-white z-30 border-b border-gray-200 px-4 sm:px-6 lg:px-8">
           <div className="py-2 sm:py-3">
             <label className="sr-only" htmlFor="treatment-search">
               {getLocalized(translatedStrings.searchPlaceholder)}
