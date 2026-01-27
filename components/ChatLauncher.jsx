@@ -93,7 +93,7 @@ export default function ChatLauncher() {
       }
     : {
         position: "fixed",
-        bottom: "4rem",
+        bottom: "1rem",
         right: "1rem",
       };
 
