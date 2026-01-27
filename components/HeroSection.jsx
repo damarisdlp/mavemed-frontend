@@ -35,7 +35,8 @@ export default function HeroSection() {
             className="text-white font-serif font-medium mb-5 leading-tight max-w-[92vw] sm:max-w-4xl text-[clamp(1.6rem,4.5vw,3rem)] mt-2 break-words"
             style={{ textWrap: "balance" }}
           >
-            {t("heroSection.heading1")}
+            <span className="block">{t("heroSection.heading1")}</span>
+            <span className="block">{t("heroSection.heading2")}</span>
           </h1>
 
           <p className="text-base mb-2 sm:text-lg text-white/90 mt-4 max-w-4xl">
