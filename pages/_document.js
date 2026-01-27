@@ -4,7 +4,6 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="robots" content="index, follow" />
         <meta property="og:site_name" content="Mave Medical Spa" />
         <meta name="twitter:card" content="summary_large_image" />
