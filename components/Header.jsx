@@ -34,6 +34,7 @@ export default function Header() {
     "/aboutus",
     "/ourteam",
     "/treatments",
+    "/faq",
   ].some((path) => (asPath || "").startsWith(path));
 
   useEffect(() => {
