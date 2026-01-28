@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState, useRef } from "react";
 import { useRouter } from "next/router";
 import { useTranslation } from "next-i18next";
+import { validatePhoneNumber } from "@/lib/utils/phone";
 
 export default function FreebiePopup() {
   const router = useRouter();
@@ -97,6 +98,17 @@ export default function FreebiePopup() {
         message: submitIsSpanish
           ? "Por favor completa los campos requeridos."
           : "Please complete all required fields.",
+      });
+      return;
+    }
+
+    const defaultRegion = submitIsSpanish ? "MX" : "US";
+    if (!validatePhoneNumber(form.phone, "", defaultRegion)) {
+      setStatus({
+        type: "error",
+        message: submitIsSpanish
+          ? "Por favor ingresa un número válido."
+          : "Please enter a valid phone number.",
       });
       return;
     }
