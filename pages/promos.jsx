@@ -23,6 +23,24 @@ const getLocalized = (field, locale) => {
   return field ?? "";
 };
 
+const parsePromoDate = (value) => {
+  if (!value) return null;
+  const raw = typeof value === "object" ? value.en || value.es : value;
+  if (!raw || typeof raw !== "string") return null;
+  const date = new Date(`${raw}T00:00:00`);
+  return Number.isNaN(date.getTime()) ? null : date;
+};
+
+const getDaysLeft = (untilDate) => {
+  if (!untilDate) return null;
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+  const end = new Date(untilDate);
+  end.setHours(0, 0, 0, 0);
+  const diff = Math.ceil((end - today) / (1000 * 60 * 60 * 24));
+  return diff >= 0 ? diff : null;
+};
+
 export default function PromosPage() {
   const router = useRouter();
   const locale = router.locale || "en";
@@ -49,12 +67,23 @@ export default function PromosPage() {
         : "Starting From "
       : "";
     const price = `${pricePrefix}${promoSummary.priceText}`;
+    const validTill = parsePromoDate(t.promoDetails?.validTill);
+    const daysLeft = getDaysLeft(validTill);
+    const validTillLabel = validTill
+      ? new Intl.DateTimeFormat(locale === "es" ? "es-MX" : "en-US", {
+          year: "numeric",
+          month: "long",
+          day: "numeric",
+        }).format(validTill)
+      : null;
     categoriesMap[catKey].cards.push({
       optionName,
       description,
       price,
       image: t.images?.primary || "/placeholder.jpg",
       slug: t.urlSlug,
+      validTillLabel,
+      daysLeft,
     });
   });
 
@@ -156,6 +185,19 @@ export default function PromosPage() {
                         </h3>
                         {card.price && (
                           <p className="text-[#731a2f] font-semibold text-sm mt-1">{card.price}</p>
+                        )}
+                        {card.validTillLabel && (
+                          <p className="text-xs text-gray-500 mt-1">
+                            {locale === "es" ? "Válido hasta" : "Valid thru"}{" "}
+                            <span className="font-medium text-gray-700">{card.validTillLabel}</span>
+                          </p>
+                        )}
+                        {typeof card.daysLeft === "number" && (
+                          <p className="text-xs text-gray-500 mt-1">
+                            {locale === "es"
+                              ? `Quedan ${card.daysLeft} días`
+                              : `${card.daysLeft} days left`}
+                          </p>
                         )}
                         <p className="text-sm text-gray-600 mt-2">
                           {card.description}
