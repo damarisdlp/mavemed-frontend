@@ -1,8 +1,10 @@
 import { useEffect, useRef, useState } from "react";
 import { useTranslation } from "next-i18next";
 import Link from "next/link";
+import { getActiveLeadForm } from "@/lib/data/leadForms";
+import { validatePhoneNumber } from "@/lib/utils/phone";
 
-export default function LeadForm() {
+export default function LeadForm({ useSchedule = true } = {}) {
   const { t, i18n } = useTranslation("home");
   const locale = (i18n?.language || "en").toString();
   const phoneRef = useRef(null);
@@ -63,8 +65,8 @@ export default function LeadForm() {
     e.preventDefault();
     try {
       const phoneEl = phoneRef.current;
-      const digitsOnly = (formData.phone || "").replace(/\D/g, "");
-      if (digitsOnly.length < 7) {
+      const isPhoneValid = validatePhoneNumber(formData.phone, formData.countryCode);
+      if (!isPhoneValid) {
         if (phoneEl) {
           phoneEl.setCustomValidity(
             t("leadForm.phoneInvalid", {
@@ -79,6 +81,7 @@ export default function LeadForm() {
       if (emailRef.current) emailRef.current.setCustomValidity("");
 
       const submitData = {
+        leadFormId: activeForm?.id || "rejuvenation",
         firstName: formData.firstName,
         email: formData.email,
         countryCode: formData.countryCode,
@@ -155,28 +158,38 @@ export default function LeadForm() {
     },
   };
 
+  const defaultLeadForm = {
+    id: "rejuvenation",
+    titleKey: "leadForm.title",
+    subtitleKey: "leadForm.subtitle",
+  };
+  const activeForm = useSchedule ? getActiveLeadForm() : defaultLeadForm;
+  const formTitle = t(activeForm?.titleKey || "leadForm.title");
+  const formSubtitleKey = activeForm?.subtitleKey || "leadForm.subtitle";
+
   return (
     <>
       <section
         className="bg-[#efeee7] w-full px-4 sm:px-6 py-3 justify-center items-center text-center relative overflow-x-hidden"
         data-lead-form
       >
-        <div className="w-full max-w-screen-xl mx-auto grid md:grid-cols-2 gap-3 items-center min-w-0">
+        <div className="w-full max-w-screen-xl mx-auto grid md:grid-cols-2 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.15fr)] gap-3 lg:gap-8 items-center min-w-0">
           <div className="min-w-0">
             <h2
               className="text-black font-serif font-medium mb-2 leading-snug text-[clamp(1.5rem,4vw,2.1rem)] max-w-full break-words"
               style={{ textWrap: "balance" }}
             >
-              {t("leadForm.title")}
+              {formTitle}
             </h2>
-            <p className="text-gray-700 text-sm md:text-base">
-              {t("leadForm.subtitle")}
-            </p>
+            <p
+              className="text-gray-700 text-sm md:text-base"
+              dangerouslySetInnerHTML={{ __html: t(formSubtitleKey) }}
+            />
           </div>
 
           <form
             onSubmit={handleSubmit}
-            className="bg-white p-3 rounded-lg shadow-md grid gap-2.5 text-left w-full min-w-0 overflow-x-hidden"
+            className="bg-white p-3 rounded-lg shadow-md grid gap-2.5 text-left w-full min-w-0 overflow-x-hidden lg:justify-self-stretch"
           >
             <label className="text-sm text-gray-700 flex items-center gap-1">
               {t("leadForm.firstName")}
