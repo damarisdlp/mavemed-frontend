@@ -5,6 +5,7 @@ import { useEffect, useRef, useState } from "react";
 import TreatmentInfoTabs from "./TreatmentInfoTabs";
 import { getPromoSummary } from "@/lib/utils/promo";
 import { formatMoney, formatMoneyRange, getPriceMinValue } from "@/lib/utils/price";
+import { validatePhoneNumber } from "@/lib/utils/phone";
 
 export default function TreatmentDetails({ treatment }) {
   const router = useRouter();
@@ -814,8 +815,7 @@ export default function TreatmentDetails({ treatment }) {
                         );
                         return;
                       }
-                      const digitsOnly = (leadForm.phone || "").replace(/\D/g, "");
-                      if (digitsOnly.length < 7) {
+                      if (!validatePhoneNumber(leadForm.phone, leadForm.countryCode)) {
                         if (phoneRef.current) {
                           phoneRef.current.setCustomValidity(
                             locale === "es"
