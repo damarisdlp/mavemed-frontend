@@ -5,7 +5,7 @@ import { useRouter } from "next/router";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import nextI18NextConfig from "../next-i18next.config";
 
-import LeadForm from "@/components/LeadForm";
+import HomeLeadForm from "@/components/HomeLeadForm";
 import ApproachSection from "@/components/ApproachSection";
 import PromoBanner from "@/components/PromoBanner";
 import Header from "@/components/Header";
@@ -19,7 +19,7 @@ import PromoPackageSection from "@/components/PromoPackageSection";
 import Footer from "@/components/Footer";
 import ScrollToTopButton from "@/components/ScrollToTop";
 import SeoLinks from "@/components/SeoLinks";
-import FreebiePopup from "@/components/FreebiePopup";
+import LeadPopupGate from "@/components/LeadPopupGate";
 
 export default function Home() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -52,11 +52,11 @@ export default function Home() {
 
 </Head>
       <ScrollToTopButton />
-      <FreebiePopup />
+      <LeadPopupGate />
       <PromoBanner />
       <Header isMobileMenuOpen={isMobileMenuOpen} setIsMobileMenuOpen={setIsMobileMenuOpen} />
       <HeroSection />
-      <LeadForm />
+      <HomeLeadForm />
       <ApproachSection />
       <PopularTreatments />
       <PromoPackageSection />
