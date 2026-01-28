@@ -30,7 +30,7 @@ export default async function handler(req, res) {
 
   const scriptUrl =
     process.env.GOOGLE_SCRIPT_TREATMENT_URL ||
-    "https://script.google.com/macros/s/AKfycbxRmNWyBLjrkmwu7dEQBzbPafg01opzPanvAMUDJ5RRXY2r18lF1JsjxvxxQOph368/exec";
+    "https://script.google.com/macros/s/AKfycbxplXntV5GS2XYQ7WDYtzJ-Ifl6FMcK2_jrcUDRuwAHtGsVwAZmyB79p9pxmnsQS2s/exec";
 
   try {
     const sheetResponse = await fetch(scriptUrl, {
