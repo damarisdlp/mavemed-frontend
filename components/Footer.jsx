@@ -15,7 +15,7 @@ export default function Footer() {
     <footer className="text-black">
       <div className="bg-[#efeee7]">
         <div className="max-w-7xl mx-auto px-6 py-8">
-          <LeadForm />
+          <LeadForm useSchedule={false} />
         </div>
       </div>
 
