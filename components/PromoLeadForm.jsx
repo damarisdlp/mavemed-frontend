@@ -18,6 +18,23 @@ export default function PromoLeadForm() {
   });
 
   const [showThanks, setShowThanks] = useState(false);
+  const pendingLeadKey = "promoLeadPending";
+  const retryTimerRef = useRef(null);
+
+  const generateLeadId = () => {
+    if (typeof crypto !== "undefined" && crypto.randomUUID) {
+      return crypto.randomUUID();
+    }
+    return `lead_${Date.now()}_${Math.random().toString(16).slice(2)}`;
+  };
+
+  const sendPendingLead = (payloadString) =>
+    fetch("/api/promo-lead", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: payloadString,
+      keepalive: true,
+    });
 
   useEffect(() => {
     if (!showThanks) return;
@@ -25,6 +42,20 @@ export default function PromoLeadForm() {
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, [showThanks]);
+
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    const pending = window.localStorage.getItem(pendingLeadKey);
+    if (!pending) return;
+    sendPendingLead(pending)
+      .then(async (response) => {
+        if (!response.ok) return;
+        window.localStorage.removeItem(pendingLeadKey);
+      })
+      .catch(() => {
+        // Leave pending payload for a future retry.
+      });
+  }, []);
 
   const countryOptions = [
     { code: "+1", label: "United States / Canada" },
@@ -87,29 +118,52 @@ export default function PromoLeadForm() {
         source: "Homepage Promo Lead Form",
       };
 
-      const response = await fetch("/api/promo-lead", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(submitData),
-      });
-
-      const resultText = await response.text();
-      let result;
-      try {
-        result = JSON.parse(resultText);
-      } catch {
-        result = { raw: resultText };
+      setShowThanks(true);
+      setFormData((prev) => ({ ...prev, fullName: "", email: "", phone: "" }));
+      const payloadWithId = { ...submitData, leadId: generateLeadId() };
+      if (typeof window !== "undefined") {
+        window.localStorage.setItem(pendingLeadKey, JSON.stringify(payloadWithId));
       }
 
-      if (response.ok) {
-        setFormData({ fullName: "", email: "", countryCode: "+52", phone: "" });
-        setShowThanks(true);
-      } else {
-        alert(
-          t("leadForm.error", { defaultValue: "There was an error. Please try again." }) +
-            (result?.detail ? ` (${result.detail})` : "")
-        );
+      const payloadString = JSON.stringify(payloadWithId);
+      sendPendingLead(payloadString)
+        .then(async (response) => {
+          if (response.ok) {
+            if (typeof window !== "undefined") {
+              window.localStorage.removeItem(pendingLeadKey);
+            }
+            return;
+          }
+          const resultText = await response.text().catch(() => "");
+          let result;
+          try {
+            result = JSON.parse(resultText);
+          } catch {
+            result = { raw: resultText };
+          }
+          console.error("Promo lead submission failed:", result?.detail || result?.raw || resultText);
+        })
+        .catch((error) => {
+          console.error("Promo lead submission error:", error);
+        });
+
+      if (retryTimerRef.current) {
+        clearTimeout(retryTimerRef.current);
       }
+      retryTimerRef.current = setTimeout(() => {
+        if (typeof window === "undefined") return;
+        const pending = window.localStorage.getItem(pendingLeadKey);
+        if (!pending) return;
+        sendPendingLead(pending)
+          .then((response) => {
+            if (response.ok) {
+              window.localStorage.removeItem(pendingLeadKey);
+            }
+          })
+          .catch(() => {
+            // Keep pending payload for next load retry.
+          });
+      }, 10000);
     } catch (error) {
       console.error("Promo lead submission error:", error);
       alert(
