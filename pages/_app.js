@@ -6,6 +6,7 @@ import nextI18NextConfig from "../next-i18next.config";
 import ScrollToTopButton from "@/components/ScrollToTop";
 import CookieBanner from "@/components/CookieBanner";
 import OrganizationSchema from "@/components/OrganizationSchema";
+import { Analytics } from "@vercel/analytics/next";
 import { Manrope } from "next/font/google";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
@@ -88,6 +89,7 @@ function App({ Component, pageProps }) {
       ) : null}
       <OrganizationSchema />
       <Component {...pageProps} />
+      <Analytics />
       <ScrollToTopButton />
       <CookieBanner gaId={gaId} onConsentChange={setConsent} />
     </div>
