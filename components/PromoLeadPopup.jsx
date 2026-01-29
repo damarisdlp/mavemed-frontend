@@ -31,6 +31,8 @@ export default function PromoLeadPopup() {
   const [isOpen, setIsOpen] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [status, setStatus] = useState({ type: "", message: "" });
+  const pendingLeadKey = "promoPopupLeadPending";
+  const retryTimerRef = useRef(null);
 
   const [form, setForm] = useState({
     fullName: "",
@@ -47,6 +49,20 @@ export default function PromoLeadPopup() {
   const submitLangRef = useRef("en");
 
   const defaultCountryCode = isSpanish ? "+52" : "+1";
+  const generateLeadId = () => {
+    if (typeof crypto !== "undefined" && crypto.randomUUID) {
+      return crypto.randomUUID();
+    }
+    return `lead_${Date.now()}_${Math.random().toString(16).slice(2)}`;
+  };
+
+  const sendPendingLead = (payloadString) =>
+    fetch("/api/promo-lead", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: payloadString,
+      keepalive: true,
+    });
 
   useEffect(() => {
     setStatus({ type: "", message: "" });
@@ -69,6 +85,20 @@ export default function PromoLeadPopup() {
       window.sessionStorage.setItem(sessionKey, "1");
     }
   }, [sessionKey, isSpanish]);
+
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    const pending = window.localStorage.getItem(pendingLeadKey);
+    if (!pending) return;
+    sendPendingLead(pending)
+      .then((response) => {
+        if (!response.ok) return;
+        window.localStorage.removeItem(pendingLeadKey);
+      })
+      .catch(() => {
+        // Leave pending payload for a future retry.
+      });
+  }, []);
 
   useEffect(() => {
     if (typeof window === "undefined") return;
@@ -150,9 +180,6 @@ export default function PromoLeadPopup() {
       return;
     }
 
-    setIsSubmitting(true);
-    setStatus({ type: "", message: "" });
-
     try {
       const activeForm = getActiveLeadForm();
       const payload = {
@@ -166,36 +193,57 @@ export default function PromoLeadPopup() {
         source: submitIsSpanish ? "Promo Popup (ES)" : "Promo Popup (EN)",
         lang: submitLang,
       };
+      const payloadWithId = { ...payload, leadId: generateLeadId() };
+      const payloadString = JSON.stringify(payloadWithId);
 
-      const response = await fetch("/api/promo-lead", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(payload),
-      });
-
-      const resultText = await response.text();
-      let resultJson = null;
-      try {
-        resultJson = JSON.parse(resultText);
-      } catch {
-        resultJson = null;
+      if (typeof window !== "undefined") {
+        window.localStorage.setItem(pendingLeadKey, payloadString);
       }
 
-      if (!response.ok || (resultJson && resultJson.ok === false)) {
-        const detail =
-          resultJson?.error || resultJson?.message || resultText || "Request failed.";
-        throw new Error(detail);
+      setStatus({ type: "success", message: "" });
+      setIsSubmitting(false);
+      setForm({ fullName: "", email: "", countryCode: defaultCountryCode, phone: "" });
+      setIsOpen(false);
+
+      sendPendingLead(payloadString)
+        .then(async (response) => {
+          if (response.ok) {
+            if (typeof window !== "undefined") {
+              window.localStorage.removeItem(pendingLeadKey);
+            }
+            return;
+          }
+          const resultText = await response.text().catch(() => "");
+          let resultJson = null;
+          try {
+            resultJson = JSON.parse(resultText);
+          } catch {
+            resultJson = null;
+          }
+          const detail =
+            resultJson?.error || resultJson?.message || resultText || "Request failed.";
+          console.error("Promo popup submission failed:", detail);
+        })
+        .catch((error) => {
+          console.error("Promo popup submission error:", error);
+        });
+
+      if (retryTimerRef.current) {
+        clearTimeout(retryTimerRef.current);
       }
-
-      setStatus({
-        type: "success",
-        message: t("leadForm.thanksCopy", {
-          defaultValue: "We received your details and will reach out shortly.",
-        }),
-      });
-
-      setForm({ fullName: "", email: "", countryCode: "+52", phone: "" });
-      window.setTimeout(() => setIsOpen(false), 1500);
+      retryTimerRef.current = setTimeout(() => {
+        if (typeof window === "undefined") return;
+        const pending = window.localStorage.getItem(pendingLeadKey);
+        if (!pending) return;
+        sendPendingLead(pending)
+          .then((response) => {
+            if (!response.ok) return;
+            window.localStorage.removeItem(pendingLeadKey);
+          })
+          .catch(() => {
+            // Keep pending payload for next load retry.
+          });
+      }, 10000);
     } catch (error) {
       setStatus({
         type: "error",
@@ -204,8 +252,6 @@ export default function PromoLeadPopup() {
           : "Something went wrong. Please try again in a moment.",
       });
       console.error("Promo popup submission error:", error);
-    } finally {
-      setIsSubmitting(false);
     }
   };
 
