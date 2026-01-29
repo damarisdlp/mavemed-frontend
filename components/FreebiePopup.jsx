@@ -174,14 +174,13 @@ export default function FreebiePopup() {
         throw new Error(detail);
       }
 
+      setForm({ name: "", email: "", phone: "", company: "" });
       setStatus({
         type: "success",
         message: submitIsSpanish
           ? "Listo. Revisa tu correo para recibir la guía."
           : "All set. Check your email for the guide.",
       });
-
-      setForm({ name: "", email: "", phone: "", company: "" });
 
       window.setTimeout(() => setIsOpen(false), 1500);
     } catch (error) {
