@@ -88,6 +88,9 @@ export default function PromoLeadForm() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    if (typeof document !== "undefined" && document.activeElement?.blur) {
+      document.activeElement.blur();
+    }
     try {
       const phoneEl = phoneRef.current;
       const isPhoneValid = validatePhoneNumber(formData.phone, formData.countryCode);
@@ -175,11 +178,11 @@ export default function PromoLeadForm() {
   };
 
   const inputClass =
-    "border border-gray-300 text-black placeholder:text-black rounded px-3 py-2 w-full min-w-0 max-w-full focus:outline-none focus:ring-2 focus:ring-black";
+    "border border-gray-300 text-black placeholder:text-black rounded px-3 py-2 w-full min-w-0 max-w-full text-base md:text-sm focus:outline-none focus:ring-2 focus:ring-black";
   const inputGrayClass =
-    "border border-gray-300 text-gray-700 rounded px-3 py-2 w-full min-w-0 max-w-full focus:outline-none focus:ring-2 focus:ring-black";
+    "border border-gray-300 text-gray-700 rounded px-3 py-2 w-full min-w-0 max-w-full text-base md:text-sm focus:outline-none focus:ring-2 focus:ring-black";
   const selectClass =
-    "border border-gray-300 text-gray-700 rounded px-3 py-2 w-full min-w-0 max-w-full focus:outline-none focus:ring-2 focus:ring-black";
+    "border border-gray-300 text-gray-700 rounded px-3 py-2 w-full min-w-0 max-w-full text-base md:text-sm focus:outline-none focus:ring-2 focus:ring-black";
 
   const activeForm = getActiveLeadForm();
   const formTitle = t(activeForm?.titleKey || "leadForm.title");
