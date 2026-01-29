@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useTranslation } from "next-i18next";
 import dynamic from "next/dynamic";
-import LeadForm from "./LeadForm";
+import PromoLeadForm from "./PromoLeadForm";
 
 const ChatLauncher = dynamic(() => import("./ChatLauncher"), { ssr: false });
 
@@ -15,7 +15,7 @@ export default function Footer() {
     <footer className="text-black">
       <div className="bg-[#efeee7]">
         <div className="max-w-7xl mx-auto px-6 py-8">
-          <LeadForm useSchedule={false} />
+          <PromoLeadForm />
         </div>
       </div>
 
