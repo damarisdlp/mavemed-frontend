@@ -156,6 +156,9 @@ export default function PromoLeadPopup() {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
+    if (typeof document !== "undefined" && document.activeElement?.blur) {
+      document.activeElement.blur();
+    }
 
     const submitLang = submitLangRef.current;
     const submitIsSpanish = submitLang === "es";
@@ -297,7 +300,7 @@ export default function PromoLeadPopup() {
               name="fullName"
               value={form.fullName}
               onChange={handleChange}
-              className="mt-1 w-full rounded-md border border-gray-300 px-3 py-2 text-sm"
+              className="mt-1 w-full rounded-md border border-gray-300 px-3 py-2 text-base md:text-sm"
               placeholder={t("leadForm.firstName")}
               required
             />
@@ -313,7 +316,7 @@ export default function PromoLeadPopup() {
               name="email"
               value={form.email}
               onChange={handleChange}
-              className="mt-1 w-full rounded-md border border-gray-300 px-3 py-2 text-sm"
+              className="mt-1 w-full rounded-md border border-gray-300 px-3 py-2 text-base md:text-sm"
               placeholder={t("leadForm.email")}
               required
             />
@@ -329,7 +332,7 @@ export default function PromoLeadPopup() {
                 name="countryCode"
                 value={form.countryCode}
                 onChange={handleChange}
-                className="mt-1 w-full rounded-md border border-gray-300 px-3 py-2 text-sm"
+                className="mt-1 w-full rounded-md border border-gray-300 px-3 py-2 text-base md:text-sm"
                 required
               >
                 <option value="+1">+1 United States / Canada</option>
@@ -354,7 +357,7 @@ export default function PromoLeadPopup() {
                 name="phone"
                 value={form.phone}
                 onChange={handleChange}
-                className="mt-1 w-full rounded-md border border-gray-300 px-3 py-2 text-sm"
+                className="mt-1 w-full rounded-md border border-gray-300 px-3 py-2 text-base md:text-sm"
                 placeholder={t("leadForm.phone")}
                 required
               />
