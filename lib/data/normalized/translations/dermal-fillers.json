@@ -86,18 +86,18 @@
   },
   {
     "id": "opt.facial_balancing.volift",
-    "en": "Juvéderm Volift",
-    "es": "Juvéderm Volift"
+    "en": "Brand Name: Juvéderm Volift",
+    "es": "Marca: Juvéderm Volift"
   },
   {
     "id": "opt.facial_balancing.voluma",
-    "en": "Juvéderm Voluma",
-    "es": "Juvéderm Voluma"
+    "en": "Brand Name: Juvéderm Voluma",
+    "es": "Marca: Juvéderm Voluma"
   },
   {
     "id": "opt.facial_balancing.volux",
-    "en": "Juvéderm Volux",
-    "es": "Juvéderm Volux"
+    "en": "Brand Name: Juvéderm Volux",
+    "es": "Marca: Juvéderm Volux"
   },
   {
     "id": "note.facial_balancing.volift_price",
@@ -256,18 +256,23 @@
   },
   {
     "id": "opt.lip_fillers.stylage_m",
-    "en": "Stylage M",
-    "es": "Stylage M"
+    "en": "Brand Name: Stylage� M",
+    "es": "Marca: Stylage� M"
   },
   {
     "id": "opt.lip_fillers.volift",
-    "en": "Juvéderm Volift",
-    "es": "Juvéderm Volift"
+    "en": "Brand Name: Juvéderm Volift",
+    "es": "Marca: Juvéderm Volift"
   },
   {
     "id": "opt.lip_fillers.volbella",
-    "en": "Juvéderm Volbella",
-    "es": "Juvéderm Volbella"
+    "en": "Brand Name: Juvéderm Volbella",
+    "es": "Marca: Juvéderm Volbella"
+  },
+  {
+    "id": "opt.lip_fillers.generic_deep",
+    "en": "Generic: Cross-Linked Hyaluronic Acid",
+    "es": "Genérico: Ácido hialurónico reticulado"
   },
   {
     "id": "note.lip_fillers.stylage_tech",
@@ -278,6 +283,11 @@
     "id": "note.lip_fillers.stylage_zones",
     "en": "Lips, nasolabial folds, marionette lines, cheeks, chin contouring.",
     "es": "Labios, surcos nasogenianos, líneas de marioneta, mejillas, contorno del mentón."
+  },
+  {
+    "id": "note.lip_fillers.stylage_syringe",
+    "en": "1 ml syringe.",
+    "es": "Jeringa de 1 ml."
   },
   {
     "id": "note.lip_fillers.stylage_duration",
@@ -300,6 +310,11 @@
     "es": "Labios cuando se busca estructura/volumen; mejillas, tercio medio, pliegues, mentón."
   },
   {
+    "id": "note.lip_fillers.volift_syringe",
+    "en": "1 ml syringe.",
+    "es": "Jeringa de 1 ml."
+  },
+  {
     "id": "note.lip_fillers.volift_duration",
     "en": "Typically lasts 12 to 18 months.",
     "es": "Duración estimada de 12 a 18 meses."
@@ -320,6 +335,11 @@
     "es": "Hidratación/definición labial sin volumen; ojeras; líneas peribucales finas."
   },
   {
+    "id": "note.lip_fillers.volbella_syringe",
+    "en": "1 ml syringe.",
+    "es": "Jeringa de 1 ml."
+  },
+  {
     "id": "note.lip_fillers.volbella_duration",
     "en": "Typically lasts 9 to 12 months.",
     "es": "Duración estimada de 9 a 12 meses."
@@ -328,6 +348,46 @@
     "id": "note.lip_fillers.volbella_lidocaine",
     "en": "Formulated with lidocaine for added comfort.",
     "es": "Formulado con lidocaína para mayor comodidad."
+  },
+  {
+    "id": "note.lip_fillers.generic_deep_balance",
+    "en": "Effective balancing power for structural contouring.",
+    "es": "Potente equilibrio para contorno estructural."
+  },
+  {
+    "id": "note.lip_fillers.generic_deep_composition",
+    "en": "Cross-linked hyaluronic acid gel designed for stability.",
+    "es": "Gel de ácido hialurónico reticulado diseñado para mayor estabilidad."
+  },
+  {
+    "id": "note.lip_fillers.generic_deep_concentration",
+    "en": "20 mg/ml HA concentration for lift and support.",
+    "es": "Concentración de HA de 20 mg/ml para elevación y soporte."
+  },
+  {
+    "id": "note.lip_fillers.generic_deep_indication",
+    "en": "Multipurpose correction for volume, contour, and folds.",
+    "es": "Corrección multipropósito para volumen, contorno y pliegues."
+  },
+  {
+    "id": "note.lip_fillers.generic_deep_depth",
+    "en": "Injected into the medium to deep dermis.",
+    "es": "Se inyecta en dermis media a profunda."
+  },
+  {
+    "id": "note.lip_fillers.generic_deep_packaging",
+    "en": "1 × 1.1 ml syringe with 25G and 27G needles.",
+    "es": "1 × jeringa de 1.1 ml con agujas 25G y 27G."
+  },
+  {
+    "id": "note.lip_fillers.generic_deep_lidocaine",
+    "en": "Contains 0.3% lidocaine for added comfort.",
+    "es": "Contiene lidocaína al 0.3% para mayor comodidad."
+  },
+  {
+    "id": "note.lip_fillers.generic_deep_duration",
+    "en": "Typically lasts 9 to 12 months.",
+    "es": "Duración estimada de 9 a 12 meses."
   },
   {
     "id": "svc.hyaluronidase.name",
@@ -421,13 +481,13 @@
   },
   {
     "id": "addon.facial_balancing.botox_any_zone",
-    "en": "Botox - Any Zone",
-    "es": "Botox - Cualquier Zona"
+    "en": "Botox� - Any Zone",
+    "es": "Botox� - Cualquier Zona"
   },
   {
     "id": "addon.facial_balancing.lip_filler_stylage",
-    "en": "Lip Filler - Hyaluronic Acid - Stylage M",
-    "es": "Relleno de Labios - Ácido Hialurónico - Stylage - M"
+    "en": "Lip Filler - Hyaluronic Acid - Stylage� M",
+    "es": "Relleno de Labios - Ácido Hialurónico - Stylage� - M"
   },
   {
     "id": "addon.facial_balancing.microneedling_pdrn",
@@ -446,18 +506,18 @@
   },
   {
     "id": "addon.facial_balancing.enzymatic_therapy",
-    "en": "Enzymatic Therapy - PB Serum+ (Kit)",
-    "es": "Terapia Enzimática - PB Serum+ (Kit)"
+    "en": "Enzymatic Therapy - PB Serum�+ (Kit)",
+    "es": "Terapia Enzimática - PB Serum�+ (Kit)"
   },
   {
     "id": "addon.facial_balancing.rf_microneedling",
-    "en": "Sylfirm X - RF Microneedling - Face + Neck + Décolleté",
-    "es": "Sylfirm X - Microagujas RF - Rostro + Cuello + Escote"
+    "en": "Sylfirm X� - RF Microneedling - Face + Neck + Décolleté",
+    "es": "Sylfirm X� - Microagujas RF - Rostro + Cuello + Escote"
   },
   {
     "id": "addon.lip_fillers.botox_any_zone",
-    "en": "Botox - Any Zone",
-    "es": "Botox - Cualquier Zona"
+    "en": "Botox� - Any Zone",
+    "es": "Botox� - Cualquier Zona"
   },
   {
     "id": "addon.lip_fillers.microneedling_prp",
@@ -471,18 +531,18 @@
   },
   {
     "id": "addon.lip_fillers.hydrafacial",
-    "en": "Hydrafacial MD - Face",
-    "es": "Hydrafacial MD - Rostro"
+    "en": "Hydrafacial� MD - Face",
+    "es": "Hydrafacial� MD - Rostro"
   },
   {
     "id": "addon.lip_fillers.casmara_purifying",
-    "en": "Casmara - Purifying Algae Facial",
-    "es": "Casmara - Facial Purificante de Algas"
+    "en": "Casmara� - Purifying Algae Facial",
+    "es": "Casmara� - Facial Purificante de Algas"
   },
   {
     "id": "addon.hyaluronidase.lip_filler_stylage",
-    "en": "Lip Filler - Hyaluronic Acid - Stylage M",
-    "es": "Relleno de Labios - Ácido Hialurónico - Stylage M"
+    "en": "Lip Filler - Hyaluronic Acid - Stylage� M",
+    "es": "Relleno de Labios - Ácido Hialurónico - Stylage� M"
   },
   {
     "id": "addon.hyaluronidase.facial_balancing_volift",

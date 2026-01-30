@@ -10,6 +10,7 @@
     "notesKeys": [
       "note.lip_fillers.stylage_tech",
       "note.lip_fillers.stylage_zones",
+      "note.lip_fillers.stylage_syringe",
       "note.lip_fillers.stylage_lidocaine",
       "note.lip_fillers.stylage_duration"
     ]
@@ -25,6 +26,7 @@
     "notesKeys": [
       "note.lip_fillers.volift_tech",
       "note.lip_fillers.volift_zones",
+      "note.lip_fillers.volift_syringe",
       "note.lip_fillers.volift_lidocaine",
       "note.lip_fillers.volift_duration"
     ]
@@ -40,8 +42,24 @@
     "notesKeys": [
       "note.lip_fillers.volbella_tech",
       "note.lip_fillers.volbella_zones",
+      "note.lip_fillers.volbella_syringe",
       "note.lip_fillers.volbella_lidocaine",
       "note.lip_fillers.volbella_duration"
+    ]
+  },
+  {
+    "id": "opt_lip_fillers_generic_deep",
+    "serviceId": "svc_lip_fillers",
+    "nameKey": "opt.lip_fillers.generic_deep",
+    "price": { "amount": 245, "currency": "USD" },
+    "isOptionPromoActive": false,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "notesKeys": [
+      "note.lip_fillers.generic_deep_composition",
+      "note.lip_fillers.generic_deep_depth",
+      "note.lip_fillers.generic_deep_lidocaine",
+      "note.lip_fillers.generic_deep_duration"
     ]
   },
   {

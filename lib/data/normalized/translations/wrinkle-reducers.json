@@ -6,18 +6,18 @@
   },
   {
     "id": "svc.botox.name",
-    "en": "Wrinkle Reducer - Botox®",
-    "es": "Reductor de Arrugas - Botox®"
+    "en": "Wrinkle Reducer - Brand Name: Botox®",
+    "es": "Reductor de Arrugas - Marca: Botox®"
   },
   {
     "id": "svc.botox.desc",
-    "en": "Reduce the appearance of fine lines and wrinkles for a smoother, more refreshed look.",
-    "es": "Reduce la apariencia de líneas finas y arrugas para una apariencia más suave y fresca."
+    "en": "Brand-name Botox® (Onabotulinum toxin A) reduces the appearance of fine lines and wrinkles for a smoother, more refreshed look.",
+    "es": "Botox® de marca (Onabotulinum toxin A) reduce la apariencia de líneas finas y arrugas para una apariencia más suave y fresca."
   },
   {
     "id": "svc.botox.details",
-    "en": "Neuromodulator injections temporarily relax facial muscles to smooth fine lines and dynamic wrinkles, enhancing skin texture and creating a more youthful, natural-looking appearance.",
-    "es": "Las inyecciones de neuromoduladores relajan temporalmente los músculos faciales para suavizar líneas finas y arrugas dinámicas, mejorando la textura de la piel y creando una apariencia más juvenil y natural."
+    "en": "Brand-name Botox® uses Onabotulinum toxin A to temporarily relax facial muscles, smoothing fine lines and dynamic wrinkles while improving skin texture for a more youthful, natural-looking appearance.",
+    "es": "Botox® de marca utiliza Onabotulinum toxin A para relajar temporalmente los músculos faciales, suavizando líneas finas y arrugas dinámicas y mejorando la textura de la piel para una apariencia más juvenil y natural."
   },
   {
     "id": "note.botox.exclusive_rate",
@@ -161,23 +161,23 @@
   },
   {
     "id": "addon.botox.hydrafacial",
-    "en": "Hydrafacial MD - Face",
-    "es": "Hydrafacial MD - Rostro"
+    "en": "Hydrafacial® MD - Face",
+    "es": "Hydrafacial® MD - Rostro"
   },
   {
     "id": "addon.botox.casmara_purifying",
-    "en": "Casmara - Purifying Algae Facial",
-    "es": "Casmara - Facial Purificante de Algas"
+    "en": "Casmara® - Purifying Algae Facial",
+    "es": "Casmara® - Facial Purificante de Algas"
   },
   {
     "id": "addon.botox.casmara_infinity",
-    "en": "Casmara - Infinity Anti‑Aging Facial",
-    "es": "Casmara - Facial Antienvejecimiento Infinity"
+    "en": "Casmara® - Infinity Anti‑Aging Facial",
+    "es": "Casmara® - Facial Antienvejecimiento Infinity"
   },
   {
     "id": "addon.botox.casmara_retinol",
-    "en": "Casmara - Retinol Pro‑Age Facial",
-    "es": "Casmara - Facial Retinol Pro‑Age"
+    "en": "Casmara® - Retinol Pro‑Age Facial",
+    "es": "Casmara® - Facial Retinol Pro‑Age"
   },
   {
     "id": "addon.botox.pdo_threads",
@@ -301,23 +301,23 @@
   },
   {
     "id": "faq.botox.a7",
-    "en": "Absolutely. Botox® can be safely combined with treatments like HydraFacial, Sculptra, or laser resurfacing for enhanced results. Your provider will guide you on the ideal timing between procedures.",
-    "es": "Absolutamente. El Botox® se puede combinar de manera segura con tratamientos como HydraFacial, Sculptra o resurfacing láser para resultados mejorados. Su proveedor le guiará sobre el tiempo ideal entre procedimientos."
+    "en": "Absolutely. Botox® can be safely combined with treatments like HydraFacial���, Sculptra���, or laser resurfacing for enhanced results. Your provider will guide you on the ideal timing between procedures.",
+    "es": "Absolutamente. El Botox® se puede combinar de manera segura con tratamientos como HydraFacial���, Sculptra��� o resurfacing láser para resultados mejorados. Su proveedor le guiará sobre el tiempo ideal entre procedimientos."
   },
   {
     "id": "svc.dermawrinkle.name",
-    "en": "Wrinkle Reducer - Dermawrinkle",
-    "es": "Reductor de Arrugas - Dermawrinkle"
+    "en": "Wrinkle Reducer - Generic: Botulinum Toxin (Onabotulinum toxin A)",
+    "es": "Reductor de Arrugas - Genérico: toxina botulínica (Onabotulinum toxin A)"
   },
   {
     "id": "svc.dermawrinkle.desc",
-    "en": "Reduce the appearance of fine lines and wrinkles for a smoother, more refreshed look.",
-    "es": "Reduce la apariencia de líneas finas y arrugas para una apariencia más suave y fresca."
+    "en": "Generic botulinum toxin (Onabotulinum toxin A) reduces the appearance of fine lines and wrinkles for a smoother, more refreshed look.",
+    "es": "La toxina botulínica genérica (Onabotulinum toxin A) reduce la apariencia de líneas finas y arrugas para una apariencia más suave y fresca."
   },
   {
     "id": "svc.dermawrinkle.details",
-    "en": "Neuromodulator injections with Dermawrinkle temporarily relax facial muscles to smooth fine lines and dynamic wrinkles, enhancing skin texture and creating a more youthful, natural-looking appearance.",
-    "es": "Las inyecciones de neuromodulador con Dermawrinkle relajan temporalmente los músculos faciales para suavizar líneas finas y arrugas dinámicas, mejorando la textura de la piel y creando una apariencia más juvenil y natural."
+    "en": "Generic botulinum toxin (Onabotulinum toxin A) neuromodulator injections temporarily relax facial muscles to smooth fine lines and dynamic wrinkles, enhancing skin texture and creating a more youthful, natural-looking appearance.",
+    "es": "Las inyecciones de neuromodulador con toxina botulínica genérica (Onabotulinum toxin A) relajan temporalmente los músculos faciales para suavizar líneas finas y arrugas dinámicas, mejorando la textura de la piel y creando una apariencia más juvenil y natural."
   },
   {
     "id": "note.dermawrinkle.exclusive_rate",
@@ -331,8 +331,8 @@
   },
   {
     "id": "note.dermawrinkle.standard_rate",
-    "en": "Touch-ups on Dermawrinkle application outside of the exclusive price option are subject to the standard base rate",
-    "es": "Los retoques en la aplicación de Dermawrinkle fuera de la opción de precio exclusivo están sujetos a la tarifa base estándar"
+    "en": "Touch-ups on generic botulinum toxin applications outside of the exclusive price option are subject to the standard base rate",
+    "es": "Los retoques en la aplicación de toxina botulínica genérica fuera de la opción de precio exclusivo están sujetos a la tarifa base estándar"
   },
   {
     "id": "goal.dermawrinkle.smooth_lines",
@@ -436,18 +436,18 @@
   },
   {
     "id": "promo.dermawrinkle.headline",
-    "en": "Exclusive Dermawrinkle Savings",
-    "es": "Ahorro Exclusivo en Dermawrinkle"
+    "en": "Exclusive Generic Botulinum Toxin Savings",
+    "es": "Ahorro exclusivo en toxina botulínica genérica"
   },
   {
     "id": "promo.dermawrinkle.description",
-    "en": "Limited-time per-unit discount with our 45-unit exclusive pack—ideal for multiple areas or maintenance.",
-    "es": "Descuento por unidad por tiempo limitado con nuestro paquete exclusivo de 45 unidades, ideal para varias zonas o mantenimiento."
+    "en": "Limited-time per-unit discount on generic botulinum toxin with our 45-unit exclusive pack—ideal for multiple areas or maintenance.",
+    "es": "Descuento por unidad por tiempo limitado en toxina botulínica genérica con nuestro paquete exclusivo de 45 unidades, ideal para varias zonas o mantenimiento."
   },
   {
     "id": "promo.dermawrinkle.option_name",
-    "en": "Dermawrinkle - 45-Unit Exclusive Pack",
-    "es": "Dermawrinkle - Paquete Exclusivo de 45 Unidades"
+    "en": "Generic Botulinum Toxin - 45-Unit Exclusive Pack",
+    "es": "Toxina botulínica genérica - Paquete exclusivo de 45 unidades"
   },
   {
     "id": "promo.dermawrinkle.note1",
@@ -461,23 +461,23 @@
   },
   {
     "id": "addon.dermawrinkle.hydrafacial",
-    "en": "Hydrafacial MD - Face",
-    "es": "Hydrafacial MD - Rostro"
+    "en": "Hydrafacial® MD - Face",
+    "es": "Hydrafacial® MD - Rostro"
   },
   {
     "id": "addon.dermawrinkle.casmara_purifying",
-    "en": "Casmara - Purifying Algae Facial",
-    "es": "Casmara - Facial Purificante de Algas"
+    "en": "Casmara® - Purifying Algae Facial",
+    "es": "Casmara® - Facial Purificante de Algas"
   },
   {
     "id": "addon.dermawrinkle.casmara_infinity",
-    "en": "Casmara - Infinity Anti-Aging Facial",
-    "es": "Casmara - Facial Antienvejecimiento Infinity"
+    "en": "Casmara® - Infinity Anti-Aging Facial",
+    "es": "Casmara® - Facial Antienvejecimiento Infinity"
   },
   {
     "id": "addon.dermawrinkle.casmara_retinol",
-    "en": "Casmara - Retinol Pro-Age Facial",
-    "es": "Casmara - Facial Retinol Pro-Age"
+    "en": "Casmara® - Retinol Pro-Age Facial",
+    "es": "Casmara® - Facial Retinol Pro-Age"
   },
   {
     "id": "addon.dermawrinkle.pdo_threads",
@@ -536,8 +536,8 @@
   },
   {
     "id": "faq.dermawrinkle.q1",
-    "en": "How long does Dermawrinkle take to work?",
-    "es": "¿Cuánto tiempo tarda Dermawrinkle en hacer efecto?"
+    "en": "How long does generic botulinum toxin take to work?",
+    "es": "¿Cuánto tiempo tarda en hacer efecto la toxina botulínica genérica?"
   },
   {
     "id": "faq.dermawrinkle.a1",
@@ -546,13 +546,13 @@
   },
   {
     "id": "faq.dermawrinkle.q2",
-    "en": "How long do Dermawrinkle results last?",
-    "es": "¿Cuánto duran los resultados de Dermawrinkle?"
+    "en": "How long do generic botulinum toxin results last?",
+    "es": "¿Cuánto duran los resultados de la toxina botulínica genérica?"
   },
   {
     "id": "faq.dermawrinkle.a2",
-    "en": "Dermawrinkle typically lasts 3 to 4 months. Longevity may vary depending on your metabolism, lifestyle, and treatment area.",
-    "es": "Dermawrinkle típicamente dura de 3 a 4 meses. La duración puede variar dependiendo de su metabolismo, estilo de vida y área de tratamiento."
+    "en": "Generic botulinum toxin typically lasts 3 to 4 months. Longevity may vary depending on your metabolism, lifestyle, and treatment area.",
+    "es": "La toxina botulínica genérica típicamente dura de 3 a 4 meses. La duración puede variar dependiendo de su metabolismo, estilo de vida y área de tratamiento."
   },
   {
     "id": "faq.dermawrinkle.q3",
@@ -566,8 +566,8 @@
   },
   {
     "id": "faq.dermawrinkle.q4",
-    "en": "Can I wear makeup or skincare after Dermawrinkle?",
-    "es": "¿Puedo usar maquillaje o cuidado de la piel después de Dermawrinkle?"
+    "en": "Can I wear makeup or skincare after generic botulinum toxin?",
+    "es": "¿Puedo usar maquillaje o cuidado de la piel después de la toxina botulínica genérica?"
   },
   {
     "id": "faq.dermawrinkle.a4",
@@ -586,22 +586,22 @@
   },
   {
     "id": "faq.dermawrinkle.q6",
-    "en": "Is Dermawrinkle safe?",
-    "es": "¿Es seguro Dermawrinkle?"
+    "en": "Is generic botulinum toxin safe?",
+    "es": "¿Es segura la toxina botulínica genérica?"
   },
   {
     "id": "faq.dermawrinkle.a6",
-    "en": "Neuromodulators like Dermawrinkle are considered very safe when administered by trained medical professionals. At Mave, treatments are performed under medical supervision using only certified products.",
-    "es": "Los neuromoduladores como Dermawrinkle se consideran muy seguros cuando son administrados por profesionales médicos capacitados. En Mave, los tratamientos se realizan bajo supervisión médica utilizando solo productos certificados."
+    "en": "Neuromodulators like generic botulinum toxin are considered very safe when administered by trained medical professionals. At Mave, treatments are performed under medical supervision using only certified products.",
+    "es": "Los neuromoduladores como la toxina botulínica genérica se consideran muy seguros cuando son administrados por profesionales médicos capacitados. En Mave, los tratamientos se realizan bajo supervisión médica utilizando solo productos certificados."
   },
   {
     "id": "faq.dermawrinkle.q7",
-    "en": "Can I combine Dermawrinkle with other treatments?",
-    "es": "¿Puedo combinar Dermawrinkle con otros tratamientos?"
+    "en": "Can I combine generic botulinum toxin with other treatments?",
+    "es": "¿Puedo combinar la toxina botulínica genérica con otros tratamientos?"
   },
   {
     "id": "faq.dermawrinkle.a7",
-    "en": "Absolutely. Dermawrinkle can be safely combined with treatments like HydraFacial, Sculptra, or laser resurfacing for enhanced results. Your provider will guide you on the ideal timing between procedures.",
-    "es": "Absolutamente. Dermawrinkle se puede combinar de manera segura con tratamientos como HydraFacial, Sculptra o resurfacing láser para resultados mejorados. Su proveedor le guiará sobre el tiempo ideal entre procedimientos."
+    "en": "Absolutely. Generic botulinum toxin can be safely combined with treatments like HydraFacial���, Sculptra���, or laser resurfacing for enhanced results. Your provider will guide you on the ideal timing between procedures.",
+    "es": "Absolutamente. La toxina botulínica genérica se puede combinar de manera segura con tratamientos como HydraFacial���, Sculptra��� o resurfacing láser para resultados mejorados. Su proveedor le guiará sobre el tiempo ideal entre procedimientos."
   }
 ]

@@ -376,13 +376,13 @@
   },
   {
     "id": "addon.cupping.hydrafacial",
-    "en": "Hydrafacial MD - Face",
-    "es": "Hydrafacial MD - Rostro"
+    "en": "Hydrafacial® MD - Face",
+    "es": "Hydrafacial® MD - Rostro"
   },
   {
     "id": "addon.cupping.casmara_retinol",
-    "en": "Casmara - Retinol Proâ€‘Age Facial",
-    "es": "Casmara - Facial Retinol Proâ€‘Age"
+    "en": "Casmara® - Retinol Proâ€‘Age Facial",
+    "es": "Casmara® - Facial Retinol Proâ€‘Age"
   },
   {
     "id": "addon.keloid.venus_freeze",
@@ -391,18 +391,18 @@
   },
   {
     "id": "addon.keloid.rf_microneedling_medium",
-    "en": "Sylfirm X - RF Microneedling - Medium Zone",
-    "es": "Sylfirm X - Microagujas RF - Zona Mediana"
+    "en": "Sylfirm X® - RF Microneedling - Medium Zone",
+    "es": "Sylfirm X® - Microagujas RF - Zona Mediana"
   },
   {
     "id": "addon.sclerotherapy.hydrafacial",
-    "en": "Hydrafacial MD - Face",
-    "es": "Hydrafacial MD - Rostro"
+    "en": "Hydrafacial® MD - Face",
+    "es": "Hydrafacial® MD - Rostro"
   },
   {
     "id": "addon.sclerotherapy.botox",
-    "en": "Botox - Any Zone",
-    "es": "Botox - Cualquier Zona"
+    "en": "Botox® - Any Zone",
+    "es": "Botox® - Cualquier Zona"
   },
   {
     "id": "addon.sclerotherapy.dermawrinkle",
@@ -431,13 +431,13 @@
   },
   {
     "id": "addon.wart.hydrafacial",
-    "en": "Hydrafacial MD - Face",
-    "es": "Hydrafacial MD - Rostro"
+    "en": "Hydrafacial® MD - Face",
+    "es": "Hydrafacial® MD - Rostro"
   },
   {
     "id": "addon.wart.casmara_purifying",
-    "en": "Casmara - Purifying Algae Facial",
-    "es": "Casmara - Facial Purificante de Algas"
+    "en": "Casmara® - Purifying Algae Facial",
+    "es": "Casmara® - Facial Purificante de Algas"
   },
   {
     "id": "exp.cupping.pre.1",

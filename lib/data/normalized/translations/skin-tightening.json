@@ -6,18 +6,18 @@
   },
   {
     "id": "svc.ultraformer_mpt.name",
-    "en": "Ultraformer MPT HIFU Lift",
-    "es": "Lifting con HIFU Ultraformer MPT"
+    "en": "Ultraformer MPTÆ HIFU Lift",
+    "es": "Lifting con HIFU Ultraformer MPTÆ"
   },
   {
     "id": "svc.ultraformer_mpt.desc",
-    "en": "Ultraformer MPT is a non-surgical facelift and body sculpting treatment that uses high-intensity focused ultrasound (HIFU) to tighten skin, reduce laxity, and contour key areas without downtime.",
-    "es": "Ultraformer MPT es un tratamiento de lifting facial y esculpido corporal no quir√∫rgico que utiliza ultrasonido focalizado de alta intensidad (HIFU) para tensar la piel, reducir la flacidez y contornear zonas clave sin tiempo de recuperaci√≥n."
+    "en": "Ultraformer MPTÆ is a non-surgical facelift and body sculpting treatment that uses high-intensity focused ultrasound (HIFU) to tighten skin, reduce laxity, and contour key areas without downtime.",
+    "es": "Ultraformer MPTÆ es un tratamiento de lifting facial y esculpido corporal no quir√∫rgico que utiliza ultrasonido focalizado de alta intensidad (HIFU) para tensar la piel, reducir la flacidez y contornear zonas clave sin tiempo de recuperaci√≥n."
   },
   {
     "id": "svc.ultraformer_mpt.details",
-    "en": "Ultraformer MPT is an advanced HIFU (High-Intensity Focused Ultrasound) system that delivers precise energy to stimulate collagen production in the SMAS layer, dermis, and subcutaneous tissues. This non-invasive treatment lifts and tightens the skin on the face, neck, and body with no downtime. Ideal for patients seeking visible facial rejuvenation or body contouring without surgery.",
-    "es": "Ultraformer MPT es un sistema avanzado de HIFU (ultrasonido focalizado de alta intensidad) que entrega energ√≠a precisa para estimular la producci√≥n de col√°geno en la capa SMAS, la dermis y los tejidos subcut√°neos. Este tratamiento no invasivo eleva y tensa la piel del rostro, cuello y cuerpo sin tiempo de inactividad. Es ideal para personas que buscan un rejuvenecimiento facial visible o contorno corporal sin cirug√≠a."
+    "en": "Ultraformer MPTÆ is an advanced HIFU (High-Intensity Focused Ultrasound) system that delivers precise energy to stimulate collagen production in the SMAS layer, dermis, and subcutaneous tissues. This non-invasive treatment lifts and tightens the skin on the face, neck, and body with no downtime. Ideal for patients seeking visible facial rejuvenation or body contouring without surgery.",
+    "es": "Ultraformer MPTÆ es un sistema avanzado de HIFU (ultrasonido focalizado de alta intensidad) que entrega energ√≠a precisa para estimular la producci√≥n de col√°geno en la capa SMAS, la dermis y los tejidos subcut√°neos. Este tratamiento no invasivo eleva y tensa la piel del rostro, cuello y cuerpo sin tiempo de inactividad. Es ideal para personas que buscan un rejuvenecimiento facial visible o contorno corporal sin cirug√≠a."
   },
   {
     "id": "svc.venus_freeze.name",
@@ -31,8 +31,8 @@
   },
   {
     "id": "svc.venus_freeze.details",
-    "en": "Venus Freeze uses multi-polar radiofrequency and pulsed electromagnetic fields to deliver heat into the skin, stimulating collagen and elastin while reducing fat deposits. Ideal for patients seeking skin tightening and smoother contours without surgery.",
-    "es": "Venus Freeze utiliza radiofrecuencia multipolar y campos electromagn√©ticos pulsados para calentar la piel, estimular col√°geno y elastina y reducir dep√≥sitos de grasa. Ideal para quienes buscan tensar la piel y suavizar el contorno sin cirug√≠a."
+    "en": "Venus FreezeÆ uses multi-polar radiofrequency and pulsed electromagnetic fields to deliver heat into the skin, stimulating collagen and elastin while reducing fat deposits. Ideal for patients seeking skin tightening and smoother contours without surgery.",
+    "es": "Venus FreezeÆ utiliza radiofrecuencia multipolar y campos electromagn√©ticos pulsados para calentar la piel, estimular col√°geno y elastina y reducir dep√≥sitos de grasa. Ideal para quienes buscan tensar la piel y suavizar el contorno sin cirug√≠a."
   },
   {
     "id": "svc.enzymatic_therapy.name",
@@ -96,8 +96,8 @@
   },
   {
     "id": "note.venus_freeze.rf_preference",
-    "en": "For facial rejuvenation and skin tightening we prefer RF microneedling with Sylfirm X for controlled dermal remodeling. Venus Freeze is primarily indicated for body contouring and laxity.",
-    "es": "Para rejuvenecimiento y tensado facial preferimos la radiofrecuencia fraccionada con microagujas Sylfirm X por su remodelaci√≥n d√©rmica controlada. Venus Freeze se indica principalmente para contorno corporal y laxitud."
+    "en": "For facial rejuvenation and skin tightening we prefer RF microneedling with Sylfirm XÆ for controlled dermal remodeling. Venus FreezeÆ is primarily indicated for body contouring and laxity.",
+    "es": "Para rejuvenecimiento y tensado facial preferimos la radiofrecuencia fraccionada con microagujas Sylfirm XÆ por su remodelaci√≥n d√©rmica controlada. Venus FreezeÆ se indica principalmente para contorno corporal y laxitud."
   },
   {
     "id": "note.enzymatic_therapy.non_surgical",
@@ -626,23 +626,23 @@
   },
   {
     "id": "opt.enzymatic.slim",
-    "en": "PB Serum Slim+ - Lipase PB500",
-    "es": "PB Serum Slim+ - Lipasa PB500"
+    "en": "PB SerumÆ Slim+ - Lipase PB500",
+    "es": "PB SerumÆ Slim+ - Lipasa PB500"
   },
   {
     "id": "opt.enzymatic.drain",
-    "en": "PB Serum Drain+ - Hyaluronidase PB3000",
-    "es": "PB Serum Drain+ - Hialuronidasa PB3000"
+    "en": "PB SerumÆ Drain+ - Hyaluronidase PB3000",
+    "es": "PB SerumÆ Drain+ - Hialuronidasa PB3000"
   },
   {
     "id": "opt.enzymatic.smooth",
-    "en": "PB Serum Smooth+ - Collagenase GH PB220",
-    "es": "PB Serum Smooth+ - Colagenasa GH PB220"
+    "en": "PB SerumÆ Smooth+ - Collagenase GH PB220",
+    "es": "PB SerumÆ Smooth+ - Colagenasa GH PB220"
   },
   {
     "id": "opt.enzymatic.kit",
-    "en": "PB Serum+ (Kit)",
-    "es": "PB Serum+ (Kit)"
+    "en": "PB SerumÆ+ (Kit)",
+    "es": "PB SerumÆ+ (Kit)"
   },
   {
     "id": "opt.pdo.signature_lower_face",
@@ -881,8 +881,8 @@
   },
   {
     "id": "addon.ultraformer.harmonyca",
-    "en": "HarmonyCa¬Æ (HA + CAHA) - Hyaluronic Acid + Calcium Hydroxyapatite",
-    "es": "HarmonyCa¬Æ (AH + CAHA) - √Åcido Hialur√≥nico + Hidroxiapatita de Calcio"
+    "en": "HarmonyCaÆ¬Æ (HA + CAHA) - Hyaluronic Acid + Calcium Hydroxyapatite",
+    "es": "HarmonyCaÆ¬Æ (AH + CAHA) - √Åcido Hialur√≥nico + Hidroxiapatita de Calcio"
   },
   {
     "id": "addon.ultraformer.facial_balancing",
@@ -896,28 +896,28 @@
   },
   {
     "id": "addon.venus_freeze.enzymatic_slim",
-    "en": "Enzymatic Remodeling Therapy - PB Serum Slim+",
-    "es": "Terapia de Remodelaci√≥n Enzim√°tica - PB Serum Slim+"
+    "en": "Enzymatic Remodeling Therapy - PB SerumÆ Slim+",
+    "es": "Terapia de Remodelaci√≥n Enzim√°tica - PB SerumÆ Slim+"
   },
   {
     "id": "addon.venus_freeze.enzymatic_kit",
-    "en": "Enzymatic Remodeling Therapy - PB Serum+ (Kit)",
-    "es": "Terapia de Remodelaci√≥n Enzim√°tica - PB Serum+ (Kit)"
+    "en": "Enzymatic Remodeling Therapy - PB SerumÆ+ (Kit)",
+    "es": "Terapia de Remodelaci√≥n Enzim√°tica - PB SerumÆ+ (Kit)"
   },
   {
     "id": "addon.venus_freeze.rf_microneedling",
-    "en": "Sylfirm X - RF Microneedling - Face + Neck + D√©collet√©",
-    "es": "Sylfirm X - Microagujas RF - Rostro + Cuello + Escote"
+    "en": "Sylfirm XÆ - RF Microneedling - Face + Neck + D√©collet√©",
+    "es": "Sylfirm XÆ - Microagujas RF - Rostro + Cuello + Escote"
   },
   {
     "id": "addon.venus_freeze.hydrafacial",
-    "en": "Hydrafacial MD - Face",
-    "es": "Hydrafacial MD - Rostro"
+    "en": "HydrafacialÆ MD - Face",
+    "es": "HydrafacialÆ MD - Rostro"
   },
   {
     "id": "addon.venus_freeze.casmara_retinol",
-    "en": "Casmara - Retinol Pro‚ÄëAge Facial",
-    "es": "Casmara - Facial Retinol Pro‚ÄëAge"
+    "en": "CasmaraÆ - Retinol Pro‚ÄëAge Facial",
+    "es": "CasmaraÆ - Facial Retinol Pro‚ÄëAge"
   },
   {
     "id": "addon.enzymatic.venus_express_body",
@@ -931,8 +931,8 @@
   },
   {
     "id": "addon.enzymatic.rf_microneedling",
-    "en": "Sylfirm X - RF Microneedling - Face",
-    "es": "Sylfirm X - Microagujas RF - Rostro"
+    "en": "Sylfirm XÆ - RF Microneedling - Face",
+    "es": "Sylfirm XÆ - Microagujas RF - Rostro"
   },
   {
     "id": "addon.pdo.mesotherapy_pdrn",
@@ -946,18 +946,18 @@
   },
   {
     "id": "addon.pdo.rf_microneedling",
-    "en": "Sylfirm X - RF Microneedling - Face + Neck + D√©collet√©",
-    "es": "Sylfirm X - Microagujas RF - Rostro + Cuello + Escote"
+    "en": "Sylfirm XÆ - RF Microneedling - Face + Neck + D√©collet√©",
+    "es": "Sylfirm XÆ - Microagujas RF - Rostro + Cuello + Escote"
   },
   {
     "id": "addon.pdo.hydrafacial",
-    "en": "Hydrafacial MD - Face",
-    "es": "Hydrafacial MD - Rostro"
+    "en": "HydrafacialÆ MD - Face",
+    "es": "HydrafacialÆ MD - Rostro"
   },
   {
     "id": "addon.pdo.casmara_retinol",
-    "en": "Casmara - Retinol Pro‚ÄëAge Facial",
-    "es": "Casmara - Facial Retinol Pro‚ÄëAge"
+    "en": "CasmaraÆ - Retinol Pro‚ÄëAge Facial",
+    "es": "CasmaraÆ - Facial Retinol Pro‚ÄëAge"
   },
   {
     "id": "exp.ultraformer.pre.1",
@@ -966,8 +966,8 @@
   },
   {
     "id": "exp.ultraformer.pre.2",
-    "en": "Arrive with clean skin, no makeup; inform your provider of recent Botox/fillers, implants, or metal hardware in the area.",
-    "es": "Acuda con la piel limpia y sin maquillaje; informe a su especialista sobre Botox/rellenos recientes, implantes o material met√°lico en la zona."
+    "en": "Arrive with clean skin, no makeup; inform your provider of recent BotoxÆ/fillers, implants, or metal hardware in the area.",
+    "es": "Acuda con la piel limpia y sin maquillaje; informe a su especialista sobre BotoxÆ/rellenos recientes, implantes o material met√°lico en la zona."
   },
   {
     "id": "exp.ultraformer.during.1",
@@ -1066,8 +1066,8 @@
   },
   {
     "id": "exp.pdo.pre.2",
-    "en": "Inform your provider about any recent Botox or filler procedures to plan your treatment safely.",
-    "es": "Informe a su especialista sobre cualquier tratamiento reciente con Botox o rellenos para planear su procedimiento de forma segura."
+    "en": "Inform your provider about any recent BotoxÆ or filler procedures to plan your treatment safely.",
+    "es": "Informe a su especialista sobre cualquier tratamiento reciente con BotoxÆ o rellenos para planear su procedimiento de forma segura."
   },
   {
     "id": "exp.pdo.pre.3",
@@ -1101,8 +1101,8 @@
   },
   {
     "id": "faq.ultraformer.q1",
-    "en": "Is Ultraformer MPT painful?",
-    "es": "¬øUltraformer MPT es doloroso?"
+    "en": "Is Ultraformer MPTÆ painful?",
+    "es": "¬øUltraformer MPTÆ es doloroso?"
   },
   {
     "id": "faq.ultraformer.a1",
@@ -1111,8 +1111,8 @@
   },
   {
     "id": "faq.ultraformer.q2",
-    "en": "How many sessions of Ultraformer MPT do I need?",
-    "es": "¬øCu√°ntas sesiones de Ultraformer MPT necesito?"
+    "en": "How many sessions of Ultraformer MPTÆ do I need?",
+    "es": "¬øCu√°ntas sesiones de Ultraformer MPTÆ necesito?"
   },
   {
     "id": "faq.ultraformer.a2",
@@ -1121,8 +1121,8 @@
   },
   {
     "id": "faq.ultraformer.q3",
-    "en": "How long do Ultraformer MPT results last?",
-    "es": "¬øCu√°nto duran los resultados de Ultraformer MPT?"
+    "en": "How long do Ultraformer MPTÆ results last?",
+    "es": "¬øCu√°nto duran los resultados de Ultraformer MPTÆ?"
   },
   {
     "id": "faq.ultraformer.a3",
@@ -1131,18 +1131,18 @@
   },
   {
     "id": "faq.ultraformer.q4",
-    "en": "Can Ultraformer MPT be combined with other treatments?",
-    "es": "¬øUltraformer MPT se puede combinar con otros tratamientos?"
+    "en": "Can Ultraformer MPTÆ be combined with other treatments?",
+    "es": "¬øUltraformer MPTÆ se puede combinar con otros tratamientos?"
   },
   {
     "id": "faq.ultraformer.a4",
-    "en": "Yes. Ultraformer MPT pairs well with injectables, microneedling, and collagen stimulators such as Sculptra for enhanced rejuvenation.",
-    "es": "S√≠. Ultraformer MPT se combina muy bien con inyectables, microneedling y estimuladores de col√°geno como Sculptra para un rejuvenecimiento potenciado."
+    "en": "Yes. Ultraformer MPTÆ pairs well with injectables, microneedling, and collagen stimulators such as SculptraÆ for enhanced rejuvenation.",
+    "es": "S√≠. Ultraformer MPTÆ se combina muy bien con inyectables, microneedling y estimuladores de col√°geno como SculptraÆ para un rejuvenecimiento potenciado."
   },
   {
     "id": "faq.ultraformer.q5",
-    "en": "Is there any downtime after Ultraformer MPT?",
-    "es": "¬øHay tiempo de recuperaci√≥n despu√©s de Ultraformer MPT?"
+    "en": "Is there any downtime after Ultraformer MPTÆ?",
+    "es": "¬øHay tiempo de recuperaci√≥n despu√©s de Ultraformer MPTÆ?"
   },
   {
     "id": "faq.ultraformer.a5",
@@ -1151,18 +1151,18 @@
   },
   {
     "id": "faq.ultraformer.q6",
-    "en": "What areas can Ultraformer MPT treat?",
-    "es": "¬øQu√© zonas se pueden tratar con Ultraformer MPT?"
+    "en": "What areas can Ultraformer MPTÆ treat?",
+    "es": "¬øQu√© zonas se pueden tratar con Ultraformer MPTÆ?"
   },
   {
     "id": "faq.ultraformer.a6",
-    "en": "Ultraformer MPT can be used on the face, neck, chin, abdomen, arms, thighs, and back for non-invasive tightening and contouring.",
-    "es": "Ultraformer MPT puede utilizarse en rostro, cuello, ment√≥n, abdomen, brazos, muslos y espalda para tensado y contorno no invasivo."
+    "en": "Ultraformer MPTÆ can be used on the face, neck, chin, abdomen, arms, thighs, and back for non-invasive tightening and contouring.",
+    "es": "Ultraformer MPTÆ puede utilizarse en rostro, cuello, ment√≥n, abdomen, brazos, muslos y espalda para tensado y contorno no invasivo."
   },
   {
     "id": "faq.venus.q1",
-    "en": "Is Venus Freeze painful?",
-    "es": "¬øEs doloroso Venus Freeze?"
+    "en": "Is Venus FreezeÆ painful?",
+    "es": "¬øEs doloroso Venus FreezeÆ?"
   },
   {
     "id": "faq.venus.a1",
@@ -1196,8 +1196,8 @@
   },
   {
     "id": "faq.venus.a4",
-    "en": "No, Venus Freeze is ideal for mild to moderate contouring. It is not a substitute for surgical fat removal.",
-    "es": "No, Venus Freeze es ideal para contornos leves a moderados. No es un sustituto de la extracci√≥n quir√∫rgica de grasa."
+    "en": "No, Venus FreezeÆ is ideal for mild to moderate contouring. It is not a substitute for surgical fat removal.",
+    "es": "No, Venus FreezeÆ es ideal para contornos leves a moderados. No es un sustituto de la extracci√≥n quir√∫rgica de grasa."
   },
   {
     "id": "faq.venus.q5",

@@ -10,6 +10,7 @@ import ApproachSection from "@/components/ApproachSection";
 import PromoBanner from "@/components/PromoBanner";
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
+import BrandCarousel from "@/components/BrandCarousel";
 import PopularTreatments from "@/components/PopularTreatments";
 import ContactCTA from "@/components/ContactCTA";
 import LocationMap from "@/components/LocationSection";
@@ -28,26 +29,26 @@ export default function Home() {
   return (
     <>
      <Head>
-  <title>Mave Medical Spa | Top Tijuana Med Spa for U.S. Patients – Botox, Fillers, Threads & Lasers</title>
+  <title>Mave Medical Spa | Top Tijuana Med Spa for U.S. Patients â Botox®, Fillers, Threads & Lasers</title>
   <meta
     name="description"
-    content="Mave Medical Spa in Tijuana offers Botox, Sculptra, PDO threads, facial balancing, RF microneedling, and CO2 lasers — trusted by patients from San Diego, Los Angeles, and beyond. Safe, expert, and cross-border convenient."
+    content="Mave Medical Spa in Tijuana offers Botox®, Sculptra®, PDO threads, facial balancing, RF microneedling, and CO2 lasers â trusted by patients from San Diego, Los Angeles, and beyond. Safe, expert, and cross-border convenient."
   />
   <meta
     name="keywords"
-    content="Tijuana med spa, Botox Tijuana, Fillers Mexico, Sculptra Tijuana, RF microneedling, facial balancing, PDO threads, CO2 laser, laser treatments Tijuana, medical tourism, cross-border med spa"
+    content="Tijuana med spa, Botox® Tijuana, Fillers Mexico, Sculptra® Tijuana, RF microneedling, facial balancing, PDO threads, CO2 laser, laser treatments Tijuana, medical tourism, cross-border med spa"
   />
   <SeoLinks asPath={asPath} locale={locale} />
 
   {/* Open Graph for Facebook/LinkedIn */}
-  <meta property="og:title" content="Mave Medical Spa – Tijuana’s Best Med Spa for U.S. Clients" />
-  <meta property="og:description" content="Experience expert facial rejuvenation at our modern Tijuana clinic. Botox, fillers, threads, microneedling, and lasers — just minutes from the U.S. border." />
+  <meta property="og:title" content="Mave Medical Spa â Tijuanaâs Best Med Spa for U.S. Clients" />
+  <meta property="og:description" content="Experience expert facial rejuvenation at our modern Tijuana clinic. Botox®, fillers, threads, microneedling, and lasers â just minutes from the U.S. border." />
   <meta property="og:image" content="https://www.mavemedspa.com/logo-mave.png" />
   <meta property="og:type" content="website" />
 
   {/* Twitter */}
   <meta name="twitter:title" content="Mave Medical Spa | Tijuana Aesthetic Experts for U.S. Patients" />
-  <meta name="twitter:description" content="Top-rated med spa for Botox, Sculptra, PDO threads, and more — serving SoCal & Tijuana patients looking for safe, natural results in Mexico." />
+  <meta name="twitter:description" content="Top-rated med spa for Botox®, Sculptra®, PDO threads, and more â serving SoCal & Tijuana patients looking for safe, natural results in Mexico." />
   <meta name="twitter:image" content="https://www.mavemedspa.com/logo-mave.png" />
 
 </Head>
@@ -56,6 +57,7 @@ export default function Home() {
       <PromoBanner />
       <Header isMobileMenuOpen={isMobileMenuOpen} setIsMobileMenuOpen={setIsMobileMenuOpen} />
       <HeroSection />
+      <BrandCarousel />
       <HomeLeadForm />
       <ApproachSection />
       <PopularTreatments />

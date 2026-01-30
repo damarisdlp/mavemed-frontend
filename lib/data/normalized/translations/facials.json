@@ -6,18 +6,18 @@
   },
   {
     "id": "svc.hydrafacial.name",
-    "en": "HydraFacial MD",
-    "es": "HydraFacial MD"
+    "en": "HydraFacial® MD",
+    "es": "HydraFacial® MD"
   },
   {
     "id": "svc.hydrafacial.desc",
-    "en": "Experience a medical-grade HydraFacial in Tijuana featuring patented Vortex-FusionÂ® technology for deep pore cleansing, painless extractions, and intense skin hydration. Perfect for acne-prone, dry, or congested skin.",
-    "es": "Vive un HydraFacial de grado mÃ©dico en Tijuana con la tecnologÃ­a patentada Vortex-FusionÂ® para limpiar poros en profundidad, realizar extracciones indoloras e hidratar intensamente. Perfecto para piel con acnÃ©, seca o congestionada."
+    "en": "Experience a medical-grade HydraFacial® in Tijuana featuring patented Vortex-FusionÂ® technology for deep pore cleansing, painless extractions, and intense skin hydration. Perfect for acne-prone, dry, or congested skin.",
+    "es": "Vive un HydraFacial® de grado mÃ©dico en Tijuana con la tecnologÃ­a patentada Vortex-FusionÂ® para limpiar poros en profundidad, realizar extracciones indoloras e hidratar intensamente. Perfecto para piel con acnÃ©, seca o congestionada."
   },
   {
     "id": "svc.hydrafacial.details",
-    "en": "HydraFacial MD is a multi-step, medical-grade facial that uses patented Vortex-FusionÂ® technology to deeply cleanse, exfoliate, and infuse hydrating serums into the skin. Itâ€™s ideal for clients with acne-prone, dull, or congested complexions seeking clearer, more radiant skin.",
-    "es": "HydraFacial MD es un facial de varios pasos y grado mÃ©dico que utiliza la tecnologÃ­a patentada Vortex-FusionÂ® para limpiar, exfoliar y perfundir sueros hidratantes en la piel. Es ideal para piel con tendencia a acnÃ©, opaca o congestionada que busca mayor claridad y luminosidad."
+    "en": "HydraFacial® MD is a multi-step, medical-grade facial that uses patented Vortex-FusionÂ® technology to deeply cleanse, exfoliate, and infuse hydrating serums into the skin. Itâ€™s ideal for clients with acne-prone, dull, or congested complexions seeking clearer, more radiant skin.",
+    "es": "HydraFacial® MD es un facial de varios pasos y grado mÃ©dico que utiliza la tecnologÃ­a patentada Vortex-FusionÂ® para limpiar, exfoliar y perfundir sueros hidratantes en la piel. Es ideal para piel con tendencia a acnÃ©, opaca o congestionada que busca mayor claridad y luminosidad."
   },
   {
     "id": "note.hydrafacial.no_downtime",
@@ -66,18 +66,18 @@
   },
   {
     "id": "opt.hydrafacial.face",
-    "en": "HydraFacial MD - Face",
-    "es": "HydraFacial MD - Rostro"
+    "en": "HydraFacial® MD - Face",
+    "es": "HydraFacial® MD - Rostro"
   },
   {
     "id": "opt.hydrafacial.shoulders",
-    "en": "HydraFacial MD - Shoulders",
-    "es": "HydraFacial MD - Hombros"
+    "en": "HydraFacial® MD - Shoulders",
+    "es": "HydraFacial® MD - Hombros"
   },
   {
     "id": "opt.hydrafacial.upper_back",
-    "en": "HydraFacial MD - Upper Back",
-    "es": "HydraFacial MD - Espalda superior"
+    "en": "HydraFacial® MD - Upper Back",
+    "es": "HydraFacial® MD - Espalda superior"
   },
   {
     "id": "opt.facial_booster.melafadin",
@@ -106,8 +106,8 @@
   },
   {
     "id": "addon.hydrafacial.rf_microneedling",
-    "en": "Sylfirm X - RF Microneedling - Face + Neck + DÃ©colletÃ©",
-    "es": "Sylfirm X - Microagujas RF - Rostro + Cuello + Escote"
+    "en": "Sylfirm X® - RF Microneedling - Face + Neck + DÃ©colletÃ©",
+    "es": "Sylfirm X® - Microagujas RF - Rostro + Cuello + Escote"
   },
   {
     "id": "addon.hydrafacial.pdo_threads",
@@ -146,28 +146,28 @@
   },
   {
     "id": "faq.hydrafacial.q1",
-    "en": "How often should I get a HydraFacial?",
-    "es": "Â¿Con quÃ© frecuencia debo hacerme un HydraFacial?"
+    "en": "How often should I get a HydraFacial®?",
+    "es": "Â¿Con quÃ© frecuencia debo hacerme un HydraFacial®?"
   },
   {
     "id": "faq.hydrafacial.a1",
-    "en": "For optimal results, we recommend a HydraFacial every 4 weeks to maintain clear, glowing skin.",
-    "es": "Para obtener mejores resultados, recomendamos un HydraFacial cada 4 semanas para mantener la piel clara y luminosa."
+    "en": "For optimal results, we recommend a HydraFacial® every 4 weeks to maintain clear, glowing skin.",
+    "es": "Para obtener mejores resultados, recomendamos un HydraFacial® cada 4 semanas para mantener la piel clara y luminosa."
   },
   {
     "id": "faq.hydrafacial.q2",
-    "en": "Is HydraFacial good for acne?",
-    "es": "Â¿El HydraFacial es bueno para el acnÃ©?"
+    "en": "Is HydraFacial® good for acne?",
+    "es": "Â¿El HydraFacial® es bueno para el acnÃ©?"
   },
   {
     "id": "faq.hydrafacial.a2",
-    "en": "Yes. HydraFacial gently removes impurities, clears pores, and delivers acne-fighting serums for smoother skin.",
-    "es": "SÃ­. HydraFacial elimina impurezas, limpia poros y aplica sueros que combaten el acnÃ© para lograr una piel mÃ¡s suave."
+    "en": "Yes. HydraFacial® gently removes impurities, clears pores, and delivers acne-fighting serums for smoother skin.",
+    "es": "SÃ­. HydraFacial® elimina impurezas, limpia poros y aplica sueros que combaten el acnÃ© para lograr una piel mÃ¡s suave."
   },
   {
     "id": "faq.hydrafacial.q3",
-    "en": "Can I wear makeup after a HydraFacial?",
-    "es": "Â¿Puedo usar maquillaje despuÃ©s de un HydraFacial?"
+    "en": "Can I wear makeup after a HydraFacial®?",
+    "es": "Â¿Puedo usar maquillaje despuÃ©s de un HydraFacial®?"
   },
   {
     "id": "faq.hydrafacial.a3",
@@ -176,18 +176,18 @@
   },
   {
     "id": "svc.casmara_infinity.name",
-    "en": "Casmara Infinity Antiâ€‘Aging Facial",
-    "es": "Facial Casmara Antienvejecimiento Infinity"
+    "en": "Casmara® Infinity Antiâ€‘Aging Facial",
+    "es": "Facial Casmara® Antienvejecimiento Infinity"
   },
   {
     "id": "svc.casmara_infinity.desc",
-    "en": "Luxury anti-aging facial with growth factors, peptides, and Casmara's exclusive Infinity serum for firming and lifting mature skin.",
-    "es": "Facial de lujo antienvejecimiento con factores de crecimiento, pÃ©ptidos y el suero exclusivo Infinity de Casmara para firmar y levantar la piel madura."
+    "en": "Luxury anti-aging facial with growth factors, peptides, and Casmara®'s exclusive Infinity serum for firming and lifting mature skin.",
+    "es": "Facial de lujo antienvejecimiento con factores de crecimiento, pÃ©ptidos y el suero exclusivo Infinity de Casmara® para firmar y levantar la piel madura."
   },
   {
     "id": "svc.casmara_infinity.details",
     "en": "This high-end anti-aging protocol combines biomimetic peptides, firming actives, and Casmaraâ€™s potent Infinity serum to visibly firm, hydrate, and restore mature skin. Includes facial massage and lifting mask for enhanced effect.",
-    "es": "Este protocolo antienvejecimiento de alta gama combina pÃ©ptidos biomimÃ©ticos, activos firmadores y el potente suero Infinity de Casmara para firmar visiblemente, hidratar y restaurar la piel madura. Incluye masaje facial y mÃ¡scara levantadora para efecto mejorado."
+    "es": "Este protocolo antienvejecimiento de alta gama combina pÃ©ptidos biomimÃ©ticos, activos firmadores y el potente suero Infinity de Casmara® para firmar visiblemente, hidratar y restaurar la piel madura. Incluye masaje facial y mÃ¡scara levantadora para efecto mejorado."
   },
   {
     "id": "note.casmara_infinity.events",
@@ -221,8 +221,8 @@
   },
   {
     "id": "opt.casmara_infinity",
-    "en": "Casmara Infinity Antiâ€‘Aging Facial",
-    "es": "Facial Casmara Antienvejecimiento Infinity"
+    "en": "Casmara® Infinity Antiâ€‘Aging Facial",
+    "es": "Facial Casmara® Antienvejecimiento Infinity"
   },
   {
     "id": "addon.casmara_infinity.microneedling_pn",
@@ -236,8 +236,8 @@
   },
   {
     "id": "addon.casmara_infinity.rf_microneedling",
-    "en": "Sylfirm X - RF Microneedling - Face + Neck + DÃ©colletÃ©",
-    "es": "Sylfirm X - Microagujas RF - Rostro + Cuello + Escote"
+    "en": "Sylfirm X® - RF Microneedling - Face + Neck + DÃ©colletÃ©",
+    "es": "Sylfirm X® - Microagujas RF - Rostro + Cuello + Escote"
   },
   {
     "id": "addon.casmara_infinity.pdo_threads",
@@ -291,18 +291,18 @@
   },
   {
     "id": "svc.casmara_purifying.name",
-    "en": "Casmara Purifying Algae Facial",
-    "es": "Facial Casmara Purificante de Algas"
+    "en": "Casmara® Purifying Algae Facial",
+    "es": "Facial Casmara® Purificante de Algas"
   },
   {
     "id": "svc.casmara_purifying.desc",
     "en": "A detoxifying facial treatment featuring Casmaraâ€™s purifying algae mask to target oily, acne-prone, and congested skin. This clarifying facial soothes inflammation and restores skin balance.",
-    "es": "Tratamiento facial detox con la mascarilla de algas purificantes de Casmara para piel grasa, con acnÃ© o congestionada. Este facial clarificante calma la inflamaciÃ³n y restaura el equilibrio de la piel."
+    "es": "Tratamiento facial detox con la mascarilla de algas purificantes de Casmara® para piel grasa, con acnÃ© o congestionada. Este facial clarificante calma la inflamaciÃ³n y restaura el equilibrio de la piel."
   },
   {
     "id": "svc.casmara_purifying.details",
-    "en": "The Casmara Purifying Algae Facial is a professional-grade treatment designed to cleanse and rebalance oily, acne-prone, or inflamed skin. This facial includes steam, manual extractions, and high-frequency therapy when needed. The purifying algae mask helps reduce oil production, calm irritation, and decongest clogged pores for clearer, healthier skin.",
-    "es": "El facial de algas purificantes Casmara es un tratamiento profesional diseÃ±ado para limpiar y reequilibrar piel grasa, con acnÃ© o inflamada. Incluye vapor, extracciones manuales y alta frecuencia cuando se necesita. La mascarilla de algas purificantes ayuda a reducir el sebo, calmar la irritaciÃ³n y descongestionar los poros para una piel mÃ¡s clara y saludable."
+    "en": "The Casmara® Purifying Algae Facial is a professional-grade treatment designed to cleanse and rebalance oily, acne-prone, or inflamed skin. This facial includes steam, manual extractions, and high-frequency therapy when needed. The purifying algae mask helps reduce oil production, calm irritation, and decongest clogged pores for clearer, healthier skin.",
+    "es": "El facial de algas purificantes Casmara® es un tratamiento profesional diseÃ±ado para limpiar y reequilibrar piel grasa, con acnÃ© o inflamada. Incluye vapor, extracciones manuales y alta frecuencia cuando se necesita. La mascarilla de algas purificantes ayuda a reducir el sebo, calmar la irritaciÃ³n y descongestionar los poros para una piel mÃ¡s clara y saludable."
   },
   {
     "id": "note.casmara_purifying.extractions",
@@ -341,8 +341,8 @@
   },
   {
     "id": "opt.casmara_purifying",
-    "en": "Casmara Purifying Algae Facial",
-    "es": "Facial Casmara Purificante de Algas"
+    "en": "Casmara® Purifying Algae Facial",
+    "es": "Facial Casmara® Purificante de Algas"
   },
   {
     "id": "addon.casmara_purifying.microneedling_pn",
@@ -356,8 +356,8 @@
   },
   {
     "id": "addon.casmara_purifying.rf_microneedling",
-    "en": "Sylfirm X - RF Microneedling - Face + Neck + DÃ©colletÃ©",
-    "es": "Sylfirm X - Microagujas RF - Rostro + Cuello + Escote"
+    "en": "Sylfirm X® - RF Microneedling - Face + Neck + DÃ©colletÃ©",
+    "es": "Sylfirm X® - Microagujas RF - Rostro + Cuello + Escote"
   },
   {
     "id": "addon.casmara_purifying.pdo_threads",
@@ -391,8 +391,8 @@
   },
   {
     "id": "faq.casmara_purifying.q1",
-    "en": "Is the Casmara facial good for sensitive or acne-prone skin?",
-    "es": "Â¿Este facial Casmara es bueno para piel sensible o con acnÃ©?"
+    "en": "Is the Casmara® facial good for sensitive or acne-prone skin?",
+    "es": "Â¿Este facial Casmara® es bueno para piel sensible o con acnÃ©?"
   },
   {
     "id": "faq.casmara_purifying.a1",
@@ -411,8 +411,8 @@
   },
   {
     "id": "svc.casmara_retinol_proage.name",
-    "en": "Casmara Retinol Proâ€‘Age Facial",
-    "es": "Casmara Retinol Proâ€‘Age Facial"
+    "en": "Casmara® Retinol Proâ€‘Age Facial",
+    "es": "Casmara® Retinol Proâ€‘Age Facial"
   },
   {
     "id": "svc.casmara_retinol_proage.desc",
@@ -422,7 +422,7 @@
   {
     "id": "svc.casmara_retinol_proage.details",
     "en": "Casmaraâ€™s Pro-Age facial uses a high-potency 0.3% retinol complex to deeply renew the skin. Ideal for mature or sun-damaged skin in need of resurfacing and hydration. Includes antioxidants and post-treatment recovery mask.",
-    "es": "El facial Pro-Age de Casmara utiliza un complejo de retinol al 0.3% de alta potencia para renovar la piel en profundidad. Ideal para piel madura o daÃ±ada por el sol que necesita renovaciÃ³n superficial e hidrataciÃ³n. Incluye antioxidantes y una mascarilla de recuperaciÃ³n posterior al tratamiento."
+    "es": "El facial Pro-Age de Casmara® utiliza un complejo de retinol al 0.3% de alta potencia para renovar la piel en profundidad. Ideal para piel madura o daÃ±ada por el sol que necesita renovaciÃ³n superficial e hidrataciÃ³n. Incluye antioxidantes y una mascarilla de recuperaciÃ³n posterior al tratamiento."
   },
   {
     "id": "note.casmara_retinol.flaking",
@@ -461,8 +461,8 @@
   },
   {
     "id": "opt.casmara_retinol_proage",
-    "en": "Casmara Retinol Proâ€‘Age Facial",
-    "es": "Casmara Retinol Proâ€‘Age Facial"
+    "en": "Casmara® Retinol Proâ€‘Age Facial",
+    "es": "Casmara® Retinol Proâ€‘Age Facial"
   },
   {
     "id": "addon.casmara_retinol.microneedling_pn",
@@ -476,8 +476,8 @@
   },
   {
     "id": "addon.casmara_retinol.rf_microneedling",
-    "en": "Sylfirm X - RF Microneedling - Face + Neck + DÃ©colletÃ©",
-    "es": "Sylfirm X - Microagujas RF - Rostro + Cuello + Escote"
+    "en": "Sylfirm X® - RF Microneedling - Face + Neck + DÃ©colletÃ©",
+    "es": "Sylfirm X® - Microagujas RF - Rostro + Cuello + Escote"
   },
   {
     "id": "addon.casmara_retinol.pdo_threads",
@@ -531,8 +531,8 @@
   },
   {
     "id": "svc.janssen_ultra_renewal.name",
-    "en": "Janssen - Ultra Renewal Facial",
-    "es": "Janssen - Facial Ultra Renewal"
+    "en": "Janssen® - Ultra Renewal Facial",
+    "es": "Janssen® - Facial Ultra Renewal"
   },
   {
     "id": "svc.janssen_ultra_renewal.desc",
@@ -616,8 +616,8 @@
   },
   {
     "id": "addon.janssen_ultra.rf_microneedling",
-    "en": "Sylfirm X - RF Microneedling - Face + Neck + DÃ©colletÃ©",
-    "es": "Sylfirm X - Microagujas RF - Rostro + Cuello + Escote"
+    "en": "Sylfirm X® - RF Microneedling - Face + Neck + DÃ©colletÃ©",
+    "es": "Sylfirm X® - Microagujas RF - Rostro + Cuello + Escote"
   },
   {
     "id": "addon.janssen_ultra.pdo_threads",
@@ -676,8 +676,8 @@
   },
   {
     "id": "svc.janssen_radiance_boost.name",
-    "en": "Janssen - Radiance Boost Facial",
-    "es": "Janssen - Facial Radiance Boost"
+    "en": "Janssen® - Radiance Boost Facial",
+    "es": "Janssen® - Facial Radiance Boost"
   },
   {
     "id": "svc.janssen_radiance_boost.desc",
@@ -761,8 +761,8 @@
   },
   {
     "id": "addon.janssen_radiance.rf_microneedling",
-    "en": "Sylfirm X - RF Microneedling - Face + Neck + DÃ©colletÃ©",
-    "es": "Sylfirm X - Microagujas RF - Rostro + Cuello + Escote"
+    "en": "Sylfirm X® - RF Microneedling - Face + Neck + DÃ©colletÃ©",
+    "es": "Sylfirm X® - Microagujas RF - Rostro + Cuello + Escote"
   },
   {
     "id": "filter.view_all",

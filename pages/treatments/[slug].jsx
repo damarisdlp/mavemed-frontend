@@ -82,29 +82,25 @@ export default function TreatmentPage() {
       <section className="bg-white">
         <PromoBanner />
         <Header />
-            {/* Hero Banner for Team Member */}
-        <div className="bg-white">
-          <div className="relative w-full h-[90px] md:h-[100px]">
-          </div>
-        </div>
-        <div className="w-full max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 pt-4 md:pt-6">
+        <div className="pt-[96px] md:pt-[108px]">
           <Breadcrumbs
+            className="sr-only"
             items={[
               { label: "Home", href: "/" },
               { label: "Treatments", href: "/treatments" },
               { label: localizedName },
             ]}
           />
+          {/* locale prop is optional but useful if children need to localize too */}
+          <TreatmentDetails treatment={treatment} locale={currentLocale} />
+          <PricingTable treatment={treatment} locale={currentLocale} />
+          <WhatToExpect expectations={treatment.expectations} locale={currentLocale} />
+          <FAQSection faqs={treatment.faq} locale={currentLocale} />
+          <ContactCTA />
+          <PromoPackageSection />
+          <InstagramFeed />
+          <ReviewsSection />
         </div>
-        {/* locale prop is optional but useful if children need to localize too */}
-        <TreatmentDetails treatment={treatment} locale={currentLocale} />
-        <PricingTable treatment={treatment} locale={currentLocale} />
-        <WhatToExpect expectations={treatment.expectations} locale={currentLocale} />
-        <FAQSection faqs={treatment.faq} locale={currentLocale} />
-        <ContactCTA />
-        <PromoPackageSection />
-        <InstagramFeed />
-        <ReviewsSection />
         <Footer />
       </section>
     </>

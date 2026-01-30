@@ -21,8 +21,8 @@ export const veronica = {
     {
       treatmentSlug: "hydrafacial",
       optionName: {
-        en: "Hydrafacial MD - Face",
-        es: "Hydrafacial MD - Rostro"
+        en: "Hydrafacial® MD - Face",
+        es: "Hydrafacial® MD - Rostro"
       }
     }
   ]

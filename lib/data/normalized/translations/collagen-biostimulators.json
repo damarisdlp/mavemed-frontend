@@ -96,8 +96,8 @@
   },
   {
     "id": "opt.sculptra.per_vial",
-    "en": "Sculptra",
-    "es": "Sculptra"
+    "en": "Sculptra�",
+    "es": "Sculptra�"
   },
   {
     "id": "note.sculptra.vial_price",
@@ -116,8 +116,8 @@
   },
   {
     "id": "promo.sculptra.description",
-    "en": "Lock in a limited-time per-vial advantage with our full Sculptra rejuvenation program, designed as a 3-session protocol to support long-term collagen regeneration, skin quality, and natural-looking rejuvenation.",
-    "es": "Asegura un beneficio especial por vial con nuestro programa completo de rejuvenecimiento con Sculptra, diseñado como un protocolo de 3 sesiones para estimular colágeno a largo plazo, mejorar la calidad de la piel y lograr un rejuvenecimiento natural y progresivo."
+    "en": "Lock in a limited-time per-vial advantage with our full Sculptra� rejuvenation program, designed as a 3-session protocol to support long-term collagen regeneration, skin quality, and natural-looking rejuvenation.",
+    "es": "Asegura un beneficio especial por vial con nuestro programa completo de rejuvenecimiento con Sculptra�, diseñado como un protocolo de 3 sesiones para estimular colágeno a largo plazo, mejorar la calidad de la piel y lograr un rejuvenecimiento natural y progresivo."
   },
   {
     "id": "promo.sculptra.option_name",
@@ -151,18 +151,18 @@
   },
   {
     "id": "addon.sculptra.casmara_infinity",
-    "en": "Casmara - Infinity Anti‑Aging Facial",
-    "es": "Casmara - Facial Antienvejecimiento Infinity"
+    "en": "Casmara� - Infinity Anti‑Aging Facial",
+    "es": "Casmara� - Facial Antienvejecimiento Infinity"
   },
   {
     "id": "addon.sculptra.hydrafacial",
-    "en": "Hydrafacial MD - Face",
-    "es": "Hydrafacial MD - Rostro"
+    "en": "Hydrafacial� MD - Face",
+    "es": "Hydrafacial� MD - Rostro"
   },
   {
     "id": "addon.sculptra.rf_microneedling",
-    "en": "Sylfirm X - RF Microneedling - Face + Neck + Décolleté",
-    "es": "Sylfirm X - Microagujas RF - Rostro + Cuello + Escote"
+    "en": "Sylfirm X� - RF Microneedling - Face + Neck + Décolleté",
+    "es": "Sylfirm X� - Microagujas RF - Rostro + Cuello + Escote"
   },
   {
     "id": "addon.sculptra.pdo_threads",
@@ -276,18 +276,18 @@
   },
   {
     "id": "svc.harmonyca.name",
-    "en": "HarmonyCa® (Hyaluronic Acid + Calcium Hydroxyapatite)",
-    "es": "HarmonyCa® (Ácido Hialurónico + Hidroxiapatita de Calcio)"
+    "en": "HarmonyCa�® (Hyaluronic Acid + Calcium Hydroxyapatite)",
+    "es": "HarmonyCa�® (Ácido Hialurónico + Hidroxiapatita de Calcio)"
   },
   {
     "id": "svc.harmonyca.desc",
-    "en": "HarmonyCa® is a next-generation biostimulatory filler that combines hyaluronic acid (HA) for immediate facial volume with calcium hydroxyapatite (CaHA) for long-term collagen stimulation. This hybrid injectable enhances facial contour, skin quality, and structural lift in a single treatment.",
-    "es": "HarmonyCa® es un relleno biostimulador de nueva generación que combina ácido hialurónico (AH) para volumen facial inmediato con hidroxiapatita de calcio (CaHA) para estimulación de colágeno a largo plazo. Este inyectable híbrido mejora el contorno facial, la calidad de la piel y el levantamiento estructural en un solo tratamiento."
+    "en": "HarmonyCa�® is a next-generation biostimulatory filler that combines hyaluronic acid (HA) for immediate facial volume with calcium hydroxyapatite (CaHA) for long-term collagen stimulation. This hybrid injectable enhances facial contour, skin quality, and structural lift in a single treatment.",
+    "es": "HarmonyCa�® es un relleno biostimulador de nueva generación que combina ácido hialurónico (AH) para volumen facial inmediato con hidroxiapatita de calcio (CaHA) para estimulación de colágeno a largo plazo. Este inyectable híbrido mejora el contorno facial, la calidad de la piel y el levantamiento estructural en un solo tratamiento."
   },
   {
     "id": "svc.harmonyca.details",
-    "en": "HarmonyCa® is a dual-phase injectable combining hyaluronic acid for immediate hydration and volume, with CaHA microspheres to boost collagen production over time. This advanced formula is ideal for enhancing cheekbones, defining the jawline, and restoring firmness in the lower face. Its bioregenerative effect helps improve skin density and elasticity, making it a top choice for long-lasting, natural-looking rejuvenation without heaviness or puffiness.",
-    "es": "HarmonyCa® es un inyectable bifásico que combina ácido hialurónico para hidratación y volumen inmediato, con microesferas de CaHA para aumentar la producción de colágeno con el tiempo. Esta fórmula avanzada es ideal para realzar los pómulos, definir la línea mandibular y restaurar la firmeza en la cara inferior. Su efecto bioregenerativo ayuda a mejorar la densidad y elasticidad de la piel, convirtiéndolo en una opción principal para un rejuvenecimiento duradero, natural y sin pesadez ni hinchazón."
+    "en": "HarmonyCa�® is a dual-phase injectable combining hyaluronic acid for immediate hydration and volume, with CaHA microspheres to boost collagen production over time. This advanced formula is ideal for enhancing cheekbones, defining the jawline, and restoring firmness in the lower face. Its bioregenerative effect helps improve skin density and elasticity, making it a top choice for long-lasting, natural-looking rejuvenation without heaviness or puffiness.",
+    "es": "HarmonyCa�® es un inyectable bifásico que combina ácido hialurónico para hidratación y volumen inmediato, con microesferas de CaHA para aumentar la producción de colágeno con el tiempo. Esta fórmula avanzada es ideal para realzar los pómulos, definir la línea mandibular y restaurar la firmeza en la cara inferior. Su efecto bioregenerativo ayuda a mejorar la densidad y elasticidad de la piel, convirtiéndolo en una opción principal para un rejuvenecimiento duradero, natural y sin pesadez ni hinchazón."
   },
   {
     "id": "note.harmonyca.syringes",
@@ -346,8 +346,8 @@
   },
   {
     "id": "opt.harmonyca.per_treatment",
-    "en": "HarmonyCa",
-    "es": "HarmonyCa"
+    "en": "HarmonyCa�",
+    "es": "HarmonyCa�"
   },
   {
     "id": "addon.harmonyca.microneedling",
@@ -356,18 +356,18 @@
   },
   {
     "id": "addon.harmonyca.casmara_infinity",
-    "en": "Casmara - Infinity Anti‑Aging Facial",
-    "es": "Casmara - Facial Antienvejecimiento Infinity"
+    "en": "Casmara� - Infinity Anti‑Aging Facial",
+    "es": "Casmara� - Facial Antienvejecimiento Infinity"
   },
   {
     "id": "addon.harmonyca.hydrafacial",
-    "en": "Hydrafacial MD - Face",
-    "es": "Hydrafacial MD - Rostro"
+    "en": "Hydrafacial� MD - Face",
+    "es": "Hydrafacial� MD - Rostro"
   },
   {
     "id": "addon.harmonyca.rf_microneedling",
-    "en": "Sylfirm X - RF Microneedling - Face + Neck + Décolleté",
-    "es": "Sylfirm X - Microagujas RF - Rostro + Cuello + Escote"
+    "en": "Sylfirm X� - RF Microneedling - Face + Neck + Décolleté",
+    "es": "Sylfirm X� - Microagujas RF - Rostro + Cuello + Escote"
   },
   {
     "id": "addon.harmonyca.pdo_threads",
@@ -426,18 +426,18 @@
   },
   {
     "id": "faq.harmonyca.q1",
-    "en": "How is HarmonyCa® different from traditional dermal fillers?",
-    "es": "¿En qué se diferencia HarmonyCa® de los rellenos dérmicos tradicionales?"
+    "en": "How is HarmonyCa�® different from traditional dermal fillers?",
+    "es": "¿En qué se diferencia HarmonyCa�® de los rellenos dérmicos tradicionales?"
   },
   {
     "id": "faq.harmonyca.a1",
-    "en": "HarmonyCa® combines the immediate volume of HA with the collagen-boosting power of CaHA, providing both instant lift and long-term skin regeneration.",
-    "es": "HarmonyCa® combina el volumen inmediato del HA con el poder estimulador de colágeno del CaHA, proporcionando levantamiento instantáneo y regeneración de la piel a largo plazo."
+    "en": "HarmonyCa�® combines the immediate volume of HA with the collagen-boosting power of CaHA, providing both instant lift and long-term skin regeneration.",
+    "es": "HarmonyCa�® combina el volumen inmediato del HA con el poder estimulador de colágeno del CaHA, proporcionando levantamiento instantáneo y regeneración de la piel a largo plazo."
   },
   {
     "id": "faq.harmonyca.q2",
-    "en": "Which areas respond best to HarmonyCa®?",
-    "es": "¿Qué áreas responden mejor a HarmonyCa®?"
+    "en": "Which areas respond best to HarmonyCa�®?",
+    "es": "¿Qué áreas responden mejor a HarmonyCa�®?"
   },
   {
     "id": "faq.harmonyca.a2",
@@ -446,8 +446,8 @@
   },
   {
     "id": "faq.harmonyca.q3",
-    "en": "How long do HarmonyCa® results last?",
-    "es": "¿Cuánto duran los resultados de HarmonyCa®?"
+    "en": "How long do HarmonyCa�® results last?",
+    "es": "¿Cuánto duran los resultados de HarmonyCa�®?"
   },
   {
     "id": "faq.harmonyca.a3",
@@ -456,18 +456,18 @@
   },
   {
     "id": "faq.harmonyca.q4",
-    "en": "Is HarmonyCa® approved and safe?",
-    "es": "¿Está HarmonyCa® aprobado y es seguro?"
+    "en": "Is HarmonyCa�® approved and safe?",
+    "es": "¿Está HarmonyCa�® aprobado y es seguro?"
   },
   {
     "id": "faq.harmonyca.a4",
-    "en": "Yes. HarmonyCa® is CE-certified and used widely across Europe. At Mave, it's administered exclusively by licensed medical providers.",
-    "es": "Sí. HarmonyCa® está certificado CE y se usa ampliamente en Europa. En Mave, es administrado exclusivamente por proveedores médicos licenciados."
+    "en": "Yes. HarmonyCa�® is CE-certified and used widely across Europe. At Mave, it's administered exclusively by licensed medical providers.",
+    "es": "Sí. HarmonyCa�® está certificado CE y se usa ampliamente en Europa. En Mave, es administrado exclusivamente por proveedores médicos licenciados."
   },
   {
     "id": "faq.harmonyca.q5",
-    "en": "Can I combine HarmonyCa® with other procedures?",
-    "es": "¿Puedo combinar HarmonyCa® con otros procedimientos?"
+    "en": "Can I combine HarmonyCa�® with other procedures?",
+    "es": "¿Puedo combinar HarmonyCa�® con otros procedimientos?"
   },
   {
     "id": "faq.harmonyca.a5",

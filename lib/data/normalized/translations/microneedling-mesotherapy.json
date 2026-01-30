@@ -76,23 +76,23 @@
   },
   {
     "id": "addon.microneedling.botox",
-    "en": "Botox - Any Zone",
-    "es": "Botox - Cualquier Zona"
+    "en": "Botox® - Any Zone",
+    "es": "Botox® - Cualquier Zona"
   },
   {
     "id": "addon.microneedling.hydrafacial",
-    "en": "Hydrafacial MD - Face",
-    "es": "Hydrafacial MD - Rostro"
+    "en": "Hydrafacial® MD - Face",
+    "es": "Hydrafacial® MD - Rostro"
   },
   {
     "id": "addon.microneedling.casmara_retinol",
-    "en": "Casmara - Retinol Proâ€‘Age Facial",
-    "es": "Casmara - Facial Retinol Proâ€‘Age"
+    "en": "Casmara® - Retinol Proâ€‘Age Facial",
+    "es": "Casmara® - Facial Retinol Proâ€‘Age"
   },
   {
     "id": "addon.microneedling.janssen_ultra",
-    "en": "Janssen - Ultra Renewal Facial - Face",
-    "es": "Janssen - Facial Ultra Renewal - Rostro"
+    "en": "Janssen® - Ultra Renewal Facial - Face",
+    "es": "Janssen® - Facial Ultra Renewal - Rostro"
   },
   {
     "id": "addon.microneedling.pdo_threads",
@@ -101,8 +101,8 @@
   },
   {
     "id": "addon.microneedling.rf_face",
-    "en": "Sylfirm X - RF Microneedling - Face",
-    "es": "Sylfirm X - Microagujas RF - Rostro"
+    "en": "Sylfirm X® - RF Microneedling - Face",
+    "es": "Sylfirm X® - Microagujas RF - Rostro"
   },
   {
     "id": "exp.microneedling.pre.1",
@@ -276,18 +276,18 @@
   },
   {
     "id": "addon.mesotherapy.hydrafacial",
-    "en": "Hydrafacial MD - Face",
-    "es": "Hydrafacial MD - Rostro"
+    "en": "Hydrafacial® MD - Face",
+    "es": "Hydrafacial® MD - Rostro"
   },
   {
     "id": "addon.mesotherapy.casmara_retinol",
-    "en": "Casmara - Retinol Proâ€‘Age Facial",
-    "es": "Casmara - Facial Retinol Proâ€‘Age"
+    "en": "Casmara® - Retinol Proâ€‘Age Facial",
+    "es": "Casmara® - Facial Retinol Proâ€‘Age"
   },
   {
     "id": "addon.mesotherapy.rf_face",
-    "en": "Sylfirm X - RF Microneedling - Face",
-    "es": "Sylfirm X - Microagujas RF - Rostro"
+    "en": "Sylfirm X® - RF Microneedling - Face",
+    "es": "Sylfirm X® - Microagujas RF - Rostro"
   },
   {
     "id": "exp.mesotherapy.pre.1",
@@ -361,8 +361,8 @@
   },
   {
     "id": "faq.mesotherapy.a4",
-    "en": "We use numbing cream and ultra-fine needles. Most patients find it very tolerable, and treatments like SkinVive are nearly painless.",
-    "es": "Utilizamos crema anestÃ©sica y agujas ultrafinas. La mayorÃ­a de los pacientes lo consideran muy tolerable, y tratamientos como SkinVive son prÃ¡cticamente indoloros."
+    "en": "We use numbing cream and ultra-fine needles. Most patients find it very tolerable, and treatments like SkinVive® are nearly painless.",
+    "es": "Utilizamos crema anestÃ©sica y agujas ultrafinas. La mayorÃ­a de los pacientes lo consideran muy tolerable, y tratamientos como SkinVive® son prÃ¡cticamente indoloros."
   },
   {
     "id": "faq.mesotherapy.q5",
@@ -731,8 +731,8 @@
   },
   {
     "id": "opt.mesotherapy.skinvive_face",
-    "en": "JuvÃ©derm SkinVive - Face",
-    "es": "JuvÃ©derm SkinVive - Rostro"
+    "en": "JuvÃ©derm SkinVive® - Face",
+    "es": "JuvÃ©derm SkinVive® - Rostro"
   },
   {
     "id": "note.mesotherapy.skinvive_mechanism",

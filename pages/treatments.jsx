@@ -35,7 +35,7 @@ export default function TreatmentsPage() {
       ? t("treatmentsPage.bannerSubtitle", {
           lng: "es",
           defaultValue:
-            "Especialistas en inyectables cosméticos, rejuvenecimiento de la piel y terapias de grado médico para resultados que sí se notan.",
+            "Especialistas en inyectables cosmÃ©ticos, rejuvenecimiento de la piel y terapias de grado mÃ©dico para resultados que sÃ­ se notan.",
         })
       : t("treatmentsPage.bannerSubtitle", {
           lng: "en",
@@ -49,14 +49,14 @@ export default function TreatmentsPage() {
         <title>Advanced Aesthetic Treatments in Tijuana | Mave Medical Spa</title>
         <meta
           name="description"
-          content="Explore Botox, dermal fillers, microneedling, CO2 lasers, and thread lifts at Mave Medical Spa — trusted by patients from Tijuana, San Diego, Los Angeles, and Southern California."
+          content="Explore Botox®, dermal fillers, microneedling, CO2 lasers, and thread lifts at Mave Medical Spa â trusted by patients from Tijuana, San Diego, Los Angeles, and Southern California."
         />
         <meta
           name="keywords"
-          content="Tijuana Medical Spa, Botox Tijuana, Sculptra, Microneedling Mexico, CO2 Laser Tijuana, PDO Threads, RF Microneedling, Facial Rejuvenation"
+          content="Tijuana Medical Spa, Botox® Tijuana, Sculptra®, Microneedling Mexico, CO2 Laser Tijuana, PDO Threads, RF Microneedling, Facial Rejuvenation"
         />
         <meta property="og:title" content="Advanced Aesthetic Treatments in Tijuana | Mave Medical Spa" />
-        <meta property="og:description" content="Non-surgical aesthetic solutions: Botox, fillers, lasers, and more at Mave Medical Spa. Serving cross-border clients from Southern California." />
+        <meta property="og:description" content="Non-surgical aesthetic solutions: Botox®, fillers, lasers, and more at Mave Medical Spa. Serving cross-border clients from Southern California." />
         <meta property="og:image" content="https://www.mavemedspa.com/site_icon.png" />
         <meta property="og:type" content="website" />
         <SeoLinks asPath={asPath} locale={locale} />
@@ -70,7 +70,7 @@ export default function TreatmentsPage() {
               name: "Advanced Aesthetic Treatments in Tijuana | Mave Medical Spa",
               url: "https://www.mavemedspa.com/treatments",
               description:
-                "Explore Botox, dermal fillers, microneedling, CO2 lasers, and thread lifts at Mave Medical Spa.",
+                "Explore Botox®, dermal fillers, microneedling, CO2 lasers, and thread lifts at Mave Medical Spa.",
               about: {
                 "@id": "https://www.mavemedspa.com/#organization",
               },
@@ -82,9 +82,9 @@ export default function TreatmentsPage() {
                     "@type": "Offer",
                     itemOffered: {
                       "@type": "Service",
-                      name: "Botox for Wrinkle Reduction",
+                      name: "Botox® for Wrinkle Reduction",
                       description:
-                        "FDA-approved wrinkle relaxing injections to smooth frown lines, crow’s feet, and forehead lines.",
+                        "FDA-approved wrinkle relaxing injections to smooth frown lines, crowâs feet, and forehead lines.",
                     },
                   },
                   {
