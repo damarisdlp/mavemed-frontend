@@ -2,42 +2,42 @@
   {
     "id": "cat.dermal_fillers.name",
     "en": "Dermal Fillers (Hyaluronic Acid)",
-    "es": "Rellenos Dérmicos (Ácido Hialurónico)"
+    "es": "Rellenos Drmicos (cido Hialurnico)"
   },
   {
     "id": "svc.facial_balancing.name",
     "en": "Facial Balancing with Dermal Fillers",
-    "es": "Equilibrio Facial con Rellenos Dérmicos"
+    "es": "Equilibrio Facial con Rellenos Drmicos"
   },
   {
     "id": "svc.facial_balancing.desc",
     "en": "Achieve natural facial harmony with strategic dermal filler placement targeting the cheeks, chin, jawline, and midface. Ideal for restoring symmetry, contour, and volume loss.",
-    "es": "Logre armonía facial natural con colocación estratégica de rellenos dérmicos dirigidos a las mejillas, barbilla, línea mandibular y cara media. Ideal para restaurar simetría, contorno y pérdida de volumen."
+    "es": "Logre armona facial natural con colocacin estratgica de rellenos drmicos dirigidos a las mejillas, barbilla, lnea mandibular y cara media. Ideal para restaurar simetra, contorno y prdida de volumen."
   },
   {
     "id": "svc.facial_balancing.details",
     "en": "Facial balancing is a non-surgical aesthetic treatment that uses hyaluronic acid-based dermal fillers to enhance symmetry, define features, and restore youthful proportions. Areas treated often include the jawline, chin, cheeks, temples, and midface. Each plan is tailored for your unique facial structure and aesthetic goals to ensure natural-looking, harmonious results.",
-    "es": "El equilibrio facial es un tratamiento estético no quirúrgico que utiliza rellenos dérmicos a base de ácido hialurónico para mejorar la simetría, definir rasgos y restaurar proporciones juveniles. Las áreas tratadas a menudo incluyen la línea mandibular, barbilla, mejillas, sienes y cara media. Cada plan se adapta a su estructura facial única y objetivos estéticos para asegurar resultados armoniosos y naturales."
+    "es": "El equilibrio facial es un tratamiento esttico no quirrgico que utiliza rellenos drmicos a base de cido hialurnico para mejorar la simetra, definir rasgos y restaurar proporciones juveniles. Las reas tratadas a menudo incluyen la lnea mandibular, barbilla, mejillas, sienes y cara media. Cada plan se adapta a su estructura facial nica y objetivos estticos para asegurar resultados armoniosos y naturales."
   },
   {
     "id": "note.facial_balancing.pricing",
     "en": "Pricing depends on treatment zones and number of syringes used",
-    "es": "Los precios dependen de las zonas de tratamiento y el número de jeringas utilizadas"
+    "es": "Los precios dependen de las zonas de tratamiento y el nmero de jeringas utilizadas"
   },
   {
     "id": "note.facial_balancing.syringes",
-    "en": "Typical plans involve 2–5 syringes for full-face balancing",
-    "es": "Los planes típicos involucran 2-5 jeringas para equilibrio facial completo"
+    "en": "Typical plans involve 25 syringes for full-face balancing",
+    "es": "Los planes tpicos involucran 2-5 jeringas para equilibrio facial completo"
   },
   {
     "id": "note.facial_balancing.subtle",
     "en": "Designed for subtle but transformative rejuvenation",
-    "es": "Diseñado para rejuvenecimiento sutil pero transformador"
+    "es": "Diseado para rejuvenecimiento sutil pero transformador"
   },
   {
     "id": "goal.facial_balancing.symmetry",
     "en": "Enhance facial symmetry and definition",
-    "es": "Mejorar simetría y definición facial"
+    "es": "Mejorar simetra y definicin facial"
   },
   {
     "id": "goal.facial_balancing.midface",
@@ -47,12 +47,12 @@
   {
     "id": "goal.facial_balancing.jawline",
     "en": "Define jawline, chin, and facial profile",
-    "es": "Definir línea mandibular, barbilla y perfil facial"
+    "es": "Definir lnea mandibular, barbilla y perfil facial"
   },
   {
     "id": "area.facial_balancing.jawline",
     "en": "Jawline",
-    "es": "Línea Mandibular"
+    "es": "Lnea Mandibular"
   },
   {
     "id": "area.facial_balancing.chin",
@@ -77,7 +77,7 @@
   {
     "id": "area.facial_balancing.marionette_lines",
     "en": "Marionette lines",
-    "es": "Líneas de Marioneta"
+    "es": "Lneas de Marioneta"
   },
   {
     "id": "area.facial_balancing.midface",
@@ -86,18 +86,18 @@
   },
   {
     "id": "opt.facial_balancing.volift",
-    "en": "Brand Name: Juvéderm Volift",
-    "es": "Marca: Juvéderm Volift"
+    "en": "Brand Name: Juvderm Volift",
+    "es": "Marca: Juvderm Volift"
   },
   {
     "id": "opt.facial_balancing.voluma",
-    "en": "Brand Name: Juvéderm Voluma",
-    "es": "Marca: Juvéderm Voluma"
+    "en": "Brand Name: Juvderm Voluma",
+    "es": "Marca: Juvderm Voluma"
   },
   {
     "id": "opt.facial_balancing.volux",
-    "en": "Brand Name: Juvéderm Volux",
-    "es": "Marca: Juvéderm Volux"
+    "en": "Brand Name: Juvderm Volux",
+    "es": "Marca: Juvderm Volux"
   },
   {
     "id": "note.facial_balancing.volift_price",
@@ -107,7 +107,7 @@
   {
     "id": "note.facial_balancing.volift_duration",
     "en": "Duration approx 12 to 15 months",
-    "es": "Duración aproximada de 12 a 15 meses"
+    "es": "Duracin aproximada de 12 a 15 meses"
   },
   {
     "id": "note.facial_balancing.volift_tech",
@@ -122,17 +122,17 @@
   {
     "id": "note.facial_balancing.volift_zones",
     "en": "Cheeks, midface, folds, chin.",
-    "es": "Mejillas, tercio medio, pliegues, mentón."
+    "es": "Mejillas, tercio medio, pliegues, mentn."
   },
   {
     "id": "note.facial_balancing.volift_duration",
     "en": "Typically lasts 12 to 18 months.",
-    "es": "Duración estimada de 12 a 18 meses."
+    "es": "Duracin estimada de 12 a 18 meses."
   },
   {
     "id": "note.facial_balancing.volift_lidocaine",
     "en": "Formulated with lidocaine for added comfort.",
-    "es": "Formulado con lidocaína para mayor comodidad."
+    "es": "Formulado con lidocana para mayor comodidad."
   },
   {
     "id": "note.facial_balancing.voluma_tech",
@@ -142,47 +142,47 @@
   {
     "id": "note.facial_balancing.voluma_purpose",
     "en": "Restores structure, lift, and contour.",
-    "es": "Restaura estructura, elevación y contorno."
+    "es": "Restaura estructura, elevacin y contorno."
   },
   {
     "id": "note.facial_balancing.voluma_zones",
     "en": "Cheeks, midface, chin, jawline.",
-    "es": "Mejillas, tercio medio, mentón, línea mandibular."
+    "es": "Mejillas, tercio medio, mentn, lnea mandibular."
   },
   {
     "id": "note.facial_balancing.voluma_duration",
     "en": "Typically lasts 18 to 24 months.",
-    "es": "Duración estimada de 18 a 24 meses."
+    "es": "Duracin estimada de 18 a 24 meses."
   },
   {
     "id": "note.facial_balancing.voluma_lidocaine",
     "en": "Formulated with lidocaine for added comfort.",
-    "es": "Formulado con lidocaína para mayor comodidad."
+    "es": "Formulado con lidocana para mayor comodidad."
   },
   {
     "id": "note.facial_balancing.volux_tech",
     "en": "Very high-density HA for strong definition.",
-    "es": "AH de muy alta densidad para definición marcada."
+    "es": "AH de muy alta densidad para definicin marcada."
   },
   {
     "id": "note.facial_balancing.volux_purpose",
     "en": "Defines contours requiring firmness and projection.",
-    "es": "Define contornos que requieren firmeza y proyección."
+    "es": "Define contornos que requieren firmeza y proyeccin."
   },
   {
     "id": "note.facial_balancing.volux_zones",
     "en": "Jawline, chin, mandibular angles.",
-    "es": "Línea mandibular, mentón, ángulos mandibulares."
+    "es": "Lnea mandibular, mentn, ngulos mandibulares."
   },
   {
     "id": "note.facial_balancing.volux_duration",
     "en": "Typically lasts 18 to 24 months.",
-    "es": "Duración estimada de 18 a 24 meses."
+    "es": "Duracin estimada de 18 a 24 meses."
   },
   {
     "id": "note.facial_balancing.volux_lidocaine",
     "en": "Formulated with lidocaine for added comfort.",
-    "es": "Formulado con lidocaína para mayor comodidad."
+    "es": "Formulado con lidocana para mayor comodidad."
   },
   {
     "id": "svc.lip_fillers.name",
@@ -192,32 +192,32 @@
   {
     "id": "svc.lip_fillers.desc",
     "en": "Achieve fuller, more defined lips instantly with hyaluronic acid-based lip fillers. This non-surgical treatment enhances lip volume, symmetry, and hydration with natural-looking results.",
-    "es": "Logre labios más llenos y definidos al instante con rellenos de labios a base de ácido hialurónico. Este tratamiento no quirúrgico mejora el volumen, la simetría y la hidratación de los labios con resultados naturales."
+    "es": "Logre labios ms llenos y definidos al instante con rellenos de labios a base de cido hialurnico. Este tratamiento no quirrgico mejora el volumen, la simetra y la hidratacin de los labios con resultados naturales."
   },
   {
     "id": "svc.lip_fillers.details",
     "en": "Hyaluronic acid lip fillers are used to enhance the size, shape, and contour of the lips. Whether you're looking to restore lost volume, balance asymmetry, or define the Cupid's bow, this treatment offers subtle and customizable results. At Mave, every injection is guided by facial balancing principles for natural outcomes.",
-    "es": "Los rellenos de labios con ácido hialurónico se usan para mejorar el tamaño, la forma y el contorno de los labios. Ya sea que busque restaurar el volumen perdido, equilibrar la asimetría o definir el arco de Cupido, este tratamiento ofrece resultados sutiles y personalizables. En Mave, cada inyección se guía por principios de equilibrio facial para resultados naturales."
+    "es": "Los rellenos de labios con cido hialurnico se usan para mejorar el tamao, la forma y el contorno de los labios. Ya sea que busque restaurar el volumen perdido, equilibrar la asimetra o definir el arco de Cupido, este tratamiento ofrece resultados sutiles y personalizables. En Mave, cada inyeccin se gua por principios de equilibrio facial para resultados naturales."
   },
   {
     "id": "note.lip_fillers.immediate",
     "en": "Immediate results with minimal recovery time",
-    "es": "Resultados inmediatos con tiempo de recuperación mínimo"
+    "es": "Resultados inmediatos con tiempo de recuperacin mnimo"
   },
   {
     "id": "note.lip_fillers.tailored",
     "en": "Treatment tailored for volume, definition, or symmetry",
-    "es": "Tratamiento adaptado para volumen, definición o simetría"
+    "es": "Tratamiento adaptado para volumen, definicin o simetra"
   },
   {
     "id": "note.lip_fillers.touchups",
-    "en": "Touch-ups recommended every 6–12 months depending on filler type",
+    "en": "Touch-ups recommended every 612 months depending on filler type",
     "es": "Retoques recomendados cada 6-12 meses dependiendo del tipo de relleno"
   },
   {
     "id": "goal.lip_fillers.volume",
     "en": "Enhance lip volume and projection",
-    "es": "Mejorar el volumen y proyección de los labios"
+    "es": "Mejorar el volumen y proyeccin de los labios"
   },
   {
     "id": "goal.lip_fillers.hydration",
@@ -252,37 +252,37 @@
   {
     "id": "area.lip_fillers.vermilion",
     "en": "Vermilion border",
-    "es": "Borde bermellón"
+    "es": "Borde bermelln"
   },
   {
     "id": "opt.lip_fillers.stylage_m",
-    "en": "Brand Name: Stylage� M",
-    "es": "Marca: Stylage� M"
+    "en": "Brand Name: Stylage M",
+    "es": "Marca: Stylage M"
   },
   {
     "id": "opt.lip_fillers.volift",
-    "en": "Brand Name: Juvéderm Volift",
-    "es": "Marca: Juvéderm Volift"
+    "en": "Brand Name: Juvderm Volift",
+    "es": "Marca: Juvderm Volift"
   },
   {
     "id": "opt.lip_fillers.volbella",
-    "en": "Brand Name: Juvéderm Volbella",
-    "es": "Marca: Juvéderm Volbella"
+    "en": "Brand Name: Juvderm Volbella",
+    "es": "Marca: Juvderm Volbella"
   },
   {
     "id": "opt.lip_fillers.generic_deep",
     "en": "Generic: Cross-Linked Hyaluronic Acid",
-    "es": "Genérico: Ácido hialurónico reticulado"
+    "es": "Genrico: cido hialurnico reticulado"
   },
   {
     "id": "note.lip_fillers.stylage_tech",
     "en": "Medium-density HA filler for natural volume and wrinkle correction.",
-    "es": "Relleno de AH de densidad media para volumen natural y corrección de arrugas."
+    "es": "Relleno de AH de densidad media para volumen natural y correccin de arrugas."
   },
   {
     "id": "note.lip_fillers.stylage_zones",
     "en": "Lips, nasolabial folds, marionette lines, cheeks, chin contouring.",
-    "es": "Labios, surcos nasogenianos, líneas de marioneta, mejillas, contorno del mentón."
+    "es": "Labios, surcos nasogenianos, lneas de marioneta, mejillas, contorno del mentn."
   },
   {
     "id": "note.lip_fillers.stylage_syringe",
@@ -292,12 +292,12 @@
   {
     "id": "note.lip_fillers.stylage_duration",
     "en": "Typically lasts 9 to 12 months.",
-    "es": "Duración estimada de 9 a 12 meses."
+    "es": "Duracin estimada de 9 a 12 meses."
   },
   {
     "id": "note.lip_fillers.stylage_lidocaine",
     "en": "Formulated with lidocaine for added comfort.",
-    "es": "Formulado con lidocaína para mayor comodidad."
+    "es": "Formulado con lidocana para mayor comodidad."
   },
   {
     "id": "note.lip_fillers.volift_tech",
@@ -307,7 +307,7 @@
   {
     "id": "note.lip_fillers.volift_zones",
     "en": "Lips when structure/volume are desired; cheeks, midface, folds, chin.",
-    "es": "Labios cuando se busca estructura/volumen; mejillas, tercio medio, pliegues, mentón."
+    "es": "Labios cuando se busca estructura/volumen; mejillas, tercio medio, pliegues, mentn."
   },
   {
     "id": "note.lip_fillers.volift_syringe",
@@ -317,22 +317,22 @@
   {
     "id": "note.lip_fillers.volift_duration",
     "en": "Typically lasts 12 to 18 months.",
-    "es": "Duración estimada de 12 a 18 meses."
+    "es": "Duracin estimada de 12 a 18 meses."
   },
   {
     "id": "note.lip_fillers.volift_lidocaine",
     "en": "Formulated with lidocaine for added comfort.",
-    "es": "Formulado con lidocaína para mayor comodidad."
+    "es": "Formulado con lidocana para mayor comodidad."
   },
   {
     "id": "note.lip_fillers.volbella_tech",
     "en": "Low-density HA for hydration and fine-line refinement; not for volume.",
-    "es": "AH de baja densidad para hidratación y líneas finas; no indicado para volumen."
+    "es": "AH de baja densidad para hidratacin y lneas finas; no indicado para volumen."
   },
   {
     "id": "note.lip_fillers.volbella_zones",
     "en": "Lip hydration/definition without volume; tear troughs; fine perioral lines.",
-    "es": "Hidratación/definición labial sin volumen; ojeras; líneas peribucales finas."
+    "es": "Hidratacin/definicin labial sin volumen; ojeras; lneas peribucales finas."
   },
   {
     "id": "note.lip_fillers.volbella_syringe",
@@ -342,12 +342,12 @@
   {
     "id": "note.lip_fillers.volbella_duration",
     "en": "Typically lasts 9 to 12 months.",
-    "es": "Duración estimada de 9 a 12 meses."
+    "es": "Duracin estimada de 9 a 12 meses."
   },
   {
     "id": "note.lip_fillers.volbella_lidocaine",
     "en": "Formulated with lidocaine for added comfort.",
-    "es": "Formulado con lidocaína para mayor comodidad."
+    "es": "Formulado con lidocana para mayor comodidad."
   },
   {
     "id": "note.lip_fillers.generic_deep_balance",
@@ -357,17 +357,17 @@
   {
     "id": "note.lip_fillers.generic_deep_composition",
     "en": "Cross-linked hyaluronic acid gel designed for stability.",
-    "es": "Gel de ácido hialurónico reticulado diseñado para mayor estabilidad."
+    "es": "Gel de cido hialurnico reticulado diseado para mayor estabilidad."
   },
   {
     "id": "note.lip_fillers.generic_deep_concentration",
     "en": "20 mg/ml HA concentration for lift and support.",
-    "es": "Concentración de HA de 20 mg/ml para elevación y soporte."
+    "es": "Concentracin de HA de 20 mg/ml para elevacin y soporte."
   },
   {
     "id": "note.lip_fillers.generic_deep_indication",
     "en": "Multipurpose correction for volume, contour, and folds.",
-    "es": "Corrección multipropósito para volumen, contorno y pliegues."
+    "es": "Correccin multipropsito para volumen, contorno y pliegues."
   },
   {
     "id": "note.lip_fillers.generic_deep_depth",
@@ -376,33 +376,33 @@
   },
   {
     "id": "note.lip_fillers.generic_deep_packaging",
-    "en": "1 × 1.1 ml syringe with 25G and 27G needles.",
-    "es": "1 × jeringa de 1.1 ml con agujas 25G y 27G."
+    "en": "1   1.1 ml syringe with 25G and 27G needles.",
+    "es": "1   jeringa de 1.1 ml con agujas 25G y 27G."
   },
   {
     "id": "note.lip_fillers.generic_deep_lidocaine",
     "en": "Contains 0.3% lidocaine for added comfort.",
-    "es": "Contiene lidocaína al 0.3% para mayor comodidad."
+    "es": "Contiene lidocana al 0.3% para mayor comodidad."
   },
   {
     "id": "note.lip_fillers.generic_deep_duration",
     "en": "Typically lasts 9 to 12 months.",
-    "es": "Duración estimada de 9 a 12 meses."
+    "es": "Duracin estimada de 9 a 12 meses."
   },
   {
     "id": "svc.hyaluronidase.name",
     "en": "Hyaluronidase Filler Reversal",
-    "es": "Reversión de Rellenos con Hialuronidasa"
+    "es": "Reversin de Rellenos con Hialuronidasa"
   },
   {
     "id": "svc.hyaluronidase.desc",
     "en": "Dissolve misplaced or undesired hyaluronic acid fillers using hyaluronidase for safe and effective correction.",
-    "es": "Disuelva rellenos de ácido hialurónico mal colocados o no deseados usando hialuronidasa para una corrección segura y efectiva."
+    "es": "Disuelva rellenos de cido hialurnico mal colocados o no deseados usando hialuronidasa para una correccin segura y efectiva."
   },
   {
     "id": "svc.hyaluronidase.details",
     "en": "Hyaluronidase is an enzyme that breaks down hyaluronic acid-based fillers. It's used to correct overfilled areas, migrated filler, or address complications like vascular compression. Treatment is quick, safe, and performed only by trained medical personnel at Mave.",
-    "es": "La hialuronidasa es una enzima que descompone los rellenos basados en ácido hialurónico. Se utiliza para corregir áreas sobrellenadas, rellenos migrados o abordar complicaciones como compresión vascular. El tratamiento es rápido, seguro y realizado solo por personal médico capacitado en Mave."
+    "es": "La hialuronidasa es una enzima que descompone los rellenos basados en cido hialurnico. Se utiliza para corregir reas sobrellenadas, rellenos migrados o abordar complicaciones como compresin vascular. El tratamiento es rpido, seguro y realizado solo por personal mdico capacitado en Mave."
   },
   {
     "id": "note.hyaluronidase.price_per_vial",
@@ -417,12 +417,12 @@
   {
     "id": "note.hyaluronidase.multiple_sessions",
     "en": "Multiple sessions may be needed for complete dissolution",
-    "es": "Pueden ser necesarias múltiples sesiones para una disolución completa"
+    "es": "Pueden ser necesarias mltiples sesiones para una disolucin completa"
   },
   {
     "id": "note.hyaluronidase.follow_up",
     "en": "Follow-up correction with fresh filler is optional",
-    "es": "La corrección de seguimiento con relleno fresco es opcional"
+    "es": "La correccin de seguimiento con relleno fresco es opcional"
   },
   {
     "id": "goal.hyaluronidase.dissolve",
@@ -432,12 +432,12 @@
   {
     "id": "goal.hyaluronidase.correct_asymmetry",
     "en": "Correct asymmetry or migration",
-    "es": "Corregir asimetría o migración"
+    "es": "Corregir asimetra o migracin"
   },
   {
     "id": "goal.hyaluronidase.resolve_nodules",
     "en": "Resolve nodules, lumps, or vascular occlusion",
-    "es": "Resolver nódulos, bultos u oclusión vascular"
+    "es": "Resolver ndulos, bultos u oclusin vascular"
   },
   {
     "id": "area.hyaluronidase.lips",
@@ -462,7 +462,7 @@
   {
     "id": "area.hyaluronidase.jawline",
     "en": "Jawline",
-    "es": "Línea de la Mandíbula"
+    "es": "Lnea de la Mandbula"
   },
   {
     "id": "area.hyaluronidase.chin",
@@ -481,23 +481,23 @@
   },
   {
     "id": "addon.facial_balancing.botox_any_zone",
-    "en": "Botox� - Any Zone",
-    "es": "Botox� - Cualquier Zona"
+    "en": "Botox - Any Zone",
+    "es": "Botox - Cualquier Zona"
   },
   {
     "id": "addon.facial_balancing.lip_filler_stylage",
-    "en": "Lip Filler - Hyaluronic Acid - Stylage� M",
-    "es": "Relleno de Labios - Ácido Hialurónico - Stylage� - M"
+    "en": "Lip Filler - Hyaluronic Acid - Stylage M",
+    "es": "Relleno de Labios - cido Hialurnico - Stylage - M"
   },
   {
     "id": "addon.facial_balancing.microneedling_pdrn",
     "en": "Microneedling - PDRN - Polynucleotide",
-    "es": "Microneedling - PDRN - Polinucleótido"
+    "es": "Microneedling - PDRN - Polinucletido"
   },
   {
     "id": "addon.facial_balancing.microneedling_glow",
     "en": "Microneedling - Glow Revitalizing & Facial Definition",
-    "es": "Microneedling - Glow Revitalizante & Definición Facial"
+    "es": "Microneedling - Glow Revitalizante & Definicin Facial"
   },
   {
     "id": "addon.facial_balancing.pdo_threads",
@@ -506,18 +506,18 @@
   },
   {
     "id": "addon.facial_balancing.enzymatic_therapy",
-    "en": "Enzymatic Therapy - PB Serum�+ (Kit)",
-    "es": "Terapia Enzimática - PB Serum�+ (Kit)"
+    "en": "Enzymatic Therapy - PB Serum+ (Kit)",
+    "es": "Terapia Enzimtica - PB Serum+ (Kit)"
   },
   {
     "id": "addon.facial_balancing.rf_microneedling",
-    "en": "Sylfirm X� - RF Microneedling - Face + Neck + Décolleté",
-    "es": "Sylfirm X� - Microagujas RF - Rostro + Cuello + Escote"
+    "en": "Sylfirm X - RF Microneedling - Face + Neck + Dcollet",
+    "es": "Sylfirm X - Microagujas RF - Rostro + Cuello + Escote"
   },
   {
     "id": "addon.lip_fillers.botox_any_zone",
-    "en": "Botox� - Any Zone",
-    "es": "Botox� - Cualquier Zona"
+    "en": "Botox - Any Zone",
+    "es": "Botox - Cualquier Zona"
   },
   {
     "id": "addon.lip_fillers.microneedling_prp",
@@ -527,27 +527,27 @@
   {
     "id": "addon.lip_fillers.mesotherapy_pn",
     "en": "Mesotherapy - PN - Polynucleotide",
-    "es": "Mesoterapia - PN - Polinucleótido"
+    "es": "Mesoterapia - PN - Polinucletido"
   },
   {
     "id": "addon.lip_fillers.hydrafacial",
-    "en": "Hydrafacial� MD - Face",
-    "es": "Hydrafacial� MD - Rostro"
+    "en": "Hydrafacial MD - Face",
+    "es": "Hydrafacial MD - Rostro"
   },
   {
     "id": "addon.lip_fillers.casmara_purifying",
-    "en": "Casmara� - Purifying Algae Facial",
-    "es": "Casmara� - Facial Purificante de Algas"
+    "en": "Casmara - Purifying Algae Facial",
+    "es": "Casmara - Facial Purificante de Algas"
   },
   {
     "id": "addon.hyaluronidase.lip_filler_stylage",
-    "en": "Lip Filler - Hyaluronic Acid - Stylage� M",
-    "es": "Relleno de Labios - Ácido Hialurónico - Stylage� M"
+    "en": "Lip Filler - Hyaluronic Acid - Stylage M",
+    "es": "Relleno de Labios - cido Hialurnico - Stylage M"
   },
   {
     "id": "addon.hyaluronidase.facial_balancing_volift",
-    "en": "Dermal Filler - Hyaluronic Acid - Juvéderm Volift",
-    "es": "Relleno Dermal - Ácido Hialurónico - Juvéderm Volift"
+    "en": "Dermal Filler - Hyaluronic Acid - Juvderm Volift",
+    "es": "Relleno Dermal - cido Hialurnico - Juvderm Volift"
   },
   {
     "id": "addon.hyaluronidase.microneedling_prp",
@@ -557,7 +557,7 @@
   {
     "id": "addon.hyaluronidase.mesotherapy_pdrn",
     "en": "Mesotherapy - PDRN - Polynucleotide",
-    "es": "Mesoterapia - PDRN - Polinucleótido"
+    "es": "Mesoterapia - PDRN - Polinucletido"
   },
   {
     "id": "exp.facial_balancing.pre.1",
@@ -567,7 +567,7 @@
   {
     "id": "exp.facial_balancing.pre.2",
     "en": "Stay hydrated, eat a light meal, and arrive with clean skin; pause retinoids/acids for 48 hours.",
-    "es": "Manténgase hidratado, coma algo ligero y llegue con la piel limpia; suspenda retinoides/ácidos por 48 horas."
+    "es": "Mantngase hidratado, coma algo ligero y llegue con la piel limpia; suspenda retinoides/cidos por 48 horas."
   },
   {
     "id": "exp.facial_balancing.pre.3",
@@ -577,37 +577,37 @@
   {
     "id": "exp.facial_balancing.during.1",
     "en": "Topical numbing and/or cannula techniques are used; you may feel brief pinches and pressure.",
-    "es": "Se usa anestesia tópica y/o técnica con cánula; puede sentir pequeños pinchazos y presión."
+    "es": "Se usa anestesia tpica y/o tcnica con cnula; puede sentir pequeos pinchazos y presin."
   },
   {
     "id": "exp.facial_balancing.during.2",
     "en": "Provider will mold and check symmetry throughout to balance the face.",
-    "es": "El especialista modelará y revisará la simetría durante todo el procedimiento para equilibrar el rostro."
+    "es": "El especialista modelar y revisar la simetra durante todo el procedimiento para equilibrar el rostro."
   },
   {
     "id": "exp.facial_balancing.post.1",
-    "en": "Mild swelling/tenderness are expected for 2–3 days; apply cool compresses in the first 24 hours.",
-    "es": "Se esperan hinchazón/sensibilidad leves durante 2–3 días; aplique compresas frías en las primeras 24 horas."
+    "en": "Mild swelling/tenderness are expected for 23 days; apply cool compresses in the first 24 hours.",
+    "es": "Se esperan hinchazn/sensibilidad leves durante 23 das; aplique compresas fras en las primeras 24 horas."
   },
   {
     "id": "exp.facial_balancing.post.2",
     "en": "Avoid strenuous exercise, alcohol, saunas, and facial pressure (facials/massage) for 48 hours.",
-    "es": "Evite ejercicio intenso, alcohol, saunas y presión facial (faciales/masajes) durante 48 horas."
+    "es": "Evite ejercicio intenso, alcohol, saunas y presin facial (faciales/masajes) durante 48 horas."
   },
   {
     "id": "exp.facial_balancing.post.3",
     "en": "Sleep with head elevated the first night; avoid dental work for 2 weeks. Results refine as swelling settles in ~1 week.",
-    "es": "Duerma con la cabeza elevada la primera noche; evite trabajo dental por 2 semanas. Los resultados se afinan al bajar la hinchazón en ~1 semana."
+    "es": "Duerma con la cabeza elevada la primera noche; evite trabajo dental por 2 semanas. Los resultados se afinan al bajar la hinchazn en ~1 semana."
   },
   {
     "id": "exp.lip_fillers.pre.1",
     "en": "Avoid alcohol, NSAIDs/aspirin, and blood-thinning supplements (fish oil, vitamin E) for 48 hours if medically permitted.",
-    "es": "Evite alcohol, AINE/aspirina y suplementos anticoagulantes (aceite de pescado, vitamina E) durante 48 horas si su médico lo permite."
+    "es": "Evite alcohol, AINE/aspirina y suplementos anticoagulantes (aceite de pescado, vitamina E) durante 48 horas si su mdico lo permite."
   },
   {
     "id": "exp.lip_fillers.pre.2",
     "en": "Arrive with clean skin and no makeup on lips or surrounding area; pause retinoids/acids for 48 hours.",
-    "es": "Acuda con la piel limpia y sin maquillaje en labios o zona cercana; suspenda retinoides/ácidos por 48 horas."
+    "es": "Acuda con la piel limpia y sin maquillaje en labios o zona cercana; suspenda retinoides/cidos por 48 horas."
   },
   {
     "id": "exp.lip_fillers.pre.3",
@@ -616,8 +616,8 @@
   },
   {
     "id": "exp.lip_fillers.during.1",
-    "en": "Topical numbing is applied; you’ll feel brief pinching and pressure as filler is placed.",
-    "es": "Se aplica anestesia tópica; sentirá pequeños pinchazos y presión mientras se coloca el relleno."
+    "en": "Topical numbing is applied; youll feel brief pinching and pressure as filler is placed.",
+    "es": "Se aplica anestesia tpica; sentir pequeos pinchazos y presin mientras se coloca el relleno."
   },
   {
     "id": "exp.lip_fillers.during.2",
@@ -626,38 +626,38 @@
   },
   {
     "id": "exp.lip_fillers.post.1",
-    "en": "Expect swelling or bruising for 2–3 days; apply cool (not ice-cold) compresses intermittently for 24 hours.",
-    "es": "Espere hinchazón o moretones por 2–3 días; aplique compresas frescas (no muy frías) de forma intermitente durante 24 horas."
+    "en": "Expect swelling or bruising for 23 days; apply cool (not ice-cold) compresses intermittently for 24 hours.",
+    "es": "Espere hinchazn o moretones por 23 das; aplique compresas frescas (no muy fras) de forma intermitente durante 24 horas."
   },
   {
     "id": "exp.lip_fillers.post.2",
     "en": "Avoid strenuous exercise, saunas, alcohol, and makeup on lips for 24 hours; avoid kissing/straws for the first day.",
-    "es": "Evite ejercicio intenso, saunas, alcohol y maquillaje en los labios por 24 horas; evite besar o usar popotes el primer día."
+    "es": "Evite ejercicio intenso, saunas, alcohol y maquillaje en los labios por 24 horas; evite besar o usar popotes el primer da."
   },
   {
     "id": "exp.lip_fillers.post.3",
     "en": "Sleep with head elevated the first night and avoid pressing or massaging unless instructed; results settle in about 1 week.",
-    "es": "Duerma con la cabeza elevada la primera noche y evite presionar o masajear salvo indicación; los resultados se asientan en ~1 semana."
+    "es": "Duerma con la cabeza elevada la primera noche y evite presionar o masajear salvo indicacin; los resultados se asientan en ~1 semana."
   },
   {
     "id": "exp.hyaluronidase.pre.1",
     "en": "Avoid alcohol, NSAIDs/aspirin, and blood-thinning supplements for 48 hours if medically permitted.",
-    "es": "Evite alcohol, AINE/aspirina y suplementos anticoagulantes durante 48 horas si su médico lo permite."
+    "es": "Evite alcohol, AINE/aspirina y suplementos anticoagulantes durante 48 horas si su mdico lo permite."
   },
   {
     "id": "exp.hyaluronidase.pre.2",
     "en": "Inform your provider of prior allergic reactions to hyaluronidase, bee/wasp stings, or any previous filler complications.",
-    "es": "Informe a su especialista sobre reacciones alérgicas previas a hialuronidasa, picaduras de abeja/avispa o complicaciones previas con rellenos."
+    "es": "Informe a su especialista sobre reacciones alrgicas previas a hialuronidasa, picaduras de abeja/avispa o complicaciones previas con rellenos."
   },
   {
     "id": "exp.hyaluronidase.pre.3",
     "en": "Pause retinoids/acids on treatment areas for 48 hours and arrive with clean skin.",
-    "es": "Suspenda retinoides/ácidos en las zonas a tratar por 48 horas y llegue con la piel limpia."
+    "es": "Suspenda retinoides/cidos en las zonas a tratar por 48 horas y llegue con la piel limpia."
   },
   {
     "id": "exp.hyaluronidase.during.1",
-    "en": "You’ll feel brief pinching and possible warmth or stinging as hyaluronidase is injected into the filler.",
-    "es": "Sentirá pequeños pinchazos y posible calor o escozor mientras se inyecta la hialuronidasa en el relleno."
+    "en": "Youll feel brief pinching and possible warmth or stinging as hyaluronidase is injected into the filler.",
+    "es": "Sentir pequeos pinchazos y posible calor o escozor mientras se inyecta la hialuronidasa en el relleno."
   },
   {
     "id": "exp.hyaluronidase.during.2",
@@ -666,53 +666,53 @@
   },
   {
     "id": "exp.hyaluronidase.post.1",
-    "en": "Expect temporary swelling, redness, or tenderness for 24–72 hours; cool compresses can ease discomfort.",
-    "es": "Espere hinchazón, enrojecimiento o sensibilidad temporal de 24 a 72 horas; las compresas frías pueden aliviar la molestia."
+    "en": "Expect temporary swelling, redness, or tenderness for 2472 hours; cool compresses can ease discomfort.",
+    "es": "Espere hinchazn, enrojecimiento o sensibilidad temporal de 24 a 72 horas; las compresas fras pueden aliviar la molestia."
   },
   {
     "id": "exp.hyaluronidase.post.2",
-    "en": "Visible changes occur within 24–72 hours as filler dissolves; asymmetry may be temporary as tissue settles.",
-    "es": "Los cambios visibles ocurren en 24–72 horas a medida que el relleno se disuelve; puede haber asimetría temporal mientras el tejido se asienta."
+    "en": "Visible changes occur within 2472 hours as filler dissolves; asymmetry may be temporary as tissue settles.",
+    "es": "Los cambios visibles ocurren en 2472 horas a medida que el relleno se disuelve; puede haber asimetra temporal mientras el tejido se asienta."
   },
   {
     "id": "exp.hyaluronidase.post.3",
-    "en": "Avoid massaging/pressing the area unless instructed; new filler is typically delayed 1–2 weeks.",
-    "es": "Evite masajear/presionar el área salvo indicación; normalmente se retrasa la aplicación de nuevo relleno 1–2 semanas."
+    "en": "Avoid massaging/pressing the area unless instructed; new filler is typically delayed 12 weeks.",
+    "es": "Evite masajear/presionar el rea salvo indicacin; normalmente se retrasa la aplicacin de nuevo relleno 12 semanas."
   },
   {
     "id": "faq.facial_balancing.q1",
     "en": "What is facial balancing?",
-    "es": "¿Qué es el equilibrio facial?"
+    "es": "Qu es el equilibrio facial?"
   },
   {
     "id": "faq.facial_balancing.a1",
     "en": "Facial balancing is an advanced filler technique to restore proportion and harmony across the face, often enhancing areas like the jawline, cheeks, and chin for a more symmetrical, youthful appearance.",
-    "es": "El equilibrio facial es una técnica avanzada de relleno para restaurar proporción y armonía en toda la cara, a menudo mejorando áreas como la línea mandibular, mejillas y barbilla para una apariencia más simétrica y juvenil."
+    "es": "El equilibrio facial es una tcnica avanzada de relleno para restaurar proporcin y armona en toda la cara, a menudo mejorando reas como la lnea mandibular, mejillas y barbilla para una apariencia ms simtrica y juvenil."
   },
   {
     "id": "faq.facial_balancing.q2",
     "en": "How many syringes will I need?",
-    "es": "¿Cuántas jeringas necesitaré?"
+    "es": "Cuntas jeringas necesitar?"
   },
   {
     "id": "faq.facial_balancing.a2",
-    "en": "Most full-face balancing treatments require 2–5 syringes depending on the number of areas treated and the desired outcome.",
-    "es": "La mayoría de los tratamientos de equilibrio facial completo requieren 2-5 jeringas dependiendo del número de áreas tratadas y el resultado deseado."
+    "en": "Most full-face balancing treatments require 25 syringes depending on the number of areas treated and the desired outcome.",
+    "es": "La mayora de los tratamientos de equilibrio facial completo requieren 2-5 jeringas dependiendo del nmero de reas tratadas y el resultado deseado."
   },
   {
     "id": "faq.facial_balancing.q3",
     "en": "Will it look natural?",
-    "es": "¿Se verá natural?"
+    "es": "Se ver natural?"
   },
   {
     "id": "faq.facial_balancing.a3",
     "en": "Yes. Our team specializes in subtle enhancements that maintain your natural features while improving symmetry and volume.",
-    "es": "Sí. Nuestro equipo se especializa en mejoras sutiles que mantienen sus rasgos naturales mientras mejoran la simetría y el volumen."
+    "es": "S. Nuestro equipo se especializa en mejoras sutiles que mantienen sus rasgos naturales mientras mejoran la simetra y el volumen."
   },
   {
     "id": "faq.lip_fillers.q1",
     "en": "How long do lip fillers last?",
-    "es": "¿Cuánto duran los rellenos de labios?"
+    "es": "Cunto duran los rellenos de labios?"
   },
   {
     "id": "faq.lip_fillers.a1",
@@ -722,71 +722,71 @@
   {
     "id": "faq.lip_fillers.q2",
     "en": "Will my lips look natural?",
-    "es": "¿Mis labios se verán naturales?"
+    "es": "Mis labios se vern naturales?"
   },
   {
     "id": "faq.lip_fillers.a2",
     "en": "Yes. We recommend subtle, balanced enhancements that suit natural facial features.",
-    "es": "Sí. En Mave, nos enfocamos en mejorar su belleza natural con resultados sutiles y equilibrados que se adapten a sus rasgos faciales."
+    "es": "S. En Mave, nos enfocamos en mejorar su belleza natural con resultados sutiles y equilibrados que se adapten a sus rasgos faciales."
   },
   {
     "id": "faq.lip_fillers.q3",
     "en": "Does the treatment hurt?",
-    "es": "¿El tratamiento duele?"
+    "es": "El tratamiento duele?"
   },
   {
     "id": "faq.lip_fillers.a3",
     "en": "Most clients feel only mild discomfort. We apply a numbing cream before treatment, and the fillers contain lidocaine for added comfort.",
-    "es": "La mayoría de los clientes sienten solo molestia leve. Aplicamos una crema anestésica antes del tratamiento, y los rellenos contienen lidocaína para mayor comodidad."
+    "es": "La mayora de los clientes sienten solo molestia leve. Aplicamos una crema anestsica antes del tratamiento, y los rellenos contienen lidocana para mayor comodidad."
   },
   {
     "id": "faq.lip_fillers.q4",
     "en": "Can lip filler be reversed?",
-    "es": "¿Se pueden revertir los rellenos de labios?"
+    "es": "Se pueden revertir los rellenos de labios?"
   },
   {
     "id": "faq.lip_fillers.a4",
     "en": "Yes. If needed, hyaluronic acid fillers can be safely dissolved with an enzyme called hyaluronidase.",
-    "es": "Sí. Si es necesario, los rellenos de ácido hialurónico se pueden disolver de manera segura con una enzima llamada hialuronidasa."
+    "es": "S. Si es necesario, los rellenos de cido hialurnico se pueden disolver de manera segura con una enzima llamada hialuronidasa."
   },
   {
     "id": "faq.hyaluronidase.q1",
     "en": "Is hyaluronidase safe?",
-    "es": "¿Es segura la hialuronidasa?"
+    "es": "Es segura la hialuronidasa?"
   },
   {
     "id": "faq.hyaluronidase.a1",
     "en": "Yes. It is widely used in aesthetic medicine and emergency medicine. We perform a patch test beforehand to check for allergic reactions.",
-    "es": "Sí. Se utiliza ampliamente en medicina estética y de emergencia. Realizamos una prueba de parche de antemano para verificar reacciones alérgicas."
+    "es": "S. Se utiliza ampliamente en medicina esttica y de emergencia. Realizamos una prueba de parche de antemano para verificar reacciones alrgicas."
   },
   {
     "id": "faq.hyaluronidase.q2",
     "en": "Will my original filler fully dissolve?",
-    "es": "¿Se disolverá completamente mi relleno original?"
+    "es": "Se disolver completamente mi relleno original?"
   },
   {
     "id": "faq.hyaluronidase.a2",
     "en": "In most cases, yes. Some patients may require a second session depending on the amount and age of the filler.",
-    "es": "En la mayoría de los casos, sí. Algunos pacientes pueden requerir una segunda sesión dependiendo de la cantidad y edad del relleno."
+    "es": "En la mayora de los casos, s. Algunos pacientes pueden requerir una segunda sesin dependiendo de la cantidad y edad del relleno."
   },
   {
     "id": "faq.hyaluronidase.q3",
     "en": "Can I get new filler afterward?",
-    "es": "¿Puedo obtener nuevo relleno después?"
+    "es": "Puedo obtener nuevo relleno despus?"
   },
   {
     "id": "faq.hyaluronidase.a3",
     "en": "Yes. After complete resolution, we can safely reapply filler using a more strategic and customized approach.",
-    "es": "Sí. Después de la resolución completa, podemos reaplicar relleno de manera segura utilizando un enfoque más estratégico y personalizado."
+    "es": "S. Despus de la resolucin completa, podemos reaplicar relleno de manera segura utilizando un enfoque ms estratgico y personalizado."
   },
   {
     "id": "faq.hyaluronidase.q4",
     "en": "Does it hurt?",
-    "es": "¿Duele?"
+    "es": "Duele?"
   },
   {
     "id": "faq.hyaluronidase.a4",
     "en": "You may feel mild discomfort or stinging at the injection site, but the treatment is very quick and tolerable.",
-    "es": "Puede sentir incomodidad leve o picazón en el sitio de inyección, pero el tratamiento es muy rápido y tolerable."
+    "es": "Puede sentir incomodidad leve o picazn en el sitio de inyeccin, pero el tratamiento es muy rpido y tolerable."
   }
 ]

@@ -7,32 +7,32 @@
   {
     "id": "svc.microneedling.name",
     "en": "Microneedling Skin Renewal",
-    "es": "Renovación de Piel con Microneedling"
+    "es": "Renovacin de Piel con Microneedling"
   },
   {
     "id": "svc.microneedling.desc",
-    "en": "Refine texture, minimize pores, and stimulate collagen through precision microneedling using fine sterile needles. Choose PRP/PRFM for glow and repair, PN for hydration and regeneration, PDRN for recovery and tone, or Toskani® and Caviar Extract infusions for targeted skin renewal.",
-    "es": "Mejora la textura, minimiza poros y estimula el colágeno mediante microneedling de precisión con agujas estériles finas. Elige PRP/PRFM para luminosidad y reparación, PN para hidratación y regeneración, PDRN para recuperación y tono, o infusiones Toskani® y Extracto de Caviar para renovación dirigida."
+    "en": "Refine texture, minimize pores, and stimulate collagen through precision microneedling using fine sterile needles. Choose PRP/PRFM for glow and repair, PN for hydration and regeneration, PDRN for recovery and tone, or Toskani and Caviar Extract infusions for targeted skin renewal.",
+    "es": "Mejora la textura, minimiza poros y estimula el colgeno mediante microneedling de precisin con agujas estriles finas. Elige PRP/PRFM para luminosidad y reparacin, PN para hidratacin y regeneracin, PDRN para recuperacin y tono, o infusiones Toskani y Extracto de Caviar para renovacin dirigida."
   },
   {
     "id": "svc.microneedling.details",
-    "en": "Microneedling uses fine sterile needles to create microchannels that activate the skin’s repair response, stimulating collagen and elastin while improving texture and firmness. Infusions can be selected based on your goal: PRP/PRFM to support recovery and glow, PN to hydrate and regenerate, PDRN to calm and even tone, or Toskani® and Caviar Extract for targeted skin renewal.",
-    "es": "El microneedling utiliza agujas estériles finas para crear microcanales que activan la reparación cutánea, estimulando colágeno y elastina mientras mejora textura y firmeza. Las infusiones se eligen según el objetivo: PRP/PRFM para apoyar recuperación y luminosidad, PN para hidratar y regenerar, PDRN para calmar y unificar el tono, o Toskani® y Extracto de Caviar para renovación dirigida."
+    "en": "Microneedling uses fine sterile needles to create microchannels that activate the skins repair response, stimulating collagen and elastin while improving texture and firmness. Infusions can be selected based on your goal: PRP/PRFM to support recovery and glow, PN to hydrate and regenerate, PDRN to calm and even tone, or Toskani and Caviar Extract for targeted skin renewal.",
+    "es": "El microneedling utiliza agujas estriles finas para crear microcanales que activan la reparacin cutnea, estimulando colgeno y elastina mientras mejora textura y firmeza. Las infusiones se eligen segn el objetivo: PRP/PRFM para apoyar recuperacin y luminosidad, PN para hidratar y regenerar, PDRN para calmar y unificar el tono, o Toskani y Extracto de Caviar para renovacin dirigida."
   },
   {
     "id": "note.microneedling.sessions",
-    "en": "3–6 sessions recommended for optimal results",
-    "es": "Se recomiendan de 3 a 6 sesiones para resultados óptimos"
+    "en": "36 sessions recommended for optimal results",
+    "es": "Se recomiendan de 3 a 6 sesiones para resultados ptimos"
   },
   {
     "id": "note.microneedling.safe",
     "en": "Safe for most skin types",
-    "es": "Seguro para la mayoría de los tipos de piel"
+    "es": "Seguro para la mayora de los tipos de piel"
   },
   {
     "id": "note.microneedling.downtime",
-    "en": "Downtime: 1–3 days of redness possible",
-    "es": "Tiempo de recuperación: puede haber de 1 a 3 días de enrojecimiento"
+    "en": "Downtime: 13 days of redness possible",
+    "es": "Tiempo de recuperacin: puede haber de 1 a 3 das de enrojecimiento"
   },
   {
     "id": "goal.microneedling.texture",
@@ -42,7 +42,7 @@
   {
     "id": "goal.microneedling.scars",
     "en": "Reduce acne scars and fine lines",
-    "es": "Reducir cicatrices de acné y líneas finas"
+    "es": "Reducir cicatrices de acn y lneas finas"
   },
   {
     "id": "goal.microneedling.pores",
@@ -61,7 +61,7 @@
   },
   {
     "id": "area.microneedling.decollete",
-    "en": "Décolleté",
+    "en": "Dcollet",
     "es": "Escote"
   },
   {
@@ -72,27 +72,27 @@
   {
     "id": "area.microneedling.other",
     "en": "Other zones treatable upon request and medical evaluation.",
-    "es": "Otras zonas tratables bajo solicitud y evaluación médica."
+    "es": "Otras zonas tratables bajo solicitud y evaluacin mdica."
   },
   {
     "id": "addon.microneedling.botox",
-    "en": "Botox� - Any Zone",
-    "es": "Botox� - Cualquier Zona"
+    "en": "Botox - Any Zone",
+    "es": "Botox - Cualquier Zona"
   },
   {
     "id": "addon.microneedling.hydrafacial",
-    "en": "Hydrafacial� MD - Face",
-    "es": "Hydrafacial� MD - Rostro"
+    "en": "Hydrafacial MD - Face",
+    "es": "Hydrafacial MD - Rostro"
   },
   {
     "id": "addon.microneedling.casmara_retinol",
-    "en": "Casmara� - Retinol Pro‑Age Facial",
-    "es": "Casmara� - Facial Retinol Pro‑Age"
+    "en": "Casmara - Retinol ProAge Facial",
+    "es": "Casmara - Facial Retinol ProAge"
   },
   {
     "id": "addon.microneedling.janssen_ultra",
-    "en": "Janssen� - Ultra Renewal Facial - Face",
-    "es": "Janssen� - Facial Ultra Renewal - Rostro"
+    "en": "Janssen - Ultra Renewal Facial - Face",
+    "es": "Janssen - Facial Ultra Renewal - Rostro"
   },
   {
     "id": "addon.microneedling.pdo_threads",
@@ -101,38 +101,38 @@
   },
   {
     "id": "addon.microneedling.rf_face",
-    "en": "Sylfirm X� - RF Microneedling - Face",
-    "es": "Sylfirm X� - Microagujas RF - Rostro"
+    "en": "Sylfirm X - RF Microneedling - Face",
+    "es": "Sylfirm X - Microagujas RF - Rostro"
   },
   {
     "id": "exp.microneedling.pre.1",
-    "en": "Avoid retinoids, AHAs/BHAs, exfoliation, and waxing for 3–5 days prior; no recent sunburn or tanning.",
-    "es": "Evite retinoides, AHA/BHA, exfoliación y depilación por 3–5 días previos; no acuda con quemadura solar ni bronceado reciente."
+    "en": "Avoid retinoids, AHAs/BHAs, exfoliation, and waxing for 35 days prior; no recent sunburn or tanning.",
+    "es": "Evite retinoides, AHA/BHA, exfoliacin y depilacin por 35 das previos; no acuda con quemadura solar ni bronceado reciente."
   },
   {
     "id": "exp.microneedling.pre.2",
     "en": "Arrive with clean skin (no makeup); reschedule if you have active infection, open wounds, or flare of cold sores without prophylaxis.",
-    "es": "Llegue con la piel limpia (sin maquillaje); reprograme si tiene infección activa, heridas abiertas o brote de herpes sin profilaxis."
+    "es": "Llegue con la piel limpia (sin maquillaje); reprograme si tiene infeccin activa, heridas abiertas o brote de herpes sin profilaxis."
   },
   {
     "id": "exp.microneedling.pre.3",
-    "en": "Limit alcohol, NSAIDs, and blood-thinning supplements 24–48 hours before if medically permitted.",
-    "es": "Limite alcohol, AINE y suplementos anticoagulantes 24–48 horas antes si su médico lo permite."
+    "en": "Limit alcohol, NSAIDs, and blood-thinning supplements 2448 hours before if medically permitted.",
+    "es": "Limite alcohol, AINE y suplementos anticoagulantes 2448 horas antes si su mdico lo permite."
   },
   {
     "id": "exp.microneedling.during.1",
     "en": "Topical numbing is applied; expect a scratching/pressure sensation with possible pinpoint bleeding.",
-    "es": "Se aplica anestesia tópica; espere una sensación de raspado/presión con posible sangrado puntual."
+    "es": "Se aplica anestesia tpica; espere una sensacin de raspado/presin con posible sangrado puntual."
   },
   {
     "id": "exp.microneedling.during.2",
     "en": "Channels are created evenly across the treated zones; serums are applied to enhance penetration.",
-    "es": "Se crean microcanales de manera uniforme en las zonas tratadas; se aplican sueros para mejorar la penetración."
+    "es": "Se crean microcanales de manera uniforme en las zonas tratadas; se aplican sueros para mejorar la penetracin."
   },
   {
     "id": "exp.microneedling.post.1",
-    "en": "Expect redness similar to a sunburn for 24–72 hours; mild swelling or tightness is normal.",
-    "es": "Espere un enrojecimiento similar a una quemadura solar durante 24–72 horas; es normal hinchazón o tirantez leve."
+    "en": "Expect redness similar to a sunburn for 2472 hours; mild swelling or tightness is normal.",
+    "es": "Espere un enrojecimiento similar a una quemadura solar durante 2472 horas; es normal hinchazn o tirantez leve."
   },
   {
     "id": "exp.microneedling.post.2",
@@ -141,48 +141,48 @@
   },
   {
     "id": "exp.microneedling.post.3",
-    "en": "Do not use retinoids, acids, or scrubs for 5–7 days; apply SPF 30+ once reintroducing daytime products.",
-    "es": "No use retinoides, ácidos ni exfoliantes por 5–7 días; aplique FPS 30+ al reintroducir productos diurnos."
+    "en": "Do not use retinoids, acids, or scrubs for 57 days; apply SPF 30+ once reintroducing daytime products.",
+    "es": "No use retinoides, cidos ni exfoliantes por 57 das; aplique FPS 30+ al reintroducir productos diurnos."
   },
   {
     "id": "faq.microneedling.q1",
     "en": "How many sessions will I need?",
-    "es": "¿Cuántas sesiones voy a necesitar?"
+    "es": "Cuntas sesiones voy a necesitar?"
   },
   {
     "id": "faq.microneedling.a1",
-    "en": "Most patients need 3–6 sessions spaced 4–6 weeks apart for best results.",
-    "es": "La mayoría de los pacientes requiere de 3 a 6 sesiones, espaciadas cada 4–6 semanas, para obtener los mejores resultados."
+    "en": "Most patients need 36 sessions spaced 46 weeks apart for best results.",
+    "es": "La mayora de los pacientes requiere de 3 a 6 sesiones, espaciadas cada 46 semanas, para obtener los mejores resultados."
   },
   {
     "id": "faq.microneedling.q2",
     "en": "Which infusion option is best for me?",
-    "es": "¿Qué opción de infusión es mejor para mí?"
+    "es": "Qu opcin de infusin es mejor para m?"
   },
   {
     "id": "faq.microneedling.a2",
     "en": "PRP/PRFM uses your own plasma for regeneration. Kiara Reju adds hydration and glow. Rejuran focuses on deep cellular repair. Your provider will recommend the best option based on your skin needs.",
-    "es": "PRP/PRFM utiliza su propio plasma para favorecer la regeneración. Kiara Reju aporta hidratación y luminosidad. Rejuran se enfoca en la reparación celular profunda. Su especialista recomendará la mejor opción según las necesidades de su piel."
+    "es": "PRP/PRFM utiliza su propio plasma para favorecer la regeneracin. Kiara Reju aporta hidratacin y luminosidad. Rejuran se enfoca en la reparacin celular profunda. Su especialista recomendar la mejor opcin segn las necesidades de su piel."
   },
   {
     "id": "faq.microneedling.q3",
     "en": "Is this safe for all skin types?",
-    "es": "¿Es seguro para todo tipo de piel?"
+    "es": "Es seguro para todo tipo de piel?"
   },
   {
     "id": "faq.microneedling.a3",
     "en": "Yes, microneedling is safe for most skin tones when performed by trained professionals. Rejuran and Kiara Reju are excellent options for sensitive or aging skin.",
-    "es": "Sí, el microneedling es seguro para la mayoría de los fototipos cuando lo realiza personal capacitado. Rejuran y Kiara Reju son excelentes opciones para piel sensible o madura."
+    "es": "S, el microneedling es seguro para la mayora de los fototipos cuando lo realiza personal capacitado. Rejuran y Kiara Reju son excelentes opciones para piel sensible o madura."
   },
   {
     "id": "faq.microneedling.q4",
     "en": "Can I combine this with other treatments?",
-    "es": "¿Puedo combinar este tratamiento con otros?"
+    "es": "Puedo combinar este tratamiento con otros?"
   },
   {
     "id": "faq.microneedling.a4",
     "en": "Yes, microneedling pairs well with facials, laser or radiofrequency for enhanced results. Always consult your provider to create the safest treatment plan.",
-    "es": "Sí, el microneedling se puede combinar con faciales, láser o radiofrecuencia para potenciar resultados. Siempre consulte con su especialista para diseñar el plan de tratamiento más seguro."
+    "es": "S, el microneedling se puede combinar con faciales, lser o radiofrecuencia para potenciar resultados. Siempre consulte con su especialista para disear el plan de tratamiento ms seguro."
   },
   {
     "id": "svc.mesotherapy.name",
@@ -192,27 +192,27 @@
   {
     "id": "svc.mesotherapy.desc",
     "en": "Targeted microinjections of skin-rejuvenating substances like PRP, PDRN, hyaluronic acid, and vitamins to deeply hydrate, heal, and restore radiance.",
-    "es": "Microinyecciones dirigidas de sustancias rejuvenecedoras como PRP, PDRN, ácido hialurónico y vitaminas para hidratar profundamente, reparar y devolver luminosidad a la piel."
+    "es": "Microinyecciones dirigidas de sustancias rejuvenecedoras como PRP, PDRN, cido hialurnico y vitaminas para hidratar profundamente, reparar y devolver luminosidad a la piel."
   },
   {
     "id": "svc.mesotherapy.details",
     "en": "Mesotherapy is a minimally invasive treatment that delivers skin-boosting compounds directly into the dermis via microinjections. Actives include PRP/PRFM from your blood, polynucleotides for regeneration, niacinamide and hyaluronic acid boosters for hydration and glow, antioxidant cocktails for revitalization, and FDA-cleared HA microdroplets for cheek smoothness and luminosity.",
-    "es": "La mesoterapia es un tratamiento mínimamente invasivo que introduce compuestos revitalizantes directamente en la dermis mediante microinyecciones. Los activos incluyen PRP/PRFM de su propia sangre, polinucleótidos para regeneración, potenciadores con niacinamida y ácido hialurónico para hidratación y luminosidad, cócteles antioxidantes para revitalización y microgotas de AH aprobadas por la FDA para suavizar y dar luminosidad a las mejillas."
+    "es": "La mesoterapia es un tratamiento mnimamente invasivo que introduce compuestos revitalizantes directamente en la dermis mediante microinyecciones. Los activos incluyen PRP/PRFM de su propia sangre, polinucletidos para regeneracin, potenciadores con niacinamida y cido hialurnico para hidratacin y luminosidad, ccteles antioxidantes para revitalizacin y microgotas de AH aprobadas por la FDA para suavizar y dar luminosidad a las mejillas."
   },
   {
     "id": "note.mesotherapy.customized",
-    "en": "Customized per patient’s skin goals and needs",
-    "es": "Tratamiento personalizado según las necesidades y objetivos de la piel del paciente"
+    "en": "Customized per patients skin goals and needs",
+    "es": "Tratamiento personalizado segn las necesidades y objetivos de la piel del paciente"
   },
   {
     "id": "note.mesotherapy.sessions",
-    "en": "Most options require 2–3 sessions for full results",
-    "es": "La mayoría de los tratamientos requieren 2–3 sesiones para resultados completos"
+    "en": "Most options require 23 sessions for full results",
+    "es": "La mayora de los tratamientos requieren 23 sesiones para resultados completos"
   },
   {
     "id": "note.mesotherapy.downtime",
-    "en": "Minimal downtime — mild redness or swelling may occur",
-    "es": "Mínimo tiempo de recuperación — puede presentarse leve enrojecimiento o inflamación"
+    "en": "Minimal downtime  mild redness or swelling may occur",
+    "es": "Mnimo tiempo de recuperacin  puede presentarse leve enrojecimiento o inflamacin"
   },
   {
     "id": "goal.mesotherapy.hydrate",
@@ -222,7 +222,7 @@
   {
     "id": "goal.mesotherapy.collagen",
     "en": "Support collagen regeneration",
-    "es": "Apoyar la regeneración del colágeno"
+    "es": "Apoyar la regeneracin del colgeno"
   },
   {
     "id": "goal.mesotherapy.texture",
@@ -241,7 +241,7 @@
   },
   {
     "id": "area.mesotherapy.decollete",
-    "en": "Décolleté",
+    "en": "Dcollet",
     "es": "Escote"
   },
   {
@@ -267,112 +267,112 @@
   {
     "id": "area.mesotherapy.stretch_marks",
     "en": "Stretch marks",
-    "es": "Estrías"
+    "es": "Estras"
   },
   {
     "id": "area.mesotherapy.other",
     "en": "Other zones available upon request after medical evaluation",
-    "es": "Otras zonas disponibles bajo solicitud tras evaluación médica"
+    "es": "Otras zonas disponibles bajo solicitud tras evaluacin mdica"
   },
   {
     "id": "addon.mesotherapy.hydrafacial",
-    "en": "Hydrafacial� MD - Face",
-    "es": "Hydrafacial� MD - Rostro"
+    "en": "Hydrafacial MD - Face",
+    "es": "Hydrafacial MD - Rostro"
   },
   {
     "id": "addon.mesotherapy.casmara_retinol",
-    "en": "Casmara� - Retinol Pro‑Age Facial",
-    "es": "Casmara� - Facial Retinol Pro‑Age"
+    "en": "Casmara - Retinol ProAge Facial",
+    "es": "Casmara - Facial Retinol ProAge"
   },
   {
     "id": "addon.mesotherapy.rf_face",
-    "en": "Sylfirm X� - RF Microneedling - Face",
-    "es": "Sylfirm X� - Microagujas RF - Rostro"
+    "en": "Sylfirm X - RF Microneedling - Face",
+    "es": "Sylfirm X - Microagujas RF - Rostro"
   },
   {
     "id": "exp.mesotherapy.pre.1",
-    "en": "Avoid alcohol, NSAIDs/aspirin, and blood-thinning supplements for 24–48 hours if medically permitted.",
-    "es": "Evite alcohol, AINE/aspirina y suplementos anticoagulantes durante 24–48 horas si su médico lo permite."
+    "en": "Avoid alcohol, NSAIDs/aspirin, and blood-thinning supplements for 2448 hours if medically permitted.",
+    "es": "Evite alcohol, AINE/aspirina y suplementos anticoagulantes durante 2448 horas si su mdico lo permite."
   },
   {
     "id": "exp.mesotherapy.pre.2",
-    "en": "Arrive with clean skin, no makeup; pause retinoids/acids for 3–5 days; reschedule if active infection or cold sore.",
-    "es": "Llegue con la piel limpia, sin maquillaje; suspenda retinoides/ácidos por 3–5 días; reprograme si hay infección activa o herpes."
+    "en": "Arrive with clean skin, no makeup; pause retinoids/acids for 35 days; reschedule if active infection or cold sore.",
+    "es": "Llegue con la piel limpia, sin maquillaje; suspenda retinoides/cidos por 35 das; reprograme si hay infeccin activa o herpes."
   },
   {
     "id": "exp.mesotherapy.during.1",
-    "en": "Topical numbing is applied; you’ll feel quick pinches or pressure with each microinjection.",
-    "es": "Se aplica anestesia tópica; sentirá pequeños pinchazos o presión con cada microinyección."
+    "en": "Topical numbing is applied; youll feel quick pinches or pressure with each microinjection.",
+    "es": "Se aplica anestesia tpica; sentir pequeos pinchazos o presin con cada microinyeccin."
   },
   {
     "id": "exp.mesotherapy.during.2",
     "en": "Small blebs or papules are expected initially and flatten within hours to a day.",
-    "es": "Es normal que se formen pequeñas pápulas o elevaciones iniciales que se aplanan en horas hasta un día."
+    "es": "Es normal que se formen pequeas ppulas o elevaciones iniciales que se aplanan en horas hasta un da."
   },
   {
     "id": "exp.mesotherapy.post.1",
-    "en": "Mild redness or small bumps can last 24–72 hours; avoid rubbing the area.",
-    "es": "El enrojecimiento o pequeñas pápulas pueden durar 24–72 horas; evite frotar la zona."
+    "en": "Mild redness or small bumps can last 2472 hours; avoid rubbing the area.",
+    "es": "El enrojecimiento o pequeas ppulas pueden durar 2472 horas; evite frotar la zona."
   },
   {
     "id": "exp.mesotherapy.post.2",
     "en": "Avoid sun, sweating, pools, and makeup for 24 hours; cleanse gently with mild soap and water.",
-    "es": "Evite sol, sudor, albercas y maquillaje durante 24 horas; limpie suavemente con agua y jabón suave."
+    "es": "Evite sol, sudor, albercas y maquillaje durante 24 horas; limpie suavemente con agua y jabn suave."
   },
   {
     "id": "exp.mesotherapy.post.3",
-    "en": "Do not exfoliate or use retinoids/acids for 5–7 days; apply broad-spectrum SPF 30+ once you resume daytime products.",
-    "es": "No exfolie ni use retinoides/ácidos por 5–7 días; aplique FPS 30+ al reanudar productos diurnos."
+    "en": "Do not exfoliate or use retinoids/acids for 57 days; apply broad-spectrum SPF 30+ once you resume daytime products.",
+    "es": "No exfolie ni use retinoides/cidos por 57 das; aplique FPS 30+ al reanudar productos diurnos."
   },
   {
     "id": "faq.mesotherapy.q1",
-    "en": "What’s the difference between PRP, Rejuran and Kiara Reju?",
-    "es": "¿Cuál es la diferencia entre PRP, Rejuran y Kiara Reju?"
+    "en": "Whats the difference between PRP, Rejuran and Kiara Reju?",
+    "es": "Cul es la diferencia entre PRP, Rejuran y Kiara Reju?"
   },
   {
     "id": "faq.mesotherapy.a1",
     "en": "PRP/PRFM uses your own plasma for natural regeneration. Rejuran repairs with salmon DNA (PDRN), and Kiara Reju enhances glow with niacinamide and hyaluronic acid.",
-    "es": "PRP/PRFM utiliza su propio plasma para una regeneración natural. Rejuran repara con ADN de salmón (PDRN), y Kiara Reju aporta luminosidad gracias a la niacinamida y al ácido hialurónico."
+    "es": "PRP/PRFM utiliza su propio plasma para una regeneracin natural. Rejuran repara con ADN de salmn (PDRN), y Kiara Reju aporta luminosidad gracias a la niacinamida y al cido hialurnico."
   },
   {
     "id": "faq.mesotherapy.q2",
     "en": "Is this a filler?",
-    "es": "¿Esto es un relleno?"
+    "es": "Esto es un relleno?"
   },
   {
     "id": "faq.mesotherapy.a2",
-    "en": "No. Most mesotherapy treatments do not add volume — instead, they improve skin quality, hydration and radiance without changing facial shape.",
-    "es": "No. La mayoría de los tratamientos de mesoterapia no aportan volumen — mejoran la calidad, hidratación y luminosidad de la piel sin modificar la forma del rostro."
+    "en": "No. Most mesotherapy treatments do not add volume  instead, they improve skin quality, hydration and radiance without changing facial shape.",
+    "es": "No. La mayora de los tratamientos de mesoterapia no aportan volumen  mejoran la calidad, hidratacin y luminosidad de la piel sin modificar la forma del rostro."
   },
   {
     "id": "faq.mesotherapy.q3",
     "en": "How long do results last?",
-    "es": "¿Cuánto duran los resultados?"
+    "es": "Cunto duran los resultados?"
   },
   {
     "id": "faq.mesotherapy.a3",
-    "en": "Depending on the product and concern, results last 4–6 months or longer with proper maintenance.",
-    "es": "Dependiendo del producto y la condición a tratar, los resultados duran entre 4 y 6 meses o más con un buen mantenimiento."
+    "en": "Depending on the product and concern, results last 46 months or longer with proper maintenance.",
+    "es": "Dependiendo del producto y la condicin a tratar, los resultados duran entre 4 y 6 meses o ms con un buen mantenimiento."
   },
   {
     "id": "faq.mesotherapy.q4",
     "en": "Does it hurt?",
-    "es": "¿Duele?"
+    "es": "Duele?"
   },
   {
     "id": "faq.mesotherapy.a4",
-    "en": "We use numbing cream and ultra-fine needles. Most patients find it very tolerable, and treatments like SkinVive� are nearly painless.",
-    "es": "Utilizamos crema anestésica y agujas ultrafinas. La mayoría de los pacientes lo consideran muy tolerable, y tratamientos como SkinVive� son prácticamente indoloros."
+    "en": "We use numbing cream and ultra-fine needles. Most patients find it very tolerable, and treatments like SkinVive are nearly painless.",
+    "es": "Utilizamos crema anestsica y agujas ultrafinas. La mayora de los pacientes lo consideran muy tolerable, y tratamientos como SkinVive son prcticamente indoloros."
   },
   {
     "id": "faq.mesotherapy.q5",
     "en": "How many sessions will I need?",
-    "es": "¿Cuántas sesiones voy a necesitar?"
+    "es": "Cuntas sesiones voy a necesitar?"
   },
   {
     "id": "faq.mesotherapy.a5",
-    "en": "Most protocols involve 2–3 sessions spaced 3–4 weeks apart, with results building progressively.",
-    "es": "La mayoría de los protocolos requieren 2–3 sesiones espaciadas cada 3–4 semanas, con resultados progresivos."
+    "en": "Most protocols involve 23 sessions spaced 34 weeks apart, with results building progressively.",
+    "es": "La mayora de los protocolos requieren 23 sesiones espaciadas cada 34 semanas, con resultados progresivos."
   },
   {
     "id": "filter.view_all",
@@ -396,8 +396,8 @@
   },
   {
     "id": "filter.microneedling.toskani",
-    "en": "Toskani®",
-    "es": "Toskani®"
+    "en": "Toskani",
+    "es": "Toskani"
   },
   {
     "id": "filter.microneedling.skin_boosters",
@@ -422,7 +422,7 @@
   {
     "id": "filter.mesotherapy.ha",
     "en": "Hyaluronic Acid",
-    "es": "Ácido Hialurónico"
+    "es": "cido Hialurnico"
   },
   {
     "id": "opt.microneedling.face",
@@ -436,7 +436,7 @@
   },
   {
     "id": "opt.microneedling.face_neck_decollete",
-    "en": "Face + Neck + Décolleté",
+    "en": "Face + Neck + Dcollet",
     "es": "Rostro + Cuello + Escote"
   },
   {
@@ -447,7 +447,7 @@
   {
     "id": "opt.microneedling.small_zone",
     "en": "Small Zone",
-    "es": "Zona Pequeña"
+    "es": "Zona Pequea"
   },
   {
     "id": "opt.microneedling.medium_zone",
@@ -471,13 +471,13 @@
   },
   {
     "id": "opt.microneedling.prp_face_neck_decollete",
-    "en": "PRP - Face + Neck + Décolleté",
+    "en": "PRP - Face + Neck + Dcollet",
     "es": "PRP - Rostro + Cuello + Escote"
   },
   {
     "id": "opt.microneedling.prp_small_zone",
     "en": "PRP - Small Zone",
-    "es": "PRP - Zona Pequeña"
+    "es": "PRP - Zona Pequea"
   },
   {
     "id": "opt.microneedling.prp_medium_zone",
@@ -501,7 +501,7 @@
   },
   {
     "id": "opt.microneedling.pn_face_neck_decollete",
-    "en": "PN - Face + Neck + Décolleté",
+    "en": "PN - Face + Neck + Dcollet",
     "es": "PN - Rostro + Cuello + Escote"
   },
   {
@@ -512,7 +512,7 @@
   {
     "id": "opt.microneedling.pn_small_zone",
     "en": "PN - Small Zone",
-    "es": "PN - Zona Pequeña"
+    "es": "PN - Zona Pequea"
   },
   {
     "id": "opt.microneedling.pn_medium_zone",
@@ -536,7 +536,7 @@
   },
   {
     "id": "opt.microneedling.pdrn_face_neck_decollete",
-    "en": "PDRN - Face + Neck + Décolleté",
+    "en": "PDRN - Face + Neck + Dcollet",
     "es": "PDRN - Rostro + Cuello + Escote"
   },
   {
@@ -547,7 +547,7 @@
   {
     "id": "opt.microneedling.pdrn_small_zone",
     "en": "PDRN - Small Zone",
-    "es": "PDRN - Zona Pequeña"
+    "es": "PDRN - Zona Pequea"
   },
   {
     "id": "opt.microneedling.pdrn_medium_zone",
@@ -571,68 +571,68 @@
   },
   {
     "id": "opt.microneedling.caviar_face_neck_decollete",
-    "en": "Caviar Extract - Face + Neck + Décolleté",
+    "en": "Caviar Extract - Face + Neck + Dcollet",
     "es": "Extracto de Caviar - Rostro + Cuello + Escote"
   },
   {
     "id": "opt.microneedling.toskani_face",
-    "en": "Toskani® - Face",
-    "es": "Toskani® - Rostro"
+    "en": "Toskani - Face",
+    "es": "Toskani - Rostro"
   },
   {
     "id": "opt.microneedling.toskani_face_neck",
-    "en": "Toskani® - Face + Neck",
-    "es": "Toskani® - Rostro + Cuello"
+    "en": "Toskani - Face + Neck",
+    "es": "Toskani - Rostro + Cuello"
   },
   {
     "id": "opt.microneedling.toskani_face_neck_decollete",
-    "en": "Toskani® - Face + Neck + Décolleté",
-    "es": "Toskani® - Rostro + Cuello + Escote"
+    "en": "Toskani - Face + Neck + Dcollet",
+    "es": "Toskani - Rostro + Cuello + Escote"
   },
   {
     "id": "note.microneedling.toskani_hydration",
     "en": "Cellular Hydration & Deep Regeneration",
-    "es": "Hidratación Celular y Regeneración Profunda"
+    "es": "Hidratacin Celular y Regeneracin Profunda"
   },
   {
     "id": "note.microneedling.toskani_glow",
     "en": "Revitalizing Glow & Facial Definition",
-    "es": "Glow Revitalizante & Definición Facial"
+    "es": "Glow Revitalizante & Definicin Facial"
   },
   {
     "id": "note.microneedling.toskani_repair",
     "en": "Epidermal Repair & Cellular Renewal",
-    "es": "Reparación Epidérmica & Renovación Celular"
+    "es": "Reparacin Epidrmica & Renovacin Celular"
   },
   {
     "id": "note.microneedling.toskani_tone",
     "en": "Tone Correction & Dark Spot Care",
-    "es": "Corrección de Tono & Antimanchas"
+    "es": "Correccin de Tono & Antimanchas"
   },
   {
     "id": "note.microneedling.pn_full",
     "en": "PN (Polynucleotide)",
-    "es": "PN (Polinucleótido)"
+    "es": "PN (Polinucletido)"
   },
   {
     "id": "note.microneedling.prp_benefit",
     "en": "Uses your own growth factors to support skin recovery, boosting glow and smoothing texture.",
-    "es": "Aprovecha los propios factores de crecimiento para favorecer la recuperación de la piel, aportar luminosidad y suavizar la textura."
+    "es": "Aprovecha los propios factores de crecimiento para favorecer la recuperacin de la piel, aportar luminosidad y suavizar la textura."
   },
   {
     "id": "note.microneedling.pn_benefit",
     "en": "Stimulates collagen and cellular repair to improve elasticity, texture, and skin resilience for a younger-looking feel.",
-    "es": "Estimula colágeno y reparación celular para mejorar elasticidad, textura y resistencia de la piel, con un aspecto más joven."
+    "es": "Estimula colgeno y reparacin celular para mejorar elasticidad, textura y resistencia de la piel, con un aspecto ms joven."
   },
   {
     "id": "note.microneedling.pdrn_full",
     "en": "PDRN (Polydeoxyribonucleotide)",
-    "es": "PDRN (Polidesoxirribonucleótido)"
+    "es": "PDRN (Polidesoxirribonucletido)"
   },
   {
     "id": "note.microneedling.pdrn_benefit",
     "en": "Combines PDRN, hyaluronic acid, and niacinamide to support repair, hydration, and a brighter, more even tone.",
-    "es": "Combina PDRN, ácido hialurónico y niacinamida para apoyar la reparación, hidratación y un tono más uniforme y luminoso."
+    "es": "Combina PDRN, cido hialurnico y niacinamida para apoyar la reparacin, hidratacin y un tono ms uniforme y luminoso."
   },
   {
     "id": "note.microneedling.caviar_benefit",
@@ -641,13 +641,13 @@
   },
   {
     "id": "note.microneedling.toskani_hydration_benefit_1",
-    "en": "Powered by TKN HA3+ multi‑level hyaluronic acid to bind water across skin layers, improving elasticity and barrier comfort.",
-    "es": "Con TKN HA3+ de ácido hialurónico multinivel que retiene agua en distintas capas, mejorando elasticidad y confort de la barrera."
+    "en": "Powered by TKN HA3+ multilevel hyaluronic acid to bind water across skin layers, improving elasticity and barrier comfort.",
+    "es": "Con TKN HA3+ de cido hialurnico multinivel que retiene agua en distintas capas, mejorando elasticidad y confort de la barrera."
   },
   {
     "id": "note.microneedling.toskani_hydration_benefit_2",
     "en": "Pairs exceptionally well with RF microneedling to amplify biostimulation of collagen and support stronger collagen architecture for more youthful, durable results.",
-    "es": "Se combina de forma ideal con microneedling con RF para potenciar la bioestimulación de colágeno y favorecer una estructura de colágeno más sólida, con resultados más juveniles y duraderos."
+    "es": "Se combina de forma ideal con microneedling con RF para potenciar la bioestimulacin de colgeno y favorecer una estructura de colgeno ms slida, con resultados ms juveniles y duraderos."
   },
   {
     "id": "note.microneedling.toskani_hydration_benefit_3",
@@ -656,33 +656,33 @@
   },
   {
     "id": "note.microneedling.toskani_glow_benefit",
-    "en": "Uses Toskani® WCPR + ECPR + Radiance Cocktail to stimulate renewal pathways, improve micro‑circulation, and refine tone for a clearer, brighter finish.",
-    "es": "Utiliza Toskani® WCPR + ECPR + Radiance Cocktail para estimular vías de renovación, mejorar la microcirculación y refinar el tono para un acabado más claro y luminoso."
+    "en": "Uses Toskani WCPR + ECPR + Radiance Cocktail to stimulate renewal pathways, improve microcirculation, and refine tone for a clearer, brighter finish.",
+    "es": "Utiliza Toskani WCPR + ECPR + Radiance Cocktail para estimular vas de renovacin, mejorar la microcirculacin y refinar el tono para un acabado ms claro y luminoso."
   },
   {
     "id": "note.microneedling.toskani_repair_benefit",
-    "en": "Uses Toskani® NCPR + ECPR + Radiance Cocktail to activate repair signaling, strengthen the skin barrier, and improve firmness and texture over time.",
-    "es": "Utiliza Toskani® NCPR + ECPR + Radiance Cocktail para activar señales de reparación, fortalecer la barrera cutánea y mejorar firmeza y textura con el tiempo."
+    "en": "Uses Toskani NCPR + ECPR + Radiance Cocktail to activate repair signaling, strengthen the skin barrier, and improve firmness and texture over time.",
+    "es": "Utiliza Toskani NCPR + ECPR + Radiance Cocktail para activar seales de reparacin, fortalecer la barrera cutnea y mejorar firmeza y textura con el tiempo."
   },
   {
     "id": "note.microneedling.toskani_tone_benefit",
-    "en": "Powered by Toskani®'s Lumicen Gel to inhibit uneven pigmentation pathways and brighten dull areas for a more even, refreshed look.",
-    "es": "Con Lumicen Gel de Toskani® para inhibir vías de pigmentación irregular y aclarar zonas opacas, logrando un tono más uniforme y fresco."
+    "en": "Powered by Toskani's Lumicen Gel to inhibit uneven pigmentation pathways and brighten dull areas for a more even, refreshed look.",
+    "es": "Con Lumicen Gel de Toskani para inhibir vas de pigmentacin irregular y aclarar zonas opacas, logrando un tono ms uniforme y fresco."
   },
   {
     "id": "note.microneedling.small_zone",
-    "en": "Total area [103 cm² - 413 cm²]. Approximately one to two palms — similar to a credit card up to half a sheet of paper.",
-    "es": "Área total [103 cm² - 413 cm²]. Aproximadamente de una a dos palmas de la mano, similar al tamaño de una tarjeta de crédito hasta media hoja de papel."
+    "en": "Total area [103 cm  - 413 cm ]. Approximately one to two palms  similar to a credit card up to half a sheet of paper.",
+    "es": "rea total [103 cm  - 413 cm ]. Aproximadamente de una a dos palmas de la mano, similar al tamao de una tarjeta de crdito hasta media hoja de papel."
   },
   {
     "id": "note.microneedling.medium_zone",
-    "en": "Total area [523 cm² - 1080.3 cm²]. Four to six palms — roughly the size of a full sheet of paper.",
-    "es": "Área total [523 cm² - 1080.3 cm²]. De cuatro a seis palmas de la mano, aproximadamente del tamaño de una hoja completa de papel."
+    "en": "Total area [523 cm  - 1080.3 cm ]. Four to six palms  roughly the size of a full sheet of paper.",
+    "es": "rea total [523 cm  - 1080.3 cm ]. De cuatro a seis palmas de la mano, aproximadamente del tamao de una hoja completa de papel."
   },
   {
     "id": "note.microneedling.large_zone",
-    "en": "Total area [1264 cm² - 2090 cm²]. Eight to twelve palms — about the size of a square pillow or large square.",
-    "es": "Área total [1264 cm² - 2090 cm²]. De ocho a doce palmas de la mano, aproximadamente del tamaño de un cojín cuadrado o un cuadrado grande."
+    "en": "Total area [1264 cm  - 2090 cm ]. Eight to twelve palms  about the size of a square pillow or large square.",
+    "es": "rea total [1264 cm  - 2090 cm ]. De ocho a doce palmas de la mano, aproximadamente del tamao de un cojn cuadrado o un cuadrado grande."
   },
   {
     "id": "opt.mesotherapy.prp_face",
@@ -696,7 +696,7 @@
   },
   {
     "id": "opt.mesotherapy.prp_face_neck_decollete",
-    "en": "PRP - Face + Neck + Décolleté",
+    "en": "PRP - Face + Neck + Dcollet",
     "es": "PRP - Rostro + Cuello + Escote"
   },
   {
@@ -711,7 +711,7 @@
   },
   {
     "id": "opt.mesotherapy.pn_face_neck_decollete",
-    "en": "PN - Face + Neck + Décolleté",
+    "en": "PN - Face + Neck + Dcollet",
     "es": "PN - Rostro + Cuello + Escote"
   },
   {
@@ -726,18 +726,18 @@
   },
   {
     "id": "opt.mesotherapy.pdrn_face_neck_decollete",
-    "en": "PDRN - Face + Neck + Décolleté",
+    "en": "PDRN - Face + Neck + Dcollet",
     "es": "PDRN - Rostro + Cuello + Escote"
   },
   {
     "id": "opt.mesotherapy.skinvive_face",
-    "en": "Juvéderm SkinVive� - Face",
-    "es": "Juvéderm SkinVive� - Rostro"
+    "en": "Juvderm SkinVive - Face",
+    "es": "Juvderm SkinVive - Rostro"
   },
   {
     "id": "note.mesotherapy.skinvive_mechanism",
     "en": "Microdroplets of hyaluronic acid integrate into the skin to attract and retain moisture, improving smoothness and luminosity from within.",
-    "es": "Microgotas de ácido hialurónico se integran en la piel para atraer y retener humedad, mejorando suavidad y luminosidad desde el interior."
+    "es": "Microgotas de cido hialurnico se integran en la piel para atraer y retener humedad, mejorando suavidad y luminosidad desde el interior."
   },
   {
     "id": "opt.mesotherapy.tkn_ha3_face",
@@ -751,7 +751,7 @@
   },
   {
     "id": "opt.mesotherapy.tkn_ha3_face_neck_decollete",
-    "en": "TKN HA3+ - Face + Neck + Décolleté",
+    "en": "TKN HA3+ - Face + Neck + Dcollet",
     "es": "TKN HA3+ - Rostro + Cuello + Escote"
   }
 ]

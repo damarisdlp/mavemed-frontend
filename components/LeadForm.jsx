@@ -154,7 +154,7 @@ export default function LeadForm({ useSchedule = true } = {}) {
   const translatedStrings = {
     scrollToTop: {
       en: "Scroll to top category menu",
-      es: "Desplazarse al menÃº de categorÃ­as superior",
+      es: "Desplazarse al men de categoras superior",
     },
   };
 
@@ -243,7 +243,7 @@ export default function LeadForm({ useSchedule = true } = {}) {
                 >
                   {countryOptions.map((opt) => (
                     <option key={opt.code} value={opt.code}>
-                      {opt.code} â {opt.label}
+                      {opt.code}  {opt.label}
                     </option>
                   ))}
                 </select>
@@ -292,13 +292,13 @@ export default function LeadForm({ useSchedule = true } = {}) {
                   {t("leadForm.primaryTreatmentPrompt") || "Select one"}
                 </option>
                 {[
-                  "Botox®",
+                  "Botox",
                   "Dermal Fillers",
-                  "Sculptra®",
+                  "Sculptra",
                   "RF Microneedling",
-                  "Sylfirm X®",
+                  "Sylfirm X",
                   "Laser Hair Removal",
-                  "Ultraformer MPT®",
+                  "Ultraformer MPT",
                   "PDO Threads",
                   "CO2 Laser",
                   "Facials",
@@ -359,7 +359,7 @@ export default function LeadForm({ useSchedule = true } = {}) {
               className="absolute top-3 right-3 text-gray-500 hover:text-black"
               aria-label="Close"
             >
-              â
+              ×
             </button>
             <h3 className="text-xl font-semibold text-black mb-2">
               {t("leadForm.thanksTitle", { defaultValue: "Thank you!" })}

@@ -15,14 +15,14 @@ export const zury = {
   image: "/zury.jpg",
   bio: {
     en: "Zury is a cosmetologist.",
-    es: "Zury es una cosmetÃ³loga."
+    es: "Zury es una cosmetloga."
   },
   favorites: [
     {
       treatmentSlug: "hydrafacial",
       optionName: {
-        en: "Hydrafacial® MD - Face",
-        es: "Hydrafacial® MD - Rostro"
+        en: "Hydrafacial MD - Face",
+        es: "Hydrafacial MD - Rostro"
       }
     }
   ]

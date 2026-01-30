@@ -11,12 +11,12 @@ const organizationSchema = {
   logo: `${SITE_URL}/site_icon.png`,
   image: `${SITE_URL}/logo-mave.png`,
   description:
-    "Mave Medical Spa in Tijuana offers expert-level aesthetic services including facial balancing with dermal fillers, microneedling, Sculptra®, CO2 laser resurfacing, and non-surgical skin lifting.",
+    "Mave Medical Spa in Tijuana offers expert-level aesthetic services including facial balancing with dermal fillers, microneedling, Sculptra, CO2 laser resurfacing, and non-surgical skin lifting.",
   telephone: "+52 664 207 7675",
   priceRange: "$$",
   address: {
     "@type": "PostalAddress",
-    streetAddress: "Blvd Gral Rodolfo SÃ¡nchez Taboada 10512-Interior 8a, Segundo Piso",
+    streetAddress: "Blvd Gral Rodolfo Snchez Taboada 10512-Interior 8a, Segundo Piso",
     addressLocality: "Tijuana",
     addressRegion: "Baja California",
     postalCode: "22010",

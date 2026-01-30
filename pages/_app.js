@@ -6,6 +6,7 @@ import nextI18NextConfig from "../next-i18next.config";
 import ScrollToTopButton from "@/components/ScrollToTop";
 import CookieBanner from "@/components/CookieBanner";
 import OrganizationSchema from "@/components/OrganizationSchema";
+import LeadPopupGate from "@/components/LeadPopupGate";
 import { Analytics } from "@vercel/analytics/next";
 import { Manrope } from "next/font/google";
 import { useRouter } from "next/router";
@@ -88,6 +89,7 @@ function App({ Component, pageProps }) {
         </>
       ) : null}
       <OrganizationSchema />
+      <LeadPopupGate />
       <Component {...pageProps} />
       <Analytics />
       <ScrollToTopButton />

@@ -31,7 +31,7 @@
   },
   {
     "id": "svc.matrixectomy.details",
-    "en": "Matrixectomy is a minor outpatient procedure that permanently removes or destroys part of the nail’s growth center (matrix), preventing the ingrown portion from growing back. It is performed under local anesthesia and is typically recommended for patients with repeated ingrown toenails or infection. Healing is relatively quick, and most patients return to daily activities within a few days.",
+    "en": "Matrixectomy is a minor outpatient procedure that permanently removes or destroys part of the nails growth center (matrix), preventing the ingrown portion from growing back. It is performed under local anesthesia and is typically recommended for patients with repeated ingrown toenails or infection. Healing is relatively quick, and most patients return to daily activities within a few days.",
     "es": "La matriceptomía es un procedimiento ambulatorio menor que elimina o destruye de forma permanente una parte del centro de crecimiento de la uña (matriz), evitando que el borde encarnado vuelva a crecer. Se realiza bajo anestesia local y suele recomendarse en pacientes con uñas encarnadas recurrentes o infecciones repetidas. La recuperación es rápida y la mayoría de los pacientes retoman actividades diarias en pocos días."
   },
   {
@@ -46,7 +46,7 @@
   },
   {
     "id": "svc.nail_fungus_laser.details",
-    "en": "Laser nail fungus treatment uses targeted light energy (K-Laser Blue Derma) to penetrate the nail and destroy fungal infections at the root without harming surrounding tissue. The treatment is safe, effective, and requires no downtime. A typical protocol includes 6–8 sessions spaced 2–3 weeks apart for optimal results.",
+    "en": "Laser nail fungus treatment uses targeted light energy (K-Laser Blue Derma) to penetrate the nail and destroy fungal infections at the root without harming surrounding tissue. The treatment is safe, effective, and requires no downtime. A typical protocol includes 68 sessions spaced 23 weeks apart for optimal results.",
     "es": "El tratamiento láser para hongos utiliza energía lumínica dirigida (K-Laser Blue Derma) que penetra la uña y destruye la infección fúngica desde la raíz sin dañar el tejido circundante. Es un tratamiento seguro, eficaz y sin tiempo de recuperación. El protocolo típico incluye de 6 a 8 sesiones cada 2 a 3 semanas."
   },
   {
@@ -281,13 +281,13 @@
   },
   {
     "id": "addon.podiatry.hydrafacial",
-    "en": "Hydrafacial� MD - Face",
-    "es": "Hydrafacial� MD - Rostro"
+    "en": "Hydrafacial® MD - Face",
+    "es": "Hydrafacial® MD - Rostro"
   },
   {
     "id": "addon.podiatry.casmara_retinol",
-    "en": "Casmara� - Retinol Pro-Age Facial",
-    "es": "Casmara� - Facial Retinol Pro-Age"
+    "en": "Casmara® - Retinol Pro-Age Facial",
+    "es": "Casmara® - Facial Retinol Pro-Age"
   },
   {
     "id": "addon.podiatry.swedish_massage",
@@ -321,7 +321,7 @@
   },
   {
     "id": "exp.calcaneal.during.2",
-    "en": "A small bandage is applied; you’ll be advised on immediate weight-bearing based on your case.",
+    "en": "A small bandage is applied; youll be advised on immediate weight-bearing based on your case.",
     "es": "Se coloca un pequeño vendaje; se le indicará sobre el apoyo inmediato del pie según su caso."
   },
   {
@@ -381,7 +381,7 @@
   },
   {
     "id": "exp.matrixectomy.post.3",
-    "en": "Avoid tight footwear and strenuous activities for at least 3–5 days.",
+    "en": "Avoid tight footwear and strenuous activities for at least 35 days.",
     "es": "Evite calzado ajustado y actividades intensas durante al menos 3 a 5 días."
   },
   {
@@ -396,7 +396,7 @@
   },
   {
     "id": "exp.nail_fungus.pre.2",
-    "en": "Notify your provider if you’ve recently taken oral/topical antifungals or antibiotics; trim nails lightly but avoid aggressive clipping.",
+    "en": "Notify your provider if youve recently taken oral/topical antifungals or antibiotics; trim nails lightly but avoid aggressive clipping.",
     "es": "Informe a su proveedor si ha usado antifúngicos orales/tópicos o antibióticos recientemente; recorte las uñas ligeramente pero evite cortes agresivos."
   },
   {
@@ -446,7 +446,7 @@
   },
   {
     "id": "exp.toenail.during.1",
-    "en": "Local anesthesia is used; you’ll feel pressure but no pain during nail removal.",
+    "en": "Local anesthesia is used; youll feel pressure but no pain during nail removal.",
     "es": "Se utiliza anestesia local; sentirá presión pero no dolor durante la extracción de la uña."
   },
   {
@@ -456,7 +456,7 @@
   },
   {
     "id": "exp.toenail.post.1",
-    "en": "Keep the area dry and covered for 24–48 hours, then follow wound care instructions.",
+    "en": "Keep the area dry and covered for 2448 hours, then follow wound care instructions.",
     "es": "Mantenga la zona seca y cubierta durante 24 a 48 horas y luego siga las indicaciones de cuidado de la herida."
   },
   {
@@ -476,8 +476,8 @@
   },
   {
     "id": "faq.calcaneal.a1",
-    "en": "Some patients experience relief within a few days, while others may require 1–2 additional sessions or adjunct therapies like physical therapy.",
-    "es": "Algunos pacientes sienten alivio en pocos días, mientras que otros pueden necesitar 1–2 sesiones adicionales o terapias complementarias como fisioterapia."
+    "en": "Some patients experience relief within a few days, while others may require 12 additional sessions or adjunct therapies like physical therapy.",
+    "es": "Algunos pacientes sienten alivio en pocos días, mientras que otros pueden necesitar 12 sesiones adicionales o terapias complementarias como fisioterapia."
   },
   {
     "id": "faq.calcaneal.q2",
@@ -536,7 +536,7 @@
   },
   {
     "id": "faq.matrixectomy.a3",
-    "en": "Most patients return to regular activities in 2–3 days, though full healing may take up to 2 weeks.",
+    "en": "Most patients return to regular activities in 23 days, though full healing may take up to 2 weeks.",
     "es": "La mayoría de los pacientes retoman sus actividades en 2 a 3 días, aunque la recuperación completa puede tomar hasta 2 semanas."
   },
   {
@@ -576,7 +576,7 @@
   },
   {
     "id": "faq.nail_fungus.a3",
-    "en": "A standard protocol involves 6–8 sessions spaced 2–3 weeks apart. Severe cases may require additional follow-up.",
+    "en": "A standard protocol involves 68 sessions spaced 23 weeks apart. Severe cases may require additional follow-up.",
     "es": "El protocolo estándar incluye de 6 a 8 sesiones cada 2 o 3 semanas. Casos severos pueden necesitar sesiones adicionales."
   },
   {
