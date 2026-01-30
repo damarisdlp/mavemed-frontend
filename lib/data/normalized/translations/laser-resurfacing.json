@@ -6,8 +6,8 @@
   },
   {
     "id": "svc.co2.name",
-    "en": "CO₂ Laser Resurfacing (AcuPulse�)",
-    "es": "Resurfacing Láser CO₂ (AcuPulse�)"
+    "en": "CO₂ Laser Resurfacing (AcuPulse®)",
+    "es": "Resurfacing Láser CO₂ (AcuPulse®)"
   },
   {
     "id": "svc.co2.desc",
@@ -416,8 +416,8 @@
   },
   {
     "id": "svc.laser_hair_removal.desc",
-    "en": "Pain free laser hair removal for all skin types using the Alma Soprano Titanium ICE� system.",
-    "es": "Depilación láser cómoda para todo tipo de piel con el sistema Alma Soprano Titanium ICE�."
+    "en": "Pain free laser hair removal for all skin types using the Alma Soprano Titanium ICE® system.",
+    "es": "Depilación láser cómoda para todo tipo de piel con el sistema Alma Soprano Titanium ICE®."
   },
   {
     "id": "svc.laser_hair_removal.details",
@@ -521,13 +521,13 @@
   },
   {
     "id": "addon.laser_hair.hydrafacial",
-    "en": "Hydrafacial� MD - Face",
-    "es": "Hydrafacial� MD - Rostro"
+    "en": "Hydrafacial® MD - Face",
+    "es": "Hydrafacial® MD - Rostro"
   },
   {
     "id": "addon.laser_hair.casmara_purifying",
-    "en": "Casmara� - Purifying Algae Facial",
-    "es": "Casmara� - Facial Purificante de Algas"
+    "en": "Casmara® - Purifying Algae Facial",
+    "es": "Casmara® - Facial Purificante de Algas"
   },
   {
     "id": "addon.laser_hair.microneedling_prp",
@@ -616,8 +616,8 @@
   },
   {
     "id": "svc.ipl.name",
-    "en": "IPL Photofacial (Harmony XL�)",
-    "es": "Fotofacial IPL (Harmony XL�)"
+    "en": "IPL Photofacial (Harmony XL®)",
+    "es": "Fotofacial IPL (Harmony XL®)"
   },
   {
     "id": "svc.ipl.desc",
@@ -771,18 +771,18 @@
   },
   {
     "id": "addon.ipl.rf_face_neck_decollete",
-    "en": "Sylfirm X� - RF Microneedling - Face + Neck + Décolleté",
-    "es": "Sylfirm X� - Microagujas RF - Rostro + Cuello + Escote"
+    "en": "Sylfirm X® - RF Microneedling - Face + Neck + Décolleté",
+    "es": "Sylfirm X® - Microagujas RF - Rostro + Cuello + Escote"
   },
   {
     "id": "addon.ipl.hydrafacial",
-    "en": "Hydrafacial� MD - Face",
-    "es": "Hydrafacial� MD - Rostro"
+    "en": "Hydrafacial® MD - Face",
+    "es": "Hydrafacial® MD - Rostro"
   },
   {
     "id": "addon.ipl.casmara_purifying",
-    "en": "Casmara� - Purifying Algae Facial",
-    "es": "Casmara� - Facial Purificante de Algas"
+    "en": "Casmara® - Purifying Algae Facial",
+    "es": "Casmara® - Facial Purificante de Algas"
   },
   {
     "id": "addon.ipl.microneedling_prp",
@@ -871,18 +871,18 @@
   },
   {
     "id": "svc.rf_microneedling.name",
-    "en": "Radiofrequency Microneedling (Sylfirm X�)",
-    "es": "Microneedling con Radiofrecuencia (Sylfirm X�)"
+    "en": "Radiofrequency Microneedling (Sylfirm X®)",
+    "es": "Microneedling con Radiofrecuencia (Sylfirm X®)"
   },
   {
     "id": "svc.rf_microneedling.desc",
-    "en": "Sylfirm X� combines ultrafast RF microneedling with dual-wave technology to lift, tighten, and resurface skin with minimal downtime.",
-    "es": "Sylfirm X� combina microneedling de radiofrecuencia ultrarrápido con tecnología de doble onda para levantar, tensar y renovar la piel con mínimo tiempo de recuperación."
+    "en": "Sylfirm X® combines ultrafast RF microneedling with dual-wave technology to lift, tighten, and resurface skin with minimal downtime.",
+    "es": "Sylfirm X® combina microneedling de radiofrecuencia ultrarrápido con tecnología de doble onda para levantar, tensar y renovar la piel con mínimo tiempo de recuperación."
   },
   {
     "id": "svc.rf_microneedling.details",
-    "en": "Sylfirm X� delivers bipolar RF through ultrafine microneedles with both continuous and pulsed waveforms. It targets deeper dermal layers to remodel collagen, reduce laxity, soften scars, and improve overall skin tone and texture with precise energy delivery and minimal downtime.",
-    "es": "Sylfirm X� aplica RF bipolar a través de microagujas ultrafinas con modos continuo y pulsado. Llega a capas dérmicas profundas para remodelar colágeno, reducir la laxitud, suavizar cicatrices y mejorar el tono y la textura de la piel con energía precisa y poco tiempo de recuperación."
+    "en": "Sylfirm X® delivers bipolar RF through ultrafine microneedles with both continuous and pulsed waveforms. It targets deeper dermal layers to remodel collagen, reduce laxity, soften scars, and improve overall skin tone and texture with precise energy delivery and minimal downtime.",
+    "es": "Sylfirm X® aplica RF bipolar a través de microagujas ultrafinas con modos continuo y pulsado. Llega a capas dérmicas profundas para remodelar colágeno, reducir la laxitud, suavizar cicatrices y mejorar el tono y la textura de la piel con energía precisa y poco tiempo de recuperación."
   },
   {
     "id": "note.rf_microneedling.sessions",
@@ -1016,8 +1016,8 @@
   },
   {
     "id": "addon.rf.botox_any_zone",
-    "en": "Botox� - Any Zone",
-    "es": "Botox� - Cualquier Zona"
+    "en": "Botox® - Any Zone",
+    "es": "Botox® - Cualquier Zona"
   },
   {
     "id": "addon.rf.serum_pn",
@@ -1041,13 +1041,13 @@
   },
   {
     "id": "addon.rf.hydrafacial",
-    "en": "Hydrafacial� MD - Face",
-    "es": "Hydrafacial� MD - Rostro"
+    "en": "Hydrafacial® MD - Face",
+    "es": "Hydrafacial® MD - Rostro"
   },
   {
     "id": "addon.rf.casmara_retinol",
-    "en": "Casmara� - Retinol Pro‑Age Facial",
-    "es": "Casmara� - Facial Retinol Pro‑Age"
+    "en": "Casmara® - Retinol Pro‑Age Facial",
+    "es": "Casmara® - Facial Retinol Pro‑Age"
   },
   {
     "id": "exp.rf.pre.1",
@@ -1081,18 +1081,18 @@
   },
   {
     "id": "faq.rf.q1",
-    "en": "Is Sylfirm X� safer than other RF microneedling devices?",
-    "es": "¿Sylfirm X� es más seguro que otros dispositivos de microneedling con RF?"
+    "en": "Is Sylfirm X® safer than other RF microneedling devices?",
+    "es": "¿Sylfirm X® es más seguro que otros dispositivos de microneedling con RF?"
   },
   {
     "id": "faq.rf.a1",
-    "en": "The FDA recently warned that some RF microneedling devices, when used outside cleared indications or by untrained providers, can cause burns, scars, and pigment changes. Sylfirm X� delivers controlled bipolar RF with dual waveforms, is FDA-cleared for dermal remodeling, and is performed by licensed clinicians following strict protocols—reducing risk while improving outcomes.",
-    "es": "La FDA advirtió recientemente que algunos dispositivos de microneedling con RF, usados fuera de indicaciones aprobadas o por personal no capacitado, pueden causar quemaduras, cicatrices y cambios de pigmento. Sylfirm X� aplica RF bipolar controlada con doble onda, cuenta con autorización de la FDA para remodelación dérmica y se realiza por clínicos licenciados bajo protocolos estrictos, lo que reduce riesgos y mejora resultados."
+    "en": "The FDA recently warned that some RF microneedling devices, when used outside cleared indications or by untrained providers, can cause burns, scars, and pigment changes. Sylfirm X® delivers controlled bipolar RF with dual waveforms, is FDA-cleared for dermal remodeling, and is performed by licensed clinicians following strict protocols—reducing risk while improving outcomes.",
+    "es": "La FDA advirtió recientemente que algunos dispositivos de microneedling con RF, usados fuera de indicaciones aprobadas o por personal no capacitado, pueden causar quemaduras, cicatrices y cambios de pigmento. Sylfirm X® aplica RF bipolar controlada con doble onda, cuenta con autorización de la FDA para remodelación dérmica y se realiza por clínicos licenciados bajo protocolos estrictos, lo que reduce riesgos y mejora resultados."
   },
   {
     "id": "faq.rf.q2",
-    "en": "How is Sylfirm X� different from regular microneedling?",
-    "es": "¿En qué se diferencia Sylfirm X� de un microneedling tradicional?"
+    "en": "How is Sylfirm X® different from regular microneedling?",
+    "es": "¿En qué se diferencia Sylfirm X® de un microneedling tradicional?"
   },
   {
     "id": "faq.rf.a2",
