@@ -69,22 +69,24 @@ export default function PromoLeadPopup() {
     setIsSubmitting(false);
     setForm({ fullName: "", email: "", countryCode: defaultCountryCode, phone: "" });
     setIsOpen(false);
-
-    if (typeof window !== "undefined") {
-      window.sessionStorage.removeItem("mave_promo_popup_seen_en");
-      window.sessionStorage.removeItem("mave_promo_popup_seen_es");
-    }
   }, [isSpanish, defaultCountryCode]);
+
+  const isHomePage = useMemo(() => {
+    const rawPath = (router.asPath || "/").split("?")[0];
+    const normalized = rawPath.replace(/\/$/, "") || "/";
+    return normalized === "/" || normalized === "/es";
+  }, [router.asPath]);
 
   useEffect(() => {
     if (typeof window === "undefined") return;
+    if (!isHomePage) return;
     const hasSeen = window.sessionStorage.getItem(sessionKey);
     if (!hasSeen) {
       submitLangRef.current = isSpanish ? "es" : "en";
       setIsOpen(true);
       window.sessionStorage.setItem(sessionKey, "1");
     }
-  }, [sessionKey, isSpanish]);
+  }, [sessionKey, isSpanish, isHomePage]);
 
   useEffect(() => {
     if (typeof window === "undefined") return;
