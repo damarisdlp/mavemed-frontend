@@ -2,7 +2,7 @@ export const veronica = {
   name: "draveronica",
   displayName: {
     en: "Dr. Veronica",
-    es: "Dra. Verónica"
+    es: "Dra. VerÃ³nica"
   },
   category: {
     en: "Directors",
@@ -15,14 +15,14 @@ export const veronica = {
   image: "/draveronica.jpg",
   bio: {
     en: "Dr. Veronica is a director.",
-    es: "La doctora Verónica es directora."
+    es: "La doctora VerÃ³nica es directora."
   },
   favorites: [
     {
       treatmentSlug: "hydrafacial",
       optionName: {
-        en: "Hydrafacial� MD - Face",
-        es: "Hydrafacial� MD - Rostro"
+        en: "Hydrafacial® MD - Face",
+        es: "Hydrafacial® MD - Rostro"
       }
     }
   ]
