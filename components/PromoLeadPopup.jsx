@@ -33,6 +33,17 @@ export default function PromoLeadPopup() {
   const [status, setStatus] = useState({ type: "", message: "" });
   const pendingLeadKey = "promoPopupLeadPending";
   const retryTimerRef = useRef(null);
+  const initialReferrer = useRef("");
+  const entryUrlRef = useRef("");
+  const entryPathRef = useRef("");
+  const [utmParams, setUtmParams] = useState({
+    source: "",
+    medium: "",
+    campaign: "",
+    term: "",
+    content: "",
+    gclid: "",
+  });
 
   const [form, setForm] = useState({
     fullName: "",
@@ -57,7 +68,7 @@ export default function PromoLeadPopup() {
   };
 
   const sendPendingLead = (payloadString) =>
-    fetch("/api/promo-lead", {
+    fetch("/api/lead-promo", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: payloadString,
@@ -118,6 +129,15 @@ export default function PromoLeadPopup() {
 
   useEffect(() => {
     if (typeof window === "undefined") return;
+    const closePopup = () => {
+      handleClose();
+    };
+    window.addEventListener("promo-lead-submitted", closePopup);
+    return () => window.removeEventListener("promo-lead-submitted", closePopup);
+  }, []);
+
+  useEffect(() => {
+    if (typeof window === "undefined") return;
 
     let isCancelled = false;
     const navLocale = navigator?.language || "";
@@ -144,6 +164,57 @@ export default function PromoLeadPopup() {
     };
   }, [defaultCountryCode]);
 
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+
+    const params = new URLSearchParams(window.location.search);
+    const utm = {
+      source: params.get("utm_source") || "",
+      medium: params.get("utm_medium") || "",
+      campaign: params.get("utm_campaign") || "",
+      term: params.get("utm_term") || "",
+      content: params.get("utm_content") || "",
+      gclid: params.get("gclid") || "",
+    };
+    const hasUtm = Object.values(utm).some(Boolean);
+    if (hasUtm) {
+      window.sessionStorage.setItem("mave_promo_utm", JSON.stringify(utm));
+    }
+
+    const stored = window.sessionStorage.getItem("mave_promo_utm");
+    const storedUtm = stored ? JSON.parse(stored) : null;
+    const finalUtm =
+      (hasUtm ? utm : null) ||
+      storedUtm || {
+        source: "",
+        medium: "",
+        campaign: "",
+        term: "",
+        content: "",
+        gclid: "",
+      };
+    setUtmParams(finalUtm);
+  }, []);
+
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+
+    const ref = document.referrer || "";
+    const storedRef = window.sessionStorage.getItem("mave_initial_referrer") || "";
+    const finalRef = ref || storedRef || "direct";
+    initialReferrer.current = finalRef;
+    if (ref) window.sessionStorage.setItem("mave_initial_referrer", ref);
+
+    const entryUrl = window.sessionStorage.getItem("mave_entry_url") || window.location.href;
+    const entryPath =
+      window.sessionStorage.getItem("mave_entry_path") ||
+      `${window.location.pathname}${window.location.search}`;
+    window.sessionStorage.setItem("mave_entry_url", entryUrl);
+    window.sessionStorage.setItem("mave_entry_path", entryPath);
+    entryUrlRef.current = entryUrl;
+    entryPathRef.current = entryPath;
+  }, []);
+
   const handleChange = (event) => {
     const { name, value } = event.target;
     setForm((prev) => ({ ...prev, [name]: value }));
@@ -152,7 +223,7 @@ export default function PromoLeadPopup() {
   const handleClose = () => {
     setStatus({ type: "", message: "" });
     setIsSubmitting(false);
-    setForm({ fullName: "", email: "", countryCode: "+52", phone: "" });
+    setForm({ fullName: "", email: "", countryCode: defaultCountryCode, phone: "" });
     setIsOpen(false);
   };
 
@@ -186,7 +257,29 @@ export default function PromoLeadPopup() {
     }
 
     try {
+      setIsSubmitting(true);
       const activeForm = getActiveLeadForm();
+      const landingPagePath =
+        typeof window !== "undefined" ? `${window.location.pathname}${window.location.search}` : "";
+      const referrer =
+        (typeof window !== "undefined" &&
+          window.sessionStorage.getItem("mave_initial_referrer")) ||
+        initialReferrer.current ||
+        "direct";
+      const entryUrl =
+        (typeof window !== "undefined" && window.sessionStorage.getItem("mave_entry_url")) ||
+        entryUrlRef.current ||
+        "";
+      const entryPath =
+        (typeof window !== "undefined" && window.sessionStorage.getItem("mave_entry_path")) ||
+        entryPathRef.current ||
+        "";
+      const normalizedCountryCode = form.countryCode.startsWith("+")
+        ? form.countryCode
+        : `+${form.countryCode}`;
+      const normalizedPhone = normalizedCountryCode && form.phone
+        ? `${normalizedCountryCode}${String(form.phone).replace(/[^\d]/g, "")}`
+        : "";
       const payload = {
         leadFormId: activeForm?.id || "promo",
         fullName: form.fullName.trim(),
@@ -195,7 +288,24 @@ export default function PromoLeadPopup() {
         countryCode: form.countryCode,
         phone: form.phone.trim(),
         phoneNumber: form.phone.trim(),
+        normalizedPhone,
         source: submitIsSpanish ? "Promo Popup (ES)" : "Promo Popup (EN)",
+        funnelType: "promo_lead",
+        landingPagePath,
+        referrer,
+        entryUrl,
+        entryPath,
+        utm_source: utmParams.source || "",
+        utm_medium: utmParams.medium || "",
+        utm_campaign: utmParams.campaign || "",
+        utm_term: utmParams.term || "",
+        utm_content: utmParams.content || "",
+        gclid: utmParams.gclid || "",
+        utmSource: utmParams.source,
+        utmMedium: utmParams.medium,
+        utmCampaign: utmParams.campaign,
+        utmTerm: utmParams.term,
+        utmContent: utmParams.content,
         lang: submitLang,
       };
       const payloadWithId = { ...payload, leadId: generateLeadId() };
@@ -209,6 +319,10 @@ export default function PromoLeadPopup() {
       setIsSubmitting(false);
       setForm({ fullName: "", email: "", countryCode: defaultCountryCode, phone: "" });
       setIsOpen(false);
+      if (typeof window !== "undefined") {
+        window.sessionStorage.setItem("mave_promo_lead_submitted", "1");
+        window.dispatchEvent(new CustomEvent("promo-lead-submitted"));
+      }
 
       sendPendingLead(payloadString)
         .then(async (response) => {
