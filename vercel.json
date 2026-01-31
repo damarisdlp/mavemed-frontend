@@ -1,0 +1,8 @@
+{
+  "crons": [
+    {
+      "path": "/api/flush-pending-leads",
+      "schedule": "*/2 * * * *"
+    }
+  ]
+}
