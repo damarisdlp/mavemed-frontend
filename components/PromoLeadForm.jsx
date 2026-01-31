@@ -9,6 +9,9 @@ export default function PromoLeadForm() {
   const locale = (i18n?.language || "en").toString();
   const phoneRef = useRef(null);
   const emailRef = useRef(null);
+  const initialReferrer = useRef("");
+  const entryUrlRef = useRef("");
+  const entryPathRef = useRef("");
 
   const [formData, setFormData] = useState({
     fullName: "",
@@ -20,6 +23,14 @@ export default function PromoLeadForm() {
   const [showThanks, setShowThanks] = useState(false);
   const pendingLeadKey = "promoLeadPending";
   const retryTimerRef = useRef(null);
+  const [utmParams, setUtmParams] = useState({
+    source: "",
+    medium: "",
+    campaign: "",
+    term: "",
+    content: "",
+    gclid: "",
+  });
 
   const generateLeadId = () => {
     if (typeof crypto !== "undefined" && crypto.randomUUID) {
@@ -29,7 +40,7 @@ export default function PromoLeadForm() {
   };
 
   const sendPendingLead = (payloadString) =>
-    fetch("/api/promo-lead", {
+    fetch("/api/lead-promo", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: payloadString,
@@ -55,6 +66,55 @@ export default function PromoLeadForm() {
       .catch(() => {
         // Leave pending payload for a future retry.
       });
+  }, []);
+
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    const params = new URLSearchParams(window.location.search);
+    const utm = {
+      source: params.get("utm_source") || "",
+      medium: params.get("utm_medium") || "",
+      campaign: params.get("utm_campaign") || "",
+      term: params.get("utm_term") || "",
+      content: params.get("utm_content") || "",
+      gclid: params.get("gclid") || "",
+    };
+    const hasUtm = Object.values(utm).some(Boolean);
+    if (hasUtm) {
+      window.sessionStorage.setItem("mave_promo_utm", JSON.stringify(utm));
+    }
+    const stored = window.sessionStorage.getItem("mave_promo_utm");
+    const storedUtm = stored ? JSON.parse(stored) : null;
+    const finalUtm =
+      (hasUtm ? utm : null) ||
+      storedUtm || {
+        source: "",
+        medium: "",
+        campaign: "",
+        term: "",
+        content: "",
+        gclid: "",
+      };
+    setUtmParams(finalUtm);
+  }, []);
+
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+
+    const ref = document.referrer || "";
+    const storedRef = window.sessionStorage.getItem("mave_initial_referrer") || "";
+    const finalRef = ref || storedRef || "direct";
+    initialReferrer.current = finalRef;
+    if (ref) window.sessionStorage.setItem("mave_initial_referrer", ref);
+
+    const entryUrl = window.sessionStorage.getItem("mave_entry_url") || window.location.href;
+    const entryPath =
+      window.sessionStorage.getItem("mave_entry_path") ||
+      `${window.location.pathname}${window.location.search}`;
+    window.sessionStorage.setItem("mave_entry_url", entryUrl);
+    window.sessionStorage.setItem("mave_entry_path", entryPath);
+    entryUrlRef.current = entryUrl;
+    entryPathRef.current = entryPath;
   }, []);
 
   const countryOptions = [
@@ -109,6 +169,27 @@ export default function PromoLeadForm() {
       if (emailRef.current) emailRef.current.setCustomValidity("");
 
       const activeForm = getActiveLeadForm();
+      const landingPagePath =
+        typeof window !== "undefined" ? `${window.location.pathname}${window.location.search}` : "";
+      const referrer =
+        (typeof window !== "undefined" &&
+          window.sessionStorage.getItem("mave_initial_referrer")) ||
+        initialReferrer.current ||
+        "direct";
+      const entryUrl =
+        (typeof window !== "undefined" && window.sessionStorage.getItem("mave_entry_url")) ||
+        entryUrlRef.current ||
+        "";
+      const entryPath =
+        (typeof window !== "undefined" && window.sessionStorage.getItem("mave_entry_path")) ||
+        entryPathRef.current ||
+        "";
+      const normalizedCountryCode = formData.countryCode.startsWith("+")
+        ? formData.countryCode
+        : `+${formData.countryCode}`;
+      const normalizedPhone = normalizedCountryCode && formData.phone
+        ? `${normalizedCountryCode}${String(formData.phone).replace(/[^\d]/g, "")}`
+        : "";
       const submitData = {
         leadFormId: activeForm?.id || "promo",
         fullName: formData.fullName,
@@ -117,8 +198,25 @@ export default function PromoLeadForm() {
         countryCode: formData.countryCode,
         phone: formData.phone,
         phoneNumber: formData.phone,
+        normalizedPhone,
         locale,
         source: "Homepage Promo Lead Form",
+        funnelType: "promo_lead",
+        landingPagePath,
+        referrer,
+        entryUrl,
+        entryPath,
+        utm_source: utmParams.source || "",
+        utm_medium: utmParams.medium || "",
+        utm_campaign: utmParams.campaign || "",
+        utm_term: utmParams.term || "",
+        utm_content: utmParams.content || "",
+        gclid: utmParams.gclid || "",
+        utmSource: utmParams.source,
+        utmMedium: utmParams.medium,
+        utmCampaign: utmParams.campaign,
+        utmTerm: utmParams.term,
+        utmContent: utmParams.content,
       };
 
       setShowThanks(true);
