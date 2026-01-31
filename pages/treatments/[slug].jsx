@@ -1,5 +1,6 @@
 import { useRouter } from "next/router";
 import Head from "next/head";
+import NextLink from "next/link";
 import { allTreatments } from "@/lib/data/allTreatments";
 
 import Header from "@/components/Header";
@@ -67,6 +68,20 @@ export default function TreatmentPage() {
     currentLocale
   );
   const localizedDescription = getLocalized(treatment.description, currentLocale);
+  const isRfMicroneedling = treatment.urlSlug === "sylfirm-rf-microneedling";
+  const candidacyCopy = {
+    en: {
+      title: "RF Microneedling Candidacy Assessment",
+      subtitle: "Reviewed by a medical team before treatment planning.",
+      cta: "Start assessment",
+    },
+    es: {
+      title: "Evaluación de Candidatura para RF Microneedling",
+      subtitle: "Revisado por un equipo médico antes de planear tratamiento.",
+      cta: "Iniciar evaluación",
+    },
+  };
+  const candidacy = candidacyCopy[currentLocale] || candidacyCopy.en;
 
   return (
     <>
@@ -93,6 +108,26 @@ export default function TreatmentPage() {
           />
           {/* locale prop is optional but useful if children need to localize too */}
           <TreatmentDetails treatment={treatment} locale={currentLocale} />
+          {isRfMicroneedling && (
+            <div className="max-w-5xl mx-auto px-6 pb-8">
+              <div className="border border-gray-200 bg-white rounded-2xl p-5 flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
+                <div>
+                  <p className="text-xs uppercase tracking-[0.2em] text-gray-500">
+                    {currentLocale === "es" ? "Candidatura" : "Candidacy"}
+                  </p>
+                  <p className="text-base font-semibold text-black">{candidacy.title}</p>
+                  <p className="text-sm text-gray-600">{candidacy.subtitle}</p>
+                </div>
+                <NextLink
+                  href="/rf-microneedling-candidacy"
+                  locale={currentLocale}
+                  className="text-sm text-[#731a2f] underline underline-offset-4"
+                >
+                  {candidacy.cta}
+                </NextLink>
+              </div>
+            </div>
+          )}
           <PricingTable treatment={treatment} locale={currentLocale} />
           <WhatToExpect expectations={treatment.expectations} locale={currentLocale} />
           <FAQSection faqs={treatment.faq} locale={currentLocale} />
