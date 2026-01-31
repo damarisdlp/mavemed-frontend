@@ -15,6 +15,7 @@ export default function TreatmentDetails({ treatment }) {
   const [leadOpen, setLeadOpen] = useState(false);
   const [leadStep, setLeadStep] = useState("form1");
   const [leadService, setLeadService] = useState("");
+  const [leadCategory, setLeadCategory] = useState("");
   const [leadOptions, setLeadOptions] = useState([]);
   const [leadSelectedOptions, setLeadSelectedOptions] = useState([]);
 
@@ -24,19 +25,33 @@ export default function TreatmentDetails({ treatment }) {
     countryCode: "+52",
     phone: "",
     visitTiming: "",
-    preferredChannel: "WhatsApp",
+    preferredChannel: "",
     hadTreatmentBefore: "",
     bestDays: "",
     bestTimes: "",
     mainConcern: "",
   };
+  const WHATSAPP_NUMBER = "526642077675";
 
   const [leadForm, setLeadForm] = useState(initialLeadForm);
   const [leadSnapshot, setLeadSnapshot] = useState(null);
   const [submitting, setSubmitting] = useState(false);
+  const [duplicateMessage, setDuplicateMessage] = useState("");
+  const [leadFormError, setLeadFormError] = useState("");
+  const [utmParams, setUtmParams] = useState({
+    source: "",
+    medium: "",
+    campaign: "",
+    term: "",
+    content: "",
+    gclid: "",
+  });
 
   const phoneRef = useRef(null);
   const emailRef = useRef(null);
+  const initialReferrer = useRef("");
+  const entryUrlRef = useRef("");
+  const entryPathRef = useRef("");
 
   const countryOptions = [
     { code: "+1", label: "United States / Canada" },
@@ -57,16 +72,78 @@ export default function TreatmentDetails({ treatment }) {
       setLeadForm((prev) => ({
         ...prev,
         countryCode: "+1",
-        preferredChannel: "WhatsApp",
       }));
     } else if (localeStr.startsWith("es-MX")) {
       setLeadForm((prev) => ({
         ...prev,
         countryCode: "+52",
-        preferredChannel: "WhatsApp",
       }));
     }
   }, []);
+
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+
+    const ref = document.referrer || "";
+    const storedRef = window.sessionStorage.getItem("mave_initial_referrer") || "";
+    const finalRef = ref || storedRef || "direct";
+    initialReferrer.current = finalRef;
+
+    if (ref) window.sessionStorage.setItem("mave_initial_referrer", ref);
+
+    const entryUrl = window.sessionStorage.getItem("mave_entry_url") || window.location.href;
+    const entryPath =
+      window.sessionStorage.getItem("mave_entry_path") ||
+      `${window.location.pathname}${window.location.search}`;
+
+    window.sessionStorage.setItem("mave_entry_url", entryUrl);
+    window.sessionStorage.setItem("mave_entry_path", entryPath);
+    entryUrlRef.current = entryUrl;
+    entryPathRef.current = entryPath;
+  }, []);
+
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    const getUtmFromSearch = () => {
+      const params = new URLSearchParams(window.location.search);
+      const utm = {
+        source: params.get("utm_source") || "",
+        medium: params.get("utm_medium") || "",
+        campaign: params.get("utm_campaign") || "",
+        term: params.get("utm_term") || "",
+        content: params.get("utm_content") || "",
+        gclid: params.get("gclid") || "",
+      };
+      const hasUtm = Object.values(utm).some(Boolean);
+      if (hasUtm) {
+        window.sessionStorage.setItem("mave_treatment_utm", JSON.stringify(utm));
+      }
+      return hasUtm ? utm : null;
+    };
+
+    const stored = window.sessionStorage.getItem("mave_treatment_utm");
+    const storedUtm = stored ? JSON.parse(stored) : null;
+    const urlUtm = getUtmFromSearch();
+    const finalUtm =
+      urlUtm ||
+      storedUtm || {
+        source: "",
+        medium: "",
+        campaign: "",
+        term: "",
+        content: "",
+        gclid: "",
+      };
+    setUtmParams(finalUtm);
+  }, []);
+
+  const trackEvent = (name, params = {}) => {
+    if (typeof window === "undefined") return;
+    if (!window.gtag) return;
+    const consent = window.localStorage.getItem("mave_cookie_consent");
+    if (consent !== "accepted") return;
+    window.gtag("event", name, params);
+  };
 
   const getLocalized = (field) => {
     if (field == null) return "";
@@ -76,6 +153,13 @@ export default function TreatmentDetails({ treatment }) {
       return "";
     }
     return field;
+  };
+
+  const generateLeadId = () => {
+    if (typeof crypto !== "undefined" && crypto.randomUUID) {
+      return crypto.randomUUID();
+    }
+    return `lead_${Date.now()}_${Math.random().toString(16).slice(2)}`;
   };
 
   const getLocalizedPrice = (field) => {
@@ -96,6 +180,7 @@ export default function TreatmentDetails({ treatment }) {
   const handleLeadChange = (e) => {
     const { name, value } = e.target;
     setLeadForm((prev) => ({ ...prev, [name]: value }));
+    setLeadFormError("");
     if (name === "phone" && phoneRef.current) phoneRef.current.setCustomValidity("");
     if (name === "email" && emailRef.current) emailRef.current.setCustomValidity("");
   };
@@ -161,10 +246,27 @@ export default function TreatmentDetails({ treatment }) {
 
   const buildLeadOptions = () => {
     const options = [];
+    const serviceName = getLocalized(treatment.serviceDisplayName);
+    const categoryName = getLocalized(treatment.categoryDisplayName);
+    const normalize = (value) =>
+      String(value || "")
+        .replace(/\s+/g, " ")
+        .trim()
+        .toLowerCase();
+    const normalizedService = normalize(serviceName);
+    const normalizedCategory = normalize(categoryName);
+    const stripParens = (value) => String(value || "").replace(/\s*\([^)]*\)\s*/g, " ").trim();
+    const baseService = normalize(stripParens(serviceName));
+    const serviceKey = baseService.split(" ").slice(0, 2).join(" ");
 
     if (promoDisplayOptions.length) {
       promoDisplayOptions.forEach((opt) => {
-        const name = getLocalized(opt.optionName) || getLocalized(treatment.serviceDisplayName);
+        const name = getLocalized(opt.optionName);
+        if (!name) return;
+        const normalizedName = normalize(name);
+        if (normalizedName === normalizedService || normalizedName === normalizedCategory) return;
+        if (serviceKey && normalizedName.includes(serviceKey)) return;
+        if (baseService && normalizedName.includes(baseService)) return;
         const price =
           opt.promoPrice != null
             ? `${opt.promoPrice}${opt.currency ? ` ${opt.currency}` : ""}`
@@ -176,7 +278,12 @@ export default function TreatmentDetails({ treatment }) {
 
     if (pricing?.options?.length) {
       pricing.options.forEach((opt) => {
-        const name = getLocalized(opt.optionName) || getLocalized(treatment.serviceDisplayName);
+        const name = getLocalized(opt.optionName);
+        if (!name) return;
+        const normalizedName = normalize(name);
+        if (normalizedName === normalizedService || normalizedName === normalizedCategory) return;
+        if (serviceKey && normalizedName.includes(serviceKey)) return;
+        if (baseService && normalizedName.includes(baseService)) return;
         const price =
           opt.optionPrice != null
             ? `${getLocalizedPrice(opt.optionPrice)}${
@@ -203,8 +310,12 @@ export default function TreatmentDetails({ treatment }) {
     setLeadSelectedOptions(defaultSelection);
 
     const serviceText = `${getLocalized(treatment.serviceDisplayName)}`;
+    const categoryText = `${getLocalized(treatment.categoryDisplayName)}`;
     setLeadService(serviceText);
+    setLeadCategory(categoryText);
 
+    setDuplicateMessage("");
+    setLeadFormError("");
     setLeadStep("form1");
     setLeadOpen(true);
   };
@@ -215,6 +326,9 @@ export default function TreatmentDetails({ treatment }) {
     setLeadForm(initialLeadForm);
     setLeadSnapshot(null);
     setLeadSelectedOptions([]);
+    setDuplicateMessage("");
+    setLeadFormError("");
+    setLeadCategory("");
   };
 
   useEffect(() => {
@@ -462,11 +576,25 @@ export default function TreatmentDetails({ treatment }) {
                 <div className="space-y-3">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
                     <div className="md:col-span-2">
+                      <div className="mb-2">
+                        <p className="text-sm text-gray-500">
+                          {locale === "es" ? "Tratamiento" : "Treatment"}
+                        </p>
+                        <p className="text-base font-semibold text-black break-words">{leadService}</p>
+                      </div>
                       <label className="block text-sm text-gray-700 mb-1 break-words">
-                        {locale === "es" ? "Selecciona tratamiento" : "Select treatment option"}
+                        {locale === "es" ? "Opciones del servicio" : "Service options"}{" "}
+                        <span className="text-[#731a2f]">*</span>
                       </label>
 
-                      <div className="w-full max-w-full border border-gray-300 rounded px-3 py-2 bg-white">
+                      <div
+                        className={[
+                          "w-full max-w-full border rounded px-3 py-2 bg-white",
+                          leadFormError && leadSelectedOptions.length === 0
+                            ? "border-red-400 bg-red-50/40"
+                            : "border-gray-300",
+                        ].join(" ")}
+                      >
                         <div className="text-xs text-gray-500 mb-2">
                           {locale === "es"
                             ? "Selecciona una o varias opciones."
@@ -482,6 +610,7 @@ export default function TreatmentDetails({ treatment }) {
                                   type="checkbox"
                                   checked={checked}
                                   onChange={() => {
+                                    setLeadFormError("");
                                     setLeadSelectedOptions((prev) => {
                                       if (prev.includes(opt)) return prev.filter((x) => x !== opt);
                                       return [...prev, opt];
@@ -618,15 +747,18 @@ export default function TreatmentDetails({ treatment }) {
                     </div>
 
                     <div>
-                      <label className="block text-sm text-gray-700 mb-1">
+                      <label className="block text-sm text-gray-700 mb-1 flex items-center gap-1">
                         {locale === "es" ? "Método de contacto preferido" : "Preferred communication method"}
+                        <span className="text-[#731a2f]">*</span>
                       </label>
                       <select
                         name="preferredChannel"
                         value={leadForm.preferredChannel}
                         onChange={handleLeadChange}
                         className="w-full border border-gray-300 rounded px-3 py-2 text-gray-700"
+                        required
                       >
+                        <option value="">{locale === "es" ? "Selecciona" : "Select"}</option>
                         <option value="WhatsApp">WhatsApp</option>
                         <option value="Phone call">{locale === "es" ? "Llamada" : "Phone call"}</option>
                         <option value="Text message">{locale === "es" ? "Mensaje de texto" : "Text message"}</option>
@@ -641,16 +773,18 @@ export default function TreatmentDetails({ treatment }) {
                 <div className="space-y-4">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                     <div>
-                      <label className="block text-sm text-gray-700 mb-1">
+                      <label className="block text-sm text-gray-700 mb-1 flex items-center gap-1">
                         {locale === "es"
                           ? "¿Has tenido este tratamiento?"
                           : "Have you had this treatment before?"}
+                        <span className="text-[#731a2f]">*</span>
                       </label>
                       <select
                         name="hadTreatmentBefore"
                         value={leadForm.hadTreatmentBefore}
                         onChange={handleLeadChange}
                         className="w-full border border-gray-300 rounded px-3 py-2 text-gray-700"
+                        required
                       >
                         <option value="">{locale === "es" ? "Selecciona" : "Select"}</option>
                         <option value={locale === "es" ? "Sí" : "Yes"}>{locale === "es" ? "Sí" : "Yes"}</option>
@@ -662,14 +796,16 @@ export default function TreatmentDetails({ treatment }) {
                     </div>
 
                     <div>
-                      <label className="block text-sm text-gray-700 mb-1">
+                      <label className="block text-sm text-gray-700 mb-1 flex items-center gap-1">
                         {locale === "es" ? "Mejores días" : "Best days"}
+                        <span className="text-[#731a2f]">*</span>
                       </label>
                       <select
                         name="bestDays"
                         value={leadForm.bestDays}
                         onChange={handleLeadChange}
                         className="w-full border border-gray-300 rounded px-3 py-2 text-gray-700"
+                        required
                       >
                         <option value="">{locale === "es" ? "Selecciona" : "Select"}</option>
                         <option value={locale === "es" ? "Días de semana" : "Weekdays"}>
@@ -685,14 +821,16 @@ export default function TreatmentDetails({ treatment }) {
                     </div>
 
                     <div>
-                      <label className="block text-sm text-gray-700 mb-1">
+                      <label className="block text-sm text-gray-700 mb-1 flex items-center gap-1">
                         {locale === "es" ? "Mejores horarios" : "Best times"}
+                        <span className="text-[#731a2f]">*</span>
                       </label>
                       <select
                         name="bestTimes"
                         value={leadForm.bestTimes}
                         onChange={handleLeadChange}
                         className="w-full border border-gray-300 rounded px-3 py-2 text-gray-700"
+                        required
                       >
                         <option value="">{locale === "es" ? "Selecciona" : "Select"}</option>
                         <option value={locale === "es" ? "Mañanas" : "Mornings"}>
@@ -795,23 +933,48 @@ export default function TreatmentDetails({ treatment }) {
             {/* Sticky Footer */}
             {leadStep === "form1" && (
               <div className="sticky bottom-0 bg-white border-t border-gray-100 px-5 py-4">
+                {leadFormError && (
+                  <p className="mb-3 text-sm text-red-600">{leadFormError}</p>
+                )}
                 <div className="flex gap-3">
                   <button
                     type="button"
                     onClick={() => {
                       if (!leadForm.firstName.trim()) {
-                        alert(locale === "es" ? "Ingresa tu nombre." : "Please enter your name.");
+                        setLeadFormError(
+                          locale === "es" ? "Ingresa tu nombre." : "Please enter your name."
+                        );
                         return;
                       }
                       if (emailRef.current && !emailRef.current.checkValidity()) {
-                        emailRef.current.reportValidity();
+                        setLeadFormError(
+                          locale === "es"
+                            ? "Ingresa un correo válido."
+                            : "Please enter a valid email."
+                        );
+                        return;
+                      }
+                      if (!leadSelectedOptions.length) {
+                        setLeadFormError(
+                          locale === "es"
+                            ? "Selecciona una opción del servicio."
+                            : "Please select a service option."
+                        );
                         return;
                       }
                       if (!leadForm.visitTiming) {
-                        alert(
+                        setLeadFormError(
                           locale === "es"
                             ? "Completa los campos requeridos."
                             : "Please fill in the required fields."
+                        );
+                        return;
+                      }
+                      if (!leadForm.preferredChannel) {
+                        setLeadFormError(
+                          locale === "es"
+                            ? "Selecciona un método de contacto."
+                            : "Please select a preferred communication method."
                         );
                         return;
                       }
@@ -822,12 +985,17 @@ export default function TreatmentDetails({ treatment }) {
                               ? "Ingresa un número telefónico válido."
                               : "Please enter a valid phone number."
                           );
-                          phoneRef.current.reportValidity();
                         }
+                        setLeadFormError(
+                          locale === "es"
+                            ? "Ingresa un número telefónico válido."
+                            : "Please enter a valid phone number."
+                        );
                         return;
                       }
                       if (phoneRef.current) phoneRef.current.setCustomValidity("");
                       if (emailRef.current) emailRef.current.setCustomValidity("");
+                      setLeadFormError("");
                       setLeadStep("form2");
                     }}
                     className="flex-1 bg-black text-white py-2 rounded hover:bg-[#731a2f] transition"
@@ -848,50 +1016,198 @@ export default function TreatmentDetails({ treatment }) {
 
             {leadStep === "form2" && (
               <div className="sticky bottom-0 bg-white border-t border-gray-100 px-5 py-4">
+                {duplicateMessage && (
+                  <div className="mb-4">
+                    <p className="text-sm text-green-700">{duplicateMessage}</p>
+                    <a
+                      href={`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(
+                        locale === "es"
+                          ? "Hola, ya envié mi solicitud para un tratamiento. Quiero agregar un detalle."
+                          : "Hi, I already submitted a treatment request. I want to add a detail."
+                      )}`}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="inline-block mt-3 text-sm bg-black text-white px-4 py-2 rounded-full hover:bg-[#731a2f] transition"
+                    >
+                      {locale === "es" ? "Enviar WhatsApp" : "Message us on WhatsApp"}
+                    </a>
+                  </div>
+                )}
+                {leadFormError && (
+                  <p className="mb-3 text-sm text-red-600">{leadFormError}</p>
+                )}
                 <div className="flex gap-3">
                   <button
                     type="button"
                     disabled={submitting}
                     onClick={async () => {
+                      if (!leadForm.hadTreatmentBefore || !leadForm.bestDays || !leadForm.bestTimes) {
+                        setLeadFormError(
+                          locale === "es"
+                            ? "Completa los campos requeridos."
+                            : "Please fill in the required fields."
+                        );
+                        return;
+                      }
                       setSubmitting(true);
                       try {
+                        setDuplicateMessage("");
+                        const leadId = generateLeadId();
+                        const landingPagePath =
+                          typeof window !== "undefined"
+                            ? `${window.location.pathname}${window.location.search}`
+                            : "";
+                        const referrer =
+                          (typeof window !== "undefined" &&
+                            window.sessionStorage.getItem("mave_initial_referrer")) ||
+                          initialReferrer.current ||
+                          "direct";
+                        const entryUrl =
+                          (typeof window !== "undefined" &&
+                            window.sessionStorage.getItem("mave_entry_url")) ||
+                          entryUrlRef.current ||
+                          "";
+                        const entryPath =
+                          (typeof window !== "undefined" &&
+                            window.sessionStorage.getItem("mave_entry_path")) ||
+                          entryPathRef.current ||
+                          "";
+                        const normalizedCountryCode = leadForm.countryCode.startsWith("+")
+                          ? leadForm.countryCode
+                          : `+${leadForm.countryCode}`;
+                        const selectedOptionsLabel =
+                          leadSelectedOptions.length > 0 ? leadSelectedOptions.join(" | ") : "";
+                        const treatmentInterest = [leadService, selectedOptionsLabel]
+                          .filter(Boolean)
+                          .join(" | ");
                         const payload = {
+                          leadId,
+                          fullName: leadForm.firstName,
                           firstName: leadForm.firstName,
                           email: leadForm.email,
-                          countryCode: leadForm.countryCode,
+                          countryCode: normalizedCountryCode,
                           phone: leadForm.phone,
                           phoneNumber: leadForm.phone,
-                          treatmentInterest:
-                            leadSelectedOptions.length > 0
-                              ? leadSelectedOptions.join(" | ")
-                              : leadService,
+                          treatmentInterest,
+                          funnelType: "treatment_booking",
                           whenToVisit: leadForm.visitTiming,
                           prefCom: leadForm.preferredChannel,
                           treatmentBefore: leadForm.hadTreatmentBefore,
                           bestDay: leadForm.bestDays,
                           bestTime: leadForm.bestTimes,
                           mainConcernGoal: leadForm.mainConcern,
+                          utm_source: utmParams.source || "",
+                          utm_medium: utmParams.medium || "",
+                          utm_campaign: utmParams.campaign || "",
+                          utm_term: utmParams.term || "",
+                          utm_content: utmParams.content || "",
+                          gclid: utmParams.gclid || "",
+                          landingPagePath,
+                          referrer,
+                          entryUrl,
+                          entryPath,
                           source: "treatment-page",
                           locale,
                         };
 
-                        await fetch("/api/lead-treatment", {
+                        const response = await fetch("/api/lead-treatment", {
                           method: "POST",
                           headers: { "Content-Type": "application/json" },
                           body: JSON.stringify(payload),
                         });
 
+                        const resultText = await response.text().catch(() => "");
+                        let result;
+                        try {
+                          result = JSON.parse(resultText);
+                        } catch {
+                          result = { raw: resultText };
+                        }
+
+                        if (!response.ok || !result?.success) {
+                          throw new Error("Lead submit failed");
+                        }
+
+                        if (result?.sheetStatus === "duplicate") {
+                          if (typeof window !== "undefined") {
+                            window.sessionStorage.setItem(
+                              "mave_treatment_inquiry",
+                              JSON.stringify({
+                                firstName: leadForm.firstName,
+                                treatmentInterest,
+                                category: leadCategory,
+                                service: leadService,
+                                options: leadSelectedOptions,
+                                visitTiming: leadForm.visitTiming,
+                                preferredChannel: leadForm.preferredChannel,
+                                hadTreatmentBefore: leadForm.hadTreatmentBefore,
+                                bestDays: leadForm.bestDays,
+                                bestTimes: leadForm.bestTimes,
+                                mainConcern: leadForm.mainConcern,
+                                locale,
+                              })
+                            );
+                          }
+                          const thankYouPath =
+                            locale === "es"
+                              ? `/es/thank-you-treatment?service=${encodeURIComponent(
+                                  leadService
+                                )}&duplicate=1`
+                              : `/thank-you-treatment?service=${encodeURIComponent(
+                                  leadService
+                                )}&duplicate=1`;
+                          setDuplicateMessage(
+                            locale === "es"
+                              ? "Ya recibimos tu solicitud. Te llevaremos a confirmación."
+                              : "We already received your request. Redirecting you to confirmation."
+                          );
+                          setLeadForm(initialLeadForm);
+                          handleCloseLead();
+                          router.push(thankYouPath);
+                          return;
+                        }
+
+                        trackEvent("treatment_booking_submit", {
+                          lead_source: utmParams.source || "direct",
+                          treatment: leadService,
+                          utm_source: utmParams.source,
+                          utm_medium: utmParams.medium,
+                          utm_campaign: utmParams.campaign,
+                          utm_term: utmParams.term,
+                          utm_content: utmParams.content,
+                        });
+
+                        if (typeof window !== "undefined") {
+                          window.sessionStorage.setItem(
+                            "mave_treatment_inquiry",
+                            JSON.stringify({
+                              firstName: leadForm.firstName,
+                              treatmentInterest,
+                              category: leadCategory,
+                              service: leadService,
+                              options: leadSelectedOptions,
+                              visitTiming: leadForm.visitTiming,
+                              preferredChannel: leadForm.preferredChannel,
+                              hadTreatmentBefore: leadForm.hadTreatmentBefore,
+                              bestDays: leadForm.bestDays,
+                              bestTimes: leadForm.bestTimes,
+                              mainConcern: leadForm.mainConcern,
+                              locale,
+                            })
+                          );
+                        }
                         setLeadSnapshot({
                           firstName: leadForm.firstName,
                           bestDay: leadForm.bestDays,
                           bestTime: leadForm.bestTimes,
-                          treatmentInterest:
-                            leadSelectedOptions.length > 0
-                              ? leadSelectedOptions.join(" | ")
-                              : leadService,
+                          treatmentInterest,
                         });
-
-                        setLeadStep("channels");
+                        setLeadForm(initialLeadForm);
+                        const thankYouPath =
+                          locale === "es"
+                            ? `/es/thank-you-treatment?service=${encodeURIComponent(leadService)}`
+                            : `/thank-you-treatment?service=${encodeURIComponent(leadService)}`;
+                        router.push(thankYouPath);
                       } catch (err) {
                         console.error("Lead submit error", err);
                         alert(
@@ -916,7 +1232,10 @@ export default function TreatmentDetails({ treatment }) {
 
                   <button
                     type="button"
-                    onClick={() => setLeadStep("form1")}
+                    onClick={() => {
+                      setLeadFormError("");
+                      setLeadStep("form1");
+                    }}
                     className="flex-1 border border-gray-300 text-gray-700 py-2 rounded hover:border-black transition"
                   >
                     {locale === "es" ? "Regresar" : "Back"}
