@@ -35,6 +35,14 @@ export default function Header() {
     "/ourteam",
     "/treatments",
     "/faq",
+    "/rf-microneedling-candidacy",
+    "/sculptra-candidacy",
+    "/sculptra-rf-candidacy",
+    "/thank-you-rf-microneedling",
+    "/thank-you-sculptra",
+    "/thank-you-sculptra-rf",
+    "/thank-you-treatment",
+    "/learn",
   ].some((path) => (asPath || "").startsWith(path));
 
   useEffect(() => {
@@ -114,6 +122,9 @@ export default function Header() {
             </NextLink>
             <NextLink href="/promos" className={`${navHover} ${navGlow}`}>
               {t("nav.promos") || "Promos"}
+            </NextLink>
+            <NextLink href="/learn" className={`${navHover} ${navGlow}`}>
+              {t("nav.learn") || "Learn"}
             </NextLink>
             <NextLink href="/aboutus" className={`${navHover} ${navGlow}`}>
               {t("nav.about")}
@@ -316,6 +327,9 @@ export default function Header() {
           </NextLink>
           <NextLink href="/promos" className="text-sm text-gray-700 hover:text-black" onClick={() => setIsMobileMenuOpen(false)}>
             {t("nav.promos") || "Promos"}
+          </NextLink>
+          <NextLink href="/learn" className="text-sm text-gray-700 hover:text-black" onClick={() => setIsMobileMenuOpen(false)}>
+            {t("nav.learn") || "Learn"}
           </NextLink>
           <NextLink href="/aboutus" className="text-sm text-gray-700 hover:text-black" onClick={() => setIsMobileMenuOpen(false)}>
             {t("nav.about")}
