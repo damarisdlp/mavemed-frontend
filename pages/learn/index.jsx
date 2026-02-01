@@ -24,6 +24,12 @@ const content = {
               "How Sylfirm X differs, who it may be suitable for, and why medical evaluation matters.",
             href: "/learn/sylfirm-x-rf-microneedling",
           },
+          {
+            title: "Sylfirm X vs Other RF Microneedling Devices",
+            excerpt:
+              "What to compare across platforms, FDA safety context, and how device choice affects planning.",
+            href: "/learn/sylfirm-x-vs-other-rf-microneedling",
+          },
         ],
       },
       {
@@ -55,6 +61,12 @@ const content = {
             excerpt:
               "Cómo se diferencia Sylfirm X, para quién puede ser adecuado y por qué la evaluación médica es clave.",
             href: "/learn/sylfirm-x-rf-microneedling",
+          },
+          {
+            title: "Sylfirm X vs Otros Dispositivos de RF Microneedling",
+            excerpt:
+              "Qué comparar entre plataformas, contexto de seguridad FDA y elección del dispositivo.",
+            href: "/learn/sylfirm-x-vs-other-rf-microneedling",
           },
         ],
       },
@@ -116,6 +128,21 @@ export default function LearnIndexPage() {
               className="mt-2 w-full border border-gray-300 rounded px-3 py-2 text-base md:text-sm focus:outline-none focus:ring-2 focus:ring-black"
             />
             <div className="mt-4 flex flex-wrap gap-2">
+              <button
+                type="button"
+                onClick={() => {
+                  setActiveCategory("");
+                  setQuery("");
+                }}
+                className={[
+                  "text-xs uppercase tracking-[0.2em] px-3 py-2 rounded-full border transition",
+                  activeCategory === ""
+                    ? "bg-[#731a2f] text-white border-[#731a2f]"
+                    : "text-gray-600 border-gray-300 hover:border-black hover:text-black",
+                ].join(" ")}
+              >
+                {locale === "es" ? "Ver todo" : "View all"}
+              </button>
               {copy.categories.map((category) => (
                 <button
                   key={category.title}
