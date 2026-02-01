@@ -107,6 +107,17 @@ const content = {
       { label: "Learn about RF microneedling", href: "/learn/sylfirm-x-rf-microneedling" },
       { label: "Learn about Sculptra", href: "/learn/sculptra-collagen-biostimulator" },
     ],
+    serviceLinksTitle: "Related services",
+    serviceLinks: [
+      {
+        label: "RF Microneedling (Sylfirm X)",
+        href: "/treatments/sylfirm-rf-microneedling",
+      },
+      {
+        label: "Sculptra Collagen Biostimulator",
+        href: "/treatments/sculptra",
+      },
+    ],
     closingTitle: "A note on planning",
     closingCopy: [
       "Collagen is a long game.",
@@ -212,6 +223,17 @@ const content = {
     nextLinks: [
       { label: "Conocer RF microneedling", href: "/learn/sylfirm-x-rf-microneedling" },
       { label: "Conocer Sculptra", href: "/learn/sculptra-collagen-biostimulator" },
+    ],
+    serviceLinksTitle: "Servicios relacionados",
+    serviceLinks: [
+      {
+        label: "Microneedling con RF (Sylfirm X)",
+        href: "/treatments/sylfirm-rf-microneedling",
+      },
+      {
+        label: "Sculptra Bioestimulador de Colágeno",
+        href: "/treatments/sculptra",
+      },
     ],
     closingTitle: "Nota sobre planificación",
     closingCopy: [
@@ -356,6 +378,23 @@ export default function CollagenTimelineEducationPage() {
 
             <div className="flex flex-col gap-2">
               {(copy.nextLinks || []).map((link) => (
+                <a
+                  key={link.href}
+                  href={`/${locale === "es" ? "es/" : ""}${link.href.replace(/^\//, "")}`}
+                  className="inline-flex text-sm text-[#731a2f] underline underline-offset-4"
+                >
+                  {link.label}
+                </a>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="max-w-5xl mx-auto px-6 pb-12">
+          <div className="border border-gray-200 bg-[#f9f9f9] rounded-2xl p-6 space-y-3">
+            <h3 className="text-lg font-semibold text-black">{copy.serviceLinksTitle}</h3>
+            <div className="flex flex-col gap-2">
+              {(copy.serviceLinks || []).map((link) => (
                 <a
                   key={link.href}
                   href={`/${locale === "es" ? "es/" : ""}${link.href.replace(/^\//, "")}`}
