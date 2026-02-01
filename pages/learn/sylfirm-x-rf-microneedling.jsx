@@ -39,9 +39,9 @@ const content = {
         id: "TxOV50LS_Tc",
         title: "Sylfirm X: the Ultimate RF Microneedling Game-Changer | Alice Hart-Davis",
         summary: [
-          "Covers how pulsed and continuous RF modes are used for different concerns, including texture and pigment-prone skin.",
-          "Discusses comfort and downtime expectations in real-world clinic use (results and experience vary by patient and protocol).",
-          "Highlights depth and parameter control as key factors for safer, more consistent outcomes.",
+          "Interviews a UK clinician on why Sylfirm X is being positioned beyond tightening alone, including use cases such as redness, melasma-prone skin, active acne, and acne scarring when clinically appropriate.",
+          "Explains the practical treatment logic shown in the demo: very superficial settings (for example around 0.3 mm in some passes), dual-wave mode selection by indication, and the role of non-insulated needles in delivery style.",
+          "Shows real-time patient feedback on comfort and immediate post-treatment redness, with discussion of low downtime expectations that can vary by skin type, settings, and treatment area.",
         ],
       },
       {
@@ -304,9 +304,9 @@ const content = {
         id: "TxOV50LS_Tc",
         title: "Sylfirm X: the Ultimate RF Microneedling Game-Changer | Alice Hart-Davis",
         summary: [
-          "Explica cómo se usan los modos pulsado y continuo según la indicación clínica, incluyendo textura y piel con riesgo pigmentario.",
-          "Comenta expectativas de comodidad y tiempo de recuperación en práctica clínica (la experiencia varía según paciente y protocolo).",
-          "Destaca que el control de profundidad y parámetros es clave para resultados más consistentes y seguros.",
+          "Incluye entrevista con una clínica en Reino Unido sobre por qué Sylfirm X se está posicionando más allá del tightening, con usos como enrojecimiento, piel con riesgo de melasma, acné activo y cicatriz de acné cuando está indicado.",
+          "Explica la lógica práctica vista en el demo: parámetros muy superficiales (por ejemplo alrededor de 0.3 mm en algunos pases), selección de modo por indicación y el papel de las agujas no aisladas en la forma de entrega.",
+          "Muestra retroalimentación en tiempo real sobre comodidad y enrojecimiento inmediato post-tratamiento, con expectativas de baja recuperación que pueden variar según fototipo, parámetros y zona tratada.",
         ],
       },
       {
