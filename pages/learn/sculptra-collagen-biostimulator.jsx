@@ -15,7 +15,7 @@ const content = {
     intro: [
       "Sculptra is often described as a filler, but it behaves differently than traditional hyaluronic acid fillers.",
       "Rather than adding immediate volume with gel, Sculptra is designed to support your skin’s own collagen production over time, with results that build gradually.",
-      "This page explains what Sculptra is, what it can and cannot do, and why medical evaluation and proper technique matter for safety and outcomes.",
+      "If you want a clearer understanding of collagen loss with age and why results take time, visit our collagen timeline guide linked below.",
     ],
     sections: [
       {
@@ -33,6 +33,7 @@ const content = {
           "This process is gradual and typically becomes noticeable over weeks to months.",
           "Early improvements right after treatment are often due to the injection fluid and swelling, not the final collagen result.",
           "The goal is progressive improvement in firmness, contour support, and skin quality, not instant transformation.",
+          "For a deeper explanation of collagen remodeling timelines, see our collagen timeline guide.",
         ],
       },
       {
@@ -81,6 +82,7 @@ const content = {
           "• Desired subtlety and timeline",
           "• Whether other treatments are being layered into the plan",
           "Because collagen remodeling takes time, results continue to evolve after each session.",
+          "If you are unsure what collagen remodeling typically looks like month to month, review our collagen timeline guide.",
         ],
       },
       {
@@ -109,8 +111,12 @@ const content = {
     ],
     nextTitle: "From education to next steps",
     nextCopy:
-      "If you are considering Sculptra and want to understand whether it fits your goals, the next step is a candidacy assessment reviewed by a medical team.",
+      "If you are considering Sculptra and want to understand whether it fits your goals, the next step is a candidacy assessment reviewed by a medical team. You can also review collagen timelines to better understand why results build gradually.",
     nextCta: "Begin Sculptra candidacy assessment",
+    collagenCardTitle: "Collagen education",
+    collagenCardCopy:
+      "Collagen remodeling is gradual. If you want to understand timelines and why results build over months, read our collagen timeline guide.",
+    collagenLinkLabel: "Read the collagen timeline guide",
     closingTitle: "A note on safety and ethics",
     closingCopy: [
       "Advanced injectables can support meaningful results, but they do not replace:",
@@ -121,6 +127,7 @@ const content = {
       "Our approach prioritizes safety, realistic outcomes, and ethical treatment planning.",
     ],
   },
+
   es: {
     title: "Sculptra Bioestimulador de Colágeno",
     subtitle:
@@ -128,7 +135,7 @@ const content = {
     intro: [
       "Sculptra a veces se describe como relleno, pero su comportamiento es diferente a los rellenos tradicionales de ácido hialurónico.",
       "En lugar de aportar volumen inmediato con gel, Sculptra está diseñado para estimular la producción de colágeno con el tiempo, con resultados que se construyen de forma gradual.",
-      "Esta página explica qué es Sculptra, qué puede y qué no puede hacer, y por qué la evaluación médica y la técnica son clave para la seguridad y los resultados.",
+      "Si quieres entender mejor cómo cambia el colágeno con la edad y por qué los resultados toman tiempo, visita nuestra guía de línea de tiempo del colágeno enlazada abajo.",
     ],
     sections: [
       {
@@ -146,6 +153,7 @@ const content = {
           "Este proceso es gradual y suele hacerse visible en semanas a meses.",
           "Las mejoras inmediatas pueden deberse al líquido de inyección o inflamación, no al resultado final del colágeno.",
           "El objetivo es mejorar progresivamente firmeza, soporte y calidad de piel, no una transformación instantánea.",
+          "Para una explicación más clara de tiempos de remodelación, revisa nuestra guía de línea de tiempo del colágeno.",
         ],
       },
       {
@@ -194,6 +202,7 @@ const content = {
           "• Objetivo estético y cronograma",
           "• Si se recomiendan terapias complementarias",
           "La remodelación de colágeno toma tiempo, por lo que los resultados continúan evolucionando después de cada sesión.",
+          "Si tienes dudas sobre tiempos mes a mes, revisa nuestra guía de línea de tiempo del colágeno.",
         ],
       },
       {
@@ -222,8 +231,12 @@ const content = {
     ],
     nextTitle: "Siguiente paso",
     nextCopy:
-      "Si estás considerando Sculptra y quieres saber si se alinea con tus objetivos, el siguiente paso es una evaluación de candidatura revisada por un equipo médico.",
+      "Si estás considerando Sculptra y quieres saber si se alinea con tus objetivos, el siguiente paso es una evaluación de candidatura revisada por un equipo médico. También puedes revisar los tiempos del colágeno para entender por qué los resultados se construyen gradualmente.",
     nextCta: "Iniciar evaluación de candidatura para Sculptra",
+    collagenCardTitle: "Educación sobre colágeno",
+    collagenCardCopy:
+      "La remodelación del colágeno es gradual. Si quieres entender los tiempos y por qué los resultados se construyen en meses, revisa la guía de colágeno.",
+    collagenLinkLabel: "Leer la guía de línea de tiempo del colágeno",
     closingTitle: "Nota sobre seguridad y ética",
     closingCopy: [
       "Los inyectables avanzados pueden apoyar resultados significativos, pero no reemplazan:",
@@ -248,6 +261,8 @@ const BUSINESS_ADDRESS = {
   postalCode: "22010",
   addressCountry: "MX",
 };
+
+const COLLAGEN_TIMELINE_SLUG = "/learn/collagen-loss-and-rebuilding-timeline";
 
 export default function SculptraEducationPage() {
   const { locale = "en" } = useRouter();
@@ -368,6 +383,25 @@ export default function SculptraEducationPage() {
               <p key={line}>{line}</p>
             ))}
           </div>
+
+          {/* Cross link card, placed near the top for better UX and internal linking */}
+          <div className="mt-8 max-w-3xl">
+            <div className="border border-gray-200 bg-[#f9f9f9] rounded-2xl p-5 space-y-2">
+              <p className="text-xs uppercase tracking-[0.25em] text-gray-500">
+                {copy.collagenCardTitle}
+              </p>
+              <p className="text-sm text-gray-700">{copy.collagenCardCopy}</p>
+              <a
+                href={`/${locale === "es" ? "es/" : ""}${COLLAGEN_TIMELINE_SLUG.replace(
+                  /^\//,
+                  ""
+                )}`}
+                className="inline-flex text-sm text-[#731a2f] underline underline-offset-4"
+              >
+                {copy.collagenLinkLabel}
+              </a>
+            </div>
+          </div>
         </section>
 
         <section className="max-w-5xl mx-auto px-6 pb-12 space-y-10">
@@ -384,15 +418,28 @@ export default function SculptraEducationPage() {
         </section>
 
         <section className="max-w-5xl mx-auto px-6 pb-12">
-          <div className="border border-gray-200 bg-[#f9f9f9] rounded-2xl p-6 space-y-3">
+          <div className="border border-gray-200 bg-[#f9f9f9] rounded-2xl p-6 space-y-4">
             <h3 className="text-lg font-semibold text-black">{copy.nextTitle}</h3>
             <p className="text-sm text-gray-700">{copy.nextCopy}</p>
-            <a
-              href={`/${locale === "es" ? "es/" : ""}sculptra-candidacy`}
-              className="inline-flex text-sm text-[#731a2f] underline underline-offset-4"
-            >
-              {copy.nextCta}
-            </a>
+
+            <div className="flex flex-col gap-2">
+              <a
+                href={`/${locale === "es" ? "es/" : ""}sculptra-candidacy`}
+                className="inline-flex text-sm text-[#731a2f] underline underline-offset-4"
+              >
+                {copy.nextCta}
+              </a>
+
+              <a
+                href={`/${locale === "es" ? "es/" : ""}${COLLAGEN_TIMELINE_SLUG.replace(
+                  /^\//,
+                  ""
+                )}`}
+                className="inline-flex text-sm text-[#731a2f] underline underline-offset-4"
+              >
+                {copy.collagenLinkLabel}
+              </a>
+            </div>
           </div>
         </section>
 
