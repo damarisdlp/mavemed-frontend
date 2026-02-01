@@ -9,309 +9,170 @@ import nextI18NextConfig from "../../next-i18next.config";
 
 const content = {
   en: {
-    title: "Collagen Over Time",
+    title: "Collagen Loss and Rebuilding Timeline",
     subtitle:
-      "Why collagen changes with age, what that looks like in the skin, and what realistic rebuilding timelines can be",
+      "What happens to collagen as we age, what actually stimulates rebuilding, and why results take time",
     intro: [
-      "Collagen is one of the main structural proteins that helps skin stay firm, resilient, and supported.",
-      "As we age, collagen production slows and existing collagen fibers become less organized. This is normal biology, not a personal failure.",
-      "Many treatments, including RF microneedling and collagen biostimulators like Sculptra, aim to support collagen remodeling. The key is understanding that collagen change is gradual, and timelines matter.",
+      "Collagen is frequently mentioned in aesthetic medicine, but it is rarely explained accurately.",
+      "Many treatments are described as collagen stimulating without explaining how collagen changes with age, how slow rebuilding truly is, or why results unfold over months instead of days.",
+      "This page explains how collagen degrades over time, what actually triggers new collagen formation, and what realistic timelines look like for treatments such as RF microneedling, Sculptra, lasers, and ultrasound based therapies.",
     ],
     sections: [
       {
-        title: "What collagen does in the skin",
+        title: "What collagen is and why it matters",
         body: [
-          "Collagen acts like structural support for the dermis, helping the skin resist folding, sagging, and thinning.",
-          "It works alongside elastin, hyaluronic acid, and healthy vascular and barrier function.",
-          "When collagen support declines, common changes include softer facial structure, fine lines that linger, crepey texture, and reduced elasticity.",
+          "Collagen is a structural protein that provides strength, elasticity, and resistance to deformation within the skin.",
+          "It acts as an internal scaffold that supports skin thickness, firmness, texture, and long term integrity.",
+          "Because collagen exists in deeper layers of the skin, true collagen change cannot occur overnight or at the surface level.",
         ],
       },
       {
-        title: "Why collagen declines with age",
+        title: "How collagen changes with age",
         body: [
-          "Collagen change is driven by both intrinsic aging and environmental factors.",
-          "Common contributors include:",
-          "• Slower fibroblast activity, meaning the skin produces collagen less efficiently",
-          "• Ongoing collagen breakdown from inflammation and oxidative stress",
-          "• Sun exposure over time, which accelerates collagen disorganization and degradation",
-          "• Hormonal shifts that can affect skin thickness and repair capacity",
-          "This is why collagen focused treatment planning is usually long term, not one appointment.",
+          "Collagen loss is gradual, cumulative, and often unnoticed in its early stages.",
+          "On average, collagen production begins to decline in the mid to late twenties, accelerates in the thirties and forties, and becomes more clinically apparent in the fifties and beyond.",
+          "This process is influenced by genetics, sun exposure, inflammation, hormonal changes, and overall metabolic health.",
+          "Importantly, collagen loss affects more than wrinkles. It contributes to reduced skin density, loss of support, and decreased tolerance to aesthetic procedures.",
         ],
       },
       {
-        title: "What collagen rebuilding actually means",
+        title: "Why collagen rebuilding takes time",
         body: [
-          "In aesthetic medicine, collagen rebuilding usually means collagen remodeling.",
-          "That includes stimulating new collagen formation and improving the organization of collagen fibers over time.",
-          "This is different from instant volume from gels. Collagen remodeling is slower, more subtle, and more dependent on the patient’s biology and consistency.",
+          "Collagen formation is a biological process, not a cosmetic one.",
+          "After a controlled stimulus, the body must recognize the signal, activate fibroblasts, produce new collagen fibers, and gradually remodel that collagen over time.",
+          "This process unfolds over weeks to months, not days.",
+          "Any treatment promising immediate collagen rebuilding is typically referring to temporary swelling or inflammation rather than true structural change.",
         ],
       },
       {
-        title: "A realistic timeline for visible change",
+        title: "What actually stimulates collagen",
         body: [
-          "Collagen remodeling is not immediate. Even when a treatment triggers collagen signaling quickly, the visible structural change takes time.",
-          "A typical timeline many patients experience looks like this:",
-          "• 0 to 2 weeks, early changes are often swelling or temporary hydration effects",
-          "• 3 to 6 weeks, early improvements may begin in texture and skin resilience",
-          "• 2 to 4 months, collagen changes become more noticeable, especially with series based treatments",
-          "• 4 to 6 months and beyond, results often look more settled and structural, with continued improvement depending on the plan",
-          "Some patients build collagen faster, others more slowly. This is why we avoid promising exact timelines or identical results.",
+          "True collagen stimulation requires controlled injury or thermal signaling at the appropriate depth, followed by adequate recovery time.",
+          "Examples of treatments that may stimulate collagen include RF microneedling, collagen biostimulators such as Sculptra, medical grade laser resurfacing, and focused ultrasound therapies.",
+          "Each modality works through a different biological mechanism and carries its own risk profile, timeline, and ideal candidate criteria.",
         ],
       },
       {
-        title: "Why most collagen plans are series based",
+        title: "General collagen rebuilding timeline",
         body: [
-          "Collagen focused treatments often work best as a series because the stimulus is cumulative.",
-          "Each session supports ongoing remodeling, and spacing allows the skin to respond and recover.",
-          "This is common with RF microneedling series and also with collagen biostimulation protocols that are designed to build gradually.",
+          "While individual responses vary, collagen remodeling generally follows a predictable biological sequence.",
+          "From zero to four weeks, inflammation and early cellular signaling occur without true collagen formation.",
+          "Between four and eight weeks, early collagen production may begin.",
+          "From eight to sixteen weeks, gradual improvements in firmness or texture may become noticeable.",
+          "Between three and six months, collagen remodeling continues and results become more apparent.",
+          "Between six and twelve months, collagen fibers mature and organize, often representing peak structural change.",
+          "This is why collagen focused treatments are typically planned as a series rather than a single session.",
         ],
       },
       {
-        title: "What affects your response to collagen treatments",
+        title: "Why combination treatments are often recommended",
         body: [
-          "Collagen response is influenced by more than the device or injectable alone.",
-          "Key factors include:",
-          "• Age and baseline collagen quality",
-          "• Sun exposure history and current daily protection",
-          "• Smoking or vaping, which can impair repair processes",
-          "• Inflammation, including acne, dermatitis, or uncontrolled skin sensitivity",
-          "• Nutrition, sleep, and overall metabolic health",
-          "• Consistency with aftercare and treatment spacing",
-          "This is why candidacy and planning matter, and why two patients can receive similar treatments with different outcomes.",
+          "Different treatments stimulate collagen in different layers of the skin.",
+          "For example, RF microneedling may improve skin texture and density, while biostimulators like Sculptra support deeper structural collagen.",
+          "When planned conservatively, combination therapy can support more balanced and longer lasting outcomes.",
+          "This layered approach is why many medical treatment plans are staged rather than performed all at once.",
         ],
       },
       {
-        title: "How RF microneedling and biostimulators fit into collagen strategy",
+        title: "Why expectations matter",
         body: [
-          "RF microneedling can support collagen remodeling by delivering controlled energy at specific depths, which can improve texture, pores, and firmness when used appropriately.",
-          "Collagen biostimulators can support longer term structural improvement by triggering gradual collagen formation over time.",
-          "Some patients benefit from combining approaches, but combination therapy should be individualized based on skin type, risk profile, and goals.",
-        ],
-      },
-      {
-        title: "Safety and expectations, what collagen treatments cannot do",
-        body: [
-          "Collagen focused treatments can improve skin quality and structural support, but they do not stop time.",
-          "They also cannot replace:",
-          "• Good sun protection and barrier care",
-          "• Healthy healing capacity",
-          "• Realistic treatment planning",
-          "A conservative plan that protects long term skin health usually delivers better results than aggressive or rushed treatments.",
+          "Understanding collagen timelines protects patients from over treatment, unrealistic expectations, and unnecessary risk.",
+          "Slow, progressive change is often a sign that biology is being respected rather than rushed.",
         ],
       },
     ],
-    nextTitle: "Explore related treatment education",
-    nextCopy:
-      "If you are learning about collagen timelines because you are considering RF microneedling or Sculptra, you can explore those pages next, then book a candidacy assessment to build a plan that fits your skin and goals.",
-    nextLinks: [
-      { label: "Learn about RF microneedling", href: "/learn/sylfirm-x-rf-microneedling" },
-      { label: "Learn about Sculptra", href: "/learn/sculptra-collagen-biostimulator" },
-    ],
-    serviceLinksTitle: "Related services",
-    serviceLinks: [
-      {
-        label: "RF Microneedling (Sylfirm X)",
-        href: "/treatments/sylfirm-rf-microneedling",
-      },
-      {
-        label: "Sculptra Collagen Biostimulator",
-        href: "/treatments/sculptra",
-      },
-    ],
-    closingTitle: "A note on planning",
+    closingTitle: "How this applies to your treatment plan",
     closingCopy: [
-      "Collagen is a long game.",
-      "The best results usually come from a structured plan, consistent spacing, and protecting the skin between sessions.",
-      "Our approach prioritizes medical judgment, conservative planning, and outcomes that look natural over time.",
+      "If you are considering treatments such as RF microneedling or Sculptra, this timeline explains why results build gradually, why multiple sessions may be recommended, and why maintenance matters.",
+      "Collagen focused treatment planning prioritizes safety, long term outcomes, and biological realism.",
     ],
   },
+
   es: {
-    title: "El Colágeno con el Paso del Tiempo",
+    title: "Pérdida y Reconstrucción del Colágeno",
     subtitle:
-      "Por qué el colágeno cambia con la edad, cómo se refleja en la piel, y cuáles son los tiempos realistas para reconstruirlo",
+      "Qué ocurre con el colágeno con la edad, cómo se reconstruye y por qué los resultados toman tiempo",
     intro: [
-      "El colágeno es una de las principales proteínas estructurales que ayudan a que la piel se mantenga firme, resistente y con soporte.",
-      "Con la edad, la producción de colágeno se vuelve más lenta y las fibras existentes se desorganizan. Esto es biología normal, no un error personal.",
-      "Muchos tratamientos, incluyendo RF microneedling y bioestimuladores como Sculptra, buscan apoyar la remodelación del colágeno. La clave es entender que el cambio es gradual y que el tiempo importa.",
+      "El colágeno se menciona con frecuencia en la medicina estética, pero pocas veces se explica de forma clara.",
+      "Muchos tratamientos se describen como estimuladores de colágeno sin explicar cómo se pierde con la edad o por qué su regeneración es lenta.",
+      "Esta página explica cómo cambia el colágeno con el tiempo, qué tratamientos realmente lo estimulan y cuáles son los tiempos realistas de resultados.",
     ],
     sections: [
       {
-        title: "Qué hace el colágeno en la piel",
+        title: "Qué es el colágeno y por qué es importante",
         body: [
-          "El colágeno funciona como soporte estructural en la dermis, ayudando a que la piel resista pliegues, flacidez y adelgazamiento.",
-          "Trabaja junto con elastina, ácido hialurónico, y una barrera cutánea y vascular saludable.",
-          "Cuando disminuye el soporte de colágeno, suelen aparecer cambios como pérdida de estructura, líneas finas más marcadas, textura crepé y menor elasticidad.",
+          "El colágeno es una proteína estructural que da soporte, firmeza y resistencia a la piel.",
+          "Funciona como un andamiaje interno que sostiene el grosor, la textura y la integridad de la piel.",
+          "El colágeno se encuentra en capas profundas, por lo que su regeneración no puede ser inmediata.",
         ],
       },
       {
-        title: "Por qué el colágeno disminuye con la edad",
+        title: "Cómo cambia el colágeno con la edad",
         body: [
-          "El cambio del colágeno depende del envejecimiento interno y también de factores ambientales.",
-          "Contribuyentes comunes incluyen:",
-          "• Menor actividad de fibroblastos, la piel produce colágeno con menos eficiencia",
-          "• Degradación continua por inflamación y estrés oxidativo",
-          "• Exposición solar acumulada, que acelera desorganización y degradación del colágeno",
-          "• Cambios hormonales que pueden afectar grosor y capacidad de reparación",
-          "Por eso los planes enfocados en colágeno suelen ser de mediano a largo plazo, no de una sola cita.",
+          "La pérdida de colágeno es gradual y acumulativa.",
+          "Generalmente comienza a finales de los veinte, se acelera en los treinta y cuarenta, y se vuelve más evidente a partir de los cincuenta.",
+          "Influyen factores como genética, exposición solar, inflamación, hormonas y estilo de vida.",
+          "La pérdida de colágeno no solo produce arrugas, también afecta soporte y densidad cutánea.",
         ],
       },
       {
-        title: "Qué significa realmente reconstruir colágeno",
+        title: "Por qué la reconstrucción toma tiempo",
         body: [
-          "En medicina estética, hablar de reconstrucción suele referirse a remodelación de colágeno.",
-          "Esto incluye estimular formación de colágeno nuevo y mejorar la organización de las fibras con el tiempo.",
-          "Es diferente a volumen inmediato con geles. La remodelación es más lenta, más sutil y depende de la biología y la constancia del paciente.",
+          "La formación de colágeno es un proceso biológico complejo.",
+          "Después de un estímulo, el cuerpo debe activar fibroblastos, producir nuevas fibras y remodelarlas progresivamente.",
+          "Este proceso ocurre en semanas y meses, no en días.",
         ],
       },
       {
-        title: "Un tiempo realista para cambios visibles",
+        title: "Qué tratamientos estimulan colágeno",
         body: [
-          "La remodelación de colágeno no es inmediata. Aunque una terapia active señales rápido, el cambio estructural visible tarda.",
-          "Un patrón común en muchos pacientes se ve así:",
-          "• 0 a 2 semanas, cambios tempranos suelen ser inflamación o efectos temporales de hidratación",
-          "• 3 a 6 semanas, pueden iniciar mejoras en textura y resiliencia",
-          "• 2 a 4 meses, cambios de colágeno se vuelven más notables, especialmente con tratamientos en serie",
-          "• 4 a 6 meses y más, resultados suelen verse más estables y estructurales, con mejora continua según el plan",
-          "Cada persona responde diferente. Por eso evitamos prometer tiempos exactos o resultados idénticos.",
+          "La estimulación real de colágeno requiere señalización térmica o mecánica controlada a la profundidad adecuada.",
+          "Ejemplos incluyen RF microneedling, bioestimuladores como Sculptra, láseres médicos y ultrasonido focalizado.",
+          "Cada tratamiento actúa de manera distinta y con tiempos diferentes.",
         ],
       },
       {
-        title: "Por qué la mayoría de planes son en serie",
+        title: "Línea general de tiempo de reconstrucción",
         body: [
-          "Los tratamientos orientados a colágeno suelen funcionar mejor en serie porque el estímulo es acumulativo.",
-          "Cada sesión apoya remodelación continua, y el espaciamiento permite respuesta y recuperación de la piel.",
-          "Esto es común en protocolos de RF microneedling y también en bioestimulación diseñada para construir gradualmente.",
+          "Aunque varía por persona, existe un patrón general.",
+          "De cero a cuatro semanas, ocurre inflamación y señalización inicial.",
+          "De cuatro a ocho semanas, comienza la formación de colágeno.",
+          "De ocho a dieciséis semanas, aparecen mejoras graduales.",
+          "De tres a seis meses, continúa la remodelación.",
+          "De seis a doce meses, el colágeno madura y se organiza.",
         ],
       },
       {
-        title: "Qué influye en tu respuesta",
+        title: "Por qué se combinan tratamientos",
         body: [
-          "La respuesta no depende solo del dispositivo o del inyectable.",
-          "Factores clave incluyen:",
-          "• Edad y calidad basal del colágeno",
-          "• Historia de sol y protección diaria actual",
-          "• Fumar o vapear, que afecta reparación",
-          "• Inflamación activa, como acné o dermatitis",
-          "• Nutrición, sueño y salud metabólica general",
-          "• Constancia en cuidados posteriores y tiempos entre sesiones",
-          "Por eso la evaluación y la planificación importan, y dos pacientes pueden responder distinto a tratamientos similares.",
+          "Cada tratamiento actúa en capas distintas.",
+          "La combinación bien planificada puede mejorar soporte, textura y durabilidad de resultados.",
         ],
       },
       {
-        title: "Cómo encajan RF microneedling y bioestimuladores en una estrategia",
+        title: "Importancia de expectativas realistas",
         body: [
-          "El RF microneedling puede apoyar remodelación de colágeno al entregar energía controlada a profundidades específicas, mejorando textura, poros y firmeza cuando está indicado.",
-          "Los bioestimuladores pueden apoyar mejora estructural a largo plazo al estimular formación gradual de colágeno.",
-          "En algunos casos se combinan enfoques, pero siempre debe individualizarse según tipo de piel, perfil de riesgo y objetivos.",
-        ],
-      },
-      {
-        title: "Seguridad y expectativas, lo que no pueden hacer",
-        body: [
-          "Los tratamientos de colágeno pueden mejorar calidad y soporte, pero no detienen el tiempo.",
-          "Tampoco reemplazan:",
-          "• Protección solar y cuidado de barrera",
-          "• Capacidad de reparación saludable",
-          "• Planificación realista",
-          "Un plan conservador que proteja la salud cutánea suele dar mejores resultados que tratamientos agresivos o apresurados.",
+          "Entender los tiempos del colágeno ayuda a evitar sobre tratamiento y riesgos innecesarios.",
+          "Los cambios lentos suelen ser los más estables.",
         ],
       },
     ],
-    nextTitle: "Explora educación relacionada",
-    nextCopy:
-      "Si llegaste aquí por RF microneedling o Sculptra, te recomendamos leer esas páginas y después agendar una evaluación para construir un plan alineado a tu piel y objetivos.",
-    nextLinks: [
-      { label: "Conocer RF microneedling", href: "/learn/sylfirm-x-rf-microneedling" },
-      { label: "Conocer Sculptra", href: "/learn/sculptra-collagen-biostimulator" },
-    ],
-    serviceLinksTitle: "Servicios relacionados",
-    serviceLinks: [
-      {
-        label: "Microneedling con RF (Sylfirm X)",
-        href: "/treatments/sylfirm-rf-microneedling",
-      },
-      {
-        label: "Sculptra Bioestimulador de Colágeno",
-        href: "/treatments/sculptra",
-      },
-    ],
-    closingTitle: "Nota sobre planificación",
+    closingTitle: "Cómo se relaciona con tu plan",
     closingCopy: [
-      "El colágeno es un proceso a largo plazo.",
-      "Los mejores resultados suelen venir de un plan estructurado, tiempos consistentes, y protección de la piel entre sesiones.",
-      "Nuestro enfoque prioriza criterio médico, planificación conservadora y resultados naturales con el tiempo.",
+      "Esta información ayuda a entender por qué tratamientos como RF microneedling y Sculptra se planifican en etapas.",
+      "La prioridad es seguridad, resultados realistas y salud cutánea a largo plazo.",
     ],
   },
 };
 
 const slug = "/learn/collagen-loss-and-rebuilding-timeline";
 const BASE_URL = "https://www.mavemedspa.com";
-const BUSINESS_PHONE = "+52-664-207-7675";
-const WHATSAPP_LINK = "https://wa.me/526642077675";
-const BUSINESS_ADDRESS = {
-  streetAddress:
-    "Blvd Gral Rodolfo Sánchez Taboada 10512-Interior 8a, Segundo Piso, Revolución",
-  addressLocality: "Tijuana",
-  addressRegion: "BC",
-  postalCode: "22010",
-  addressCountry: "MX",
-};
 
-export default function CollagenTimelineEducationPage() {
+export default function CollagenTimelinePage() {
   const { locale = "en" } = useRouter();
   const copy = useMemo(() => content[locale] || content.en, [locale]);
   const canonicalPath = locale === "es" ? `/es${slug}` : slug;
   const canonicalUrl = `${BASE_URL}${canonicalPath}`;
-  const ogImage = `${BASE_URL}/collagen.jpg`;
-
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "MedicalBusiness",
-        "@id": `${BASE_URL}/#medicalbusiness`,
-        name: "Mave Medical Spa",
-        url: BASE_URL,
-        image: `${BASE_URL}/logo-mave.png`,
-        telephone: BUSINESS_PHONE,
-        address: { "@type": "PostalAddress", ...BUSINESS_ADDRESS },
-        sameAs: [WHATSAPP_LINK],
-      },
-      {
-        "@type": "WebSite",
-        "@id": `${BASE_URL}/#website`,
-        name: "Mave Medical Spa",
-        url: BASE_URL,
-      },
-      {
-        "@type": "BreadcrumbList",
-        "@id": `${canonicalUrl}#breadcrumbs`,
-        itemListElement: [
-          { "@type": "ListItem", position: 1, name: "Home", item: `${BASE_URL}/` },
-          { "@type": "ListItem", position: 2, name: "Learn", item: `${BASE_URL}/learn` },
-          { "@type": "ListItem", position: 3, name: copy.title, item: canonicalUrl },
-        ],
-      },
-      {
-        "@type": "WebPage",
-        "@id": `${canonicalUrl}#webpage`,
-        url: canonicalUrl,
-        name: `${copy.title} | Mave Medical Spa`,
-        description: copy.subtitle,
-        inLanguage: locale === "es" ? "es" : "en",
-        isPartOf: { "@id": `${BASE_URL}/#website` },
-        publisher: { "@id": `${BASE_URL}/#medicalbusiness` },
-        about: { "@id": `${canonicalUrl}#topic` },
-      },
-      {
-        "@type": "Thing",
-        "@id": `${canonicalUrl}#topic`,
-        name: "Collagen in skin, aging, and remodeling timelines",
-        description:
-          "Educational overview of how collagen changes with age, what that looks like in skin structure, and why collagen focused treatments require gradual timelines and series based planning.",
-      },
-    ],
-  };
 
   return (
     <>
@@ -319,23 +180,6 @@ export default function CollagenTimelineEducationPage() {
         <title>{copy.title} | Mave Medical Spa</title>
         <meta name="description" content={copy.subtitle} />
         <link rel="canonical" href={canonicalUrl} />
-
-        <meta property="og:type" content="article" />
-        <meta property="og:title" content={`${copy.title} | Mave Medical Spa`} />
-        <meta property="og:description" content={copy.subtitle} />
-        <meta property="og:url" content={canonicalUrl} />
-        <meta property="og:image" content={ogImage} />
-        <meta property="og:site_name" content="Mave Medical Spa" />
-
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content={`${copy.title} | Mave Medical Spa`} />
-        <meta name="twitter:description" content={copy.subtitle} />
-        <meta name="twitter:image" content={ogImage} />
-
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-        />
       </Head>
 
       <PromoBanner />
@@ -343,8 +187,10 @@ export default function CollagenTimelineEducationPage() {
 
       <main className="bg-white pt-36 md:pt-40">
         <section className="max-w-5xl mx-auto px-6 py-12">
-          <div className="text-left max-w-3xl">
-            <p className="text-xs uppercase tracking-[0.25em] text-gray-500">Learn</p>
+          <div className="max-w-3xl">
+            <p className="text-xs uppercase tracking-[0.25em] text-gray-500">
+              Learn
+            </p>
             <h1 className="text-3xl md:text-4xl font-serif text-black mt-3">
               {copy.title}
             </h1>
@@ -361,8 +207,10 @@ export default function CollagenTimelineEducationPage() {
         <section className="max-w-5xl mx-auto px-6 pb-12 space-y-10">
           {copy.sections.map((section) => (
             <div key={section.title} className="space-y-3">
-              <h2 className="text-xl font-serif text-black">{section.title}</h2>
-              <div className="space-y-3 text-sm text-gray-700 leading-relaxed whitespace-pre-line">
+              <h2 className="text-xl font-serif text-black">
+                {section.title}
+              </h2>
+              <div className="space-y-3 text-sm text-gray-700 leading-relaxed">
                 {section.body.map((line) => (
                   <p key={line}>{line}</p>
                 ))}
@@ -371,46 +219,12 @@ export default function CollagenTimelineEducationPage() {
           ))}
         </section>
 
-        <section className="max-w-5xl mx-auto px-6 pb-12">
-          <div className="border border-gray-200 bg-[#f9f9f9] rounded-2xl p-6 space-y-4">
-            <h3 className="text-lg font-semibold text-black">{copy.nextTitle}</h3>
-            <p className="text-sm text-gray-700">{copy.nextCopy}</p>
-
-            <div className="flex flex-col gap-2">
-              {(copy.nextLinks || []).map((link) => (
-                <a
-                  key={link.href}
-                  href={`/${locale === "es" ? "es/" : ""}${link.href.replace(/^\//, "")}`}
-                  className="inline-flex text-sm text-[#731a2f] underline underline-offset-4"
-                >
-                  {link.label}
-                </a>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        <section className="max-w-5xl mx-auto px-6 pb-12">
-          <div className="border border-gray-200 bg-[#f9f9f9] rounded-2xl p-6 space-y-3">
-            <h3 className="text-lg font-semibold text-black">{copy.serviceLinksTitle}</h3>
-            <div className="flex flex-col gap-2">
-              {(copy.serviceLinks || []).map((link) => (
-                <a
-                  key={link.href}
-                  href={`/${locale === "es" ? "es/" : ""}${link.href.replace(/^\//, "")}`}
-                  className="inline-flex text-sm text-[#731a2f] underline underline-offset-4"
-                >
-                  {link.label}
-                </a>
-              ))}
-            </div>
-          </div>
-        </section>
-
         <section className="max-w-5xl mx-auto px-6 pb-16">
           <div className="border-t border-gray-200 pt-8 space-y-3">
-            <h3 className="text-lg font-semibold text-black">{copy.closingTitle}</h3>
-            <div className="space-y-3 text-sm text-gray-700 leading-relaxed whitespace-pre-line">
+            <h3 className="text-lg font-semibold text-black">
+              {copy.closingTitle}
+            </h3>
+            <div className="space-y-3 text-sm text-gray-700 leading-relaxed">
               {copy.closingCopy.map((line) => (
                 <p key={line}>{line}</p>
               ))}
