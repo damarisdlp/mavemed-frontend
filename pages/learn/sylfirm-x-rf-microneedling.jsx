@@ -14,7 +14,7 @@ const content = {
     intro: [
       "RF microneedling has become widely discussed in aesthetic medicine, but not all RF microneedling systems interact with the skin in the same way.",
       "Sylfirm X is an advanced RF microneedling platform designed to address concerns such as acne scarring, uneven skin texture, enlarged pores, early skin laxity, and pigmentation disorders, including melasma, when clinically appropriate.",
-      "This page explains how Sylfirm X differs, who it may be suitable for, and why medical evaluation is essential before treatment.",
+      "RF microneedling supports collagen remodeling, but collagen change is gradual. If you want to understand what collagen loss looks like with age and why results take time, visit our collagen timeline guide linked below.",
     ],
     sections: [
       {
@@ -43,6 +43,7 @@ const content = {
           "• Reduced thermal stress in pigmentation-prone skin",
           "• More controlled collagen stimulation",
           "This level of adaptability is not universal across RF microneedling platforms.",
+          "For a deeper explanation of collagen remodeling timelines, see our collagen timeline guide.",
         ],
       },
       {
@@ -113,6 +114,7 @@ const content = {
           "• Biological response of the skin",
           "• Whether combination therapies are recommended",
           "Collagen remodeling is gradual, and results continue to evolve over time.",
+          "If you want a clearer month by month expectation, review our collagen timeline guide.",
         ],
       },
       {
@@ -129,8 +131,12 @@ const content = {
     ],
     nextTitle: "From education to next steps",
     nextCopy:
-      "If you are exploring RF microneedling and want to understand whether Sylfirm X is appropriate for your skin, the next step is a candidacy assessment reviewed by a medical team.",
+      "If you are exploring RF microneedling and want to understand whether Sylfirm X is appropriate for your skin, the next step is a candidacy assessment reviewed by a medical team. You can also review collagen timelines to understand why results build gradually.",
     nextCta: "Begin RF microneedling candidacy assessment",
+    collagenCardTitle: "Collagen education",
+    collagenCardCopy:
+      "Collagen remodeling is gradual. If you want to understand timelines and why results build over months, read our collagen timeline guide.",
+    collagenLinkLabel: "Read the collagen timeline guide",
     closingTitle: "A note on expectations",
     closingCopy: [
       "Advanced technology can support better outcomes, but it does not replace:",
@@ -140,13 +146,14 @@ const content = {
       "Our approach prioritizes safety, realistic outcomes, and ethical use of technology.",
     ],
   },
+
   es: {
     title: "Sylfirm X RF Microneedling",
     subtitle: "Un enfoque médico para la remodelación de la piel, textura y pigmentación",
     intro: [
       "El RF microneedling se ha popularizado ampliamente en la medicina estética, sin embargo, no todos los dispositivos de RF microneedling actúan de la misma manera en la piel.",
       "Sylfirm X es una plataforma avanzada de RF microneedling diseñada para abordar preocupaciones como cicatrices de acné, textura irregular, poros dilatados, flacidez leve a moderada y trastornos de pigmentación, incluido el melasma, cuando está clínicamente indicado.",
-      "Esta página explica qué diferencia a Sylfirm X, para quién puede ser adecuado, y por qué la evaluación médica es fundamental.",
+      "El RF microneedling apoya la remodelación del colágeno, pero el colágeno cambia de forma gradual. Si quieres entender cómo se pierde colágeno con la edad y por qué los resultados toman tiempo, visita nuestra guía de línea de tiempo del colágeno enlazada abajo.",
     ],
     sections: [
       {
@@ -174,6 +181,7 @@ const content = {
           "• Reducir estrés térmico en pieles con tendencia a pigmentación",
           "• Estimular colágeno de manera más controlada",
           "Este nivel de precisión no está presente en todos los sistemas de RF microneedling.",
+          "Para una explicación más clara de tiempos de remodelación, revisa nuestra guía de línea de tiempo del colágeno.",
         ],
       },
       {
@@ -238,6 +246,7 @@ const content = {
           "• Respuesta biológica de la piel",
           "• Uso de terapias combinadas",
           "La remodelación del colágeno es progresiva y continúa con el tiempo.",
+          "Si quieres expectativas más claras por mes, revisa nuestra guía de línea de tiempo del colágeno.",
         ],
       },
       {
@@ -253,8 +262,12 @@ const content = {
     ],
     nextTitle: "Siguiente paso",
     nextCopy:
-      "Si estás considerando RF microneedling y deseas saber si Sylfirm X es adecuado para tu piel, el siguiente paso es una evaluación de candidatura revisada por un equipo médico.",
+      "Si estás considerando RF microneedling y deseas saber si Sylfirm X es adecuado para tu piel, el siguiente paso es una evaluación de candidatura revisada por un equipo médico. También puedes revisar los tiempos del colágeno para entender por qué los resultados se construyen gradualmente.",
     nextCta: "Iniciar evaluación de candidatura para RF microneedling",
+    collagenCardTitle: "Educación sobre colágeno",
+    collagenCardCopy:
+      "La remodelación del colágeno es gradual. Si quieres entender los tiempos y por qué los resultados se construyen en meses, revisa la guía de colágeno.",
+    collagenLinkLabel: "Leer la guía de línea de tiempo del colágeno",
     closingTitle: "Nota sobre expectativas",
     closingCopy: [
       "La tecnología avanzada puede apoyar mejores resultados, pero no reemplaza:",
@@ -271,12 +284,15 @@ const BASE_URL = "https://www.mavemedspa.com";
 const BUSINESS_PHONE = "+52-664-207-7675";
 const WHATSAPP_LINK = "https://wa.me/526642077675";
 const BUSINESS_ADDRESS = {
-  streetAddress: "Blvd Gral Rodolfo Sánchez Taboada 10512-Interior 8a, Segundo Piso, Revolución",
+  streetAddress:
+    "Blvd Gral Rodolfo Sánchez Taboada 10512-Interior 8a, Segundo Piso, Revolución",
   addressLocality: "Tijuana",
   addressRegion: "BC",
   postalCode: "22010",
   addressCountry: "MX",
 };
+
+const COLLAGEN_TIMELINE_SLUG = "/learn/collagen-loss-and-rebuilding-timeline";
 
 export default function SylfirmXEducationPage() {
   const { locale = "en" } = useRouter();
@@ -284,6 +300,7 @@ export default function SylfirmXEducationPage() {
   const canonicalPath = locale === "es" ? `/es${slug}` : slug;
   const canonicalUrl = `${BASE_URL}${canonicalPath}`;
   const ogImage = `${BASE_URL}/sylfirmx2.jpg`;
+
   const jsonLd = {
     "@context": "https://schema.org",
     "@graph": [
@@ -395,19 +412,45 @@ export default function SylfirmXEducationPage() {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </Head>
+
       <PromoBanner />
       <Header />
+
       <main className="bg-white pt-36 md:pt-40">
         <section className="max-w-5xl mx-auto px-6 py-12">
           <div className="text-left max-w-3xl">
             <p className="text-xs uppercase tracking-[0.25em] text-gray-500">Learn</p>
-            <h1 className="text-3xl md:text-4xl font-serif text-black mt-3">{copy.title}</h1>
+            <h1 className="text-3xl md:text-4xl font-serif text-black mt-3">
+              {copy.title}
+            </h1>
             <p className="text-base text-gray-700 mt-3">{copy.subtitle}</p>
           </div>
+
           <div className="mt-6 space-y-4 text-sm text-gray-700 leading-relaxed">
             {copy.intro.map((line) => (
               <p key={line}>{line}</p>
             ))}
+          </div>
+
+          {/* Cross link card, placed near the top for better UX and internal linking */}
+          <div className="mt-8 max-w-3xl">
+            <div className="border border-gray-200 bg-[#f9f9f9] rounded-2xl p-5 space-y-2">
+              <p className="text-xs uppercase tracking-[0.25em] text-gray-500">
+                {copy.collagenCardTitle}
+              </p>
+              <p className="text-sm text-gray-700">
+                {copy.collagenCardCopy}
+              </p>
+              <a
+                href={`/${locale === "es" ? "es/" : ""}${COLLAGEN_TIMELINE_SLUG.replace(
+                  /^\//,
+                  ""
+                )}`}
+                className="inline-flex text-sm text-[#731a2f] underline underline-offset-4"
+              >
+                {copy.collagenLinkLabel}
+              </a>
+            </div>
           </div>
         </section>
 
@@ -425,15 +468,28 @@ export default function SylfirmXEducationPage() {
         </section>
 
         <section className="max-w-5xl mx-auto px-6 pb-12">
-          <div className="border border-gray-200 bg-[#f9f9f9] rounded-2xl p-6 space-y-3">
+          <div className="border border-gray-200 bg-[#f9f9f9] rounded-2xl p-6 space-y-4">
             <h3 className="text-lg font-semibold text-black">{copy.nextTitle}</h3>
             <p className="text-sm text-gray-700">{copy.nextCopy}</p>
-            <a
-              href={`/${locale === "es" ? "es/" : ""}rf-microneedling-candidacy`}
-              className="inline-flex text-sm text-[#731a2f] underline underline-offset-4"
-            >
-              {copy.nextCta}
-            </a>
+
+            <div className="flex flex-col gap-2">
+              <a
+                href={`/${locale === "es" ? "es/" : ""}rf-microneedling-candidacy`}
+                className="inline-flex text-sm text-[#731a2f] underline underline-offset-4"
+              >
+                {copy.nextCta}
+              </a>
+
+              <a
+                href={`/${locale === "es" ? "es/" : ""}${COLLAGEN_TIMELINE_SLUG.replace(
+                  /^\//,
+                  ""
+                )}`}
+                className="inline-flex text-sm text-[#731a2f] underline underline-offset-4"
+              >
+                {copy.collagenLinkLabel}
+              </a>
+            </div>
           </div>
         </section>
 
@@ -448,6 +504,7 @@ export default function SylfirmXEducationPage() {
           </div>
         </section>
       </main>
+
       <Footer />
     </>
   );
