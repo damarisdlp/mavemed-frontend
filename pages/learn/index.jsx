@@ -33,6 +33,18 @@ const content = {
         ],
       },
       {
+        title: "Collagen Education",
+        description: "How collagen changes with age and how remodeling timelines work.",
+        items: [
+          {
+            title: "Collagen Over Time",
+            excerpt:
+              "Why collagen changes with age, what that looks like in skin, and realistic rebuilding timelines.",
+            href: "/learn/collagen-loss-and-rebuilding-timeline",
+          },
+        ],
+      },
+      {
         title: "Collagen Biostimulation",
         description: "Collagen rebuilding, structural support, and long term outcomes.",
         items: [
@@ -67,6 +79,18 @@ const content = {
             excerpt:
               "Qué comparar entre plataformas, contexto de seguridad FDA y elección del dispositivo.",
             href: "/learn/sylfirm-x-vs-other-rf-microneedling",
+          },
+        ],
+      },
+      {
+        title: "Educación sobre colágeno",
+        description: "Cómo cambia el colágeno con la edad y los tiempos de remodelación.",
+        items: [
+          {
+            title: "El Colágeno con el Paso del Tiempo",
+            excerpt:
+              "Por qué cambia el colágeno, cómo se refleja en la piel y los tiempos realistas.",
+            href: "/learn/collagen-loss-and-rebuilding-timeline",
           },
         ],
       },
