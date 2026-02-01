@@ -27,8 +27,24 @@ const content = {
     planCardCopy:
       "If you want a structured, staged collagen rebuilding plan, we can map a conservative approach using Sculptra, RF microneedling, and other modalities when appropriate.",
     planCardCta: "Message us about a collagen rebuilding plan",
+    treatmentLinkLabel: "View the Sculptra treatment page",
     planInquiryPrefill:
       "Hi Mave, I’m interested in a collagen rebuilding treatment plan with Sculptra. Can you share options and pricing?",
+    videosTitle: "Video explainer",
+    videosIntro:
+      "This Sculptra mechanism video is useful for understanding the biology behind gradual collagen change.",
+    videoItems: [
+      {
+        id: "XETrgeV1x2c",
+        title: "Sculptra mechanism overview",
+        summary: [
+          "Reviews intrinsic and extrinsic skin aging, and explains how collagen quantity and quality decline over time.",
+          "Describes Sculptra as a PLLA biostimulator that triggers a controlled fibroblast response and gradual neocollagenesis in the dermis.",
+          "Clarifies why early fullness can fade in 24 to 48 hours, and why meaningful results are expected progressively across follow-up months.",
+          "Presents manufacturer positioning around gradual, natural-looking support that may last up to about 25 months after the final session.",
+        ],
+      },
+    ],
 
     sections: [
       {
@@ -222,8 +238,24 @@ const content = {
     planCardCopy:
       "Si quieres un plan estructurado y por etapas, podemos mapear un enfoque conservador usando Sculptra, RF microneedling y otras modalidades cuando sea apropiado.",
     planCardCta: "Escríbenos sobre un plan de colágeno",
+    treatmentLinkLabel: "Ver la página del tratamiento Sculptra",
     planInquiryPrefill:
       "Hola Mave, me interesa un plan de reconstrucción de colágeno con Sculptra. Me pueden compartir opciones y precios?",
+    videosTitle: "Video explicativo",
+    videosIntro:
+      "Este video sobre el mecanismo de Sculptra ayuda a entender la biología del cambio gradual del colágeno.",
+    videoItems: [
+      {
+        id: "XETrgeV1x2c",
+        title: "Resumen del mecanismo de Sculptra",
+        summary: [
+          "Explica envejecimiento intrínseco y extrínseco de la piel, y cómo disminuyen cantidad y calidad del colágeno con el tiempo.",
+          "Describe Sculptra como bioestimulador de PLLA que induce una respuesta controlada de fibroblastos y neocolagénesis gradual en la dermis.",
+          "Aclara por qué el volumen inicial puede disminuir en 24 a 48 horas y por qué los resultados reales se observan de forma progresiva en los meses siguientes.",
+          "Presenta el posicionamiento del fabricante sobre soporte gradual y natural que puede durar hasta cerca de 25 meses tras la sesión final.",
+        ],
+      },
+    ],
 
     sections: [
       {
@@ -413,6 +445,7 @@ const BUSINESS_ADDRESS = {
 };
 
 const COLLAGEN_TIMELINE_SLUG = "/learn/collagen-loss-and-rebuilding-timeline";
+const SCULPTRA_TREATMENT_SLUG = "/treatments/sculptra";
 
 function BoldText({ text }) {
   const parts = text.split("**");
@@ -576,13 +609,57 @@ export default function SculptraEducationPage() {
                 {copy.planCardTitle}
               </p>
               <p className="text-sm text-gray-700">{copy.planCardCopy}</p>
-              <a
-                href={`${WHATSAPP_LINK}?text=${encodeURIComponent(copy.planInquiryPrefill)}`}
-                className="inline-flex text-sm text-[#731a2f] underline underline-offset-4"
-              >
-                {copy.planCardCta}
-              </a>
+              <div className="flex flex-col gap-2">
+                <a
+                  href={`${WHATSAPP_LINK}?text=${encodeURIComponent(copy.planInquiryPrefill)}`}
+                  className="inline-flex text-sm text-[#731a2f] underline underline-offset-4"
+                >
+                  {copy.planCardCta}
+                </a>
+                <a
+                  href={`/${locale === "es" ? "es/" : ""}${SCULPTRA_TREATMENT_SLUG.replace(
+                    /^\//,
+                    ""
+                  )}`}
+                  className="inline-flex text-sm text-[#731a2f] underline underline-offset-4"
+                >
+                  {copy.treatmentLinkLabel}
+                </a>
+              </div>
             </div>
+          </div>
+        </section>
+
+        <section className="max-w-5xl mx-auto px-6 pb-12 space-y-4">
+          <div className="max-w-3xl">
+            <h2 className="text-2xl font-serif text-black">{copy.videosTitle}</h2>
+            <p className="text-sm text-gray-700 mt-2">{copy.videosIntro}</p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-6">
+            {(copy.videoItems || []).map((video) => (
+              <article
+                key={video.id}
+                className="border border-gray-200 bg-[#f9f9f9] rounded-2xl p-4 space-y-3"
+              >
+                <div className="aspect-video overflow-hidden rounded-xl bg-black">
+                  <iframe
+                    src={`https://www.youtube-nocookie.com/embed/${video.id}`}
+                    title={video.title}
+                    className="w-full h-full"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerPolicy="strict-origin-when-cross-origin"
+                    allowFullScreen
+                  />
+                </div>
+                <h3 className="text-base font-semibold text-black leading-snug">{video.title}</h3>
+                <ul className="list-disc pl-5 space-y-1 text-sm text-gray-700">
+                  {(video.summary || []).map((line) => (
+                    <li key={line}>{line}</li>
+                  ))}
+                </ul>
+              </article>
+            ))}
           </div>
         </section>
 
