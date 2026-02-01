@@ -116,6 +116,13 @@ const content = {
     collagenCardTitle: "Collagen education",
     collagenCardCopy:
       "Collagen remodeling is gradual. If you want to understand timelines and why results build over months, read our collagen timeline guide.",
+    serviceLinksTitle: "Related services",
+    serviceLinks: [
+      {
+        label: "Sculptra Collagen Biostimulator",
+        href: "/treatments/sculptra",
+      },
+    ],
     collagenLinkLabel: "Read the collagen timeline guide",
     closingTitle: "A note on safety and ethics",
     closingCopy: [
@@ -236,6 +243,13 @@ const content = {
     collagenCardTitle: "Educación sobre colágeno",
     collagenCardCopy:
       "La remodelación del colágeno es gradual. Si quieres entender los tiempos y por qué los resultados se construyen en meses, revisa la guía de colágeno.",
+    serviceLinksTitle: "Servicios relacionados",
+    serviceLinks: [
+      {
+        label: "Sculptra Bioestimulador de Colágeno",
+        href: "/treatments/sculptra",
+      },
+    ],
     collagenLinkLabel: "Leer la guía de línea de tiempo del colágeno",
     closingTitle: "Nota sobre seguridad y ética",
     closingCopy: [
@@ -439,6 +453,23 @@ export default function SculptraEducationPage() {
               >
                 {copy.collagenLinkLabel}
               </a>
+            </div>
+          </div>
+        </section>
+
+        <section className="max-w-5xl mx-auto px-6 pb-12">
+          <div className="border border-gray-200 bg-[#f9f9f9] rounded-2xl p-6 space-y-3">
+            <h3 className="text-lg font-semibold text-black">{copy.serviceLinksTitle}</h3>
+            <div className="flex flex-col gap-2">
+              {(copy.serviceLinks || []).map((link) => (
+                <a
+                  key={link.href}
+                  href={`/${locale === "es" ? "es/" : ""}${link.href.replace(/^\//, "")}`}
+                  className="inline-flex text-sm text-[#731a2f] underline underline-offset-4"
+                >
+                  {link.label}
+                </a>
+              ))}
             </div>
           </div>
         </section>
