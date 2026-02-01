@@ -96,6 +96,13 @@ const content = {
     ],
     fdaLinkLabel: "Read the FDA safety communication on RF microneedling",
     collagenLinkLabel: "Learn about collagen loss and the timeline to rebuild collagen",
+    serviceLinksTitle: "Related services",
+    serviceLinks: [
+      {
+        label: "RF Microneedling (Sylfirm X)",
+        href: "/treatments/sylfirm-rf-microneedling",
+      },
+    ],
     closingTitle: "A note on safety",
     closingCopy: [
       "RF microneedling can be valuable when it is clinically appropriate, conservatively planned, and performed by trained providers.",
@@ -185,6 +192,13 @@ const content = {
     ],
     fdaLinkLabel: "Leer el comunicado de seguridad de la FDA sobre RF microneedling",
     collagenLinkLabel: "Aprender sobre pérdida de colágeno y el tiempo para reconstruirlo",
+    serviceLinksTitle: "Servicios relacionados",
+    serviceLinks: [
+      {
+        label: "Microneedling con RF (Sylfirm X)",
+        href: "/treatments/sylfirm-rf-microneedling",
+      },
+    ],
     closingTitle: "Nota sobre seguridad",
     closingCopy: [
       "El RF microneedling puede ser valioso cuando está indicado, se planifica de forma conservadora, y se realiza por personal entrenado.",
@@ -346,6 +360,23 @@ export default function RFMicroneedlingComparisonPage() {
                   {copy.collagenLinkLabel}
                 </a>
               </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="max-w-5xl mx-auto px-6 pb-12">
+          <div className="border border-gray-200 bg-[#f9f9f9] rounded-2xl p-6 space-y-3">
+            <h3 className="text-lg font-semibold text-black">{copy.serviceLinksTitle}</h3>
+            <div className="flex flex-col gap-2">
+              {(copy.serviceLinks || []).map((link) => (
+                <a
+                  key={link.href}
+                  href={`/${locale === "es" ? "es/" : ""}${link.href.replace(/^\//, "")}`}
+                  className="inline-flex text-sm text-[#731a2f] underline underline-offset-4"
+                >
+                  {link.label}
+                </a>
+              ))}
             </div>
           </div>
         </section>
