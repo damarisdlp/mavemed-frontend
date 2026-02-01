@@ -530,17 +530,31 @@ export default function TreatmentCandidacyForm({
         <section className="max-w-6xl mx-auto px-6 pb-10 grid md:grid-cols-[1.05fr_1.25fr] gap-10">
           <div className="space-y-6">
             <div>
-              <h2 className="text-xl font-serif text-black mb-2">{copy.sectionFor}</h2>
+              <h2 id="who-this-is-for" className="text-xl font-serif text-black mb-2">
+                {copy.sectionFor}
+              </h2>
               <ul className="list-disc list-outside pl-5 text-gray-700 text-sm space-y-1">
-                {copy.forList.map((item) => (
-                  <li key={item}>{item}</li>
-                ))}
+                {copy.forList.map((item) => {
+                  const lower = String(item).toLowerCase();
+                  const anchorId = lower.includes("acne") || lower.includes("acné")
+                    ? "acne-scars"
+                    : lower.includes("laxity") || lower.includes("flacidez") || lower.includes("tightening")
+                    ? "skin-tightening"
+                    : undefined;
+                  return (
+                    <li key={item} id={anchorId}>
+                      {item}
+                    </li>
+                  );
+                })}
               </ul>
               <p className="text-sm text-gray-600 mt-3">{copy.forNote}</p>
             </div>
 
             <div>
-              <h2 className="text-xl font-serif text-black mb-2">{copy.sectionHow}</h2>
+              <h2 id="what-happens-next" className="text-xl font-serif text-black mb-2">
+                {copy.sectionHow}
+              </h2>
               <ol className="list-decimal list-outside pl-5 text-gray-700 text-sm space-y-1">
                 {copy.howSteps.map((step) => (
                   <li key={step}>{step}</li>
@@ -551,7 +565,12 @@ export default function TreatmentCandidacyForm({
 
             {showDeviceSection ? (
               <div>
-                <h2 className="text-xl font-serif text-black mb-2">{copy.sectionDeviceTitle}</h2>
+                <h2
+                  id="why-device-choice-matters"
+                  className="text-xl font-serif text-black mb-2"
+                >
+                  {copy.sectionDeviceTitle}
+                </h2>
                 <p className="text-sm text-gray-700">{copy.sectionDeviceCopy}</p>
               </div>
             ) : null}
