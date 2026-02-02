@@ -4,7 +4,7 @@
     "serviceId": "svc_co2_laser",
     "nameKey": "opt.co2.face",
     "price": {
-      "amount": 550,
+      "amount": 595,
       "currency": "USD"
     },
     "isOptionPromoActive": false,
@@ -18,7 +18,7 @@
     "serviceId": "svc_co2_laser",
     "nameKey": "opt.co2.neck",
     "price": {
-      "amount": 385,
+      "amount": 420,
       "currency": "USD"
     },
     "isOptionPromoActive": false,
@@ -32,7 +32,7 @@
     "serviceId": "svc_co2_laser",
     "nameKey": "opt.co2.decollete",
     "price": {
-      "amount": 315,
+      "amount": 345,
       "currency": "USD"
     },
     "isOptionPromoActive": false,
@@ -46,7 +46,7 @@
     "serviceId": "svc_co2_laser",
     "nameKey": "opt.co2.chest",
     "price": {
-      "amount": 400,
+      "amount": 440,
       "currency": "USD"
     },
     "isOptionPromoActive": false,
@@ -62,7 +62,7 @@
     "serviceId": "svc_co2_laser",
     "nameKey": "opt.co2.face_neck",
     "price": {
-      "amount": 650,
+      "amount": 710,
       "currency": "USD"
     },
     "isOptionPromoActive": false,
@@ -76,7 +76,7 @@
     "serviceId": "svc_co2_laser",
     "nameKey": "opt.co2.face_neck_decollete",
     "price": {
-      "amount": 850,
+      "amount": 925,
       "currency": "USD"
     },
     "isOptionPromoActive": false,
@@ -92,7 +92,7 @@
     "serviceId": "svc_co2_laser",
     "nameKey": "opt.co2.face_neck_decollete_chest",
     "price": {
-      "amount": 950,
+      "amount": 1035,
       "currency": "USD"
     },
     "isOptionPromoActive": false,
@@ -108,7 +108,7 @@
     "serviceId": "svc_co2_laser",
     "nameKey": "opt.co2.hands",
     "price": {
-      "amount": 300,
+      "amount": 330,
       "currency": "USD"
     },
     "isOptionPromoActive": false,
@@ -122,7 +122,7 @@
     "serviceId": "svc_co2_laser",
     "nameKey": "opt.co2.under_eye",
     "price": {
-      "amount": 250,
+      "amount": 275,
       "currency": "USD"
     },
     "isOptionPromoActive": false,
@@ -138,7 +138,7 @@
     "serviceId": "svc_co2_laser",
     "nameKey": "opt.co2.small_zone",
     "price": {
-      "amount": 325,
+      "amount": 355,
       "currency": "USD"
     },
     "isOptionPromoActive": false,
@@ -154,7 +154,7 @@
     "serviceId": "svc_co2_laser",
     "nameKey": "opt.co2.medium_zone",
     "price": {
-      "amount": 675,
+      "amount": 735,
       "currency": "USD"
     },
     "isOptionPromoActive": false,
@@ -170,7 +170,7 @@
     "serviceId": "svc_co2_laser",
     "nameKey": "opt.co2.large_zone",
     "price": {
-      "amount": 1275,
+      "amount": 1395,
       "currency": "USD"
     },
     "isOptionPromoActive": false,
