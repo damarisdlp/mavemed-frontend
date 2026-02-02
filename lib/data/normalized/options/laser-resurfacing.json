@@ -186,7 +186,7 @@
     "serviceId": "svc_ipl",
     "nameKey": "opt.ipl.face",
     "price": {
-      "amount": 700,
+      "amount": 715,
       "currency": "MXN"
     },
     "isOptionPromoActive": false,
@@ -200,7 +200,7 @@
     "serviceId": "svc_ipl",
     "nameKey": "opt.ipl.neck",
     "price": {
-      "amount": 700,
+      "amount": 715,
       "currency": "MXN"
     },
     "isOptionPromoActive": false,
@@ -214,7 +214,7 @@
     "serviceId": "svc_ipl",
     "nameKey": "opt.ipl.decollete",
     "price": {
-      "amount": 700,
+      "amount": 715,
       "currency": "MXN"
     },
     "isOptionPromoActive": false,
@@ -228,7 +228,7 @@
     "serviceId": "svc_ipl",
     "nameKey": "opt.ipl.chest",
     "price": {
-      "amount": 700,
+      "amount": 715,
       "currency": "MXN"
     },
     "isOptionPromoActive": false,
@@ -242,7 +242,7 @@
     "serviceId": "svc_ipl",
     "nameKey": "opt.ipl.face_neck",
     "price": {
-      "amount": 1400,
+      "amount": 1395,
       "currency": "MXN"
     },
     "isOptionPromoActive": false,
@@ -256,7 +256,7 @@
     "serviceId": "svc_ipl",
     "nameKey": "opt.ipl.face_neck_decollete",
     "price": {
-      "amount": 2100,
+      "amount": 2125,
       "currency": "MXN"
     },
     "isOptionPromoActive": false,
@@ -284,7 +284,7 @@
     "serviceId": "svc_ipl",
     "nameKey": "opt.ipl.hands",
     "price": {
-      "amount": 650,
+      "amount": 665,
       "currency": "MXN"
     },
     "isOptionPromoActive": false,
@@ -298,7 +298,7 @@
     "serviceId": "svc_ipl",
     "nameKey": "opt.ipl.legs",
     "price": {
-      "amount": 3450,
+      "amount": 3485,
       "currency": "MXN"
     },
     "isOptionPromoActive": false,
@@ -312,7 +312,7 @@
     "serviceId": "svc_ipl",
     "nameKey": "opt.ipl.hands_legs",
     "price": {
-      "amount": 4100,
+      "amount": 4165,
       "currency": "MXN"
     },
     "isOptionPromoActive": false,
@@ -326,7 +326,7 @@
     "serviceId": "svc_ipl",
     "nameKey": "opt.ipl.small_zone",
     "price": {
-      "amount": 675,
+      "amount": 680,
       "currency": "MXN"
     },
     "isOptionPromoActive": false,
@@ -342,7 +342,7 @@
     "serviceId": "svc_ipl",
     "nameKey": "opt.ipl.medium_zone",
     "price": {
-      "amount": 1565,
+      "amount": 1615,
       "currency": "MXN"
     },
     "isOptionPromoActive": false,
@@ -358,7 +358,7 @@
     "serviceId": "svc_ipl",
     "nameKey": "opt.ipl.large_zone",
     "price": {
-      "amount": 3450,
+      "amount": 3485,
       "currency": "MXN"
     },
     "isOptionPromoActive": false,
@@ -374,7 +374,7 @@
     "serviceId": "svc_laser_hair_removal",
     "nameKey": "opt.laser_hair.full_face",
     "price": {
-      "amount": 75,
+      "amount": 25,
       "currency": "USD"
     },
     "isOptionPromoActive": false,
@@ -388,7 +388,7 @@
     "serviceId": "svc_laser_hair_removal",
     "nameKey": "opt.laser_hair.neck",
     "price": {
-      "amount": 45,
+      "amount": 15,
       "currency": "USD"
     },
     "isOptionPromoActive": false,
@@ -402,7 +402,7 @@
     "serviceId": "svc_laser_hair_removal",
     "nameKey": "opt.laser_hair.chest",
     "price": {
-      "amount": 95,
+      "amount": 25,
       "currency": "USD"
     },
     "isOptionPromoActive": false,
@@ -416,7 +416,7 @@
     "serviceId": "svc_laser_hair_removal",
     "nameKey": "opt.laser_hair.full_arms",
     "price": {
-      "amount": 125,
+      "amount": 30,
       "currency": "USD"
     },
     "isOptionPromoActive": false,
@@ -430,7 +430,7 @@
     "serviceId": "svc_laser_hair_removal",
     "nameKey": "opt.laser_hair.abdomen",
     "price": {
-      "amount": 95,
+      "amount": 25,
       "currency": "USD"
     },
     "isOptionPromoActive": false,
@@ -444,7 +444,7 @@
     "serviceId": "svc_laser_hair_removal",
     "nameKey": "opt.laser_hair.shoulders",
     "price": {
-      "amount": 55,
+      "amount": 20,
       "currency": "USD"
     },
     "isOptionPromoActive": false,
@@ -458,7 +458,7 @@
     "serviceId": "svc_laser_hair_removal",
     "nameKey": "opt.laser_hair.underarms",
     "price": {
-      "amount": 40,
+      "amount": 10,
       "currency": "USD"
     },
     "isOptionPromoActive": false,
@@ -472,7 +472,7 @@
     "serviceId": "svc_laser_hair_removal",
     "nameKey": "opt.laser_hair.full_back",
     "price": {
-      "amount": 160,
+      "amount": 40,
       "currency": "USD"
     },
     "isOptionPromoActive": false,
@@ -486,7 +486,7 @@
     "serviceId": "svc_laser_hair_removal",
     "nameKey": "opt.laser_hair.bikini",
     "price": {
-      "amount": 35,
+      "amount": 15,
       "currency": "USD"
     },
     "isOptionPromoActive": false,
@@ -500,7 +500,7 @@
     "serviceId": "svc_laser_hair_removal",
     "nameKey": "opt.laser_hair.brazilian",
     "price": {
-      "amount": 110,
+      "amount": 30,
       "currency": "USD"
     },
     "isOptionPromoActive": false,
@@ -514,7 +514,7 @@
     "serviceId": "svc_laser_hair_removal",
     "nameKey": "opt.laser_hair.glutes",
     "price": {
-      "amount": 65,
+      "amount": 20,
       "currency": "USD"
     },
     "isOptionPromoActive": false,
@@ -528,7 +528,7 @@
     "serviceId": "svc_laser_hair_removal",
     "nameKey": "opt.laser_hair.thighs",
     "price": {
-      "amount": 110,
+      "amount": 25,
       "currency": "USD"
     },
     "isOptionPromoActive": false,
@@ -542,7 +542,7 @@
     "serviceId": "svc_laser_hair_removal",
     "nameKey": "opt.laser_hair.lower_legs",
     "price": {
-      "amount": 105,
+      "amount": 25,
       "currency": "USD"
     },
     "isOptionPromoActive": false,
@@ -556,7 +556,7 @@
     "serviceId": "svc_laser_hair_removal",
     "nameKey": "opt.laser_hair.full_legs",
     "price": {
-      "amount": 185,
+      "amount": 40,
       "currency": "USD"
     },
     "isOptionPromoActive": false,
@@ -570,7 +570,7 @@
     "serviceId": "svc_laser_hair_removal",
     "nameKey": "opt.laser_hair.hands",
     "price": {
-      "amount": 20,
+      "amount": 10,
       "currency": "USD"
     },
     "isOptionPromoActive": false,
@@ -584,7 +584,7 @@
     "serviceId": "svc_laser_hair_removal",
     "nameKey": "opt.laser_hair.feet",
     "price": {
-      "amount": 20,
+      "amount": 10,
       "currency": "USD"
     },
     "isOptionPromoActive": false,
@@ -598,7 +598,7 @@
     "serviceId": "svc_laser_hair_removal",
     "nameKey": "opt.laser_hair.full_body",
     "price": {
-      "amount": 750,
+      "amount": 150,
       "currency": "USD"
     },
     "isOptionPromoActive": false,
@@ -612,7 +612,7 @@
     "serviceId": "svc_laser_hair_removal",
     "nameKey": "opt.laser_hair.small_zone",
     "price": {
-      "amount": 25,
+      "amount": 10,
       "currency": "USD"
     },
     "isOptionPromoActive": false,
@@ -626,7 +626,7 @@
     "serviceId": "svc_laser_hair_removal",
     "nameKey": "opt.laser_hair.medium_zone",
     "price": {
-      "amount": 45,
+      "amount": 20,
       "currency": "USD"
     },
     "isOptionPromoActive": false,
@@ -640,7 +640,7 @@
     "serviceId": "svc_laser_hair_removal",
     "nameKey": "opt.laser_hair.large_zone",
     "price": {
-      "amount": 80,
+      "amount": 30,
       "currency": "USD"
     },
     "isOptionPromoActive": false,
