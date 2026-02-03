@@ -413,113 +413,111 @@
     "notesKeys": ["note.enzymatic.smooth"]
   },
   {
-    "id": "opt_pdo_biostim_periorbital",
+    "id": "opt_pdo_biostim_collagen_activation",
     "serviceId": "svc_pdo_biostimulating_threads",
-    "nameKey": "opt.pdo_biostim.periorbital",
-    "price": { "minAmount": 75, "maxAmount": 155, "currency": "USD" },
-    "isOptionPromoActive": false,
-    "promoPrice": null,
+    "nameKey": "opt.pdo_biostim.collagen_activation",
+    "price": { "amount": 75, "currency": "USD" },
+    "isOptionPromoActive": true,
+    "promoPrice": { "amount": 60, "currency": "USD" },
     "priceTextKey": "",
-    "notesKeys": ["note.pdo.price_variation"]
+    "notesKeys": ["note.pdo_biostim.threads_10"]
   },
   {
-    "id": "opt_pdo_biostim_cheeks",
+    "id": "opt_pdo_biostim_visible_firmness",
     "serviceId": "svc_pdo_biostimulating_threads",
-    "nameKey": "opt.pdo_biostim.cheeks",
-    "price": { "minAmount": 155, "maxAmount": 305, "currency": "USD" },
-    "isOptionPromoActive": false,
-    "promoPrice": null,
+    "nameKey": "opt.pdo_biostim.visible_firmness",
+    "price": { "minAmount": 155, "maxAmount": 230, "currency": "USD" },
+    "isOptionPromoActive": true,
+    "promoPrice": { "minAmount": 120, "maxAmount": 175, "currency": "USD" },
     "priceTextKey": "",
-    "notesKeys": ["note.pdo.price_variation"]
+    "notesKeys": ["note.pdo_biostim.threads_20_30"]
   },
   {
-    "id": "opt_pdo_biostim_jawline",
+    "id": "opt_pdo_biostim_advanced_dermal_support",
     "serviceId": "svc_pdo_biostimulating_threads",
-    "nameKey": "opt.pdo_biostim.jawline",
-    "price": { "minAmount": 155, "maxAmount": 305, "currency": "USD" },
-    "isOptionPromoActive": false,
-    "promoPrice": null,
+    "nameKey": "opt.pdo_biostim.advanced_dermal_support",
+    "price": { "minAmount": 305, "maxAmount": 460, "currency": "USD" },
+    "isOptionPromoActive": true,
+    "promoPrice": { "minAmount": 235, "maxAmount": 355, "currency": "USD" },
     "priceTextKey": "",
-    "notesKeys": ["note.pdo.price_variation"]
+    "notesKeys": ["note.pdo_biostim.threads_40_60"]
   },
   {
-    "id": "opt_pdo_biostim_neck",
+    "id": "opt_pdo_biostim_intensive_dermal_support",
     "serviceId": "svc_pdo_biostimulating_threads",
-    "nameKey": "opt.pdo_biostim.neck",
-    "price": { "minAmount": 230, "maxAmount": 460, "currency": "USD" },
-    "isOptionPromoActive": false,
-    "promoPrice": null,
+    "nameKey": "opt.pdo_biostim.intensive_dermal_support",
+    "price": { "minAmount": 610, "maxAmount": 765, "currency": "USD" },
+    "isOptionPromoActive": true,
+    "promoPrice": { "minAmount": 470, "maxAmount": 590, "currency": "USD" },
     "priceTextKey": "",
-    "notesKeys": ["note.pdo.price_variation"]
+    "notesKeys": ["note.pdo_biostim.threads_80_100"]
   },
   {
-    "id": "opt_pdo_biostim_full_face",
+    "id": "opt_pdo_biostim_hybrid_thread_therapy",
     "serviceId": "svc_pdo_biostimulating_threads",
-    "nameKey": "opt.pdo_biostim.full_face",
-    "price": { "minAmount": 460, "maxAmount": 765, "currency": "USD" },
-    "isOptionPromoActive": false,
-    "promoPrice": null,
-    "priceTextKey": "",
-    "notesKeys": ["note.pdo.price_variation"]
+    "nameKey": "opt.pdo_biostim.hybrid_thread_therapy",
+    "optionType": "package",
+    "price": {},
+    "isOptionPromoActive": true,
+    "promoPrice": {
+      "text": {
+        "en": "Pricing based on total thread count",
+        "es": "Precio según el total de hilos"
+      }
+    },
+    "priceTextKey": "price.pdo_biostim.hybrid_thread_count",
+    "notesKeys": [
+      "note.pdo_biostim.hybrid_includes",
+      "note.pdo_biostim.hybrid_example"
+    ]
   },
   {
-    "id": "opt_pdo_lift_lower_third",
+    "id": "opt_pdo_lift_light_support",
     "serviceId": "svc_pdo_lift_threads",
-    "nameKey": "opt.pdo_lift.lower_third",
-    "price": { "minAmount": 90, "maxAmount": 270, "currency": "USD" },
-    "isOptionPromoActive": false,
-    "promoPrice": null,
+    "nameKey": "opt.pdo_lift.light_support",
+    "price": { "minAmount": 340, "maxAmount": 510, "currency": "USD" },
+    "isOptionPromoActive": true,
+    "promoPrice": { "minAmount": 230, "maxAmount": 345, "currency": "USD" },
     "priceTextKey": "",
-    "notesKeys": ["note.pdo.price_variation"]
+    "notesKeys": ["note.pdo_lift.threads_4_6"]
   },
   {
-    "id": "opt_pdo_lift_jowls",
+    "id": "opt_pdo_lift_moderate_rejuvenation",
     "serviceId": "svc_pdo_lift_threads",
-    "nameKey": "opt.pdo_lift.jowls",
-    "price": { "minAmount": 90, "maxAmount": 270, "currency": "USD" },
-    "isOptionPromoActive": false,
-    "promoPrice": null,
+    "nameKey": "opt.pdo_lift.moderate_rejuvenation",
+    "price": { "minAmount": 680, "maxAmount": 850, "currency": "USD" },
+    "isOptionPromoActive": true,
+    "promoPrice": { "minAmount": 460, "maxAmount": 575, "currency": "USD" },
     "priceTextKey": "",
-    "notesKeys": ["note.pdo.price_variation"]
+    "notesKeys": ["note.pdo_lift.threads_8_10"]
   },
   {
-    "id": "opt_pdo_lift_jawline",
+    "id": "opt_pdo_lift_advanced_support",
     "serviceId": "svc_pdo_lift_threads",
-    "nameKey": "opt.pdo_lift.jawline",
-    "price": { "minAmount": 90, "maxAmount": 270, "currency": "USD" },
-    "isOptionPromoActive": false,
-    "promoPrice": null,
+    "nameKey": "opt.pdo_lift.advanced_support",
+    "price": { "minAmount": 1020, "maxAmount": 1360, "currency": "USD" },
+    "isOptionPromoActive": true,
+    "promoPrice": { "minAmount": 690, "maxAmount": 920, "currency": "USD" },
     "priceTextKey": "",
-    "notesKeys": ["note.pdo.price_variation"]
+    "notesKeys": ["note.pdo_lift.threads_12_16"]
   },
   {
-    "id": "opt_pdo_lift_brow",
+    "id": "opt_pdo_lift_hybrid_thread_therapy",
     "serviceId": "svc_pdo_lift_threads",
-    "nameKey": "opt.pdo_lift.brow",
-    "price": { "minAmount": 90, "maxAmount": 180, "currency": "USD" },
-    "isOptionPromoActive": false,
-    "promoPrice": null,
-    "priceTextKey": "",
-    "notesKeys": ["note.pdo.price_variation"]
-  },
-  {
-    "id": "opt_pdo_lift_lateral_periocular",
-    "serviceId": "svc_pdo_lift_threads",
-    "nameKey": "opt.pdo_lift.lateral_periocular",
-    "price": { "minAmount": 90, "maxAmount": 180, "currency": "USD" },
-    "isOptionPromoActive": false,
-    "promoPrice": null,
-    "priceTextKey": "",
-    "notesKeys": ["note.pdo.price_variation"]
-  },
-  {
-    "id": "opt_pdo_lift_neck_submental",
-    "serviceId": "svc_pdo_lift_threads",
-    "nameKey": "opt.pdo_lift.neck_submental",
-    "price": { "minAmount": 180, "maxAmount": 450, "currency": "USD" },
-    "isOptionPromoActive": false,
-    "promoPrice": null,
-    "priceTextKey": "",
-    "notesKeys": ["note.pdo.price_variation"]
+    "nameKey": "opt.pdo_biostim.hybrid_thread_therapy",
+    "optionType": "package",
+    "price": null,
+    "isOptionPromoActive": true,
+    "promoPrice": {
+      "text": {
+        "en": "Pricing based on total thread count",
+        "es": "Precio segun el total de hilos"
+      }
+    },
+    "priceTextKey": "price.pdo_biostim.hybrid_thread_count",
+    "notesKeys": [
+      "note.pdo_biostim.hybrid_includes",
+      "note.pdo_biostim.hybrid_example"
+    ]
   }
 ]
