@@ -7,11 +7,8 @@
       "amount": 575,
       "currency": "USD"
     },
-    "isOptionPromoActive": true,
-    "promoPrice": {
-      "amount": 515,
-      "currency": "USD"
-    },
+    "isOptionPromoActive": false,
+    "promoPrice": null,
     "priceTextKey": "",
     "notesKeys": [
       "note.sculptra.vial_price",
@@ -19,12 +16,29 @@
     ]
   },
   {
+    "id": "opt_sculptra_complete_collagen",
+    "serviceId": "svc_sculptra",
+    "nameKey": "promo.sculptra.option_name",
+    "optionType": "package",
+    "price": {
+      "amount": 1545,
+      "currency": "USD"
+    },
+    "isOptionPromoActive": true,
+    "promoPrice": {
+      "amount": 1545,
+      "currency": "USD"
+    },
+    "priceTextKey": "",
+    "notesKeys": []
+  },
+  {
     "id": "opt_harmonyca_per_treatment",
     "serviceId": "svc_harmonyca",
     "nameKey": "opt.harmonyca.per_treatment",
     "price": {
-      "amount": 875,
-      "currency": "USD"
+      "amount": 15750,
+      "currency": "MXN"
     },
     "isOptionPromoActive": false,
     "promoPrice": null,
