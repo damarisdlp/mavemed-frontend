@@ -12,7 +12,12 @@
       "note.lip_fillers.stylage_zones",
       "note.lip_fillers.stylage_syringe",
       "note.lip_fillers.stylage_lidocaine",
-      "note.lip_fillers.stylage_duration"
+      "note.lip_fillers.stylage_duration",
+      "note.promo.lip_fillers.multiple_options",
+      "note.promo.lip_fillers.duration_range",
+      "note.promo.lip_fillers.ha_density",
+      "note.promo.lip_fillers.syringe",
+      "note.promo.lip_fillers.lidocaine"
     ]
   },
   {
@@ -28,7 +33,12 @@
       "note.lip_fillers.volift_zones",
       "note.lip_fillers.volift_syringe",
       "note.lip_fillers.volift_lidocaine",
-      "note.lip_fillers.volift_duration"
+      "note.lip_fillers.volift_duration",
+      "note.promo.lip_fillers.multiple_options",
+      "note.promo.lip_fillers.duration_range",
+      "note.promo.lip_fillers.ha_density",
+      "note.promo.lip_fillers.syringe",
+      "note.promo.lip_fillers.lidocaine"
     ]
   },
   {
@@ -75,7 +85,8 @@
       "note.facial_balancing.volift_purpose",
       "note.facial_balancing.volift_zones",
       "note.facial_balancing.volift_lidocaine",
-      "note.facial_balancing.volift_duration"
+      "note.facial_balancing.volift_duration",
+      "note.promo.facial_balancing.supply_note"
     ]
   },
   {
@@ -91,7 +102,8 @@
       "note.facial_balancing.voluma_purpose",
       "note.facial_balancing.voluma_zones",
       "note.facial_balancing.voluma_lidocaine",
-      "note.facial_balancing.voluma_duration"
+      "note.facial_balancing.voluma_duration",
+      "note.promo.facial_balancing.supply_note"
     ]
   },
   {
@@ -107,7 +119,8 @@
       "note.facial_balancing.volux_purpose",
       "note.facial_balancing.volux_zones",
       "note.facial_balancing.volux_lidocaine",
-      "note.facial_balancing.volux_duration"
+      "note.facial_balancing.volux_duration",
+      "note.promo.facial_balancing.supply_note"
     ]
   },
   {

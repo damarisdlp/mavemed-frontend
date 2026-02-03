@@ -5,272 +5,272 @@
     "es": "Biostimuladores de Colágeno"
   },
   {
-    "id": "svc.Sculptra.name",
+    "id": "svc.sculptra.name",
     "en": "Sculptra (PLLA) - Poly-L-Lactic Acid",
     "es": "Sculptra (PLLA) - Poli-L-Láctico"
   },
   {
-    "id": "svc.Sculptra.desc",
+    "id": "svc.sculptra.desc",
     "en": "Gradually restore youthful volume and firmness with Sculptra, a poly-L-lactic acid (PLLA) collagen stimulator that enhances skin texture and structure over time.",
     "es": "Restaure gradualmente el volumen y la firmeza juvenil con Sculptra, un estimulador de colágeno de ácido poli-L-láctico (PLLA) que mejora la textura y estructura de la piel con el tiempo."
   },
   {
-    "id": "svc.Sculptra.details",
+    "id": "svc.sculptra.details",
     "en": "Sculptra is an injectable biostimulant composed of poly-L-lactic acid (PLLA), designed to activate your skins natural collagen production. It gradually restores lost facial volume, improves skin density, and enhances definition in areas like the cheeks, jawline, and temples. Unlike traditional dermal fillers, Sculptra delivers subtle, progressive improvements that last up to two years.",
     "es": "Sculptra es un biostimulante inyectable compuesto de ácido poli-L-láctico (PLLA), diseñado para activar la producción natural de colágeno de la piel. Restaura gradualmente el volumen facial perdido, mejora la densidad de la piel y realza la definición en áreas como las mejillas, la línea mandibular y las sienes. A diferencia de los rellenos dérmicos tradicionales, Sculptra proporciona mejoras sutiles y progresivas que duran hasta dos años."
   },
   {
-    "id": "note.Sculptra.protocol",
+    "id": "note.sculptra.protocol",
     "en": "Manufacturer protocol requires a minimum series of 3 sessions, typically spaced 46 weeks apart",
     "es": "El protocolo del fabricante requiere una serie mínima de 3 sesiones, normalmente espaciadas cada 4 a 6 semanas"
   },
   {
-    "id": "note.Sculptra.long_term",
+    "id": "note.sculptra.long_term",
     "en": "Excellent for long-term volume restoration without an overfilled look",
     "es": "Excelente para la restauración de volumen a largo plazo sin apariencia sobrecargada"
   },
   {
-    "id": "note.Sculptra.single_session",
+    "id": "note.sculptra.single_session",
     "en": "Single-session pricing is $575 when there is no commitment to a full rejuvenation treatment plan, or when the session is used as a maintenance treatment.",
     "es": "El precio por una sola sesión es de $575 cuando no hay compromiso con un plan completo de rejuvenecimiento, o cuando la sesión se utiliza como tratamiento de mantenimiento."
   },
   {
-    "id": "note.Sculptra.per_vial",
+    "id": "note.sculptra.per_vial",
     "en": "Pricing is per vial, not per session; total vials vary by area and plan",
     "es": "La tarifa es por vial, no por sesión; el número total de viales vara según el área y el plan"
   },
   {
-    "id": "goal.Sculptra.collagen",
+    "id": "goal.sculptra.collagen",
     "en": "Stimulate natural collagen growth",
     "es": "Estimular el crecimiento natural del colágeno"
   },
   {
-    "id": "goal.Sculptra.volume",
+    "id": "goal.sculptra.volume",
     "en": "Rebuild facial volume lost to aging",
     "es": "Reconstruir el volumen facial perdido por el envejecimiento"
   },
   {
-    "id": "goal.Sculptra.texture",
+    "id": "goal.sculptra.texture",
     "en": "Improve skin texture, elasticity, and structure",
     "es": "Mejorar la textura, elasticidad y estructura de la piel"
   },
   {
-    "id": "area.Sculptra.cheeks",
+    "id": "area.sculptra.cheeks",
     "en": "Cheeks",
     "es": "Mejillas"
   },
   {
-    "id": "area.Sculptra.temples",
+    "id": "area.sculptra.temples",
     "en": "Temples",
     "es": "Sienes"
   },
   {
-    "id": "area.Sculptra.jawline",
+    "id": "area.sculptra.jawline",
     "en": "Jawline",
     "es": "Línea Mandibular"
   },
   {
-    "id": "area.Sculptra.nasolabial_folds",
+    "id": "area.sculptra.nasolabial_folds",
     "en": "Nasolabial Folds",
     "es": "Pliegues Nasolabiales"
   },
   {
-    "id": "area.Sculptra.marionette_lines",
+    "id": "area.sculptra.marionette_lines",
     "en": "Marionette Lines",
     "es": "Líneas de Marioneta"
   },
   {
-    "id": "area.Sculptra.chin",
+    "id": "area.sculptra.chin",
     "en": "Chin",
     "es": "Barbilla"
   },
   {
-    "id": "area.Sculptra.neck",
+    "id": "area.sculptra.neck",
     "en": "Neck",
     "es": "Cuello"
   },
   {
-    "id": "area.Sculptra.other",
+    "id": "area.sculptra.other",
     "en": "Other zones may be treated upon request following medical evaluation",
     "es": "Otras zonas pueden tratarse a solicitud tras evaluación médica"
   },
   {
-    "id": "opt.Sculptra.per_vial",
+    "id": "opt.sculptra.per_vial",
     "en": "Sculptra",
     "es": "Sculptra"
   },
   {
-    "id": "note.Sculptra.vial_price",
+    "id": "note.sculptra.vial_price",
     "en": "This price is reflective of 1 vial",
     "es": "Este precio refleja 1 vial"
   },
   {
-    "id": "note.Sculptra.vial_quantity",
+    "id": "note.sculptra.vial_quantity",
     "en": "Vial quantity is subject to change based on zone size and/or zones treated",
     "es": "La cantidad de viales est sujeta a cambios según el tamaño de la zona y/o zonas tratadas"
   },
   {
-    "id": "promo.Sculptra.headline",
+    "id": "promo.sculptra.headline",
     "en": "Exclusive Sculptra Savings",
     "es": "Ahorro Exclusivo en Sculptra"
   },
   {
-    "id": "promo.Sculptra.description",
+    "id": "promo.sculptra.description",
     "en": "A structured 3-session Sculptra program designed to support long-term collagen remodeling, skin quality, and natural-looking rejuvenation.",
     "es": "Programa estructurado de 3 sesiones con Sculptra diseñado para apoyar la remodelación de colágeno a largo plazo, la calidad de la piel y un rejuvenecimiento natural."
   },
   {
-    "id": "promo.Sculptra.option_name",
+    "id": "promo.sculptra.option_name",
     "en": "Complete Collagen Remodeling",
     "es": "Remodelación Completa de Colágeno"
   },
   {
-    "id": "promo.Sculptra.note1",
+    "id": "promo.sculptra.note1",
     "en": "Includes 3 vials total, one vial per session, for 3 sessions.",
     "es": "Incluye 3 viales en total, un vial por sesión, para 3 sesiones."
   },
   {
-    "id": "promo.Sculptra.note2",
+    "id": "promo.sculptra.note2",
     "en": "Any additional vials needed are charged at the exclusive $515 per-vial rate.",
     "es": "Cualquier vial adicional necesario se cobra a la tarifa exclusiva de $515 por vial."
   },
   {
-    "id": "promo.Sculptra.note3",
+    "id": "promo.sculptra.note3",
     "en": "Multiple zones are welcome; pricing adjusts based on zones treated and vials required.",
     "es": "Se aceptan múltiples zonas; el precio se ajusta según las zonas tratadas y los viales necesarios."
   },
   {
-    "id": "promo.Sculptra.note4",
+    "id": "promo.sculptra.note4",
     "en": "This package requires all 3 sessions to be completed.",
     "es": "Este paquete requiere completar las 3 sesiones."
   },
   {
-    "id": "addon.Sculptra.Microneedling",
+    "id": "addon.sculptra.microneedling",
     "en": "Microneedling - PN - Polynucleotide",
     "es": "Microagujas - PN - Polinucleótido"
   },
   {
-    "id": "addon.Sculptra.casmara_infinity",
+    "id": "addon.sculptra.casmara_infinity",
     "en": "Casmara - Infinity AntiAging Facial",
     "es": "Casmara - Facial Antienvejecimiento Infinity"
   },
   {
-    "id": "addon.Sculptra.hydrafacial",
+    "id": "addon.sculptra.hydrafacial",
     "en": "Hydrafacial MD - Face",
     "es": "Hydrafacial MD - Rostro"
   },
   {
-    "id": "addon.Sculptra.rf_Microneedling",
+    "id": "addon.sculptra.rf_microneedling",
     "en": "Sylfirm X - RF Microneedling - Face + Neck + Decollete",
     "es": "Sylfirm X - Microagujas RF - Rostro + Cuello + Escote"
   },
   {
-    "id": "addon.Sculptra.pdo_threads",
+    "id": "addon.sculptra.pdo_threads",
     "en": "PDO Thread Lift - Signature Lower Face Lift",
     "es": "Hilos PDO - Levantamiento Facial Inferior Signature"
   },
   {
-    "id": "addon.Sculptra.facial_balancing",
+    "id": "addon.sculptra.facial_balancing",
     "en": "Facial Balancing - Juvéderm Volbella",
     "es": "Equilibrio Facial - Juvéderm Volbella"
   },
   {
-    "id": "exp.Sculptra.pre.1",
+    "id": "exp.sculptra.pre.1",
     "en": "Avoid alcohol, aspirin, ibuprofen, and fish oil supplements 2448 hours before treatment to minimize bruising.",
     "es": "Evite alcohol, aspirina, ibuprofeno y suplementos de aceite de pescado 24-48 horas antes del tratamiento para minimizar moretones."
   },
   {
-    "id": "exp.Sculptra.pre.2",
+    "id": "exp.sculptra.pre.2",
     "en": "Stay well-hydrated and eat a nutritious meal before your appointment.",
     "es": "Manténgase bien hidratado y coma una comida nutritiva antes de su cita."
   },
   {
-    "id": "exp.Sculptra.pre.3",
+    "id": "exp.sculptra.pre.3",
     "en": "Pause topical retinoids/acids on treatment areas for 48 hours and arrive with clean skin.",
     "es": "Suspenda retinoides/ácidos típicos en las zonas a tratar por 48 horas y llegue con la piel limpia."
   },
   {
-    "id": "exp.Sculptra.pre.4",
+    "id": "exp.sculptra.pre.4",
     "en": "Inform your provider about autoimmune conditions, keloid history, recent vaccines/dental work, or blood thinners.",
     "es": "Informe a su especialista sobre enfermedades autoinmunes, antecedentes de queloides, vacunas/trabajos dentales recientes o anticoagulantes."
   },
   {
-    "id": "exp.Sculptra.during.1",
+    "id": "exp.sculptra.during.1",
     "en": "You may feel brief pinching and pressure during microcannula or needle placement; numbing and cold packs help comfort.",
     "es": "Puede sentir pequeños pinchazos y presión durante el uso de microcánula o aguja; la anestesia y compresas frías ayudan a la comodidad."
   },
   {
-    "id": "exp.Sculptra.during.2",
+    "id": "exp.sculptra.during.2",
     "en": "Gentle massage is performed to disperse the product evenly in the treated area.",
     "es": "Se realiza un masaje suave para dispersar el producto uniformemente en la zona tratada."
   },
   {
-    "id": "exp.Sculptra.post.1",
+    "id": "exp.sculptra.post.1",
     "en": "Massage treated areas for 5 minutes, 5 times a day, for 5 days to support even collagen stimulation.",
     "es": "Masaje las áreas tratadas por 5 minutos, 5 veces al da, durante 5 días para apoyar la estimulación uniforme del colágeno."
   },
   {
-    "id": "exp.Sculptra.post.2",
+    "id": "exp.sculptra.post.2",
     "en": "Use cool compresses for the first 24 hours and avoid strenuous exercise, saunas, or hot yoga for 48 hours.",
     "es": "Use compresas frías durante las primeras 24 horas y evite ejercicio intenso, saunas o yoga caliente por 48 horas."
   },
   {
-    "id": "exp.Sculptra.post.3",
+    "id": "exp.sculptra.post.3",
     "en": "Expect swelling/bruising for a few days; protect from sun and avoid facial massages or dental work for 2 weeks.",
     "es": "Espere hinchazón/moretones por algunos días; proteja del sol y evite masajes faciales o trabajo dental por 2 semanas."
   },
   {
-    "id": "exp.Sculptra.post.4",
+    "id": "exp.sculptra.post.4",
     "en": "Results build gradually over 48 weeks after each session; full effects often visible by 34 months.",
     "es": "Los resultados se desarrollan gradualmente en 48 semanas después de cada sesión; los efectos completos suelen verse en 34 meses."
   },
   {
-    "id": "faq.Sculptra.q1",
+    "id": "faq.sculptra.q1",
     "en": "What makes Sculptra different from traditional fillers?",
     "es": "Qué hace que Sculptra sea diferente de los rellenos tradicionales?"
   },
   {
-    "id": "faq.Sculptra.a1",
+    "id": "faq.sculptra.a1",
     "en": "Sculptra stimulates your bodys own collagen production over time, rather than adding immediate volume like hyaluronic acid fillers. The result is longer-lasting, natural rejuvenation.",
     "es": "Sculptra estimula la producción propia de colágeno de su cuerpo con el tiempo, en lugar de agregar volumen inmediato como los rellenos de ácido hialurónico. El resultado es una rejuvenación natural de mayor duración."
   },
   {
-    "id": "faq.Sculptra.q2",
+    "id": "faq.sculptra.q2",
     "en": "How many vials are typically needed?",
     "es": "Cuántos viales se necesitan típicamente?"
   },
   {
-    "id": "faq.Sculptra.a2",
+    "id": "faq.sculptra.a2",
     "en": "Most patients need 23 vials over the course of multiple sessions, depending on age, facial volume loss, and treatment goals.",
     "es": "La mayoría de los pacientes necesitan 2-3 viales durante el curso de múltiples sesiones, dependiendo de la edad, la pérdida de volumen facial y los objetivos del tratamiento."
   },
   {
-    "id": "faq.Sculptra.q3",
+    "id": "faq.sculptra.q3",
     "en": "Is there any downtime?",
     "es": "Hay ALGÚN tiempo de inactividad?"
   },
   {
-    "id": "faq.Sculptra.a3",
+    "id": "faq.sculptra.a3",
     "en": "There may be mild swelling, redness, or bruising, but most patients return to daily activities immediately after treatment.",
     "es": "Puede haber hinchazón leve, enrojecimiento o moretones, pero la mayoría de los pacientes regresan a las actividades diarias inmediatamente después del tratamiento."
   },
   {
-    "id": "faq.Sculptra.q4",
+    "id": "faq.sculptra.q4",
     "en": "When will I see results?",
     "es": "Cundo ver los resultados?"
   },
   {
-    "id": "faq.Sculptra.a4",
+    "id": "faq.sculptra.a4",
     "en": "Results appear gradually over several weeks as collagen builds, with continued improvement up to 6 months.",
     "es": "Los resultados aparecen gradualmente en varias semanas a medida que el colágeno se acumula, con mejora continúa hasta 6 meses."
   },
   {
-    "id": "faq.Sculptra.q5",
+    "id": "faq.sculptra.q5",
     "en": "How long do the results last?",
     "es": "Cuánto duran los resultados?"
   },
   {
-    "id": "faq.Sculptra.a5",
+    "id": "faq.sculptra.a5",
     "en": "Sculptra results typically last 2 years or longer with proper treatment and maintenance.",
     "es": "Los resultados de Sculptra típicamente duran 2 años o más con tratamiento y mantenimiento adecuados."
   },
@@ -350,7 +350,7 @@
     "es": "HarmonyCa"
   },
   {
-    "id": "addon.harmonyca.Microneedling",
+    "id": "addon.harmonyca.microneedling",
     "en": "Microneedling - PN - Polynucleotide",
     "es": "Microneedling - PN - Polinucleótido"
   },
@@ -365,7 +365,7 @@
     "es": "Hydrafacial MD - Rostro"
   },
   {
-    "id": "addon.harmonyca.rf_Microneedling",
+    "id": "addon.harmonyca.rf_microneedling",
     "en": "Sylfirm X - RF Microneedling - Face + Neck + Decollete",
     "es": "Sylfirm X - Microagujas RF - Rostro + Cuello + Escote"
   },

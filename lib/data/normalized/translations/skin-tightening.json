@@ -905,7 +905,7 @@
     "es": "Terapia de Remodelación Enzimática - PB Serum+ (Kit)"
   },
   {
-    "id": "addon.venus_freeze.rf_Microneedling",
+    "id": "addon.venus_freeze.rf_microneedling",
     "en": "Sylfirm X - RF Microneedling - Face + Neck + Decollete",
     "es": "Sylfirm X - Microagujas RF - Rostro + Cuello + Escote"
   },
@@ -930,7 +930,7 @@
     "es": "Escultura RF - Brazos Definidos"
   },
   {
-    "id": "addon.enzymatic.rf_Microneedling",
+    "id": "addon.enzymatic.rf_microneedling",
     "en": "Sylfirm X - RF Microneedling - Face",
     "es": "Sylfirm X - Microagujas RF - Rostro"
   },
@@ -945,7 +945,7 @@
     "es": "Microagujas - PN - Polinucleótido"
   },
   {
-    "id": "addon.pdo.rf_Microneedling",
+    "id": "addon.pdo.rf_microneedling",
     "en": "Sylfirm X - RF Microneedling - Face + Neck + Decollete",
     "es": "Sylfirm X - Microagujas RF - Rostro + Cuello + Escote"
   },

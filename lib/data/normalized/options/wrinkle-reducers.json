@@ -14,7 +14,8 @@
     },
     "priceTextKey": "",
     "notesKeys": [
-      "note.botox.any_zone"
+      "note.botox.any_zone",
+      "promo.botox.note2"
     ]
   },
   {
@@ -32,7 +33,10 @@
       "currency": "USD"
     },
     "priceTextKey": "",
-    "notesKeys": []
+    "notesKeys": [
+      "promo.botox.note1",
+      "promo.botox.note2"
+    ]
   },
   {
     "id": "opt_dermawrinkle_per_unit",
@@ -49,7 +53,8 @@
     },
     "priceTextKey": "",
     "notesKeys": [
-      "note.dermawrinkle.any_zone"
+      "note.dermawrinkle.any_zone",
+      "promo.dermawrinkle.note2"
     ]
   },
   {
@@ -67,6 +72,9 @@
       "currency": "USD"
     },
     "priceTextKey": "",
-    "notesKeys": []
+    "notesKeys": [
+      "promo.dermawrinkle.note1",
+      "promo.dermawrinkle.note2"
+    ]
   }
 ]

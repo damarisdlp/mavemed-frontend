@@ -30,7 +30,12 @@
       "currency": "USD"
     },
     "priceTextKey": "",
-    "notesKeys": []
+    "notesKeys": [
+      "promo.sculptra.note1",
+      "promo.sculptra.note2",
+      "promo.sculptra.note3",
+      "promo.sculptra.note4"
+    ]
   },
   {
     "id": "opt_harmonyca_per_treatment",

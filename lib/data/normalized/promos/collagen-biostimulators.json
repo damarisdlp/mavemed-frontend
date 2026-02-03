@@ -6,16 +6,6 @@
     "descriptionKey": "promo.sculptra.description",
     "validFrom": "2026-01-01",
     "validTill": "2026-06-30",
-    "options": [
-      {
-        "optionNameKey": "promo.sculptra.option_name",
-        "notesKeys": [
-          "promo.sculptra.note1",
-          "promo.sculptra.note2",
-          "promo.sculptra.note3",
-          "promo.sculptra.note4"
-        ]
-      }
-    ]
+    "options": []
   }
 ]

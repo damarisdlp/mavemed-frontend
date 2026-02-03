@@ -5,18 +5,8 @@
     "headlineKey": "",
     "descriptionKey": "",
     "validFrom": null,
-    "validTill": null,
-    "options": [
-      {
-        "optionNameKey": "promo.facial_balancing.name",
-        "notesKeys": [
-          "note.facial_balancing.volift_lidocaine",
-          "note.facial_balancing.volift_duration",
-          "note.promo.facial_balancing.supply_note"
-        ],
-        "validTill": "2026-03-14"
-      }
-    ]
+    "validTill": "2026-03-14",
+    "options": []
   },
   {
     "id": "promo_lip_fillers",
@@ -24,31 +14,8 @@
     "headlineKey": "promo.lip_fillers.headline",
     "descriptionKey": "",
     "validFrom": null,
-    "validTill": null,
-    "options": [
-      {
-        "optionNameKey": "opt.lip_fillers.stylage_m",
-        "notesKeys": [
-          "note.promo.lip_fillers.multiple_options",
-          "note.promo.lip_fillers.duration_range",
-          "note.promo.lip_fillers.ha_density",
-          "note.promo.lip_fillers.syringe",
-          "note.promo.lip_fillers.lidocaine"
-        ],
-        "validTill": "2026-03-14"
-      },
-      {
-        "optionNameKey": "opt.lip_fillers.volift",
-        "notesKeys": [
-          "note.promo.lip_fillers.multiple_options",
-          "note.promo.lip_fillers.duration_range",
-          "note.promo.lip_fillers.ha_density",
-          "note.promo.lip_fillers.syringe",
-          "note.promo.lip_fillers.lidocaine"
-        ],
-        "validTill": "2026-03-14"
-      }
-    ]
+    "validTill": "2026-03-14",
+    "options": []
   },
   {
     "id": "promo_hyaluronidase",

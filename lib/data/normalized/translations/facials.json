@@ -105,7 +105,7 @@
     "es": "Mesoterapia - PN - Polinucleótido"
   },
   {
-    "id": "addon.hydrafacial.rf_Microneedling",
+    "id": "addon.hydrafacial.rf_microneedling",
     "en": "Sylfirm X - RF Microneedling - Face + Neck + Decollete",
     "es": "Sylfirm X - Microagujas RF - Rostro + Cuello + Escote"
   },
@@ -235,7 +235,7 @@
     "es": "Mesoterapia - PN - Polinucleótido"
   },
   {
-    "id": "addon.casmara_infinity.rf_Microneedling",
+    "id": "addon.casmara_infinity.rf_microneedling",
     "en": "Sylfirm X - RF Microneedling - Face + Neck + Decollete",
     "es": "Sylfirm X - Microagujas RF - Rostro + Cuello + Escote"
   },
@@ -355,7 +355,7 @@
     "es": "Mesoterapia - PN - Polinucleótido"
   },
   {
-    "id": "addon.casmara_purifying.rf_Microneedling",
+    "id": "addon.casmara_purifying.rf_microneedling",
     "en": "Sylfirm X - RF Microneedling - Face + Neck + Decollete",
     "es": "Sylfirm X - Microagujas RF - Rostro + Cuello + Escote"
   },
@@ -475,7 +475,7 @@
     "es": "Mesoterapia - PN - Polinucleótido"
   },
   {
-    "id": "addon.casmara_retinol.rf_Microneedling",
+    "id": "addon.casmara_retinol.rf_microneedling",
     "en": "Sylfirm X - RF Microneedling - Face + Neck + Decollete",
     "es": "Sylfirm X - Microagujas RF - Rostro + Cuello + Escote"
   },
@@ -615,7 +615,7 @@
     "es": "Mesoterapia - PN - Polinucleótido"
   },
   {
-    "id": "addon.janssen_ultra.rf_Microneedling",
+    "id": "addon.janssen_ultra.rf_microneedling",
     "en": "Sylfirm X - RF Microneedling - Face + Neck + Decollete",
     "es": "Sylfirm X - Microagujas RF - Rostro + Cuello + Escote"
   },
@@ -760,7 +760,7 @@
     "es": "Mesoterapia - PN - Polinucleótido"
   },
   {
-    "id": "addon.janssen_radiance.rf_Microneedling",
+    "id": "addon.janssen_radiance.rf_microneedling",
     "en": "Sylfirm X - RF Microneedling - Face + Neck + Decollete",
     "es": "Sylfirm X - Microagujas RF - Rostro + Cuello + Escote"
   },
