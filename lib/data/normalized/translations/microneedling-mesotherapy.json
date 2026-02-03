@@ -21,7 +21,7 @@
   },
   {
     "id": "note.microneedling.sessions",
-    "en": "36 sessions recommended for optimal results",
+    "en": "3 - 6 sessions recommended for optimal results",
     "es": "Se recomiendan de 3 a 6 sesiones para resultados ptimos"
   },
   {
@@ -61,7 +61,7 @@
   },
   {
     "id": "area.microneedling.decollete",
-    "en": "Dcollet",
+    "en": "Decollete",
     "es": "Escote"
   },
   {
@@ -241,7 +241,7 @@
   },
   {
     "id": "area.mesotherapy.decollete",
-    "en": "Dcollet",
+    "en": "Decollete",
     "es": "Escote"
   },
   {
@@ -436,7 +436,7 @@
   },
   {
     "id": "opt.microneedling.face_neck_decollete",
-    "en": "Face + Neck + Dcollet",
+    "en": "Face + Neck + Decollete",
     "es": "Rostro + Cuello + Escote"
   },
   {
@@ -471,7 +471,7 @@
   },
   {
     "id": "opt.microneedling.prp_face_neck_decollete",
-    "en": "PRP - Face + Neck + Dcollet",
+    "en": "PRP - Face + Neck + Decollete",
     "es": "PRP - Rostro + Cuello + Escote"
   },
   {
@@ -501,13 +501,8 @@
   },
   {
     "id": "opt.microneedling.pn_face_neck_decollete",
-    "en": "PN - Face + Neck + Dcollet",
+    "en": "PN - Face + Neck + Decollete",
     "es": "PN - Rostro + Cuello + Escote"
-  },
-  {
-    "id": "opt.microneedling.pn_hands",
-    "en": "PN - Hands",
-    "es": "PN - Manos"
   },
   {
     "id": "opt.microneedling.pn_small_zone",
@@ -536,13 +531,8 @@
   },
   {
     "id": "opt.microneedling.pdrn_face_neck_decollete",
-    "en": "PDRN - Face + Neck + Dcollet",
+    "en": "PDRN - Face + Neck + Decollete",
     "es": "PDRN - Rostro + Cuello + Escote"
-  },
-  {
-    "id": "opt.microneedling.pdrn_hands",
-    "en": "PDRN - Hands",
-    "es": "PDRN - Manos"
   },
   {
     "id": "opt.microneedling.pdrn_small_zone",
@@ -571,7 +561,7 @@
   },
   {
     "id": "opt.microneedling.caviar_face_neck_decollete",
-    "en": "Caviar Extract - Face + Neck + Dcollet",
+    "en": "Caviar Extract - Face + Neck + Decollete",
     "es": "Extracto de Caviar - Rostro + Cuello + Escote"
   },
   {
@@ -586,7 +576,7 @@
   },
   {
     "id": "opt.microneedling.toskani_face_neck_decollete",
-    "en": "Toskani - Face + Neck + Dcollet",
+    "en": "Toskani - Face + Neck + Decollete",
     "es": "Toskani - Rostro + Cuello + Escote"
   },
   {
@@ -685,6 +675,21 @@
     "es": "rea total [1264 cm  - 2090 cm ]. De ocho a doce palmas de la mano, aproximadamente del tamao de un cojn cuadrado o un cuadrado grande."
   },
   {
+    "id": "note.mesotherapy.small_zone",
+    "en": "Total area [103 cm2 - 413 cm2]. Approximately one to two palms, similar to a credit card, up to half a sheet of paper.",
+    "es": "Area total [103 cm2 - 413 cm2]. Aproximadamente de una a dos palmas de la mano, similar al tamano de una tarjeta de credito, hasta media hoja de papel."
+  },
+  {
+    "id": "note.mesotherapy.medium_zone",
+    "en": "Total area [523 cm2 - 1080.3 cm2]. Four to six palms, roughly the size of a full sheet of paper.",
+    "es": "Area total [523 cm2 - 1080.3 cm2]. De cuatro a seis palmas de la mano, aproximadamente del tamano de una hoja completa de papel."
+  },
+  {
+    "id": "note.mesotherapy.large_zone",
+    "en": "Total area [1264 cm2 - 2090 cm2]. Eight to twelve palms, about the size of a square pillow or large square.",
+    "es": "Area total [1264 cm2 - 2090 cm2]. De ocho a doce palmas de la mano, aproximadamente del tamano de un cojin cuadrado o un cuadrado grande."
+  },
+  {
     "id": "opt.mesotherapy.prp_face",
     "en": "PRP - Face",
     "es": "PRP - Rostro"
@@ -696,8 +701,33 @@
   },
   {
     "id": "opt.mesotherapy.prp_face_neck_decollete",
-    "en": "PRP - Face + Neck + Dcollet",
+    "en": "PRP - Face + Neck + Decollete",
     "es": "PRP - Rostro + Cuello + Escote"
+  },
+  {
+    "id": "opt.mesotherapy.prp_under_eye",
+    "en": "PRP - Under Eyes",
+    "es": "PRP - Ojeras"
+  },
+  {
+    "id": "opt.mesotherapy.prp_hair_growth",
+    "en": "PRP - Hair Growth Treatment",
+    "es": "PRP - Tratamiento de Crecimiento Capilar"
+  },
+  {
+    "id": "opt.mesotherapy.prp_small_zone",
+    "en": "PRP - Small Zone",
+    "es": "PRP - Zona Pequena"
+  },
+  {
+    "id": "opt.mesotherapy.prp_medium_zone",
+    "en": "PRP - Medium Zone",
+    "es": "PRP - Zona Mediana"
+  },
+  {
+    "id": "opt.mesotherapy.prp_large_zone",
+    "en": "PRP - Large Zone",
+    "es": "PRP - Zona Grande"
   },
   {
     "id": "opt.mesotherapy.pn_face",
@@ -711,8 +741,23 @@
   },
   {
     "id": "opt.mesotherapy.pn_face_neck_decollete",
-    "en": "PN - Face + Neck + Dcollet",
+    "en": "PN - Face + Neck + Decollete",
     "es": "PN - Rostro + Cuello + Escote"
+  },
+  {
+    "id": "opt.mesotherapy.pn_small_zone",
+    "en": "PN - Small Zone",
+    "es": "PN - Zona Pequena"
+  },
+  {
+    "id": "opt.mesotherapy.pn_medium_zone",
+    "en": "PN - Medium Zone",
+    "es": "PN - Zona Mediana"
+  },
+  {
+    "id": "opt.mesotherapy.pn_large_zone",
+    "en": "PN - Large Zone",
+    "es": "PN - Zona Grande"
   },
   {
     "id": "opt.mesotherapy.pdrn_face",
@@ -726,13 +771,53 @@
   },
   {
     "id": "opt.mesotherapy.pdrn_face_neck_decollete",
-    "en": "PDRN - Face + Neck + Dcollet",
+    "en": "PDRN - Face + Neck + Decollete",
     "es": "PDRN - Rostro + Cuello + Escote"
+  },
+  {
+    "id": "opt.mesotherapy.pdrn_small_zone",
+    "en": "PDRN - Small Zone",
+    "es": "PDRN - Zona Pequena"
+  },
+  {
+    "id": "opt.mesotherapy.pdrn_medium_zone",
+    "en": "PDRN - Medium Zone",
+    "es": "PDRN - Zona Mediana"
+  },
+  {
+    "id": "opt.mesotherapy.pdrn_large_zone",
+    "en": "PDRN - Large Zone",
+    "es": "PDRN - Zona Grande"
   },
   {
     "id": "opt.mesotherapy.skinvive_face",
     "en": "Juvderm SkinVive - Face",
     "es": "Juvderm SkinVive - Rostro"
+  },
+  {
+    "id": "opt.mesotherapy.skinvive_face_neck",
+    "en": "Juvderm SkinVive - Face + Neck",
+    "es": "Juvderm SkinVive - Rostro + Cuello"
+  },
+  {
+    "id": "opt.mesotherapy.skinvive_face_neck_decollete",
+    "en": "Juvderm SkinVive - Face + Neck + Decollete",
+    "es": "Juvderm SkinVive - Rostro + Cuello + Escote"
+  },
+  {
+    "id": "opt.mesotherapy.skinvive_small_zone",
+    "en": "Juvderm SkinVive - Small Zone",
+    "es": "Juvderm SkinVive - Zona Pequena"
+  },
+  {
+    "id": "opt.mesotherapy.skinvive_medium_zone",
+    "en": "Juvderm SkinVive - Medium Zone",
+    "es": "Juvderm SkinVive - Zona Mediana"
+  },
+  {
+    "id": "opt.mesotherapy.skinvive_large_zone",
+    "en": "Juvderm SkinVive - Large Zone",
+    "es": "Juvderm SkinVive - Zona Grande"
   },
   {
     "id": "note.mesotherapy.skinvive_mechanism",
@@ -751,7 +836,32 @@
   },
   {
     "id": "opt.mesotherapy.tkn_ha3_face_neck_decollete",
-    "en": "TKN HA3+ - Face + Neck + Dcollet",
+    "en": "TKN HA3+ - Face + Neck + Decollete",
     "es": "TKN HA3+ - Rostro + Cuello + Escote"
+  },
+  {
+    "id": "opt.mesotherapy.tkn_ha3_small_zone",
+    "en": "TKN HA3+ - Small Zone",
+    "es": "TKN HA3+ - Zona Pequena"
+  },
+  {
+    "id": "opt.mesotherapy.tkn_ha3_medium_zone",
+    "en": "TKN HA3+ - Medium Zone",
+    "es": "TKN HA3+ - Zona Mediana"
+  },
+  {
+    "id": "opt.mesotherapy.tkn_ha3_large_zone",
+    "en": "TKN HA3+ - Large Zone",
+    "es": "TKN HA3+ - Zona Grande"
+  },
+  {
+    "id": "promo.skin_renewal.casmara_note",
+    "en": "A targeted renewal protocol that pairs a high performance facial with regenerative microneedling to brighten, smooth texture, and support firmer, healthier looking skin.",
+    "es": "Un protocolo de renovacion dirigido que combina un facial de alto rendimiento con microneedling regenerativo para iluminar, suavizar la textura y apoyar una piel mas firme y saludable."
+  },
+  {
+    "id": "promo.microneedling_skin_renewal.headline",
+    "en": "Exclusive Microneedling Skin Renewal Pricing",
+    "es": "Precio exclusivo para Microneedling Skin Renewal"
   }
 ]

@@ -2,19 +2,21 @@
   {
     "id": "promo_microneedling",
     "serviceId": "svc_microneedling",
-    "headlineKey": "",
-    "descriptionKey": "",
+    "headlineKey": "promo.microneedling_skin_renewal.headline",
+    "descriptionKey": "promo.skin_renewal.casmara_note",
     "validFrom": null,
     "validTill": null,
-    "options": []
+    "options": [],
+    "descriptionLink": null
   },
   {
     "id": "promo_mesotherapy",
     "serviceId": "svc_mesotherapy_infusions",
     "headlineKey": "",
-    "descriptionKey": "",
+    "descriptionKey": "promo.skin_renewal.casmara_note",
     "validFrom": null,
     "validTill": null,
-    "options": []
+    "options": [],
+    "descriptionLink": null
   }
 ]

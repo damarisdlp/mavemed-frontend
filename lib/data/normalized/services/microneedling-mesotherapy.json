@@ -7,7 +7,7 @@
     "descriptionKey": "svc.microneedling.desc",
     "detailsKey": "svc.microneedling.details",
     "isPopular": false,
-    "isPromoActive": false,
+    "isPromoActive": true,
     "images": {
       "primary": "/microneedling.jpg",
       "secondary": "/microneedling2.jpg"
@@ -33,11 +33,26 @@
       "defaultKey": "all",
       "viewAllLabelKey": "filter.view_all",
       "filters": [
-        { "key": "prp", "labelKey": "filter.microneedling.prp" },
-        { "key": "pn", "labelKey": "filter.microneedling.pn" },
-        { "key": "pdrn", "labelKey": "filter.microneedling.pdrn" },
-        { "key": "toskani", "labelKey": "filter.microneedling.toskani" },
-        { "key": "caviar", "labelKey": "filter.microneedling.skin_boosters" }
+        {
+          "key": "prp",
+          "labelKey": "filter.microneedling.prp"
+        },
+        {
+          "key": "pn",
+          "labelKey": "filter.microneedling.pn"
+        },
+        {
+          "key": "pdrn",
+          "labelKey": "filter.microneedling.pdrn"
+        },
+        {
+          "key": "toskani",
+          "labelKey": "filter.microneedling.toskani"
+        },
+        {
+          "key": "caviar",
+          "labelKey": "filter.microneedling.skin_boosters"
+        }
       ]
     }
   },
@@ -49,7 +64,7 @@
     "descriptionKey": "svc.mesotherapy.desc",
     "detailsKey": "svc.mesotherapy.details",
     "isPopular": true,
-    "isPromoActive": false,
+    "isPromoActive": true,
     "images": {
       "primary": "/mesotherapy.jpg",
       "secondary": "/mesotherapy2.jpg"
@@ -79,10 +94,22 @@
       "defaultKey": "all",
       "viewAllLabelKey": "filter.view_all",
       "filters": [
-        { "key": "prp", "labelKey": "filter.mesotherapy.prp" },
-        { "key": "pn", "labelKey": "filter.mesotherapy.pn" },
-        { "key": "pdrn", "labelKey": "filter.mesotherapy.pdrn" },
-        { "key": "ha", "labelKey": "filter.mesotherapy.ha" }
+        {
+          "key": "prp",
+          "labelKey": "filter.mesotherapy.prp"
+        },
+        {
+          "key": "pn",
+          "labelKey": "filter.mesotherapy.pn"
+        },
+        {
+          "key": "pdrn",
+          "labelKey": "filter.mesotherapy.pdrn"
+        },
+        {
+          "key": "ha",
+          "labelKey": "filter.mesotherapy.ha"
+        }
       ]
     }
   }

@@ -122,7 +122,7 @@
     "descriptionKey": "svc.pdo_biostim.desc",
     "detailsKey": "svc.pdo_biostim.details",
     "isPopular": true,
-    "isPromoActive": false,
+    "isPromoActive": true,
     "images": {
       "primary": "/threads2.jpg",
       "secondary": "/threads.jpg"
@@ -156,7 +156,7 @@
     "descriptionKey": "svc.pdo_lift.desc",
     "detailsKey": "svc.pdo_lift.details",
     "isPopular": true,
-    "isPromoActive": false,
+    "isPromoActive": true,
     "images": {
       "primary": "/threads.jpg",
       "secondary": "/threads2.jpg"

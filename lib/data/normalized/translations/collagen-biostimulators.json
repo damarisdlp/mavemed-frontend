@@ -116,33 +116,33 @@
   },
   {
     "id": "promo.sculptra.description",
-    "en": "Lock in a limited-time per-vial advantage with our full Sculptra rejuvenation program, designed as a 3-session protocol to support long-term collagen regeneration, skin quality, and natural-looking rejuvenation.",
-    "es": "Asegura un beneficio especial por vial con nuestro programa completo de rejuvenecimiento con Sculptra, diseado como un protocolo de 3 sesiones para estimular colgeno a largo plazo, mejorar la calidad de la piel y lograr un rejuvenecimiento natural y progresivo."
+    "en": "A structured 3-session Sculptra program designed to support long-term collagen remodeling, skin quality, and natural-looking rejuvenation.",
+    "es": "Programa estructurado de 3 sesiones con Sculptra diseñado para apoyar la remodelación de colágeno a largo plazo, la calidad de la piel y un rejuvenecimiento natural."
   },
   {
     "id": "promo.sculptra.option_name",
-    "en": "Sculptra - Rejuvenation Treatment Plan",
-    "es": "Sculptra - Tratamiento de Rejuvenecimiento"
+    "en": "Complete Collagen Remodeling",
+    "es": "Remodelación Completa de Colágeno"
   },
   {
     "id": "promo.sculptra.note1",
-    "en": "Exclusive $515 rate applies only when purchased as a 3-session plan (manufacturer-recommended minimum)",
-    "es": "La tarifa exclusiva de $515 aplica solo al comprar el plan de 3 sesiones (mnimo recomendado por el fabricante)"
+    "en": "Includes 3 vials total, one vial per session, for 3 sessions.",
+    "es": "Incluye 3 viales en total, un vial por sesión, para 3 sesiones."
   },
   {
     "id": "promo.sculptra.note2",
-    "en": "Price shown is per vial.",
-    "es": "El precio mostrado es por vial."
+    "en": "Any additional vials needed are charged at the exclusive $515 per-vial rate.",
+    "es": "Cualquier vial adicional necesario se cobra a la tarifa exclusiva de $515 por vial."
   },
   {
     "id": "promo.sculptra.note3",
-    "en": "Final cost will depend on the number of vials required to treat the selected zone. Typically, one vial per zone is used, though this may vary based on zone size and individual needs.",
-    "es": "El costo final depender de la cantidad de viales necesarios para tratar la zona seleccionada. Generalmente se utiliza un vial por zona, aunque puede variar segn el tamao del rea y las necesidades individuales."
+    "en": "Multiple zones are welcome; pricing adjusts based on zones treated and vials required.",
+    "es": "Se aceptan múltiples zonas; el precio se ajusta según las zonas tratadas y los viales necesarios."
   },
   {
     "id": "promo.sculptra.note4",
-    "en": "Each vial used within the treatment plan is offered at the same exclusive rate.",
-    "es": "Cada vial utilizado dentro del plan se ofrece a la misma tarifa exclusiva."
+    "en": "This package requires all 3 sessions to be completed.",
+    "es": "Este paquete requiere completar las 3 sesiones."
   },
   {
     "id": "addon.sculptra.microneedling",
@@ -161,7 +161,7 @@
   },
   {
     "id": "addon.sculptra.rf_microneedling",
-    "en": "Sylfirm X - RF Microneedling - Face + Neck + Dcollet",
+    "en": "Sylfirm X - RF Microneedling - Face + Neck + Decollete",
     "es": "Sylfirm X - Microagujas RF - Rostro + Cuello + Escote"
   },
   {
@@ -366,7 +366,7 @@
   },
   {
     "id": "addon.harmonyca.rf_microneedling",
-    "en": "Sylfirm X - RF Microneedling - Face + Neck + Dcollet",
+    "en": "Sylfirm X - RF Microneedling - Face + Neck + Decollete",
     "es": "Sylfirm X - Microagujas RF - Rostro + Cuello + Escote"
   },
   {

@@ -7,7 +7,7 @@
     "descriptionKey": "svc.co2.desc",
     "detailsKey": "svc.co2.details",
     "isPopular": true,
-    "isPromoActive": true,
+    "isPromoActive": false,
     "images": {
       "primary": "/laserco2.jpg",
       "secondary": "/laserco22.jpg"

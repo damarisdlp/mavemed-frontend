@@ -2,18 +2,11 @@
   {
     "id": "promo_co2_2026",
     "serviceId": "svc_co2_laser",
-    "headlineKey": "promo.co2.headline",
-    "descriptionKey": "promo.co2.description",
-    "validFrom": "2026-01-01",
-    "validTill": "2026-01-31",
-    "options": [
-      {
-        "optionNameKey": "promo.co2.option_name",
-        "notesKeys": [
-          "promo.co2.note1"
-        ]
-      }
-    ]
+    "headlineKey": "",
+    "descriptionKey": "",
+    "validFrom": null,
+    "validTill": null,
+    "options": []
   },
   {
     "id": "promo_laser_hair_removal",

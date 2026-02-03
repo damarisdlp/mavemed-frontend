@@ -211,7 +211,7 @@
   },
   {
     "id": "area.ultraformer_mpt.neck_decollete",
-    "en": "Neck and dcollet",
+    "en": "Neck and decollete",
     "es": "Cuello y escote"
   },
   {
@@ -406,7 +406,7 @@
   },
   {
     "id": "opt.ultraformer.decolletage_rejuvenation",
-    "en": "Dcolletage Rejuvenation",
+    "en": "Decolletage Rejuvenation",
     "es": "Rejuvenecimiento de Escote"
   },
   {
@@ -481,7 +481,7 @@
   },
   {
     "id": "opt.venus.decollete_rejuvenation",
-    "en": "Dcollet Rejuvenation",
+    "en": "Decollete Rejuvenation",
     "es": "Rejuvenecimiento de Escote"
   },
   {
@@ -571,7 +571,7 @@
   },
   {
     "id": "note.venus.combo_lift_smooth",
-    "en": "Neck + Dcollet",
+    "en": "Neck + Decollete",
     "es": "Cuello + Escote"
   },
   {
@@ -611,18 +611,18 @@
   },
   {
     "id": "note.venus.small_zone",
-    "en": "Total area [103 cm  - 413 cm ]",
-    "es": "rea total [103 cm  - 413 cm ]"
+    "en": "Total area [103 cm2 - 413 cm2]. Approximately one to two palms, similar to a credit card, up to half a sheet of paper.",
+    "es": "Area total [103 cm2 - 413 cm2]. Aproximadamente de una a dos palmas de la mano, similar al tamano de una tarjeta de credito, hasta media hoja de papel."
   },
   {
     "id": "note.venus.medium_zone",
-    "en": "Total area [523 cm  - 1080.3 cm ]",
-    "es": "rea total [523 cm  - 1080.3 cm ]"
+    "en": "Total area [523 cm2 - 1080.3 cm2]. Four to six palms, roughly the size of a full sheet of paper.",
+    "es": "Area total [523 cm2 - 1080.3 cm2]. De cuatro a seis palmas de la mano, aproximadamente del tamano de una hoja completa de papel."
   },
   {
     "id": "note.venus.large_zone",
-    "en": "Total area [1264 cm  - 2090 cm ]",
-    "es": "rea total [1264 cm  - 2090 cm ]"
+    "en": "Total area [1264 cm2 - 2090 cm2]. Eight to twelve palms, about the size of a square pillow or large square.",
+    "es": "Area total [1264 cm2 - 2090 cm2]. De ocho a doce palmas de la mano, aproximadamente del tamano de un cojin cuadrado o un cuadrado grande."
   },
   {
     "id": "opt.enzymatic.slim",
@@ -726,7 +726,7 @@
   },
   {
     "id": "note.ultraformer.combo_lift_smooth",
-    "en": "Neck and dcolletage.",
+    "en": "Neck and decolleteage.",
     "es": "Cuello y escote."
   },
   {
@@ -906,7 +906,7 @@
   },
   {
     "id": "addon.venus_freeze.rf_microneedling",
-    "en": "Sylfirm X - RF Microneedling - Face + Neck + Dcollet",
+    "en": "Sylfirm X - RF Microneedling - Face + Neck + Decollete",
     "es": "Sylfirm X - Microagujas RF - Rostro + Cuello + Escote"
   },
   {
@@ -946,7 +946,7 @@
   },
   {
     "id": "addon.pdo.rf_microneedling",
-    "en": "Sylfirm X - RF Microneedling - Face + Neck + Dcollet",
+    "en": "Sylfirm X - RF Microneedling - Face + Neck + Decollete",
     "es": "Sylfirm X - Microagujas RF - Rostro + Cuello + Escote"
   },
   {
@@ -1317,7 +1317,7 @@
   {
     "id": "svc.pdo_biostim.name",
     "en": "PDO Threads - Biostimulating Treatment Plan",
-    "es": "Hilos PDO - Plan de Tratamiento Bioestimulante"
+    "es": "Hilos PDO - Tratamiento Bioestimulante"
   },
   {
     "id": "svc.pdo_biostim.desc",
@@ -1328,6 +1328,21 @@
     "id": "svc.pdo_biostim.details",
     "en": "This treatment uses smooth PDO threads placed superficially in the skin to stimulate collagen, elastin, and dermal regeneration. Results develop gradually over several weeks and are ideal for patients seeking prevention, early intervention, or subtle skin strengthening with natural movement preserved.",
     "es": "Este tratamiento utiliza hilos PDO lisos colocados de forma superficial para estimular colgeno, elastina y regeneracin drmica. Los resultados aparecen de manera progresiva durante varias semanas y son ideales para pacientes que buscan prevencin, intervencin temprana o fortalecimiento cutneo sutil manteniendo una apariencia natural."
+  },
+  {
+    "id": "promo.pdo_biostim.description",
+    "en": "A customized PDO thread approach that combines biostimulating and lifting threads to improve skin quality while providing subtle structural support. Designed to enhance firmness, collagen production, and facial balance for natural, long-term rejuvenation.",
+    "es": "Un enfoque personalizado de hilos PDO que combina hilos bioestimulantes y de lifting para mejorar la calidad de la piel mientras aporta soporte estructural sutil. Diseñado para mejorar firmeza, producción de colágeno y equilibrio facial con rejuvenecimiento natural y duradero."
+  },
+  {
+    "id": "promo.pdo_biostim.headline",
+    "en": "Exclusive PDO Thread Pricing",
+    "es": "Precio exclusivo para hilos PDO"
+  },
+  {
+    "id": "promo.pdo_biostim.summary_name",
+    "en": "PDO Threads - Biostimulating Treatment Plan",
+    "es": "Hilos PDO - Tratamiento Bioestimulante"
   },
   {
     "id": "note.pdo_biostim.uses_smooth",
@@ -1348,6 +1363,41 @@
     "id": "note.pdo_biostim.ideal_prevention",
     "en": "Ideal as prevention or early intervention",
     "es": "Ideal como prevencin o intervencin temprana"
+  },
+  {
+    "id": "note.pdo_biostim.threads_10",
+    "en": "10 threads",
+    "es": "10 hilos"
+  },
+  {
+    "id": "note.pdo_biostim.threads_20_30",
+    "en": "20 to 30 threads",
+    "es": "20 a 30 hilos"
+  },
+  {
+    "id": "note.pdo_biostim.threads_40_60",
+    "en": "40 to 60 threads",
+    "es": "40 a 60 hilos"
+  },
+  {
+    "id": "note.pdo_biostim.threads_80_100",
+    "en": "80 to 100 threads",
+    "es": "80 a 100 hilos"
+  },
+  {
+    "id": "note.pdo_biostim.hybrid_example",
+    "en": "Example: 10 collagen rejuvenation threads + 6 non-surgical lift threads = $360 (regularly $405).",
+    "es": "Ejemplo: 10 hilos de rejuvenecimiento de colágeno + 6 hilos de lifting no quirúrgico = $360 (precio regular $405)."
+  },
+  {
+    "id": "note.pdo_biostim.hybrid_includes",
+    "en": "Includes both biostimulating PDO threads and lifting PDO threads.",
+    "es": "Incluye hilos PDO bioestimulantes y hilos PDO de lifting."
+  },
+  {
+    "id": "price.pdo_biostim.hybrid_thread_count",
+    "en": "Pricing based on total thread count",
+    "es": "Precio según el total de hilos"
   },
   {
     "id": "goal.pdo_biostim.firmness",
@@ -1396,7 +1446,7 @@
   },
   {
     "id": "area.pdo_biostim.decolletage",
-    "en": "Dcolletage",
+    "en": "Decolletage",
     "es": "Escote"
   },
   {
@@ -1433,6 +1483,21 @@
     "id": "note.pdo_lift.not_surgical",
     "en": "Does not replace surgical facelift procedures",
     "es": "No sustituye un lifting quirrgico"
+  },
+  {
+    "id": "note.pdo_lift.threads_4_6",
+    "en": "4 to 6 threads.",
+    "es": "4 a 6 hilos."
+  },
+  {
+    "id": "note.pdo_lift.threads_8_10",
+    "en": "8 to 10 threads.",
+    "es": "8 a 10 hilos."
+  },
+  {
+    "id": "note.pdo_lift.threads_12_16",
+    "en": "12 to 16 threads.",
+    "es": "12 a 16 hilos."
   },
   {
     "id": "goal.pdo_lift.lift",
@@ -1510,6 +1575,31 @@
     "es": "Rostro Completo"
   },
   {
+    "id": "opt.pdo_biostim.collagen_activation",
+    "en": "Collagen Activation",
+    "es": "Activación de colágeno"
+  },
+  {
+    "id": "opt.pdo_biostim.visible_firmness",
+    "en": "Visible Firmness",
+    "es": "Firmeza visible"
+  },
+  {
+    "id": "opt.pdo_biostim.advanced_dermal_support",
+    "en": "Advanced Dermal Support",
+    "es": "Soporte dérmico avanzado"
+  },
+  {
+    "id": "opt.pdo_biostim.intensive_dermal_support",
+    "en": "Intensive Dermal Support",
+    "es": "Soporte dérmico intensivo"
+  },
+  {
+    "id": "opt.pdo_biostim.hybrid_thread_therapy",
+    "en": "Hybrid PDO Thread Therapy",
+    "es": "Terapia híbrida de hilos PDO"
+  },
+  {
     "id": "opt.pdo_lift.lower_third",
     "en": "Lower Third",
     "es": "Tercio Inferior"
@@ -1538,6 +1628,21 @@
     "id": "opt.pdo_lift.neck_submental",
     "en": "Neck + Submental",
     "es": "Cuello + Submentn"
+  },
+  {
+    "id": "opt.pdo_lift.light_support",
+    "en": "Light Support for Collagen Boost",
+    "es": "Soporte ligero para impulso de colageno"
+  },
+  {
+    "id": "opt.pdo_lift.moderate_rejuvenation",
+    "en": "Moderate Rejuvenation",
+    "es": "Rejuvenecimiento moderado"
+  },
+  {
+    "id": "opt.pdo_lift.advanced_support",
+    "en": "Advanced Support or Lift",
+    "es": "Soporte avanzado o lifting"
   },
   {
     "id": "note.pdo.price_variation",

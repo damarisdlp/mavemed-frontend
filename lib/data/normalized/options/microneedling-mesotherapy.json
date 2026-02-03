@@ -3,121 +3,214 @@
     "id": "opt_microneedling_prp_face",
     "serviceId": "svc_microneedling",
     "nameKey": "opt.microneedling.prp_face",
-    "price": { "amount": 165, "currency": "USD" },
-    "isOptionPromoActive": false,
+    "price": {
+      "amount": 165,
+      "currency": "USD"
+    },
+    "isOptionPromoActive": true,
     "promoPrice": null,
     "priceTextKey": "",
     "filterGroupKey": "prp",
-    "notesKeys": ["note.microneedling.prp_benefit"]
+    "notesKeys": [
+      "note.microneedling.prp_benefit"
+    ],
+    "linkedPackageIds": [
+      "pkg_skin_renewal_prp",
+      "pkg_casmara_purifying_prp",
+      "pkg_casmara_retinol_prp"
+    ]
   },
   {
     "id": "opt_microneedling_prp_face_neck",
     "serviceId": "svc_microneedling",
     "nameKey": "opt.microneedling.prp_face_neck",
-    "price": { "amount": 180, "currency": "USD" },
-    "isOptionPromoActive": false,
+    "price": {
+      "amount": 180,
+      "currency": "USD"
+    },
+    "isOptionPromoActive": true,
     "promoPrice": null,
     "priceTextKey": "",
     "filterGroupKey": "prp",
-    "notesKeys": ["note.microneedling.prp_benefit"]
+    "notesKeys": [
+      "note.microneedling.prp_benefit"
+    ],
+    "linkedPackageIds": [
+      "pkg_skin_renewal_prp",
+      "pkg_casmara_purifying_prp",
+      "pkg_casmara_retinol_prp"
+    ]
   },
   {
     "id": "opt_microneedling_prp_face_neck_decollete",
     "serviceId": "svc_microneedling",
     "nameKey": "opt.microneedling.prp_face_neck_decollete",
-    "price": { "amount": 195, "currency": "USD" },
-    "isOptionPromoActive": false,
+    "price": {
+      "amount": 195,
+      "currency": "USD"
+    },
+    "isOptionPromoActive": true,
     "promoPrice": null,
     "priceTextKey": "",
     "filterGroupKey": "prp",
-    "notesKeys": ["note.microneedling.prp_benefit"]
+    "notesKeys": [
+      "note.microneedling.prp_benefit"
+    ],
+    "linkedPackageIds": [
+      "pkg_skin_renewal_prp",
+      "pkg_casmara_purifying_prp",
+      "pkg_casmara_retinol_prp"
+    ]
   },
   {
     "id": "opt_microneedling_prp_small_zone",
     "serviceId": "svc_microneedling",
     "nameKey": "opt.microneedling.prp_small_zone",
-    "price": { "amount": 120, "currency": "USD" },
-    "isOptionPromoActive": false,
+    "price": {
+      "amount": 140,
+      "currency": "USD"
+    },
+    "isOptionPromoActive": true,
     "promoPrice": null,
     "priceTextKey": "",
     "filterGroupKey": "prp",
-    "notesKeys": ["note.microneedling.prp_benefit", "note.microneedling.small_zone"]
+    "notesKeys": [
+      "note.microneedling.prp_benefit",
+      "note.microneedling.small_zone"
+    ],
+    "linkedPackageIds": [
+      "pkg_skin_renewal_prp",
+      "pkg_casmara_purifying_prp",
+      "pkg_casmara_retinol_prp"
+    ]
   },
   {
     "id": "opt_microneedling_prp_medium_zone",
     "serviceId": "svc_microneedling",
     "nameKey": "opt.microneedling.prp_medium_zone",
-    "price": { "amount": 150, "currency": "USD" },
-    "isOptionPromoActive": false,
+    "price": {
+      "amount": 175,
+      "currency": "USD"
+    },
+    "isOptionPromoActive": true,
     "promoPrice": null,
     "priceTextKey": "",
     "filterGroupKey": "prp",
-    "notesKeys": ["note.microneedling.prp_benefit", "note.microneedling.medium_zone"]
+    "notesKeys": [
+      "note.microneedling.prp_benefit",
+      "note.microneedling.medium_zone"
+    ],
+    "linkedPackageIds": [
+      "pkg_skin_renewal_prp",
+      "pkg_casmara_purifying_prp",
+      "pkg_casmara_retinol_prp"
+    ]
   },
   {
     "id": "opt_microneedling_prp_large_zone",
     "serviceId": "svc_microneedling",
     "nameKey": "opt.microneedling.prp_large_zone",
-    "price": { "amount": 180, "currency": "USD" },
-    "isOptionPromoActive": false,
+    "price": {
+      "amount": 210,
+      "currency": "USD"
+    },
+    "isOptionPromoActive": true,
     "promoPrice": null,
     "priceTextKey": "",
     "filterGroupKey": "prp",
-    "notesKeys": ["note.microneedling.prp_benefit", "note.microneedling.large_zone"]
+    "notesKeys": [
+      "note.microneedling.prp_benefit",
+      "note.microneedling.large_zone"
+    ],
+    "linkedPackageIds": [
+      "pkg_skin_renewal_prp",
+      "pkg_casmara_purifying_prp",
+      "pkg_casmara_retinol_prp"
+    ]
   },
   {
     "id": "opt_microneedling_pn_face",
     "serviceId": "svc_microneedling",
     "nameKey": "opt.microneedling.pn_face",
-    "price": { "amount": 300, "currency": "USD" },
-    "isOptionPromoActive": false,
+    "price": {
+      "amount": 300,
+      "currency": "USD"
+    },
+    "isOptionPromoActive": true,
     "promoPrice": null,
     "priceTextKey": "",
     "filterGroupKey": "pn",
-    "notesKeys": ["note.microneedling.pn_full", "note.microneedling.pn_benefit"]
+    "linkedPackageIds": [
+      "pkg_skin_renewal_protocol",
+      "pkg_casmara_purifying_pn",
+      "pkg_casmara_retinol_pn"
+    ],
+    "notesKeys": [
+      "note.microneedling.pn_full",
+      "note.microneedling.pn_benefit"
+    ]
   },
   {
     "id": "opt_microneedling_pn_face_neck",
     "serviceId": "svc_microneedling",
     "nameKey": "opt.microneedling.pn_face_neck",
-    "price": { "amount": 450, "currency": "USD" },
-    "isOptionPromoActive": false,
+    "price": {
+      "amount": 450,
+      "currency": "USD"
+    },
+    "isOptionPromoActive": true,
     "promoPrice": null,
     "priceTextKey": "",
     "filterGroupKey": "pn",
-    "notesKeys": ["note.microneedling.pn_full", "note.microneedling.pn_benefit"]
+    "linkedPackageIds": [
+      "pkg_skin_renewal_protocol",
+      "pkg_casmara_purifying_pn",
+      "pkg_casmara_retinol_pn"
+    ],
+    "notesKeys": [
+      "note.microneedling.pn_full",
+      "note.microneedling.pn_benefit"
+    ]
   },
   {
     "id": "opt_microneedling_pn_face_neck_decollete",
     "serviceId": "svc_microneedling",
     "nameKey": "opt.microneedling.pn_face_neck_decollete",
-    "price": { "amount": 565, "currency": "USD" },
-    "isOptionPromoActive": false,
+    "price": {
+      "amount": 565,
+      "currency": "USD"
+    },
+    "isOptionPromoActive": true,
     "promoPrice": null,
     "priceTextKey": "",
     "filterGroupKey": "pn",
-    "notesKeys": ["note.microneedling.pn_full", "note.microneedling.pn_benefit"]
-  },
-  {
-    "id": "opt_microneedling_pn_hands",
-    "serviceId": "svc_microneedling",
-    "nameKey": "opt.microneedling.pn_hands",
-    "price": { "amount": 265, "currency": "USD" },
-    "isOptionPromoActive": false,
-    "promoPrice": null,
-    "priceTextKey": "",
-    "filterGroupKey": "pn",
-    "notesKeys": ["note.microneedling.pn_full", "note.microneedling.pn_benefit"]
+    "linkedPackageIds": [
+      "pkg_skin_renewal_protocol",
+      "pkg_casmara_purifying_pn",
+      "pkg_casmara_retinol_pn"
+    ],
+    "notesKeys": [
+      "note.microneedling.pn_full",
+      "note.microneedling.pn_benefit"
+    ]
   },
   {
     "id": "opt_microneedling_pn_small_zone",
     "serviceId": "svc_microneedling",
     "nameKey": "opt.microneedling.pn_small_zone",
-    "price": { "amount": 240, "currency": "USD" },
-    "isOptionPromoActive": false,
+    "price": {
+      "amount": 285,
+      "currency": "USD"
+    },
+    "isOptionPromoActive": true,
     "promoPrice": null,
     "priceTextKey": "",
     "filterGroupKey": "pn",
+    "linkedPackageIds": [
+      "pkg_skin_renewal_protocol",
+      "pkg_casmara_purifying_pn",
+      "pkg_casmara_retinol_pn"
+    ],
     "notesKeys": [
       "note.microneedling.pn_full",
       "note.microneedling.pn_benefit",
@@ -128,11 +221,19 @@
     "id": "opt_microneedling_pn_medium_zone",
     "serviceId": "svc_microneedling",
     "nameKey": "opt.microneedling.pn_medium_zone",
-    "price": { "amount": 350, "currency": "USD" },
-    "isOptionPromoActive": false,
+    "price": {
+      "amount": 465,
+      "currency": "USD"
+    },
+    "isOptionPromoActive": true,
     "promoPrice": null,
     "priceTextKey": "",
     "filterGroupKey": "pn",
+    "linkedPackageIds": [
+      "pkg_skin_renewal_protocol",
+      "pkg_casmara_purifying_pn",
+      "pkg_casmara_retinol_pn"
+    ],
     "notesKeys": [
       "note.microneedling.pn_full",
       "note.microneedling.pn_benefit",
@@ -143,11 +244,19 @@
     "id": "opt_microneedling_pn_large_zone",
     "serviceId": "svc_microneedling",
     "nameKey": "opt.microneedling.pn_large_zone",
-    "price": { "amount": 450, "currency": "USD" },
-    "isOptionPromoActive": false,
+    "price": {
+      "amount": 575,
+      "currency": "USD"
+    },
+    "isOptionPromoActive": true,
     "promoPrice": null,
     "priceTextKey": "",
     "filterGroupKey": "pn",
+    "linkedPackageIds": [
+      "pkg_skin_renewal_protocol",
+      "pkg_casmara_purifying_pn",
+      "pkg_casmara_retinol_pn"
+    ],
     "notesKeys": [
       "note.microneedling.pn_full",
       "note.microneedling.pn_benefit",
@@ -158,52 +267,77 @@
     "id": "opt_microneedling_pdrn_face",
     "serviceId": "svc_microneedling",
     "nameKey": "opt.microneedling.pdrn_face",
-    "price": { "amount": 190, "currency": "USD" },
-    "isOptionPromoActive": false,
+    "price": {
+      "amount": 190,
+      "currency": "USD"
+    },
+    "isOptionPromoActive": true,
     "promoPrice": null,
     "priceTextKey": "",
     "filterGroupKey": "pdrn",
-    "notesKeys": ["note.microneedling.pdrn_full", "note.microneedling.pdrn_benefit"]
+    "notesKeys": [
+      "note.microneedling.pdrn_full",
+      "note.microneedling.pdrn_benefit"
+    ],
+    "linkedPackageIds": [
+      "pkg_skin_renewal_pdrn",
+      "pkg_casmara_purifying_pdrn",
+      "pkg_casmara_retinol_pdrn"
+    ]
   },
   {
     "id": "opt_microneedling_pdrn_face_neck",
     "serviceId": "svc_microneedling",
     "nameKey": "opt.microneedling.pdrn_face_neck",
-    "price": { "amount": 275, "currency": "USD" },
-    "isOptionPromoActive": false,
+    "price": {
+      "amount": 275,
+      "currency": "USD"
+    },
+    "isOptionPromoActive": true,
     "promoPrice": null,
     "priceTextKey": "",
     "filterGroupKey": "pdrn",
-    "notesKeys": ["note.microneedling.pdrn_full", "note.microneedling.pdrn_benefit"]
+    "notesKeys": [
+      "note.microneedling.pdrn_full",
+      "note.microneedling.pdrn_benefit"
+    ],
+    "linkedPackageIds": [
+      "pkg_skin_renewal_pdrn",
+      "pkg_casmara_purifying_pdrn",
+      "pkg_casmara_retinol_pdrn"
+    ]
   },
   {
     "id": "opt_microneedling_pdrn_face_neck_decollete",
     "serviceId": "svc_microneedling",
     "nameKey": "opt.microneedling.pdrn_face_neck_decollete",
-    "price": { "amount": 315, "currency": "USD" },
-    "isOptionPromoActive": false,
+    "price": {
+      "amount": 315,
+      "currency": "USD"
+    },
+    "isOptionPromoActive": true,
     "promoPrice": null,
     "priceTextKey": "",
     "filterGroupKey": "pdrn",
-    "notesKeys": ["note.microneedling.pdrn_full", "note.microneedling.pdrn_benefit"]
-  },
-  {
-    "id": "opt_microneedling_pdrn_hands",
-    "serviceId": "svc_microneedling",
-    "nameKey": "opt.microneedling.pdrn_hands",
-    "price": { "amount": 170, "currency": "USD" },
-    "isOptionPromoActive": false,
-    "promoPrice": null,
-    "priceTextKey": "",
-    "filterGroupKey": "pdrn",
-    "notesKeys": ["note.microneedling.pdrn_full", "note.microneedling.pdrn_benefit"]
+    "notesKeys": [
+      "note.microneedling.pdrn_full",
+      "note.microneedling.pdrn_benefit"
+    ],
+    "linkedPackageIds": [
+      "pkg_skin_renewal_pdrn",
+      "pkg_casmara_purifying_pdrn",
+      "pkg_casmara_retinol_pdrn"
+    ]
   },
   {
     "id": "opt_microneedling_pdrn_small_zone",
     "serviceId": "svc_microneedling",
     "nameKey": "opt.microneedling.pdrn_small_zone",
-    "price": { "amount": 130, "currency": "USD" },
-    "isOptionPromoActive": false,
+    "price": {
+      "amount": 175,
+      "currency": "USD"
+    },
+    "isOptionPromoActive": true,
     "promoPrice": null,
     "priceTextKey": "",
     "filterGroupKey": "pdrn",
@@ -211,14 +345,22 @@
       "note.microneedling.pdrn_full",
       "note.microneedling.pdrn_benefit",
       "note.microneedling.small_zone"
+    ],
+    "linkedPackageIds": [
+      "pkg_skin_renewal_pdrn",
+      "pkg_casmara_purifying_pdrn",
+      "pkg_casmara_retinol_pdrn"
     ]
   },
   {
     "id": "opt_microneedling_pdrn_medium_zone",
     "serviceId": "svc_microneedling",
     "nameKey": "opt.microneedling.pdrn_medium_zone",
-    "price": { "amount": 225, "currency": "USD" },
-    "isOptionPromoActive": false,
+    "price": {
+      "amount": 290,
+      "currency": "USD"
+    },
+    "isOptionPromoActive": true,
     "promoPrice": null,
     "priceTextKey": "",
     "filterGroupKey": "pdrn",
@@ -226,14 +368,22 @@
       "note.microneedling.pdrn_full",
       "note.microneedling.pdrn_benefit",
       "note.microneedling.medium_zone"
+    ],
+    "linkedPackageIds": [
+      "pkg_skin_renewal_pdrn",
+      "pkg_casmara_purifying_pdrn",
+      "pkg_casmara_retinol_pdrn"
     ]
   },
   {
     "id": "opt_microneedling_pdrn_large_zone",
     "serviceId": "svc_microneedling",
     "nameKey": "opt.microneedling.pdrn_large_zone",
-    "price": { "amount": 275, "currency": "USD" },
-    "isOptionPromoActive": false,
+    "price": {
+      "amount": 330,
+      "currency": "USD"
+    },
+    "isOptionPromoActive": true,
     "promoPrice": null,
     "priceTextKey": "",
     "filterGroupKey": "pdrn",
@@ -241,13 +391,21 @@
       "note.microneedling.pdrn_full",
       "note.microneedling.pdrn_benefit",
       "note.microneedling.large_zone"
+    ],
+    "linkedPackageIds": [
+      "pkg_skin_renewal_pdrn",
+      "pkg_casmara_purifying_pdrn",
+      "pkg_casmara_retinol_pdrn"
     ]
   },
   {
     "id": "opt_microneedling_toskani_hydration_face",
     "serviceId": "svc_microneedling",
     "nameKey": "opt.microneedling.toskani_face",
-    "price": { "amount": 310, "currency": "USD" },
+    "price": {
+      "amount": 310,
+      "currency": "USD"
+    },
     "isOptionPromoActive": false,
     "promoPrice": null,
     "priceTextKey": "",
@@ -263,7 +421,10 @@
     "id": "opt_microneedling_toskani_hydration_face_neck",
     "serviceId": "svc_microneedling",
     "nameKey": "opt.microneedling.toskani_face_neck",
-    "price": { "amount": 375, "currency": "USD" },
+    "price": {
+      "amount": 620,
+      "currency": "USD"
+    },
     "isOptionPromoActive": false,
     "promoPrice": null,
     "priceTextKey": "",
@@ -279,7 +440,10 @@
     "id": "opt_microneedling_toskani_hydration_face_neck_decollete",
     "serviceId": "svc_microneedling",
     "nameKey": "opt.microneedling.toskani_face_neck_decollete",
-    "price": { "amount": 450, "currency": "USD" },
+    "price": {
+      "amount": 930,
+      "currency": "USD"
+    },
     "isOptionPromoActive": false,
     "promoPrice": null,
     "priceTextKey": "",
@@ -295,7 +459,10 @@
     "id": "opt_microneedling_toskani_glow_face",
     "serviceId": "svc_microneedling",
     "nameKey": "opt.microneedling.toskani_face",
-    "price": { "amount": 195, "currency": "USD" },
+    "price": {
+      "amount": 200,
+      "currency": "USD"
+    },
     "isOptionPromoActive": false,
     "promoPrice": null,
     "priceTextKey": "",
@@ -309,7 +476,10 @@
     "id": "opt_microneedling_toskani_glow_face_neck",
     "serviceId": "svc_microneedling",
     "nameKey": "opt.microneedling.toskani_face_neck",
-    "price": { "amount": 225, "currency": "USD" },
+    "price": {
+      "amount": 245,
+      "currency": "USD"
+    },
     "isOptionPromoActive": false,
     "promoPrice": null,
     "priceTextKey": "",
@@ -323,7 +493,10 @@
     "id": "opt_microneedling_toskani_glow_face_neck_decollete",
     "serviceId": "svc_microneedling",
     "nameKey": "opt.microneedling.toskani_face_neck_decollete",
-    "price": { "amount": 250, "currency": "USD" },
+    "price": {
+      "amount": 325,
+      "currency": "USD"
+    },
     "isOptionPromoActive": false,
     "promoPrice": null,
     "priceTextKey": "",
@@ -337,7 +510,10 @@
     "id": "opt_microneedling_toskani_repair_face",
     "serviceId": "svc_microneedling",
     "nameKey": "opt.microneedling.toskani_face",
-    "price": { "amount": 195, "currency": "USD" },
+    "price": {
+      "amount": 200,
+      "currency": "USD"
+    },
     "isOptionPromoActive": false,
     "promoPrice": null,
     "priceTextKey": "",
@@ -351,7 +527,10 @@
     "id": "opt_microneedling_toskani_repair_face_neck",
     "serviceId": "svc_microneedling",
     "nameKey": "opt.microneedling.toskani_face_neck",
-    "price": { "amount": 225, "currency": "USD" },
+    "price": {
+      "amount": 245,
+      "currency": "USD"
+    },
     "isOptionPromoActive": false,
     "promoPrice": null,
     "priceTextKey": "",
@@ -365,7 +544,10 @@
     "id": "opt_microneedling_toskani_repair_face_neck_decollete",
     "serviceId": "svc_microneedling",
     "nameKey": "opt.microneedling.toskani_face_neck_decollete",
-    "price": { "amount": 250, "currency": "USD" },
+    "price": {
+      "amount": 325,
+      "currency": "USD"
+    },
     "isOptionPromoActive": false,
     "promoPrice": null,
     "priceTextKey": "",
@@ -379,7 +561,10 @@
     "id": "opt_microneedling_toskani_tone_face",
     "serviceId": "svc_microneedling",
     "nameKey": "opt.microneedling.toskani_face",
-    "price": { "amount": 160, "currency": "USD" },
+    "price": {
+      "amount": 235,
+      "currency": "USD"
+    },
     "isOptionPromoActive": false,
     "promoPrice": null,
     "priceTextKey": "",
@@ -393,7 +578,10 @@
     "id": "opt_microneedling_toskani_tone_face_neck",
     "serviceId": "svc_microneedling",
     "nameKey": "opt.microneedling.toskani_face_neck",
-    "price": { "amount": 185, "currency": "USD" },
+    "price": {
+      "amount": 265,
+      "currency": "USD"
+    },
     "isOptionPromoActive": false,
     "promoPrice": null,
     "priceTextKey": "",
@@ -407,7 +595,10 @@
     "id": "opt_microneedling_toskani_tone_face_neck_decollete",
     "serviceId": "svc_microneedling",
     "nameKey": "opt.microneedling.toskani_face_neck_decollete",
-    "price": { "amount": 200, "currency": "USD" },
+    "price": {
+      "amount": 295,
+      "currency": "USD"
+    },
     "isOptionPromoActive": false,
     "promoPrice": null,
     "priceTextKey": "",
@@ -421,140 +612,499 @@
     "id": "opt_microneedling_caviar_face",
     "serviceId": "svc_microneedling",
     "nameKey": "opt.microneedling.caviar_face",
-    "price": { "amount": 120, "currency": "USD" },
+    "price": {
+      "amount": 100,
+      "currency": "USD"
+    },
     "isOptionPromoActive": false,
     "promoPrice": null,
     "priceTextKey": "",
     "filterGroupKey": "caviar",
-    "notesKeys": ["note.microneedling.caviar_benefit"]
+    "notesKeys": [
+      "note.microneedling.caviar_benefit"
+    ]
   },
   {
     "id": "opt_microneedling_caviar_face_neck",
     "serviceId": "svc_microneedling",
     "nameKey": "opt.microneedling.caviar_face_neck",
-    "price": { "amount": 135, "currency": "USD" },
+    "price": {
+      "amount": 115,
+      "currency": "USD"
+    },
     "isOptionPromoActive": false,
     "promoPrice": null,
     "priceTextKey": "",
     "filterGroupKey": "caviar",
-    "notesKeys": ["note.microneedling.caviar_benefit"]
+    "notesKeys": [
+      "note.microneedling.caviar_benefit"
+    ]
   },
   {
     "id": "opt_microneedling_caviar_face_neck_decollete",
     "serviceId": "svc_microneedling",
     "nameKey": "opt.microneedling.caviar_face_neck_decollete",
-    "price": { "amount": 145, "currency": "USD" },
+    "price": {
+      "amount": 125,
+      "currency": "USD"
+    },
     "isOptionPromoActive": false,
     "promoPrice": null,
     "priceTextKey": "",
     "filterGroupKey": "caviar",
-    "notesKeys": ["note.microneedling.caviar_benefit"]
-  }
-  ,
+    "notesKeys": [
+      "note.microneedling.caviar_benefit"
+    ]
+  },
   {
     "id": "opt_mesotherapy_prp_face",
     "serviceId": "svc_mesotherapy_infusions",
     "nameKey": "opt.mesotherapy.prp_face",
-    "price": { "amount": 155, "currency": "USD" },
-    "isOptionPromoActive": false,
+    "price": {
+      "amount": 165,
+      "currency": "USD"
+    },
+    "isOptionPromoActive": true,
     "promoPrice": null,
     "priceTextKey": "",
     "filterGroupKey": "prp",
-    "notesKeys": ["note.microneedling.prp_benefit"]
+    "notesKeys": [
+      "note.microneedling.prp_benefit"
+    ],
+    "linkedPackageIds": [
+      "pkg_skin_renewal_prp",
+      "pkg_casmara_purifying_prp",
+      "pkg_casmara_retinol_prp"
+    ]
   },
   {
     "id": "opt_mesotherapy_prp_face_neck",
     "serviceId": "svc_mesotherapy_infusions",
     "nameKey": "opt.mesotherapy.prp_face_neck",
-    "price": { "amount": 170, "currency": "USD" },
-    "isOptionPromoActive": false,
+    "price": {
+      "amount": 180,
+      "currency": "USD"
+    },
+    "isOptionPromoActive": true,
     "promoPrice": null,
     "priceTextKey": "",
     "filterGroupKey": "prp",
-    "notesKeys": ["note.microneedling.prp_benefit"]
+    "notesKeys": [
+      "note.microneedling.prp_benefit"
+    ],
+    "linkedPackageIds": [
+      "pkg_skin_renewal_prp",
+      "pkg_casmara_purifying_prp",
+      "pkg_casmara_retinol_prp"
+    ]
   },
   {
     "id": "opt_mesotherapy_prp_face_neck_decollete",
     "serviceId": "svc_mesotherapy_infusions",
     "nameKey": "opt.mesotherapy.prp_face_neck_decollete",
-    "price": { "amount": 185, "currency": "USD" },
+    "price": {
+      "amount": 195,
+      "currency": "USD"
+    },
+    "isOptionPromoActive": true,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "filterGroupKey": "prp",
+    "notesKeys": [
+      "note.microneedling.prp_benefit"
+    ],
+    "linkedPackageIds": [
+      "pkg_skin_renewal_prp",
+      "pkg_casmara_purifying_prp",
+      "pkg_casmara_retinol_prp"
+    ]
+  },
+  {
+    "id": "opt_mesotherapy_prp_under_eye",
+    "serviceId": "svc_mesotherapy_infusions",
+    "nameKey": "opt.mesotherapy.prp_under_eye",
+    "price": {
+      "amount": 90,
+      "currency": "USD"
+    },
     "isOptionPromoActive": false,
     "promoPrice": null,
     "priceTextKey": "",
     "filterGroupKey": "prp",
-    "notesKeys": ["note.microneedling.prp_benefit"]
+    "notesKeys": [
+      "note.microneedling.prp_benefit"
+    ],
+    "linkedPackageIds": [
+      "pkg_skin_renewal_prp",
+      "pkg_casmara_purifying_prp",
+      "pkg_casmara_retinol_prp"
+    ]
+  },
+  {
+    "id": "opt_mesotherapy_prp_hair_growth",
+    "serviceId": "svc_mesotherapy_infusions",
+    "nameKey": "opt.mesotherapy.prp_hair_growth",
+    "price": {
+      "amount": 155,
+      "currency": "USD"
+    },
+    "isOptionPromoActive": false,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "filterGroupKey": "prp",
+    "notesKeys": [
+      "note.microneedling.prp_benefit"
+    ],
+    "linkedPackageIds": [
+      "pkg_skin_renewal_prp",
+      "pkg_casmara_purifying_prp",
+      "pkg_casmara_retinol_prp"
+    ]
+  },
+  {
+    "id": "opt_mesotherapy_prp_small_zone",
+    "serviceId": "svc_mesotherapy_infusions",
+    "nameKey": "opt.mesotherapy.prp_small_zone",
+    "price": {
+      "amount": 140,
+      "currency": "USD"
+    },
+    "isOptionPromoActive": true,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "filterGroupKey": "prp",
+    "notesKeys": [
+      "note.microneedling.prp_benefit",
+      "note.mesotherapy.small_zone"
+    ],
+    "linkedPackageIds": [
+      "pkg_skin_renewal_prp",
+      "pkg_casmara_purifying_prp",
+      "pkg_casmara_retinol_prp"
+    ]
+  },
+  {
+    "id": "opt_mesotherapy_prp_medium_zone",
+    "serviceId": "svc_mesotherapy_infusions",
+    "nameKey": "opt.mesotherapy.prp_medium_zone",
+    "price": {
+      "amount": 175,
+      "currency": "USD"
+    },
+    "isOptionPromoActive": true,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "filterGroupKey": "prp",
+    "notesKeys": [
+      "note.microneedling.prp_benefit",
+      "note.mesotherapy.medium_zone"
+    ],
+    "linkedPackageIds": [
+      "pkg_skin_renewal_prp",
+      "pkg_casmara_purifying_prp",
+      "pkg_casmara_retinol_prp"
+    ]
+  },
+  {
+    "id": "opt_mesotherapy_prp_large_zone",
+    "serviceId": "svc_mesotherapy_infusions",
+    "nameKey": "opt.mesotherapy.prp_large_zone",
+    "price": {
+      "amount": 210,
+      "currency": "USD"
+    },
+    "isOptionPromoActive": true,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "filterGroupKey": "prp",
+    "notesKeys": [
+      "note.microneedling.prp_benefit",
+      "note.mesotherapy.large_zone"
+    ],
+    "linkedPackageIds": [
+      "pkg_skin_renewal_prp",
+      "pkg_casmara_purifying_prp",
+      "pkg_casmara_retinol_prp"
+    ]
   },
   {
     "id": "opt_mesotherapy_pn_face",
     "serviceId": "svc_mesotherapy_infusions",
     "nameKey": "opt.mesotherapy.pn_face",
-    "price": { "amount": 290, "currency": "USD" },
-    "isOptionPromoActive": false,
+    "price": {
+      "amount": 300,
+      "currency": "USD"
+    },
+    "isOptionPromoActive": true,
     "promoPrice": null,
     "priceTextKey": "",
     "filterGroupKey": "pn",
-    "notesKeys": ["note.microneedling.pn_full", "note.microneedling.pn_benefit"]
+    "linkedPackageIds": [
+      "pkg_skin_renewal_protocol",
+      "pkg_casmara_purifying_pn",
+      "pkg_casmara_retinol_pn"
+    ],
+    "notesKeys": [
+      "note.microneedling.pn_full",
+      "note.microneedling.pn_benefit"
+    ]
   },
   {
     "id": "opt_mesotherapy_pn_face_neck",
     "serviceId": "svc_mesotherapy_infusions",
     "nameKey": "opt.mesotherapy.pn_face_neck",
-    "price": { "amount": 405, "currency": "USD" },
-    "isOptionPromoActive": false,
+    "price": {
+      "amount": 450,
+      "currency": "USD"
+    },
+    "isOptionPromoActive": true,
     "promoPrice": null,
     "priceTextKey": "",
     "filterGroupKey": "pn",
-    "notesKeys": ["note.microneedling.pn_full", "note.microneedling.pn_benefit"]
+    "linkedPackageIds": [
+      "pkg_skin_renewal_protocol",
+      "pkg_casmara_purifying_pn",
+      "pkg_casmara_retinol_pn"
+    ],
+    "notesKeys": [
+      "note.microneedling.pn_full",
+      "note.microneedling.pn_benefit"
+    ]
   },
   {
     "id": "opt_mesotherapy_pn_face_neck_decollete",
     "serviceId": "svc_mesotherapy_infusions",
     "nameKey": "opt.mesotherapy.pn_face_neck_decollete",
-    "price": { "amount": 520, "currency": "USD" },
-    "isOptionPromoActive": false,
+    "price": {
+      "amount": 565,
+      "currency": "USD"
+    },
+    "isOptionPromoActive": true,
     "promoPrice": null,
     "priceTextKey": "",
     "filterGroupKey": "pn",
-    "notesKeys": ["note.microneedling.pn_full", "note.microneedling.pn_benefit"]
+    "linkedPackageIds": [
+      "pkg_skin_renewal_protocol",
+      "pkg_casmara_purifying_pn",
+      "pkg_casmara_retinol_pn"
+    ],
+    "notesKeys": [
+      "note.microneedling.pn_full",
+      "note.microneedling.pn_benefit"
+    ]
+  },
+  {
+    "id": "opt_mesotherapy_pn_small_zone",
+    "serviceId": "svc_mesotherapy_infusions",
+    "nameKey": "opt.mesotherapy.pn_small_zone",
+    "price": {
+      "amount": 285,
+      "currency": "USD"
+    },
+    "isOptionPromoActive": true,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "filterGroupKey": "pn",
+    "linkedPackageIds": [
+      "pkg_skin_renewal_protocol",
+      "pkg_casmara_purifying_pn",
+      "pkg_casmara_retinol_pn"
+    ],
+    "notesKeys": [
+      "note.microneedling.pn_full",
+      "note.microneedling.pn_benefit",
+      "note.mesotherapy.small_zone"
+    ]
+  },
+  {
+    "id": "opt_mesotherapy_pn_medium_zone",
+    "serviceId": "svc_mesotherapy_infusions",
+    "nameKey": "opt.mesotherapy.pn_medium_zone",
+    "price": {
+      "amount": 465,
+      "currency": "USD"
+    },
+    "isOptionPromoActive": true,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "filterGroupKey": "pn",
+    "linkedPackageIds": [
+      "pkg_skin_renewal_protocol",
+      "pkg_casmara_purifying_pn",
+      "pkg_casmara_retinol_pn"
+    ],
+    "notesKeys": [
+      "note.microneedling.pn_full",
+      "note.microneedling.pn_benefit",
+      "note.mesotherapy.medium_zone"
+    ]
+  },
+  {
+    "id": "opt_mesotherapy_pn_large_zone",
+    "serviceId": "svc_mesotherapy_infusions",
+    "nameKey": "opt.mesotherapy.pn_large_zone",
+    "price": {
+      "amount": 575,
+      "currency": "USD"
+    },
+    "isOptionPromoActive": true,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "filterGroupKey": "pn",
+    "linkedPackageIds": [
+      "pkg_skin_renewal_protocol",
+      "pkg_casmara_purifying_pn",
+      "pkg_casmara_retinol_pn"
+    ],
+    "notesKeys": [
+      "note.microneedling.pn_full",
+      "note.microneedling.pn_benefit",
+      "note.mesotherapy.large_zone"
+    ]
   },
   {
     "id": "opt_mesotherapy_pdrn_face",
     "serviceId": "svc_mesotherapy_infusions",
     "nameKey": "opt.mesotherapy.pdrn_face",
-    "price": { "amount": 180, "currency": "USD" },
-    "isOptionPromoActive": false,
+    "price": {
+      "amount": 190,
+      "currency": "USD"
+    },
+    "isOptionPromoActive": true,
     "promoPrice": null,
     "priceTextKey": "",
     "filterGroupKey": "pdrn",
-    "notesKeys": ["note.microneedling.pdrn_full", "note.microneedling.pdrn_benefit"]
+    "notesKeys": [
+      "note.microneedling.pdrn_full",
+      "note.microneedling.pdrn_benefit"
+    ],
+    "linkedPackageIds": [
+      "pkg_skin_renewal_pdrn",
+      "pkg_casmara_purifying_pdrn",
+      "pkg_casmara_retinol_pdrn"
+    ]
   },
   {
     "id": "opt_mesotherapy_pdrn_face_neck",
     "serviceId": "svc_mesotherapy_infusions",
     "nameKey": "opt.mesotherapy.pdrn_face_neck",
-    "price": { "amount": 265, "currency": "USD" },
-    "isOptionPromoActive": false,
+    "price": {
+      "amount": 275,
+      "currency": "USD"
+    },
+    "isOptionPromoActive": true,
     "promoPrice": null,
     "priceTextKey": "",
     "filterGroupKey": "pdrn",
-    "notesKeys": ["note.microneedling.pdrn_full", "note.microneedling.pdrn_benefit"]
+    "notesKeys": [
+      "note.microneedling.pdrn_full",
+      "note.microneedling.pdrn_benefit"
+    ],
+    "linkedPackageIds": [
+      "pkg_skin_renewal_pdrn",
+      "pkg_casmara_purifying_pdrn",
+      "pkg_casmara_retinol_pdrn"
+    ]
   },
   {
     "id": "opt_mesotherapy_pdrn_face_neck_decollete",
     "serviceId": "svc_mesotherapy_infusions",
     "nameKey": "opt.mesotherapy.pdrn_face_neck_decollete",
-    "price": { "amount": 305, "currency": "USD" },
-    "isOptionPromoActive": false,
+    "price": {
+      "amount": 315,
+      "currency": "USD"
+    },
+    "isOptionPromoActive": true,
     "promoPrice": null,
     "priceTextKey": "",
     "filterGroupKey": "pdrn",
-    "notesKeys": ["note.microneedling.pdrn_full", "note.microneedling.pdrn_benefit"]
+    "notesKeys": [
+      "note.microneedling.pdrn_full",
+      "note.microneedling.pdrn_benefit"
+    ],
+    "linkedPackageIds": [
+      "pkg_skin_renewal_pdrn",
+      "pkg_casmara_purifying_pdrn",
+      "pkg_casmara_retinol_pdrn"
+    ]
+  },
+  {
+    "id": "opt_mesotherapy_pdrn_small_zone",
+    "serviceId": "svc_mesotherapy_infusions",
+    "nameKey": "opt.mesotherapy.pdrn_small_zone",
+    "price": {
+      "amount": 175,
+      "currency": "USD"
+    },
+    "isOptionPromoActive": true,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "filterGroupKey": "pdrn",
+    "notesKeys": [
+      "note.microneedling.pdrn_full",
+      "note.microneedling.pdrn_benefit",
+      "note.mesotherapy.small_zone"
+    ],
+    "linkedPackageIds": [
+      "pkg_skin_renewal_pdrn",
+      "pkg_casmara_purifying_pdrn",
+      "pkg_casmara_retinol_pdrn"
+    ]
+  },
+  {
+    "id": "opt_mesotherapy_pdrn_medium_zone",
+    "serviceId": "svc_mesotherapy_infusions",
+    "nameKey": "opt.mesotherapy.pdrn_medium_zone",
+    "price": {
+      "amount": 290,
+      "currency": "USD"
+    },
+    "isOptionPromoActive": true,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "filterGroupKey": "pdrn",
+    "notesKeys": [
+      "note.microneedling.pdrn_full",
+      "note.microneedling.pdrn_benefit",
+      "note.mesotherapy.medium_zone"
+    ],
+    "linkedPackageIds": [
+      "pkg_skin_renewal_pdrn",
+      "pkg_casmara_purifying_pdrn",
+      "pkg_casmara_retinol_pdrn"
+    ]
+  },
+  {
+    "id": "opt_mesotherapy_pdrn_large_zone",
+    "serviceId": "svc_mesotherapy_infusions",
+    "nameKey": "opt.mesotherapy.pdrn_large_zone",
+    "price": {
+      "amount": 330,
+      "currency": "USD"
+    },
+    "isOptionPromoActive": true,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "filterGroupKey": "pdrn",
+    "notesKeys": [
+      "note.microneedling.pdrn_full",
+      "note.microneedling.pdrn_benefit",
+      "note.mesotherapy.large_zone"
+    ],
+    "linkedPackageIds": [
+      "pkg_skin_renewal_pdrn",
+      "pkg_casmara_purifying_pdrn",
+      "pkg_casmara_retinol_pdrn"
+    ]
   },
   {
     "id": "opt_mesotherapy_skinvive_face",
     "serviceId": "svc_mesotherapy_infusions",
     "nameKey": "opt.mesotherapy.skinvive_face",
-    "price": { "amount": 525, "currency": "USD" },
+    "price": {
+      "amount": 585,
+      "currency": "USD"
+    },
     "isOptionPromoActive": false,
     "promoPrice": null,
     "priceTextKey": "",
@@ -566,10 +1116,106 @@
     ]
   },
   {
+    "id": "opt_mesotherapy_skinvive_face_neck",
+    "serviceId": "svc_mesotherapy_infusions",
+    "nameKey": "opt.mesotherapy.skinvive_face_neck",
+    "price": {
+      "amount": 1250,
+      "currency": "USD"
+    },
+    "isOptionPromoActive": false,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "filterGroupKey": "ha",
+    "notesKeys": [
+      "note.mesotherapy.skinvive_mechanism",
+      "note.microneedling.toskani_hydration_benefit_2",
+      "note.microneedling.toskani_hydration_benefit_3"
+    ]
+  },
+  {
+    "id": "opt_mesotherapy_skinvive_face_neck_decollete",
+    "serviceId": "svc_mesotherapy_infusions",
+    "nameKey": "opt.mesotherapy.skinvive_face_neck_decollete",
+    "price": {
+      "amount": 1700,
+      "currency": "USD"
+    },
+    "isOptionPromoActive": false,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "filterGroupKey": "ha",
+    "notesKeys": [
+      "note.mesotherapy.skinvive_mechanism",
+      "note.microneedling.toskani_hydration_benefit_2",
+      "note.microneedling.toskani_hydration_benefit_3"
+    ]
+  },
+  {
+    "id": "opt_mesotherapy_skinvive_small_zone",
+    "serviceId": "svc_mesotherapy_infusions",
+    "nameKey": "opt.mesotherapy.skinvive_small_zone",
+    "price": {
+      "amount": 530,
+      "currency": "USD"
+    },
+    "isOptionPromoActive": false,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "filterGroupKey": "ha",
+    "notesKeys": [
+      "note.mesotherapy.skinvive_mechanism",
+      "note.microneedling.toskani_hydration_benefit_2",
+      "note.microneedling.toskani_hydration_benefit_3",
+      "note.mesotherapy.small_zone"
+    ]
+  },
+  {
+    "id": "opt_mesotherapy_skinvive_medium_zone",
+    "serviceId": "svc_mesotherapy_infusions",
+    "nameKey": "opt.mesotherapy.skinvive_medium_zone",
+    "price": {
+      "amount": 1465,
+      "currency": "USD"
+    },
+    "isOptionPromoActive": false,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "filterGroupKey": "ha",
+    "notesKeys": [
+      "note.mesotherapy.skinvive_mechanism",
+      "note.microneedling.toskani_hydration_benefit_2",
+      "note.microneedling.toskani_hydration_benefit_3",
+      "note.mesotherapy.medium_zone"
+    ]
+  },
+  {
+    "id": "opt_mesotherapy_skinvive_large_zone",
+    "serviceId": "svc_mesotherapy_infusions",
+    "nameKey": "opt.mesotherapy.skinvive_large_zone",
+    "price": {
+      "amount": 1850,
+      "currency": "USD"
+    },
+    "isOptionPromoActive": false,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "filterGroupKey": "ha",
+    "notesKeys": [
+      "note.mesotherapy.skinvive_mechanism",
+      "note.microneedling.toskani_hydration_benefit_2",
+      "note.microneedling.toskani_hydration_benefit_3",
+      "note.mesotherapy.large_zone"
+    ]
+  },
+  {
     "id": "opt_mesotherapy_tkn_ha3_face",
     "serviceId": "svc_mesotherapy_infusions",
     "nameKey": "opt.mesotherapy.tkn_ha3_face",
-    "price": { "amount": 300, "currency": "USD" },
+    "price": {
+      "amount": 310,
+      "currency": "USD"
+    },
     "isOptionPromoActive": false,
     "promoPrice": null,
     "priceTextKey": "",
@@ -584,7 +1230,10 @@
     "id": "opt_mesotherapy_tkn_ha3_face_neck",
     "serviceId": "svc_mesotherapy_infusions",
     "nameKey": "opt.mesotherapy.tkn_ha3_face_neck",
-    "price": { "amount": 450, "currency": "USD" },
+    "price": {
+      "amount": 620,
+      "currency": "USD"
+    },
     "isOptionPromoActive": false,
     "promoPrice": null,
     "priceTextKey": "",
@@ -599,7 +1248,10 @@
     "id": "opt_mesotherapy_tkn_ha3_face_neck_decollete",
     "serviceId": "svc_mesotherapy_infusions",
     "nameKey": "opt.mesotherapy.tkn_ha3_face_neck_decollete",
-    "price": { "amount": 565, "currency": "USD" },
+    "price": {
+      "amount": 930,
+      "currency": "USD"
+    },
     "isOptionPromoActive": false,
     "promoPrice": null,
     "priceTextKey": "",
@@ -608,6 +1260,63 @@
       "note.microneedling.toskani_hydration_benefit_1",
       "note.microneedling.toskani_hydration_benefit_2",
       "note.microneedling.toskani_hydration_benefit_3"
+    ]
+  },
+  {
+    "id": "opt_mesotherapy_tkn_ha3_small_zone",
+    "serviceId": "svc_mesotherapy_infusions",
+    "nameKey": "opt.mesotherapy.tkn_ha3_small_zone",
+    "price": {
+      "amount": 300,
+      "currency": "USD"
+    },
+    "isOptionPromoActive": false,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "filterGroupKey": "ha",
+    "notesKeys": [
+      "note.microneedling.toskani_hydration_benefit_1",
+      "note.microneedling.toskani_hydration_benefit_2",
+      "note.microneedling.toskani_hydration_benefit_3",
+      "note.mesotherapy.small_zone"
+    ]
+  },
+  {
+    "id": "opt_mesotherapy_tkn_ha3_medium_zone",
+    "serviceId": "svc_mesotherapy_infusions",
+    "nameKey": "opt.mesotherapy.tkn_ha3_medium_zone",
+    "price": {
+      "amount": 610,
+      "currency": "USD"
+    },
+    "isOptionPromoActive": false,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "filterGroupKey": "ha",
+    "notesKeys": [
+      "note.microneedling.toskani_hydration_benefit_1",
+      "note.microneedling.toskani_hydration_benefit_2",
+      "note.microneedling.toskani_hydration_benefit_3",
+      "note.mesotherapy.medium_zone"
+    ]
+  },
+  {
+    "id": "opt_mesotherapy_tkn_ha3_large_zone",
+    "serviceId": "svc_mesotherapy_infusions",
+    "nameKey": "opt.mesotherapy.tkn_ha3_large_zone",
+    "price": {
+      "amount": 900,
+      "currency": "USD"
+    },
+    "isOptionPromoActive": false,
+    "promoPrice": null,
+    "priceTextKey": "",
+    "filterGroupKey": "ha",
+    "notesKeys": [
+      "note.microneedling.toskani_hydration_benefit_1",
+      "note.microneedling.toskani_hydration_benefit_2",
+      "note.microneedling.toskani_hydration_benefit_3",
+      "note.mesotherapy.large_zone"
     ]
   }
 ]

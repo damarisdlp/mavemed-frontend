@@ -71,7 +71,7 @@
   },
   {
     "id": "area.co2.decollete",
-    "en": "Dcollet",
+    "en": "Decollete",
     "es": "Escote"
   },
   {
@@ -116,17 +116,17 @@
   },
   {
     "id": "opt.co2.face_neck_decollete",
-    "en": "Face + Neck + Dcollet",
+    "en": "Face + Neck + Decollete",
     "es": "Rostro + Cuello + Escote"
   },
   {
     "id": "opt.co2.face_neck_decollete_chest",
-    "en": "Face + Neck + Dcollet + Chest",
+    "en": "Face + Neck + Decollete + Chest",
     "es": "Rostro + Cuello + Escote + Pecho"
   },
   {
     "id": "opt.co2.decollete",
-    "en": "Dcollet",
+    "en": "Decollete",
     "es": "Escote"
   },
   {
@@ -137,7 +137,7 @@
   {
     "id": "opt.co2.small_zone",
     "en": "Small Zone",
-    "es": "Zona Pequea"
+    "es": "Zona Pequena"
   },
   {
     "id": "opt.co2.medium_zone",
@@ -241,53 +241,53 @@
   },
   {
     "id": "opt.laser_hair.small_zone",
-    "en": "Small Zone (Total area [103 cm  - 413 cm ])",
-    "es": "Zona Pequea (rea total [103 cm  - 413 cm ])"
+    "en": "Small Zone (Total area [103 cm2 - 413 cm2])",
+    "es": "Zona Pequena (Area total [103 cm2 - 413 cm2])"
   },
   {
     "id": "opt.laser_hair.medium_zone",
-    "en": "Medium Zone (Total area [523 cm  - 1080.3 cm ])",
-    "es": "Zona Mediana (rea total [523 cm  - 1080.3 cm ])"
+    "en": "Medium Zone (Total area [523 cm2 - 1080.3 cm2])",
+    "es": "Zona Mediana (Area total [523 cm2 - 1080.3 cm2])"
   },
   {
     "id": "opt.laser_hair.large_zone",
-    "en": "Large Zone (Total area [1264 cm  - 2090 cm ])",
-    "es": "Zona Grande (rea total [1264 cm  - 2090 cm ])"
+    "en": "Large Zone (Total area [1264 cm2 - 2090 cm2])",
+    "es": "Zona Grande (Area total [1264 cm2 - 2090 cm2])"
   },
   {
     "id": "note.co2.under_eye",
     "en": "Includes the under-eye treatment area.",
-    "es": "Incluye el rea de tratamiento bajo los ojos."
+    "es": "Incluye el Area de tratamiento bajo los ojos."
   },
   {
     "id": "note.co2.face_neck_decollete",
-    "en": "Includes face, neck, and dcollet treatment areas.",
-    "es": "Incluye las reas de tratamiento de rostro, cuello y escote."
+    "en": "Includes face, neck, and decollete treatment areas.",
+    "es": "Incluye las Areas de tratamiento de rostro, cuello y escote."
   },
   {
     "id": "note.co2.face_neck_decollete_chest",
-    "en": "Includes face, neck, dcollet, and chest treatment areas.",
-    "es": "Incluye las reas de tratamiento de rostro, cuello, escote y pecho."
+    "en": "Includes face, neck, decollete, and chest treatment areas.",
+    "es": "Incluye las Areas de tratamiento de rostro, cuello, escote y pecho."
   },
   {
     "id": "note.co2.chest",
     "en": "Includes the chest treatment area.",
-    "es": "Incluye el rea de tratamiento del pecho."
+    "es": "Incluye el Area de tratamiento del pecho."
   },
   {
     "id": "note.co2.small_zone",
-    "en": "Total area [103 cm  - 413 cm ]. Approximately one to two palms  similar to a credit card up to half a sheet of paper.",
-    "es": "rea total [103 cm  - 413 cm ]. Aproximadamente de una a dos palmas de la mano, similar al tamao de una tarjeta de crdito hasta media hoja de papel."
+    "en": "Total area [103 cm2 - 413 cm2]. Approximately one to two palms, similar to a credit card, up to half a sheet of paper.",
+    "es": "Area total [103 cm2 - 413 cm2]. Aproximadamente de una a dos palmas de la mano, similar al tamano de una tarjeta de credito, hasta media hoja de papel."
   },
   {
     "id": "note.co2.medium_zone",
-    "en": "Total area [523 cm  - 1080.3 cm ]. Four to six palms  roughly the size of a full sheet of paper.",
-    "es": "rea total [523 cm  - 1080.3 cm ]. De cuatro a seis palmas de la mano, aproximadamente del tamao de una hoja completa de papel."
+    "en": "Total area [523 cm2 - 1080.3 cm2]. Four to six palms, roughly the size of a full sheet of paper.",
+    "es": "Area total [523 cm2 - 1080.3 cm2]. De cuatro a seis palmas de la mano, aproximadamente del tamano de una hoja completa de papel."
   },
   {
     "id": "note.co2.large_zone",
-    "en": "Total area [1264 cm  - 2090 cm ]. Eight to twelve palms  about the size of a square pillow or large square.",
-    "es": "rea total [1264 cm  - 2090 cm ]. De ocho a doce palmas de la mano, aproximadamente del tamao de un cojn cuadrado o un cuadrado grande."
+    "en": "Total area [1264 cm2 - 2090 cm2]. Eight to twelve palms, about the size of a square pillow or large square.",
+    "es": "Area total [1264 cm2 - 2090 cm2]. De ocho a doce palmas de la mano, aproximadamente del tamano de un cojin cuadrado o un cuadrado grande."
   },
   {
     "id": "promo.co2.headline",
@@ -352,7 +352,7 @@
   {
     "id": "exp.co2.post.1",
     "en": "Redness, swelling, oozing, and peeling are normal for 510 days; keep the area moist with the prescribed ointment.",
-    "es": "Enrojecimiento, hinchazn, exudado y descamacin son normales durante 510 das; mantenga el rea humectada con el ungento indicado."
+    "es": "Enrojecimiento, hinchazn, exudado y descamacin son normales durante 510 das; mantenga el Area humectada con el ungento indicado."
   },
   {
     "id": "exp.co2.post.2",
@@ -542,7 +542,7 @@
   {
     "id": "exp.laser_hair.pre.1",
     "en": "Shave the treatment area the day before your session. Do not wax or pluck.",
-    "es": "Rasure el rea a tratar un da antes de su sesin. No se depile con cera ni pinzas."
+    "es": "Rasure el Area a tratar un da antes de su sesin. No se depile con cera ni pinzas."
   },
   {
     "id": "exp.laser_hair.pre.2",
@@ -706,17 +706,17 @@
   },
   {
     "id": "opt.ipl.face_neck_decollete",
-    "en": "Face + Neck + Dcollet",
+    "en": "Face + Neck + Decollete",
     "es": "Rostro + Cuello + Escote"
   },
   {
     "id": "opt.ipl.face_neck_decollete_chest",
-    "en": "Face + Neck + Dcollet + Chest",
+    "en": "Face + Neck + Decollete + Chest",
     "es": "Rostro + Cuello + Escote + Pecho"
   },
   {
     "id": "opt.ipl.decollete",
-    "en": "Dcollet",
+    "en": "Decollete",
     "es": "Escote"
   },
   {
@@ -727,7 +727,7 @@
   {
     "id": "opt.ipl.small_zone",
     "en": "Small Zone",
-    "es": "Zona Pequea"
+    "es": "Zona Pequena"
   },
   {
     "id": "opt.ipl.medium_zone",
@@ -756,22 +756,22 @@
   },
   {
     "id": "note.ipl.small_zone",
-    "en": "Total area [103 cm  - 413 cm ]. Approximately one to two palms  similar to a credit card up to half a sheet of paper.",
-    "es": "rea total [103 cm  - 413 cm ]. Aproximadamente de una a dos palmas de la mano, similar al tamao de una tarjeta de crdito hasta media hoja de papel."
+    "en": "Total area [103 cm2 - 413 cm2]. Approximately one to two palms, similar to a credit card, up to half a sheet of paper.",
+    "es": "Area total [103 cm2 - 413 cm2]. Aproximadamente de una a dos palmas de la mano, similar al tamano de una tarjeta de credito, hasta media hoja de papel."
   },
   {
     "id": "note.ipl.medium_zone",
-    "en": "Total area [523 cm  - 1080.3 cm ]. Four to six palms  roughly the size of a full sheet of paper.",
-    "es": "rea total [523 cm  - 1080.3 cm ]. De cuatro a seis palmas de la mano, aproximadamente del tamao de una hoja completa de papel."
+    "en": "Total area [523 cm2 - 1080.3 cm2]. Four to six palms, roughly the size of a full sheet of paper.",
+    "es": "Area total [523 cm2 - 1080.3 cm2]. De cuatro a seis palmas de la mano, aproximadamente del tamano de una hoja completa de papel."
   },
   {
     "id": "note.ipl.large_zone",
-    "en": "Total area [196 in  - 324 in ]. Eight to twelve palms  about the size of a square pillow or large square.",
-    "es": "rea total [1264 cm  - 2090 cm ]. De ocho a doce palmas de la mano, aproximadamente del tamao de un cojn cuadrado o un cuadrado grande."
+    "en": "Total area [1264 cm2 - 2090 cm2]. Eight to twelve palms, about the size of a square pillow or large square.",
+    "es": "Area total [1264 cm2 - 2090 cm2]. De ocho a doce palmas de la mano, aproximadamente del tamano de un cojin cuadrado o un cuadrado grande."
   },
   {
     "id": "addon.ipl.rf_face_neck_decollete",
-    "en": "Sylfirm X - RF Microneedling - Face + Neck + Dcollet",
+    "en": "Sylfirm X - RF Microneedling - Face + Neck + Decollete",
     "es": "Sylfirm X - Microagujas RF - Rostro + Cuello + Escote"
   },
   {
@@ -926,7 +926,7 @@
   },
   {
     "id": "area.rf_microneedling.decollete",
-    "en": "Dcollet",
+    "en": "Decollete",
     "es": "Escote"
   },
   {
@@ -956,7 +956,7 @@
   },
   {
     "id": "opt.rf.decollete",
-    "en": "Dcollet",
+    "en": "Decollete",
     "es": "Escote"
   },
   {
@@ -966,7 +966,7 @@
   },
   {
     "id": "opt.rf.face_neck_decollete",
-    "en": "Face + Neck + Dcollet",
+    "en": "Face + Neck + Decollete",
     "es": "Rostro + Cuello + Escote"
   },
   {
@@ -977,7 +977,7 @@
   {
     "id": "opt.rf.small_zone",
     "en": "Small Zone",
-    "es": "Zona Pequea"
+    "es": "Zona Pequena"
   },
   {
     "id": "opt.rf.medium_zone",
@@ -991,8 +991,8 @@
   },
   {
     "id": "note.rf.small_zone",
-    "en": "Total area [103 cm  - 413 cm ]. Approximately one to two palms  similar to a credit card up to half a sheet of paper.",
-    "es": "rea total [103 cm  - 413 cm ]. Aproximadamente de una a dos palmas de la mano, similar al tamao de una tarjeta de crdito hasta media hoja de papel."
+    "en": "Total area [103 cm2 - 413 cm2]. Approximately one to two palms, similar to a credit card, up to half a sheet of paper.",
+    "es": "Area total [103 cm2 - 413 cm2]. Aproximadamente de una a dos palmas de la mano, similar al tamano de una tarjeta de credito, hasta media hoja de papel."
   },
   {
     "id": "note.rf.face_neck_decollete",
@@ -1006,13 +1006,13 @@
   },
   {
     "id": "note.rf.medium_zone",
-    "en": "Total area [523 cm  - 1080.3 cm ]. Four to six palms  roughly the size of a full sheet of paper.",
-    "es": "rea total [523 cm  - 1080.3 cm ]. De cuatro a seis palmas de la mano, aproximadamente del tamao de una hoja completa de papel."
+    "en": "Total area [523 cm2 - 1080.3 cm2]. Four to six palms, roughly the size of a full sheet of paper.",
+    "es": "Area total [523 cm2 - 1080.3 cm2]. De cuatro a seis palmas de la mano, aproximadamente del tamano de una hoja completa de papel."
   },
   {
     "id": "note.rf.large_zone",
-    "en": "Total area [1264 cm  - 2090 cm ]. Eight to twelve palms  about the size of a square pillow or large square.",
-    "es": "rea total [1264 cm  - 2090 cm ]. De ocho a doce palmas de la mano, aproximadamente del tamao de un cojn cuadrado o un cuadrado grande."
+    "en": "Total area [1264 cm2 - 2090 cm2]. Eight to twelve palms, about the size of a square pillow or large square.",
+    "es": "Area total [1264 cm2 - 2090 cm2]. De ocho a doce palmas de la mano, aproximadamente del tamano de un cojin cuadrado o un cuadrado grande."
   },
   {
     "id": "addon.rf.botox_any_zone",
@@ -1191,8 +1191,23 @@
   },
   {
     "id": "opt.serum.prp_face_neck_decollete",
-    "en": "PRP - Face + Neck + Dcollet",
+    "en": "PRP - Face + Neck + Decollete",
     "es": "PRP - Rostro + Cuello + Escote"
+  },
+  {
+    "id": "opt.serum.prp_small_zone",
+    "en": "PRP - Small Zone",
+    "es": "PRP - Zona Pequeña"
+  },
+  {
+    "id": "opt.serum.prp_medium_zone",
+    "en": "PRP - Medium Zone",
+    "es": "PRP - Zona Mediana"
+  },
+  {
+    "id": "opt.serum.prp_large_zone",
+    "en": "PRP - Large Zone",
+    "es": "PRP - Zona Grande"
   },
   {
     "id": "opt.serum.pn_face",
@@ -1206,8 +1221,23 @@
   },
   {
     "id": "opt.serum.pn_face_neck_decollete",
-    "en": "PN - Face + Neck + Dcollet",
+    "en": "PN - Face + Neck + Decollete",
     "es": "PN - Rostro + Cuello + Escote"
+  },
+  {
+    "id": "opt.serum.pn_small_zone",
+    "en": "PN - Small Zone",
+    "es": "PN - Zona Pequeña"
+  },
+  {
+    "id": "opt.serum.pn_medium_zone",
+    "en": "PN - Medium Zone",
+    "es": "PN - Zona Mediana"
+  },
+  {
+    "id": "opt.serum.pn_large_zone",
+    "en": "PN - Large Zone",
+    "es": "PN - Zona Grande"
   },
   {
     "id": "opt.serum.pdrn_face",
@@ -1221,8 +1251,23 @@
   },
   {
     "id": "opt.serum.pdrn_face_neck_decollete",
-    "en": "PDRN - Face + Neck + Dcollet",
+    "en": "PDRN - Face + Neck + Decollete",
     "es": "PDRN - Rostro + Cuello + Escote"
+  },
+  {
+    "id": "opt.serum.pdrn_small_zone",
+    "en": "PDRN - Small Zone",
+    "es": "PDRN - Zona Pequeña"
+  },
+  {
+    "id": "opt.serum.pdrn_medium_zone",
+    "en": "PDRN - Medium Zone",
+    "es": "PDRN - Zona Mediana"
+  },
+  {
+    "id": "opt.serum.pdrn_large_zone",
+    "en": "PDRN - Large Zone",
+    "es": "PDRN - Zona Grande"
   },
   {
     "id": "exp.serum.pre.1",

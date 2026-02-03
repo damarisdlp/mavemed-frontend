@@ -29,11 +29,36 @@
   {
     "id": "promo_pdo_biostimulating_threads",
     "serviceId": "svc_pdo_biostimulating_threads",
-    "headlineKey": "",
-    "descriptionKey": "",
+    "headlineKey": "promo.pdo_biostim.headline",
+    "descriptionKey": "promo.pdo_biostim.description",
+    "summaryNameKey": "promo.pdo_biostim.summary_name",
     "validFrom": null,
-    "validTill": null,
-    "options": []
+    "validTill": "2026-03-14",
+    "options": [
+      {
+        "optionNameKey": "opt.pdo_biostim.collagen_activation",
+        "notesKeys": []
+      },
+      {
+        "optionNameKey": "opt.pdo_biostim.visible_firmness",
+        "notesKeys": []
+      },
+      {
+        "optionNameKey": "opt.pdo_biostim.advanced_dermal_support",
+        "notesKeys": []
+      },
+      {
+        "optionNameKey": "opt.pdo_biostim.intensive_dermal_support",
+        "notesKeys": []
+      },
+      {
+        "optionNameKey": "opt.pdo_biostim.hybrid_thread_therapy",
+        "notesKeys": [
+          "note.pdo_biostim.hybrid_includes",
+          "note.pdo_biostim.hybrid_example"
+        ]
+      }
+    ]
   },
   {
     "id": "promo_pdo_lift_threads",
@@ -41,7 +66,27 @@
     "headlineKey": "",
     "descriptionKey": "",
     "validFrom": null,
-    "validTill": null,
-    "options": []
+    "validTill": "2026-03-14",
+    "options": [
+      {
+        "optionNameKey": "opt.pdo_lift.light_support",
+        "notesKeys": []
+      },
+      {
+        "optionNameKey": "opt.pdo_lift.moderate_rejuvenation",
+        "notesKeys": []
+      },
+      {
+        "optionNameKey": "opt.pdo_lift.advanced_support",
+        "notesKeys": []
+      },
+      {
+        "optionNameKey": "opt.pdo_biostim.hybrid_thread_therapy",
+        "notesKeys": [
+          "note.pdo_biostim.hybrid_includes",
+          "note.pdo_biostim.hybrid_example"
+        ]
+      }
+    ]
   }
 ]

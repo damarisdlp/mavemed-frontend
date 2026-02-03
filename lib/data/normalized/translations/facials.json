@@ -106,7 +106,7 @@
   },
   {
     "id": "addon.hydrafacial.rf_microneedling",
-    "en": "Sylfirm X - RF Microneedling - Face + Neck + Dcollet",
+    "en": "Sylfirm X - RF Microneedling - Face + Neck + Decollete",
     "es": "Sylfirm X - Microagujas RF - Rostro + Cuello + Escote"
   },
   {
@@ -236,7 +236,7 @@
   },
   {
     "id": "addon.casmara_infinity.rf_microneedling",
-    "en": "Sylfirm X - RF Microneedling - Face + Neck + Dcollet",
+    "en": "Sylfirm X - RF Microneedling - Face + Neck + Decollete",
     "es": "Sylfirm X - Microagujas RF - Rostro + Cuello + Escote"
   },
   {
@@ -356,7 +356,7 @@
   },
   {
     "id": "addon.casmara_purifying.rf_microneedling",
-    "en": "Sylfirm X - RF Microneedling - Face + Neck + Dcollet",
+    "en": "Sylfirm X - RF Microneedling - Face + Neck + Decollete",
     "es": "Sylfirm X - Microagujas RF - Rostro + Cuello + Escote"
   },
   {
@@ -476,7 +476,7 @@
   },
   {
     "id": "addon.casmara_retinol.rf_microneedling",
-    "en": "Sylfirm X - RF Microneedling - Face + Neck + Dcollet",
+    "en": "Sylfirm X - RF Microneedling - Face + Neck + Decollete",
     "es": "Sylfirm X - Microagujas RF - Rostro + Cuello + Escote"
   },
   {
@@ -586,7 +586,7 @@
   },
   {
     "id": "area.janssen_ultra.decollete",
-    "en": "Dcollet",
+    "en": "Decollete",
     "es": "Escote"
   },
   {
@@ -601,7 +601,7 @@
   },
   {
     "id": "opt.janssen_ultra.face_neck_decollete",
-    "en": "Face + Neck + Dcollet",
+    "en": "Face + Neck + Decollete",
     "es": "Rostro + Cuello + Escote"
   },
   {
@@ -616,7 +616,7 @@
   },
   {
     "id": "addon.janssen_ultra.rf_microneedling",
-    "en": "Sylfirm X - RF Microneedling - Face + Neck + Dcollet",
+    "en": "Sylfirm X - RF Microneedling - Face + Neck + Decollete",
     "es": "Sylfirm X - Microagujas RF - Rostro + Cuello + Escote"
   },
   {
@@ -731,7 +731,7 @@
   },
   {
     "id": "area.janssen_radiance.decollete",
-    "en": "Dcollet",
+    "en": "Decollete",
     "es": "Escote"
   },
   {
@@ -746,7 +746,7 @@
   },
   {
     "id": "opt.janssen_radiance.face_neck_decollete",
-    "en": "Face + Neck + Dcollet",
+    "en": "Face + Neck + Decollete",
     "es": "Rostro + Cuello + Escote"
   },
   {
@@ -761,7 +761,7 @@
   },
   {
     "id": "addon.janssen_radiance.rf_microneedling",
-    "en": "Sylfirm X - RF Microneedling - Face + Neck + Dcollet",
+    "en": "Sylfirm X - RF Microneedling - Face + Neck + Decollete",
     "es": "Sylfirm X - Microagujas RF - Rostro + Cuello + Escote"
   },
   {
@@ -853,5 +853,300 @@
     "id": "faq.janssen_radiance.a2",
     "en": "Yes, this facial does not use any harsh acids or retinol, making it safe for pregnant clients.",
     "es": "S, este facial no utiliza cidos agresivos ni retinol, por lo que es seguro para pacientes embarazadas."
+  },
+  {
+    "id": "opt.casmara_skin_renewal_pn_face",
+    "en": "Skin Renewal Protocol - Polynucleotide Edition (Face)",
+    "es": "Protocolo de Renovacion de Piel - Edicion Polynucleotidos (Rostro)"
+  },
+  {
+    "id": "opt.casmara_infinity_skin_renewal_pn_face",
+    "en": "Casmara Infinity AntiAging Facial + PN - Face",
+    "es": "Facial Casmara Infinity Antienvejecimiento + PN - Rostro"
+  },
+  {
+    "id": "opt.casmara_purifying_skin_renewal_prp_face",
+    "en": "Casmara Purifying Algae Facial + PRP - Face",
+    "es": "Facial Casmara Purifying Algae + PRP - Rostro"
+  },
+  {
+    "id": "opt.casmara_retinol_skin_renewal_prp_face",
+    "en": "Casmara Retinol ProAge Facial + PRP - Face",
+    "es": "Facial Casmara Retinol ProAge + PRP - Rostro"
+  },
+  {
+    "id": "opt.casmara_purifying_skin_renewal_pn_face",
+    "en": "Casmara Purifying Algae Facial + PN - Face",
+    "es": "Facial Casmara Purifying Algae + PN - Rostro"
+  },
+  {
+    "id": "opt.casmara_retinol_skin_renewal_pn_face",
+    "en": "Casmara Retinol ProAge Facial + PN - Face",
+    "es": "Facial Casmara Retinol ProAge + PN - Rostro"
+  },
+  {
+    "id": "opt.casmara_purifying_skin_renewal_pdrn_face",
+    "en": "Casmara Purifying Algae Facial + PDRN - Face",
+    "es": "Facial Casmara Purifying Algae + PDRN - Rostro"
+  },
+  {
+    "id": "opt.casmara_retinol_skin_renewal_pdrn_face",
+    "en": "Casmara Retinol ProAge Facial + PDRN - Face",
+    "es": "Facial Casmara Retinol ProAge + PDRN - Rostro"
+  },
+  {
+    "id": "opt.casmara_infinity_skin_renewal_pdrn_face",
+    "en": "Casmara Infinity AntiAging Facial + PDRN - Face",
+    "es": "Facial Casmara Infinity Antienvejecimiento + PDRN - Rostro"
+  },
+  {
+    "id": "opt.casmara_infinity_skin_renewal_prp_face",
+    "en": "Casmara Infinity AntiAging Facial + PRP - Face",
+    "es": "Facial Casmara Infinity Antienvejecimiento + PRP - Rostro"
+  },
+  {
+    "id": "opt.casmara_skin_renewal_pn_face_neck",
+    "en": "Skin Renewal Protocol - Polynucleotide Edition (Face + Neck)",
+    "es": "Protocolo de Renovacion de Piel - Edicion Polynucleotidos (Rostro + Cuello)"
+  },
+  {
+    "id": "opt.casmara_infinity_skin_renewal_pn_face_neck",
+    "en": "Casmara Infinity AntiAging Facial + PN - Face + Neck",
+    "es": "Facial Casmara Infinity Antienvejecimiento + PN - Rostro + Cuello"
+  },
+  {
+    "id": "opt.casmara_purifying_skin_renewal_prp_face_neck",
+    "en": "Casmara Purifying Algae Facial + PRP - Face + Neck",
+    "es": "Facial Casmara Purifying Algae + PRP - Rostro + Cuello"
+  },
+  {
+    "id": "opt.casmara_retinol_skin_renewal_prp_face_neck",
+    "en": "Casmara Retinol ProAge Facial + PRP - Face + Neck",
+    "es": "Facial Casmara Retinol ProAge + PRP - Rostro + Cuello"
+  },
+  {
+    "id": "opt.casmara_purifying_skin_renewal_pn_face_neck",
+    "en": "Casmara Purifying Algae Facial + PN - Face + Neck",
+    "es": "Facial Casmara Purifying Algae + PN - Rostro + Cuello"
+  },
+  {
+    "id": "opt.casmara_retinol_skin_renewal_pn_face_neck",
+    "en": "Casmara Retinol ProAge Facial + PN - Face + Neck",
+    "es": "Facial Casmara Retinol ProAge + PN - Rostro + Cuello"
+  },
+  {
+    "id": "opt.casmara_purifying_skin_renewal_pdrn_face_neck",
+    "en": "Casmara Purifying Algae Facial + PDRN - Face + Neck",
+    "es": "Facial Casmara Purifying Algae + PDRN - Rostro + Cuello"
+  },
+  {
+    "id": "opt.casmara_retinol_skin_renewal_pdrn_face_neck",
+    "en": "Casmara Retinol ProAge Facial + PDRN - Face + Neck",
+    "es": "Facial Casmara Retinol ProAge + PDRN - Rostro + Cuello"
+  },
+  {
+    "id": "opt.casmara_infinity_skin_renewal_pdrn_face_neck",
+    "en": "Casmara Infinity AntiAging Facial + PDRN - Face + Neck",
+    "es": "Facial Casmara Infinity Antienvejecimiento + PDRN - Rostro + Cuello"
+  },
+  {
+    "id": "opt.casmara_infinity_skin_renewal_prp_face_neck",
+    "en": "Casmara Infinity AntiAging Facial + PRP - Face + Neck",
+    "es": "Facial Casmara Infinity Antienvejecimiento + PRP - Rostro + Cuello"
+  },
+  {
+    "id": "opt.casmara_skin_renewal_pn_face_neck_decollete",
+    "en": "Skin Renewal Protocol - Polynucleotide Edition (Face + Neck + Decollete)",
+    "es": "Protocolo de Renovacion de Piel - Edicion Polynucleotidos (Rostro + Cuello + Escote)"
+  },
+  {
+    "id": "opt.casmara_infinity_skin_renewal_pn_face_neck_decollete",
+    "en": "Casmara Infinity AntiAging Facial + PN - Face + Neck + Decollete",
+    "es": "Facial Casmara Infinity Antienvejecimiento + PN - Rostro + Cuello + Escote"
+  },
+  {
+    "id": "opt.casmara_purifying_skin_renewal_prp_face_neck_decollete",
+    "en": "Casmara Purifying Algae Facial + PRP - Face + Neck + Decollete",
+    "es": "Facial Casmara Purifying Algae + PRP - Rostro + Cuello + Escote"
+  },
+  {
+    "id": "opt.casmara_retinol_skin_renewal_prp_face_neck_decollete",
+    "en": "Casmara Retinol ProAge Facial + PRP - Face + Neck + Decollete",
+    "es": "Facial Casmara Retinol ProAge + PRP - Rostro + Cuello + Escote"
+  },
+  {
+    "id": "opt.casmara_purifying_skin_renewal_pn_face_neck_decollete",
+    "en": "Casmara Purifying Algae Facial + PN - Face + Neck + Decollete",
+    "es": "Facial Casmara Purifying Algae + PN - Rostro + Cuello + Escote"
+  },
+  {
+    "id": "opt.casmara_retinol_skin_renewal_pn_face_neck_decollete",
+    "en": "Casmara Retinol ProAge Facial + PN - Face + Neck + Decollete",
+    "es": "Facial Casmara Retinol ProAge + PN - Rostro + Cuello + Escote"
+  },
+  {
+    "id": "opt.casmara_purifying_skin_renewal_pdrn_face_neck_decollete",
+    "en": "Casmara Purifying Algae Facial + PDRN - Face + Neck + Decollete",
+    "es": "Facial Casmara Purifying Algae + PDRN - Rostro + Cuello + Escote"
+  },
+  {
+    "id": "opt.casmara_retinol_skin_renewal_pdrn_face_neck_decollete",
+    "en": "Casmara Retinol ProAge Facial + PDRN - Face + Neck + Decollete",
+    "es": "Facial Casmara Retinol ProAge + PDRN - Rostro + Cuello + Escote"
+  },
+  {
+    "id": "opt.casmara_infinity_skin_renewal_pdrn_face_neck_decollete",
+    "en": "Casmara Infinity AntiAging Facial + PDRN - Face + Neck + Decollete",
+    "es": "Facial Casmara Infinity Antienvejecimiento + PDRN - Rostro + Cuello + Escote"
+  },
+  {
+    "id": "opt.casmara_infinity_skin_renewal_prp_face_neck_decollete",
+    "en": "Casmara Infinity AntiAging Facial + PRP - Face + Neck + Decollete",
+    "es": "Facial Casmara Infinity Antienvejecimiento + PRP - Rostro + Cuello + Escote"
+  },
+  {
+    "id": "note.casmara_skin_renewal.includes",
+    "en": "Includes one Casmara facial (face only).",
+    "es": "Incluye un facial Casmara (solo rostro)."
+  },
+  {
+    "id": "note.casmara_infinity_skin_renewal.includes",
+    "en": "Includes one Casmara Infinity AntiAging facial (face only).",
+    "es": "Incluye un facial Casmara Infinity Antienvejecimiento (solo rostro)."
+  },
+  {
+    "id": "note.casmara_skin_renewal.pn_includes",
+    "en": "Includes an exclusively priced polynucleotide microneedling or mesotherapy treatment.",
+    "es": "Incluye un tratamiento de microneedling o mesoterapia con polinucleotidos a precio exclusivo."
+  },
+  {
+    "id": "note.casmara_infinity_skin_renewal.pn_includes",
+    "en": "Includes an exclusively priced polynucleotide microneedling or mesotherapy treatment.",
+    "es": "Incluye un tratamiento de microneedling o mesoterapia con polinucleotidos a precio exclusivo."
+  },
+  {
+    "id": "note.casmara_purifying_skin_renewal.includes",
+    "en": "Includes one Casmara Purifying Algae facial (face only).",
+    "es": "Incluye un facial Casmara Purifying Algae (solo rostro)."
+  },
+  {
+    "id": "note.casmara_purifying_skin_renewal.prp_includes",
+    "en": "Includes an exclusively priced PRP microneedling or mesotherapy treatment.",
+    "es": "Incluye un tratamiento de microneedling o mesoterapia con PRP a precio exclusivo."
+  },
+  {
+    "id": "note.casmara_purifying_skin_renewal.pn_includes",
+    "en": "Includes an exclusively priced PN microneedling or mesotherapy treatment.",
+    "es": "Incluye un tratamiento de microneedling o mesoterapia con PN a precio exclusivo."
+  },
+  {
+    "id": "note.casmara_purifying_skin_renewal.pdrn_includes",
+    "en": "Includes an exclusively priced PDRN microneedling or mesotherapy treatment.",
+    "es": "Incluye un tratamiento de microneedling o mesoterapia con PDRN a precio exclusivo."
+  },
+  {
+    "id": "note.casmara_retinol_skin_renewal.includes",
+    "en": "Includes one Casmara Retinol ProAge facial (face only).",
+    "es": "Incluye un facial Casmara Retinol ProAge (solo rostro)."
+  },
+  {
+    "id": "note.casmara_retinol_skin_renewal.prp_includes",
+    "en": "Includes an exclusively priced PRP microneedling or mesotherapy treatment.",
+    "es": "Incluye un tratamiento de microneedling o mesoterapia con PRP a precio exclusivo."
+  },
+  {
+    "id": "note.casmara_retinol_skin_renewal.pn_includes",
+    "en": "Includes an exclusively priced PN microneedling or mesotherapy treatment.",
+    "es": "Incluye un tratamiento de microneedling o mesoterapia con PN a precio exclusivo."
+  },
+  {
+    "id": "note.casmara_retinol_skin_renewal.pdrn_includes",
+    "en": "Includes an exclusively priced PDRN microneedling or mesotherapy treatment.",
+    "es": "Incluye un tratamiento de microneedling o mesoterapia con PDRN a precio exclusivo."
+  },
+  {
+    "id": "note.casmara_retinol_skin_renewal.zones",
+    "en": "Treatment zones can be Face, Face + Neck, or Face + Neck + Decollete.",
+    "es": "Las zonas pueden ser Rostro, Rostro + Cuello, o Rostro + Cuello + Escote."
+  },
+  {
+    "id": "note.casmara_purifying_skin_renewal.zones",
+    "en": "Treatment zones can be Face, Face + Neck, or Face + Neck + Decollete.",
+    "es": "Las zonas pueden ser Rostro, Rostro + Cuello, o Rostro + Cuello + Escote."
+  },
+  {
+    "id": "note.casmara_infinity_skin_renewal.pdrn_includes",
+    "en": "Includes an exclusively priced PDRN microneedling or mesotherapy treatment.",
+    "es": "Incluye un tratamiento de microneedling o mesoterapia con PDRN a precio exclusivo."
+  },
+  {
+    "id": "note.casmara_infinity_skin_renewal.prp_includes",
+    "en": "Includes an exclusively priced PRP microneedling or mesotherapy treatment.",
+    "es": "Incluye un tratamiento de microneedling o mesoterapia con PRP a precio exclusivo."
+  },
+  {
+    "id": "note.casmara_skin_renewal.zones",
+    "en": "Treatment zones can be Face, Face + Neck, or Face + Neck + Decollete.",
+    "es": "Las zonas pueden ser Rostro, Rostro + Cuello, o Rostro + Cuello + Escote."
+  },
+  {
+    "id": "note.casmara_infinity_skin_renewal.zones",
+    "en": "Treatment zones can be Face, Face + Neck, or Face + Neck + Decollete.",
+    "es": "Las zonas pueden ser Rostro, Rostro + Cuello, o Rostro + Cuello + Escote."
+  },
+  {
+    "id": "promo.casmara_skin_renewal.heading",
+    "en": "A targeted renewal protocol that pairs a high performance facial with regenerative microneedling to brighten, smooth texture, and support firmer, healthier looking skin.",
+    "es": "Un protocolo de renovacion dirigido que combina un facial de alto rendimiento con microneedling regenerativo para iluminar, suavizar la textura y apoyar una piel mas firme y saludable."
+  },
+  {
+    "id": "promo.casmara_infinity.headline",
+    "en": "Exclusive Casmara Infinity Antiaging Facial Pricing",
+    "es": "Precio exclusivo para el Facial Antienvejecimiento Casmara Infinity"
+  },
+  {
+    "id": "pkg.skin_renewal.pn.title",
+    "en": "Casmara Infinity AntiAging Facial + PN",
+    "es": "Facial Casmara Infinity Antienvejecimiento + PN"
+  },
+  {
+    "id": "pkg.skin_renewal.pdrn.title",
+    "en": "Casmara Infinity AntiAging Facial + PDRN",
+    "es": "Facial Casmara Infinity Antienvejecimiento + PDRN"
+  },
+  {
+    "id": "pkg.skin_renewal.prp.title",
+    "en": "Casmara Infinity AntiAging Facial + PRP",
+    "es": "Facial Casmara Infinity Antienvejecimiento + PRP"
+  },
+  {
+    "id": "pkg.casmara_purifying.prp.title",
+    "en": "Casmara Purifying Algae Facial + PRP",
+    "es": "Facial Casmara Purifying Algae + PRP"
+  },
+  {
+    "id": "pkg.casmara_purifying.pn.title",
+    "en": "Casmara Purifying Algae Facial + PN",
+    "es": "Facial Casmara Purifying Algae + PN"
+  },
+  {
+    "id": "pkg.casmara_purifying.pdrn.title",
+    "en": "Casmara Purifying Algae Facial + PDRN",
+    "es": "Facial Casmara Purifying Algae + PDRN"
+  },
+  {
+    "id": "pkg.casmara_retinol.prp.title",
+    "en": "Casmara Retinol ProAge Facial + PRP",
+    "es": "Facial Casmara Retinol ProAge + PRP"
+  },
+  {
+    "id": "pkg.casmara_retinol.pn.title",
+    "en": "Casmara Retinol ProAge Facial + PN",
+    "es": "Facial Casmara Retinol ProAge + PN"
+  },
+  {
+    "id": "pkg.casmara_retinol.pdrn.title",
+    "en": "Casmara Retinol ProAge Facial + PDRN",
+    "es": "Facial Casmara Retinol ProAge + PDRN"
   }
 ]

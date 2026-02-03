@@ -1,0 +1,335 @@
+[
+  {
+    "id": "pkg_skin_renewal_prp",
+    "sourceServiceId": "svc_casmara_infinity",
+    "titleKey": "pkg.skin_renewal.prp.title",
+    "validTill": "2026-03-14",
+    "notesKeys": [
+      "note.casmara_infinity_skin_renewal.includes",
+      "note.casmara_infinity_skin_renewal.prp_includes",
+      "note.casmara_infinity_skin_renewal.zones"
+    ],
+    "editions": [
+      {
+        "id": "prp_face",
+        "labelKey": "opt.casmara_infinity_skin_renewal_prp_face",
+        "price": {
+          "amount": 230,
+          "currency": "USD"
+        }
+      },
+      {
+        "id": "prp_face_neck",
+        "labelKey": "opt.casmara_infinity_skin_renewal_prp_face_neck",
+        "price": {
+          "amount": 250,
+          "currency": "USD"
+        }
+      },
+      {
+        "id": "prp_face_neck_decollete",
+        "labelKey": "opt.casmara_infinity_skin_renewal_prp_face_neck_decollete",
+        "price": {
+          "amount": 270,
+          "currency": "USD"
+        }
+      }
+    ]
+  },
+  {
+    "id": "pkg_casmara_purifying_prp",
+    "sourceServiceId": "svc_casmara_purifying",
+    "titleKey": "pkg.casmara_purifying.prp.title",
+    "validTill": "2026-03-14",
+    "notesKeys": [
+      "note.casmara_purifying_skin_renewal.includes",
+      "note.casmara_purifying_skin_renewal.prp_includes",
+      "note.casmara_purifying_skin_renewal.zones"
+    ],
+    "editions": [
+      {
+        "id": "prp_face",
+        "labelKey": "opt.casmara_purifying_skin_renewal_prp_face",
+        "price": {
+          "amount": 220,
+          "currency": "USD"
+        }
+      },
+      {
+        "id": "prp_face_neck",
+        "labelKey": "opt.casmara_purifying_skin_renewal_prp_face_neck",
+        "price": {
+          "amount": 240,
+          "currency": "USD"
+        }
+      },
+      {
+        "id": "prp_face_neck_decollete",
+        "labelKey": "opt.casmara_purifying_skin_renewal_prp_face_neck_decollete",
+        "price": {
+          "amount": 260,
+          "currency": "USD"
+        }
+      }
+    ]
+  },
+  {
+    "id": "pkg_casmara_retinol_prp",
+    "sourceServiceId": "svc_casmara_retinol_proage",
+    "titleKey": "pkg.casmara_retinol.prp.title",
+    "validTill": "2026-03-14",
+    "notesKeys": [
+      "note.casmara_retinol_skin_renewal.includes",
+      "note.casmara_retinol_skin_renewal.prp_includes",
+      "note.casmara_retinol_skin_renewal.zones"
+    ],
+    "editions": [
+      {
+        "id": "prp_face",
+        "labelKey": "opt.casmara_retinol_skin_renewal_prp_face",
+        "price": {
+          "amount": 225,
+          "currency": "USD"
+        }
+      },
+      {
+        "id": "prp_face_neck",
+        "labelKey": "opt.casmara_retinol_skin_renewal_prp_face_neck",
+        "price": {
+          "amount": 245,
+          "currency": "USD"
+        }
+      },
+      {
+        "id": "prp_face_neck_decollete",
+        "labelKey": "opt.casmara_retinol_skin_renewal_prp_face_neck_decollete",
+        "price": {
+          "amount": 265,
+          "currency": "USD"
+        }
+      }
+    ]
+  },
+  {
+    "id": "pkg_skin_renewal_protocol",
+    "sourceServiceId": "svc_casmara_infinity",
+    "titleKey": "pkg.skin_renewal.pn.title",
+    "validTill": "2026-03-14",
+    "notesKeys": [
+      "note.casmara_infinity_skin_renewal.includes",
+      "note.casmara_infinity_skin_renewal.pn_includes",
+      "note.casmara_infinity_skin_renewal.zones"
+    ],
+    "editions": [
+      {
+        "id": "pn_face",
+        "labelKey": "opt.casmara_infinity_skin_renewal_pn_face",
+        "price": {
+          "amount": 345,
+          "currency": "USD"
+        }
+      },
+      {
+        "id": "pn_face_neck",
+        "labelKey": "opt.casmara_infinity_skin_renewal_pn_face_neck",
+        "price": {
+          "amount": 495,
+          "currency": "USD"
+        }
+      },
+      {
+        "id": "pn_face_neck_decollete",
+        "labelKey": "opt.casmara_infinity_skin_renewal_pn_face_neck_decollete",
+        "price": {
+          "amount": 600,
+          "currency": "USD"
+        }
+      }
+    ]
+  },
+  {
+    "id": "pkg_casmara_purifying_pn",
+    "sourceServiceId": "svc_casmara_purifying",
+    "titleKey": "pkg.casmara_purifying.pn.title",
+    "validTill": "2026-03-14",
+    "notesKeys": [
+      "note.casmara_purifying_skin_renewal.includes",
+      "note.casmara_purifying_skin_renewal.pn_includes",
+      "note.casmara_purifying_skin_renewal.zones"
+    ],
+    "editions": [
+      {
+        "id": "pn_face",
+        "labelKey": "opt.casmara_purifying_skin_renewal_pn_face",
+        "price": {
+          "amount": 335,
+          "currency": "USD"
+        }
+      },
+      {
+        "id": "pn_face_neck",
+        "labelKey": "opt.casmara_purifying_skin_renewal_pn_face_neck",
+        "price": {
+          "amount": 485,
+          "currency": "USD"
+        }
+      },
+      {
+        "id": "pn_face_neck_decollete",
+        "labelKey": "opt.casmara_purifying_skin_renewal_pn_face_neck_decollete",
+        "price": {
+          "amount": 590,
+          "currency": "USD"
+        }
+      }
+    ]
+  },
+  {
+    "id": "pkg_casmara_retinol_pn",
+    "sourceServiceId": "svc_casmara_retinol_proage",
+    "titleKey": "pkg.casmara_retinol.pn.title",
+    "validTill": "2026-03-14",
+    "notesKeys": [
+      "note.casmara_retinol_skin_renewal.includes",
+      "note.casmara_retinol_skin_renewal.pn_includes",
+      "note.casmara_retinol_skin_renewal.zones"
+    ],
+    "editions": [
+      {
+        "id": "pn_face",
+        "labelKey": "opt.casmara_retinol_skin_renewal_pn_face",
+        "price": {
+          "amount": 340,
+          "currency": "USD"
+        }
+      },
+      {
+        "id": "pn_face_neck",
+        "labelKey": "opt.casmara_retinol_skin_renewal_pn_face_neck",
+        "price": {
+          "amount": 490,
+          "currency": "USD"
+        }
+      },
+      {
+        "id": "pn_face_neck_decollete",
+        "labelKey": "opt.casmara_retinol_skin_renewal_pn_face_neck_decollete",
+        "price": {
+          "amount": 595,
+          "currency": "USD"
+        }
+      }
+    ]
+  },
+  {
+    "id": "pkg_skin_renewal_pdrn",
+    "sourceServiceId": "svc_casmara_infinity",
+    "titleKey": "pkg.skin_renewal.pdrn.title",
+    "validTill": "2026-03-14",
+    "notesKeys": [
+      "note.casmara_infinity_skin_renewal.includes",
+      "note.casmara_infinity_skin_renewal.pdrn_includes",
+      "note.casmara_infinity_skin_renewal.zones"
+    ],
+    "editions": [
+      {
+        "id": "pdrn_face",
+        "labelKey": "opt.casmara_infinity_skin_renewal_pdrn_face",
+        "price": {
+          "amount": 245,
+          "currency": "USD"
+        }
+      },
+      {
+        "id": "pdrn_face_neck",
+        "labelKey": "opt.casmara_infinity_skin_renewal_pdrn_face_neck",
+        "price": {
+          "amount": 300,
+          "currency": "USD"
+        }
+      },
+      {
+        "id": "pdrn_face_neck_decollete",
+        "labelKey": "opt.casmara_infinity_skin_renewal_pdrn_face_neck_decollete",
+        "price": {
+          "amount": 395,
+          "currency": "USD"
+        }
+      }
+    ]
+  },
+  {
+    "id": "pkg_casmara_purifying_pdrn",
+    "sourceServiceId": "svc_casmara_purifying",
+    "titleKey": "pkg.casmara_purifying.pdrn.title",
+    "validTill": "2026-03-14",
+    "notesKeys": [
+      "note.casmara_purifying_skin_renewal.includes",
+      "note.casmara_purifying_skin_renewal.pdrn_includes",
+      "note.casmara_purifying_skin_renewal.zones"
+    ],
+    "editions": [
+      {
+        "id": "pdrn_face",
+        "labelKey": "opt.casmara_purifying_skin_renewal_pdrn_face",
+        "price": {
+          "amount": 235,
+          "currency": "USD"
+        }
+      },
+      {
+        "id": "pdrn_face_neck",
+        "labelKey": "opt.casmara_purifying_skin_renewal_pdrn_face_neck",
+        "price": {
+          "amount": 290,
+          "currency": "USD"
+        }
+      },
+      {
+        "id": "pdrn_face_neck_decollete",
+        "labelKey": "opt.casmara_purifying_skin_renewal_pdrn_face_neck_decollete",
+        "price": {
+          "amount": 385,
+          "currency": "USD"
+        }
+      }
+    ]
+  },
+  {
+    "id": "pkg_casmara_retinol_pdrn",
+    "sourceServiceId": "svc_casmara_retinol_proage",
+    "titleKey": "pkg.casmara_retinol.pdrn.title",
+    "validTill": "2026-03-14",
+    "notesKeys": [
+      "note.casmara_retinol_skin_renewal.includes",
+      "note.casmara_retinol_skin_renewal.pdrn_includes",
+      "note.casmara_retinol_skin_renewal.zones"
+    ],
+    "editions": [
+      {
+        "id": "pdrn_face",
+        "labelKey": "opt.casmara_retinol_skin_renewal_pdrn_face",
+        "price": {
+          "amount": 240,
+          "currency": "USD"
+        }
+      },
+      {
+        "id": "pdrn_face_neck",
+        "labelKey": "opt.casmara_retinol_skin_renewal_pdrn_face_neck",
+        "price": {
+          "amount": 295,
+          "currency": "USD"
+        }
+      },
+      {
+        "id": "pdrn_face_neck_decollete",
+        "labelKey": "opt.casmara_retinol_skin_renewal_pdrn_face_neck_decollete",
+        "price": {
+          "amount": 390,
+          "currency": "USD"
+        }
+      }
+    ]
+  }
+]

@@ -31,9 +31,18 @@
       "defaultKey": "all",
       "viewAllLabelKey": "filter.view_all",
       "filters": [
-        { "key": "face", "labelKey": "filter.hydrafacial.face" },
-        { "key": "body", "labelKey": "filter.hydrafacial.body" },
-        { "key": "boosters", "labelKey": "filter.hydrafacial.boosters" }
+        {
+          "key": "face",
+          "labelKey": "filter.hydrafacial.face"
+        },
+        {
+          "key": "body",
+          "labelKey": "filter.hydrafacial.body"
+        },
+        {
+          "key": "boosters",
+          "labelKey": "filter.hydrafacial.boosters"
+        }
       ]
     }
   },
@@ -45,7 +54,12 @@
     "descriptionKey": "svc.casmara_infinity.desc",
     "detailsKey": "svc.casmara_infinity.details",
     "isPopular": false,
-    "isPromoActive": false,
+    "isPromoActive": true,
+    "packageIds": [
+      "pkg_skin_renewal_protocol",
+      "pkg_skin_renewal_pdrn",
+      "pkg_skin_renewal_prp"
+    ],
     "images": {
       "primary": "/infinity.jpg",
       "secondary": "/infinity2.jpg"
@@ -66,8 +80,14 @@
       "defaultKey": "all",
       "viewAllLabelKey": "filter.view_all",
       "filters": [
-        { "key": "face", "labelKey": "filter.casmara.face" },
-        { "key": "boosters", "labelKey": "filter.casmara.boosters" }
+        {
+          "key": "face",
+          "labelKey": "filter.casmara.face"
+        },
+        {
+          "key": "boosters",
+          "labelKey": "filter.casmara.boosters"
+        }
       ]
     }
   },
@@ -79,7 +99,12 @@
     "descriptionKey": "svc.casmara_purifying.desc",
     "detailsKey": "svc.casmara_purifying.details",
     "isPopular": true,
-    "isPromoActive": false,
+    "isPromoActive": true,
+    "packageIds": [
+      "pkg_casmara_purifying_prp",
+      "pkg_casmara_purifying_pn",
+      "pkg_casmara_purifying_pdrn"
+    ],
     "images": {
       "primary": "/purifying.jpg",
       "secondary": "/purifying2.jpg"
@@ -101,8 +126,14 @@
       "defaultKey": "all",
       "viewAllLabelKey": "filter.view_all",
       "filters": [
-        { "key": "face", "labelKey": "filter.casmara.face" },
-        { "key": "boosters", "labelKey": "filter.casmara.boosters" }
+        {
+          "key": "face",
+          "labelKey": "filter.casmara.face"
+        },
+        {
+          "key": "boosters",
+          "labelKey": "filter.casmara.boosters"
+        }
       ]
     }
   },
@@ -114,7 +145,12 @@
     "descriptionKey": "svc.casmara_retinol_proage.desc",
     "detailsKey": "svc.casmara_retinol_proage.details",
     "isPopular": false,
-    "isPromoActive": false,
+    "isPromoActive": true,
+    "packageIds": [
+      "pkg_casmara_retinol_prp",
+      "pkg_casmara_retinol_pn",
+      "pkg_casmara_retinol_pdrn"
+    ],
     "images": {
       "primary": "/retinol.jpg",
       "secondary": "/retinol2.jpg"
@@ -136,8 +172,14 @@
       "defaultKey": "all",
       "viewAllLabelKey": "filter.view_all",
       "filters": [
-        { "key": "face", "labelKey": "filter.casmara.face" },
-        { "key": "boosters", "labelKey": "filter.casmara.boosters" }
+        {
+          "key": "face",
+          "labelKey": "filter.casmara.face"
+        },
+        {
+          "key": "boosters",
+          "labelKey": "filter.casmara.boosters"
+        }
       ]
     }
   },
@@ -173,8 +215,14 @@
       "defaultKey": "all",
       "viewAllLabelKey": "filter.view_all",
       "filters": [
-        { "key": "face", "labelKey": "filter.janssen.face" },
-        { "key": "boosters", "labelKey": "filter.janssen.boosters" }
+        {
+          "key": "face",
+          "labelKey": "filter.janssen.face"
+        },
+        {
+          "key": "boosters",
+          "labelKey": "filter.janssen.boosters"
+        }
       ]
     }
   },
@@ -210,8 +258,14 @@
       "defaultKey": "all",
       "viewAllLabelKey": "filter.view_all",
       "filters": [
-        { "key": "face", "labelKey": "filter.janssen.face" },
-        { "key": "boosters", "labelKey": "filter.janssen.boosters" }
+        {
+          "key": "face",
+          "labelKey": "filter.janssen.face"
+        },
+        {
+          "key": "boosters",
+          "labelKey": "filter.janssen.boosters"
+        }
       ]
     }
   }

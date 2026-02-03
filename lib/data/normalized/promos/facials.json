@@ -11,29 +11,83 @@
   {
     "id": "promo_casmara_infinity",
     "serviceId": "svc_casmara_infinity",
-    "headlineKey": "",
-    "descriptionKey": "",
+    "headlineKey": "promo.casmara_infinity.headline",
+    "descriptionKey": "promo.casmara_skin_renewal.heading",
     "validFrom": null,
-    "validTill": null,
-    "options": []
+    "validTill": "2026-03-14",
+    "options": [],
+    "filterConfig": {
+      "defaultKey": "pn",
+      "viewAllLabelKey": "filter.view_all",
+      "filters": [
+        {
+          "key": "pn",
+          "labelKey": "filter.microneedling.pn"
+        },
+        {
+          "key": "pdrn",
+          "labelKey": "filter.microneedling.pdrn"
+        },
+        {
+          "key": "prp",
+          "labelKey": "filter.microneedling.prp"
+        }
+      ]
+    }
   },
   {
     "id": "promo_casmara_purifying",
     "serviceId": "svc_casmara_purifying",
     "headlineKey": "",
-    "descriptionKey": "",
+    "descriptionKey": "promo.casmara_skin_renewal.heading",
     "validFrom": null,
-    "validTill": null,
-    "options": []
+    "validTill": "2026-03-14",
+    "options": [],
+    "filterConfig": {
+      "defaultKey": "pn",
+      "viewAllLabelKey": "filter.view_all",
+      "filters": [
+        {
+          "key": "pn",
+          "labelKey": "filter.microneedling.pn"
+        },
+        {
+          "key": "pdrn",
+          "labelKey": "filter.microneedling.pdrn"
+        },
+        {
+          "key": "prp",
+          "labelKey": "filter.microneedling.prp"
+        }
+      ]
+    }
   },
   {
     "id": "promo_casmara_retinol_proage",
     "serviceId": "svc_casmara_retinol_proage",
     "headlineKey": "",
-    "descriptionKey": "",
+    "descriptionKey": "promo.casmara_skin_renewal.heading",
     "validFrom": null,
-    "validTill": null,
-    "options": []
+    "validTill": "2026-03-14",
+    "options": [],
+    "filterConfig": {
+      "defaultKey": "pn",
+      "viewAllLabelKey": "filter.view_all",
+      "filters": [
+        {
+          "key": "pn",
+          "labelKey": "filter.microneedling.pn"
+        },
+        {
+          "key": "pdrn",
+          "labelKey": "filter.microneedling.pdrn"
+        },
+        {
+          "key": "prp",
+          "labelKey": "filter.microneedling.prp"
+        }
+      ]
+    }
   },
   {
     "id": "promo_janssen_ultra_renewal",

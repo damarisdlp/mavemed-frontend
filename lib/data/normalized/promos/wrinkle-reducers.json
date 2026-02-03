@@ -4,9 +4,16 @@
     "serviceId": "svc_botox",
     "headlineKey": "promo.botox.headline",
     "descriptionKey": "promo.botox.description",
-    "validFrom": "2026-01-01",
-    "validTill": "2026-01-31",
+    "validFrom": "2026-02-02",
+    "validTill": "2026-06-30",
     "options": [
+      {
+        "optionNameKey": "opt.botox.per_unit",
+        "notesKeys": [
+          "promo.botox.note2"
+        ],
+        "validTill": "2026-03-14"
+      },
       {
         "optionNameKey": "promo.botox.option_name",
         "notesKeys": [
@@ -21,9 +28,16 @@
     "serviceId": "svc_dermawrinkle",
     "headlineKey": "promo.dermawrinkle.headline",
     "descriptionKey": "promo.dermawrinkle.description",
-    "validFrom": "2026-01-01",
-    "validTill": "2026-01-31",
+    "validFrom": "2026-02-02",
+    "validTill": "2026-06-30",
     "options": [
+      {
+        "optionNameKey": "opt.dermawrinkle.per_unit",
+        "notesKeys": [
+          "promo.dermawrinkle.note2"
+        ],
+        "validTill": "2026-03-14"
+      },
       {
         "optionNameKey": "promo.dermawrinkle.option_name",
         "notesKeys": [
