@@ -53,9 +53,7 @@
     "promoPrice": null,
     "priceTextKey": "",
     "filterGroupKey": "body",
-    "notesKeys": [
-      "note.co2.chest"
-    ]
+    "notesKeys": []
   },
   {
     "id": "opt_co2_face_neck",
@@ -83,9 +81,7 @@
     "promoPrice": null,
     "priceTextKey": "",
     "filterGroupKey": "face",
-    "notesKeys": [
-      "note.co2.face_neck_decollete"
-    ]
+    "notesKeys": []
   },
   {
     "id": "opt_co2_face_neck_decollete_chest",
@@ -99,9 +95,7 @@
     "promoPrice": null,
     "priceTextKey": "",
     "filterGroupKey": "face",
-    "notesKeys": [
-      "note.co2.face_neck_decollete_chest"
-    ]
+    "notesKeys": []
   },
   {
     "id": "opt_co2_hands",
@@ -129,9 +123,7 @@
     "promoPrice": null,
     "priceTextKey": "",
     "filterGroupKey": "face",
-    "notesKeys": [
-      "note.co2.under_eye"
-    ]
+    "notesKeys": []
   },
   {
     "id": "opt_co2_small_zone",
@@ -619,7 +611,9 @@
     "promoPrice": null,
     "priceTextKey": "",
     "filterGroupKey": "body",
-    "notesKeys": []
+    "notesKeys": [
+      "note.co2.small_zone"
+    ]
   },
   {
     "id": "opt_laser_hair_medium_zone",
@@ -633,7 +627,9 @@
     "promoPrice": null,
     "priceTextKey": "",
     "filterGroupKey": "body",
-    "notesKeys": []
+    "notesKeys": [
+      "note.co2.medium_zone"
+    ]
   },
   {
     "id": "opt_laser_hair_large_zone",
@@ -647,7 +643,9 @@
     "promoPrice": null,
     "priceTextKey": "",
     "filterGroupKey": "body",
-    "notesKeys": []
+    "notesKeys": [
+      "note.co2.large_zone"
+    ]
   },
   {
     "id": "opt_rf_face",
