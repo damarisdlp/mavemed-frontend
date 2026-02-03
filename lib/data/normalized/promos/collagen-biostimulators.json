@@ -5,7 +5,7 @@
     "headlineKey": "promo.sculptra.headline",
     "descriptionKey": "promo.sculptra.description",
     "validFrom": "2026-01-01",
-    "validTill": "2026-01-31",
+    "validTill": "2026-06-30",
     "options": [
       {
         "optionNameKey": "promo.sculptra.option_name",
