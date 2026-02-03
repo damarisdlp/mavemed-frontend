@@ -468,7 +468,7 @@ export default function TreatmentDetails({ treatment }) {
       const existing = groups.get(groupId) || {
         packageId: groupId,
         title,
-        validTill: opt.validTill || globalPromoValidTill,
+        validTill: opt.validTill || getLocalized(promoDetails?.validTill),
         notes: [],
         options: [],
       };
@@ -927,7 +927,7 @@ export default function TreatmentDetails({ treatment }) {
                         <p className="text-[11px] uppercase tracking-[0.2em] text-white/70 mb-1">
                           {locale === "es" ? "Paquete promocional" : "Promo package"}
                         </p>
-                        {pkg.validTill && !showGlobalPromoValidTill ? (
+                        {pkg.validTill ? (
                           <p className="text-xs text-white/80 mb-2">
                             {locale === "es" ? "Válido hasta" : "Valid until"} {pkg.validTill}
                           </p>

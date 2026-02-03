@@ -19,7 +19,8 @@
         "notesKeys": [
           "promo.botox.note1",
           "promo.botox.note2"
-        ]
+        ],
+        "validTill": "2026-06-30"
       }
     ]
   },
@@ -43,7 +44,8 @@
         "notesKeys": [
           "promo.dermawrinkle.note1",
           "promo.dermawrinkle.note2"
-        ]
+        ],
+        "validTill": "2026-06-30"
       }
     ]
   }
