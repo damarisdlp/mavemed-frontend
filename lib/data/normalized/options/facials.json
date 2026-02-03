@@ -3,7 +3,10 @@
     "id": "opt_hydrafacial_face",
     "serviceId": "svc_hydrafacial",
     "nameKey": "opt.hydrafacial.face",
-    "price": { "amount": 95, "currency": "USD" },
+    "price": {
+      "amount": 95,
+      "currency": "USD"
+    },
     "isOptionPromoActive": false,
     "promoPrice": null,
     "priceTextKey": "",
@@ -14,7 +17,10 @@
     "id": "opt_hydrafacial_upper_back",
     "serviceId": "svc_hydrafacial",
     "nameKey": "opt.hydrafacial.upper_back",
-    "price": { "amount": 150, "currency": "USD" },
+    "price": {
+      "amount": 150,
+      "currency": "USD"
+    },
     "isOptionPromoActive": false,
     "promoPrice": null,
     "priceTextKey": "",
@@ -25,7 +31,10 @@
     "id": "opt_casmara_infinity",
     "serviceId": "svc_casmara_infinity",
     "nameKey": "opt.casmara_infinity",
-    "price": { "amount": 95, "currency": "USD" },
+    "price": {
+      "amount": 100,
+      "currency": "USD"
+    },
     "isOptionPromoActive": false,
     "promoPrice": null,
     "priceTextKey": "",
@@ -36,7 +45,10 @@
     "id": "opt_casmara_purifying",
     "serviceId": "svc_casmara_purifying",
     "nameKey": "opt.casmara_purifying",
-    "price": { "amount": 85, "currency": "USD" },
+    "price": {
+      "amount": 90,
+      "currency": "USD"
+    },
     "isOptionPromoActive": false,
     "promoPrice": null,
     "priceTextKey": "",
@@ -47,7 +59,10 @@
     "id": "opt_casmara_retinol_proage",
     "serviceId": "svc_casmara_retinol_proage",
     "nameKey": "opt.casmara_retinol_proage",
-    "price": { "amount": 90, "currency": "USD" },
+    "price": {
+      "amount": 95,
+      "currency": "USD"
+    },
     "isOptionPromoActive": false,
     "promoPrice": null,
     "priceTextKey": "",
@@ -58,7 +73,10 @@
     "id": "opt_janssen_radiance_face",
     "serviceId": "svc_janssen_radiance_boost",
     "nameKey": "opt.janssen_radiance.face",
-    "price": { "amount": 45, "currency": "USD" },
+    "price": {
+      "amount": 45,
+      "currency": "USD"
+    },
     "isOptionPromoActive": false,
     "promoPrice": null,
     "priceTextKey": "",
@@ -69,7 +87,10 @@
     "id": "opt_janssen_ultra_face",
     "serviceId": "svc_janssen_ultra_renewal",
     "nameKey": "opt.janssen_ultra.face",
-    "price": { "amount": 55, "currency": "USD" },
+    "price": {
+      "amount": 55,
+      "currency": "USD"
+    },
     "isOptionPromoActive": false,
     "promoPrice": null,
     "priceTextKey": "",
@@ -80,7 +101,10 @@
     "id": "opt_hydrafacial_shoulders",
     "serviceId": "svc_hydrafacial",
     "nameKey": "opt.hydrafacial.shoulders",
-    "price": { "amount": 130, "currency": "USD" },
+    "price": {
+      "amount": 130,
+      "currency": "USD"
+    },
     "isOptionPromoActive": false,
     "promoPrice": null,
     "priceTextKey": "",
@@ -91,7 +115,10 @@
     "id": "opt_janssen_ultra_face_neck",
     "serviceId": "svc_janssen_ultra_renewal",
     "nameKey": "opt.janssen_ultra.face_neck",
-    "price": { "amount": 65, "currency": "USD" },
+    "price": {
+      "amount": 65,
+      "currency": "USD"
+    },
     "isOptionPromoActive": false,
     "promoPrice": null,
     "priceTextKey": "",
@@ -102,7 +129,10 @@
     "id": "opt_janssen_ultra_face_neck_decollete",
     "serviceId": "svc_janssen_ultra_renewal",
     "nameKey": "opt.janssen_ultra.face_neck_decollete",
-    "price": { "amount": 70, "currency": "USD" },
+    "price": {
+      "amount": 70,
+      "currency": "USD"
+    },
     "isOptionPromoActive": false,
     "promoPrice": null,
     "priceTextKey": "",
@@ -113,7 +143,10 @@
     "id": "opt_janssen_radiance_face_neck",
     "serviceId": "svc_janssen_radiance_boost",
     "nameKey": "opt.janssen_radiance.face_neck",
-    "price": { "amount": 50, "currency": "USD" },
+    "price": {
+      "amount": 50,
+      "currency": "USD"
+    },
     "isOptionPromoActive": false,
     "promoPrice": null,
     "priceTextKey": "",
@@ -124,7 +157,10 @@
     "id": "opt_janssen_radiance_face_neck_decollete",
     "serviceId": "svc_janssen_radiance_boost",
     "nameKey": "opt.janssen_radiance.face_neck_decollete",
-    "price": { "amount": 55, "currency": "USD" },
+    "price": {
+      "amount": 55,
+      "currency": "USD"
+    },
     "isOptionPromoActive": false,
     "promoPrice": null,
     "priceTextKey": "",
@@ -135,7 +171,10 @@
     "id": "opt_hydrafacial_booster_melafadin",
     "serviceId": "svc_hydrafacial",
     "nameKey": "opt.facial_booster.melafadin",
-    "price": { "amount": 5, "currency": "USD" },
+    "price": {
+      "amount": 5,
+      "currency": "USD"
+    },
     "isOptionPromoActive": false,
     "promoPrice": null,
     "priceTextKey": "",
@@ -146,7 +185,10 @@
     "id": "opt_hydrafacial_booster_contour_fluid",
     "serviceId": "svc_hydrafacial",
     "nameKey": "opt.facial_booster.contour_fluid",
-    "price": { "amount": 5, "currency": "USD" },
+    "price": {
+      "amount": 5,
+      "currency": "USD"
+    },
     "isOptionPromoActive": false,
     "promoPrice": null,
     "priceTextKey": "",
@@ -157,7 +199,10 @@
     "id": "opt_hydrafacial_booster_caviar",
     "serviceId": "svc_hydrafacial",
     "nameKey": "opt.facial_booster.caviar",
-    "price": { "amount": 5, "currency": "USD" },
+    "price": {
+      "amount": 5,
+      "currency": "USD"
+    },
     "isOptionPromoActive": false,
     "promoPrice": null,
     "priceTextKey": "",
@@ -168,7 +213,10 @@
     "id": "opt_casmara_infinity_booster_melafadin",
     "serviceId": "svc_casmara_infinity",
     "nameKey": "opt.facial_booster.melafadin",
-    "price": { "amount": 5, "currency": "USD" },
+    "price": {
+      "amount": 5,
+      "currency": "USD"
+    },
     "isOptionPromoActive": false,
     "promoPrice": null,
     "priceTextKey": "",
@@ -179,7 +227,10 @@
     "id": "opt_casmara_infinity_booster_contour_fluid",
     "serviceId": "svc_casmara_infinity",
     "nameKey": "opt.facial_booster.contour_fluid",
-    "price": { "amount": 5, "currency": "USD" },
+    "price": {
+      "amount": 5,
+      "currency": "USD"
+    },
     "isOptionPromoActive": false,
     "promoPrice": null,
     "priceTextKey": "",
@@ -190,7 +241,10 @@
     "id": "opt_casmara_infinity_booster_caviar",
     "serviceId": "svc_casmara_infinity",
     "nameKey": "opt.facial_booster.caviar",
-    "price": { "amount": 5, "currency": "USD" },
+    "price": {
+      "amount": 5,
+      "currency": "USD"
+    },
     "isOptionPromoActive": false,
     "promoPrice": null,
     "priceTextKey": "",
@@ -201,7 +255,10 @@
     "id": "opt_casmara_purifying_booster_melafadin",
     "serviceId": "svc_casmara_purifying",
     "nameKey": "opt.facial_booster.melafadin",
-    "price": { "amount": 5, "currency": "USD" },
+    "price": {
+      "amount": 5,
+      "currency": "USD"
+    },
     "isOptionPromoActive": false,
     "promoPrice": null,
     "priceTextKey": "",
@@ -212,7 +269,10 @@
     "id": "opt_casmara_purifying_booster_contour_fluid",
     "serviceId": "svc_casmara_purifying",
     "nameKey": "opt.facial_booster.contour_fluid",
-    "price": { "amount": 5, "currency": "USD" },
+    "price": {
+      "amount": 5,
+      "currency": "USD"
+    },
     "isOptionPromoActive": false,
     "promoPrice": null,
     "priceTextKey": "",
@@ -223,7 +283,10 @@
     "id": "opt_casmara_purifying_booster_caviar",
     "serviceId": "svc_casmara_purifying",
     "nameKey": "opt.facial_booster.caviar",
-    "price": { "amount": 5, "currency": "USD" },
+    "price": {
+      "amount": 5,
+      "currency": "USD"
+    },
     "isOptionPromoActive": false,
     "promoPrice": null,
     "priceTextKey": "",
@@ -234,7 +297,10 @@
     "id": "opt_casmara_retinol_booster_melafadin",
     "serviceId": "svc_casmara_retinol_proage",
     "nameKey": "opt.facial_booster.melafadin",
-    "price": { "amount": 5, "currency": "USD" },
+    "price": {
+      "amount": 5,
+      "currency": "USD"
+    },
     "isOptionPromoActive": false,
     "promoPrice": null,
     "priceTextKey": "",
@@ -245,7 +311,10 @@
     "id": "opt_casmara_retinol_booster_contour_fluid",
     "serviceId": "svc_casmara_retinol_proage",
     "nameKey": "opt.facial_booster.contour_fluid",
-    "price": { "amount": 5, "currency": "USD" },
+    "price": {
+      "amount": 5,
+      "currency": "USD"
+    },
     "isOptionPromoActive": false,
     "promoPrice": null,
     "priceTextKey": "",
@@ -256,7 +325,10 @@
     "id": "opt_casmara_retinol_booster_caviar",
     "serviceId": "svc_casmara_retinol_proage",
     "nameKey": "opt.facial_booster.caviar",
-    "price": { "amount": 5, "currency": "USD" },
+    "price": {
+      "amount": 5,
+      "currency": "USD"
+    },
     "isOptionPromoActive": false,
     "promoPrice": null,
     "priceTextKey": "",
@@ -267,7 +339,10 @@
     "id": "opt_janssen_radiance_booster_melafadin",
     "serviceId": "svc_janssen_radiance_boost",
     "nameKey": "opt.facial_booster.melafadin",
-    "price": { "amount": 5, "currency": "USD" },
+    "price": {
+      "amount": 5,
+      "currency": "USD"
+    },
     "isOptionPromoActive": false,
     "promoPrice": null,
     "priceTextKey": "",
@@ -278,7 +353,10 @@
     "id": "opt_janssen_radiance_booster_contour_fluid",
     "serviceId": "svc_janssen_radiance_boost",
     "nameKey": "opt.facial_booster.contour_fluid",
-    "price": { "amount": 5, "currency": "USD" },
+    "price": {
+      "amount": 5,
+      "currency": "USD"
+    },
     "isOptionPromoActive": false,
     "promoPrice": null,
     "priceTextKey": "",
@@ -289,7 +367,10 @@
     "id": "opt_janssen_radiance_booster_caviar",
     "serviceId": "svc_janssen_radiance_boost",
     "nameKey": "opt.facial_booster.caviar",
-    "price": { "amount": 5, "currency": "USD" },
+    "price": {
+      "amount": 5,
+      "currency": "USD"
+    },
     "isOptionPromoActive": false,
     "promoPrice": null,
     "priceTextKey": "",
@@ -300,7 +381,10 @@
     "id": "opt_janssen_ultra_booster_melafadin",
     "serviceId": "svc_janssen_ultra_renewal",
     "nameKey": "opt.facial_booster.melafadin",
-    "price": { "amount": 5, "currency": "USD" },
+    "price": {
+      "amount": 5,
+      "currency": "USD"
+    },
     "isOptionPromoActive": false,
     "promoPrice": null,
     "priceTextKey": "",
@@ -311,7 +395,10 @@
     "id": "opt_janssen_ultra_booster_contour_fluid",
     "serviceId": "svc_janssen_ultra_renewal",
     "nameKey": "opt.facial_booster.contour_fluid",
-    "price": { "amount": 5, "currency": "USD" },
+    "price": {
+      "amount": 5,
+      "currency": "USD"
+    },
     "isOptionPromoActive": false,
     "promoPrice": null,
     "priceTextKey": "",
@@ -322,7 +409,10 @@
     "id": "opt_janssen_ultra_booster_caviar",
     "serviceId": "svc_janssen_ultra_renewal",
     "nameKey": "opt.facial_booster.caviar",
-    "price": { "amount": 5, "currency": "USD" },
+    "price": {
+      "amount": 5,
+      "currency": "USD"
+    },
     "isOptionPromoActive": false,
     "promoPrice": null,
     "priceTextKey": "",
