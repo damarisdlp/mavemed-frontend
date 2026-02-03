@@ -1,15 +1,34 @@
+import { rateLimit, requireLeadAuth } from "@/lib/server/leadSecurity";
+
 export default async function handler(req, res) {
   if (req.method !== "POST") {
     return res.status(405).json({ error: "Method Not Allowed" });
   }
 
   try {
-    const { firstName, lastName, email, phone, whatsapp } = req.body;
+    const auth = requireLeadAuth(req);
+    if (!auth.ok) {
+      return res.status(auth.status).json({ error: auth.error });
+    }
 
-    console.log("Incoming lead:", { firstName, lastName, email, phone, whatsapp });
+    const limit = await rateLimit(req, { key: "send-whatsapp", limit: 4, windowSec: 60 * 10 });
+    if (!limit.ok) {
+      return res.status(limit.status).json({ error: limit.error });
+    }
+    res.setHeader("X-RateLimit-Limit", limit.limit);
+    res.setHeader("X-RateLimit-Remaining", limit.remaining);
+    res.setHeader("X-RateLimit-Reset", limit.reset);
 
-    const apiKey = "6608832"; // CallMeBot API key
-    const receptionPhone = "+5216642077675"; // Reception WhatsApp in full international format
+    const { firstName, lastName, email, phone, whatsapp } = req.body || {};
+    if (!firstName || !email || !phone) {
+      return res.status(400).json({ error: "Missing required fields." });
+    }
+
+    const apiKey = process.env.CALLMEBOT_API_KEY;
+    const receptionPhone = process.env.WHATSAPP_RECEPTION_PHONE;
+    if (!apiKey || !receptionPhone) {
+      return res.status(500).json({ error: "WhatsApp integration not configured." });
+    }
 
     const message = `Nuevo prospecto desde el sitio web de Mave\nName: ${firstName} ${lastName}\nEmail: ${email}\nPhone: ${phone}\nWhatsApp?: ${whatsapp}`;
     const encodedMsg = encodeURIComponent(message);
@@ -18,8 +37,6 @@ export default async function handler(req, res) {
 
     const response = await fetch(url);
     const result = await response.text();
-
-    console.log("CallMeBot response:", result);
 
     if (!response.ok) {
       throw new Error(`CallMeBot error: ${result}`);

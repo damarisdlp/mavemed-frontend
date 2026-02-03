@@ -5,22 +5,16 @@ import Image from "next/image";
 import Link from "next/link";
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
-import { allStaff } from "@/lib/data/allStaff";
 import { useTranslation } from "next-i18next";
 import { useRouter } from "next/router";
+import { getLocalized } from "@/lib/i18n/getLocalized";
 
-export default function AboutSection() {
+export default function AboutSection({ staffCards = [] }) {
   const { t } = useTranslation("home");
   const router = useRouter();
   const { locale = "en" } = router;
 
-  const getLocalized = (field) => {
-    if (field === null || field === undefined) return "";
-    if (typeof field === "object") {
-      return field[locale] || field.en || Object.values(field)[0] || "";
-    }
-    return field;
-  };
+  const localize = (field) => getLocalized(field, locale);
 
   const [sliderRef, sliderInstanceRef] = useKeenSlider({
     loop: true,
@@ -109,14 +103,14 @@ export default function AboutSection() {
       <div className="flex justify-center px-6">
         <div className="relative w-full max-w-[1100px]">
           <div ref={sliderRef} className="keen-slider overflow-hidden w-full">
-            {allStaff.map((s, index) => (
+            {staffCards.map((s, index) => (
               <div key={index} className="keen-slider__slide px-2 flex justify-center">
                 <div className="w-[250px] sm:w-[320px] md:w-[340px] lg:w-[360px]">
                   <div className="border border-gray-200 rounded-lg overflow-hidden shadow-sm bg-white">
                     <div className="relative h-[240px] sm:h-[300px] w-full">
                       <Image
                         src={s.image}
-                        alt={`${getLocalized(s.displayName)}, ${getLocalized(s.title)}`}
+                        alt={`${localize(s.displayName)}, ${localize(s.title)}`}
                         fill
                         className="object-cover"
                       />
@@ -124,10 +118,10 @@ export default function AboutSection() {
 
                     <div className="p-4 text-center">
                       <h3 className="text-lg font-serif text-black font-medium mb-1">
-                        {getLocalized(s.displayName)}
+                        {localize(s.displayName)}
                       </h3>
                       <p className="text-sm text-gray-600 mb-4">
-                        {getLocalized(s.title)}
+                        {localize(s.title)}
                       </p>
 
                       <Link
@@ -143,7 +137,7 @@ export default function AboutSection() {
             ))}
           </div>
 
-          {allStaff.length > 1 && (
+          {staffCards.length > 1 && (
             <>
               <button
                 type="button"

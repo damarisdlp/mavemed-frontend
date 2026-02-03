@@ -1,123 +1,23 @@
 import Head from "next/head";
-import { useMemo, useState } from "react";
+import { useState } from "react";
 import { useRouter } from "next/router";
+import { useTranslation } from "next-i18next";
 import PromoBanner from "@/components/PromoBanner";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import nextI18NextConfig from "../../next-i18next.config";
 
-const content = {
-  en: {
-    title: "Learn",
-    subtitle: "Educational guides organized by treatment focus.",
-    intro:
-      "These resources explain devices, protocols, and candidacy considerations so you can make informed decisions before booking.",
-    categories: [
-      {
-        title: "RF Microneedling",
-        description: "Device selection, candidacy, and treatment planning.",
-        items: [
-          {
-            title: "Sylfirm X RF Microneedling",
-            excerpt:
-              "How Sylfirm X differs, who it may be suitable for, and why medical evaluation matters.",
-            href: "/learn/sylfirm-x-rf-microneedling",
-          },
-          {
-            title: "Sylfirm X vs Other RF Microneedling Devices",
-            excerpt:
-              "What to compare across platforms, FDA safety context, and how device choice affects planning.",
-            href: "/learn/sylfirm-x-vs-other-rf-microneedling",
-          },
-        ],
-      },
-      {
-        title: "Collagen Education",
-        description: "How collagen changes with age and how remodeling timelines work.",
-        items: [
-          {
-            title: "Collagen Over Time",
-            excerpt:
-              "Why collagen changes with age, what that looks like in skin, and realistic rebuilding timelines.",
-            href: "/learn/collagen-loss-and-rebuilding-timeline",
-          },
-        ],
-      },
-      {
-        title: "Collagen Biostimulation",
-        description: "Collagen rebuilding, structural support, and long term outcomes.",
-        items: [
-          {
-            title: "Sculptra Collagen Biostimulator",
-            excerpt:
-              "What Sculptra is, how it works over time, and why technique and medical planning matter.",
-            href: "/learn/sculptra-collagen-biostimulator",
-          },
-        ],
-      },
-    ],
-  },
-  es: {
-    title: "Aprende",
-    subtitle: "Guías educativas organizadas por enfoque de tratamiento.",
-    intro:
-      "Estos recursos explican dispositivos, protocolos y criterios de candidatura para que tomes decisiones informadas antes de reservar.",
-    categories: [
-      {
-        title: "RF Microneedling",
-        description: "Selección de dispositivo, candidatura y planificación clínica.",
-        items: [
-          {
-            title: "Sylfirm X RF Microneedling",
-            excerpt:
-              "Cómo se diferencia Sylfirm X, para quién puede ser adecuado y por qué la evaluación médica es clave.",
-            href: "/learn/sylfirm-x-rf-microneedling",
-          },
-          {
-            title: "Sylfirm X vs Otros Dispositivos de RF Microneedling",
-            excerpt:
-              "Qué comparar entre plataformas, contexto de seguridad FDA y elección del dispositivo.",
-            href: "/learn/sylfirm-x-vs-other-rf-microneedling",
-          },
-        ],
-      },
-      {
-        title: "Educación sobre colágeno",
-        description: "Cómo cambia el colágeno con la edad y los tiempos de remodelación.",
-        items: [
-          {
-            title: "El Colágeno con el Paso del Tiempo",
-            excerpt:
-              "Por qué cambia el colágeno, cómo se refleja en la piel y los tiempos realistas.",
-            href: "/learn/collagen-loss-and-rebuilding-timeline",
-          },
-        ],
-      },
-      {
-        title: "Bioestimulación de colágeno",
-        description: "Regeneración de colágeno, soporte estructural y resultados a largo plazo.",
-        items: [
-          {
-            title: "Sculptra Bioestimulador de Colágeno",
-            excerpt:
-              "Qué es Sculptra, cómo actúa con el tiempo y por qué la técnica médica importa.",
-            href: "/learn/sculptra-collagen-biostimulator",
-          },
-        ],
-      },
-    ],
-  },
-};
-
 export default function LearnIndexPage() {
   const { locale = "en" } = useRouter();
-  const copy = useMemo(() => content[locale] || content.en, [locale]);
+  const { t } = useTranslation("learn");
+  const copy = t("index", { returnObjects: true });
+  const categories = Array.isArray(copy?.categories) ? copy.categories : [];
   const [query, setQuery] = useState("");
   const [activeCategory, setActiveCategory] = useState("");
 
   const normalizedQuery = query.trim().toLowerCase();
-  const visibleCategories = copy.categories.filter(
+  const visibleCategories = categories.filter(
     (category) => !activeCategory || category.title === activeCategory
   );
 
@@ -132,7 +32,9 @@ export default function LearnIndexPage() {
       <main className="bg-white pt-36 md:pt-40">
         <section className="max-w-5xl mx-auto px-6 py-12">
           <div className="text-left max-w-3xl">
-            <p className="text-xs uppercase tracking-[0.25em] text-gray-500">Learn</p>
+            <p className="text-xs uppercase tracking-[0.25em] text-gray-500">
+              {t("index.kicker")}
+            </p>
             <h1 className="text-3xl md:text-4xl font-serif text-black mt-3">{copy.title}</h1>
             <p className="text-base text-gray-700 mt-3">{copy.subtitle}</p>
             <p className="text-sm text-gray-600 mt-3">{copy.intro}</p>
@@ -142,13 +44,13 @@ export default function LearnIndexPage() {
         <section className="max-w-5xl mx-auto px-6 pb-6">
           <div className="bg-white border border-gray-200 rounded-2xl p-4 md:p-5">
             <label className="text-xs uppercase tracking-[0.25em] text-gray-500">
-              {locale === "es" ? "Buscar" : "Search"}
+              {t("index.searchLabel")}
             </label>
             <input
               type="search"
               value={query}
               onChange={(event) => setQuery(event.target.value)}
-              placeholder={locale === "es" ? "Buscar temas o tratamientos" : "Search topics or treatments"}
+              placeholder={t("index.searchPlaceholder")}
               className="mt-2 w-full border border-gray-300 rounded px-3 py-2 text-base md:text-sm focus:outline-none focus:ring-2 focus:ring-black"
             />
             <div className="mt-4 flex flex-wrap gap-2">
@@ -165,9 +67,9 @@ export default function LearnIndexPage() {
                     : "text-gray-600 border-gray-300 hover:border-black hover:text-black",
                 ].join(" ")}
               >
-                {locale === "es" ? "Ver todo" : "View all"}
+                {t("index.viewAll")}
               </button>
-              {copy.categories.map((category) => (
+              {categories.map((category) => (
                 <button
                   key={category.title}
                   type="button"
@@ -209,7 +111,7 @@ export default function LearnIndexPage() {
                     <p className="text-base font-semibold text-black">{item.title}</p>
                     <p className="text-sm text-gray-600 mt-2">{item.excerpt}</p>
                     <span className="text-sm text-[#731a2f] underline underline-offset-4 inline-block mt-3">
-                      {locale === "es" ? "Leer más" : "Read more"}
+                      {t("index.readMore")}
                     </span>
                   </a>
                   ))}
@@ -228,7 +130,7 @@ export async function getStaticProps({ locale }) {
     props: {
       ...(await serverSideTranslations(
         locale ?? "en",
-        ["layout", "home", "treatments"],
+        ["layout", "home", "treatments", "learn"],
         nextI18NextConfig
       )),
     },

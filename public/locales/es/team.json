@@ -2,6 +2,10 @@
   "team": {
     "bannerTitle": "Nuestro Equipo",
     "bannerSubtitle": "Especialistas en inyectables cosméticos, rejuvenecimiento de la piel y terapias de grado médico para una belleza enfocada en resultados.",
-    "learnMore": "Más Información"
+    "learnMore": "Más Información",
+    "breadcrumbTeam": "Nuestro Equipo",
+    "favoritesHeading": "Tratamientos Favoritos de",
+    "viewAllTreatments": "Ver todos los tratamientos",
+    "bookNow": "Reservar Ahora"
   }
 }

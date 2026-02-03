@@ -1,0 +1,53 @@
+{
+  "index": {
+    "kicker": "Aprende",
+    "title": "Aprende",
+    "subtitle": "Guías educativas organizadas por enfoque de tratamiento.",
+    "intro": "Estos recursos explican dispositivos, protocolos y criterios de candidatura para que tomes decisiones informadas antes de reservar.",
+    "searchLabel": "Buscar",
+    "searchPlaceholder": "Buscar temas o tratamientos",
+    "viewAll": "Ver todo",
+    "readMore": "Leer más",
+    "categories": [
+      {
+        "title": "RF Microneedling",
+        "description": "Selección de dispositivo, candidatura y planificación clínica.",
+        "items": [
+          {
+            "title": "Sylfirm X RF Microneedling",
+            "excerpt": "Cómo se diferencia Sylfirm X, para quién puede ser adecuado y por qué la evaluación médica es clave.",
+            "href": "/learn/Sylfirm-x-rf-Microneedling"
+          },
+          {
+            "title": "Sylfirm X vs Otros Dispositivos de RF Microneedling",
+            "excerpt": "Qué comparar entre plataformas, contexto de seguridad FDA y elección del dispositivo.",
+            "href": "/learn/Sylfirm-x-vs-other-rf-Microneedling"
+          }
+        ]
+      },
+      {
+        "title": "Educación sobre colágeno",
+        "description": "Cómo cambia el colágeno con la edad y los tiempos de remodelación.",
+        "items": [
+          {
+            "title": "El Colágeno con el Paso del Tiempo",
+            "excerpt": "Por qué cambia el colágeno, cómo se refleja en la piel y los tiempos realistas.",
+            "href": "/learn/collagen-loss-and-rebuilding-timeline"
+          }
+        ]
+      },
+      {
+        "title": "Bioestimulación de colágeno",
+        "description": "Regeneración de colágeno, soporte estructural y resultados a largo plazo.",
+        "items": [
+          {
+            "title": "Sculptra Bioestimulador de Colágeno",
+            "excerpt": "Qué es Sculptra, cómo actúa con el tiempo y por qué la técnica médica importa.",
+            "href": "/learn/Sculptra-collagen-biostimulator"
+          }
+        ]
+      }
+    ]
+  },
+  "relatedEducation": "Educación relacionada"
+}

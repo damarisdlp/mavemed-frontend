@@ -1,0 +1,53 @@
+{
+  "index": {
+    "kicker": "Learn",
+    "title": "Learn",
+    "subtitle": "Educational guides organized by treatment focus.",
+    "intro": "These resources explain devices, protocols, and candidacy considerations so you can make informed decisions before booking.",
+    "searchLabel": "Search",
+    "searchPlaceholder": "Search topics or treatments",
+    "viewAll": "View all",
+    "readMore": "Read more",
+    "categories": [
+      {
+        "title": "RF Microneedling",
+        "description": "Device selection, candidacy, and treatment planning.",
+        "items": [
+          {
+            "title": "Sylfirm X RF Microneedling",
+            "excerpt": "How Sylfirm X differs, who it may be suitable for, and why medical evaluation matters.",
+            "href": "/learn/sylfirm-x-rf-microneedling"
+          },
+          {
+            "title": "Sylfirm X vs Other RF Microneedling Devices",
+            "excerpt": "What to compare across platforms, FDA safety context, and how device choice affects planning.",
+            "href": "/learn/sylfirm-x-vs-other-rf-microneedling"
+          }
+        ]
+      },
+      {
+        "title": "Collagen Education",
+        "description": "How collagen changes with age and how remodeling timelines work.",
+        "items": [
+          {
+            "title": "Collagen Over Time",
+            "excerpt": "Why collagen changes with age, what that looks like in skin, and realistic rebuilding timelines.",
+            "href": "/learn/collagen-loss-and-rebuilding-timeline"
+          }
+        ]
+      },
+      {
+        "title": "Collagen Biostimulation",
+        "description": "Collagen rebuilding, structural support, and long term outcomes.",
+        "items": [
+          {
+            "title": "Sculptra Collagen Biostimulator",
+            "excerpt": "What Sculptra is, how it works over time, and why technique and medical planning matter.",
+            "href": "/learn/sculptra-collagen-biostimulator"
+          }
+        ]
+      }
+    ]
+  },
+  "relatedEducation": "Related education"
+}

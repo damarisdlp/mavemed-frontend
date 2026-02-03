@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import Head from "next/head";
 import { useRouter } from "next/router";
+import { useTranslation } from "next-i18next";
 
 import PromoBanner from "@/components/PromoBanner";
 import Header from "@/components/Header";
@@ -8,6 +9,7 @@ import Footer from "@/components/Footer";
 import InstagramFeed from "@/components/InstagramFeed";
 import ReviewsSection from "@/components/ReviewsSection";
 import { validatePhoneNumber } from "@/lib/utils/phone";
+import { getLeadAuthHeaders } from "@/lib/utils/leadAuthClient";
 
 const WHATSAPP_NUMBER = "526642077675";
 const BASE_URL = "https://www.mavemedspa.com";
@@ -20,18 +22,6 @@ const BUSINESS_ADDRESS = {
   postalCode: "22010",
   addressCountry: "MX",
 };
-
-const countryOptions = [
-  { code: "+1", label: "United States / Canada" },
-  { code: "+52", label: "Mexico" },
-  { code: "+44", label: "United Kingdom" },
-  { code: "+34", label: "Spain" },
-  { code: "+57", label: "Colombia" },
-  { code: "+506", label: "Costa Rica" },
-  { code: "+51", label: "Peru" },
-  { code: "+54", label: "Argentina" },
-  { code: "+55", label: "Brazil" },
-];
 
 export default function TreatmentCandidacyForm({
   content,
@@ -48,10 +38,22 @@ export default function TreatmentCandidacyForm({
 }) {
   const router = useRouter();
   const { locale = "en" } = router;
+  const { t } = useTranslation("treatments");
   const copy = useMemo(() => content[locale] || content.en, [locale, content]);
   const canonicalPath = locale === "es" ? `/es${router.pathname}` : router.pathname;
   const canonicalUrl = `${BASE_URL}${canonicalPath}`;
   const ogImage = `${BASE_URL}${ogImagePath}`;
+  const countryOptions = [
+    { code: "+1", label: t("treatmentLeadModal.countryOptions.usCanada") },
+    { code: "+52", label: t("treatmentLeadModal.countryOptions.mexico") },
+    { code: "+44", label: t("treatmentLeadModal.countryOptions.uk") },
+    { code: "+34", label: t("treatmentLeadModal.countryOptions.spain") },
+    { code: "+57", label: t("treatmentLeadModal.countryOptions.colombia") },
+    { code: "+506", label: t("treatmentLeadModal.countryOptions.costaRica") },
+    { code: "+51", label: t("treatmentLeadModal.countryOptions.peru") },
+    { code: "+54", label: t("treatmentLeadModal.countryOptions.argentina") },
+    { code: "+55", label: t("treatmentLeadModal.countryOptions.brazil") },
+  ];
   const jsonLd = {
     "@context": "https://schema.org",
     "@graph": [
@@ -293,7 +295,7 @@ export default function TreatmentCandidacyForm({
     setShowErrors(true);
     setStatus({ type: "", message: "" });
 
-    const countryLabel = locale === "es" ? "Código de país" : "Country code";
+    const countryLabel = t("candidacyForm.labels.countryCode");
     const requiredMissing = [];
     if (!form.concerns.length) requiredMissing.push(copy.fields.concern);
     if (!form.duration) requiredMissing.push(copy.fields.duration);
@@ -310,10 +312,9 @@ export default function TreatmentCandidacyForm({
     }
 
     if (requiredMissing.length) {
-      const message =
-        locale === "es"
-          ? `Faltan: ${requiredMissing.join(", ")}.`
-          : `Missing: ${requiredMissing.join(", ")}.`;
+      const message = t("candidacyForm.messages.missing", {
+        fields: requiredMissing.join(", "),
+      });
       setStatus({ type: "error", message });
       return;
     }
@@ -391,7 +392,7 @@ export default function TreatmentCandidacyForm({
     try {
       const response = await fetch("/api/lead-treatment", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: { "Content-Type": "application/json", ...getLeadAuthHeaders() },
         body: JSON.stringify(payloadWithId),
       });
       const resultText = await response.text().catch(() => "");
@@ -411,10 +412,7 @@ export default function TreatmentCandidacyForm({
       if (result?.sheetStatus === "duplicate") {
         setStatus({
           type: "success",
-          message:
-            locale === "es"
-              ? "Ya recibimos tu evaluación. Si deseas agregar algo, envíanos un mensaje por WhatsApp."
-              : "We already received your assessment. If you want to add anything, message us on WhatsApp.",
+          message: t("candidacyForm.messages.duplicateNotice"),
         });
         setShowErrors(false);
         submittedOnceRef.current = true;
@@ -649,7 +647,7 @@ export default function TreatmentCandidacyForm({
                   ].join(" ")}
                   required
                 >
-                  <option value="">{locale === "es" ? "Selecciona" : "Select"}</option>
+                  <option value="">{t("candidacyForm.selectPlaceholder")}</option>
                   {copy.fields.durationOptions.map((option) => (
                     <option key={option} value={option}>
                       {option}
@@ -673,7 +671,7 @@ export default function TreatmentCandidacyForm({
                   ].join(" ")}
                   required
                 >
-                  <option value="">{locale === "es" ? "Selecciona" : "Select"}</option>
+                  <option value="">{t("candidacyForm.selectPlaceholder")}</option>
                   {copy.fields.priorOptions.map((option) => (
                     <option key={option} value={option}>
                       {option}
@@ -705,7 +703,7 @@ export default function TreatmentCandidacyForm({
                   ].join(" ")}
                   required
                 >
-                  <option value="">{locale === "es" ? "Selecciona" : "Select"}</option>
+                  <option value="">{t("candidacyForm.selectPlaceholder")}</option>
                   {copy.fields.toneOptions.map((option) => (
                     <option key={option} value={option}>
                       {option}
@@ -729,7 +727,7 @@ export default function TreatmentCandidacyForm({
                   ].join(" ")}
                   required
                 >
-                  <option value="">{locale === "es" ? "Selecciona" : "Select"}</option>
+                  <option value="">{t("candidacyForm.selectPlaceholder")}</option>
                   {copy.fields.openPlanOptions.map((option) => (
                     <option key={option} value={option}>
                       {option}
@@ -753,7 +751,7 @@ export default function TreatmentCandidacyForm({
                   ].join(" ")}
                   required
                 >
-                  <option value="">{locale === "es" ? "Selecciona" : "Select"}</option>
+                  <option value="">{t("candidacyForm.selectPlaceholder")}</option>
                   {copy.fields.travelOptions.map((option) => (
                     <option key={option} value={option}>
                       {option}
@@ -780,7 +778,7 @@ export default function TreatmentCandidacyForm({
                     ].join(" ")}
                     required
                   >
-                    <option value="">{locale === "es" ? "Selecciona" : "Select"}</option>
+                    <option value="">{t("candidacyForm.selectPlaceholder")}</option>
                     {copy.fields.packageTimingOptions.map((option) => (
                       <option key={option} value={option}>
                         {option}
@@ -793,7 +791,7 @@ export default function TreatmentCandidacyForm({
               <div className="grid grid-cols-1 sm:grid-cols-[1fr_2fr] gap-3">
                 <div>
                   <label className="block text-sm text-gray-700 mb-2">
-                    {locale === "es" ? "Código de país" : "Country code"}
+                    {t("candidacyForm.labels.countryCode")}
                     <span className="text-red-500"> *</span>
                   </label>
                   <select
@@ -887,15 +885,13 @@ export default function TreatmentCandidacyForm({
                   <p className="text-sm text-green-700">{status.message}</p>
                   <a
                     href={`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(
-                      locale === "es"
-                        ? "Hola, ya envié mi evaluación. Quiero agregar un detalle."
-                        : "Hi, I already submitted my assessment. I want to add a detail."
+                      t("candidacyForm.messages.whatsappAddDetail")
                     )}`}
                     target="_blank"
                     rel="noreferrer"
                     className="inline-block mt-3 text-sm bg-black text-white px-4 py-2 rounded-full hover:bg-[#731a2f] transition"
                   >
-                    {locale === "es" ? "Enviar WhatsApp" : "Message us on WhatsApp"}
+                    {t("treatmentLeadModal.buttons.whatsapp")}
                   </a>
                 </div>
               )}
@@ -907,7 +903,7 @@ export default function TreatmentCandidacyForm({
                 disabled={isSubmitting}
                 className="w-full bg-black text-white py-3 rounded-full text-sm hover:bg-[#731a2f] transition disabled:opacity-70"
               >
-                {isSubmitting ? (locale === "es" ? "Enviando..." : "Submitting...") : copy.submit}
+                {isSubmitting ? t("candidacyForm.buttons.submitting") : copy.submit}
               </button>
             </form>
             {showDeviceSection ? (

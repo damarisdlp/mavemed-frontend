@@ -1,9 +1,23 @@
 import { redis } from "@/lib/redis";
+import { rateLimit, requireLeadAuth } from "@/lib/server/leadSecurity";
 
 export default async function handler(req, res) {
   if (req.method !== "POST") {
     return res.status(405).json({ error: "Method not allowed" });
   }
+
+  const auth = requireLeadAuth(req);
+  if (!auth.ok) {
+    return res.status(auth.status).json({ error: auth.error });
+  }
+
+  const limit = await rateLimit(req, { key: "lead-promo", limit: 10, windowSec: 60 * 10 });
+  if (!limit.ok) {
+    return res.status(limit.status).json({ error: limit.error });
+  }
+  res.setHeader("X-RateLimit-Limit", limit.limit);
+  res.setHeader("X-RateLimit-Remaining", limit.remaining);
+  res.setHeader("X-RateLimit-Reset", limit.reset);
 
   const incoming = typeof req.body === "string" ? safeParse(req.body) : req.body || {};
   const {
@@ -112,12 +126,16 @@ function makeLeadId() {
 
 async function tryWriteToSheets(payload) {
   const rawUrl = process.env.GOOGLE_SCRIPT_PROMO_URL || process.env.GOOGLE_PROMO_SCRIPT_URL;
-  const fallbackUrl =
-    "https://script.google.com/macros/s/AKfycbxJpnMq0ltjATpVoQ6Pr_r5SosD9ToINfvPTTcD0Tg-h9SqfG5jRzTkcyWxf8ZfFBE/exec";
+  if (!rawUrl) {
+    return { ok: false, detail: "Promo script URL is not configured." };
+  }
   const scriptUrl =
     rawUrl && (rawUrl.startsWith("http://") || rawUrl.startsWith("https://"))
       ? rawUrl
-      : fallbackUrl;
+      : null;
+  if (!scriptUrl) {
+    return { ok: false, detail: "Promo script URL is invalid." };
+  }
 
   try {
     const controller = new AbortController();

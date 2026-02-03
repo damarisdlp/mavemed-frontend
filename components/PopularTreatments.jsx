@@ -5,16 +5,7 @@ import { useKeenSlider } from "keen-slider/react";
 import Link from "next/link";
 import Image from "next/image";
 import { useRouter } from "next/router";
-import { allTreatments } from "@/lib/data/allTreatments";
 import { useTranslation } from "next-i18next";
-
-const getLocalized = (field, locale) => {
-  if (field == null) return "";
-  if (typeof field === "object" && field !== null) {
-    return field[locale] || field.en || Object.values(field)[0] || "";
-  }
-  return field ?? "";
-};
 
 function TreatmentCard({ card, t, router }) {
   return (
@@ -58,21 +49,10 @@ function TreatmentCard({ card, t, router }) {
   );
 }
 
-export default function PopularTreatments() {
+export default function PopularTreatments({ treatments = [] }) {
   const { t } = useTranslation("treatments");
   const router = useRouter();
-  const { locale = "en" } = router;
-
-  const popularCards = allTreatments
-    .filter((tr) => tr && tr.isPopular)
-    .map((tr) => {
-      const title = getLocalized(tr.displayName || tr.serviceDisplayName, locale);
-      const description = getLocalized(tr.description, locale);
-      const image = tr.images?.primary || "/placeholder.jpg";
-      const slug = tr.urlSlug || "#";
-      return { title, description, image, slug };
-    })
-    .filter((c) => c.title);
+  const popularCards = Array.isArray(treatments) ? treatments : [];
 
   const [sliderRef, sliderInstanceRef] = useKeenSlider({
     loop: true,

@@ -1,28 +1,23 @@
 import { useMemo, useState } from "react";
 import { useRouter } from "next/router";
+import { useTranslation } from "next-i18next";
+import { getLocalized } from "@/lib/i18n/getLocalized";
 
 export default function WhatToExpect({ expectations = {}, locale: propLocale }) {
   const { locale: routerLocale } = useRouter();
   const locale = propLocale || routerLocale || "en";
+  const { t } = useTranslation("treatments");
 
-  const getLocalized = (field) => {
-    if (field == null) return "";
-    if (typeof field === "object") {
-      if (field[locale]) return field[locale];
-      if (field.en) return field.en;
-      return "";
-    }
-    return field;
-  };
+  const localize = (field) => getLocalized(field, locale);
 
   const tabs = useMemo(() => {
     const beforeItems = expectations.beforeTreatment || expectations.preTreatment || [];
     const duringItems = expectations.duringTreatment || [];
     const afterItems = expectations.afterTreatment || expectations.postTreatment || [];
 
-    const beforeLabel = locale === "es" ? "Antes del tratamiento" : "Before Treatment";
-    const duringLabel = locale === "es" ? "Durante el tratamiento" : "During Treatment";
-    const afterLabel = locale === "es" ? "Después del tratamiento" : "After Treatment";
+    const beforeLabel = t("whatToExpect.before");
+    const duringLabel = t("whatToExpect.during");
+    const afterLabel = t("whatToExpect.after");
 
     return [
       { key: "before", label: beforeLabel, items: beforeItems },
@@ -36,7 +31,7 @@ export default function WhatToExpect({ expectations = {}, locale: propLocale }) 
 
   const activeTab = tabs.find((tab) => tab.key === activeKey) || firstWithItems;
 
-  const sectionTitle = locale === "es" ? "Qué puedes esperar" : "What to Expect";
+  const sectionTitle = t("whatToExpect.sectionTitle");
 
   return (
     <section className="bg-white py-10">
@@ -76,13 +71,13 @@ export default function WhatToExpect({ expectations = {}, locale: propLocale }) 
               <ul className="list-disc pl-5 space-y-3 text-base text-[#2f2316]">
                 {activeTab.items.map((item, idx) => (
                   <li key={idx} className="leading-relaxed">
-                    {getLocalized(item)}
+                    {localize(item)}
                   </li>
                 ))}
               </ul>
             ) : (
               <p className="text-[#2f2316] text-base">
-                {locale === "es" ? "Próximamente" : "Details coming soon."}
+                {t("whatToExpect.comingSoon")}
               </p>
             )}
           </div>

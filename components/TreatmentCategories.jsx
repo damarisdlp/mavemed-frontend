@@ -4,189 +4,125 @@ import "keen-slider/keen-slider.min.css";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import { useKeenSlider } from "keen-slider/react";
-import { allTreatments } from "@/lib/data/allTreatments";
-import categoryOrder from "@/lib/data/normalized/categories.json";
+import { useTranslation } from "next-i18next";
+import { getLocalized as getLocalizedValue } from "@/lib/i18n/getLocalized";
 
-export default function TreatmentCategories() {
-const CategorySlider = ({ services }) => {
+export default function TreatmentCategories({ categories = [] }) {
+  const orderedCategories = Array.isArray(categories) ? categories : [];
   const router = useRouter();
   const { locale = "en" } = router;
+  const { t } = useTranslation("treatments");
+  const localize = (field) => getLocalizedValue(field, locale);
 
-  const getLocalized = (field) => {
-    if (typeof field === "object" && field?.[locale]) return field[locale];
-    if (typeof field === "object" && field?.en) return field.en;
-    return field ?? "";
-  };
+  const CategorySlider = ({ services }) => {
+    // ReviewsSection slider behavior
+    const [sliderRef, sliderInstanceRef] = useKeenSlider({
+      loop: true,
+      slides: { perView: 1, spacing: 16 },
+      breakpoints: {
+        "(min-width: 768px)": { slides: { perView: 2.2, spacing: 16 } },
+        "(min-width: 1024px)": { slides: { perView: 3.1, spacing: 24 } },
+      },
+    });
 
-  // ReviewsSection slider behavior
-  const [sliderRef, sliderInstanceRef] = useKeenSlider({
-    loop: true,
-    slides: { perView: 1, spacing: 16 },
-    breakpoints: {
-      "(min-width: 768px)": { slides: { perView: 2.2, spacing: 16 } },
-      "(min-width: 1024px)": { slides: { perView: 3.1, spacing: 24 } },
-    },
-  });
-
-  return (
-    <div className="md:hidden">
-      <div className="flex justify-center">
-        <div className="relative w-full max-w-[1100px]">
-          <div ref={sliderRef} className="keen-slider overflow-hidden w-full">
-            {services.map((service, idx) => (
-              <div
-                key={idx}
-                className="keen-slider__slide px-2 flex justify-center"
-              >
-                <div className="w-[275px] sm:w-[320px] md:w-[340px] lg:w-[360px]">
-                  <div className="border border-gray-200 rounded-lg overflow-hidden shadow-sm bg-white">
-                    <div className="relative h-[200px] w-full">
-                      <Image
-                        src={service.image}
-                        alt={`${getLocalized(service.name)} – ${getLocalized(
-                          service.description
-                        )}`}
-                        fill
-                        className="object-cover"
-                      />
-                    </div>
-
-                    <div className="p-4 flex-1 flex flex-col justify-between">
-                      <div className="mb-4">
-                        <h3 className="text-lg text-black font-serif font-medium mb-1">
-                          {getLocalized(service.name)}
-                        </h3>
-                        <p className="text-sm text-gray-700 line-clamp-4">
-                          {getLocalized(service.description)}
-                        </p>
+    return (
+      <div className="md:hidden">
+        <div className="flex justify-center">
+          <div className="relative w-full max-w-[1100px]">
+            <div ref={sliderRef} className="keen-slider overflow-hidden w-full">
+              {services.map((service, idx) => (
+                <div
+                  key={idx}
+                  className="keen-slider__slide px-2 flex justify-center"
+                >
+                  <div className="w-[275px] sm:w-[320px] md:w-[340px] lg:w-[360px]">
+                    <div className="border border-gray-200 rounded-lg overflow-hidden shadow-sm bg-white">
+                      <div className="relative h-[200px] w-full">
+                        <Image
+                          src={service.image}
+                          alt={`${localize(service.name)} – ${localize(
+                            service.description
+                          )}`}
+                          fill
+                          className="object-cover"
+                        />
                       </div>
 
-                      <div className="flex flex-col gap-2">
-                        <button
-                          type="button"
-                          onClick={() =>
-                            router.push(`/treatments/${service.slug}?lead=open`)
-                          }
-                          className="bg-black text-white px-4 py-2 rounded-full text-xs hover:bg-[#731a2f] transition text-center"
-                          aria-label={getLocalized(
-                            translatedStrings.bookService(service.name)
-                          )}
-                        >
-                          {getLocalized(translatedStrings.bookNow)}
-                        </button>
+                      <div className="p-4 flex-1 flex flex-col justify-between">
+                        <div className="mb-4">
+                          <h3 className="text-lg text-black font-serif font-medium mb-1">
+                            {localize(service.name)}
+                          </h3>
+                          <p className="text-sm text-gray-700 line-clamp-4">
+                            {localize(service.description)}
+                          </p>
+                        </div>
 
-                        <Link
-                          href={`/treatments/${service.slug}`}
-                          className="border border-gray-300 text-black px-4 py-2 rounded-full text-xs hover:border-black transition text-center"
-                          aria-label={getLocalized(
-                            translatedStrings.learnMoreAbout(service.name)
-                          )}
-                        >
-                          {getLocalized(translatedStrings.learnMore)}
-                        </Link>
+                        <div className="flex flex-col gap-2">
+                          <button
+                            type="button"
+                            onClick={() =>
+                              router.push(`/treatments/${service.slug}?lead=open`)
+                            }
+                            className="bg-black text-white px-4 py-2 rounded-full text-xs hover:bg-[#731a2f] transition text-center"
+                            aria-label={t("treatmentCategories.bookService", {
+                              service: localize(service.name),
+                            })}
+                          >
+                            {t("treatments.bookNow")}
+                          </button>
+
+                          <Link
+                            href={`/treatments/${service.slug}`}
+                            className="border border-gray-300 text-black px-4 py-2 rounded-full text-xs hover:border-black transition text-center"
+                            aria-label={t("treatmentCategories.learnMoreAbout", {
+                              service: localize(service.name),
+                            })}
+                          >
+                            {t("treatments.learnMore")}
+                          </Link>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            ))}
-          </div>
+              ))}
+            </div>
 
-          {services.length > 1 && (
-            <>
-              <button
-                type="button"
-                onClick={() => sliderInstanceRef.current?.prev()}
-                className="
-                  absolute
-                  -left-2 md:-left-6
-                  top-1/2 -translate-y-1/2
-                  bg-white border border-gray-300 text-gray-700
-                  rounded-full shadow px-3 py-2 hover:bg-gray-100 z-20
-                "
-              >
-                ‹
-              </button>
-              <button
-                type="button"
-                onClick={() => sliderInstanceRef.current?.next()}
-                className="
-                  absolute
-                  -right-2 md:-right-6
-                  top-1/2 -translate-y-1/2
-                  bg-white border border-gray-300 text-gray-700
-                  rounded-full shadow px-3 py-2 hover:bg-gray-100 z-20
-                "
-              >
-                ›
-              </button>
-            </>
-          )}
+            {services.length > 1 && (
+              <>
+                <button
+                  type="button"
+                  onClick={() => sliderInstanceRef.current?.prev()}
+                  className="
+                    absolute
+                    -left-2 md:-left-6
+                    top-1/2 -translate-y-1/2
+                    bg-white border border-gray-300 text-gray-700
+                    rounded-full shadow px-3 py-2 hover:bg-gray-100 z-20
+                  "
+                >
+                  ‹
+                </button>
+                <button
+                  type="button"
+                  onClick={() => sliderInstanceRef.current?.next()}
+                  className="
+                    absolute
+                    -right-2 md:-right-6
+                    top-1/2 -translate-y-1/2
+                    bg-white border border-gray-300 text-gray-700
+                    rounded-full shadow px-3 py-2 hover:bg-gray-100 z-20
+                  "
+                >
+                  ›
+                </button>
+              </>
+            )}
+          </div>
         </div>
       </div>
-    </div>
-  );
-};
-
-  // Group treatments by category
-  const categoriesMap = {};
-  allTreatments.forEach((t) => {
-    if (!t || !t.category) return;
-    const key = t.category;
-    if (!categoriesMap[key]) {
-      categoriesMap[key] = {
-        title: t.categoryDisplayName,
-        services: []
-      };
-    }
-    const optionFields = (t.pricing?.options || []).flatMap((opt) => [
-      opt.optionName,
-      ...(opt.notes || []),
-    ]);
-    categoriesMap[key].services.push({
-      name: t.displayName || t.serviceDisplayName,
-      slug: t.urlSlug,
-      image: t.images?.primary || "/placeholder.jpg",
-      description: t.description,
-      searchFields: [
-        t.displayName || t.serviceDisplayName,
-        t.description,
-        t.details,
-        ...(t.notes || []),
-        ...(t.goals || []),
-        ...(t.treatableAreas || []),
-        ...optionFields,
-      ],
-    });
-  });
-
-  const categories = categoryOrder
-    .map((entry) => categoriesMap[entry.slug])
-    .filter(Boolean);
-  const router = useRouter();
-  const { locale } = router;
-
-  const getLocalized = (field) => {
-    if (typeof field === 'object' && field[locale]) return field[locale];
-    if (typeof field === 'object' && field['en']) return field['en'];
-    return field;
-  };
-
-  const translatedStrings = {
-    bookNow: { en: "Book Now", es: "Reservear Ahora" },
-    learnMore: { en: "Learn More", es: "Más Información" },
-    top: { en: "↑ Top", es: "↑ Arriba" },
-    scrollToTop: { en: "Scroll to top category menu", es: "Desplazarse al menú de categorías superior" },
-    bookService: (serviceName) => ({
-      en: `Book ${getLocalized(serviceName)} at Mave Medical Spa in Tijuana`,
-      es: `Reservar ${getLocalized(serviceName)} en Mave Medical Spa en Tijuana`
-    }),
-    learnMoreAbout: (serviceName) => ({
-      en: `Learn more about ${getLocalized(serviceName)}`,
-      es: `Saber más sobre ${getLocalized(serviceName)}`
-    }),
-    searchPlaceholder: { en: "Search treatments", es: "Buscar tratamientos" },
-    noResults: { en: "No treatments match your search.", es: "No hay tratamientos que coincidan con tu búsqueda." }
+    );
   };
 
   // Show/hide scroll-to-top button
@@ -215,14 +151,14 @@ const CategorySlider = ({ services }) => {
       .replace(/₈/g, "8")
       .replace(/₉/g, "9");
   const normalizedQuery = normalizeText(searchTerm.trim());
-  const visibleCategories = categories
+  const visibleCategories = orderedCategories
     .map((category) => {
       const services = category.services.filter((service) => {
         if (!normalizedQuery) return true;
-        const name = normalizeText(getLocalized(service.name));
-        const description = normalizeText(getLocalized(service.description));
+        const name = normalizeText(localize(service.name));
+        const description = normalizeText(localize(service.description));
         const extra = normalizeText(
-          (service.searchFields || []).map((field) => getLocalized(field)).join(" ")
+          (service.searchFields || []).map((field) => localize(field)).join(" ")
         );
         return (
           name.toLowerCase().includes(normalizedQuery) ||
@@ -241,7 +177,7 @@ const CategorySlider = ({ services }) => {
         <div className="-mx-4 sm:-mx-6 lg:-mx-8 -mt-0 sm:mt-0 sticky top-[143px] sm:top-[110px] bg-white z-30 border-b border-gray-200 px-4 sm:px-6 lg:px-8">
           <div className="py-2 sm:py-3">
             <label className="sr-only" htmlFor="treatment-search">
-              {getLocalized(translatedStrings.searchPlaceholder)}
+              {t("treatmentCategories.searchPlaceholder")}
             </label>
             <div className="relative mx-auto w-full md:w-1/2">
               <input
@@ -256,14 +192,14 @@ const CategorySlider = ({ services }) => {
                     event.currentTarget.blur();
                   }
                 }}
-                placeholder={getLocalized(translatedStrings.searchPlaceholder)}
+                placeholder={t("treatmentCategories.searchPlaceholder")}
                 className="w-full rounded-full border border-gray-300 px-4 py-2 pr-12 text-sm md:text-base focus:border-black focus:outline-none"
               />
               {searchTerm ? (
                 <button
                   type="button"
                   onClick={() => setSearchTerm("")}
-                  aria-label="Clear search"
+                  aria-label={t("treatmentCategories.clearSearch")}
                   className="absolute right-3 top-1/2 -translate-y-1/2 h-8 w-8 rounded-full text-2xl font-semibold text-gray-500 hover:text-black flex items-center justify-center"
                 >
                   ×
@@ -278,10 +214,10 @@ const CategorySlider = ({ services }) => {
             {visibleCategories.map((category, i) => (
               <a
                 key={i}
-                href={`#${getLocalized(category.title).replace(/\s+/g, "-").toLowerCase()}`}
+                href={`#${localize(category.title).replace(/\s+/g, "-").toLowerCase()}`}
                 className="inline-flex shrink-0 items-center text-sm md:text-base px-4 py-1.5 sm:py-2 rounded-full border border-gray-300 text-black hover:border-black hover:text-[#731a2f] transition whitespace-nowrap min-h-[36px]"
               >
-                {getLocalized(category.title)}
+                {localize(category.title)}
               </a>
             ))}
           </div>
@@ -291,13 +227,13 @@ const CategorySlider = ({ services }) => {
         {visibleCategories.map((category, i) => (
           <div
             key={i}
-            id={getLocalized(category.title).replace(/\s+/g, "-").toLowerCase()}
+            id={localize(category.title).replace(/\s+/g, "-").toLowerCase()}
             className="mb-16 mt-8 scroll-mt-[200px] sm:scroll-mt-[210px]"
           >
             <h2
               className="text-black font-serif font-medium mb-6 leading-snug text-[clamp(1.6rem,3.8vw,2.6rem)]"
             >
-              {getLocalized(category.title)}
+              {localize(category.title)}
             </h2>
 
             {/* Mobile slider per category */}
@@ -313,7 +249,7 @@ const CategorySlider = ({ services }) => {
                   <div className="relative h-56 w-full">
                     <Image
                       src={service.image}
-                      alt={`${getLocalized(service.name)} in Tijuana – ${getLocalized(service.description)}`}
+                      alt={`${localize(service.name)} in Tijuana – ${localize(service.description)}`}
                       fill
                       className="object-cover"
                     />
@@ -321,10 +257,10 @@ const CategorySlider = ({ services }) => {
                   <div className="p-6 flex flex-col justify-between min-h-[260px]">
                     <div>
                       <h3 className="text-lg text-black font-serif font-medium mb-2">
-                        {getLocalized(service.name)}
+                        {localize(service.name)}
                       </h3>
                       <p className="text-sm text-gray-600 mb-4">
-                        {getLocalized(service.description)}
+                        {localize(service.description)}
                       </p>
                     </div>
                     <div className="flex flex-col gap-2">
@@ -332,16 +268,20 @@ const CategorySlider = ({ services }) => {
                         type="button"
                         onClick={() => router.push(`/treatments/${service.slug}?lead=open`)}
                         className="bg-black text-white px-4 py-2 rounded-full text-xs hover:bg-[#731a2f] transition text-center"
-                        aria-label={getLocalized(translatedStrings.bookService(service.name))}
+                        aria-label={t("treatmentCategories.bookService", {
+                          service: localize(service.name),
+                        })}
                       >
-                        {getLocalized(translatedStrings.bookNow)}
+                        {t("treatments.bookNow")}
                       </button>
                       <Link
                         href={`/treatments/${service.slug}`}
                         className="border border-gray-300 text-black px-4 py-2 rounded-full text-xs hover:border-black transition text-center"
-                        aria-label={getLocalized(translatedStrings.learnMoreAbout(service.name))}
+                        aria-label={t("treatmentCategories.learnMoreAbout", {
+                          service: localize(service.name),
+                        })}
                       >
-                        {getLocalized(translatedStrings.learnMore)}
+                        {t("treatments.learnMore")}
                       </Link>
                     </div>
                   </div>
@@ -353,7 +293,7 @@ const CategorySlider = ({ services }) => {
 
         {!visibleCategories.length && (
           <p className="mt-10 text-sm text-gray-600">
-            {getLocalized(translatedStrings.noResults)}
+            {t("treatmentCategories.noResults")}
           </p>
         )}
 
@@ -361,11 +301,12 @@ const CategorySlider = ({ services }) => {
         {showScrollTop && (
           <button
             onClick={() => {
-              window.scrollTo({ top: 0, behavior: "smooth" });            }}
+              window.scrollTo({ top: 0, behavior: "smooth" });
+            }}
             className="fixed bottom-6 right-6 z-40 bg-black text-white px-4 py-2 rounded-full shadow-lg text-sm hover:bg-[#731a2f] transition"
-            aria-label={getLocalized(translatedStrings.scrollToTop)}
+            aria-label={t("treatmentCategories.scrollToTop")}
           >
-            {getLocalized(translatedStrings.top)}
+            {t("treatmentCategories.top")}
           </button>
         )}
       </div>

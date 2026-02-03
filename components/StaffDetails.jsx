@@ -1,23 +1,20 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import { useTranslation } from "next-i18next";
 import StaffFavorites from "./StaffFavorites";
+import { getLocalized } from "@/lib/i18n/getLocalized";
 
-export default function StaffDetails({ member }) {
+export default function StaffDetails({ member, favoriteCards = [] }) {
   if (!member) return null;
   const { locale = "en" } = useRouter();
+  const { t } = useTranslation("team");
+  const localize = (field) => getLocalized(field, locale);
 
-  const getLocalized = (field) => {
-    if (typeof field === "object" && field !== null) {
-      return field[locale] || field.en || Object.values(field)[0] || "";
-    }
-    return field ?? "";
-  };
-
-  const category = getLocalized(member.category);
-  const displayName = getLocalized(member.displayName);
-  const title = getLocalized(member.title);
-  const bio = getLocalized(member.bio);
+  const category = localize(member.category);
+  const displayName = localize(member.displayName);
+  const title = localize(member.title);
+  const bio = localize(member.bio);
 
   return (
     <div className="w-full bg-white mt-10">
@@ -26,7 +23,7 @@ export default function StaffDetails({ member }) {
         <div className="mb-4">
           <p className="text-sm text-gray-500">
             <Link href="/ourteam" className="hover:underline hover:text-black">
-              {locale === "es" ? "Nuestro Equipo" : "Our Team"}
+              {t("team.breadcrumbTeam")}
             </Link>{" "}
             /{" "}
             <Link
@@ -63,7 +60,7 @@ export default function StaffDetails({ member }) {
           </div>
         </div>
 
-        <StaffFavorites favorites={member.favorites || []} locale={locale} displayName={displayName} />
+        <StaffFavorites cards={favoriteCards} displayName={displayName} />
       </main>
     </div>
   );

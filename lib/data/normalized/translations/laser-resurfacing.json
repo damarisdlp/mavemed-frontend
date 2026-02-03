@@ -1,48 +1,48 @@
 [
   {
     "id": "cat.laser_resurfacing.name",
-    "en": "Laser Treatments & Skin Resurfacing",
-    "es": "Tratamientos Lser y Resurfacing Cutneo"
+    "en": "Láser Treatments & Skin Resurfacing",
+    "es": "Tratamientos Láser y Resurfacing Cutáneo"
   },
   {
     "id": "svc.co2.name",
-    "en": "CO Laser Resurfacing (AcuPulse)",
-    "es": "Resurfacing Lser CO (AcuPulse)"
+    "en": "CO Láser Resurfacing (AcuPulse)",
+    "es": "Resurfacing Láser CO (AcuPulse)"
   },
   {
     "id": "svc.co2.desc",
     "en": "Deep fractional CO laser therapy to repair damaged skin, reduce wrinkles, and renew overall texture and tone.",
-    "es": "Terapia lser fraccionada de CO para reparar piel daada, reducir arrugas y renovar la textura y el tono general de la piel."
+    "es": "Terapia láser fraccionada de CO para reparar piel dañada, reducir arrugas y renovar la textura y el tono general de la piel."
   },
   {
     "id": "svc.co2.details",
     "en": "CO laser delivers fractional ablative energy to stimulate deep skin regeneration. It vaporizes microcolumns of tissue, triggering collagen production and promoting smoother, healthier skin. Ideal for acne scars, wrinkles, sun damage, and dull skin tone.",
-    "es": "El lser de CO emite energa ablativa fraccionada para estimular la regeneracin profunda de la piel. Vaporiza microcolumnas de tejido que activan la produccin de colgeno y promueven una piel ms lisa y saludable. Ideal para cicatrices de acn, arrugas, dao solar y textura opaca."
+    "es": "El láser de CO emite energía ablativa fraccionada para estimular la regeneración profunda de la piel. Vaporiza microcolumnas de tejido que activan la producción de colágeno y promueven una piel más lisa y saludable. Ideal para cicatrices de acné, arrugas, daño solar y textura opaca."
   },
   {
     "id": "note.co2.consult",
     "en": "Requires consultation for clearance and prep",
-    "es": "Requiere consulta previa para evaluacin y preparacin"
+    "es": "Requiere consulta previa para evaluación y preparación"
   },
   {
     "id": "note.co2.downtime",
     "en": "Downtime ranges from 37 days depending on intensity",
-    "es": "El tiempo de recuperacin vara entre 3 y 7 das segn la intensidad"
+    "es": "El tiempo de recuperación vara entre 3 y 7 días según la intensidad"
   },
   {
     "id": "note.co2.sessions",
     "en": "Most patients need 13 sessions spaced 2+ months apart",
-    "es": "La mayora de los pacientes requieren 13 sesiones separadas por 2 meses o ms"
+    "es": "La mayoría de los pacientes requieren 13 sesiones separadas por 2 meses o más"
   },
   {
     "id": "goal.co2.wrinkles",
     "en": "Fade deep wrinkles and lines",
-    "es": "Atenuar arrugas profundas y lneas finas"
+    "es": "Atenuar arrugas profundas y líneas finas"
   },
   {
     "id": "goal.co2.scars",
     "en": "Smooth acne scars and uneven skin",
-    "es": "Suavizar cicatrices de acn y textura irregular"
+    "es": "Suavizar cicatrices de acné y textura irregular"
   },
   {
     "id": "goal.co2.tone",
@@ -52,7 +52,7 @@
   {
     "id": "area.co2.perioral",
     "en": "Perioral Lines (Smokers Lines)",
-    "es": "Lneas Periorales"
+    "es": "Líneas Periorales"
   },
   {
     "id": "area.co2.under_eyes",
@@ -77,7 +77,7 @@
   {
     "id": "area.co2.stretch_marks",
     "en": "Stretch Marks",
-    "es": "Estras"
+    "es": "Estrías"
   },
   {
     "id": "area.co2.scars",
@@ -137,7 +137,7 @@
   {
     "id": "opt.co2.small_zone",
     "en": "Small Zone",
-    "es": "Zona Pequena"
+    "es": "Zona Pequeña"
   },
   {
     "id": "opt.co2.medium_zone",
@@ -197,17 +197,17 @@
   {
     "id": "opt.laser_hair.bikini",
     "en": "Bikini Line",
-    "es": "Linea de Bikini"
+    "es": "Línea de Bikini"
   },
   {
     "id": "opt.laser_hair.brazilian",
     "en": "Brazilian",
-    "es": "Brasileo"
+    "es": "Brasileño"
   },
   {
     "id": "opt.laser_hair.glutes",
     "en": "Glutes",
-    "es": "Gluteos"
+    "es": "Glúteos"
   },
   {
     "id": "opt.laser_hair.thighs",
@@ -242,67 +242,67 @@
   {
     "id": "opt.laser_hair.small_zone",
     "en": "Small Zone (Total area [103 cm2 - 413 cm2])",
-    "es": "Zona Pequena (Area total [103 cm2 - 413 cm2])"
+    "es": "Zona Pequeña (Área total [103 cm2 - 413 cm2])"
   },
   {
     "id": "opt.laser_hair.medium_zone",
     "en": "Medium Zone (Total area [523 cm2 - 1080.3 cm2])",
-    "es": "Zona Mediana (Area total [523 cm2 - 1080.3 cm2])"
+    "es": "Zona Mediana (Área total [523 cm2 - 1080.3 cm2])"
   },
   {
     "id": "opt.laser_hair.large_zone",
     "en": "Large Zone (Total area [1264 cm2 - 2090 cm2])",
-    "es": "Zona Grande (Area total [1264 cm2 - 2090 cm2])"
+    "es": "Zona Grande (Área total [1264 cm2 - 2090 cm2])"
   },
   {
     "id": "note.co2.under_eye",
     "en": "Includes the under-eye treatment area.",
-    "es": "Incluye el Area de tratamiento bajo los ojos."
+    "es": "Incluye el Área de tratamiento bajo los ojos."
   },
   {
     "id": "note.co2.face_neck_decollete",
     "en": "Includes face, neck, and decollete treatment areas.",
-    "es": "Incluye las Areas de tratamiento de rostro, cuello y escote."
+    "es": "Incluye las Áreas de tratamiento de rostro, cuello y escote."
   },
   {
     "id": "note.co2.face_neck_decollete_chest",
     "en": "Includes face, neck, decollete, and chest treatment areas.",
-    "es": "Incluye las Areas de tratamiento de rostro, cuello, escote y pecho."
+    "es": "Incluye las Áreas de tratamiento de rostro, cuello, escote y pecho."
   },
   {
     "id": "note.co2.chest",
     "en": "Includes the chest treatment area.",
-    "es": "Incluye el Area de tratamiento del pecho."
+    "es": "Incluye el Área de tratamiento del pecho."
   },
   {
     "id": "note.co2.small_zone",
     "en": "Total area [103 cm2 - 413 cm2]. Approximately one to two palms, similar to a credit card, up to half a sheet of paper.",
-    "es": "Area total [103 cm2 - 413 cm2]. Aproximadamente de una a dos palmas de la mano, similar al tamano de una tarjeta de credito, hasta media hoja de papel."
+    "es": "Área total [103 cm2 - 413 cm2]. Aproximadamente de una a dos palmas de la mano, similar al tamaño de una tarjeta de crédito, hasta media hoja de papel."
   },
   {
     "id": "note.co2.medium_zone",
     "en": "Total area [523 cm2 - 1080.3 cm2]. Four to six palms, roughly the size of a full sheet of paper.",
-    "es": "Area total [523 cm2 - 1080.3 cm2]. De cuatro a seis palmas de la mano, aproximadamente del tamano de una hoja completa de papel."
+    "es": "Área total [523 cm2 - 1080.3 cm2]. De cuatro a seis palmas de la mano, aproximadamente del tamaño de una hoja completa de papel."
   },
   {
     "id": "note.co2.large_zone",
     "en": "Total area [1264 cm2 - 2090 cm2]. Eight to twelve palms, about the size of a square pillow or large square.",
-    "es": "Area total [1264 cm2 - 2090 cm2]. De ocho a doce palmas de la mano, aproximadamente del tamano de un cojin cuadrado o un cuadrado grande."
+    "es": "Área total [1264 cm2 - 2090 cm2]. De ocho a doce palmas de la mano, aproximadamente del tamaño de un cojín cuadrado o un cuadrado grande."
   },
   {
     "id": "promo.co2.headline",
-    "en": "Exclusive CO Laser Savings",
-    "es": "Ahorro Exclusivo en Lser CO"
+    "en": "Exclusive CO Láser Savings",
+    "es": "Ahorro Exclusivo en Láser CO"
   },
   {
     "id": "promo.co2.description",
     "en": "Lock in limited-time pricing for CO laser resurfacing. Ideal for improving texture, tone, and overall skin clarity.",
-    "es": "Aprovecha precio por tiempo limitado para resurfacing con lser CO. Ideal para mejorar textura, tono y claridad de la piel."
+    "es": "Aprovecha precio por tiempo limitado para resurfacing con láser CO. Ideal para mejorar textura, tono y claridad de la piel."
   },
   {
     "id": "promo.co2.option_name",
-    "en": "CO Laser - Deep Fractional Laser Therapy",
-    "es": "Laser CO - Terapia Lser Fraccionada"
+    "en": "CO Láser - Deep Fractional Láser Therapy",
+    "es": "Láser CO - Terapia Láser Fraccionada"
   },
   {
     "id": "promo.co2.note1",
@@ -317,17 +317,17 @@
   {
     "id": "addon.co2.pn_face",
     "en": "Serum Add-On - PN (Face) - Polynucleotide",
-    "es": "Complemento de Suero - PN (Rostro) - Polinucletido"
+    "es": "Complemento de Suero - PN (Rostro) - Polinucleótido"
   },
   {
     "id": "addon.co2.pdrn_face",
     "en": "Serum Add-On - PDRN (Face) - Polydeoxyribonucleotide",
-    "es": "Complemento de Suero - PDRN (Rostro) - Polidesoxirribonucletido"
+    "es": "Complemento de Suero - PDRN (Rostro) - Polidesoxirribonucleótido"
   },
   {
     "id": "exp.co2.pre.1",
     "en": "Avoid sun exposure, retinoids, acids, and exfoliation for 710 days before treatment; no recent tanning or self-tanner.",
-    "es": "Evite exposicin solar, retinoides, cidos y exfoliacin durante 710 das antes del tratamiento; no acuda bronceado ni con autobronceador."
+    "es": "Evite exposición solar, retinoides, ácidos y exfoliación durante 710 días antes del tratamiento; no acuda bronceado ni con autobronceador."
   },
   {
     "id": "exp.co2.pre.2",
@@ -337,22 +337,22 @@
   {
     "id": "exp.co2.pre.3",
     "en": "Stop blood-thinning meds/supplements and smoking if medically permitted to reduce healing risks.",
-    "es": "Suspenda anticoagulantes y suplementos que adelgacen la sangre, y evite fumar si su mdico lo permite para reducir riesgos de cicatrizacin."
+    "es": "Suspenda anticoagulantes y suplementos que adelgacen la sangre, y evite fumar si su médico lo permite para reducir riesgos de cicatrización."
   },
   {
     "id": "exp.co2.during.1",
     "en": "Topical/local anesthetic is applied; youll feel warmth and snapping as the laser pulses across the skin.",
-    "es": "Se aplica anestesia tpica/local; sentir calor y pequeos destellos mientras el lser recorre la piel."
+    "es": "Se aplica anestesia típica/local; sentir calor y pequeños destellos mientras el láser recorre la piel."
   },
   {
     "id": "exp.co2.during.2",
     "en": "Cooling and occlusive ointment are applied immediately after to protect the skin barrier.",
-    "es": "Se aplican enfriamiento y ungento oclusivo de inmediato para proteger la barrera cutnea."
+    "es": "Se aplican enfriamiento y ungüento oclusivo de inmediato para proteger la barrera cutánea."
   },
   {
     "id": "exp.co2.post.1",
     "en": "Redness, swelling, oozing, and peeling are normal for 510 days; keep the area moist with the prescribed ointment.",
-    "es": "Enrojecimiento, hinchazn, exudado y descamacin son normales durante 510 das; mantenga el Area humectada con el ungento indicado."
+    "es": "Enrojecimiento, hinchazón, exudado y descamación son normales durante 510 días; mantenga el Área humectada con el ungüento indicado."
   },
   {
     "id": "exp.co2.post.2",
@@ -362,32 +362,32 @@
   {
     "id": "exp.co2.post.3",
     "en": "Use only provider-recommended products; no makeup until peeling resolves (usually 57+ days).",
-    "es": "Use solo productos recomendados por su especialista; no use maquillaje hasta que termine la descamacin (generalmente 57+ das)."
+    "es": "Use solo productos recomendados por su especialista; no use maquillaje hasta que termine la descamación (generalmente 57+ días)."
   },
   {
     "id": "exp.co2.post.4",
     "en": "Strict SPF 30+ once skin closes; contact us for pus, fever, spreading redness, or severe pain.",
-    "es": "Use FPS 30+ estricto cuando la piel haya cerrado; contctenos ante pus, fiebre, enrojecimiento extenso o dolor severo."
+    "es": "Use FPS 30+ estricto cuando la piel haya cerrado; contáctenos ante pus, fiebre, enrojecimiento extenso o dolor severo."
   },
   {
     "id": "faq.co2.q1",
     "en": "Is CO laser painful?",
-    "es": "El lser de CO duele?"
+    "es": "El láser de CO duele?"
   },
   {
     "id": "faq.co2.a1",
     "en": "Topical anesthetic is applied beforehand. Patients usually describe warmth with occasional sharp zaps. Mild discomfort may last 12 days.",
-    "es": "Se aplica anestesia tpica antes del tratamiento. Los pacientes suelen describir una sensacin de calor con pequeos destellos. Puede haber molestia leve durante 1 a 2 das."
+    "es": "Se aplica anestesia típica antes del tratamiento. Los pacientes suelen describir una sensación de calor con pequeños destellos. Puede haber molestia leve durante 1 a 2 días."
   },
   {
     "id": "faq.co2.q2",
     "en": "How long is recovery?",
-    "es": "Cunto dura la recuperacin?"
+    "es": "Cuánto dura la recuperación?"
   },
   {
     "id": "faq.co2.a2",
     "en": "Expect 57 days of visible healing depending on intensity. Redness may last longer but can be covered with makeup after peeling stops.",
-    "es": "La recuperacin visible dura entre 5 y 7 das segn la intensidad. El enrojecimiento puede durar ms, pero se puede cubrir con maquillaje cuando finaliza la descamacin."
+    "es": "La recuperación visible dura entre 5 y 7 días según la intensidad. El enrojecimiento puede durar más, pero se puede cubrir con maquillaje cuando finaliza la descamación."
   },
   {
     "id": "faq.co2.q3",
@@ -397,37 +397,37 @@
   {
     "id": "faq.co2.a3",
     "en": "Yes. PRP accelerates healing and enhances results. Other treatments must be timed appropriately based on provider recommendation.",
-    "es": "S. El PRP acelera la recuperacin y mejora los resultados. Otros tratamientos deben programarse estratgicamente segn indicacin del proveedor."
+    "es": "Sí. El PRP acelera la recuperación y mejora los resultados. Otros tratamientos deben programarse estratégicamente según indicación del proveedor."
   },
   {
     "id": "faq.co2.q4",
     "en": "How many sessions do I need?",
-    "es": "Cuntas sesiones necesito?"
+    "es": "Cuántas sesiones necesito?"
   },
   {
     "id": "faq.co2.a4",
     "en": "Many patients see dramatic improvement after one session, but deeper scars or more advanced aging may require 23 sessions.",
-    "es": "Muchos pacientes ven una mejora notable despus de una sesin, aunque cicatrices ms profundas o envejecimiento avanzado pueden requerir 2 o 3 sesiones."
+    "es": "Muchos pacientes ven una mejora notable después de una sesión, aunque cicatrices más profundas o envejecimiento avanzado pueden requerir 2 o 3 sesiones."
   },
   {
     "id": "svc.laser_hair_removal.name",
-    "en": "Laser Hair Removal (Soprano Titanium ICE)",
-    "es": "Depilacin Lser (Soprano Titanium ICE)"
+    "en": "Láser Hair Removal (Soprano Titanium ICE)",
+    "es": "Depilación Láser (Soprano Titanium ICE)"
   },
   {
     "id": "svc.laser_hair_removal.desc",
     "en": "Pain free laser hair removal for all skin types using the Alma Soprano Titanium ICE system.",
-    "es": "Depilacin lser cmoda para todo tipo de piel con el sistema Alma Soprano Titanium ICE."
+    "es": "Depilación láser cómoda para todo tipo de piel con el sistema Alma Soprano Titanium ICE."
   },
   {
     "id": "svc.laser_hair_removal.details",
     "en": "The Alma Soprano Titanium uses triple wavelength laser energy and ICE cooling to deliver virtually painless, fast, and effective hair reduction. It targets follicles at all growth stages for long lasting results.",
-    "es": "Alma Soprano Titanium utiliza energa lser de triple longitud de onda y enfriamiento ICE para brindar una reduccin del vello rpida, efectiva y prcticamente sin molestias. Trabaja sobre los folculos en todas las etapas de crecimiento para resultados duraderos."
+    "es": "Alma Soprano Titanium utiliza energía láser de triple longitud de onda y enfriamiento ICE para brindar una reducción del vello rápida, efectiva y prácticamente sin molestias. Trabaja sobre los folículos en todas las etapas de crecimiento para resultados duraderos."
   },
   {
     "id": "note.laser_hair.sessions",
-    "en": "68 sessions recommended for full clearance",
-    "es": "Se recomiendan de 6 a 8 sesiones para una eliminacin ms completa"
+    "en": "6 - 8 sessions recommended for full clearance",
+    "es": "Se recomiendan de 6 a 8 sesiones para una eliminación más completa"
   },
   {
     "id": "note.laser_hair.maintenance",
@@ -442,7 +442,7 @@
   {
     "id": "note.laser_hair.per_session",
     "en": "Price is per session",
-    "es": "Precio es por sesin"
+    "es": "Precio es por sesión"
   },
   {
     "id": "goal.laser_hair.reduce",
@@ -457,7 +457,7 @@
   {
     "id": "goal.laser_hair.safe",
     "en": "Provide safe and comfortable treatments for all skin tones",
-    "es": "Ofrecer tratamientos seguros y cmodos para todos los tonos de piel"
+    "es": "Ofrecer tratamientos seguros y cómodos para todos los tonos de piel"
   },
   {
     "id": "area.laser_hair.upper_lip",
@@ -477,12 +477,12 @@
   {
     "id": "area.laser_hair.bikini",
     "en": "Bikini line",
-    "es": "Lnea de bikini"
+    "es": "Línea de bikini"
   },
   {
     "id": "area.laser_hair.brazilian",
     "en": "Brazilian",
-    "es": "Zona brasilea"
+    "es": "Zona brasileña"
   },
   {
     "id": "area.laser_hair.full_legs",
@@ -530,24 +530,24 @@
     "es": "Casmara - Facial Purificante de Algas"
   },
   {
-    "id": "addon.laser_hair.microneedling_prp",
+    "id": "addon.laser_hair.Microneedling_prp",
     "en": "Microneedling - PRP - Platelet Rich Plasma",
     "es": "Microneedling - PRP - Plasma Rico en Plaquetas"
   },
   {
-    "id": "addon.laser_hair.microneedling_pn",
+    "id": "addon.laser_hair.Microneedling_pn",
     "en": "Microneedling - PN - Polynucleotide",
-    "es": "Microneedling - PN - Polinucletido"
+    "es": "Microneedling - PN - Polinucleótido"
   },
   {
     "id": "exp.laser_hair.pre.1",
     "en": "Shave the treatment area the day before your session. Do not wax or pluck.",
-    "es": "Rasure el Area a tratar un da antes de su sesin. No se depile con cera ni pinzas."
+    "es": "Rasure el Área a tratar un da antes de su sesión. No se depile con cera ni pinzas."
   },
   {
     "id": "exp.laser_hair.pre.2",
     "en": "Avoid sun exposure and tanning for 2 weeks prior; skip self-tanner and harsh exfoliants for 57 days.",
-    "es": "Evite la exposicin solar y el bronceado por 2 semanas; no use autobronceador ni exfoliantes fuertes por 57 das."
+    "es": "Evite la exposición solar y el bronceado por 2 semanas; no use autobronceador ni exfoliantes fuertes por 57 días."
   },
   {
     "id": "exp.laser_hair.pre.3",
@@ -557,12 +557,12 @@
   {
     "id": "exp.laser_hair.during.1",
     "en": "Youll feel gentle warmth or quick snaps; cooling is used to keep the skin comfortable.",
-    "es": "Sentir calor suave o pequeos chasquidos; se usa enfriamiento para mantener la piel cmoda."
+    "es": "Sentir calor suave o pequeños chasquidos; se usa enfriamiento para mantener la piel cómoda."
   },
   {
     "id": "exp.laser_hair.post.1",
     "en": "Expect mild redness or warmth for a few hours. Avoid hot showers, saunas, and exfoliants for 2448 hours.",
-    "es": "Puede presentar enrojecimiento o sensacin de calor leve durante algunas horas. Evite duchas muy calientes, saunas y exfoliantes durante 2448 horas."
+    "es": "Puede presentar enrojecimiento o sensación de calor leve durante algunas horas. Evite duchas muy calientes, saunas y exfoliantes durante 2448 horas."
   },
   {
     "id": "exp.laser_hair.post.2",
@@ -572,17 +572,17 @@
   {
     "id": "exp.laser_hair.post.3",
     "en": "Use SPF 30+ on exposed areas and avoid aggressive scrubs or retinoids for 57 days.",
-    "es": "Use FPS 30+ en zonas expuestas y evite exfoliantes agresivos o retinoides durante 57 das."
+    "es": "Use FPS 30+ en zonas expuestas y evite exfoliantes agresivos o retinoides durante 57 días."
   },
   {
     "id": "faq.laser_hair.q1",
     "en": "Is laser hair removal permanent?",
-    "es": "La depilacin lser es permanente?"
+    "es": "La depilación láser es permanente?"
   },
   {
     "id": "faq.laser_hair.a1",
     "en": "It provides long term hair reduction. Most clients see 8090 percent reduction after completing a full series.",
-    "es": "Ofrece una reduccin del vello a largo plazo. La mayora de los pacientes ve entre un 80 y un 90 por ciento menos de vello despus de completar la serie de sesiones."
+    "es": "Ofrece una reducción del vello a largo plazo. La mayoría de los pacientes ve entre un 80 y un 90 por ciento menos de vello después de completar la serie de sesiones."
   },
   {
     "id": "faq.laser_hair.q2",
@@ -592,7 +592,7 @@
   {
     "id": "faq.laser_hair.a2",
     "en": "Our system uses ICE cooling for a very comfortable experience. Most patients feel gentle warmth or a light snap on the skin.",
-    "es": "Nuestro sistema utiliza enfriamiento ICE para que la experiencia sea muy cmoda. La mayora de los pacientes percibe solo calor ligero o una sensacin de golpecito suave sobre la piel."
+    "es": "Nuestro sistema utiliza enfriamiento ICE para que la experiencia sea muy cómoda. La mayoría de los pacientes percibe solo calor ligero o una sensación de golpecito suave sobre la piel."
   },
   {
     "id": "faq.laser_hair.q3",
@@ -602,17 +602,17 @@
   {
     "id": "faq.laser_hair.a3",
     "en": "Yes. Soprano Titanium is safe for all Fitzpatrick skin types, including tanned and darker skin.",
-    "es": "S. Soprano Titanium es seguro para todos los fototipos de piel, incluyendo piel bronceada y tonos ms oscuros."
+    "es": "Sí. Soprano Titanium es seguro para todos los fototipos de piel, incluyendo piel bronceada y tonos más oscuros."
   },
   {
     "id": "faq.laser_hair.q4",
     "en": "How often should I come in?",
-    "es": "Con qu frecuencia debo acudir a mis sesiones?"
+    "es": "Con qué frecuencia debo acudir a mis sesiones?"
   },
   {
     "id": "faq.laser_hair.a4",
     "en": "Sessions are usually scheduled every 46 weeks for body areas and every 24 weeks for facial areas, depending on the hair growth cycle.",
-    "es": "Las sesiones se programan normalmente cada 4 a 6 semanas en cuerpo y cada 2 a 4 semanas en zonas faciales, segn el ciclo de crecimiento del vello."
+    "es": "Las sesiones se programan normalmente cada 4 a 6 semanas en cuerpo y cada 2 a 4 semanas en zonas faciales, según el ciclo de crecimiento del vello."
   },
   {
     "id": "svc.ipl.name",
@@ -622,32 +622,32 @@
   {
     "id": "svc.ipl.desc",
     "en": "Light based therapy to reduce sun damage, pigmentation, redness, and boost overall skin clarity.",
-    "es": "Terapia basada en luz para reducir dao solar, manchas, enrojecimiento y mejorar la claridad general de la piel."
+    "es": "Terapia basada en luz para reducir daño solar, manchas, enrojecimiento y mejorar la claridad general de la piel."
   },
   {
     "id": "svc.ipl.details",
     "en": "IPL (Intense Pulsed Light) uses broad spectrum light to target pigment, sun spots, redness, and broken capillaries. It gently revitalizes the skin and improves tone without damaging the surface.",
-    "es": "IPL (Luz Pulsada Intensa) utiliza luz de amplio espectro para tratar pigmento, manchas solares, enrojecimiento y vasitos rotos. Revitaliza la piel de manera suave y mejora el tono sin daar la superficie."
+    "es": "IPL (Luz Pulsada Intensa) utiliza luz de amplio espectro para tratar pigmento, manchas solares, enrojecimiento y vasitos rotos. Revitaliza la piel de manera suave y mejora el tono sin dañar la superficie."
   },
   {
     "id": "note.ipl.photo_eval",
     "en": "Requires photo evaluation for clearance",
-    "es": "Requiere evaluacin con fotografa previa para autorizacin"
+    "es": "Requiere evaluación con fotógrafa previa para autorización"
   },
   {
     "id": "note.ipl.no_tan",
     "en": "No active tan or self tanner before session",
-    "es": "No debe haber bronceado activo ni autobronceador antes de la sesin"
+    "es": "No debe haber bronceado activo ni autobronceador antes de la sesión"
   },
   {
     "id": "goal.ipl.pigment",
     "en": "Reduce pigmentation and age spots",
-    "es": "Reducir pigmentacin y manchas de la edad"
+    "es": "Reducir pigmentación y manchas de la edad"
   },
   {
     "id": "goal.ipl.redness",
     "en": "Minimize redness and rosacea",
-    "es": "Minimizar enrojecimiento y roscea"
+    "es": "Minimizar enrojecimiento y rosácea"
   },
   {
     "id": "goal.ipl.brighten",
@@ -727,7 +727,7 @@
   {
     "id": "opt.ipl.small_zone",
     "en": "Small Zone",
-    "es": "Zona Pequena"
+    "es": "Zona Pequeña"
   },
   {
     "id": "opt.ipl.medium_zone",
@@ -757,17 +757,17 @@
   {
     "id": "note.ipl.small_zone",
     "en": "Total area [103 cm2 - 413 cm2]. Approximately one to two palms, similar to a credit card, up to half a sheet of paper.",
-    "es": "Area total [103 cm2 - 413 cm2]. Aproximadamente de una a dos palmas de la mano, similar al tamano de una tarjeta de credito, hasta media hoja de papel."
+    "es": "Área total [103 cm2 - 413 cm2]. Aproximadamente de una a dos palmas de la mano, similar al tamaño de una tarjeta de crédito, hasta media hoja de papel."
   },
   {
     "id": "note.ipl.medium_zone",
     "en": "Total area [523 cm2 - 1080.3 cm2]. Four to six palms, roughly the size of a full sheet of paper.",
-    "es": "Area total [523 cm2 - 1080.3 cm2]. De cuatro a seis palmas de la mano, aproximadamente del tamano de una hoja completa de papel."
+    "es": "Área total [523 cm2 - 1080.3 cm2]. De cuatro a seis palmas de la mano, aproximadamente del tamaño de una hoja completa de papel."
   },
   {
     "id": "note.ipl.large_zone",
     "en": "Total area [1264 cm2 - 2090 cm2]. Eight to twelve palms, about the size of a square pillow or large square.",
-    "es": "Area total [1264 cm2 - 2090 cm2]. De ocho a doce palmas de la mano, aproximadamente del tamano de un cojin cuadrado o un cuadrado grande."
+    "es": "Área total [1264 cm2 - 2090 cm2]. De ocho a doce palmas de la mano, aproximadamente del tamaño de un cojín cuadrado o un cuadrado grande."
   },
   {
     "id": "addon.ipl.rf_face_neck_decollete",
@@ -785,34 +785,34 @@
     "es": "Casmara - Facial Purificante de Algas"
   },
   {
-    "id": "addon.ipl.microneedling_prp",
+    "id": "addon.ipl.Microneedling_prp",
     "en": "Microneedling - PRP - Platelet Rich Plasma",
     "es": "Microneedling - PRP - Plasma Rico en Plaquetas"
   },
   {
-    "id": "addon.ipl.microneedling_pn",
+    "id": "addon.ipl.Microneedling_pn",
     "en": "Microneedling - PN - Polynucleotide",
-    "es": "Microneedling - PN - Polinucletido"
+    "es": "Microneedling - PN - Polinucleótido"
   },
   {
     "id": "exp.ipl.pre.1",
     "en": "Avoid sun exposure, tanning beds and self tanners for 2 weeks before treatment.",
-    "es": "Evite la exposicin solar intensa, camas de bronceado y autobronceadores durante 2 semanas antes del tratamiento."
+    "es": "Evite la exposición solar intensa, camas de bronceado y autobronceadores durante 2 semanas antes del tratamiento."
   },
   {
     "id": "exp.ipl.pre.2",
     "en": "Discontinue retinoids, acids, and exfoliation 57 days prior; arrive with clean skin, no makeup.",
-    "es": "Suspenda retinoides, cidos y exfoliacin 57 das antes; acuda con la piel limpia y sin maquillaje."
+    "es": "Suspenda retinoides, ácidos y exfoliación 57 días antes; acuda con la piel limpia y sin maquillaje."
   },
   {
     "id": "exp.ipl.pre.3",
     "en": "Avoid photosensitizing meds (per provider guidance) and inform us of any antibiotics or recent sunburn.",
-    "es": "Evite medicamentos fotosensibilizantes (segn indicacin) e infrmenos sobre antibiticos recientes o quemadura solar."
+    "es": "Evite medicamentos fotosensibilizantes (según indicación) e infórmenos sobre antibióticos recientes o quemadura solar."
   },
   {
     "id": "exp.ipl.during.1",
     "en": "Expect a warm, quick snap sensation; cooling gel and chilled tip help comfort.",
-    "es": "Espere una sensacin de chasquido clido y rpido; el gel fro y la punta refrigerada ayudan a la comodidad."
+    "es": "Espere una sensación de chasquido cálido y rápido; el gel fro y la punta refrigerada ayudan a la comodidad."
   },
   {
     "id": "exp.ipl.during.2",
@@ -822,37 +822,37 @@
   {
     "id": "exp.ipl.post.1",
     "en": "Pigmented spots may darken and flake off over 57 days; avoid picking.",
-    "es": "Las manchas pigmentadas pueden oscurecerse y descamarse en 57 das; evite manipularlas."
+    "es": "Las manchas pigmentadas pueden oscurecerse y descamarse en 57 días; evite manipularlas."
   },
   {
     "id": "exp.ipl.post.2",
     "en": "Use SPF 30+ daily, avoid sun/heat for 72 hours, and pause active skincare for 35 days.",
-    "es": "Use FPS 30+ a diario, evite sol/calor por 72 horas y suspenda activos de cuidado de la piel por 35 das."
+    "es": "Use FPS 30+ a diario, evite sol/calor por 72 horas y suspenda activos de cuidado de la piel por 35 días."
   },
   {
     "id": "faq.ipl.q1",
     "en": "How many sessions will I need?",
-    "es": "Cuntas sesiones voy a necesitar?"
+    "es": "Cuántas sesiones voy a necesitar?"
   },
   {
     "id": "faq.ipl.a1",
     "en": "Most patients need 35 sessions spaced 34 weeks apart for best results.",
-    "es": "La mayora de los pacientes requiere de 3 a 5 sesiones, separadas cada 3 a 4 semanas, para obtener los mejores resultados."
+    "es": "La mayoría de los pacientes requiere de 3 a 5 sesiones, separadas cada 3 a 4 semanas, para obtener los mejores resultados."
   },
   {
     "id": "faq.ipl.q2",
     "en": "Is there downtime?",
-    "es": "Hay tiempo de recuperacin?"
+    "es": "Hay tiempo de recuperación?"
   },
   {
     "id": "faq.ipl.a2",
     "en": "There is no formal downtime, but pigmented areas may darken or flake for a few days after treatment.",
-    "es": "No hay un tiempo de recuperacin estricto, aunque las reas pigmentadas pueden oscurecerse o descamarse durante algunos das despus del tratamiento."
+    "es": "No hay un tiempo de recuperación estricto, aunque las áreas pigmentadas pueden oscurecerse o descamarse durante algunos días después del tratamiento."
   },
   {
     "id": "faq.ipl.q3",
     "en": "Can I wear makeup after IPL?",
-    "es": "Puedo usar maquillaje despus de un tratamiento IPL?"
+    "es": "Puedo usar maquillaje después de un tratamiento IPL?"
   },
   {
     "id": "faq.ipl.a3",
@@ -867,82 +867,82 @@
   {
     "id": "faq.ipl.a4",
     "en": "Most patients describe the sensation as a warm snap, similar to a quick rubber band on the skin. It is brief and well tolerated.",
-    "es": "La mayora de los pacientes describe la sensacin como un chasquido clido, similar a una ligera liga sobre la piel. Es rpido y bien tolerado."
+    "es": "La mayoría de los pacientes describe la sensación como un chasquido cálido, similar a una ligera liga sobre la piel. Es rápido y bien tolerado."
   },
   {
-    "id": "svc.rf_microneedling.name",
+    "id": "svc.rf_Microneedling.name",
     "en": "Radiofrequency Microneedling (Sylfirm X)",
     "es": "Microneedling con Radiofrecuencia (Sylfirm X)"
   },
   {
-    "id": "svc.rf_microneedling.desc",
-    "en": "Sylfirm X combines ultrafast RF microneedling with dual-wave technology to lift, tighten, and resurface skin with minimal downtime.",
-    "es": "Sylfirm X combina microneedling de radiofrecuencia ultrarrpido con tecnologa de doble onda para levantar, tensar y renovar la piel con mnimo tiempo de recuperacin."
+    "id": "svc.rf_Microneedling.desc",
+    "en": "Sylfirm X combines ultrafast RF Microneedling with dual-wave technology to lift, tighten, and resurface skin with minimal downtime.",
+    "es": "Sylfirm X combina Microneedling de radiofrecuencia ultrarrpido con tecnología de doble onda para levantar, tensar y renovar la piel con mínimo tiempo de recuperación."
   },
   {
-    "id": "svc.rf_microneedling.details",
+    "id": "svc.rf_Microneedling.details",
     "en": "Sylfirm X delivers bipolar RF through ultrafine microneedles with both continuous and pulsed waveforms. It targets deeper dermal layers to remodel collagen, reduce laxity, soften scars, and improve overall skin tone and texture with precise energy delivery and minimal downtime.",
-    "es": "Sylfirm X aplica RF bipolar a travs de microagujas ultrafinas con modos continuo y pulsado. Llega a capas drmicas profundas para remodelar colgeno, reducir la laxitud, suavizar cicatrices y mejorar el tono y la textura de la piel con energa precisa y poco tiempo de recuperacin."
+    "es": "Sylfirm X aplica RF bipolar a través de microagujas ultrafinas con modos continuo y pulsado. Llega a capas dérmicas profundas para remodelar colágeno, reducir la laxitud, suavizar cicatrices y mejorar el tono y la textura de la piel con energía precisa y poco tiempo de recuperación."
   },
   {
-    "id": "note.rf_microneedling.sessions",
+    "id": "note.rf_Microneedling.sessions",
     "en": "For scars, 34 sessions are typical; for rejuvenation and lifting, plan 23 sessions (spaced 46 weeks).",
     "es": "Para cicatrices, normalmente se realizan 34 sesiones; para rejuvenecimiento y lifting, planifique 23 sesiones (espaciadas cada 46 semanas)."
   },
   {
-    "id": "note.rf_microneedling.safe",
+    "id": "note.rf_Microneedling.safe",
     "en": "Safe for all skin types",
     "es": "Seguro para todo tipo de piel"
   },
   {
-    "id": "note.rf_microneedling.redness",
+    "id": "note.rf_Microneedling.redness",
     "en": "Mild redness may last 12 days",
-    "es": "El enrojecimiento leve puede durar de 1 a 2 das"
+    "es": "El enrojecimiento leve puede durar de 1 a 2 días"
   },
   {
-    "id": "goal.rf_microneedling.lift",
+    "id": "goal.rf_Microneedling.lift",
     "en": "Lift and tighten sagging skin",
-    "es": "Levantar y tensar la piel flcida"
+    "es": "Levantar y tensar la piel flácida"
   },
   {
-    "id": "goal.rf_microneedling.scars",
+    "id": "goal.rf_Microneedling.scars",
     "en": "Reduce acne scars and large pores",
-    "es": "Reducir cicatrices de acn y poros dilatados"
+    "es": "Reducir cicatrices de acné y poros dilatados"
   },
   {
-    "id": "goal.rf_microneedling.lines",
+    "id": "goal.rf_Microneedling.lines",
     "en": "Improve fine lines and skin laxity",
-    "es": "Mejorar lneas finas y laxitud de la piel"
+    "es": "Mejorar líneas finas y laxitud de la piel"
   },
   {
-    "id": "area.rf_microneedling.face",
+    "id": "area.rf_Microneedling.face",
     "en": "Face",
     "es": "Rostro"
   },
   {
-    "id": "area.rf_microneedling.neck",
+    "id": "area.rf_Microneedling.neck",
     "en": "Neck",
     "es": "Cuello"
   },
   {
-    "id": "area.rf_microneedling.decollete",
+    "id": "area.rf_Microneedling.decollete",
     "en": "Decollete",
     "es": "Escote"
   },
   {
-    "id": "area.rf_microneedling.jawline",
+    "id": "area.rf_Microneedling.jawline",
     "en": "Jawline",
-    "es": "Lnea mandibular"
+    "es": "Línea mandibular"
   },
   {
-    "id": "area.rf_microneedling.acne_scars",
+    "id": "area.rf_Microneedling.acne_scars",
     "en": "Acne scars",
-    "es": "Cicatrices de acn"
+    "es": "Cicatrices de acné"
   },
   {
-    "id": "area.rf_microneedling.stretch_marks",
+    "id": "area.rf_Microneedling.stretch_marks",
     "en": "Stretch marks",
-    "es": "Estras"
+    "es": "Estrías"
   },
   {
     "id": "opt.rf.face",
@@ -977,7 +977,7 @@
   {
     "id": "opt.rf.small_zone",
     "en": "Small Zone",
-    "es": "Zona Pequena"
+    "es": "Zona Pequeña"
   },
   {
     "id": "opt.rf.medium_zone",
@@ -992,27 +992,27 @@
   {
     "id": "note.rf.small_zone",
     "en": "Total area [103 cm2 - 413 cm2]. Approximately one to two palms, similar to a credit card, up to half a sheet of paper.",
-    "es": "Area total [103 cm2 - 413 cm2]. Aproximadamente de una a dos palmas de la mano, similar al tamano de una tarjeta de credito, hasta media hoja de papel."
+    "es": "Área total [103 cm2 - 413 cm2]. Aproximadamente de una a dos palmas de la mano, similar al tamaño de una tarjeta de crédito, hasta media hoja de papel."
   },
   {
     "id": "note.rf.face_neck_decollete",
     "en": "Includes complimentary hands treatment.",
-    "es": "Incluye tratamiento de manos de cortesa."
+    "es": "Incluye tratamiento de manos de cortesía."
   },
   {
     "id": "note.rf.hands_biostim",
     "en": "Hands are complimentary when a separate zone is treated alongside a biostimulator collagen treatment such as PLLA or CaHA.",
-    "es": "Las manos se incluyen sin costo cuando se trata una zona separada junto con un tratamiento bioestimulador de colgeno como PLLA o CaHA."
+    "es": "Las manos se incluyen sin costo cuando se trata una zona separada junto con un tratamiento bioestimulador de colágeno como PLLA o CaHA."
   },
   {
     "id": "note.rf.medium_zone",
     "en": "Total area [523 cm2 - 1080.3 cm2]. Four to six palms, roughly the size of a full sheet of paper.",
-    "es": "Area total [523 cm2 - 1080.3 cm2]. De cuatro a seis palmas de la mano, aproximadamente del tamano de una hoja completa de papel."
+    "es": "Área total [523 cm2 - 1080.3 cm2]. De cuatro a seis palmas de la mano, aproximadamente del tamaño de una hoja completa de papel."
   },
   {
     "id": "note.rf.large_zone",
     "en": "Total area [1264 cm2 - 2090 cm2]. Eight to twelve palms, about the size of a square pillow or large square.",
-    "es": "Area total [1264 cm2 - 2090 cm2]. De ocho a doce palmas de la mano, aproximadamente del tamano de un cojin cuadrado o un cuadrado grande."
+    "es": "Área total [1264 cm2 - 2090 cm2]. De ocho a doce palmas de la mano, aproximadamente del tamaño de un cojín cuadrado o un cuadrado grande."
   },
   {
     "id": "addon.rf.botox_any_zone",
@@ -1022,7 +1022,7 @@
   {
     "id": "addon.rf.serum_pn",
     "en": "Serum Add-On - PN (Face) - Polynucleotide",
-    "es": "Complemento de Suero - PN (Rostro) - Polinucletido"
+    "es": "Complemento de Suero - PN (Rostro) - Polinucleótido"
   },
   {
     "id": "addon.rf.serum_prp",
@@ -1032,7 +1032,7 @@
   {
     "id": "addon.rf.serum_pdrn",
     "en": "Serum Add-On - PDRN (Face) - Polydeoxyribonucleotide",
-    "es": "Complemento de Suero - PDRN (Rostro) - Polidesoxirribonucletido"
+    "es": "Complemento de Suero - PDRN (Rostro) - Polidesoxirribonucleótido"
   },
   {
     "id": "addon.rf.pdo_threads",
@@ -1052,62 +1052,62 @@
   {
     "id": "exp.rf.pre.1",
     "en": "Avoid blood thinners, alcohol and caffeine 24 hours before your session.",
-    "es": "Evite anticoagulantes, alcohol y cafena durante las 24 horas previas a su sesin."
+    "es": "Evite anticoagulantes, alcohol y cafeína durante las 24 horas previas a su sesión."
   },
   {
     "id": "exp.rf.pre.2",
     "en": "Discontinue active skincare (retinoids, acids, exfoliants) for 35 days; arrive with clean skin, no makeup or self-tanner.",
-    "es": "Suspenda productos activos (retinoides, cidos, exfoliantes) por 35 das; acuda con la piel limpia, sin maquillaje ni autobronceador."
+    "es": "Suspenda productos activos (retinoides, ácidos, exfoliantes) por 35 días; acuda con la piel limpia, sin maquillaje ni autobronceador."
   },
   {
     "id": "exp.rf.during.1",
     "en": "Topical anesthetic is applied; expect pressure, heat, and pinpoint sensation as RF energy is delivered.",
-    "es": "Se aplica anestesia tpica; espere presin, calor y sensacin de puntos finos mientras se entrega la energa de RF."
+    "es": "Se aplica anestesia típica; espere presión, calor y sensación de puntos finos mientras se entrega la energía de RF."
   },
   {
     "id": "exp.rf.during.2",
     "en": "Mild pinpoint bleeding can occur; cooling and serum application help soothe the skin.",
-    "es": "Puede haber leve sangrado puntual; el enfriamiento y la aplicacin de sueros ayudan a calmar la piel."
+    "es": "Puede haber leve sangrado puntual; el enfriamiento y la aplicación de sueros ayudan a calmar la piel."
   },
   {
     "id": "exp.rf.post.1",
     "en": "Expect redness, swelling or tightness for 13 days; avoid makeup, sun, heat, and sweating for 24 hours.",
-    "es": "Espere enrojecimiento, hinchazn o tirantez por 13 das; evite maquillaje, sol, calor y sudor durante 24 horas."
+    "es": "Espere enrojecimiento, hinchazón o tirantez por 13 días; evite maquillaje, sol, calor y sudor durante 24 horas."
   },
   {
     "id": "exp.rf.post.2",
     "en": "Use gentle cleanser/moisturizer, avoid retinoids/acids for 57 days, and apply SPF 30+ once you resume daytime products.",
-    "es": "Use limpiador/hidratante suaves, evite retinoides/cidos por 57 das y aplique FPS 30+ al reanudar productos diurnos."
+    "es": "Use limpiador/hidratante suaves, evite retinoides/ácidos por 57 días y aplique FPS 30+ al reanudar productos diurnos."
   },
   {
     "id": "faq.rf.q1",
-    "en": "Is Sylfirm X safer than other RF microneedling devices?",
-    "es": "Sylfirm X es ms seguro que otros dispositivos de microneedling con RF?"
+    "en": "Is Sylfirm X safer than other RF Microneedling devices?",
+    "es": "Sylfirm X es más seguro que otros dispositivos de Microneedling con RF?"
   },
   {
     "id": "faq.rf.a1",
-    "en": "The FDA recently warned that some RF microneedling devices, when used outside cleared indications or by untrained providers, can cause burns, scars, and pigment changes. Sylfirm X delivers controlled bipolar RF with dual waveforms, is FDA-cleared for dermal remodeling, and is performed by licensed clinicians following strict protocolsreducing risk while improving outcomes.",
-    "es": "La FDA advirti recientemente que algunos dispositivos de microneedling con RF, usados fuera de indicaciones aprobadas o por personal no capacitado, pueden causar quemaduras, cicatrices y cambios de pigmento. Sylfirm X aplica RF bipolar controlada con doble onda, cuenta con autorizacin de la FDA para remodelacin drmica y se realiza por clnicos licenciados bajo protocolos estrictos, lo que reduce riesgos y mejora resultados."
+    "en": "The FDA recently warned that some RF Microneedling devices, when used outside cleared indications or by untrained providers, can cause burns, scars, and pigment changes. Sylfirm X delivers controlled bipolar RF with dual waveforms, is FDA-cleared for dermal remodeling, and is performed by licensed clinicians following strict protocolsreducing risk while improving outcomes.",
+    "es": "La FDA advirtió recientemente que algunos dispositivos de Microneedling con RF, usados fuera de indicaciones aprobadas o por personal no capacitado, pueden causar quemaduras, cicatrices y cambios de pigmento. Sylfirm X aplica RF bipolar controlada con doble onda, cuenta con autorización de la FDA para remodelación dérmica y se realiza por clínicos licenciados bajo protocolos estrictos, lo que reduce riesgos y mejora resultados."
   },
   {
     "id": "faq.rf.q2",
-    "en": "How is Sylfirm X different from regular microneedling?",
-    "es": "En qu se diferencia Sylfirm X de un microneedling tradicional?"
+    "en": "How is Sylfirm X different from regular Microneedling?",
+    "es": "En qué se diferencia Sylfirm X de un Microneedling tradicional?"
   },
   {
     "id": "faq.rf.a2",
-    "en": "It combines microneedling with precisely pulsed RF energy to stimulate deeper dermal remodeling, collagen production, and tighteningeffects that traditional microneedling alone cannot achieve.",
-    "es": "Combina microneedling con energa de RF de pulsos precisos para estimular una remodelacin drmica ms profunda, produccin de colgeno y tensado, efectos que el microneedling tradicional no logra por s solo."
+    "en": "It combines Microneedling with precisely pulsed RF energy to stimulate deeper dermal remodeling, collagen production, and tighteningeffects that traditional Microneedling alone cannot achieve.",
+    "es": "Combina Microneedling con energía de RF de pulsos precisos para estimular una remodelación dérmica más profunda, producción de colágeno y tensado, efectos que el Microneedling tradicional no logra por s solo."
   },
   {
     "id": "faq.rf.q3",
     "en": "Is there downtime?",
-    "es": "Hay tiempo de recuperacin?"
+    "es": "Hay tiempo de recuperación?"
   },
   {
     "id": "faq.rf.a3",
     "en": "Most patients notice redness and tightness for 2448 hours, with minimal flaking and very little interruption to daily activities.",
-    "es": "La mayora de los pacientes presenta enrojecimiento y sensacin de tirantez durante 2448 horas, con muy poca descamacin y mnima interrupcin de sus actividades diarias."
+    "es": "La mayoría de los pacientes presenta enrojecimiento y sensación de tirantez durante 2448 horas, con muy poca descamación y mínima interrupción de sus actividades diarias."
   },
   {
     "id": "svc.serum_add_ons.name",
@@ -1116,33 +1116,33 @@
   },
   {
     "id": "svc.serum_add_ons.desc",
-    "en": "Enhance your treatment results with our specialty serums and boosters. These add-ons are applied immediately after procedures like RF microneedling or CO laser resurfacing to deliver targeted actives deep into the skin, amplifying healing and rejuvenation.",
-    "es": "Potencia sus resultados con nuestros sueros y potenciadores especializados. Estos complementos se aplican inmediatamente despus de procedimientos como microneedling con RF o resurfacing con lser CO para llevar activos especficos a capas profundas de la piel, intensificando la reparacin y la rejuvenecin."
+    "en": "Enhance your treatment results with our specialty serums and boosters. These add-ons are applied immediately after procedures like RF Microneedling or CO laser resurfacing to deliver targeted actives deep into the skin, amplifying healing and rejuvenation.",
+    "es": "Potencia sus resultados con nuestros sueros y potenciadores especializados. Estos complementos se aplican inmediatamente después de procedimientos como Microneedling con RF o resurfacing con láser CO para llevar activos específicos a capas profundas de la piel, intensificando la reparación y la rejuvenación."
   },
   {
     "id": "svc.serum_add_ons.details",
     "en": "Serum add-ons are concentrated boosters that infuse the skin with powerful ingredients during the optimal post-treatment window. Each option targets different skin needs, from cellular repair and hydration to biostimulation and brightening, supporting faster recovery and superior outcomes.",
-    "es": "Los complementos de suero son potenciadores concentrados que infunden la piel con ingredientes potentes durante la ventana ptima posterior al tratamiento. Cada opcin atiende diferentes necesidades de la piel, desde reparacin celular e hidratacin hasta biostimulacin y luminosidad, favoreciendo una recuperacin ms rpida y resultados superiores."
+    "es": "Los complementos de suero son potenciadores concentrados que infunden la piel con ingredientes potentes durante la ventana óptima posterior al tratamiento. Cada opción atiende diferentes necesidades de la piel, desde reparación celular e hidratación hasta bioestimulación y luminosidad, favoreciendo una recuperación más rápida y resultados superiores."
   },
   {
     "id": "note.serum_add_ons.recommended",
-    "en": "Recommended with RF microneedling or CO laser treatments",
-    "es": "Recomendados complementariamente con tratamientos microneedling con RF o lser CO"
+    "en": "Recommended with RF Microneedling or CO laser treatments",
+    "es": "Recomendados complementariamente con tratamientos Microneedling con RF o láser CO"
   },
   {
     "id": "note.serum_add_ons.boosts",
     "en": "Boosts healing and enhances visible results",
-    "es": "Aceleran la recuperacin y potencian los resultados visibles"
+    "es": "Aceleran la recuperación y potencian los resultados visibles"
   },
   {
     "id": "note.serum_add_ons.safe",
     "en": "Safe for most skin types; selected according to provider guidance",
-    "es": "Seguros para la mayora de los tipos de piel; se eligen segn la recomendacin del especialista"
+    "es": "Seguros para la mayoría de los tipos de piel; se eligen según la recomendación del especialista"
   },
   {
     "id": "goal.serum_add_ons.heal",
     "en": "Accelerate post-treatment healing and recovery",
-    "es": "Acelerar la recuperacin despus del tratamiento"
+    "es": "Acelerar la recuperación después del tratamiento"
   },
   {
     "id": "goal.serum_add_ons.hydrate",
@@ -1156,8 +1156,8 @@
   },
   {
     "id": "area.serum_add_ons.any_zone",
-    "en": "Any zone treated with RF microneedling or CO laser",
-    "es": "Cualquier zona tratada con microneedling de RF o lser de CO"
+    "en": "Any zone treated with RF Microneedling or CO laser",
+    "es": "Cualquier zona tratada con Microneedling de RF o láser de CO"
   },
   {
     "id": "addon.serum_add_ons.face",
@@ -1272,7 +1272,7 @@
   {
     "id": "exp.serum.pre.1",
     "en": "No special preparation is needed beyond what is required for your primary treatment.",
-    "es": "No se requiere preparacin especial ms all de la indicada para su tratamiento principal."
+    "es": "No se requiere preparación especial más all de la indicada para su tratamiento principal."
   },
   {
     "id": "exp.serum.pre.2",
@@ -1282,12 +1282,12 @@
   {
     "id": "exp.serum.post.1",
     "en": "Skin often looks extra radiant and hydrated immediately after the serum is applied.",
-    "es": "La piel suele verse especialmente luminosa e hidratada inmediatamente despus de la aplicacin del suero."
+    "es": "La piel suele verse especialmente luminosa e hidratada inmediatamente después de la aplicación del suero."
   },
   {
     "id": "exp.serum.post.2",
     "en": "Avoid harsh products, exfoliation, or active acids for at least 24 hours.",
-    "es": "Evita productos agresivos, exfoliantes o cidos activos durante al menos 24 horas."
+    "es": "Evita productos agresivos, exfoliantes o ácidos activos durante al menos 24 horas."
   },
   {
     "id": "faq.serum.q1",
@@ -1297,27 +1297,27 @@
   {
     "id": "faq.serum.a1",
     "en": "Yes. Most serum add-ons are designed to support barrier repair, hydration, and collagen, making them ideal for mature, sensitized, or recently treated skin.",
-    "es": "S. La mayora de los complementos con suero estn diseados para apoyar la barrera cutnea, la hidratacin y el colgeno, por lo que son ideales para piel madura, sensibilizada o recin tratada."
+    "es": "Sí. La mayoría de los complementos con suero están diseñados para apoyar la barrera cutánea, la hidratación y el colágeno, por lo que son ideales para piel madura, sensibilizada o recién tratada."
   },
   {
     "id": "faq.serum.q2",
     "en": "Can I wear makeup after receiving a serum add-on?",
-    "es": "Puedo usar maquillaje despus de aplicar un complemento con suero?"
+    "es": "Puedo usar maquillaje después de aplicar un complemento con suero?"
   },
   {
     "id": "faq.serum.a2",
     "en": "Yes, unless the primary treatment has specific restrictions. For best results, we recommend letting the skin breathe for a few hours after the session.",
-    "es": "S, a menos que su tratamiento principal tenga restricciones especficas. Para mejores resultados, recomendamos dejar que la piel respire algunas horas despus de la sesin."
+    "es": "S, a menos que su tratamiento principal tenga restricciones específicas. Para mejores resultados, recomendamos dejar que la piel respire algunas horas después de la sesión."
   },
   {
     "id": "faq.serum.q3",
     "en": "Which serum add-on should I choose?",
-    "es": "Qu complemento con suero debo elegir?"
+    "es": "Qué complemento con suero debo elegir?"
   },
   {
     "id": "faq.serum.a3",
     "en": "Your provider will recommend the most effective option based on your skin type, concerns, and the procedure performed that day.",
-    "es": "Su especialista recomendar la opcin ms efectiva segn su tipo de piel, sus necesidades y el procedimiento realizado ese da."
+    "es": "Su especialista recomendar la opción más efectiva según su tipo de piel, sus necesidades y el procedimiento realizado ese da."
   },
   {
     "id": "filter.view_all",

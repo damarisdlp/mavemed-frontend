@@ -3,6 +3,7 @@ import { useTranslation } from "next-i18next";
 import Link from "next/link";
 import { getActiveLeadForm } from "@/lib/data/leadForms";
 import { validatePhoneNumber } from "@/lib/utils/phone";
+import { getLeadAuthHeaders } from "@/lib/utils/leadAuthClient";
 
 export default function LeadForm({ useSchedule = true } = {}) {
   const { t, i18n } = useTranslation("home");
@@ -103,7 +104,7 @@ export default function LeadForm({ useSchedule = true } = {}) {
 
       const response = await fetch("/api/lead", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: { "Content-Type": "application/json", ...getLeadAuthHeaders() },
         body: JSON.stringify(submitData),
       });
 
@@ -150,13 +151,6 @@ export default function LeadForm({ useSchedule = true } = {}) {
     "border border-gray-300 text-gray-700 rounded px-3 py-2 w-full min-w-0 max-w-full focus:outline-none focus:ring-2 focus:ring-black";
   const selectClass =
     "border border-gray-300 text-gray-700 rounded px-3 py-2 w-full min-w-0 max-w-full truncate focus:outline-none focus:ring-2 focus:ring-black";
-
-  const translatedStrings = {
-    scrollToTop: {
-      en: "Scroll to top category menu",
-      es: "Desplazarse al men de categoras superior",
-    },
-  };
 
   const defaultLeadForm = {
     id: "rejuvenation",

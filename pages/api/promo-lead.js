@@ -1,7 +1,22 @@
+import { rateLimit, requireLeadAuth } from "@/lib/server/leadSecurity";
+
 export default async function handler(req, res) {
   if (req.method !== "POST") {
     return res.status(405).json({ error: "Method not allowed" });
   }
+
+  const auth = requireLeadAuth(req);
+  if (!auth.ok) {
+    return res.status(auth.status).json({ error: auth.error });
+  }
+
+  const limit = await rateLimit(req, { key: "promo-lead", limit: 10, windowSec: 60 * 10 });
+  if (!limit.ok) {
+    return res.status(limit.status).json({ error: limit.error });
+  }
+  res.setHeader("X-RateLimit-Limit", limit.limit);
+  res.setHeader("X-RateLimit-Remaining", limit.remaining);
+  res.setHeader("X-RateLimit-Reset", limit.reset);
 
   const incoming = typeof req.body === "string" ? safeParse(req.body) : req.body || {};
   const payload = {
@@ -10,8 +25,10 @@ export default async function handler(req, res) {
   };
 
   const scriptUrl =
-    process.env.GOOGLE_PROMO_SCRIPT_URL ||
-    "https://script.google.com/macros/s/AKfycbxJpnMq0ltjATpVoQ6Pr_r5SosD9ToINfvPTTcD0Tg-h9SqfG5jRzTkcyWxf8ZfFBE/exec";
+    process.env.GOOGLE_PROMO_SCRIPT_URL || process.env.GOOGLE_SCRIPT_PROMO_URL;
+  if (!scriptUrl) {
+    return res.status(500).json({ error: "Promo script URL is not configured." });
+  }
 
   try {
     const sheetResponse = await fetch(scriptUrl, {

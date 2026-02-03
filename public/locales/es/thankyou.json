@@ -1,0 +1,37 @@
+{
+  "shared": {
+    "title": "Gracias",
+    "ctaWhatsapp": "Continuar en WhatsApp",
+    "returnHome": "Volver al inicio",
+    "viewTreatments": "Ver tratamientos",
+    "treatmentLabel": "Tratamiento:"
+  },
+  "rfMicroneedling": {
+    "subtitle": "Hemos recibido tu evaluación de candidatura.",
+    "bodyLine1": "Nuestro equipo revisará tu información y te contactará pronto.",
+    "bodyLine2": "Si RF Microneedling no es la mejor opción, te orientaremos con alternativas seguras."
+  },
+  "sculptra": {
+    "subtitle": "Hemos recibido tu evaluación de candidatura para Sculptra.",
+    "bodyLine1": "Nuestro equipo revisará tu información y te contactará pronto.",
+    "bodyLine2": "Si Sculptra no es la mejor opción, te orientaremos con alternativas seguras."
+  },
+  "sculptraRf": {
+    "subtitle": "Hemos recibido tu evaluación de candidatura para Sculptra + RF.",
+    "bodyLine1": "Nuestro equipo revisará tu información y te contactará pronto.",
+    "bodyLine2": "Si el paquete no es la mejor opción, te orientaremos con alternativas seguras."
+  },
+  "treatment": {
+    "subtitle": "Hemos recibido tu solicitud.",
+    "bodyLine1": "Nuestro equipo revisará tu información y te contactará pronto.",
+    "bodyLine2": "Si necesitamos más detalles, te lo haremos saber.",
+    "whatsapp": {
+      "intro": "Hola, quiero agendar una cita.",
+      "name": "Nombre: {{name}}",
+      "treatment": "Tratamiento: {{service}}",
+      "availability": "Disponibilidad: {{days}}, {{times}}",
+      "anyDay": "cualquier día",
+      "anyTime": "cualquier horario"
+    }
+  }
+}

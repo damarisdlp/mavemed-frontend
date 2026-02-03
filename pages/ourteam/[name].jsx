@@ -1,7 +1,5 @@
 import { useRouter } from "next/router";
 import Head from "next/head";
-import Image from "next/image";
-import { allStaff } from "@/lib/data/allStaff";
 
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -14,25 +12,12 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import SeoLinks from "@/components/SeoLinks";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import nextI18NextConfig from "../../next-i18next.config";
+import { getLocalized } from "@/lib/i18n/getLocalized";
 
-export default function TeamMemberPage() {
+export default function TeamMemberPage({ member, favoriteCards = [] }) {
   const router = useRouter();
-  const { name } = router.query;
   const currentLocale = typeof router.locale === "string" ? router.locale : "en";
   const { asPath } = router;
-
-  const getLocalized = (field) => {
-    if (typeof field === "object" && field !== null) {
-      return field[currentLocale] || field.en || Object.values(field)[0] || "";
-    }
-    return field;
-  };
-
-  if (!router.isReady) {
-    return <p className="text-center mt-10">Loading...</p>;
-  }
-
-  const member = allStaff.find((s) => s.name === name);
 
   if (!member) {
     return (
@@ -47,9 +32,9 @@ export default function TeamMemberPage() {
     );
   }
 
-  const displayName = getLocalized(member.displayName);
-  const title = getLocalized(member.title);
-  const bio = getLocalized(member.bio);
+  const displayName = member.displayName;
+  const title = member.title;
+  const bio = member.bio;
 
   return (
     <>
@@ -122,13 +107,10 @@ export default function TeamMemberPage() {
             ...member,
             displayName,
             title,
-            category: getLocalized(member.category),
+            category: member.category,
             bio,
-            favorites: member.favorites?.map((favorite) => ({
-              ...favorite,
-              serviceName: getLocalized(favorite.serviceName),
-            })),
           }}
+          favoriteCards={favoriteCards}
         />
 
         <ContactCTA />
@@ -140,9 +122,70 @@ export default function TeamMemberPage() {
   );
 }
 
-export async function getServerSideProps({ locale }) {
+export async function getStaticPaths({ locales = [] }) {
+  const { allStaff } = await import("@/lib/data/allStaff");
+  const paths = allStaff.flatMap((member) =>
+    locales.map((loc) => ({
+      params: { name: member.name },
+      locale: loc,
+    }))
+  );
+  return { paths, fallback: "blocking" };
+}
+
+export async function getStaticProps({ locale, params }) {
+  const { allStaff } = await import("@/lib/data/allStaff");
+  const { allTreatments } = await import("@/lib/data/allTreatments");
+  const member = allStaff.find((s) => s.name === params?.name);
+  if (!member) {
+    return { notFound: true };
+  }
+
+  const currentLocale = locale || "en";
+  const localize = (field) => getLocalized(field, currentLocale);
+
+  const favoriteCards = (member.favorites || [])
+    .map((fav) => {
+      const treatment =
+        allTreatments.find((t) => t.urlSlug === fav.treatmentSlug) ||
+        allTreatments.find((t) => {
+          const name = localize(t.displayName || t.serviceDisplayName);
+          return (
+            (name && name === localize(fav.serviceName)) ||
+            t.urlSlug === fav.link?.split("/").pop()
+          );
+        }) ||
+        {};
+      const title = localize(
+        treatment.displayName || treatment.serviceDisplayName || fav.serviceName || fav.optionName
+      );
+      const description = localize(treatment.description);
+      const image = treatment.images?.primary || "/placeholder.jpg";
+      const slug = treatment.urlSlug || fav.treatmentSlug || fav.link || "#";
+      return title
+        ? {
+            serviceName: title,
+            description,
+            image,
+            slug,
+          }
+        : null;
+    })
+    .filter(Boolean);
+
+  const memberPayload = {
+    name: member.name,
+    displayName: localize(member.displayName),
+    title: localize(member.title),
+    category: localize(member.category),
+    bio: localize(member.bio),
+    image: member.image,
+  };
+
   return {
     props: {
+      member: memberPayload,
+      favoriteCards,
       ...(await serverSideTranslations(
         locale ?? "en",
         ["layout", "team", "home"],

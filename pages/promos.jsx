@@ -1,13 +1,13 @@
 import Head from "next/head";
-import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { useRouter } from "next/router";
+import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import nextI18NextConfig from "../next-i18next.config";
-import { allTreatments } from "@/lib/data/allTreatments";
 import { getPromoSummary, getPromoOptions } from "@/lib/utils/promo";
 import { formatMoney, formatMoneyRange, getPriceMinValue } from "@/lib/utils/price";
+import { getLocalized } from "@/lib/i18n/getLocalized";
 
 import PromoBanner from "@/components/PromoBanner";
 import Header from "@/components/Header";
@@ -17,13 +17,6 @@ import ReviewsSection from "@/components/ReviewsSection";
 import LocationSection from "@/components/LocationSection";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import SeoLinks from "@/components/SeoLinks";
-
-const getLocalized = (field, locale) => {
-  if (field && typeof field === "object") {
-    return field[locale] || field.en || Object.values(field)[0] || "";
-  }
-  return field ?? "";
-};
 
 const normalizeName = (value) =>
   String(value || "")
@@ -63,12 +56,8 @@ const formatPackagePrice = (price, locale) => {
   return "";
 };
 
-export default function PromosPage() {
-  const router = useRouter();
-  const locale = router.locale || "en";
-  const { asPath } = router;
-  const [sortOption, setSortOption] = useState("default");
-
+const buildPromoCategories = (allTreatments, locale, options = {}) => {
+  const { pricePrefix = "" } = options;
   const isMicroneedlingCategoryFn = (t) => t?.category === "microneedling-mesotherapy";
   const hasLinkedPackages = (t) =>
     isMicroneedlingCategoryFn(t) &&
@@ -134,13 +123,9 @@ export default function PromosPage() {
     if (serviceOptions.length > 0) {
       const sorted = [...serviceOptions].sort((a, b) => a.value - b.value);
       const lowest = sorted[0];
-      const pricePrefix =
-        serviceOptions.length > 1
-          ? locale === "es"
-            ? "Desde "
-            : "Starting From "
-          : "";
-      const price = `${pricePrefix}${lowest.promoPrice}${
+      const pricePrefixLabel =
+        serviceOptions.length > 1 && pricePrefix ? `${pricePrefix} ` : "";
+      const price = `${pricePrefixLabel}${lowest.promoPrice}${
         lowest.currency ? ` ${lowest.currency}` : ""
       }`;
       const summaryName = promoDetails?.summaryName
@@ -227,8 +212,12 @@ export default function PromosPage() {
           .filter((entry) => Number.isFinite(entry.value))
           .sort((a, b) => a.value - b.value)[0];
         const hasMultiplePackageOptions = priceEntries.length > 1;
+        const packagePricePrefix =
+          hasMultiplePackageOptions && pricePrefix ? `${pricePrefix} ` : "";
         const packagePrice = lowestEntry
-          ? `${hasMultiplePackageOptions ? (locale === "es" ? "Desde " : "Starting From ") : ""}${formatPackagePrice(lowestEntry.price, locale)}${lowestEntry.currency ? ` ${lowestEntry.currency}` : ""}`
+          ? `${packagePricePrefix}${formatPackagePrice(lowestEntry.price, locale)}${
+              lowestEntry.currency ? ` ${lowestEntry.currency}` : ""
+            }`
           : "";
         const packagePriceValue = lowestEntry?.value ?? null;
         const packageValidTillValue = getLocalized(pkg.validTill, locale) || "";
@@ -293,7 +282,16 @@ export default function PromosPage() {
     packageKeysByCategory.set(catKey, packageKeySet);
   });
 
-  const categories = Object.values(categoriesMap).filter((cat) => cat.cards.length > 0);
+  return Object.values(categoriesMap).filter((cat) => cat.cards.length > 0);
+};
+
+export default function PromosPage({ promoCategories = [] }) {
+  const router = useRouter();
+  const locale = router.locale || "en";
+  const { asPath } = router;
+  const { t } = useTranslation("promos");
+  const [sortOption, setSortOption] = useState("default");
+  const categories = promoCategories;
   const sortedCategories =
     sortOption === "default"
       ? categories
@@ -334,29 +332,10 @@ export default function PromosPage() {
   return (
     <>
       <Head>
-        <title>
-          {locale === "es" ? "Promociones | Mave Medical Spa" : "Promotions | Mave Medical Spa"}
-        </title>
-        <meta
-          name="description"
-          content={
-            locale === "es"
-              ? "Promociones y ofertas especiales vigentes en Mave Medical Spa."
-              : "Current promotions and special offers at Mave Medical Spa."
-          }
-        />
-        <meta
-          property="og:title"
-          content={locale === "es" ? "Promociones | Mave Medical Spa" : "Promotions | Mave Medical Spa"}
-        />
-        <meta
-          property="og:description"
-          content={
-            locale === "es"
-              ? "Promociones y ofertas especiales vigentes en Mave Medical Spa."
-              : "Current promotions and special offers at Mave Medical Spa."
-          }
-        />
+        <title>{t("meta.title")}</title>
+        <meta name="description" content={t("meta.description")} />
+        <meta property="og:title" content={t("meta.title")} />
+        <meta property="og:description" content={t("meta.description")} />
         <meta property="og:image" content="https://www.mavemedspa.com/site_icon.png" />
         <meta property="og:type" content="website" />
         <SeoLinks asPath={asPath} locale={locale} />
@@ -375,8 +354,8 @@ export default function PromosPage() {
         <div className="w-full max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 pt-4 md:pt-6">
           <Breadcrumbs
             items={[
-              { label: "Home", href: "/" },
-              { label: "Promos", href: "/promos" },
+              { label: t("breadcrumbs.home"), href: "/" },
+              { label: t("breadcrumbs.promos"), href: "/promos" },
             ]}
           />
         </div>
@@ -385,16 +364,14 @@ export default function PromosPage() {
       <main className="bg-white">
         <section className="w-full max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 pt-25 md:pt-24">
           <h1 className="text-black font-serif font-medium mb-4 leading-tight text-[clamp(2rem,5vw,3rem)]">
-            {locale === "es" ? "Promociones Vigentes" : "Current Promotions"}
+            {t("hero.title")}
           </h1>
           <p className="text-gray-700 mb-8 max-w-3xl">
-            {locale === "es"
-              ? "Explora nuestros servicios con precio promocional. Reserva ahora o conoce más sobre cada tratamiento."
-              : "Explore our current promo-eligible services. Reserve now or learn more about each treatment."}
+            {t("hero.subtitle")}
           </p>
           <div className="flex flex-col sm:flex-row sm:items-center gap-3 mb-8">
             <label htmlFor="promo-sort" className="text-sm text-gray-600">
-              {locale === "es" ? "Ordenar por" : "Sort by"}
+              {t("sort.label")}
             </label>
             <div className="relative w-full sm:w-auto">
               <select
@@ -404,19 +381,19 @@ export default function PromosPage() {
                 className="w-full sm:w-auto border border-gray-300 rounded-full px-4 py-2 pr-10 text-sm text-black bg-white appearance-none"
               >
                 <option value="default">
-                  {locale === "es" ? "Orden predeterminado" : "Default order"}
+                  {t("sort.options.default")}
                 </option>
                 <option value="days-asc">
-                  {locale === "es" ? "Expira pronto → tarde" : "Expiration: soonest first"}
+                  {t("sort.options.daysAsc")}
                 </option>
                 <option value="days-desc">
-                  {locale === "es" ? "Expira tarde → pronto" : "Expiration: latest first"}
+                  {t("sort.options.daysDesc")}
                 </option>
                 <option value="price-asc">
-                  {locale === "es" ? "Precio menor → mayor" : "Price: low to high"}
+                  {t("sort.options.priceAsc")}
                 </option>
                 <option value="price-desc">
-                  {locale === "es" ? "Precio mayor → menor" : "Price: high to low"}
+                  {t("sort.options.priceDesc")}
                 </option>
               </select>
               <span className="pointer-events-none absolute right-4 top-1/2 -translate-y-1/2 text-gray-500">
@@ -441,7 +418,7 @@ export default function PromosPage() {
           </div>
 
           {categories.length === 0 && (
-            <div className="text-gray-600">No active promos available right now.</div>
+            <div className="text-gray-600">{t("empty")}</div>
           )}
 
           {sortedCategories.map((cat, idx) => (
@@ -472,7 +449,7 @@ export default function PromosPage() {
                         </h3>
                         {card.isPackage && (
                           <p className="text-xs uppercase tracking-[0.2em] text-white/70 mt-1">
-                            {locale === "es" ? "Paquete promocional" : "Promo package"}
+                            {t("card.promoPackage")}
                           </p>
                         )}
                         {card.price && (
@@ -490,7 +467,7 @@ export default function PromosPage() {
                               card.isPackage ? "text-white/70" : "text-gray-500"
                             }`}
                           >
-                            {locale === "es" ? "Válido hasta" : "Valid thru"}{" "}
+                            {t("card.validThru")}{" "}
                             <span
                               className={`font-medium ${
                                 card.isPackage ? "text-white" : "text-gray-700"
@@ -506,9 +483,7 @@ export default function PromosPage() {
                               card.isPackage ? "text-white/70" : "text-gray-500"
                             }`}
                           >
-                            {locale === "es"
-                              ? `Quedan ${card.daysLeft} días`
-                              : `${card.daysLeft} days left`}
+                          {t("card.daysLeft", { count: card.daysLeft })}
                           </p>
                         )}
                         <p
@@ -529,7 +504,7 @@ export default function PromosPage() {
                               : "bg-black text-white hover:bg-[#731a2f]"
                           }`}
                         >
-                          {locale === "es" ? "Reservar ahora" : "Book Now"}
+                          {t("card.bookNow")}
                         </button>
                         <Link
                           href={`/treatments/${card.slug}`}
@@ -539,7 +514,7 @@ export default function PromosPage() {
                               : "border border-gray-300 text-black hover:border-black"
                           }`}
                         >
-                          {locale === "es" ? "Más información" : "Learn More"}
+                          {t("card.learnMore")}
                         </Link>
                       </div>
                     </div>
@@ -561,13 +536,20 @@ export default function PromosPage() {
 }
 
 export async function getStaticProps({ locale }) {
+  const { allTreatments } = await import("@/lib/data/allTreatments");
+  const currentLocale = locale ?? "en";
+  const translations = await serverSideTranslations(
+    currentLocale,
+    ["layout", "home", "location", "promos"],
+    nextI18NextConfig
+  );
+  const pricePrefix =
+    translations?._nextI18Next?.initialI18nStore?.[currentLocale]?.promos?.pricePrefix || "";
+  const promoCategories = buildPromoCategories(allTreatments, currentLocale, { pricePrefix });
   return {
     props: {
-      ...(await serverSideTranslations(
-        locale ?? "en",
-        ["layout", "home", "location"],
-        nextI18NextConfig
-      )),
+      promoCategories,
+      ...translations,
     },
   };
 }

@@ -14,11 +14,191 @@
     },
     "benefits": "Beneficios",
     "pricing": "Precios",
-    "bookNow": "Reservear Ahora",
+    "bookNow": "Reservar Ahora",
     "learnMore": "Más Información"
   },
   "treatmentsPage": {
     "bannerTitle": "Nuestros Tratamientos",
     "bannerSubtitle": "Especialistas en inyectables cosméticos, rejuvenecimiento de la piel y terapias de grado médico para resultados que sí se notan."
+  },
+  "treatmentCategories": {
+    "top": "↑ Arriba",
+    "scrollToTop": "Desplazarse al menú de categorías superior",
+    "searchPlaceholder": "Buscar tratamientos",
+    "noResults": "No hay tratamientos que coincidan con tu búsqueda.",
+    "clearSearch": "Borrar búsqueda",
+    "bookService": "Reservar {{service}} en Mave Medical Spa en Tijuana",
+    "learnMoreAbout": "Saber más sobre {{service}}"
+  },
+  "pricingTable": {
+    "noPricing": "No hay precios disponibles para este tratamiento.",
+    "heading": "Opciones de Precio y Complementos",
+    "disclaimer": "Todos los precios se muestran en USD o MXN según se indica. Si el pago se realiza en una moneda diferente a la indicada, por ejemplo pagando en pesos un precio indicado en USD o viceversa, el precio final se calculará usando el tipo de cambio interno vigente de Mave Medical Spa al momento del pago.",
+    "priceLabel": "Precio:",
+    "promoLabel": "Precio Exclusivo:",
+    "promoPackageLabel": "Paquete promocional",
+    "promoValidTillLabel": "Válido hasta",
+    "viewAll": "Ver todo",
+    "availablePackages": "Paquetes de protocolo disponibles"
+  },
+  "addOns": {
+    "heading": "Opciones de Complemento",
+    "price": "Precio:",
+    "promo": "Precio Exclusivo:",
+    "promoAvailable": "PROMO EXCLUSIVA DISPONIBLE",
+    "from": "Desde ",
+    "learnMoreAbout": "Más Información Sobre {{service}}"
+  },
+  "treatmentInfoTabs": {
+    "details": "Detalles",
+    "goals": "Objetivos",
+    "areas": "Zonas Tratables",
+    "locations": "Sucursales Disponibles",
+    "comingSoon": "Próximamente"
+  },
+  "whatToExpect": {
+    "sectionTitle": "Qué puedes esperar",
+    "before": "Antes del tratamiento",
+    "during": "Durante el tratamiento",
+    "after": "Después del tratamiento",
+    "comingSoon": "Próximamente"
+  },
+  "faq": {
+    "heading": "Preguntas frecuentes"
+  },
+  "treatmentDetails": {
+    "breadcrumbTreatments": "Tratamientos",
+    "priceHeading": "Precio",
+    "bookNow": "Agendar",
+    "exclusivePricing": "Precio Exclusivo",
+    "validUntil": "Válido hasta",
+    "startingFrom": "Desde {{price}}",
+    "viewAll": "Ver todo",
+    "noOptionsForFilter": "No hay opciones disponibles para este filtro.",
+    "promoPackage": "Paquete promocional",
+    "inquire": "Consultar Promo"
+  },
+  "treatmentLeadModal": {
+    "requestInfo": {
+      "title": "Solicitar información",
+      "subtitle": "Comparte tus datos y te contactaremos enseguida."
+    },
+    "additionalDetails": {
+      "title": "Detalles adicionales",
+      "subtitle": "Ayúdanos a preparar tu visita."
+    },
+    "chooseChat": {
+      "title": "Elige como chatear",
+      "subtitle": "Selecciona WhatsApp o Instagram para continuar la conversación."
+    },
+    "labels": {
+      "treatment": "Tratamiento",
+      "serviceOptions": "Opciones del servicio",
+      "name": "Nombre",
+      "email": "Email",
+      "countryCode": "Código de país",
+      "phone": "Teléfono",
+      "visitTiming": "¿Cuándo deseas visitar?",
+      "preferredChannel": "Método de contacto preferido",
+      "hadTreatmentBefore": "¿Has tenido este tratamiento?",
+      "bestDays": "Mejores días",
+      "bestTimes": "Mejores horarios",
+      "mainConcern": "¿Cuál es tu principal preocupación u objetivo?"
+    },
+    "placeholders": {
+      "name": "Nombre",
+      "email": "Email",
+      "phone": "Teléfono",
+      "mainConcern": "Ej. líneas de expresión, flacidez mandibular, cicatrices, manchas..."
+    },
+    "messages": {
+      "selectOptions": "Selecciona una o varias opciones.",
+      "canChooseMultiple": "Puedes elegir una o varias opciones.",
+      "invalidEmail": "Por favor ingresa un correo válido.",
+      "invalidEmailShort": "Ingresa un correo válido.",
+      "invalidPhone": "Ingresa un número telefónico válido.",
+      "missingName": "Ingresa tu nombre.",
+      "selectServiceOption": "Selecciona una opción del servicio.",
+      "requiredFields": "Completa los campos requeridos.",
+      "selectPreferredChannel": "Selecciona un método de contacto.",
+      "duplicateIntro": "Hola, ya envié mi solicitud para un tratamiento. Quiero agregar un detalle.",
+      "duplicateNotice": "Ya recibimos tu solicitud. Te llevaremos a confirmación.",
+      "submitError": "Hubo un error al enviar tu solicitud."
+    },
+    "options": {
+      "select": "Selecciona",
+      "visitTiming": {
+        "thisWeek": "Esta semana",
+        "thisMonth": "Este mes",
+        "withinThreeMonths": "Dentro de tres meses",
+        "justGathering": "Solo investigando"
+      },
+      "preferredChannel": {
+        "phoneCall": "Llamada",
+        "textMessage": "Mensaje de texto"
+      },
+      "yes": "Sí",
+      "no": "No",
+      "notSure": "No estoy seguro",
+      "bestDays": {
+        "weekdays": "Días de semana",
+        "saturdays": "Sábados",
+        "openAvailability": "Disponibilidad abierta"
+      },
+      "bestTimes": {
+        "mornings": "Mañanas",
+        "noon": "Mediodía",
+        "afternoons": "Tardes",
+        "openAvailability": "Disponibilidad abierta"
+      }
+    },
+    "buttons": {
+      "continue": "Continuar",
+      "cancel": "Cancelar",
+      "back": "Regresar",
+      "submit": "Enviar",
+      "submitting": "Enviando...",
+      "whatsapp": "Enviar WhatsApp",
+      "instagram": "Enviar Instagram",
+      "close": "Cerrar"
+    },
+    "whatsapp": {
+      "intro": "Hola, me interesa {{service}}.",
+      "name": "Mi nombre es {{name}}.",
+      "preference": "Prefiero {{day}} y {{time}}.",
+      "anyDay": "cualquier día",
+      "anyTime": "cualquier horario"
+    },
+    "countryOptions": {
+      "usCanada": "Estados Unidos / Canadá",
+      "mexico": "México",
+      "uk": "Reino Unido",
+      "spain": "España",
+      "colombia": "Colombia",
+      "costaRica": "Costa Rica",
+      "peru": "Perú",
+      "argentina": "Argentina",
+      "brazil": "Brasil"
+    }
+  },
+  "rfCandidacy": {
+    "label": "Candidatura",
+    "title": "Evaluación de Candidatura para RF Microneedling",
+    "subtitle": "Revisado por un equipo médico antes de planear tratamiento.",
+    "cta": "Iniciar evaluación"
+  },
+  "candidacyForm": {
+    "labels": {
+      "countryCode": "Código de país"
+    },
+    "selectPlaceholder": "Selecciona",
+    "messages": {
+      "missing": "Faltan: {{fields}}.",
+      "duplicateNotice": "Ya recibimos tu evaluación. Si deseas agregar algo, envíanos un mensaje por WhatsApp.",
+      "whatsappAddDetail": "Hola, ya envié mi evaluación. Quiero agregar un detalle."
+    },
+    "buttons": {
+      "submitting": "Enviando..."
+    }
   }
 }

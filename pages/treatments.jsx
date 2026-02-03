@@ -14,9 +14,10 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import nextI18NextConfig from "../next-i18next.config";
 import { useTranslation } from "next-i18next";
 import { useRouter } from "next/router";
+import { getLocalized } from "@/lib/i18n/getLocalized";
 
 
-export default function TreatmentsPage() {
+export default function TreatmentsPage({ categories = [] }) {
   const { t } = useTranslation("treatments");
   const { locale, asPath } = useRouter();
   const currentLocale = typeof locale === "string" ? locale : "en";
@@ -158,7 +159,7 @@ export default function TreatmentsPage() {
         </div>
 
         {/* Treatment Categories */}
-        <TreatmentCategories />
+        <TreatmentCategories categories={categories} />
         <InstagramFeed />
         <ReviewsSection />
         <Footer />
@@ -169,8 +170,49 @@ export default function TreatmentsPage() {
 }
 
 export async function getStaticProps({ locale }) {
+  const { allTreatments } = await import("@/lib/data/allTreatments");
+  const { default: categoryOrder } = await import("@/lib/data/normalized/categories.json");
+  const currentLocale = locale || "en";
+  const localize = (field) => getLocalized(field, currentLocale);
+
+  const categoriesMap = {};
+  allTreatments.forEach((t) => {
+    if (!t || !t.category) return;
+    const key = t.category;
+    if (!categoriesMap[key]) {
+      categoriesMap[key] = {
+        title: localize(t.categoryDisplayName),
+        services: [],
+      };
+    }
+    const optionFields = (t.pricing?.options || []).flatMap((opt) => [
+      localize(opt.optionName),
+      ...(opt.notes || []).map((note) => localize(note)),
+    ]);
+    categoriesMap[key].services.push({
+      name: localize(t.displayName || t.serviceDisplayName),
+      slug: t.urlSlug,
+      image: t.images?.primary || "/placeholder.jpg",
+      description: localize(t.description),
+      searchFields: [
+        localize(t.displayName || t.serviceDisplayName),
+        localize(t.description),
+        localize(t.details),
+        ...(t.notes || []).map((note) => localize(note)),
+        ...(t.goals || []).map((goal) => localize(goal)),
+        ...(t.treatableAreas || []).map((area) => localize(area)),
+        ...optionFields,
+      ].filter(Boolean),
+    });
+  });
+
+  const categories = categoryOrder
+    .map((entry) => categoriesMap[entry.slug])
+    .filter(Boolean);
+
   return {
     props: {
+      categories,
       ...(await serverSideTranslations(locale ?? "en", ["layout", "treatments", "home"], nextI18NextConfig)),
     },
   };

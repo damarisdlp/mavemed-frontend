@@ -1,0 +1,33 @@
+{
+  "meta": {
+    "title": "Promotions | Mave Medical Spa",
+    "description": "Current promotions and special offers at Mave Medical Spa."
+  },
+  "hero": {
+    "title": "Current Promotions",
+    "subtitle": "Explore our current promo-eligible services. Reserve now or learn more about each treatment."
+  },
+  "breadcrumbs": {
+    "home": "Home",
+    "promos": "Promos"
+  },
+  "sort": {
+    "label": "Sort by",
+    "options": {
+      "default": "Default order",
+      "daysAsc": "Expiration: soonest first",
+      "daysDesc": "Expiration: latest first",
+      "priceAsc": "Price: low to high",
+      "priceDesc": "Price: high to low"
+    }
+  },
+  "empty": "No active promos available right now.",
+  "card": {
+    "promoPackage": "Promo package",
+    "validThru": "Valid thru",
+    "daysLeft": "{{count}} days left",
+    "bookNow": "Book Now",
+    "learnMore": "Learn More"
+  },
+  "pricePrefix": "Starting From"
+}

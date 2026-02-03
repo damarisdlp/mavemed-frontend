@@ -4,7 +4,6 @@ import Footer from "@/components/Footer";
 import AboutSection from "@/components/AboutSection";
 import InstagramFeed from "@/components/InstagramFeed";
 import ReviewsSection from "@/components/ReviewsSection";
-import Image from "next/image";
 import Head from "next/head";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
@@ -12,8 +11,9 @@ import nextI18NextConfig from "../next-i18next.config";
 import { useTranslation } from "next-i18next";
 import SeoLinks from "@/components/SeoLinks";
 import { useRouter } from "next/router";
+import { getLocalized } from "@/lib/i18n/getLocalized";
 
-export default function AboutUs() {
+export default function AboutUs({ staffCards = [] }) {
   const { t } = useTranslation("home");
   const { asPath, locale } = useRouter();
 
@@ -81,7 +81,7 @@ export default function AboutUs() {
           </div>
         </div>
 
-        <AboutSection />
+        <AboutSection staffCards={staffCards} />
         <InstagramFeed />
         <ReviewsSection />
         <Footer />
@@ -91,8 +91,19 @@ export default function AboutUs() {
 }
 
 export async function getStaticProps({ locale }) {
+  const { allStaff } = await import("@/lib/data/allStaff");
+  const currentLocale = locale || "en";
+  const localize = (field) => getLocalized(field, currentLocale);
+  const staffCards = allStaff.map((s) => ({
+    name: s.name,
+    displayName: localize(s.displayName),
+    title: localize(s.title),
+    image: s.image,
+  }));
+
   return {
     props: {
+      staffCards,
       ...(await serverSideTranslations(
         locale ?? "en",
         ["layout", "home"],

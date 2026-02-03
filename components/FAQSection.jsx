@@ -1,23 +1,18 @@
 import { useState } from "react";
 import { useRouter } from "next/router";
+import { useTranslation } from "next-i18next";
+import { getLocalized } from "@/lib/i18n/getLocalized";
 
 export default function FAQSection({ faqs = [], locale: propLocale }) {
   const router = useRouter();
   const locale = propLocale || router.locale || "en";
+  const { t } = useTranslation("treatments");
 
-  console.log("📌 FAQSection locale:", locale);
-
-  const getLocalized = (field) => {
-    if (typeof field === "object" && field !== null) {
-      return field[locale] || field["en"] || "";
-    }
-    return field || "";
-  };
+  const localize = (field) => getLocalized(field, locale);
 
   if (!faqs.length) return null;
 
-  const headingText =
-    locale === "es" ? "Preguntas frecuentes" : "Frequently Asked Questions";
+  const headingText = t("faq.heading");
 
   return (
     <section className="bg-white text-black py-12">
@@ -29,8 +24,8 @@ export default function FAQSection({ faqs = [], locale: propLocale }) {
           {faqs.map((faq, idx) => (
             <ToggleItem
               key={idx}
-              question={getLocalized(faq.question)}
-              answer={getLocalized(faq.answer)}
+              question={localize(faq.question)}
+              answer={localize(faq.answer)}
             />
           ))}
         </div>

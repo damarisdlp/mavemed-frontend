@@ -2,48 +2,13 @@ import "keen-slider/keen-slider.min.css";
 import Image from "next/image";
 import Link from "next/link";
 import { useKeenSlider } from "keen-slider/react";
-import { allTreatments } from "@/lib/data/allTreatments";
 import { useRouter } from "next/router";
+import { useTranslation } from "next-i18next";
 
-const getLocalized = (field, locale) => {
-  if (field && typeof field === "object") {
-    return field[locale] || field.en || Object.values(field)[0] || "";
-  }
-  return field ?? "";
-};
-
-export default function StaffFavorites({ favorites = [], locale = "en", displayName = "" }) {
-  if (!favorites.length) return null;
+export default function StaffFavorites({ cards = [], displayName = "" }) {
+  if (!cards.length) return null;
   const router = useRouter();
-
-  const favoriteCards = favorites
-    .map((fav) => {
-      const treatment =
-        allTreatments.find((t) => t.urlSlug === fav.treatmentSlug) ||
-        allTreatments.find(
-          (t) =>
-            getLocalized(t.displayName || t.serviceDisplayName, locale) ===
-              getLocalized(fav.serviceName, locale) ||
-            t.urlSlug === fav.link?.split("/").pop()
-        ) ||
-        {};
-
-      const title = getLocalized(
-        treatment.displayName || treatment.serviceDisplayName || fav.serviceName || fav.optionName,
-        locale
-      );
-      const description = getLocalized(treatment.description, locale);
-      const image = treatment.images?.primary || "/placeholder.jpg";
-      const slug = treatment.urlSlug || fav.treatmentSlug || fav.link || "#";
-
-      return {
-        serviceName: title,
-        description,
-        image,
-        slug,
-      };
-    })
-    .filter((c) => c.serviceName);
+  const { t } = useTranslation("team");
 
   const [sliderRef, slider] = useKeenSlider({
     loop: true,
@@ -65,7 +30,7 @@ export default function StaffFavorites({ favorites = [], locale = "en", displayN
     <div className="mt-12">
       <div className="flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between mb-4">
         <h2 className="text-2xl text-black font-serif font-medium leading-snug">
-          {locale === "es" ? "Tratamientos Favoritos de" : "Favorite Treatments of"}
+          {t("team.favoritesHeading")}
           <br />
           {displayName}
         </h2>
@@ -73,7 +38,7 @@ export default function StaffFavorites({ favorites = [], locale = "en", displayN
           href="/treatments"
           className="text-sm underline text-black hover:text-[#731a2f] transition"
         >
-          {locale === "es" ? "Ver todos los tratamientos" : "View all treatments"}
+          {t("team.viewAllTreatments")}
         </Link>
       </div>
       <div className="relative block mb-8">
@@ -81,7 +46,7 @@ export default function StaffFavorites({ favorites = [], locale = "en", displayN
           ref={sliderRef}
           className="keen-slider overflow-hidden px-0.5 sm:px-1.5 mx-auto w-full max-w-[1400px]"
         >
-          {favoriteCards.map((card, idx) => (
+          {cards.map((card, idx) => (
             <div key={idx} className="keen-slider__slide flex justify-center px-2">
               <div className="w-[280px] sm:w-[300px] md:w-[320px] lg:w-[340px] flex flex-col bg-[#f9f9f9] rounded-lg overflow-hidden shadow-sm hover:shadow-md transition mb-3">
                 <div className="relative h-[200px] w-full">
@@ -110,13 +75,13 @@ export default function StaffFavorites({ favorites = [], locale = "en", displayN
                       }}
                       className="bg-black text-white px-4 py-2 rounded-full text-xs hover:bg-[#731a2f] text-center"
                     >
-                      {locale === "es" ? "Reservar Ahora" : "Book Now"}
+                      {t("team.bookNow")}
                     </button>
                     <Link
                       href={card.slug.startsWith("/treatments") ? card.slug : `/treatments/${card.slug}`}
                       className="border border-gray-300 text-black px-4 py-2 rounded-full text-xs hover:border-black transition text-center"
                     >
-                      {locale === "es" ? "Más Información" : "Learn More"}
+                      {t("team.learnMore")}
                     </Link>
                   </div>
                 </div>
@@ -124,7 +89,7 @@ export default function StaffFavorites({ favorites = [], locale = "en", displayN
             </div>
           ))}
         </div>
-        {slider && favoriteCards.length > 1 && (
+        {slider && cards.length > 1 && (
           <>
             <button
               type="button"

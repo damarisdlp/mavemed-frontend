@@ -1,35 +1,18 @@
 import { useMemo } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { allTreatments } from "@/lib/data/allTreatments";
+import { useTranslation } from "next-i18next";
 import { getPromoSummary, optionHasPromo } from "@/lib/utils/promo";
 import { formatMoney, formatMoneyRange, getPriceMinValue } from "@/lib/utils/price";
+import { getLocalized } from "@/lib/i18n/getLocalized";
 
-export default function AddOnSection({ addOns = [] }) {
+export default function AddOnSection({ addOns = [], addonTreatments = [] }) {
   const { locale: routerLocale } = useRouter();
   const locale = routerLocale || "en";
+  const { t } = useTranslation("treatments");
 
-  const labels = {
-    en: {
-      heading: "Add On Options",
-      price: "Price:",
-      promo: "Exclusive pricing:",
-      learn: "Learn More About ",
-      promoAvailable: "EXCLUSIVE PROMO AVAILABLE",
-    },
-    es: {
-      heading: "Opciones de Complemento",
-      price: "Precio:",
-      promo: "Precio Exclusivo:",
-      learn: "Más Información Sobre ",
-      promoAvailable: "PROMO EXCLUSIVA DISPONIBLE",
-    },
-  };
-  const ui = labels[locale] || labels.en;
-
-  const getLocalized = (field) => {
-    if (field == null) return ""; // handles null / undefined
-
+  const localize = (field) => {
+    if (field == null) return "";
     if (typeof field === "object") {
       if (field.text && typeof field.text === "object") {
         return field.text[locale] || field.text.en || "";
@@ -38,17 +21,13 @@ export default function AddOnSection({ addOns = [] }) {
         return formatMoneyRange(field.minAmount, field.maxAmount);
       }
       if ("amount" in field) return formatMoney(field.amount);
-      if (field[locale]) return field[locale];
-      if (field.en) return field.en;
-      return "";
     }
-
-    return field;
+    return getLocalized(field, locale);
   };
 
   const normalize = (str) => (str || "").toLowerCase().trim();
 
-  if (!addOns.length || !allTreatments?.length) return null;
+  if (!addOns.length || !addonTreatments?.length) return null;
 
   const getNumericPrice = (priceField) => {
     if (!priceField || typeof priceField !== "object") return null;
@@ -59,19 +38,19 @@ export default function AddOnSection({ addOns = [] }) {
   const treatmentMaps = useMemo(() => {
     const bySlug = new Map();
     const byName = new Map();
-    allTreatments.forEach((t) => {
+    addonTreatments.forEach((t) => {
       if (!t) return;
       if (t.urlSlug) bySlug.set(normalize(t.urlSlug), t);
-      const name = getLocalized(t.serviceDisplayName || t.displayName);
+      const name = localize(t.serviceDisplayName || t.displayName);
       if (name) byName.set(normalize(name), t);
     });
     return { bySlug, byName };
-  }, [locale]);
+  }, [addonTreatments, locale]);
 
   const buildOptionMap = (treatment) => {
     const map = new Map();
     treatment?.pricing?.options?.forEach((opt) => {
-      const name = getLocalized(opt.optionName);
+      const name = localize(opt.optionName);
       if (name) map.set(normalize(name), opt);
     });
     return map;
@@ -79,10 +58,10 @@ export default function AddOnSection({ addOns = [] }) {
 
   return (
     <div className="mb-6 text-black">
-      <h3 className="text-xl font-medium mb-2">{ui.heading}</h3>
+      <h3 className="text-xl font-medium mb-2">{t("addOns.heading")}</h3>
 
       {addOns.map((addonRef, idx) => {
-        const refName = getLocalized(
+        const refName = localize(
           addonRef.serviceParent || addonRef.optionName || addonRef.displayName
         );
         const slugFromLink = addonRef.link
@@ -100,13 +79,13 @@ export default function AddOnSection({ addOns = [] }) {
         }
 
         const optionMap = buildOptionMap(addon);
-        const targetOptionName = getLocalized(
+        const targetOptionName = localize(
           addonRef.optionName || addonRef.serviceChild || addonRef.displayName
         );
         const matchedOption = optionMap.get(normalize(targetOptionName)) || null;
 
         const displayPrice =
-          getLocalized(
+          localize(
             matchedOption?.optionPrice ||
               (addon?.pricing?.options || [])
                 .reduce((lowest, opt) => {
@@ -134,17 +113,17 @@ export default function AddOnSection({ addOns = [] }) {
           lowestOptionForCurrency?.currency ||
           "";
 
-        const promoPrice = getLocalized(matchedOption?.optionPromoPrice);
+        const promoPrice = localize(matchedOption?.optionPromoPrice);
         const hasPromo = optionHasPromo(matchedOption, locale);
 
         const hasMultipleOptions = (addon?.pricing?.options || []).length > 1;
-        const fromLabel = hasMultipleOptions ? (locale === "es" ? "Desde " : "From ") : "";
+        const fromLabel = hasMultipleOptions ? t("addOns.from") : "";
 
         const localizedAddOnName =
-          getLocalized(addonRef.optionName) ||
-          getLocalized(addonRef.displayName) ||
-          getLocalized(addon.serviceDisplayName || addon.displayName);
-        const localizedDescription = getLocalized(addon.description);
+          localize(addonRef.optionName) ||
+          localize(addonRef.displayName) ||
+          localize(addon.serviceDisplayName || addon.displayName);
+        const localizedDescription = localize(addon.description);
         const promoSummary = getPromoSummary(addon, locale);
         const hasPromoBanner = promoSummary?.isPromoActive;
 
@@ -158,7 +137,7 @@ export default function AddOnSection({ addOns = [] }) {
             <p className="text-md font-semibold">{localizedAddOnName}</p>
             {hasPromoBanner && (
               <p className="text-xs uppercase tracking-wide text-[#731a2f] mt-0.5">
-                {ui.promoAvailable}
+                {t("addOns.promoAvailable")}
               </p>
             )}
 
@@ -170,14 +149,14 @@ export default function AddOnSection({ addOns = [] }) {
             {/* Pricing */}
             {displayPrice && (
               <p className="text-sm text-gray-700 mt-1">
-                <span className="font-semibold">{ui.price}</span>{" "}
+                <span className="font-semibold">{t("addOns.price")}</span>{" "}
                 {fromLabel}
                 {displayPrice} {displayCurrency}
                 {hasPromo && (
                   <>
                     {" "}
                     |{" "}
-                    <span className="font-semibold text-[#731a2f]">{ui.promo}</span>{" "}
+                    <span className="font-semibold text-[#731a2f]">{t("addOns.promo")}</span>{" "}
                     <span className="text-[#731a2f]">
                       {promoPrice} {matchedOption?.optionPromoPrice?.currency}
                     </span>
@@ -192,8 +171,7 @@ export default function AddOnSection({ addOns = [] }) {
                 href={href}
                 className="text-sm underline text-black mt-1 inline-block hover:text-[#731a2f]"
               >
-                {ui.learn}
-                {localizedAddOnName}
+                {t("addOns.learnMoreAbout", { service: localizedAddOnName })}
               </Link>
             )}
           </div>

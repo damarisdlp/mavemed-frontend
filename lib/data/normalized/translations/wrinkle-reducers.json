@@ -12,12 +12,12 @@
   {
     "id": "svc.botox.desc",
     "en": "Brand-name Botox (Onabotulinum toxin A) reduces the appearance of fine lines and wrinkles for a smoother, more refreshed look.",
-    "es": "Botox de marca (Onabotulinum toxin A) reduce la apariencia de lneas finas y arrugas para una apariencia ms suave y fresca."
+    "es": "Botox de marca (Onabotulinum toxin A) reduce la apariencia de líneas finas y arrugas para una apariencia más suave y fresca."
   },
   {
     "id": "svc.botox.details",
     "en": "Brand-name Botox uses Onabotulinum toxin A to temporarily relax facial muscles, smoothing fine lines and dynamic wrinkles while improving skin texture for a more youthful, natural-looking appearance.",
-    "es": "Botox de marca utiliza Onabotulinum toxin A para relajar temporalmente los msculos faciales, suavizando lneas finas y arrugas dinmicas y mejorando la textura de la piel para una apariencia ms juvenil y natural."
+    "es": "Botox de marca utiliza Onabotulinum toxin A para relajar temporalmente los músculos faciales, suavizando líneas finas y arrugas dinámicas y mejorando la textura de la piel para una apariencia más juvenil y natural."
   },
   {
     "id": "note.botox.exclusive_rate",
@@ -27,17 +27,17 @@
   {
     "id": "note.botox.touchups_window",
     "en": "Touch-ups at this rate are only applicable within 1-2 weeks after initial application at the ",
-    "es": "Los retoques a esta tarifa solo son aplicables dentro de 1-2 semanas despus de la aplicacin inicial en el "
+    "es": "Los retoques a esta tarifa solo son aplicables dentro de 1-2 semanas después de la aplicación inicial en el "
   },
   {
     "id": "note.botox.standard_rate",
     "en": "Touch-ups on Botox application outside of the exclusive price option are subject to the standard base rate",
-    "es": "Los retoques en la aplicacin de Botox fuera de la opcin de precio exclusivo estn sujetos a la tarifa base estndar"
+    "es": "Los retoques en la aplicación de Botox fuera de la opción de precio exclusivo están sujetos a la tarifa base estándar"
   },
   {
     "id": "goal.botox.smooth_lines",
     "en": "Smooth dynamic lines",
-    "es": "Suavizar lneas dinmicas"
+    "es": "Suavizar líneas dinámicas"
   },
   {
     "id": "goal.botox.lift",
@@ -47,7 +47,7 @@
   {
     "id": "goal.botox.prevent",
     "en": "Prevent future wrinkle formation",
-    "es": "Prevenir la formacin futura de arrugas"
+    "es": "Prevenir la formación futura de arrugas"
   },
   {
     "id": "area.botox.forehead",
@@ -57,7 +57,7 @@
   {
     "id": "area.botox.glabella",
     "en": "Frown Lines (Glabella)",
-    "es": "Lneas de Fruncir el Ceo (Glabela)"
+    "es": "Líneas de Fruncir el Ceo (Glabela)"
   },
   {
     "id": "area.botox.crows_feet",
@@ -67,7 +67,7 @@
   {
     "id": "area.botox.bunny_lines",
     "en": "Bunny Lines (Nasalis)",
-    "es": "Lneas de Conejo (Nasales)"
+    "es": "Líneas de Conejo (Nasales)"
   },
   {
     "id": "area.botox.chin_dimples",
@@ -77,12 +77,12 @@
   {
     "id": "area.botox.perioral_package",
     "en": "Perioral Package (Gummy Smile + Lip Elevators + Chin)",
-    "es": "Paquete Perioral (Sonrisa de Encas + Elevadores de Labios + Barbilla)"
+    "es": "Paquete Perioral (Sonrisa de Encasé + Elevadores de Labios + Barbilla)"
   },
   {
     "id": "area.botox.lip_flip",
     "en": "Lip Flip (Gummy Smile)",
-    "es": "Volteo de Labios (Sonrisa de Encas)"
+    "es": "Volteo de Labios (Sonrisa de Encasé)"
   },
   {
     "id": "area.botox.eyebrow_lift",
@@ -97,12 +97,12 @@
   {
     "id": "area.botox.perioral_lines",
     "en": "Perioral Lines",
-    "es": "Lneas Periorales"
+    "es": "Líneas Periorales"
   },
   {
     "id": "area.botox.masseters",
     "en": "Masseters (Jaw Slimming / TMJ treatment)",
-    "es": "Maseteros (Afinamiento de Mandbula / Tratamiento ATM)"
+    "es": "Maseteros (Afinamiento de Mandíbula / Tratamiento ATM)"
   },
   {
     "id": "area.botox.neck_bands",
@@ -132,7 +132,7 @@
   {
     "id": "note.botox.package_only",
     "en": "Exclusive pricing only valid in package deals",
-    "es": "Precio exclusivo solo valido en paquetes"
+    "es": "Precio exclusivo solo válido en paquetes"
   },
   {
     "id": "promo.botox.headline",
@@ -157,7 +157,7 @@
   {
     "id": "promo.botox.note2",
     "en": "Touch-ups at this rate apply only within 12 weeks of the initial application.",
-    "es": "Los retoques a esta tarifa aplican solo dentro de 12 semanas de la aplicacin inicial."
+    "es": "Los retoques a esta tarifa aplican solo dentro de 12 semanas de la aplicación inicial."
   },
   {
     "id": "addon.botox.hydrafacial",
@@ -187,7 +187,7 @@
   {
     "id": "exp.botox.pre.1",
     "en": "Avoid alcohol, NSAIDs/aspirin, and blood-thinning supplements for 2448 hours if medically permitted to reduce bruising.",
-    "es": "Evite alcohol, AINE/aspirina y suplementos anticoagulantes durante 2448 horas si su mdico lo permite para reducir moretones."
+    "es": "Evite alcohol, AINE/aspirina y suplementos anticoagulantes durante 2448 horas si su médico lo permite para reducir moretones."
   },
   {
     "id": "exp.botox.pre.2",
@@ -197,62 +197,62 @@
   {
     "id": "exp.botox.pre.3",
     "en": "Inform your provider of recent vaccines, antibiotics, neuromuscular disorders, pregnancy/breastfeeding, or anticoagulant use.",
-    "es": "Informe a su especialista sobre vacunas recientes, antibiticos, trastornos neuromusculares, embarazo/lactancia o uso de anticoagulantes."
+    "es": "Informe a su especialista sobre vacunas recientes, antibióticos, trastornos neuromusculares, embarazo/lactancia o uso de anticoagulantes."
   },
   {
     "id": "exp.botox.during.1",
     "en": "Tiny injections cause brief pinches or pressure; ice or numbing can be used for comfort.",
-    "es": "Las microinyecciones generan pequeos pinchazos o presin; se pueden usar hielo o anestesia para mayor comodidad."
+    "es": "Las microinyecciones generan pequeños pinchazos o presión; se pueden usar hielo o anestesia para mayor comodidad."
   },
   {
     "id": "exp.botox.during.2",
     "en": "Muscles are treated in specific patterns; you can typically return to light activities right after.",
-    "es": "Los msculos se tratan en patrones especficos; normalmente puede retomar actividades ligeras inmediatamente despus."
+    "es": "Los músculos se tratan en patrones específicos; normalmente puede retomar actividades ligeras inmediatamente después."
   },
   {
     "id": "exp.botox.post.1",
     "en": "Avoid touching, rubbing, or applying pressure to the treated areas for at least 4 hours.",
-    "es": "Evite tocar, frotar o aplicar presin en las reas tratadas durante al menos 4 horas."
+    "es": "Evite tocar, frotar o aplicar presión en las áreas tratadas durante al menos 4 horas."
   },
   {
     "id": "exp.botox.post.2",
     "en": "Remain upright and avoid lying down flat for 4 hours following treatment.",
-    "es": "Mantngase erguido y evite acostarse plano durante 4 horas despus del tratamiento."
+    "es": "Manténgase erguido y evite acostarse plano durante 4 horas después del tratamiento."
   },
   {
     "id": "exp.botox.post.3",
     "en": "Skip intense physical activity, alcohol, and saunas for 24 hours to reduce swelling and migration risk.",
-    "es": "Omita actividad fsica intensa, alcohol y saunas durante 24 horas para reducir el riesgo de hinchazn y migracin."
+    "es": "Omita actividad física intensa, alcohol y saunas durante 24 horas para reducir el riesgo de hinchazón y migración."
   },
   {
     "id": "exp.botox.post.4",
     "en": "Mild swelling or bruising may occur and typically resolves within a few days; apply cool compresses as needed.",
-    "es": "Puede ocurrir hinchazn leve o moretones y generalmente se resuelve en pocos das; aplique compresas fras si es necesario."
+    "es": "Puede ocurrir hinchazón leve o moretones y generalmente se resuelve en pocos días; aplique compresas frías si es necesario."
   },
   {
     "id": "exp.botox.post.5",
     "en": "Results begin to appear within 35 days, with full effect visible at 1014 days.",
-    "es": "Los resultados comienzan a aparecer dentro de 3-5 das, con el efecto completo visible a los 10-14 das."
+    "es": "Los resultados comienzan a aparecer dentro de 3-5 días, con el efecto completo visible a los 10-14 días."
   },
   {
     "id": "faq.botox.q1",
     "en": "How long does Botox take to work?",
-    "es": "Cunto tiempo tarda el Botox en hacer efecto?"
+    "es": "Cuánto tiempo tarda el Botox en hacer efecto?"
   },
   {
     "id": "faq.botox.a1",
     "en": "You may begin to see softening of lines within 3 to 5 days, but full results usually appear between 10 to 14 days after treatment.",
-    "es": "Puede comenzar a ver el suavizado de las lneas dentro de 3 a 5 das, pero los resultados completos generalmente aparecen entre 10 y 14 das despus del tratamiento."
+    "es": "Puede comenzar a ver el suavizado de las líneas dentro de 3 a 5 días, pero los resultados completos generalmente aparecen entre 10 y 14 días después del tratamiento."
   },
   {
     "id": "faq.botox.q2",
     "en": "How long do Botox results last?",
-    "es": "Cunto duran los resultados del Botox?"
+    "es": "Cuánto duran los resultados del Botox?"
   },
   {
     "id": "faq.botox.a2",
     "en": "Botox typically lasts 3 to 4 months. Longevity may vary depending on your metabolism, lifestyle, and treatment area.",
-    "es": "El Botox tpicamente dura 3 a 4 meses. La longevidad puede variar dependiendo de su metabolismo, estilo de vida y rea de tratamiento."
+    "es": "El Botox típicamente dura 3 a 4 meses. La longevidad puede variar dependiendo de su metabolismo, estilo de vida y área de tratamiento."
   },
   {
     "id": "faq.botox.q3",
@@ -262,27 +262,27 @@
   {
     "id": "faq.botox.a3",
     "en": "Not at all. Our providers specialize in natural-looking results. We focus on softening movement, not eliminating expression.",
-    "es": "Para nada. Nuestros proveedores se especializan en resultados naturales. Nos enfocamos en suavizar el movimiento, no en eliminar la expresin."
+    "es": "Para nada. Nuestros proveedores se especializan en resultados naturales. Nos enfocamos en suavizar el movimiento, no en eliminar la expresión."
   },
   {
     "id": "faq.botox.q4",
     "en": "Can I wear makeup or skincare after Botox?",
-    "es": "Puedo usar maquillaje o cuidado de la piel despus del Botox?"
+    "es": "Puedo usar maquillaje o cuidado de la piel después del Botox?"
   },
   {
     "id": "faq.botox.a4",
     "en": "Yes, but wait at least 4 hours before applying makeup and avoid rubbing the treated areas to prevent product migration.",
-    "es": "S, pero espere al menos 4 horas antes de aplicar maquillaje y evite frotar las reas tratadas para prevenir la migracin del producto."
+    "es": "S, pero espere al menos 4 horas antes de aplicar maquillaje y evite frotar las áreas tratadas para prevenir la migración del producto."
   },
   {
     "id": "faq.botox.q5",
     "en": "Is there any downtime?",
-    "es": "Hay algn tiempo de inactividad?"
+    "es": "Hay ALGÚN tiempo de inactividad?"
   },
   {
     "id": "faq.botox.a5",
     "en": "There is no official downtime, though you should avoid lying down, heavy exercise, and alcohol for 24 hours post-treatment.",
-    "es": "No hay tiempo de inactividad oficial, aunque debe evitar acostarse, ejercicio intenso y alcohol durante 24 horas despus del tratamiento."
+    "es": "No hay tiempo de inactividad oficial, aunque debe evitar acostarse, ejercicio intenso y alcohol durante 24 horas después del tratamiento."
   },
   {
     "id": "faq.botox.q6",
@@ -292,7 +292,7 @@
   {
     "id": "faq.botox.a6",
     "en": "Botox is FDA-approved and considered very safe when administered by trained medical professionals. At Mave, treatments are performed under medical supervision using only certified products.",
-    "es": "El Botox est aprobado por la FDA y se considera muy seguro cuando es administrado por profesionales mdicos capacitados. En Mave, los tratamientos se realizan bajo supervisin mdica utilizando solo productos certificados."
+    "es": "El Botox est aprobado por la FDA y se considera muy seguro cuando es administrado por profesionales médicos capacitados. En Mave, los tratamientos se realizan bajo supervisión médica utilizando solo productos certificados."
   },
   {
     "id": "faq.botox.q7",
@@ -302,22 +302,22 @@
   {
     "id": "faq.botox.a7",
     "en": "Absolutely. Botox can be safely combined with treatments like HydraFacial , Sculptra , or laser resurfacing for enhanced results. Your provider will guide you on the ideal timing between procedures.",
-    "es": "Absolutamente. El Botox se puede combinar de manera segura con tratamientos como HydraFacial , Sculptra  o resurfacing lser para resultados mejorados. Su proveedor le guiar sobre el tiempo ideal entre procedimientos."
+    "es": "Absolutamente. El Botox se puede combinar de manera segura con tratamientos como HydraFacial , Sculptra  o resurfacing láser para resultados mejorados. Su proveedor le guiar sobre el tiempo ideal entre procedimientos."
   },
   {
     "id": "svc.dermawrinkle.name",
     "en": "Wrinkle Reducer - Generic: Botulinum Toxin (Onabotulinum toxin A)",
-    "es": "Reductor de Arrugas - Genrico: toxina botulnica (Onabotulinum toxin A)"
+    "es": "Reductor de Arrugas - Genérico: toxina botulínica (Onabotulinum toxin A)"
   },
   {
     "id": "svc.dermawrinkle.desc",
     "en": "Generic botulinum toxin (Onabotulinum toxin A) reduces the appearance of fine lines and wrinkles for a smoother, more refreshed look.",
-    "es": "La toxina botulnica genrica (Onabotulinum toxin A) reduce la apariencia de lneas finas y arrugas para una apariencia ms suave y fresca."
+    "es": "La toxina botulínica genérica (Onabotulinum toxin A) reduce la apariencia de líneas finas y arrugas para una apariencia más suave y fresca."
   },
   {
     "id": "svc.dermawrinkle.details",
     "en": "Generic botulinum toxin (Onabotulinum toxin A) neuromodulator injections temporarily relax facial muscles to smooth fine lines and dynamic wrinkles, enhancing skin texture and creating a more youthful, natural-looking appearance.",
-    "es": "Las inyecciones de neuromodulador con toxina botulnica genrica (Onabotulinum toxin A) relajan temporalmente los msculos faciales para suavizar lneas finas y arrugas dinmicas, mejorando la textura de la piel y creando una apariencia ms juvenil y natural."
+    "es": "Las inyecciones de neuromodulador con toxina botulínica genérica (Onabotulinum toxin A) relajan temporalmente los músculos faciales para suavizar líneas finas y arrugas dinámicas, mejorando la textura de la piel y creando una apariencia más juvenil y natural."
   },
   {
     "id": "note.dermawrinkle.exclusive_rate",
@@ -327,17 +327,17 @@
   {
     "id": "note.dermawrinkle.touchups_window",
     "en": "Touch-ups at this rate are only applicable within 1-2 weeks after initial application at the clinic",
-    "es": "Los retoques a esta tarifa solo son aplicables dentro de 1-2 semanas despus de la aplicacin inicial en la clnica"
+    "es": "Los retoques a esta tarifa solo son aplicables dentro de 1-2 semanas después de la aplicación inicial en la clínica"
   },
   {
     "id": "note.dermawrinkle.standard_rate",
     "en": "Touch-ups on generic botulinum toxin applications outside of the exclusive price option are subject to the standard base rate",
-    "es": "Los retoques en la aplicacin de toxina botulnica genrica fuera de la opcin de precio exclusivo estn sujetos a la tarifa base estndar"
+    "es": "Los retoques en la aplicación de toxina botulínica genérica fuera de la opción de precio exclusivo están sujetos a la tarifa base estándar"
   },
   {
     "id": "goal.dermawrinkle.smooth_lines",
     "en": "Smooth dynamic lines",
-    "es": "Suavizar lneas dinmicas"
+    "es": "Suavizar líneas dinámicas"
   },
   {
     "id": "goal.dermawrinkle.lift",
@@ -347,7 +347,7 @@
   {
     "id": "goal.dermawrinkle.prevent",
     "en": "Prevent future wrinkle formation",
-    "es": "Prevenir la formacin futura de arrugas"
+    "es": "Prevenir la formación futura de arrugas"
   },
   {
     "id": "area.dermawrinkle.forehead",
@@ -357,7 +357,7 @@
   {
     "id": "area.dermawrinkle.glabella",
     "en": "Frown Lines (Glabella)",
-    "es": "Lneas de Fruncir el Ceo (Glabela)"
+    "es": "Líneas de Fruncir el Ceo (Glabela)"
   },
   {
     "id": "area.dermawrinkle.crows_feet",
@@ -367,7 +367,7 @@
   {
     "id": "area.dermawrinkle.bunny_lines",
     "en": "Bunny Lines (Nasalis)",
-    "es": "Lneas de Conejo (Nasales)"
+    "es": "Líneas de Conejo (Nasales)"
   },
   {
     "id": "area.dermawrinkle.chin_dimples",
@@ -377,12 +377,12 @@
   {
     "id": "area.dermawrinkle.perioral_package",
     "en": "Perioral Package (Gummy Smile + Lip Elevators + Chin)",
-    "es": "Paquete Perioral (Sonrisa de Encas + Elevadores de Labios + Barbilla)"
+    "es": "Paquete Perioral (Sonrisa de Encasé + Elevadores de Labios + Barbilla)"
   },
   {
     "id": "area.dermawrinkle.lip_flip",
     "en": "Lip Flip (Gummy Smile)",
-    "es": "Volteo de Labios (Sonrisa de Encas)"
+    "es": "Volteo de Labios (Sonrisa de Encasé)"
   },
   {
     "id": "area.dermawrinkle.eyebrow_lift",
@@ -397,12 +397,12 @@
   {
     "id": "area.dermawrinkle.perioral_lines",
     "en": "Perioral Lines",
-    "es": "Lneas Periorales"
+    "es": "Líneas Periorales"
   },
   {
     "id": "area.dermawrinkle.masseters",
     "en": "Masseters (Jaw Slimming / TMJ treatment)",
-    "es": "Maseteros (Afinamiento de Mandbula / Tratamiento ATM)"
+    "es": "Maseteros (Afinamiento de Mandíbula / Tratamiento ATM)"
   },
   {
     "id": "area.dermawrinkle.neck_bands",
@@ -432,22 +432,22 @@
   {
     "id": "note.dermawrinkle.package_only",
     "en": "Exclusive pricing only valid in package deals",
-    "es": "Precio exclusivo solo valido en paquetes"
+    "es": "Precio exclusivo solo válido en paquetes"
   },
   {
     "id": "promo.dermawrinkle.headline",
     "en": "Exclusive Generic Botulinum Toxin Savings",
-    "es": "Ahorro exclusivo en toxina botulnica genrica"
+    "es": "Ahorro exclusivo en toxina botulínica genérica"
   },
   {
     "id": "promo.dermawrinkle.description",
     "en": "Limited-time per-unit discount on generic botulinum toxin with our 45-unit exclusive packideal for multiple areas or maintenance.",
-    "es": "Descuento por unidad por tiempo limitado en toxina botulnica genrica con nuestro paquete exclusivo de 45 unidades, ideal para varias zonas o mantenimiento."
+    "es": "Descuento por unidad por tiempo limitado en toxina botulínica genérica con nuestro paquete exclusivo de 45 unidades, ideal para varias zonas o mantenimiento."
   },
   {
     "id": "promo.dermawrinkle.option_name",
     "en": "Generic Botulinum Toxin - 45-Unit Exclusive Pack",
-    "es": "Toxina botulnica genrica - Paquete exclusivo de 45 unidades"
+    "es": "Toxina botulínica genérica - Paquete exclusivo de 45 unidades"
   },
   {
     "id": "promo.dermawrinkle.note1",
@@ -457,7 +457,7 @@
   {
     "id": "promo.dermawrinkle.note2",
     "en": "Touch-ups at this rate apply only within 12 weeks of the initial application.",
-    "es": "Los retoques a esta tarifa aplican solo dentro de 12 semanas de la aplicacin inicial."
+    "es": "Los retoques a esta tarifa aplican solo dentro de 12 semanas de la aplicación inicial."
   },
   {
     "id": "addon.dermawrinkle.hydrafacial",
@@ -487,7 +487,7 @@
   {
     "id": "exp.dermawrinkle.pre.1",
     "en": "Avoid alcohol, NSAIDs/aspirin, and blood-thinning supplements for 2448 hours if medically permitted to reduce bruising.",
-    "es": "Evite alcohol, AINE/aspirina y suplementos anticoagulantes durante 2448 horas si su mdico lo permite para reducir moretones."
+    "es": "Evite alcohol, AINE/aspirina y suplementos anticoagulantes durante 2448 horas si su médico lo permite para reducir moretones."
   },
   {
     "id": "exp.dermawrinkle.pre.2",
@@ -497,62 +497,62 @@
   {
     "id": "exp.dermawrinkle.pre.3",
     "en": "Inform your provider of recent vaccines, antibiotics, neuromuscular disorders, pregnancy/breastfeeding, or anticoagulant use.",
-    "es": "Informe a su especialista sobre vacunas recientes, antibiticos, trastornos neuromusculares, embarazo/lactancia o uso de anticoagulantes."
+    "es": "Informe a su especialista sobre vacunas recientes, antibióticos, trastornos neuromusculares, embarazo/lactancia o uso de anticoagulantes."
   },
   {
     "id": "exp.dermawrinkle.during.1",
     "en": "Tiny injections cause brief pinches or pressure; ice or numbing can be used for comfort.",
-    "es": "Las microinyecciones generan pequeos pinchazos o presin; se pueden usar hielo o anestesia para mayor comodidad."
+    "es": "Las microinyecciones generan pequeños pinchazos o presión; se pueden usar hielo o anestesia para mayor comodidad."
   },
   {
     "id": "exp.dermawrinkle.during.2",
     "en": "Muscles are treated in specific patterns; you can typically return to light activities right after.",
-    "es": "Los msculos se tratan en patrones especficos; normalmente puede retomar actividades ligeras inmediatamente despus."
+    "es": "Los músculos se tratan en patrones específicos; normalmente puede retomar actividades ligeras inmediatamente después."
   },
   {
     "id": "exp.dermawrinkle.post.1",
     "en": "Avoid touching, rubbing, or applying pressure to the treated areas for at least 4 hours.",
-    "es": "Evite tocar, frotar o aplicar presin en las reas tratadas durante al menos 4 horas."
+    "es": "Evite tocar, frotar o aplicar presión en las áreas tratadas durante al menos 4 horas."
   },
   {
     "id": "exp.dermawrinkle.post.2",
     "en": "Remain upright and avoid lying down flat for 4 hours following treatment.",
-    "es": "Mantngase erguido y evite acostarse plano durante 4 horas despus del tratamiento."
+    "es": "Manténgase erguido y evite acostarse plano durante 4 horas después del tratamiento."
   },
   {
     "id": "exp.dermawrinkle.post.3",
     "en": "Skip intense physical activity, alcohol, and saunas for 24 hours post-treatment to reduce the risk of swelling and migration.",
-    "es": "Omita actividad fsica intensa, alcohol y saunas durante 24 horas despus del tratamiento para reducir el riesgo de hinchazn y migracin."
+    "es": "Omita actividad física intensa, alcohol y saunas durante 24 horas después del tratamiento para reducir el riesgo de hinchazón y migración."
   },
   {
     "id": "exp.dermawrinkle.post.4",
     "en": "Mild swelling or bruising may occur and typically resolves within a few days. Ice can be applied gently if needed.",
-    "es": "Puede ocurrir hinchazn leve o moretones y generalmente se resuelve en pocos das. Se puede aplicar hielo suavemente si es necesario."
+    "es": "Puede ocurrir hinchazón leve o moretones y generalmente se resuelve en pocos días. Se puede aplicar hielo suavemente si es necesario."
   },
   {
     "id": "exp.dermawrinkle.post.5",
     "en": "Results begin to appear within 35 days, with full effect visible at 1014 days.",
-    "es": "Los resultados comienzan a aparecer dentro de 3-5 das, con el efecto completo visible a los 10-14 das."
+    "es": "Los resultados comienzan a aparecer dentro de 3-5 días, con el efecto completo visible a los 10-14 días."
   },
   {
     "id": "faq.dermawrinkle.q1",
     "en": "How long does generic botulinum toxin take to work?",
-    "es": "Cunto tiempo tarda en hacer efecto la toxina botulnica genrica?"
+    "es": "Cuánto tiempo tarda en hacer efecto la toxina botulínica genérica?"
   },
   {
     "id": "faq.dermawrinkle.a1",
     "en": "You may begin to see softening of lines within 3 to 5 days, but full results usually appear between 10 to 14 days after treatment.",
-    "es": "Puede comenzar a ver el suavizado de las lneas dentro de 3 a 5 das, pero los resultados completos generalmente aparecen entre 10 y 14 das despus del tratamiento."
+    "es": "Puede comenzar a ver el suavizado de las líneas dentro de 3 a 5 días, pero los resultados completos generalmente aparecen entre 10 y 14 días después del tratamiento."
   },
   {
     "id": "faq.dermawrinkle.q2",
     "en": "How long do generic botulinum toxin results last?",
-    "es": "Cunto duran los resultados de la toxina botulnica genrica?"
+    "es": "Cuánto duran los resultados de la toxina botulínica genérica?"
   },
   {
     "id": "faq.dermawrinkle.a2",
     "en": "Generic botulinum toxin typically lasts 3 to 4 months. Longevity may vary depending on your metabolism, lifestyle, and treatment area.",
-    "es": "La toxina botulnica genrica tpicamente dura de 3 a 4 meses. La duracin puede variar dependiendo de su metabolismo, estilo de vida y rea de tratamiento."
+    "es": "La toxina botulínica genérica típicamente dura de 3 a 4 meses. La duración puede variar dependiendo de su metabolismo, estilo de vida y área de tratamiento."
   },
   {
     "id": "faq.dermawrinkle.q3",
@@ -562,46 +562,46 @@
   {
     "id": "faq.dermawrinkle.a3",
     "en": "Not at all. Our providers specialize in natural-looking results. We focus on softening movement, not eliminating expression.",
-    "es": "Para nada. Nuestros proveedores se especializan en resultados naturales. Nos enfocamos en suavizar el movimiento, no en eliminar la expresin."
+    "es": "Para nada. Nuestros proveedores se especializan en resultados naturales. Nos enfocamos en suavizar el movimiento, no en eliminar la expresión."
   },
   {
     "id": "faq.dermawrinkle.q4",
     "en": "Can I wear makeup or skincare after generic botulinum toxin?",
-    "es": "Puedo usar maquillaje o cuidado de la piel despus de la toxina botulnica genrica?"
+    "es": "Puedo usar maquillaje o cuidado de la piel después de la toxina botulínica genérica?"
   },
   {
     "id": "faq.dermawrinkle.a4",
     "en": "Yes, but wait at least 4 hours before applying makeup and avoid rubbing the treated areas to prevent product migration.",
-    "es": "S, pero espere al menos 4 horas antes de aplicar maquillaje y evite frotar las reas tratadas para prevenir la migracin del producto."
+    "es": "S, pero espere al menos 4 horas antes de aplicar maquillaje y evite frotar las áreas tratadas para prevenir la migración del producto."
   },
   {
     "id": "faq.dermawrinkle.q5",
     "en": "Is there any downtime?",
-    "es": "Hay algn tiempo de inactividad?"
+    "es": "Hay ALGÚN tiempo de inactividad?"
   },
   {
     "id": "faq.dermawrinkle.a5",
     "en": "There is no official downtime, though you should avoid lying down, heavy exercise, and alcohol for 24 hours post-treatment.",
-    "es": "No hay tiempo de inactividad oficial, aunque debe evitar acostarse, ejercicio intenso y alcohol durante 24 horas despus del tratamiento."
+    "es": "No hay tiempo de inactividad oficial, aunque debe evitar acostarse, ejercicio intenso y alcohol durante 24 horas después del tratamiento."
   },
   {
     "id": "faq.dermawrinkle.q6",
     "en": "Is generic botulinum toxin safe?",
-    "es": "Es segura la toxina botulnica genrica?"
+    "es": "Es segura la toxina botulínica genérica?"
   },
   {
     "id": "faq.dermawrinkle.a6",
     "en": "Neuromodulators like generic botulinum toxin are considered very safe when administered by trained medical professionals. At Mave, treatments are performed under medical supervision using only certified products.",
-    "es": "Los neuromoduladores como la toxina botulnica genrica se consideran muy seguros cuando son administrados por profesionales mdicos capacitados. En Mave, los tratamientos se realizan bajo supervisin mdica utilizando solo productos certificados."
+    "es": "Los neuromoduladores como la toxina botulínica genérica se consideran muy seguros cuando son administrados por profesionales médicos capacitados. En Mave, los tratamientos se realizan bajo supervisión médica utilizando solo productos certificados."
   },
   {
     "id": "faq.dermawrinkle.q7",
     "en": "Can I combine generic botulinum toxin with other treatments?",
-    "es": "Puedo combinar la toxina botulnica genrica con otros tratamientos?"
+    "es": "Puedo combinar la toxina botulínica genérica con otros tratamientos?"
   },
   {
     "id": "faq.dermawrinkle.a7",
     "en": "Absolutely. Generic botulinum toxin can be safely combined with treatments like HydraFacial , Sculptra , or laser resurfacing for enhanced results. Your provider will guide you on the ideal timing between procedures.",
-    "es": "Absolutamente. La toxina botulnica genrica se puede combinar de manera segura con tratamientos como HydraFacial , Sculptra  o resurfacing lser para resultados mejorados. Su proveedor le guiar sobre el tiempo ideal entre procedimientos."
+    "es": "Absolutamente. La toxina botulínica genérica se puede combinar de manera segura con tratamientos como HydraFacial , Sculptra  o resurfacing láser para resultados mejorados. Su proveedor le guiar sobre el tiempo ideal entre procedimientos."
   }
 ]

@@ -2,13 +2,15 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import AddOnSection from "./AddOnSection";
+import { useTranslation } from "next-i18next";
 import { optionHasPromo } from "@/lib/utils/promo";
 import { formatMoney, formatMoneyRange } from "@/lib/utils/price";
-import { getPackageGroupsForTreatment } from "@/lib/utils/linkedPackages";
+import { getLocalized } from "@/lib/i18n/getLocalized";
 
-export default function PricingTable({ treatment }) {
+export default function PricingTable({ treatment, addonTreatments = [], packageGroups = [] }) {
   const { locale: routerLocale } = useRouter();
   const locale = routerLocale || "en";
+  const { t } = useTranslation("treatments");
   const filterConfig = treatment?.filterConfig || null;
   const [activeFilter, setActiveFilter] = useState(filterConfig?.defaultKey || "all");
 
@@ -16,19 +18,7 @@ export default function PricingTable({ treatment }) {
     setActiveFilter(filterConfig?.defaultKey || "all");
   }, [filterConfig?.defaultKey, treatment?.urlSlug]);
 
-  console.log("📌 PricingTable locale:", locale);
-
-  const getLocalized = (field) => {
-    if (field == null) return ""; // null or undefined
-
-    if (typeof field === "object") {
-      if (field[locale]) return field[locale];
-      if (field.en) return field.en;
-      return "";
-    }
-
-    return field;
-  };
+  const localize = (field) => getLocalized(field, locale);
 
   const getLocalizedPrice = (field) => {
     if (field == null) return "";
@@ -40,7 +30,7 @@ export default function PricingTable({ treatment }) {
         return formatMoneyRange(field.minAmount, field.maxAmount);
       }
       if ("amount" in field) return formatMoney(field.amount);
-      return getLocalized(field);
+      return localize(field);
     }
     return field;
   };
@@ -52,7 +42,7 @@ export default function PricingTable({ treatment }) {
       .toLowerCase();
 
   const getOptionKey = (opt) => {
-    const key = opt?.optionKey || getLocalized(opt?.optionName);
+    const key = opt?.optionKey || localize(opt?.optionName);
     return normalizeName(key);
   };
 
@@ -70,7 +60,7 @@ export default function PricingTable({ treatment }) {
 
   const pricingOptions = treatment?.pricing?.options || [];
 
-  const registryPackageGroups = getPackageGroupsForTreatment(treatment, locale);
+  const registryPackageGroups = Array.isArray(packageGroups) ? packageGroups : [];
   const filteredPricingOptions =
     filterConfig && activeFilter !== "all"
       ? pricingOptions.filter((opt) => opt.filterGroupKey === activeFilter)
@@ -85,32 +75,25 @@ export default function PricingTable({ treatment }) {
   if (!treatment || !hasPricing) {
     return (
       <div className="w-full bg-white px-6 py-4 text-sm text-gray-700">
-        {locale === "es"
-          ? "No hay precios disponibles para este tratamiento."
-          : "No pricing available for this treatment."}
+        {t("pricingTable.noPricing")}
       </div>
     );
   }
 
-  const headingText =
-    locale === "es" ? "Opciones de Precio y Complementos" : "Pricing Options and Add Ons";
+  const headingText = t("pricingTable.heading");
+  const disclaimerText = t("pricingTable.disclaimer");
 
-  const disclaimerText =
-    locale === "es"
-      ? "Todos los precios se muestran en USD o MXN según se indica. Si el pago se realiza en una moneda diferente a la indicada, por ejemplo pagando en pesos un precio indicado en USD o viceversa, el precio final se calculará usando el tipo de cambio interno vigente de Mave Medical Spa al momento del pago."
-      : "All prices are listed in either USD or MXN as indicated. If payment is made in a different currency than the one listed, for example paying in pesos for a USD listed price or vice versa, the final price will be calculated using Mave Medical Spa’s current internal exchange rate at the time of payment.";
-
-  const priceLabel = locale === "es" ? "Precio:" : "Price:";
-  const promoLabel = locale === "es" ? "Precio Exclusivo:" : "Exclusive pricing:";
-  const promoPackageLabel = locale === "es" ? "Paquete promocional" : "Promo package";
-  const promoValidTillLabel = locale === "es" ? "Válido hasta" : "Valid until";
+  const priceLabel = t("pricingTable.priceLabel");
+  const promoLabel = t("pricingTable.promoLabel");
+  const promoPackageLabel = t("pricingTable.promoPackageLabel");
+  const promoValidTillLabel = t("pricingTable.promoValidTillLabel");
   const promoDetails = treatment?.promoDetails || null;
-  const globalPromoValidTill = getLocalized(promoDetails?.validTill);
+  const globalPromoValidTill = localize(promoDetails?.validTill);
   const promoValidTillByName = new Map(
     (promoDetails?.options || [])
       .map((opt) => {
-        const name = opt?.optionKey || getLocalized(opt?.optionName);
-        const validTill = getLocalized(opt?.validTill);
+        const name = opt?.optionKey || localize(opt?.optionName);
+        const validTill = localize(opt?.validTill);
         return name ? [normalizeName(name), validTill] : null;
       })
       .filter(Boolean)
@@ -144,7 +127,7 @@ export default function PricingTable({ treatment }) {
                           : "bg-white text-black border-black/20 hover:border-black"
                       }`}
                     >
-                      {getLocalized(filter.label)}
+                      {localize(filter.label)}
                     </button>
                   ))}
                   <button
@@ -152,8 +135,8 @@ export default function PricingTable({ treatment }) {
                     onClick={() => setActiveFilter("all")}
                     className="text-xs underline text-gray-600 hover:text-black ml-1"
                   >
-                    {getLocalized(filterConfig.viewAllLabel) ||
-                      (locale === "es" ? "Ver todo" : "View all")}
+                    {localize(filterConfig.viewAllLabel) ||
+                      t("pricingTable.viewAll")}
                   </button>
                 </div>
               )}
@@ -164,7 +147,7 @@ export default function PricingTable({ treatment }) {
                 const promoCurrency =
                   p.optionPromoPrice?.currency || optionCurrency;
 
-                const optionName = getLocalized(p.optionName);
+                const optionName = localize(p.optionName);
                 const optionKey = getOptionKey(p);
                 const showPromo = optionHasPromo(p, locale);
                 const optionValidTill =
@@ -187,7 +170,7 @@ export default function PricingTable({ treatment }) {
                           className="mt-1 text-xs italic list-disc list-outside pl-4 mr-5 text-gray-600"
                         >
                           {p.notes.map((note, i) => (
-                            <li key={i}>{getLocalized(note)}</li>
+                            <li key={i}>{localize(note)}</li>
                           ))}
                         </ul>
                       )}
@@ -228,7 +211,7 @@ export default function PricingTable({ treatment }) {
                 (opt) => opt.optionType === "package"
               );
               packageOptions.forEach((opt) => {
-                const name = getLocalized(opt.optionName);
+                const name = localize(opt.optionName);
                 if (!name) return;
                 const title = getPackageTitle(name);
                 const edition = getPackageEdition(name);
@@ -264,47 +247,45 @@ export default function PricingTable({ treatment }) {
             })();
             if (!allPackageGroups.length) return null;
             return (
-            <div className="space-y-4 mb-6 max-w-3xl mx-auto">
-              <h2 className="text-sm font-semibold text-black">
-                {locale === "es"
-                  ? "Paquetes de protocolo disponibles"
-                  : "Available Protocol Packages"}
-              </h2>
-              {allPackageGroups.map((pkg) => (
-                <div
-                  key={pkg.packageId}
-                  className="border border-[#731a2f] bg-[#731a2f] text-white p-4 rounded-lg shadow-sm"
-                >
-                  <p className="text-[11px] uppercase tracking-[0.2em] text-white/70 mb-1">
-                    {promoPackageLabel}
-                  </p>
-                  {pkg.validTill ? (
-                    <div className="text-xs text-white/80 mb-2">
-                      {promoValidTillLabel} {pkg.validTill}
-                    </div>
-                  ) : null}
-                  <div className="flex items-start justify-between gap-3">
-                    <div className="text-sm font-semibold">{pkg.title}</div>
-                  </div>
-                  <div className="mt-2 space-y-1 text-sm">
-                    {pkg.options.map((opt, idx) => (
-                      <div key={`${pkg.packageId}-${idx}`}>
-                        {opt.label ? `${opt.label}: ` : ""}
-                        {opt.priceText ? opt.priceText : ""}
-                        {opt.currency ? ` ${opt.currency}` : ""}
+              <div className="space-y-4 mb-6 max-w-3xl mx-auto">
+                <h2 className="text-sm font-semibold text-black">
+                  {t("pricingTable.availablePackages")}
+                </h2>
+                {allPackageGroups.map((pkg) => (
+                  <div
+                    key={pkg.packageId}
+                    className="border border-[#731a2f] bg-[#731a2f] text-white p-4 rounded-lg shadow-sm"
+                  >
+                    <p className="text-[11px] uppercase tracking-[0.2em] text-white/70 mb-1">
+                      {promoPackageLabel}
+                    </p>
+                    {pkg.validTill ? (
+                      <div className="text-xs text-white/80 mb-2">
+                        {promoValidTillLabel} {pkg.validTill}
                       </div>
-                    ))}
+                    ) : null}
+                    <div className="flex items-start justify-between gap-3">
+                      <div className="text-sm font-semibold">{pkg.title}</div>
+                    </div>
+                    <div className="mt-2 space-y-1 text-sm">
+                      {pkg.options.map((opt, idx) => (
+                        <div key={`${pkg.packageId}-${idx}`}>
+                          {opt.label ? `${opt.label}: ` : ""}
+                          {opt.priceText ? opt.priceText : ""}
+                          {opt.currency ? ` ${opt.currency}` : ""}
+                        </div>
+                      ))}
+                    </div>
                   </div>
-                </div>
-              ))}
-            </div>
+                ))}
+              </div>
             );
           })()}
 
           {/* Add On Section */}
           {addOns.length > 0 && (
             <div className="mt-10">
-              <AddOnSection addOns={addOns} locale={locale} />
+              <AddOnSection addOns={addOns} addonTreatments={addonTreatments} />
             </div>
           )}
         </div>
@@ -313,7 +294,7 @@ export default function PricingTable({ treatment }) {
         <div className="relative w-full h-[75vh]">
           <Image
             src={treatment.images?.secondary || "/placeholder.jpg"}
-            alt={`Treatment image for ${getLocalized(treatment.serviceDisplayName)}`}
+            alt={`Treatment image for ${localize(treatment.serviceDisplayName)}`}
             fill
             className="object-cover [object-position:center_55%] [object-position:0%_100%]"
             priority

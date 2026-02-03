@@ -55,7 +55,11 @@ export default function GeneralFaqPage() {
 export async function getStaticProps({ locale }) {
   return {
     props: {
-      ...(await serverSideTranslations(locale ?? "en", ["layout"], nextI18NextConfig)),
+      ...(await serverSideTranslations(
+        locale ?? "en",
+        ["layout", "treatments"],
+        nextI18NextConfig
+      )),
     },
   };
 }

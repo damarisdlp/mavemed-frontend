@@ -1,6 +1,7 @@
 import Head from "next/head";
 import { useMemo } from "react";
 import { useRouter } from "next/router";
+import { useTranslation } from "next-i18next";
 import PromoBanner from "@/components/PromoBanner";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -466,6 +467,7 @@ function BoldText({ text }) {
 
 export default function SculptraEducationPage() {
   const { locale = "en" } = useRouter();
+  const { t } = useTranslation("learn");
   const copy = useMemo(() => content[locale] || content.en, [locale]);
 
   const canonicalPath = locale === "es" ? `/es${slug}` : slug;
@@ -717,7 +719,7 @@ export default function SculptraEducationPage() {
               {section.links?.length ? (
                 <div className="mt-4 border border-gray-200 bg-[#f9f9f9] rounded-2xl p-5 space-y-3">
                   <p className="text-sm font-semibold text-black">
-                    {locale === "es" ? "Educación relacionada" : "Related education"}
+                    {t("relatedEducation")}
                   </p>
                   <div className="flex flex-col gap-2">
                     {section.links.map((link) => (
@@ -749,7 +751,7 @@ export async function getStaticProps({ locale }) {
     props: {
       ...(await serverSideTranslations(
         locale ?? "en",
-        ["layout", "home", "treatments"],
+        ["layout", "home", "treatments", "learn"],
         nextI18NextConfig
       )),
     },

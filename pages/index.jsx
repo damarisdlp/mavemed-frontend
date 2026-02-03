@@ -2,6 +2,7 @@ import Head from "next/head";
 import Script from "next/script";
 import { useState } from "react";
 import { useRouter } from "next/router";
+import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import nextI18NextConfig from "../next-i18next.config";
 
@@ -21,24 +22,18 @@ import Footer from "@/components/Footer";
 import ScrollToTopButton from "@/components/ScrollToTop";
 import SeoLinks from "@/components/SeoLinks";
 import LeadPopupGate from "@/components/LeadPopupGate";
+import { getLocalized } from "@/lib/i18n/getLocalized";
 
-export default function Home() {
+export default function Home({ popularTreatments = [] }) {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const { asPath, locale } = useRouter();
+  const { t } = useTranslation("home");
   const isSpanish = locale === "es";
   const siteUrl = "https://www.mavemedspa.com";
-  const pageTitle = isSpanish
-    ? "Top Med Spa en Tijuana | Botox, Sculptra, RF Microneedling | Mave Medical Spa"
-    : "Top Tijuana Med Spa | Botox, Sculptra, RF Microneedling | Mave Medical Spa";
-  const pageDescription = isSpanish
-    ? "Agenda tratamientos estéticos en Tijuana en Mave Medical Spa: Botox, Sculptra, RF microneedling, láser CO2, rellenos y hilos, a minutos de San Diego."
-    : "Book aesthetic treatments in Tijuana at Mave Medical Spa: Botox, Sculptra, RF microneedling, CO2 laser, fillers, and threads-minutes from San Diego.";
-  const ogTitle = isSpanish
-    ? "Mave Medical Spa en Tijuana | Botox, Sculptra y Tratamientos con Láser"
-    : "Mave Medical Spa in Tijuana | Botox, Sculptra & Laser Treatments";
-  const ogDescription = isSpanish
-    ? "Atención estética médica en Tijuana para pacientes de México y EE.UU. Botox, Sculptra, RF microneedling y tratamientos láser."
-    : "Medical aesthetic care in Tijuana for U.S. and Mexico patients. Botox, Sculptra, RF microneedling, and laser treatments.";
+  const pageTitle = t("meta.title");
+  const pageDescription = t("meta.description");
+  const ogTitle = t("meta.ogTitle");
+  const ogDescription = t("meta.ogDescription");
   const homeSchema = {
     "@context": "https://schema.org",
     "@graph": [
@@ -117,7 +112,7 @@ export default function Home() {
       <BrandCarousel />
       <HomeLeadForm />
       <ApproachSection />
-      <PopularTreatments />
+      <PopularTreatments treatments={popularTreatments} />
       <PromoPackageSection />
       <ContactCTA />
       <LocationMap />
@@ -136,8 +131,22 @@ export default function Home() {
 }
 
 export async function getStaticProps({ locale }) {
+  const { allTreatments } = await import("@/lib/data/allTreatments");
+  const currentLocale = locale || "en";
+  const localize = (field) => getLocalized(field, currentLocale);
+  const popularTreatments = allTreatments
+    .filter((tr) => tr && tr.isPopular)
+    .map((tr) => ({
+      title: localize(tr.displayName || tr.serviceDisplayName),
+      description: localize(tr.description),
+      image: tr.images?.primary || "/placeholder.jpg",
+      slug: tr.urlSlug || "#",
+    }))
+    .filter((card) => card.title);
+
   return {
     props: {
+      popularTreatments,
       ...(await serverSideTranslations(
         locale ?? "en",
         ["layout", "home", "treatments", "location"],

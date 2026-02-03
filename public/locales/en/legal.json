@@ -1,0 +1,25 @@
+{
+  "breadcrumbs": {
+    "home": "Home",
+    "terms": "Terms",
+    "privacy": "Privacy",
+    "accessibility": "Accessibility"
+  },
+  "terms": {
+    "metaTitle": "Terms & Conditions | Mave Medical Spa",
+    "contactTitle": "Contact",
+    "contactText": "If you have questions about these Terms, you may contact us at:",
+    "emailLabel": "Email:",
+    "phoneLabel": "Phone:"
+  },
+  "privacy": {
+    "metaTitle": "Privacy Policy | Mave Medical Spa",
+    "contactTitle": "Contact Us",
+    "contactText": "If you have questions about this Privacy Policy or wish to exercise your ARCO rights, contact us:",
+    "emailLabel": "Email:",
+    "phoneLabel": "Phone:"
+  },
+  "accessibility": {
+    "metaTitle": "Accessibility | Mave Medical Spa"
+  }
+}

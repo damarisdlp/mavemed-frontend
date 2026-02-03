@@ -1,5 +1,6 @@
 import Head from "next/head";
 import { useRouter } from "next/router";
+import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import nextI18NextConfig from "../next-i18next.config";
 
@@ -15,6 +16,7 @@ import SeoLinks from "@/components/SeoLinks";
 
 export default function AccessibilityPage() {
   const { locale = "en", asPath } = useRouter();
+  const { t } = useTranslation("legal");
 
   const renderParagraph = (para, key) => {
     const email = "info@mavemedspa.com";
@@ -56,7 +58,7 @@ export default function AccessibilityPage() {
     <>
       <Head>
         <title>
-          {locale === "es" ? "Accesibilidad | Mave Medical Spa" : "Accessibility | Mave Medical Spa"}
+          {t("accessibility.metaTitle")}
         </title>
         <meta
           name="description"
@@ -64,7 +66,7 @@ export default function AccessibilityPage() {
         />
         <meta
           property="og:title"
-          content={locale === "es" ? "Accesibilidad | Mave Medical Spa" : "Accessibility | Mave Medical Spa"}
+          content={t("accessibility.metaTitle")}
         />
         <meta
           property="og:description"
@@ -88,8 +90,8 @@ export default function AccessibilityPage() {
         <div className="w-full max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 pt-4 md:pt-6">
           <Breadcrumbs
             items={[
-              { label: "Home", href: "/" },
-              { label: locale === "es" ? "Accesibilidad" : "Accessibility", href: "/accessibility" },
+              { label: t("breadcrumbs.home"), href: "/" },
+              { label: t("breadcrumbs.accessibility"), href: "/accessibility" },
             ]}
           />
         </div>
@@ -136,7 +138,11 @@ export default function AccessibilityPage() {
 export async function getStaticProps({ locale }) {
   return {
     props: {
-      ...(await serverSideTranslations(locale ?? "en", ["layout", "home", "location"], nextI18NextConfig)),
+      ...(await serverSideTranslations(
+        locale ?? "en",
+        ["layout", "home", "location", "legal"],
+        nextI18NextConfig
+      )),
     },
   };
 }

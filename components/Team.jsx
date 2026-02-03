@@ -4,10 +4,9 @@ import "keen-slider/keen-slider.min.css";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import { useKeenSlider } from "keen-slider/react";
-import { allStaff } from "@/lib/data/allStaff";
 import { useTranslation } from "next-i18next";
 
-export default function Team() {
+export default function Team({ categories = [] }) {
   const router = useRouter();
   const { t, i18n } = useTranslation("team");
   const currentLocale =
@@ -15,42 +14,7 @@ export default function Team() {
     (typeof i18n?.language === "string" && i18n.language) ||
     "en";
 
-  const getLocalized = (field) => {
-    if (field && typeof field === "object") {
-      return (
-        field[currentLocale] ||
-        field.en ||
-        Object.values(field)[0] ||
-        ""
-      );
-    }
-    return field ?? "";
-  };
-
-  // Group staff by category (not title)
-  const categoriesMap = {};
-  allStaff.forEach((s) => {
-    const categoryLabel = getLocalized(s.category || s.title || "Team");
-    const title = getLocalized(s.title);
-    const displayName = getLocalized(s.displayName);
-    const bio = getLocalized(s.bio);
-    const key = categoryLabel || "Team";
-    if (!categoriesMap[key]) {
-      categoriesMap[key] = {
-        category: key,
-        staff: []
-      };
-    }
-    categoriesMap[key].staff.push({
-      name: displayName,
-      slug: s.name,
-      image: s.image || "/placeholder.jpg",
-      title,
-      description: bio
-    });
-  });
-
-  const categories = Object.values(categoriesMap);
+  const orderedCategories = Array.isArray(categories) ? categories : [];
   const learnMoreLabel =
     currentLocale?.startsWith("es")
       ? t("team.learnMore", { lng: "es", defaultValue: "Más Información" })
@@ -74,13 +38,13 @@ export default function Team() {
           id="category-menu"
           className="flex flex-nowrap items-center gap-3 sm:gap-4 mb-12 justify-start sticky top-[110px] sm:top-[113px] bg-white z-30 py-2 sm:py-3 border-b border-gray-200 overflow-x-auto no-scrollbar px-3"
         >
-          {categories.map((category, i) => (
+          {orderedCategories.map((category, i) => (
             <CategoryLink key={i} category={category.category} />
           ))}
         </div>
 
         {/* Staff by Category */}
-        {categories.map((category, i) => (
+        {orderedCategories.map((category, i) => (
           <CategorySection
             key={i}
             category={category.category}

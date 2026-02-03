@@ -1,5 +1,6 @@
 import Head from "next/head";
 import { useRouter } from "next/router";
+import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import nextI18NextConfig from "../next-i18next.config";
 
@@ -15,6 +16,7 @@ import SeoLinks from "@/components/SeoLinks";
 
 export default function TermsPage() {
   const { locale = "en", asPath } = useRouter();
+  const { t } = useTranslation("legal");
 
   const strings = {
     title: termsContent.title[locale] || termsContent.title.en,
@@ -29,12 +31,12 @@ export default function TermsPage() {
     <>
       <Head>
         <title>
-          {locale === "es" ? "Términos y Condiciones | Mave Medical Spa" : "Terms & Conditions | Mave Medical Spa"}
+          {t("terms.metaTitle")}
         </title>
         <meta name="description" content={strings.desc} />
         <meta
           property="og:title"
-          content={locale === "es" ? "Términos y Condiciones | Mave Medical Spa" : "Terms & Conditions | Mave Medical Spa"}
+          content={t("terms.metaTitle")}
         />
         <meta property="og:description" content={strings.desc} />
         <meta property="og:image" content="https://www.mavemedspa.com/site_icon.png" />
@@ -55,8 +57,8 @@ export default function TermsPage() {
         <div className="w-full max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 pt-4 md:pt-6">
           <Breadcrumbs
             items={[
-              { label: "Home", href: "/" },
-              { label: locale === "es" ? "Términos" : "Terms", href: "/terms" },
+              { label: t("breadcrumbs.home"), href: "/" },
+              { label: t("breadcrumbs.terms"), href: "/terms" },
             ]}
           />
         </div>
@@ -97,21 +99,19 @@ export default function TermsPage() {
 
           <div className="mt-8 text-gray-700">
             <p className="font-semibold text-black mb-2">
-              {locale === "es" ? "Contacto" : "Contact"}
+              {t("terms.contactTitle")}
             </p>
             <p>
-              {locale === "es"
-                ? "Si tiene dudas o comentarios sobre estos Términos, puede contactarnos en:"
-                : "If you have questions about these Terms, you may contact us at:"}
+              {t("terms.contactText")}
             </p>
             <p className="mt-2">
-              Email:{" "}
+              {t("terms.emailLabel")}{" "}
               <a href={`mailto:${strings.contactEmail}`} className="underline text-[#731a2f]">
                 {strings.contactEmail}
               </a>
             </p>
             <p>
-              {locale === "es" ? "Teléfono:" : "Phone:"}{" "}
+              {t("terms.phoneLabel")}{" "}
               <a href={`tel:${strings.contactPhone}`} className="underline text-[#731a2f]">
                 {strings.contactPhone}
               </a>
@@ -132,7 +132,11 @@ export default function TermsPage() {
 export async function getStaticProps({ locale }) {
   return {
     props: {
-      ...(await serverSideTranslations(locale ?? "en", ["layout", "home", "location"], nextI18NextConfig)),
+      ...(await serverSideTranslations(
+        locale ?? "en",
+        ["layout", "home", "location", "legal"],
+        nextI18NextConfig
+      )),
     },
   };
 }

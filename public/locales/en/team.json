@@ -2,6 +2,10 @@
   "team": {
     "bannerTitle": "Our Team",
     "bannerSubtitle": "Specializing in cosmetic injectables, skin rejuvenation, and medical-grade therapies for results-driven beauty.",
-    "learnMore": "Learn More"
+    "learnMore": "Learn More",
+    "breadcrumbTeam": "Our Team",
+    "favoritesHeading": "Favorite Treatments of",
+    "viewAllTreatments": "View all treatments",
+    "bookNow": "Book Now"
   }
 }

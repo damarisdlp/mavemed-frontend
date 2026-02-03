@@ -3,7 +3,7 @@
     "heading1": "Mave Medical Spa en Tijuana",
     "heading2": "Botox, Bioestimuladores de Colágeno, Rellenos, Láseres, RF Microneedling y más",
     "p1": "Cruza la frontera para obtener resultados de aspecto natural.",
-    "p2": "Nos especializamos en Botox®, Sculptra®, HarmonyCa®, rellenos dérmicos, hilos PDO, microneedling de radiofrecuencia, tratamientos láser y diversos tratamientos de rejuvenecimiento y regeneración.",    
+    "p2": "Nos especializamos en Botox®, Sculptra®, HarmonyCa®, rellenos dérmicos, hilos PDO, Microneedling de radiofrecuencia, tratamientos láser y diversos tratamientos de rejuvenecimiento y regeneración.",
     "p3": "Clientes de San Diego, Los Ángeles, Orange County, Tijuana y más allá confían en nosotros.",
     "cta": "Agenda tu Consulta"
   },
@@ -60,7 +60,7 @@
   "contactCta": {
     "title": "Cuidado estético experto — a minutos de la frontera",
     "line1": "Nuestro med spa en Tijuana atiende clientes de San Diego, LA, Tijuana y más!",
-    "line2": "Ofrecemos tratamientos avanzados de rejuvenecimiento como Sculptra, RF microneedling, hilos PDO y armonización facial.",
+    "line2": "Ofrecemos tratamientos avanzados de rejuvenecimiento como Sculptra, RF Microneedling, hilos PDO y armonización facial.",
     "line3": "Agenda tu consulta y obtén un plan personalizado a tus metas.",
     "cta": "Agenda tu Consulta",
     "aria": "Comunícate con Mave Medical Spa por WhatsApp"
@@ -68,7 +68,7 @@
   "approach": {
     "title": "Nuestra Filosofía de Cuidado de la Piel con Resultados",
     "safetyTitle": "Seguridad de grado médico",
-    "safetyCopy": "Todos los procedimientos en Mave Medical Spa en Tijuana son realizados o supervisados por médicos estéticos con licencia. Cumplimos los estándares de seguridad COFEPRIS para tratamientos como Botox®, RF microneedling, Sculptra y hilos PDO.",
+    "safetyCopy": "Todos los procedimientos en Mave Medical Spa en Tijuana son realizados o supervisados por médicos estéticos con licencia. Cumplimos los estándares de seguridad COFEPRIS para tratamientos como Botox®, RF Microneedling, Sculptra y hilos PDO.",
     "efficacyTitle": "Eficacia comprobada",
     "efficacyCopy": "Desde estimulación de colágeno hasta tensado avanzado de la piel, usamos tecnologías y productos de alto desempeño con resultados clínicamente probados.",
     "experienceTitle": "Experiencia estética personalizada",
@@ -91,6 +91,12 @@
     "bottomCopy": "Agenda tu consulta hoy y descubre lo que es posible con cuidado flexible en Mave Medical Spa.",
     "cta": "Explorar Servicios"
   },
+  "meta": {
+    "title": "Top Med Spa en Tijuana | Botox, Sculptra, RF Microneedling | Mave Medical Spa",
+    "description": "Agenda tratamientos estéticos en Tijuana en Mave Medical Spa: Botox, Sculptra, RF Microneedling, láser CO2, rellenos y hilos, a minutos de San Diego.",
+    "ogTitle": "Mave Medical Spa en Tijuana | Botox, Sculptra y Tratamientos con Láser",
+    "ogDescription": "Atención estética médica en Tijuana para pacientes de México y EE.UU. Botox, Sculptra, RF Microneedling y tratamientos láser."
+  },
   "reviews": {
     "title": "Lo Que Dicen Nuestros Pacientes",
     "subtitle": "Reseñas verificadas de clientes transfronterizos y locales que confían en Mave.",
@@ -102,6 +108,6 @@
   "instagram": {
     "title": "Síguenos",
     "subtitle": "Síguenos en Instagram para estar al día y ver los últimos avances estéticos.",
-    "follow": "Síguenos: @mavemedicalspa"
+    "follow": "Síguenos: @MaveMedicalSpa"
   }
 }

@@ -32,7 +32,7 @@
   {
     "id": "note.facial_balancing.subtle",
     "en": "Designed for subtle but transformative rejuvenation",
-    "es": "Diseado para rejuvenecimiento sutil pero transformador"
+    "es": "Diseñado para rejuvenecimiento sutil pero transformador"
   },
   {
     "id": "goal.facial_balancing.symmetry",
@@ -87,7 +87,7 @@
   {
     "id": "opt.facial_balancing.volift",
     "en": "Brand Name: Juvederm Volift",
-    "es": "Marca: Juvederm Volift"
+    "es": "Marca: Juvéderm Volift"
   },
   {
     "id": "promo.facial_balancing.name",
@@ -102,12 +102,12 @@
   {
     "id": "opt.facial_balancing.voluma",
     "en": "Brand Name: Juvederm Voluma",
-    "es": "Marca: Juvederm Voluma"
+    "es": "Marca: Juvéderm Voluma"
   },
   {
     "id": "opt.facial_balancing.volux",
     "en": "Brand Name: Juvederm Volux",
-    "es": "Marca: Juvederm Volux"
+    "es": "Marca: Juvéderm Volux"
   },
   {
     "id": "note.facial_balancing.volift_price",
@@ -272,12 +272,12 @@
   {
     "id": "opt.lip_fillers.volift",
     "en": "Brand Name: Juvederm Volift",
-    "es": "Marca: Juvederm Volift"
+    "es": "Marca: Juvéderm Volift"
   },
   {
     "id": "opt.lip_fillers.volbella",
     "en": "Brand Name: Juvederm Volbella",
-    "es": "Marca: Juvederm Volbella"
+    "es": "Marca: Juvéderm Volbella"
   },
   {
     "id": "opt.lip_fillers.generic_deep",
@@ -540,12 +540,12 @@
     "es": "Relleno de Labios - Ácido Hialurónico - Stylage - M"
   },
   {
-    "id": "addon.facial_balancing.microneedling_pdrn",
+    "id": "addon.facial_balancing.Microneedling_pdrn",
     "en": "Microneedling - PDRN - Polynucleotide",
     "es": "Microneedling - PDRN - Polinucleótido"
   },
   {
-    "id": "addon.facial_balancing.microneedling_glow",
+    "id": "addon.facial_balancing.Microneedling_glow",
     "en": "Microneedling - Glow Revitalizing & Facial Definition",
     "es": "Microneedling - Glow Revitalizante & Definición Facial"
   },
@@ -560,7 +560,7 @@
     "es": "Terapia Enzimática - PB Serum+ (Kit)"
   },
   {
-    "id": "addon.facial_balancing.rf_microneedling",
+    "id": "addon.facial_balancing.rf_Microneedling",
     "en": "Sylfirm X - RF Microneedling - Face + Neck + Décolleté",
     "es": "Sylfirm X - Microagujas RF - Rostro + Cuello + Escote"
   },
@@ -570,7 +570,7 @@
     "es": "Botox - Cualquier Zona"
   },
   {
-    "id": "addon.lip_fillers.microneedling_prp",
+    "id": "addon.lip_fillers.Microneedling_prp",
     "en": "Microneedling - PRP - Platelet Rich Plasma",
     "es": "Microneedling - PRP - Plasma Rico en Plaquetas"
   },
@@ -597,10 +597,10 @@
   {
     "id": "addon.hyaluronidase.facial_balancing_volift",
     "en": "Dermal Filler - Hyaluronic Acid - Juvederm Volift",
-    "es": "Relleno Dérmico - Ácido Hialurónico - Juvederm Volift"
+    "es": "Relleno Dérmico - Ácido Hialurónico - Juvéderm Volift"
   },
   {
-    "id": "addon.hyaluronidase.microneedling_prp",
+    "id": "addon.hyaluronidase.Microneedling_prp",
     "en": "Microneedling - PRP - Platelet Rich Plasma",
     "es": "Microneedling - PRP - Plasma Rico en Plaquetas"
   },

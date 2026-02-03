@@ -20,5 +20,185 @@
   "treatmentsPage": {
     "bannerTitle": "Our Treatments",
     "bannerSubtitle": "Specializing in cosmetic injectables, skin rejuvenation, and medical-grade therapies for results-driven beauty."
+  },
+  "treatmentCategories": {
+    "top": "↑ Top",
+    "scrollToTop": "Scroll to top category menu",
+    "searchPlaceholder": "Search treatments",
+    "noResults": "No treatments match your search.",
+    "clearSearch": "Clear search",
+    "bookService": "Book {{service}} at Mave Medical Spa in Tijuana",
+    "learnMoreAbout": "Learn more about {{service}}"
+  },
+  "pricingTable": {
+    "noPricing": "No pricing available for this treatment.",
+    "heading": "Pricing Options and Add Ons",
+    "disclaimer": "All prices are listed in either USD or MXN as indicated. If payment is made in a different currency than the one listed, for example paying in pesos for a USD listed price or vice versa, the final price will be calculated using Mave Medical Spa’s current internal exchange rate at the time of payment.",
+    "priceLabel": "Price:",
+    "promoLabel": "Exclusive pricing:",
+    "promoPackageLabel": "Promo package",
+    "promoValidTillLabel": "Valid until",
+    "viewAll": "View all",
+    "availablePackages": "Available Protocol Packages"
+  },
+  "addOns": {
+    "heading": "Add On Options",
+    "price": "Price:",
+    "promo": "Exclusive pricing:",
+    "promoAvailable": "EXCLUSIVE PROMO AVAILABLE",
+    "from": "From ",
+    "learnMoreAbout": "Learn More About {{service}}"
+  },
+  "treatmentInfoTabs": {
+    "details": "Details",
+    "goals": "Goals",
+    "areas": "Treatable Areas",
+    "locations": "Available Locations",
+    "comingSoon": "Details coming soon."
+  },
+  "whatToExpect": {
+    "sectionTitle": "What to Expect",
+    "before": "Before Treatment",
+    "during": "During Treatment",
+    "after": "After Treatment",
+    "comingSoon": "Details coming soon."
+  },
+  "faq": {
+    "heading": "Frequently Asked Questions"
+  },
+  "treatmentDetails": {
+    "breadcrumbTreatments": "Treatments",
+    "priceHeading": "Price",
+    "bookNow": "Book Now",
+    "exclusivePricing": "Exclusive Pricing",
+    "validUntil": "Valid until",
+    "startingFrom": "Starting from {{price}}",
+    "viewAll": "View all",
+    "noOptionsForFilter": "No options available for this filter.",
+    "promoPackage": "Promo package",
+    "inquire": "Inquire"
+  },
+  "treatmentLeadModal": {
+    "requestInfo": {
+      "title": "Request information",
+      "subtitle": "Share your details and we’ll reach out right away."
+    },
+    "additionalDetails": {
+      "title": "Additional details",
+      "subtitle": "Help us tailor your visit."
+    },
+    "chooseChat": {
+      "title": "Choose how to chat",
+      "subtitle": "Pick WhatsApp or Instagram to continue the conversation."
+    },
+    "labels": {
+      "treatment": "Treatment",
+      "serviceOptions": "Service options",
+      "name": "Name",
+      "email": "Email",
+      "countryCode": "Country code",
+      "phone": "Phone",
+      "visitTiming": "When would you like to visit?",
+      "preferredChannel": "Preferred communication method",
+      "hadTreatmentBefore": "Have you had this treatment before?",
+      "bestDays": "Best days",
+      "bestTimes": "Best times",
+      "mainConcern": "What is your main concern or goal?"
+    },
+    "placeholders": {
+      "name": "Name",
+      "email": "Email",
+      "phone": "Phone",
+      "mainConcern": "E.g., forehead lines, sagging jawline, acne scars, melasma..."
+    },
+    "messages": {
+      "selectOptions": "Select one or multiple options.",
+      "canChooseMultiple": "You can choose one or multiple options.",
+      "invalidEmail": "Please enter a valid email address.",
+      "invalidEmailShort": "Please enter a valid email.",
+      "invalidPhone": "Please enter a valid phone number.",
+      "missingName": "Please enter your name.",
+      "selectServiceOption": "Please select a service option.",
+      "requiredFields": "Please fill in the required fields.",
+      "selectPreferredChannel": "Please select a preferred communication method.",
+      "duplicateIntro": "Hi, I already submitted a treatment request. I want to add a detail.",
+      "duplicateNotice": "We already received your request. Redirecting you to confirmation.",
+      "submitError": "There was an error submitting your request."
+    },
+    "options": {
+      "select": "Select",
+      "visitTiming": {
+        "thisWeek": "This week",
+        "thisMonth": "This month",
+        "withinThreeMonths": "Within three months",
+        "justGathering": "Just gathering information"
+      },
+      "preferredChannel": {
+        "phoneCall": "Phone call",
+        "textMessage": "Text message"
+      },
+      "yes": "Yes",
+      "no": "No",
+      "notSure": "Not sure",
+      "bestDays": {
+        "weekdays": "Weekdays",
+        "saturdays": "Saturdays",
+        "openAvailability": "Open availability"
+      },
+      "bestTimes": {
+        "mornings": "Mornings",
+        "noon": "Noon",
+        "afternoons": "Afternoons",
+        "openAvailability": "Open availability"
+      }
+    },
+    "buttons": {
+      "continue": "Continue",
+      "cancel": "Cancel",
+      "back": "Back",
+      "submit": "Submit",
+      "submitting": "Submitting...",
+      "whatsapp": "Message us on WhatsApp",
+      "instagram": "Message us on Instagram",
+      "close": "Close"
+    },
+    "whatsapp": {
+      "intro": "Hi, I'm interested in {{service}}.",
+      "name": "My name is {{name}}.",
+      "preference": "I prefer {{day}} and {{time}}.",
+      "anyDay": "any day",
+      "anyTime": "any time"
+    },
+    "countryOptions": {
+      "usCanada": "United States / Canada",
+      "mexico": "Mexico",
+      "uk": "United Kingdom",
+      "spain": "Spain",
+      "colombia": "Colombia",
+      "costaRica": "Costa Rica",
+      "peru": "Peru",
+      "argentina": "Argentina",
+      "brazil": "Brazil"
+    }
+  },
+  "rfCandidacy": {
+    "label": "Candidacy",
+    "title": "RF Microneedling Candidacy Assessment",
+    "subtitle": "Reviewed by a medical team before treatment planning.",
+    "cta": "Start assessment"
+  },
+  "candidacyForm": {
+    "labels": {
+      "countryCode": "Country code"
+    },
+    "selectPlaceholder": "Select",
+    "messages": {
+      "missing": "Missing: {{fields}}.",
+      "duplicateNotice": "We already received your assessment. If you want to add anything, message us on WhatsApp.",
+      "whatsappAddDetail": "Hi, I already submitted my assessment. I want to add a detail."
+    },
+    "buttons": {
+      "submitting": "Submitting..."
+    }
   }
 }

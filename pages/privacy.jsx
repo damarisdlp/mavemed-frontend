@@ -1,5 +1,6 @@
 import Head from "next/head";
 import { useRouter } from "next/router";
+import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import nextI18NextConfig from "../next-i18next.config";
 
@@ -15,6 +16,7 @@ import SeoLinks from "@/components/SeoLinks";
 
 export default function PrivacyPage() {
   const { locale = "en", asPath } = useRouter();
+  const { t } = useTranslation("legal");
 
   const strings = {
     title: privacyContent.title[locale] || privacyContent.title.en,
@@ -29,12 +31,12 @@ export default function PrivacyPage() {
     <>
       <Head>
         <title>
-          {locale === "es" ? "Política de Privacidad | Mave Medical Spa" : "Privacy Policy | Mave Medical Spa"}
+          {t("privacy.metaTitle")}
         </title>
         <meta name="description" content={strings.desc} />
         <meta
           property="og:title"
-          content={locale === "es" ? "Política de Privacidad | Mave Medical Spa" : "Privacy Policy | Mave Medical Spa"}
+          content={t("privacy.metaTitle")}
         />
         <meta property="og:description" content={strings.desc} />
         <meta property="og:image" content="https://www.mavemedspa.com/site_icon.png" />
@@ -55,8 +57,8 @@ export default function PrivacyPage() {
         <div className="w-full max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 pt-4 md:pt-6">
           <Breadcrumbs
             items={[
-              { label: "Home", href: "/" },
-              { label: locale === "es" ? "Privacidad" : "Privacy", href: "/privacy" },
+              { label: t("breadcrumbs.home"), href: "/" },
+              { label: t("breadcrumbs.privacy"), href: "/privacy" },
             ]}
           />
         </div>
@@ -88,21 +90,19 @@ export default function PrivacyPage() {
 
           <div className="mt-8 text-gray-700">
             <p className="font-semibold text-black mb-2">
-              {locale === "es" ? "Contacto" : "Contact Us"}
+              {t("privacy.contactTitle")}
             </p>
             <p>
-              {locale === "es"
-                ? "Si tiene dudas sobre este Aviso de Privacidad o desea ejercer sus derechos ARCO, contáctenos:"
-                : "If you have questions about this Privacy Policy or wish to exercise your ARCO rights, contact us:"}
+              {t("privacy.contactText")}
             </p>
             <p className="mt-2">
-              Email:{" "}
+              {t("privacy.emailLabel")}{" "}
               <a href={`mailto:${strings.contactEmail}`} className="underline text-[#731a2f]">
                 {strings.contactEmail}
               </a>
             </p>
             <p>
-              {locale === "es" ? "Teléfono:" : "Phone:"}{" "}
+              {t("privacy.phoneLabel")}{" "}
               <a href={`tel:${strings.contactPhone}`} className="underline text-[#731a2f]">
                 {strings.contactPhone}
               </a>
@@ -123,7 +123,11 @@ export default function PrivacyPage() {
 export async function getStaticProps({ locale }) {
   return {
     props: {
-      ...(await serverSideTranslations(locale ?? "en", ["layout", "home", "location"], nextI18NextConfig)),
+      ...(await serverSideTranslations(
+        locale ?? "en",
+        ["layout", "home", "location", "legal"],
+        nextI18NextConfig
+      )),
     },
   };
 }

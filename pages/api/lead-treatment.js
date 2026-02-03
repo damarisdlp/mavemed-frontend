@@ -1,9 +1,23 @@
 import { redis } from "@/lib/redis";
+import { rateLimit, requireLeadAuth } from "@/lib/server/leadSecurity";
 
 export default async function handler(req, res) {
   if (req.method !== "POST") {
     return res.status(405).json({ error: "Method not allowed" });
   }
+
+  const auth = requireLeadAuth(req);
+  if (!auth.ok) {
+    return res.status(auth.status).json({ error: auth.error });
+  }
+
+  const limit = await rateLimit(req, { key: "lead-treatment", limit: 10, windowSec: 60 * 10 });
+  if (!limit.ok) {
+    return res.status(limit.status).json({ error: limit.error });
+  }
+  res.setHeader("X-RateLimit-Limit", limit.limit);
+  res.setHeader("X-RateLimit-Remaining", limit.remaining);
+  res.setHeader("X-RateLimit-Reset", limit.reset);
 
   const incoming = typeof req.body === "string" ? safeParse(req.body) : req.body || {};
   const {
@@ -136,17 +150,16 @@ async function tryWriteToSheets(payload) {
     : isSculptraRfPackage
     ? process.env.GOOGLE_SCRIPT_SCULPTRA_RF_PACKAGE_URL
     : process.env.GOOGLE_SCRIPT_TREATMENT_URL;
-  const fallbackUrl = isRfCandidacy
-    ? "https://script.google.com/macros/s/AKfycbwMSvX_5blsHgx6bIa9MxseP9s0hXRplnNcLhSEA4OtsdB67g9yMcWIyf0t0zaPGs7K/exec"
-    : isSculptraCandidacy
-    ? "https://script.google.com/macros/s/AKfycbzUU2Y-jPcNwJ5q126k3k6WwEZJGkn4yZY-HQZrrLpqVL8UCfGVqQzxA6Xw1ytYoWYw/exec"
-    : isSculptraRfPackage
-    ? "https://script.google.com/macros/s/AKfycbxG_CBT1dWnQjHzvTNwFIV2stQ5THrhj2z1Zkc1JFnY7L3NDZirY9FOHhzsLzgIGQMx/exec"
-    : "https://script.google.com/macros/s/AKfycbxplXntV5GS2XYQ7WDYtzJ-Ifl6FMcK2_jrcUDRuwAHtGsVwAZmyB79p9pxmnsQS2s/exec";
+  if (!rawUrl) {
+    return { ok: false, detail: "Treatment script URL is not configured." };
+  }
   const scriptUrl =
     rawUrl && (rawUrl.startsWith("http://") || rawUrl.startsWith("https://"))
       ? rawUrl
-      : fallbackUrl;
+      : null;
+  if (!scriptUrl) {
+    return { ok: false, detail: "Treatment script URL is invalid." };
+  }
 
   try {
     const controller = new AbortController();

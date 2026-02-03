@@ -3,6 +3,7 @@ import { useTranslation } from "next-i18next";
 import Link from "next/link";
 import { getActiveLeadForm } from "@/lib/data/leadForms";
 import { validatePhoneNumber } from "@/lib/utils/phone";
+import { getLeadAuthHeaders } from "@/lib/utils/leadAuthClient";
 
 export default function PromoLeadForm() {
   const { t, i18n } = useTranslation("home");
@@ -42,7 +43,7 @@ export default function PromoLeadForm() {
   const sendPendingLead = (payloadString) =>
     fetch("/api/lead-promo", {
       method: "POST",
-      headers: { "Content-Type": "application/json" },
+      headers: { "Content-Type": "application/json", ...getLeadAuthHeaders() },
       body: payloadString,
       keepalive: true,
     });

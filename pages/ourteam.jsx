@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Image from "next/image";
 
 // Shared components
 import Header from "@/components/Header";
@@ -14,9 +13,10 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import nextI18NextConfig from "../next-i18next.config";
 import { useTranslation } from "next-i18next";
 import { useRouter } from "next/router";
+import { getLocalized } from "@/lib/i18n/getLocalized";
 
 
-export default function TeamPage() {
+export default function TeamPage({ teamCategories = [] }) {
   const { t } = useTranslation("team");
   const { asPath, locale } = useRouter();
 
@@ -137,7 +137,7 @@ export default function TeamPage() {
         </div>
 
         {/* Team */}
-        <Team />
+        <Team categories={teamCategories} />
         <InstagramFeed />
         <ReviewsSection />
         <Footer />
@@ -148,8 +148,37 @@ export default function TeamPage() {
 }
 
 export async function getStaticProps({ locale }) {
+  const { allStaff } = await import("@/lib/data/allStaff");
+  const currentLocale = locale || "en";
+  const localize = (field) => getLocalized(field, currentLocale);
+
+  const categoriesMap = {};
+  allStaff.forEach((s) => {
+    const categoryLabel = localize(s.category || s.title || "Team");
+    const title = localize(s.title);
+    const displayName = localize(s.displayName);
+    const bio = localize(s.bio);
+    const key = categoryLabel || "Team";
+    if (!categoriesMap[key]) {
+      categoriesMap[key] = {
+        category: key,
+        staff: [],
+      };
+    }
+    categoriesMap[key].staff.push({
+      name: displayName,
+      slug: s.name,
+      image: s.image || "/placeholder.jpg",
+      title,
+      description: bio,
+    });
+  });
+
+  const teamCategories = Object.values(categoriesMap);
+
   return {
     props: {
+      teamCategories,
       ...(await serverSideTranslations(locale ?? "en", ["layout", "team", "home"], nextI18NextConfig)),
     },
   };

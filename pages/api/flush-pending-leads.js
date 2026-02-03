@@ -1,11 +1,24 @@
 import { redis } from "@/lib/redis";
+import { rateLimit } from "@/lib/server/leadSecurity";
 
 export default async function handler(req, res) {
+  if (req.method !== "POST") {
+    return res.status(405).json({ error: "Method not allowed" });
+  }
+
   const auth = req.headers.authorization || "";
   const token = process.env.CRON_SECRET || "";
   if (!token || auth !== `Bearer ${token}`) {
     return res.status(401).json({ error: "Unauthorized" });
   }
+
+  const limit = await rateLimit(req, { key: "flush-pending-leads", limit: 6, windowSec: 60 * 60 });
+  if (!limit.ok) {
+    return res.status(limit.status).json({ error: limit.error });
+  }
+  res.setHeader("X-RateLimit-Limit", limit.limit);
+  res.setHeader("X-RateLimit-Remaining", limit.remaining);
+  res.setHeader("X-RateLimit-Reset", limit.reset);
 
   const pendingSetKey = "pending:leads";
 
@@ -90,19 +103,16 @@ async function tryWriteToSheets(payload) {
     : isPromo
     ? process.env.GOOGLE_SCRIPT_PROMO_URL || process.env.GOOGLE_PROMO_SCRIPT_URL
     : process.env.GOOGLE_SCRIPT_TREATMENT_URL;
-  const fallbackUrl = isRfCandidacy
-    ? "https://script.google.com/macros/s/AKfycbwMSvX_5blsHgx6bIa9MxseP9s0hXRplnNcLhSEA4OtsdB67g9yMcWIyf0t0zaPGs7K/exec"
-    : isSculptraCandidacy
-    ? "https://script.google.com/macros/s/AKfycbzUU2Y-jPcNwJ5q126k3k6WwEZJGkn4yZY-HQZrrLpqVL8UCfGVqQzxA6Xw1ytYoWYw/exec"
-    : isSculptraRfPackage
-    ? "https://script.google.com/macros/s/AKfycbxG_CBT1dWnQjHzvTNwFIV2stQ5THrhj2z1Zkc1JFnY7L3NDZirY9FOHhzsLzgIGQMx/exec"
-    : isPromo
-    ? "https://script.google.com/macros/s/AKfycbxJpnMq0ltjATpVoQ6Pr_r5SosD9ToINfvPTTcD0Tg-h9SqfG5jRzTkcyWxf8ZfFBE/exec"
-    : "https://script.google.com/macros/s/AKfycbxplXntV5GS2XYQ7WDYtzJ-Ifl6FMcK2_jrcUDRuwAHtGsVwAZmyB79p9pxmnsQS2s/exec";
+  if (!rawUrl) {
+    return { ok: false, detail: "Sheet script URL is not configured." };
+  }
   const scriptUrl =
     rawUrl && (rawUrl.startsWith("http://") || rawUrl.startsWith("https://"))
       ? rawUrl
-      : fallbackUrl;
+      : null;
+  if (!scriptUrl) {
+    return { ok: false, detail: "Sheet script URL is invalid." };
+  }
 
   try {
     const controller = new AbortController();

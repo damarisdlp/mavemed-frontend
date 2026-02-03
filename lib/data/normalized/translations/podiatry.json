@@ -36,7 +36,7 @@
   },
   {
     "id": "svc.nail_fungus_laser.name",
-    "en": "Laser Nail Fungus Treatment",
+    "en": "Láser Nail Fungus Treatment",
     "es": "Tratamiento Láser para Hongos en las Uñas"
   },
   {
@@ -46,8 +46,8 @@
   },
   {
     "id": "svc.nail_fungus_laser.details",
-    "en": "Laser nail fungus treatment uses targeted light energy (K-Laser Blue Derma) to penetrate the nail and destroy fungal infections at the root without harming surrounding tissue. The treatment is safe, effective, and requires no downtime. A typical protocol includes 68 sessions spaced 23 weeks apart for optimal results.",
-    "es": "El tratamiento láser para hongos utiliza energía lumínica dirigida (K-Laser Blue Derma) que penetra la uña y destruye la infección fúngica desde la raíz sin dañar el tejido circundante. Es un tratamiento seguro, eficaz y sin tiempo de recuperación. El protocolo típico incluye de 6 a 8 sesiones cada 2 a 3 semanas."
+    "en": "Láser nail fungus treatment uses targeted light energy (K-Láser Blue Derma) to penetrate the nail and destroy fungal infections at the root without harming surrounding tissue. The treatment is safe, effective, and requires no downtime. A typical protocol includes 6 - 8 sessions spaced 2 - 3 weeks apart for optimal results.",
+    "es": "El tratamiento láser para hongos utiliza energía lumínica dirigida (K-Láser Blue Derma) que penetra la uña y destruye la infección fúngica desde la raíz sin dañar el tejido circundante. Es un tratamiento seguro, eficaz y sin tiempo de recuperación. El protocolo típico incluye de 6 a 8 sesiones cada 2 a 3 semanas."
   },
   {
     "id": "svc.toenail_extraction.name",

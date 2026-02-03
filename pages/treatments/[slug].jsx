@@ -1,7 +1,6 @@
 import { useRouter } from "next/router";
 import Head from "next/head";
 import NextLink from "next/link";
-import { allTreatments } from "@/lib/data/allTreatments";
 
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -18,35 +17,16 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import SeoLinks from "@/components/SeoLinks";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import nextI18NextConfig from "../../next-i18next.config";
+import { useTranslation } from "next-i18next";
+import { getLocalized } from "@/lib/i18n/getLocalized";
 
-const getLocalized = (field, locale) => {
-  if (typeof field === "object" && field !== null) {
-    return field[locale] || field["en"] || "";
-  }
-  return field;
-};
-
-export default function TreatmentPage() {
+export default function TreatmentPage({ treatment, packageGroups = [], addonTreatments = [] }) {
   const router = useRouter();
-  const { slug } = router.query;
+  const { t } = useTranslation("treatments");
 
   const currentLocale = typeof router.locale === "string" ? router.locale : "en";
+  const localize = (field) => getLocalized(field, currentLocale);
   const { asPath } = router;
-
-  console.log("Slug:", slug);
-  console.log("Locale:", currentLocale);
-  console.log(
-    "All treatments:",
-    allTreatments.filter(Boolean).map((t) => t.urlSlug)
-  );
-
-  if (!router.isReady) {
-    return <p className="text-center mt-10">Loading...</p>;
-  }
-
-  const treatment = allTreatments.find(
-    (t) => t && t.urlSlug === slug
-  );
 
   if (!treatment) {
     return (
@@ -63,25 +43,17 @@ export default function TreatmentPage() {
     );
   }
 
-  const localizedName = getLocalized(
+  const localizedName = localize(
     treatment.displayName || treatment.serviceDisplayName,
-    currentLocale
   );
-  const localizedDescription = getLocalized(treatment.description, currentLocale);
+  const localizedDescription = localize(treatment.description);
   const isRfMicroneedling = treatment.urlSlug === "sylfirm-rf-microneedling";
-  const candidacyCopy = {
-    en: {
-      title: "RF Microneedling Candidacy Assessment",
-      subtitle: "Reviewed by a medical team before treatment planning.",
-      cta: "Start assessment",
-    },
-    es: {
-      title: "Evaluación de Candidatura para RF Microneedling",
-      subtitle: "Revisado por un equipo médico antes de planear tratamiento.",
-      cta: "Iniciar evaluación",
-    },
+  const candidacy = {
+    label: t("rfCandidacy.label"),
+    title: t("rfCandidacy.title"),
+    subtitle: t("rfCandidacy.subtitle"),
+    cta: t("rfCandidacy.cta"),
   };
-  const candidacy = candidacyCopy[currentLocale] || candidacyCopy.en;
 
   return (
     <>
@@ -107,13 +79,13 @@ export default function TreatmentPage() {
             ]}
           />
           {/* locale prop is optional but useful if children need to localize too */}
-          <TreatmentDetails treatment={treatment} locale={currentLocale} />
+          <TreatmentDetails treatment={treatment} locale={currentLocale} packageGroups={packageGroups} />
           {isRfMicroneedling && (
             <div className="max-w-5xl mx-auto px-6 pb-8">
               <div className="border border-gray-200 bg-white rounded-2xl p-5 flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
                 <div>
                   <p className="text-xs uppercase tracking-[0.2em] text-gray-500">
-                    {currentLocale === "es" ? "Candidatura" : "Candidacy"}
+                    {candidacy.label}
                   </p>
                   <p className="text-base font-semibold text-black">{candidacy.title}</p>
                   <p className="text-sm text-gray-600">{candidacy.subtitle}</p>
@@ -128,7 +100,12 @@ export default function TreatmentPage() {
               </div>
             </div>
           )}
-          <PricingTable treatment={treatment} locale={currentLocale} />
+          <PricingTable
+            treatment={treatment}
+            locale={currentLocale}
+            addonTreatments={addonTreatments}
+            packageGroups={packageGroups}
+          />
           <WhatToExpect expectations={treatment.expectations} locale={currentLocale} />
           <FAQSection faqs={treatment.faq} locale={currentLocale} />
           <ContactCTA />
@@ -142,10 +119,62 @@ export default function TreatmentPage() {
   );
 }
 
-export async function getServerSideProps({ locale }) {
+export async function getStaticPaths({ locales = [] }) {
+  const { allTreatments } = await import("@/lib/data/allTreatments");
+  const paths = allTreatments
+    .filter((t) => t?.urlSlug)
+    .flatMap((t) =>
+      locales.map((loc) => ({
+        params: { slug: t.urlSlug },
+        locale: loc,
+      }))
+    );
+  return { paths, fallback: "blocking" };
+}
+
+export async function getStaticProps({ locale, params }) {
+  const { allTreatments } = await import("@/lib/data/allTreatments");
+  const { getPackageGroupsForTreatment } = await import("@/lib/utils/linkedPackages");
+  const treatment = allTreatments.find((t) => t?.urlSlug === params?.slug);
+  if (!treatment) {
+    return { notFound: true };
+  }
+
+  const addonTreatments = Array.from(
+    new Map(
+      (treatment.addOns || [])
+        .map((addon) => {
+          const match = allTreatments.find((t) => t?.urlSlug === addon.treatmentSlug);
+          if (!match) return null;
+          return [
+            match.urlSlug,
+            {
+              urlSlug: match.urlSlug,
+              serviceDisplayName: match.serviceDisplayName,
+              displayName: match.displayName ?? match.serviceDisplayName ?? null,
+              description: match.description,
+              images: match.images,
+              pricing: match.pricing,
+              promoDetails: match.promoDetails,
+              isPromoActive: match.isPromoActive,
+            },
+          ];
+        })
+        .filter(Boolean)
+    ).values()
+  );
+
+  const packageGroups = getPackageGroupsForTreatment(treatment, locale);
   return {
     props: {
-      ...(await serverSideTranslations(locale ?? "en", ["layout", "home"], nextI18NextConfig)),
+      treatment,
+      packageGroups,
+      addonTreatments,
+      ...(await serverSideTranslations(
+        locale ?? "en",
+        ["layout", "home", "treatments"],
+        nextI18NextConfig
+      )),
     },
   };
 }

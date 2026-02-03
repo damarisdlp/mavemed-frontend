@@ -1,27 +1,22 @@
 import { useMemo, useState } from "react";
 import { useRouter } from "next/router";
+import { useTranslation } from "next-i18next";
+import { getLocalized } from "@/lib/i18n/getLocalized";
 
 export default function TreatmentInfoTabs({ treatment, locale: propLocale }) {
   const { locale: routerLocale } = useRouter();
   const locale = propLocale || routerLocale || "en";
+  const { t } = useTranslation("treatments");
 
-  const getLocalized = (field) => {
-    if (field == null) return "";
-    if (typeof field === "object") {
-      if (field[locale]) return field[locale];
-      if (field.en) return field.en;
-      return "";
-    }
-    return field;
-  };
+  const localize = (field) => getLocalized(field, locale);
 
   const tabs = useMemo(() => {
-    const detailsLabel = locale === "es" ? "Detalles" : "Details";
-    const goalsLabel = locale === "es" ? "Objetivos" : "Goals";
-    const areasLabel = locale === "es" ? "Zonas Tratables" : "Treatable Areas";
-    const locationsLabel = locale === "es" ? "Sucursales Disponibles" : "Available Locations";
+    const detailsLabel = t("treatmentInfoTabs.details");
+    const goalsLabel = t("treatmentInfoTabs.goals");
+    const areasLabel = t("treatmentInfoTabs.areas");
+    const locationsLabel = t("treatmentInfoTabs.locations");
 
-    const details = getLocalized(treatment?.details);
+    const details = localize(treatment?.details);
     const notes = treatment?.notes || [];
     const goals = treatment?.goals || [];
     const areas = treatment?.treatableAreas || [];
@@ -79,13 +74,13 @@ export default function TreatmentInfoTabs({ treatment, locale: propLocale }) {
               activeTab.type === "text" ? (
                 <div className="space-y-4">
                   <p className="text-base text-[#2f2316] leading-relaxed">
-                    {getLocalized(activeTab.items[0])}
+                    {localize(activeTab.items[0])}
                   </p>
                   {activeTab.notes?.length > 0 && (
                     <ul className="list-disc list-outside pl-5 space-y-2 text-base text-[#2f2316] italic">
                       {activeTab.notes.map((note, idx) => (
                         <li key={idx} className="leading-relaxed">
-                          {getLocalized(note)}
+                          {localize(note)}
                         </li>
                       ))}
                     </ul>
@@ -99,14 +94,14 @@ export default function TreatmentInfoTabs({ treatment, locale: propLocale }) {
                 >
                   {activeTab.items.map((item, idx) => (
                     <li key={idx} className="leading-relaxed break-inside-avoid">
-                      {getLocalized(item)}
+                      {localize(item)}
                     </li>
                   ))}
                 </ul>
               )
             ) : (
               <p className="text-[#2f2316] text-base">
-                {locale === "es" ? "Próximamente" : "Details coming soon."}
+                {t("treatmentInfoTabs.comingSoon")}
               </p>
             )}
           </div>

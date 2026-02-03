@@ -1,12 +1,14 @@
 import Head from "next/head";
-import { allTreatments } from "@/lib/data/allTreatments";
+import { getLocalized } from "@/lib/i18n/getLocalized";
 
 const FALLBACK_TOKEN = "Gettrippy1111";
 
 const getLocalizedEn = (field) => {
   if (field == null) return "";
-  if (typeof field === "object") return field.en || field.es || "";
-  return field;
+  if (typeof field === "object" && field.text && typeof field.text === "object") {
+    return getLocalized(field.text, "en");
+  }
+  return getLocalized(field, "en");
 };
 
 const normalizeName = (value) =>
@@ -15,7 +17,7 @@ const normalizeName = (value) =>
     .trim()
     .toLowerCase();
 
-const buildPackageReport = () => {
+const buildPackageReport = (allTreatments) => {
   const packageMap = new Map();
 
   allTreatments.forEach((treatment) => {
@@ -98,7 +100,8 @@ export async function getServerSideProps({ query }) {
     };
   }
 
-  const report = buildPackageReport();
+  const { allTreatments } = await import("@/lib/data/allTreatments");
+  const report = buildPackageReport(allTreatments);
 
   return {
     props: {

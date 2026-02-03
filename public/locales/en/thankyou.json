@@ -1,0 +1,37 @@
+{
+  "shared": {
+    "title": "Thank You",
+    "ctaWhatsapp": "Continue on WhatsApp",
+    "returnHome": "Return Home",
+    "viewTreatments": "View Treatments",
+    "treatmentLabel": "Treatment:"
+  },
+  "rfMicroneedling": {
+    "subtitle": "Your candidacy assessment has been received.",
+    "bodyLine1": "Our team will review your information and contact you.",
+    "bodyLine2": "If RF microneedling isn't the best option, we'll guide you to safer alternatives."
+  },
+  "sculptra": {
+    "subtitle": "Your Sculptra candidacy assessment has been received.",
+    "bodyLine1": "Our team will review your information and contact you.",
+    "bodyLine2": "If Sculptra isn't the best option, we'll guide you to safer alternatives."
+  },
+  "sculptraRf": {
+    "subtitle": "Your Sculptra + RF package candidacy assessment has been received.",
+    "bodyLine1": "Our team will review your information and contact you.",
+    "bodyLine2": "If the package isn't the best option, we'll guide you to safer alternatives."
+  },
+  "treatment": {
+    "subtitle": "Your request has been received.",
+    "bodyLine1": "Our team will review your information and contact shortly.",
+    "bodyLine2": "If your request needs additional details, we'll let you know.",
+    "whatsapp": {
+      "intro": "Hi, I'd like to request an appointment.",
+      "name": "Name: {{name}}",
+      "treatment": "Treatment: {{service}}",
+      "availability": "Availability: {{days}}, {{times}}",
+      "anyDay": "any day",
+      "anyTime": "any time"
+    }
+  }
+}
