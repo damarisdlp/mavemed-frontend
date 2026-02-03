@@ -4,37 +4,69 @@
     "serviceId": "svc_botox",
     "nameKey": "opt.botox.per_unit",
     "price": {
-      "amount": 6.25,
+      "amount": 7.75,
       "currency": "USD"
     },
     "isOptionPromoActive": true,
     "promoPrice": {
-      "amount": 5.56,
+      "amount": 7.50,
       "currency": "USD"
     },
     "priceTextKey": "",
     "notesKeys": [
-      "note.botox.any_zone",
-      "note.botox.package_only"
+      "note.botox.any_zone"
     ]
+  },
+  {
+    "id": "opt_botox_45_unit_pack",
+    "serviceId": "svc_botox",
+    "nameKey": "promo.botox.option_name",
+    "optionType": "package",
+    "price": {
+      "amount": 320,
+      "currency": "USD"
+    },
+    "isOptionPromoActive": true,
+    "promoPrice": {
+      "amount": 320,
+      "currency": "USD"
+    },
+    "priceTextKey": "",
+    "notesKeys": []
   },
   {
     "id": "opt_dermawrinkle_per_unit",
     "serviceId": "svc_dermawrinkle",
     "nameKey": "opt.dermawrinkle.per_unit",
     "price": {
-      "amount": 4.75,
+      "amount": 5.25,
       "currency": "USD"
     },
     "isOptionPromoActive": true,
     "promoPrice": {
-      "amount": 4.44,
+      "amount": 5.25,
       "currency": "USD"
     },
     "priceTextKey": "",
     "notesKeys": [
-      "note.dermawrinkle.any_zone",
-      "note.dermawrinkle.package_only"
+      "note.dermawrinkle.any_zone"
     ]
+  },
+  {
+    "id": "opt_dermawrinkle_45_unit_pack",
+    "serviceId": "svc_dermawrinkle",
+    "nameKey": "promo.dermawrinkle.option_name",
+    "optionType": "package",
+    "price": {
+      "amount": 225,
+      "currency": "USD"
+    },
+    "isOptionPromoActive": true,
+    "promoPrice": {
+      "amount": 225,
+      "currency": "USD"
+    },
+    "priceTextKey": "",
+    "notesKeys": []
   }
 ]
