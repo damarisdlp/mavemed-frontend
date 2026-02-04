@@ -26,6 +26,13 @@ export default function ThankYouRFMicroneedling() {
         <title>{title}</title>
         <meta name="description" content={description} />
         <link rel="canonical" href={canonical} />
+        {/* Google Ads conversion tag: Submit lead form (1) */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html:
+              "gtag('event', 'conversion', {'send_to': 'AW-17411135904/gUVeCN2HmPIbEKCzo-5A'});",
+          }}
+        />
       </Head>
       <PromoBanner />
       <Header />
