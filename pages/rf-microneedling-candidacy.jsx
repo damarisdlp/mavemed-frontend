@@ -179,6 +179,9 @@ export default function RfMicroneedlingCandidacy() {
       thankYouPathEs="/es/thank-you-rf-microneedling"
       showDeviceSection
       deviceLinkHref="/learn/sylfirm-x-rf-microneedling"
+      heroVideoSrc="/sylfirmx.mp4"
+      heroVideoLabel="Sylfirm X RF microneedling video"
+      heroVideoPoster="/sylfirmx.jpg"
     />
   );
 }
