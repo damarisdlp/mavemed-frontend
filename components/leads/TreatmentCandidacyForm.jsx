@@ -6,8 +6,6 @@ import { useTranslation } from "next-i18next";
 import PromoBanner from "@/components/PromoBanner";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import InstagramFeed from "@/components/InstagramFeed";
-import ReviewsSection from "@/components/ReviewsSection";
 import { validatePhoneNumber } from "@/lib/utils/phone";
 import { getLeadAuthHeaders } from "@/lib/utils/leadAuthClient";
 
@@ -35,6 +33,9 @@ export default function TreatmentCandidacyForm({
   showDeviceSection = true,
   deviceLinkHref = "/learn/sylfirm-x-rf-microneedling",
   showPackageTiming = false,
+  heroVideoSrc = "",
+  heroVideoLabel = "Treatment video",
+  heroVideoPoster = "",
 }) {
   const router = useRouter();
   const { locale = "en" } = router;
@@ -503,6 +504,23 @@ export default function TreatmentCandidacyForm({
       <PromoBanner />
       <Header />
       <main className="bg-white pt-36 md:pt-40">
+        {heroVideoSrc ? (
+          <section className="max-w-4xl mx-auto px-6 pt-6 pb-4">
+            <div className="overflow-hidden rounded-2xl border border-gray-200 bg-black shadow-sm">
+              <video
+                className="w-full h-auto"
+                src={heroVideoSrc}
+                controls
+                autoPlay
+                muted
+                playsInline
+                preload="metadata"
+                aria-label={heroVideoLabel}
+                poster={heroVideoPoster || undefined}
+              />
+            </div>
+          </section>
+        ) : null}
         <section className="max-w-5xl mx-auto px-6 py-12">
           <div className="text-center max-w-3xl mx-auto">
             <h1 className="text-3xl md:text-4xl font-serif text-black">{copy.title}</h1>
