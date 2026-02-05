@@ -915,8 +915,6 @@ export default function TreatmentCandidacyForm({
             ) : null}
           </div>
         </section>
-        <InstagramFeed />
-        <ReviewsSection />
       </main>
       <Footer />
     </>
