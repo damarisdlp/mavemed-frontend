@@ -80,7 +80,7 @@ const buildPromoCategories = (allTreatments, locale, options = {}) => {
   const packageKeysByCategory = new Map();
   promoTreatments.forEach((t) => {
     const promoDetails = t.promoDetails || null;
-    const promoOptions = getPromoOptions(t, locale);
+    const promoOptions = getPromoOptions(t, locale, { excludeLinkedPackageOptions: true });
     const isMicroneedlingCategory = isMicroneedlingCategoryFn(t);
     const linkedPackageIds = isMicroneedlingCategory
       ? Array.from(
