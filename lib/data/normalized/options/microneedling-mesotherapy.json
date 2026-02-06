@@ -8,7 +8,10 @@
       "currency": "USD"
     },
     "isOptionPromoActive": true,
-    "promoPrice": null,
+    "promoPrice": {
+      "amount": 130,
+      "currency": "USD"
+    },
     "priceTextKey": "",
     "filterGroupKey": "prp",
     "notesKeys": [
@@ -29,7 +32,10 @@
       "currency": "USD"
     },
     "isOptionPromoActive": true,
-    "promoPrice": null,
+    "promoPrice": {
+      "amount": 150,
+      "currency": "USD"
+    },
     "priceTextKey": "",
     "filterGroupKey": "prp",
     "notesKeys": [
@@ -50,7 +56,10 @@
       "currency": "USD"
     },
     "isOptionPromoActive": true,
-    "promoPrice": null,
+    "promoPrice": {
+      "amount": 170,
+      "currency": "USD"
+    },
     "priceTextKey": "",
     "filterGroupKey": "prp",
     "notesKeys": [
@@ -71,7 +80,10 @@
       "currency": "USD"
     },
     "isOptionPromoActive": true,
-    "promoPrice": null,
+    "promoPrice": {
+      "amount": 120,
+      "currency": "USD"
+    },
     "priceTextKey": "",
     "filterGroupKey": "prp",
     "notesKeys": [
@@ -93,7 +105,10 @@
       "currency": "USD"
     },
     "isOptionPromoActive": true,
-    "promoPrice": null,
+    "promoPrice": {
+      "amount": 160,
+      "currency": "USD"
+    },
     "priceTextKey": "",
     "filterGroupKey": "prp",
     "notesKeys": [
@@ -115,7 +130,10 @@
       "currency": "USD"
     },
     "isOptionPromoActive": true,
-    "promoPrice": null,
+    "promoPrice": {
+      "amount": 195,
+      "currency": "USD"
+    },
     "priceTextKey": "",
     "filterGroupKey": "prp",
     "notesKeys": [
@@ -137,7 +155,10 @@
       "currency": "USD"
     },
     "isOptionPromoActive": true,
-    "promoPrice": null,
+    "promoPrice": {
+      "amount": 245,
+      "currency": "USD"
+    },
     "priceTextKey": "",
     "filterGroupKey": "pn",
     "linkedPackageIds": [
@@ -159,7 +180,10 @@
       "currency": "USD"
     },
     "isOptionPromoActive": true,
-    "promoPrice": null,
+    "promoPrice": {
+      "amount": 395,
+      "currency": "USD"
+    },
     "priceTextKey": "",
     "filterGroupKey": "pn",
     "linkedPackageIds": [
@@ -181,7 +205,10 @@
       "currency": "USD"
     },
     "isOptionPromoActive": true,
-    "promoPrice": null,
+    "promoPrice": {
+      "amount": 500,
+      "currency": "USD"
+    },
     "priceTextKey": "",
     "filterGroupKey": "pn",
     "linkedPackageIds": [
@@ -203,7 +230,10 @@
       "currency": "USD"
     },
     "isOptionPromoActive": true,
-    "promoPrice": null,
+    "promoPrice": {
+      "amount": 225,
+      "currency": "USD"
+    },
     "priceTextKey": "",
     "filterGroupKey": "pn",
     "linkedPackageIds": [
@@ -226,7 +256,10 @@
       "currency": "USD"
     },
     "isOptionPromoActive": true,
-    "promoPrice": null,
+    "promoPrice": {
+      "amount": 425,
+      "currency": "USD"
+    },
     "priceTextKey": "",
     "filterGroupKey": "pn",
     "linkedPackageIds": [
@@ -249,7 +282,10 @@
       "currency": "USD"
     },
     "isOptionPromoActive": true,
-    "promoPrice": null,
+    "promoPrice": {
+      "amount": 520,
+      "currency": "USD"
+    },
     "priceTextKey": "",
     "filterGroupKey": "pn",
     "linkedPackageIds": [
@@ -272,7 +308,10 @@
       "currency": "USD"
     },
     "isOptionPromoActive": true,
-    "promoPrice": null,
+    "promoPrice": {
+      "amount": 145,
+      "currency": "USD"
+    },
     "priceTextKey": "",
     "filterGroupKey": "pdrn",
     "notesKeys": [
@@ -294,7 +333,10 @@
       "currency": "USD"
     },
     "isOptionPromoActive": true,
-    "promoPrice": null,
+    "promoPrice": {
+      "amount": 200,
+      "currency": "USD"
+    },
     "priceTextKey": "",
     "filterGroupKey": "pdrn",
     "notesKeys": [
@@ -316,7 +358,10 @@
       "currency": "USD"
     },
     "isOptionPromoActive": true,
-    "promoPrice": null,
+    "promoPrice": {
+      "amount": 295,
+      "currency": "USD"
+    },
     "priceTextKey": "",
     "filterGroupKey": "pdrn",
     "notesKeys": [
@@ -338,7 +383,10 @@
       "currency": "USD"
     },
     "isOptionPromoActive": true,
-    "promoPrice": null,
+    "promoPrice": {
+      "amount": 130,
+      "currency": "USD"
+    },
     "priceTextKey": "",
     "filterGroupKey": "pdrn",
     "notesKeys": [
@@ -361,7 +409,10 @@
       "currency": "USD"
     },
     "isOptionPromoActive": true,
-    "promoPrice": null,
+    "promoPrice": {
+      "amount": 145,
+      "currency": "USD"
+    },
     "priceTextKey": "",
     "filterGroupKey": "pdrn",
     "notesKeys": [
@@ -384,7 +435,10 @@
       "currency": "USD"
     },
     "isOptionPromoActive": true,
-    "promoPrice": null,
+    "promoPrice": {
+      "amount": 300,
+      "currency": "USD"
+    },
     "priceTextKey": "",
     "filterGroupKey": "pdrn",
     "notesKeys": [
@@ -665,7 +719,10 @@
       "currency": "USD"
     },
     "isOptionPromoActive": true,
-    "promoPrice": null,
+    "promoPrice": {
+      "amount": 130,
+      "currency": "USD"
+    },
     "priceTextKey": "",
     "filterGroupKey": "prp",
     "notesKeys": [
@@ -686,7 +743,10 @@
       "currency": "USD"
     },
     "isOptionPromoActive": true,
-    "promoPrice": null,
+    "promoPrice": {
+      "amount": 150,
+      "currency": "USD"
+    },
     "priceTextKey": "",
     "filterGroupKey": "prp",
     "notesKeys": [
@@ -707,7 +767,10 @@
       "currency": "USD"
     },
     "isOptionPromoActive": true,
-    "promoPrice": null,
+    "promoPrice": {
+      "amount": 170,
+      "currency": "USD"
+    },
     "priceTextKey": "",
     "filterGroupKey": "prp",
     "notesKeys": [
@@ -727,8 +790,11 @@
       "amount": 90,
       "currency": "USD"
     },
-    "isOptionPromoActive": false,
-    "promoPrice": null,
+    "isOptionPromoActive": true,
+    "promoPrice": {
+      "amount": 75,
+      "currency": "USD"
+    },
     "priceTextKey": "",
     "filterGroupKey": "prp",
     "notesKeys": [
@@ -748,8 +814,11 @@
       "amount": 155,
       "currency": "USD"
     },
-    "isOptionPromoActive": false,
-    "promoPrice": null,
+    "isOptionPromoActive": true,
+    "promoPrice": {
+      "amount": 130,
+      "currency": "USD"
+    },
     "priceTextKey": "",
     "filterGroupKey": "prp",
     "notesKeys": [
@@ -770,7 +839,10 @@
       "currency": "USD"
     },
     "isOptionPromoActive": true,
-    "promoPrice": null,
+    "promoPrice": {
+      "amount": 120,
+      "currency": "USD"
+    },
     "priceTextKey": "",
     "filterGroupKey": "prp",
     "notesKeys": [
@@ -792,7 +864,10 @@
       "currency": "USD"
     },
     "isOptionPromoActive": true,
-    "promoPrice": null,
+    "promoPrice": {
+      "amount": 160,
+      "currency": "USD"
+    },
     "priceTextKey": "",
     "filterGroupKey": "prp",
     "notesKeys": [
@@ -814,7 +889,10 @@
       "currency": "USD"
     },
     "isOptionPromoActive": true,
-    "promoPrice": null,
+    "promoPrice": {
+      "amount": 195,
+      "currency": "USD"
+    },
     "priceTextKey": "",
     "filterGroupKey": "prp",
     "notesKeys": [
@@ -836,7 +914,10 @@
       "currency": "USD"
     },
     "isOptionPromoActive": true,
-    "promoPrice": null,
+    "promoPrice": {
+      "amount": 245,
+      "currency": "USD"
+    },
     "priceTextKey": "",
     "filterGroupKey": "pn",
     "linkedPackageIds": [
@@ -858,7 +939,10 @@
       "currency": "USD"
     },
     "isOptionPromoActive": true,
-    "promoPrice": null,
+    "promoPrice": {
+      "amount": 395,
+      "currency": "USD"
+    },
     "priceTextKey": "",
     "filterGroupKey": "pn",
     "linkedPackageIds": [
@@ -880,7 +964,10 @@
       "currency": "USD"
     },
     "isOptionPromoActive": true,
-    "promoPrice": null,
+    "promoPrice": {
+      "amount": 500,
+      "currency": "USD"
+    },
     "priceTextKey": "",
     "filterGroupKey": "pn",
     "linkedPackageIds": [
@@ -902,7 +989,10 @@
       "currency": "USD"
     },
     "isOptionPromoActive": true,
-    "promoPrice": null,
+    "promoPrice": {
+      "amount": 225,
+      "currency": "USD"
+    },
     "priceTextKey": "",
     "filterGroupKey": "pn",
     "linkedPackageIds": [
@@ -925,7 +1015,10 @@
       "currency": "USD"
     },
     "isOptionPromoActive": true,
-    "promoPrice": null,
+    "promoPrice": {
+      "amount": 425,
+      "currency": "USD"
+    },
     "priceTextKey": "",
     "filterGroupKey": "pn",
     "linkedPackageIds": [
@@ -948,7 +1041,10 @@
       "currency": "USD"
     },
     "isOptionPromoActive": true,
-    "promoPrice": null,
+    "promoPrice": {
+      "amount": 520,
+      "currency": "USD"
+    },
     "priceTextKey": "",
     "filterGroupKey": "pn",
     "linkedPackageIds": [
@@ -971,7 +1067,10 @@
       "currency": "USD"
     },
     "isOptionPromoActive": true,
-    "promoPrice": null,
+    "promoPrice": {
+      "amount": 145,
+      "currency": "USD"
+    },
     "priceTextKey": "",
     "filterGroupKey": "pdrn",
     "notesKeys": [
@@ -993,7 +1092,10 @@
       "currency": "USD"
     },
     "isOptionPromoActive": true,
-    "promoPrice": null,
+    "promoPrice": {
+      "amount": 200,
+      "currency": "USD"
+    },
     "priceTextKey": "",
     "filterGroupKey": "pdrn",
     "notesKeys": [
@@ -1015,7 +1117,10 @@
       "currency": "USD"
     },
     "isOptionPromoActive": true,
-    "promoPrice": null,
+    "promoPrice": {
+      "amount": 295,
+      "currency": "USD"
+    },
     "priceTextKey": "",
     "filterGroupKey": "pdrn",
     "notesKeys": [
@@ -1037,7 +1142,10 @@
       "currency": "USD"
     },
     "isOptionPromoActive": true,
-    "promoPrice": null,
+    "promoPrice": {
+      "amount": 130,
+      "currency": "USD"
+    },
     "priceTextKey": "",
     "filterGroupKey": "pdrn",
     "notesKeys": [
@@ -1060,7 +1168,10 @@
       "currency": "USD"
     },
     "isOptionPromoActive": true,
-    "promoPrice": null,
+    "promoPrice": {
+      "amount": 145,
+      "currency": "USD"
+    },
     "priceTextKey": "",
     "filterGroupKey": "pdrn",
     "notesKeys": [
@@ -1083,7 +1194,10 @@
       "currency": "USD"
     },
     "isOptionPromoActive": true,
-    "promoPrice": null,
+    "promoPrice": {
+      "amount": 300,
+      "currency": "USD"
+    },
     "priceTextKey": "",
     "filterGroupKey": "pdrn",
     "notesKeys": [
