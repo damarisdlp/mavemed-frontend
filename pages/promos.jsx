@@ -386,7 +386,10 @@ export default function PromosPage({ promoCategories = [] }) {
           <p className="text-gray-700 mb-8 max-w-3xl">
             {t("hero.subtitle")}
           </p>
-          <div className="-mx-4 sm:-mx-6 lg:-mx-8 sticky top-[108px] sm:top-[112px] bg-white z-30 border-b border-gray-200 px-4 sm:px-6 lg:px-8 mb-10">
+          <div
+            className="-mx-4 sm:-mx-6 lg:-mx-8 sticky bg-white z-30 border-b border-gray-200 px-4 sm:px-6 lg:px-8 mb-10"
+            style={{ top: "var(--site-header-offset)" }}
+          >
             <div className="py-4">
               <div className="flex flex-col sm:flex-row sm:items-center gap-3">
                 <label htmlFor="promo-sort" className="text-sm text-gray-600">
