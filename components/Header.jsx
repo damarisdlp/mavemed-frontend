@@ -333,7 +333,7 @@ export default function Header() {
       {isMobileMenuOpen && (
         <nav
           className="lg:hidden fixed left-0 right-0 flex flex-col items-center gap-4 py-3 bg-white border-t border-gray-200 max-h-[calc(100vh-120px)] overflow-y-auto shadow-md z-50"
-          style={{ top: (promoVisible ? PROMO_H : 0) + 105 }}
+          style={{ top: (hasPromoBanner ? PROMO_H : 0) + 105 }}
         >
           <div className="flex items-center gap-2 mb-1">
             <NextLink
