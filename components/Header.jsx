@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import NextLink from "next/link";
 import Image from "next/image";
 import { useTranslation } from "next-i18next";
@@ -20,6 +20,7 @@ export default function Header() {
   const [scrolled, setScrolled] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
   const [canHover, setCanHover] = useState(false);
+  const headerRef = useRef(null);
 
   const { t } = useTranslation("layout");
   const router = useRouter();
@@ -73,6 +74,33 @@ export default function Header() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    if (!headerRef.current) return;
+
+    const updateHeaderOffset = () => {
+      if (!headerRef.current) return;
+      const rect = headerRef.current.getBoundingClientRect();
+      const offset = Math.round(rect.bottom);
+      document.documentElement.style.setProperty("--site-header-offset", `${offset}px`);
+    };
+
+    updateHeaderOffset();
+
+    let resizeObserver = null;
+    if (typeof ResizeObserver !== "undefined") {
+      resizeObserver = new ResizeObserver(() => updateHeaderOffset());
+      resizeObserver.observe(headerRef.current);
+    }
+
+    window.addEventListener("resize", updateHeaderOffset);
+
+    return () => {
+      resizeObserver?.disconnect();
+      window.removeEventListener("resize", updateHeaderOffset);
+    };
+  }, [hasPromoBanner]);
+
   const allowTransparent = !forceSolid;
   const isSolid =
     !allowTransparent || scrolled || isMobileMenuOpen || (canHover && isHovered);
@@ -88,6 +116,7 @@ export default function Header() {
   return (
     <>
       <header
+        ref={headerRef}
         className={[
           "fixed inset-x-0 z-50 transition-all duration-300",
           isSolid
