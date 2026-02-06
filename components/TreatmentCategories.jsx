@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import "keen-slider/keen-slider.min.css";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import { useKeenSlider } from "keen-slider/react";
 import { useTranslation } from "next-i18next";
@@ -128,9 +128,6 @@ export default function TreatmentCategories({ categories = [] }) {
   // Show/hide scroll-to-top button
   const [showScrollTop, setShowScrollTop] = useState(false);
   const [searchTerm, setSearchTerm] = useState("");
-  const categoryMenuRef = useRef(null);
-  const [canScrollLeft, setCanScrollLeft] = useState(false);
-  const [canScrollRight, setCanScrollRight] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -173,29 +170,18 @@ export default function TreatmentCategories({ categories = [] }) {
     })
     .filter((category) => category.services.length > 0);
 
-  useEffect(() => {
-    const el = categoryMenuRef.current;
-    if (!el) return;
-    const update = () => {
-      const maxScrollLeft = el.scrollWidth - el.clientWidth;
-      setCanScrollLeft(el.scrollLeft > 0);
-      setCanScrollRight(el.scrollLeft < maxScrollLeft - 1);
-    };
-    update();
-    el.addEventListener("scroll", update, { passive: true });
-    window.addEventListener("resize", update);
-    return () => {
-      el.removeEventListener("scroll", update);
-      window.removeEventListener("resize", update);
-    };
-  }, [visibleCategories.length]);
+  const [menuRef, menuInstanceRef] = useKeenSlider({
+    loop: true,
+    slides: { perView: "auto", spacing: 12 },
+  });
 
-  const scrollCategoryMenu = (direction) => {
-    const el = categoryMenuRef.current;
-    if (!el) return;
-    const scrollAmount = Math.max(200, Math.round(el.clientWidth * 0.7));
-    el.scrollBy({ left: direction * scrollAmount, behavior: "smooth" });
-  };
+  useEffect(() => {
+    if (!menuInstanceRef.current) return;
+    const handle = window.requestAnimationFrame(() => {
+      menuInstanceRef.current?.update();
+    });
+    return () => window.cancelAnimationFrame(handle);
+  }, [visibleCategories.length, locale]);
 
   return (
     <div className="bg-white scroll-smooth relative">
@@ -234,45 +220,53 @@ export default function TreatmentCategories({ categories = [] }) {
               ) : null}
             </div>
           </div>
-          <div className="relative">
-            {canScrollLeft ? (
-              <button
-                type="button"
-                onClick={() => scrollCategoryMenu(-1)}
-                aria-label={t("treatmentCategories.scrollLeft", {
-                  defaultValue: "Scroll categories left",
-                })}
-                className="absolute left-0 top-1/2 -translate-y-1/2 z-10 h-9 w-9 rounded-full bg-white border border-gray-300 text-black shadow-sm hover:border-black hover:text-[#731a2f] transition flex items-center justify-center"
+          <div className="flex justify-center">
+            <div className="relative w-full">
+              <div
+                id="category-menu"
+                ref={menuRef}
+                className="keen-slider overflow-hidden w-full pb-2 sm:pb-3"
               >
-                ‹
-              </button>
-            ) : null}
-            {canScrollRight ? (
-              <button
-                type="button"
-                onClick={() => scrollCategoryMenu(1)}
-                aria-label={t("treatmentCategories.scrollRight", {
-                  defaultValue: "Scroll categories right",
-                })}
-                className="absolute right-0 top-1/2 -translate-y-1/2 z-10 h-9 w-9 rounded-full bg-white border border-gray-300 text-black shadow-sm hover:border-black hover:text-[#731a2f] transition flex items-center justify-center"
-              >
-                ›
-              </button>
-            ) : null}
-            <div
-              id="category-menu"
-              ref={categoryMenuRef}
-              className="flex flex-nowrap items-center gap-3 sm:gap-4 justify-start overflow-x-auto no-scrollbar px-12 pb-2 sm:pb-3"
-            >
-              {visibleCategories.map((category, i) => (
-                <a
-                  key={i}
-                  href={`#${localize(category.title).replace(/\s+/g, "-").toLowerCase()}`}
-                  className="inline-flex shrink-0 items-center text-sm md:text-base px-4 py-1.5 sm:py-2 rounded-full border border-gray-300 text-black hover:border-black hover:text-[#731a2f] transition whitespace-nowrap min-h-[36px]"
-                >
-                  {localize(category.title)}
-                </a>
-              ))}
+                {visibleCategories.map((category, i) => (
+                  <div
+                    key={i}
+                    className="keen-slider__slide px-2"
+                    style={{ width: "max-content", flex: "0 0 auto" }}
+                  >
+                    <a
+                      href={`#${localize(category.title).replace(/\s+/g, "-").toLowerCase()}`}
+                      className="inline-flex min-w-max items-center text-sm md:text-base px-4 py-1.5 sm:py-2 rounded-full border border-gray-300 text-black hover:border-black hover:text-[#731a2f] transition whitespace-nowrap min-h-[36px]"
+                    >
+                      {localize(category.title)}
+                    </a>
+                  </div>
+                ))}
+              </div>
+
+              {visibleCategories.length > 1 && (
+                <>
+                  <button
+                    type="button"
+                    onClick={() => menuInstanceRef.current?.prev()}
+                    aria-label={t("treatmentCategories.scrollLeft", {
+                      defaultValue: "Scroll categories left",
+                    })}
+                    className="absolute -left-2 md:-left-8 top-1/2 -translate-y-1/2 bg-white border border-gray-300 text-gray-700 rounded-full shadow px-3 py-2 hover:bg-gray-100 z-20"
+                  >
+                    ‹
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => menuInstanceRef.current?.next()}
+                    aria-label={t("treatmentCategories.scrollRight", {
+                      defaultValue: "Scroll categories right",
+                    })}
+                    className="absolute -right-2 md:-right-8 top-1/2 -translate-y-1/2 bg-white border border-gray-300 text-gray-700 rounded-full shadow px-3 py-2 hover:bg-gray-100 z-20"
+                  >
+                    ›
+                  </button>
+                </>
+              )}
             </div>
           </div>
         </div>
