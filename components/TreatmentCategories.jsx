@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import "keen-slider/keen-slider.min.css";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useRouter } from "next/router";
 import { useKeenSlider } from "keen-slider/react";
 import { useTranslation } from "next-i18next";
@@ -128,6 +128,9 @@ export default function TreatmentCategories({ categories = [] }) {
   // Show/hide scroll-to-top button
   const [showScrollTop, setShowScrollTop] = useState(false);
   const [searchTerm, setSearchTerm] = useState("");
+  const categoryMenuRef = useRef(null);
+  const [canScrollLeft, setCanScrollLeft] = useState(false);
+  const [canScrollRight, setCanScrollRight] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -170,6 +173,30 @@ export default function TreatmentCategories({ categories = [] }) {
     })
     .filter((category) => category.services.length > 0);
 
+  useEffect(() => {
+    const el = categoryMenuRef.current;
+    if (!el) return;
+    const update = () => {
+      const maxScrollLeft = el.scrollWidth - el.clientWidth;
+      setCanScrollLeft(el.scrollLeft > 0);
+      setCanScrollRight(el.scrollLeft < maxScrollLeft - 1);
+    };
+    update();
+    el.addEventListener("scroll", update, { passive: true });
+    window.addEventListener("resize", update);
+    return () => {
+      el.removeEventListener("scroll", update);
+      window.removeEventListener("resize", update);
+    };
+  }, [visibleCategories.length]);
+
+  const scrollCategoryMenu = (direction) => {
+    const el = categoryMenuRef.current;
+    if (!el) return;
+    const scrollAmount = Math.max(200, Math.round(el.clientWidth * 0.7));
+    el.scrollBy({ left: direction * scrollAmount, behavior: "smooth" });
+  };
+
   return (
     <div className="bg-white scroll-smooth relative">
       <div className="w-full max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 pb-4">
@@ -207,19 +234,46 @@ export default function TreatmentCategories({ categories = [] }) {
               ) : null}
             </div>
           </div>
-          <div
-            id="category-menu"
-            className="flex flex-nowrap items-center gap-3 sm:gap-4 justify-start overflow-x-auto no-scrollbar px-3 pb-2 sm:pb-3"
-          >
-            {visibleCategories.map((category, i) => (
-              <a
-                key={i}
-                href={`#${localize(category.title).replace(/\s+/g, "-").toLowerCase()}`}
-                className="inline-flex shrink-0 items-center text-sm md:text-base px-4 py-1.5 sm:py-2 rounded-full border border-gray-300 text-black hover:border-black hover:text-[#731a2f] transition whitespace-nowrap min-h-[36px]"
+          <div className="relative">
+            {canScrollLeft ? (
+              <button
+                type="button"
+                onClick={() => scrollCategoryMenu(-1)}
+                aria-label={t("treatmentCategories.scrollLeft", {
+                  defaultValue: "Scroll categories left",
+                })}
+                className="absolute left-0 top-1/2 -translate-y-1/2 z-10 h-9 w-9 rounded-full bg-white border border-gray-300 text-black shadow-sm hover:border-black hover:text-[#731a2f] transition flex items-center justify-center"
               >
-                {localize(category.title)}
-              </a>
-            ))}
+                ‹
+              </button>
+            ) : null}
+            {canScrollRight ? (
+              <button
+                type="button"
+                onClick={() => scrollCategoryMenu(1)}
+                aria-label={t("treatmentCategories.scrollRight", {
+                  defaultValue: "Scroll categories right",
+                })}
+                className="absolute right-0 top-1/2 -translate-y-1/2 z-10 h-9 w-9 rounded-full bg-white border border-gray-300 text-black shadow-sm hover:border-black hover:text-[#731a2f] transition flex items-center justify-center"
+              >
+                ›
+              </button>
+            ) : null}
+            <div
+              id="category-menu"
+              ref={categoryMenuRef}
+              className="flex flex-nowrap items-center gap-3 sm:gap-4 justify-start overflow-x-auto no-scrollbar px-12 pb-2 sm:pb-3"
+            >
+              {visibleCategories.map((category, i) => (
+                <a
+                  key={i}
+                  href={`#${localize(category.title).replace(/\s+/g, "-").toLowerCase()}`}
+                  className="inline-flex shrink-0 items-center text-sm md:text-base px-4 py-1.5 sm:py-2 rounded-full border border-gray-300 text-black hover:border-black hover:text-[#731a2f] transition whitespace-nowrap min-h-[36px]"
+                >
+                  {localize(category.title)}
+                </a>
+              ))}
+            </div>
           </div>
         </div>
 
