@@ -118,7 +118,9 @@ export default function TreatmentDetails({ treatment, packageGroups = [] }) {
   };
 
   const pricing = treatment?.pricing || {};
-  const promoSummary = getPromoSummary(treatment, locale);
+  const promoSummary = getPromoSummary(treatment, locale, {
+    excludeLinkedPackageOptions: true,
+  });
   const promoDetails = treatment?.promoDetails || null;
   const promoFilterConfig = promoDetails?.filterConfig || treatment?.filterConfig || null;
   const promoFilterOrder = ["prp", "pn", "pdrn"];
@@ -340,6 +342,7 @@ export default function TreatmentDetails({ treatment, packageGroups = [] }) {
           groupKey: opt?.groupKey || "",
           packageId: opt?.packageId || "",
           isPackage,
+          linkedPackageIds: pricingMatch?.linkedPackageIds || [],
         };
       });
     }
@@ -356,6 +359,7 @@ export default function TreatmentDetails({ treatment, packageGroups = [] }) {
         notes: cleanNotes(pricingMatch?.notes),
         groupKey: promoOpt.option?.filterGroupKey || "",
         isPackage: promoOpt.option?.optionType === "package",
+        linkedPackageIds: promoOpt.option?.linkedPackageIds || [],
       };
     });
   };
@@ -375,7 +379,9 @@ export default function TreatmentDetails({ treatment, packageGroups = [] }) {
   const basePromoDisplayOptions = buildPromoDisplayOptions();
   const promoDisplayOptions = basePromoDisplayOptions;
   const localPackageOptions = promoDisplayOptions.filter((opt) => opt.isPackage);
-  const servicePromoOptions = promoDisplayOptions.filter((opt) => !opt.isPackage);
+  const servicePromoOptions = promoDisplayOptions.filter(
+    (opt) => !opt.isPackage && !(opt?.linkedPackageIds?.length > 0)
+  );
   const promoValidTillValues = servicePromoOptions
     .map((opt) => opt.validTill)
     .filter((value) => typeof value === "string" && value.trim() !== "");
