@@ -1,8 +1,10 @@
 import Head from "next/head";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import { useTranslation } from "next-i18next";
+import "keen-slider/keen-slider.min.css";
+import { useKeenSlider } from "keen-slider/react";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import nextI18NextConfig from "../next-i18next.config";
 import { getPromoSummary, getPromoOptions } from "@/lib/utils/promo";
@@ -292,6 +294,10 @@ export default function PromosPage({ promoCategories = [] }) {
   const { t } = useTranslation("promos");
   const [sortOption, setSortOption] = useState("default");
   const categories = promoCategories;
+  const [categoryMenuRef, categoryMenuInstanceRef] = useKeenSlider({
+    loop: true,
+    slides: { perView: "auto", spacing: 12 },
+  });
   const sortedCategories =
     sortOption === "default"
       ? categories
@@ -328,6 +334,17 @@ export default function PromosPage({ promoCategories = [] }) {
               compareValues(getCategorySortValue(a.cards), getCategorySortValue(b.cards))
             );
         })();
+  const promoEligibleCategories = sortedCategories.filter(
+    (cat) => Array.isArray(cat.cards) && cat.cards.length > 0
+  );
+
+  useEffect(() => {
+    if (!categoryMenuInstanceRef.current) return;
+    const handle = window.requestAnimationFrame(() => {
+      categoryMenuInstanceRef.current?.update();
+    });
+    return () => window.cancelAnimationFrame(handle);
+  }, [promoEligibleCategories.length, locale]);
 
   return (
     <>
@@ -369,51 +386,108 @@ export default function PromosPage({ promoCategories = [] }) {
           <p className="text-gray-700 mb-8 max-w-3xl">
             {t("hero.subtitle")}
           </p>
-          <div className="flex flex-col sm:flex-row sm:items-center gap-3 mb-8">
-            <label htmlFor="promo-sort" className="text-sm text-gray-600">
-              {t("sort.label")}
-            </label>
-            <div className="relative w-full sm:w-auto">
-              <select
-                id="promo-sort"
-                value={sortOption}
-                onChange={(event) => setSortOption(event.target.value)}
-                className="w-full sm:w-auto border border-gray-300 rounded-full px-4 py-2 pr-10 text-sm text-black bg-white appearance-none"
-              >
-                <option value="default">
-                  {t("sort.options.default")}
-                </option>
-                <option value="days-asc">
-                  {t("sort.options.daysAsc")}
-                </option>
-                <option value="days-desc">
-                  {t("sort.options.daysDesc")}
-                </option>
-                <option value="price-asc">
-                  {t("sort.options.priceAsc")}
-                </option>
-                <option value="price-desc">
-                  {t("sort.options.priceDesc")}
-                </option>
-              </select>
-              <span className="pointer-events-none absolute right-4 top-1/2 -translate-y-1/2 text-gray-500">
-                <svg
-                  width="14"
-                  height="14"
-                  viewBox="0 0 20 20"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                  aria-hidden="true"
-                >
-                  <path
-                    d="M6 8l4 4 4-4"
-                    stroke="currentColor"
-                    strokeWidth="1.6"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
-              </span>
+          <div className="-mx-4 sm:-mx-6 lg:-mx-8 sticky top-[108px] sm:top-[112px] bg-white z-30 border-b border-gray-200 px-4 sm:px-6 lg:px-8 mb-10">
+            <div className="py-4">
+              <div className="flex flex-col sm:flex-row sm:items-center gap-3">
+                <label htmlFor="promo-sort" className="text-sm text-gray-600">
+                  {t("sort.label")}
+                </label>
+                <div className="relative w-full sm:w-auto">
+                  <select
+                    id="promo-sort"
+                    value={sortOption}
+                    onChange={(event) => setSortOption(event.target.value)}
+                    className="w-full sm:w-auto border border-gray-300 rounded-full px-4 py-2 pr-10 text-sm text-black bg-white appearance-none"
+                  >
+                    <option value="default">
+                      {t("sort.options.default")}
+                    </option>
+                    <option value="days-asc">
+                      {t("sort.options.daysAsc")}
+                    </option>
+                    <option value="days-desc">
+                      {t("sort.options.daysDesc")}
+                    </option>
+                    <option value="price-asc">
+                      {t("sort.options.priceAsc")}
+                    </option>
+                    <option value="price-desc">
+                      {t("sort.options.priceDesc")}
+                    </option>
+                  </select>
+                  <span className="pointer-events-none absolute right-4 top-1/2 -translate-y-1/2 text-gray-500">
+                    <svg
+                      width="14"
+                      height="14"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M6 8l4 4 4-4"
+                        stroke="currentColor"
+                        strokeWidth="1.6"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                    </svg>
+                  </span>
+                </div>
+              </div>
+
+              {promoEligibleCategories.length > 1 && (
+                <div className="mt-4">
+                  <div className="flex justify-center">
+                    <div className="relative w-full">
+                      <div
+                        ref={categoryMenuRef}
+                        className="keen-slider overflow-hidden w-full pb-2 sm:pb-3"
+                      >
+                        {promoEligibleCategories.map((cat, idx) => {
+                          const label = getLocalized(cat.title, locale);
+                          const anchor = label.replace(/\s+/g, "-").toLowerCase();
+                          return (
+                            <div
+                              key={`${anchor}-${idx}`}
+                              className="keen-slider__slide px-2"
+                              style={{ width: "max-content", flex: "0 0 auto" }}
+                            >
+                              <a
+                                href={`#${anchor}`}
+                                className="inline-flex min-w-max items-center text-sm md:text-base px-4 py-1.5 sm:py-2 rounded-full border border-gray-300 text-black hover:border-black hover:text-[#731a2f] transition whitespace-nowrap min-h-[36px]"
+                              >
+                                {label}
+                              </a>
+                            </div>
+                          );
+                        })}
+                      </div>
+
+                      <button
+                        type="button"
+                        onClick={() => categoryMenuInstanceRef.current?.prev()}
+                        aria-label={t("categoryMenu.scrollLeft", {
+                          defaultValue: "Scroll categories left",
+                        })}
+                        className="absolute -left-2 md:-left-8 top-1/2 -translate-y-1/2 bg-white border border-gray-300 text-gray-700 rounded-full shadow px-3 py-2 hover:bg-gray-100 z-20"
+                      >
+                        ‹
+                      </button>
+                      <button
+                        type="button"
+                        onClick={() => categoryMenuInstanceRef.current?.next()}
+                        aria-label={t("categoryMenu.scrollRight", {
+                          defaultValue: "Scroll categories right",
+                        })}
+                        className="absolute -right-2 md:-right-8 top-1/2 -translate-y-1/2 bg-white border border-gray-300 text-gray-700 rounded-full shadow px-3 py-2 hover:bg-gray-100 z-20"
+                      >
+                        ›
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              )}
             </div>
           </div>
 
@@ -421,7 +495,7 @@ export default function PromosPage({ promoCategories = [] }) {
             <div className="text-gray-600">{t("empty")}</div>
           )}
 
-          {sortedCategories.map((cat, idx) => (
+          {promoEligibleCategories.map((cat, idx) => (
             <div
               key={idx}
               id={getLocalized(cat.title, locale).replace(/\s+/g, "-").toLowerCase()}
