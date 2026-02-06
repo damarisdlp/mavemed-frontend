@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useTranslation } from "next-i18next";
 import { useRouter } from "next/router";
 import { dispatchChatOpen } from "@/lib/utils/chat";
+import { getActiveLeadForm, isPromoLeadForm } from "@/lib/data/leadForms";
 
 export default function Header() {
   const PROMO_H = 35;
@@ -23,6 +24,8 @@ export default function Header() {
   const { t } = useTranslation("layout");
   const router = useRouter();
   const { locale, asPath } = router;
+  const activeForm = getActiveLeadForm();
+  const hasPromoBanner = isPromoLeadForm(activeForm);
 
   const forceSolid = [
     "/promos",
@@ -70,7 +73,9 @@ export default function Header() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const isSolid = forceSolid || scrolled || isMobileMenuOpen || (canHover && isHovered);
+  const allowTransparent = !forceSolid;
+  const isSolid =
+    !allowTransparent || scrolled || isMobileMenuOpen || (canHover && isHovered);
   const isTransparent = !isSolid;
 
   const navText = isTransparent ? "text-white" : "text-gray-700";
@@ -79,8 +84,6 @@ export default function Header() {
   const langOff = isTransparent ? "text-white/80" : "text-gray-600";
   const langOn = isTransparent ? "text-white font-semibold" : "text-black font-semibold";
   const navGlow = isTransparent ? "drop-shadow-[0_1px_2px_rgba(0,0,0,0.65)]" : "";
-
-  const promoVisible = !scrolled;
 
   return (
     <>
@@ -91,7 +94,7 @@ export default function Header() {
             ? "bg-white border-b border-gray-200 shadow-sm"
             : "bg-transparent border-b border-transparent",
         ].join(" ")}
-        style={{ top: promoVisible ? PROMO_H : 0 }}
+        style={{ top: hasPromoBanner ? PROMO_H : 0 }}
         onMouseEnter={() => canHover && setIsHovered(true)}
         onMouseLeave={() => canHover && setIsHovered(false)}
       >
