@@ -16,7 +16,16 @@
         "price": {
           "amount": 230,
           "currency": "USD"
-        }
+        },
+        "components": [
+          {
+            "optionId": "opt_casmara_infinity"
+          },
+          {
+            "optionId": "opt_microneedling_prp_face"
+          }
+        ],
+        "priceStrategy": "sum"
       },
       {
         "id": "prp_face_neck",
@@ -24,7 +33,16 @@
         "price": {
           "amount": 250,
           "currency": "USD"
-        }
+        },
+        "components": [
+          {
+            "optionId": "opt_casmara_infinity"
+          },
+          {
+            "optionId": "opt_microneedling_prp_face_neck"
+          }
+        ],
+        "priceStrategy": "sum"
       },
       {
         "id": "prp_face_neck_decollete",
@@ -32,7 +50,16 @@
         "price": {
           "amount": 270,
           "currency": "USD"
-        }
+        },
+        "components": [
+          {
+            "optionId": "opt_casmara_infinity"
+          },
+          {
+            "optionId": "opt_microneedling_prp_face_neck_decollete"
+          }
+        ],
+        "priceStrategy": "sum"
       }
     ]
   },
@@ -53,7 +80,16 @@
         "price": {
           "amount": 220,
           "currency": "USD"
-        }
+        },
+        "components": [
+          {
+            "optionId": "opt_casmara_purifying"
+          },
+          {
+            "optionId": "opt_microneedling_prp_face"
+          }
+        ],
+        "priceStrategy": "sum"
       },
       {
         "id": "prp_face_neck",
@@ -61,7 +97,16 @@
         "price": {
           "amount": 240,
           "currency": "USD"
-        }
+        },
+        "components": [
+          {
+            "optionId": "opt_casmara_purifying"
+          },
+          {
+            "optionId": "opt_microneedling_prp_face_neck"
+          }
+        ],
+        "priceStrategy": "sum"
       },
       {
         "id": "prp_face_neck_decollete",
@@ -69,7 +114,16 @@
         "price": {
           "amount": 260,
           "currency": "USD"
-        }
+        },
+        "components": [
+          {
+            "optionId": "opt_casmara_purifying"
+          },
+          {
+            "optionId": "opt_microneedling_prp_face_neck_decollete"
+          }
+        ],
+        "priceStrategy": "sum"
       }
     ]
   },
@@ -90,7 +144,16 @@
         "price": {
           "amount": 225,
           "currency": "USD"
-        }
+        },
+        "components": [
+          {
+            "optionId": "opt_casmara_retinol_proage"
+          },
+          {
+            "optionId": "opt_microneedling_prp_face"
+          }
+        ],
+        "priceStrategy": "sum"
       },
       {
         "id": "prp_face_neck",
@@ -98,7 +161,16 @@
         "price": {
           "amount": 245,
           "currency": "USD"
-        }
+        },
+        "components": [
+          {
+            "optionId": "opt_casmara_retinol_proage"
+          },
+          {
+            "optionId": "opt_microneedling_prp_face_neck"
+          }
+        ],
+        "priceStrategy": "sum"
       },
       {
         "id": "prp_face_neck_decollete",
@@ -106,7 +178,16 @@
         "price": {
           "amount": 265,
           "currency": "USD"
-        }
+        },
+        "components": [
+          {
+            "optionId": "opt_casmara_retinol_proage"
+          },
+          {
+            "optionId": "opt_microneedling_prp_face_neck_decollete"
+          }
+        ],
+        "priceStrategy": "sum"
       }
     ]
   },
@@ -127,7 +208,16 @@
         "price": {
           "amount": 345,
           "currency": "USD"
-        }
+        },
+        "components": [
+          {
+            "optionId": "opt_casmara_infinity"
+          },
+          {
+            "optionId": "opt_microneedling_pn_face"
+          }
+        ],
+        "priceStrategy": "sum"
       },
       {
         "id": "pn_face_neck",
@@ -135,7 +225,16 @@
         "price": {
           "amount": 495,
           "currency": "USD"
-        }
+        },
+        "components": [
+          {
+            "optionId": "opt_casmara_infinity"
+          },
+          {
+            "optionId": "opt_microneedling_pn_face_neck"
+          }
+        ],
+        "priceStrategy": "sum"
       },
       {
         "id": "pn_face_neck_decollete",
@@ -143,7 +242,16 @@
         "price": {
           "amount": 600,
           "currency": "USD"
-        }
+        },
+        "components": [
+          {
+            "optionId": "opt_casmara_infinity"
+          },
+          {
+            "optionId": "opt_microneedling_pn_face_neck_decollete"
+          }
+        ],
+        "priceStrategy": "sum"
       }
     ]
   },
@@ -164,7 +272,16 @@
         "price": {
           "amount": 335,
           "currency": "USD"
-        }
+        },
+        "components": [
+          {
+            "optionId": "opt_casmara_purifying"
+          },
+          {
+            "optionId": "opt_microneedling_pn_face"
+          }
+        ],
+        "priceStrategy": "sum"
       },
       {
         "id": "pn_face_neck",
@@ -172,7 +289,16 @@
         "price": {
           "amount": 485,
           "currency": "USD"
-        }
+        },
+        "components": [
+          {
+            "optionId": "opt_casmara_purifying"
+          },
+          {
+            "optionId": "opt_microneedling_pn_face_neck"
+          }
+        ],
+        "priceStrategy": "sum"
       },
       {
         "id": "pn_face_neck_decollete",
@@ -180,7 +306,16 @@
         "price": {
           "amount": 590,
           "currency": "USD"
-        }
+        },
+        "components": [
+          {
+            "optionId": "opt_casmara_purifying"
+          },
+          {
+            "optionId": "opt_microneedling_pn_face_neck_decollete"
+          }
+        ],
+        "priceStrategy": "sum"
       }
     ]
   },
@@ -201,7 +336,16 @@
         "price": {
           "amount": 340,
           "currency": "USD"
-        }
+        },
+        "components": [
+          {
+            "optionId": "opt_casmara_retinol_proage"
+          },
+          {
+            "optionId": "opt_microneedling_pn_face"
+          }
+        ],
+        "priceStrategy": "sum"
       },
       {
         "id": "pn_face_neck",
@@ -209,7 +353,16 @@
         "price": {
           "amount": 490,
           "currency": "USD"
-        }
+        },
+        "components": [
+          {
+            "optionId": "opt_casmara_retinol_proage"
+          },
+          {
+            "optionId": "opt_microneedling_pn_face_neck"
+          }
+        ],
+        "priceStrategy": "sum"
       },
       {
         "id": "pn_face_neck_decollete",
@@ -217,7 +370,16 @@
         "price": {
           "amount": 595,
           "currency": "USD"
-        }
+        },
+        "components": [
+          {
+            "optionId": "opt_casmara_retinol_proage"
+          },
+          {
+            "optionId": "opt_microneedling_pn_face_neck_decollete"
+          }
+        ],
+        "priceStrategy": "sum"
       }
     ]
   },
@@ -238,7 +400,16 @@
         "price": {
           "amount": 245,
           "currency": "USD"
-        }
+        },
+        "components": [
+          {
+            "optionId": "opt_casmara_infinity"
+          },
+          {
+            "optionId": "opt_microneedling_pdrn_face"
+          }
+        ],
+        "priceStrategy": "sum"
       },
       {
         "id": "pdrn_face_neck",
@@ -246,7 +417,16 @@
         "price": {
           "amount": 300,
           "currency": "USD"
-        }
+        },
+        "components": [
+          {
+            "optionId": "opt_casmara_infinity"
+          },
+          {
+            "optionId": "opt_microneedling_pdrn_face_neck"
+          }
+        ],
+        "priceStrategy": "sum"
       },
       {
         "id": "pdrn_face_neck_decollete",
@@ -254,7 +434,16 @@
         "price": {
           "amount": 395,
           "currency": "USD"
-        }
+        },
+        "components": [
+          {
+            "optionId": "opt_casmara_infinity"
+          },
+          {
+            "optionId": "opt_microneedling_pdrn_face_neck_decollete"
+          }
+        ],
+        "priceStrategy": "sum"
       }
     ]
   },
@@ -275,7 +464,16 @@
         "price": {
           "amount": 235,
           "currency": "USD"
-        }
+        },
+        "components": [
+          {
+            "optionId": "opt_casmara_purifying"
+          },
+          {
+            "optionId": "opt_microneedling_pdrn_face"
+          }
+        ],
+        "priceStrategy": "sum"
       },
       {
         "id": "pdrn_face_neck",
@@ -283,7 +481,16 @@
         "price": {
           "amount": 290,
           "currency": "USD"
-        }
+        },
+        "components": [
+          {
+            "optionId": "opt_casmara_purifying"
+          },
+          {
+            "optionId": "opt_microneedling_pdrn_face_neck"
+          }
+        ],
+        "priceStrategy": "sum"
       },
       {
         "id": "pdrn_face_neck_decollete",
@@ -291,7 +498,16 @@
         "price": {
           "amount": 385,
           "currency": "USD"
-        }
+        },
+        "components": [
+          {
+            "optionId": "opt_casmara_purifying"
+          },
+          {
+            "optionId": "opt_microneedling_pdrn_face_neck_decollete"
+          }
+        ],
+        "priceStrategy": "sum"
       }
     ]
   },
@@ -312,7 +528,16 @@
         "price": {
           "amount": 240,
           "currency": "USD"
-        }
+        },
+        "components": [
+          {
+            "optionId": "opt_casmara_retinol_proage"
+          },
+          {
+            "optionId": "opt_microneedling_pdrn_face"
+          }
+        ],
+        "priceStrategy": "sum"
       },
       {
         "id": "pdrn_face_neck",
@@ -320,7 +545,16 @@
         "price": {
           "amount": 295,
           "currency": "USD"
-        }
+        },
+        "components": [
+          {
+            "optionId": "opt_casmara_retinol_proage"
+          },
+          {
+            "optionId": "opt_microneedling_pdrn_face_neck"
+          }
+        ],
+        "priceStrategy": "sum"
       },
       {
         "id": "pdrn_face_neck_decollete",
@@ -328,7 +562,16 @@
         "price": {
           "amount": 390,
           "currency": "USD"
-        }
+        },
+        "components": [
+          {
+            "optionId": "opt_casmara_retinol_proage"
+          },
+          {
+            "optionId": "opt_microneedling_pdrn_face_neck_decollete"
+          }
+        ],
+        "priceStrategy": "sum"
       }
     ]
   }
