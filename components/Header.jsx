@@ -30,6 +30,7 @@ export default function Header() {
 
   const forceSolid = [
     "/promos",
+    "/spring-valentines-mave-medical-spa-promos",
     "/contact",
     "/location",
     "/privacy",
