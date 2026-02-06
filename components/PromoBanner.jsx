@@ -16,7 +16,7 @@ export default function PromoBanner() {
   const items = Array.from({ length: 10 }, (_, i) => i);
 
   return (
-    <div className="bg-[#731a2f] text-white text-sm py-2">
+    <div className="bg-[#731a2f] text-white text-sm py-2 sticky top-0 z-[60]">
       <div className="promo-marquee" aria-label="Promotions">
         <div className="promo-track">
           {items.map((idx) => (
