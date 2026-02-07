@@ -12,12 +12,7 @@
       "note.lip_fillers.stylage_zones",
       "note.lip_fillers.stylage_syringe",
       "note.lip_fillers.stylage_lidocaine",
-      "note.lip_fillers.stylage_duration",
-      "note.promo.lip_fillers.multiple_options",
-      "note.promo.lip_fillers.duration_range",
-      "note.promo.lip_fillers.ha_density",
-      "note.promo.lip_fillers.syringe",
-      "note.promo.lip_fillers.lidocaine"
+      "note.lip_fillers.stylage_duration"
     ]
   },
   {
@@ -33,12 +28,7 @@
       "note.lip_fillers.volift_zones",
       "note.lip_fillers.volift_syringe",
       "note.lip_fillers.volift_lidocaine",
-      "note.lip_fillers.volift_duration",
-      "note.promo.lip_fillers.multiple_options",
-      "note.promo.lip_fillers.duration_range",
-      "note.promo.lip_fillers.ha_density",
-      "note.promo.lip_fillers.syringe",
-      "note.promo.lip_fillers.lidocaine"
+      "note.lip_fillers.volift_duration"
     ]
   },
   {
