@@ -292,6 +292,8 @@ export default function PromosPage({ promoCategories = [] }) {
   const locale = router.locale || "en";
   const { asPath } = router;
   const { t } = useTranslation("promos");
+  const cardActionBaseClass =
+    "inline-flex w-full items-center justify-center min-h-[36px] px-4 py-2 rounded-full text-xs leading-none transition text-center";
   const [sortOption, setSortOption] = useState("default");
   const categories = promoCategories;
   const [categoryMenuRef, categoryMenuInstanceRef] = useKeenSlider({
@@ -443,28 +445,30 @@ export default function PromosPage({ promoCategories = [] }) {
                 <div className="mt-4">
                   <div className="flex justify-center">
                     <div className="relative w-full">
-                      <div
-                        ref={categoryMenuRef}
-                        className="keen-slider overflow-hidden w-full pb-2 sm:pb-3"
-                      >
-                        {promoEligibleCategories.map((cat, idx) => {
-                          const label = getLocalized(cat.title, locale);
-                          const anchor = label.replace(/\s+/g, "-").toLowerCase();
-                          return (
-                            <div
-                              key={`${anchor}-${idx}`}
-                              className="keen-slider__slide px-2"
-                              style={{ width: "max-content", flex: "0 0 auto" }}
-                            >
-                              <a
-                                href={`#${anchor}`}
-                                className="inline-flex min-w-max items-center text-sm md:text-base px-4 py-1.5 sm:py-2 rounded-full border border-gray-300 text-black hover:border-black hover:text-[#731a2f] transition whitespace-nowrap min-h-[36px]"
+                      <div className="px-9 sm:px-10 md:px-0">
+                        <div
+                          ref={categoryMenuRef}
+                          className="keen-slider overflow-hidden w-full pb-2 sm:pb-3"
+                        >
+                          {promoEligibleCategories.map((cat, idx) => {
+                            const label = getLocalized(cat.title, locale);
+                            const anchor = label.replace(/\s+/g, "-").toLowerCase();
+                            return (
+                              <div
+                                key={`${anchor}-${idx}`}
+                                className="keen-slider__slide px-2"
+                                style={{ width: "max-content", flex: "0 0 auto" }}
                               >
-                                {label}
-                              </a>
-                            </div>
-                          );
-                        })}
+                                <a
+                                  href={`#${anchor}`}
+                                  className="inline-flex min-w-max items-center text-sm md:text-base px-4 py-1.5 sm:py-2 rounded-full border border-gray-300 text-black hover:border-black hover:text-[#731a2f] transition whitespace-nowrap min-h-[36px]"
+                                >
+                                  {label}
+                                </a>
+                              </div>
+                            );
+                          })}
+                        </div>
                       </div>
 
                       <button
@@ -473,7 +477,7 @@ export default function PromosPage({ promoCategories = [] }) {
                         aria-label={t("categoryMenu.scrollLeft", {
                           defaultValue: "Scroll categories left",
                         })}
-                        className="absolute -left-2 md:-left-8 top-1/2 -translate-y-1/2 bg-white border border-gray-300 text-gray-700 rounded-full shadow px-3 py-2 hover:bg-gray-100 z-20"
+                        className="absolute left-0 md:-left-8 top-1/2 -translate-y-1/2 bg-white border border-gray-300 text-gray-700 rounded-full shadow px-3 py-2 hover:bg-gray-100 z-20"
                       >
                         ‹
                       </button>
@@ -483,7 +487,7 @@ export default function PromosPage({ promoCategories = [] }) {
                         aria-label={t("categoryMenu.scrollRight", {
                           defaultValue: "Scroll categories right",
                         })}
-                        className="absolute -right-2 md:-right-8 top-1/2 -translate-y-1/2 bg-white border border-gray-300 text-gray-700 rounded-full shadow px-3 py-2 hover:bg-gray-100 z-20"
+                        className="absolute right-0 md:-right-8 top-1/2 -translate-y-1/2 bg-white border border-gray-300 text-gray-700 rounded-full shadow px-3 py-2 hover:bg-gray-100 z-20"
                       >
                         ›
                       </button>
@@ -575,7 +579,7 @@ export default function PromosPage({ promoCategories = [] }) {
                         <button
                           type="button"
                           onClick={() => router.push(`/treatments/${card.slug}?lead=open`)}
-                          className={`px-4 py-2 rounded-full text-xs transition text-center ${
+                          className={`${cardActionBaseClass} ${
                             card.isPackage
                               ? "bg-black text-white border border-black hover:bg-white hover:text-black"
                               : "bg-black text-white hover:bg-[#731a2f]"
@@ -585,7 +589,7 @@ export default function PromosPage({ promoCategories = [] }) {
                         </button>
                         <Link
                           href={`/treatments/${card.slug}`}
-                          className={`px-4 py-2 rounded-full text-xs transition text-center ${
+                          className={`${cardActionBaseClass} ${
                             card.isPackage
                               ? "bg-white text-black border border-white hover:bg-black hover:text-white hover:border-black"
                               : "border border-gray-300 text-black hover:border-black"
