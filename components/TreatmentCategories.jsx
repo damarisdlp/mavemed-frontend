@@ -13,6 +13,8 @@ export default function TreatmentCategories({ categories = [] }) {
   const { locale = "en" } = router;
   const { t } = useTranslation("treatments");
   const localize = (field) => getLocalizedValue(field, locale);
+  const cardActionBaseClass =
+    "inline-flex w-full items-center justify-center min-h-[36px] px-4 py-2 rounded-full text-xs leading-none transition text-center";
 
   const CategorySlider = ({ services }) => {
     // ReviewsSection slider behavior
@@ -64,7 +66,7 @@ export default function TreatmentCategories({ categories = [] }) {
                             onClick={() =>
                               router.push(`/treatments/${service.slug}?lead=open`)
                             }
-                            className="bg-black text-white px-4 py-2 rounded-full text-xs hover:bg-[#731a2f] transition text-center"
+                            className={`${cardActionBaseClass} bg-black text-white hover:bg-[#731a2f]`}
                             aria-label={t("treatmentCategories.bookService", {
                               service: localize(service.name),
                             })}
@@ -74,7 +76,7 @@ export default function TreatmentCategories({ categories = [] }) {
 
                           <Link
                             href={`/treatments/${service.slug}`}
-                            className="border border-gray-300 text-black px-4 py-2 rounded-full text-xs hover:border-black transition text-center"
+                            className={`${cardActionBaseClass} border border-gray-300 text-black hover:border-black`}
                             aria-label={t("treatmentCategories.learnMoreAbout", {
                               service: localize(service.name),
                             })}
@@ -225,25 +227,27 @@ export default function TreatmentCategories({ categories = [] }) {
           </div>
           <div className="flex justify-center">
             <div className="relative w-full">
-              <div
-                id="category-menu"
-                ref={menuRef}
-                className="keen-slider overflow-hidden w-full pb-2 sm:pb-3"
-              >
-                {visibleCategories.map((category, i) => (
-                  <div
-                    key={i}
-                    className="keen-slider__slide px-2"
-                    style={{ width: "max-content", flex: "0 0 auto" }}
-                  >
-                    <a
-                      href={`#${localize(category.title).replace(/\s+/g, "-").toLowerCase()}`}
-                      className="inline-flex min-w-max items-center text-sm md:text-base px-4 py-1.5 sm:py-2 rounded-full border border-gray-300 text-black hover:border-black hover:text-[#731a2f] transition whitespace-nowrap min-h-[36px]"
+              <div className="px-9 sm:px-10 md:px-0">
+                <div
+                  id="category-menu"
+                  ref={menuRef}
+                  className="keen-slider overflow-hidden w-full pb-2 sm:pb-3"
+                >
+                  {visibleCategories.map((category, i) => (
+                    <div
+                      key={i}
+                      className="keen-slider__slide px-2"
+                      style={{ width: "max-content", flex: "0 0 auto" }}
                     >
-                      {localize(category.title)}
-                    </a>
-                  </div>
-                ))}
+                      <a
+                        href={`#${localize(category.title).replace(/\s+/g, "-").toLowerCase()}`}
+                        className="inline-flex min-w-max items-center text-sm md:text-base px-4 py-1.5 sm:py-2 rounded-full border border-gray-300 text-black hover:border-black hover:text-[#731a2f] transition whitespace-nowrap min-h-[36px]"
+                      >
+                        {localize(category.title)}
+                      </a>
+                    </div>
+                  ))}
+                </div>
               </div>
 
               {visibleCategories.length > 1 && (
@@ -254,7 +258,7 @@ export default function TreatmentCategories({ categories = [] }) {
                     aria-label={t("treatmentCategories.scrollLeft", {
                       defaultValue: "Scroll categories left",
                     })}
-                    className="absolute -left-2 md:-left-8 top-1/2 -translate-y-1/2 bg-white border border-gray-300 text-gray-700 rounded-full shadow px-3 py-2 hover:bg-gray-100 z-20"
+                    className="absolute left-0 md:-left-8 top-1/2 -translate-y-1/2 bg-white border border-gray-300 text-gray-700 rounded-full shadow px-3 py-2 hover:bg-gray-100 z-20"
                   >
                     ‹
                   </button>
@@ -264,7 +268,7 @@ export default function TreatmentCategories({ categories = [] }) {
                     aria-label={t("treatmentCategories.scrollRight", {
                       defaultValue: "Scroll categories right",
                     })}
-                    className="absolute -right-2 md:-right-8 top-1/2 -translate-y-1/2 bg-white border border-gray-300 text-gray-700 rounded-full shadow px-3 py-2 hover:bg-gray-100 z-20"
+                    className="absolute right-0 md:-right-8 top-1/2 -translate-y-1/2 bg-white border border-gray-300 text-gray-700 rounded-full shadow px-3 py-2 hover:bg-gray-100 z-20"
                   >
                     ›
                   </button>
@@ -318,7 +322,7 @@ export default function TreatmentCategories({ categories = [] }) {
                       <button
                         type="button"
                         onClick={() => router.push(`/treatments/${service.slug}?lead=open`)}
-                        className="bg-black text-white px-4 py-2 rounded-full text-xs hover:bg-[#731a2f] transition text-center"
+                        className={`${cardActionBaseClass} bg-black text-white hover:bg-[#731a2f]`}
                         aria-label={t("treatmentCategories.bookService", {
                           service: localize(service.name),
                         })}
@@ -327,7 +331,7 @@ export default function TreatmentCategories({ categories = [] }) {
                       </button>
                       <Link
                         href={`/treatments/${service.slug}`}
-                        className="border border-gray-300 text-black px-4 py-2 rounded-full text-xs hover:border-black transition text-center"
+                        className={`${cardActionBaseClass} border border-gray-300 text-black hover:border-black`}
                         aria-label={t("treatmentCategories.learnMoreAbout", {
                           service: localize(service.name),
                         })}
