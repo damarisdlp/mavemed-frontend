@@ -283,7 +283,7 @@ export default function TreatmentCategories({ categories = [] }) {
           <div
             key={i}
             id={localize(category.title).replace(/\s+/g, "-").toLowerCase()}
-            className="mb-16 mt-8 scroll-mt-[200px] sm:scroll-mt-[210px]"
+            className="mb-16 mt-8 scroll-mt-[calc(var(--site-header-offset)+108px)] sm:scroll-mt-[calc(var(--site-header-offset)+120px)] md:scroll-mt-[210px]"
           >
             <h2
               className="text-black font-serif font-medium mb-6 leading-snug text-[clamp(1.6rem,3.8vw,2.6rem)]"
