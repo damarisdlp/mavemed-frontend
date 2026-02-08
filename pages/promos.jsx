@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { useRouter } from "next/router";
 import { useTranslation } from "next-i18next";
 import "keen-slider/keen-slider.min.css";
@@ -339,6 +339,13 @@ export default function PromosPage({ promoCategories = [] }) {
   const promoEligibleCategories = sortedCategories.filter(
     (cat) => Array.isArray(cat.cards) && cat.cards.length > 0
   );
+  const categoryMenuSignature = useMemo(
+    () =>
+      promoEligibleCategories
+        .map((cat) => getLocalized(cat.title, locale).replace(/\s+/g, "-").toLowerCase())
+        .join("|"),
+    [promoEligibleCategories, locale]
+  );
 
   useEffect(() => {
     if (!categoryMenuInstanceRef.current) return;
@@ -346,7 +353,19 @@ export default function PromosPage({ promoCategories = [] }) {
       categoryMenuInstanceRef.current?.update();
     });
     return () => window.cancelAnimationFrame(handle);
-  }, [promoEligibleCategories.length, locale]);
+  }, [categoryMenuSignature, sortOption, locale]);
+
+  const handleSortChange = (event) => {
+    const nextValue = event.target.value;
+    setSortOption(nextValue);
+    if (typeof window === "undefined") return;
+    const prefersReducedMotion = window.matchMedia?.("(prefers-reduced-motion: reduce)")
+      ?.matches;
+    window.scrollTo({
+      top: 0,
+      behavior: prefersReducedMotion ? "auto" : "smooth",
+    });
+  };
 
   return (
     <>
@@ -401,7 +420,7 @@ export default function PromosPage({ promoCategories = [] }) {
                   <select
                     id="promo-sort"
                     value={sortOption}
-                    onChange={(event) => setSortOption(event.target.value)}
+                    onChange={handleSortChange}
                     className="w-full sm:w-auto border border-gray-300 rounded-full px-4 py-2 pr-10 text-sm text-black bg-white appearance-none"
                   >
                     <option value="default">
@@ -447,6 +466,7 @@ export default function PromosPage({ promoCategories = [] }) {
                     <div className="relative w-full">
                       <div className="px-9 sm:px-10 md:px-0">
                         <div
+                          key={`${locale}-${sortOption}-${categoryMenuSignature}`}
                           ref={categoryMenuRef}
                           className="keen-slider overflow-hidden w-full pb-2 sm:pb-3"
                         >
@@ -506,7 +526,7 @@ export default function PromosPage({ promoCategories = [] }) {
             <div
               key={idx}
               id={getLocalized(cat.title, locale).replace(/\s+/g, "-").toLowerCase()}
-              className="mb-12"
+              className="mb-12 scroll-mt-[calc(var(--site-header-offset)+175px)] sm:scroll-mt-[calc(var(--site-header-offset)+150px)] md:scroll-mt-[calc(var(--site-header-offset)+160px)]"
             >
               <h2 className="text-xl sm:text-2xl text-black font-serif font-medium mb-4">
                 {getLocalized(cat.title, locale)}
