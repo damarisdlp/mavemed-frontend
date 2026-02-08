@@ -228,6 +228,29 @@ export default function PromoLeadPopup() {
     setIsOpen(false);
   };
 
+  useEffect(() => {
+    if (!isOpen) return;
+
+    const closeOnRouteChange = () => {
+      setIsOpen(false);
+    };
+
+    router.events.on("routeChangeStart", closeOnRouteChange);
+    return () => router.events.off("routeChangeStart", closeOnRouteChange);
+  }, [isOpen, router.events]);
+
+  useEffect(() => {
+    if (!isOpen || typeof document === "undefined") return;
+
+    const closeOnTabChange = () => {
+      if (!document.hidden) return;
+      setIsOpen(false);
+    };
+
+    document.addEventListener("visibilitychange", closeOnTabChange);
+    return () => document.removeEventListener("visibilitychange", closeOnTabChange);
+  }, [isOpen]);
+
   const handleSubmit = async (event) => {
     event.preventDefault();
     if (typeof document !== "undefined" && document.activeElement?.blur) {
