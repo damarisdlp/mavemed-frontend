@@ -515,17 +515,19 @@ export default function TreatmentCandidacyForm({
             <p className="text-base text-gray-700 mt-3">{copy.subtitle}</p>
             {heroVideoSrc ? (
               <div className="mt-6 overflow-hidden rounded-2xl border border-gray-200 bg-black shadow-sm">
-                <video
-                  className="w-full h-auto"
-                  src={heroVideoSrc}
-                  controls
-                  autoPlay
-                  muted
-                  playsInline
-                  preload="metadata"
-                  aria-label={heroVideoLabel}
-                  poster={heroVideoPoster || undefined}
-                />
+                <div className="relative w-full aspect-video">
+                  <video
+                    className="absolute inset-0 h-full w-full object-cover"
+                    src={heroVideoSrc}
+                    controls
+                    autoPlay
+                    muted
+                    playsInline
+                    preload="metadata"
+                    aria-label={heroVideoLabel}
+                    poster={heroVideoPoster || undefined}
+                  />
+                </div>
               </div>
             ) : null}
             {copy.support ? <p className="text-sm text-gray-600 mt-2">{copy.support}</p> : null}
