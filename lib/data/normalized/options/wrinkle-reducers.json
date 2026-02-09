@@ -43,7 +43,7 @@
     "serviceId": "svc_dermawrinkle",
     "nameKey": "opt.dermawrinkle.per_unit",
     "price": {
-      "amount": 5.25,
+      "amount": 5.50,
       "currency": "USD"
     },
     "isOptionPromoActive": true,
