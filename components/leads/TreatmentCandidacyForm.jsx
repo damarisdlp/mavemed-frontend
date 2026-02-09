@@ -504,23 +504,6 @@ export default function TreatmentCandidacyForm({
       <PromoBanner />
       <Header />
       <main className="bg-white pt-36 md:pt-40">
-        {heroVideoSrc ? (
-          <section className="max-w-4xl mx-auto px-6 pt-6 pb-4">
-            <div className="overflow-hidden rounded-2xl border border-gray-200 bg-black shadow-sm">
-              <video
-                className="w-full h-auto"
-                src={heroVideoSrc}
-                controls
-                autoPlay
-                muted
-                playsInline
-                preload="metadata"
-                aria-label={heroVideoLabel}
-                poster={heroVideoPoster || undefined}
-              />
-            </div>
-          </section>
-        ) : null}
         <section className="max-w-5xl mx-auto px-6 py-12">
           <div className="text-center max-w-3xl mx-auto">
             <h1 className="text-3xl md:text-4xl font-serif text-black">{copy.title}</h1>
@@ -530,6 +513,21 @@ export default function TreatmentCandidacyForm({
               </p>
             ) : null}
             <p className="text-base text-gray-700 mt-3">{copy.subtitle}</p>
+            {heroVideoSrc ? (
+              <div className="mt-6 overflow-hidden rounded-2xl border border-gray-200 bg-black shadow-sm">
+                <video
+                  className="w-full h-auto"
+                  src={heroVideoSrc}
+                  controls
+                  autoPlay
+                  muted
+                  playsInline
+                  preload="metadata"
+                  aria-label={heroVideoLabel}
+                  poster={heroVideoPoster || undefined}
+                />
+              </div>
+            ) : null}
             {copy.support ? <p className="text-sm text-gray-600 mt-2">{copy.support}</p> : null}
             {copy.supportDevice ? (
               <p className="text-sm text-gray-600 mt-2">{copy.supportDevice}</p>
@@ -924,6 +922,9 @@ export default function TreatmentCandidacyForm({
                 {isSubmitting ? t("candidacyForm.buttons.submitting") : copy.submit}
               </button>
             </form>
+            {copy.travelAdvisory ? (
+              <p className="text-xs text-gray-600 mt-4">{copy.travelAdvisory}</p>
+            ) : null}
             {showDeviceSection ? (
               <p className="text-xs text-gray-500 mt-4">
                 <a href={deviceLinkHref} className="underline underline-offset-4">
