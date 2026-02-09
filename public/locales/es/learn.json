@@ -11,6 +11,7 @@
     "categories": [
       {
         "title": "RF Microneedling",
+        "anchor": "rf-microneedling",
         "description": "Selección de dispositivo, candidatura y planificación clínica.",
         "items": [
           {
@@ -22,11 +23,17 @@
             "title": "Sylfirm X vs Otros Dispositivos de RF Microneedling",
             "excerpt": "Qué comparar entre plataformas, contexto de seguridad FDA y elección del dispositivo.",
             "href": "/learn/Sylfirm-x-vs-other-rf-Microneedling"
+          },
+          {
+            "title": "Mejor clínica en Tijuana para Sylfirm X RF Microneedling",
+            "excerpt": "Cómo evaluar la calidad del plan para melasma, enrojecimiento, pigmentación y piel sensible.",
+            "href": "/learn/best-clinic-tijuana-sylfirm-x-rf-microneedling"
           }
         ]
       },
       {
         "title": "Educación sobre colágeno",
+        "anchor": "collagen-education",
         "description": "Cómo cambia el colágeno con la edad y los tiempos de remodelación.",
         "items": [
           {
@@ -38,12 +45,25 @@
       },
       {
         "title": "Bioestimulación de colágeno",
+        "anchor": "collagen-biostimulation",
         "description": "Regeneración de colágeno, soporte estructural y resultados a largo plazo.",
         "items": [
           {
             "title": "Sculptra Bioestimulador de Colágeno",
             "excerpt": "Qué es Sculptra, cómo actúa con el tiempo y por qué la técnica médica importa.",
             "href": "/learn/Sculptra-collagen-biostimulator"
+          }
+        ]
+      },
+      {
+        "title": "Lifting no quirúrgico",
+        "anchor": "non-surgical-lifting",
+        "description": "Cómo evaluar dispositivos de lifting, calidad de planificación y elección de proveedor.",
+        "items": [
+          {
+            "title": "Mejor clínica en Tijuana para Ultraformer MPT",
+            "excerpt": "Qué diferencia la planificación con Ultraformer MPT y qué priorizar si viajas para tratamiento.",
+            "href": "/learn/best-clinic-tijuana-ultraformer-mpt"
           }
         ]
       }
