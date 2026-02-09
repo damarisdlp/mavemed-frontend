@@ -191,7 +191,7 @@ export default function TreatmentCategories({ categories = [] }) {
         {/* Sticky Search + Category Menu */}
         <div
           className="-mx-4 sm:-mx-6 lg:-mx-8 -mt-0 sm:mt-0 sticky bg-white z-30 border-b border-gray-200 px-4 sm:px-6 lg:px-8"
-          style={{ top: "var(--site-header-offset)" }}
+          style={{ top: "calc(var(--site-header-offset) - 10px)" }}
         >
           <div className="py-2 sm:py-3">
             <label className="sr-only" htmlFor="treatment-search">
