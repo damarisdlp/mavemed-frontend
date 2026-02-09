@@ -44,6 +44,8 @@ const content = {
     ],
     formIntro:
       "Please answer as accurately as possible. Your responses help our medical team determine candidacy.",
+    travelAdvisory:
+      "Most patients travel to Tijuana for treatment. If travel is not possible now, our team can advise on future options.",
     fields: {
       concern: "Primary skin concern",
       concernOptions: [
@@ -125,6 +127,8 @@ const content = {
     ],
     formIntro:
       "Responde con la mayor precisión posible. Tus respuestas ayudan a evaluar tu candidatura.",
+    travelAdvisory:
+      "La mayoría de los pacientes viajan a Tijuana para su tratamiento. Si no puedes viajar por ahora, nuestro equipo puede orientarte sobre opciones futuras.",
     fields: {
       concern: "Principal preocupación de la piel",
       concernOptions: [
