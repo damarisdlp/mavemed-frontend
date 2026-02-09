@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { useRouter } from "next/router";
 import { useTranslation } from "next-i18next";
 import PromoBanner from "@/components/PromoBanner";
@@ -8,6 +8,15 @@ import Footer from "@/components/Footer";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import nextI18NextConfig from "../../next-i18next.config";
 
+function toCategoryAnchor(value) {
+  return String(value || "")
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/(^-|-$)/g, "");
+}
+
 export default function LearnIndexPage() {
   const { locale = "en" } = useRouter();
   const { t } = useTranslation("learn");
@@ -15,11 +24,20 @@ export default function LearnIndexPage() {
   const categories = Array.isArray(copy?.categories) ? copy.categories : [];
   const [query, setQuery] = useState("");
   const [activeCategory, setActiveCategory] = useState("");
+  const categoriesSignature = useMemo(
+    () => categories.map((category) => category.title).join("|"),
+    [categories]
+  );
 
   const normalizedQuery = query.trim().toLowerCase();
   const visibleCategories = categories.filter(
     (category) => !activeCategory || category.title === activeCategory
   );
+
+  useEffect(() => {
+    setActiveCategory("");
+    setQuery("");
+  }, [categoriesSignature]);
 
   return (
     <>
@@ -89,35 +107,42 @@ export default function LearnIndexPage() {
         </section>
 
         <section className="max-w-5xl mx-auto px-6 pb-16 space-y-10">
-          {visibleCategories.map((category) => (
-            <div key={category.title} className="space-y-4">
-              <div>
-                <h2 className="text-xl font-serif text-black">{category.title}</h2>
-                <p className="text-sm text-gray-600 mt-1">{category.description}</p>
+          {visibleCategories.map((category) => {
+            const categoryAnchor = category.anchor || toCategoryAnchor(category.title);
+            return (
+              <div
+                key={category.title}
+                id={categoryAnchor}
+                className="space-y-4 scroll-mt-36 md:scroll-mt-40"
+              >
+                <div>
+                  <h2 className="text-xl font-serif text-black">{category.title}</h2>
+                  <p className="text-sm text-gray-600 mt-1">{category.description}</p>
+                </div>
+                <div className="grid gap-4 md:grid-cols-2">
+                  {category.items
+                    .filter((item) => {
+                      if (!normalizedQuery) return true;
+                      const haystack = `${item.title} ${item.excerpt} ${category.title}`.toLowerCase();
+                      return haystack.includes(normalizedQuery);
+                    })
+                    .map((item) => (
+                      <a
+                        key={item.title}
+                        href={`/${locale === "es" ? "es/" : ""}${item.href.replace(/^\//, "")}`}
+                        className="border border-gray-200 rounded-2xl p-5 bg-white hover:shadow-sm transition"
+                      >
+                        <p className="text-base font-semibold text-black">{item.title}</p>
+                        <p className="text-sm text-gray-600 mt-2">{item.excerpt}</p>
+                        <span className="text-sm text-[#731a2f] underline underline-offset-4 inline-block mt-3">
+                          {t("index.readMore")}
+                        </span>
+                      </a>
+                    ))}
+                </div>
               </div>
-              <div className="grid gap-4 md:grid-cols-2">
-                {category.items
-                  .filter((item) => {
-                    if (!normalizedQuery) return true;
-                    const haystack = `${item.title} ${item.excerpt} ${category.title}`.toLowerCase();
-                    return haystack.includes(normalizedQuery);
-                  })
-                  .map((item) => (
-                  <a
-                    key={item.title}
-                    href={`/${locale === "es" ? "es/" : ""}${item.href.replace(/^\//, "")}`}
-                    className="border border-gray-200 rounded-2xl p-5 bg-white hover:shadow-sm transition"
-                  >
-                    <p className="text-base font-semibold text-black">{item.title}</p>
-                    <p className="text-sm text-gray-600 mt-2">{item.excerpt}</p>
-                    <span className="text-sm text-[#731a2f] underline underline-offset-4 inline-block mt-3">
-                      {t("index.readMore")}
-                    </span>
-                  </a>
-                  ))}
-              </div>
-            </div>
-          ))}
+            );
+          })}
         </section>
       </main>
       <Footer />
