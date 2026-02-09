@@ -11,6 +11,7 @@
     "categories": [
       {
         "title": "RF Microneedling",
+        "anchor": "rf-microneedling",
         "description": "Device selection, candidacy, and treatment planning.",
         "items": [
           {
@@ -22,11 +23,17 @@
             "title": "Sylfirm X vs Other RF Microneedling Devices",
             "excerpt": "What to compare across platforms, FDA safety context, and how device choice affects planning.",
             "href": "/learn/sylfirm-x-vs-other-rf-microneedling"
+          },
+          {
+            "title": "Best Clinic in Tijuana for Sylfirm X RF Microneedling",
+            "excerpt": "How to evaluate treatment planning quality for melasma, redness, pigmentation, and sensitive skin.",
+            "href": "/learn/best-clinic-tijuana-sylfirm-x-rf-microneedling"
           }
         ]
       },
       {
         "title": "Collagen Education",
+        "anchor": "collagen-education",
         "description": "How collagen changes with age and how remodeling timelines work.",
         "items": [
           {
@@ -38,12 +45,25 @@
       },
       {
         "title": "Collagen Biostimulation",
+        "anchor": "collagen-biostimulation",
         "description": "Collagen rebuilding, structural support, and long term outcomes.",
         "items": [
           {
             "title": "Sculptra Collagen Biostimulator",
             "excerpt": "What Sculptra is, how it works over time, and why technique and medical planning matter.",
             "href": "/learn/sculptra-collagen-biostimulator"
+          }
+        ]
+      },
+      {
+        "title": "Non-Surgical Lifting",
+        "anchor": "non-surgical-lifting",
+        "description": "How to evaluate lifting devices, planning quality, and provider selection.",
+        "items": [
+          {
+            "title": "Best Clinic in Tijuana for Ultraformer MPT",
+            "excerpt": "What makes Ultraformer MPT planning different and what to prioritize when traveling for treatment.",
+            "href": "/learn/best-clinic-tijuana-ultraformer-mpt"
           }
         ]
       }
