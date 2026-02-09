@@ -3,7 +3,13 @@ import { useRouter } from "next/router";
 import { useTranslation } from "next-i18next";
 import { getLocalized } from "@/lib/i18n/getLocalized";
 
-export default function FAQSection({ faqs = [], locale: propLocale }) {
+export default function FAQSection({
+  faqs = [],
+  locale: propLocale,
+  heading = "",
+  sectionClassName = "bg-white text-black py-12",
+  containerClassName = "max-w-4xl mx-auto px-4",
+}) {
   const router = useRouter();
   const locale = propLocale || router.locale || "en";
   const { t } = useTranslation("treatments");
@@ -12,11 +18,11 @@ export default function FAQSection({ faqs = [], locale: propLocale }) {
 
   if (!faqs.length) return null;
 
-  const headingText = t("faq.heading");
+  const headingText = heading || t("faq.heading");
 
   return (
-    <section className="bg-white text-black py-12">
-      <div className="max-w-4xl mx-auto px-4">
+    <section className={sectionClassName}>
+      <div className={containerClassName}>
         <h3 className="text-2xl font-serif font-medium text-center mb-6">
           {headingText}
         </h3>
