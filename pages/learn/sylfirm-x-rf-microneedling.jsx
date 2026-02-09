@@ -4,6 +4,7 @@ import { useRouter } from "next/router";
 import PromoBanner from "@/components/PromoBanner";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import LearnCategoryBreadcrumb from "@/components/learn/LearnCategoryBreadcrumb";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import nextI18NextConfig from "../../next-i18next.config";
 
@@ -695,6 +696,11 @@ export default function SylfirmXEducationPage() {
         <section className="max-w-5xl mx-auto px-6 py-12">
           <div className="text-left max-w-3xl">
             <p className="text-xs uppercase tracking-[0.25em] text-gray-500">Learn</p>
+            <LearnCategoryBreadcrumb
+              locale={locale}
+              categoryLabel="RF Microneedling"
+              categoryAnchor="rf-microneedling"
+            />
             <h1 className="text-3xl md:text-4xl font-serif text-black mt-3">
               {copy.title}
             </h1>
