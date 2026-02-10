@@ -366,73 +366,73 @@
   },
   {
     "id": "opt.ultraformer.deep_synergy_booster",
-    "en": "Deep Synergy Booster (Add-On)",
-    "es": "Refuerzo Deep Synergy (Complemento)"
+    "en": "Full Face",
+    "es": "Full Face"
   },
   {
     "id": "opt.ultraformer.deep_contour",
-    "en": "Deep Contour (Add-on)",
-    "es": "Contorno Profundo (Complemento)"
+    "en": "Foxy Eyes",
+    "es": "Foxy Eyes"
   },
   {
     "id": "opt.ultraformer.refreshing_lift",
-    "en": "Refreshing Lift",
-    "es": "Lifting refrescante"
+    "en": "Cheek Definition",
+    "es": "Definición de Mejillas"
   },
   {
     "id": "opt.ultraformer.submentum_lower_face",
-    "en": "Submentum & Lower Face Lift",
-    "es": "Lifting de Submentón y Tercio Inferior"
+    "en": "Jawline Definition",
+    "es": "Definición de Arco Mandibular"
   },
   {
     "id": "opt.ultraformer.360_contour",
-    "en": "360 Contour",
-    "es": "Contorno 360"
+    "en": "Neck",
+    "es": "Cuello"
   },
   {
     "id": "opt.ultraformer.premium_facial_sculpting",
-    "en": "Premium Facial Sculpting",
-    "es": "Escultura Facial Premium"
+    "en": "Jawline and Neck",
+    "es": "Arco Mandibular y Cuello"
   },
   {
     "id": "opt.ultraformer.total_facial_rejuvenation",
-    "en": "Total Facial Rejuvenation",
-    "es": "Rejuvenecimiento Facial Total"
+    "en": "Double Chin",
+    "es": "Doble Mentón"
   },
   {
     "id": "opt.ultraformer.neck_sculpting",
-    "en": "Neck Sculpting",
-    "es": "Escultura de Cuello"
+    "en": "Abdomen",
+    "es": "Abdomen"
   },
   {
     "id": "opt.ultraformer.decolletage_rejuvenation",
-    "en": "Decolletage Rejuvenation",
-    "es": "Rejuvenecimiento de Escote"
+    "en": "Flanks",
+    "es": "Flancos"
   },
   {
     "id": "opt.ultraformer.combo_lift_smooth",
-    "en": "Combo Lift & Smooth",
-    "es": "Combo Levantamiento & Suavidad"
+    "en": "Decollete",
+    "es": "Escote"
   },
   {
     "id": "opt.ultraformer.express_body_glow",
-    "en": "Express Body Glow",
-    "es": "Brillo Corporal Exprs"
+    "en": "Knees",
+    "es": "Rodilla"
   },
   {
     "id": "opt.ultraformer.express_back_glow",
-    "en": "Express Back Glow",
-    "es": "Brillo de Espalda Exprs"
+    "en": "Arms",
+    "es": "Brazos"
   },
   {
     "id": "opt.ultraformer.defined_arms",
-    "en": "Defined Arms",
-    "es": "Brazos Definidos"
+    "en": "Preaxillary",
+    "es": "Preaxilar"
   },
   {
     "id": "opt.ultraformer.thigh_sculpting",
-    "en": "Thigh Sculpting",
-    "es": "Escultura de Muslos"
+    "en": "Inner or Outer Thighs",
+    "es": "Muslos Externo o Interno"
   },
   {
     "id": "opt.ultraformer.glute_contour",
@@ -671,83 +671,83 @@
   },
   {
     "id": "note.ultraformer.deep_synergy_booster",
-    "en": "Enhances treatment results by stimulating deeper collagen remodeling, boosting elasticity, and improving skin density for longer lasting lifting effects.",
-    "es": "Potencia los resultados al estimular una remodelación más profunda del colágeno, mejorar la elasticidad y aumentar la densidad de la piel para efectos de lifting más duraderos."
+    "en": "Periorbital region, perioral region, lower third, and upper third. Add booster: +$1,700 MXN.",
+    "es": "Región periorbital, perioral, tercio inferior y tercio superior. Si se agrega booster: +$1,700 MXN."
   },
   {
     "id": "note.ultraformer.deep_contour.included",
-    "en": "Includes jawline area (jawline and lower cheek).",
-    "es": "Incluye la zona de la línea mandibular y mejilla baja."
+    "en": "Brow lift.",
+    "es": "Levantamiento de cejas."
   },
   {
     "id": "note.ultraformer.deep_contour.add_on",
-    "en": "This is an add-on to any other other lower face hifu treatment.",
-    "es": "Este es un complemento a cualquier otro tratamiento HIFU para la parte inferior del rostro."
+    "en": "Add 1 booster: +$600 MXN.",
+    "es": "Agrega 1 booster: +$600 MXN."
   },
   {
     "id": "note.ultraformer.refreshing_lift",
-    "en": "Forehead, periocular area, and upper cheeks.",
-    "es": "Frente, zona periocular y mejillas altas."
+    "en": "Cheeks, folds, and jowls. Add 1 booster: +$600 MXN.",
+    "es": "Mejillas, surcos y jowl. Agrega 1 booster: +$600 MXN."
   },
   {
     "id": "note.ultraformer.submentum_lower_face",
-    "en": "Submentum plus lower cheek/jowl bags with dermal lifting.",
-    "es": "Submentón más mejilla baja o bolsas mandibulares con lifting dérmico."
+    "en": "Double chin and jawline. Add 1 booster: +$600 MXN.",
+    "es": "Papada y arco mandibular. Agrega 1 booster: +$600 MXN."
   },
   {
     "id": "note.ultraformer.360_contour",
-    "en": "Lower cheek, jawline, submentum, and neck.",
-    "es": "Mejilla baja, línea mandibular, submentón y cuello."
+    "en": "Neck area.",
+    "es": "Cuello."
   },
   {
     "id": "note.ultraformer.premium_facial_sculpting",
-    "en": "Forehead, periocular area, full cheeks, chin, and jawline.",
-    "es": "Frente, zona periocular, mejillas completas, mentón y línea mandibular."
+    "en": "Neck, jawline, and double chin.",
+    "es": "Cuello, arco mandibular y papada."
   },
   {
     "id": "note.ultraformer.premium_facial_recommend",
-    "en": "Deep contour add-on recommended for a more lifted result.",
-    "es": "Se recomienda agregar Contorno profundo para un resultado más lifting."
+    "en": "Combined treatment package.",
+    "es": "Paquete combinado de tratamiento."
   },
   {
     "id": "note.ultraformer.total_facial_rejuvenation",
-    "en": "Full face, submentum, and front of neck.",
-    "es": "Rostro completo, submentón y parte frontal del cuello."
+    "en": "Double chin (submental area).",
+    "es": "Doble mentón (zona submentoniana)."
   },
   {
     "id": "note.ultraformer.neck_sculpting",
-    "en": "Submentum and neck.",
-    "es": "Submentón y cuello."
+    "en": "Abdomen.",
+    "es": "Abdomen."
   },
   {
     "id": "note.ultraformer.decolletage_rejuvenation",
-    "en": "Chest and clavicles.",
-    "es": "Pecho y clavículas."
+    "en": "Flanks.",
+    "es": "Flancos."
   },
   {
     "id": "note.ultraformer.combo_lift_smooth",
-    "en": "Neck and decolleteage.",
-    "es": "Cuello y escote."
+    "en": "Decollete.",
+    "es": "Escote."
   },
   {
     "id": "note.ultraformer.express_body_glow",
-    "en": "One small area (elbows, knees, or similar).",
-    "es": "Una zona pequeña (codos, rodillas o similar)."
+    "en": "Knee.",
+    "es": "Rodilla."
   },
   {
     "id": "note.ultraformer.express_back_glow",
-    "en": "Flanks and sides of the back.",
-    "es": "Flancos y costados de la espalda."
+    "en": "Arms.",
+    "es": "Brazos."
   },
   {
     "id": "note.ultraformer.defined_arms",
-    "en": "Includes triceps, biceps, lateral arms, elbows, and deltoids.",
-    "es": "Incluye tríceps, bíceps, cara lateral de brazos, codos y deltoides."
+    "en": "Preaxillary area.",
+    "es": "Preaxilar."
   },
   {
     "id": "note.ultraformer.thigh_sculpting",
-    "en": "Inner thighs and front of thighs.",
-    "es": "Cara interna y frontal de muslos."
+    "en": "Inner or outer thighs.",
+    "es": "Muslos externo o interno."
   },
   {
     "id": "note.ultraformer.glute_contour",
