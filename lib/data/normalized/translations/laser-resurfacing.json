@@ -26,7 +26,7 @@
   },
   {
     "id": "note.co2.downtime",
-    "en": "Downtime ranges from 37 days depending on intensity",
+    "en": "Downtime ranges from 3-7 days depending on intensity",
     "es": "El tiempo de recuperación vara entre 3 y 7 días según la intensidad"
   },
   {
@@ -406,7 +406,7 @@
   },
   {
     "id": "faq.co2.a4",
-    "en": "Many patients see dramatic improvement after one session, but deeper scars or more advanced aging may require 23 sessions.",
+    "en": "Many patients see dramatic improvement after one session, but deeper scars or more advanced aging may require 2-3 sessions.",
     "es": "Muchos pacientes ven una mejora notable después de una sesión, aunque cicatrices más profundas o envejecimiento avanzado pueden requerir 2 o 3 sesiones."
   },
   {
@@ -431,7 +431,7 @@
   },
   {
     "id": "note.laser_hair.maintenance",
-    "en": "Maintenance touch ups may be needed 12 times per year",
+    "en": "Maintenance touch ups may be needed 1-2 times per year",
     "es": "Los retoques de mantenimiento pueden ser necesarios 1 o 2 veces al ao"
   },
   {
@@ -546,8 +546,8 @@
   },
   {
     "id": "exp.laser_hair.pre.2",
-    "en": "Avoid sun exposure and tanning for 2 weeks prior; skip self-tanner and harsh exfoliants for 57 days.",
-    "es": "Evite la exposición solar y el bronceado por 2 semanas; no use autobronceador ni exfoliantes fuertes por 57 días."
+    "en": "Avoid sun exposure and tanning for 2 weeks prior; skip self-tanner and harsh exfoliants for 5-7 days.",
+    "es": "Evite la exposición solar y el bronceado por 2 semanas; no use autobronceador ni exfoliantes fuertes por 5-7 días."
   },
   {
     "id": "exp.laser_hair.pre.3",
@@ -571,8 +571,8 @@
   },
   {
     "id": "exp.laser_hair.post.3",
-    "en": "Use SPF 30+ on exposed areas and avoid aggressive scrubs or retinoids for 57 days.",
-    "es": "Use FPS 30+ en zonas expuestas y evite exfoliantes agresivos o retinoides durante 57 días."
+    "en": "Use SPF 30+ on exposed areas and avoid aggressive scrubs or retinoids for 5-7 days.",
+    "es": "Use FPS 30+ en zonas expuestas y evite exfoliantes agresivos o retinoides durante 5-7 días."
   },
   {
     "id": "faq.laser_hair.q1",
@@ -581,7 +581,7 @@
   },
   {
     "id": "faq.laser_hair.a1",
-    "en": "It provides long term hair reduction. Most clients see 8090 percent reduction after completing a full series.",
+    "en": "It provides long term hair reduction. Most clients see 80-90 percent reduction after completing a full series.",
     "es": "Ofrece una reducción del vello a largo plazo. La mayoría de los pacientes ve entre un 80 y un 90 por ciento menos de vello después de completar la serie de sesiones."
   },
   {
@@ -821,8 +821,8 @@
   },
   {
     "id": "exp.ipl.post.1",
-    "en": "Pigmented spots may darken and flake off over 57 days; avoid picking.",
-    "es": "Las manchas pigmentadas pueden oscurecerse y descamarse en 57 días; evite manipularlas."
+    "en": "Pigmented spots may darken and flake off over 5-7 days; avoid picking.",
+    "es": "Las manchas pigmentadas pueden oscurecerse y descamarse en 5-7 días; evite manipularlas."
   },
   {
     "id": "exp.ipl.post.2",
@@ -1076,8 +1076,8 @@
   },
   {
     "id": "exp.rf.post.2",
-    "en": "Use gentle cleanser/moisturizer, avoid retinoids/acids for 57 days, and apply SPF 30+ once you resume daytime products.",
-    "es": "Use limpiador/hidratante suaves, evite retinoides/ácidos por 57 días y aplique FPS 30+ al reanudar productos diurnos."
+    "en": "Use gentle cleanser/moisturizer, avoid retinoids/acids for 5-7 days, and apply SPF 30+ once you resume daytime products.",
+    "es": "Use limpiador/hidratante suaves, evite retinoides/ácidos por 5-7 días y aplique FPS 30+ al reanudar productos diurnos."
   },
   {
     "id": "faq.rf.q1",
