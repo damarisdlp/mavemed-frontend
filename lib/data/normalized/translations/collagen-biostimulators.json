@@ -21,7 +21,7 @@
   },
   {
     "id": "note.sculptra.protocol",
-    "en": "Manufacturer protocol requires a minimum series of 3 sessions, typically spaced 46 weeks apart",
+    "en": "Manufacturer protocol requires a minimum series of 3 sessions, typically spaced 4-6 weeks apart",
     "es": "El protocolo del fabricante requiere una serie mínima de 3 sesiones, normalmente espaciadas cada 4 a 6 semanas"
   },
   {
@@ -221,8 +221,8 @@
   },
   {
     "id": "exp.sculptra.post.4",
-    "en": "Results build gradually over 48 weeks after each session; full effects often visible by 34 months.",
-    "es": "Los resultados se desarrollan gradualmente en 48 semanas después de cada sesión; los efectos completos suelen verse en 34 meses."
+    "en": "Results build gradually over 4-8 weeks after each session; full effects often visible by 3-4 months.",
+    "es": "Los resultados se desarrollan gradualmente en 4-8 semanas después de cada sesión; los efectos completos suelen verse en 34 meses."
   },
   {
     "id": "faq.sculptra.q1",
@@ -416,8 +416,8 @@
   },
   {
     "id": "exp.harmonyca.post.3",
-    "en": "Visible lift is immediate; collagen-stimulating effects continue developing over 68 weeksprotect skin from sun during this period.",
-    "es": "El levantamiento visible es inmediato; los efectos estimuladores de colágeno continúan desarrollándose durante 68 semanas; proteja la piel del sol en este periodo."
+    "en": "Visible lift is immediate; collagen-stimulating effects continue developing over 6-8 weeks, protect skin from sun during this period.",
+    "es": "El levantamiento visible es inmediato; los efectos estimuladores de colágeno continúan desarrollándose durante 6-8 semanas; proteja la piel del sol en este periodo."
   },
   {
     "id": "exp.harmonyca.post.4",
