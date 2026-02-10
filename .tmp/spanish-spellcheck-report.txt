@@ -285,7 +285,7 @@ Mantngase (5)
 retinoides (5)
   - lib/data/normalized/translations/collagen-biostimulators.json: Suspenda retinoides/cidos tpicos en las zonas a tratar por 48 horas y llegue con la piel limpia.
   - lib/data/normalized/translations/collagen-biostimulators.json: Suspenda retinoides/cidos en las zonas a tratar por 48 horas y llegue con la piel limpia.
-  - lib/data/normalized/translations/microneedling-mesotherapy.json: Evite retinoides, AHA/BHA, exfoliacin y depilacin por 35 das previos; no acuda con quemadura solar ni bronceado reciente.
+  - lib/data/normalized/translations/microneedling-mesotherapy.json: Evite retinoides, AHA/BHA, exfoliacin y depilacin por 3-5 das previos; no acuda con quemadura solar ni bronceado reciente.
 
 cidos (5)
   - lib/data/normalized/translations/collagen-biostimulators.json: Suspenda retinoides/cidos tpicos en las zonas a tratar por 48 horas y llegue con la piel limpia.
@@ -443,13 +443,13 @@ Retinol (5)
   - lib/data/normalized/translations/podiatry.json: Casmara® - Facial Retinol Pro-Age
 
 exfoliacin (5)
-  - lib/data/normalized/translations/microneedling-mesotherapy.json: Evite retinoides, AHA/BHA, exfoliacin y depilacin por 35 das previos; no acuda con quemadura solar ni bronceado reciente.
+  - lib/data/normalized/translations/microneedling-mesotherapy.json: Evite retinoides, AHA/BHA, exfoliacin y depilacin por 3-5 das previos; no acuda con quemadura solar ni bronceado reciente.
   - lib/data/normalized/translations/laser-resurfacing.json: Evite exposición solar, retinoides, cidos y exfoliacin durante 710 das antes del tratamiento; no acuda bronceado ni con autobronceador.
   - lib/data/normalized/translations/laser-resurfacing.json: Suspenda retinoides, cidos y exfoliacin 57 das antes; acuda con la piel limpia y sin maquillaje.
 
 infeccin (5)
   - lib/data/normalized/translations/microneedling-mesotherapy.json: Llegue con la piel limpia (sin maquillaje); reprograme si tiene infeccin activa, heridas abiertas o brote de herpes sin profilaxis.
-  - lib/data/normalized/translations/microneedling-mesotherapy.json: Llegue con la piel limpia, sin maquillaje; suspenda retinoides/cidos por 35 das; reprograme si hay infeccin activa o herpes.
+  - lib/data/normalized/translations/microneedling-mesotherapy.json: Llegue con la piel limpia, sin maquillaje; suspenda retinoides/cidos por 3-5 das; reprograme si hay infeccin activa o herpes.
   - lib/data/normalized/translations/facials.json: Reprograme si tiene infeccin activa, quemadura solar o depilacin/lser reciente en la zona.
 
 mdico (5)
@@ -715,7 +715,7 @@ ptimos (4)
   - lib/data/normalized/translations/body-medical-treatments.json: Pueden ser necesarias mltiples sesiones para resultados ptimos
 
 depilacin (4)
-  - lib/data/normalized/translations/microneedling-mesotherapy.json: Evite retinoides, AHA/BHA, exfoliacin y depilacin por 35 das previos; no acuda con quemadura solar ni bronceado reciente.
+  - lib/data/normalized/translations/microneedling-mesotherapy.json: Evite retinoides, AHA/BHA, exfoliacin y depilacin por 3-5 das previos; no acuda con quemadura solar ni bronceado reciente.
   - lib/data/normalized/translations/laser-resurfacing.json: La depilacin láser es permanente?
   - lib/data/normalized/translations/facials.json: Reprograme si tiene infeccin activa, quemadura solar o depilacin/lser reciente en la zona.
 
@@ -873,7 +873,7 @@ ibuprofeno (3)
 tpicos (3)
   - lib/data/normalized/translations/collagen-biostimulators.json: Suspenda retinoides/cidos tpicos en las zonas a tratar por 48 horas y llegue con la piel limpia.
   - lib/data/normalized/translations/body-medical-treatments.json: La eliminacin de verrugas y acrocordones puede realizarse con crioterapia, agentes tpicos dirigidos o procedimientos menores. El mtodo se elige segn el tipo de lesin, la ubicacin y las necesidades del paciente para resultados ptimos.
-  - lib/data/normalized/translations/body-medical-treatments.json: Mantenga el rea limpia y evite cidos o retinoides tpicos durante 35 das antes de su visita.
+  - lib/data/normalized/translations/body-medical-treatments.json: Mantenga el rea limpia y evite cidos o retinoides tpicos durante 3-5 das antes de su visita.
 
 duracin (3)
   - lib/data/normalized/translations/collagen-biostimulators.json: Sculptra estimula la producción propia de colágeno de su cuerpo con el tiempo, en lugar de agregar volumen inmediato como los rellenos de ácido hialurnico. El resultado es una rejuvenacin natural de mayor duracin.
@@ -1161,7 +1161,7 @@ microcanales (2)
 
 reprograme (2)
   - lib/data/normalized/translations/microneedling-mesotherapy.json: Llegue con la piel limpia (sin maquillaje); reprograme si tiene infeccin activa, heridas abiertas o brote de herpes sin profilaxis.
-  - lib/data/normalized/translations/microneedling-mesotherapy.json: Llegue con la piel limpia, sin maquillaje; suspenda retinoides/cidos por 35 das; reprograme si hay infeccin activa o herpes.
+  - lib/data/normalized/translations/microneedling-mesotherapy.json: Llegue con la piel limpia, sin maquillaje; suspenda retinoides/cidos por 3-5 das; reprograme si hay infeccin activa o herpes.
 
 infusin (2)
   - lib/data/normalized/translations/microneedling-mesotherapy.json: Qu opcin de infusin es mejor para m?
