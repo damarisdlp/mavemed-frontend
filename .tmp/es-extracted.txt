@@ -513,11 +513,11 @@ Evitar medicamentos anticoagulantes cuando sea médicamente apropiado
 Evite actividad física intensa o presión en la zona durante al menos 48 horas.
 Evite actividades intensas o calzado ajustado hasta que la cicatrización esté en marcha.
 Evite albercas, tinas calientes o remojar el área hasta que la piel haya sanado; no retire la costra.
-Evite alcohol y antiinflamatorios durante 2448 horas si su médico lo permite; hidrátese bien.
+Evite alcohol y antiinflamatorios durante 24 - 48 horas si su médico lo permite; hidrátese bien.
 Evite alcohol, AINE y suplementos anticoagulantes (aceite de pescado, ajo, ginkgo) durante al menos 24-48 horas.
 Evite alcohol, AINE/aspirina y suplementos anticoagulantes (aceite de pescado, vitamina E) durante 48 horas si su médico lo permite.
-Evite alcohol, AINE/aspirina y suplementos anticoagulantes durante 2448 horas si su médico lo permite para reducir moretones.
-Evite alcohol, AINE/aspirina y suplementos anticoagulantes durante 2448 horas si su médico lo permite.
+Evite alcohol, AINE/aspirina y suplementos anticoagulantes durante 24 - 48 horas si su médico lo permite para reducir moretones.
+Evite alcohol, AINE/aspirina y suplementos anticoagulantes durante 24 - 48 horas si su médico lo permite.
 Evite alcohol, AINE/aspirina y suplementos anticoagulantes durante 48 horas si su médico lo permite.
 Evite alcohol, antiinflamatorios y suplementos que adelgacen la sangre durante 24 a 48 horas antes de su cita para reducir el riesgo de moretones.
 Evite alcohol, aspirina, ibuprofeno y aceite de pescado 48 horas antes de su cita para reducir moretones.
@@ -528,7 +528,7 @@ Evite antiinflamatorios, aspirina y anticoagulantes durante 35 días si su médi
 Evite aspirina, antiinflamatorios y alcohol por 48 horas si su médico lo permite; no use cremas u aceites en las piernas el da del tratamiento.
 Evite baos calientes, saunas, sol intenso y ejercicio de alto impacto por 7 días; evite levantar peso por 48 horas.
 Evite calzado ajustado y actividades intensas durante al menos 3 a 5 días.
-Evite duchas muy calientes, saunas y ejercicio intenso durante 2448 horas; hidrátese bien.
+Evite duchas muy calientes, saunas y ejercicio intenso durante 24 - 48 horas; hidrátese bien.
 Evite duchas muy calientes/saunas y ejercicio intenso durante 24 horas; hidrátese bien.
 Evite ejercicio intenso, alcohol, saunas y presión facial (faciales/masajes) durante 48 horas.
 Evite ejercicio intenso, saunas, alcohol y maquillaje en los labios por 24 horas; evite besar o usar popotes el primer día.
@@ -649,7 +649,7 @@ Hidratar en profundidad y nutrir
 Hidratar profundamente y dar luminosidad a la piel
 Hidratar y aportar volumen
 Hidratar y nutrir la piel en profundidad
-Hidrátese bien durante 24 horas y evite alcohol/AINE por 2448 horas si su médico lo permite.
+Hidrátese bien durante 24 horas y evite alcohol/AINE por 24 - 48 horas si su médico lo permite.
 Hilos PDO - Levantamiento de Cejas y Ojos
 Hilos PDO - Levantamiento Facial Inferior Signature
 Hilos PDO - Plan de Lifting No Quirúrgico
@@ -779,7 +779,7 @@ La mayoría de los clientes sienten una sensación de tirón apretado, no dolor.
 La mayoría de los pacientes describe la sensación como un chasquido cálido, similar a una ligera liga sobre la piel. Es rápido y bien tolerado.
 La mayoría de los pacientes disfrutan resultados que duran 12-18 meses, dependiendo de su edad, tipo de piel y hábitos de vida.
 La mayoría de los pacientes necesitan 2-3 viales durante el curso de múltiples sesiones, dependiendo de la edad, la pérdida de volumen facial y los objetivos del tratamiento.
-La mayoría de los pacientes presenta enrojecimiento y sensación de tirantez durante 2448 horas, con muy poca descamación y mínima interrupción de sus actividades diarias.
+La mayoría de los pacientes presenta enrojecimiento y sensación de tirantez durante 24-48 horas, con muy poca descamación y mínima interrupción de sus actividades diarias.
 La mayoría de los pacientes puede retomar actividades ligeras el mismo día. Evite impactos fuertes como correr o saltar durante al menos 48 horas.
 La mayoría de los pacientes requiere de 3 a 5 sesiones, separadas cada 3 a 4 semanas, para obtener los mejores resultados.
 La mayoría de los pacientes requiere de 3 a 6 sesiones, espaciadas cada 46 semanas, para obtener los mejores resultados.
@@ -838,7 +838,7 @@ Lifting con hilos PDO
 Lifting de Submentón y Tercio Inferior
 Lifting refrescante
 Lifting Refrescante
-Limite alcohol, AINE y suplementos anticoagulantes 2448 horas antes si su médico lo permite.
+Limite alcohol, AINE y suplementos anticoagulantes 24-48 horas antes si su médico lo permite.
 Limpiar y exfoliar profundamente la piel
 Limpie el dedo suavemente antes de acudir; evite aplicar cremas o ungüentos antibióticos salvo indicación.
 Limpie el dedo suavemente y evite aplicar ungüentos antibióticos el día de la visita salvo indicación.
@@ -911,7 +911,7 @@ Mantenga la piel tratada limpia, evite exfoliantes agresivos y proteja las marca
 Mantenga la zona seca y cubierta durante 24 a 48 horas y luego siga las indicaciones de cuidado de la herida.
 Mantenga las uñas secas y limpias para evitar reinfección; aplique solución antifúngica si se le receta.
 Manténgase bien hidratado y coma una comida nutritiva antes de su cita.
-Manténgase bien hidratado; evite alcohol, cafeína y AINE durante 2448 horas si su médico lo permite.
+Manténgase bien hidratado; evite alcohol, cafeína y AINE durante 24-48 horas si su médico lo permite.
 Manténgase erguido y evite acostarse plano durante 4 horas después del tratamiento.
 Manténgase hidratado y evite tinas calientes, saunas o ejercicio intenso por 24 horas.
 Manténgase hidratado, coma algo ligero y llegue con la piel limpia; suspenda retinoides/ácidos por 48 horas.
@@ -1193,7 +1193,7 @@ Puede incluir corticosteroides, anestésicos o biológicos según el diagnóstic
 Puede notar algo de tensión después de la primera sesión, pero los resultados completos se desarrollan en 68 sesiones.
 Puede ocurrir hinchazón leve o moretones y generalmente se resuelve en pocos días; aplique compresas frías si es necesario.
 Puede ocurrir hinchazón leve o moretones y generalmente se resuelve en pocos días. Se puede aplicar hielo suavemente si es necesario.
-Puede presentar enrojecimiento o sensación de calor leve durante algunas horas. Evite duchas muy calientes, saunas y exfoliantes durante 2448 horas.
+Puede presentar enrojecimiento o sensación de calor leve durante algunas horas. Evite duchas muy calientes, saunas y exfoliantes durante 24-48 horas.
 Puede presentarse descamación entre 2 y 4 días; no manipule ni exfolie, permita que la piel se desprenda de forma natural.
 Puede presentarse descamación leve después del tratamiento
 Puede presentarse dolor leve después de la primera sesión o de una más profunda; estiramientos suaves y una ducha tibia (no caliente) pueden ayudar.
