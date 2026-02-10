@@ -37,7 +37,7 @@ Top repeated unknown words (count):
 - regeneracin: 5
 - Ultraformer: 5
 - microneedling: 5
-- Rejuran: 5
+- PN: 5
 - Mesoterapia: 5
 - colgeno: 5
 - reparacin: 5
@@ -355,12 +355,12 @@ Cunto (5)
 hidratacin (5)
   - lib/data/normalized/translations/collagen-biostimulators.json: HarmonyCa es un inyectable bifsico que combina ácido hialurnico para hidratacin y volumen inmediato, con microesferas de CaHA para aumentar la producción de colágeno con el tiempo. Esta frmula avanzada es ideal para realzar los pmulos, definir la línea mandibular y restaurar la firmeza en la cara inferior. Su efecto bioregenerativo ayuda a mejorar la densidad y elasticidad de la piel, convirtindolo en una opcin principal para un rejuvenecimiento duradero, natural y sin pesadez ni hinchazn.
   - lib/data/normalized/translations/microneedling-mesotherapy.json: Mejora la textura, minimiza poros y estimula el colgeno mediante microneedling de precisin con agujas estriles finas. Elige PRP/PRFM para luminosidad y reparacin, PN para hidratacin y regeneracin, PDRN para recuperacin y tono, o infusiones Toskani y Extracto de Caviar para renovacin dirigida.
-  - lib/data/normalized/translations/microneedling-mesotherapy.json: PRP/PRFM utiliza su propio plasma para favorecer la regeneracin. Kiara Reju aporta hidratacin y luminosidad. Rejuran se enfoca en la reparacin celular profunda. Su especialista recomendar la mejor opcin segn las necesidades de su piel.
+  - lib/data/normalized/translations/microneedling-mesotherapy.json: PRP/PRFM utiliza su propio plasma para favorecer la regeneracin. PDRN aporta hidratacin y luminosidad. PN se enfoca en la reparacin celular profunda. Su especialista recomendar la mejor opcin segn las necesidades de su piel.
 
 opcin (5)
   - lib/data/normalized/translations/collagen-biostimulators.json: HarmonyCa es un inyectable bifsico que combina ácido hialurnico para hidratacin y volumen inmediato, con microesferas de CaHA para aumentar la producción de colágeno con el tiempo. Esta frmula avanzada es ideal para realzar los pmulos, definir la línea mandibular y restaurar la firmeza en la cara inferior. Su efecto bioregenerativo ayuda a mejorar la densidad y elasticidad de la piel, convirtindolo en una opcin principal para un rejuvenecimiento duradero, natural y sin pesadez ni hinchazn.
   - lib/data/normalized/translations/microneedling-mesotherapy.json: Qu opcin de infusin es mejor para m?
-  - lib/data/normalized/translations/microneedling-mesotherapy.json: PRP/PRFM utiliza su propio plasma para favorecer la regeneracin. Kiara Reju aporta hidratacin y luminosidad. Rejuran se enfoca en la reparacin celular profunda. Su especialista recomendar la mejor opcin segn las necesidades de su piel.
+  - lib/data/normalized/translations/microneedling-mesotherapy.json: PRP/PRFM utiliza su propio plasma para favorecer la regeneracin. PDRN aporta hidratacin y luminosidad. PN se enfoca en la reparacin celular profunda. Su especialista recomendar la mejor opcin segn las necesidades de su piel.
 
 Lnea (5)
   - lib/data/normalized/translations/collagen-biostimulators.json: Lnea Mandibular
@@ -375,22 +375,22 @@ lser (5)
 regeneracin (5)
   - lib/data/normalized/translations/collagen-biostimulators.json: HarmonyCa combina el volumen inmediato del HA con el poder estimulador de colágeno del CaHA, proporcionando levantamiento instantneo y regeneracin de la piel a largo plazo.
   - lib/data/normalized/translations/microneedling-mesotherapy.json: Mejora la textura, minimiza poros y estimula el colgeno mediante microneedling de precisin con agujas estriles finas. Elige PRP/PRFM para luminosidad y reparacin, PN para hidratacin y regeneracin, PDRN para recuperacin y tono, o infusiones Toskani y Extracto de Caviar para renovacin dirigida.
-  - lib/data/normalized/translations/microneedling-mesotherapy.json: PRP/PRFM utiliza su propio plasma para favorecer la regeneracin. Kiara Reju aporta hidratacin y luminosidad. Rejuran se enfoca en la reparacin celular profunda. Su especialista recomendar la mejor opcin segn las necesidades de su piel.
+  - lib/data/normalized/translations/microneedling-mesotherapy.json: PRP/PRFM utiliza su propio plasma para favorecer la regeneracin. PDRN aporta hidratacin y luminosidad. PN se enfoca en la reparacin celular profunda. Su especialista recomendar la mejor opcin segn las necesidades de su piel.
 
 Ultraformer (5)
-  - lib/data/normalized/translations/collagen-biostimulators.json: Absolutamente. Se combina bien con tratamientos como Ultraformer, microneedling RF y potenciadores de piel como Rejuran para rejuvenecimiento facial completo.
+  - lib/data/normalized/translations/collagen-biostimulators.json: Absolutamente. Se combina bien con tratamientos como Ultraformer, microneedling RF y potenciadores de piel como PN para rejuvenecimiento facial completo.
   - lib/data/normalized/translations/skin-tightening.json: Lifting con HIFU Ultraformer MPT
   - lib/data/normalized/translations/skin-tightening.json: Ultraformer MPT es un tratamiento de lifting facial y esculpido corporal no quirúrgico que utiliza ultrasonido focalizado de alta intensidad (HIFU) para tensar la piel, reducir la flacidez y contornear zonas clave sin tiempo de recuperacin.
 
 microneedling (5)
-  - lib/data/normalized/translations/collagen-biostimulators.json: Absolutamente. Se combina bien con tratamientos como Ultraformer, microneedling RF y potenciadores de piel como Rejuran para rejuvenecimiento facial completo.
+  - lib/data/normalized/translations/collagen-biostimulators.json: Absolutamente. Se combina bien con tratamientos como Ultraformer, microneedling RF y potenciadores de piel como PN para rejuvenecimiento facial completo.
   - lib/data/normalized/translations/microneedling-mesotherapy.json: Mejora la textura, minimiza poros y estimula el colgeno mediante microneedling de precisin con agujas estriles finas. Elige PRP/PRFM para luminosidad y reparacin, PN para hidratacin y regeneracin, PDRN para recuperacin y tono, o infusiones Toskani y Extracto de Caviar para renovacin dirigida.
   - lib/data/normalized/translations/microneedling-mesotherapy.json: El microneedling utiliza agujas estriles finas para crear microcanales que activan la reparacin cutnea, estimulando colgeno y elastina mientras mejora textura y firmeza. Las infusiones se eligen segn el objetivo: PRP/PRFM para apoyar recuperacin y luminosidad, PN para hidratar y regenerar, PDRN para calmar y unificar el tono, o Toskani y Extracto de Caviar para renovacin dirigida.
 
-Rejuran (5)
-  - lib/data/normalized/translations/collagen-biostimulators.json: Absolutamente. Se combina bien con tratamientos como Ultraformer, microneedling RF y potenciadores de piel como Rejuran para rejuvenecimiento facial completo.
-  - lib/data/normalized/translations/microneedling-mesotherapy.json: PRP/PRFM utiliza su propio plasma para favorecer la regeneracin. Kiara Reju aporta hidratacin y luminosidad. Rejuran se enfoca en la reparacin celular profunda. Su especialista recomendar la mejor opcin segn las necesidades de su piel.
-  - lib/data/normalized/translations/microneedling-mesotherapy.json: S, el microneedling es seguro para la mayora de los fototipos cuando lo realiza personal capacitado. Rejuran y Kiara Reju son excelentes opciones para piel sensible o madura.
+PN (5)
+  - lib/data/normalized/translations/collagen-biostimulators.json: Absolutamente. Se combina bien con tratamientos como Ultraformer, microneedling RF y potenciadores de piel como PN para rejuvenecimiento facial completo.
+  - lib/data/normalized/translations/microneedling-mesotherapy.json: PRP/PRFM utiliza su propio plasma para favorecer la regeneracin. PDRN aporta hidratacin y luminosidad. PN se enfoca en la reparacin celular profunda. Su especialista recomendar la mejor opcin segn las necesidades de su piel.
+  - lib/data/normalized/translations/microneedling-mesotherapy.json: S, el microneedling es seguro para la mayora de los fototipos cuando lo realiza personal capacitado. PN y PDRN son excelentes opciones para piel sensible o madura.
 
 Mesoterapia (5)
   - lib/data/normalized/translations/microneedling-mesotherapy.json: Microneedling y Mesoterapia
@@ -405,7 +405,7 @@ colgeno (5)
 reparacin (5)
   - lib/data/normalized/translations/microneedling-mesotherapy.json: Mejora la textura, minimiza poros y estimula el colgeno mediante microneedling de precisin con agujas estriles finas. Elige PRP/PRFM para luminosidad y reparacin, PN para hidratacin y regeneracin, PDRN para recuperacin y tono, o infusiones Toskani y Extracto de Caviar para renovacin dirigida.
   - lib/data/normalized/translations/microneedling-mesotherapy.json: El microneedling utiliza agujas estriles finas para crear microcanales que activan la reparacin cutnea, estimulando colgeno y elastina mientras mejora textura y firmeza. Las infusiones se eligen segn el objetivo: PRP/PRFM para apoyar recuperacin y luminosidad, PN para hidratar y regenerar, PDRN para calmar y unificar el tono, o Toskani y Extracto de Caviar para renovacin dirigida.
-  - lib/data/normalized/translations/microneedling-mesotherapy.json: PRP/PRFM utiliza su propio plasma para favorecer la regeneracin. Kiara Reju aporta hidratacin y luminosidad. Rejuran se enfoca en la reparacin celular profunda. Su especialista recomendar la mejor opcin segn las necesidades de su piel.
+  - lib/data/normalized/translations/microneedling-mesotherapy.json: PRP/PRFM utiliza su propio plasma para favorecer la regeneracin. PDRN aporta hidratacin y luminosidad. PN se enfoca en la reparacin celular profunda. Su especialista recomendar la mejor opcin segn las necesidades de su piel.
 
 recuperacin (5)
   - lib/data/normalized/translations/microneedling-mesotherapy.json: Mejora la textura, minimiza poros y estimula el colgeno mediante microneedling de precisin con agujas estriles finas. Elige PRP/PRFM para luminosidad y reparacin, PN para hidratacin y regeneracin, PDRN para recuperacin y tono, o infusiones Toskani y Extracto de Caviar para renovacin dirigida.
@@ -485,7 +485,7 @@ Skin (5)
 cido (5)
   - lib/data/normalized/translations/microneedling-mesotherapy.json: Microinyecciones dirigidas de sustancias rejuvenecedoras como PRP, PDRN, cido hialurnico y vitaminas para hidratar profundamente, reparar y devolver luminosidad a la piel.
   - lib/data/normalized/translations/microneedling-mesotherapy.json: La mesoterapia es un tratamiento mnimamente invasivo que introduce compuestos revitalizantes directamente en la dermis mediante microinyecciones. Los activos incluyen PRP/PRFM de su propia sangre, polinucletidos para regeneracin, potenciadores con niacinamida y cido hialurnico para hidratacin y luminosidad, ccteles antioxidantes para revitalizacin y microgotas de AH aprobadas por la FDA para suavizar y dar luminosidad a las mejillas.
-  - lib/data/normalized/translations/microneedling-mesotherapy.json: PRP/PRFM utiliza su propio plasma para una regeneracin natural. Rejuran repara con ADN de salmn (PDRN), y Kiara Reju aporta luminosidad gracias a la niacinamida y al cido hialurnico.
+  - lib/data/normalized/translations/microneedling-mesotherapy.json: PRP/PRFM utiliza su propio plasma para una regeneracin natural. PN repara con ADN de salmn (PDRN), y PDRN aporta luminosidad gracias a la niacinamida y al cido hialurnico.
 
 mesoterapia (5)
   - lib/data/normalized/translations/microneedling-mesotherapy.json: La mesoterapia es un tratamiento mnimamente invasivo que introduce compuestos revitalizantes directamente en la dermis mediante microinyecciones. Los activos incluyen PRP/PRFM de su propia sangre, polinucletidos para regeneracin, potenciadores con niacinamida y cido hialurnico para hidratacin y luminosidad, ccteles antioxidantes para revitalizacin y microgotas de AH aprobadas por la FDA para suavizar y dar luminosidad a las mejillas.
@@ -705,7 +705,7 @@ mdicos (4)
   - lib/data/normalized/translations/wrinkle-reducers.json: Los neuromoduladores como la toxina botulnica genrica se consideran muy seguros cuando son administrados por profesionales mdicos capacitados. En Mave, los tratamientos se realizan bajo supervisin mdica utilizando solo productos certificados.
 
 potenciadores (4)
-  - lib/data/normalized/translations/collagen-biostimulators.json: Absolutamente. Se combina bien con tratamientos como Ultraformer, microneedling RF y potenciadores de piel como Rejuran para rejuvenecimiento facial completo.
+  - lib/data/normalized/translations/collagen-biostimulators.json: Absolutamente. Se combina bien con tratamientos como Ultraformer, microneedling RF y potenciadores de piel como PN para rejuvenecimiento facial completo.
   - lib/data/normalized/translations/microneedling-mesotherapy.json: La mesoterapia es un tratamiento mnimamente invasivo que introduce compuestos revitalizantes directamente en la dermis mediante microinyecciones. Los activos incluyen PRP/PRFM de su propia sangre, polinucletidos para regeneracin, potenciadores con niacinamida y cido hialurnico para hidratacin y luminosidad, ccteles antioxidantes para revitalizacin y microgotas de AH aprobadas por la FDA para suavizar y dar luminosidad a las mejillas.
   - lib/data/normalized/translations/laser-resurfacing.json: Potencia sus resultados con nuestros sueros y potenciadores especializados. Estos complementos se aplican inmediatamente despus de procedimientos como microneedling con RF o resurfacing con láser CO para llevar activos especficos a capas profundas de la piel, intensificando la reparacin y la rejuvenecin.
 
@@ -720,14 +720,14 @@ depilacin (4)
   - lib/data/normalized/translations/facials.json: Reprograme si tiene infeccin activa, quemadura solar o depilacin/lser reciente en la zona.
 
 Kiara (4)
-  - lib/data/normalized/translations/microneedling-mesotherapy.json: PRP/PRFM utiliza su propio plasma para favorecer la regeneracin. Kiara Reju aporta hidratacin y luminosidad. Rejuran se enfoca en la reparacin celular profunda. Su especialista recomendar la mejor opcin segn las necesidades de su piel.
-  - lib/data/normalized/translations/microneedling-mesotherapy.json: S, el microneedling es seguro para la mayora de los fototipos cuando lo realiza personal capacitado. Rejuran y Kiara Reju son excelentes opciones para piel sensible o madura.
-  - lib/data/normalized/translations/microneedling-mesotherapy.json: Cul es la diferencia entre PRP, Rejuran y Kiara Reju?
+  - lib/data/normalized/translations/microneedling-mesotherapy.json: PRP/PRFM utiliza su propio plasma para favorecer la regeneracin. PDRN aporta hidratacin y luminosidad. PN se enfoca en la reparacin celular profunda. Su especialista recomendar la mejor opcin segn las necesidades de su piel.
+  - lib/data/normalized/translations/microneedling-mesotherapy.json: S, el microneedling es seguro para la mayora de los fototipos cuando lo realiza personal capacitado. PN y PDRN son excelentes opciones para piel sensible o madura.
+  - lib/data/normalized/translations/microneedling-mesotherapy.json: Cul es la diferencia entre PRP, PN y PDRN?
 
 Reju (4)
-  - lib/data/normalized/translations/microneedling-mesotherapy.json: PRP/PRFM utiliza su propio plasma para favorecer la regeneracin. Kiara Reju aporta hidratacin y luminosidad. Rejuran se enfoca en la reparacin celular profunda. Su especialista recomendar la mejor opcin segn las necesidades de su piel.
-  - lib/data/normalized/translations/microneedling-mesotherapy.json: S, el microneedling es seguro para la mayora de los fototipos cuando lo realiza personal capacitado. Rejuran y Kiara Reju son excelentes opciones para piel sensible o madura.
-  - lib/data/normalized/translations/microneedling-mesotherapy.json: Cul es la diferencia entre PRP, Rejuran y Kiara Reju?
+  - lib/data/normalized/translations/microneedling-mesotherapy.json: PRP/PRFM utiliza su propio plasma para favorecer la regeneracin. PDRN aporta hidratacin y luminosidad. PN se enfoca en la reparacin celular profunda. Su especialista recomendar la mejor opcin segn las necesidades de su piel.
+  - lib/data/normalized/translations/microneedling-mesotherapy.json: S, el microneedling es seguro para la mayora de los fototipos cuando lo realiza personal capacitado. PN y PDRN son excelentes opciones para piel sensible o madura.
+  - lib/data/normalized/translations/microneedling-mesotherapy.json: Cul es la diferencia entre PRP, PN y PDRN?
 
 Potenciadores (4)
   - lib/data/normalized/translations/microneedling-mesotherapy.json: Potenciadores de Piel
@@ -915,7 +915,7 @@ Renewal (3)
   - lib/data/normalized/translations/facials.json: Janssen - Facial Ultra Renewal
 
 fototipos (3)
-  - lib/data/normalized/translations/microneedling-mesotherapy.json: S, el microneedling es seguro para la mayora de los fototipos cuando lo realiza personal capacitado. Rejuran y Kiara Reju son excelentes opciones para piel sensible o madura.
+  - lib/data/normalized/translations/microneedling-mesotherapy.json: S, el microneedling es seguro para la mayora de los fototipos cuando lo realiza personal capacitado. PN y PDRN son excelentes opciones para piel sensible o madura.
   - lib/data/normalized/translations/laser-resurfacing.json: Seguro para pieles bronceadas y fototipos oscuros
   - lib/data/normalized/translations/laser-resurfacing.json: S. Soprano Titanium es seguro para todos los fototipos de piel, incluyendo piel bronceada y tonos ms oscuros.
 
@@ -930,7 +930,7 @@ microinyecciones (3)
 
 niacinamida (3)
   - lib/data/normalized/translations/microneedling-mesotherapy.json: La mesoterapia es un tratamiento mnimamente invasivo que introduce compuestos revitalizantes directamente en la dermis mediante microinyecciones. Los activos incluyen PRP/PRFM de su propia sangre, polinucletidos para regeneracin, potenciadores con niacinamida y cido hialurnico para hidratacin y luminosidad, ccteles antioxidantes para revitalizacin y microgotas de AH aprobadas por la FDA para suavizar y dar luminosidad a las mejillas.
-  - lib/data/normalized/translations/microneedling-mesotherapy.json: PRP/PRFM utiliza su propio plasma para una regeneracin natural. Rejuran repara con ADN de salmn (PDRN), y Kiara Reju aporta luminosidad gracias a la niacinamida y al cido hialurnico.
+  - lib/data/normalized/translations/microneedling-mesotherapy.json: PRP/PRFM utiliza su propio plasma para una regeneracin natural. PN repara con ADN de salmn (PDRN), y PDRN aporta luminosidad gracias a la niacinamida y al cido hialurnico.
   - lib/data/normalized/translations/microneedling-mesotherapy.json: Combina PDRN, cido hialurnico y niacinamida para apoyar la reparacin, hidratacin y un tono ms uniforme y luminoso.
 
 Estras (3)
@@ -1633,7 +1633,7 @@ microinyeccin (1)
   - lib/data/normalized/translations/microneedling-mesotherapy.json: Se aplica anestesia tpica; sentir pequeos pinchazos o presin con cada microinyeccin.
 
 salmn (1)
-  - lib/data/normalized/translations/microneedling-mesotherapy.json: PRP/PRFM utiliza su propio plasma para una regeneracin natural. Rejuran repara con ADN de salmn (PDRN), y Kiara Reju aporta luminosidad gracias a la niacinamida y al cido hialurnico.
+  - lib/data/normalized/translations/microneedling-mesotherapy.json: PRP/PRFM utiliza su propio plasma para una regeneracin natural. PN repara con ADN de salmn (PDRN), y PDRN aporta luminosidad gracias a la niacinamida y al cido hialurnico.
 
 condicin (1)
   - lib/data/normalized/translations/microneedling-mesotherapy.json: Dependiendo del producto y la condicin a tratar, los resultados duran entre 4 y 6 meses o ms con un buen mantenimiento.
