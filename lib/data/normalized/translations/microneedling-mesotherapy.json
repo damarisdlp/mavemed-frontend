@@ -116,8 +116,8 @@
   },
   {
     "id": "exp.microneedling.pre.3",
-    "en": "Limit alcohol, NSAIDs, and blood-thinning supplements 2448 hours before if medically permitted.",
-    "es": "Limite alcohol, AINE y suplementos anticoagulantes 2448 horas antes si su médico lo permite."
+    "en": "Limit alcohol, NSAIDs, and blood-thinning supplements 24 - 48 hours before if medically permitted.",
+    "es": "Limite alcohol, AINE y suplementos anticoagulantes 24 - 48 horas antes si su médico lo permite."
   },
   {
     "id": "exp.microneedling.during.1",
@@ -291,8 +291,8 @@
   },
   {
     "id": "exp.mesotherapy.pre.1",
-    "en": "Avoid alcohol, NSAIDs/aspirin, and blood-thinning supplements for 2448 hours if medically permitted.",
-    "es": "Evite alcohol, AINE/aspirina y suplementos anticoagulantes durante 2448 horas si su médico lo permite."
+    "en": "Avoid alcohol, NSAIDs/aspirin, and blood-thinning supplements for 24 - 48 hours if medically permitted.",
+    "es": "Evite alcohol, AINE/aspirina y suplementos anticoagulantes durante 24 - 48 horas si su médico lo permite."
   },
   {
     "id": "exp.mesotherapy.pre.2",
