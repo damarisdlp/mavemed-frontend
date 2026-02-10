@@ -279,7 +279,7 @@ Juvderm (5)
 
 Mantngase (5)
   - lib/data/normalized/translations/collagen-biostimulators.json: Mantngase bien hidratado y coma una comida nutritiva antes de su cita.
-  - lib/data/normalized/translations/skin-tightening.json: Mantngase bien hidratado; evite alcohol, cafena y AINE durante 2448 horas si su mdico lo permite.
+  - lib/data/normalized/translations/skin-tightening.json: Mantngase bien hidratado; evite alcohol, cafena y AINE durante 24 - 48 horas si su mdico lo permite.
   - lib/data/normalized/translations/wrinkle-reducers.json: Mantngase erguido y evite acostarse plano durante 4 horas despus del tratamiento.
 
 retinoides (5)
@@ -453,9 +453,9 @@ infeccin (5)
   - lib/data/normalized/translations/facials.json: Reprograme si tiene infeccin activa, quemadura solar o depilacin/lser reciente en la zona.
 
 mdico (5)
-  - lib/data/normalized/translations/microneedling-mesotherapy.json: Limite alcohol, AINE y suplementos anticoagulantes 2448 horas antes si su mdico lo permite.
-  - lib/data/normalized/translations/microneedling-mesotherapy.json: Evite alcohol, AINE/aspirina y suplementos anticoagulantes durante 2448 horas si su mdico lo permite.
-  - lib/data/normalized/translations/skin-tightening.json: Mantngase bien hidratado; evite alcohol, cafena y AINE durante 2448 horas si su mdico lo permite.
+  - lib/data/normalized/translations/microneedling-mesotherapy.json: Limite alcohol, AINE y suplementos anticoagulantes 24 - 48 horas antes si su mdico lo permite.
+  - lib/data/normalized/translations/microneedling-mesotherapy.json: Evite alcohol, AINE/aspirina y suplementos anticoagulantes durante 24 - 48 horas si su mdico lo permite.
+  - lib/data/normalized/translations/skin-tightening.json: Mantngase bien hidratado; evite alcohol, cafena y AINE durante 24 - 48 horas si su mdico lo permite.
 
 tpica (5)
   - lib/data/normalized/translations/microneedling-mesotherapy.json: Se aplica anestesia tpica; espere una sensacin de raspado/presin con posible sangrado puntual.
@@ -470,7 +470,7 @@ sensacin (5)
 exfoliantes (5)
   - lib/data/normalized/translations/microneedling-mesotherapy.json: No use retinoides, cidos ni exfoliantes por 57 das; aplique FPS 30+ al reintroducir productos diurnos.
   - lib/data/normalized/translations/laser-resurfacing.json: Evite la exposición solar y el bronceado por 2 semanas; no use autobronceador ni exfoliantes fuertes por 57 das.
-  - lib/data/normalized/translations/laser-resurfacing.json: Puede presentar enrojecimiento o sensacin de calor leve durante algunas horas. Evite duchas muy calientes, saunas y exfoliantes durante 2448 horas.
+  - lib/data/normalized/translations/laser-resurfacing.json: Puede presentar enrojecimiento o sensacin de calor leve durante algunas horas. Evite duchas muy calientes, saunas y exfoliantes durante 24 - 48 horas.
 
 Cuntas (5)
   - lib/data/normalized/translations/microneedling-mesotherapy.json: Cuntas sesiones voy a necesitar?
@@ -687,7 +687,7 @@ strong (5)
 mnima (4)
   - lib/data/normalized/translations/collagen-biostimulators.json: El protocolo del fabricante requiere una serie mnima de 3 sesiones, normalmente espaciadas cada 4 a 6 semanas
   - lib/data/normalized/translations/skin-tightening.json: La zona se anestesia con lidocana, por lo que la molestia durante el procedimiento es mnima. Puede haber sensibilidad o sensacin de tirantez durante algunos das despus.
-  - lib/data/normalized/translations/laser-resurfacing.json: La mayora de los pacientes presenta enrojecimiento y sensacin de tirantez durante 2448 horas, con muy poca descamacin y mnima interrupcin de sus actividades diarias.
+  - lib/data/normalized/translations/laser-resurfacing.json: La mayora de los pacientes presenta enrojecimiento y sensacin de tirantez durante 24 - 48 horas, con muy poca descamacin y mnima interrupcin de sus actividades diarias.
 
 autoinmunes (4)
   - lib/data/normalized/translations/collagen-biostimulators.json: Informe a su especialista sobre enfermedades autoinmunes, antecedentes de queloides, vacunas/trabajos dentales recientes o anticoagulantes.
@@ -996,9 +996,9 @@ comnmente (3)
   - lib/data/normalized/translations/body-medical-treatments.json: La escleroterapia implica inyectar un agente esclerotizante en venas superficiales pequeas, causando que colapsen y se desvanezcan de la vista. Se usa comnmente para tratar venas de araa y venas varicosas pequeas en las piernas.
 
 hidrtese (3)
-  - lib/data/normalized/translations/skin-tightening.json: Evite duchas muy calientes, saunas y ejercicio intenso durante 2448 horas; hidrtese bien.
+  - lib/data/normalized/translations/skin-tightening.json: Evite duchas muy calientes, saunas y ejercicio intenso durante 24 - 48 horas; hidrtese bien.
   - lib/data/normalized/translations/skin-tightening.json: Evite duchas muy calientes/saunas y ejercicio intenso durante 24 horas; hidrtese bien.
-  - lib/data/normalized/translations/skin-tightening.json: Evite alcohol y antiinflamatorios durante 2448 horas si su mdico lo permite; hidrtese bien.
+  - lib/data/normalized/translations/skin-tightening.json: Evite alcohol y antiinflamatorios durante 24 - 48 horas si su mdico lo permite; hidrtese bien.
 
 tirn (3)
   - lib/data/normalized/translations/skin-tightening.json: Se utiliza anestesia local; sentir presin y posible tirn mientras se colocan y tensan los hilos.
@@ -1284,7 +1284,7 @@ fibrtico (2)
   - lib/data/normalized/translations/body-medical-treatments.json: Es normal un ligero blanqueamiento o sensacin de llenado en el sitio mientras se dispersa el esteroide/anti-fibrtico.
 
 cafena (2)
-  - lib/data/normalized/translations/skin-tightening.json: Mantngase bien hidratado; evite alcohol, cafena y AINE durante 2448 horas si su mdico lo permite.
+  - lib/data/normalized/translations/skin-tightening.json: Mantngase bien hidratado; evite alcohol, cafena y AINE durante 24 - 48 horas si su mdico lo permite.
   - lib/data/normalized/translations/laser-resurfacing.json: Evite anticoagulantes, alcohol y cafena durante las 24 horas previas a su sesin.
 
 quirrgica (2)
@@ -1786,7 +1786,7 @@ metlico (1)
   - lib/data/normalized/translations/skin-tightening.json: Acuda con la piel limpia y sin maquillaje; informe a su especialista sobre Botox/rellenos recientes, implantes o material metlico en la zona.
 
 Hidrtese (1)
-  - lib/data/normalized/translations/skin-tightening.json: Hidrtese bien durante 24 horas y evite alcohol/AINE por 2448 horas si su mdico lo permite.
+  - lib/data/normalized/translations/skin-tightening.json: Hidrtese bien durante 24 horas y evite alcohol/AINE por 24 - 48 horas si su mdico lo permite.
 
 actan (1)
   - lib/data/normalized/translations/skin-tightening.json: Sentir calor y ligera succin/presin mientras actan la RF y los campos magnticos pulsados; la intensidad se ajusta para su comodidad.
@@ -1978,7 +1978,7 @@ clnicos (1)
   - lib/data/normalized/translations/laser-resurfacing.json: La FDA advirti recientemente que algunos dispositivos de microneedling con RF, usados fuera de indicaciones aprobadas o por personal no capacitado, pueden causar quemaduras, cicatrices y cambios de pigmento. Sylfirm X aplica RF bipolar controlada con doble onda, cuenta con autorizacin de la FDA para remodelacin drmica y se realiza por clnicos licenciados bajo protocolos estrictos, lo que reduce riesgos y mejora resultados.
 
 interrupcin (1)
-  - lib/data/normalized/translations/laser-resurfacing.json: La mayora de los pacientes presenta enrojecimiento y sensacin de tirantez durante 2448 horas, con muy poca descamacin y mnima interrupcin de sus actividades diarias.
+  - lib/data/normalized/translations/laser-resurfacing.json: La mayora de los pacientes presenta enrojecimiento y sensacin de tirantez durante 24 - 48 horas, con muy poca descamacin y mnima interrupcin de sus actividades diarias.
 
 rejuvenecin (1)
   - lib/data/normalized/translations/laser-resurfacing.json: Potencia sus resultados con nuestros sueros y potenciadores especializados. Estos complementos se aplican inmediatamente despus de procedimientos como microneedling con RF o resurfacing con láser CO para llevar activos especficos a capas profundas de la piel, intensificando la reparacin y la rejuvenecin.
