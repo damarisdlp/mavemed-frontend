@@ -131,8 +131,8 @@
   },
   {
     "id": "exp.microneedling.post.1",
-    "en": "Expect redness similar to a sunburn for 2472 hours; mild swelling or tightness is normal.",
-    "es": "Espere un enrojecimiento similar a una quemadura solar durante 2472 horas; es normal hinchazón o tirantez leve."
+    "en": "Expect redness similar to a sunburn for 24-72 hours; mild swelling or tightness is normal.",
+    "es": "Espere un enrojecimiento similar a una quemadura solar durante 24-72 horas; es normal hinchazón o tirantez leve."
   },
   {
     "id": "exp.microneedling.post.2",
@@ -141,8 +141,8 @@
   },
   {
     "id": "exp.microneedling.post.3",
-    "en": "Do not use retinoids, acids, or scrubs for 57 days; apply SPF 30+ once reintroducing daytime products.",
-    "es": "No use retinoides, ácidos ni exfoliantes por 57 días; aplique FPS 30+ al reintroducir productos diurnos."
+    "en": "Do not use retinoids, acids, or scrubs for 5-7 days; apply SPF 30+ once reintroducing daytime products.",
+    "es": "No use retinoides, ácidos ni exfoliantes por 5-7 días; aplique FPS 30+ al reintroducir productos diurnos."
   },
   {
     "id": "faq.microneedling.q1",
@@ -206,8 +206,8 @@
   },
   {
     "id": "note.mesotherapy.sessions",
-    "en": "Most options require 23 sessions for full results",
-    "es": "La mayoría de los tratamientos requieren 23 sesiones para resultados completos"
+    "en": "Most options require 2-3 sessions for full results",
+    "es": "La mayoría de los tratamientos requieren 2-3 sesiones para resultados completos"
   },
   {
     "id": "note.mesotherapy.downtime",
@@ -311,8 +311,8 @@
   },
   {
     "id": "exp.mesotherapy.post.1",
-    "en": "Mild redness or small bumps can last 2472 hours; avoid rubbing the area.",
-    "es": "El enrojecimiento o pequeñas pápulas pueden durar 2472 horas; evite frotar la zona."
+    "en": "Mild redness or small bumps can last 24-72 hours; avoid rubbing the area.",
+    "es": "El enrojecimiento o pequeñas pápulas pueden durar 24-72 horas; evite frotar la zona."
   },
   {
     "id": "exp.mesotherapy.post.2",
@@ -321,18 +321,18 @@
   },
   {
     "id": "exp.mesotherapy.post.3",
-    "en": "Do not exfoliate or use retinoids/acids for 57 days; apply broad-spectrum SPF 30+ once you resume daytime products.",
-    "es": "No exfolie ni use retinoides/ácidos por 57 días; aplique FPS 30+ al reanudar productos diurnos."
+    "en": "Do not exfoliate or use retinoids/acids for 5-7 days; apply broad-spectrum SPF 30+ once you resume daytime products.",
+    "es": "No exfolie ni use retinoides/ácidos por 5-7 días; aplique FPS 30+ al reanudar productos diurnos."
   },
   {
     "id": "faq.mesotherapy.q1",
-    "en": "Whats the difference between PRP, Rejuran and Kiara Reju?",
-    "es": "Cul es la diferencia entre PRP, Rejuran y Kiara Reju?"
+    "en": "Whats the difference between PRP, PN and PDRN?",
+    "es": "Cul es la diferencia entre PRP, PN y PDRN?"
   },
   {
     "id": "faq.mesotherapy.a1",
-    "en": "PRP/PRFM uses your own plasma for natural regeneration. Rejuran repairs with salmon DNA (PDRN), and Kiara Reju enhances glow with niacinamide and hyaluronic acid.",
-    "es": "PRP/PRFM utiliza su propio plasma para una regeneración natural. Rejuran repara con ADN de salmón (PDRN), y Kiara Reju aporta luminosidad gracias a la niacinamida y al ácido hialurónico."
+    "en": "PRP/PRFM uses your own plasma for natural regeneration. PN repairs with salmon DNA (PDRN), and PDRN enhances glow with niacinamide and hyaluronic acid.",
+    "es": "PRP/PRFM utiliza su propio plasma para una regeneración natural. PN repara con ADN de salmón (PDRN), y PDRN aporta luminosidad gracias a la niacinamida y al ácido hialurónico."
   },
   {
     "id": "faq.mesotherapy.q2",
