@@ -26,13 +26,13 @@
   },
   {
     "id": "svc.matrixectomy.desc",
-    "en": "Surgical removal of part of the nail matrix to permanently prevent ingrown toenails and recurring infections.",
-    "es": "Procedimiento quirúrgico para remover parte de la matriz ungueal y prevenir de forma permanente las uñas encarnadas y las infecciones recurrentes."
+    "en": "Surgical removal of part of the nail matrix to help reduce recurrence of ingrown toenails and related infections.",
+    "es": "Procedimiento quirúrgico para remover parte de la matriz ungueal y ayudar a reducir la recurrencia de uñas encarnadas e infecciones relacionadas."
   },
   {
     "id": "svc.matrixectomy.details",
-    "en": "Matrixectomy is a minor outpatient procedure that permanently removes or destroys part of the nails growth center (matrix), preventing the ingrown portion from growing back. It is performed under local anesthesia and is typically recommended for patients with repeated ingrown toenails or infection. Healing is relatively quick, and most patients return to daily activities within a few days.",
-    "es": "La matriceptomía es un procedimiento ambulatorio menor que elimina o destruye de forma permanente una parte del centro de crecimiento de la uña (matriz), evitando que el borde encarnado vuelva a crecer. Se realiza bajo anestesia local y suele recomendarse en pacientes con uñas encarnadas recurrentes o infecciones repetidas. La recuperación es rápida y la mayoría de los pacientes retoman actividades diarias en pocos días."
+    "en": "Matrixectomy is a minor outpatient procedure that removes or treats part of the nail's growth center (matrix) to reduce the chance that the ingrown edge grows back. It is performed under local anesthesia and is typically recommended for patients with repeated ingrown toenails or infection. Recovery is relatively quick, and most patients return to daily activities within a few days.",
+    "es": "La matricectomía es un procedimiento ambulatorio menor que remueve o trata una parte del centro de crecimiento de la uña (matriz) para reducir la probabilidad de que el borde encarnado vuelva a crecer. Se realiza bajo anestesia local y suele recomendarse en pacientes con uñas encarnadas recurrentes o infecciones repetidas. La recuperación suele ser rápida y la mayoría de los pacientes retoma actividades diarias en pocos días."
   },
   {
     "id": "svc.nail_fungus_laser.name",
@@ -41,8 +41,8 @@
   },
   {
     "id": "svc.nail_fungus_laser.desc",
-    "en": "Non-invasive laser therapy to eliminate toenail fungus and restore nail clarity without pain or medication.",
-    "es": "Terapia láser no invasiva para eliminar hongos en las uñas y mejorar la claridad de la uña sin dolor ni medicamentos."
+    "en": "Non-invasive laser therapy to reduce fungal burden in toenails and improve nail clarity with minimal discomfort and without oral medication.",
+    "es": "Terapia láser no invasiva para disminuir la carga fúngica en las uñas y mejorar su claridad con mínima molestia y sin medicamentos orales."
   },
   {
     "id": "svc.nail_fungus_laser.details",
@@ -101,8 +101,8 @@
   },
   {
     "id": "note.nail_fungus_laser.painless",
-    "en": "Painless, non-invasive, and drug-free",
-    "es": "Indoloro, no invasivo y libre de medicamentos"
+    "en": "Comfort-focused, non-invasive, and drug-free",
+    "es": "Enfocado en la comodidad, no invasivo y sin medicamentos"
   },
   {
     "id": "note.nail_fungus_laser.regrowth",
@@ -141,13 +141,13 @@
   },
   {
     "id": "goal.matrixectomy.resolve",
-    "en": "Permanently resolve chronic ingrown toenails",
-    "es": "Resolver de forma permanente las uñas encarnadas crónicas"
+    "en": "Help manage chronic ingrown toenails over the long term",
+    "es": "Ayudar a controlar las uñas encarnadas crónicas a largo plazo"
   },
   {
     "id": "goal.matrixectomy.pain",
-    "en": "Eliminate recurring pain and infections",
-    "es": "Eliminar dolor e infecciones recurrentes"
+    "en": "Reduce recurring pain and infections",
+    "es": "Reducir dolor e infecciones recurrentes"
   },
   {
     "id": "goal.matrixectomy.comfort",
@@ -156,8 +156,8 @@
   },
   {
     "id": "goal.nail_fungus_laser.eliminate",
-    "en": "Eliminate fungal infection from nail bed",
-    "es": "Eliminar la infección fúngica del lecho ungueal"
+    "en": "Reduce fungal involvement in the nail bed",
+    "es": "Disminuir la presencia fúngica en el lecho ungueal"
   },
   {
     "id": "goal.nail_fungus_laser.clarity",
@@ -171,8 +171,8 @@
   },
   {
     "id": "goal.toenail_extraction.eliminate",
-    "en": "Eliminate nail pain or infection",
-    "es": "Eliminar el dolor o la infección en la uña"
+    "en": "Reduce nail pain or infection symptoms",
+    "es": "Reducir el dolor ungueal o los síntomas de infección"
   },
   {
     "id": "goal.toenail_extraction.prevent",
@@ -511,8 +511,8 @@
   },
   {
     "id": "faq.matrixectomy.q1",
-    "en": "Is matrixectomy a permanent solution?",
-    "es": "¿La matriceptomía es una solución permanente?"
+    "en": "How long-lasting are matrixectomy results?",
+    "es": "¿Qué tan duraderos son los resultados de la matricectomía?"
   },
   {
     "id": "faq.matrixectomy.a1",
@@ -526,8 +526,8 @@
   },
   {
     "id": "faq.matrixectomy.a2",
-    "en": "The procedure itself is painless due to local anesthesia. Post-procedure discomfort is usually mild and manageable with OTC pain relievers.",
-    "es": "El procedimiento en sí no duele debido a la anestesia local. La molestia posterior suele ser leve y manejable con analgésicos de venta libre."
+    "en": "The procedure is typically well tolerated due to local anesthesia. Post-procedure discomfort is usually mild and manageable with OTC pain relievers.",
+    "es": "El procedimiento suele tolerarse bien gracias a la anestesia local. La molestia posterior suele ser leve y manejable con analgésicos de venta libre."
   },
   {
     "id": "faq.matrixectomy.q3",
