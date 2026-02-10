@@ -486,8 +486,8 @@
   },
   {
     "id": "exp.keloid.pre.1",
-    "en": "Avoid NSAIDs, aspirin, and blood thinners for 35 days if medically permitted; inform your provider if you cannot stop them.",
-    "es": "Evite antiinflamatorios, aspirina y anticoagulantes durante 35 días si su médico lo permite; informe a su especialista si no puede suspenderlos."
+    "en": "Avoid NSAIDs, aspirin, and blood thinners for 3-5 days if medically permitted; inform your provider if you cannot stop them.",
+    "es": "Evite antiinflamatorios, aspirina y anticoagulantes durante 3-5 días si su médico lo permite; informe a su especialista si no puede suspenderlos."
   },
   {
     "id": "exp.keloid.pre.2",
@@ -596,8 +596,8 @@
   },
   {
     "id": "exp.wart.pre.1",
-    "en": "Keep the area clean and avoid topical acids/retinoids for 35 days before your visit.",
-    "es": "Mantenga el área limpia y evite ácidos o retinoides típicos durante 35 días antes de su visita."
+    "en": "Keep the area clean and avoid topical acids/retinoids for 3-5 days before your visit.",
+    "es": "Mantenga el área limpia y evite ácidos o retinoides típicos durante 3-5 días antes de su visita."
   },
   {
     "id": "exp.wart.pre.2",
