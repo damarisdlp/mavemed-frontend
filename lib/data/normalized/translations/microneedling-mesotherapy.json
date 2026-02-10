@@ -11,13 +11,13 @@
   },
   {
     "id": "svc.microneedling.desc",
-    "en": "Refine texture, minimize pores, and stimulate collagen through precision Microneedling using fine sterile needles. Choose PRP/PRFM for glow and repair, PN for hydration and regeneration, PDRN for recovery and tone, or Toskani and Caviar Extract infusions for targeted skin renewal.",
-    "es": "Mejora la textura, minimiza poros y estimula el colágeno mediante Microneedling de precisión con agujas estériles finas. Elige PRP/PRFM para luminosidad y reparación, PN para hidratación y regeneración, PDRN para recuperación y tono, o infusiones Toskani y Extracto de Caviar para renovación dirigida."
+    "en": "Refine texture, minimize pores, and stimulate collagen through precision Microneedling using fine sterile needles. Choose PRP/PRFM for glow and recovery support, PN for hydration and regeneration, PDRN for recovery and tone, or Toskani and Caviar Extract infusions for targeted skin renewal.",
+    "es": "Mejora la textura, minimiza poros y estimula el colágeno mediante Microneedling de precisión con agujas estériles finas. Elige PRP/PRFM para luminosidad y apoyo a la recuperación, PN para hidratación y regeneración, PDRN para recuperación y tono, o infusiones Toskani y Extracto de Caviar para renovación dirigida."
   },
   {
     "id": "svc.microneedling.details",
-    "en": "Microneedling uses fine sterile needles to create microchannels that activate the skins repair response, stimulating collagen and elastin while improving texture and firmness. Infusions can be selected based on your goal: PRP/PRFM to support recovery and glow, PN to hydrate and regenerate, PDRN to calm and even tone, or Toskani and Caviar Extract for targeted skin renewal.",
-    "es": "El Microneedling utiliza agujas estériles finas para crear microcanales que activan la reparación cutánea, estimulando colágeno y elastina mientras mejora textura y firmeza. Las infusiones se eligen según el objetivo: PRP/PRFM para apoyar recuperación y luminosidad, PN para hidratar y regenerar, PDRN para calmar y unificar el tono, o Toskani y Extracto de Caviar para renovación dirigida."
+    "en": "Microneedling uses fine sterile needles to create microchannels that activate the skin's natural renewal response, stimulating collagen and elastin while improving texture and firmness. Infusions can be selected based on your goal: PRP/PRFM to support recovery and glow, PN to hydrate and regenerate, PDRN to calm and even tone, or Toskani and Caviar Extract for targeted skin renewal.",
+    "es": "El Microneedling utiliza agujas estériles finas para crear microcanales que activan la respuesta natural de renovación de la piel, estimulando colágeno y elastina mientras mejora textura y firmeza. Las infusiones se eligen según el objetivo: PRP/PRFM para apoyar recuperación y luminosidad, PN para hidratar y regenerar, PDRN para calmar y unificar el tono, o Toskani y Extracto de Caviar para renovación dirigida."
   },
   {
     "id": "note.microneedling.sessions",
@@ -161,8 +161,8 @@
   },
   {
     "id": "faq.microneedling.a2",
-    "en": "PRP/PRFM uses your own plasma for regeneration. PDRN adds hydration and glow. PN focuses on deep cellular repair. Your provider will recommend the best option based on your skin needs.",
-    "es": "PRP/PRFM utiliza su propio plasma para favorecer la regeneración. PDRN aporta hidratación y luminosidad. PN se enfoca en la reparación celular profunda. Su especialista recomendar la mejor opción según las necesidades de su piel."
+    "en": "PRP/PRFM uses your own plasma for regeneration. PDRN adds hydration and glow. PN focuses on deep cellular renewal support. Your provider will recommend the best option based on your skin needs.",
+    "es": "PRP/PRFM utiliza su propio plasma para favorecer la regeneración. PDRN aporta hidratación y luminosidad. PN se enfoca en apoyar la renovación celular profunda. Su especialista recomendará la mejor opción según las necesidades de su piel."
   },
   {
     "id": "faq.microneedling.q3",
@@ -191,8 +191,8 @@
   },
   {
     "id": "svc.mesotherapy.desc",
-    "en": "Targeted microinjections of skin-rejuvenating substances like PRP, PDRN, hyaluronic acid, and vitamins to deeply hydrate, heal, and restore radiance.",
-    "es": "Microinyecciones dirigidas de sustancias rejuvenecedoras como PRP, PDRN, ácido hialurónico y vitaminas para hidratar profundamente, reparar y devolver luminosidad a la piel."
+    "en": "Targeted microinjections of skin-rejuvenating substances like PRP, PDRN, hyaluronic acid, and vitamins to deeply hydrate, support recovery, and enhance radiance.",
+    "es": "Microinyecciones dirigidas de sustancias rejuvenecedoras como PRP, PDRN, ácido hialurónico y vitaminas para hidratar profundamente, apoyar la recuperación y potenciar la luminosidad de la piel."
   },
   {
     "id": "svc.mesotherapy.details",
@@ -331,8 +331,8 @@
   },
   {
     "id": "faq.mesotherapy.a1",
-    "en": "PRP/PRFM uses your own plasma for natural regeneration. PN repairs with salmon DNA (PDRN), and PDRN enhances glow with niacinamide and hyaluronic acid.",
-    "es": "PRP/PRFM utiliza su propio plasma para una regeneración natural. PN repara con ADN de salmón (PDRN), y PDRN aporta luminosidad gracias a la niacinamida y al ácido hialurónico."
+    "en": "PRP/PRFM uses your own plasma for natural regeneration. PN supports skin renewal with salmon DNA (PDRN), and PDRN enhances glow with niacinamide and hyaluronic acid.",
+    "es": "PRP/PRFM utiliza su propio plasma para una regeneración natural. PN apoya la renovación cutánea con ADN de salmón (PDRN), y PDRN aporta luminosidad gracias a la niacinamida y al ácido hialurónico."
   },
   {
     "id": "faq.mesotherapy.q2",
@@ -361,8 +361,8 @@
   },
   {
     "id": "faq.mesotherapy.a4",
-    "en": "We use numbing cream and ultra-fine needles. Most patients find it very tolerable, and treatments like SkinVive are nearly painless.",
-    "es": "Utilizamos crema anestésica y agujas ultrafinas. La mayoría de los pacientes lo consideran muy tolerable, y tratamientos como SkinVive son prácticamente indoloros."
+    "en": "We use numbing cream and ultra-fine needles. Most patients find it very tolerable, and treatments like SkinVive usually involve minimal discomfort.",
+    "es": "Utilizamos crema anestésica y agujas ultrafinas. La mayoría de los pacientes lo considera muy tolerable, y tratamientos como SkinVive suelen implicar molestias mínimas."
   },
   {
     "id": "faq.mesotherapy.q5",
@@ -591,8 +591,8 @@
   },
   {
     "id": "note.microneedling.toskani_repair",
-    "en": "Epidermal Repair & Cellular Renewal",
-    "es": "Reparación Epidérmica & Renovación Celular"
+    "en": "Epidermal Renewal & Cellular Support",
+    "es": "Renovación Epidérmica y Soporte Celular"
   },
   {
     "id": "note.microneedling.toskani_tone",
@@ -611,8 +611,8 @@
   },
   {
     "id": "note.microneedling.pn_benefit",
-    "en": "Stimulates collagen and cellular repair to improve elasticity, texture, and skin resilience for a younger-looking feel.",
-    "es": "Estimula colágeno y reparación celular para mejorar elasticidad, textura y resistencia de la piel, con un aspecto más joven."
+    "en": "Stimulates collagen and cellular renewal support to improve elasticity, texture, and skin resilience for a healthier-looking feel.",
+    "es": "Estimula colágeno y apoyo a la renovación celular para mejorar elasticidad, textura y resistencia de la piel, con un aspecto más saludable."
   },
   {
     "id": "note.microneedling.pdrn_full",
@@ -621,8 +621,8 @@
   },
   {
     "id": "note.microneedling.pdrn_benefit",
-    "en": "Combines PDRN, hyaluronic acid, and niacinamide to support repair, hydration, and a brighter, more even tone.",
-    "es": "Combina PDRN, ácido hialurónico y niacinamida para apoyar la reparación, hidratación y un tono más uniforme y luminoso."
+    "en": "Combines PDRN, hyaluronic acid, and niacinamide to support renewal, hydration, and a brighter, more even tone.",
+    "es": "Combina PDRN, ácido hialurónico y niacinamida para apoyar la renovación, la hidratación y un tono más uniforme y luminoso."
   },
   {
     "id": "note.microneedling.caviar_benefit",
@@ -651,8 +651,8 @@
   },
   {
     "id": "note.microneedling.toskani_repair_benefit",
-    "en": "Uses Toskani NCPR + ECPR + Radiance Cocktail to activate repair signaling, strengthen the skin barrier, and improve firmness and texture over time.",
-    "es": "Utiliza Toskani NCPR + ECPR + Radiance Cocktail para activar señales de reparación, fortalecer la barrera cutánea y mejorar firmeza y textura con el tiempo."
+    "en": "Uses Toskani NCPR + ECPR + Radiance Cocktail to activate renewal signaling, support the skin barrier, and improve firmness and texture over time.",
+    "es": "Utiliza Toskani NCPR + ECPR + Radiance Cocktail para activar señales de renovación, apoyar la barrera cutánea y mejorar firmeza y textura con el tiempo."
   },
   {
     "id": "note.microneedling.toskani_tone_benefit",
