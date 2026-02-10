@@ -961,8 +961,8 @@
   },
   {
     "id": "exp.ultraformer.pre.1",
-    "en": "Stay well hydrated; avoid alcohol, caffeine, and NSAIDs for 2448 hours if medically permitted.",
-    "es": "Manténgase bien hidratado; evite alcohol, cafeína y AINE durante 2448 horas si su médico lo permite."
+    "en": "Stay well hydrated; avoid alcohol, caffeine, and NSAIDs for 24 - 48 hours if medically permitted.",
+    "es": "Manténgase bien hidratado; evite alcohol, cafeína y AINE durante 24 - 48 horas si su médico lo permite."
   },
   {
     "id": "exp.ultraformer.pre.2",
@@ -986,8 +986,8 @@
   },
   {
     "id": "exp.ultraformer.post.2",
-    "en": "Avoid hot showers, saunas, and intense exercise for 2448 hours; hydrate well.",
-    "es": "Evite duchas muy calientes, saunas y ejercicio intenso durante 2448 horas; hidrátese bien."
+    "en": "Avoid hot showers, saunas, and intense exercise for 24 - 48 hours; hydrate well.",
+    "es": "Evite duchas muy calientes, saunas y ejercicio intenso durante 24 - 48 horas; hidrátese bien."
   },
   {
     "id": "exp.ultraformer.post.3",
@@ -996,8 +996,8 @@
   },
   {
     "id": "exp.venus.pre.1",
-    "en": "Hydrate well for 24 hours and avoid alcohol/NSAIDs for 2448 hours if medically permitted.",
-    "es": "Hidrátese bien durante 24 horas y evite alcohol/AINE por 2448 horas si su médico lo permite."
+    "en": "Hydrate well for 24 hours and avoid alcohol/NSAIDs for 24 - 48 hours if medically permitted.",
+    "es": "Hidrátese bien durante 24 horas y evite alcohol/AINE por 24 - 48 horas si su médico lo permite."
   },
   {
     "id": "exp.venus.pre.2",
@@ -1026,8 +1026,8 @@
   },
   {
     "id": "exp.enzymatic.pre.1",
-    "en": "Avoid alcohol and anti-inflammatory medications for 2448 hours if medically permitted; hydrate well.",
-    "es": "Evite alcohol y antiinflamatorios durante 2448 horas si su médico lo permite; hidrátese bien."
+    "en": "Avoid alcohol and anti-inflammatory medications for 24 - 48 hours if medically permitted; hydrate well.",
+    "es": "Evite alcohol y antiinflamatorios durante 24 - 48 horas si su médico lo permite; hidrátese bien."
   },
   {
     "id": "exp.enzymatic.pre.2",
@@ -1061,7 +1061,7 @@
   },
   {
     "id": "exp.pdo.pre.1",
-    "en": "Avoid alcohol, NSAIDs and blood thinning supplements 2448 hours before your appointment to reduce bruising.",
+    "en": "Avoid alcohol, NSAIDs and blood thinning supplements 24 - 48 hours before your appointment to reduce bruising.",
     "es": "Evite alcohol, antiinflamatorios y suplementos que adelgacen la sangre durante 24 a 48 horas antes de su cita para reducir el riesgo de moretones."
   },
   {
