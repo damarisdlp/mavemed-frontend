@@ -30,7 +30,7 @@ module.exports = {
     "Belotero",
     "Sylfirm",
     "Ultraformer",
-    "Rejuran",
+    "PN",
     "Toskani",
     "HydraFacial",
     "Hydrafacial",
