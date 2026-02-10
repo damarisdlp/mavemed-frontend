@@ -11,13 +11,13 @@
   },
   {
     "id": "svc.co2.desc",
-    "en": "Deep fractional CO laser therapy to repair damaged skin, reduce wrinkles, and renew overall texture and tone.",
-    "es": "Terapia láser fraccionada de CO para reparar piel dañada, reducir arrugas y renovar la textura y el tono general de la piel."
+    "en": "Deep fractional CO laser therapy to improve the appearance of skin texture and tone while softening the look of wrinkles.",
+    "es": "Terapia láser fraccionada de CO para mejorar la apariencia de la textura y el tono de la piel, y atenuar la apariencia de arrugas."
   },
   {
     "id": "svc.co2.details",
-    "en": "CO laser delivers fractional ablative energy to stimulate deep skin regeneration. It vaporizes microcolumns of tissue, triggering collagen production and promoting smoother, healthier skin. Ideal for acne scars, wrinkles, sun damage, and dull skin tone.",
-    "es": "El láser de CO emite energía ablativa fraccionada para estimular la regeneración profunda de la piel. Vaporiza microcolumnas de tejido que activan la producción de colágeno y promueven una piel más lisa y saludable. Ideal para cicatrices de acné, arrugas, daño solar y textura opaca."
+    "en": "CO laser delivers fractional ablative energy to stimulate collagen remodeling and visible skin renewal. It creates controlled microcolumns in tissue to support smoother-looking skin and improved texture. Ideal for improving the appearance of acne scars, wrinkles, sun damage, and dull skin tone.",
+    "es": "El láser de CO emite energía ablativa fraccionada para estimular la remodelación de colágeno y la renovación visible de la piel. Crea microcolumnas controladas en el tejido para favorecer una piel de apariencia más lisa y una mejor textura. Ideal para mejorar la apariencia de cicatrices de acné, arrugas, daño solar y tono opaco."
   },
   {
     "id": "note.co2.consult",
@@ -336,8 +336,8 @@
   },
   {
     "id": "exp.co2.pre.3",
-    "en": "Stop blood-thinning meds/supplements and smoking if medically permitted to reduce healing risks.",
-    "es": "Suspenda anticoagulantes y suplementos que adelgacen la sangre, y evite fumar si su médico lo permite para reducir riesgos de cicatrización."
+    "en": "Stop blood-thinning meds/supplements and smoking if medically permitted to reduce recovery-related risks.",
+    "es": "Suspenda anticoagulantes y suplementos que adelgacen la sangre, y evite fumar si su médico lo permite para reducir riesgos durante la recuperación."
   },
   {
     "id": "exp.co2.during.1",
@@ -386,7 +386,7 @@
   },
   {
     "id": "faq.co2.a2",
-    "en": "Expect 57 days of visible healing depending on intensity. Redness may last longer but can be covered with makeup after peeling stops.",
+    "en": "Expect 5 to 7 days of visible recovery depending on intensity. Redness may last longer but can be covered with makeup after peeling stops.",
     "es": "La recuperación visible dura entre 5 y 7 días según la intensidad. El enrojecimiento puede durar más, pero se puede cubrir con maquillaje cuando finaliza la descamación."
   },
   {
@@ -396,8 +396,8 @@
   },
   {
     "id": "faq.co2.a3",
-    "en": "Yes. PRP accelerates healing and enhances results. Other treatments must be timed appropriately based on provider recommendation.",
-    "es": "Sí. El PRP acelera la recuperación y mejora los resultados. Otros tratamientos deben programarse estratégicamente según indicación del proveedor."
+    "en": "Yes. PRP can support recovery and enhance results. Other treatments must be timed appropriately based on provider recommendation.",
+    "es": "Sí. El PRP puede apoyar la recuperación y potenciar los resultados. Otros tratamientos deben programarse estratégicamente según indicación del proveedor."
   },
   {
     "id": "faq.co2.q4",
@@ -416,13 +416,13 @@
   },
   {
     "id": "svc.laser_hair_removal.desc",
-    "en": "Pain free laser hair removal for all skin types using the Alma Soprano Titanium ICE system.",
-    "es": "Depilación láser cómoda para todo tipo de piel con el sistema Alma Soprano Titanium ICE."
+    "en": "Laser hair reduction for all skin types using the Alma Soprano Titanium ICE system.",
+    "es": "Reducción de vello láser para todo tipo de piel con el sistema Alma Soprano Titanium ICE."
   },
   {
     "id": "svc.laser_hair_removal.details",
-    "en": "The Alma Soprano Titanium uses triple wavelength laser energy and ICE cooling to deliver virtually painless, fast, and effective hair reduction. It targets follicles at all growth stages for long lasting results.",
-    "es": "Alma Soprano Titanium utiliza energía láser de triple longitud de onda y enfriamiento ICE para brindar una reducción del vello rápida, efectiva y prácticamente sin molestias. Trabaja sobre los folículos en todas las etapas de crecimiento para resultados duraderos."
+    "en": "The Alma Soprano Titanium uses triple wavelength laser energy and ICE cooling to deliver comfortable, fast, and effective hair reduction. It targets follicles at all growth stages for long-lasting results.",
+    "es": "Alma Soprano Titanium utiliza energía láser de triple longitud de onda y enfriamiento ICE para brindar una reducción del vello cómoda, rápida y efectiva. Trabaja sobre los folículos en todas las etapas de crecimiento para resultados duraderos."
   },
   {
     "id": "note.laser_hair.sessions",
@@ -446,8 +446,8 @@
   },
   {
     "id": "goal.laser_hair.reduce",
-    "en": "Permanently reduce unwanted hair",
-    "es": "Reducir de manera duradera el vello no deseado"
+    "en": "Achieve long-lasting reduction of unwanted hair",
+    "es": "Lograr una reducción duradera del vello no deseado"
   },
   {
     "id": "goal.laser_hair.texture",
@@ -576,8 +576,8 @@
   },
   {
     "id": "faq.laser_hair.q1",
-    "en": "Is laser hair removal permanent?",
-    "es": "La depilación láser es permanente?"
+    "en": "Is laser hair removal long-lasting?",
+    "es": "¿La depilación láser ofrece resultados duraderos?"
   },
   {
     "id": "faq.laser_hair.a1",
@@ -1116,13 +1116,13 @@
   },
   {
     "id": "svc.serum_add_ons.desc",
-    "en": "Enhance your treatment results with our specialty serums and boosters. These add-ons are applied immediately after procedures like RF Microneedling or CO laser resurfacing to deliver targeted actives deep into the skin, amplifying healing and rejuvenation.",
-    "es": "Potencia sus resultados con nuestros sueros y potenciadores especializados. Estos complementos se aplican inmediatamente después de procedimientos como Microneedling con RF o resurfacing con láser CO para llevar activos específicos a capas profundas de la piel, intensificando la reparación y la rejuvenación."
+    "en": "Enhance your treatment results with our specialty serums and boosters. These add-ons are applied immediately after procedures like RF Microneedling or CO laser resurfacing to deliver targeted actives deep into the skin, supporting recovery and rejuvenation.",
+    "es": "Potencia sus resultados con nuestros sueros y potenciadores especializados. Estos complementos se aplican inmediatamente después de procedimientos como Microneedling con RF o resurfacing con láser CO para llevar activos específicos a capas profundas de la piel, apoyando la recuperación y el rejuvenecimiento."
   },
   {
     "id": "svc.serum_add_ons.details",
-    "en": "Serum add-ons are concentrated boosters that infuse the skin with powerful ingredients during the optimal post-treatment window. Each option targets different skin needs, from cellular repair and hydration to biostimulation and brightening, supporting faster recovery and superior outcomes.",
-    "es": "Los complementos de suero son potenciadores concentrados que infunden la piel con ingredientes potentes durante la ventana óptima posterior al tratamiento. Cada opción atiende diferentes necesidades de la piel, desde reparación celular e hidratación hasta bioestimulación y luminosidad, favoreciendo una recuperación más rápida y resultados superiores."
+    "en": "Serum add-ons are concentrated boosters that infuse the skin with powerful ingredients during the optimal post-treatment window. Each option targets different skin needs, from barrier support and hydration to biostimulation and brightening, supporting faster recovery and visible improvement.",
+    "es": "Los complementos de suero son potenciadores concentrados que infunden la piel con ingredientes potentes durante la ventana óptima posterior al tratamiento. Cada opción atiende diferentes necesidades de la piel, desde soporte de barrera e hidratación hasta bioestimulación y luminosidad, favoreciendo una recuperación más rápida y una mejoría visible."
   },
   {
     "id": "note.serum_add_ons.recommended",
@@ -1131,8 +1131,8 @@
   },
   {
     "id": "note.serum_add_ons.boosts",
-    "en": "Boosts healing and enhances visible results",
-    "es": "Aceleran la recuperación y potencian los resultados visibles"
+    "en": "Supports recovery and enhances visible results",
+    "es": "Apoya la recuperación y potencia los resultados visibles"
   },
   {
     "id": "note.serum_add_ons.safe",
@@ -1141,8 +1141,8 @@
   },
   {
     "id": "goal.serum_add_ons.heal",
-    "en": "Accelerate post-treatment healing and recovery",
-    "es": "Acelerar la recuperación después del tratamiento"
+    "en": "Support post-treatment recovery",
+    "es": "Apoyar la recuperación después del tratamiento"
   },
   {
     "id": "goal.serum_add_ons.hydrate",
@@ -1296,8 +1296,8 @@
   },
   {
     "id": "faq.serum.a1",
-    "en": "Yes. Most serum add-ons are designed to support barrier repair, hydration, and collagen, making them ideal for mature, sensitized, or recently treated skin.",
-    "es": "Sí. La mayoría de los complementos con suero están diseñados para apoyar la barrera cutánea, la hidratación y el colágeno, por lo que son ideales para piel madura, sensibilizada o recién tratada."
+    "en": "Yes. Most serum add-ons are designed to support skin barrier function, hydration, and collagen, making them ideal for mature, sensitized, or recently treated skin.",
+    "es": "Sí. La mayoría de los complementos con suero están diseñados para apoyar la función de barrera cutánea, la hidratación y el colágeno, por lo que son ideales para piel madura, sensibilizada o recién tratada."
   },
   {
     "id": "faq.serum.q2",
