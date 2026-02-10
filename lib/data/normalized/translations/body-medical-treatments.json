@@ -171,8 +171,8 @@
   },
   {
     "id": "svc.sclerotherapy.desc",
-    "en": "Minimally invasive injection treatment to eliminate spider veins and improve leg appearance.",
-    "es": "Tratamiento mínimamente invasivo de inyecciones para eliminar venas de araña y mejorar la apariencia de las piernas."
+    "en": "Minimally invasive injection treatment to reduce the appearance of spider veins and improve leg appearance.",
+    "es": "Tratamiento de inyección mínimamente invasivo para reducir la apariencia de venas de araña y mejorar la apariencia de las piernas."
   },
   {
     "id": "svc.sclerotherapy.details",
@@ -656,8 +656,8 @@
   },
   {
     "id": "faq.cupping.a2",
-    "en": "Yes, cupping often leaves painless circular marks that fade within a few days.",
-    "es": "S, la terapia de ventosas a menudo deja marcas circulares indoloras que se desvanecen en pocos días."
+    "en": "Yes, cupping often leaves circular marks with minimal discomfort that fade within a few days.",
+    "es": "Sí, la terapia de ventosas a menudo deja marcas circulares con molestia mínima que se desvanecen en pocos días."
   },
   {
     "id": "faq.keloid.q1",
@@ -671,8 +671,8 @@
   },
   {
     "id": "faq.keloid.q2",
-    "en": "Are results permanent?",
-    "es": "Los resultados son permanentes?"
+    "en": "How long do results typically last?",
+    "es": "¿Cuánto suelen durar los resultados?"
   },
   {
     "id": "faq.keloid.a2",
