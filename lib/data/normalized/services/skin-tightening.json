@@ -37,7 +37,15 @@
       "area.ultraformer_mpt.lower_back",
       "area.ultraformer_mpt.flanks",
       "area.ultraformer_mpt.glutes"
-    ]
+    ],
+    "filterConfig": {
+      "defaultKey": "all",
+      "viewAllLabelKey": "filter.view_all",
+      "filters": [
+        { "key": "face", "labelKey": "filter.venus.face" },
+        { "key": "body", "labelKey": "filter.venus.body" }
+      ]
+    }
   },
   {
     "id": "svc_venus_freeze",
