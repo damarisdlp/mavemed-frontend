@@ -561,8 +561,8 @@
   },
   {
     "id": "exp.laser_hair.post.1",
-    "en": "Expect mild redness or warmth for a few hours. Avoid hot showers, saunas, and exfoliants for 2448 hours.",
-    "es": "Puede presentar enrojecimiento o sensación de calor leve durante algunas horas. Evite duchas muy calientes, saunas y exfoliantes durante 2448 horas."
+    "en": "Expect mild redness or warmth for a few hours. Avoid hot showers, saunas, and exfoliants for 24 - 48 hours.",
+    "es": "Puede presentar enrojecimiento o sensación de calor leve durante algunas horas. Evite duchas muy calientes, saunas y exfoliantes durante 24 - 48 horas."
   },
   {
     "id": "exp.laser_hair.post.2",
@@ -1106,8 +1106,8 @@
   },
   {
     "id": "faq.rf.a3",
-    "en": "Most patients notice redness and tightness for 2448 hours, with minimal flaking and very little interruption to daily activities.",
-    "es": "La mayoría de los pacientes presenta enrojecimiento y sensación de tirantez durante 2448 horas, con muy poca descamación y mínima interrupción de sus actividades diarias."
+    "en": "Most patients notice redness and tightness for 24 - 48 hours, with minimal flaking and very little interruption to daily activities.",
+    "es": "La mayoría de los pacientes presenta enrojecimiento y sensación de tirantez durante 24 - 48 horas, con muy poca descamación y mínima interrupción de sus actividades diarias."
   },
   {
     "id": "svc.serum_add_ons.name",
