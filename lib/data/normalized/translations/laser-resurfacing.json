@@ -566,7 +566,7 @@
   },
   {
     "id": "exp.laser_hair.post.2",
-    "en": "Hair will shed gradually over 13 weeks. Do not wax or pluck between sessions.",
+    "en": "Hair will shed gradually over 1-3 weeks. Do not wax or pluck between sessions.",
     "es": "El vello se ir desprendiendo de forma gradual entre 1 y 3 semanas. No use cera ni pinzas entre sesiones."
   },
   {
@@ -611,7 +611,7 @@
   },
   {
     "id": "faq.laser_hair.a4",
-    "en": "Sessions are usually scheduled every 46 weeks for body areas and every 24 weeks for facial areas, depending on the hair growth cycle.",
+    "en": "Sessions are usually scheduled every 4-6 weeks for body areas and every 2-4 weeks for facial areas, depending on the hair growth cycle.",
     "es": "Las sesiones se programan normalmente cada 4 a 6 semanas en cuerpo y cada 2 a 4 semanas en zonas faciales, según el ciclo de crecimiento del vello."
   },
   {
@@ -801,8 +801,8 @@
   },
   {
     "id": "exp.ipl.pre.2",
-    "en": "Discontinue retinoids, acids, and exfoliation 57 days prior; arrive with clean skin, no makeup.",
-    "es": "Suspenda retinoides, ácidos y exfoliación 57 días antes; acuda con la piel limpia y sin maquillaje."
+    "en": "Discontinue retinoids, acids, and exfoliation 5-7 days prior; arrive with clean skin, no makeup.",
+    "es": "Suspenda retinoides, ácidos y exfoliación 5-7 días antes; acuda con la piel limpia y sin maquillaje."
   },
   {
     "id": "exp.ipl.pre.3",
