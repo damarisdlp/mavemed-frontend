@@ -106,8 +106,8 @@
   },
   {
     "id": "exp.microneedling.pre.1",
-    "en": "Avoid retinoids, AHAs/BHAs, exfoliation, and waxing for 35 days prior; no recent sunburn or tanning.",
-    "es": "Evite retinoides, AHA/BHA, exfoliación y depilación por 35 días previos; no acuda con quemadura solar ni bronceado reciente."
+    "en": "Avoid retinoids, AHAs/BHAs, exfoliation, and waxing for 3-5 days prior; no recent sunburn or tanning.",
+    "es": "Evite retinoides, AHA/BHA, exfoliación y depilación por 3-5 días previos; no acuda con quemadura solar ni bronceado reciente."
   },
   {
     "id": "exp.microneedling.pre.2",
@@ -296,8 +296,8 @@
   },
   {
     "id": "exp.mesotherapy.pre.2",
-    "en": "Arrive with clean skin, no makeup; pause retinoids/acids for 35 days; reschedule if active infection or cold sore.",
-    "es": "Llegue con la piel limpia, sin maquillaje; suspenda retinoides/ácidos por 35 días; reprograme si hay infección activa o herpes."
+    "en": "Arrive with clean skin, no makeup; pause retinoids/acids for 3-5 days; reschedule if active infection or cold sore.",
+    "es": "Llegue con la piel limpia, sin maquillaje; suspenda retinoides/ácidos por 3-5 días; reprograme si hay infección activa o herpes."
   },
   {
     "id": "exp.mesotherapy.during.1",
