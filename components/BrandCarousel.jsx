@@ -10,6 +10,7 @@ const brands = [
   { src: "/casmara.svg", alt: "Casmara®", width: 134, mobileWidth: 108 },
   { src: "/rejuran.svg", alt: "Rejuran®", width: 122, mobileWidth: 98 },
   { src: "/toskani.svg", alt: "Toskani®", width: 130, mobileWidth: 104 },
+  { src: "/alma.svg", alt: "Alma Lasers", width: 130, mobileWidth: 104 },
 ];
 
 export default function BrandCarousel() {
