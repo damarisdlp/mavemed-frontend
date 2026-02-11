@@ -1,17 +1,15 @@
 import { useTranslation } from "next-i18next";
 
 const brands = [
-  { src: "/botox.svg", alt: "Botox®" },
-  { src: "/hydrafacial.svg", alt: "HydraFacial®", className: "logo-hydrafacial" },
-  { src: "/sculptra.svg", alt: "Sculptra®" },
-  { src: "/sylfirmx.svg", alt: "Sylfirm X®", className: "logo-sylfirmx" },
-  { src: "/ultraformermpt.svg", alt: "Ultraformer MPT®", className: "logo-ultraformer" },
-  { src: "/pbserum.svg", alt: "PB Serum®" },
-  { src: "/casmara.svg", alt: "Casmara®", className: "logo-casmara" },
-  { src: "/harmonyca.svg", alt: "HarmonyCa®", className: "logo-harmonyca" },
-  { src: "/juvederm.svg", alt: "Juvéderm®", className: "logo-juvederm" },
-  { src: "/rejuran.svg", alt: "Rejuran®", className: "logo-rejuran" },
-  { src: "/toskani.svg", alt: "Toskani®", className: "logo-toskani" },
+  { src: "/allergan.svg", alt: "Allergan Aesthetics", width: 148, mobileWidth: 118 },
+  { src: "/hydrafacial.svg", alt: "HydraFacial®", width: 190, mobileWidth: 150 },
+  { src: "/galderma.svg", alt: "Galderma", width: 140, mobileWidth: 112 },
+  { src: "/sylfirmx.svg", alt: "Sylfirm X®", width: 132, mobileWidth: 106 },
+  { src: "/ultraformermpt.svg", alt: "Ultraformer MPT®", width: 142, mobileWidth: 114 },
+  { src: "/pbserum.svg", alt: "PB Serum®", width: 128, mobileWidth: 102 },
+  { src: "/casmara.svg", alt: "Casmara®", width: 134, mobileWidth: 108 },
+  { src: "/rejuran.svg", alt: "Rejuran®", width: 122, mobileWidth: 98 },
+  { src: "/toskani.svg", alt: "Toskani®", width: 130, mobileWidth: 104 },
 ];
 
 export default function BrandCarousel() {
@@ -20,8 +18,8 @@ export default function BrandCarousel() {
 
   return (
     <section className="w-full bg-white">
-      <div className="max-w-6xl mx-auto px-6 pt-6 pb-8">
-        <div className="flex items-center justify-center mb-4">
+      <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8 py-10 md:py-14">
+        <div className="flex items-center justify-center mb-6 md:mb-8">
           <h2 className="text-xl md:text-2xl font-serif text-black">
             {t("brandsWeWorkWith")}
           </h2>
@@ -29,12 +27,19 @@ export default function BrandCarousel() {
         <div className="brand-marquee" aria-label="Our Brands">
           <div className="brand-track">
             {trackItems.map((brand, idx) => (
-              <div className="brand-item" key={`${brand.src}-${idx}`}>
+              <div
+                className="brand-item"
+                key={`${brand.src}-${idx}`}
+                style={{
+                  "--logo-width": `${brand.width}px`,
+                  "--logo-width-mobile": `${brand.mobileWidth}px`,
+                }}
+              >
                 <img
                   src={brand.src}
                   alt={brand.alt}
                   loading="lazy"
-                  className={brand.className || ""}
+                  className={`brand-logo ${brand.className || ""}`}
                 />
               </div>
             ))}
@@ -46,70 +51,42 @@ export default function BrandCarousel() {
           position: relative;
           overflow: hidden;
           width: 100%;
+          padding: 4px 0;
         }
 
         .brand-track {
           display: flex;
           align-items: center;
-          gap: 36px;
+          gap: clamp(16px, 2.4vw, 32px);
           width: max-content;
           animation: scroll 39.6s linear infinite;
         }
 
         .brand-item {
-          width: 162px;
-          height: 55px;
+          width: auto;
+          height: 62px;
           display: flex;
           align-items: center;
           justify-content: center;
-          padding: 8px 6px;
+          padding: 10px 8px;
           filter: grayscale(100%);
           opacity: 0.9;
           transition: opacity 0.3s ease, filter 0.3s ease;
         }
 
-        .brand-item img {
-          height: 37px;
-          width: 100%;
+        .brand-logo {
+          height: 38px;
+          width: auto;
+          max-width: var(--logo-width);
           display: block;
           object-fit: contain;
         }
 
-        .logo-hydrafacial {
-          transform: scale(1.95);
-        }
-
-        .logo-sylfirmx {
-          transform: scale(1.73);
-        }
-
-        .logo-ultraformer {
-          transform: scale(1.73);
-        }
-
-        .logo-casmara {
-          transform: scale(1.87);
-        }
-
-        .logo-harmonyca {
-          transform: scale(1.54);
-        }
-
-        .logo-juvederm {
-          transform: scale(1.54);
-        }
-
-        .logo-rejuran {
-          transform: scale(1.31);
-        }
-
-        .logo-toskani {
-          transform: scale(1.6);
-        }
-
-        .brand-item:hover {
-          filter: none;
-          opacity: 1;
+        @media (hover: hover) {
+          .brand-item:hover {
+            filter: none;
+            opacity: 1;
+          }
         }
 
         @keyframes scroll {
@@ -123,17 +100,27 @@ export default function BrandCarousel() {
 
         @media (max-width: 768px) {
           .brand-track {
-            gap: 24px;
-            animation-duration: 30.8s;
+            gap: clamp(12px, 3.6vw, 20px);
+            animation-duration: 33.6s;
           }
 
           .brand-item {
-            width: 139px;
-            height: 48px;
+            width: auto;
+            height: 54px;
+            padding: 8px 6px;
           }
 
-          .brand-item img {
-            height: 33px;
+          .brand-logo {
+            height: 30px;
+            width: auto;
+            max-width: var(--logo-width-mobile);
+          }
+
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+          .brand-track {
+            animation: none;
           }
         }
       `}</style>
