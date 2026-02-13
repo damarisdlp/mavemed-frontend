@@ -102,7 +102,7 @@ export default function BrandCarousel() {
         @media (max-width: 768px) {
           .brand-track {
             gap: clamp(12px, 3.6vw, 20px);
-            animation-duration: 29.2s;
+            animation-duration: 25s;
           }
 
           .brand-item {
