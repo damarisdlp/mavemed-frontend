@@ -65,8 +65,8 @@ export default function AboutSection({ staffCards = [] }) {
             </p>
 
             <ul className="list-disc list-outside pl-6 text-left text-gray-700 text-base md:text-lg space-y-2 mb-4">
-              <li>{t("aboutSection.list.botox")}</li>
-              <li>{t("aboutSection.list.biostimulators")}</li>
+              <li>{t("aboutSection.list.neuromodulators")}</li>
+              <li>{t("aboutSection.list.collagenBiostimulators")}</li>
               <li>{t("aboutSection.list.rfMicroneedling")}</li>
               <li>{t("aboutSection.list.pdo")}</li>
               <li>{t("aboutSection.list.lasers")}</li>
