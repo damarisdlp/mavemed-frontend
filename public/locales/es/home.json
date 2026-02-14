@@ -1,9 +1,9 @@
 {
   "heroSection": {
     "heading1": "Mave Medical Spa en Tijuana",
-    "heading2": "Botox, Bioestimuladores de Colágeno, Rellenos, Láseres, RF Microneedling y más",
+    "heading2": "Neuromoduladores, Bioestimuladores de Colágeno, Láseres, Sylfirm X RF Microneedling y más",
     "p1": "Cruza la frontera para obtener resultados de aspecto natural.",
-    "p2": "Nos especializamos en Botox®, Sculptra®, HarmonyCa®, rellenos dérmicos, hilos PDO, Microneedling de radiofrecuencia, tratamientos láser y diversos tratamientos de rejuvenecimiento y regeneración.",
+    "p2": "Nos especializamos en neuromoduladores, bioestimuladores, rellenos dérmicos, hilos PDO, Sylfirm X microneedling con radiofrecuencia, tratamientos láser y diversos tratamientos de rejuvenecimiento y regeneración.",
     "p3": "Clientes de San Diego, Los Ángeles, Orange County, Tijuana y más allá confían en nosotros.",
     "cta": "Agenda tu Consulta"
   },
@@ -15,8 +15,8 @@
     "p3": "Nuestro enfoque se basa en protocolos aprobados por COFEPRIS, supervisión médica y planes de tratamiento altamente personalizados adaptados a tus objetivos y anatomía facial.",
     "p4": "Cada paciente es tratado con intención, precisión clínica y atención compasiva, porque tu transformación merece tanto belleza como integridad.",
     "list": {
-      "botox": "Reducción de arrugas con Botox®",
-      "biostimulators": "Sculptra®, HarmonyCa®, y otros bioestimuladores de colágeno",
+      "neuromodulators": "Neuromoduladores para reducción de arrugas",
+      "collagenBiostimulators": "PLLA, CAHA + ácido hialurónico, y otros bioestimuladores de colágeno",
       "rfMicroneedling": "Microneedling con radiofrecuencia (Sylfirm X)",
       "pdo": "Lifting con hilos PDO",
       "lasers": "Láser de CO₂ de grado médico e IPL fotofaciales"
@@ -60,7 +60,7 @@
   "contactCta": {
     "title": "Cuidado estético experto — a minutos de la frontera",
     "line1": "Nuestro med spa en Tijuana atiende clientes de San Diego, LA, Tijuana y más!",
-    "line2": "Ofrecemos tratamientos avanzados de rejuvenecimiento como Sculptra, RF Microneedling, hilos PDO y armonización facial.",
+    "line2": "Ofrecemos tratamientos avanzados de rejuvenecimiento con bioestimuladores de colágeno, Sylfirm X RF microneedling, hilos PDO y armonización facial.",
     "line3": "Agenda tu consulta y obtén un plan personalizado a tus metas.",
     "cta": "Agenda tu Consulta",
     "aria": "Comunícate con Mave Medical Spa por WhatsApp"
@@ -68,7 +68,7 @@
   "approach": {
     "title": "Nuestra Filosofía de Cuidado de la Piel con Resultados",
     "safetyTitle": "Seguridad de grado médico",
-    "safetyCopy": "Todos los procedimientos en Mave Medical Spa en Tijuana son realizados o supervisados por médicos estéticos con licencia. Cumplimos los estándares de seguridad COFEPRIS para tratamientos como Botox®, RF Microneedling, Sculptra y hilos PDO.",
+    "safetyCopy": "Todos los procedimientos en Mave Medical Spa en Tijuana son realizados o supervisados por médicos estéticos con licencia. Cumplimos con estándares de seguridad alineados con COFEPRIS para tratamientos como neuromoduladores para reducción de arrugas, RF microneedling con Sylfirm X, bioestimuladores de colágeno y hilos PDO.",
     "efficacyTitle": "Eficacia comprobada",
     "efficacyCopy": "Desde estimulación de colágeno hasta tensado avanzado de la piel, usamos tecnologías y productos de alto desempeño con resultados clínicamente probados.",
     "experienceTitle": "Experiencia estética personalizada",
@@ -83,7 +83,7 @@
     "title": "Paquetes flexibles con ahorros exclusivos",
     "subtitle": "Logra resultados estéticos duraderos sin pagar todo por adelantado. Nuestros paquetes de varias sesiones son ideales para pacientes de EE.UU. y locales de Tijuana.",
     "planIncludes": "Tu plan incluye:",
-    "item1": "Precios especiales en servicios combinados que incluyen bioestimuladores de colágeno (como Sculptra), RF Microneedling (Sylfirm X), y más.",
+    "item1": "Precios especiales en servicios combinados que incluyen bioestimuladores de colágeno (con PLLA, CAHA + ácido hialurónico), RF Microneedling (Sylfirm X), y más.",
     "item2": "Solo 20% de depósito por sesión para evitar la presión de prepagar todo. Tu depósito se acredita completamente a tu siguiente visita.",
     "item3": "Planes personalizados que combinan tecnología avanzada y técnicas estéticas comprobadas para un rejuvenecimiento natural y duradero.",
     "item4": "Cuidado liderado por médicos en cada etapa para garantizar resultados seguros y efectivos del med spa de confianza en Tijuana.",
@@ -92,10 +92,10 @@
     "cta": "Explorar Servicios"
   },
   "meta": {
-    "title": "Top Med Spa en Tijuana | Botox, Sculptra, RF Microneedling | Mave Medical Spa",
-    "description": "Agenda tratamientos estéticos en Tijuana en Mave Medical Spa: Botox, Sculptra, RF Microneedling, láser CO2, rellenos y hilos, a minutos de San Diego.",
-    "ogTitle": "Mave Medical Spa en Tijuana | Botox, Sculptra y Tratamientos con Láser",
-    "ogDescription": "Atención estética médica en Tijuana para pacientes de México y EE.UU. Botox, Sculptra, RF Microneedling y tratamientos láser."
+    "title": "Top Med Spa en Tijuana | Neuromoduladores, Bioestimuladores de Colágeno, Sylfirm X RF Microneedling | Mave Medical Spa",
+    "description": "Agenda tratamientos estéticos en Tijuana en Mave Medical Spa: neuromoduladores, bioestimuladores de colágeno, Sylfirm X RF microneedling, láser CO2, rellenos dérmicos y hilos, a minutos de San Diego.",
+    "ogTitle": "Mave Medical Spa en Tijuana | Neuromoduladores, Bioestimuladores de Colágeno y Tratamientos con Láser",
+    "ogDescription": "Atención estética médica en Tijuana para pacientes de México y EE.UU. Neuromoduladores, bioestimuladores de colágeno, Sylfirm X RF microneedling y tratamientos láser."
   },
   "reviews": {
     "title": "Lo Que Dicen Nuestros Pacientes",
