@@ -3,7 +3,7 @@
     "id": "addon_ultraformer_sculptra",
     "parentServiceId": "svc_ultraformer_mpt",
     "childServiceId": "svc_sculptra",
-    "optionNameKey": "addon.ultraformer.sculptra"
+    "optionNameKey": "addon.ultraformer.PLLA"
   },
   {
     "id": "addon_ultraformer_harmonyca",
@@ -21,7 +21,7 @@
     "id": "addon_ultraformer_microneedling_pn",
     "parentServiceId": "svc_ultraformer_mpt",
     "childServiceId": "svc_microneedling",
-    "optionNameKey": "addon.ultraformer.microneedling_pn"
+    "optionNameKey": "addon.ultraformer.Microneedling_pn"
   },
   {
     "id": "addon_venus_enzymatic_slim",
@@ -81,7 +81,7 @@
     "id": "addon_pdo_biostim_microneedling_pn",
     "parentServiceId": "svc_pdo_biostimulating_threads",
     "childServiceId": "svc_microneedling",
-    "optionNameKey": "addon.pdo.microneedling_pn"
+    "optionNameKey": "addon.pdo.Microneedling_pn"
   },
   {
     "id": "addon_pdo_biostim_rf_microneedling",
@@ -117,7 +117,7 @@
     "id": "addon_pdo_lift_microneedling_pn",
     "parentServiceId": "svc_pdo_lift_threads",
     "childServiceId": "svc_microneedling",
-    "optionNameKey": "addon.pdo.microneedling_pn"
+    "optionNameKey": "addon.pdo.Microneedling_pn"
   },
   {
     "id": "addon_pdo_lift_rf_microneedling",
