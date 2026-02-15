@@ -17,12 +17,12 @@
           {
             "title": "Sylfirm X RF Microneedling",
             "excerpt": "Cómo se diferencia Sylfirm X, para quién puede ser adecuado y por qué la evaluación médica es clave.",
-            "href": "/learn/Sylfirm-x-rf-Microneedling"
+            "href": "/learn/sylfirm-x-rf-microneedling"
           },
           {
             "title": "Sylfirm X vs Otros Dispositivos de RF Microneedling",
             "excerpt": "Qué comparar entre plataformas, contexto de seguridad FDA y elección del dispositivo.",
-            "href": "/learn/Sylfirm-x-vs-other-rf-Microneedling"
+            "href": "/learn/sylfirm-x-vs-other-rf-microneedling"
           },
           {
             "title": "Mejor clínica en Tijuana para Sylfirm X RF Microneedling",
@@ -32,22 +32,15 @@
         ]
       },
       {
-        "title": "Educación sobre colágeno",
-        "anchor": "collagen-education",
-        "description": "Cómo cambia el colágeno con la edad y los tiempos de remodelación.",
+        "title": "Colágeno y bioestimuladores",
+        "anchor": "collagen-biostimulators",
+        "description": "Cómo cambia el colágeno con la edad y cómo los bioestimuladores apoyan la remodelación a largo plazo.",
         "items": [
           {
             "title": "El Colágeno con el Paso del Tiempo",
             "excerpt": "Por qué cambia el colágeno, cómo se refleja en la piel y los tiempos realistas.",
             "href": "/learn/collagen-loss-and-rebuilding-timeline"
-          }
-        ]
-      },
-      {
-        "title": "Bioestimulación de colágeno",
-        "anchor": "collagen-biostimulation",
-        "description": "Regeneración de colágeno, soporte estructural y resultados a largo plazo.",
-        "items": [
+          },
           {
             "title": "PLLA Bioestimulador de Colágeno",
             "excerpt": "Qué es PLLA, cómo actúa con el tiempo y por qué la técnica médica importa.",
@@ -64,6 +57,23 @@
             "title": "Mejor clínica en Tijuana para Ultraformer MPT",
             "excerpt": "Qué diferencia la planificación con Ultraformer MPT y qué priorizar si viajas para tratamiento.",
             "href": "/learn/best-clinic-tijuana-ultraformer-mpt"
+          }
+        ]
+      },
+      {
+        "title": "Turismo médico",
+        "anchor": "medical-tourism",
+        "description": "Cómo evaluar seguridad clínica transfronteriza, calidad de planificación y estructura de seguimiento.",
+        "items": [
+          {
+            "title": "Guía para pacientes de San Diego que consideran tratamientos estéticos en Tijuana",
+            "excerpt": "Guía práctica para pacientes de San Diego sobre cruce fronterizo, seguridad clínica, ritmo de tratamiento y seguimiento.",
+            "href": "/learn/a-guide-for-san-diego-patients-considering-aesthetic-treatments-in-tijuana"
+          },
+          {
+            "title": "Es seguro para pacientes de Estados Unidos realizarse tratamientos estéticos en Tijuana?",
+            "excerpt": "Un marco práctico para evaluar autenticidad de equipos, nivel médico, protocolos y seguimiento antes de reservar.",
+            "href": "/learn/is-it-safe-for-us-patients-to-get-aesthetic-treatments-in-tijuana"
           }
         ]
       }
