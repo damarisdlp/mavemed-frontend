@@ -5,6 +5,7 @@ import { getLocalized } from "@/lib/i18n/getLocalized";
 
 export default function FAQSection({
   faqs = [],
+  faqSections = [],
   locale: propLocale,
   heading = "",
   sectionClassName = "bg-white text-black py-12",
@@ -15,8 +16,10 @@ export default function FAQSection({
   const { t } = useTranslation("treatments");
 
   const localize = (field) => getLocalized(field, locale);
+  const hasSections = Array.isArray(faqSections) && faqSections.length > 0;
+  const hasFaqs = Array.isArray(faqs) && faqs.length > 0;
 
-  if (!faqs.length) return null;
+  if (!hasSections && !hasFaqs) return null;
 
   const headingText = heading || t("faq.heading");
 
@@ -26,15 +29,45 @@ export default function FAQSection({
         <h3 className="text-2xl font-serif font-medium text-center mb-6">
           {headingText}
         </h3>
-        <div className="space-y-4">
-          {faqs.map((faq, idx) => (
-            <ToggleItem
-              key={idx}
-              question={localize(faq.question)}
-              answer={localize(faq.answer)}
-            />
-          ))}
-        </div>
+        {hasSections ? (
+          <div className="space-y-8">
+            {faqSections.map((section, sectionIdx) => {
+              const sectionTitle = localize(section?.title);
+              const sectionFaqs = Array.isArray(section?.faqs) ? section.faqs : [];
+              if (!sectionFaqs.length) return null;
+
+              const sectionKey = section?.id || sectionTitle || sectionIdx;
+              return (
+                <div key={sectionKey} className="space-y-3">
+                  {sectionTitle ? (
+                    <h4 className="text-xs uppercase tracking-[0.2em] text-gray-500">
+                      {sectionTitle}
+                    </h4>
+                  ) : null}
+                  <div className="space-y-4">
+                    {sectionFaqs.map((faq, idx) => (
+                      <ToggleItem
+                        key={`${sectionKey}-${idx}`}
+                        question={localize(faq.question)}
+                        answer={localize(faq.answer)}
+                      />
+                    ))}
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        ) : (
+          <div className="space-y-4">
+            {faqs.map((faq, idx) => (
+              <ToggleItem
+                key={idx}
+                question={localize(faq.question)}
+                answer={localize(faq.answer)}
+              />
+            ))}
+          </div>
+        )}
       </div>
     </section>
   );
