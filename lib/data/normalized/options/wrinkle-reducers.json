@@ -40,7 +40,7 @@
   },
   {
     "id": "opt_dermawrinkle_per_unit",
-    "serviceId": "svc_dermawrinkle",
+    "serviceId": "svc_botox",
     "nameKey": "opt.dermawrinkle.per_unit",
     "price": {
       "amount": 5.50,
@@ -59,7 +59,7 @@
   },
   {
     "id": "opt_dermawrinkle_45_unit_pack",
-    "serviceId": "svc_dermawrinkle",
+    "serviceId": "svc_botox",
     "nameKey": "promo.dermawrinkle.option_name",
     "optionType": "package",
     "price": {
