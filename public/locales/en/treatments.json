@@ -187,6 +187,28 @@
     "subtitle": "Reviewed by a medical team before treatment planning.",
     "cta": "Start assessment"
   },
+  "learnArticle": {
+    "label": "Learn",
+    "cta": "Read article",
+    "items": {
+      "sylfirm": {
+        "title": "Sylfirm X RF Microneedling Guide",
+        "subtitle": "How it works, candidacy, and treatment planning."
+      },
+      "ultraformer": {
+        "title": "Ultraformer MPT Planning Guide",
+        "subtitle": "What to evaluate before booking and how planning affects outcomes."
+      },
+      "plla": {
+        "title": "PLLA Collagen Biostimulator Guide",
+        "subtitle": "How gradual collagen stimulation works and what to expect over time."
+      },
+      "caha": {
+        "title": "Collagen Over Time",
+        "subtitle": "Understand collagen timelines and how Allergan Aesthetics-manufactured HA + CaHA supports immediate structure with gradual collagen stimulation."
+      }
+    }
+  },
   "candidacyForm": {
     "labels": {
       "countryCode": "Country code"
