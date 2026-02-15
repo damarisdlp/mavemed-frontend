@@ -33,13 +33,13 @@
     "id": "addon_laser_hair_microneedling_prp",
     "parentServiceId": "svc_laser_hair_removal",
     "childServiceId": "svc_microneedling",
-    "optionNameKey": "addon.laser_hair.microneedling_prp"
+    "optionNameKey": "addon.laser_hair.Microneedling_prp"
   },
   {
     "id": "addon_laser_hair_microneedling_pn",
     "parentServiceId": "svc_laser_hair_removal",
     "childServiceId": "svc_microneedling",
-    "optionNameKey": "addon.laser_hair.microneedling_pn"
+    "optionNameKey": "addon.laser_hair.Microneedling_pn"
   },
   {
     "id": "addon_ipl_rf_face_neck_decollete",
@@ -63,13 +63,13 @@
     "id": "addon_ipl_microneedling_prp",
     "parentServiceId": "svc_ipl",
     "childServiceId": "svc_microneedling",
-    "optionNameKey": "addon.ipl.microneedling_prp"
+    "optionNameKey": "addon.ipl.Microneedling_prp"
   },
   {
     "id": "addon_ipl_microneedling_pn",
     "parentServiceId": "svc_ipl",
     "childServiceId": "svc_microneedling",
-    "optionNameKey": "addon.ipl.microneedling_pn"
+    "optionNameKey": "addon.ipl.Microneedling_pn"
   },
   {
     "id": "addon_rf_botox",
