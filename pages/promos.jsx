@@ -409,7 +409,7 @@ export default function PromosPage({ promoCategories = [] }) {
           </p>
           <div
             className="-mx-4 sm:-mx-6 lg:-mx-8 sticky bg-white z-30 border-b border-gray-200 px-4 sm:px-6 lg:px-8 mb-10"
-            style={{ top: "var(--site-header-offset)" }}
+            style={{ top: "calc(var(--site-header-offset) - 0.5%)" }}
           >
             <div className="py-4">
               <div className="flex flex-col sm:flex-row sm:items-center gap-3">
