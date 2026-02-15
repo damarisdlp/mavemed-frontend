@@ -40,47 +40,5 @@
     "serviceId": "svc_botox",
     "questionKey": "faq.botox.q7",
     "answerKey": "faq.botox.a7"
-  },
-  {
-    "id": "faq_dermawrinkle_1",
-    "serviceId": "svc_dermawrinkle",
-    "questionKey": "faq.dermawrinkle.q1",
-    "answerKey": "faq.dermawrinkle.a1"
-  },
-  {
-    "id": "faq_dermawrinkle_2",
-    "serviceId": "svc_dermawrinkle",
-    "questionKey": "faq.dermawrinkle.q2",
-    "answerKey": "faq.dermawrinkle.a2"
-  },
-  {
-    "id": "faq_dermawrinkle_3",
-    "serviceId": "svc_dermawrinkle",
-    "questionKey": "faq.dermawrinkle.q3",
-    "answerKey": "faq.dermawrinkle.a3"
-  },
-  {
-    "id": "faq_dermawrinkle_4",
-    "serviceId": "svc_dermawrinkle",
-    "questionKey": "faq.dermawrinkle.q4",
-    "answerKey": "faq.dermawrinkle.a4"
-  },
-  {
-    "id": "faq_dermawrinkle_5",
-    "serviceId": "svc_dermawrinkle",
-    "questionKey": "faq.dermawrinkle.q5",
-    "answerKey": "faq.dermawrinkle.a5"
-  },
-  {
-    "id": "faq_dermawrinkle_6",
-    "serviceId": "svc_dermawrinkle",
-    "questionKey": "faq.dermawrinkle.q6",
-    "answerKey": "faq.dermawrinkle.a6"
-  },
-  {
-    "id": "faq_dermawrinkle_7",
-    "serviceId": "svc_dermawrinkle",
-    "questionKey": "faq.dermawrinkle.q7",
-    "answerKey": "faq.dermawrinkle.a7"
   }
 ]
