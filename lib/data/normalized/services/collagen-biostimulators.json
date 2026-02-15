@@ -1,7 +1,7 @@
 [
   {
     "id": "svc_sculptra",
-    "slug": "sculptra",
+    "slug": "collagen-biostimulator-plla",
     "categoryId": "cat_collagen_biostimulators",
     "nameKey": "svc.sculptra.name",
     "descriptionKey": "svc.sculptra.desc",
@@ -36,7 +36,7 @@
   },
   {
     "id": "svc_harmonyca",
-    "slug": "harmonyca",
+    "slug": "hybrid-injectable-collagen-biostimulator-ha-caha",
     "categoryId": "cat_collagen_biostimulators",
     "nameKey": "svc.harmonyca.name",
     "descriptionKey": "svc.harmonyca.desc",
