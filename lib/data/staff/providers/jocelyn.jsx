@@ -25,7 +25,7 @@ export const jocelyn = {
       treatmentSlug: "microneedling",
     },
     {
-      treatmentSlug: "sculptra",
+      treatmentSlug: "collagen-biostimulator-plla",
     },
     {
       treatmentSlug: "hydrafacial",
