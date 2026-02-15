@@ -401,13 +401,8 @@
   },
   {
     "id": "addon.sclerotherapy.botox",
-    "en": "Botox - Any Zone",
-    "es": "Botox - Cualquier Zona"
-  },
-  {
-    "id": "addon.sclerotherapy.dermawrinkle",
-    "en": "Dermawrinkle - Any Zone",
-    "es": "Dermawrinkle - Cualquier Zona"
+    "en": "Neuromodulator (Botulinum Toxin Type A) - Any Zone",
+    "es": "Neuromodulador (Toxina Botulínica Tipo A) - Cualquier Zona"
   },
   {
     "id": "addon.sclerotherapy.Microneedling_prp",
