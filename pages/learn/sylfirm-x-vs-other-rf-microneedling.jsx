@@ -19,23 +19,23 @@ const content = {
     subtitle:
       "How RF microneedling platforms differ, and what the FDA safety communication means for patients",
     intro: [
-      "RF microneedling is often spoken about as one category, but device design and energy delivery can vary a lot across platforms.",
-      "Because radiofrequency delivers heat into living tissue, differences in control, depth, needle design, and treatment logic can directly affect both outcomes and risk.",
+      "RF microneedling is often spoken about as one category, but **device design and energy delivery can vary significantly across platforms.**",
+      "Because radiofrequency delivers heat into living tissue, **differences in control, depth, needle design, and treatment logic can directly affect both outcomes and risk.**",
       "This page explains what to compare across devices, where Sylfirm X fits clinically, and why the FDA has issued a safety communication about potential risks with certain uses of RF microneedling.",
     ],
     sections: [
       {
         title: "RF microneedling is not one uniform treatment",
         body: [
-          "Two devices can both be called RF microneedling while behaving very differently in tissue.",
+          "Two devices can both be called RF microneedling while **behaving very differently in tissue.**",
           "Differences can include needle configuration, depth range, energy mode, and how heat is distributed in the dermis.",
-          "This is why a device name alone does not predict safety or results, the treatment plan and provider technique matter just as much.",
+          "This is why a device name alone does not predict safety or results, **the treatment plan and provider technique matter just as much.**",
         ],
       },
       {
         title: "What patients should compare across RF microneedling platforms",
         body: [
-          "When you compare devices, focus on clinical control, not marketing language.",
+          "When you compare devices, **focus on clinical control, not marketing language.**",
           "Key variables include:",
           "• Energy delivery mode, for example pulsed RF versus continuous RF",
           "• Depth control and whether depth can be adjusted precisely by zone",
@@ -64,7 +64,7 @@ const content = {
           "• Typical depth ranges used in practice",
           "• How heat concentrates at the needle tip",
           "• Treatment endpoints and the amount of thermal stress delivered per pass",
-          "Important note: FDA clearance and real world aesthetic marketing are not always the same thing. If you are considering any RF microneedling platform, ask your provider what the device is cleared for, what it is being used for in your case, and what risk mitigation steps are in place.",
+          "**Important note:** FDA clearance and real world aesthetic marketing are not always the same thing. If you are considering any RF microneedling platform, ask your provider what the device is cleared for, what it is being used for in your case, and what risk mitigation steps are in place.",
         ],
       },
       {
@@ -72,14 +72,14 @@ const content = {
         body: [
           "On October 15, 2025, the FDA issued a safety communication stating that serious complications have been reported with certain uses of RF microneedling devices for dermatologic or aesthetic skin procedures intended to improve the appearance of the skin.",
           "The FDA specifically lists reported complications including burns, scarring, fat loss, disfigurement, and nerve damage, sometimes requiring medical intervention.",
-          "The FDA also states that RF microneedling is a medical procedure, not a cosmetic treatment, and that these devices should not be used at home.",
+          "**The FDA also states that RF microneedling is a medical procedure, not a cosmetic treatment, and that these devices should not be used at home.**",
           "This communication is not about one brand. It is guidance that applies to the category of RF microneedling, and it reinforces why device choice, provider training, and patient selection are essential.",
         ],
       },
       {
         title: "Questions to ask before you book",
         body: [
-          "A careful consult should feel like medical decision making, not a sales pitch.",
+          "**A careful consult should feel like medical decision making, not a sales pitch.**",
           "Consider asking:",
           "• Which device will be used, and why it fits my skin type and goals",
           "• What settings will be adjusted for pigment risk, scarring risk, and skin thickness",
@@ -93,7 +93,7 @@ const content = {
     resourcesTitle: "Resources and related education",
     resourcesCopy: [
       "If you want to go deeper, these references can help you make more informed decisions.",
-      "We recommend reading the FDA safety communication in full, and using it as a starting point for questions during your consultation.",
+      "**We recommend reading the FDA safety communication in full, and using it as a starting point for questions during your consultation.**",
     ],
     fdaLinkLabel: "Read the FDA safety communication on RF microneedling",
     collagenLinkLabel: "Learn about collagen loss and the timeline to rebuild collagen",
@@ -107,7 +107,7 @@ const content = {
     closingTitle: "A note on safety",
     closingCopy: [
       "RF microneedling can be valuable when it is clinically appropriate, conservatively planned, and performed by trained providers.",
-      "Our approach prioritizes patient selection, parameter control, and realistic timelines, especially for patients who are pigment prone or have a history of reactive skin.",
+      "**Our approach prioritizes patient selection, parameter control, and realistic timelines, especially for patients who are pigment prone or have a history of reactive skin.**",
     ],
   },
   es: {
@@ -115,23 +115,23 @@ const content = {
     subtitle:
       "En qué se diferencian las plataformas, y qué significa el comunicado de seguridad de la FDA para pacientes",
     intro: [
-      "El RF microneedling suele describirse como si fuera un solo tratamiento, pero el diseño del dispositivo y la forma en que entrega energía puede variar mucho entre plataformas.",
-      "Como la radiofrecuencia genera calor dentro del tejido, las diferencias en control, profundidad, diseño de agujas y lógica de tratamiento pueden impactar resultados y riesgos.",
+      "El RF microneedling suele describirse como si fuera un solo tratamiento, pero **el diseño del dispositivo y la forma en que entrega energía puede variar mucho entre plataformas.**",
+      "Como la radiofrecuencia genera calor dentro del tejido, **las diferencias en control, profundidad, diseño de agujas y lógica de tratamiento pueden impactar resultados y riesgos.**",
       "Aquí explicamos qué comparar entre dispositivos, dónde encaja Sylfirm X, y por qué la FDA emitió un comunicado de seguridad sobre riesgos potenciales con ciertos usos del RF microneedling.",
     ],
     sections: [
       {
         title: "El RF microneedling no es un tratamiento uniforme",
         body: [
-          "Dos dispositivos pueden llamarse RF microneedling y aun así comportarse de manera distinta en la piel.",
+          "Dos dispositivos pueden llamarse RF microneedling y aun así **comportarse de manera distinta en la piel.**",
           "Existen diferencias en configuración de agujas, rango de profundidades, modo de energía, y cómo se distribuye el calor en la dermis.",
-          "Por eso el nombre del dispositivo por sí solo no predice seguridad o resultados, el plan y la técnica del proveedor importan igual o más.",
+          "Por eso el nombre del dispositivo por sí solo no predice seguridad o resultados, **el plan y la técnica del proveedor importan igual o más.**",
         ],
       },
       {
         title: "Qué comparar entre plataformas de RF microneedling",
         body: [
-          "Al comparar dispositivos, prioriza el control clínico, no el marketing.",
+          "Al comparar dispositivos, **prioriza el control clínico, no el marketing.**",
           "Variables clave incluyen:",
           "• Modo de energía, por ejemplo RF pulsada versus RF continua",
           "• Control de profundidad y ajuste por zona",
@@ -160,7 +160,7 @@ const content = {
           "• Profundidades que se usan típicamente",
           "• Cómo se concentra el calor en la punta",
           "• Endpoints de tratamiento y cantidad de estrés térmico por pasada",
-          "Nota importante: la autorización o clearance y el marketing estético no siempre son lo mismo. Si estás considerando cualquier dispositivo de RF microneedling, pregunta para qué está autorizado, para qué se usará en tu caso, y qué medidas de mitigación de riesgo se aplican.",
+          "**Nota importante:** la autorización o clearance y el marketing estético no siempre son lo mismo. Si estás considerando cualquier dispositivo de RF microneedling, pregunta para qué está autorizado, para qué se usará en tu caso, y qué medidas de mitigación de riesgo se aplican.",
         ],
       },
       {
@@ -168,14 +168,14 @@ const content = {
         body: [
           "El 15 de octubre de 2025, la FDA emitió un comunicado indicando que se han reportado complicaciones serias con ciertos usos de dispositivos de RF microneedling en procedimientos dermatológicos o estéticos para mejorar la apariencia de la piel.",
           "La FDA menciona complicaciones como quemaduras, cicatrices, pérdida de grasa, desfiguración y daño nervioso, a veces requiriendo intervención médica.",
-          "La FDA también afirma que el RF microneedling es un procedimiento médico, no un tratamiento cosmético, y que estos dispositivos no deben usarse en casa.",
+          "**La FDA también afirma que el RF microneedling es un procedimiento médico, no un tratamiento cosmético, y que estos dispositivos no deben usarse en casa.**",
           "Este comunicado no es sobre una sola marca. Es una guía para la categoría, y refuerza por qué el dispositivo, el entrenamiento del proveedor y la selección del paciente son esenciales.",
         ],
       },
       {
         title: "Preguntas útiles antes de agendar",
         body: [
-          "Una valoración responsable debe sentirse como decisión médica, no como venta.",
+          "**Una valoración responsable debe sentirse como decisión médica, no como venta.**",
           "Considera preguntar:",
           "• Qué dispositivo se usará y por qué encaja con mi piel y mis objetivos",
           "• Qué ajustes se harán por riesgo pigmentario, cicatrización y grosor de piel",
@@ -189,7 +189,7 @@ const content = {
     resourcesTitle: "Recursos y educación relacionada",
     resourcesCopy: [
       "Si quieres profundizar, estas referencias te ayudan a tomar decisiones mejor informadas.",
-      "Recomendamos leer el comunicado de la FDA completo y usarlo como base para tus preguntas durante la consulta.",
+      "**Recomendamos leer el comunicado de la FDA completo y usarlo como base para tus preguntas durante la consulta.**",
     ],
     fdaLinkLabel: "Leer el comunicado de seguridad de la FDA sobre RF microneedling",
     collagenLinkLabel: "Aprender sobre pérdida de colágeno y el tiempo para reconstruirlo",
@@ -203,10 +203,27 @@ const content = {
     closingTitle: "Nota sobre seguridad",
     closingCopy: [
       "El RF microneedling puede ser valioso cuando está indicado, se planifica de forma conservadora, y se realiza por personal entrenado.",
-      "Nuestro enfoque prioriza selección del paciente, control de parámetros, y cronogramas realistas, especialmente en pacientes con tendencia a pigmentación o piel reactiva.",
+      "**Nuestro enfoque prioriza selección del paciente, control de parámetros, y cronogramas realistas, especialmente en pacientes con tendencia a pigmentación o piel reactiva.**",
     ],
   },
 };
+
+function BoldText({ text }) {
+  const parts = String(text || "").split("**");
+  return (
+    <>
+      {parts.map((part, idx) =>
+        idx % 2 === 1 ? (
+          <strong key={idx} className="font-semibold text-black">
+            {part}
+          </strong>
+        ) : (
+          <span key={idx}>{part}</span>
+        )
+      )}
+    </>
+  );
+}
 
 const slug = "/learn/sylfirm-x-vs-other-rf-microneedling";
 const BASE_URL = "https://www.mavemedspa.com";
@@ -320,7 +337,9 @@ export default function RFMicroneedlingComparisonPage() {
 
           <div className="mt-6 space-y-4 text-sm text-gray-700 leading-relaxed">
             {copy.intro.map((line) => (
-              <p key={line}>{line}</p>
+              <p key={line}>
+                <BoldText text={line} />
+              </p>
             ))}
           </div>
         </section>
@@ -331,7 +350,9 @@ export default function RFMicroneedlingComparisonPage() {
               <h2 className="text-xl font-serif text-black">{section.title}</h2>
               <div className="space-y-3 text-sm text-gray-700 leading-relaxed whitespace-pre-line">
                 {section.body.map((line) => (
-                  <p key={line}>{line}</p>
+                  <p key={line}>
+                    <BoldText text={line} />
+                  </p>
                 ))}
               </div>
             </div>
@@ -344,7 +365,9 @@ export default function RFMicroneedlingComparisonPage() {
 
             <div className="space-y-2 text-sm text-gray-700 leading-relaxed">
               {copy.resourcesCopy.map((line) => (
-                <p key={line}>{line}</p>
+                <p key={line}>
+                  <BoldText text={line} />
+                </p>
               ))}
             </div>
 
@@ -392,7 +415,9 @@ export default function RFMicroneedlingComparisonPage() {
             <h3 className="text-lg font-semibold text-black">{copy.closingTitle}</h3>
             <div className="space-y-3 text-sm text-gray-700 leading-relaxed whitespace-pre-line">
               {copy.closingCopy.map((line) => (
-                <p key={line}>{line}</p>
+                <p key={line}>
+                  <BoldText text={line} />
+                </p>
               ))}
             </div>
           </div>
