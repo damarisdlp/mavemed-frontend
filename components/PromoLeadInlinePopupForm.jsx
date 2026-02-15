@@ -2,7 +2,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import { useRouter } from "next/router";
 import { useTranslation } from "next-i18next";
 import Link from "next/link";
-import { getActiveLeadForm } from "@/lib/data/leadForms";
+import { getActiveLeadForm, resolveLeadFormCopy } from "@/lib/data/leadForms";
 import { validatePhoneNumber } from "@/lib/utils/phone";
 import { getLeadAuthHeaders } from "@/lib/utils/leadAuthClient";
 
@@ -334,8 +334,11 @@ export default function PromoLeadInlinePopupForm() {
   };
 
   const activeForm = getActiveLeadForm();
-  const formTitle = t(activeForm?.titleKey || "leadForm.title");
-  const formSubtitleKey = activeForm?.subtitleKey || "leadForm.subtitle";
+  const { title: formTitle, subtitle: formSubtitle } = resolveLeadFormCopy({
+    t,
+    form: activeForm,
+    locale: isSpanish ? "es" : "en",
+  });
 
   return (
     <div className="w-full max-w-[92vw] sm:max-w-lg lg:max-w-[44rem] rounded-2xl bg-white p-4 sm:p-6 shadow-xl text-[98%] sm:text-[100%] mx-auto relative">
@@ -347,7 +350,7 @@ export default function PromoLeadInlinePopupForm() {
         <h2 className="mt-2 text-xl font-semibold text-black">{formTitle}</h2>
         <p
           className="mt-3 text-sm text-gray-600"
-          dangerouslySetInnerHTML={{ __html: t(formSubtitleKey) }}
+          dangerouslySetInnerHTML={{ __html: formSubtitle }}
         />
       </div>
 
