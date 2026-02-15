@@ -85,7 +85,7 @@ export default function Home({ popularTreatments = [] }) {
         <meta name="description" content={pageDescription} />
         <meta
           name="keywords"
-          content="Tijuana med spa, book treatments, Botox Tijuana, Sculptra Tijuana, RF microneedling, CO2 laser, fillers, PDO threads, cross-border med spa"
+          content="Tijuana med spa, book treatments, neuromodulator Tijuana, Allergan Aesthetics neuromodulator Tijuana, PLLA Tijuana, RF microneedling, CO2 laser, fillers, PDO threads, cross-border med spa"
         />
         <SeoLinks asPath={asPath} locale={locale} />
 
