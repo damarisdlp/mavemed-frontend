@@ -7,14 +7,5 @@
     "validFrom": "2026-02-02",
     "validTill": "2026-06-30",
     "options": []
-  },
-  {
-    "id": "promo_dermawrinkle_2026",
-    "serviceId": "svc_dermawrinkle",
-    "headlineKey": "promo.dermawrinkle.headline",
-    "descriptionKey": "promo.dermawrinkle.description",
-    "validFrom": "2026-02-02",
-    "validTill": "2026-06-30",
-    "options": []
   }
 ]
