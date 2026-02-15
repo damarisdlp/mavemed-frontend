@@ -875,14 +875,14 @@
     "es": "Incluye tercio medio del rostro, línea mandibular, cejas y cuello"
   },
   {
-    "id": "addon.ultraformer.Sculptra",
-    "en": "Sculptra (PLLA) - Poly-L-Lactic Acid",
-    "es": "Sculptra (PLLA) - Poli-L-Láctico"
+    "id": "addon.ultraformer.PLLA",
+    "en": "Collagen Biostimulator (PLLA)",
+    "es": "Bioestimulador de Colágeno (PLLA)"
   },
   {
     "id": "addon.ultraformer.harmonyca",
-    "en": "HarmonyCa (HA + CAHA) - Hyaluronic Acid + Calcium Hydroxyapatite",
-    "es": "HarmonyCa (AH + CAHA) - ácido Hialurónico + Hidroxiapatita de Calcio"
+    "en": "Allergan Aesthetics-manufactured Hybrid Injectable Collagen Biostimulator (HA + CaHA)",
+    "es": "Bioestimulador de Colágeno Inyectable Híbrido (AH + CaHA) fabricado por Allergan Aesthetics"
   },
   {
     "id": "addon.ultraformer.facial_balancing",
@@ -966,8 +966,8 @@
   },
   {
     "id": "exp.ultraformer.pre.2",
-    "en": "Arrive with clean skin, no makeup; inform your provider of recent Botox/fillers, implants, or metal hardware in the area.",
-    "es": "Acuda con la piel limpia y sin maquillaje; informe a su especialista sobre Botox/rellenos recientes, implantes o material metálico en la zona."
+    "en": "Arrive with clean skin, no makeup; inform your provider of recent neuromodulator/filler treatments, implants, or metal hardware in the area.",
+    "es": "Acuda con la piel limpia y sin maquillaje; informe a su especialista sobre tratamientos recientes con neuromodulador/rellenos, implantes o material metálico en la zona."
   },
   {
     "id": "exp.ultraformer.during.1",
@@ -1066,8 +1066,8 @@
   },
   {
     "id": "exp.pdo.pre.2",
-    "en": "Inform your provider about any recent Botox or filler procedures to plan your treatment safely.",
-    "es": "Informe a su especialista sobre cualquier tratamiento reciente con Botox o rellenos para planear su procedimiento de forma segura."
+    "en": "Inform your provider about any recent neuromodulator or filler procedures to plan your treatment safely.",
+    "es": "Informe a su especialista sobre cualquier tratamiento reciente con neuromodulador o rellenos para planear su procedimiento de forma segura."
   },
   {
     "id": "exp.pdo.pre.3",
@@ -1136,8 +1136,8 @@
   },
   {
     "id": "faq.ultraformer.a4",
-    "en": "Yes. Ultraformer MPT pairs well with injectables, Microneedling, and collagen stimulators such as Sculptra for enhanced rejuvenation.",
-    "es": "Sí. Ultraformer MPT se combina muy bien con inyectables, Microneedling y estimuladores de colágeno como Sculptra para un rejuvenecimiento potenciado."
+    "en": "Yes. Ultraformer MPT pairs well with injectables, Microneedling, and collagen stimulators such as PLLA for enhanced rejuvenation.",
+    "es": "Sí. Ultraformer MPT se combina muy bien con inyectables, Microneedling y estimuladores de colágeno como PLLA para un rejuvenecimiento potenciado."
   },
   {
     "id": "faq.ultraformer.q5",
