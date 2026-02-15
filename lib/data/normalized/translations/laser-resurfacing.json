@@ -6,18 +6,18 @@
   },
   {
     "id": "svc.co2.name",
-    "en": "CO Laser Resurfacing (AcuPulse)",
-    "es": "Resurfacing Láser CO (AcuPulse)"
+    "en": "CO2 Laser Resurfacing (AcuPulse)",
+    "es": "Resurfacing Láser CO2 (AcuPulse)"
   },
   {
     "id": "svc.co2.desc",
-    "en": "Deep fractional CO laser therapy to improve the appearance of skin texture and tone while softening the look of wrinkles.",
-    "es": "Terapia láser fraccionada de CO para mejorar la apariencia de la textura y el tono de la piel, y atenuar la apariencia de arrugas."
+    "en": "Deep fractional CO2 laser therapy with AcuPulse to improve skin texture and appearance while softening the look of wrinkles.",
+    "es": "Terapia láser fraccionada profunda con CO2 y AcuPulse para mejorar la textura y la apariencia de la piel, y atenuar la apariencia de arrugas."
   },
   {
     "id": "svc.co2.details",
-    "en": "CO laser delivers fractional ablative energy to stimulate collagen remodeling and visible skin renewal. It creates controlled microcolumns in tissue to support smoother-looking skin and improved texture. Ideal for improving the appearance of acne scars, wrinkles, sun damage, and dull skin tone.",
-    "es": "El láser de CO emite energía ablativa fraccionada para estimular la remodelación de colágeno y la renovación visible de la piel. Crea microcolumnas controladas en el tejido para favorecer una piel de apariencia más lisa y una mejor textura. Ideal para mejorar la apariencia de cicatrices de acné, arrugas, daño solar y tono opaco."
+    "en": "AcuPulse CO2 laser by Lumenis delivers fractional ablative energy to support collagen remodeling and visible skin renewal. It creates controlled microcolumns in tissue to support smoother-looking skin and improved texture. Ideal for improving the appearance of acne scars, wrinkles, sun damage, and dull skin tone. Consult your physician. Use of this device should be supervised by licensed healthcare professionals.",
+    "es": "El láser CO2 AcuPulse de Lumenis emite energía ablativa fraccionada para favorecer la remodelación de colágeno y la renovación visible de la piel. Crea microcolumnas controladas en el tejido para favorecer una piel de apariencia más lisa y una mejor textura. Ideal para mejorar la apariencia de cicatrices de acné, arrugas, daño solar y tono opaco. Consulte a su médico. El uso de este equipo debe ser supervisado por profesionales de la salud."
   },
   {
     "id": "note.co2.consult",
@@ -411,18 +411,18 @@
   },
   {
     "id": "svc.laser_hair_removal.name",
-    "en": "Laser Hair Removal (Soprano Titanium ICE)",
-    "es": "Depilación Láser (Soprano Titanium ICE)"
+    "en": "Laser Hair Removal (Alma Soprano Titanium ICE)",
+    "es": "Depilación Láser (Alma Soprano Titanium ICE)"
   },
   {
     "id": "svc.laser_hair_removal.desc",
-    "en": "Laser hair reduction for all skin types using the Alma Soprano Titanium ICE system.",
-    "es": "Reducción de vello láser para todo tipo de piel con el sistema Alma Soprano Titanium ICE."
+    "en": "Highly comfortable laser hair reduction with Alma Soprano Titanium ICE for all skin types.",
+    "es": "Reducción de vello láser altamente confortable con Alma Soprano Titanium ICE para todo tipo de piel."
   },
   {
     "id": "svc.laser_hair_removal.details",
-    "en": "The Alma Soprano Titanium uses triple wavelength laser energy and ICE cooling to deliver comfortable, fast, and effective hair reduction. It targets follicles at all growth stages for long-lasting results.",
-    "es": "Alma Soprano Titanium utiliza energía láser de triple longitud de onda y enfriamiento ICE para brindar una reducción del vello cómoda, rápida y efectiva. Trabaja sobre los folículos en todas las etapas de crecimiento para resultados duraderos."
+    "en": "Alma Soprano Titanium ICE uses triple-wavelength laser energy and ICE cooling to deliver highly comfortable, fast, and effective hair reduction. It targets follicles at multiple growth stages to support long-lasting hair reduction. Consult your physician. Use of this device should be supervised by licensed healthcare professionals.",
+    "es": "Alma Soprano Titanium ICE utiliza energía láser de triple longitud de onda y enfriamiento ICE para brindar una reducción de vello altamente confortable, rápida y efectiva. Trabaja sobre los folículos en múltiples etapas de crecimiento para favorecer una reducción de vello duradera. Consulte a su médico. El uso de este equipo debe ser supervisado por profesionales de la salud."
   },
   {
     "id": "note.laser_hair.sessions",
