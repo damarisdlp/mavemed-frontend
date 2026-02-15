@@ -28,35 +28,5 @@
     "parentServiceId": "svc_botox",
     "childServiceId": "svc_pdo_biostimulating_threads",
     "optionNameKey": "addon.botox.pdo_threads"
-  },
-  {
-    "id": "addon_dermawrinkle_hydrafacial",
-    "parentServiceId": "svc_dermawrinkle",
-    "childServiceId": "svc_hydrafacial",
-    "optionNameKey": "addon.dermawrinkle.hydrafacial"
-  },
-  {
-    "id": "addon_dermawrinkle_casmara_purifying",
-    "parentServiceId": "svc_dermawrinkle",
-    "childServiceId": "svc_casmara_purifying",
-    "optionNameKey": "addon.dermawrinkle.casmara_purifying"
-  },
-  {
-    "id": "addon_dermawrinkle_casmara_infinity",
-    "parentServiceId": "svc_dermawrinkle",
-    "childServiceId": "svc_casmara_infinity",
-    "optionNameKey": "addon.dermawrinkle.casmara_infinity"
-  },
-  {
-    "id": "addon_dermawrinkle_casmara_retinol",
-    "parentServiceId": "svc_dermawrinkle",
-    "childServiceId": "svc_casmara_retinol",
-    "optionNameKey": "addon.dermawrinkle.casmara_retinol"
-  },
-  {
-    "id": "addon_dermawrinkle_pdo_threads",
-    "parentServiceId": "svc_dermawrinkle",
-    "childServiceId": "svc_pdo_biostimulating_threads",
-    "optionNameKey": "addon.dermawrinkle.pdo_threads"
   }
 ]
