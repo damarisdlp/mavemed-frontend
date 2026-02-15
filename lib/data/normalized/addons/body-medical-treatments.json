@@ -42,12 +42,6 @@
     "optionNameKey": "addon.sclerotherapy.botox"
   },
   {
-    "id": "addon_sclerotherapy_dermawrinkle",
-    "parentServiceId": "svc_sclerotherapy",
-    "childServiceId": "svc_dermawrinkle",
-    "optionNameKey": "addon.sclerotherapy.dermawrinkle"
-  },
-  {
     "id": "addon_sclerotherapy_microneedling_prp",
     "parentServiceId": "svc_sclerotherapy",
     "childServiceId": "svc_microneedling",
