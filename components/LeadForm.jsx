@@ -286,9 +286,9 @@ export default function LeadForm({ useSchedule = true } = {}) {
                   {t("leadForm.primaryTreatmentPrompt") || "Select one"}
                 </option>
                 {[
-                  "Botox",
+                  "Allergan Aesthetics Neuromodulator",
                   "Dermal Fillers",
-                  "Sculptra",
+                  "PLLA",
                   "RF Microneedling",
                   "Sylfirm X",
                   "Laser Hair Removal",
