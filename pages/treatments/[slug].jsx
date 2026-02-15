@@ -20,6 +20,25 @@ import nextI18NextConfig from "../../next-i18next.config";
 import { useTranslation } from "next-i18next";
 import { getLocalized } from "@/lib/i18n/getLocalized";
 
+const treatmentLearnLinks = {
+  "sylfirm-rf-microneedling": {
+    href: "/learn/sylfirm-x-rf-microneedling",
+    i18nKey: "sylfirm",
+  },
+  "ultraformer-mpt": {
+    href: "/learn/best-clinic-tijuana-ultraformer-mpt",
+    i18nKey: "ultraformer",
+  },
+  "collagen-biostimulator-plla": {
+    href: "/learn/plla-collagen-biostimulator",
+    i18nKey: "plla",
+  },
+  "hybrid-injectable-collagen-biostimulator-ha-caha": {
+    href: "/learn/collagen-loss-and-rebuilding-timeline",
+    i18nKey: "caha",
+  },
+};
+
 export default function TreatmentPage({ treatment, packageGroups = [], addonTreatments = [] }) {
   const router = useRouter();
   const { t } = useTranslation("treatments");
@@ -54,6 +73,16 @@ export default function TreatmentPage({ treatment, packageGroups = [], addonTrea
     subtitle: t("rfCandidacy.subtitle"),
     cta: t("rfCandidacy.cta"),
   };
+  const learnArticle = treatmentLearnLinks[treatment.urlSlug] || null;
+  const learnTitle =
+    learnArticle && learnArticle.i18nKey
+      ? t(`learnArticle.items.${learnArticle.i18nKey}.title`, { defaultValue: "" })
+      : "";
+  const learnSubtitle =
+    learnArticle && learnArticle.i18nKey
+      ? t(`learnArticle.items.${learnArticle.i18nKey}.subtitle`, { defaultValue: "" })
+      : "";
+  const showLearnArticle = Boolean(learnArticle && learnTitle);
 
   return (
     <>
@@ -82,8 +111,8 @@ export default function TreatmentPage({ treatment, packageGroups = [], addonTrea
           <TreatmentDetails treatment={treatment} locale={currentLocale} packageGroups={packageGroups} />
           {isRfMicroneedling && (
             <div className="max-w-5xl mx-auto px-6 pb-8">
-              <div className="border border-gray-200 bg-white rounded-2xl p-5 flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
-                <div>
+              <div className="border border-gray-200 bg-white rounded-2xl p-5 flex flex-col gap-3 md:flex-row md:items-center md:justify-between md:gap-6">
+                <div className="min-w-0">
                   <p className="text-xs uppercase tracking-[0.2em] text-gray-500">
                     {candidacy.label}
                   </p>
@@ -93,9 +122,29 @@ export default function TreatmentPage({ treatment, packageGroups = [], addonTrea
                 <NextLink
                   href="/rf-microneedling-candidacy"
                   locale={currentLocale}
-                  className="text-sm text-[#731a2f] underline underline-offset-4"
+                  className="inline-flex w-max shrink-0 whitespace-nowrap text-sm text-[#731a2f] underline underline-offset-4"
                 >
                   {candidacy.cta}
+                </NextLink>
+              </div>
+            </div>
+          )}
+          {showLearnArticle && (
+            <div className="max-w-5xl mx-auto px-6 pb-8">
+              <div className="border border-gray-200 bg-white rounded-2xl p-5 flex flex-col gap-3 md:flex-row md:items-center md:justify-between md:gap-6">
+                <div className="min-w-0">
+                  <p className="text-xs uppercase tracking-[0.2em] text-gray-500">
+                    {t("learnArticle.label")}
+                  </p>
+                  <p className="text-base font-semibold text-black">{learnTitle}</p>
+                  {learnSubtitle ? <p className="text-sm text-gray-600">{learnSubtitle}</p> : null}
+                </div>
+                <NextLink
+                  href={learnArticle.href}
+                  locale={currentLocale}
+                  className="inline-flex w-max shrink-0 whitespace-nowrap text-sm text-[#731a2f] underline underline-offset-4"
+                >
+                  {t("learnArticle.cta")}
                 </NextLink>
               </div>
             </div>
