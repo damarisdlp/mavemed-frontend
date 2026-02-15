@@ -19,7 +19,7 @@ export const jocelyn = {
   },
   favorites: [
     {
-      treatmentSlug: "wrinkle-reducers-botox",
+      treatmentSlug: "wrinkle-reducers-neuromodulator",
     },
     {
       treatmentSlug: "microneedling",
