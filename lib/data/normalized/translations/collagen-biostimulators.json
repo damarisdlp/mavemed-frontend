@@ -6,18 +6,18 @@
   },
   {
     "id": "svc.sculptra.name",
-    "en": "Sculptra (PLLA) - Poly-L-Lactic Acid",
-    "es": "Sculptra (PLLA) - Poli-L-Láctico"
+    "en": "Collagen Biostimulator (PLLA)",
+    "es": "Bioestimulador de Colágeno (PLLA)"
   },
   {
     "id": "svc.sculptra.desc",
-    "en": "Gradually restore youthful volume and firmness with Sculptra, a poly-L-lactic acid (PLLA) collagen stimulator that enhances skin texture and structure over time.",
-    "es": "Restaure gradualmente el volumen y la firmeza juvenil con Sculptra, un estimulador de colágeno de ácido poli-L-láctico (PLLA) que mejora la textura y estructura de la piel con el tiempo."
+    "en": "Support gradual collagen renewal, firmness, and structural volume with a Galderma-manufactured PLLA collagen biostimulator for natural-looking rejuvenation over time.",
+    "es": "Favorece la renovación gradual de colágeno, la firmeza y el volumen estructural con un bioestimulador de colágeno PLLA fabricado por Galderma para un rejuvenecimiento natural con el tiempo."
   },
   {
     "id": "svc.sculptra.details",
-    "en": "Sculptra is an injectable biostimulant composed of poly-L-lactic acid (PLLA), designed to activate your skins natural collagen production. It gradually restores lost facial volume, improves skin density, and enhances definition in areas like the cheeks, jawline, and temples. Unlike traditional dermal fillers, Sculptra delivers subtle, progressive improvements that last up to two years.",
-    "es": "Sculptra es un biostimulante inyectable compuesto de ácido poli-L-láctico (PLLA), diseñado para activar la producción natural de colágeno de la piel. Restaura gradualmente el volumen facial perdido, mejora la densidad de la piel y realza la definición en áreas como las mejillas, la línea mandibular y las sienes. A diferencia de los rellenos dérmicos tradicionales, Sculptra proporciona mejoras sutiles y progresivas que duran hasta dos años."
+    "en": "This treatment focuses on progressive collagen stimulation to improve facial support, skin density, and contour in areas such as the cheeks, jawline, and temples. At Mave, we use a Galderma-manufactured PLLA formulation from a leading Swiss dermatology company, selected according to your anatomy and clinical goals.",
+    "es": "Este tratamiento se enfoca en la estimulación progresiva de colágeno para mejorar el soporte facial, la densidad de la piel y el contorno en áreas como mejillas, línea mandibular y sienes. En Mave, utilizamos una formulación PLLA fabricada por Galderma, una compañía dermatológica suiza líder, seleccionada según tu anatomía y objetivos clínicos."
   },
   {
     "id": "note.sculptra.protocol",
@@ -96,8 +96,8 @@
   },
   {
     "id": "opt.sculptra.per_vial",
-    "en": "Sculptra",
-    "es": "Sculptra"
+    "en": "PLLA Collagen Biostimulator (Per Vial)",
+    "es": "Bioestimulador de Colágeno PLLA (Por Vial)"
   },
   {
     "id": "note.sculptra.vial_price",
@@ -111,13 +111,13 @@
   },
   {
     "id": "promo.sculptra.headline",
-    "en": "Exclusive Sculptra Savings",
-    "es": "Ahorro Exclusivo en Sculptra"
+    "en": "Exclusive PLLA Biostimulator Savings",
+    "es": "Ahorro Exclusivo en Bioestimulador PLLA"
   },
   {
     "id": "promo.sculptra.description",
-    "en": "A structured 3-session Sculptra program designed to support long-term collagen remodeling, skin quality, and natural-looking rejuvenation.",
-    "es": "Programa estructurado de 3 sesiones con Sculptra diseñado para apoyar la remodelación de colágeno a largo plazo, la calidad de la piel y un rejuvenecimiento natural."
+    "en": "A structured 3-session PLLA program designed to support long-term collagen remodeling, skin quality, and natural-looking rejuvenation.",
+    "es": "Programa estructurado de 3 sesiones con PLLA diseñado para apoyar la remodelación de colágeno a largo plazo, la calidad de la piel y un rejuvenecimiento natural."
   },
   {
     "id": "promo.sculptra.option_name",
@@ -226,13 +226,13 @@
   },
   {
     "id": "faq.sculptra.q1",
-    "en": "What makes Sculptra different from traditional fillers?",
-    "es": "Qué hace que Sculptra sea diferente de los rellenos tradicionales?"
+    "en": "What makes PLLA collagen biostimulator treatment different from traditional fillers?",
+    "es": "Qué hace diferente al tratamiento con bioestimulador de colágeno PLLA frente a los rellenos tradicionales?"
   },
   {
     "id": "faq.sculptra.a1",
-    "en": "Sculptra stimulates your body's own collagen production over time, rather than adding immediate volume like hyaluronic acid fillers. The result is longer-lasting, natural rejuvenation.",
-    "es": "Sculptra estimula la producción propia de colágeno de su cuerpo con el tiempo, en lugar de agregar volumen inmediato como los rellenos de ácido hialurónico. El resultado es una rejuvenación natural de mayor duración."
+    "en": "PLLA stimulates your body’s own collagen production over time, rather than adding only immediate gel volume like hyaluronic acid fillers. At Mave, we use a Galderma-manufactured PLLA formulation selected during medical evaluation.",
+    "es": "El PLLA estimula la producción propia de colágeno con el tiempo, en lugar de aportar únicamente volumen inmediato como los rellenos de ácido hialurónico. En Mave, utilizamos una formulación PLLA fabricada por Galderma, seleccionada durante la evaluación médica."
   },
   {
     "id": "faq.sculptra.q2",
@@ -271,23 +271,23 @@
   },
   {
     "id": "faq.sculptra.a5",
-    "en": "Sculptra results typically last 2 years or longer with proper treatment and maintenance.",
-    "es": "Los resultados de Sculptra típicamente duran 2 años o más con tratamiento y mantenimiento adecuados."
+    "en": "PLLA collagen biostimulator results typically last around 2 years or longer with proper treatment and maintenance.",
+    "es": "Los resultados con bioestimulador de colágeno PLLA suelen durar alrededor de 2 años o más con tratamiento y mantenimiento adecuados."
   },
   {
     "id": "svc.harmonyca.name",
-    "en": "HarmonyCa (Hyaluronic Acid + Calcium Hydroxyapatite)",
-    "es": "HarmonyCa (ácido Hialurónico + Hidroxiapatita de Calcio)"
+    "en": "Hybrid Injectable Collagen Biostimulator (HA + CaHA)",
+    "es": "Bioestimulador de Colágeno Inyectable Híbrido (AH + CaHA)"
   },
   {
     "id": "svc.harmonyca.desc",
-    "en": "HarmonyCa is a next-generation biostimulatory filler that combines hyaluronic acid (HA) for immediate facial volume with calcium hydroxyapatite (CaHA) for long-term collagen stimulation. This hybrid injectable enhances facial contour, skin quality, and structural lift in a single treatment.",
-    "es": "HarmonyCa es un relleno biostimulador de nueva generación que combina ácido hialurónico (AH) para volumen facial inmediato con hidroxiapatita de calcio (CaHA) para estimulación de colágeno a largo plazo. Este inyectable híbrido mejora el contorno facial, la calidad de la piel y el levantamiento estructural en un solo tratamiento."
+    "en": "Improve contour, hydration, and structural support with a hybrid injectable collagen biostimulator that combines an Allergan Aesthetics-manufactured HA + CaHA formulation in one treatment.",
+    "es": "Mejora el contorno, la hidratación y el soporte estructural con un bioestimulador de colágeno inyectable híbrido que combina en un solo tratamiento una formulación de AH + CaHA fabricada por Allergan Aesthetics."
   },
   {
     "id": "svc.harmonyca.details",
-    "en": "HarmonyCa is a dual-phase injectable combining hyaluronic acid for immediate hydration and volume, with CaHA microspheres to boost collagen production over time. This advanced formula is ideal for enhancing cheekbones, defining the jawline, and restoring firmness in the lower face. Its bioregenerative effect helps improve skin density and elasticity, making it a top choice for long-lasting, natural-looking rejuvenation without heaviness or puffiness.",
-    "es": "HarmonyCa es un inyectable bifásico que combina ácido hialurónico para hidratación y volumen inmediato, con microesferas de CaHA para aumentar la producción de colágeno con el tiempo. Esta fórmula avanzada es ideal para realzar los pómulos, definir la línea mandibular y restaurar la firmeza en la cara inferior. Su efecto bioregenerativo ayuda a mejorar la densidad y elasticidad de la piel, convirtiéndolo en una opción principal para un rejuvenecimiento duradero, natural y sin pesadez ni hinchazón."
+    "en": "This dual-phase injectable combines hyaluronic acid (HA) for immediate soft-tissue support with calcium hydroxyapatite (CaHA) microspheres that support collagen stimulation over time. At Mave, this HA + CaHA hybrid formulation is manufactured by Allergan Aesthetics and selected according to your anatomy, skin quality, and treatment goals.",
+    "es": "Este inyectable de doble fase combina ácido hialurónico (AH) para soporte inmediato del tejido blando con microesferas de hidroxiapatita de calcio (CaHA) que apoyan la estimulación de colágeno con el tiempo. En Mave, esta formulación híbrida de AH + CaHA es fabricada por Allergan Aesthetics y se selecciona según tu anatomía, calidad de piel y objetivos de tratamiento."
   },
   {
     "id": "note.harmonyca.syringes",
@@ -346,8 +346,8 @@
   },
   {
     "id": "opt.harmonyca.per_treatment",
-    "en": "HarmonyCa",
-    "es": "HarmonyCa"
+    "en": "Hybrid Injectable Collagen Biostimulator (HA + CaHA)",
+    "es": "Bioestimulador de Colágeno Inyectable Híbrido (AH + CaHA)"
   },
   {
     "id": "addon.harmonyca.microneedling",
@@ -426,18 +426,18 @@
   },
   {
     "id": "faq.harmonyca.q1",
-    "en": "How is HarmonyCa different from traditional dermal fillers?",
-    "es": "En qué se diferencia HarmonyCa de los rellenos dérmicos tradicionales?"
+    "en": "How is the Hybrid Injectable Collagen Biostimulator (HA + CaHA) different from traditional dermal fillers?",
+    "es": "En qué se diferencia el Bioestimulador de Colágeno Inyectable Híbrido (AH + CaHA) de los rellenos dérmicos tradicionales?"
   },
   {
     "id": "faq.harmonyca.a1",
-    "en": "HarmonyCa combines the immediate volume of HA with the collagen-boosting power of CaHA, providing both instant lift and long-term skin regeneration.",
-    "es": "HarmonyCa combina el volumen inmediato del HA con el poder estimulador de colágeno del CaHA, proporcionando levantamiento instantáneo y regeneración de la piel a largo plazo."
+    "en": "The Hybrid Injectable Collagen Biostimulator (HA + CaHA) combines the immediate volume of HA with the collagen-stimulating support of CaHA, providing both immediate structural support and progressive skin-quality improvement.",
+    "es": "El Bioestimulador de Colágeno Inyectable Híbrido (AH + CaHA) combina el volumen inmediato del AH con el soporte estimulador de colágeno del CaHA, aportando soporte estructural inmediato y mejora progresiva de la calidad de piel."
   },
   {
     "id": "faq.harmonyca.q2",
-    "en": "Which areas respond best to HarmonyCa?",
-    "es": "Qué áreas responden mejor a HarmonyCa?"
+    "en": "Which areas respond best to the Hybrid Injectable Collagen Biostimulator (HA + CaHA)?",
+    "es": "Qué áreas responden mejor al Bioestimulador de Colágeno Inyectable Híbrido (AH + CaHA)?"
   },
   {
     "id": "faq.harmonyca.a2",
@@ -446,8 +446,8 @@
   },
   {
     "id": "faq.harmonyca.q3",
-    "en": "How long do HarmonyCa results last?",
-    "es": "Cuánto duran los resultados de HarmonyCa?"
+    "en": "How long do results from the Hybrid Injectable Collagen Biostimulator (HA + CaHA) typically last?",
+    "es": "Cuánto duran normalmente los resultados del Bioestimulador de Colágeno Inyectable Híbrido (AH + CaHA)?"
   },
   {
     "id": "faq.harmonyca.a3",
@@ -456,18 +456,18 @@
   },
   {
     "id": "faq.harmonyca.q4",
-    "en": "Is HarmonyCa approved and safe?",
-    "es": "Est HarmonyCa aprobado y es seguro?"
+    "en": "Is the Allergan Aesthetics-manufactured Hybrid Injectable Collagen Biostimulator (HA + CaHA) approved and safe?",
+    "es": "La formulación de AH + CaHA fabricada por Allergan Aesthetics está aprobada y es segura?"
   },
   {
     "id": "faq.harmonyca.a4",
-    "en": "Yes. HarmonyCa is CE-certified and used widely across Europe. At Mave, it's administered exclusively by licensed medical providers.",
-    "es": "Sí. HarmonyCa est certificado CE y se usa ampliamente en Europa. En Mave, es administrado exclusivamente por proveedores médicos licenciados."
+    "en": "Yes. This Allergan Aesthetics-manufactured Hybrid Injectable Collagen Biostimulator (HA + CaHA) is CE-certified and used widely across Europe. At Mave, it is administered exclusively by licensed medical providers.",
+    "es": "Sí. Esta formulación de AH + CaHA fabricada por Allergan Aesthetics cuenta con certificación CE y se utiliza ampliamente en Europa. En Mave, se aplica exclusivamente por profesionales médicos con licencia."
   },
   {
     "id": "faq.harmonyca.q5",
-    "en": "Can I combine HarmonyCa with other procedures?",
-    "es": "Puedo combinar HarmonyCa con otros procedimientos?"
+    "en": "Can I combine the Hybrid Injectable Collagen Biostimulator (HA + CaHA) with other procedures?",
+    "es": "Puedo combinar el Bioestimulador de Colágeno Inyectable Híbrido (AH + CaHA) con otros procedimientos?"
   },
   {
     "id": "faq.harmonyca.a5",
