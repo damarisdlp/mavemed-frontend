@@ -21,7 +21,7 @@
     "nameKey": "opt.lip_fillers.volift",
     "price": { "amount": 385, "currency": "USD" },
     "isOptionPromoActive": true,
-    "promoPrice": { "amount": 295, "currency": "USD" },
+    "promoPrice": { "amount": 350, "currency": "USD" },
     "priceTextKey": "",
     "notesKeys": [
       "note.lip_fillers.volift_tech",
@@ -68,7 +68,7 @@
     "nameKey": "opt.facial_balancing.volift",
     "price": { "amount": 385, "currency": "USD" },
     "isOptionPromoActive": true,
-    "promoPrice": { "amount": 295, "currency": "USD" },
+    "promoPrice": { "amount": 350, "currency": "USD" },
     "priceTextKey": "",
     "notesKeys": [
       "note.facial_balancing.volift_tech",
