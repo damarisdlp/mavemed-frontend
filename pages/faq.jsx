@@ -8,7 +8,7 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import nextI18NextConfig from "../next-i18next.config";
 
-import { generalFaqs } from "@/lib/data/faqs/faqs";
+import { generalFaqSections } from "@/lib/data/faqs/faqs";
 import SeoLinks from "@/components/SeoLinks";
 
 export default function GeneralFaqPage() {
@@ -44,7 +44,7 @@ export default function GeneralFaqPage() {
       </div>
 
       <main className="px-4 pt-[30%] md:pt-[5%] pb-20 max-w-4xl mx-auto bg-white">
-        <FAQSection faqs={generalFaqs} />
+        <FAQSection faqSections={generalFaqSections} />
       </main>
 
       <Footer />
