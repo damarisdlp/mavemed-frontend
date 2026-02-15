@@ -500,9 +500,6 @@ export default function TreatmentDetails({ treatment, packageGroups = [] }) {
         .toLowerCase();
     const normalizedService = normalize(serviceName);
     const normalizedCategory = normalize(categoryName);
-    const stripParens = (value) => String(value || "").replace(/\s*\([^)]*\)\s*/g, " ").trim();
-    const baseService = normalize(stripParens(serviceName));
-    const serviceKey = baseService.split(" ").slice(0, 2).join(" ");
     const pricingOptions = pricing?.options || [];
     const promoServiceOptions = promoSummary.servicePromoOptions || [];
     const usePromoOptions =
@@ -526,8 +523,6 @@ export default function TreatmentDetails({ treatment, packageGroups = [] }) {
         if (!name) return;
         const normalizedName = normalize(name);
         if (normalizedName === normalizedService || normalizedName === normalizedCategory) return;
-        if (serviceKey && normalizedName.includes(serviceKey)) return;
-        if (baseService && normalizedName.includes(baseService)) return;
         const promoKey = normalize(opt.option?.optionKey || opt.optionKey || "");
         const matchedPricing = promoKey
           ? pricingOptions.find((p) => normalize(p.optionKey || "") === promoKey)
@@ -544,8 +539,6 @@ export default function TreatmentDetails({ treatment, packageGroups = [] }) {
         if (!name) return;
         const normalizedName = normalize(name);
         if (normalizedName === normalizedService || normalizedName === normalizedCategory) return;
-        if (serviceKey && normalizedName.includes(serviceKey)) return;
-        if (baseService && normalizedName.includes(baseService)) return;
         const priceValue = opt.optionPrice != null ? getLocalizedPrice(opt.optionPrice) : "";
         const currency = opt.optionPrice?.currency || "";
         const label = formatLabel(name, priceValue, currency);
