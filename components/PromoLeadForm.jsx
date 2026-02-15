@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { useTranslation } from "next-i18next";
 import Link from "next/link";
-import { getActiveLeadForm } from "@/lib/data/leadForms";
+import { getActiveLeadForm, resolveLeadFormCopy } from "@/lib/data/leadForms";
 import { validatePhoneNumber } from "@/lib/utils/phone";
 import { getLeadAuthHeaders } from "@/lib/utils/leadAuthClient";
 
@@ -284,8 +284,11 @@ export default function PromoLeadForm() {
     "border border-gray-300 text-gray-700 rounded px-3 py-2 w-full min-w-0 max-w-full text-base md:text-sm focus:outline-none focus:ring-2 focus:ring-black";
 
   const activeForm = getActiveLeadForm();
-  const formTitle = t(activeForm?.titleKey || "leadForm.title");
-  const formSubtitleKey = activeForm?.subtitleKey || "leadForm.subtitle";
+  const { title: formTitle, subtitle: formSubtitle } = resolveLeadFormCopy({
+    t,
+    form: activeForm,
+    locale,
+  });
 
   return (
     <>
@@ -303,7 +306,7 @@ export default function PromoLeadForm() {
             </h2>
             <p
               className="text-gray-700 text-sm md:text-base"
-              dangerouslySetInnerHTML={{ __html: t(formSubtitleKey) }}
+              dangerouslySetInnerHTML={{ __html: formSubtitle }}
             />
           </div>
 
