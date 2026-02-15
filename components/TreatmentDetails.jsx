@@ -41,6 +41,8 @@ export default function TreatmentDetails({ treatment, packageGroups = [] }) {
   const [submitting, setSubmitting] = useState(false);
   const [duplicateMessage, setDuplicateMessage] = useState("");
   const [leadFormError, setLeadFormError] = useState("");
+  const countryCodeTouchedRef = useRef(false);
+  const geoDefaultCountryCodeRef = useRef("+52");
 
   const phoneRef = useRef(null);
   const emailRef = useRef(null);
@@ -62,19 +64,51 @@ export default function TreatmentDetails({ treatment, packageGroups = [] }) {
 
   useEffect(() => {
     if (typeof window === "undefined") return;
-    const localeStr = navigator?.language || "";
-    if (localeStr.startsWith("en-US") || localeStr.startsWith("en-CA")) {
-      setLeadForm((prev) => ({
-        ...prev,
-        countryCode: "+1",
-      }));
-    } else if (localeStr.startsWith("es-MX")) {
-      setLeadForm((prev) => ({
-        ...prev,
-        countryCode: "+52",
-      }));
-    }
-  }, []);
+
+    let isCancelled = false;
+    const mapCountryToDialCode = (country) => {
+      const code = String(country || "").toUpperCase();
+      if (code === "US" || code === "CA") return "+1";
+      if (code === "MX") return "+52";
+      if (code === "GB" || code === "UK") return "+44";
+      if (code === "ES") return "+34";
+      if (code === "CO") return "+57";
+      if (code === "CR") return "+506";
+      if (code === "PE") return "+51";
+      if (code === "AR") return "+54";
+      if (code === "BR") return "+55";
+      return null;
+    };
+
+    const applyDetectedCode = (dialCode) => {
+      if (!dialCode) return;
+      geoDefaultCountryCodeRef.current = dialCode;
+      if (countryCodeTouchedRef.current) return;
+      setLeadForm((prev) => {
+        if (prev.countryCode === dialCode) return prev;
+        return { ...prev, countryCode: dialCode };
+      });
+    };
+
+    const navLocale = navigator?.language || "";
+    const localeFallback = locale === "es" ? "+52" : "+1";
+    let fallbackCode = localeFallback;
+    if (navLocale.startsWith("en-US") || navLocale.startsWith("en-CA")) fallbackCode = "+1";
+    else if (navLocale.startsWith("es-MX")) fallbackCode = "+52";
+    applyDetectedCode(fallbackCode);
+
+    fetch("/api/geo")
+      .then((res) => (res.ok ? res.json() : null))
+      .then((data) => {
+        if (isCancelled || !data?.country) return;
+        applyDetectedCode(mapCountryToDialCode(data.country));
+      })
+      .catch(() => {});
+
+    return () => {
+      isCancelled = true;
+    };
+  }, [locale]);
 
 
   const trackEvent = (name, params = {}) => {
@@ -111,6 +145,7 @@ export default function TreatmentDetails({ treatment, packageGroups = [] }) {
 
   const handleLeadChange = (e) => {
     const { name, value } = e.target;
+    if (name === "countryCode") countryCodeTouchedRef.current = true;
     setLeadForm((prev) => ({ ...prev, [name]: value }));
     setLeadFormError("");
     if (name === "phone" && phoneRef.current) phoneRef.current.setCustomValidity("");
@@ -501,9 +536,19 @@ export default function TreatmentDetails({ treatment, packageGroups = [] }) {
     const normalizedService = normalize(serviceName);
     const normalizedCategory = normalize(categoryName);
     const pricingOptions = pricing?.options || [];
+    const servicePricingOptions = pricingOptions.filter((opt) => opt?.optionType !== "package");
+    const packagePricingOptions = pricingOptions.filter((opt) => opt?.optionType === "package");
+    const promoOptions = promoSummary.promoOptions || [];
     const promoServiceOptions = promoSummary.servicePromoOptions || [];
-    const usePromoOptions =
-      promoSummary.isPromoActive && Array.isArray(promoServiceOptions) && promoServiceOptions.length > 0;
+    const promoOptionByKey = new Map(
+      promoOptions
+        .map((opt) => {
+          const key = normalize(opt?.option?.optionKey || opt?.optionKey || "");
+          if (!key) return null;
+          return [key, opt];
+        })
+        .filter(Boolean)
+    );
 
     const formatLabel = (name, priceValue, currency) => {
       if (!priceValue) return name;
@@ -511,53 +556,110 @@ export default function TreatmentDetails({ treatment, packageGroups = [] }) {
       return `${name} – ${formattedPrice}`;
     };
 
-    const addOption = (id, label) => {
+    const seenIds = new Set();
+    const seenKeys = new Set();
+
+    const addOption = (id, label, dedupeKey = "") => {
       if (!id || !label) return;
-      if (options.some((opt) => opt.id === id)) return;
+      const normalizedKey = normalize(dedupeKey);
+      if (seenIds.has(id)) return;
+      if (normalizedKey && seenKeys.has(normalizedKey)) return;
+      seenIds.add(id);
+      if (normalizedKey) seenKeys.add(normalizedKey);
       options.push({ id, label });
     };
 
-    if (usePromoOptions) {
-      promoServiceOptions.forEach((opt) => {
-        const name = getLocalized(opt.option?.optionName || opt.optionName);
-        if (!name) return;
-        const normalizedName = normalize(name);
-        if (normalizedName === normalizedService || normalizedName === normalizedCategory) return;
-        const promoKey = normalize(opt.option?.optionKey || opt.optionKey || "");
-        const matchedPricing = promoKey
-          ? pricingOptions.find((p) => normalize(p.optionKey || "") === promoKey)
-          : pricingOptions.find((p) => normalize(getLocalized(p.optionName)) === normalizedName);
-        const optionId = matchedPricing?.id || `promo:${normalizedName}`;
-        const promoPriceValue = opt.promoPrice;
-        const currency = opt.currency || matchedPricing?.optionPrice?.currency || "";
-        const label = formatLabel(name, promoPriceValue, currency);
-        addOption(optionId, label);
-      });
-    } else {
-      pricingOptions.forEach((opt) => {
-        const name = getLocalized(opt.optionName);
-        if (!name) return;
-        const normalizedName = normalize(name);
-        if (normalizedName === normalizedService || normalizedName === normalizedCategory) return;
-        const priceValue = opt.optionPrice != null ? getLocalizedPrice(opt.optionPrice) : "";
-        const currency = opt.optionPrice?.currency || "";
-        const label = formatLabel(name, priceValue, currency);
-        addOption(opt.id || `opt:${normalizedName}`, label);
-      });
-    }
+    // Service options come from non-package pricing rows only.
+    servicePricingOptions.forEach((opt) => {
+      const name = getLocalized(opt.optionName);
+      if (!name) return;
 
-    if (mergedPackageGroups.length > 0) {
-      mergedPackageGroups.forEach((pkg, pkgIdx) => {
+      const normalizedName = normalize(name);
+      if (normalizedName === normalizedService || normalizedName === normalizedCategory) return;
+
+      const optionKey = normalize(opt.optionKey || "");
+      const promoMatch = promoOptionByKey.get(optionKey) || promoOptionByKey.get(normalizedName);
+      const hasPromoPrice =
+        promoSummary.isPromoActive &&
+        typeof promoMatch?.promoPrice === "string" &&
+        promoMatch.promoPrice.trim() !== "";
+
+      const priceValue = hasPromoPrice
+        ? promoMatch.promoPrice
+        : opt.optionPrice != null
+          ? getLocalizedPrice(opt.optionPrice)
+          : "";
+      const currency = hasPromoPrice
+        ? promoMatch?.currency || opt.optionPrice?.currency || ""
+        : opt.optionPrice?.currency || "";
+      const label = formatLabel(name, priceValue, currency);
+      const dedupeKey = optionKey || normalizedName;
+      addOption(opt.id || `opt:${dedupeKey}`, label, dedupeKey);
+    });
+
+    // Keep promo-only service entries (if any) while still prioritizing complete pricing options above.
+    promoServiceOptions.forEach((opt) => {
+      const name = getLocalized(opt.option?.optionName || opt.optionName);
+      if (!name) return;
+      const normalizedName = normalize(name);
+      if (normalizedName === normalizedService || normalizedName === normalizedCategory) return;
+      const promoKey = normalize(opt.option?.optionKey || opt.optionKey || "");
+      const dedupeKey = promoKey || normalizedName;
+      const label = formatLabel(name, opt.promoPrice, opt.currency || "");
+      addOption(`promo:${dedupeKey}`, label, dedupeKey);
+    });
+
+    // Package options should be sourced from package groups to avoid double-listing
+    // package rows that also exist in pricing options.
+    const leadPackageGroups =
+      mergedPackageGroups.length > 0
+        ? mergedPackageGroups
+        : Array.isArray(packageGroups) && packageGroups.length > 0
+          ? packageGroups
+          : [];
+
+    if (leadPackageGroups.length > 0) {
+      leadPackageGroups.forEach((pkg, pkgIdx) => {
         const pkgTitle = getLocalized(pkg.title) || pkg.title || "";
         pkg.options.forEach((opt, optIdx) => {
           const editionLabel = opt.label ? getLocalized(opt.label) || opt.label : "";
           const name = editionLabel ? `${pkgTitle} — ${editionLabel}` : pkgTitle;
           if (!name) return;
-          const priceValue = opt.promoPrice || "";
-          const label = formatLabel(name, priceValue, opt.currency || "");
+          const priceValue =
+            opt.promoPrice ||
+            opt.priceText ||
+            (opt.price ? getLocalizedPrice(opt.price) : "");
+          const currency = opt.currency || opt.price?.currency || "";
+          const label = formatLabel(name, priceValue, currency);
           const optionId = `pkg:${pkg.packageId || pkgIdx}:${optIdx}`;
-          addOption(optionId, label);
+          addOption(optionId, label, `${pkg.packageId || pkgIdx}:${name}`);
         });
+      });
+    }
+
+    // Fallback: if no package groups are available, include package pricing rows once.
+    if (leadPackageGroups.length === 0 && packagePricingOptions.length > 0) {
+      packagePricingOptions.forEach((opt) => {
+        const name = getLocalized(opt.optionName);
+        if (!name) return;
+        const normalizedName = normalize(name);
+        const optionKey = normalize(opt.optionKey || "");
+        const promoMatch = promoOptionByKey.get(optionKey) || promoOptionByKey.get(normalizedName);
+        const hasPromoPrice =
+          promoSummary.isPromoActive &&
+          typeof promoMatch?.promoPrice === "string" &&
+          promoMatch.promoPrice.trim() !== "";
+        const priceValue = hasPromoPrice
+          ? promoMatch.promoPrice
+          : opt.optionPrice != null
+            ? getLocalizedPrice(opt.optionPrice)
+            : "";
+        const currency = hasPromoPrice
+          ? promoMatch?.currency || opt.optionPrice?.currency || ""
+          : opt.optionPrice?.currency || "";
+        const label = formatLabel(name, priceValue, currency);
+        const dedupeKey = `pkg-fallback:${optionKey || normalizedName}`;
+        addOption(opt.id || dedupeKey, label, dedupeKey);
       });
     }
 
@@ -587,9 +689,11 @@ export default function TreatmentDetails({ treatment, packageGroups = [] }) {
   };
 
   const handleCloseLead = () => {
+    const resetCountryCode =
+      leadForm.countryCode || geoDefaultCountryCodeRef.current || initialLeadForm.countryCode;
     setLeadOpen(false);
     setLeadStep("form1");
-    setLeadForm(initialLeadForm);
+    setLeadForm({ ...initialLeadForm, countryCode: resetCountryCode });
     setLeadSnapshot(null);
     setLeadSelectedOptions([]);
     setDuplicateMessage("");
