@@ -3,7 +3,7 @@
     "id": "addon_hydrafacial_microneedling_pn",
     "parentServiceId": "svc_hydrafacial",
     "childServiceId": "svc_microneedling",
-    "optionNameKey": "addon.hydrafacial.microneedling_pn"
+    "optionNameKey": "addon.hydrafacial.Microneedling_pn"
   },
   {
     "id": "addon_hydrafacial_mesotherapy_pn",
@@ -27,7 +27,7 @@
     "id": "addon_casmara_infinity_microneedling_pn",
     "parentServiceId": "svc_casmara_infinity",
     "childServiceId": "svc_microneedling",
-    "optionNameKey": "addon.casmara_infinity.microneedling_pn"
+    "optionNameKey": "addon.casmara_infinity.Microneedling_pn"
   },
   {
     "id": "addon_casmara_infinity_mesotherapy_pn",
@@ -51,7 +51,7 @@
     "id": "addon_casmara_purifying_microneedling_pn",
     "parentServiceId": "svc_casmara_purifying",
     "childServiceId": "svc_microneedling",
-    "optionNameKey": "addon.casmara_purifying.microneedling_pn"
+    "optionNameKey": "addon.casmara_purifying.Microneedling_pn"
   },
   {
     "id": "addon_casmara_purifying_mesotherapy_pn",
@@ -75,7 +75,7 @@
     "id": "addon_casmara_retinol_microneedling_pn",
     "parentServiceId": "svc_casmara_retinol_proage",
     "childServiceId": "svc_microneedling",
-    "optionNameKey": "addon.casmara_retinol.microneedling_pn"
+    "optionNameKey": "addon.casmara_retinol.Microneedling_pn"
   },
   {
     "id": "addon_casmara_retinol_mesotherapy_pn",
@@ -99,7 +99,7 @@
     "id": "addon_janssen_ultra_microneedling_pn",
     "parentServiceId": "svc_janssen_ultra_renewal",
     "childServiceId": "svc_microneedling",
-    "optionNameKey": "addon.janssen_ultra.microneedling_pn"
+    "optionNameKey": "addon.janssen_ultra.Microneedling_pn"
   },
   {
     "id": "addon_janssen_ultra_mesotherapy_pn",
@@ -123,7 +123,7 @@
     "id": "addon_janssen_radiance_microneedling_pn",
     "parentServiceId": "svc_janssen_radiance_boost",
     "childServiceId": "svc_microneedling",
-    "optionNameKey": "addon.janssen_radiance.microneedling_pn"
+    "optionNameKey": "addon.janssen_radiance.Microneedling_pn"
   },
   {
     "id": "addon_janssen_radiance_mesotherapy_pn",
