@@ -26,13 +26,13 @@
   },
   {
     "id": "svc.matrixectomy.desc",
-    "en": "Surgical removal of part of the nail matrix to help reduce recurrence of ingrown toenails and related infections.",
-    "es": "Procedimiento quirúrgico para remover parte de la matriz ungueal y ayudar a reducir la recurrencia de uñas encarnadas e infecciones relacionadas."
+    "en": "Surgical treatment of part of the nail matrix to effectively treat recurring ingrown toenails and help reduce related infections.",
+    "es": "Tratamiento quirúrgico de parte de la matriz ungueal para tratar de forma efectiva las uñas encarnadas recurrentes y ayudar a reducir infecciones relacionadas."
   },
   {
     "id": "svc.matrixectomy.details",
-    "en": "Matrixectomy is a minor outpatient procedure that removes or treats part of the nail's growth center (matrix) to reduce the chance that the ingrown edge grows back. It is performed under local anesthesia and is typically recommended for patients with repeated ingrown toenails or infection. Recovery is relatively quick, and most patients return to daily activities within a few days.",
-    "es": "La matricectomía es un procedimiento ambulatorio menor que remueve o trata una parte del centro de crecimiento de la uña (matriz) para reducir la probabilidad de que el borde encarnado vuelva a crecer. Se realiza bajo anestesia local y suele recomendarse en pacientes con uñas encarnadas recurrentes o infecciones repetidas. La recuperación suele ser rápida y la mayoría de los pacientes retoma actividades diarias en pocos días."
+    "en": "Matrixectomy is a minor outpatient procedure that removes or treats part of the nail's growth center (matrix) to reduce recurrence of the ingrown edge. It is performed under local anesthesia and is typically recommended for patients with repeated ingrown toenails or infection. Recovery is relatively quick, and most patients return to daily activities within a few days.",
+    "es": "La matricectomía es un procedimiento ambulatorio menor que remueve o trata una parte del centro de crecimiento de la uña (matriz) para reducir la recurrencia del borde encarnado. Se realiza bajo anestesia local y suele recomendarse en pacientes con uñas encarnadas recurrentes o infecciones repetidas. La recuperación suele ser rápida y la mayoría de los pacientes retoma actividades diarias en pocos días."
   },
   {
     "id": "svc.nail_fungus_laser.name",
@@ -46,8 +46,8 @@
   },
   {
     "id": "svc.nail_fungus_laser.details",
-    "en": "Laser nail fungus treatment uses targeted light energy (K-Laser Blue Derma) to penetrate the nail and destroy fungal infections at the root without harming surrounding tissue. The treatment is safe, effective, and requires no downtime. A typical protocol includes 6 - 8 sessions spaced 2 - 3 weeks apart for optimal results.",
-    "es": "El tratamiento láser para hongos utiliza energía lumínica dirigida (K-Láser Blue Derma) que penetra la uña y destruye la infección fúngica desde la raíz sin dañar el tejido circundante. Es un tratamiento seguro, eficaz y sin tiempo de recuperación. El protocolo típico incluye de 6 a 8 sesiones cada 2 a 3 semanas."
+    "en": "Laser nail fungus treatment uses targeted light energy (K-Laser Blue Derma) to penetrate the nail and reduce fungal involvement in the nail bed while preserving surrounding tissue. The treatment is safe, effective, and typically requires no downtime. A typical protocol includes 6 - 8 sessions spaced 2 - 3 weeks apart for optimal results.",
+    "es": "El tratamiento láser para hongos utiliza energía lumínica dirigida (K-Láser Blue Derma) que penetra la uña y disminuye la presencia fúngica en el lecho ungueal, preservando el tejido circundante. Es un tratamiento seguro, eficaz y que generalmente no requiere tiempo de recuperación. El protocolo típico incluye de 6 a 8 sesiones cada 2 a 3 semanas."
   },
   {
     "id": "svc.toenail_extraction.name",
@@ -176,8 +176,8 @@
   },
   {
     "id": "goal.toenail_extraction.prevent",
-    "en": "Prevent recurrent ingrown toenails",
-    "es": "Prevenir uñas encarnadas recurrentes"
+    "en": "Help reduce recurrence of ingrown toenails",
+    "es": "Ayudar a reducir la recurrencia de uñas encarnadas"
   },
   {
     "id": "goal.toenail_extraction.health",
@@ -361,13 +361,13 @@
   },
   {
     "id": "exp.matrixectomy.during.1",
-    "en": "Local anesthesia is administered; you may feel pressure but should not feel pain during nail edge removal/matrix treatment.",
-    "es": "Se administra anestesia local; puede sentir presión, pero no debería sentir dolor durante la retirada del borde ungueal/tratamiento de la matriz."
+    "en": "Local anesthesia is administered; you may feel pressure and occasional mild discomfort during nail edge removal or matrix treatment.",
+    "es": "Se administra anestesia local; puede sentir presión y molestia leve ocasional durante la retirada del borde ungueal o el tratamiento de la matriz."
   },
   {
     "id": "exp.matrixectomy.during.2",
-    "en": "A chemical or mechanical matrixectomy may be performed to prevent regrowth; a dressing is applied afterward.",
-    "es": "Se puede realizar una matriceptomía química o mecánica para evitar el recrecimiento; luego se coloca un vendaje."
+    "en": "A chemical or mechanical matrixectomy may be performed to reduce the likelihood of regrowth; a dressing is applied afterward.",
+    "es": "Se puede realizar una matricectomía química o mecánica para reducir la probabilidad de recrecimiento; luego se coloca un vendaje."
   },
   {
     "id": "exp.matrixectomy.post.1",
@@ -446,8 +446,8 @@
   },
   {
     "id": "exp.toenail.during.1",
-    "en": "Local anesthesia is used; you'll feel pressure but no pain during nail removal.",
-    "es": "Se utiliza anestesia local; sentirá presión pero no dolor durante la extracción de la uña."
+    "en": "Local anesthesia is used; you'll typically feel pressure and may notice mild discomfort during nail removal.",
+    "es": "Se utiliza anestesia local; normalmente sentirá presión y puede notar molestia leve durante la extracción de la uña."
   },
   {
     "id": "exp.toenail.during.2",
@@ -516,8 +516,8 @@
   },
   {
     "id": "faq.matrixectomy.a1",
-    "en": "Yes, the goal is to destroy the nail matrix on the affected side so that portion of the nail does not grow back.",
-    "es": "Sí, el objetivo es destruir la matriz ungueal del lado afectado para que esa porción de la uña no vuelva a crecer."
+    "en": "Matrixectomy is designed to effectively treat recurring ingrown toenails by treating the affected side of the nail matrix. It helps reduce recurrence risk, although outcomes vary by case and aftercare.",
+    "es": "La matricectomía está diseñada para tratar de forma efectiva las uñas encarnadas recurrentes al tratar el lado afectado de la matriz ungueal. Ayuda a reducir el riesgo de recurrencia, aunque los resultados varían según el caso y los cuidados posteriores."
   },
   {
     "id": "faq.matrixectomy.q2",
@@ -556,8 +556,8 @@
   },
   {
     "id": "faq.nail_fungus.a1",
-    "en": "No. Most patients describe a gentle warmth or tingling. There is no pain or downtime.",
-    "es": "No. La mayoría describe una sensación de calor suave o cosquilleo. No causa dolor ni requiere recuperación."
+    "en": "Most patients describe gentle warmth or tingling with minimal discomfort. Downtime is typically not required.",
+    "es": "La mayoría de los pacientes describe calor suave o cosquilleo con mínima molestia. Generalmente no se requiere tiempo de recuperación."
   },
   {
     "id": "faq.nail_fungus.q2",
@@ -596,8 +596,8 @@
   },
   {
     "id": "faq.toenail.a1",
-    "en": "No. The toe is numbed using local anesthesia. Mild discomfort may occur afterward and can be managed with over the counter medication.",
-    "es": "No. El dedo se adormece con anestesia local. Puede presentarse una molestia leve después, que suele controlarse con analgésicos de venta libre."
+    "en": "The toe is numbed using local anesthesia. Most patients tolerate the procedure well, and mild post-procedure discomfort can usually be managed with over-the-counter medication.",
+    "es": "El dedo se adormece con anestesia local. La mayoría de los pacientes tolera bien el procedimiento, y la molestia leve posterior suele controlarse con analgésicos de venta libre."
   },
   {
     "id": "faq.toenail.q2",
