@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { useTranslation } from "next-i18next";
 import Link from "next/link";
-import { getActiveLeadForm } from "@/lib/data/leadForms";
+import { getActiveLeadForm, resolveLeadFormCopy } from "@/lib/data/leadForms";
 import { validatePhoneNumber } from "@/lib/utils/phone";
 import { getLeadAuthHeaders } from "@/lib/utils/leadAuthClient";
 
@@ -158,8 +158,11 @@ export default function LeadForm({ useSchedule = true } = {}) {
     subtitleKey: "leadForm.subtitle",
   };
   const activeForm = useSchedule ? getActiveLeadForm() : defaultLeadForm;
-  const formTitle = t(activeForm?.titleKey || "leadForm.title");
-  const formSubtitleKey = activeForm?.subtitleKey || "leadForm.subtitle";
+  const { title: formTitle, subtitle: formSubtitle } = resolveLeadFormCopy({
+    t,
+    form: activeForm,
+    locale,
+  });
 
   return (
     <>
@@ -177,7 +180,7 @@ export default function LeadForm({ useSchedule = true } = {}) {
             </h2>
             <p
               className="text-gray-700 text-sm md:text-base"
-              dangerouslySetInnerHTML={{ __html: t(formSubtitleKey) }}
+              dangerouslySetInnerHTML={{ __html: formSubtitle }}
             />
           </div>
 
