@@ -6,18 +6,18 @@
   },
   {
     "id": "svc.botox.name",
-    "en": "Wrinkle Reducer - Brand Name: Botox",
-    "es": "Reductor de Arrugas - Marca: Botox"
+    "en": "Neuromodulator - Botulinum Toxin Type A",
+    "es": "Neuromodulador - Toxina Botulínica Tipo A"
   },
   {
     "id": "svc.botox.desc",
-    "en": "Brand-name Botox (Onabotulinum toxin A) reduces the appearance of fine lines and wrinkles for a smoother, more refreshed look.",
-    "es": "Botox de marca (Onabotulinum toxin A) reduce la apariencia de líneas finas y arrugas para una apariencia más suave y fresca."
+    "en": "Botulinum Toxin Type A neuromodulator treatment softens dynamic expression lines for a smoother, more refreshed appearance.",
+    "es": "El tratamiento neuromodulador con toxina botulínica tipo A suaviza las líneas de expresión dinámicas para una apariencia más tersa y renovada."
   },
   {
     "id": "svc.botox.details",
-    "en": "Brand-name Botox uses Onabotulinum toxin A to temporarily relax facial muscles, smoothing fine lines and dynamic wrinkles while improving skin texture for a more youthful, natural-looking appearance.",
-    "es": "Botox de marca utiliza Onabotulinum toxin A para relajar temporalmente los músculos faciales, suavizando líneas finas y arrugas dinámicas y mejorando la textura de la piel para una apariencia más juvenil y natural."
+    "en": "At Mave, this service includes two Botulinum Toxin Type A neuromodulator options: a premium Allergan Aesthetics formulation and a certified generic pharmaceutical option. Both use the same active ingredient and are selected according to your anatomy, goals, and treatment plan under medical supervision.",
+    "es": "En Mave, este servicio incluye dos opciones de neuromodulador con toxina botulínica tipo A: una formulación premium de Allergan Aesthetics y una opción farmacéutica genérica certificada. Ambas utilizan el mismo ingrediente activo y se seleccionan según tu anatomía, objetivos y plan de tratamiento bajo supervisión médica."
   },
   {
     "id": "note.botox.exclusive_rate",
@@ -26,13 +26,13 @@
   },
   {
     "id": "note.botox.touchups_window",
-    "en": "Touch-ups at this rate are only applicable within 1-2 weeks after initial application at the ",
-    "es": "Los retoques a esta tarifa solo son aplicables dentro de 1-2 semanas después de la aplicación inicial en el "
+    "en": "Touch-ups at this rate are only applicable within 1-2 weeks after the initial application at the clinic.",
+    "es": "Los retoques a esta tarifa solo aplican dentro de 1-2 semanas después de la aplicación inicial en la clínica."
   },
   {
     "id": "note.botox.standard_rate",
-    "en": "Touch-ups on Botox application outside of the exclusive price option are subject to the standard base rate",
-    "es": "Los retoques en la aplicación de Botox fuera de la opción de precio exclusivo están sujetos a la tarifa base estándar"
+    "en": "Touch-ups outside of the exclusive price option are subject to the standard base rate.",
+    "es": "Los retoques fuera de la opción de precio exclusivo están sujetos a la tarifa base estándar."
   },
   {
     "id": "goal.botox.smooth_lines",
@@ -121,8 +121,8 @@
   },
   {
     "id": "opt.botox.per_unit",
-    "en": "Per Unit",
-    "es": "Por Unidad"
+    "en": "Allergan Aesthetics Neuromodulator (Per Unit)",
+    "es": "Neuromodulador de Allergan Aesthetics (Por Unidad)"
   },
   {
     "id": "note.botox.any_zone",
@@ -136,18 +136,18 @@
   },
   {
     "id": "promo.botox.headline",
-    "en": "Exclusive Savings",
-    "es": "Ahorro Exclusivo en Botox"
+    "en": "Exclusive Neuromodulator Savings",
+    "es": "Ahorros Exclusivos en Neuromoduladores"
   },
   {
     "id": "promo.botox.description",
-    "en": "Lock in a limited-time per-unit discount with our 45-unit exclusive pack. Ideal for treating multiple areas or maintaining results.",
-    "es": "Aprovecha un descuento por unidad por tiempo limitado con nuestro paquete exclusivo de 45 unidades. Ideal para tratar varias zonas o mantener resultados."
+    "en": "Lock in a limited-time per-unit discount with our 45-unit Allergan Aesthetics neuromodulator pack. Ideal for multiple areas or maintenance.",
+    "es": "Aprovecha un descuento por unidad por tiempo limitado con nuestro paquete de 45 unidades de neuromodulador de Allergan Aesthetics. Ideal para varias zonas o mantenimiento."
   },
   {
     "id": "promo.botox.option_name",
-    "en": "45-Unit Exclusive Pack - Botox",
-    "es": "Paquete Exclusivo de 45 Unidades - Botox"
+    "en": "Allergan Aesthetics Neuromodulator - 45-Unit Exclusive Pack",
+    "es": "Neuromodulador de Allergan Aesthetics - Paquete Exclusivo de 45 Unidades"
   },
   {
     "id": "promo.botox.note1",
@@ -236,8 +236,8 @@
   },
   {
     "id": "faq.botox.q1",
-    "en": "How long does Botox take to work?",
-    "es": "Cuánto tiempo tarda el Botox en hacer efecto?"
+    "en": "How long does Botulinum Toxin Type A take to work?",
+    "es": "Cuánto tiempo tarda en hacer efecto la toxina botulínica tipo A?"
   },
   {
     "id": "faq.botox.a1",
@@ -246,13 +246,13 @@
   },
   {
     "id": "faq.botox.q2",
-    "en": "How long do Botox results last?",
-    "es": "Cuánto duran los resultados del Botox?"
+    "en": "How long do Botulinum Toxin Type A neuromodulator results last?",
+    "es": "Cuánto duran los resultados del neuromodulador con toxina botulínica tipo A?"
   },
   {
     "id": "faq.botox.a2",
-    "en": "Botox typically lasts 3 to 4 months. Longevity may vary depending on your metabolism, lifestyle, and treatment area.",
-    "es": "El Botox típicamente dura 3 a 4 meses. La longevidad puede variar dependiendo de su metabolismo, estilo de vida y área de tratamiento."
+    "en": "Results typically last 3 to 4 months. Longevity may vary depending on your metabolism, lifestyle, and treatment area.",
+    "es": "Los resultados suelen durar de 3 a 4 meses. La duración puede variar según tu metabolismo, estilo de vida y zona tratada."
   },
   {
     "id": "faq.botox.q3",
@@ -266,8 +266,8 @@
   },
   {
     "id": "faq.botox.q4",
-    "en": "Can I wear makeup or skincare after Botox?",
-    "es": "Puedo usar maquillaje o cuidado de la piel después del Botox?"
+    "en": "Can I wear makeup or skincare after neuromodulator treatment?",
+    "es": "Puedo usar maquillaje o skincare después del tratamiento con neuromodulador?"
   },
   {
     "id": "faq.botox.a4",
@@ -286,23 +286,23 @@
   },
   {
     "id": "faq.botox.q6",
-    "en": "Is Botox safe?",
-    "es": "Es seguro el Botox?"
+    "en": "Is Botulinum Toxin Type A neuromodulator treatment safe?",
+    "es": "Es seguro el tratamiento neuromodulador con toxina botulínica tipo A?"
   },
   {
     "id": "faq.botox.a6",
-    "en": "Botox is FDA-approved and considered very safe when administered by trained medical professionals. At Mave, treatments are performed under medical supervision using only certified products.",
-    "es": "El Botox est aprobado por la FDA y se considera muy seguro cuando es administrado por profesionales médicos capacitados. En Mave, los tratamientos se realizan bajo supervisión médica utilizando solo productos certificados."
+    "en": "Botulinum Toxin Type A neuromodulator treatment is considered very safe when administered by trained medical professionals. At Mave, treatments are performed under medical supervision using certified products, including premium Allergan Aesthetics and certified generic options.",
+    "es": "El tratamiento neuromodulador con toxina botulínica tipo A se considera muy seguro cuando es aplicado por profesionales médicos capacitados. En Mave, los tratamientos se realizan bajo supervisión médica con productos certificados, incluyendo opciones premium de Allergan Aesthetics y opciones genéricas certificadas."
   },
   {
     "id": "faq.botox.q7",
-    "en": "Can I combine Botox with other treatments?",
-    "es": "Puedo combinar Botox con otros tratamientos?"
+    "en": "Can I combine neuromodulator treatment with other procedures?",
+    "es": "Puedo combinar el tratamiento con neuromodulador con otros procedimientos?"
   },
   {
     "id": "faq.botox.a7",
-    "en": "Absolutely. Botox can be safely combined with treatments like HydraFacial , Sculptra , or laser resurfacing for enhanced results. Your provider will guide you on the ideal timing between procedures.",
-    "es": "Absolutamente. El Botox se puede combinar de manera segura con tratamientos como HydraFacial , Sculptra  o resurfacing láser para resultados mejorados. Su proveedor le guiar sobre el tiempo ideal entre procedimientos."
+    "en": "Absolutely. Neuromodulator treatment can be combined with procedures such as HydraFacial, collagen biostimulators, or laser resurfacing when clinically appropriate. Your provider will guide ideal timing between treatments.",
+    "es": "Absolutamente. El tratamiento con neuromodulador puede combinarse con procedimientos como HydraFacial, bioestimuladores de colágeno o resurfacing láser cuando esté clínicamente indicado. Tu especialista te guiará sobre el tiempo ideal entre tratamientos."
   },
   {
     "id": "svc.dermawrinkle.name",
@@ -421,8 +421,8 @@
   },
   {
     "id": "opt.dermawrinkle.per_unit",
-    "en": "Per Unit",
-    "es": "Por Unidad"
+    "en": "Generic Neuromodulator - Botulinum Toxin Type A (Per Unit)",
+    "es": "Neuromodulador Genérico - Toxina Botulínica Tipo A (Por Unidad)"
   },
   {
     "id": "note.dermawrinkle.any_zone",
@@ -446,8 +446,8 @@
   },
   {
     "id": "promo.dermawrinkle.option_name",
-    "en": "Generic Botulinum Toxin - 45-Unit Exclusive Pack",
-    "es": "Toxina botulínica genérica - Paquete exclusivo de 45 unidades"
+    "en": "Generic Neuromodulator (Botulinum Toxin Type A) - 45-Unit Exclusive Pack",
+    "es": "Neuromodulador Genérico (Toxina Botulínica Tipo A) - Paquete Exclusivo de 45 Unidades"
   },
   {
     "id": "promo.dermawrinkle.note1",
