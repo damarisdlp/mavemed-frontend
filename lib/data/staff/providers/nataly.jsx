@@ -28,7 +28,7 @@ export const nataly = {
       treatmentSlug: "hyaluronic-acid-lip-fillers"
     },
     {
-      treatmentSlug: "sculptra"
+      treatmentSlug: "collagen-biostimulator-plla"
     }
 
   ]
