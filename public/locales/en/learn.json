@@ -32,22 +32,15 @@
         ]
       },
       {
-        "title": "Collagen Education",
-        "anchor": "collagen-education",
-        "description": "How collagen changes with age and how remodeling timelines work.",
+        "title": "Collagen & Biostimulators",
+        "anchor": "collagen-biostimulators",
+        "description": "How collagen changes with age and how biostimulators support long-term remodeling.",
         "items": [
           {
             "title": "Collagen Over Time",
             "excerpt": "Why collagen changes with age, what that looks like in skin, and realistic rebuilding timelines.",
             "href": "/learn/collagen-loss-and-rebuilding-timeline"
-          }
-        ]
-      },
-      {
-        "title": "Collagen Biostimulation",
-        "anchor": "collagen-biostimulation",
-        "description": "Collagen rebuilding, structural support, and long term outcomes.",
-        "items": [
+          },
           {
             "title": "PLLA Collagen Biostimulator",
             "excerpt": "What PLLA is, how it works over time, and why technique and medical planning matter.",
@@ -64,6 +57,23 @@
             "title": "Best Clinic in Tijuana for Ultraformer MPT",
             "excerpt": "What makes Ultraformer MPT planning different and what to prioritize when traveling for treatment.",
             "href": "/learn/best-clinic-tijuana-ultraformer-mpt"
+          }
+        ]
+      },
+      {
+        "title": "Medical Tourism",
+        "anchor": "medical-tourism",
+        "description": "How to evaluate cross-border clinic safety, planning standards, and follow-up structure.",
+        "items": [
+          {
+            "title": "A Guide for San Diego Patients Considering Aesthetic Treatments in Tijuana",
+            "excerpt": "A practical guide for San Diego patients on border logistics, safety standards, treatment pacing, and follow-up planning.",
+            "href": "/learn/a-guide-for-san-diego-patients-considering-aesthetic-treatments-in-tijuana"
+          },
+          {
+            "title": "Is It Safe for US Patients to Get Aesthetic Treatments in Tijuana?",
+            "excerpt": "A practical framework for evaluating device authenticity, provider standards, protocols, and post-treatment support before booking.",
+            "href": "/learn/is-it-safe-for-us-patients-to-get-aesthetic-treatments-in-tijuana"
           }
         ]
       }
