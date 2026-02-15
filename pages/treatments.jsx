@@ -50,14 +50,14 @@ export default function TreatmentsPage({ categories = [] }) {
         <title>Advanced Aesthetic Treatments in Tijuana | Mave Medical Spa</title>
         <meta
           name="description"
-          content="Explore Botox®, dermal fillers, microneedling, CO2 lasers, and thread lifts at Mave Medical Spa — trusted by patients from Tijuana, San Diego, Los Angeles, and Southern California."
+          content="Explore neuromodulators, dermal fillers, microneedling, CO2 lasers, and thread lifts at Mave Medical Spa — trusted by patients from Tijuana, San Diego, Los Angeles, and Southern California."
         />
         <meta
           name="keywords"
-          content="Tijuana Medical Spa, Botox® Tijuana, Sculptra®, Microneedling Mexico, CO2 Laser Tijuana, PDO Threads, RF Microneedling, Facial Rejuvenation"
+          content="Tijuana Medical Spa, Neuromodulator Tijuana, Allergan Aesthetics Neuromodulator Tijuana, PLLA, Microneedling Mexico, CO2 Laser Tijuana, PDO Threads, RF Microneedling, Facial Rejuvenation"
         />
         <meta property="og:title" content="Advanced Aesthetic Treatments in Tijuana | Mave Medical Spa" />
-        <meta property="og:description" content="Non-surgical aesthetic solutions: Botox®, fillers, lasers, and more at Mave Medical Spa. Serving cross-border clients from Southern California." />
+        <meta property="og:description" content="Non-surgical aesthetic solutions: neuromodulators, fillers, lasers, and more at Mave Medical Spa. Serving cross-border clients from Southern California." />
         <meta property="og:image" content="https://www.mavemedspa.com/site_icon.png" />
         <meta property="og:type" content="website" />
         <SeoLinks asPath={asPath} locale={locale} />
@@ -71,7 +71,7 @@ export default function TreatmentsPage({ categories = [] }) {
               name: "Advanced Aesthetic Treatments in Tijuana | Mave Medical Spa",
               url: "https://www.mavemedspa.com/treatments",
               description:
-                "Explore Botox®, dermal fillers, microneedling, CO2 lasers, and thread lifts at Mave Medical Spa.",
+                "Explore neuromodulators, dermal fillers, microneedling, CO2 lasers, and thread lifts at Mave Medical Spa.",
               about: {
                 "@id": "https://www.mavemedspa.com/#organization",
               },
@@ -83,9 +83,9 @@ export default function TreatmentsPage({ categories = [] }) {
                     "@type": "Offer",
                     itemOffered: {
                       "@type": "Service",
-                      name: "Botox® for Wrinkle Reduction",
+                      name: "Allergan Aesthetics Neuromodulator (Botulinum Toxin Type A)",
                       description:
-                        "FDA-approved wrinkle relaxing injections to smooth frown lines, crow’s feet, and forehead lines.",
+                        "Prescription neuromodulator treatment used to soften dynamic expression lines in areas such as frown lines, crow's feet, and forehead lines.",
                     },
                   },
                   {
