@@ -16,8 +16,8 @@
   },
   {
     "id": "svc.facial_balancing.details",
-    "en": "Facial balancing is a non-surgical aesthetic treatment that uses hyaluronic acid-based dermal fillers to enhance symmetry, define features, and restore youthful proportions. Areas treated often include the jawline, chin, cheeks, temples, and midface. Each plan is tailored for your unique facial structure and aesthetic goals to ensure natural-looking, harmonious results.",
-    "es": "El equilibrio facial es un tratamiento estético no quirúrgico que utiliza rellenos dérmicos a base de ácido hialurónico para mejorar la simetría, definir rasgos y restaurar proporciones juveniles. Las áreas tratadas a menudo incluyen la línea mandibular, barbilla, mejillas, sienes y cara media. Cada plan se adapta a su estructura facial única y objetivos estéticos para asegurar resultados armoniosos y naturales."
+    "en": "Facial balancing is a non-surgical aesthetic treatment that uses Hyaluronic Acid Fillers to enhance symmetry, define features, and restore youthful proportions. Areas treated often include the jawline, chin, cheeks, temples, and midface. At Mave, your plan may include Allergan Aesthetics Hyaluronic Acid Fillers, Vivacy Hyaluronic Acid Fillers, or a generic Hyaluronic Acid Filler option selected according to your anatomy and clinical goals.",
+    "es": "El equilibrio facial es un tratamiento estético no quirúrgico que utiliza Rellenos de Ácido Hialurónico para mejorar la simetría, definir rasgos y restaurar proporciones juveniles. Las áreas tratadas a menudo incluyen la línea mandibular, barbilla, mejillas, sienes y cara media. En Mave, tu plan puede incluir Rellenos de Ácido Hialurónico fabricados por Allergan Aesthetics, Rellenos de Ácido Hialurónico fabricados por Vivacy, o una opción genérica de Relleno de Ácido Hialurónico seleccionada según tu anatomía y objetivos clínicos."
   },
   {
     "id": "note.facial_balancing.pricing",
@@ -86,8 +86,8 @@
   },
   {
     "id": "opt.facial_balancing.volift",
-    "en": "Brand Name: Juvederm Volift",
-    "es": "Marca: Juvéderm Volift"
+    "en": "Allergan Aesthetics Hyaluronic Acid Filler - Medium Density",
+    "es": "Relleno de Ácido Hialurónico fabricado por Allergan Aesthetics - Densidad media"
   },
   {
     "id": "promo.facial_balancing.name",
@@ -101,13 +101,13 @@
   },
   {
     "id": "opt.facial_balancing.voluma",
-    "en": "Brand Name: Juvederm Voluma",
-    "es": "Marca: Juvéderm Voluma"
+    "en": "Allergan Aesthetics Hyaluronic Acid Filler - High Density",
+    "es": "Relleno de Ácido Hialurónico fabricado por Allergan Aesthetics - Densidad alta"
   },
   {
     "id": "opt.facial_balancing.volux",
-    "en": "Brand Name: Juvederm Volux",
-    "es": "Marca: Juvéderm Volux"
+    "en": "Allergan Aesthetics Hyaluronic Acid Filler - Very High Density",
+    "es": "Relleno de Ácido Hialurónico fabricado por Allergan Aesthetics - Densidad muy alta"
   },
   {
     "id": "note.facial_balancing.volift_price",
@@ -206,8 +206,8 @@
   },
   {
     "id": "svc.lip_fillers.details",
-    "en": "Hyaluronic acid lip fillers are used to enhance the size, shape, and contour of the lips. Whether you're looking to restore lost volume, balance asymmetry, or define the Cupid's bow, this treatment offers subtle and customizable results. At Mave, every injection is guided by facial balancing principles for natural outcomes.",
-    "es": "Los rellenos de labios con ácido hialurónico se usan para mejorar el tamaño, la forma y el contorno de los labios. Ya sea que busque restaurar el volumen perdido, equilibrar la asimetría o definir el arco de Cupido, este tratamiento ofrece resultados sutiles y personalizables. En Mave, cada inyección se guía por principios de equilibrio facial para resultados naturales."
+    "en": "Hyaluronic Acid Fillers for lips are used to enhance lip size, shape, and contour. Whether you're looking to restore lost volume, balance asymmetry, or define the Cupid's bow, this treatment offers subtle and customizable results. At Mave, options may include Allergan Aesthetics Hyaluronic Acid Fillers, Vivacy Hyaluronic Acid Fillers, or a generic Hyaluronic Acid Filler selected according to your anatomy and goals.",
+    "es": "Los Rellenos de Ácido Hialurónico para labios se usan para mejorar el tamaño, la forma y el contorno labial. Ya sea que busques restaurar volumen perdido, equilibrar asimetría o definir el arco de Cupido, este tratamiento ofrece resultados sutiles y personalizables. En Mave, las opciones pueden incluir Rellenos de Ácido Hialurónico fabricados por Allergan Aesthetics, Rellenos de Ácido Hialurónico fabricados por Vivacy, o un Relleno de Ácido Hialurónico genérico seleccionado según tu anatomía y objetivos."
   },
   {
     "id": "note.lip_fillers.immediate",
@@ -266,23 +266,23 @@
   },
   {
     "id": "opt.lip_fillers.stylage_m",
-    "en": "Brand Name: Stylage M",
-    "es": "Marca: Stylage M"
+    "en": "Vivacy Hyaluronic Acid Filler - Medium Density",
+    "es": "Relleno de Ácido Hialurónico fabricado por Vivacy - Densidad media"
   },
   {
     "id": "opt.lip_fillers.volift",
-    "en": "Brand Name: Juvederm Volift",
-    "es": "Marca: Juvéderm Volift"
+    "en": "Allergan Aesthetics Hyaluronic Acid Filler - Medium Density",
+    "es": "Relleno de Ácido Hialurónico fabricado por Allergan Aesthetics - Densidad media"
   },
   {
     "id": "opt.lip_fillers.volbella",
-    "en": "Brand Name: Juvederm Volbella",
-    "es": "Marca: Juvéderm Volbella"
+    "en": "Allergan Aesthetics Hyaluronic Acid Filler - Low Density",
+    "es": "Relleno de Ácido Hialurónico fabricado por Allergan Aesthetics - Densidad baja"
   },
   {
     "id": "opt.lip_fillers.generic_deep",
-    "en": "Generic Name: Cross-Linked Hyaluronic Acid",
-    "es": "Nombre genérico: ácido hialurónico reticulado"
+    "en": "Generic Name: Cross-Linked Hyaluronic Acid - Medium Density",
+    "es": "Nombre genérico: ácido hialurónico reticulado - Densidad media"
   },
   {
     "id": "note.lip_fillers.stylage_tech",
@@ -536,8 +536,8 @@
   },
   {
     "id": "addon.facial_balancing.lip_filler_stylage",
-    "en": "Lip Filler - Hyaluronic Acid - Stylage M",
-    "es": "Relleno de Labios - Ácido Hialurónico - Stylage - M"
+    "en": "Lip Filler - Vivacy Hyaluronic Acid Filler - Medium Density",
+    "es": "Relleno de Labios - Relleno de Ácido Hialurónico fabricado por Vivacy - Densidad media"
   },
   {
     "id": "addon.facial_balancing.Microneedling_pdrn",
@@ -591,13 +591,13 @@
   },
   {
     "id": "addon.hyaluronidase.lip_filler_stylage",
-    "en": "Lip Filler - Hyaluronic Acid - Stylage M",
-    "es": "Relleno de Labios - Ácido Hialurónico - Stylage M"
+    "en": "Lip Filler - Vivacy Hyaluronic Acid Filler - Medium Density",
+    "es": "Relleno de Labios - Relleno de Ácido Hialurónico fabricado por Vivacy - Densidad media"
   },
   {
     "id": "addon.hyaluronidase.facial_balancing_volift",
-    "en": "Dermal Filler - Hyaluronic Acid - Juvederm Volift",
-    "es": "Relleno Dérmico - Ácido Hialurónico - Juvéderm Volift"
+    "en": "Dermal Filler - Allergan Aesthetics Hyaluronic Acid Filler - Medium Density",
+    "es": "Relleno Dérmico - Relleno de Ácido Hialurónico fabricado por Allergan Aesthetics - Densidad media"
   },
   {
     "id": "addon.hyaluronidase.Microneedling_prp",
