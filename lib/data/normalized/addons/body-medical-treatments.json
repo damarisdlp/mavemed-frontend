@@ -45,7 +45,7 @@
     "id": "addon_sclerotherapy_microneedling_prp",
     "parentServiceId": "svc_sclerotherapy",
     "childServiceId": "svc_microneedling",
-    "optionNameKey": "addon.sclerotherapy.microneedling_prp"
+    "optionNameKey": "addon.sclerotherapy.Microneedling_prp"
   },
   {
     "id": "addon_sclerotherapy_swedish",
