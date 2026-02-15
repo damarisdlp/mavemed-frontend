@@ -187,6 +187,28 @@
     "subtitle": "Revisado por un equipo médico antes de planear tratamiento.",
     "cta": "Iniciar evaluación"
   },
+  "learnArticle": {
+    "label": "Aprende",
+    "cta": "Leer artículo",
+    "items": {
+      "sylfirm": {
+        "title": "Guía de Sylfirm X RF Microneedling",
+        "subtitle": "Cómo funciona, candidatura y planificación del tratamiento."
+      },
+      "ultraformer": {
+        "title": "Guía de planificación de Ultraformer MPT",
+        "subtitle": "Qué evaluar antes de reservar y cómo el plan influye en los resultados."
+      },
+      "plla": {
+        "title": "Guía de bioestimulador de colágeno PLLA",
+        "subtitle": "Cómo funciona la estimulación gradual de colágeno y qué esperar con el tiempo."
+      },
+      "caha": {
+        "title": "El Colágeno con el Paso del Tiempo",
+        "subtitle": "Entiende la línea de tiempo del colágeno y cómo una formulación HA + CaHA fabricada por Allergan Aesthetics aporta estructura inmediata con estimulación gradual de colágeno."
+      }
+    }
+  },
   "candidacyForm": {
     "labels": {
       "countryCode": "Código de país"
