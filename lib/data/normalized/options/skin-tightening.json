@@ -176,17 +176,6 @@
     "notesKeys": ["note.venus.standard_facial_sculpting"]
   },
   {
-    "id": "opt_venus_deep_contour",
-    "serviceId": "svc_venus_freeze",
-    "nameKey": "opt.venus.deep_contour",
-    "price": { "amount": 30.0, "currency": "USD" },
-    "isOptionPromoActive": false,
-    "promoPrice": null,
-    "priceTextKey": "",
-    "filterGroupKey": "face",
-    "notesKeys": ["note.venus.deep_contour"]
-  },
-  {
     "id": "opt_venus_total_facial_rejuvenation",
     "serviceId": "svc_venus_freeze",
     "nameKey": "opt.venus.total_facial_rejuvenation",
