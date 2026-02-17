@@ -465,11 +465,6 @@
     "es": "Escultura Facial Estándar"
   },
   {
-    "id": "opt.venus.deep_contour",
-    "en": "Deep Contour",
-    "es": "Contorno Profundo"
-  },
-  {
     "id": "opt.venus.total_facial_rejuvenation",
     "en": "Total Facial Rejuvenation",
     "es": "Rejuvenecimiento Facial Total"
@@ -548,11 +543,6 @@
     "id": "note.venus.standard_facial_sculpting",
     "en": "Full Face",
     "es": "Rostro Completo"
-  },
-  {
-    "id": "note.venus.deep_contour",
-    "en": "Full Face + Jawline",
-    "es": "Rostro Completo + Línea Mandibular"
   },
   {
     "id": "note.venus.total_facial_rejuvenation",
