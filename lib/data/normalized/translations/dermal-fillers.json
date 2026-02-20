@@ -195,6 +195,11 @@
     "es": "Formulado con lidocaína para mayor comodidad."
   },
   {
+    "id": "ba.facial_balancing.shared.caption",
+    "en": "Results are after two 1 ml syringes.",
+    "es": "Los resultados son después de dos jeringas de 1 ml."
+  },
+  {
     "id": "svc.lip_fillers.name",
     "en": "Lip Fillers",
     "es": "Rellenos de Labios"
