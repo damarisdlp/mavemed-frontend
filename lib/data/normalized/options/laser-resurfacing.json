@@ -659,7 +659,12 @@
     "promoPrice": null,
     "priceTextKey": "",
     "filterGroupKey": "face",
-    "notesKeys": []
+    "notesKeys": [],
+    "linkedPackageIds": [
+      "pkg_ultra_collagen_boost_3_session",
+      "pkg_tox_collagen_allergan",
+      "pkg_tox_collagen_generic"
+    ]
   },
   {
     "id": "opt_rf_neck",
@@ -715,7 +720,9 @@
     "promoPrice": null,
     "priceTextKey": "",
     "filterGroupKey": "face",
-    "notesKeys": ["note.rf.face_neck_decollete"]
+    "notesKeys": [
+      "note.rf.face_neck_decollete"
+    ]
   },
   {
     "id": "opt_rf_hands",
@@ -729,7 +736,9 @@
     "promoPrice": null,
     "priceTextKey": "",
     "filterGroupKey": "body",
-    "notesKeys": ["note.rf.hands_biostim"]
+    "notesKeys": [
+      "note.rf.hands_biostim"
+    ]
   },
   {
     "id": "opt_rf_small_zone",
@@ -783,106 +792,160 @@
     "id": "opt_serum_prp_face",
     "serviceId": "svc_serum_add_ons",
     "nameKey": "opt.serum.prp_face",
-    "price": { "amount": 120, "currency": "USD" },
+    "price": {
+      "amount": 120,
+      "currency": "USD"
+    },
     "isOptionPromoActive": false,
     "promoPrice": null,
     "priceTextKey": "",
     "filterGroupKey": "prp",
-    "notesKeys": ["note.microneedling.prp_benefit"]
+    "notesKeys": [
+      "note.microneedling.prp_benefit"
+    ]
   },
   {
     "id": "opt_serum_prp_face_neck",
     "serviceId": "svc_serum_add_ons",
     "nameKey": "opt.serum.prp_face_neck",
-    "price": { "amount": 140, "currency": "USD" },
+    "price": {
+      "amount": 140,
+      "currency": "USD"
+    },
     "isOptionPromoActive": false,
     "promoPrice": null,
     "priceTextKey": "",
     "filterGroupKey": "prp",
-    "notesKeys": ["note.microneedling.prp_benefit"]
+    "notesKeys": [
+      "note.microneedling.prp_benefit"
+    ]
   },
   {
     "id": "opt_serum_prp_face_neck_decollete",
     "serviceId": "svc_serum_add_ons",
     "nameKey": "opt.serum.prp_face_neck_decollete",
-    "price": { "amount": 150, "currency": "USD" },
+    "price": {
+      "amount": 150,
+      "currency": "USD"
+    },
     "isOptionPromoActive": false,
     "promoPrice": null,
     "priceTextKey": "",
     "filterGroupKey": "prp",
-    "notesKeys": ["note.microneedling.prp_benefit"]
+    "notesKeys": [
+      "note.microneedling.prp_benefit"
+    ]
   },
   {
     "id": "opt_serum_prp_small_zone",
     "serviceId": "svc_serum_add_ons",
     "nameKey": "opt.serum.prp_small_zone",
-    "price": { "amount": 110, "currency": "USD" },
+    "price": {
+      "amount": 110,
+      "currency": "USD"
+    },
     "isOptionPromoActive": false,
     "promoPrice": null,
     "priceTextKey": "",
     "filterGroupKey": "prp",
-    "notesKeys": ["note.microneedling.prp_benefit", "note.microneedling.small_zone"]
+    "notesKeys": [
+      "note.microneedling.prp_benefit",
+      "note.microneedling.small_zone"
+    ]
   },
   {
     "id": "opt_serum_prp_medium_zone",
     "serviceId": "svc_serum_add_ons",
     "nameKey": "opt.serum.prp_medium_zone",
-    "price": { "amount": 145, "currency": "USD" },
+    "price": {
+      "amount": 145,
+      "currency": "USD"
+    },
     "isOptionPromoActive": false,
     "promoPrice": null,
     "priceTextKey": "",
     "filterGroupKey": "prp",
-    "notesKeys": ["note.microneedling.prp_benefit", "note.microneedling.medium_zone"]
+    "notesKeys": [
+      "note.microneedling.prp_benefit",
+      "note.microneedling.medium_zone"
+    ]
   },
   {
     "id": "opt_serum_prp_large_zone",
     "serviceId": "svc_serum_add_ons",
     "nameKey": "opt.serum.prp_large_zone",
-    "price": { "amount": 160, "currency": "USD" },
+    "price": {
+      "amount": 160,
+      "currency": "USD"
+    },
     "isOptionPromoActive": false,
     "promoPrice": null,
     "priceTextKey": "",
     "filterGroupKey": "prp",
-    "notesKeys": ["note.microneedling.prp_benefit", "note.microneedling.large_zone"]
+    "notesKeys": [
+      "note.microneedling.prp_benefit",
+      "note.microneedling.large_zone"
+    ]
   },
   {
     "id": "opt_serum_pn_face",
     "serviceId": "svc_serum_add_ons",
     "nameKey": "opt.serum.pn_face",
-    "price": { "amount": 250, "currency": "USD" },
+    "price": {
+      "amount": 250,
+      "currency": "USD"
+    },
     "isOptionPromoActive": false,
     "promoPrice": null,
     "priceTextKey": "",
     "filterGroupKey": "pn",
-    "notesKeys": ["note.microneedling.pn_full", "note.microneedling.pn_benefit"]
+    "notesKeys": [
+      "note.microneedling.pn_full",
+      "note.microneedling.pn_benefit"
+    ]
   },
   {
     "id": "opt_serum_pn_face_neck",
     "serviceId": "svc_serum_add_ons",
     "nameKey": "opt.serum.pn_face_neck",
-    "price": { "amount": 370, "currency": "USD" },
+    "price": {
+      "amount": 370,
+      "currency": "USD"
+    },
     "isOptionPromoActive": false,
     "promoPrice": null,
     "priceTextKey": "",
     "filterGroupKey": "pn",
-    "notesKeys": ["note.microneedling.pn_full", "note.microneedling.pn_benefit"]
+    "notesKeys": [
+      "note.microneedling.pn_full",
+      "note.microneedling.pn_benefit"
+    ]
   },
   {
     "id": "opt_serum_pn_face_neck_decollete",
     "serviceId": "svc_serum_add_ons",
     "nameKey": "opt.serum.pn_face_neck_decollete",
-    "price": { "amount": 520, "currency": "USD" },
+    "price": {
+      "amount": 520,
+      "currency": "USD"
+    },
     "isOptionPromoActive": false,
     "promoPrice": null,
     "priceTextKey": "",
     "filterGroupKey": "pn",
-    "notesKeys": ["note.microneedling.pn_full", "note.microneedling.pn_benefit"]
+    "notesKeys": [
+      "note.microneedling.pn_full",
+      "note.microneedling.pn_benefit"
+    ]
   },
   {
     "id": "opt_serum_pn_small_zone",
     "serviceId": "svc_serum_add_ons",
     "nameKey": "opt.serum.pn_small_zone",
-    "price": { "amount": 250, "currency": "USD" },
+    "price": {
+      "amount": 250,
+      "currency": "USD"
+    },
     "isOptionPromoActive": false,
     "promoPrice": null,
     "priceTextKey": "",
@@ -897,7 +960,10 @@
     "id": "opt_serum_pn_medium_zone",
     "serviceId": "svc_serum_add_ons",
     "nameKey": "opt.serum.pn_medium_zone",
-    "price": { "amount": 415, "currency": "USD" },
+    "price": {
+      "amount": 415,
+      "currency": "USD"
+    },
     "isOptionPromoActive": false,
     "promoPrice": null,
     "priceTextKey": "",
@@ -912,7 +978,10 @@
     "id": "opt_serum_pn_large_zone",
     "serviceId": "svc_serum_add_ons",
     "nameKey": "opt.serum.pn_large_zone",
-    "price": { "amount": 565, "currency": "USD" },
+    "price": {
+      "amount": 565,
+      "currency": "USD"
+    },
     "isOptionPromoActive": false,
     "promoPrice": null,
     "priceTextKey": "",
@@ -927,40 +996,61 @@
     "id": "opt_serum_pdrn_face",
     "serviceId": "svc_serum_add_ons",
     "nameKey": "opt.serum.pdrn_face",
-    "price": { "amount": 145, "currency": "USD" },
+    "price": {
+      "amount": 145,
+      "currency": "USD"
+    },
     "isOptionPromoActive": false,
     "promoPrice": null,
     "priceTextKey": "",
     "filterGroupKey": "pdrn",
-    "notesKeys": ["note.microneedling.pdrn_full", "note.microneedling.pdrn_benefit"]
+    "notesKeys": [
+      "note.microneedling.pdrn_full",
+      "note.microneedling.pdrn_benefit"
+    ]
   },
   {
     "id": "opt_serum_pdrn_face_neck",
     "serviceId": "svc_serum_add_ons",
     "nameKey": "opt.serum.pdrn_face_neck",
-    "price": { "amount": 170, "currency": "USD" },
+    "price": {
+      "amount": 170,
+      "currency": "USD"
+    },
     "isOptionPromoActive": false,
     "promoPrice": null,
     "priceTextKey": "",
     "filterGroupKey": "pdrn",
-    "notesKeys": ["note.microneedling.pdrn_full", "note.microneedling.pdrn_benefit"]
+    "notesKeys": [
+      "note.microneedling.pdrn_full",
+      "note.microneedling.pdrn_benefit"
+    ]
   },
   {
     "id": "opt_serum_pdrn_face_neck_decollete",
     "serviceId": "svc_serum_add_ons",
     "nameKey": "opt.serum.pdrn_face_neck_decollete",
-    "price": { "amount": 195, "currency": "USD" },
+    "price": {
+      "amount": 195,
+      "currency": "USD"
+    },
     "isOptionPromoActive": false,
     "promoPrice": null,
     "priceTextKey": "",
     "filterGroupKey": "pdrn",
-    "notesKeys": ["note.microneedling.pdrn_full", "note.microneedling.pdrn_benefit"]
+    "notesKeys": [
+      "note.microneedling.pdrn_full",
+      "note.microneedling.pdrn_benefit"
+    ]
   },
   {
     "id": "opt_serum_pdrn_small_zone",
     "serviceId": "svc_serum_add_ons",
     "nameKey": "opt.serum.pdrn_small_zone",
-    "price": { "amount": 125, "currency": "USD" },
+    "price": {
+      "amount": 125,
+      "currency": "USD"
+    },
     "isOptionPromoActive": false,
     "promoPrice": null,
     "priceTextKey": "",
@@ -975,7 +1065,10 @@
     "id": "opt_serum_pdrn_medium_zone",
     "serviceId": "svc_serum_add_ons",
     "nameKey": "opt.serum.pdrn_medium_zone",
-    "price": { "amount": 180, "currency": "USD" },
+    "price": {
+      "amount": 180,
+      "currency": "USD"
+    },
     "isOptionPromoActive": false,
     "promoPrice": null,
     "priceTextKey": "",
@@ -990,7 +1083,10 @@
     "id": "opt_serum_pdrn_large_zone",
     "serviceId": "svc_serum_add_ons",
     "nameKey": "opt.serum.pdrn_large_zone",
-    "price": { "amount": 215, "currency": "USD" },
+    "price": {
+      "amount": 215,
+      "currency": "USD"
+    },
     "isOptionPromoActive": false,
     "promoPrice": null,
     "priceTextKey": "",
@@ -999,6 +1095,60 @@
       "note.microneedling.pdrn_full",
       "note.microneedling.pdrn_benefit",
       "note.microneedling.large_zone"
+    ]
+  },
+  {
+    "id": "opt_weekly_laser_hair_3_plus_1",
+    "serviceId": "svc_laser_hair_removal",
+    "nameKey": "opt.weekly.laser_hair.3_plus_1",
+    "optionType": "package",
+    "price": {
+      "text": {
+        "en": "Secure 3 Laser Hair Removal Sessions",
+        "es": "Asegura 3 sesiones de depilación láser"
+      },
+      "currency": ""
+    },
+    "isOptionPromoActive": true,
+    "promoPrice": {
+      "text": {
+        "en": "and your 4th is Included",
+        "es": "y tu 4ª está incluida"
+      },
+      "currency": ""
+    },
+    "priceTextKey": "",
+    "filterGroupKey": "body",
+    "notesKeys": [
+      "note.weekly.laser_hair.thursday_purchase_rule",
+      "note.weekly.laser_hair.redeem_any_day_rule"
+    ]
+  },
+  {
+    "id": "opt_weekly_laser_hair_5_plus_2",
+    "serviceId": "svc_laser_hair_removal",
+    "nameKey": "opt.weekly.laser_hair.5_plus_2",
+    "optionType": "package",
+    "price": {
+      "text": {
+        "en": "Secure 5 Laser Hair Removal Sessions",
+        "es": "Asegura 5 sesiones de depilación láser"
+      },
+      "currency": ""
+    },
+    "isOptionPromoActive": true,
+    "promoPrice": {
+      "text": {
+        "en": "and your 6th and 7th Sessions are Included",
+        "es": "y tus sesiones 6ª y 7ª están incluidas"
+      },
+      "currency": ""
+    },
+    "priceTextKey": "",
+    "filterGroupKey": "body",
+    "notesKeys": [
+      "note.weekly.laser_hair.thursday_purchase_rule",
+      "note.weekly.laser_hair.redeem_any_day_rule"
     ]
   }
 ]
