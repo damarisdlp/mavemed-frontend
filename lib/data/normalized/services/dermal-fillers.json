@@ -12,6 +12,17 @@
       "primary": "/facialfillers.jpg",
       "secondary": "/facialfillers2.jpg"
     },
+    "beforeAfterBasePath": "/before-after/facial-balancing-fillers",
+    "beforeAfterGallery": [
+      {
+        "id": "01",
+        "captionKey": "ba.facial_balancing.shared.caption"
+      },
+      {
+        "id": "02",
+        "captionKey": "ba.facial_balancing.shared.caption"
+      }
+    ],
     "notesKeys": [
       "note.facial_balancing.pricing",
       "note.facial_balancing.syringes",
