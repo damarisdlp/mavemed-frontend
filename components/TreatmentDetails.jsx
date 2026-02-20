@@ -155,6 +155,7 @@ export default function TreatmentDetails({ treatment, packageGroups = [] }) {
   const pricing = treatment?.pricing || {};
   const promoSummary = getPromoSummary(treatment, locale, {
     excludeLinkedPackageOptions: true,
+    ignoreWeeklySchedule: true,
   });
   const promoDetails = treatment?.promoDetails || null;
   const promoFilterConfig = promoDetails?.filterConfig || treatment?.filterConfig || null;
@@ -189,6 +190,51 @@ export default function TreatmentDetails({ treatment, packageGroups = [] }) {
       .trim()
       .toLowerCase();
 
+  const WEEKDAY_INDEX_BY_NAME = {
+    sunday: 0,
+    sun: 0,
+    monday: 1,
+    mon: 1,
+    tuesday: 2,
+    tue: 2,
+    tues: 2,
+    wednesday: 3,
+    wed: 3,
+    thursday: 4,
+    thu: 4,
+    thur: 4,
+    thurs: 4,
+    friday: 5,
+    fri: 5,
+    saturday: 6,
+    sat: 6,
+  };
+
+  const normalizeWeekday = (value) => {
+    if (Number.isInteger(value) && value >= 0 && value <= 6) return value;
+    const raw = String(value || "")
+      .trim()
+      .toLowerCase();
+    if (raw === "") return null;
+    const numeric = Number(raw);
+    if (Number.isInteger(numeric) && numeric >= 0 && numeric <= 6) return numeric;
+    return WEEKDAY_INDEX_BY_NAME[raw] ?? null;
+  };
+
+  const formatWeeklyScheduleLabel = (weeklySchedule) => {
+    if (!weeklySchedule || typeof weeklySchedule !== "object") return "";
+    const rawDays = Array.isArray(weeklySchedule.daysOfWeek) ? weeklySchedule.daysOfWeek : [];
+    const normalizedDays = Array.from(
+      new Set(rawDays.map(normalizeWeekday).filter((day) => day != null))
+    ).sort((a, b) => a - b);
+    if (!normalizedDays.length) return "";
+    const dayNames =
+      locale === "es"
+        ? ["domingo", "lunes", "martes", "miércoles", "jueves", "viernes", "sábado"]
+        : ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    return normalizedDays.map((day) => dayNames[day]).join(", ");
+  };
+
   const getOptionKey = (opt) => {
     const key = opt?.optionKey || getLocalized(opt?.optionName);
     return normalizeName(key);
@@ -206,10 +252,81 @@ export default function TreatmentDetails({ treatment, packageGroups = [] }) {
     const text = getLocalized(note);
     if (typeof text !== "string" || !text.trim()) return text;
     const parts = text.split(
-      /(microneedling|mesotherapy|mesoterapia|Casmara Infinity Antiaging facial|Casmara Infinity AntiAging facial|Casmara Purifying Algae facial|Casmara Retinol ProAge facial|Casmara Purifying Algae Facial|Casmara Retinol ProAge Facial|Facial Casmara Infinity Antienvejecimiento|Facial Casmara Purifying Algae|Facial Casmara Retinol ProAge)/gi
+      /(HydraFacial MD|HydraFacial|Swiss Massage with Cupping|Swiss Massage|masaje sueco con cupping|masaje sueco con ventosas|Sculptra|RF microneedling|Sylfirm X|\btoxin\b|\btoxina\b|microneedling|mesotherapy|mesoterapia|Casmara Infinity Antiaging facial|Casmara Infinity AntiAging facial|Casmara Purifying Algae facial|Casmara Retinol ProAge facial|Casmara Purifying Algae Facial|Casmara Retinol ProAge Facial|Facial Casmara Infinity Antienvejecimiento|Facial Casmara Purifying Algae|Facial Casmara Retinol ProAge)/gi
     );
     return parts.map((part, idx) => {
       const lower = part.toLowerCase();
+      if (lower === "hydrafacial md" || lower === "hydrafacial") {
+        return (
+          <Link
+            key={`note-hydrafacial-${idx}`}
+            href={`/${locale === "es" ? "es/" : ""}treatments/hydrafacial`}
+            className="underline underline-offset-4"
+          >
+            {part}
+          </Link>
+        );
+      }
+      if (
+        lower === "swiss massage with cupping" ||
+        lower === "swiss massage" ||
+        lower === "masaje sueco con cupping" ||
+        lower === "masaje sueco con ventosas"
+      ) {
+        return (
+          <Link
+            key={`note-swedish-cupping-${idx}`}
+            href={`/${locale === "es" ? "es/" : ""}treatments/swedish-massage`}
+            className="underline underline-offset-4"
+          >
+            {part}
+          </Link>
+        );
+      }
+      if (lower === "sculptra") {
+        return (
+          <Link
+            key={`note-sculptra-${idx}`}
+            href={`/${locale === "es" ? "es/" : ""}treatments/collagen-biostimulator-plla`}
+            className="underline underline-offset-4"
+          >
+            {part}
+          </Link>
+        );
+      }
+      if (lower === "rf microneedling") {
+        return (
+          <Link
+            key={`note-rf-micro-${idx}`}
+            href={`/${locale === "es" ? "es/" : ""}treatments/sylfirm-rf-microneedling`}
+            className="underline underline-offset-4"
+          >
+            {part}
+          </Link>
+        );
+      }
+      if (lower === "sylfirm x") {
+        return (
+          <Link
+            key={`note-sylfirm-x-${idx}`}
+            href={`/${locale === "es" ? "es/" : ""}learn/sylfirm-x-rf-microneedling`}
+            className="underline underline-offset-4"
+          >
+            {part}
+          </Link>
+        );
+      }
+      if (lower === "toxin" || lower === "toxina") {
+        return (
+          <Link
+            key={`note-toxin-${idx}`}
+            href={`/${locale === "es" ? "es/" : ""}treatments/wrinkle-reducers-neuromodulator`}
+            className="underline underline-offset-4"
+          >
+            {part}
+          </Link>
+        );
+      }
       if (lower === "microneedling") {
         return (
           <Link
@@ -350,53 +467,80 @@ export default function TreatmentDetails({ treatment, packageGroups = [] }) {
         })
         .filter(Boolean)
     );
+    const promoOptionWeeklyLabelByKey = new Map(
+      promoSummary.promoOptions
+        .map((promoOpt) => {
+          const key = getOptionKey(promoOpt.option);
+          const weeklyLabel = formatWeeklyScheduleLabel(promoOpt.weeklySchedule);
+          return key && weeklyLabel ? [key, weeklyLabel] : null;
+        })
+        .filter(Boolean)
+    );
 
-    if (Array.isArray(promoDetails?.options) && promoDetails.options.length > 0) {
-      return promoDetails.options.map((opt) => {
-        const key = getOptionKey(opt);
-        const optNotes = cleanNotes(opt?.notes);
-        const matchedPrice = key ? promoOptionPriceByKey.get(key) || null : null;
-        const promoPrice = matchedPrice?.promoPrice ?? fallbackPromo?.promoPrice;
-        const currency = matchedPrice?.currency ?? fallbackPromo?.currency;
-        const optionValidTill =
-          (key ? promoOptionValidTillByKey.get(key) : null) ||
-          getLocalized(promoDetails?.validTill);
+    const buildFallbackPromoDisplayOptions = () =>
+      promoSummary.promoOptions.map((promoOpt) => {
+        const key = getOptionKey(promoOpt.option);
         const pricingMatch = key ? pricingOptionByKey.get(key) : null;
-        const isPackage =
-          opt?.isPackage === true ||
-          opt?.optionType === "package" ||
-          Boolean(opt?.packageId) ||
-          pricingMatch?.optionType === "package";
         return {
-          optionName: opt?.optionName,
-          optionKey: opt?.optionKey || "",
-          promoPrice,
-          currency,
-          validTill: optionValidTill,
-          notes: optNotes,
-          groupKey: opt?.groupKey || "",
-          packageId: opt?.packageId || "",
-          isPackage,
-          linkedPackageIds: pricingMatch?.linkedPackageIds || [],
+          optionName: promoOpt.option?.optionName,
+          optionKey: promoOpt.option?.optionKey || "",
+          promoPrice: promoOpt.promoPrice,
+          currency: promoOpt.currency,
+          validTill: getLocalized(promoDetails?.validTill),
+          weeklyLabel: formatWeeklyScheduleLabel(promoOpt.weeklySchedule),
+          notes: cleanNotes(pricingMatch?.notes),
+          groupKey: promoOpt.option?.filterGroupKey || "",
+          isPackage: promoOpt.option?.optionType === "package",
+          linkedPackageIds: promoOpt.option?.linkedPackageIds || [],
+          __dedupeKey: key,
         };
       });
+
+    if (Array.isArray(promoDetails?.options) && promoDetails.options.length > 0) {
+      const detailedOptions = promoDetails.options
+        .map((opt) => {
+          const key = getOptionKey(opt);
+          const matchedPrice = key ? promoOptionPriceByKey.get(key) || null : null;
+          if (!matchedPrice?.promoPrice) return null;
+          const optionValidTill =
+            (key ? promoOptionValidTillByKey.get(key) : null) ||
+            getLocalized(promoDetails?.validTill);
+          const pricingMatch = key ? pricingOptionByKey.get(key) : null;
+          const isPackage =
+            opt?.isPackage === true ||
+            opt?.optionType === "package" ||
+            Boolean(opt?.packageId) ||
+            pricingMatch?.optionType === "package";
+          return {
+            optionName: opt?.optionName || pricingMatch?.optionName || null,
+            optionKey: opt?.optionKey || "",
+            promoPrice: matchedPrice.promoPrice,
+            currency: matchedPrice.currency,
+            validTill: optionValidTill,
+            weeklyLabel:
+              formatWeeklyScheduleLabel(opt?.weeklySchedule) ||
+              (key ? promoOptionWeeklyLabelByKey.get(key) || "" : ""),
+            notes: cleanNotes(opt?.notes),
+            groupKey: opt?.groupKey || "",
+            packageId: opt?.packageId || "",
+            isPackage,
+            linkedPackageIds: pricingMatch?.linkedPackageIds || [],
+            __dedupeKey: key,
+          };
+        })
+        .filter(Boolean);
+
+      const detailedKeys = new Set(detailedOptions.map((opt) => opt.__dedupeKey).filter(Boolean));
+      const fallbackOptions = buildFallbackPromoDisplayOptions().filter(
+        (opt) => !detailedKeys.has(opt.__dedupeKey)
+      );
+      const mergedOptions = [...detailedOptions, ...fallbackOptions];
+      if (mergedOptions.length > 0) {
+        return mergedOptions.map(({ __dedupeKey, ...opt }) => opt);
+      }
     }
 
-    return promoSummary.promoOptions.map((promoOpt) => {
-      const key = getOptionKey(promoOpt.option);
-      const pricingMatch = key ? pricingOptionByKey.get(key) : null;
-      return {
-        optionName: promoOpt.option?.optionName,
-        optionKey: promoOpt.option?.optionKey || "",
-        promoPrice: promoOpt.promoPrice,
-        currency: promoOpt.currency,
-        validTill: getLocalized(promoDetails?.validTill),
-        notes: cleanNotes(pricingMatch?.notes),
-        groupKey: promoOpt.option?.filterGroupKey || "",
-        isPackage: promoOpt.option?.optionType === "package",
-        linkedPackageIds: promoOpt.option?.linkedPackageIds || [],
-      };
-    });
+    return buildFallbackPromoDisplayOptions().map(({ __dedupeKey, ...opt }) => opt);
   };
 
   const getPackageTitle = (value) => {
@@ -425,11 +569,7 @@ export default function TreatmentDetails({ treatment, packageGroups = [] }) {
     promoValidTillValues.every((value) => value === promoValidTillValues[0]);
   const globalPromoValidTill =
     (showGlobalPromoValidTill && promoValidTillValues[0]) || getLocalized(promoDetails?.validTill);
-  const registryPackageGroups = promoSummary.isPromoActive
-    ? Array.isArray(packageGroups)
-      ? packageGroups
-      : []
-    : [];
+  const registryPackageGroups = Array.isArray(packageGroups) ? packageGroups : [];
   const localPackageGroups = (() => {
     if (!localPackageOptions.length) return [];
     const groups = new Map();
@@ -443,11 +583,21 @@ export default function TreatmentDetails({ treatment, packageGroups = [] }) {
         packageId: groupId,
         title,
         validTill: opt.validTill || getLocalized(promoDetails?.validTill),
+        weeklyLabel: "",
         notes: [],
         options: [],
       };
       if (!existing.notes?.length && opt.notes?.length) {
         existing.notes = opt.notes;
+      }
+      if (opt.weeklyLabel) {
+        const currentLabels = String(existing.weeklyLabel || "")
+          .split(" / ")
+          .map((label) => label.trim())
+          .filter(Boolean);
+        if (!currentLabels.includes(opt.weeklyLabel)) {
+          existing.weeklyLabel = [...currentLabels, opt.weeklyLabel].join(" / ");
+        }
       }
       existing.options.push({
         label:
@@ -456,6 +606,7 @@ export default function TreatmentDetails({ treatment, packageGroups = [] }) {
             : title || edition || "",
         promoPrice: opt.promoPrice,
         currency: opt.currency,
+        weeklyLabel: opt.weeklyLabel || "",
       });
       groups.set(groupId, existing);
     });
@@ -469,6 +620,7 @@ export default function TreatmentDetails({ treatment, packageGroups = [] }) {
         packageId: group.packageId,
         title: group.title,
         validTill: group.validTill,
+        weeklyLabel: group.weeklyLabel || "",
         notes: group.notes || [],
         options: group.options || [],
       })),
@@ -815,7 +967,7 @@ export default function TreatmentDetails({ treatment, packageGroups = [] }) {
               </button>
             </div>
 
-            {promoSummary.isPromoActive && (
+            {(promoSummary.isPromoActive || mergedPackageGroups.length > 0) && (
               <div className="border border-[#731a2f] bg-[#731a2f] text-white p-5 rounded-lg shadow-md flex flex-col text-left space-y-2 max-h-[520px] overflow-y-auto show-scrollbar">
                 <h2 className="text-md font-semibold">
                   {t("treatmentDetails.exclusivePricing")}
@@ -899,8 +1051,15 @@ export default function TreatmentDetails({ treatment, packageGroups = [] }) {
                                   {opt.validTill}
                                 </p>
                               ) : null}
+                              {opt.weeklyLabel ? (
+                                <p className="text-xs text-white/80 mb-1">
+                                  {t("treatmentDetails.availableOn", { days: opt.weeklyLabel })}
+                                </p>
+                              ) : null}
                               <div className="font-semibold">
-                                {optionLabel || getLocalized(treatment?.serviceDisplayName)}
+                                {renderNoteWithLinks(
+                                  optionLabel || getLocalized(treatment?.serviceDisplayName)
+                                )}
                               </div>
                               <div className="text-white">
                                 {opt.promoPrice ? opt.promoPrice : ""}
@@ -967,8 +1126,13 @@ export default function TreatmentDetails({ treatment, packageGroups = [] }) {
                             {t("treatmentDetails.validUntil")} {pkg.validTill}
                           </p>
                         ) : null}
+                        {pkg.weeklyLabel ? (
+                          <p className="text-xs text-white/80 mb-2">
+                            {t("treatmentDetails.availableOn", { days: pkg.weeklyLabel })}
+                          </p>
+                        ) : null}
                         <div className="flex items-start justify-between gap-3">
-                          <div className="font-semibold">{pkg.title}</div>
+                          <div className="font-semibold">{renderNoteWithLinks(pkg.title)}</div>
                         </div>
                         {pkg.notes?.length > 0 && (
                           <ul className="text-xs text-white/80 list-disc list-outside pl-4 mt-2 space-y-1">
@@ -980,7 +1144,12 @@ export default function TreatmentDetails({ treatment, packageGroups = [] }) {
                         <div className="space-y-1 mt-2">
                           {pkg.options.map((opt, optIdx) => (
                             <div key={`${pkg.packageId}-${optIdx}`} className="text-white">
-                              {opt.label ? `${opt.label}: ` : ""}
+                              {opt.label ? (
+                                <>
+                                  {renderNoteWithLinks(opt.label)}
+                                  {": "}
+                                </>
+                              ) : null}
                               {opt.promoPrice ? opt.promoPrice : ""}
                               {opt.currency ? ` ${opt.currency}` : ""}
                             </div>
