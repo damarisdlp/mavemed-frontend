@@ -2,6 +2,7 @@
 
 import "keen-slider/keen-slider.min.css";
 import { useKeenSlider } from "keen-slider/react";
+import { useEffect, useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { useRouter } from "next/router";
@@ -62,6 +63,40 @@ export default function PopularTreatments({ treatments = [] }) {
       "(min-width: 1024px)": { slides: { perView: 3.1, spacing: 24 } },
     },
   });
+  const sliderWheelCarryRef = useRef(0);
+
+  useEffect(() => {
+    const slider = sliderInstanceRef.current;
+    const container = slider?.container;
+    if (!container) return;
+
+    const STEP_THRESHOLD = 36;
+    sliderWheelCarryRef.current = 0;
+
+    const handleWheel = (event) => {
+      if (!window.matchMedia("(min-width: 1024px)").matches) return;
+      const delta =
+        Math.abs(event.deltaX) > Math.abs(event.deltaY) ? event.deltaX : event.deltaY;
+      if (!Number.isFinite(delta) || Math.abs(delta) < 1) return;
+      event.preventDefault();
+      sliderWheelCarryRef.current += delta;
+
+      while (Math.abs(sliderWheelCarryRef.current) >= STEP_THRESHOLD) {
+        if (sliderWheelCarryRef.current > 0) {
+          slider.next();
+          sliderWheelCarryRef.current -= STEP_THRESHOLD;
+        } else {
+          slider.prev();
+          sliderWheelCarryRef.current += STEP_THRESHOLD;
+        }
+      }
+    };
+
+    container.addEventListener("wheel", handleWheel, { passive: false });
+    return () => {
+      container.removeEventListener("wheel", handleWheel);
+    };
+  }, [sliderInstanceRef, popularCards.length]);
 
   if (!popularCards.length) return null;
 
