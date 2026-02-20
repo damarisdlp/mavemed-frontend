@@ -418,5 +418,77 @@
     "priceTextKey": "",
     "filterGroupKey": "boosters",
     "notesKeys": []
+  },
+  {
+    "id": "opt_weekly_hydrafacial_wellness_package",
+    "serviceId": "svc_hydrafacial",
+    "nameKey": "opt.weekly.hydrafacial.wellness_package",
+    "optionType": "package",
+    "price": {
+      "amount": 140,
+      "currency": "USD"
+    },
+    "isOptionPromoActive": true,
+    "promoPrice": {
+      "amount": 115,
+      "currency": "USD"
+    },
+    "priceTextKey": "",
+    "filterGroupKey": "face",
+    "notesKeys": [
+      "note.weekly.hydrafacial.wellness_includes",
+      "note.weekly.hydrafacial.wellness_line_hydrafacial",
+      "note.weekly.hydrafacial.wellness_line_swiss_cupping"
+    ],
+    "packageId": "pkg_weekly_hydrafacial_wellness"
+  },
+  {
+    "id": "opt_weekly_hydrafacial_hydra_antiox_package",
+    "serviceId": "svc_hydrafacial",
+    "nameKey": "opt.weekly.hydrafacial.hydra_antiox_package",
+    "optionType": "package",
+    "price": {
+      "amount": 180,
+      "currency": "USD"
+    },
+    "isOptionPromoActive": true,
+    "promoPrice": {
+      "amount": 145,
+      "currency": "USD"
+    },
+    "priceTextKey": "",
+    "filterGroupKey": "face",
+    "notesKeys": [
+      "note.weekly.hydrafacial.hydra_antiox_includes",
+      "note.weekly.hydrafacial.hydra_antiox_line_hydrafacial",
+      "note.weekly.hydrafacial.hydra_antiox_line_glutathione",
+      "note.weekly.hydrafacial.hydra_antiox_line_dose",
+      "note.weekly.hydrafacial.hydra_antiox_price"
+    ],
+    "packageId": "pkg_weekly_hydra_antiox"
+  },
+  {
+    "id": "opt_weekly_hydrafacial_antiox_iv_therapy",
+    "serviceId": "svc_hydrafacial",
+    "nameKey": "opt.weekly.hydrafacial.antiox_iv_therapy",
+    "optionType": "package",
+    "price": {
+      "amount": 85,
+      "currency": "USD"
+    },
+    "isOptionPromoActive": true,
+    "promoPrice": {
+      "amount": 65,
+      "currency": "USD"
+    },
+    "priceTextKey": "",
+    "filterGroupKey": "face",
+    "notesKeys": [
+      "note.weekly.hydrafacial.antiox_iv_includes",
+      "note.weekly.hydrafacial.antiox_iv_line_glutathione",
+      "note.weekly.hydrafacial.antiox_iv_line_dose",
+      "note.weekly.hydrafacial.antiox_iv_price"
+    ],
+    "packageId": "pkg_weekly_antiox_iv_therapy"
   }
 ]
