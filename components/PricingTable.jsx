@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import AddOnSection from "./AddOnSection";
@@ -40,6 +41,45 @@ export default function PricingTable({ treatment, addonTreatments = [], packageG
       .replace(/\s+/g, " ")
       .trim()
       .toLowerCase();
+
+  const renderPackageTextWithLinks = (value, keyPrefix = "pkg") => {
+    const text = String(value || "");
+    if (!text.trim()) return text;
+    const parts = text.split(
+      /(HydraFacial MD|HydraFacial|Swiss Massage with Cupping|Swiss Massage|masaje sueco con cupping|masaje sueco con ventosas)/gi
+    );
+    return parts.map((part, idx) => {
+      const lower = part.toLowerCase();
+      if (lower === "hydrafacial md" || lower === "hydrafacial") {
+        return (
+          <Link
+            key={`${keyPrefix}-hydrafacial-${idx}`}
+            href={`/${locale === "es" ? "es/" : ""}treatments/hydrafacial`}
+            className="underline underline-offset-4"
+          >
+            {part}
+          </Link>
+        );
+      }
+      if (
+        lower === "swiss massage with cupping" ||
+        lower === "swiss massage" ||
+        lower === "masaje sueco con cupping" ||
+        lower === "masaje sueco con ventosas"
+      ) {
+        return (
+          <Link
+            key={`${keyPrefix}-swedish-cupping-${idx}`}
+            href={`/${locale === "es" ? "es/" : ""}treatments/swedish-massage`}
+            className="underline underline-offset-4"
+          >
+            {part}
+          </Link>
+        );
+      }
+      return <span key={`${keyPrefix}-text-${idx}`}>{part}</span>;
+    });
+  };
 
   const getOptionKey = (opt) => {
     const key = opt?.optionKey || localize(opt?.optionName);
@@ -215,7 +255,7 @@ export default function PricingTable({ treatment, addonTreatments = [], packageG
                 if (!name) return;
                 const title = getPackageTitle(name);
                 const edition = getPackageEdition(name);
-                const groupId = normalizeName(title) || normalizeName(name);
+                const groupId = opt.packageId || normalizeName(title) || normalizeName(name);
                 const validTill =
                   promoValidTillByName.get(getOptionKey(opt)) || globalPromoValidTill;
                 const priceValue = opt.optionPromoPrice ?? opt.optionPrice ?? null;
@@ -265,12 +305,19 @@ export default function PricingTable({ treatment, addonTreatments = [], packageG
                       </div>
                     ) : null}
                     <div className="flex items-start justify-between gap-3">
-                      <div className="text-sm font-semibold">{pkg.title}</div>
+                      <div className="text-sm font-semibold">
+                        {renderPackageTextWithLinks(pkg.title, `${pkg.packageId}-title`)}
+                      </div>
                     </div>
                     <div className="mt-2 space-y-1 text-sm">
                       {pkg.options.map((opt, idx) => (
                         <div key={`${pkg.packageId}-${idx}`}>
-                          {opt.label ? `${opt.label}: ` : ""}
+                          {opt.label ? (
+                            <>
+                              {renderPackageTextWithLinks(opt.label, `${pkg.packageId}-${idx}`)}
+                              {": "}
+                            </>
+                          ) : null}
                           {opt.priceText ? opt.priceText : ""}
                           {opt.currency ? ` ${opt.currency}` : ""}
                         </div>
