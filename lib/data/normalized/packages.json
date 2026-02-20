@@ -574,5 +574,301 @@
         "priceStrategy": "sum"
       }
     ]
+  },
+  {
+    "id": "pkg_ultra_collagen_boost_3_session",
+    "sourceServiceId": "svc_sculptra",
+    "titleKey": "opt.weekly.ultra_collagen_boost.package",
+    "validTill": "2026-12-31",
+    "notesKeys": [
+      "note.weekly.ultra_collagen_boost.includes.heading",
+      "note.weekly.ultra_collagen_boost.includes.sculptra",
+      "note.weekly.ultra_collagen_boost.includes.full_face_rf",
+      "note.weekly.ultra_collagen_boost.includes.hands_rf",
+      "note.weekly.ultra_collagen_boost.rate.heading",
+      "note.weekly.ultra_collagen_boost.rate.intro",
+      "note.weekly.ultra_collagen_boost.rate.remaining_sessions",
+      "note.weekly.ultra_collagen_boost.rate.updated_pricing",
+      "note.weekly.ultra_collagen_boost.rate.bundle_value"
+    ],
+    "editions": [
+      {
+        "id": "ultra_collagen_intro_rate",
+        "labelKey": "opt.weekly.ultra_collagen_boost.package",
+        "price": {
+          "amount": 1200,
+          "currency": "USD"
+        }
+      }
+    ],
+    "relatedServiceIds": [
+      "svc_rf_microneedling"
+    ]
+  },
+  {
+    "id": "pkg_tox_collagen_allergan",
+    "sourceServiceId": "svc_botox",
+    "titleKey": "promo.botox.description",
+    "validTill": "2026-12-31",
+    "notesKeys": [
+      "note.weekly.tox_collagen.includes.heading",
+      "note.weekly.tox_collagen.includes.units",
+      "note.weekly.tox_collagen.includes.full_face_rf",
+      "note.weekly.tox_collagen.includes.hands_rf"
+    ],
+    "editions": [
+      {
+        "id": "tox_collagen_allergan",
+        "labelKey": "opt.weekly.tox_collagen.botox_package",
+        "price": {
+          "amount": 1115,
+          "currency": "USD"
+        }
+      }
+    ],
+    "relatedServiceIds": [
+      "svc_rf_microneedling"
+    ]
+  },
+  {
+    "id": "pkg_tox_collagen_generic",
+    "sourceServiceId": "svc_botox",
+    "titleKey": "promo.botox.description",
+    "validTill": "2026-12-31",
+    "notesKeys": [
+      "note.weekly.tox_collagen.includes.heading",
+      "note.weekly.tox_collagen.includes.units",
+      "note.weekly.tox_collagen.includes.full_face_rf",
+      "note.weekly.tox_collagen.includes.hands_rf"
+    ],
+    "editions": [
+      {
+        "id": "tox_collagen_generic",
+        "labelKey": "opt.weekly.tox_collagen.generic_package",
+        "price": {
+          "amount": 1020,
+          "currency": "USD"
+        }
+      }
+    ],
+    "relatedServiceIds": [
+      "svc_rf_microneedling"
+    ]
+  },
+  {
+    "id": "pkg_weekly_hydrafacial_wellness",
+    "sourceServiceId": "svc_hydrafacial",
+    "relatedServiceIds": [
+      "svc_swedish_massage"
+    ],
+    "titleKey": "opt.weekly.hydrafacial.wellness_package",
+    "validTill": "2026-12-31",
+    "notesKeys": [
+      "note.weekly.hydrafacial.wellness_includes",
+      "note.weekly.hydrafacial.wellness_line_hydrafacial",
+      "note.weekly.hydrafacial.wellness_line_swiss_cupping"
+    ],
+    "editions": [
+      {
+        "id": "weekly_hydrafacial_wellness",
+        "labelKey": "opt.weekly.hydrafacial.wellness_package",
+        "price": {
+          "amount": 115,
+          "currency": "USD"
+        }
+      }
+    ]
+  },
+  {
+    "id": "pkg_weekly_hydra_antiox",
+    "sourceServiceId": "svc_hydrafacial",
+    "titleKey": "opt.weekly.hydrafacial.hydra_antiox_package",
+    "validTill": "2026-12-31",
+    "notesKeys": [
+      "note.weekly.hydrafacial.hydra_antiox_includes",
+      "note.weekly.hydrafacial.hydra_antiox_line_hydrafacial",
+      "note.weekly.hydrafacial.hydra_antiox_line_glutathione",
+      "note.weekly.hydrafacial.hydra_antiox_line_dose",
+      "note.weekly.hydrafacial.hydra_antiox_price"
+    ],
+    "editions": [
+      {
+        "id": "weekly_hydra_antiox",
+        "labelKey": "opt.weekly.hydrafacial.hydra_antiox_package",
+        "price": {
+          "amount": 145,
+          "currency": "USD"
+        }
+      }
+    ]
+  },
+  {
+    "id": "pkg_weekly_antiox_iv_therapy",
+    "sourceServiceId": "svc_hydrafacial",
+    "titleKey": "opt.weekly.hydrafacial.antiox_iv_therapy",
+    "validTill": "2026-12-31",
+    "notesKeys": [
+      "note.weekly.hydrafacial.antiox_iv_includes",
+      "note.weekly.hydrafacial.antiox_iv_line_glutathione",
+      "note.weekly.hydrafacial.antiox_iv_line_dose",
+      "note.weekly.hydrafacial.antiox_iv_price"
+    ],
+    "editions": [
+      {
+        "id": "weekly_antiox_iv_therapy",
+        "labelKey": "opt.weekly.hydrafacial.antiox_iv_therapy",
+        "price": {
+          "amount": 65,
+          "currency": "USD"
+        }
+      }
+    ]
+  },
+  {
+    "id": "pkg_weekly_skin_renewal_prp",
+    "sourceServiceId": "svc_microneedling",
+    "relatedServiceIds": [
+      "svc_hydrafacial",
+      "svc_mesotherapy_infusions"
+    ],
+    "titleKey": "opt.weekly.skin_renewal.prp_package",
+    "validTill": "2026-12-31",
+    "notesKeys": [
+      "note.weekly.microneedling.skin_renewal_includes",
+      "note.weekly.microneedling.tuesday_purchase_rule"
+    ],
+    "editions": [
+      {
+        "id": "weekly_skin_renewal_prp",
+        "labelKey": "opt.weekly.skin_renewal.prp_package",
+        "price": {
+          "amount": 225,
+          "currency": "USD"
+        }
+      }
+    ]
+  },
+  {
+    "id": "pkg_weekly_skin_renewal_pn",
+    "sourceServiceId": "svc_microneedling",
+    "relatedServiceIds": [
+      "svc_hydrafacial",
+      "svc_mesotherapy_infusions"
+    ],
+    "titleKey": "opt.weekly.skin_renewal.pn_package",
+    "validTill": "2026-12-31",
+    "notesKeys": [
+      "note.weekly.microneedling.skin_renewal_includes",
+      "note.weekly.microneedling.tuesday_purchase_rule"
+    ],
+    "editions": [
+      {
+        "id": "weekly_skin_renewal_pn",
+        "labelKey": "opt.weekly.skin_renewal.pn_package",
+        "price": {
+          "amount": 340,
+          "currency": "USD"
+        }
+      }
+    ]
+  },
+  {
+    "id": "pkg_weekly_skin_renewal_pdrn",
+    "sourceServiceId": "svc_microneedling",
+    "relatedServiceIds": [
+      "svc_hydrafacial",
+      "svc_mesotherapy_infusions"
+    ],
+    "titleKey": "opt.weekly.skin_renewal.pdrn_package",
+    "validTill": "2026-12-31",
+    "notesKeys": [
+      "note.weekly.microneedling.skin_renewal_includes",
+      "note.weekly.microneedling.tuesday_purchase_rule"
+    ],
+    "editions": [
+      {
+        "id": "weekly_skin_renewal_pdrn",
+        "labelKey": "opt.weekly.skin_renewal.pdrn_package",
+        "price": {
+          "amount": 240,
+          "currency": "USD"
+        }
+      }
+    ]
+  },
+  {
+    "id": "pkg_weekly_collagen_boost_prp",
+    "sourceServiceId": "svc_microneedling",
+    "relatedServiceIds": [
+      "svc_mesotherapy_infusions"
+    ],
+    "titleKey": "opt.weekly.collagen_boost.prp_3_session",
+    "validTill": "2026-12-31",
+    "notesKeys": [
+      "note.weekly.microneedling.collagen_boost_per_session_requires_three",
+      "note.weekly.microneedling.collagen_boost_purchase_together_redeem_separately",
+      "note.weekly.microneedling.tuesday_purchase_rule",
+      "note.weekly.microneedling.collagen_boost_share_rule"
+    ],
+    "editions": [
+      {
+        "id": "weekly_collagen_boost_prp_3_session",
+        "labelKey": "opt.weekly.collagen_boost.prp_3_session",
+        "price": {
+          "amount": 135,
+          "currency": "USD"
+        }
+      }
+    ]
+  },
+  {
+    "id": "pkg_weekly_collagen_boost_pn",
+    "sourceServiceId": "svc_microneedling",
+    "relatedServiceIds": [
+      "svc_mesotherapy_infusions"
+    ],
+    "titleKey": "opt.weekly.collagen_boost.pn_3_session",
+    "validTill": "2026-12-31",
+    "notesKeys": [
+      "note.weekly.microneedling.collagen_boost_per_session_requires_three",
+      "note.weekly.microneedling.collagen_boost_purchase_together_redeem_separately",
+      "note.weekly.microneedling.tuesday_purchase_rule",
+      "note.weekly.microneedling.collagen_boost_share_rule"
+    ],
+    "editions": [
+      {
+        "id": "weekly_collagen_boost_pn_3_session",
+        "labelKey": "opt.weekly.collagen_boost.pn_3_session",
+        "price": {
+          "amount": 250,
+          "currency": "USD"
+        }
+      }
+    ]
+  },
+  {
+    "id": "pkg_weekly_collagen_boost_pdrn",
+    "sourceServiceId": "svc_microneedling",
+    "relatedServiceIds": [
+      "svc_mesotherapy_infusions"
+    ],
+    "titleKey": "opt.weekly.collagen_boost.pdrn_3_session",
+    "validTill": "2026-12-31",
+    "notesKeys": [
+      "note.weekly.microneedling.collagen_boost_per_session_requires_three",
+      "note.weekly.microneedling.collagen_boost_purchase_together_redeem_separately",
+      "note.weekly.microneedling.tuesday_purchase_rule",
+      "note.weekly.microneedling.collagen_boost_share_rule"
+    ],
+    "editions": [
+      {
+        "id": "weekly_collagen_boost_pdrn_3_session",
+        "labelKey": "opt.weekly.collagen_boost.pdrn_3_session",
+        "price": {
+          "amount": 150,
+          "currency": "USD"
+        }
+      }
+    ]
   }
 ]

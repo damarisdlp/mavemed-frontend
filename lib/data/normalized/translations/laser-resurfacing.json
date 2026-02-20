@@ -1368,5 +1368,35 @@
     "id": "filter.rf.body",
     "en": "Body",
     "es": "Cuerpo"
+  },
+  {
+    "id": "opt.weekly.laser_hair.3_plus_1",
+    "en": "Secure 3 Laser Hair Removal Sessions",
+    "es": "Asegura 3 sesiones de depilación láser"
+  },
+  {
+    "id": "opt.weekly.laser_hair.5_plus_2",
+    "en": "Secure 5 Laser Hair Removal Sessions",
+    "es": "Asegura 5 sesiones de depilación láser"
+  },
+  {
+    "id": "note.weekly.laser_hair.thursday_purchase_rule",
+    "en": "Offer available for purchase on Thursdays only.",
+    "es": "Promoción válida únicamente para compra los jueves."
+  },
+  {
+    "id": "note.weekly.laser_hair.redeem_any_day_rule",
+    "en": "Once purchased, sessions may be redeemed any day.",
+    "es": "Una vez adquiridas, pueden utilizarse cualquier día."
+  },
+  {
+    "id": "promo.weekly.laser_hair.description",
+    "en": "Thursday laser hair removal multi-session bonuses.",
+    "es": "Bonos de depilación láser por múltiples sesiones para los jueves."
+  },
+  {
+    "id": "ba.sylfirm.01.caption",
+    "en": "Results after 1 session with Sylfirm X",
+    "es": "Resultados después de 1 sesión con Sylfirm X"
   }
 ]

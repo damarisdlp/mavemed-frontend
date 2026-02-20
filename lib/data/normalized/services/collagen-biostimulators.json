@@ -8,6 +8,9 @@
     "detailsKey": "svc.sculptra.details",
     "isPopular": true,
     "isPromoActive": true,
+    "packageIds": [
+      "pkg_ultra_collagen_boost_3_session"
+    ],
     "images": {
       "primary": "/sculptra.jpg",
       "secondary": "/sculptra2.jpg"

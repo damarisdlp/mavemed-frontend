@@ -34,8 +34,27 @@
       },
       "notesKeys": { "type": "array", "items": { "type": "string" } },
       "goalsKeys": { "type": "array", "items": { "type": "string" } },
-      "treatableAreaKeys": { "type": "array", "items": { "type": "string" } }
-      ,
+      "treatableAreaKeys": { "type": "array", "items": { "type": "string" } },
+      "beforeAfterBasePath": { "type": "string" },
+      "beforeAfterFileExtension": { "type": "string" },
+      "beforeAfterGallery": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "anyOf": [
+            { "required": ["id"] },
+            { "required": ["beforeSrc", "afterSrc"] }
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "id": { "type": "string" },
+            "beforeSrc": { "type": "string" },
+            "afterSrc": { "type": "string" },
+            "altKey": { "type": "string" },
+            "captionKey": { "type": "string" }
+          }
+        }
+      },
       "filterConfig": {
         "type": "object",
         "required": ["defaultKey", "viewAllLabelKey", "filters"],

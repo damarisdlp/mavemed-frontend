@@ -63,6 +63,15 @@
     "after": "Después del tratamiento",
     "comingSoon": "Próximamente"
   },
+  "beforeAfter": {
+    "heading": "Antes y después",
+    "subtitle": "Desliza para comparar resultados.",
+    "beforeLabel": "Antes",
+    "afterLabel": "Después",
+    "compareAria": "Comparar imagen de antes y después {{index}}",
+    "prevAria": "Imagen anterior de antes y después",
+    "nextAria": "Siguiente imagen de antes y después"
+  },
   "faq": {
     "heading": "Preguntas frecuentes"
   },
@@ -72,6 +81,7 @@
     "bookNow": "Agendar",
     "exclusivePricing": "Precio Exclusivo",
     "validUntil": "Válido hasta",
+    "availableOn": "Disponible en {{days}}",
     "startingFrom": "Desde {{price}}",
     "viewAll": "Ver todo",
     "noOptionsForFilter": "No hay opciones disponibles para este filtro.",

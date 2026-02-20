@@ -863,5 +863,75 @@
     "id": "promo.microneedling_skin_renewal.headline",
     "en": "Exclusive Microneedling Skin Renewal Pricing",
     "es": "Precio exclusivo para Microneedling Skin Renewal"
+  },
+  {
+    "id": "opt.weekly.skin_renewal.prp_package",
+    "en": "Skin Renewal Package - PRP",
+    "es": "Paquete Skin Renewal - PRP"
+  },
+  {
+    "id": "opt.weekly.skin_renewal.pn_package",
+    "en": "Skin Renewal Package - PN",
+    "es": "Paquete Skin Renewal - PN"
+  },
+  {
+    "id": "opt.weekly.skin_renewal.pdrn_package",
+    "en": "Skin Renewal Package - PDRN",
+    "es": "Paquete Skin Renewal - PDRN"
+  },
+  {
+    "id": "opt.weekly.collagen_boost.prp_3_session",
+    "en": "3 Session Collagen Boost - PRP (per session)",
+    "es": "3 Sesiones Collagen Boost - PRP (por sesión)"
+  },
+  {
+    "id": "opt.weekly.collagen_boost.pn_3_session",
+    "en": "3 Session Collagen Boost - PN (per session)",
+    "es": "3 Sesiones Collagen Boost - PN (por sesión)"
+  },
+  {
+    "id": "opt.weekly.collagen_boost.pdrn_3_session",
+    "en": "3 Session Collagen Boost - PDRN (per session)",
+    "es": "3 Sesiones Collagen Boost - PDRN (por sesión)"
+  },
+  {
+    "id": "note.weekly.microneedling.skin_renewal_includes",
+    "en": "Price includes one HydraFacial and one Microneedling or Mesotherapy session.",
+    "es": "El precio incluye un HydraFacial y una sesión de Microneedling o Mesoterapia."
+  },
+  {
+    "id": "note.weekly.microneedling.tuesday_purchase_rule",
+    "en": "Offer available for purchase on Tuesdays only.",
+    "es": "Oferta disponible para compra solo los martes."
+  },
+  {
+    "id": "note.weekly.microneedling.collagen_boost_start_commit_save",
+    "en": "Start with one, commit to three, save on every session.",
+    "es": "Empieza con una, comprométete a tres y ahorra en cada sesión."
+  },
+  {
+    "id": "note.weekly.microneedling.collagen_boost_per_session_requires_three",
+    "en": "Per-session rate applies when all three sessions are purchased together.",
+    "es": "La tarifa por sesión aplica al comprar las tres sesiones juntas."
+  },
+  {
+    "id": "note.weekly.microneedling.collagen_boost_purchase_together_redeem_separately",
+    "en": "Sessions may be redeemed at different times.",
+    "es": "Las sesiones pueden canjearse en distintos momentos."
+  },
+  {
+    "id": "note.weekly.microneedling.collagen_boost_share_rule",
+    "en": "May be shared with friends or family.",
+    "es": "Se puede compartir con amigos o familiares."
+  },
+  {
+    "id": "note.weekly.microneedling.redeem_any_day_rule",
+    "en": "Once purchased, sessions may be redeemed any day.",
+    "es": "Una vez compradas, las sesiones se pueden canjear cualquier día."
+  },
+  {
+    "id": "note.weekly.microneedling.collagen_boost_rules",
+    "en": "Available for purchase on Tuesdays only. May be shared with friends/family. Sessions may be redeemed any day.",
+    "es": "Disponible para compra solo los martes. Puede compartirse con amigos/familia. Las sesiones se pueden canjear cualquier día."
   }
 ]

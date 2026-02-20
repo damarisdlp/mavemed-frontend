@@ -33,18 +33,42 @@
       },
       "isOptionPromoActive": { "type": "boolean", "default": false },
       "promoPrice": {
-        "type": ["object", "null"],
-        "required": ["amount", "currency"],
-        "additionalProperties": false,
-        "properties": {
-          "amount": { "type": "number" },
-          "currency": { "type": "string" }
-        }
+        "oneOf": [
+          { "type": "null" },
+          {
+            "type": "object",
+            "required": ["amount", "currency"],
+            "additionalProperties": false,
+            "properties": {
+              "amount": { "type": "number" },
+              "currency": { "type": "string" }
+            }
+          },
+          {
+            "type": "object",
+            "required": ["text", "currency"],
+            "additionalProperties": false,
+            "properties": {
+              "text": {
+                "type": "object",
+                "required": ["en", "es"],
+                "additionalProperties": false,
+                "properties": {
+                  "en": { "type": "string" },
+                  "es": { "type": "string" }
+                }
+              },
+              "currency": { "type": "string" }
+            }
+          }
+        ]
       },
       "priceTextKey": { "type": "string" },
-      "notesKeys": { "type": "array", "items": { "type": "string" } }
-      ,
-      "filterGroupKey": { "type": "string" }
+      "notesKeys": { "type": "array", "items": { "type": "string" } },
+      "filterGroupKey": { "type": "string" },
+      "optionType": { "type": "string" },
+      "packageId": { "type": "string" },
+      "linkedPackageIds": { "type": "array", "items": { "type": "string" } }
     }
   }
 }

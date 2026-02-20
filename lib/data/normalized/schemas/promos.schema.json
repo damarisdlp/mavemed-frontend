@@ -11,8 +11,74 @@
       "serviceId": { "type": "string", "pattern": "^svc_" },
       "headlineKey": { "type": "string" },
       "descriptionKey": { "type": "string" },
+      "summaryNameKey": { "type": "string" },
+      "sharedOptionsId": { "type": "string" },
+      "promoType": { "type": "string", "enum": ["seasonal", "weekly"] },
+      "weeklySchedule": {
+        "type": ["object", "null"],
+        "additionalProperties": false,
+        "properties": {
+          "daysOfWeek": {
+            "type": "array",
+            "items": {
+              "anyOf": [
+                { "type": "integer", "minimum": 0, "maximum": 6 },
+                {
+                  "type": "string",
+                  "enum": [
+                    "sunday",
+                    "monday",
+                    "tuesday",
+                    "wednesday",
+                    "thursday",
+                    "friday",
+                    "saturday",
+                    "sun",
+                    "mon",
+                    "tue",
+                    "wed",
+                    "thu",
+                    "fri",
+                    "sat"
+                  ]
+                }
+              ]
+            }
+          },
+          "timeZone": { "type": "string" }
+        }
+      },
       "validFrom": { "type": ["string", "null"], "format": "date" },
       "validTill": { "type": ["string", "null"], "format": "date" },
+      "descriptionLink": {
+        "type": ["string", "object", "null"],
+        "additionalProperties": false,
+        "properties": {
+          "en": { "type": "string" },
+          "es": { "type": "string" }
+        }
+      },
+      "filterConfig": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["defaultKey", "viewAllLabelKey", "filters"],
+        "properties": {
+          "defaultKey": { "type": "string" },
+          "viewAllLabelKey": { "type": "string" },
+          "filters": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["key", "labelKey"],
+              "properties": {
+                "key": { "type": "string" },
+                "labelKey": { "type": "string" }
+              }
+            }
+          }
+        }
+      },
       "options": {
         "type": "array",
         "items": {
@@ -21,7 +87,47 @@
           "additionalProperties": false,
           "properties": {
             "optionNameKey": { "type": "string" },
-            "notesKeys": { "type": "array", "items": { "type": "string" } }
+            "notesKeys": { "type": "array", "items": { "type": "string" } },
+            "validFrom": { "type": ["string", "null"], "format": "date" },
+            "validTill": { "type": ["string", "null"], "format": "date" },
+            "groupKey": { "type": "string" },
+            "packageId": { "type": "string" },
+            "optionType": { "type": "string" },
+            "promoType": { "type": "string", "enum": ["seasonal", "weekly"] },
+            "weeklySchedule": {
+              "type": ["object", "null"],
+              "additionalProperties": false,
+              "properties": {
+                "daysOfWeek": {
+                  "type": "array",
+                  "items": {
+                    "anyOf": [
+                      { "type": "integer", "minimum": 0, "maximum": 6 },
+                      {
+                        "type": "string",
+                        "enum": [
+                          "sunday",
+                          "monday",
+                          "tuesday",
+                          "wednesday",
+                          "thursday",
+                          "friday",
+                          "saturday",
+                          "sun",
+                          "mon",
+                          "tue",
+                          "wed",
+                          "thu",
+                          "fri",
+                          "sat"
+                        ]
+                      }
+                    ]
+                  }
+                },
+                "timeZone": { "type": "string" }
+              }
+            }
           }
         }
       }

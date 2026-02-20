@@ -8,6 +8,10 @@
     "detailsKey": "svc.botox.details",
     "isPopular": true,
     "isPromoActive": true,
+    "packageIds": [
+      "pkg_tox_collagen_allergan",
+      "pkg_tox_collagen_generic"
+    ],
     "images": {
       "primary": "/botox.jpg",
       "secondary": "/botox2.jpg"

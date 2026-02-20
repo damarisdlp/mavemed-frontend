@@ -1148,5 +1148,65 @@
     "id": "pkg.casmara_retinol.pdrn.title",
     "en": "Casmara Retinol ProAge Facial + PDRN",
     "es": "Facial Casmara Retinol ProAge + PDRN"
+  },
+  {
+    "id": "opt.weekly.hydrafacial.wellness_package",
+    "en": "Wellness Package",
+    "es": "Paquete Bienestar"
+  },
+  {
+    "id": "opt.weekly.hydrafacial.hydra_antiox_package",
+    "en": "Hydra-Antiox Package",
+    "es": "Paquete Hydra-Antiox"
+  },
+  {
+    "id": "opt.weekly.hydrafacial.antiox_iv_therapy",
+    "en": "Antiox IV Therapy",
+    "es": "Antiox sueroterapia"
+  },
+  {
+    "id": "note.weekly.hydrafacial.wellness_includes",
+    "en": "Includes:",
+    "es": "Incluye:"
+  },
+  {
+    "id": "note.weekly.hydrafacial.hydra_antiox_includes",
+    "en": "Includes:",
+    "es": "Incluye:"
+  },
+  {
+    "id": "note.weekly.hydrafacial.antiox_iv_includes",
+    "en": "Includes:",
+    "es": "Incluye:"
+  },
+  {
+    "id": "note.weekly.hydrafacial.wellness_line_hydrafacial",
+    "en": "1 HydraFacial - Full Face",
+    "es": "1 HydraFacial - Rostro Completo"
+  },
+  {
+    "id": "note.weekly.hydrafacial.wellness_line_swiss_cupping",
+    "en": "1 Swiss Massage Session with Cupping",
+    "es": "1 Masaje Sueco con Ventosas"
+  },
+  {
+    "id": "note.weekly.hydrafacial.hydra_antiox_line_hydrafacial",
+    "en": "1 HydraFacial - Full Face",
+    "es": "1 HydraFacial - Rostro Completo"
+  },
+  {
+    "id": "note.weekly.hydrafacial.hydra_antiox_line_glutathione",
+    "en": "1 Glutathione IV Therapy - 1200mg",
+    "es": "1 Glutatión sueroterapia - 1200mg"
+  },
+  {
+    "id": "note.weekly.hydrafacial.antiox_iv_line_glutathione",
+    "en": "1 Glutathione IV Therapy - 1200mg",
+    "es": "1 Glutatión sueroterapia - 1200mg"
+  },
+  {
+    "id": "promo.weekly.hydrafacial.description",
+    "en": "Wednesday wellness and antioxidant bundles.",
+    "es": "Paquetes de bienestar y antioxidantes para los miércoles."
   }
 ]

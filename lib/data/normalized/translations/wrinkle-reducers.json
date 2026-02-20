@@ -136,13 +136,13 @@
   },
   {
     "id": "promo.botox.headline",
-    "en": "Exclusive Neuromodulator Savings",
-    "es": "Ahorros Exclusivos en Neuromoduladores"
+    "en": "Promo Package",
+    "es": "Paquete Promocional"
   },
   {
     "id": "promo.botox.description",
-    "en": "Lock in a limited-time per-unit discount with our 45-unit Allergan Aesthetics neuromodulator pack. Ideal for multiple areas or maintenance.",
-    "es": "Aprovecha un descuento por unidad por tiempo limitado con nuestro paquete de 45 unidades de neuromodulador de Allergan Aesthetics. Ideal para varias zonas o mantenimiento."
+    "en": "Tox + Collagen Boost Package",
+    "es": "Paquete Tox + Collagen Boost"
   },
   {
     "id": "promo.botox.option_name",
@@ -603,5 +603,40 @@
     "id": "faq.dermawrinkle.a7",
     "en": "Absolutely. Generic botulinum toxin can be safely combined with treatments like HydraFacial , PLLA , or laser resurfacing for enhanced results. Your provider will guide you on the ideal timing between procedures.",
     "es": "Absolutamente. La toxina botulínica genérica se puede combinar de manera segura con tratamientos como HydraFacial , PLLA  o resurfacing láser para resultados mejorados. Su proveedor le guiar sobre el tiempo ideal entre procedimientos."
+  },
+  {
+    "id": "opt.weekly.tox_collagen.botox_package",
+    "en": "Tox + Collagen Boost Package - Allergan Aesthetics Neuromodulator",
+    "es": "Paquete Tox + Collagen Boost - Neuromodulador de Allergan Aesthetics"
+  },
+  {
+    "id": "opt.weekly.tox_collagen.generic_package",
+    "en": "Tox + Collagen Boost Package - Generic Toxin Type A",
+    "es": "Paquete Tox + Collagen Boost - Toxina genérica tipo A"
+  },
+  {
+    "id": "note.weekly.tox_collagen.includes",
+    "en": "Includes: 45 units of toxin + 1 full-face RF microneedling session (Sylfirm X) + 1 complete hands RF microneedling session (Sylfirm X).",
+    "es": "Incluye: 45 unidades de toxina + 1 sesión de RF microneedling de rostro completo (Sylfirm X) + 1 sesión completa de RF microneedling en manos (Sylfirm X)."
+  },
+  {
+    "id": "note.weekly.tox_collagen.includes.heading",
+    "en": "Includes:",
+    "es": "Incluye:"
+  },
+  {
+    "id": "note.weekly.tox_collagen.includes.units",
+    "en": "45 units of toxin",
+    "es": "45 unidades de toxina"
+  },
+  {
+    "id": "note.weekly.tox_collagen.includes.full_face_rf",
+    "en": "1 full-face RF microneedling session (Sylfirm X)",
+    "es": "1 sesión de RF microneedling de rostro completo (Sylfirm X)"
+  },
+  {
+    "id": "note.weekly.tox_collagen.includes.hands_rf",
+    "en": "1 complete hands RF microneedling session (Sylfirm X)",
+    "es": "1 sesión completa de RF microneedling en manos (Sylfirm X)"
   }
 ]

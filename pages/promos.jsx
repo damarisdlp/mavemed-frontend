@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { useRouter } from "next/router";
 import { useTranslation } from "next-i18next";
 import "keen-slider/keen-slider.min.css";
@@ -58,18 +58,108 @@ const formatPackagePrice = (price, locale) => {
   return "";
 };
 
-const buildPromoCategories = (allTreatments, locale, options = {}) => {
-  const { pricePrefix = "" } = options;
-  const isMicroneedlingCategoryFn = (t) => t?.category === "microneedling-mesotherapy";
-  const hasLinkedPackages = (t) =>
-    isMicroneedlingCategoryFn(t) &&
-    (t.pricing?.options || []).some(
-      (opt) => Array.isArray(opt?.linkedPackageIds) && opt.linkedPackageIds.length > 0
-    );
+const PROMO_TYPE_SEASONAL = "seasonal";
+const PROMO_TYPE_WEEKLY = "weekly";
+const WEEKDAY_INDEX_BY_NAME = {
+  sunday: 0,
+  sun: 0,
+  monday: 1,
+  mon: 1,
+  tuesday: 2,
+  tue: 2,
+  tues: 2,
+  wednesday: 3,
+  wed: 3,
+  thursday: 4,
+  thu: 4,
+  thur: 4,
+  thurs: 4,
+  friday: 5,
+  fri: 5,
+  saturday: 6,
+  sat: 6,
+};
 
-  const promoTreatments = allTreatments.filter(
-    (t) => getPromoSummary(t, locale).isPromoActive || hasLinkedPackages(t)
+const normalizePromoTypeFilter = (value) =>
+  String(value || "").toLowerCase() === PROMO_TYPE_WEEKLY
+    ? PROMO_TYPE_WEEKLY
+    : PROMO_TYPE_SEASONAL;
+
+const normalizeWeekday = (value) => {
+  if (Number.isInteger(value) && value >= 0 && value <= 6) return value;
+  const raw = String(value || "")
+    .trim()
+    .toLowerCase();
+  if (raw === "") return null;
+  const numeric = Number(raw);
+  if (Number.isInteger(numeric) && numeric >= 0 && numeric <= 6) return numeric;
+  return WEEKDAY_INDEX_BY_NAME[raw] ?? null;
+};
+
+const getMondayFirstWeekdayIndex = (weekday) => {
+  if (!Number.isInteger(weekday)) return null;
+  if (weekday < 0 || weekday > 6) return null;
+  return weekday === 0 ? 7 : weekday;
+};
+
+const getWeeklySortIndexFromSchedule = (weeklySchedule) => {
+  if (!weeklySchedule || typeof weeklySchedule !== "object") return null;
+  const rawDays = Array.isArray(weeklySchedule.daysOfWeek) ? weeklySchedule.daysOfWeek : [];
+  const normalizedDays = Array.from(
+    new Set(rawDays.map(normalizeWeekday).filter((day) => day != null))
   );
+  if (!normalizedDays.length) return null;
+  const mondayFirstDays = normalizedDays
+    .map((day) => getMondayFirstWeekdayIndex(day))
+    .filter((day) => day != null);
+  if (!mondayFirstDays.length) return null;
+  return Math.min(...mondayFirstDays);
+};
+
+const getWeeklySortIndexFromPromoOptions = (promoOptions = []) => {
+  const values = (promoOptions || [])
+    .map((opt) => getWeeklySortIndexFromSchedule(opt?.weeklySchedule))
+    .filter((value) => Number.isFinite(value));
+  if (!values.length) return null;
+  return Math.min(...values);
+};
+
+const formatWeeklyScheduleLabel = (weeklySchedule, locale) => {
+  if (!weeklySchedule || typeof weeklySchedule !== "object") return "";
+  const rawDays = Array.isArray(weeklySchedule.daysOfWeek) ? weeklySchedule.daysOfWeek : [];
+  const normalizedDays = Array.from(
+    new Set(rawDays.map(normalizeWeekday).filter((day) => day != null))
+  ).sort((a, b) => a - b);
+  if (!normalizedDays.length) return "";
+  const dayNames =
+    locale === "es"
+      ? ["domingo", "lunes", "martes", "miércoles", "jueves", "viernes", "sábado"]
+      : ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+  return normalizedDays.map((day) => dayNames[day]).join(", ");
+};
+
+const getWeeklyLabelFromPromoOptions = (promoOptions, locale) => {
+  const labels = Array.from(
+    new Set(
+      (promoOptions || [])
+        .map((opt) => formatWeeklyScheduleLabel(opt?.weeklySchedule, locale))
+        .filter(Boolean)
+    )
+  );
+  return labels.join(" / ");
+};
+
+const buildPromoCategories = (allTreatments, locale, options = {}) => {
+  const { pricePrefix = "", promoTypeFilter = PROMO_TYPE_SEASONAL } = options;
+  const normalizedPromoTypeFilter = normalizePromoTypeFilter(promoTypeFilter);
+  const ignoreWeeklySchedule = normalizedPromoTypeFilter === PROMO_TYPE_WEEKLY;
+  const getPromoOptionsForTreatment = (treatment) =>
+    getPromoOptions(treatment, locale, {
+      promoTypeFilter: normalizedPromoTypeFilter,
+      ignoreWeeklySchedule,
+      excludeLinkedPackageOptions: false,
+    });
+
   const packageRegistry = new Map();
   allTreatments.forEach((t) => {
     (t.packages || []).forEach((pkg) => {
@@ -78,26 +168,95 @@ const buildPromoCategories = (allTreatments, locale, options = {}) => {
     });
   });
 
+  const getPackagePromoOptionsFromSource = (packageId) => {
+    const sourceEntry = packageRegistry.get(packageId);
+    if (!sourceEntry?.source) return [];
+    return getPromoOptionsForTreatment(sourceEntry.source).filter(
+      (promoOption) => promoOption?.option?.packageId === packageId
+    );
+  };
+
+  const getLinkedPackageIds = (t) => {
+    const currentServiceId = String(t?.serviceId || "").trim();
+    const linkedPromoOptions = getPromoOptionsForTreatment(t).filter((promoOption) =>
+      Array.isArray(promoOption?.option?.linkedPackageIds)
+    );
+    const linkedFromPromoOptions = linkedPromoOptions.flatMap((promoOption) =>
+      Array.isArray(promoOption?.option?.linkedPackageIds)
+        ? promoOption.option.linkedPackageIds
+        : []
+    );
+    const linkedFromAllPricingOptions = (t?.pricing?.options || []).flatMap((option) =>
+      Array.isArray(option?.linkedPackageIds) ? option.linkedPackageIds : []
+    );
+    const linkedFromSourcePromo = linkedFromAllPricingOptions.filter((pkgId) => {
+      if (!pkgId) return false;
+      return getPackagePromoOptionsFromSource(pkgId).length > 0;
+    });
+    const linkedFromRelatedServices = currentServiceId
+      ? Array.from(packageRegistry.values())
+          .filter(({ pkg }) => {
+            if (!pkg?.packageId) return false;
+            if (String(pkg?.sourceServiceId || "").trim() === currentServiceId) return false;
+            if (!Array.isArray(pkg?.relatedServiceIds)) return false;
+            if (!pkg.relatedServiceIds.includes(currentServiceId)) return false;
+            return getPackagePromoOptionsFromSource(pkg.packageId).length > 0;
+          })
+          .map(({ pkg }) => pkg.packageId)
+      : [];
+    return Array.from(
+      new Set(
+        [...linkedFromPromoOptions, ...linkedFromSourcePromo, ...linkedFromRelatedServices]
+      )
+    ).filter(Boolean);
+  };
+  const hasLinkedPackages = (t) => getLinkedPackageIds(t).length > 0;
+
+  const promoTreatments = allTreatments.filter(
+    (t) =>
+      getPromoSummary(t, locale, {
+        promoTypeFilter: normalizedPromoTypeFilter,
+        ignoreWeeklySchedule,
+      }).isPromoActive ||
+      hasLinkedPackages(t)
+  );
+
+  const getCategoryKeyForTreatment = (treatment) =>
+    treatment?.category || getLocalized(treatment?.categoryDisplayName, locale) || "Other";
+  const promoCategoryKeys = new Set(promoTreatments.map((t) => getCategoryKeyForTreatment(t)));
+  const packageCategoryOwnerById = new Map();
+  const shouldDisplayPackageInCategory = (packageId, currentCategoryKey) => {
+    if (!packageId) return true;
+    if (packageCategoryOwnerById.has(packageId)) {
+      return packageCategoryOwnerById.get(packageId) === currentCategoryKey;
+    }
+    const sourceEntry = packageRegistry.get(packageId);
+    const sourceCategoryKey = sourceEntry?.source
+      ? getCategoryKeyForTreatment(sourceEntry.source)
+      : null;
+    const ownerCategoryKey =
+      sourceCategoryKey && promoCategoryKeys.has(sourceCategoryKey)
+        ? sourceCategoryKey
+        : currentCategoryKey;
+    packageCategoryOwnerById.set(packageId, ownerCategoryKey);
+    return ownerCategoryKey === currentCategoryKey;
+  };
+
   const categoriesMap = {};
   const packageKeysByCategory = new Map();
   promoTreatments.forEach((t) => {
     const promoDetails = t.promoDetails || null;
-    const promoOptions = getPromoOptions(t, locale, { excludeLinkedPackageOptions: true });
-    const isMicroneedlingCategory = isMicroneedlingCategoryFn(t);
-    const linkedPackageIds = isMicroneedlingCategory
-      ? Array.from(
-          new Set(
-            (t.pricing?.options || [])
-              .flatMap((opt) =>
-                Array.isArray(opt?.linkedPackageIds) ? opt.linkedPackageIds : []
-              )
-              .filter(Boolean)
-          )
-        )
-      : [];
-    const hasLinkedPackages = linkedPackageIds.length > 0;
-    if (!promoOptions.length && !(t.packages || []).length && !hasLinkedPackages) return;
-    const catKey = t.category || getLocalized(t.categoryDisplayName, locale) || "Other";
+    const promoOptions = getPromoOptions(t, locale, {
+      promoTypeFilter: normalizedPromoTypeFilter,
+      ignoreWeeklySchedule,
+      excludeLinkedPackageOptions: true,
+    });
+    const linkedPackageIds = getLinkedPackageIds(t);
+    const hasLinkedPackagesForTreatment = linkedPackageIds.length > 0;
+    if (!promoOptions.length && !(t.packages || []).length && !hasLinkedPackagesForTreatment) {
+      return;
+    }
+    const catKey = getCategoryKeyForTreatment(t);
     if (!categoriesMap[catKey]) {
       categoriesMap[catKey] = {
         title: t.categoryDisplayName || catKey,
@@ -120,8 +279,6 @@ const buildPromoCategories = (allTreatments, locale, options = {}) => {
     const serviceName = getLocalized(t.serviceDisplayName, locale);
     const serviceOptions = promoOptions.filter((opt) => !isPackageOption(opt));
     const packageOptions = promoOptions.filter((opt) => isPackageOption(opt));
-    const registryPackages = t.packages || [];
-
     if (serviceOptions.length > 0) {
       const sorted = [...serviceOptions].sort((a, b) => a.value - b.value);
       const lowest = sorted[0];
@@ -170,6 +327,10 @@ const buildPromoCategories = (allTreatments, locale, options = {}) => {
         serviceOptions.length === 1
           ? summaryName || singlePromoOptionName || serviceName
           : summaryName || serviceName;
+      const serviceWeeklySortIndex =
+        normalizedPromoTypeFilter === PROMO_TYPE_WEEKLY
+          ? getWeeklySortIndexFromPromoOptions(serviceOptions)
+          : null;
 
       categoriesMap[catKey].cards.push({
         optionName: serviceOptionName,
@@ -180,11 +341,16 @@ const buildPromoCategories = (allTreatments, locale, options = {}) => {
         slug: t.urlSlug,
         validTillLabel: serviceValidTillLabel,
         daysLeft: serviceDaysLeft,
+        weeklyLabel:
+          normalizedPromoTypeFilter === PROMO_TYPE_WEEKLY
+            ? getWeeklyLabelFromPromoOptions(serviceOptions, locale)
+            : "",
+        weeklySortIndex: serviceWeeklySortIndex,
         isPackage: false,
       });
     }
 
-    if (isMicroneedlingCategory) {
+    if (linkedPackageIds.length > 0) {
       const linkedPackages = linkedPackageIds
         .map((pkgId) => packageRegistry.get(pkgId))
         .filter(Boolean);
@@ -200,6 +366,7 @@ const buildPromoCategories = (allTreatments, locale, options = {}) => {
 
       linkedPackages.forEach(({ pkg, source }) => {
         if (!pkg?.packageId || packageKeySet.has(pkg.packageId)) return;
+        if (!shouldDisplayPackageInCategory(pkg.packageId, catKey)) return;
         const priceEntries = (pkg.options || [])
           .map((opt) => ({
             price: opt.price || null,
@@ -232,6 +399,14 @@ const buildPromoCategories = (allTreatments, locale, options = {}) => {
             }).format(packageValidTillDate)
           : null;
         const packageDaysLeft = getDaysLeft(packageValidTillDate);
+        const linkedPromoOptions = getPromoOptionsForTreatment(t).filter((promoOption) =>
+          Array.isArray(promoOption?.option?.linkedPackageIds) &&
+          promoOption.option.linkedPackageIds.includes(pkg.packageId)
+        );
+        const sourcePackagePromoOptions = getPackagePromoOptionsFromSource(pkg.packageId);
+        const packageScheduleOptions = sourcePackagePromoOptions.length
+          ? sourcePackagePromoOptions
+          : linkedPromoOptions;
         categoriesMap[catKey].cards.push({
           optionName: getLocalized(pkg.title, locale),
           description,
@@ -241,19 +416,32 @@ const buildPromoCategories = (allTreatments, locale, options = {}) => {
           slug: source?.urlSlug || t.urlSlug,
           validTillLabel: packageValidTillLabel,
           daysLeft: packageDaysLeft,
+          weeklyLabel:
+            normalizedPromoTypeFilter === PROMO_TYPE_WEEKLY
+              ? getWeeklyLabelFromPromoOptions(packageScheduleOptions, locale)
+              : "",
+          weeklySortIndex:
+            normalizedPromoTypeFilter === PROMO_TYPE_WEEKLY
+              ? getWeeklySortIndexFromPromoOptions(packageScheduleOptions)
+              : null,
           isPackage: true,
         });
         packageKeySet.add(pkg.packageId);
       });
     }
 
-    if (!isMicroneedlingCategory && registryPackages.length === 0) {
+    const shouldRenderDirectPackageOptions = packageOptions.length > 0;
+    if (shouldRenderDirectPackageOptions) {
       packageOptions.forEach((opt) => {
         const optName = getLocalized(opt.option?.optionName, locale);
         const optKey =
           opt.option?.optionKey || opt.option?.nameKey || opt.option?.id || optName;
         const normalizedKey = normalizeName(optKey);
-        if (packageKeySet.has(normalizedKey)) return;
+        const packageEntryKey = opt.option?.packageId || normalizedKey;
+        if (packageKeySet.has(packageEntryKey)) return;
+        if (opt.option?.packageId && !shouldDisplayPackageInCategory(opt.option.packageId, catKey)) {
+          return;
+        }
         const optionValidTillValue =
           optionValidTillMap.get(normalizeName(optKey)) ||
           getLocalized(promoDetails?.validTill, locale) ||
@@ -267,6 +455,10 @@ const buildPromoCategories = (allTreatments, locale, options = {}) => {
             }).format(optionValidTillDate)
           : null;
         const optionDaysLeft = getDaysLeft(optionValidTillDate);
+        const packageWeeklySortIndex =
+          normalizedPromoTypeFilter === PROMO_TYPE_WEEKLY
+            ? getWeeklySortIndexFromSchedule(opt.weeklySchedule)
+            : null;
         categoriesMap[catKey].cards.push({
           optionName: optName,
           description,
@@ -276,9 +468,14 @@ const buildPromoCategories = (allTreatments, locale, options = {}) => {
           slug: t.urlSlug,
           validTillLabel: optionValidTillLabel,
           daysLeft: optionDaysLeft,
+          weeklyLabel:
+            normalizedPromoTypeFilter === PROMO_TYPE_WEEKLY
+              ? formatWeeklyScheduleLabel(opt.weeklySchedule, locale)
+              : "",
+          weeklySortIndex: packageWeeklySortIndex,
           isPackage: true,
         });
-        packageKeySet.add(normalizedKey);
+        packageKeySet.add(packageEntryKey);
       });
     }
     packageKeysByCategory.set(catKey, packageKeySet);
@@ -287,22 +484,68 @@ const buildPromoCategories = (allTreatments, locale, options = {}) => {
   return Object.values(categoriesMap).filter((cat) => cat.cards.length > 0);
 };
 
-export default function PromosPage({ promoCategories = [] }) {
+export default function PromosPage({ promoCategoriesByType = {} }) {
   const router = useRouter();
   const locale = router.locale || "en";
   const { asPath } = router;
   const { t } = useTranslation("promos");
   const cardActionBaseClass =
     "inline-flex w-full items-center justify-center min-h-[36px] px-4 py-2 rounded-full text-xs leading-none transition text-center";
+  const [promoTypeFilter, setPromoTypeFilter] = useState(PROMO_TYPE_SEASONAL);
   const [sortOption, setSortOption] = useState("default");
-  const categories = promoCategories;
+  const categoryMenuWheelCarryRef = useRef(0);
+  const categories = useMemo(() => {
+    const selectedType = normalizePromoTypeFilter(promoTypeFilter);
+    if (
+      promoCategoriesByType &&
+      typeof promoCategoriesByType === "object" &&
+      !Array.isArray(promoCategoriesByType)
+    ) {
+      return Array.isArray(promoCategoriesByType[selectedType])
+        ? promoCategoriesByType[selectedType]
+        : [];
+    }
+    return Array.isArray(promoCategoriesByType) ? promoCategoriesByType : [];
+  }, [promoCategoriesByType, promoTypeFilter]);
   const [categoryMenuRef, categoryMenuInstanceRef] = useKeenSlider({
     loop: true,
     slides: { perView: "auto", spacing: 12 },
   });
   const sortedCategories =
     sortOption === "default"
-      ? categories
+      ? (() => {
+          const selectedType = normalizePromoTypeFilter(promoTypeFilter);
+          if (selectedType !== PROMO_TYPE_WEEKLY) return categories;
+
+          const getCardWeeklySortValue = (card) =>
+            Number.isFinite(card?.weeklySortIndex) ? card.weeklySortIndex : Number.POSITIVE_INFINITY;
+          const getCardPriceValue = (card) =>
+            Number.isFinite(card?.priceValue) ? card.priceValue : Number.POSITIVE_INFINITY;
+          const sortCardsByWeeklyOrder = (cards = []) =>
+            [...cards].sort((a, b) => {
+              const weeklyDiff = getCardWeeklySortValue(a) - getCardWeeklySortValue(b);
+              if (weeklyDiff !== 0) return weeklyDiff;
+              const priceDiff = getCardPriceValue(a) - getCardPriceValue(b);
+              if (priceDiff !== 0) return priceDiff;
+              return String(a?.optionName || "").localeCompare(String(b?.optionName || ""));
+            });
+          const getCategoryWeeklySortValue = (cards = []) => {
+            const values = (cards || []).map(getCardWeeklySortValue).filter(Number.isFinite);
+            return values.length ? Math.min(...values) : Number.POSITIVE_INFINITY;
+          };
+
+          return [...categories]
+            .map((cat) => ({
+              ...cat,
+              cards: sortCardsByWeeklyOrder(cat.cards),
+            }))
+            .sort((a, b) => {
+              const weeklyDiff =
+                getCategoryWeeklySortValue(a.cards) - getCategoryWeeklySortValue(b.cards);
+              if (weeklyDiff !== 0) return weeklyDiff;
+              return getLocalized(a.title, locale).localeCompare(getLocalized(b.title, locale));
+            });
+        })()
       : (() => {
           const sortKey = sortOption.startsWith("days") ? "days" : "price";
           const sortDir = sortOption.endsWith("desc") ? "desc" : "asc";
@@ -355,9 +598,53 @@ export default function PromosPage({ promoCategories = [] }) {
     return () => window.cancelAnimationFrame(handle);
   }, [categoryMenuSignature, sortOption, locale]);
 
+  useEffect(() => {
+    const slider = categoryMenuInstanceRef.current;
+    const container = slider?.container;
+    if (!container) return;
+
+    const STEP_THRESHOLD = 36;
+    categoryMenuWheelCarryRef.current = 0;
+
+    const handleWheel = (event) => {
+      const delta =
+        Math.abs(event.deltaX) > Math.abs(event.deltaY) ? event.deltaX : event.deltaY;
+      if (!Number.isFinite(delta) || Math.abs(delta) < 1) return;
+      event.preventDefault();
+      categoryMenuWheelCarryRef.current += delta;
+
+      while (Math.abs(categoryMenuWheelCarryRef.current) >= STEP_THRESHOLD) {
+        if (categoryMenuWheelCarryRef.current > 0) {
+          slider.next();
+          categoryMenuWheelCarryRef.current -= STEP_THRESHOLD;
+        } else {
+          slider.prev();
+          categoryMenuWheelCarryRef.current += STEP_THRESHOLD;
+        }
+      }
+    };
+
+    container.addEventListener("wheel", handleWheel, { passive: false });
+    return () => {
+      container.removeEventListener("wheel", handleWheel);
+    };
+  }, [categoryMenuInstanceRef, categoryMenuSignature, sortOption, locale]);
+
   const handleSortChange = (event) => {
     const nextValue = event.target.value;
     setSortOption(nextValue);
+    if (typeof window === "undefined") return;
+    const prefersReducedMotion = window.matchMedia?.("(prefers-reduced-motion: reduce)")
+      ?.matches;
+    window.scrollTo({
+      top: 0,
+      behavior: prefersReducedMotion ? "auto" : "smooth",
+    });
+  };
+
+  const handlePromoTypeChange = (nextType) => {
+    const normalized = normalizePromoTypeFilter(nextType);
+    setPromoTypeFilter(normalized);
     if (typeof window === "undefined") return;
     const prefersReducedMotion = window.matchMedia?.("(prefers-reduced-motion: reduce)")
       ?.matches;
@@ -412,6 +699,35 @@ export default function PromosPage({ promoCategories = [] }) {
             style={{ top: "calc(var(--site-header-offset) - 0.5%)" }}
           >
             <div className="py-4">
+              <div className="flex flex-col sm:flex-row sm:items-center gap-3 mb-4">
+                <span className="text-sm text-gray-600">{t("typeToggle.label")}</span>
+                <div className="inline-flex w-full sm:w-auto rounded-full border border-gray-300 p-1">
+                  <button
+                    type="button"
+                    onClick={() => handlePromoTypeChange(PROMO_TYPE_SEASONAL)}
+                    aria-pressed={promoTypeFilter === PROMO_TYPE_SEASONAL}
+                    className={`flex-1 sm:flex-initial px-4 py-1.5 rounded-full text-sm transition ${
+                      promoTypeFilter === PROMO_TYPE_SEASONAL
+                        ? "bg-black text-white"
+                        : "text-black hover:bg-gray-100"
+                    }`}
+                  >
+                    {t("typeToggle.options.seasonal")}
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => handlePromoTypeChange(PROMO_TYPE_WEEKLY)}
+                    aria-pressed={promoTypeFilter === PROMO_TYPE_WEEKLY}
+                    className={`flex-1 sm:flex-initial px-4 py-1.5 rounded-full text-sm transition ${
+                      promoTypeFilter === PROMO_TYPE_WEEKLY
+                        ? "bg-black text-white"
+                        : "text-black hover:bg-gray-100"
+                    }`}
+                  >
+                    {t("typeToggle.options.weekly")}
+                  </button>
+                </div>
+              </div>
               <div className="flex flex-col sm:flex-row sm:items-center gap-3">
                 <label htmlFor="promo-sort" className="text-sm text-gray-600">
                   {t("sort.label")}
@@ -562,6 +878,15 @@ export default function PromosPage({ promoCategories = [] }) {
                             {card.price}
                           </p>
                         )}
+                        {card.weeklyLabel && (
+                          <p
+                            className={`text-xs mt-1 ${
+                              card.isPackage ? "text-white/80" : "text-gray-600"
+                            }`}
+                          >
+                            {t("card.availableOn", { days: card.weeklyLabel })}
+                          </p>
+                        )}
                         {card.validTillLabel && (
                           <p
                             className={`text-xs mt-1 ${
@@ -646,10 +971,19 @@ export async function getStaticProps({ locale }) {
   );
   const pricePrefix =
     translations?._nextI18Next?.initialI18nStore?.[currentLocale]?.promos?.pricePrefix || "";
-  const promoCategories = buildPromoCategories(allTreatments, currentLocale, { pricePrefix });
+  const promoCategoriesByType = {
+    [PROMO_TYPE_SEASONAL]: buildPromoCategories(allTreatments, currentLocale, {
+      pricePrefix,
+      promoTypeFilter: PROMO_TYPE_SEASONAL,
+    }),
+    [PROMO_TYPE_WEEKLY]: buildPromoCategories(allTreatments, currentLocale, {
+      pricePrefix,
+      promoTypeFilter: PROMO_TYPE_WEEKLY,
+    }),
+  };
   return {
     props: {
-      promoCategories,
+      promoCategoriesByType,
       ...translations,
     },
   };

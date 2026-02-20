@@ -9,7 +9,7 @@
     },
     "isOptionPromoActive": true,
     "promoPrice": {
-      "amount": 7.50,
+      "amount": 7.5,
       "currency": "USD"
     },
     "priceTextKey": "",
@@ -43,7 +43,7 @@
     "serviceId": "svc_botox",
     "nameKey": "opt.dermawrinkle.per_unit",
     "price": {
-      "amount": 5.50,
+      "amount": 5.5,
       "currency": "USD"
     },
     "isOptionPromoActive": true,
@@ -75,6 +75,52 @@
     "notesKeys": [
       "promo.dermawrinkle.note1",
       "promo.dermawrinkle.note2"
+    ]
+  },
+  {
+    "id": "opt_weekly_tox_collagen_botox_package",
+    "serviceId": "svc_botox",
+    "nameKey": "opt.weekly.tox_collagen.botox_package",
+    "packageId": "pkg_tox_collagen_allergan",
+    "optionType": "package",
+    "price": {
+      "amount": 1620,
+      "currency": "USD"
+    },
+    "isOptionPromoActive": true,
+    "promoPrice": {
+      "amount": 1115,
+      "currency": "USD"
+    },
+    "priceTextKey": "",
+    "notesKeys": [
+      "note.weekly.tox_collagen.includes.heading",
+      "note.weekly.tox_collagen.includes.units",
+      "note.weekly.tox_collagen.includes.full_face_rf",
+      "note.weekly.tox_collagen.includes.hands_rf"
+    ]
+  },
+  {
+    "id": "opt_weekly_tox_collagen_generic_package",
+    "serviceId": "svc_botox",
+    "nameKey": "opt.weekly.tox_collagen.generic_package",
+    "packageId": "pkg_tox_collagen_generic",
+    "optionType": "package",
+    "price": {
+      "amount": 1525,
+      "currency": "USD"
+    },
+    "isOptionPromoActive": true,
+    "promoPrice": {
+      "amount": 1020,
+      "currency": "USD"
+    },
+    "priceTextKey": "",
+    "notesKeys": [
+      "note.weekly.tox_collagen.includes.heading",
+      "note.weekly.tox_collagen.includes.units",
+      "note.weekly.tox_collagen.includes.full_face_rf",
+      "note.weekly.tox_collagen.includes.hands_rf"
     ]
   }
 ]

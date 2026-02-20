@@ -12,10 +12,42 @@
     "id": "promo_laser_hair_removal",
     "serviceId": "svc_laser_hair_removal",
     "headlineKey": "",
-    "descriptionKey": "",
+    "descriptionKey": "promo.weekly.laser_hair.description",
     "validFrom": null,
-    "validTill": null,
-    "options": []
+    "validTill": "2026-12-31",
+    "options": [
+      {
+        "optionNameKey": "opt.weekly.laser_hair.3_plus_1",
+        "notesKeys": [
+          "note.weekly.laser_hair.thursday_purchase_rule",
+          "note.weekly.laser_hair.redeem_any_day_rule"
+        ],
+        "promoType": "weekly",
+        "weeklySchedule": {
+          "daysOfWeek": [
+            "thursday"
+          ],
+          "timeZone": "America/Tijuana"
+        },
+        "validTill": "2026-12-31"
+      },
+      {
+        "optionNameKey": "opt.weekly.laser_hair.5_plus_2",
+        "notesKeys": [
+          "note.weekly.laser_hair.thursday_purchase_rule",
+          "note.weekly.laser_hair.redeem_any_day_rule"
+        ],
+        "promoType": "weekly",
+        "weeklySchedule": {
+          "daysOfWeek": [
+            "thursday"
+          ],
+          "timeZone": "America/Tijuana"
+        },
+        "validTill": "2026-12-31"
+      }
+    ],
+    "promoType": "weekly"
   },
   {
     "id": "promo_ipl",

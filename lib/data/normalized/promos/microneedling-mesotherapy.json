@@ -6,7 +6,116 @@
     "descriptionKey": "promo.skin_renewal.casmara_note",
     "validFrom": null,
     "validTill": null,
-    "options": [],
+    "options": [
+      {
+        "optionNameKey": "opt.weekly.skin_renewal.prp_package",
+        "notesKeys": [
+          "note.weekly.microneedling.skin_renewal_includes",
+          "note.weekly.microneedling.tuesday_purchase_rule"
+        ],
+        "groupKey": "prp",
+        "packageId": "pkg_weekly_skin_renewal_prp",
+        "promoType": "weekly",
+        "weeklySchedule": {
+          "daysOfWeek": [
+            "tuesday"
+          ],
+          "timeZone": "America/Tijuana"
+        },
+        "validTill": "2026-12-31"
+      },
+      {
+        "optionNameKey": "opt.weekly.skin_renewal.pn_package",
+        "notesKeys": [
+          "note.weekly.microneedling.skin_renewal_includes",
+          "note.weekly.microneedling.tuesday_purchase_rule"
+        ],
+        "groupKey": "pn",
+        "packageId": "pkg_weekly_skin_renewal_pn",
+        "promoType": "weekly",
+        "weeklySchedule": {
+          "daysOfWeek": [
+            "tuesday"
+          ],
+          "timeZone": "America/Tijuana"
+        },
+        "validTill": "2026-12-31"
+      },
+      {
+        "optionNameKey": "opt.weekly.skin_renewal.pdrn_package",
+        "notesKeys": [
+          "note.weekly.microneedling.skin_renewal_includes",
+          "note.weekly.microneedling.tuesday_purchase_rule"
+        ],
+        "groupKey": "pdrn",
+        "packageId": "pkg_weekly_skin_renewal_pdrn",
+        "promoType": "weekly",
+        "weeklySchedule": {
+          "daysOfWeek": [
+            "tuesday"
+          ],
+          "timeZone": "America/Tijuana"
+        },
+        "validTill": "2026-12-31"
+      },
+      {
+        "optionNameKey": "opt.weekly.collagen_boost.prp_3_session",
+        "notesKeys": [
+          "note.weekly.microneedling.collagen_boost_per_session_requires_three",
+          "note.weekly.microneedling.collagen_boost_purchase_together_redeem_separately",
+          "note.weekly.microneedling.tuesday_purchase_rule",
+          "note.weekly.microneedling.collagen_boost_share_rule"
+        ],
+        "groupKey": "prp",
+        "packageId": "pkg_weekly_collagen_boost_prp",
+        "promoType": "weekly",
+        "weeklySchedule": {
+          "daysOfWeek": [
+            "tuesday"
+          ],
+          "timeZone": "America/Tijuana"
+        },
+        "validTill": "2026-12-31"
+      },
+      {
+        "optionNameKey": "opt.weekly.collagen_boost.pn_3_session",
+        "notesKeys": [
+          "note.weekly.microneedling.collagen_boost_per_session_requires_three",
+          "note.weekly.microneedling.collagen_boost_purchase_together_redeem_separately",
+          "note.weekly.microneedling.tuesday_purchase_rule",
+          "note.weekly.microneedling.collagen_boost_share_rule"
+        ],
+        "groupKey": "pn",
+        "packageId": "pkg_weekly_collagen_boost_pn",
+        "promoType": "weekly",
+        "weeklySchedule": {
+          "daysOfWeek": [
+            "tuesday"
+          ],
+          "timeZone": "America/Tijuana"
+        },
+        "validTill": "2026-12-31"
+      },
+      {
+        "optionNameKey": "opt.weekly.collagen_boost.pdrn_3_session",
+        "notesKeys": [
+          "note.weekly.microneedling.collagen_boost_per_session_requires_three",
+          "note.weekly.microneedling.collagen_boost_purchase_together_redeem_separately",
+          "note.weekly.microneedling.tuesday_purchase_rule",
+          "note.weekly.microneedling.collagen_boost_share_rule"
+        ],
+        "groupKey": "pdrn",
+        "packageId": "pkg_weekly_collagen_boost_pdrn",
+        "promoType": "weekly",
+        "weeklySchedule": {
+          "daysOfWeek": [
+            "tuesday"
+          ],
+          "timeZone": "America/Tijuana"
+        },
+        "validTill": "2026-12-31"
+      }
+    ],
     "descriptionLink": null
   },
   {

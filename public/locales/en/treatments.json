@@ -63,6 +63,15 @@
     "after": "After Treatment",
     "comingSoon": "Details coming soon."
   },
+  "beforeAfter": {
+    "heading": "Before and After",
+    "subtitle": "Slide to compare outcomes.",
+    "beforeLabel": "Before",
+    "afterLabel": "After",
+    "compareAria": "Compare before and after image {{index}}",
+    "prevAria": "Previous before and after image",
+    "nextAria": "Next before and after image"
+  },
   "faq": {
     "heading": "Frequently Asked Questions"
   },
@@ -72,6 +81,7 @@
     "bookNow": "Book Now",
     "exclusivePricing": "Exclusive Pricing",
     "validUntil": "Valid until",
+    "availableOn": "Available on {{days}}",
     "startingFrom": "Starting from {{price}}",
     "viewAll": "View all",
     "noOptionsForFilter": "No options available for this filter.",

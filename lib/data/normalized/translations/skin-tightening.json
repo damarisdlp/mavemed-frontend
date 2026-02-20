@@ -1813,5 +1813,55 @@
     "id": "filter.venus.body",
     "en": "Body",
     "es": "Cuerpo"
+  },
+  {
+    "id": "opt.weekly.venus.rf_face_sculpting_bundle",
+    "en": "Secure 2 RF Face Sculpting Sessions and Your 3rd Session Is Included",
+    "es": "Asegura 2 sesiones de Escultura RF Facial y tu 3ª sesión está incluida"
+  },
+  {
+    "id": "opt.weekly.venus.weekend_waist_sculpt_bundle",
+    "en": "Weekend Waist Sculpt Package",
+    "es": "Paquete Silueta Definida"
+  },
+  {
+    "id": "note.weekly.venus.rf_face_sculpting_includes",
+    "en": "Secure 2 RF Face Sculpting sessions and your 3rd session is included.",
+    "es": "Asegura 2 sesiones de Escultura RF Facial y tu 3ª sesión está incluida."
+  },
+  {
+    "id": "note.weekly.venus.monday_purchase_rule",
+    "en": "Offer available for purchase on Mondays only.",
+    "es": "Promoción válida únicamente para compra los días lunes."
+  },
+  {
+    "id": "note.weekly.venus.monday_redeem_rule",
+    "en": "Once purchased, sessions may be redeemed any day.",
+    "es": "Una vez adquiridas, pueden utilizarse cualquier día."
+  },
+  {
+    "id": "note.weekly.venus.weekend_waist_includes",
+    "en": "Includes:",
+    "es": "Incluye:"
+  },
+  {
+    "id": "note.weekly.venus.weekend_waist_abdomen_line",
+    "en": "1 Full Abdomen RF Aession",
+    "es": "1 sesión RF de abdomen completo"
+  },
+  {
+    "id": "note.weekly.venus.weekend_waist_flanks_line",
+    "en": "1 Flanks RF Session",
+    "es": "1 sesión RF de flancos"
+  },
+  {
+    "id": "note.weekly.venus.friday_purchase_rule",
+    "en": "Offer available for purchase on Fridays only.",
+    "es": "Oferta disponible para compra solo los viernes."
+  },
+  {
+    "id": "promo.weekly.venus.description",
+    "en": "Weekly RF specials with fixed weekday purchase windows.",
+    "es": "Promociones semanales de RF con ventanas de compra por día fijo."
   }
 ]

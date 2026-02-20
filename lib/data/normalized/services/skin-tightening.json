@@ -42,8 +42,14 @@
       "defaultKey": "all",
       "viewAllLabelKey": "filter.view_all",
       "filters": [
-        { "key": "face", "labelKey": "filter.venus.face" },
-        { "key": "body", "labelKey": "filter.venus.body" }
+        {
+          "key": "face",
+          "labelKey": "filter.venus.face"
+        },
+        {
+          "key": "body",
+          "labelKey": "filter.venus.body"
+        }
       ]
     }
   },
@@ -55,7 +61,7 @@
     "descriptionKey": "svc.venus_freeze.desc",
     "detailsKey": "svc.venus_freeze.details",
     "isPopular": false,
-    "isPromoActive": false,
+    "isPromoActive": true,
     "images": {
       "primary": "/rfsculpt.jpg",
       "secondary": "/rfsculpt2.jpg"
@@ -84,8 +90,14 @@
       "defaultKey": "all",
       "viewAllLabelKey": "filter.view_all",
       "filters": [
-        { "key": "face", "labelKey": "filter.venus.face" },
-        { "key": "body", "labelKey": "filter.venus.body" }
+        {
+          "key": "face",
+          "labelKey": "filter.venus.face"
+        },
+        {
+          "key": "body",
+          "labelKey": "filter.venus.body"
+        }
       ]
     }
   },

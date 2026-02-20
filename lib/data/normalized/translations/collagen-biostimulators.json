@@ -473,5 +473,60 @@
     "id": "faq.harmonyca.a5",
     "en": "Absolutely. It pairs well with treatments like Ultraformer, RF Microneedling, and skin boosters like PN for comprehensive facial rejuvenation.",
     "es": "Absolutamente. Se combina bien con tratamientos como Ultraformer, Microneedling RF y potenciadores de piel como PN para rejuvenecimiento facial completo."
+  },
+  {
+    "id": "opt.weekly.ultra_collagen_boost.package",
+    "en": "Ultra Collagen Boost Package",
+    "es": "Paquete Ultra Collagen Boost"
+  },
+  {
+    "id": "note.weekly.ultra_collagen_boost.includes",
+    "en": "Includes 1 vial Sculptra + 1 full-face RF microneedling session + 1 hands RF microneedling session.",
+    "es": "Incluye 1 vial de Sculptra + 1 sesión de RF microneedling rostro completo + 1 sesión de RF microneedling en manos."
+  },
+  {
+    "id": "note.weekly.ultra_collagen_boost.includes.heading",
+    "en": "Includes:",
+    "es": "Incluye:"
+  },
+  {
+    "id": "note.weekly.ultra_collagen_boost.includes.sculptra",
+    "en": "1 vial Sculptra",
+    "es": "1 vial de Sculptra"
+  },
+  {
+    "id": "note.weekly.ultra_collagen_boost.includes.full_face_rf",
+    "en": "1 Full-Face RF Microneedling session (Sylfirm X)",
+    "es": "1 sesión de RF Microneedling de rostro completo (Sylfirm X)"
+  },
+  {
+    "id": "note.weekly.ultra_collagen_boost.includes.hands_rf",
+    "en": "1 Complete Hands RF Microneedling session (Sylfirm X)",
+    "es": "1 sesión completa de RF Microneedling en manos (Sylfirm X)"
+  },
+  {
+    "id": "note.weekly.ultra_collagen_boost.rate.heading",
+    "en": "Pricing & Rate Notes:",
+    "es": "Notas de precio y tarifa:"
+  },
+  {
+    "id": "note.weekly.ultra_collagen_boost.rate.intro",
+    "en": "$1,200 rate is an introductory first-session-only rate.",
+    "es": "La tarifa de $1,200 es introductoria y solo aplica para la primera sesión."
+  },
+  {
+    "id": "note.weekly.ultra_collagen_boost.rate.remaining_sessions",
+    "en": "If patient proceeds with full 3-session collagen remodeling plan, remaining sessions are $1,310 per session.",
+    "es": "Si el paciente continúa con el plan completo de 3 sesiones de remodelación de colágeno, las sesiones restantes son de $1,310 por sesión."
+  },
+  {
+    "id": "note.weekly.ultra_collagen_boost.rate.updated_pricing",
+    "en": "Increased rate reflects updated pricing for Sculptra and RF microneedling zones.",
+    "es": "La tarifa ajustada refleja precios actualizados para Sculptra y zonas de RF microneedling."
+  },
+  {
+    "id": "note.weekly.ultra_collagen_boost.rate.bundle_value",
+    "en": "Even with the adjusted rate, the bundled treatment plan remains lower than traditional bundled pricing for Sculptra + RF microneedling Full Face.",
+    "es": "Aun con la tarifa ajustada, el plan combinado sigue por debajo del precio tradicional combinado de Sculptra + RF microneedling rostro completo."
   }
 ]

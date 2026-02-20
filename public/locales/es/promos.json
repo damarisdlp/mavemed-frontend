@@ -11,6 +11,13 @@
     "home": "Inicio",
     "promos": "Promociones"
   },
+  "typeToggle": {
+    "label": "Ver",
+    "options": {
+      "seasonal": "Promociones de temporada",
+      "weekly": "Promociones semanales"
+    }
+  },
   "sort": {
     "label": "Ordenar por",
     "options": {
@@ -24,6 +31,7 @@
   "empty": "No hay promociones vigentes por el momento.",
   "card": {
     "promoPackage": "Paquete promocional",
+    "availableOn": "Disponible: {{days}}",
     "validThru": "Válido hasta",
     "daysLeft": "Quedan {{count}} días",
     "bookNow": "Reservar ahora",

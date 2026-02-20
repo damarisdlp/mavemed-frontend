@@ -37,8 +37,14 @@
       "defaultKey": "all",
       "viewAllLabelKey": "filter.view_all",
       "filters": [
-        { "key": "face", "labelKey": "filter.co2.face" },
-        { "key": "body", "labelKey": "filter.co2.body" }
+        {
+          "key": "face",
+          "labelKey": "filter.co2.face"
+        },
+        {
+          "key": "body",
+          "labelKey": "filter.co2.body"
+        }
       ]
     }
   },
@@ -50,7 +56,7 @@
     "descriptionKey": "svc.laser_hair_removal.desc",
     "detailsKey": "svc.laser_hair_removal.details",
     "isPopular": true,
-    "isPromoActive": false,
+    "isPromoActive": true,
     "images": {
       "primary": "/hairremoval.jpg",
       "secondary": "/hairremoval2.jpg"
@@ -84,9 +90,18 @@
       "defaultKey": "all",
       "viewAllLabelKey": "filter.view_all",
       "filters": [
-        { "key": "face", "labelKey": "filter.laser_hair.face" },
-        { "key": "body", "labelKey": "filter.laser_hair.body" },
-        { "key": "intimate", "labelKey": "filter.laser_hair.intimate" }
+        {
+          "key": "face",
+          "labelKey": "filter.laser_hair.face"
+        },
+        {
+          "key": "body",
+          "labelKey": "filter.laser_hair.body"
+        },
+        {
+          "key": "intimate",
+          "labelKey": "filter.laser_hair.intimate"
+        }
       ]
     }
   },
@@ -125,8 +140,14 @@
       "defaultKey": "all",
       "viewAllLabelKey": "filter.view_all",
       "filters": [
-        { "key": "face", "labelKey": "filter.ipl.face" },
-        { "key": "body", "labelKey": "filter.ipl.body" }
+        {
+          "key": "face",
+          "labelKey": "filter.ipl.face"
+        },
+        {
+          "key": "body",
+          "labelKey": "filter.ipl.body"
+        }
       ]
     }
   },
@@ -143,6 +164,13 @@
       "primary": "/sylfirmx.jpg",
       "secondary": "/sylfirmx2.jpg"
     },
+    "beforeAfterBasePath": "/before-after/sylfirm-rf-microneedling",
+    "beforeAfterGallery": [
+      {
+        "id": "01",
+        "captionKey": "ba.sylfirm.01.caption"
+      }
+    ],
     "notesKeys": [
       "note.rf_microneedling.sessions",
       "note.rf_microneedling.safe",
@@ -165,8 +193,14 @@
       "defaultKey": "all",
       "viewAllLabelKey": "filter.view_all",
       "filters": [
-        { "key": "face", "labelKey": "filter.rf.face" },
-        { "key": "body", "labelKey": "filter.rf.body" }
+        {
+          "key": "face",
+          "labelKey": "filter.rf.face"
+        },
+        {
+          "key": "body",
+          "labelKey": "filter.rf.body"
+        }
       ]
     }
   },
@@ -200,9 +234,18 @@
       "defaultKey": "all",
       "viewAllLabelKey": "filter.view_all",
       "filters": [
-        { "key": "prp", "labelKey": "filter.serum.prp" },
-        { "key": "pn", "labelKey": "filter.serum.pn" },
-        { "key": "pdrn", "labelKey": "filter.serum.pdrn" }
+        {
+          "key": "prp",
+          "labelKey": "filter.serum.prp"
+        },
+        {
+          "key": "pn",
+          "labelKey": "filter.serum.pn"
+        },
+        {
+          "key": "pdrn",
+          "labelKey": "filter.serum.pdrn"
+        }
       ]
     }
   }

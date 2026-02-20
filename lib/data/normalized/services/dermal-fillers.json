@@ -45,6 +45,13 @@
       "primary": "/lipfillers.jpg",
       "secondary": "/lipfillers2.jpg"
     },
+    "beforeAfterBasePath": "/before-after/hyaluronic-acid-lip-fillers",
+    "beforeAfterGallery": [
+      {
+        "id": "01",
+        "captionKey": "ba.lip_fillers.01.caption"
+      }
+    ],
     "notesKeys": [
       "note.lip_fillers.immediate",
       "note.lip_fillers.tailored",

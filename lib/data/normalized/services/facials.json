@@ -7,7 +7,7 @@
     "descriptionKey": "svc.hydrafacial.desc",
     "detailsKey": "svc.hydrafacial.details",
     "isPopular": true,
-    "isPromoActive": false,
+    "isPromoActive": true,
     "images": {
       "primary": "/hydrafacial.jpg",
       "secondary": "/hydrafacial2.jpg"

@@ -11,6 +11,13 @@
     "home": "Home",
     "promos": "Promos"
   },
+  "typeToggle": {
+    "label": "View",
+    "options": {
+      "seasonal": "Seasonal promotions",
+      "weekly": "Weekly promotions"
+    }
+  },
   "sort": {
     "label": "Sort by",
     "options": {
@@ -24,6 +31,7 @@
   "empty": "No active promos available right now.",
   "card": {
     "promoPackage": "Promo package",
+    "availableOn": "Available on: {{days}}",
     "validThru": "Valid thru",
     "daysLeft": "{{count}} days left",
     "bookNow": "Book Now",
