@@ -1432,5 +1432,143 @@
       "note.microneedling.toskani_hydration_benefit_3",
       "note.mesotherapy.large_zone"
     ]
+  },
+  {
+    "id": "opt_weekly_skin_renewal_prp_package",
+    "serviceId": "svc_microneedling",
+    "nameKey": "opt.weekly.skin_renewal.prp_package",
+    "optionType": "package",
+    "price": {
+      "amount": 260,
+      "currency": "USD"
+    },
+    "isOptionPromoActive": true,
+    "promoPrice": {
+      "amount": 225,
+      "currency": "USD"
+    },
+    "priceTextKey": "",
+    "filterGroupKey": "prp",
+    "notesKeys": [
+      "note.weekly.microneedling.skin_renewal_includes",
+      "note.weekly.microneedling.tuesday_purchase_rule"
+    ],
+    "packageId": "pkg_weekly_skin_renewal_prp"
+  },
+  {
+    "id": "opt_weekly_skin_renewal_pn_package",
+    "serviceId": "svc_microneedling",
+    "nameKey": "opt.weekly.skin_renewal.pn_package",
+    "optionType": "package",
+    "price": {
+      "amount": 395,
+      "currency": "USD"
+    },
+    "isOptionPromoActive": true,
+    "promoPrice": {
+      "amount": 340,
+      "currency": "USD"
+    },
+    "priceTextKey": "",
+    "filterGroupKey": "pn",
+    "notesKeys": [
+      "note.weekly.microneedling.skin_renewal_includes",
+      "note.weekly.microneedling.tuesday_purchase_rule"
+    ],
+    "packageId": "pkg_weekly_skin_renewal_pn"
+  },
+  {
+    "id": "opt_weekly_skin_renewal_pdrn_package",
+    "serviceId": "svc_microneedling",
+    "nameKey": "opt.weekly.skin_renewal.pdrn_package",
+    "optionType": "package",
+    "price": {
+      "amount": 285,
+      "currency": "USD"
+    },
+    "isOptionPromoActive": true,
+    "promoPrice": {
+      "amount": 240,
+      "currency": "USD"
+    },
+    "priceTextKey": "",
+    "filterGroupKey": "pdrn",
+    "notesKeys": [
+      "note.weekly.microneedling.skin_renewal_includes",
+      "note.weekly.microneedling.tuesday_purchase_rule"
+    ],
+    "packageId": "pkg_weekly_skin_renewal_pdrn"
+  },
+  {
+    "id": "opt_weekly_collagen_boost_prp_3_session",
+    "serviceId": "svc_microneedling",
+    "nameKey": "opt.weekly.collagen_boost.prp_3_session",
+    "optionType": "package",
+    "price": {
+      "amount": 165,
+      "currency": "USD"
+    },
+    "isOptionPromoActive": true,
+    "promoPrice": {
+      "amount": 135,
+      "currency": "USD"
+    },
+    "priceTextKey": "",
+    "filterGroupKey": "prp",
+    "notesKeys": [
+      "note.weekly.microneedling.collagen_boost_per_session_requires_three",
+      "note.weekly.microneedling.collagen_boost_purchase_together_redeem_separately",
+      "note.weekly.microneedling.tuesday_purchase_rule",
+      "note.weekly.microneedling.collagen_boost_share_rule"
+    ],
+    "packageId": "pkg_weekly_collagen_boost_prp"
+  },
+  {
+    "id": "opt_weekly_collagen_boost_pn_3_session",
+    "serviceId": "svc_microneedling",
+    "nameKey": "opt.weekly.collagen_boost.pn_3_session",
+    "optionType": "package",
+    "price": {
+      "amount": 300,
+      "currency": "USD"
+    },
+    "isOptionPromoActive": true,
+    "promoPrice": {
+      "amount": 250,
+      "currency": "USD"
+    },
+    "priceTextKey": "",
+    "filterGroupKey": "pn",
+    "notesKeys": [
+      "note.weekly.microneedling.collagen_boost_per_session_requires_three",
+      "note.weekly.microneedling.collagen_boost_purchase_together_redeem_separately",
+      "note.weekly.microneedling.tuesday_purchase_rule",
+      "note.weekly.microneedling.collagen_boost_share_rule"
+    ],
+    "packageId": "pkg_weekly_collagen_boost_pn"
+  },
+  {
+    "id": "opt_weekly_collagen_boost_pdrn_3_session",
+    "serviceId": "svc_microneedling",
+    "nameKey": "opt.weekly.collagen_boost.pdrn_3_session",
+    "optionType": "package",
+    "price": {
+      "amount": 190,
+      "currency": "USD"
+    },
+    "isOptionPromoActive": true,
+    "promoPrice": {
+      "amount": 150,
+      "currency": "USD"
+    },
+    "priceTextKey": "",
+    "filterGroupKey": "pdrn",
+    "notesKeys": [
+      "note.weekly.microneedling.collagen_boost_per_session_requires_three",
+      "note.weekly.microneedling.collagen_boost_purchase_together_redeem_separately",
+      "note.weekly.microneedling.tuesday_purchase_rule",
+      "note.weekly.microneedling.collagen_boost_share_rule"
+    ],
+    "packageId": "pkg_weekly_collagen_boost_pdrn"
   }
 ]
