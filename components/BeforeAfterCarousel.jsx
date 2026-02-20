@@ -35,6 +35,7 @@ export default function BeforeAfterCarousel({
 
   const [sliderRef, sliderInstanceRef] = useKeenSlider(
     {
+      drag: false,
       loop: hasMultiple,
       slideChanged(slider) {
         setActiveSlide(slider.track.details.rel);
