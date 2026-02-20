@@ -2,6 +2,7 @@ import "keen-slider/keen-slider.min.css";
 import Image from "next/image";
 import Link from "next/link";
 import { useKeenSlider } from "keen-slider/react";
+import { useEffect, useRef } from "react";
 import { useRouter } from "next/router";
 import { useTranslation } from "next-i18next";
 
@@ -25,6 +26,40 @@ export default function StaffFavorites({ cards = [], displayName = "" }) {
       },
     },
   });
+  const sliderWheelCarryRef = useRef(0);
+
+  useEffect(() => {
+    const sliderInstance = slider.current;
+    const container = sliderInstance?.container;
+    if (!container) return;
+
+    const STEP_THRESHOLD = 36;
+    sliderWheelCarryRef.current = 0;
+
+    const handleWheel = (event) => {
+      if (!window.matchMedia("(min-width: 1024px)").matches) return;
+      const delta =
+        Math.abs(event.deltaX) > Math.abs(event.deltaY) ? event.deltaX : event.deltaY;
+      if (!Number.isFinite(delta) || Math.abs(delta) < 1) return;
+      event.preventDefault();
+      sliderWheelCarryRef.current += delta;
+
+      while (Math.abs(sliderWheelCarryRef.current) >= STEP_THRESHOLD) {
+        if (sliderWheelCarryRef.current > 0) {
+          sliderInstance.next();
+          sliderWheelCarryRef.current -= STEP_THRESHOLD;
+        } else {
+          sliderInstance.prev();
+          sliderWheelCarryRef.current += STEP_THRESHOLD;
+        }
+      }
+    };
+
+    container.addEventListener("wheel", handleWheel, { passive: false });
+    return () => {
+      container.removeEventListener("wheel", handleWheel);
+    };
+  }, [slider, cards.length]);
 
   return (
     <div className="mt-12">
