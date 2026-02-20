@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import "keen-slider/keen-slider.min.css";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useRouter } from "next/router";
 import { useKeenSlider } from "keen-slider/react";
 import { useTranslation } from "next-i18next";
@@ -176,6 +176,7 @@ export default function TreatmentCategories({ categories = [] }) {
     loop: true,
     slides: { perView: "auto", spacing: 12 },
   });
+  const menuWheelCarryRef = useRef(0);
 
   useEffect(() => {
     if (!menuInstanceRef.current) return;
@@ -184,6 +185,38 @@ export default function TreatmentCategories({ categories = [] }) {
     });
     return () => window.cancelAnimationFrame(handle);
   }, [visibleCategories.length, locale]);
+
+  useEffect(() => {
+    const slider = menuInstanceRef.current;
+    const container = slider?.container;
+    if (!container) return;
+
+    const STEP_THRESHOLD = 36;
+    menuWheelCarryRef.current = 0;
+
+    const handleWheel = (event) => {
+      const delta =
+        Math.abs(event.deltaX) > Math.abs(event.deltaY) ? event.deltaX : event.deltaY;
+      if (!Number.isFinite(delta) || Math.abs(delta) < 1) return;
+      event.preventDefault();
+      menuWheelCarryRef.current += delta;
+
+      while (Math.abs(menuWheelCarryRef.current) >= STEP_THRESHOLD) {
+        if (menuWheelCarryRef.current > 0) {
+          slider.next();
+          menuWheelCarryRef.current -= STEP_THRESHOLD;
+        } else {
+          slider.prev();
+          menuWheelCarryRef.current += STEP_THRESHOLD;
+        }
+      }
+    };
+
+    container.addEventListener("wheel", handleWheel, { passive: false });
+    return () => {
+      container.removeEventListener("wheel", handleWheel);
+    };
+  }, [menuInstanceRef, visibleCategories.length, locale]);
 
   return (
     <div className="bg-white scroll-smooth relative">
