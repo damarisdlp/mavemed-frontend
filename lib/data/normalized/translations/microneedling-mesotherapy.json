@@ -122,7 +122,7 @@
   {
     "id": "exp.microneedling.during.1",
     "en": "Topical numbing is applied; expect a scratching/pressure sensation with possible pinpoint bleeding.",
-    "es": "Se aplica anestesia típica; espere una sensación de raspado/presión con posible sangrado puntual."
+    "es": "Se aplica anestesia tópica; espere una sensación de raspado/presión con posible sangrado puntual."
   },
   {
     "id": "exp.microneedling.during.2",
@@ -147,7 +147,7 @@
   {
     "id": "faq.microneedling.q1",
     "en": "How many sessions will I need?",
-    "es": "Cuántas sesiones voy a necesitar?"
+    "es": "¿Cuántas sesiones voy a necesitar?"
   },
   {
     "id": "faq.microneedling.a1",
@@ -157,7 +157,7 @@
   {
     "id": "faq.microneedling.q2",
     "en": "Which infusion option is best for me?",
-    "es": "Qué opción de infusión es mejor para mí?"
+    "es": "¿Qué opción de infusión es mejor para mí?"
   },
   {
     "id": "faq.microneedling.a2",
@@ -167,22 +167,22 @@
   {
     "id": "faq.microneedling.q3",
     "en": "Is this safe for all skin types?",
-    "es": "Es seguro para todo tipo de piel?"
+    "es": "¿Es seguro para todo tipo de piel?"
   },
   {
     "id": "faq.microneedling.a3",
     "en": "Yes, Microneedling is safe for most skin tones when performed by trained professionals. PN and PDRN are excellent options for sensitive or aging skin.",
-    "es": "S, el Microneedling es seguro para la mayoría de los fototipos cuando lo realiza personal capacitado. PN y PDRN son excelentes opciones para piel sensible o madura."
+    "es": "Sí, el Microneedling es seguro para la mayoría de los fototipos cuando lo realiza personal capacitado. PN y PDRN son excelentes opciones para piel sensible o madura."
   },
   {
     "id": "faq.microneedling.q4",
     "en": "Can I combine this with other treatments?",
-    "es": "Puedo combinar este tratamiento con otros?"
+    "es": "¿Puedo combinar este tratamiento con otros?"
   },
   {
     "id": "faq.microneedling.a4",
     "en": "Yes, Microneedling pairs well with facials, laser or radiofrequency for enhanced results. Always consult your provider to create the safest treatment plan.",
-    "es": "S, el Microneedling se puede combinar con faciales, láser o radiofrecuencia para potenciar resultados. Siempre consulte con su especialista para diseñar el plan de tratamiento más seguro."
+    "es": "Sí, el Microneedling se puede combinar con faciales, láser o radiofrecuencia para potenciar resultados. Siempre consulte con su especialista para diseñar el plan de tratamiento más seguro."
   },
   {
     "id": "svc.mesotherapy.name",
@@ -302,12 +302,12 @@
   {
     "id": "exp.mesotherapy.during.1",
     "en": "Topical numbing is applied; youll feel quick pinches or pressure with each microinjection.",
-    "es": "Se aplica anestesia típica; sentir pequeños pinchazos o presión con cada microinyeccin."
+    "es": "Se aplica anestesia tópica; sentirá pequeños pinchazos o presión con cada microinyección."
   },
   {
     "id": "exp.mesotherapy.during.2",
     "en": "Small blebs or papules are expected initially and flatten within hours to a day.",
-    "es": "Es normal que se formen pequeñas pápulas o elevaciones iniciales que se aplanan en horas hasta un da."
+    "es": "Es normal que se formen pequeñas pápulas o elevaciones iniciales que se aplanan en horas hasta un día."
   },
   {
     "id": "exp.mesotherapy.post.1",
@@ -327,7 +327,7 @@
   {
     "id": "faq.mesotherapy.q1",
     "en": "Whats the difference between PRP, PN and PDRN?",
-    "es": "Cul es la diferencia entre PRP, PN y PDRN?"
+    "es": "¿Cuál es la diferencia entre PRP, PN y PDRN?"
   },
   {
     "id": "faq.mesotherapy.a1",
@@ -337,7 +337,7 @@
   {
     "id": "faq.mesotherapy.q2",
     "en": "Is this a filler?",
-    "es": "Esto es un relleno?"
+    "es": "¿Esto es un relleno?"
   },
   {
     "id": "faq.mesotherapy.a2",
@@ -347,7 +347,7 @@
   {
     "id": "faq.mesotherapy.q3",
     "en": "How long do results last?",
-    "es": "Cuánto duran los resultados?"
+    "es": "¿Cuánto duran los resultados?"
   },
   {
     "id": "faq.mesotherapy.a3",
@@ -357,7 +357,7 @@
   {
     "id": "faq.mesotherapy.q4",
     "en": "Does it hurt?",
-    "es": "Duele?"
+    "es": "¿Duele?"
   },
   {
     "id": "faq.mesotherapy.a4",
@@ -367,7 +367,7 @@
   {
     "id": "faq.mesotherapy.q5",
     "en": "How many sessions will I need?",
-    "es": "Cuántas sesiones voy a necesitar?"
+    "es": "¿Cuántas sesiones voy a necesitar?"
   },
   {
     "id": "faq.mesotherapy.a5",
