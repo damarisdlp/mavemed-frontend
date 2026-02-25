@@ -552,7 +552,7 @@
   {
     "id": "note.venus.neck_sculpting",
     "en": "Submentum + Neck",
-    "es": "Submeton + Cuello"
+    "es": "Submentón + Cuello"
   },
   {
     "id": "note.venus.decollete_rejuvenation",
@@ -962,7 +962,7 @@
   {
     "id": "exp.ultraformer.during.1",
     "en": "Youll feel tingling or heat with each ultrasound pulse; ultrasound gel and possible numbing help comfort.",
-    "es": "Sentir hormigueo o calor con cada pulso de ultrasonido; el gel y la anestesia opcional ayudan a la comodidad."
+    "es": "Sentirá hormigueo o calor con cada pulso de ultrasonido; el gel y la anestesia opcional ayudan a la comodidad."
   },
   {
     "id": "exp.ultraformer.during.2",
@@ -992,12 +992,12 @@
   {
     "id": "exp.venus.pre.2",
     "en": "Arrive with clean skin; avoid heavy creams or oils on treatment areas the day of your session.",
-    "es": "Acuda con la piel limpia; evite cremas u aceites pesados en las zonas a tratar el da de su sesión."
+    "es": "Acuda con la piel limpia; evite cremas u aceites pesados en las zonas a tratar el día de su sesión."
   },
   {
     "id": "exp.venus.during.1",
     "en": "Youll feel warmth and mild suction/pressure as RF and pulsed magnetic fields work; intensity is adjusted for comfort.",
-    "es": "Sentir calor y ligera succión/presión mientras actúan la RF y los campos magnéticos pulsados; la intensidad se ajusta para su comodidad."
+    "es": "Sentirá calor y ligera succión/presión mientras actúan la RF y los campos magnéticos pulsados; la intensidad se ajusta para su comodidad."
   },
   {
     "id": "exp.venus.post.1",
@@ -1022,7 +1022,7 @@
   {
     "id": "exp.enzymatic.pre.2",
     "en": "Arrive with clean skin; avoid heavy creams on treatment areas the day of your session.",
-    "es": "Acuda con la piel limpia; evite cremas pesadas en las zonas a tratar el da de su sesión."
+    "es": "Acuda con la piel limpia; evite cremas pesadas en las zonas a tratar el día de su sesión."
   },
   {
     "id": "exp.enzymatic.during.1",
@@ -1067,7 +1067,7 @@
   {
     "id": "exp.pdo.during.1",
     "en": "Local anesthesia is used; youll feel pressure and possible tugging as threads are placed and tightened.",
-    "es": "Se utiliza anestesia local; sentir presión y posible tirón mientras se colocan y tensan los hilos."
+    "es": "Se utiliza anestesia local; sentirá presión y posible tirón mientras se colocan y tensan los hilos."
   },
   {
     "id": "exp.pdo.during.2",
@@ -1092,17 +1092,17 @@
   {
     "id": "faq.ultraformer.q1",
     "en": "Is Ultraformer MPT painful?",
-    "es": "Ultraformer MPT es doloroso?"
+    "es": "¿Ultraformer MPT es doloroso?"
   },
   {
     "id": "faq.ultraformer.a1",
     "en": "Most patients tolerate the treatment well. Deep tingling or heat may be felt during the procedure; we recommend numbing for additional comfort if needed.",
-    "es": "La mayoría de los pacientes tolera bien el tratamiento. Puede sentir calor profundo u hormigueo durante la sesión y, si es necesario, podemos aplicar anestesia típica para mayor comodidad."
+    "es": "La mayoría de los pacientes tolera bien el tratamiento. Puede sentir calor profundo u hormigueo durante la sesión y, si es necesario, podemos aplicar anestesia tópica para mayor comodidad."
   },
   {
     "id": "faq.ultraformer.q2",
     "en": "How many sessions of Ultraformer MPT do I need?",
-    "es": "Cuántas sesiones de Ultraformer MPT necesito?"
+    "es": "¿Cuántas sesiones de Ultraformer MPT necesito?"
   },
   {
     "id": "faq.ultraformer.a2",
@@ -1112,7 +1112,7 @@
   {
     "id": "faq.ultraformer.q3",
     "en": "How long do Ultraformer MPT results last?",
-    "es": "Cuánto duran los resultados de Ultraformer MPT?"
+    "es": "¿Cuánto duran los resultados de Ultraformer MPT?"
   },
   {
     "id": "faq.ultraformer.a3",
@@ -1122,7 +1122,7 @@
   {
     "id": "faq.ultraformer.q4",
     "en": "Can Ultraformer MPT be combined with other treatments?",
-    "es": "Ultraformer MPT se puede combinar con otros tratamientos?"
+    "es": "¿Ultraformer MPT se puede combinar con otros tratamientos?"
   },
   {
     "id": "faq.ultraformer.a4",
@@ -1132,17 +1132,17 @@
   {
     "id": "faq.ultraformer.q5",
     "en": "Is there any downtime after Ultraformer MPT?",
-    "es": "Hay tiempo de recuperación después de Ultraformer MPT?"
+    "es": "¿Hay tiempo de recuperación después de Ultraformer MPT?"
   },
   {
     "id": "faq.ultraformer.a5",
     "en": "There is no formal downtime. Most patients return to normal activities the same day, though mild swelling or redness can appear for one to three days.",
-    "es": "No existe un tiempo de recuperación obligatorio. La mayoría de los pacientes retoma sus actividades el mismo da, aunque puede haber ligera inflamación o enrojecimiento durante uno a tres días."
+    "es": "No existe un tiempo de recuperación obligatorio. La mayoría de los pacientes retoma sus actividades el mismo día, aunque puede haber ligera inflamación o enrojecimiento durante uno a tres días."
   },
   {
     "id": "faq.ultraformer.q6",
     "en": "What areas can Ultraformer MPT treat?",
-    "es": "Qué zonas se pueden tratar con Ultraformer MPT?"
+    "es": "¿Qué zonas se pueden tratar con Ultraformer MPT?"
   },
   {
     "id": "faq.ultraformer.a6",
@@ -1152,7 +1152,7 @@
   {
     "id": "faq.venus.q1",
     "en": "Is Venus Freeze painful?",
-    "es": "Es doloroso Venus Freeze?"
+    "es": "¿Es doloroso Venus Freeze?"
   },
   {
     "id": "faq.venus.a1",
@@ -1162,7 +1162,7 @@
   {
     "id": "faq.venus.q2",
     "en": "How soon will I see results?",
-    "es": "Cundo ver resultados?"
+    "es": "¿Cuándo ver resultados?"
   },
   {
     "id": "faq.venus.a2",
@@ -1172,7 +1172,7 @@
   {
     "id": "faq.venus.q3",
     "en": "How long do results last?",
-    "es": "Cuánto duran los resultados?"
+    "es": "¿Cuánto duran los resultados?"
   },
   {
     "id": "faq.venus.a3",
@@ -1182,7 +1182,7 @@
   {
     "id": "faq.venus.q4",
     "en": "Can this replace liposuction?",
-    "es": "Puede reemplazar la liposucción?"
+    "es": "¿Puede reemplazar la liposucción?"
   },
   {
     "id": "faq.venus.a4",
@@ -1192,7 +1192,7 @@
   {
     "id": "faq.venus.q5",
     "en": "Is there downtime?",
-    "es": "Hay tiempo de recuperación?"
+    "es": "¿Hay tiempo de recuperación?"
   },
   {
     "id": "faq.venus.a5",
@@ -1202,7 +1202,7 @@
   {
     "id": "faq.enzymatic.q1",
     "en": "Is this the same as mesotherapy?",
-    "es": "Es lo mismo que la mesoterapia?"
+    "es": "¿Es lo mismo que la mesoterapia?"
   },
   {
     "id": "faq.enzymatic.a1",
@@ -1212,7 +1212,7 @@
   {
     "id": "faq.enzymatic.q2",
     "en": "How many sessions are needed?",
-    "es": "Cuántas sesiones se necesitan?"
+    "es": "¿Cuántas sesiones se necesitan?"
   },
   {
     "id": "faq.enzymatic.a2",
@@ -1222,7 +1222,7 @@
   {
     "id": "faq.enzymatic.q3",
     "en": "Does the treatment hurt?",
-    "es": "Duele el tratamiento?"
+    "es": "¿Duele el tratamiento?"
   },
   {
     "id": "faq.enzymatic.a3",
@@ -1232,7 +1232,7 @@
   {
     "id": "faq.enzymatic.q4",
     "en": "When will I see results?",
-    "es": "Cundo ver resultados?"
+    "es": "¿Cuándo ver resultados?"
   },
   {
     "id": "faq.enzymatic.a4",
@@ -1242,17 +1242,17 @@
   {
     "id": "faq.enzymatic.q5",
     "en": "Can I combine this with other treatments?",
-    "es": "Puedo combinarlo con otros tratamientos?"
+    "es": "¿Puedo combinarlo con otros tratamientos?"
   },
   {
     "id": "faq.enzymatic.a5",
     "en": "Yes, pairing enzymatic therapy with RF sculpting or lymphatic massage improves results.",
-    "es": "S, combinar la terapia enzimática con radiofrecuencia o masaje linfático mejora los resultados."
+    "es": "Sí, combinar la terapia enzimática con radiofrecuencia o masaje linfático mejora los resultados."
   },
   {
     "id": "faq.pdo.q1",
     "en": "What is a PDO thread lift?",
-    "es": "Qué es un lifting con hilos PDO?"
+    "es": "¿Qué es un lifting con hilos PDO?"
   },
   {
     "id": "faq.pdo.a1",
@@ -1262,7 +1262,7 @@
   {
     "id": "faq.pdo.q2",
     "en": "How long do the results last?",
-    "es": "Cuánto duran los resultados?"
+    "es": "¿Cuánto duran los resultados?"
   },
   {
     "id": "faq.pdo.a2",
@@ -1272,7 +1272,7 @@
   {
     "id": "faq.pdo.q3",
     "en": "Is the procedure painful?",
-    "es": "El procedimiento es doloroso?"
+    "es": "¿El procedimiento es doloroso?"
   },
   {
     "id": "faq.pdo.a3",
@@ -1282,7 +1282,7 @@
   {
     "id": "faq.pdo.q4",
     "en": "Can threads be combined with other treatments?",
-    "es": "Se pueden combinar los hilos con otros tratamientos?"
+    "es": "¿Se pueden combinar los hilos con otros tratamientos?"
   },
   {
     "id": "faq.pdo.a4",
@@ -1292,7 +1292,7 @@
   {
     "id": "faq.pdo.q5",
     "en": "When will I see results?",
-    "es": "Cundo ver resultados?"
+    "es": "¿Cuándo ver resultados?"
   },
   {
     "id": "faq.pdo.a5",
@@ -1742,7 +1742,7 @@
   {
     "id": "faq.pdo_biostim.q1",
     "en": "Will this lift my face?",
-    "es": "Este tratamiento levanta el rostro?"
+    "es": "¿Este tratamiento levanta el rostro?"
   },
   {
     "id": "faq.pdo_biostim.a1",
@@ -1752,7 +1752,7 @@
   {
     "id": "faq.pdo_biostim.q2",
     "en": "When will I see results?",
-    "es": "Cundo ver resultados?"
+    "es": "¿Cuándo ver resultados?"
   },
   {
     "id": "faq.pdo_biostim.a2",
@@ -1762,7 +1762,7 @@
   {
     "id": "faq.pdo_biostim.q3",
     "en": "How long do results last?",
-    "es": "Cuánto duran los resultados?"
+    "es": "¿Cuánto duran los resultados?"
   },
   {
     "id": "faq.pdo_biostim.a3",
@@ -1772,7 +1772,7 @@
   {
     "id": "faq.pdo_lift.q1",
     "en": "Is this a facelift?",
-    "es": "Es un lifting facial quirúrgico?"
+    "es": "¿Es un lifting facial quirúrgico?"
   },
   {
     "id": "faq.pdo_lift.a1",
@@ -1782,7 +1782,7 @@
   {
     "id": "faq.pdo_lift.q2",
     "en": "How long does the lift last?",
-    "es": "Cuánto dura el efecto lifting?"
+    "es": "¿Cuánto dura el efecto lifting?"
   },
   {
     "id": "faq.pdo_lift.a2",
@@ -1792,7 +1792,7 @@
   {
     "id": "faq.pdo_lift.q3",
     "en": "Will the threads be visible or felt?",
-    "es": "Se sienten o se ven los hilos?"
+    "es": "¿Se sienten o se ven los hilos?"
   },
   {
     "id": "faq.pdo_lift.a3",
