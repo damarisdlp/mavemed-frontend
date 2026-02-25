@@ -22,7 +22,7 @@
   {
     "id": "note.cupping.addon_only",
     "en": "Add-on service only, not available as a standalone treatment",
-    "es": "Servicio complementario nicamente, no disponible como tratamiento independiente"
+    "es": "Servicio complementario únicamente, no disponible como tratamiento independiente"
   },
   {
     "id": "note.cupping.marks",
@@ -202,7 +202,7 @@
   {
     "id": "goal.sclerotherapy.improve_legs",
     "en": "Improve leg aesthetics",
-    "es": "Mejorar estática de piernas"
+    "es": "Mejorar estética de piernas"
   },
   {
     "id": "goal.sclerotherapy.prevent",
@@ -442,7 +442,7 @@
   {
     "id": "exp.cupping.pre.2",
     "en": "Avoid heavy lotions or oils on the areas to be treated on the day of your appointment.",
-    "es": "Evite lociones o aceites pesados en las zonas a tratar el da de su cita."
+    "es": "Evite lociones o aceites pesados en las zonas a tratar el día de su cita."
   },
   {
     "id": "exp.cupping.pre.3",
@@ -452,7 +452,7 @@
   {
     "id": "exp.cupping.during.1",
     "en": "You will feel a firm pulling/suction sensation; intensity can be adjusted for comfort.",
-    "es": "Sentir una sensación firme de succión o tirón; la intensidad puede ajustarse para su comodidad."
+    "es": "Sentirá una sensación firme de succión o tirón; la intensidad puede ajustarse para su comodidad."
   },
   {
     "id": "exp.cupping.during.2",
@@ -497,7 +497,7 @@
   {
     "id": "exp.keloid.during.1",
     "en": "Youll feel a brief pinch and pressure as the medication is injected directly into the scar; numbing cream may be used for comfort.",
-    "es": "Sentir un pequeño pinchazo y presión mientras se inyecta el medicamento directamente en la cicatriz; se puede usar crema anestésica para mayor comodidad."
+    "es": "Sentirá un pequeño pinchazo y presión mientras se inyecta el medicamento directamente en la cicatriz; se puede usar crema anestésica para mayor comodidad."
   },
   {
     "id": "exp.keloid.during.2",
@@ -527,7 +527,7 @@
   {
     "id": "exp.sclerotherapy.pre.1",
     "en": "Avoid aspirin, NSAIDs, and alcohol for 48 hours if medically permitted; skip moisturizers or oils on legs the day of treatment.",
-    "es": "Evite aspirina, antiinflamatorios y alcohol por 48 horas si su médico lo permite; no use cremas u aceites en las piernas el da del tratamiento."
+    "es": "Evite aspirina, antiinflamatorios y alcohol por 48 horas si su médico lo permite; no use cremas u aceites en las piernas el día del tratamiento."
   },
   {
     "id": "exp.sclerotherapy.pre.2",
@@ -537,7 +537,7 @@
   {
     "id": "exp.sclerotherapy.during.1",
     "en": "Youll feel small needle pricks and brief stinging or cramping as the solution enters the vein.",
-    "es": "Sentir pequeños piquetes y un ardor o calambre breve mientras la solución entra en la vena."
+    "es": "Sentirá pequeños piquetes y un ardor o calambre breve mientras la solución entra en la vena."
   },
   {
     "id": "exp.sclerotherapy.during.2",
@@ -547,12 +547,12 @@
   {
     "id": "exp.sclerotherapy.post.1",
     "en": "Wear compression stockings as directed (often 5 - 7 days during waking hours) and walk 1020 minutes daily.",
-    "es": "Use las medias de compresión según se indique (a menudo 57 días durante las horas de vigilia) y camine 1020 minutos al da."
+    "es": "Use las medias de compresión según se indique (a menudo 5-7 días durante las horas de vigilia) y camine 10-20 minutos al día."
   },
   {
     "id": "exp.sclerotherapy.post.2",
     "en": "Avoid hot baths, saunas, intense sun, and high-impact exercise for 7 days; avoid heavy lifting for 48 hours.",
-    "es": "Evite baos calientes, saunas, sol intenso y ejercicio de alto impacto por 7 días; evite levantar peso por 48 horas."
+    "es": "Evite baños calientes, saunas, sol intenso y ejercicio de alto impacto por 7 días; evite levantar peso por 48 horas."
   },
   {
     "id": "exp.sclerotherapy.post.3",
@@ -582,7 +582,7 @@
   {
     "id": "exp.swedish.post.1",
     "en": "Drink water to support lymphatic drainage and avoid heavy workouts for the rest of the day.",
-    "es": "Beba agua para apoyar el drenaje linfático y evite entrenamientos intensos el resto del da."
+    "es": "Beba agua para apoyar el drenaje linfático y evite entrenamientos intensos el resto del día."
   },
   {
     "id": "exp.swedish.post.2",
@@ -607,7 +607,7 @@
   {
     "id": "exp.wart.during.1",
     "en": "You may feel brief stinging, cold, or pressure depending on the method (cryotherapy, chemical, or excision).",
-    "es": "Puede sentir ardor breve, fro o presión según el método (crioterapia, químico o escisión)."
+    "es": "Puede sentir ardor breve, frío o presión según el método (crioterapia, químico o escisión)."
   },
   {
     "id": "exp.wart.during.2",
@@ -617,7 +617,7 @@
   {
     "id": "exp.wart.post.1",
     "en": "A blister or crust can form and typically resolves in 714 days; keep it clean and dry for the first 24 hours.",
-    "es": "Puede formarse una ampolla o costra que suele resolverse en 714 días; manténgala limpia y seca las primeras 24 horas."
+    "es": "Puede formarse una ampolla o costra que suele resolverse en 7-14 días; manténgala limpia y seca las primeras 24 horas."
   },
   {
     "id": "exp.wart.post.2",
@@ -637,7 +637,7 @@
   {
     "id": "faq.cupping.q1",
     "en": "Does cupping hurt?",
-    "es": "Duele la terapia de ventosas?"
+    "es": "¿Duele la terapia de ventosas?"
   },
   {
     "id": "faq.cupping.a1",
@@ -647,7 +647,7 @@
   {
     "id": "faq.cupping.q2",
     "en": "Will I have marks afterward?",
-    "es": "Tendrá marcas después?"
+    "es": "¿Tendrá marcas después?"
   },
   {
     "id": "faq.cupping.a2",
@@ -657,7 +657,7 @@
   {
     "id": "faq.keloid.q1",
     "en": "How many sessions are needed?",
-    "es": "Cuántas sesiones se necesitan?"
+    "es": "¿Cuántas sesiones se necesitan?"
   },
   {
     "id": "faq.keloid.a1",
@@ -677,7 +677,7 @@
   {
     "id": "faq.sclerotherapy.q1",
     "en": "How long before I see results?",
-    "es": "Cuánto tiempo antes de ver resultados?"
+    "es": "¿Cuánto tiempo antes de ver resultados?"
   },
   {
     "id": "faq.sclerotherapy.a1",
@@ -687,7 +687,7 @@
   {
     "id": "faq.sclerotherapy.q2",
     "en": "Is the procedure painful?",
-    "es": "El procedimiento es doloroso?"
+    "es": "¿El procedimiento es doloroso?"
   },
   {
     "id": "faq.sclerotherapy.a2",
@@ -697,7 +697,7 @@
   {
     "id": "faq.swedish.q1",
     "en": "Is this massage good for chronic pain?",
-    "es": "Este masaje es bueno para el dolor crónico?"
+    "es": "¿Este masaje es bueno para el dolor crónico?"
   },
   {
     "id": "faq.swedish.a1",
@@ -707,17 +707,17 @@
   {
     "id": "faq.swedish.q2",
     "en": "Can I combine this with other treatments?",
-    "es": "Puedo combinar esto con otros tratamientos?"
+    "es": "¿Puedo combinar esto con otros tratamientos?"
   },
   {
     "id": "faq.swedish.a2",
     "en": "Yes, many clients pair it with facials, RF therapy, or body sculpting for a holistic session.",
-    "es": "S, muchos clientes lo combinan con faciales, terapia RF o escultura corporal para una sesión holística."
+    "es": "Sí, muchos clientes lo combinan con faciales, terapia RF o escultura corporal para una sesión holística."
   },
   {
     "id": "faq.wart.q1",
     "en": "How long does it take to remove a wart or skin tag?",
-    "es": "Cuánto tiempo toma eliminar una verruga o acrocordón?"
+    "es": "¿Cuánto tiempo toma eliminar una verruga o acrocordón?"
   },
   {
     "id": "faq.wart.a1",
@@ -727,7 +727,7 @@
   {
     "id": "faq.wart.q2",
     "en": "Will it come back?",
-    "es": "Puede volver?"
+    "es": "¿Puede volver?"
   },
   {
     "id": "faq.wart.a2",
@@ -737,7 +737,7 @@
   {
     "id": "faq.wart.q3",
     "en": "Does wart or skin tag removal hurt?",
-    "es": "Duele la eliminación de verrugas o acrocordones?"
+    "es": "¿Duele la eliminación de verrugas o acrocordones?"
   },
   {
     "id": "faq.wart.a3",
