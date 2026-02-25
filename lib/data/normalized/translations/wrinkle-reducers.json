@@ -57,7 +57,7 @@
   {
     "id": "area.botox.glabella",
     "en": "Frown Lines (Glabella)",
-    "es": "Líneas de Fruncir el Ceo (Glabela)"
+    "es": "Líneas de Fruncir el Ceño (Glabela)"
   },
   {
     "id": "area.botox.crows_feet",
@@ -77,12 +77,12 @@
   {
     "id": "area.botox.perioral_package",
     "en": "Perioral Package (Gummy Smile + Lip Elevators + Chin)",
-    "es": "Paquete Perioral (Sonrisa de Encasé + Elevadores de Labios + Barbilla)"
+    "es": "Paquete Perioral (Sonrisa gingival + Elevadores de Labios + Barbilla)"
   },
   {
     "id": "area.botox.lip_flip",
     "en": "Lip Flip (Gummy Smile)",
-    "es": "Volteo de Labios (Sonrisa de Encasé)"
+    "es": "Volteo de Labios (Sonrisa gingival)"
   },
   {
     "id": "area.botox.eyebrow_lift",
@@ -92,7 +92,7 @@
   {
     "id": "area.botox.downturned_corners",
     "en": "Downturned Corners (Sad Smile)",
-    "es": "Comisuras Cadas (Sonrisa Triste)"
+    "es": "Comisuras Caídas (Sonrisa Triste)"
   },
   {
     "id": "area.botox.perioral_lines",
@@ -141,8 +141,8 @@
   },
   {
     "id": "promo.botox.description",
-    "en": "Tox + Collagen Boost Package",
-    "es": "Paquete Tox + Collagen Boost"
+    "en": "Botulinum Toxin Type A neuromodulator treatment softens dynamic expression lines for a smoother, more refreshed appearance.",
+    "es": "El tratamiento neuromodulador con toxina botulínica tipo A suaviza las líneas de expresión dinámicas para una apariencia más tersa y renovada."
   },
   {
     "id": "promo.botox.option_name",
@@ -192,7 +192,7 @@
   {
     "id": "exp.botox.pre.2",
     "en": "Arrive with clean skin (no makeup on treatment areas) and avoid intense exercise on the day of treatment.",
-    "es": "Acuda con la piel limpia (sin maquillaje en las zonas a tratar) y evite ejercicio intenso el da del tratamiento."
+    "es": "Acuda con la piel limpia (sin maquillaje en las zonas a tratar) y evite ejercicio intenso el día del tratamiento."
   },
   {
     "id": "exp.botox.pre.3",
@@ -237,7 +237,7 @@
   {
     "id": "faq.botox.q1",
     "en": "How long does Botulinum Toxin Type A take to work?",
-    "es": "Cuánto tiempo tarda en hacer efecto la toxina botulínica tipo A?"
+    "es": "¿Cuánto tiempo tarda en hacer efecto la toxina botulínica tipo A?"
   },
   {
     "id": "faq.botox.a1",
@@ -247,7 +247,7 @@
   {
     "id": "faq.botox.q2",
     "en": "How long do Botulinum Toxin Type A neuromodulator results last?",
-    "es": "Cuánto duran los resultados del neuromodulador con toxina botulínica tipo A?"
+    "es": "¿Cuánto duran los resultados del neuromodulador con toxina botulínica tipo A?"
   },
   {
     "id": "faq.botox.a2",
@@ -257,7 +257,7 @@
   {
     "id": "faq.botox.q3",
     "en": "Will I look frozen or unnatural?",
-    "es": "Me ver congelado o antinatural?"
+    "es": "¿Me veré congelado o antinatural?"
   },
   {
     "id": "faq.botox.a3",
@@ -267,17 +267,17 @@
   {
     "id": "faq.botox.q4",
     "en": "Can I wear makeup or skincare after neuromodulator treatment?",
-    "es": "Puedo usar maquillaje o skincare después del tratamiento con neuromodulador?"
+    "es": "¿Puedo usar maquillaje o skincare después del tratamiento con neuromodulador?"
   },
   {
     "id": "faq.botox.a4",
     "en": "Yes, but wait at least 4 hours before applying makeup and avoid rubbing the treated areas to prevent product migration.",
-    "es": "S, pero espere al menos 4 horas antes de aplicar maquillaje y evite frotar las áreas tratadas para prevenir la migración del producto."
+    "es": "Sí, pero espere al menos 4 horas antes de aplicar maquillaje y evite frotar las áreas tratadas para prevenir la migración del producto."
   },
   {
     "id": "faq.botox.q5",
     "en": "Is there any downtime?",
-    "es": "Hay ALGÚN tiempo de inactividad?"
+    "es": "¿Hay algún tiempo de inactividad?"
   },
   {
     "id": "faq.botox.a5",
@@ -287,7 +287,7 @@
   {
     "id": "faq.botox.q6",
     "en": "Is Botulinum Toxin Type A neuromodulator treatment safe?",
-    "es": "Es seguro el tratamiento neuromodulador con toxina botulínica tipo A?"
+    "es": "¿Es seguro el tratamiento neuromodulador con toxina botulínica tipo A?"
   },
   {
     "id": "faq.botox.a6",
@@ -297,7 +297,7 @@
   {
     "id": "faq.botox.q7",
     "en": "Can I combine neuromodulator treatment with other procedures?",
-    "es": "Puedo combinar el tratamiento con neuromodulador con otros procedimientos?"
+    "es": "¿Puedo combinar el tratamiento con neuromodulador con otros procedimientos?"
   },
   {
     "id": "faq.botox.a7",
@@ -357,7 +357,7 @@
   {
     "id": "area.dermawrinkle.glabella",
     "en": "Frown Lines (Glabella)",
-    "es": "Líneas de Fruncir el Ceo (Glabela)"
+    "es": "Líneas de Fruncir el Ceño (Glabela)"
   },
   {
     "id": "area.dermawrinkle.crows_feet",
@@ -377,12 +377,12 @@
   {
     "id": "area.dermawrinkle.perioral_package",
     "en": "Perioral Package (Gummy Smile + Lip Elevators + Chin)",
-    "es": "Paquete Perioral (Sonrisa de Encasé + Elevadores de Labios + Barbilla)"
+    "es": "Paquete Perioral (Sonrisa gingival + Elevadores de Labios + Barbilla)"
   },
   {
     "id": "area.dermawrinkle.lip_flip",
     "en": "Lip Flip (Gummy Smile)",
-    "es": "Volteo de Labios (Sonrisa de Encasé)"
+    "es": "Volteo de Labios (Sonrisa gingival)"
   },
   {
     "id": "area.dermawrinkle.eyebrow_lift",
@@ -392,7 +392,7 @@
   {
     "id": "area.dermawrinkle.downturned_corners",
     "en": "Downturned Corners (Sad Smile)",
-    "es": "Comisuras Cadas (Sonrisa Triste)"
+    "es": "Comisuras Caídas (Sonrisa Triste)"
   },
   {
     "id": "area.dermawrinkle.perioral_lines",
@@ -492,7 +492,7 @@
   {
     "id": "exp.dermawrinkle.pre.2",
     "en": "Arrive with clean skin (no makeup on treatment areas) and avoid intense exercise on the day of treatment.",
-    "es": "Acuda con la piel limpia (sin maquillaje en las zonas a tratar) y evite ejercicio intenso el da del tratamiento."
+    "es": "Acuda con la piel limpia (sin maquillaje en las zonas a tratar) y evite ejercicio intenso el día del tratamiento."
   },
   {
     "id": "exp.dermawrinkle.pre.3",
@@ -537,7 +537,7 @@
   {
     "id": "faq.dermawrinkle.q1",
     "en": "How long does generic botulinum toxin take to work?",
-    "es": "Cuánto tiempo tarda en hacer efecto la toxina botulínica genérica?"
+    "es": "¿Cuánto tiempo tarda en hacer efecto la toxina botulínica genérica?"
   },
   {
     "id": "faq.dermawrinkle.a1",
@@ -547,7 +547,7 @@
   {
     "id": "faq.dermawrinkle.q2",
     "en": "How long do generic botulinum toxin results last?",
-    "es": "Cuánto duran los resultados de la toxina botulínica genérica?"
+    "es": "¿Cuánto duran los resultados de la toxina botulínica genérica?"
   },
   {
     "id": "faq.dermawrinkle.a2",
@@ -557,7 +557,7 @@
   {
     "id": "faq.dermawrinkle.q3",
     "en": "Will I look frozen or unnatural?",
-    "es": "Me ver congelado o antinatural?"
+    "es": "¿Me veré congelado o antinatural?"
   },
   {
     "id": "faq.dermawrinkle.a3",
@@ -567,17 +567,17 @@
   {
     "id": "faq.dermawrinkle.q4",
     "en": "Can I wear makeup or skincare after generic botulinum toxin?",
-    "es": "Puedo usar maquillaje o cuidado de la piel después de la toxina botulínica genérica?"
+    "es": "¿Puedo usar maquillaje o cuidado de la piel después de la toxina botulínica genérica?"
   },
   {
     "id": "faq.dermawrinkle.a4",
     "en": "Yes, but wait at least 4 hours before applying makeup and avoid rubbing the treated areas to prevent product migration.",
-    "es": "S, pero espere al menos 4 horas antes de aplicar maquillaje y evite frotar las áreas tratadas para prevenir la migración del producto."
+    "es": "Sí, pero espere al menos 4 horas antes de aplicar maquillaje y evite frotar las áreas tratadas para prevenir la migración del producto."
   },
   {
     "id": "faq.dermawrinkle.q5",
     "en": "Is there any downtime?",
-    "es": "Hay ALGÚN tiempo de inactividad?"
+    "es": "¿Hay algún tiempo de inactividad?"
   },
   {
     "id": "faq.dermawrinkle.a5",
@@ -587,7 +587,7 @@
   {
     "id": "faq.dermawrinkle.q6",
     "en": "Is generic botulinum toxin safe?",
-    "es": "Es segura la toxina botulínica genérica?"
+    "es": "¿Es segura la toxina botulínica genérica?"
   },
   {
     "id": "faq.dermawrinkle.a6",
@@ -597,12 +597,12 @@
   {
     "id": "faq.dermawrinkle.q7",
     "en": "Can I combine generic botulinum toxin with other treatments?",
-    "es": "Puedo combinar la toxina botulínica genérica con otros tratamientos?"
+    "es": "¿Puedo combinar la toxina botulínica genérica con otros tratamientos?"
   },
   {
     "id": "faq.dermawrinkle.a7",
     "en": "Absolutely. Generic botulinum toxin can be safely combined with treatments like HydraFacial , PLLA , or laser resurfacing for enhanced results. Your provider will guide you on the ideal timing between procedures.",
-    "es": "Absolutamente. La toxina botulínica genérica se puede combinar de manera segura con tratamientos como HydraFacial , PLLA  o resurfacing láser para resultados mejorados. Su proveedor le guiar sobre el tiempo ideal entre procedimientos."
+    "es": "Absolutamente. La toxina botulínica genérica se puede combinar de manera segura con tratamientos como HydraFacial, PLLA o resurfacing láser para resultados mejorados. Su proveedor le guiará sobre el tiempo ideal entre procedimientos."
   },
   {
     "id": "opt.weekly.tox_collagen.botox_package",
