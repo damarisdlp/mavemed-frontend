@@ -22,7 +22,7 @@
   {
     "id": "note.hydrafacial.no_downtime",
     "en": "No downtime  makeup can be applied the same day",
-    "es": "Sin tiempo de recuperación; puedes maquillarte el mismo da"
+    "es": "Sin tiempo de recuperación; puedes maquillarte el mismo día"
   },
   {
     "id": "note.hydrafacial.safe_skin",
@@ -127,7 +127,7 @@
   {
     "id": "exp.hydrafacial.during.1",
     "en": "Youll feel gentle suction and fluid infusion during cleansing, exfoliation, and extractions.",
-    "es": "Sentir una succión suave e infusión de fluidos durante la limpieza, exfoliación y extracciones."
+    "es": "Sentirá una succión suave e infusión de fluidos durante la limpieza, exfoliación y extracciones."
   },
   {
     "id": "exp.hydrafacial.during.2",
@@ -147,7 +147,7 @@
   {
     "id": "faq.hydrafacial.q1",
     "en": "How often should I get a HydraFacial?",
-    "es": "Con qué frecuencia debo hacerme un HydraFacial?"
+    "es": "¿Con qué frecuencia debo hacerme un HydraFacial?"
   },
   {
     "id": "faq.hydrafacial.a1",
@@ -157,7 +157,7 @@
   {
     "id": "faq.hydrafacial.q2",
     "en": "Is HydraFacial good for acne?",
-    "es": "El HydraFacial es bueno para el acné?"
+    "es": "¿El HydraFacial es bueno para el acné?"
   },
   {
     "id": "faq.hydrafacial.a2",
@@ -167,12 +167,12 @@
   {
     "id": "faq.hydrafacial.q3",
     "en": "Can I wear makeup after a HydraFacial?",
-    "es": "Puedo usar maquillaje después de un HydraFacial?"
+    "es": "¿Puedo usar maquillaje después de un HydraFacial?"
   },
   {
     "id": "faq.hydrafacial.a3",
     "en": "Yes. Makeup can be applied the same day, but many patients prefer to enjoy the natural post-treatment glow.",
-    "es": "Sí. Puedes maquillarte el mismo da, aunque muchos pacientes prefieren lucir el brillo natural posterior al tratamiento."
+    "es": "Sí. Puedes maquillarte el mismo día, aunque muchos pacientes prefieren lucir el brillo natural posterior al tratamiento."
   },
   {
     "id": "svc.casmara_infinity.name",
@@ -272,22 +272,22 @@
   {
     "id": "faq.casmara_infinity.q1",
     "en": "Is this facial good for mature skin?",
-    "es": "Este facial es bueno para piel madura?"
+    "es": "¿Este facial es bueno para piel madura?"
   },
   {
     "id": "faq.casmara_infinity.a1",
     "en": "Yes, its specifically designed for aging skin to boost firmness, elasticity, and glow.",
-    "es": "S, est diseñado específicamente para piel envejecida para mejorar firmeza, elasticidad y luminosidad."
+    "es": "Sí, está diseñado específicamente para piel envejecida para mejorar firmeza, elasticidad y luminosidad."
   },
   {
     "id": "faq.casmara_infinity.q2",
     "en": "Can I wear makeup after this facial?",
-    "es": "Puedo maquillarme después de este facial?"
+    "es": "¿Puedo maquillarme después de este facial?"
   },
   {
     "id": "faq.casmara_infinity.a2",
     "en": "Yes, but we recommend letting the skin breathe for a few hours post-treatment for best results.",
-    "es": "S, aunque recomendamos dejar que la piel respire uñas horas después para mejores resultados."
+    "es": "Sí, aunque recomendamos dejar que la piel respire unas horas después para mejores resultados."
   },
   {
     "id": "svc.casmara_purifying.name",
@@ -392,7 +392,7 @@
   {
     "id": "faq.casmara_purifying.q1",
     "en": "Is the Casmara facial good for sensitive or acne-prone skin?",
-    "es": "Este facial Casmara es bueno para piel sensible o con acné?"
+    "es": "¿Este facial Casmara es bueno para piel sensible o con acné?"
   },
   {
     "id": "faq.casmara_purifying.a1",
@@ -402,7 +402,7 @@
   {
     "id": "faq.casmara_purifying.q2",
     "en": "Are extractions included with this facial?",
-    "es": "Se incluyen extracciones en este facial?"
+    "es": "¿Se incluyen extracciones en este facial?"
   },
   {
     "id": "faq.casmara_purifying.a2",
@@ -512,7 +512,7 @@
   {
     "id": "faq.casmara_retinol.q1",
     "en": "Will I peel after this treatment?",
-    "es": "Tendrá descamación después de este tratamiento?"
+    "es": "¿Tendrá descamación después de este tratamiento?"
   },
   {
     "id": "faq.casmara_retinol.a1",
@@ -522,7 +522,7 @@
   {
     "id": "faq.casmara_retinol.q2",
     "en": "How often can I get this facial?",
-    "es": "Con qué frecuencia puedo realizarme este facial?"
+    "es": "¿Con qué frecuencia puedo realizarme este facial?"
   },
   {
     "id": "faq.casmara_retinol.a2",
@@ -657,17 +657,17 @@
   {
     "id": "faq.janssen_ultra.q1",
     "en": "Is this facial suitable for sensitive skin?",
-    "es": "Este facial es adecuado para piel sensible?"
+    "es": "¿Este facial es adecuado para piel sensible?"
   },
   {
     "id": "faq.janssen_ultra.a1",
     "en": "Yes, its formulated to be effective yet gentle enough for most skin types.",
-    "es": "S, est formulado para ser efectivo pero lo suficientemente suave para la mayoría de los tipos de piel."
+    "es": "Sí, está formulado para ser efectivo pero lo suficientemente suave para la mayoría de los tipos de piel."
   },
   {
     "id": "faq.janssen_ultra.q2",
     "en": "How often should I get this facial?",
-    "es": "Con qué frecuencia debo hacerme este facial?"
+    "es": "¿Con qué frecuencia debo hacerme este facial?"
   },
   {
     "id": "faq.janssen_ultra.a2",
@@ -837,22 +837,22 @@
   {
     "id": "faq.janssen_radiance.q1",
     "en": "Will my skin glow immediately after?",
-    "es": "Mi piel se ver luminosa inmediatamente después?"
+    "es": "¿Mi piel se verá luminosa inmediatamente después?"
   },
   {
     "id": "faq.janssen_radiance.a1",
     "en": "Yes, the facial is designed to enhance radiance and hydration instantly.",
-    "es": "S, este facial est diseñado para aumentar la luminosidad e hidratación al instante."
+    "es": "Sí, este facial está diseñado para aumentar la luminosidad e hidratación al instante."
   },
   {
     "id": "faq.janssen_radiance.q2",
     "en": "Is this safe during pregnancy?",
-    "es": "Es seguro durante el embarazo?"
+    "es": "¿Es seguro durante el embarazo?"
   },
   {
     "id": "faq.janssen_radiance.a2",
     "en": "Yes, this facial does not use any harsh acids or retinol, making it safe for pregnant clients.",
-    "es": "S, este facial no utiliza ácidos agresivos ni retinol, por lo que es seguro para pacientes embarazadas."
+    "es": "Sí, este facial no utiliza ácidos agresivos ni retinol, por lo que es seguro para pacientes embarazadas."
   },
   {
     "id": "opt.casmara_skin_renewal_pn_face",
