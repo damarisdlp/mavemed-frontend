@@ -342,7 +342,7 @@
   {
     "id": "exp.co2.during.1",
     "en": "Topical/local anesthetic is applied; youll feel warmth and snapping as the laser pulses across the skin.",
-    "es": "Se aplica anestesia típica/local; sentir calor y pequeños destellos mientras el láser recorre la piel."
+    "es": "Se aplica anestesia tópica/local; sentirá calor y pequeños destellos mientras el láser recorre la piel."
   },
   {
     "id": "exp.co2.during.2",
@@ -352,7 +352,7 @@
   {
     "id": "exp.co2.post.1",
     "en": "Redness, swelling, oozing, and peeling are normal for 510 days; keep the area moist with the prescribed ointment.",
-    "es": "Enrojecimiento, hinchazón, exudado y descamación son normales durante 510 días; mantenga el Área humectada con el ungüento indicado."
+    "es": "Enrojecimiento, hinchazón, exudado y descamación son normales durante 510 días; mantenga el área humectada con el ungüento indicado."
   },
   {
     "id": "exp.co2.post.2",
@@ -372,17 +372,17 @@
   {
     "id": "faq.co2.q1",
     "en": "Is CO laser painful?",
-    "es": "El láser de CO duele?"
+    "es": "¿El láser de CO duele?"
   },
   {
     "id": "faq.co2.a1",
     "en": "Topical anesthetic is applied beforehand. Patients usually describe warmth with occasional sharp zaps. Mild discomfort may last 12 days.",
-    "es": "Se aplica anestesia típica antes del tratamiento. Los pacientes suelen describir una sensación de calor con pequeños destellos. Puede haber molestia leve durante 1 a 2 días."
+    "es": "Se aplica anestesia tópica antes del tratamiento. Los pacientes suelen describir una sensación de calor con pequeños destellos. Puede haber molestia leve durante 1 a 2 días."
   },
   {
     "id": "faq.co2.q2",
     "en": "How long is recovery?",
-    "es": "Cuánto dura la recuperación?"
+    "es": "¿Cuánto dura la recuperación?"
   },
   {
     "id": "faq.co2.a2",
@@ -392,7 +392,7 @@
   {
     "id": "faq.co2.q3",
     "en": "Can I combine this with PRP or other treatments?",
-    "es": "Puedo combinarlo con PRP u otros tratamientos?"
+    "es": "¿Puedo combinarlo con PRP u otros tratamientos?"
   },
   {
     "id": "faq.co2.a3",
@@ -402,7 +402,7 @@
   {
     "id": "faq.co2.q4",
     "en": "How many sessions do I need?",
-    "es": "Cuántas sesiones necesito?"
+    "es": "¿Cuántas sesiones necesito?"
   },
   {
     "id": "faq.co2.a4",
@@ -542,7 +542,7 @@
   {
     "id": "exp.laser_hair.pre.1",
     "en": "Shave the treatment area the day before your session. Do not wax or pluck.",
-    "es": "Rasure el Área a tratar un da antes de su sesión. No se depile con cera ni pinzas."
+    "es": "Rasure el área a tratar un día antes de su sesión. No se depile con cera ni pinzas."
   },
   {
     "id": "exp.laser_hair.pre.2",
@@ -552,12 +552,12 @@
   {
     "id": "exp.laser_hair.pre.3",
     "en": "Do not apply heavy creams, deodorant, or makeup on the treatment day; arrive with clean skin.",
-    "es": "No aplique cremas pesadas, desodorante ni maquillaje el da del tratamiento; acuda con la piel limpia."
+    "es": "No aplique cremas pesadas, desodorante ni maquillaje el día del tratamiento; acuda con la piel limpia."
   },
   {
     "id": "exp.laser_hair.during.1",
     "en": "Youll feel gentle warmth or quick snaps; cooling is used to keep the skin comfortable.",
-    "es": "Sentir calor suave o pequeños chasquidos; se usa enfriamiento para mantener la piel cómoda."
+    "es": "Sentirá calor suave o pequeños chasquidos; se usa enfriamiento para mantener la piel cómoda."
   },
   {
     "id": "exp.laser_hair.post.1",
@@ -587,7 +587,7 @@
   {
     "id": "faq.laser_hair.q2",
     "en": "Does it hurt?",
-    "es": "Duele el tratamiento?"
+    "es": "¿Duele el tratamiento?"
   },
   {
     "id": "faq.laser_hair.a2",
@@ -597,7 +597,7 @@
   {
     "id": "faq.laser_hair.q3",
     "en": "Can I get treated if I have dark skin?",
-    "es": "Puedo hacerme el tratamiento si tengo piel morena u oscura?"
+    "es": "¿Puedo hacerme el tratamiento si tengo piel morena u oscura?"
   },
   {
     "id": "faq.laser_hair.a3",
@@ -607,7 +607,7 @@
   {
     "id": "faq.laser_hair.q4",
     "en": "How often should I come in?",
-    "es": "Con qué frecuencia debo acudir a mis sesiones?"
+    "es": "¿Con qué frecuencia debo acudir a mis sesiones?"
   },
   {
     "id": "faq.laser_hair.a4",
@@ -812,7 +812,7 @@
   {
     "id": "exp.ipl.during.1",
     "en": "Expect a warm, quick snap sensation; cooling gel and chilled tip help comfort.",
-    "es": "Espere una sensación de chasquido cálido y rápido; el gel fro y la punta refrigerada ayudan a la comodidad."
+    "es": "Espere una sensación de chasquido cálido y rápido; el gel frío y la punta refrigerada ayudan a la comodidad."
   },
   {
     "id": "exp.ipl.during.2",
@@ -832,7 +832,7 @@
   {
     "id": "faq.ipl.q1",
     "en": "How many sessions will I need?",
-    "es": "Cuántas sesiones voy a necesitar?"
+    "es": "¿Cuántas sesiones voy a necesitar?"
   },
   {
     "id": "faq.ipl.a1",
@@ -842,7 +842,7 @@
   {
     "id": "faq.ipl.q2",
     "en": "Is there downtime?",
-    "es": "Hay tiempo de recuperación?"
+    "es": "¿Hay tiempo de recuperación?"
   },
   {
     "id": "faq.ipl.a2",
@@ -852,17 +852,17 @@
   {
     "id": "faq.ipl.q3",
     "en": "Can I wear makeup after IPL?",
-    "es": "Puedo usar maquillaje después de un tratamiento IPL?"
+    "es": "¿Puedo usar maquillaje después de un tratamiento IPL?"
   },
   {
     "id": "faq.ipl.a3",
     "en": "Yes, makeup can usually be worn immediately, unless your provider gives you different instructions.",
-    "es": "S, normalmente puede usar maquillaje de inmediato, a menos que su especialista le indique lo contrario."
+    "es": "Sí, normalmente puede usar maquillaje de inmediato, a menos que su especialista le indique lo contrario."
   },
   {
     "id": "faq.ipl.q4",
     "en": "Does IPL hurt?",
-    "es": "Duele el tratamiento con IPL?"
+    "es": "¿Duele el tratamiento con IPL?"
   },
   {
     "id": "faq.ipl.a4",
@@ -877,7 +877,7 @@
   {
     "id": "svc.rf_microneedling.desc",
     "en": "Sylfirm X combines ultrafast RF Microneedling with dual-wave technology to lift, tighten, and resurface skin with minimal downtime.",
-    "es": "Sylfirm X combina Microneedling de radiofrecuencia ultrarrpido con tecnología de doble onda para levantar, tensar y renovar la piel con mínimo tiempo de recuperación."
+    "es": "Sylfirm X combina Microneedling de radiofrecuencia ultrarrápido con tecnología de doble onda para levantar, tensar y renovar la piel con mínimo tiempo de recuperación."
   },
   {
     "id": "svc.rf_microneedling.details",
@@ -1062,7 +1062,7 @@
   {
     "id": "exp.rf.during.1",
     "en": "Topical anesthetic is applied; expect pressure, heat, and pinpoint sensation as RF energy is delivered.",
-    "es": "Se aplica anestesia típica; espere presión, calor y sensación de puntos finos mientras se entrega la energía de RF."
+    "es": "Se aplica anestesia tópica; espere presión, calor y sensación de puntos finos mientras se entrega la energía de RF."
   },
   {
     "id": "exp.rf.during.2",
@@ -1082,7 +1082,7 @@
   {
     "id": "faq.rf.q1",
     "en": "Is Sylfirm X safer than other RF Microneedling devices?",
-    "es": "Sylfirm X es más seguro que otros dispositivos de Microneedling con RF?"
+    "es": "¿Sylfirm X es más seguro que otros dispositivos de Microneedling con RF?"
   },
   {
     "id": "faq.rf.a1",
@@ -1092,7 +1092,7 @@
   {
     "id": "faq.rf.q2",
     "en": "How is Sylfirm X different from regular Microneedling?",
-    "es": "En qué se diferencia Sylfirm X de un Microneedling tradicional?"
+    "es": "¿En qué se diferencia Sylfirm X de un Microneedling tradicional?"
   },
   {
     "id": "faq.rf.a2",
@@ -1102,7 +1102,7 @@
   {
     "id": "faq.rf.q3",
     "en": "Is there downtime?",
-    "es": "Hay tiempo de recuperación?"
+    "es": "¿Hay tiempo de recuperación?"
   },
   {
     "id": "faq.rf.a3",
@@ -1292,7 +1292,7 @@
   {
     "id": "faq.serum.q1",
     "en": "Is this add-on good for mature or sensitive skin?",
-    "es": "Este complemento es adecuado para piel madura o sensible?"
+    "es": "¿Este complemento es adecuado para piel madura o sensible?"
   },
   {
     "id": "faq.serum.a1",
@@ -1302,22 +1302,22 @@
   {
     "id": "faq.serum.q2",
     "en": "Can I wear makeup after receiving a serum add-on?",
-    "es": "Puedo usar maquillaje después de aplicar un complemento con suero?"
+    "es": "¿Puedo usar maquillaje después de aplicar un complemento con suero?"
   },
   {
     "id": "faq.serum.a2",
     "en": "Yes, unless the primary treatment has specific restrictions. For best results, we recommend letting the skin breathe for a few hours after the session.",
-    "es": "S, a menos que su tratamiento principal tenga restricciones específicas. Para mejores resultados, recomendamos dejar que la piel respire algunas horas después de la sesión."
+    "es": "Sí, a menos que su tratamiento principal tenga restricciones específicas. Para mejores resultados, recomendamos dejar que la piel respire algunas horas después de la sesión."
   },
   {
     "id": "faq.serum.q3",
     "en": "Which serum add-on should I choose?",
-    "es": "Qué complemento con suero debo elegir?"
+    "es": "¿Qué complemento con suero debo elegir?"
   },
   {
     "id": "faq.serum.a3",
     "en": "Your provider will recommend the most effective option based on your skin type, concerns, and the procedure performed that day.",
-    "es": "Su especialista recomendar la opción más efectiva según su tipo de piel, sus necesidades y el procedimiento realizado ese da."
+    "es": "Su especialista recomendará la opción más efectiva según su tipo de piel, sus necesidades y el procedimiento realizado ese día."
   },
   {
     "id": "filter.view_all",
@@ -1347,7 +1347,7 @@
   {
     "id": "filter.laser_hair.intimate",
     "en": "Intimate",
-    "es": "Partes ntimas"
+    "es": "Partes íntimas"
   },
   {
     "id": "filter.ipl.face",
