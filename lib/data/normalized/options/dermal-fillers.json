@@ -51,7 +51,7 @@
     "id": "opt_lip_fillers_generic_deep",
     "serviceId": "svc_lip_fillers",
     "nameKey": "opt.lip_fillers.generic_deep",
-    "price": { "amount": 245, "currency": "USD" },
+    "price": { "amount": 300, "currency": "USD" },
     "isOptionPromoActive": false,
     "promoPrice": null,
     "priceTextKey": "",
