@@ -216,8 +216,13 @@
   },
   {
     "id": "ba.lip_fillers.01.caption",
-    "en": "Results are 1 syringe of medium-density hyaluronic acid filler.",
-    "es": "Resultados con 1 jeringa de relleno de ácido hialurónico de densidad media."
+    "en": "Results are 1 syringe of generic cross-Linked hyaluronic acid - medium density",
+    "es": "Resultados con 1 jeringa de ácido hialurónico genérico reticulado de densidad media."
+  },
+  {
+    "id": "ba.lip_fillers.02.caption",
+    "en": "Results are 1 syringe of generic cross-Linked hyaluronic acid - medium density",
+    "es": "Resultados con 1 jeringa de ácido hialurónico genérico reticulado de densidad media."
   },
   {
     "id": "note.lip_fillers.immediate",
