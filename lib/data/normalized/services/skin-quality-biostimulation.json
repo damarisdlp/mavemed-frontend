@@ -1,0 +1,33 @@
+[
+  {
+    "id": "svc_bio_revit_french_glow",
+    "slug": "bio-revitalization-french-glow",
+    "categoryId": "cat_skin_quality_biostimulation",
+    "nameKey": "svc.bio_revit.name",
+    "descriptionKey": "svc.bio_revit.desc",
+    "detailsKey": "svc.bio_revit.details",
+    "isPopular": true,
+    "isPromoActive": true,
+    "images": {
+      "primary": "/nctf.jpg",
+      "secondary": "/nctf2.jpg"
+    },
+    "notesKeys": [
+      "note.bio_revit.medical_admin",
+      "note.bio_revit.no_volume"
+    ],
+    "goalsKeys": [
+      "goal.bio_revit.hydration",
+      "goal.bio_revit.lines",
+      "goal.bio_revit.pores",
+      "goal.bio_revit.radiance"
+    ],
+    "treatableAreaKeys": [
+      "area.bio_revit.full_face",
+      "area.bio_revit.periorbital",
+      "area.bio_revit.neck",
+      "area.bio_revit.decollete",
+      "area.bio_revit.hands"
+    ]
+  }
+]
