@@ -15,6 +15,11 @@
     "nameKey": "cat.collagen_biostimulators.name"
   },
   {
+    "id": "cat_skin_quality_biostimulation",
+    "slug": "skin-quality-biostimulation",
+    "nameKey": "cat.skin_quality_biostimulation.name"
+  },
+  {
     "id": "cat_skin_tight_sculpting",
     "slug": "skin-tightening",
     "nameKey": "cat.skin_tight_sculpting.name"
