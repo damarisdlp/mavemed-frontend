@@ -1,0 +1,49 @@
+[
+  {
+    "id": "opt_bio_revit_single",
+    "serviceId": "svc_bio_revit_french_glow",
+    "nameKey": "opt.bio_revit.single",
+    "price": {
+      "amount": 145,
+      "currency": "USD"
+    }
+  },
+  {
+    "id": "opt_bio_revit_protocol_3",
+    "serviceId": "svc_bio_revit_french_glow",
+    "nameKey": "opt.bio_revit.protocol_3",
+    "price": {
+      "amount": 435,
+      "currency": "USD"
+    },
+    "optionType": "package",
+    "isOptionPromoActive": true,
+    "promoPrice": {
+      "amount": 390,
+      "currency": "USD"
+    },
+    "notesKeys": [
+      "note.bio_revit.protocol_3.rate",
+      "note.bio_revit.protocol_3.increment"
+    ]
+  },
+  {
+    "id": "opt_bio_revit_protocol_5",
+    "serviceId": "svc_bio_revit_french_glow",
+    "nameKey": "opt.bio_revit.protocol_5",
+    "price": {
+      "amount": 725,
+      "currency": "USD"
+    },
+    "optionType": "package",
+    "isOptionPromoActive": true,
+    "promoPrice": {
+      "amount": 575,
+      "currency": "USD"
+    },
+    "notesKeys": [
+      "note.bio_revit.protocol_5.rate",
+      "note.bio_revit.protocol_5.increment"
+    ]
+  }
+]
