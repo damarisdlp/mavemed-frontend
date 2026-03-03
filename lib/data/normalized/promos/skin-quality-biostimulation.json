@@ -1,0 +1,30 @@
+[
+  {
+    "id": "promo_bio_revit_2026",
+    "serviceId": "svc_bio_revit_french_glow",
+    "headlineKey": "promo.bio_revit.headline",
+    "descriptionKey": "promo.bio_revit.description",
+    "validFrom": "2026-02-02",
+    "validTill": "2026-12-31",
+    "options": [
+      {
+        "optionNameKey": "opt.bio_revit.protocol_3",
+        "notesKeys": [
+          "note.bio_revit.protocol_3.rate",
+          "note.bio_revit.protocol_3.increment"
+        ],
+        "promoType": "seasonal",
+        "validTill": "2026-12-31"
+      },
+      {
+        "optionNameKey": "opt.bio_revit.protocol_5",
+        "notesKeys": [
+          "note.bio_revit.protocol_5.rate",
+          "note.bio_revit.protocol_5.increment"
+        ],
+        "promoType": "seasonal",
+        "validTill": "2026-12-31"
+      }
+    ]
+  }
+]
