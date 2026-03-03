@@ -10,21 +10,23 @@ import { useTranslation } from "next-i18next";
 
 function TreatmentCard({ card, t, router }) {
   return (
-    <div className="w-[265px] sm:w-[320px] md:w-[340px] lg:w-[360px]">
+    <div className="w-[290px] sm:w-[380px] md:w-[440px] xl:w-[500px]">
       <div className="flex flex-col bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm">
-        <div className="relative h-[200px] w-full">
+        <div className="relative h-[220px] sm:h-[250px] md:h-[280px] w-full">
           <Image src={card.image} alt={card.title} fill className="object-cover" />
         </div>
 
-        <div className="p-4 flex-1 flex flex-col justify-between">
-          <div className="mb-4">
-            <h3 className="text-lg font-serif text-black font-medium mb-1">
+        <div className="p-5 md:p-6 flex-1 flex flex-col justify-between">
+          <div className="mb-5">
+            <h3 className="text-xl font-serif text-black font-medium mb-2">
               {card.title}
             </h3>
-            <p className="text-sm text-gray-700 line-clamp-4">{card.description}</p>
+            <p className="text-sm md:text-base text-gray-700 line-clamp-4">
+              {card.description}
+            </p>
           </div>
 
-          <div className="flex flex-col gap-2">
+          <div className="flex flex-col gap-2 sm:flex-row">
             <button
               type="button"
               onClick={() => {
@@ -32,14 +34,14 @@ function TreatmentCard({ card, t, router }) {
                 if (router?.push) router.push(href);
                 else window.location.href = href;
               }}
-              className="bg-black text-white px-4 py-2 rounded-full text-xs hover:bg-[#731a2f] text-center transition"
+              className="bg-black text-white px-5 py-2.5 rounded-full text-sm hover:bg-[#731a2f] text-center transition sm:flex-1"
             >
               {t("treatments.bookNow")}
             </button>
 
             <Link
               href={`/treatments/${card.slug}`}
-              className="border border-gray-300 text-black px-4 py-2 rounded-full text-xs hover:border-black transition text-center"
+              className="border border-gray-300 text-black px-5 py-2.5 rounded-full text-sm hover:border-black transition text-center sm:flex-1"
             >
               {t("treatments.learnMore")}
             </Link>
@@ -57,10 +59,11 @@ export default function PopularTreatments({ treatments = [] }) {
 
   const [sliderRef, sliderInstanceRef] = useKeenSlider({
     loop: true,
-    slides: { perView: 1, spacing: 16 },
+    slides: { perView: 1, spacing: 18 },
     breakpoints: {
-      "(min-width: 768px)": { slides: { perView: 2.2, spacing: 16 } },
-      "(min-width: 1024px)": { slides: { perView: 3.1, spacing: 24 } },
+      "(min-width: 768px)": { slides: { perView: 1.35, spacing: 20 } },
+      "(min-width: 1024px)": { slides: { perView: 1.9, spacing: 24 } },
+      "(min-width: 1536px)": { slides: { perView: 2.35, spacing: 28 } },
     },
   });
   const sliderWheelCarryRef = useRef(0);
@@ -120,7 +123,7 @@ export default function PopularTreatments({ treatments = [] }) {
 
       {/* Same outer and inner wrapper pattern as ReviewsSection */}
       <div className="flex justify-center">
-        <div className="relative w-full max-w-[1100px]">
+        <div className="relative w-full max-w-[1600px]">
           <div ref={sliderRef} className="keen-slider overflow-hidden w-full">
             {popularCards.map((card, idx) => (
               <div key={idx} className="keen-slider__slide px-2 flex justify-center">
