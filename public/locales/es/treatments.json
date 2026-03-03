@@ -14,7 +14,7 @@
     },
     "benefits": "Beneficios",
     "pricing": "Precios",
-    "bookNow": "Reservar Ahora",
+    "bookNow": "Agendar Consulta",
     "learnMore": "Más Información"
   },
   "treatmentsPage": {
@@ -27,7 +27,7 @@
     "searchPlaceholder": "Buscar tratamientos",
     "noResults": "No hay tratamientos que coincidan con tu búsqueda.",
     "clearSearch": "Borrar búsqueda",
-    "bookService": "Reservar {{service}} en Mave Medical Spa en Tijuana",
+    "bookService": "Agendar consulta para {{service}} en Mave Medical Spa en Tijuana",
     "learnMoreAbout": "Saber más sobre {{service}}"
   },
   "pricingTable": {
@@ -78,7 +78,7 @@
   "treatmentDetails": {
     "breadcrumbTreatments": "Tratamientos",
     "priceHeading": "Precio",
-    "bookNow": "Agendar",
+    "bookNow": "Agendar Consulta",
     "exclusivePricing": "Precio Exclusivo",
     "validUntil": "Válido hasta",
     "availableOn": "Disponible en {{days}}",
