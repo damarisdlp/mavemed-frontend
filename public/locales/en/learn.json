@@ -49,6 +49,18 @@
         ]
       },
       {
+        "title": "Skin Quality & Biostimulation",
+        "anchor": "skin-quality-biostimulation",
+        "description": "Hydration-first injectable protocols focused on radiance, texture refinement, and overall skin quality.",
+        "items": [
+          {
+            "title": "NCTF 135 HA and Skin Quality",
+            "excerpt": "An educational guide to how this Fillmed Laboratories polyrevitalizing complex is used to support hydration, glow, and smoother-looking skin.",
+            "href": "/learn/nctf-135-ha-skin-quality-guide"
+          }
+        ]
+      },
+      {
         "title": "Non-Surgical Lifting",
         "anchor": "non-surgical-lifting",
         "description": "How to evaluate lifting devices, planning quality, and provider selection.",
