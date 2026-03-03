@@ -1,0 +1,20 @@
+[
+  {
+    "id": "faq_bio_revit_1",
+    "serviceId": "svc_bio_revit_french_glow",
+    "questionKey": "faq.bio_revit.q1",
+    "answerKey": "faq.bio_revit.a1"
+  },
+  {
+    "id": "faq_bio_revit_2",
+    "serviceId": "svc_bio_revit_french_glow",
+    "questionKey": "faq.bio_revit.q2",
+    "answerKey": "faq.bio_revit.a2"
+  },
+  {
+    "id": "faq_bio_revit_3",
+    "serviceId": "svc_bio_revit_french_glow",
+    "questionKey": "faq.bio_revit.q3",
+    "answerKey": "faq.bio_revit.a3"
+  }
+]
