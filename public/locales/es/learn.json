@@ -49,6 +49,18 @@
         ]
       },
       {
+        "title": "Calidad de piel y bioestimulacion",
+        "anchor": "skin-quality-biostimulation",
+        "description": "Protocolos inyectables enfocados en hidratacion, luminosidad, textura y soporte global de la calidad cutanea.",
+        "items": [
+          {
+            "title": "NCTF 135 HA y calidad de piel",
+            "excerpt": "Una guia educativa sobre como este complejo polirrevitalizante de Fillmed Laboratories se utiliza para apoyar hidratacion, glow y una piel mas uniforme.",
+            "href": "/learn/nctf-135-ha-skin-quality-guide"
+          }
+        ]
+      },
+      {
         "title": "Lifting no quirúrgico",
         "anchor": "non-surgical-lifting",
         "description": "Cómo evaluar dispositivos de lifting, calidad de planificación y elección de proveedor.",
