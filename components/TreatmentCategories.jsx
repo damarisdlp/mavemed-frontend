@@ -16,113 +16,57 @@ export default function TreatmentCategories({ categories = [] }) {
   const cardActionBaseClass =
     "inline-flex w-full items-center justify-center min-h-[36px] px-4 py-2 rounded-full text-xs leading-none transition text-center";
 
-  const CategorySlider = ({ services }) => {
-    // ReviewsSection slider behavior
-    const [sliderRef, sliderInstanceRef] = useKeenSlider({
-      loop: true,
-      slides: { perView: 1, spacing: 16 },
-      breakpoints: {
-        "(min-width: 768px)": { slides: { perView: 2.2, spacing: 16 } },
-        "(min-width: 1024px)": { slides: { perView: 3.1, spacing: 24 } },
-      },
-    });
-
+  const CategoryMobileGrid = ({ services }) => {
     return (
-      <div className="md:hidden">
-        <div className="flex justify-center">
-          <div className="relative w-full max-w-[1100px]">
-            <div ref={sliderRef} className="keen-slider overflow-hidden w-full">
-              {services.map((service, idx) => (
-                <div
-                  key={idx}
-                  className="keen-slider__slide px-2 flex justify-center"
-                >
-                  <div className="w-[275px] sm:w-[320px] md:w-[340px] lg:w-[360px]">
-                    <div className="border border-gray-200 rounded-lg overflow-hidden shadow-sm bg-white">
-                      <div className="relative h-[200px] w-full">
-                        <Image
-                          src={service.image}
-                          alt={`${localize(service.name)} – ${localize(
-                            service.description
-                          )}`}
-                          fill
-                          className="object-cover"
-                        />
-                      </div>
-
-                      <div className="p-4 flex-1 flex flex-col justify-between">
-                        <div className="mb-4">
-                          <h3 className="text-lg text-black font-serif font-medium mb-1">
-                            {localize(service.name)}
-                          </h3>
-                          <p className="text-sm text-gray-700 line-clamp-4">
-                            {localize(service.description)}
-                          </p>
-                        </div>
-
-                        <div className="flex flex-col gap-2">
-                          <button
-                            type="button"
-                            onClick={() =>
-                              router.push(`/treatments/${service.slug}?lead=open`)
-                            }
-                            className={`${cardActionBaseClass} bg-black text-white hover:bg-[#731a2f]`}
-                            aria-label={t("treatmentCategories.bookService", {
-                              service: localize(service.name),
-                            })}
-                          >
-                            {t("treatments.bookNow")}
-                          </button>
-
-                          <Link
-                            href={`/treatments/${service.slug}`}
-                            className={`${cardActionBaseClass} border border-gray-300 text-black hover:border-black`}
-                            aria-label={t("treatmentCategories.learnMoreAbout", {
-                              service: localize(service.name),
-                            })}
-                          >
-                            {t("treatments.learnMore")}
-                          </Link>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              ))}
+      <div className="grid grid-cols-2 gap-3 md:hidden">
+        {services.map((service, idx) => (
+          <div key={idx} className="border border-gray-200 rounded-lg overflow-hidden shadow-sm bg-white">
+            <div className="relative h-[130px] w-full sm:h-[170px]">
+              <Image
+                src={service.image}
+                alt={`${localize(service.name)} – ${localize(service.description)}`}
+                fill
+                className="object-cover"
+              />
             </div>
 
-            {services.length > 1 && (
-              <>
+            <div className="p-3 sm:p-4 flex flex-col justify-between">
+              <div className="mb-3">
+                <h3 className="text-sm sm:text-base text-black font-serif font-medium mb-1 leading-snug">
+                  {localize(service.name)}
+                </h3>
+                <p className="text-xs sm:text-sm text-gray-700 line-clamp-3 sm:line-clamp-4">
+                  {localize(service.description)}
+                </p>
+              </div>
+
+              <div className="flex flex-col gap-2">
                 <button
                   type="button"
-                  onClick={() => sliderInstanceRef.current?.prev()}
-                  className="
-                    absolute
-                    -left-2 md:-left-6
-                    top-1/2 -translate-y-1/2
-                    bg-white border border-gray-300 text-gray-700
-                    rounded-full shadow px-3 py-2 hover:bg-gray-100 z-20
-                  "
+                  onClick={() =>
+                    router.push(`/treatments/${service.slug}?lead=open`)
+                  }
+                  className={`${cardActionBaseClass} bg-black text-white hover:bg-[#731a2f]`}
+                  aria-label={t("treatmentCategories.bookService", {
+                    service: localize(service.name),
+                  })}
                 >
-                  ‹
+                  {t("treatments.bookNow")}
                 </button>
-                <button
-                  type="button"
-                  onClick={() => sliderInstanceRef.current?.next()}
-                  className="
-                    absolute
-                    -right-2 md:-right-6
-                    top-1/2 -translate-y-1/2
-                    bg-white border border-gray-300 text-gray-700
-                    rounded-full shadow px-3 py-2 hover:bg-gray-100 z-20
-                  "
+
+                <Link
+                  href={`/treatments/${service.slug}`}
+                  className={`${cardActionBaseClass} border border-gray-300 text-black hover:border-black`}
+                  aria-label={t("treatmentCategories.learnMoreAbout", {
+                    service: localize(service.name),
+                  })}
                 >
-                  ›
-                </button>
-              </>
-            )}
+                  {t("treatments.learnMore")}
+                </Link>
+              </div>
+            </div>
           </div>
-        </div>
+        ))}
       </div>
     );
   };
@@ -131,6 +75,9 @@ export default function TreatmentCategories({ categories = [] }) {
   const [showScrollTop, setShowScrollTop] = useState(false);
   const [searchTerm, setSearchTerm] = useState("");
 
+  const getCategoryAnchor = (category) =>
+    category?.slug || localize(category?.title).replace(/\s+/g, "-").toLowerCase();
+
   useEffect(() => {
     const handleScroll = () => {
       setShowScrollTop(window.scrollY > 400);
@@ -138,6 +85,12 @@ export default function TreatmentCategories({ categories = [] }) {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  useEffect(() => {
+    if (!router.isReady) return;
+    const queryValue = Array.isArray(router.query.q) ? router.query.q[0] : router.query.q;
+    setSearchTerm(typeof queryValue === "string" ? queryValue : "");
+  }, [router.isReady, router.query.q]);
 
   const normalizeText = (value) =>
     (value || "")
@@ -273,7 +226,7 @@ export default function TreatmentCategories({ categories = [] }) {
                       style={{ width: "max-content", flex: "0 0 auto" }}
                     >
                       <a
-                        href={`#${localize(category.title).replace(/\s+/g, "-").toLowerCase()}`}
+                        href={`#${getCategoryAnchor(category)}`}
                         className="inline-flex min-w-max items-center text-sm md:text-base px-4 py-1.5 sm:py-2 rounded-full border border-gray-300 text-black hover:border-black hover:text-[#731a2f] transition whitespace-nowrap min-h-[36px]"
                       >
                         {localize(category.title)}
@@ -315,7 +268,7 @@ export default function TreatmentCategories({ categories = [] }) {
         {visibleCategories.map((category, i) => (
           <div
             key={i}
-            id={localize(category.title).replace(/\s+/g, "-").toLowerCase()}
+            id={getCategoryAnchor(category)}
             className="mb-16 mt-8 scroll-mt-[calc(var(--site-header-offset)+150px)] sm:scroll-mt-[calc(var(--site-header-offset)+165px)] md:scroll-mt-[calc(var(--site-header-offset)+170px)]"
           >
             <h2
@@ -325,7 +278,7 @@ export default function TreatmentCategories({ categories = [] }) {
             </h2>
 
             {/* Mobile slider per category */}
-            <CategorySlider services={category.services} />
+            <CategoryMobileGrid services={category.services} />
 
             {/* Desktop grid */}
             <div className="hidden md:grid md:grid-cols-3 gap-8">
