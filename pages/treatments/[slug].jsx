@@ -1,6 +1,7 @@
 import { useRouter } from "next/router";
 import Head from "next/head";
 import NextLink from "next/link";
+import Script from "next/script";
 
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -37,6 +38,40 @@ const treatmentLearnLinks = {
   "hybrid-injectable-collagen-biostimulator-ha-caha": {
     href: "/learn/collagen-loss-and-rebuilding-timeline",
     i18nKey: "caha",
+  },
+  "bio-revitalization-french-glow": {
+    href: "/learn/nctf-135-ha-skin-quality-guide",
+    i18nKey: "nctf",
+  },
+};
+
+const LIP_FILLER_VIDEO_CARD = {
+  profileHref: "https://www.tiktok.com/@mavemedicalspa?refer=embed",
+  postHref: "https://www.tiktok.com/@mavemedicalspa/video/7594555458682195255",
+  audioHref:
+    "https://www.tiktok.com/music/sonido-original-7594555682754480909?refer=embed",
+  videoId: "7594555458682195255",
+  copy: {
+    en: {
+      title: "Video explainer",
+      body:
+        "Watch our full lip correction protocol, from dissolving previous filler to reapplying with Vivacy Hyaluronic Acid Fillers.",
+      creatorLabel: "@mavemedicalspa",
+      postCaption:
+        "Paciente que nos visitó desde San Diego. Primero realizamos la aplicación de hialuronidasa para corregir y preparar la zona, y una semana después regresó para aplicar ácido hialurónico, logrando un resultado más armónico y natural. En Mave Medical Spa cuidamos cada paso del proceso para tu seguridad y resultados. Agenda tu valoración.",
+      audioLabel: "sonido original - Mave Medical Spa",
+      cta: "Open the TikTok post",
+    },
+    es: {
+      title: "Video explicativo",
+      body:
+        "Mira nuestro protocolo completo de correccion labial, desde disolver relleno previo hasta reaplicar con rellenos de Acido Hialuronico Vivacy.",
+      creatorLabel: "@mavemedicalspa",
+      postCaption:
+        "Paciente que nos visito desde San Diego. Primero realizamos la aplicacion de hialuronidasa para corregir y preparar la zona, y una semana despues regreso para aplicar acido hialuronico, logrando un resultado mas armonico y natural. En Mave Medical Spa cuidamos cada paso del proceso para tu seguridad y resultados. Agenda tu valoracion.",
+      audioLabel: "sonido original - Mave Medical Spa",
+      cta: "Abrir la publicacion de TikTok",
+    },
   },
 };
 
@@ -142,6 +177,7 @@ export default function TreatmentPage({ treatment, packageGroups = [], addonTrea
   const { t } = useTranslation("treatments");
 
   const currentLocale = typeof router.locale === "string" ? router.locale : "en";
+  const normalizedLocale = currentLocale.toLowerCase().startsWith("es") ? "es" : "en";
   const localize = (field) => getLocalized(field, currentLocale);
   const { asPath } = router;
 
@@ -181,6 +217,8 @@ export default function TreatmentPage({ treatment, packageGroups = [], addonTrea
       ? t(`learnArticle.items.${learnArticle.i18nKey}.subtitle`, { defaultValue: "" })
       : "";
   const showLearnArticle = Boolean(learnArticle && learnTitle);
+  const isLipFillersPage = treatment.urlSlug === "hyaluronic-acid-lip-fillers";
+  const lipFillerVideoCopy = LIP_FILLER_VIDEO_CARD.copy[normalizedLocale];
 
   return (
     <>
@@ -212,6 +250,55 @@ export default function TreatmentPage({ treatment, packageGroups = [], addonTrea
             locale={currentLocale}
             serviceName={localizedName}
           />
+          {isLipFillersPage ? (
+            <div className="max-w-5xl mx-auto px-6 pb-8">
+              <div className="border border-gray-200 bg-[#f9f9f9] rounded-2xl p-5 space-y-2">
+                <p className="text-xs uppercase tracking-[0.25em] text-gray-500">
+                  {lipFillerVideoCopy.title}
+                </p>
+                <p className="text-sm text-gray-700">{lipFillerVideoCopy.body}</p>
+                <div className="pt-2">
+                  <div className="mx-auto flex justify-center overflow-hidden rounded-2xl border border-gray-200 bg-white px-2 py-4">
+                    <blockquote
+                      className="tiktok-embed"
+                      cite={LIP_FILLER_VIDEO_CARD.postHref}
+                      data-video-id={LIP_FILLER_VIDEO_CARD.videoId}
+                      style={{ maxWidth: "605px", minWidth: "325px" }}
+                    >
+                      <section>
+                        <a
+                          target="_blank"
+                          title={lipFillerVideoCopy.creatorLabel}
+                          href={LIP_FILLER_VIDEO_CARD.profileHref}
+                          rel="noreferrer"
+                        >
+                          {lipFillerVideoCopy.creatorLabel}
+                        </a>
+                        <p>{lipFillerVideoCopy.postCaption}</p>
+                        <a
+                          target="_blank"
+                          title={lipFillerVideoCopy.audioLabel}
+                          href={LIP_FILLER_VIDEO_CARD.audioHref}
+                          rel="noreferrer"
+                        >
+                          {lipFillerVideoCopy.audioLabel}
+                        </a>
+                      </section>
+                    </blockquote>
+                  </div>
+                  <Script src="https://www.tiktok.com/embed.js" strategy="lazyOnload" />
+                </div>
+                <a
+                  href={LIP_FILLER_VIDEO_CARD.postHref}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex text-sm text-[#731a2f] underline underline-offset-4"
+                >
+                  {lipFillerVideoCopy.cta}
+                </a>
+              </div>
+            </div>
+          ) : null}
           <PricingTable
             treatment={treatment}
             locale={currentLocale}
