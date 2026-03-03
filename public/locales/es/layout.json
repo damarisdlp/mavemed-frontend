@@ -7,7 +7,36 @@
     "contact": "Contáctanos",
     "location": "Ubicación",
     "faq": "FAQs",
-    "bookWhatsApp": "Reservar"
+    "bookWhatsApp": "Agendar Consulta"
+  },
+  "navTreatments": {
+    "shopByService": "Tipo de Tratamiento",
+    "shopByConcern": "Objetivo de la Piel",
+    "viewAll": "Ver Todos los Tratamientos",
+    "featured": {
+      "eyebrow": "¿No sabes por dónde empezar?",
+      "title": "Explora todos los tratamientos en un solo lugar",
+      "copy": "Compara tipos de servicio, filtra por objetivos de la piel y agenda cuando estés lista."
+    },
+    "categories": {
+      "laserResurfacing": "Tratamientos Láser y Resurfacing Cutáneo",
+      "wrinkleReducers": "Reductores de Arrugas",
+      "collagenBiostimulators": "Bioestimuladores de Colágeno",
+      "skinTightening": "Tensado y Esculpido Cutáneo",
+      "microneedlingMesotherapy": "Microneedling y Mesoterapia",
+      "dermalFillers": "Rellenos Dérmicos",
+      "facials": "Faciales",
+      "bodyMedicalTreatments": "Tratamientos Corporales Médicos",
+      "podiatry": "Podología"
+    },
+    "goals": {
+      "antiAging": "Antiedad",
+      "textureScars": "Textura y Cicatrices de Acné",
+      "volumeContour": "Volumen y Contorno Facial",
+      "pigmentBrightening": "Pigmentación y Luminosidad",
+      "hydrationGlow": "Hidratación y Luminosidad",
+      "bodyWellness": "Cuerpo y Bienestar"
+    }
   },
   "promoBanner": {
     "text": "Accede a nuestra Colección Esencial de Primavera y San Valentín <strong>Ofertas Especiales</strong>.",
