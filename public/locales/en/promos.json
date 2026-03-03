@@ -34,7 +34,7 @@
     "availableOn": "Available on: {{days}}",
     "validThru": "Valid thru",
     "daysLeft": "{{count}} days left",
-    "bookNow": "Book Now",
+    "bookNow": "Schedule Consult",
     "learnMore": "Learn More"
   },
   "pricePrefix": "Starting From"
