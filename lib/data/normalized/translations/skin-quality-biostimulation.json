@@ -1,0 +1,167 @@
+[
+  {
+    "id": "cat.skin_quality_biostimulation.name",
+    "en": "Skin Quality & Biostimulation",
+    "es": "Calidad de Piel y Bioestimulacion"
+  },
+  {
+    "id": "svc.bio_revit.name",
+    "en": "French Bio-Revitalization Therapy",
+    "es": "Terapia de Bio-Revitalizacion Francesa"
+  },
+  {
+    "id": "svc.bio_revit.desc",
+    "en": "A premium \"skin fertilizer\" treatment from France containing 59 active ingredients to restore hydration, radiance, and elasticity.",
+    "es": "Tratamiento premium de \"fertilizacion cutanea\" francesa con 59 ingredientes activos para restaurar la hidratacion, luminosidad y elasticidad."
+  },
+  {
+    "id": "svc.bio_revit.details",
+    "en": "Our French Bio-Revitalization Therapy is a high-performance mesotherapy treatment designed to nourish the skin at a cellular level. Unlike fillers that add volume, this poly-revitalizing complex acts as a nutrient-rich booster. It features a unique blend of Hyaluronic Acid, vitamins, amino acids, and minerals that stimulate the fibroblast cells responsible for natural collagen production. Perfect for those seeking the Glass Skin effect without changing their facial structure.",
+    "es": "Nuestra Terapia de Bio-Revitalizacion Francesa es un tratamiento de mesoterapia de alto rendimiento disenado para nutrir la piel a nivel celular. A diferencia de los rellenos que anaden volumen, este complejo polirrevitalizante actua como un booster rico en nutrientes. Cuenta con una mezcla unica de Acido Hialuronico, vitaminas, aminoacidos y minerales que estimulan los fibroblastos, responsables de la produccion natural de colageno. Ideal para quienes buscan el efecto Glass Skin sin alterar su estructura facial."
+  },
+  {
+    "id": "note.bio_revit.medical_admin",
+    "en": "Strictly for medical professional administration.",
+    "es": "Exclusivamente para administracion por profesional medico."
+  },
+  {
+    "id": "note.bio_revit.no_volume",
+    "en": "Not a filler and does not provide structural volume.",
+    "es": "No es un relleno y no aporta volumen estructural."
+  },
+  {
+    "id": "goal.bio_revit.hydration",
+    "en": "Intense hydration support",
+    "es": "Soporte de hidratacion intensa"
+  },
+  {
+    "id": "goal.bio_revit.lines",
+    "en": "Reduce the look of fine lines",
+    "es": "Reducir la apariencia de lineas finas"
+  },
+  {
+    "id": "goal.bio_revit.pores",
+    "en": "Refine visible pore texture",
+    "es": "Refinar la apariencia de los poros"
+  },
+  {
+    "id": "goal.bio_revit.radiance",
+    "en": "Boost radiance and elasticity",
+    "es": "Aumentar luminosidad y elasticidad"
+  },
+  {
+    "id": "area.bio_revit.full_face",
+    "en": "Full Face",
+    "es": "Rostro Completo"
+  },
+  {
+    "id": "area.bio_revit.periorbital",
+    "en": "Under-eye (Periorbital)",
+    "es": "Contorno de ojos (Periorbital)"
+  },
+  {
+    "id": "area.bio_revit.neck",
+    "en": "Neck",
+    "es": "Cuello"
+  },
+  {
+    "id": "area.bio_revit.decollete",
+    "en": "Decolletage",
+    "es": "Escote"
+  },
+  {
+    "id": "area.bio_revit.hands",
+    "en": "Hands",
+    "es": "Manos"
+  },
+  {
+    "id": "opt.bio_revit.single",
+    "en": "Single Session",
+    "es": "Sesion Individual"
+  },
+  {
+    "id": "opt.bio_revit.protocol_3",
+    "en": "Glow & Hydration Protocol (3 Sessions)",
+    "es": "Protocolo Glow e Hidratacion (3 Sesiones)"
+  },
+  {
+    "id": "opt.bio_revit.protocol_5",
+    "en": "Rejuvenation Protocol (5 Sessions)",
+    "es": "Protocolo de Rejuvenecimiento (5 Sesiones)"
+  },
+  {
+    "id": "promo.bio_revit.headline",
+    "en": "Promo Package",
+    "es": "Paquete Promocional"
+  },
+  {
+    "id": "promo.bio_revit.description",
+    "en": "A French poly-revitalizing treatment designed to deeply hydrate, improve texture, and support a luminous glass-skin finish with package savings.",
+    "es": "Un tratamiento frances polirrevitalizante disenado para hidratar profundamente, mejorar la textura y favorecer un acabado luminoso tipo glass skin con ahorro en paquete."
+  },
+  {
+    "id": "note.bio_revit.protocol_3.rate",
+    "en": "$130 USD per session.",
+    "es": "$130 USD por sesion."
+  },
+  {
+    "id": "note.bio_revit.protocol_3.increment",
+    "en": "Sessions 1 and 2 include the session cost plus 20% of the next session. Total cost is paid in increments.",
+    "es": "Las sesiones 1 y 2 incluyen el costo de la sesion mas el 20% de la siguiente. El total se paga en incrementos."
+  },
+  {
+    "id": "note.bio_revit.protocol_5.rate",
+    "en": "$115 USD per session.",
+    "es": "$115 USD por sesion."
+  },
+  {
+    "id": "note.bio_revit.protocol_5.increment",
+    "en": "Sessions 1, 2, 3, and 4 include the session cost plus 20% of the next session. Total cost is paid in increments.",
+    "es": "Las sesiones 1, 2, 3 y 4 incluyen el costo de la sesion mas el 20% de la siguiente. El total se paga en incrementos."
+  },
+  {
+    "id": "exp.bio_revit.pre.1",
+    "en": "Avoid blood thinners such as aspirin and Vitamin E for 3 days prior if medically appropriate. Arrive with a clean face.",
+    "es": "Evita anticoagulantes como aspirina y Vitamina E durante 3 dias previos si es medicamente adecuado. Llega con el rostro limpio."
+  },
+  {
+    "id": "exp.bio_revit.during.1",
+    "en": "Expect 30 minutes of topical numbing followed by precise micro-injections using a fine delivery technique.",
+    "es": "Se aplican 30 minutos de anestesia topica seguidos de microinyecciones precisas con una tecnica de aplicacion fina."
+  },
+  {
+    "id": "exp.bio_revit.post.1",
+    "en": "Small papules may be visible for 6-12 hours while the product absorbs. Avoid heavy exercise and saunas for 24 hours.",
+    "es": "Pueden verse pequenas papulas durante 6-12 horas mientras el producto se absorbe. Evita ejercicio intenso y saunas por 24 horas."
+  },
+  {
+    "id": "faq.bio_revit.q1",
+    "en": "How many sessions do I need?",
+    "es": "Cuantas sesiones necesito?"
+  },
+  {
+    "id": "faq.bio_revit.a1",
+    "en": "We recommend 3 sessions spaced 15 days apart for optimal results.",
+    "es": "Recomendamos 3 sesiones espaciadas cada 15 dias para resultados optimos."
+  },
+  {
+    "id": "faq.bio_revit.q2",
+    "en": "Is it painful?",
+    "es": "Es doloroso?"
+  },
+  {
+    "id": "faq.bio_revit.a2",
+    "en": "We use a topical anesthetic and ultra-fine needles such as Nanosoft to keep the treatment comfortable.",
+    "es": "Usamos anestesia topica y agujas ultrafinas como Nanosoft para mantener el tratamiento comodo."
+  },
+  {
+    "id": "faq.bio_revit.q3",
+    "en": "When will I see results?",
+    "es": "Cuando vere resultados?"
+  },
+  {
+    "id": "faq.bio_revit.a3",
+    "en": "A visible glow is often noticeable within 24-48 hours, with cumulative texture improvements over the following 3 weeks.",
+    "es": "La luminosidad suele notarse en 24-48 horas, con mejoras acumulativas de textura durante las siguientes 3 semanas."
+  }
+]
