@@ -430,6 +430,29 @@ export default function TreatmentDetails({ treatment, packageGroups = [] }) {
     });
   };
 
+  const renderDescriptionWithLinks = (field) => {
+    const text = getLocalized(field);
+    if (typeof text !== "string" || !text.trim()) return text;
+    if (treatment?.urlSlug !== "bio-revitalization-french-glow") return text;
+
+    const parts = text.split(/(Fillmed Laboratories)/gi);
+    return parts.map((part, idx) => {
+      if (part.toLowerCase() !== "fillmed laboratories") {
+        return <span key={`bio-revit-desc-${idx}`}>{part}</span>;
+      }
+
+      return (
+        <Link
+          key={`bio-revit-desc-link-${idx}`}
+          href={`/${locale === "es" ? "es/" : ""}learn/nctf-135-ha-skin-quality-guide`}
+          className="underline underline-offset-4"
+        >
+          {part}
+        </Link>
+      );
+    });
+  };
+
   const buildPromoDisplayOptions = () => {
     const pricingOptions = pricing?.options || [];
     const pricingOptionByKey = new Map(
@@ -947,7 +970,7 @@ export default function TreatmentDetails({ treatment, packageGroups = [] }) {
               {getLocalized(treatment.serviceDisplayName)}
             </h1>
             <p className="text-gray-700 text-base leading-relaxed">
-              {getLocalized(treatment.description)}
+              {renderDescriptionWithLinks(treatment.description)}
             </p>
           </div>
 
