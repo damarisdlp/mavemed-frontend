@@ -5,6 +5,119 @@ import { useTranslation } from "next-i18next";
 import { useRouter } from "next/router";
 import { dispatchChatOpen } from "@/lib/utils/chat";
 import { getActiveLeadForm, isPromoLeadForm } from "@/lib/data/leadForms";
+import { getTreatmentsNavigation } from "@/lib/navigation/treatmentsMenu";
+
+function ChevronIcon({ open, className = "" }) {
+  return (
+    <svg
+      viewBox="0 0 20 20"
+      aria-hidden="true"
+      className={["h-4 w-4 transition-transform duration-200", open ? "rotate-180" : "", className]
+        .filter(Boolean)
+        .join(" ")}
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.75"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <path d="m5 7.5 5 5 5-5" />
+    </svg>
+  );
+}
+
+function CloseIcon({ className = "" }) {
+  return (
+    <svg
+      viewBox="0 0 20 20"
+      aria-hidden="true"
+      className={["h-5 w-5", className].filter(Boolean).join(" ")}
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.75"
+      strokeLinecap="round"
+    >
+      <path d="M5 5l10 10M15 5 5 15" />
+    </svg>
+  );
+}
+
+function BackIcon({ className = "" }) {
+  return (
+    <svg
+      viewBox="0 0 20 20"
+      aria-hidden="true"
+      className={["h-5 w-5", className].filter(Boolean).join(" ")}
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.75"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <path d="m11.5 4.5-5 5 5 5" />
+    </svg>
+  );
+}
+
+function TreatmentsMenuList({ title, items, onNavigate }) {
+  return (
+    <section>
+      <h3 className="mb-4 text-sm font-semibold uppercase tracking-[0.16em] text-gray-500">
+        {title}
+      </h3>
+      <ul className="space-y-1">
+        {items.map((item) => (
+          <li key={item.id}>
+            <NextLink
+              href={item.href}
+              onClick={onNavigate}
+              className="block rounded-xl px-3 py-2 text-sm text-gray-700 transition hover:bg-[#f7f4f2] hover:text-[#731a2f]"
+            >
+              {item.label}
+            </NextLink>
+          </li>
+        ))}
+      </ul>
+    </section>
+  );
+}
+
+function MobileTreatmentsAccordionSection({
+  title,
+  items,
+  isOpen,
+  onToggle,
+  onNavigate,
+}) {
+  return (
+    <div className="border-b border-gray-200">
+      <button
+        type="button"
+        onClick={onToggle}
+        className="flex w-full items-center justify-between py-5 text-left"
+      >
+        <span className="text-[1.1rem] font-medium text-gray-900">{title}</span>
+        <ChevronIcon open={isOpen} className="text-gray-700" />
+      </button>
+
+      {isOpen && (
+        <ul className="space-y-4 pb-5">
+          {items.map((item) => (
+            <li key={item.id}>
+              <NextLink
+                href={item.href}
+                onClick={onNavigate}
+                className="block text-base text-gray-800 transition hover:text-[#731a2f]"
+              >
+                {item.label}
+              </NextLink>
+            </li>
+          ))}
+        </ul>
+      )}
+    </div>
+  );
+}
 
 export default function Header() {
   const PROMO_H = 35;
@@ -17,14 +130,21 @@ export default function Header() {
   };
 
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isMobileTreatmentsMenuOpen, setIsMobileTreatmentsMenuOpen] = useState(false);
+  const [isDesktopTreatmentsMenuOpen, setIsDesktopTreatmentsMenuOpen] = useState(false);
+  const [expandedMobileSection, setExpandedMobileSection] = useState(null);
   const [scrolled, setScrolled] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
   const [canHover, setCanHover] = useState(false);
   const headerRef = useRef(null);
+  const desktopTreatmentsTriggerRef = useRef(null);
+  const desktopTreatmentsMenuRef = useRef(null);
 
   const { t } = useTranslation("layout");
   const router = useRouter();
   const { locale, asPath } = router;
+  const treatmentsNav = getTreatmentsNavigation(t);
+  const isTreatmentsActive = (asPath || "").startsWith("/treatments");
   const activeForm = getActiveLeadForm();
   const hasPromoBanner = isPromoLeadForm(activeForm);
 
@@ -71,7 +191,12 @@ export default function Header() {
     const handleScroll = () => {
       const s = window.scrollY > 10;
       setScrolled(s);
-      if (window.scrollY > 0) setIsMobileMenuOpen(false);
+      if (window.scrollY > 0) {
+        setIsMobileMenuOpen(false);
+        setIsMobileTreatmentsMenuOpen(false);
+        setIsDesktopTreatmentsMenuOpen(false);
+        setExpandedMobileSection(null);
+      }
     };
 
     window.addEventListener("scroll", handleScroll, { passive: true });
@@ -106,9 +231,34 @@ export default function Header() {
     };
   }, [hasPromoBanner]);
 
+  useEffect(() => {
+    setIsMobileMenuOpen(false);
+    setIsMobileTreatmentsMenuOpen(false);
+    setIsDesktopTreatmentsMenuOpen(false);
+    setExpandedMobileSection(null);
+  }, [asPath, locale]);
+
+  useEffect(() => {
+    if (!isDesktopTreatmentsMenuOpen) return;
+
+    const handlePointerDown = (event) => {
+      if (desktopTreatmentsMenuRef.current?.contains(event.target)) return;
+      if (desktopTreatmentsTriggerRef.current?.contains(event.target)) return;
+      setIsDesktopTreatmentsMenuOpen(false);
+    };
+
+    document.addEventListener("pointerdown", handlePointerDown);
+    return () => document.removeEventListener("pointerdown", handlePointerDown);
+  }, [isDesktopTreatmentsMenuOpen]);
+
   const allowTransparent = !forceSolid;
   const isSolid =
-    !allowTransparent || scrolled || isMobileMenuOpen || (canHover && isHovered);
+    !allowTransparent ||
+    scrolled ||
+    isMobileMenuOpen ||
+    isMobileTreatmentsMenuOpen ||
+    isDesktopTreatmentsMenuOpen ||
+    (canHover && isHovered);
   const isTransparent = !isSolid;
 
   const navText = isTransparent ? "text-white" : "text-gray-700";
@@ -130,7 +280,11 @@ export default function Header() {
         ].join(" ")}
         style={{ top: hasPromoBanner ? PROMO_H : 0 }}
         onMouseEnter={() => canHover && setIsHovered(true)}
-        onMouseLeave={() => canHover && setIsHovered(false)}
+        onMouseLeave={() => {
+          if (!canHover) return;
+          setIsHovered(false);
+          setIsDesktopTreatmentsMenuOpen(false);
+        }}
       >
         <div
           className={`
@@ -143,9 +297,18 @@ export default function Header() {
           {/* Mobile menu toggle */}
           <div className="justify-self-start lg:hidden">
             <button
-              onClick={() => setIsMobileMenuOpen((v) => !v)}
+              onClick={() => {
+                setIsMobileMenuOpen((open) => {
+                  const nextOpen = !open;
+                  if (!nextOpen) {
+                    setIsMobileTreatmentsMenuOpen(false);
+                    setExpandedMobileSection(null);
+                  }
+                  return nextOpen;
+                });
+              }}
               className={`${navText} ${navGlow} focus:outline-none`}
-              aria-label="Open menu"
+              aria-label={isMobileMenuOpen ? "Close menu" : "Open menu"}
               type="button"
             >
               ☰
@@ -154,9 +317,29 @@ export default function Header() {
 
           {/* Desktop left nav */}
           <div className={`hidden lg:flex flex-1 gap-5 text-base whitespace-nowrap ${navText} ${navGlow}`}>
-            <NextLink href="/treatments" className={`${navHover} ${navGlow}`}>
+            <button
+              ref={desktopTreatmentsTriggerRef}
+              type="button"
+              onMouseEnter={() => {
+                if (canHover) setIsDesktopTreatmentsMenuOpen(true);
+              }}
+              onClick={() => {
+                if (canHover) return;
+                setIsDesktopTreatmentsMenuOpen((open) => !open);
+              }}
+              className={[
+                "inline-flex items-center gap-1",
+                isTreatmentsActive ? "text-black font-semibold" : `${navHover} ${navGlow}`,
+              ].join(" ")}
+              aria-expanded={isDesktopTreatmentsMenuOpen}
+              aria-haspopup="true"
+            >
               {t("nav.treatments")}
-            </NextLink>
+              <ChevronIcon
+                open={isDesktopTreatmentsMenuOpen}
+                className={isTreatmentsActive ? "text-black" : navGlow}
+              />
+            </button>
             <NextLink href="/promos" className={`${navHover} ${navGlow}`}>
               {t("nav.promos") || "Promos"}
             </NextLink>
@@ -331,66 +514,228 @@ export default function Header() {
             </div>
           </div>
         </div>
+
+        {isDesktopTreatmentsMenuOpen && (
+          <div className="absolute inset-x-0 top-full hidden pt-3 lg:block">
+            <nav
+              ref={desktopTreatmentsMenuRef}
+              className="mx-auto max-w-7xl px-6"
+              aria-label={treatmentsNav.title}
+            >
+              <div className="grid grid-cols-[minmax(0,1fr)_minmax(0,1fr)_320px] gap-6 rounded-[28px] border border-gray-200 bg-white p-6 shadow-xl">
+                <TreatmentsMenuList
+                  title={treatmentsNav.byType.label}
+                  items={treatmentsNav.byType.items}
+                  onNavigate={() => setIsDesktopTreatmentsMenuOpen(false)}
+                />
+
+                <TreatmentsMenuList
+                  title={treatmentsNav.byGoal.label}
+                  items={treatmentsNav.byGoal.items}
+                  onNavigate={() => setIsDesktopTreatmentsMenuOpen(false)}
+                />
+
+                <aside className="flex flex-col justify-between rounded-3xl bg-[#f7f4f2] p-5">
+                  <div>
+                    <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#6d655f]">
+                      {treatmentsNav.featured.eyebrow}
+                    </p>
+                    <h3 className="mt-3 font-serif text-2xl leading-tight text-gray-900">
+                      {treatmentsNav.featured.title}
+                    </h3>
+                    <p className="mt-3 text-sm leading-relaxed text-gray-700">
+                      {treatmentsNav.featured.copy}
+                    </p>
+                  </div>
+
+                  <div className="mt-6 flex flex-col gap-3">
+                    <button
+                      type="button"
+                      onClick={() => {
+                        setIsDesktopTreatmentsMenuOpen(false);
+                        dispatchChatOpen();
+                      }}
+                      className="inline-flex items-center justify-center rounded-full bg-black px-5 py-3 text-sm text-white transition hover:bg-[#731a2f]"
+                    >
+                      {treatmentsNav.featured.primaryLabel}
+                    </button>
+                    <NextLink
+                      href={treatmentsNav.featured.secondaryHref}
+                      onClick={() => setIsDesktopTreatmentsMenuOpen(false)}
+                      className="inline-flex items-center justify-center rounded-full border border-gray-300 px-5 py-3 text-sm text-gray-900 transition hover:border-black hover:text-[#731a2f]"
+                    >
+                      {treatmentsNav.featured.secondaryLabel}
+                    </NextLink>
+                  </div>
+                </aside>
+              </div>
+            </nav>
+          </div>
+        )}
       </header>
 
       {/* Mobile menu drawer */}
       {isMobileMenuOpen && (
         <nav
-          className="lg:hidden fixed left-0 right-0 flex flex-col items-center gap-4 py-3 bg-white border-t border-gray-200 max-h-[calc(100vh-120px)] overflow-y-auto shadow-md z-50"
+          className="lg:hidden fixed left-0 right-0 border-t border-gray-200 bg-white shadow-md z-50"
           style={{ top: (hasPromoBanner ? PROMO_H : 0) + 105 }}
         >
-          <div className="flex items-center gap-2 mb-1">
-            <NextLink
-              href={asPath}
-              locale="en"
-              className={`text-sm ${locale === "en" ? "text-black font-semibold" : "text-gray-600"}`}
-              onClick={() => setIsMobileMenuOpen(false)}
-            >
-              EN
-            </NextLink>
-            <span className="text-gray-400">|</span>
-            <NextLink
-              href={asPath}
-              locale="es"
-              className={`text-sm ${locale === "es" ? "text-black font-semibold" : "text-gray-600"}`}
-              onClick={() => setIsMobileMenuOpen(false)}
-            >
-              ES
-            </NextLink>
-          </div>
+          {isMobileTreatmentsMenuOpen ? (
+            <div className="max-h-[calc(100vh-120px)] min-h-[calc(100vh-120px)] overflow-y-auto">
+              <div className="flex items-center justify-between border-b border-gray-200 px-4 py-4">
+                <button
+                  type="button"
+                  onClick={() => {
+                    setIsMobileTreatmentsMenuOpen(false);
+                    setExpandedMobileSection(null);
+                  }}
+                  className="rounded-full p-1 text-gray-700 transition hover:bg-gray-100"
+                  aria-label="Back"
+                >
+                  <BackIcon />
+                </button>
+                <span className="font-serif text-xl text-gray-900">{treatmentsNav.title}</span>
+                <button
+                  type="button"
+                  onClick={() => {
+                    setIsMobileMenuOpen(false);
+                    setIsMobileTreatmentsMenuOpen(false);
+                    setExpandedMobileSection(null);
+                  }}
+                  className="rounded-full p-1 text-gray-700 transition hover:bg-gray-100"
+                  aria-label="Close treatments menu"
+                >
+                  <CloseIcon />
+                </button>
+              </div>
 
-          <NextLink href="/treatments" className="text-sm text-gray-700 hover:text-black" onClick={() => setIsMobileMenuOpen(false)}>
-            {t("nav.treatments")}
-          </NextLink>
-          <NextLink href="/promos" className="text-sm text-gray-700 hover:text-black" onClick={() => setIsMobileMenuOpen(false)}>
-            {t("nav.promos") || "Promos"}
-          </NextLink>
-          <NextLink href="/learn" className="text-sm text-gray-700 hover:text-black" onClick={() => setIsMobileMenuOpen(false)}>
-            {t("nav.learn") || "Learn"}
-          </NextLink>
-          <NextLink href="/aboutus" className="text-sm text-gray-700 hover:text-black" onClick={() => setIsMobileMenuOpen(false)}>
-            {t("nav.about")}
-          </NextLink>
-          <NextLink href="/contact" className="text-sm text-gray-700 hover:text-black" onClick={() => setIsMobileMenuOpen(false)}>
-            {t("nav.contact")}
-          </NextLink>
-          <NextLink href="/location" className="text-sm text-gray-700 hover:text-black" onClick={() => setIsMobileMenuOpen(false)}>
-            {t("nav.location")}
-          </NextLink>
-          <NextLink href="/faq" className="text-sm text-gray-700 hover:text-black" onClick={() => setIsMobileMenuOpen(false)}>
-            {t("nav.faq") || "FAQs"}
-          </NextLink>
+              <div className="px-5">
+                <MobileTreatmentsAccordionSection
+                  title={treatmentsNav.byType.label}
+                  items={treatmentsNav.byType.items}
+                  isOpen={expandedMobileSection === treatmentsNav.byType.id}
+                  onToggle={() =>
+                    setExpandedMobileSection((current) =>
+                      current === treatmentsNav.byType.id ? null : treatmentsNav.byType.id
+                    )
+                  }
+                  onNavigate={() => {
+                    setIsMobileMenuOpen(false);
+                    setIsMobileTreatmentsMenuOpen(false);
+                    setExpandedMobileSection(null);
+                  }}
+                />
 
-          <button
-            onClick={() => {
-              setIsMobileMenuOpen(false);
-              dispatchChatOpen();
-            }}
-            className="bg-black text-white px-6 py-2 rounded-full text-sm hover:bg-[#731a2f]"
-            type="button"
-          >
-            {t("nav.bookWhatsApp")}
-          </button>
+                <MobileTreatmentsAccordionSection
+                  title={treatmentsNav.byGoal.label}
+                  items={treatmentsNav.byGoal.items}
+                  isOpen={expandedMobileSection === treatmentsNav.byGoal.id}
+                  onToggle={() =>
+                    setExpandedMobileSection((current) =>
+                      current === treatmentsNav.byGoal.id ? null : treatmentsNav.byGoal.id
+                    )
+                  }
+                  onNavigate={() => {
+                    setIsMobileMenuOpen(false);
+                    setIsMobileTreatmentsMenuOpen(false);
+                    setExpandedMobileSection(null);
+                  }}
+                />
+
+                <NextLink
+                  href="/treatments"
+                  onClick={() => {
+                    setIsMobileMenuOpen(false);
+                    setIsMobileTreatmentsMenuOpen(false);
+                    setExpandedMobileSection(null);
+                  }}
+                  className="block py-5 text-base text-gray-900 transition hover:text-[#731a2f]"
+                >
+                  {treatmentsNav.viewAllLabel}
+                </NextLink>
+
+                <div className="border-t border-gray-200 py-5">
+                  <button
+                    type="button"
+                    onClick={() => {
+                      setIsMobileMenuOpen(false);
+                      setIsMobileTreatmentsMenuOpen(false);
+                      setExpandedMobileSection(null);
+                      dispatchChatOpen();
+                    }}
+                    className="inline-flex items-center justify-center rounded-full bg-black px-6 py-3 text-sm text-white transition hover:bg-[#731a2f]"
+                  >
+                    {treatmentsNav.featured.primaryLabel}
+                  </button>
+                </div>
+              </div>
+            </div>
+          ) : (
+            <div className="flex max-h-[calc(100vh-120px)] flex-col items-center gap-4 overflow-y-auto py-3">
+              <div className="flex items-center gap-2 mb-1">
+                <NextLink
+                  href={asPath}
+                  locale="en"
+                  className={`text-sm ${locale === "en" ? "text-black font-semibold" : "text-gray-600"}`}
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  EN
+                </NextLink>
+                <span className="text-gray-400">|</span>
+                <NextLink
+                  href={asPath}
+                  locale="es"
+                  className={`text-sm ${locale === "es" ? "text-black font-semibold" : "text-gray-600"}`}
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  ES
+                </NextLink>
+              </div>
+
+              <button
+                type="button"
+                onClick={() => {
+                  setIsMobileTreatmentsMenuOpen(true);
+                  setExpandedMobileSection(treatmentsNav.byType.id);
+                }}
+                className="inline-flex items-center gap-1 text-sm text-gray-700 hover:text-black"
+                aria-expanded={isMobileTreatmentsMenuOpen}
+                aria-haspopup="true"
+              >
+                {t("nav.treatments")}
+                <ChevronIcon open={false} />
+              </button>
+              <NextLink href="/promos" className="text-sm text-gray-700 hover:text-black" onClick={() => setIsMobileMenuOpen(false)}>
+                {t("nav.promos") || "Promos"}
+              </NextLink>
+              <NextLink href="/learn" className="text-sm text-gray-700 hover:text-black" onClick={() => setIsMobileMenuOpen(false)}>
+                {t("nav.learn") || "Learn"}
+              </NextLink>
+              <NextLink href="/aboutus" className="text-sm text-gray-700 hover:text-black" onClick={() => setIsMobileMenuOpen(false)}>
+                {t("nav.about")}
+              </NextLink>
+              <NextLink href="/contact" className="text-sm text-gray-700 hover:text-black" onClick={() => setIsMobileMenuOpen(false)}>
+                {t("nav.contact")}
+              </NextLink>
+              <NextLink href="/location" className="text-sm text-gray-700 hover:text-black" onClick={() => setIsMobileMenuOpen(false)}>
+                {t("nav.location")}
+              </NextLink>
+              <NextLink href="/faq" className="text-sm text-gray-700 hover:text-black" onClick={() => setIsMobileMenuOpen(false)}>
+                {t("nav.faq") || "FAQs"}
+              </NextLink>
+
+              <button
+                onClick={() => {
+                  setIsMobileMenuOpen(false);
+                  dispatchChatOpen();
+                }}
+                className="bg-black text-white px-6 py-2 rounded-full text-sm hover:bg-[#731a2f]"
+                type="button"
+              >
+                {t("nav.bookWhatsApp")}
+              </button>
+            </div>
+          )}
         </nav>
       )}
     </>
