@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { useMemo, useState } from "react";
 import { useRouter } from "next/router";
 import { useTranslation } from "next-i18next";
@@ -42,6 +43,28 @@ export default function TreatmentInfoTabs({ treatment, locale: propLocale }) {
   const [activeKey, setActiveKey] = useState(firstWithItems.key);
   const activeTab = tabs.find((tab) => tab.key === activeKey) || firstWithItems;
 
+  const renderTextWithLinks = (text) => {
+    if (typeof text !== "string" || !text.trim()) return text;
+    if (treatment?.urlSlug !== "bio-revitalization-french-glow") return text;
+
+    const parts = text.split(/(Fillmed Laboratories)/gi);
+    return parts.map((part, idx) => {
+      if (part.toLowerCase() !== "fillmed laboratories") {
+        return <span key={`bio-revit-details-${idx}`}>{part}</span>;
+      }
+
+      return (
+        <Link
+          key={`bio-revit-details-link-${idx}`}
+          href={`/${locale === "es" ? "es/" : ""}learn/nctf-135-ha-skin-quality-guide`}
+          className="underline underline-offset-4"
+        >
+          {part}
+        </Link>
+      );
+    });
+  };
+
   return (
     <section className="bg-white py-8">
       <div className="container mx-auto px-4">
@@ -74,7 +97,7 @@ export default function TreatmentInfoTabs({ treatment, locale: propLocale }) {
               activeTab.type === "text" ? (
                 <div className="space-y-4">
                   <p className="text-base text-[#2f2316] leading-relaxed">
-                    {localize(activeTab.items[0])}
+                    {renderTextWithLinks(localize(activeTab.items[0]))}
                   </p>
                   {activeTab.notes?.length > 0 && (
                     <ul className="list-disc list-outside pl-5 space-y-2 text-base text-[#2f2316] italic">
