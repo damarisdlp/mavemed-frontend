@@ -6,7 +6,7 @@ export default function CTABanner() {
   return (
     <section id="contact" className="bg-black text-white text-center py-16 px-6">
       <h2 className="text-3xl font-medium mb-4">
-        Book Your Complimentary Consultation
+        Schedule Your Complimentary Consultation
       </h2>
       <p className="text-gray-300 text-lg mb-6">
         Let our doctors build your personalized, ideal rejuvenation treatment plan.
