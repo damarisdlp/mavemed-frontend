@@ -34,7 +34,7 @@
     "availableOn": "Disponible: {{days}}",
     "validThru": "Válido hasta",
     "daysLeft": "Quedan {{count}} días",
-    "bookNow": "Reservar ahora",
+    "bookNow": "Agendar Consulta",
     "learnMore": "Más información"
   },
   "pricePrefix": "Desde"
