@@ -7,7 +7,36 @@
     "contact": "Contact Us",
     "location": "Location",
     "faq": "FAQs",
-    "bookWhatsApp": "Book"
+    "bookWhatsApp": "Schedule Consult"
+  },
+  "navTreatments": {
+    "shopByService": "Treatment Type",
+    "shopByConcern": "Skin Goal",
+    "viewAll": "View All Treatments",
+    "featured": {
+      "eyebrow": "Not sure where to start?",
+      "title": "Browse every treatment in one place",
+      "copy": "Compare service types, filter by skin goals, and book when you are ready."
+    },
+    "categories": {
+      "laserResurfacing": "Laser Treatments & Skin Resurfacing",
+      "wrinkleReducers": "Wrinkle Reducers",
+      "collagenBiostimulators": "Collagen Biostimulators",
+      "skinTightening": "Skin Tightening & Sculpting",
+      "microneedlingMesotherapy": "Microneedling & Mesotherapy",
+      "dermalFillers": "Dermal Fillers",
+      "facials": "Facials",
+      "bodyMedicalTreatments": "Body Medical Treatments",
+      "podiatry": "Podiatry"
+    },
+    "goals": {
+      "antiAging": "Anti-Aging",
+      "textureScars": "Texture & Acne Scars",
+      "volumeContour": "Volume & Facial Contour",
+      "pigmentBrightening": "Pigment & Brightening",
+      "hydrationGlow": "Hydration & Glow",
+      "bodyWellness": "Body & Wellness"
+    }
   },
   "promoBanner": {
     "text": "Access our Valentine’s Spring Core Collection <strong>Special Offers</strong>.",
