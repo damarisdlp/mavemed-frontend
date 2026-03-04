@@ -8,6 +8,24 @@
     "validTill": "2026-12-31",
     "options": [
       {
+        "optionNameKey": "opt.botox.per_unit",
+        "notesKeys": [
+          "note.botox.any_zone",
+          "promo.botox.note2"
+        ],
+        "promoType": "seasonal",
+        "validTill": "2026-03-14"
+      },
+      {
+        "optionNameKey": "opt.dermawrinkle.per_unit",
+        "notesKeys": [
+          "note.dermawrinkle.any_zone",
+          "promo.dermawrinkle.note2"
+        ],
+        "promoType": "seasonal",
+        "validTill": "2026-03-14"
+      },
+      {
         "optionNameKey": "opt.weekly.tox_collagen.botox_package",
         "notesKeys": [
           "note.weekly.tox_collagen.includes.heading",
