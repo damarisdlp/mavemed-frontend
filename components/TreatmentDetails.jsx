@@ -248,7 +248,8 @@ export default function TreatmentDetails({ treatment, packageGroups = [] }) {
     });
   };
 
-  const renderNoteWithLinks = (note) => {
+  const renderNoteWithLinks = (note, options = {}) => {
+    const { linkToxin = true } = options;
     const text = getLocalized(note);
     if (typeof text !== "string" || !text.trim()) return text;
     const parts = text.split(
@@ -317,6 +318,7 @@ export default function TreatmentDetails({ treatment, packageGroups = [] }) {
         );
       }
       if (lower === "toxin" || lower === "toxina") {
+        if (!linkToxin) return part;
         return (
           <Link
             key={`note-toxin-${idx}`}
@@ -1081,7 +1083,8 @@ export default function TreatmentDetails({ treatment, packageGroups = [] }) {
                               ) : null}
                               <div className="font-semibold">
                                 {renderNoteWithLinks(
-                                  optionLabel || getLocalized(treatment?.serviceDisplayName)
+                                  optionLabel || getLocalized(treatment?.serviceDisplayName),
+                                  { linkToxin: false }
                                 )}
                               </div>
                               <div className="text-white">
