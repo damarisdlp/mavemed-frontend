@@ -17,6 +17,10 @@ import ReviewsSection from "@/components/ReviewsSection"
 import Breadcrumbs from "@/components/Breadcrumbs";
 import SeoLinks from "@/components/SeoLinks";
 import BeforeAfterCarousel from "@/components/BeforeAfterCarousel";
+import {
+  discoverBeforeAfterGalleryBySlug,
+  mergeBeforeAfterSlides,
+} from "@/lib/utils/beforeAfterGallery";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import nextI18NextConfig from "../../next-i18next.config";
 import { useTranslation } from "next-i18next";
@@ -73,103 +77,6 @@ const LIP_FILLER_VIDEO_CARD = {
       cta: "Abrir la publicacion de TikTok",
     },
   },
-};
-
-const BEFORE_AFTER_FILE_PATTERN = /^(\d+)-(before|after)\.(jpe?g|png|webp|avif)$/i;
-const BEFORE_AFTER_EXT_PRIORITY = {
-  jpg: 0,
-  jpeg: 1,
-  webp: 2,
-  png: 3,
-  avif: 4,
-};
-
-const getExtensionPriority = (ext) => {
-  const normalized = String(ext || "").toLowerCase();
-  return Number.isFinite(BEFORE_AFTER_EXT_PRIORITY[normalized])
-    ? BEFORE_AFTER_EXT_PRIORITY[normalized]
-    : 99;
-};
-
-const discoverBeforeAfterGalleryBySlug = async (slug) => {
-  if (!slug || typeof slug !== "string") return [];
-  const [{ readdir }, path] = await Promise.all([
-    import("fs/promises"),
-    import("path"),
-  ]);
-  const folderPath = path.join(process.cwd(), "public", "before-after", slug);
-  let entries = [];
-  try {
-    entries = await readdir(folderPath, { withFileTypes: true });
-  } catch {
-    return [];
-  }
-
-  const byId = new Map();
-  entries.forEach((entry) => {
-    if (!entry?.isFile?.()) return;
-    const match = entry.name.match(BEFORE_AFTER_FILE_PATTERN);
-    if (!match) return;
-    const [, rawId, sideRaw, extRaw] = match;
-    const id = String(rawId).trim();
-    const side = sideRaw.toLowerCase();
-    const ext = extRaw.toLowerCase();
-    const existing = byId.get(id) || { id, before: [], after: [] };
-    existing[side].push({
-      fileName: entry.name,
-      priority: getExtensionPriority(ext),
-    });
-    byId.set(id, existing);
-  });
-
-  const pickPreferred = (items = []) =>
-    [...items].sort((a, b) => a.priority - b.priority || a.fileName.localeCompare(b.fileName))[0];
-
-  return Array.from(byId.values())
-    .map((item) => {
-      const before = pickPreferred(item.before);
-      const after = pickPreferred(item.after);
-      if (!before || !after) return null;
-      return {
-        id: item.id,
-        beforeSrc: `/before-after/${slug}/${before.fileName}`,
-        afterSrc: `/before-after/${slug}/${after.fileName}`,
-      };
-    })
-    .filter(Boolean)
-    .sort((a, b) => {
-      const aNum = Number(a.id);
-      const bNum = Number(b.id);
-      if (Number.isFinite(aNum) && Number.isFinite(bNum) && aNum !== bNum) return aNum - bNum;
-      return String(a.id).localeCompare(String(b.id));
-    });
-};
-
-const mergeBeforeAfterSlides = (configuredSlides = [], discoveredSlides = []) => {
-  const configured = Array.isArray(configuredSlides) ? configuredSlides : [];
-  const discovered = Array.isArray(discoveredSlides) ? discoveredSlides : [];
-  if (!configured.length) return discovered;
-  if (!discovered.length) return configured;
-
-  const map = new Map();
-  configured.forEach((slide, index) => {
-    const key =
-      slide?.id != null && String(slide.id).trim() !== ""
-        ? `id:${String(slide.id).trim()}`
-        : `cfg:${index}`;
-    map.set(key, slide);
-  });
-  discovered.forEach((slide) => {
-    const idKey =
-      slide?.id != null && String(slide.id).trim() !== ""
-        ? `id:${String(slide.id).trim()}`
-        : "";
-    if (idKey && map.has(idKey)) return;
-    const srcKey = `src:${slide.beforeSrc}|${slide.afterSrc}`;
-    if (map.has(srcKey)) return;
-    map.set(idKey || srcKey, slide);
-  });
-  return Array.from(map.values());
 };
 
 export default function TreatmentPage({ treatment, packageGroups = [], addonTreatments = [] }) {
