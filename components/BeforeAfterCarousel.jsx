@@ -26,6 +26,7 @@ export default function BeforeAfterCarousel({
   gallery = [],
   locale = "en",
   serviceName = "",
+  compact = false,
 }) {
   const { t } = useTranslation("treatments");
   const slides = (Array.isArray(gallery) ? gallery : []).filter(isValidSlide);
@@ -51,6 +52,9 @@ export default function BeforeAfterCarousel({
   if (!slides.length) return null;
 
   const localize = (value, fallback = "") => getLocalized(value, locale) || fallback;
+  const imageAspectClasses = compact
+    ? "aspect-[16/15] sm:aspect-[32/15] md:aspect-[64/27]"
+    : "aspect-[4/5] sm:aspect-[16/10] md:aspect-[16/9]";
 
   return (
     <section className="max-w-5xl mx-auto px-6 pb-10">
@@ -72,7 +76,7 @@ export default function BeforeAfterCarousel({
             return (
               <div key={`${slide.beforeSrc}-${slide.afterSrc}-${index}`} className="keen-slider__slide">
                 <div className="rounded-2xl border border-gray-200 bg-white shadow-sm overflow-hidden">
-                  <div className="relative w-full aspect-[4/5] sm:aspect-[16/10] md:aspect-[16/9] bg-gray-100">
+                  <div className={`relative w-full ${imageAspectClasses} bg-gray-100`}>
                     <Image
                       src={slide.afterSrc}
                       alt={altText}
