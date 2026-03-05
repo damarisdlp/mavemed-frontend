@@ -5,7 +5,9 @@
     "p1": "Cross the border for natural-looking results.",
     "p2": "We specialize in Neuromodulators, Collagen Biostimulators, Dermal Fillers, PDO threads, Sylfirm X radiofrequency microneedling, laser treatments and various rejuvenation and regenerative treatments.",
     "p3": "Trusted by clients from San Diego, Los Angeles, Orange County, Tijuana and beyond.",
-    "cta": "Schedule Consult"
+    "cta": "Schedule Consult",
+    "viewAllTreatments": "View All Treatments",
+    "messageUs": "Message Us"
   },
   "aboutSection": {
     "title": "About Mave",
@@ -109,5 +111,14 @@
     "title": "Follow us",
     "subtitle": "Follow us on Instagram to stay up to date and see the latest aesthetic advancements.",
     "follow": "Follow us: @mavemedicalspa"
+  },
+  "beforeAfterShowcase": {
+    "heading": "Visible Change. Personalized Care.",
+    "fallbackCategory": "Treatments",
+    "fallbackService": "Before and After Results",
+    "before": "Before",
+    "after": "After",
+    "prevAria": "Previous before and after result",
+    "nextAria": "Next before and after result"
   }
 }
