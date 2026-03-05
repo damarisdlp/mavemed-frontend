@@ -12,10 +12,11 @@ import PromoBanner from "@/components/PromoBanner";
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import BrandCarousel from "@/components/BrandCarousel";
+import HomeBeforeAfterShowcase from "@/components/HomeBeforeAfterShowcase";
 import PopularTreatments from "@/components/PopularTreatments";
 import ContactCTA from "@/components/ContactCTA";
 import LocationMap from "@/components/LocationSection";
-import InstagramFeed from "@/components/InstagramFeed"
+import InstagramFeed from "@/components/InstagramFeed";
 import ReviewsSection from "@/components/ReviewsSection";
 import PromoPackageSection from "@/components/PromoPackageSection";
 import Footer from "@/components/Footer";
@@ -23,8 +24,10 @@ import ScrollToTopButton from "@/components/ScrollToTop";
 import SeoLinks from "@/components/SeoLinks";
 import LeadPopupGate from "@/components/LeadPopupGate";
 import { getLocalized } from "@/lib/i18n/getLocalized";
+import { discoverAllBeforeAfterBySlug } from "@/lib/utils/beforeAfterGallery";
+import { buildHomeBeforeAfterItems } from "@/lib/utils/homeBeforeAfterShowcase";
 
-export default function Home({ popularTreatments = [] }) {
+export default function Home({ popularTreatments = [], beforeAfterItems = [] }) {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const { asPath, locale } = useRouter();
   const { t } = useTranslation("home");
@@ -110,6 +113,9 @@ export default function Home({ popularTreatments = [] }) {
       <Header isMobileMenuOpen={isMobileMenuOpen} setIsMobileMenuOpen={setIsMobileMenuOpen} />
       <HeroSection />
       <BrandCarousel />
+      {beforeAfterItems.length ? (
+        <HomeBeforeAfterShowcase items={beforeAfterItems} locale={locale || "en"} />
+      ) : null}
       <HomeLeadForm />
       <ApproachSection />
       <PopularTreatments treatments={popularTreatments} />
@@ -134,6 +140,12 @@ export async function getStaticProps({ locale }) {
   const { allTreatments } = await import("@/lib/data/allTreatments");
   const currentLocale = locale || "en";
   const localize = (field) => getLocalized(field, currentLocale);
+  const discoveredBeforeAfterBySlug = await discoverAllBeforeAfterBySlug();
+  const beforeAfterItems = buildHomeBeforeAfterItems(
+    allTreatments,
+    discoveredBeforeAfterBySlug,
+  );
+
   const popularTreatments = allTreatments
     .filter((tr) => tr && tr.isPopular)
     .map((tr) => ({
@@ -147,10 +159,11 @@ export async function getStaticProps({ locale }) {
   return {
     props: {
       popularTreatments,
+      beforeAfterItems,
       ...(await serverSideTranslations(
         locale ?? "en",
         ["layout", "home", "treatments", "location"],
-        nextI18NextConfig
+        nextI18NextConfig,
       )),
     },
   };
