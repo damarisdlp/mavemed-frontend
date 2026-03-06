@@ -1,37 +1,145 @@
 [
   {
-    "id": "addon_microneedling_botox",
-    "parentServiceId": "svc_microneedling",
+    "id": "addon_microneedling_botox_prp",
+    "parentServiceId": "svc_microneedling_prp",
     "childServiceId": "svc_botox",
     "optionNameKey": "addon.microneedling.botox"
   },
   {
-    "id": "addon_microneedling_hydrafacial",
-    "parentServiceId": "svc_microneedling",
+    "id": "addon_microneedling_hydrafacial_prp",
+    "parentServiceId": "svc_microneedling_prp",
     "childServiceId": "svc_hydrafacial",
     "optionNameKey": "addon.microneedling.hydrafacial"
   },
   {
-    "id": "addon_microneedling_casmara_retinol",
-    "parentServiceId": "svc_microneedling",
+    "id": "addon_microneedling_casmara_retinol_prp",
+    "parentServiceId": "svc_microneedling_prp",
     "childServiceId": "svc_casmara_retinol_proage",
     "optionNameKey": "addon.microneedling.casmara_retinol"
   },
   {
-    "id": "addon_microneedling_janssen_ultra",
-    "parentServiceId": "svc_microneedling",
+    "id": "addon_microneedling_janssen_ultra_prp",
+    "parentServiceId": "svc_microneedling_prp",
     "childServiceId": "svc_janssen_ultra_renewal",
     "optionNameKey": "addon.microneedling.janssen_ultra"
   },
   {
-    "id": "addon_microneedling_pdo_threads",
-    "parentServiceId": "svc_microneedling",
+    "id": "addon_microneedling_pdo_threads_prp",
+    "parentServiceId": "svc_microneedling_prp",
     "childServiceId": "svc_pdo_biostimulating_threads",
     "optionNameKey": "addon.microneedling.pdo_threads"
   },
   {
-    "id": "addon_microneedling_rf_face",
-    "parentServiceId": "svc_microneedling",
+    "id": "addon_microneedling_rf_face_prp",
+    "parentServiceId": "svc_microneedling_prp",
+    "childServiceId": "svc_rf_microneedling",
+    "optionNameKey": "addon.microneedling.rf_face"
+  },
+  {
+    "id": "addon_microneedling_botox_pn",
+    "parentServiceId": "svc_microneedling_polynucleotides",
+    "childServiceId": "svc_botox",
+    "optionNameKey": "addon.microneedling.botox"
+  },
+  {
+    "id": "addon_microneedling_hydrafacial_pn",
+    "parentServiceId": "svc_microneedling_polynucleotides",
+    "childServiceId": "svc_hydrafacial",
+    "optionNameKey": "addon.microneedling.hydrafacial"
+  },
+  {
+    "id": "addon_microneedling_casmara_retinol_pn",
+    "parentServiceId": "svc_microneedling_polynucleotides",
+    "childServiceId": "svc_casmara_retinol_proage",
+    "optionNameKey": "addon.microneedling.casmara_retinol"
+  },
+  {
+    "id": "addon_microneedling_janssen_ultra_pn",
+    "parentServiceId": "svc_microneedling_polynucleotides",
+    "childServiceId": "svc_janssen_ultra_renewal",
+    "optionNameKey": "addon.microneedling.janssen_ultra"
+  },
+  {
+    "id": "addon_microneedling_pdo_threads_pn",
+    "parentServiceId": "svc_microneedling_polynucleotides",
+    "childServiceId": "svc_pdo_biostimulating_threads",
+    "optionNameKey": "addon.microneedling.pdo_threads"
+  },
+  {
+    "id": "addon_microneedling_rf_face_pn",
+    "parentServiceId": "svc_microneedling_polynucleotides",
+    "childServiceId": "svc_rf_microneedling",
+    "optionNameKey": "addon.microneedling.rf_face"
+  },
+  {
+    "id": "addon_microneedling_botox_pdrn",
+    "parentServiceId": "svc_microneedling_pdrn",
+    "childServiceId": "svc_botox",
+    "optionNameKey": "addon.microneedling.botox"
+  },
+  {
+    "id": "addon_microneedling_hydrafacial_pdrn",
+    "parentServiceId": "svc_microneedling_pdrn",
+    "childServiceId": "svc_hydrafacial",
+    "optionNameKey": "addon.microneedling.hydrafacial"
+  },
+  {
+    "id": "addon_microneedling_casmara_retinol_pdrn",
+    "parentServiceId": "svc_microneedling_pdrn",
+    "childServiceId": "svc_casmara_retinol_proage",
+    "optionNameKey": "addon.microneedling.casmara_retinol"
+  },
+  {
+    "id": "addon_microneedling_janssen_ultra_pdrn",
+    "parentServiceId": "svc_microneedling_pdrn",
+    "childServiceId": "svc_janssen_ultra_renewal",
+    "optionNameKey": "addon.microneedling.janssen_ultra"
+  },
+  {
+    "id": "addon_microneedling_pdo_threads_pdrn",
+    "parentServiceId": "svc_microneedling_pdrn",
+    "childServiceId": "svc_pdo_biostimulating_threads",
+    "optionNameKey": "addon.microneedling.pdo_threads"
+  },
+  {
+    "id": "addon_microneedling_rf_face_pdrn",
+    "parentServiceId": "svc_microneedling_pdrn",
+    "childServiceId": "svc_rf_microneedling",
+    "optionNameKey": "addon.microneedling.rf_face"
+  },
+  {
+    "id": "addon_microneedling_botox_toskani",
+    "parentServiceId": "svc_microneedling_toskani",
+    "childServiceId": "svc_botox",
+    "optionNameKey": "addon.microneedling.botox"
+  },
+  {
+    "id": "addon_microneedling_hydrafacial_toskani",
+    "parentServiceId": "svc_microneedling_toskani",
+    "childServiceId": "svc_hydrafacial",
+    "optionNameKey": "addon.microneedling.hydrafacial"
+  },
+  {
+    "id": "addon_microneedling_casmara_retinol_toskani",
+    "parentServiceId": "svc_microneedling_toskani",
+    "childServiceId": "svc_casmara_retinol_proage",
+    "optionNameKey": "addon.microneedling.casmara_retinol"
+  },
+  {
+    "id": "addon_microneedling_janssen_ultra_toskani",
+    "parentServiceId": "svc_microneedling_toskani",
+    "childServiceId": "svc_janssen_ultra_renewal",
+    "optionNameKey": "addon.microneedling.janssen_ultra"
+  },
+  {
+    "id": "addon_microneedling_pdo_threads_toskani",
+    "parentServiceId": "svc_microneedling_toskani",
+    "childServiceId": "svc_pdo_biostimulating_threads",
+    "optionNameKey": "addon.microneedling.pdo_threads"
+  },
+  {
+    "id": "addon_microneedling_rf_face_toskani",
+    "parentServiceId": "svc_microneedling_toskani",
     "childServiceId": "svc_rf_microneedling",
     "optionNameKey": "addon.microneedling.rf_face"
   },
