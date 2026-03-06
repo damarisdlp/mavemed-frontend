@@ -1,25 +1,97 @@
 [
   {
-    "id": "faq_microneedling_1",
-    "serviceId": "svc_microneedling",
+    "id": "faq_microneedling_1_prp",
+    "serviceId": "svc_microneedling_prp",
     "questionKey": "faq.microneedling.q1",
     "answerKey": "faq.microneedling.a1"
   },
   {
-    "id": "faq_microneedling_2",
-    "serviceId": "svc_microneedling",
+    "id": "faq_microneedling_2_prp",
+    "serviceId": "svc_microneedling_prp",
     "questionKey": "faq.microneedling.q2",
     "answerKey": "faq.microneedling.a2"
   },
   {
-    "id": "faq_microneedling_3",
-    "serviceId": "svc_microneedling",
+    "id": "faq_microneedling_3_prp",
+    "serviceId": "svc_microneedling_prp",
     "questionKey": "faq.microneedling.q3",
     "answerKey": "faq.microneedling.a3"
   },
   {
-    "id": "faq_microneedling_4",
-    "serviceId": "svc_microneedling",
+    "id": "faq_microneedling_4_prp",
+    "serviceId": "svc_microneedling_prp",
+    "questionKey": "faq.microneedling.q4",
+    "answerKey": "faq.microneedling.a4"
+  },
+  {
+    "id": "faq_microneedling_1_pn",
+    "serviceId": "svc_microneedling_polynucleotides",
+    "questionKey": "faq.microneedling.q1",
+    "answerKey": "faq.microneedling.a1"
+  },
+  {
+    "id": "faq_microneedling_2_pn",
+    "serviceId": "svc_microneedling_polynucleotides",
+    "questionKey": "faq.microneedling.q2",
+    "answerKey": "faq.microneedling.a2"
+  },
+  {
+    "id": "faq_microneedling_3_pn",
+    "serviceId": "svc_microneedling_polynucleotides",
+    "questionKey": "faq.microneedling.q3",
+    "answerKey": "faq.microneedling.a3"
+  },
+  {
+    "id": "faq_microneedling_4_pn",
+    "serviceId": "svc_microneedling_polynucleotides",
+    "questionKey": "faq.microneedling.q4",
+    "answerKey": "faq.microneedling.a4"
+  },
+  {
+    "id": "faq_microneedling_1_pdrn",
+    "serviceId": "svc_microneedling_pdrn",
+    "questionKey": "faq.microneedling.q1",
+    "answerKey": "faq.microneedling.a1"
+  },
+  {
+    "id": "faq_microneedling_2_pdrn",
+    "serviceId": "svc_microneedling_pdrn",
+    "questionKey": "faq.microneedling.q2",
+    "answerKey": "faq.microneedling.a2"
+  },
+  {
+    "id": "faq_microneedling_3_pdrn",
+    "serviceId": "svc_microneedling_pdrn",
+    "questionKey": "faq.microneedling.q3",
+    "answerKey": "faq.microneedling.a3"
+  },
+  {
+    "id": "faq_microneedling_4_pdrn",
+    "serviceId": "svc_microneedling_pdrn",
+    "questionKey": "faq.microneedling.q4",
+    "answerKey": "faq.microneedling.a4"
+  },
+  {
+    "id": "faq_microneedling_1_toskani",
+    "serviceId": "svc_microneedling_toskani",
+    "questionKey": "faq.microneedling.q1",
+    "answerKey": "faq.microneedling.a1"
+  },
+  {
+    "id": "faq_microneedling_2_toskani",
+    "serviceId": "svc_microneedling_toskani",
+    "questionKey": "faq.microneedling.q2",
+    "answerKey": "faq.microneedling.a2"
+  },
+  {
+    "id": "faq_microneedling_3_toskani",
+    "serviceId": "svc_microneedling_toskani",
+    "questionKey": "faq.microneedling.q3",
+    "answerKey": "faq.microneedling.a3"
+  },
+  {
+    "id": "faq_microneedling_4_toskani",
+    "serviceId": "svc_microneedling_toskani",
     "questionKey": "faq.microneedling.q4",
     "answerKey": "faq.microneedling.a4"
   },
