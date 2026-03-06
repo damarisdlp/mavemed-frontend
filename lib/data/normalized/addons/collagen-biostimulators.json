@@ -2,7 +2,7 @@
   {
     "id": "addon_sculptra_microneedling",
     "parentServiceId": "svc_sculptra",
-    "childServiceId": "svc_microneedling",
+    "childServiceId": "svc_microneedling_prp",
     "optionNameKey": "addon.sculptra.microneedling"
   },
   {
@@ -32,13 +32,13 @@
   {
     "id": "addon_sculptra_facial_balancing",
     "parentServiceId": "svc_sculptra",
-    "childServiceId": "svc_facial_balancing_fillers",
+    "childServiceId": "svc_facial_balancing",
     "optionNameKey": "addon.sculptra.facial_balancing"
   },
   {
     "id": "addon_harmonyca_microneedling",
     "parentServiceId": "svc_harmonyca",
-    "childServiceId": "svc_microneedling",
+    "childServiceId": "svc_microneedling_prp",
     "optionNameKey": "addon.harmonyca.microneedling"
   },
   {
