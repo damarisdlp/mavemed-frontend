@@ -1,13 +1,13 @@
 [
   {
-    "id": "svc_microneedling",
-    "slug": "microneedling",
-    "categoryId": "cat_microneedling_mesotherapy",
-    "nameKey": "svc.microneedling.name",
-    "descriptionKey": "svc.microneedling.desc",
-    "detailsKey": "svc.microneedling.details",
-    "isPopular": false,
+    "id": "svc_microneedling_prp",
+    "slug": "microneedling-skin-renewal-prp",
+    "nameKey": "svc.microneedling_prp.name",
+    "descriptionKey": "svc.microneedling_prp.desc",
+    "detailsKey": "svc.microneedling_prp.details",
     "isPromoActive": true,
+    "categoryId": "cat_microneedling_mesotherapy",
+    "isPopular": false,
     "images": {
       "primary": "/microneedling.jpg",
       "secondary": "/microneedling2.jpg"
@@ -28,33 +28,102 @@
       "area.microneedling.decollete",
       "area.microneedling.hands",
       "area.microneedling.other"
+    ]
+  },
+  {
+    "id": "svc_microneedling_polynucleotides",
+    "slug": "microneedling-skin-renewal-polynucleotides",
+    "nameKey": "svc.microneedling_pn.name",
+    "descriptionKey": "svc.microneedling_pn.desc",
+    "detailsKey": "svc.microneedling_pn.details",
+    "isPromoActive": true,
+    "categoryId": "cat_microneedling_mesotherapy",
+    "isPopular": false,
+    "images": {
+      "primary": "/microneedling.jpg",
+      "secondary": "/microneedling2.jpg"
+    },
+    "notesKeys": [
+      "note.microneedling.sessions",
+      "note.microneedling.safe",
+      "note.microneedling.downtime"
     ],
-    "filterConfig": {
-      "defaultKey": "all",
-      "viewAllLabelKey": "filter.view_all",
-      "filters": [
-        {
-          "key": "prp",
-          "labelKey": "filter.microneedling.prp"
-        },
-        {
-          "key": "pn",
-          "labelKey": "filter.microneedling.pn"
-        },
-        {
-          "key": "pdrn",
-          "labelKey": "filter.microneedling.pdrn"
-        },
-        {
-          "key": "toskani",
-          "labelKey": "filter.microneedling.toskani"
-        },
-        {
-          "key": "caviar",
-          "labelKey": "filter.microneedling.skin_boosters"
-        }
-      ]
-    }
+    "goalsKeys": [
+      "goal.microneedling.texture",
+      "goal.microneedling.scars",
+      "goal.microneedling.pores"
+    ],
+    "treatableAreaKeys": [
+      "area.microneedling.full_face",
+      "area.microneedling.neck",
+      "area.microneedling.decollete",
+      "area.microneedling.hands",
+      "area.microneedling.other"
+    ]
+  },
+  {
+    "id": "svc_microneedling_pdrn",
+    "slug": "microneedling-skin-renewal-pdrn",
+    "nameKey": "svc.microneedling_pdrn.name",
+    "descriptionKey": "svc.microneedling_pdrn.desc",
+    "detailsKey": "svc.microneedling_pdrn.details",
+    "isPromoActive": true,
+    "categoryId": "cat_microneedling_mesotherapy",
+    "isPopular": false,
+    "images": {
+      "primary": "/pdrn.jpg",
+      "secondary": "/pdrn2.jpg"
+    },
+    "notesKeys": [
+      "note.microneedling.sessions",
+      "note.microneedling.safe",
+      "note.microneedling.downtime",
+      "note.microneedling.pdrn_formula",
+      "note.microneedling.pdrn_timeline"
+    ],
+    "goalsKeys": [
+      "goal.microneedling.texture",
+      "goal.microneedling.scars",
+      "goal.microneedling.pores"
+    ],
+    "treatableAreaKeys": [
+      "area.microneedling.full_face",
+      "area.microneedling.neck",
+      "area.microneedling.decollete",
+      "area.microneedling.hands",
+      "area.microneedling.other"
+    ]
+  },
+  {
+    "id": "svc_microneedling_toskani",
+    "slug": "microneedling-skin-renewal-toskani",
+    "nameKey": "svc.microneedling_toskani.name",
+    "descriptionKey": "svc.microneedling_toskani.desc",
+    "detailsKey": "svc.microneedling_toskani.details",
+    "isPromoActive": false,
+    "categoryId": "cat_microneedling_mesotherapy",
+    "isPopular": false,
+    "images": {
+      "primary": "/microneedling.jpg",
+      "secondary": "/microneedling2.jpg"
+    },
+    "notesKeys": [
+      "note.microneedling.sessions",
+      "note.microneedling.safe",
+      "note.microneedling.downtime"
+    ],
+    "goalsKeys": [
+      "goal.microneedling.texture",
+      "goal.microneedling.scars",
+      "goal.microneedling.pores"
+    ],
+    "treatableAreaKeys": [
+      "area.microneedling.full_face",
+      "area.microneedling.neck",
+      "area.microneedling.decollete",
+      "area.microneedling.hands",
+      "area.microneedling.other"
+    ]
   },
   {
     "id": "svc_mesotherapy_infusions",
