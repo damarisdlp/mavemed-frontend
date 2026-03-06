@@ -119,6 +119,7 @@ export default function HomeBeforeAfterShowcase({ items = [], locale = "en" }) {
                         alt={beforeAlt}
                         fill
                         className="object-cover"
+                        quality={90}
                         sizes="(min-width: 1400px) 420px, (min-width: 1024px) 36vw, (min-width: 640px) 44vw, 92vw"
                       />
                       <span className="absolute left-2 top-2 rounded-full bg-black/65 px-2 py-1 text-[10px] font-medium uppercase tracking-wide text-white">
@@ -131,6 +132,7 @@ export default function HomeBeforeAfterShowcase({ items = [], locale = "en" }) {
                         alt={afterAlt}
                         fill
                         className="object-cover"
+                        quality={90}
                         sizes="(min-width: 1400px) 420px, (min-width: 1024px) 36vw, (min-width: 640px) 44vw, 92vw"
                       />
                       <span className="absolute left-2 top-2 rounded-full bg-black/65 px-2 py-1 text-[10px] font-medium uppercase tracking-wide text-white">
