@@ -116,6 +116,7 @@ export default function Home({ popularTreatments = [], beforeAfterItems = [] }) 
       {beforeAfterItems.length ? (
         <HomeBeforeAfterShowcase items={beforeAfterItems} locale={locale || "en"} />
       ) : null}
+      <ReviewsSection />
       <HomeLeadForm />
       <ApproachSection />
       <PopularTreatments treatments={popularTreatments} />
@@ -130,7 +131,6 @@ export default function Home({ popularTreatments = [], beforeAfterItems = [] }) 
         async
       />
 
-      <ReviewsSection />
       <Footer />
     </>
   );
