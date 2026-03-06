@@ -933,5 +933,75 @@
     "id": "note.weekly.microneedling.collagen_boost_rules",
     "en": "Available for purchase on Tuesdays only. May be shared with friends/family. Sessions may be redeemed any day.",
     "es": "Disponible para compra solo los martes. Puede compartirse con amigos/familia. Las sesiones se pueden canjear cualquier día."
+  },
+  {
+    "id": "svc.microneedling_prp.name",
+    "en": "Microneedling Skin Renewal with PRP/PRFM",
+    "es": "Renovacion de Piel con Microneedling + PRP/PRFM"
+  },
+  {
+    "id": "svc.microneedling_prp.desc",
+    "en": "Precision microneedling paired with PRP/PRFM to support collagen renewal, smoother texture, and faster-looking recovery using your own growth factors.",
+    "es": "Microneedling de precision combinado con PRP/PRFM para apoyar la renovacion de colageno, mejorar textura y favorecer una recuperacion visible con tus propios factores de crecimiento."
+  },
+  {
+    "id": "svc.microneedling_prp.details",
+    "en": "This protocol uses controlled microchannels to stimulate renewal, then applies PRP/PRFM from your own blood to support tissue repair, glow, and overall skin quality. Ideal when you want regeneration-focused skin renewal.",
+    "es": "Este protocolo crea microcanales controlados para estimular renovacion y despues aplica PRP/PRFM de tu propia sangre para apoyar reparacion tisular, luminosidad y calidad general de la piel. Ideal si buscas renovacion enfocada en regeneracion."
+  },
+  {
+    "id": "svc.microneedling_pn.name",
+    "en": "Microneedling Skin Renewal with Polynucleotides (PN)",
+    "es": "Renovacion de Piel con Microneedling + Polinucleotidos (PN)"
+  },
+  {
+    "id": "svc.microneedling_pn.desc",
+    "en": "Microneedling with polynucleotides (PN) to support deep hydration, elasticity, and collagen stimulation for resilient, healthier-looking skin.",
+    "es": "Microneedling con polinucleotidos (PN) para apoyar hidratacion profunda, elasticidad y estimulacion de colageno para una piel mas resistente y saludable."
+  },
+  {
+    "id": "svc.microneedling_pn.details",
+    "en": "Polynucleotides are delivered through precision microchannels to support cellular renewal, barrier quality, and firmness over a treatment series. A strong option for dull, fragile, or aging skin profiles.",
+    "es": "Los polinucleotidos se aplican mediante microcanales de precision para apoyar renovacion celular, calidad de barrera y firmeza a lo largo del protocolo. Es una opcion solida para piel opaca, fragil o madura."
+  },
+  {
+    "id": "svc.microneedling_pdrn.name",
+    "en": "Microneedling Skin Renewal with PDRN",
+    "es": "Renovacion de Piel con Microneedling + PDRN"
+  },
+  {
+    "id": "svc.microneedling_pdrn.desc",
+    "en": "Premium microneedling skin renewal with a booster combining Polydeoxyribonucleotide (PDRN 2.0 mg/ml), Hyaluronic Acid (15 mg/ml), and Niacinamide (25 mg/ml) to support hydration, recovery, and tone refinement.",
+    "es": "Renovacion premium con microneedling y un booster que combina Polidesoxirribonucleotido (PDRN 2.0 mg/ml), Acido Hialuronico (15 mg/ml) y Niacinamida (25 mg/ml) para apoyar hidratacion, recuperacion y mejora del tono."
+  },
+  {
+    "id": "svc.microneedling_pdrn.details",
+    "en": "This protocol uses precision microneedling channels to deliver PDRN + HA + niacinamide for advanced skin-quality support. Patients can see hydration improvements in about 2 weeks, while elasticity gains are expected after a 4-treatment series.",
+    "es": "Este protocolo utiliza microcanales de microneedling de precision para aplicar PDRN + AH + niacinamida y apoyar la calidad de piel de forma avanzada. Se puede notar mejora de hidratacion en alrededor de 2 semanas, y la elasticidad suele mejorar despues de un protocolo de 4 tratamientos."
+  },
+  {
+    "id": "svc.microneedling_toskani.name",
+    "en": "Microneedling Skin Renewal by Toskani",
+    "es": "Renovacion de Piel con Microneedling by Toskani"
+  },
+  {
+    "id": "svc.microneedling_toskani.desc",
+    "en": "Microneedling powered by Toskani professional actives to target hydration, tone support, and texture refinement across face and extended treatment zones.",
+    "es": "Microneedling impulsado por activos profesionales de Toskani para trabajar hidratacion, soporte del tono y refinamiento de textura en rostro y zonas extendidas."
+  },
+  {
+    "id": "svc.microneedling_toskani.details",
+    "en": "This protocol uses precision microneedling delivery with Toskani actives selected for skin quality goals. It is designed for patients seeking brand-driven skin renewal with customizable treatment zones.",
+    "es": "Este protocolo utiliza microneedling de precision con activos Toskani seleccionados para objetivos de calidad de piel. Esta disenado para pacientes que buscan renovacion de piel respaldada por marca y zonas personalizables."
+  },
+  {
+    "id": "note.microneedling.pdrn_formula",
+    "en": "Formula: PDRN 2.0 mg/ml + Hyaluronic Acid 15 mg/ml + Niacinamide 25 mg/ml.",
+    "es": "Formula: PDRN 2.0 mg/ml + Acido Hialuronico 15 mg/ml + Niacinamida 25 mg/ml."
+  },
+  {
+    "id": "note.microneedling.pdrn_timeline",
+    "en": "Expected timeline: hydration can improve within 2 weeks; elasticity typically improves after 4 treatments.",
+    "es": "Cronograma esperado: la hidratacion puede mejorar en 2 semanas; la elasticidad suele mejorar despues de 4 tratamientos."
   }
 ]
