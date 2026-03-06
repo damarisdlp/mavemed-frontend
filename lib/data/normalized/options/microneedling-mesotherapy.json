@@ -1,8 +1,8 @@
 [
   {
     "id": "opt_microneedling_prp_face",
-    "serviceId": "svc_microneedling",
-    "nameKey": "opt.microneedling.prp_face",
+    "serviceId": "svc_microneedling_prp",
+    "nameKey": "opt.microneedling.face",
     "price": {
       "amount": 165,
       "currency": "USD"
@@ -13,7 +13,6 @@
       "currency": "USD"
     },
     "priceTextKey": "",
-    "filterGroupKey": "prp",
     "notesKeys": [
       "note.microneedling.prp_benefit"
     ],
@@ -25,8 +24,8 @@
   },
   {
     "id": "opt_microneedling_prp_face_neck",
-    "serviceId": "svc_microneedling",
-    "nameKey": "opt.microneedling.prp_face_neck",
+    "serviceId": "svc_microneedling_prp",
+    "nameKey": "opt.microneedling.face_neck",
     "price": {
       "amount": 180,
       "currency": "USD"
@@ -37,7 +36,6 @@
       "currency": "USD"
     },
     "priceTextKey": "",
-    "filterGroupKey": "prp",
     "notesKeys": [
       "note.microneedling.prp_benefit"
     ],
@@ -49,8 +47,8 @@
   },
   {
     "id": "opt_microneedling_prp_face_neck_decollete",
-    "serviceId": "svc_microneedling",
-    "nameKey": "opt.microneedling.prp_face_neck_decollete",
+    "serviceId": "svc_microneedling_prp",
+    "nameKey": "opt.microneedling.face_neck_decollete",
     "price": {
       "amount": 195,
       "currency": "USD"
@@ -61,7 +59,6 @@
       "currency": "USD"
     },
     "priceTextKey": "",
-    "filterGroupKey": "prp",
     "notesKeys": [
       "note.microneedling.prp_benefit"
     ],
@@ -73,8 +70,8 @@
   },
   {
     "id": "opt_microneedling_prp_small_zone",
-    "serviceId": "svc_microneedling",
-    "nameKey": "opt.microneedling.prp_small_zone",
+    "serviceId": "svc_microneedling_prp",
+    "nameKey": "opt.microneedling.small_zone",
     "price": {
       "amount": 140,
       "currency": "USD"
@@ -85,7 +82,6 @@
       "currency": "USD"
     },
     "priceTextKey": "",
-    "filterGroupKey": "prp",
     "notesKeys": [
       "note.microneedling.prp_benefit",
       "note.microneedling.small_zone"
@@ -98,8 +94,8 @@
   },
   {
     "id": "opt_microneedling_prp_medium_zone",
-    "serviceId": "svc_microneedling",
-    "nameKey": "opt.microneedling.prp_medium_zone",
+    "serviceId": "svc_microneedling_prp",
+    "nameKey": "opt.microneedling.medium_zone",
     "price": {
       "amount": 175,
       "currency": "USD"
@@ -110,7 +106,6 @@
       "currency": "USD"
     },
     "priceTextKey": "",
-    "filterGroupKey": "prp",
     "notesKeys": [
       "note.microneedling.prp_benefit",
       "note.microneedling.medium_zone"
@@ -123,8 +118,8 @@
   },
   {
     "id": "opt_microneedling_prp_large_zone",
-    "serviceId": "svc_microneedling",
-    "nameKey": "opt.microneedling.prp_large_zone",
+    "serviceId": "svc_microneedling_prp",
+    "nameKey": "opt.microneedling.large_zone",
     "price": {
       "amount": 210,
       "currency": "USD"
@@ -135,7 +130,6 @@
       "currency": "USD"
     },
     "priceTextKey": "",
-    "filterGroupKey": "prp",
     "notesKeys": [
       "note.microneedling.prp_benefit",
       "note.microneedling.large_zone"
@@ -148,8 +142,8 @@
   },
   {
     "id": "opt_microneedling_pn_face",
-    "serviceId": "svc_microneedling",
-    "nameKey": "opt.microneedling.pn_face",
+    "serviceId": "svc_microneedling_polynucleotides",
+    "nameKey": "opt.microneedling.face",
     "price": {
       "amount": 300,
       "currency": "USD"
@@ -160,7 +154,6 @@
       "currency": "USD"
     },
     "priceTextKey": "",
-    "filterGroupKey": "pn",
     "linkedPackageIds": [
       "pkg_skin_renewal_protocol",
       "pkg_casmara_purifying_pn",
@@ -173,8 +166,8 @@
   },
   {
     "id": "opt_microneedling_pn_face_neck",
-    "serviceId": "svc_microneedling",
-    "nameKey": "opt.microneedling.pn_face_neck",
+    "serviceId": "svc_microneedling_polynucleotides",
+    "nameKey": "opt.microneedling.face_neck",
     "price": {
       "amount": 450,
       "currency": "USD"
@@ -185,7 +178,6 @@
       "currency": "USD"
     },
     "priceTextKey": "",
-    "filterGroupKey": "pn",
     "linkedPackageIds": [
       "pkg_skin_renewal_protocol",
       "pkg_casmara_purifying_pn",
@@ -198,8 +190,8 @@
   },
   {
     "id": "opt_microneedling_pn_face_neck_decollete",
-    "serviceId": "svc_microneedling",
-    "nameKey": "opt.microneedling.pn_face_neck_decollete",
+    "serviceId": "svc_microneedling_polynucleotides",
+    "nameKey": "opt.microneedling.face_neck_decollete",
     "price": {
       "amount": 565,
       "currency": "USD"
@@ -210,7 +202,6 @@
       "currency": "USD"
     },
     "priceTextKey": "",
-    "filterGroupKey": "pn",
     "linkedPackageIds": [
       "pkg_skin_renewal_protocol",
       "pkg_casmara_purifying_pn",
@@ -223,8 +214,8 @@
   },
   {
     "id": "opt_microneedling_pn_small_zone",
-    "serviceId": "svc_microneedling",
-    "nameKey": "opt.microneedling.pn_small_zone",
+    "serviceId": "svc_microneedling_polynucleotides",
+    "nameKey": "opt.microneedling.small_zone",
     "price": {
       "amount": 285,
       "currency": "USD"
@@ -235,7 +226,6 @@
       "currency": "USD"
     },
     "priceTextKey": "",
-    "filterGroupKey": "pn",
     "linkedPackageIds": [
       "pkg_skin_renewal_protocol",
       "pkg_casmara_purifying_pn",
@@ -249,8 +239,8 @@
   },
   {
     "id": "opt_microneedling_pn_medium_zone",
-    "serviceId": "svc_microneedling",
-    "nameKey": "opt.microneedling.pn_medium_zone",
+    "serviceId": "svc_microneedling_polynucleotides",
+    "nameKey": "opt.microneedling.medium_zone",
     "price": {
       "amount": 465,
       "currency": "USD"
@@ -261,7 +251,6 @@
       "currency": "USD"
     },
     "priceTextKey": "",
-    "filterGroupKey": "pn",
     "linkedPackageIds": [
       "pkg_skin_renewal_protocol",
       "pkg_casmara_purifying_pn",
@@ -275,8 +264,8 @@
   },
   {
     "id": "opt_microneedling_pn_large_zone",
-    "serviceId": "svc_microneedling",
-    "nameKey": "opt.microneedling.pn_large_zone",
+    "serviceId": "svc_microneedling_polynucleotides",
+    "nameKey": "opt.microneedling.large_zone",
     "price": {
       "amount": 575,
       "currency": "USD"
@@ -287,7 +276,6 @@
       "currency": "USD"
     },
     "priceTextKey": "",
-    "filterGroupKey": "pn",
     "linkedPackageIds": [
       "pkg_skin_renewal_protocol",
       "pkg_casmara_purifying_pn",
@@ -301,8 +289,8 @@
   },
   {
     "id": "opt_microneedling_pdrn_face",
-    "serviceId": "svc_microneedling",
-    "nameKey": "opt.microneedling.pdrn_face",
+    "serviceId": "svc_microneedling_pdrn",
+    "nameKey": "opt.microneedling.face",
     "price": {
       "amount": 190,
       "currency": "USD"
@@ -313,7 +301,6 @@
       "currency": "USD"
     },
     "priceTextKey": "",
-    "filterGroupKey": "pdrn",
     "notesKeys": [
       "note.microneedling.pdrn_full",
       "note.microneedling.pdrn_benefit"
@@ -326,8 +313,8 @@
   },
   {
     "id": "opt_microneedling_pdrn_face_neck",
-    "serviceId": "svc_microneedling",
-    "nameKey": "opt.microneedling.pdrn_face_neck",
+    "serviceId": "svc_microneedling_pdrn",
+    "nameKey": "opt.microneedling.face_neck",
     "price": {
       "amount": 275,
       "currency": "USD"
@@ -338,7 +325,6 @@
       "currency": "USD"
     },
     "priceTextKey": "",
-    "filterGroupKey": "pdrn",
     "notesKeys": [
       "note.microneedling.pdrn_full",
       "note.microneedling.pdrn_benefit"
@@ -351,8 +337,8 @@
   },
   {
     "id": "opt_microneedling_pdrn_face_neck_decollete",
-    "serviceId": "svc_microneedling",
-    "nameKey": "opt.microneedling.pdrn_face_neck_decollete",
+    "serviceId": "svc_microneedling_pdrn",
+    "nameKey": "opt.microneedling.face_neck_decollete",
     "price": {
       "amount": 315,
       "currency": "USD"
@@ -363,7 +349,6 @@
       "currency": "USD"
     },
     "priceTextKey": "",
-    "filterGroupKey": "pdrn",
     "notesKeys": [
       "note.microneedling.pdrn_full",
       "note.microneedling.pdrn_benefit"
@@ -376,8 +361,8 @@
   },
   {
     "id": "opt_microneedling_pdrn_small_zone",
-    "serviceId": "svc_microneedling",
-    "nameKey": "opt.microneedling.pdrn_small_zone",
+    "serviceId": "svc_microneedling_pdrn",
+    "nameKey": "opt.microneedling.small_zone",
     "price": {
       "amount": 175,
       "currency": "USD"
@@ -388,7 +373,6 @@
       "currency": "USD"
     },
     "priceTextKey": "",
-    "filterGroupKey": "pdrn",
     "notesKeys": [
       "note.microneedling.pdrn_full",
       "note.microneedling.pdrn_benefit",
@@ -402,8 +386,8 @@
   },
   {
     "id": "opt_microneedling_pdrn_medium_zone",
-    "serviceId": "svc_microneedling",
-    "nameKey": "opt.microneedling.pdrn_medium_zone",
+    "serviceId": "svc_microneedling_pdrn",
+    "nameKey": "opt.microneedling.medium_zone",
     "price": {
       "amount": 290,
       "currency": "USD"
@@ -414,7 +398,6 @@
       "currency": "USD"
     },
     "priceTextKey": "",
-    "filterGroupKey": "pdrn",
     "notesKeys": [
       "note.microneedling.pdrn_full",
       "note.microneedling.pdrn_benefit",
@@ -428,8 +411,8 @@
   },
   {
     "id": "opt_microneedling_pdrn_large_zone",
-    "serviceId": "svc_microneedling",
-    "nameKey": "opt.microneedling.pdrn_large_zone",
+    "serviceId": "svc_microneedling_pdrn",
+    "nameKey": "opt.microneedling.large_zone",
     "price": {
       "amount": 330,
       "currency": "USD"
@@ -440,7 +423,6 @@
       "currency": "USD"
     },
     "priceTextKey": "",
-    "filterGroupKey": "pdrn",
     "notesKeys": [
       "note.microneedling.pdrn_full",
       "note.microneedling.pdrn_benefit",
@@ -454,261 +436,75 @@
   },
   {
     "id": "opt_microneedling_toskani_hydration_face",
-    "serviceId": "svc_microneedling",
-    "nameKey": "opt.microneedling.toskani_face",
+    "serviceId": "svc_microneedling_toskani",
+    "nameKey": "opt.microneedling.face",
     "price": {
       "amount": 310,
       "currency": "USD"
     },
     "isOptionPromoActive": false,
     "promoPrice": null,
-    "priceTextKey": "",
-    "filterGroupKey": "toskani",
-    "notesKeys": [
-      "note.microneedling.toskani_hydration",
-      "note.microneedling.toskani_hydration_benefit_1",
-      "note.microneedling.toskani_hydration_benefit_2",
-      "note.microneedling.toskani_hydration_benefit_3"
-    ]
+    "priceTextKey": ""
   },
   {
     "id": "opt_microneedling_toskani_hydration_face_neck",
-    "serviceId": "svc_microneedling",
-    "nameKey": "opt.microneedling.toskani_face_neck",
+    "serviceId": "svc_microneedling_toskani",
+    "nameKey": "opt.microneedling.face_neck",
     "price": {
       "amount": 620,
       "currency": "USD"
     },
     "isOptionPromoActive": false,
     "promoPrice": null,
-    "priceTextKey": "",
-    "filterGroupKey": "toskani",
-    "notesKeys": [
-      "note.microneedling.toskani_hydration",
-      "note.microneedling.toskani_hydration_benefit_1",
-      "note.microneedling.toskani_hydration_benefit_2",
-      "note.microneedling.toskani_hydration_benefit_3"
-    ]
+    "priceTextKey": ""
   },
   {
     "id": "opt_microneedling_toskani_hydration_face_neck_decollete",
-    "serviceId": "svc_microneedling",
-    "nameKey": "opt.microneedling.toskani_face_neck_decollete",
+    "serviceId": "svc_microneedling_toskani",
+    "nameKey": "opt.microneedling.face_neck_decollete",
     "price": {
       "amount": 930,
       "currency": "USD"
     },
     "isOptionPromoActive": false,
     "promoPrice": null,
-    "priceTextKey": "",
-    "filterGroupKey": "toskani",
-    "notesKeys": [
-      "note.microneedling.toskani_hydration",
-      "note.microneedling.toskani_hydration_benefit_1",
-      "note.microneedling.toskani_hydration_benefit_2",
-      "note.microneedling.toskani_hydration_benefit_3"
-    ]
-  },
-  {
-    "id": "opt_microneedling_toskani_glow_face",
-    "serviceId": "svc_microneedling",
-    "nameKey": "opt.microneedling.toskani_face",
-    "price": {
-      "amount": 200,
-      "currency": "USD"
-    },
-    "isOptionPromoActive": false,
-    "promoPrice": null,
-    "priceTextKey": "",
-    "filterGroupKey": "toskani",
-    "notesKeys": [
-      "note.microneedling.toskani_glow",
-      "note.microneedling.toskani_glow_benefit"
-    ]
-  },
-  {
-    "id": "opt_microneedling_toskani_glow_face_neck",
-    "serviceId": "svc_microneedling",
-    "nameKey": "opt.microneedling.toskani_face_neck",
-    "price": {
-      "amount": 245,
-      "currency": "USD"
-    },
-    "isOptionPromoActive": false,
-    "promoPrice": null,
-    "priceTextKey": "",
-    "filterGroupKey": "toskani",
-    "notesKeys": [
-      "note.microneedling.toskani_glow",
-      "note.microneedling.toskani_glow_benefit"
-    ]
-  },
-  {
-    "id": "opt_microneedling_toskani_glow_face_neck_decollete",
-    "serviceId": "svc_microneedling",
-    "nameKey": "opt.microneedling.toskani_face_neck_decollete",
-    "price": {
-      "amount": 325,
-      "currency": "USD"
-    },
-    "isOptionPromoActive": false,
-    "promoPrice": null,
-    "priceTextKey": "",
-    "filterGroupKey": "toskani",
-    "notesKeys": [
-      "note.microneedling.toskani_glow",
-      "note.microneedling.toskani_glow_benefit"
-    ]
-  },
-  {
-    "id": "opt_microneedling_toskani_repair_face",
-    "serviceId": "svc_microneedling",
-    "nameKey": "opt.microneedling.toskani_face",
-    "price": {
-      "amount": 200,
-      "currency": "USD"
-    },
-    "isOptionPromoActive": false,
-    "promoPrice": null,
-    "priceTextKey": "",
-    "filterGroupKey": "toskani",
-    "notesKeys": [
-      "note.microneedling.toskani_repair",
-      "note.microneedling.toskani_repair_benefit"
-    ]
-  },
-  {
-    "id": "opt_microneedling_toskani_repair_face_neck",
-    "serviceId": "svc_microneedling",
-    "nameKey": "opt.microneedling.toskani_face_neck",
-    "price": {
-      "amount": 245,
-      "currency": "USD"
-    },
-    "isOptionPromoActive": false,
-    "promoPrice": null,
-    "priceTextKey": "",
-    "filterGroupKey": "toskani",
-    "notesKeys": [
-      "note.microneedling.toskani_repair",
-      "note.microneedling.toskani_repair_benefit"
-    ]
-  },
-  {
-    "id": "opt_microneedling_toskani_repair_face_neck_decollete",
-    "serviceId": "svc_microneedling",
-    "nameKey": "opt.microneedling.toskani_face_neck_decollete",
-    "price": {
-      "amount": 325,
-      "currency": "USD"
-    },
-    "isOptionPromoActive": false,
-    "promoPrice": null,
-    "priceTextKey": "",
-    "filterGroupKey": "toskani",
-    "notesKeys": [
-      "note.microneedling.toskani_repair",
-      "note.microneedling.toskani_repair_benefit"
-    ]
+    "priceTextKey": ""
   },
   {
     "id": "opt_microneedling_toskani_tone_face",
-    "serviceId": "svc_microneedling",
-    "nameKey": "opt.microneedling.toskani_face",
+    "serviceId": "svc_microneedling_toskani",
+    "nameKey": "opt.microneedling.small_zone",
     "price": {
       "amount": 235,
       "currency": "USD"
     },
     "isOptionPromoActive": false,
     "promoPrice": null,
-    "priceTextKey": "",
-    "filterGroupKey": "toskani",
-    "notesKeys": [
-      "note.microneedling.toskani_tone",
-      "note.microneedling.toskani_tone_benefit"
-    ]
+    "priceTextKey": ""
   },
   {
     "id": "opt_microneedling_toskani_tone_face_neck",
-    "serviceId": "svc_microneedling",
-    "nameKey": "opt.microneedling.toskani_face_neck",
+    "serviceId": "svc_microneedling_toskani",
+    "nameKey": "opt.microneedling.medium_zone",
     "price": {
       "amount": 265,
       "currency": "USD"
     },
     "isOptionPromoActive": false,
     "promoPrice": null,
-    "priceTextKey": "",
-    "filterGroupKey": "toskani",
-    "notesKeys": [
-      "note.microneedling.toskani_tone",
-      "note.microneedling.toskani_tone_benefit"
-    ]
+    "priceTextKey": ""
   },
   {
     "id": "opt_microneedling_toskani_tone_face_neck_decollete",
-    "serviceId": "svc_microneedling",
-    "nameKey": "opt.microneedling.toskani_face_neck_decollete",
+    "serviceId": "svc_microneedling_toskani",
+    "nameKey": "opt.microneedling.large_zone",
     "price": {
       "amount": 295,
       "currency": "USD"
     },
     "isOptionPromoActive": false,
     "promoPrice": null,
-    "priceTextKey": "",
-    "filterGroupKey": "toskani",
-    "notesKeys": [
-      "note.microneedling.toskani_tone",
-      "note.microneedling.toskani_tone_benefit"
-    ]
-  },
-  {
-    "id": "opt_microneedling_caviar_face",
-    "serviceId": "svc_microneedling",
-    "nameKey": "opt.microneedling.caviar_face",
-    "price": {
-      "amount": 100,
-      "currency": "USD"
-    },
-    "isOptionPromoActive": false,
-    "promoPrice": null,
-    "priceTextKey": "",
-    "filterGroupKey": "caviar",
-    "notesKeys": [
-      "note.microneedling.caviar_benefit"
-    ]
-  },
-  {
-    "id": "opt_microneedling_caviar_face_neck",
-    "serviceId": "svc_microneedling",
-    "nameKey": "opt.microneedling.caviar_face_neck",
-    "price": {
-      "amount": 115,
-      "currency": "USD"
-    },
-    "isOptionPromoActive": false,
-    "promoPrice": null,
-    "priceTextKey": "",
-    "filterGroupKey": "caviar",
-    "notesKeys": [
-      "note.microneedling.caviar_benefit"
-    ]
-  },
-  {
-    "id": "opt_microneedling_caviar_face_neck_decollete",
-    "serviceId": "svc_microneedling",
-    "nameKey": "opt.microneedling.caviar_face_neck_decollete",
-    "price": {
-      "amount": 125,
-      "currency": "USD"
-    },
-    "isOptionPromoActive": false,
-    "promoPrice": null,
-    "priceTextKey": "",
-    "filterGroupKey": "caviar",
-    "notesKeys": [
-      "note.microneedling.caviar_benefit"
-    ]
+    "priceTextKey": ""
   },
   {
     "id": "opt_mesotherapy_prp_face",
@@ -1435,7 +1231,7 @@
   },
   {
     "id": "opt_weekly_skin_renewal_prp_package",
-    "serviceId": "svc_microneedling",
+    "serviceId": "svc_microneedling_prp",
     "nameKey": "opt.weekly.skin_renewal.prp_package",
     "optionType": "package",
     "price": {
@@ -1448,7 +1244,6 @@
       "currency": "USD"
     },
     "priceTextKey": "",
-    "filterGroupKey": "prp",
     "notesKeys": [
       "note.weekly.microneedling.skin_renewal_includes",
       "note.weekly.microneedling.tuesday_purchase_rule"
@@ -1457,7 +1252,7 @@
   },
   {
     "id": "opt_weekly_skin_renewal_pn_package",
-    "serviceId": "svc_microneedling",
+    "serviceId": "svc_microneedling_polynucleotides",
     "nameKey": "opt.weekly.skin_renewal.pn_package",
     "optionType": "package",
     "price": {
@@ -1470,7 +1265,6 @@
       "currency": "USD"
     },
     "priceTextKey": "",
-    "filterGroupKey": "pn",
     "notesKeys": [
       "note.weekly.microneedling.skin_renewal_includes",
       "note.weekly.microneedling.tuesday_purchase_rule"
@@ -1479,7 +1273,7 @@
   },
   {
     "id": "opt_weekly_skin_renewal_pdrn_package",
-    "serviceId": "svc_microneedling",
+    "serviceId": "svc_microneedling_pdrn",
     "nameKey": "opt.weekly.skin_renewal.pdrn_package",
     "optionType": "package",
     "price": {
@@ -1492,7 +1286,6 @@
       "currency": "USD"
     },
     "priceTextKey": "",
-    "filterGroupKey": "pdrn",
     "notesKeys": [
       "note.weekly.microneedling.skin_renewal_includes",
       "note.weekly.microneedling.tuesday_purchase_rule"
@@ -1501,7 +1294,7 @@
   },
   {
     "id": "opt_weekly_collagen_boost_prp_3_session",
-    "serviceId": "svc_microneedling",
+    "serviceId": "svc_microneedling_prp",
     "nameKey": "opt.weekly.collagen_boost.prp_3_session",
     "optionType": "package",
     "price": {
@@ -1514,7 +1307,6 @@
       "currency": "USD"
     },
     "priceTextKey": "",
-    "filterGroupKey": "prp",
     "notesKeys": [
       "note.weekly.microneedling.collagen_boost_per_session_requires_three",
       "note.weekly.microneedling.collagen_boost_purchase_together_redeem_separately",
@@ -1525,7 +1317,7 @@
   },
   {
     "id": "opt_weekly_collagen_boost_pn_3_session",
-    "serviceId": "svc_microneedling",
+    "serviceId": "svc_microneedling_polynucleotides",
     "nameKey": "opt.weekly.collagen_boost.pn_3_session",
     "optionType": "package",
     "price": {
@@ -1538,7 +1330,6 @@
       "currency": "USD"
     },
     "priceTextKey": "",
-    "filterGroupKey": "pn",
     "notesKeys": [
       "note.weekly.microneedling.collagen_boost_per_session_requires_three",
       "note.weekly.microneedling.collagen_boost_purchase_together_redeem_separately",
@@ -1549,7 +1340,7 @@
   },
   {
     "id": "opt_weekly_collagen_boost_pdrn_3_session",
-    "serviceId": "svc_microneedling",
+    "serviceId": "svc_microneedling_pdrn",
     "nameKey": "opt.weekly.collagen_boost.pdrn_3_session",
     "optionType": "package",
     "price": {
@@ -1562,7 +1353,6 @@
       "currency": "USD"
     },
     "priceTextKey": "",
-    "filterGroupKey": "pdrn",
     "notesKeys": [
       "note.weekly.microneedling.collagen_boost_per_session_requires_three",
       "note.weekly.microneedling.collagen_boost_purchase_together_redeem_separately",
