@@ -333,7 +333,7 @@ export default function TreatmentDetails({ treatment, packageGroups = [] }) {
         return (
           <Link
             key={`note-micro-${idx}`}
-            href={`/${locale === "es" ? "es/" : ""}treatments/microneedling`}
+            href={`/${locale === "es" ? "es/" : ""}treatments/microneedling-skin-renewal-prp`}
             className="underline underline-offset-4"
           >
             {part}
