@@ -82,7 +82,8 @@ export default function BeforeAfterCarousel({
                       alt={altText}
                       fill
                       className="object-cover"
-                      sizes="(min-width: 1024px) 960px, 100vw"
+                        quality={90}
+                        sizes="(min-width: 1024px) 960px, 100vw"
                     />
                     <div
                       className="absolute inset-0 pointer-events-none"
@@ -93,6 +94,7 @@ export default function BeforeAfterCarousel({
                         alt={altText}
                         fill
                         className="object-cover"
+                        quality={90}
                         sizes="(min-width: 1024px) 960px, 100vw"
                       />
                     </div>
