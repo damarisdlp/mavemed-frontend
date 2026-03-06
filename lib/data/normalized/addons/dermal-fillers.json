@@ -14,13 +14,13 @@
   {
     "id": "addon_facial_balancing_microneedling_pdrn",
     "parentServiceId": "svc_facial_balancing",
-    "childServiceId": "svc_microneedling",
+    "childServiceId": "svc_microneedling_prp",
     "optionNameKey": "addon.facial_balancing.Microneedling_pdrn"
   },
   {
     "id": "addon_facial_balancing_microneedling_glow",
     "parentServiceId": "svc_facial_balancing",
-    "childServiceId": "svc_microneedling",
+    "childServiceId": "svc_microneedling_prp",
     "optionNameKey": "addon.facial_balancing.Microneedling_glow"
   },
   {
@@ -50,7 +50,7 @@
   {
     "id": "addon_lip_fillers_microneedling_prp",
     "parentServiceId": "svc_lip_fillers",
-    "childServiceId": "svc_microneedling",
+    "childServiceId": "svc_microneedling_prp",
     "optionNameKey": "addon.lip_fillers.Microneedling_prp"
   },
   {
@@ -86,7 +86,7 @@
   {
     "id": "addon_hyaluronidase_microneedling_prp",
     "parentServiceId": "svc_hyaluronidase",
-    "childServiceId": "svc_microneedling",
+    "childServiceId": "svc_microneedling_prp",
     "optionNameKey": "addon.hyaluronidase.Microneedling_prp"
   },
   {
