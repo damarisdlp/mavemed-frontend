@@ -107,6 +107,16 @@ const nextConfig = {
         destination: "/es/treatments/hybrid-injectable-collagen-biostimulator-ha-caha",
         permanent: true,
       },
+      {
+        source: "/treatments/microneedling",
+        destination: "/treatments/microneedling-skin-renewal-prp",
+        permanent: true,
+      },
+      {
+        source: "/es/treatments/microneedling",
+        destination: "/es/treatments/microneedling-skin-renewal-prp",
+        permanent: true,
+      },
     ];
   },
 };
