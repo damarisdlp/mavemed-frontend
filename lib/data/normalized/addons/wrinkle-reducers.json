@@ -20,7 +20,7 @@
   {
     "id": "addon_botox_casmara_retinol",
     "parentServiceId": "svc_botox",
-    "childServiceId": "svc_casmara_retinol",
+    "childServiceId": "svc_casmara_retinol_proage",
     "optionNameKey": "addon.botox.casmara_retinol"
   },
   {
