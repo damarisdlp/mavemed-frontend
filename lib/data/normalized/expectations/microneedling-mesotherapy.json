@@ -1,49 +1,193 @@
 [
   {
-    "id": "exp_microneedling_pre_1",
-    "serviceId": "svc_microneedling",
+    "id": "exp_microneedling_pre_1_prp",
+    "serviceId": "svc_microneedling_prp",
     "phase": "pre",
     "textKey": "exp.microneedling.pre.1"
   },
   {
-    "id": "exp_microneedling_pre_2",
-    "serviceId": "svc_microneedling",
+    "id": "exp_microneedling_pre_2_prp",
+    "serviceId": "svc_microneedling_prp",
     "phase": "pre",
     "textKey": "exp.microneedling.pre.2"
   },
   {
-    "id": "exp_microneedling_pre_3",
-    "serviceId": "svc_microneedling",
+    "id": "exp_microneedling_pre_3_prp",
+    "serviceId": "svc_microneedling_prp",
     "phase": "pre",
     "textKey": "exp.microneedling.pre.3"
   },
   {
-    "id": "exp_microneedling_during_1",
-    "serviceId": "svc_microneedling",
+    "id": "exp_microneedling_during_1_prp",
+    "serviceId": "svc_microneedling_prp",
     "phase": "during",
     "textKey": "exp.microneedling.during.1"
   },
   {
-    "id": "exp_microneedling_during_2",
-    "serviceId": "svc_microneedling",
+    "id": "exp_microneedling_during_2_prp",
+    "serviceId": "svc_microneedling_prp",
     "phase": "during",
     "textKey": "exp.microneedling.during.2"
   },
   {
-    "id": "exp_microneedling_post_1",
-    "serviceId": "svc_microneedling",
+    "id": "exp_microneedling_post_1_prp",
+    "serviceId": "svc_microneedling_prp",
     "phase": "post",
     "textKey": "exp.microneedling.post.1"
   },
   {
-    "id": "exp_microneedling_post_2",
-    "serviceId": "svc_microneedling",
+    "id": "exp_microneedling_post_2_prp",
+    "serviceId": "svc_microneedling_prp",
     "phase": "post",
     "textKey": "exp.microneedling.post.2"
   },
   {
-    "id": "exp_microneedling_post_3",
-    "serviceId": "svc_microneedling",
+    "id": "exp_microneedling_post_3_prp",
+    "serviceId": "svc_microneedling_prp",
+    "phase": "post",
+    "textKey": "exp.microneedling.post.3"
+  },
+  {
+    "id": "exp_microneedling_pre_1_pn",
+    "serviceId": "svc_microneedling_polynucleotides",
+    "phase": "pre",
+    "textKey": "exp.microneedling.pre.1"
+  },
+  {
+    "id": "exp_microneedling_pre_2_pn",
+    "serviceId": "svc_microneedling_polynucleotides",
+    "phase": "pre",
+    "textKey": "exp.microneedling.pre.2"
+  },
+  {
+    "id": "exp_microneedling_pre_3_pn",
+    "serviceId": "svc_microneedling_polynucleotides",
+    "phase": "pre",
+    "textKey": "exp.microneedling.pre.3"
+  },
+  {
+    "id": "exp_microneedling_during_1_pn",
+    "serviceId": "svc_microneedling_polynucleotides",
+    "phase": "during",
+    "textKey": "exp.microneedling.during.1"
+  },
+  {
+    "id": "exp_microneedling_during_2_pn",
+    "serviceId": "svc_microneedling_polynucleotides",
+    "phase": "during",
+    "textKey": "exp.microneedling.during.2"
+  },
+  {
+    "id": "exp_microneedling_post_1_pn",
+    "serviceId": "svc_microneedling_polynucleotides",
+    "phase": "post",
+    "textKey": "exp.microneedling.post.1"
+  },
+  {
+    "id": "exp_microneedling_post_2_pn",
+    "serviceId": "svc_microneedling_polynucleotides",
+    "phase": "post",
+    "textKey": "exp.microneedling.post.2"
+  },
+  {
+    "id": "exp_microneedling_post_3_pn",
+    "serviceId": "svc_microneedling_polynucleotides",
+    "phase": "post",
+    "textKey": "exp.microneedling.post.3"
+  },
+  {
+    "id": "exp_microneedling_pre_1_pdrn",
+    "serviceId": "svc_microneedling_pdrn",
+    "phase": "pre",
+    "textKey": "exp.microneedling.pre.1"
+  },
+  {
+    "id": "exp_microneedling_pre_2_pdrn",
+    "serviceId": "svc_microneedling_pdrn",
+    "phase": "pre",
+    "textKey": "exp.microneedling.pre.2"
+  },
+  {
+    "id": "exp_microneedling_pre_3_pdrn",
+    "serviceId": "svc_microneedling_pdrn",
+    "phase": "pre",
+    "textKey": "exp.microneedling.pre.3"
+  },
+  {
+    "id": "exp_microneedling_during_1_pdrn",
+    "serviceId": "svc_microneedling_pdrn",
+    "phase": "during",
+    "textKey": "exp.microneedling.during.1"
+  },
+  {
+    "id": "exp_microneedling_during_2_pdrn",
+    "serviceId": "svc_microneedling_pdrn",
+    "phase": "during",
+    "textKey": "exp.microneedling.during.2"
+  },
+  {
+    "id": "exp_microneedling_post_1_pdrn",
+    "serviceId": "svc_microneedling_pdrn",
+    "phase": "post",
+    "textKey": "exp.microneedling.post.1"
+  },
+  {
+    "id": "exp_microneedling_post_2_pdrn",
+    "serviceId": "svc_microneedling_pdrn",
+    "phase": "post",
+    "textKey": "exp.microneedling.post.2"
+  },
+  {
+    "id": "exp_microneedling_post_3_pdrn",
+    "serviceId": "svc_microneedling_pdrn",
+    "phase": "post",
+    "textKey": "exp.microneedling.post.3"
+  },
+  {
+    "id": "exp_microneedling_pre_1_toskani",
+    "serviceId": "svc_microneedling_toskani",
+    "phase": "pre",
+    "textKey": "exp.microneedling.pre.1"
+  },
+  {
+    "id": "exp_microneedling_pre_2_toskani",
+    "serviceId": "svc_microneedling_toskani",
+    "phase": "pre",
+    "textKey": "exp.microneedling.pre.2"
+  },
+  {
+    "id": "exp_microneedling_pre_3_toskani",
+    "serviceId": "svc_microneedling_toskani",
+    "phase": "pre",
+    "textKey": "exp.microneedling.pre.3"
+  },
+  {
+    "id": "exp_microneedling_during_1_toskani",
+    "serviceId": "svc_microneedling_toskani",
+    "phase": "during",
+    "textKey": "exp.microneedling.during.1"
+  },
+  {
+    "id": "exp_microneedling_during_2_toskani",
+    "serviceId": "svc_microneedling_toskani",
+    "phase": "during",
+    "textKey": "exp.microneedling.during.2"
+  },
+  {
+    "id": "exp_microneedling_post_1_toskani",
+    "serviceId": "svc_microneedling_toskani",
+    "phase": "post",
+    "textKey": "exp.microneedling.post.1"
+  },
+  {
+    "id": "exp_microneedling_post_2_toskani",
+    "serviceId": "svc_microneedling_toskani",
+    "phase": "post",
+    "textKey": "exp.microneedling.post.2"
+  },
+  {
+    "id": "exp_microneedling_post_3_toskani",
+    "serviceId": "svc_microneedling_toskani",
     "phase": "post",
     "textKey": "exp.microneedling.post.3"
   },
