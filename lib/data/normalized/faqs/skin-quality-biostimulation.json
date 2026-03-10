@@ -16,5 +16,17 @@
     "serviceId": "svc_bio_revit_french_glow",
     "questionKey": "faq.bio_revit.q3",
     "answerKey": "faq.bio_revit.a3"
+  },
+  {
+    "id": "faq_bio_revit_4",
+    "serviceId": "svc_bio_revit_french_glow",
+    "questionKey": "faq.bio_revit.q4",
+    "answerKey": "faq.bio_revit.a4"
+  },
+  {
+    "id": "faq_bio_revit_5",
+    "serviceId": "svc_bio_revit_french_glow",
+    "questionKey": "faq.bio_revit.q5",
+    "answerKey": "faq.bio_revit.a5"
   }
 ]
