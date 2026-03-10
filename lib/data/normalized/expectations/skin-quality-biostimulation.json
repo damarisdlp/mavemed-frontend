@@ -6,6 +6,12 @@
     "textKey": "exp.bio_revit.pre.1"
   },
   {
+    "id": "exp_bio_revit_pre_2",
+    "serviceId": "svc_bio_revit_french_glow",
+    "phase": "pre",
+    "textKey": "exp.bio_revit.pre.2"
+  },
+  {
     "id": "exp_bio_revit_during_1",
     "serviceId": "svc_bio_revit_french_glow",
     "phase": "during",
@@ -16,5 +22,11 @@
     "serviceId": "svc_bio_revit_french_glow",
     "phase": "post",
     "textKey": "exp.bio_revit.post.1"
+  },
+  {
+    "id": "exp_bio_revit_post_2",
+    "serviceId": "svc_bio_revit_french_glow",
+    "phase": "post",
+    "textKey": "exp.bio_revit.post.2"
   }
 ]
