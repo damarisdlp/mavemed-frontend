@@ -14,11 +14,16 @@
     },
     "notesKeys": [
       "note.bio_revit.medical_admin",
-      "note.bio_revit.no_volume"
+      "note.bio_revit.no_volume",
+      "note.bio_revit.composition",
+      "note.bio_revit.indications",
+      "note.bio_revit.contra",
+      "note.bio_revit.reactions"
     ],
     "goalsKeys": [
       "goal.bio_revit.hydration",
       "goal.bio_revit.lines",
+      "goal.bio_revit.homogeneity",
       "goal.bio_revit.pores",
       "goal.bio_revit.radiance"
     ],
@@ -26,8 +31,7 @@
       "area.bio_revit.full_face",
       "area.bio_revit.periorbital",
       "area.bio_revit.neck",
-      "area.bio_revit.decollete",
-      "area.bio_revit.hands"
+      "area.bio_revit.decollete"
     ]
   }
 ]
