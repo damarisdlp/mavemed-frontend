@@ -14,99 +14,101 @@ const content = {
   en: {
     title: "NCTF 135 HA and Skin Quality",
     subtitle:
-      "An educational guide to how this Fillmed Laboratories polyrevitalizing complex is used to support hydration, glow, and smoother-looking skin quality",
+      "Evidence-based guide to this Fillmed Laboratories polyrevitalizing protocol for hydration, radiance, and superficial skin quality support",
     intro: [
-      "**NCTF 135 HA is not designed to behave like a structural filler.**",
-      "It is a polyrevitalizing skin quality protocol that combines hyaluronic acid with a broad mix of vitamins, amino acids, minerals, and co-factors to support hydration and overall skin quality.",
-      "At Mave, we use this approach inside our French Bio-Revitalization Therapy when the goal is healthier-looking texture, more glow, and improved hydration rather than added facial volume.",
+      "**NCTF 135 HA is not a structural contour filler.**",
+      "It is an intradermal skin quality protocol used for aesthetic revitalization and hydration, with support for superficial wrinkles, homogeneity, and radiance.",
     ],
     treatmentCardTitle: "Related treatment",
     treatmentCardCopy:
-      "If you are reading this because you are considering this protocol at Mave, our French Bio-Revitalization Therapy page explains pricing, treatment flow, and candidacy.",
+      "If you are considering this protocol at Mave, our French Bio-Revitalization Therapy page explains pricing, treatment flow, candidacy, and aftercare.",
     treatmentCardLink: "View French Bio-Revitalization Therapy",
     videoCardTitle: "Video explainer",
     videoCardCopy:
-      "If you want to see a quick visual explanation of this skin quality protocol, this Instagram post gives a concise overview.",
+      "If you want a short visual overview of this protocol and treatment style, this Instagram post gives a concise explanation.",
     videoCardLink: "Watch the Instagram post",
     sections: [
       {
         title: "What NCTF 135 HA is",
         body: [
-          "NCTF 135 HA is a skin quality-focused injectable complex manufactured by **Fillmed Laboratories** in France.",
-          "It is commonly described as a polyrevitalizing or mesotherapy-style solution because it is built to support the skin environment rather than to sculpt facial structure.",
-          "**The practical goal is better skin quality, not immediate contour change.**",
+          "NCTF 135 HA is a Fillmed Laboratories injectable skin quality complex manufactured in France.",
+          "It combines **non-crosslinked hyaluronic acid (5 mg/ml)** with a **polyrevitalizing solution (9 mg/ml)** and is intended for aesthetic skin quality support, not medical disease treatment.",
+          "**The treatment target is skin quality improvement rather than contour projection.**",
         ],
         bullets: [
-          "Includes non-crosslinked hyaluronic acid",
-          "Built around hydration and nutrient support",
-          "Used for skin quality, not structural projection",
+          "12 vitamins, 24 amino acids, 6 minerals, 6 coenzymes, and 5 nucleosides",
+          "Designed for intradermal injection by trained healthcare professionals",
+          "Used for hydration, radiance, elasticity support, and superficial wrinkle refinement",
         ],
       },
       {
-        title: "How it can support skin quality",
+        title: "Where it is used and who should avoid it",
         body: [
-          "Skin quality is not just one thing. It includes hydration, surface smoothness, radiance, elasticity, and how refined the skin looks up close.",
-          "Protocols built around NCTF 135 HA are typically used when the goal is to support:",
-          "• Better hydration and bounce",
-          "• Smoother-looking texture",
-          "• Softer appearance of very fine dehydration lines",
-          "• A brighter, fresher-looking finish",
-          "**This is why many patients associate it with a glass-skin look rather than with a filler look.**",
+          "From the manufacturer indication profile, NCTF 135 HA is used intradermally in the face (including periorbital area), neck, and decollete.",
+          "Contraindications and exclusion points are critical to discuss before treatment.",
+          "**Selection and safety screening matter as much as product choice.**",
+        ],
+        bullets: [
+          "Do not use in patients under 18",
+          "Do not use during pregnancy or breastfeeding",
+          "Avoid if there is active skin disease in the treatment area",
+          "Avoid with known constituent hypersensitivity/allergy",
+          "Avoid in autoimmune history or current immunotherapy",
         ],
       },
       {
-        title: "What it does differently from filler",
+        title: "Clinical performance snapshot",
         body: [
-          "Traditional hyaluronic acid fillers are designed to create structure, projection, or shape in specific anatomical areas.",
-          "NCTF 135 HA is different because it is used as a skin quality protocol with a lighter, more diffuse objective.",
-          "**It is not meant to replace cheek filler, chin filler, jawline filler, or lip filler.**",
-          "That distinction matters because patients who want glow and hydration often need a very different plan than patients who want contour or volume restoration.",
+          "Across post-market clinical follow-up studies, performance endpoints repeatedly showed improvements in wrinkles, radiance, hydration, and skin quality metrics.",
+          "In controlled investigations, wrinkle effects were detected as early as **7 days after the third injection** and remained observable through **Day 120** in studied protocols.",
+          "**The clinical pattern is progressive and cumulative, not an instant one-session transformation.**",
         ],
         bullets: [
-          "Not a contouring filler",
-          "Not a structural replacement for volume loss",
-          "Best understood as a skin quality support treatment",
+          "Hydration and radiance improvements reported with persistence up to around 4 months in study timelines",
+          "Improved skin density and elasticity endpoints in instrumental and clinical assessments",
+          "Reduced superficial wrinkle and pore-related scores in standardized evaluations",
+          "High patient and investigator satisfaction signal in GAIS-style evaluations",
         ],
       },
       {
-        title: "Who may consider this type of protocol",
+        title: "Safety profile and expected reactions",
         body: [
-          "This style of treatment is often considered by patients who feel their skin looks dull, dehydrated, tired, or less resilient even when facial structure is still good.",
-          "It may also be useful for patients who want a conservative injectable plan that focuses on skin quality first.",
-          "**It is often a better fit for hydration and radiance goals than for dramatic shape change.**",
+          "Expected post-injection effects are usually local and temporary: redness, mild edema, small bruising, pinpoint bleeding, and short-lived tenderness.",
+          "As with any transcutaneous injection, infection risk exists and sterile technique is essential.",
+          "**Post-market incidence rates in the SSCP are very low, with serious treatment-related events reported as rare.**",
         ],
         bullets: [
-          "Dehydrated or dull-looking skin",
-          "Early texture changes or roughness",
-          "Patients wanting a conservative glow-focused injectable option",
-          "Patients prioritizing skin quality over contouring",
+          "Swelling/Erythema: ~0.002%",
+          "Nodule/itching/pain/skin inflammation/burning/rash: ~0.0005%",
+          "Hypersensitivity or allergic reaction: ~0.0001%",
+          "Other listed events (granuloma, angioedema, dyspnea, etc.): <0.0001%",
         ],
       },
       {
-        title: "How treatment is usually planned",
+        title: "How we use this evidence in planning",
         body: [
-          "Most skin quality protocols work better as a series than as a one-time appointment because hydration support and visible refinement are cumulative.",
-          "A common starting framework is multiple sessions spaced a few weeks apart, then maintenance based on response, age, environment, and skin goals.",
-          "**Consistency and realistic spacing usually matter more than trying to force a dramatic result in one visit.**",
+          "At Mave, we frame NCTF 135 HA as a skin quality track: hydration, glow, and superficial texture support without structural overfilling goals.",
+          "Planning typically uses a staged protocol, realistic spacing, and follow-up based on skin response and patient priorities.",
+          "Aftercare matters: avoid makeup for 12 hours and avoid prolonged sun/UV, extreme cold, sauna, or steam for at least 48 hours.",
         ],
         bullets: [
-          "Series-based planning is common",
-          "Spacing allows the skin to respond between sessions",
-          "Maintenance may be useful depending on the patient",
+          "Medical candidacy screening first",
+          "Series-based planning with reassessment",
+          "Structured aftercare to reduce avoidable irritation",
         ],
         featureEmbed: {
           label: "Mave protocol walkthrough",
           copy:
-            "This Mave post is useful here because it breaks down how NCTF 135 HA combines hyaluronic acid with 59 revitalizing actives to support fibroblast activity, improve skin quality, and build a more hydrated, luminous result over time.",
+            "This Mave post shows how we explain NCTF 135 HA in real patient education, focusing on skin quality outcomes and protocol consistency.",
           linkLabel: "Open Mave's Instagram post",
         },
       },
       {
-        title: "Why source, technique, and medical planning matter",
+        title: "Why product source and technique both matter",
         body: [
-          "With skin quality injectables, the product source is only one part of the outcome.",
-          "Provider technique, injection pattern, depth, patient selection, aftercare, and whether the treatment is paired with other modalities all affect the result.",
-          "**The best results usually come from a plan that matches the patient, not from chasing a product name alone.**",
+          "In skin quality injectables, product authenticity and clinical evidence are important, but provider technique and patient selection drive real-world outcomes.",
+          "Injection depth, pattern, spacing, and aftercare adherence can materially change result quality and comfort.",
+          "**The best outcomes come from the right protocol for the right patient at the right time.**",
         ],
         links: [
           {
@@ -124,99 +126,101 @@ const content = {
   es: {
     title: "NCTF 135 HA y calidad de piel",
     subtitle:
-      "Una guia educativa sobre como este complejo polirrevitalizante de Fillmed Laboratories se utiliza para apoyar hidratacion, glow y una piel visualmente mas uniforme",
+      "Guia basada en evidencia sobre este protocolo polirrevitalizante de Fillmed Laboratories para hidratacion, luminosidad y soporte de calidad cutanea superficial",
     intro: [
-      "**NCTF 135 HA no esta disenado para comportarse como un relleno estructural.**",
-      "Es un protocolo inyectable enfocado en calidad de piel que combina acido hialuronico con una mezcla amplia de vitaminas, aminoacidos, minerales y cofactores para apoyar hidratacion y calidad cutanea global.",
-      "En Mave, utilizamos este enfoque dentro de nuestra Terapia de Bio-Revitalizacion Francesa cuando el objetivo es una mejor textura, mas luminosidad y mejor hidratacion, no agregar volumen facial.",
+      "**NCTF 135 HA no es un filler estructural de contorno.**",
+      "Es un protocolo intradermico de calidad de piel usado con fines esteticos para revitalizacion e hidratacion, con apoyo sobre lineas superficiales, homogeneidad y luminosidad.",
     ],
     treatmentCardTitle: "Tratamiento relacionado",
     treatmentCardCopy:
-      "Si llegaste aqui porque estas considerando este protocolo en Mave, nuestra pagina de Terapia de Bio-Revitalizacion Francesa explica precios, flujo del tratamiento y candidatura.",
+      "Si estas considerando este protocolo en Mave, nuestra pagina de Terapia de Bio-Revitalizacion Francesa explica precios, flujo del tratamiento, candidatura y cuidados posteriores.",
     treatmentCardLink: "Ver Terapia de Bio-Revitalizacion Francesa",
     videoCardTitle: "Video explicativo",
     videoCardCopy:
-      "Si quieres ver una explicacion visual breve de este protocolo de calidad de piel, esta publicacion de Instagram ofrece un resumen claro.",
+      "Si quieres una explicacion visual corta de este protocolo y estilo de tratamiento, esta publicacion de Instagram ofrece un resumen claro.",
     videoCardLink: "Ver la publicacion de Instagram",
     sections: [
       {
         title: "Que es NCTF 135 HA",
         body: [
-          "NCTF 135 HA es un complejo inyectable enfocado en calidad de piel fabricado por **Fillmed Laboratories** en Francia.",
-          "Suele describirse como una solucion polirrevitalizante o de estilo mesoterapia porque esta pensada para apoyar el entorno cutaneo, no para esculpir estructura facial.",
-          "**En la practica, el objetivo es mejorar calidad de piel, no generar contorno inmediato.**",
+          "NCTF 135 HA es un complejo inyectable de calidad de piel de Fillmed Laboratories, fabricado en Francia.",
+          "Combina **acido hialuronico no reticulado (5 mg/ml)** con una **solucion polirrevitalizante (9 mg/ml)** y esta pensado para soporte estetico de calidad cutanea, no para tratar enfermedad.",
+          "**El objetivo principal es mejorar calidad de piel, no proyeccion de contorno.**",
         ],
         bullets: [
-          "Incluye acido hialuronico no reticulado",
-          "Enfocado en hidratacion y soporte de nutrientes",
-          "Se usa para calidad de piel, no para proyeccion estructural",
+          "12 vitaminas, 24 aminoacidos, 6 minerales, 6 coenzimas y 5 nucleosidos",
+          "Disenado para inyeccion intradermica por personal de salud capacitado",
+          "Se usa para hidratacion, luminosidad, soporte de elasticidad y lineas superficiales",
         ],
       },
       {
-        title: "Como puede apoyar la calidad de piel",
+        title: "Donde se usa y quien debe evitarlo",
         body: [
-          "La calidad de piel no es una sola cosa. Incluye hidratacion, suavidad superficial, luminosidad, elasticidad y que tan refinada se ve la piel de cerca.",
-          "Los protocolos con NCTF 135 HA suelen utilizarse cuando el objetivo es apoyar:",
-          "• Mejor hidratacion y rebote",
-          "• Textura visualmente mas uniforme",
-          "• Menor apariencia de lineas finas por deshidratacion",
-          "• Un acabado mas luminoso y fresco",
-          "**Por eso muchos pacientes lo asocian mas con efecto glass skin que con efecto filler.**",
+          "Segun el perfil de indicaciones del fabricante, NCTF 135 HA se utiliza por via intradermica en rostro (incluyendo periorbital), cuello y escote.",
+          "Las contraindicaciones y puntos de exclusion son clave antes de iniciar.",
+          "**La seleccion de paciente y seguridad importan tanto como el producto.**",
+        ],
+        bullets: [
+          "No usar en menores de 18 anos",
+          "No usar durante embarazo o lactancia",
+          "Evitar con enfermedad activa de piel en la zona",
+          "Evitar con alergia o hipersensibilidad conocida a componentes",
+          "Evitar con antecedente autoinmune o inmunoterapia activa",
         ],
       },
       {
-        title: "En que se diferencia de un filler",
+        title: "Resumen de desempeno clinico",
         body: [
-          "Los rellenos tradicionales de acido hialuronico estan disenados para crear estructura, proyeccion o forma en zonas anatomicas especificas.",
-          "NCTF 135 HA es diferente porque se utiliza como protocolo de calidad de piel con un objetivo mas ligero y difuso.",
-          "**No esta pensado para sustituir relleno de pomulos, menton, mandibula o labios.**",
-          "Esa diferencia importa porque una paciente que busca glow e hidratacion suele necesitar un plan muy distinto al de una paciente que busca contorno o reposicion de volumen.",
+          "En estudios clinicos y seguimiento post-mercado, los endpoints de desempeno mostraron mejoras repetidas en arrugas, luminosidad, hidratacion y metricas de calidad de piel.",
+          "En investigaciones controladas, el efecto sobre arrugas se detecto desde **7 dias despues de la tercera inyeccion** y se mantuvo observable hasta **Dia 120** en protocolos estudiados.",
+          "**El patron clinico es progresivo y acumulativo, no una transformacion instantanea en una sola sesion.**",
         ],
         bullets: [
-          "No es un filler de contorno",
-          "No sustituye el tratamiento de perdida de volumen",
-          "Se entiende mejor como terapia de soporte para calidad de piel",
+          "Mejoras de hidratacion y luminosidad con persistencia de hasta alrededor de 4 meses en lineas de tiempo de estudio",
+          "Mejora de densidad y elasticidad en evaluaciones instrumentales y clinicas",
+          "Reduccion de puntajes de lineas superficiales y poros en evaluaciones estandarizadas",
+          "Buena senal de satisfaccion de pacientes e investigadores en evaluaciones tipo GAIS",
         ],
       },
       {
-        title: "Quien puede considerar este tipo de protocolo",
+        title: "Perfil de seguridad y reacciones esperadas",
         body: [
-          "Este tipo de tratamiento suele considerarse en pacientes cuya piel se ve apagada, deshidratada, cansada o menos resiliente, incluso cuando la estructura facial aun se conserva bien.",
-          "Tambien puede ser util para pacientes que desean un plan inyectable conservador enfocado primero en calidad de piel.",
-          "**Suele encajar mejor en objetivos de hidratacion y luminosidad que en cambios dramaticos de forma.**",
+          "Los efectos esperados suelen ser locales y temporales: enrojecimiento, edema leve, pequenos moretones, sangrado puntual y sensibilidad breve.",
+          "Como en cualquier inyeccion transcutanea, existe riesgo de infeccion y la tecnica esteril es esencial.",
+          "**Las tasas post-mercado en el SSCP son muy bajas y los eventos serios relacionados al tratamiento se reportan como raros.**",
         ],
         bullets: [
-          "Piel apagada o deshidratada",
-          "Cambios tempranos de textura",
-          "Pacientes que quieren un inyectable conservador enfocado en glow",
-          "Pacientes que priorizan calidad de piel sobre contorno",
+          "Inflamacion/eritema: ~0.002%",
+          "Nodulo/picazon/dolor/inflamacion cutanea/ardor/rash: ~0.0005%",
+          "Hipersensibilidad o reaccion alergica: ~0.0001%",
+          "Otros eventos listados (granuloma, angioedema, disnea, etc.): <0.0001%",
         ],
       },
       {
-        title: "Como suele planearse",
+        title: "Como usamos esta evidencia en la planificacion",
         body: [
-          "La mayoria de protocolos de calidad de piel funcionan mejor en serie que en una sola cita, porque el soporte de hidratacion y el refinamiento visible son acumulativos.",
-          "Un punto de partida comun es realizar varias sesiones separadas por algunas semanas y luego mantenimiento segun respuesta, edad, ambiente y objetivos.",
-          "**La constancia y el espaciamiento realista suelen importar mas que intentar forzar un cambio dramatico en una sola visita.**",
+          "En Mave, planteamos NCTF 135 HA como una via de calidad de piel: hidratacion, glow y textura superficial sin objetivos de sobre-relleno estructural.",
+          "La planificacion suele usar protocolo por etapas, espaciamiento realista y seguimiento segun respuesta cutanea y prioridades de la paciente.",
+          "El cuidado posterior importa: evitar maquillaje por 12 horas y evitar exposicion prolongada a sol/UV, frio extremo, sauna o vapor por al menos 48 horas.",
         ],
         bullets: [
-          "Es comun planearlo en serie",
-          "El espaciamiento permite que la piel responda entre sesiones",
-          "El mantenimiento puede ser util segun cada paciente",
+          "Tamizaje medico de candidatura primero",
+          "Plan en serie con reevaluacion",
+          "Aftercare estructurado para reducir irritacion evitable",
         ],
         featureEmbed: {
           label: "Recorrido del protocolo en Mave",
           copy:
-            "Esta publicacion de Mave es util aqui porque explica como NCTF 135 HA combina acido hialuronico con 59 activos revitalizantes para apoyar la actividad de los fibroblastos, mejorar la calidad de la piel y construir un resultado mas hidratado y luminoso con el tiempo.",
+            "Esta publicacion de Mave muestra como explicamos NCTF 135 HA en educacion real para pacientes, con enfoque en calidad de piel y constancia del protocolo.",
           linkLabel: "Abrir la publicacion de Instagram de Mave",
         },
       },
       {
-        title: "Por que importan el origen, la tecnica y la planificacion medica",
+        title: "Por que importan el origen y la tecnica",
         body: [
-          "En los inyectables para calidad de piel, el origen del producto es solo una parte del resultado.",
-          "La tecnica, el patron de aplicacion, la profundidad, la seleccion de pacientes, el aftercare y si se combina con otras modalidades tambien influyen.",
-          "**Los mejores resultados suelen venir de un plan bien indicado para la paciente, no de perseguir solo un nombre de producto.**",
+          "En inyectables de calidad de piel, autenticidad del producto y evidencia clinica son importantes, pero tecnica del proveedor y seleccion de paciente definen el resultado real.",
+          "Profundidad, patron de inyeccion, espaciamiento y cumplimiento del aftercare pueden cambiar de forma material la calidad del resultado y la comodidad.",
+          "**Los mejores resultados salen del protocolo correcto para la paciente correcta en el momento correcto.**",
         ],
         links: [
           {
@@ -310,6 +314,7 @@ export default function NctfSkinQualityGuidePage() {
           </div>
 
           <div className="mt-8 max-w-3xl space-y-4">
+
             <div className="border border-gray-200 bg-[#f9f9f9] rounded-2xl p-5 space-y-2">
               <p className="text-xs uppercase tracking-[0.25em] text-gray-500">
                 {copy.treatmentCardTitle}
