@@ -40,8 +40,8 @@
     "categoryId": "cat_microneedling_mesotherapy",
     "isPopular": false,
     "images": {
-      "primary": "/microneedling.jpg",
-      "secondary": "/microneedling2.jpg"
+      "primary": "/pn.jpg",
+      "secondary": "/pn2.jpg"
     },
     "notesKeys": [
       "note.microneedling.sessions",
@@ -104,8 +104,8 @@
     "categoryId": "cat_microneedling_mesotherapy",
     "isPopular": false,
     "images": {
-      "primary": "/microneedling.jpg",
-      "secondary": "/microneedling2.jpg"
+      "primary": "/toskani.jpg",
+      "secondary": "/toskani2.jpg"
     },
     "notesKeys": [
       "note.microneedling.sessions",
