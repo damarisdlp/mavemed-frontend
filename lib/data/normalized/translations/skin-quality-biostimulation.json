@@ -11,42 +11,67 @@
   },
   {
     "id": "svc.bio_revit.desc",
-    "en": "A premium skin fertilizer treatment from France, designed by Fillmed Laboratories, containing 59 active ingredients to restore hydration, radiance, and elasticity.",
-    "es": "Tratamiento premium de fertilizacion cutanea de Francia, disenado por Fillmed Laboratories, con 59 ingredientes activos para restaurar hidratacion, luminosidad y elasticidad."
+    "en": "A Fillmed Laboratories skin quality protocol with non-crosslinked hyaluronic acid (5 mg/ml) and a polyrevitalizing complex to support hydration, radiance, and superficial wrinkle refinement.",
+    "es": "Un protocolo de calidad de piel de Fillmed Laboratories con acido hialuronico no reticulado (5 mg/ml) y un complejo polirrevitalizante para apoyar hidratacion, luminosidad y refinamiento de lineas superficiales."
   },
   {
     "id": "svc.bio_revit.details",
-    "en": "Our French Bio-Revitalization Therapy uses a premium skin fertilizer treatment from France, designed by Fillmed Laboratories, to nourish the skin at a cellular level. Unlike fillers that add volume, this poly-revitalizing complex acts as a nutrient-rich booster focused on skin quality. It features a unique blend of Hyaluronic Acid, vitamins, amino acids, and minerals that stimulate the fibroblast cells responsible for natural collagen production. It is ideal for patients seeking a hydrated, radiant glass-skin effect without changing facial structure.",
-    "es": "Nuestra Terapia de Bio-Revitalizacion Francesa utiliza un tratamiento premium de fertilizacion cutanea de Francia, disenado por Fillmed Laboratories, para nutrir la piel a nivel celular. A diferencia de los rellenos que anaden volumen, este complejo polirrevitalizante actua como un booster rico en nutrientes enfocado en la calidad de la piel. Cuenta con una mezcla unica de Acido Hialuronico, vitaminas, aminoacidos y minerales que estimulan los fibroblastos responsables de la produccion natural de colageno. Es ideal para pacientes que buscan un efecto glass skin hidratado y luminoso sin cambiar la estructura facial."
+    "en": "Our French Bio-Revitalization Therapy is based on NCTF 135 HA, an aesthetic intradermal injectable designed for skin quality rather than structural volume. The formula combines non-crosslinked hyaluronic acid (5 mg/ml) with a polyrevitalizing solution (9 mg/ml) that includes 12 vitamins, 24 amino acids, 6 minerals, 6 coenzymes, and 5 nucleosides. It is indicated for face (including periorbital area), neck, and decollete to improve hydration, skin homogeneity, radiance, elasticity, and the appearance of superficial wrinkles.",
+    "es": "Nuestra Terapia de Bio-Revitalizacion Francesa se basa en NCTF 135 HA, un inyectable intradermico estetico disenado para calidad de piel y no para volumen estructural. La formula combina acido hialuronico no reticulado (5 mg/ml) con una solucion polirrevitalizante (9 mg/ml) que incluye 12 vitaminas, 24 aminoacidos, 6 minerales, 6 coenzimas y 5 nucleosidos. Esta indicado para rostro (incluyendo zona periorbital), cuello y escote para mejorar hidratacion, homogeneidad de piel, luminosidad, elasticidad y apariencia de lineas superficiales."
   },
   {
     "id": "note.bio_revit.medical_admin",
-    "en": "Strictly for medical professional administration.",
-    "es": "Exclusivamente para administracion por profesional medico."
+    "en": "Must be administered only by trained healthcare professionals.",
+    "es": "Debe ser administrado solo por profesionales de salud capacitados."
   },
   {
     "id": "note.bio_revit.no_volume",
-    "en": "Not a filler and does not provide structural volume.",
-    "es": "No es un relleno y no aporta volumen estructural."
+    "en": "Not a structural filler and not intended for contour projection or volume restoration.",
+    "es": "No es un filler estructural ni esta destinado a proyeccion de contorno o restauracion de volumen."
+  },
+  {
+    "id": "note.bio_revit.composition",
+    "en": "Composition: non-crosslinked hyaluronic acid 5 mg/ml plus a 9 mg/ml polyrevitalizing complex with vitamins, amino acids, minerals, coenzymes, and nucleosides.",
+    "es": "Composicion: acido hialuronico no reticulado 5 mg/ml mas un complejo polirrevitalizante de 9 mg/ml con vitaminas, aminoacidos, minerales, coenzimas y nucleosidos."
+  },
+  {
+    "id": "note.bio_revit.indications",
+    "en": "Indicated for intradermal use in face (including periorbital area), neck, and decollete for hydration, radiance, and superficial wrinkle improvement.",
+    "es": "Indicado para uso intradermico en rostro (incluyendo periorbital), cuello y escote para hidratacion, luminosidad y mejora de lineas superficiales."
+  },
+  {
+    "id": "note.bio_revit.contra",
+    "en": "Do not use in pregnancy or breastfeeding, patients under 18, active skin disease in the area, known ingredient allergy, or autoimmune history/immunotherapy.",
+    "es": "No usar en embarazo o lactancia, pacientes menores de 18 anos, enfermedad activa de piel en la zona, alergia conocida a componentes o antecedente autoinmune/inmunoterapia."
+  },
+  {
+    "id": "note.bio_revit.reactions",
+    "en": "Expected temporary effects can include redness, mild edema, small bruises, minimal bleeding, and short-lived discomfort at injection sites.",
+    "es": "Los efectos temporales esperados pueden incluir enrojecimiento, edema leve, pequenos moretones, sangrado minimo y molestia breve en los sitios de inyeccion."
   },
   {
     "id": "goal.bio_revit.hydration",
-    "en": "Intense hydration support",
-    "es": "Soporte de hidratacion intensa"
+    "en": "Support intense skin hydration",
+    "es": "Apoyar hidratacion intensa de la piel"
   },
   {
     "id": "goal.bio_revit.lines",
-    "en": "Reduce the look of fine lines",
-    "es": "Reducir la apariencia de lineas finas"
+    "en": "Soften the appearance of superficial wrinkles",
+    "es": "Suavizar la apariencia de lineas superficiales"
+  },
+  {
+    "id": "goal.bio_revit.homogeneity",
+    "en": "Improve skin homogeneity and texture",
+    "es": "Mejorar homogeneidad y textura de la piel"
   },
   {
     "id": "goal.bio_revit.pores",
-    "en": "Refine visible pore texture",
-    "es": "Refinar la apariencia de los poros"
+    "en": "Refine visible pore appearance",
+    "es": "Refinar la apariencia visible de poros"
   },
   {
     "id": "goal.bio_revit.radiance",
-    "en": "Boost radiance and elasticity",
+    "en": "Increase radiance and elasticity",
     "es": "Aumentar luminosidad y elasticidad"
   },
   {
@@ -56,8 +81,8 @@
   },
   {
     "id": "area.bio_revit.periorbital",
-    "en": "Under-eye (Periorbital)",
-    "es": "Contorno de ojos (Periorbital)"
+    "en": "Periorbital Area",
+    "es": "Zona Periorbital"
   },
   {
     "id": "area.bio_revit.neck",
@@ -66,7 +91,7 @@
   },
   {
     "id": "area.bio_revit.decollete",
-    "en": "Decolletage",
+    "en": "Decollete",
     "es": "Escote"
   },
   {
@@ -121,47 +146,77 @@
   },
   {
     "id": "exp.bio_revit.pre.1",
-    "en": "Avoid blood thinners such as aspirin and Vitamin E for 3 days prior if medically appropriate. Arrive with a clean face.",
-    "es": "Evita anticoagulantes como aspirina y Vitamina E durante 3 dias previos si es medicamente adecuado. Llega con el rostro limpio."
+    "en": "Before treatment, disclose autoimmune history, immunotherapy, pregnancy/breastfeeding status, allergies, and any active skin condition in the target area.",
+    "es": "Antes del tratamiento, informa antecedente autoinmune, inmunoterapia, embarazo/lactancia, alergias y cualquier condicion activa de piel en la zona objetivo."
+  },
+  {
+    "id": "exp.bio_revit.pre.2",
+    "en": "If medically appropriate, avoid anticoagulants or platelet inhibitors (for example aspirin) before treatment due to higher bruising and mild bleeding risk.",
+    "es": "Si es medicamente adecuado, evita anticoagulantes o antiagregantes (por ejemplo aspirina) antes del tratamiento por mayor riesgo de moreton y sangrado leve."
   },
   {
     "id": "exp.bio_revit.during.1",
-    "en": "Expect 30 minutes of topical numbing followed by precise micro-injections using a fine delivery technique.",
-    "es": "Se aplican 30 minutos de anestesia topica seguidos de microinyecciones precisas con una tecnica de aplicacion fina."
+    "en": "A trained professional performs intradermal microinjections; temporary redness, mild swelling, or pinpoint bruising can appear shortly after treatment.",
+    "es": "Un profesional capacitado realiza microinyecciones intradermicas; enrojecimiento temporal, edema leve o pequenos moretones pueden aparecer poco despues del tratamiento."
   },
   {
     "id": "exp.bio_revit.post.1",
-    "en": "Small papules may be visible for 6-12 hours while the product absorbs. Avoid heavy exercise and saunas for 24 hours.",
-    "es": "Pueden verse pequenas papulas durante 6-12 horas mientras el producto se absorbe. Evita ejercicio intenso y saunas por 24 horas."
+    "en": "Do not apply makeup for 12 hours. Avoid prolonged sun/UV exposure, freezing temperatures, sauna, and steam rooms for at least 48 hours.",
+    "es": "No apliques maquillaje por 12 horas. Evita exposicion prolongada a sol/UV, temperaturas extremas, sauna y vapor por al menos 48 horas."
+  },
+  {
+    "id": "exp.bio_revit.post.2",
+    "en": "Most local reactions resolve within hours to a few days. Contact your provider promptly if symptoms worsen or feel unusual.",
+    "es": "La mayoria de reacciones locales se resuelven en horas o pocos dias. Contacta a tu profesional rapidamente si los sintomas empeoran o se sienten inusuales."
   },
   {
     "id": "faq.bio_revit.q1",
-    "en": "How many sessions do I need?",
-    "es": "Cuantas sesiones necesito?"
+    "en": "What is NCTF 135 HA and where is it used?",
+    "es": "Que es NCTF 135 HA y donde se usa?"
   },
   {
     "id": "faq.bio_revit.a1",
-    "en": "We recommend 3 sessions spaced 15 days apart for optimal results.",
-    "es": "Recomendamos 3 sesiones espaciadas cada 15 dias para resultados optimos."
+    "en": "NCTF 135 HA is a non-crosslinked HA plus polyrevitalizing injectable for skin quality. It is indicated for intradermal use on face (including periorbital area), neck, and decollete.",
+    "es": "NCTF 135 HA es un inyectable de HA no reticulado mas complejo polirrevitalizante para calidad de piel. Esta indicado para uso intradermico en rostro (incluyendo periorbital), cuello y escote."
   },
   {
     "id": "faq.bio_revit.q2",
-    "en": "Is it painful?",
-    "es": "Es doloroso?"
+    "en": "When are results usually noticed?",
+    "es": "Cuando se suelen notar resultados?"
   },
   {
     "id": "faq.bio_revit.a2",
-    "en": "We use a topical anesthetic and ultra-fine needles such as Nanosoft to keep the treatment comfortable.",
-    "es": "Usamos anestesia topica y agujas ultrafinas como Nanosoft para mantener el tratamiento comodo."
+    "en": "Clinical data reports measurable wrinkle improvement as early as 7 days after the third injection, with benefits maintained up to Day 120 in studied protocols.",
+    "es": "Los datos clinicos reportan mejora medible de arrugas desde 7 dias despues de la tercera inyeccion, con beneficios mantenidos hasta el Dia 120 en protocolos estudiados."
   },
   {
     "id": "faq.bio_revit.q3",
-    "en": "When will I see results?",
-    "es": "Cuando vere resultados?"
+    "en": "What side effects are most common?",
+    "es": "Cuales son los efectos secundarios mas comunes?"
   },
   {
     "id": "faq.bio_revit.a3",
-    "en": "A visible glow is often noticeable within 24-48 hours, with cumulative texture improvements over the following 3 weeks.",
-    "es": "La luminosidad suele notarse en 24-48 horas, con mejoras acumulativas de textura durante las siguientes 3 semanas."
+    "en": "Most effects are mild and temporary, such as redness, swelling, bruising, pinpoint bleeding, or tenderness. Post-market incidence rates are very low and serious events are rare.",
+    "es": "La mayoria de efectos son leves y temporales, como enrojecimiento, edema, moreton, sangrado puntual o sensibilidad. Las tasas de incidencia post-mercado son muy bajas y los eventos serios son raros."
+  },
+  {
+    "id": "faq.bio_revit.q4",
+    "en": "Who should avoid this treatment?",
+    "es": "Quien debe evitar este tratamiento?"
+  },
+  {
+    "id": "faq.bio_revit.a4",
+    "en": "It should be avoided in pregnancy or breastfeeding, in patients under 18, with known ingredient allergy, autoimmune history or immunotherapy, or active skin disease in the treatment area.",
+    "es": "Debe evitarse en embarazo o lactancia, en pacientes menores de 18 anos, con alergia conocida a componentes, antecedente autoinmune o inmunoterapia, o enfermedad activa de piel en la zona de tratamiento."
+  },
+  {
+    "id": "faq.bio_revit.q5",
+    "en": "Does it replace filler for contour or volume?",
+    "es": "Reemplaza al filler para contorno o volumen?"
+  },
+  {
+    "id": "faq.bio_revit.a5",
+    "en": "No. This treatment is designed for skin quality support (hydration, radiance, superficial texture), not for structural contouring or volume restoration.",
+    "es": "No. Este tratamiento esta disenado para soporte de calidad de piel (hidratacion, luminosidad, textura superficial), no para contorno estructural o restauracion de volumen."
   }
 ]
