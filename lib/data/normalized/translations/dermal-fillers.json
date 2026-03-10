@@ -230,6 +230,11 @@
     "es": "Resultados con 1 jeringa de relleno de acido hialuronico Vivacy de densidad media."
   },
   {
+    "id": "ba.lip_fillers.04.caption",
+    "en": "Results are 1 syringe of generic cross-linked hyaluronic acid - medium density",
+    "es": "Resultados con 1 jeringa de acido hialuronico generico reticulado de densidad media."
+  },
+  {
     "id": "note.lip_fillers.immediate",
     "en": "Immediate results with minimal recovery time",
     "es": "Resultados inmediatos con tiempo de recuperación mínimo"
