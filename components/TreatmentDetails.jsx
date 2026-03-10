@@ -932,6 +932,10 @@ export default function TreatmentDetails({ treatment, packageGroups = [] }) {
     ? t("treatmentDetails.startingFrom", { price: lowestPriceDisplay })
     : lowestPriceDisplay;
 
+  const categoryAnchor =
+    (typeof treatment?.category === "string" && treatment.category.trim()) ||
+    getLocalized(treatment.categoryDisplayName)?.replace(/\s+/g, "-").toLowerCase() || "";
+
   return (
     <div className="w-full bg-white">
       <div className="grid grid-cols-1 md:grid-cols-[3fr_2fr] min-h-[50vh]">
@@ -955,9 +959,7 @@ export default function TreatmentDetails({ treatment, packageGroups = [] }) {
               </Link>{" "}
               /{" "}
               <Link
-                href={`/treatments/#${getLocalized(treatment.categoryDisplayName)
-                  ?.replace(/\s+/g, "-")
-                  .toLowerCase()}`}
+                href={`/treatments/#${categoryAnchor}`}
                 className="hover:underline hover:text-black"
               >
                 {getLocalized(treatment.categoryDisplayName)}
