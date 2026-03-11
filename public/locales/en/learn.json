@@ -83,6 +83,18 @@
         ]
       },
       {
+        "title": "Neuromodulators",
+        "anchor": "neuromodulators",
+        "description": "Educational guides on Botulinum Toxin Type A planning, reliability, and expected treatment timelines.",
+        "items": [
+          {
+            "title": "Allergan Aesthetics Neuromodulator (Botox) Guide",
+            "excerpt": "Understand Botulinum Toxin Type A use, target zones, expected onset, and typical 3-4 month longevity.",
+            "href": "/learn/allergan-aesthetics-neuromodulator-botox"
+          }
+        ]
+      },
+      {
         "title": "Non-Surgical Lifting",
         "anchor": "non-surgical-lifting",
         "description": "How to evaluate lifting devices, planning quality, and provider selection.",
