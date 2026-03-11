@@ -8,6 +8,7 @@
     "promoPrice": { "amount": 290, "currency": "USD" },
     "priceTextKey": "",
     "notesKeys": [
+      "note.lip_fillers.stylage_premium_lab",
       "note.lip_fillers.stylage_tech",
       "note.lip_fillers.stylage_zones",
       "note.lip_fillers.stylage_syringe",
@@ -24,6 +25,7 @@
     "promoPrice": { "amount": 350, "currency": "USD" },
     "priceTextKey": "",
     "notesKeys": [
+      "note.lip_fillers.volift_premium_lab",
       "note.lip_fillers.volift_tech",
       "note.lip_fillers.volift_zones",
       "note.lip_fillers.volift_syringe",
@@ -40,6 +42,7 @@
     "promoPrice": null,
     "priceTextKey": "",
     "notesKeys": [
+      "note.lip_fillers.volbella_premium_lab",
       "note.lip_fillers.volbella_tech",
       "note.lip_fillers.volbella_zones",
       "note.lip_fillers.volbella_syringe",
@@ -56,6 +59,7 @@
     "promoPrice": null,
     "priceTextKey": "",
     "notesKeys": [
+      "note.lip_fillers.generic_deep_premium_lab",
       "note.lip_fillers.generic_deep_composition",
       "note.lip_fillers.generic_deep_depth",
       "note.lip_fillers.generic_deep_lidocaine",
