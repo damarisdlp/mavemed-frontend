@@ -248,6 +248,65 @@ export default function TreatmentDetails({ treatment, packageGroups = [] }) {
     });
   };
 
+  const withLocalePath = (path) => `/${locale === "es" ? "es/" : ""}${path.replace(/^\//, "")}`;
+
+  const normalizeInlineToken = (value) =>
+    String(value || "")
+      .toLowerCase()
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "")
+      .trim();
+
+  const shouldLinkFillerEducation = [
+    "facial-balancing-fillers",
+    "hyaluronic-acid-lip-fillers",
+    "mesotherapy-infusions",
+  ].includes(treatment?.urlSlug);
+
+  const getInlineEducationHref = (token) => {
+    const normalized = normalizeInlineToken(token);
+
+    if (normalized === "fillmed laboratories" && treatment?.urlSlug === "bio-revitalization-french-glow") {
+      return withLocalePath("/learn/nctf-135-ha-skin-quality-guide");
+    }
+
+    if (!shouldLinkFillerEducation) return "";
+    if (normalized === "allergan aesthetics") {
+      return withLocalePath("/learn/allergan-aesthetics-hyaluronic-acid-fillers");
+    }
+    if (normalized === "vivacy") {
+      return withLocalePath("/learn/vivacy-stylage-m-hyaluronic-acid-filler");
+    }
+    if (
+      normalized.includes("cross-linked hyaluronic acid") ||
+      normalized.includes("acido hialuronico reticulado") ||
+      (normalized.includes("generic") && normalized.includes("hyaluronic acid filler"))
+    ) {
+      return withLocalePath("/learn/revolax-cross-linked-hyaluronic-acid-fillers");
+    }
+    return "";
+  };
+
+  const renderInlineEducationLinks = (text, keyPrefix = "inline") => {
+    if (typeof text !== "string" || !text.trim()) return text;
+    const parts = text.split(
+      /(Fillmed Laboratories|Allergan Aesthetics|Vivacy|Generic Name: Cross-Linked Hyaluronic Acid|generic cross-linked hyaluronic acid|generic Hyaluronic Acid Filler|generic hyaluronic acid filler|Nombre genérico: ácido hialurónico reticulado|Nombre genérico: acido hialuronico reticulado|acido hialuronico reticulado|ácido hialurónico reticulado)/gi
+    );
+    if (parts.length === 1) return text;
+
+    return parts.map((part, idx) => {
+      const href = getInlineEducationHref(part);
+      if (!href) {
+        return <span key={`${keyPrefix}-text-${idx}`}>{part}</span>;
+      }
+      return (
+        <Link key={`${keyPrefix}-link-${idx}`} href={href} className="underline underline-offset-4">
+          {part}
+        </Link>
+      );
+    });
+  };
+
   const renderNoteWithLinks = (note, options = {}) => {
     const { linkToxin = true } = options;
     const text = getLocalized(note);
@@ -428,31 +487,14 @@ export default function TreatmentDetails({ treatment, packageGroups = [] }) {
           </Link>
         );
       }
-      return <span key={`note-text-${idx}`}>{part}</span>;
+      return <span key={`note-text-${idx}`}>{renderInlineEducationLinks(part, `note-inline-${idx}`)}</span>;
     });
   };
 
   const renderDescriptionWithLinks = (field) => {
     const text = getLocalized(field);
     if (typeof text !== "string" || !text.trim()) return text;
-    if (treatment?.urlSlug !== "bio-revitalization-french-glow") return text;
-
-    const parts = text.split(/(Fillmed Laboratories)/gi);
-    return parts.map((part, idx) => {
-      if (part.toLowerCase() !== "fillmed laboratories") {
-        return <span key={`bio-revit-desc-${idx}`}>{part}</span>;
-      }
-
-      return (
-        <Link
-          key={`bio-revit-desc-link-${idx}`}
-          href={`/${locale === "es" ? "es/" : ""}learn/nctf-135-ha-skin-quality-guide`}
-          className="underline underline-offset-4"
-        >
-          {part}
-        </Link>
-      );
-    });
+    return renderInlineEducationLinks(text, "desc");
   };
 
   const buildPromoDisplayOptions = () => {
