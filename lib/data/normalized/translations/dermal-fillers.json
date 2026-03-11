@@ -11,8 +11,8 @@
   },
   {
     "id": "svc.facial_balancing.desc",
-    "en": "Achieve natural facial harmony with strategic dermal filler placement targeting the cheeks, chin, jawline, and midface. Ideal for restoring symmetry, contour, and volume loss.",
-    "es": "Logre armonía facial natural con colocación estratégica de rellenos dérmicos dirigidos a las mejillas, barbilla, línea mandibular y cara media. Ideal para restaurar simetría, contorno y pérdida de volumen."
+    "en": "Dermal fillers are injectable treatments used to restore lost volume and enhance facial symmetry. Our specialists utilize cross-linked hyaluronic acid from world-renowned manufacturers to provide structural support to the mid-face, chin, and jawline. These treatments offer immediate rejuvenation and biocompatible results that last between 6 and 18 months.",
+    "es": "Los rellenos dérmicos son tratamientos inyectables utilizados para restaurar volumen perdido y mejorar la simetría facial. Nuestros especialistas utilizan ácido hialurónico reticulado de fabricantes reconocidos mundialmente para aportar soporte estructural al tercio medio, mentón y línea mandibular. Estos tratamientos ofrecen rejuvenecimiento inmediato y resultados biocompatibles que duran entre 6 y 18 meses."
   },
   {
     "id": "svc.facial_balancing.details",
@@ -201,13 +201,13 @@
   },
   {
     "id": "svc.lip_fillers.name",
-    "en": "Lip Fillers",
-    "es": "Rellenos de Labios"
+    "en": "Lip Rejuvenation & Sculpting",
+    "es": "Rejuvenecimiento y Escultura Labial"
   },
   {
     "id": "svc.lip_fillers.desc",
-    "en": "Achieve fuller, more defined lips instantly with hyaluronic acid-based lip fillers. This non-surgical treatment enhances lip volume, symmetry, and hydration with natural-looking results.",
-    "es": "Logre labios más llenos y definidos al instante con rellenos de labios a base de ácido hialurónico. Este tratamiento no quirúrgico mejora el volumen, la simetría y la hidratación de los labios con resultados naturales."
+    "en": "Lip enhancement at Mave Medical Spa involves the precise application of hyaluronic acid-based fillers to improve volume, define the borders, and deeply hydrate the lips. By utilizing specialized formulas from leading aesthetic laboratories, we ensure a soft, natural feel and balanced proportions. Results are immediate and generally maintained for 9 to 18 months.",
+    "es": "El aumento labial en Mave Medical Spa consiste en la aplicación precisa de rellenos a base de ácido hialurónico para mejorar volumen, definir bordes e hidratar profundamente los labios. Al utilizar fórmulas especializadas de laboratorios estéticos líderes, aseguramos una sensación suave, natural y proporciones equilibradas. Los resultados son inmediatos y generalmente se mantienen entre 6 y 12 meses."
   },
   {
     "id": "svc.lip_fillers.details",
@@ -291,23 +291,43 @@
   },
   {
     "id": "opt.lip_fillers.stylage_m",
-    "en": "Vivacy Hyaluronic Acid Filler - Medium Density",
-    "es": "Relleno de Ácido Hialurónico fabricado por Vivacy - Densidad media"
+    "en": "Structural Lip Contouring (Medium Density)",
+    "es": "Contorno Labial Estructural (Densidad media)"
   },
   {
     "id": "opt.lip_fillers.volift",
-    "en": "Allergan Aesthetics Hyaluronic Acid Filler - Medium Density",
-    "es": "Relleno de Ácido Hialurónico fabricado por Allergan Aesthetics - Densidad media"
+    "en": "Advanced Flexible Volume (Premium Formula)",
+    "es": "Volumen Flexible Avanzado (Fórmula premium)"
   },
   {
     "id": "opt.lip_fillers.volbella",
-    "en": "Allergan Aesthetics Hyaluronic Acid Filler - Low Density",
-    "es": "Relleno de Ácido Hialurónico fabricado por Allergan Aesthetics - Densidad baja"
+    "en": "Deep Hydration & Refinement (Low Density)",
+    "es": "Hidratación Profunda y Refinamiento (Densidad baja)"
   },
   {
     "id": "opt.lip_fillers.generic_deep",
-    "en": "Generic Name: Cross-Linked Hyaluronic Acid - Medium Density",
-    "es": "Nombre genérico: ácido hialurónico reticulado - Densidad media"
+    "en": "Essential Volume Protocol (High-Purity HA)",
+    "es": "Protocolo Esencial de Volumen (AH de alta pureza)"
+  },
+  {
+    "id": "note.lip_fillers.stylage_premium_lab",
+    "en": "This premium injectable treatment utilizes a high-performance, medium-density hyaluronic acid gel from world-leading laboratories and brands like Vivacy Laboratories.",
+    "es": "Este tratamiento inyectable premium utiliza un gel de ácido hialurónico de alto rendimiento y densidad media de laboratorios líderes a nivel mundial y marcas como Vivacy Laboratories."
+  },
+  {
+    "id": "note.lip_fillers.volift_premium_lab",
+    "en": "This premium injectable treatment utilizes a high-performance, medium-density hyaluronic acid gel from world-leading laboratories and brands like Allergan Aesthetics.",
+    "es": "Este tratamiento inyectable premium utiliza un gel de ácido hialurónico de alto rendimiento y densidad media de laboratorios líderes a nivel mundial y marcas como Allergan Aesthetics."
+  },
+  {
+    "id": "note.lip_fillers.volbella_premium_lab",
+    "en": "This premium injectable treatment utilizes a high-performance, medium-density hyaluronic acid gel from world-leading laboratories and brands like Allergan Aesthetics.",
+    "es": "Este tratamiento inyectable premium utiliza un gel de ácido hialurónico de alto rendimiento y densidad media de laboratorios líderes a nivel mundial y marcas como Allergan Aesthetics."
+  },
+  {
+    "id": "note.lip_fillers.generic_deep_premium_lab",
+    "en": "This premium injectable treatment utilizes a high-performance, medium-density hyaluronic acid gel from world-leading laboratories and brands like Revolax.",
+    "es": "Este tratamiento inyectable premium utiliza un gel de ácido hialurónico de alto rendimiento y densidad media de laboratorios líderes a nivel mundial y marcas como Revolax."
   },
   {
     "id": "note.lip_fillers.stylage_tech",
@@ -376,8 +396,8 @@
   },
   {
     "id": "note.lip_fillers.volbella_duration",
-    "en": "Typically lasts 9 to 12 months.",
-    "es": "Duración estimada de 9 a 12 meses."
+    "en": "Typically lasts 6 to 12 months.",
+    "es": "Duración estimada de 6 a 12 meses."
   },
   {
     "id": "note.lip_fillers.volbella_lidocaine",
