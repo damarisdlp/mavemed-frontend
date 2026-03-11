@@ -61,6 +61,28 @@
         ]
       },
       {
+        "title": "Dermal Fillers & Brands",
+        "anchor": "dermal-fillers-brands",
+        "description": "How manufacturer lines differ by density profile, treatment zones, and durability planning.",
+        "items": [
+          {
+            "title": "Allergan Aesthetics Hyaluronic Acid Fillers",
+            "excerpt": "Understand Volift, Voluma, Volbella, Skinvive, and HarmonyCa profiles for structure, hydration, and longevity planning.",
+            "href": "/learn/allergan-aesthetics-hyaluronic-acid-fillers"
+          },
+          {
+            "title": "Vivacy Hyaluronic Acid Fillers: Stylage M",
+            "excerpt": "See where Stylage M fits in lip and facial balancing plans, including density behavior and typical duration.",
+            "href": "/learn/vivacy-stylage-m-hyaluronic-acid-filler"
+          },
+          {
+            "title": "Revolax Cross-Linked Hyaluronic Acid Fillers",
+            "excerpt": "Compare Revolax Deep and Revolax Sub-Q by density, treatment zones, and durability expectations.",
+            "href": "/learn/revolax-cross-linked-hyaluronic-acid-fillers"
+          }
+        ]
+      },
+      {
         "title": "Non-Surgical Lifting",
         "anchor": "non-surgical-lifting",
         "description": "How to evaluate lifting devices, planning quality, and provider selection.",
