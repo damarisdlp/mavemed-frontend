@@ -83,6 +83,18 @@
         ]
       },
       {
+        "title": "Neuromoduladores",
+        "anchor": "neuromodulators",
+        "description": "Guías educativas sobre planificación con Toxina Botulínica Tipo A, confiabilidad y tiempos esperados.",
+        "items": [
+          {
+            "title": "Guía de Neuromodulador de Allergan Aesthetics (Botox)",
+            "excerpt": "Conoce el uso de Toxina Botulínica Tipo A, zonas objetivo, inicio de efecto y duración típica de 3-4 meses.",
+            "href": "/learn/allergan-aesthetics-neuromodulator-botox"
+          }
+        ]
+      },
+      {
         "title": "Lifting no quirúrgico",
         "anchor": "non-surgical-lifting",
         "description": "Cómo evaluar dispositivos de lifting, calidad de planificación y elección de proveedor.",
