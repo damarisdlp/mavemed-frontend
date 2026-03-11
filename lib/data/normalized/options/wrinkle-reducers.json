@@ -14,6 +14,7 @@
     },
     "priceTextKey": "",
     "notesKeys": [
+      "note.botox.premium_labs",
       "note.botox.any_zone",
       "promo.botox.note2"
     ]
