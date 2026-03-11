@@ -1,8 +1,8 @@
 [
   {
     "id": "cat.collagen_biostimulators.name",
-    "en": "Collagen Biostimulators",
-    "es": "Biostimuladores de Colágeno"
+    "en": "Collagen Biostimulators (PLLA & CaHA)",
+    "es": "Biostimuladores de Colágeno (PLLA y CaHA)"
   },
   {
     "id": "svc.sculptra.name",
@@ -11,8 +11,8 @@
   },
   {
     "id": "svc.sculptra.desc",
-    "en": "Support gradual collagen renewal, firmness, and structural volume with a Galderma-manufactured PLLA collagen biostimulator for natural-looking rejuvenation over time.",
-    "es": "Favorece la renovación gradual de colágeno, la firmeza y el volumen estructural con un bioestimulador de colágeno PLLA fabricado por Galderma para un rejuvenecimiento natural con el tiempo."
+    "en": "Collagen biostimulators are injectable treatments, such as Poly-L-Lactic Acid (PLLA), that stimulate the body’s natural production of structural proteins. Unlike traditional fillers, these treatments provide a gradual facial rejuvenation, improving skin thickness and firmness over several months. They are ideal for restoring long-term structural volume and improving skin quality.",
+    "es": "Los bioestimuladores de colágeno son tratamientos inyectables, como el Ácido Poli-L-Láctico (PLLA), que estimulan la producción natural de proteínas estructurales del cuerpo. A diferencia de los rellenos tradicionales, estos tratamientos brindan rejuvenecimiento facial gradual, mejorando el grosor y la firmeza de la piel durante varios meses. Son ideales para restaurar volumen estructural a largo plazo y mejorar la calidad de la piel."
   },
   {
     "id": "svc.sculptra.details",
@@ -281,8 +281,8 @@
   },
   {
     "id": "svc.harmonyca.desc",
-    "en": "Improve contour, hydration, and structural support with a hybrid injectable collagen biostimulator that combines an Allergan Aesthetics-manufactured HA + CaHA formulation in one treatment.",
-    "es": "Mejora el contorno, la hidratación y el soporte estructural con un bioestimulador de colágeno inyectable híbrido que combina en un solo tratamiento una formulación de AH + CaHA fabricada por Allergan Aesthetics."
+    "en": "Collagen biostimulators are injectable treatments, such as Poly-L-Lactic Acid (PLLA), that stimulate the body’s natural production of structural proteins. Unlike traditional fillers, these treatments provide a gradual facial rejuvenation, improving skin thickness and firmness over several months. They are ideal for restoring long-term structural volume and improving skin quality.",
+    "es": "Los bioestimuladores de colágeno son tratamientos inyectables, como el Ácido Poli-L-Láctico (PLLA), que estimulan la producción natural de proteínas estructurales del cuerpo. A diferencia de los rellenos tradicionales, estos tratamientos brindan rejuvenecimiento facial gradual, mejorando el grosor y la firmeza de la piel durante varios meses. Son ideales para restaurar volumen estructural a largo plazo y mejorar la calidad de la piel."
   },
   {
     "id": "svc.harmonyca.details",
