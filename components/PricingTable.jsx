@@ -42,6 +42,30 @@ export default function PricingTable({ treatment, addonTreatments = [], packageG
       .trim()
       .toLowerCase();
 
+  const allerganAltSlugs = new Set([
+    "wrinkle-reducers-neuromodulator",
+    "facial-balancing-fillers",
+    "hyaluronic-acid-lip-fillers",
+    "hybrid-injectable-collagen-biostimulator-ha-caha",
+    "mesotherapy-infusions",
+  ]);
+  const galdermaAltSlugs = new Set(["collagen-biostimulator-plla"]);
+  const fillmedAltSlugs = new Set(["bio-revitalization-french-glow"]);
+
+  const treatmentImageAlt = (() => {
+    const slug = treatment?.urlSlug || "";
+    if (allerganAltSlugs.has(slug)) {
+      return "Treatment performed using Allergan Aesthetics products at Mave Medical Spa.";
+    }
+    if (galdermaAltSlugs.has(slug)) {
+      return "Treatment performed using Galderma products at Mave Medical Spa.";
+    }
+    if (fillmedAltSlugs.has(slug)) {
+      return "Treatment performed using Fillmed Laboratories products at Mave Medical Spa.";
+    }
+    return `Treatment image for ${localize(treatment.serviceDisplayName)}`;
+  })();
+
   const withLocalePath = (path) => `/${locale === "es" ? "es/" : ""}${path.replace(/^\//, "")}`;
 
   const normalizeInlineToken = (value) =>
@@ -57,11 +81,20 @@ export default function PricingTable({ treatment, addonTreatments = [], packageG
     "mesotherapy-infusions",
   ].includes(treatment?.urlSlug);
 
+  const shouldLinkNeuromodulatorEducation = [
+    "wrinkle-reducers-neuromodulator",
+  ].includes(treatment?.urlSlug);
+
   const getInlineEducationHref = (token) => {
     const normalized = normalizeInlineToken(token);
     if (normalized === "fillmed laboratories" && treatment?.urlSlug === "bio-revitalization-french-glow") {
       return withLocalePath("/learn/nctf-135-ha-skin-quality-guide");
     }
+
+    if (shouldLinkNeuromodulatorEducation && normalized === "allergan aesthetics") {
+      return withLocalePath("/learn/allergan-aesthetics-neuromodulator-botox");
+    }
+
     if (!shouldLinkFillerEducation) return "";
     if (normalized === "allergan aesthetics") {
       return withLocalePath("/learn/allergan-aesthetics-hyaluronic-acid-fillers");
@@ -404,7 +437,7 @@ export default function PricingTable({ treatment, addonTreatments = [], packageG
         <div className="relative w-full h-[75vh]">
           <Image
             src={treatment.images?.secondary || "/placeholder.jpg"}
-            alt={`Treatment image for ${localize(treatment.serviceDisplayName)}`}
+            alt={treatmentImageAlt}
             fill
             className="object-cover [object-position:center_55%] [object-position:0%_100%]"
             priority
