@@ -61,6 +61,28 @@
         ]
       },
       {
+        "title": "Rellenos dérmicos y marcas",
+        "anchor": "dermal-fillers-brands",
+        "description": "Cómo difieren las líneas por densidad, zonas de aplicación y duración esperada.",
+        "items": [
+          {
+            "title": "Rellenos de Ácido Hialurónico de Allergan Aesthetics",
+            "excerpt": "Conoce los perfiles de Volift, Voluma, Volbella, Skinvive y HarmonyCa para estructura, hidratación y planificación de duración.",
+            "href": "/learn/allergan-aesthetics-hyaluronic-acid-fillers"
+          },
+          {
+            "title": "Rellenos de Ácido Hialurónico Vivacy: Stylage M",
+            "excerpt": "Revisa dónde encaja Stylage M en planes de labios y equilibrio facial, con densidad y duración típica.",
+            "href": "/learn/vivacy-stylage-m-hyaluronic-acid-filler"
+          },
+          {
+            "title": "Rellenos Revolax de Ácido Hialurónico Reticulado",
+            "excerpt": "Compara Revolax Deep y Revolax Sub-Q por densidad, zonas recomendadas y durabilidad esperada.",
+            "href": "/learn/revolax-cross-linked-hyaluronic-acid-fillers"
+          }
+        ]
+      },
+      {
         "title": "Lifting no quirúrgico",
         "anchor": "non-surgical-lifting",
         "description": "Cómo evaluar dispositivos de lifting, calidad de planificación y elección de proveedor.",
