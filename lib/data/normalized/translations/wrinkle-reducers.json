@@ -11,13 +11,13 @@
   },
   {
     "id": "svc.botox.desc",
-    "en": "Botulinum Toxin Type A neuromodulator treatment softens dynamic expression lines for a smoother, more refreshed appearance.",
-    "es": "El tratamiento neuromodulador con toxina botulínica tipo A suaviza las líneas de expresión dinámicas para una apariencia más tersa y renovada."
+    "en": "Neuromodulators at Mave Medical Spa utilize Botulinum Toxin Type A to temporarily relax muscles responsible for dynamic expression lines. We work with premium international laboratories and high-purity counterparts to ensure consistent, natural-looking results. This medical treatment effectively softens forehead lines, crow’s feet, and frown lines, with results typically lasting 3 to 4 months.",
+    "es": "Los neuromoduladores en Mave Medical Spa utilizan Toxina Botulínica Tipo A para relajar temporalmente los músculos responsables de las líneas de expresión dinámicas. Trabajamos con laboratorios internacionales premium y contrapartes de alta pureza para asegurar resultados consistentes y naturales. Este tratamiento médico suaviza de forma efectiva las líneas de la frente, patas de gallo y líneas del entrecejo, con resultados que suelen durar de 3 a 4 meses."
   },
   {
     "id": "svc.botox.details",
-    "en": "At Mave, this service includes two Botulinum Toxin Type A neuromodulator options: a premium Allergan Aesthetics formulation and a certified generic pharmaceutical option. Both use the same active ingredient and are selected according to your anatomy, goals, and treatment plan under medical supervision.",
-    "es": "En Mave, este servicio incluye dos opciones de neuromodulador con toxina botulínica tipo A: una formulación premium de Allergan Aesthetics y una opción farmacéutica genérica certificada. Ambas utilizan el mismo ingrediente activo y se seleccionan según tu anatomía, objetivos y plan de tratamiento bajo supervisión médica."
+    "en": "At Mave, this service includes two Botulinum Toxin Type A neuromodulator options: a premium Allergan Aesthetics formulation and a certified generic pharmaceutical option. Both use the same active ingredient and are selected according to your anatomy, metabolism, goals, and treatment plan under medical supervision.",
+    "es": "En Mave, este servicio incluye dos opciones de neuromodulador con toxina botulínica tipo A: una formulación premium de Allergan Aesthetics y una opción farmacéutica genérica certificada. Ambas utilizan el mismo ingrediente activo y se seleccionan según tu anatomía, metabolismo, objetivos y plan de tratamiento bajo supervisión médica."
   },
   {
     "id": "note.botox.exclusive_rate",
@@ -121,8 +121,13 @@
   },
   {
     "id": "opt.botox.per_unit",
-    "en": "Allergan Aesthetics Neuromodulator (Per Unit)",
-    "es": "Neuromodulador de Allergan Aesthetics (Por Unidad)"
+    "en": "Neuromodulator / Muscle Relaxant (Per Unit)",
+    "es": "Neuromodulador / Relajante Muscular (Por Unidad)"
+  },
+  {
+    "id": "note.botox.premium_labs",
+    "en": "Note: We utilize premium formulas from world-leading laboratories, including Allergan Aesthetics.",
+    "es": "Nota: Utilizamos fórmulas premium de laboratorios líderes a nivel mundial, incluyendo Allergan Aesthetics."
   },
   {
     "id": "note.botox.any_zone",
@@ -141,13 +146,13 @@
   },
   {
     "id": "promo.botox.description",
-    "en": "Botulinum Toxin Type A neuromodulator treatment softens dynamic expression lines for a smoother, more refreshed appearance.",
-    "es": "El tratamiento neuromodulador con toxina botulínica tipo A suaviza las líneas de expresión dinámicas para una apariencia más tersa y renovada."
+    "en": "Neuromodulators at Mave Medical Spa utilize Botulinum Toxin Type A to temporarily relax muscles responsible for dynamic expression lines. We work with premium international laboratories and high-purity counterparts to ensure consistent, natural-looking results. This medical treatment effectively softens forehead lines, crow’s feet, and frown lines, with results typically lasting 3 to 4 months.",
+    "es": "Los neuromoduladores en Mave Medical Spa utilizan Toxina Botulínica Tipo A para relajar temporalmente los músculos responsables de las líneas de expresión dinámicas. Trabajamos con laboratorios internacionales premium y contrapartes de alta pureza para asegurar resultados consistentes y naturales. Este tratamiento médico suaviza de forma efectiva las líneas de la frente, patas de gallo y líneas del entrecejo, con resultados que suelen durar de 3 a 4 meses."
   },
   {
     "id": "promo.botox.option_name",
-    "en": "Allergan Aesthetics Neuromodulator - 45-Unit Exclusive Pack",
-    "es": "Neuromodulador de Allergan Aesthetics - Paquete Exclusivo de 45 Unidades"
+    "en": "Neuromodulator / Muscle Relaxant - 45-Unit Exclusive Pack",
+    "es": "Neuromodulador / Relajante Muscular - Paquete Exclusivo de 45 Unidades"
   },
   {
     "id": "promo.botox.note1",
@@ -606,8 +611,8 @@
   },
   {
     "id": "opt.weekly.tox_collagen.botox_package",
-    "en": "Tox + Collagen Boost Package - Allergan Aesthetics Neuromodulator",
-    "es": "Paquete Tox + Collagen Boost - Neuromodulador de Allergan Aesthetics"
+    "en": "Tox + Collagen Boost Package - Neuromodulator / Muscle Relaxant",
+    "es": "Paquete Tox + Collagen Boost - Neuromodulador / Relajante Muscular"
   },
   {
     "id": "opt.weekly.tox_collagen.generic_package",
