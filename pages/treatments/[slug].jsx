@@ -14,6 +14,7 @@ import ContactCTA from "@/components/ContactCTA";
 import PromoPackageSection from "@/components/PromoPackageSection";
 import InstagramFeed from "@/components/InstagramFeed"
 import ReviewsSection from "@/components/ReviewsSection"
+import BrandCarousel from "@/components/BrandCarousel";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import SeoLinks from "@/components/SeoLinks";
 import BeforeAfterCarousel from "@/components/BeforeAfterCarousel";
@@ -58,6 +59,10 @@ const treatmentLearnLinks = {
   "mesotherapy-infusions": {
     href: "/learn/allergan-aesthetics-hyaluronic-acid-fillers",
     i18nKey: "skinviveEducation",
+  },
+  "wrinkle-reducers-neuromodulator": {
+    href: "/learn/allergan-aesthetics-neuromodulator-botox",
+    i18nKey: "botoxAllerganGuide",
   },
 };
 
@@ -270,6 +275,7 @@ export default function TreatmentPage({ treatment, packageGroups = [], addonTrea
           <PromoPackageSection />
           <InstagramFeed />
           <ReviewsSection />
+          <BrandCarousel />
         </div>
         <Footer />
       </section>
