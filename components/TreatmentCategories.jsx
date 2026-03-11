@@ -24,7 +24,7 @@ export default function TreatmentCategories({ categories = [] }) {
             <div className="relative h-[130px] w-full sm:h-[170px]">
               <Image
                 src={service.image}
-                alt={`${localize(service.name)} – ${localize(service.description)}`}
+                alt={getServiceImageAlt(service)}
                 fill
                 className="object-cover"
               />
@@ -105,6 +105,33 @@ export default function TreatmentCategories({ categories = [] }) {
       .replace(/₇/g, "7")
       .replace(/₈/g, "8")
       .replace(/₉/g, "9");
+
+  const getServiceImageAlt = (service, withLocation = false) => {
+    const slug = service?.slug || "";
+    const allerganAltSlugs = new Set([
+      "wrinkle-reducers-neuromodulator",
+      "facial-balancing-fillers",
+      "hyaluronic-acid-lip-fillers",
+      "hybrid-injectable-collagen-biostimulator-ha-caha",
+      "mesotherapy-infusions",
+    ]);
+    const galdermaAltSlugs = new Set(["collagen-biostimulator-plla"]);
+    const fillmedAltSlugs = new Set(["bio-revitalization-french-glow"]);
+
+    if (allerganAltSlugs.has(slug)) {
+      return "Treatment performed using Allergan Aesthetics products at Mave Medical Spa.";
+    }
+    if (galdermaAltSlugs.has(slug)) {
+      return "Treatment performed using Galderma products at Mave Medical Spa.";
+    }
+    if (fillmedAltSlugs.has(slug)) {
+      return "Treatment performed using Fillmed Laboratories products at Mave Medical Spa.";
+    }
+    if (withLocation) {
+      return `${localize(service.name)} in Tijuana – ${localize(service.description)}`;
+    }
+    return `${localize(service.name)} – ${localize(service.description)}`;
+  };
   const normalizedQuery = normalizeText(searchTerm.trim());
   const visibleCategories = orderedCategories
     .map((category) => {
@@ -290,7 +317,7 @@ export default function TreatmentCategories({ categories = [] }) {
                   <div className="relative h-56 w-full">
                     <Image
                       src={service.image}
-                      alt={`${localize(service.name)} in Tijuana – ${localize(service.description)}`}
+                      alt={getServiceImageAlt(service, true)}
                       fill
                       className="object-cover"
                     />
