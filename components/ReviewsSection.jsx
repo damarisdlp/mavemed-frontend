@@ -1,9 +1,84 @@
 "use client";
 
 import "keen-slider/keen-slider.min.css";
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { useKeenSlider } from "keen-slider/react";
 import { useTranslation } from "next-i18next";
+import { useRouter } from "next/router";
+
+const SITE_URL = "https://www.mavemedspa.com";
+
+function toIsoDate(timestampSeconds) {
+  if (!timestampSeconds) return "";
+  const value = Number(timestampSeconds);
+  if (!Number.isFinite(value)) return "";
+  const iso = new Date(value * 1000).toISOString();
+  return iso.slice(0, 10);
+}
+
+function buildReviewSchema(data, locale = "en") {
+  const reviews = Array.isArray(data?.reviews)
+    ? data.reviews.filter((review) => review?.text && review?.rating)
+    : [];
+  if (!reviews.length) return null;
+
+  const businessId = `${SITE_URL}/#localbusiness`;
+  const normalizedLocale = String(locale).toLowerCase().startsWith("es") ? "es" : "en";
+  const reviewEntities = reviews.map((review, index) => {
+    const datePublished = toIsoDate(review.time);
+    const ratingValue = Number(review.rating);
+    const payload = {
+      "@type": "Review",
+      "@id": `${SITE_URL}/#google-review-${review.time || index + 1}`,
+      itemReviewed: { "@id": businessId },
+      author: {
+        "@type": "Person",
+        name: review.author_name || "Google User",
+      },
+      reviewRating: {
+        "@type": "Rating",
+        ratingValue: Number.isFinite(ratingValue) ? ratingValue : 5,
+        bestRating: 5,
+        worstRating: 1,
+      },
+      reviewBody: String(review.text || "").trim(),
+      inLanguage: normalizedLocale,
+      publisher: {
+        "@type": "Organization",
+        name: "Google",
+      },
+    };
+
+    if (datePublished) payload.datePublished = datePublished;
+    return payload;
+  });
+
+  const schema = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "MedicalBusiness",
+        "@id": businessId,
+        name: data?.name || "Mave Medical Spa",
+        url: SITE_URL,
+      },
+      ...reviewEntities,
+    ],
+  };
+
+  const ratingValue = Number(data?.rating);
+  const reviewCount = Number(data?.total);
+  const hasAggregate = Number.isFinite(ratingValue) && Number.isFinite(reviewCount) && reviewCount > 0;
+  if (hasAggregate) {
+    schema["@graph"][0].aggregateRating = {
+      "@type": "AggregateRating",
+      ratingValue,
+      reviewCount,
+    };
+  }
+
+  return schema;
+}
 
 function Stars({ value }) {
   const rating = Number(value) || 0;
@@ -50,6 +125,7 @@ function ReviewCard({ review }) {
 }
 
 export default function ReviewsSection() {
+  const { locale = "en" } = useRouter();
   const { t } = useTranslation("home");
   const [data, setData] = useState(null);
   const [error, setError] = useState(null);
@@ -88,6 +164,7 @@ export default function ReviewsSection() {
 
   const reviews = data?.reviews || [];
   const placeId = process.env.NEXT_PUBLIC_GOOGLE_PLACE_ID || "";
+  const reviewSchema = useMemo(() => buildReviewSchema(data, locale), [data, locale]);
 
   if (error) {
     return (
@@ -111,6 +188,13 @@ export default function ReviewsSection() {
 
   return (
     <section className="bg-[#f7f6f2] px-6 py-12">
+      {reviewSchema ? (
+        <script
+          id="google-reviews-schema"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(reviewSchema) }}
+        />
+      ) : null}
       <div className="max-w-6xl mx-auto text-center mb-8">
         <h2 className="text-2xl md:text-3xl text-black font-serif font-medium">
           {t("reviews.title", { defaultValue: "What Our Patients Say" })}
