@@ -47,6 +47,18 @@ const treatmentLearnLinks = {
     href: "/learn/nctf-135-ha-skin-quality-guide",
     i18nKey: "nctf",
   },
+  "facial-balancing-fillers": {
+    href: "/learn/allergan-aesthetics-hyaluronic-acid-fillers",
+    i18nKey: "allerganFillers",
+  },
+  "hyaluronic-acid-lip-fillers": {
+    href: "/learn/vivacy-stylage-m-hyaluronic-acid-filler",
+    i18nKey: "vivacyFillers",
+  },
+  "mesotherapy-infusions": {
+    href: "/learn/allergan-aesthetics-hyaluronic-acid-fillers",
+    i18nKey: "skinviveEducation",
+  },
 };
 
 const LIP_FILLER_VIDEO_CARD = {
