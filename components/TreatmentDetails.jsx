@@ -190,6 +190,31 @@ export default function TreatmentDetails({ treatment, packageGroups = [] }) {
       .trim()
       .toLowerCase();
 
+  const allerganAltSlugs = new Set([
+    "wrinkle-reducers-neuromodulator",
+    "facial-balancing-fillers",
+    "hyaluronic-acid-lip-fillers",
+    "hybrid-injectable-collagen-biostimulator-ha-caha",
+    "mesotherapy-infusions",
+  ]);
+
+  const galdermaAltSlugs = new Set(["collagen-biostimulator-plla"]);
+  const fillmedAltSlugs = new Set(["bio-revitalization-french-glow"]);
+
+  const treatmentImageAlt = (() => {
+    const slug = treatment?.urlSlug || "";
+    if (allerganAltSlugs.has(slug)) {
+      return "Treatment performed using Allergan Aesthetics products at Mave Medical Spa.";
+    }
+    if (galdermaAltSlugs.has(slug)) {
+      return "Treatment performed using Galderma products at Mave Medical Spa.";
+    }
+    if (fillmedAltSlugs.has(slug)) {
+      return "Treatment performed using Fillmed Laboratories products at Mave Medical Spa.";
+    }
+    return `Treatment image for ${getLocalized(treatment.serviceDisplayName)}`;
+  })();
+
   const WEEKDAY_INDEX_BY_NAME = {
     sunday: 0,
     sun: 0,
@@ -263,11 +288,19 @@ export default function TreatmentDetails({ treatment, packageGroups = [] }) {
     "mesotherapy-infusions",
   ].includes(treatment?.urlSlug);
 
+  const shouldLinkNeuromodulatorEducation = [
+    "wrinkle-reducers-neuromodulator",
+  ].includes(treatment?.urlSlug);
+
   const getInlineEducationHref = (token) => {
     const normalized = normalizeInlineToken(token);
 
     if (normalized === "fillmed laboratories" && treatment?.urlSlug === "bio-revitalization-french-glow") {
       return withLocalePath("/learn/nctf-135-ha-skin-quality-guide");
+    }
+
+    if (shouldLinkNeuromodulatorEducation && normalized === "allergan aesthetics") {
+      return withLocalePath("/learn/allergan-aesthetics-neuromodulator-botox");
     }
 
     if (!shouldLinkFillerEducation) return "";
@@ -985,7 +1018,7 @@ export default function TreatmentDetails({ treatment, packageGroups = [] }) {
         <div className="relative w-full h-[50vh] md:h-[80vh] rounded-br-2xl overflow-hidden">
           <Image
             src={treatment.images?.primary || "/placeholder.jpg"}
-            alt={`Treatment image for ${getLocalized(treatment.serviceDisplayName)}`}
+            alt={treatmentImageAlt}
             fill
             className="object-cover [object-position:center_55%] [object-position:0%_60%]"
             priority
