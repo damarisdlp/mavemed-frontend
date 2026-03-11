@@ -58,11 +58,20 @@ export default function TreatmentInfoTabs({ treatment, locale: propLocale }) {
     "mesotherapy-infusions",
   ].includes(treatment?.urlSlug);
 
+  const shouldLinkNeuromodulatorEducation = [
+    "wrinkle-reducers-neuromodulator",
+  ].includes(treatment?.urlSlug);
+
   const getInlineEducationHref = (token) => {
     const normalized = normalizeInlineToken(token);
     if (normalized === "fillmed laboratories" && treatment?.urlSlug === "bio-revitalization-french-glow") {
       return withLocalePath("/learn/nctf-135-ha-skin-quality-guide");
     }
+
+    if (shouldLinkNeuromodulatorEducation && normalized === "allergan aesthetics") {
+      return withLocalePath("/learn/allergan-aesthetics-neuromodulator-botox");
+    }
+
     if (!shouldLinkFillerEducation) return "";
     if (normalized === "allergan aesthetics") {
       return withLocalePath("/learn/allergan-aesthetics-hyaluronic-acid-fillers");
