@@ -18,6 +18,7 @@ import BrandCarousel from "@/components/BrandCarousel";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import SeoLinks from "@/components/SeoLinks";
 import BeforeAfterCarousel from "@/components/BeforeAfterCarousel";
+import ServiceSchema from "@/components/ServiceSchema";
 import {
   discoverBeforeAfterGalleryBySlug,
   mergeBeforeAfterSlides,
@@ -26,6 +27,8 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import nextI18NextConfig from "../../next-i18next.config";
 import { useTranslation } from "next-i18next";
 import { getLocalized } from "@/lib/i18n/getLocalized";
+import { SITE_URL } from "@/lib/schema/schemaStore";
+import { SERVICE_SCHEMA_BY_SLUG } from "@/lib/schema/serviceSchemaMapping";
 
 const treatmentLearnLinks = {
   "sylfirm-rf-microneedling": {
@@ -53,8 +56,8 @@ const treatmentLearnLinks = {
     i18nKey: "allerganFillers",
   },
   "hyaluronic-acid-lip-fillers": {
-    href: "/learn/vivacy-stylage-m-hyaluronic-acid-filler",
-    i18nKey: "vivacyFillers",
+    href: "/learn/hyaluronic-acid-fillers-guide",
+    i18nKey: "haFillersGuide",
   },
   "mesotherapy-infusions": {
     href: "/learn/allergan-aesthetics-hyaluronic-acid-fillers",
@@ -94,6 +97,39 @@ const LIP_FILLER_VIDEO_CARD = {
       cta: "Abrir la publicacion de TikTok",
     },
   },
+};
+
+const deriveFallbackPriceRange = (treatment) => {
+  const options = treatment?.pricing?.options || [];
+  const entries = options
+    .filter((opt) => opt?.optionType !== "package")
+    .flatMap((opt) => {
+      const priceAmount = Number(opt?.optionPrice?.amount);
+      const promoAmount = Number(opt?.optionPromoPrice?.amount);
+      const currency =
+        opt?.optionPromoPrice?.currency || opt?.optionPrice?.currency || "";
+
+      const values = [];
+      if (Number.isFinite(priceAmount)) values.push(priceAmount);
+      if (Number.isFinite(promoAmount)) values.push(promoAmount);
+      return values.map((amount) => ({ amount, currency }));
+    })
+    .filter((entry) => Number.isFinite(entry.amount));
+
+  if (!entries.length) return null;
+
+  const preferredCurrency = entries.find((entry) => entry.currency)?.currency || "USD";
+  const sameCurrencyEntries = entries.filter(
+    (entry) => (entry.currency || preferredCurrency) === preferredCurrency
+  );
+  const scoped = sameCurrencyEntries.length > 0 ? sameCurrencyEntries : entries;
+  const amounts = scoped.map((entry) => entry.amount);
+
+  return {
+    lowPrice: Math.min(...amounts),
+    highPrice: Math.max(...amounts),
+    priceCurrency: preferredCurrency,
+  };
 };
 
 export default function TreatmentPage({ treatment, packageGroups = [], addonTreatments = [] }) {
@@ -143,6 +179,21 @@ export default function TreatmentPage({ treatment, packageGroups = [], addonTrea
   const showLearnArticle = Boolean(learnArticle && learnTitle);
   const isLipFillersPage = treatment.urlSlug === "hyaluronic-acid-lip-fillers";
   const lipFillerVideoCopy = LIP_FILLER_VIDEO_CARD.copy[normalizedLocale];
+  const mappedServiceSchema = SERVICE_SCHEMA_BY_SLUG[treatment.urlSlug] || null;
+  const fallbackPriceRange = deriveFallbackPriceRange(treatment);
+  const servicePath = `/${normalizedLocale === "es" ? "es/" : ""}treatments/${treatment.urlSlug}`;
+  const serviceSchemaUrl = `${SITE_URL}${servicePath}`;
+  const serviceSchemaData = {
+    name: mappedServiceSchema?.name || localizedName,
+    description: mappedServiceSchema?.description || localizedDescription || localizedName,
+    url: serviceSchemaUrl,
+    lowPrice: mappedServiceSchema?.lowPrice ?? fallbackPriceRange?.lowPrice,
+    highPrice: mappedServiceSchema?.highPrice ?? fallbackPriceRange?.highPrice,
+    priceCurrency:
+      mappedServiceSchema?.priceCurrency || fallbackPriceRange?.priceCurrency || "USD",
+    specificReviews: mappedServiceSchema?.specificReviews || [],
+    performerIds: mappedServiceSchema?.performerIds,
+  };
 
   return (
     <>
@@ -155,6 +206,7 @@ export default function TreatmentPage({ treatment, packageGroups = [], addonTrea
         <meta property="og:type" content="website" />
         <SeoLinks asPath={asPath} locale={currentLocale} />
       </Head>
+      <ServiceSchema {...serviceSchemaData} />
       <section className="bg-white">
         <PromoBanner />
         <Header />

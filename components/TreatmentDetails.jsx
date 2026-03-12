@@ -1171,7 +1171,9 @@ export default function TreatmentDetails({ treatment, packageGroups = [] }) {
                               {opt.notes?.length > 0 && (
                                 <ul className="text-xs text-white/80 list-disc list-outside pl-4 mt-1 space-y-1">
                                   {opt.notes.map((note, nIdx) => (
-                                    <li key={nIdx}>{getLocalized(note)}</li>
+                                    <li key={nIdx}>
+                                      {renderNoteWithLinks(note, { linkToxin: false })}
+                                    </li>
                                   ))}
                                 </ul>
                               )}

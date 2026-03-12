@@ -22,7 +22,7 @@ function buildReviewSchema(data, locale = "en") {
     : [];
   if (!reviews.length) return null;
 
-  const businessId = `${SITE_URL}/#localbusiness`;
+  const businessId = `${SITE_URL}/#organization`;
   const normalizedLocale = String(locale).toLowerCase().startsWith("es") ? "es" : "en";
   const reviewEntities = reviews.map((review, index) => {
     const datePublished = toIsoDate(review.time);
@@ -74,6 +74,8 @@ function buildReviewSchema(data, locale = "en") {
       "@type": "AggregateRating",
       ratingValue,
       reviewCount,
+      bestRating: 5,
+      worstRating: 1,
     };
   }
 
