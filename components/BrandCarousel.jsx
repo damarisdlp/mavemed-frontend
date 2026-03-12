@@ -126,7 +126,7 @@ export default function BrandCarousel() {
     <section className="w-full bg-white">
       <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8 py-10 md:py-14">
         <div className="flex items-center justify-center mb-6 md:mb-8">
-          <h2 className="text-xl md:text-2xl font-serif text-black">
+          <h2 className="text-2xl md:text-3xl text-black font-serif font-medium">
             {t("brandsWeWorkWith")}
           </h2>
         </div>
