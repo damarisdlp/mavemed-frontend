@@ -1,3 +1,4 @@
+import { useEffect, useRef, useState } from "react";
 import { useTranslation } from "next-i18next";
 
 const brands = [
@@ -14,9 +15,112 @@ const brands = [
   { src: "/fillmed.svg", alt: "Fillmed Laboratories", width: 130, mobileWidth: 104 },
 ];
 
+const AUTO_SPEED_PX_PER_SEC = 34;
+const RESUME_DELAY_MS = 1200;
+
 export default function BrandCarousel() {
   const { t } = useTranslation("layout");
-  const trackItems = [...brands, ...brands];
+
+  const viewportRef = useRef(null);
+  const trackRef = useRef(null);
+  const groupRef = useRef(null);
+
+  const rafRef = useRef(0);
+  const resumeTimeoutRef = useRef(0);
+  const lastTsRef = useRef(0);
+  const offsetRef = useRef(0);
+  const groupWidthRef = useRef(0);
+  const pausedRef = useRef(false);
+  const draggingRef = useRef(false);
+  const dragStartXRef = useRef(0);
+  const dragStartOffsetRef = useRef(0);
+
+  const [, forceRender] = useState(0);
+
+  const applyTransform = () => {
+    if (!trackRef.current) return;
+    trackRef.current.style.transform = `translate3d(${offsetRef.current}px, 0, 0)`;
+  };
+
+  const normalizeOffset = () => {
+    const width = groupWidthRef.current;
+    if (!width) return;
+    while (offsetRef.current <= -width) offsetRef.current += width;
+    while (offsetRef.current > 0) offsetRef.current -= width;
+  };
+
+  const pause = () => {
+    pausedRef.current = true;
+  };
+
+  const scheduleResume = (delay = 0) => {
+    window.clearTimeout(resumeTimeoutRef.current);
+    resumeTimeoutRef.current = window.setTimeout(() => {
+      pausedRef.current = false;
+    }, delay);
+  };
+
+  useEffect(() => {
+    const updateWidth = () => {
+      groupWidthRef.current = groupRef.current?.offsetWidth || 0;
+      normalizeOffset();
+      applyTransform();
+      forceRender((n) => n + 1);
+    };
+
+    updateWidth();
+    window.addEventListener("resize", updateWidth);
+    return () => {
+      window.removeEventListener("resize", updateWidth);
+    };
+  }, []);
+
+  useEffect(() => {
+    const step = (ts) => {
+      if (!lastTsRef.current) lastTsRef.current = ts;
+      const dt = (ts - lastTsRef.current) / 1000;
+      lastTsRef.current = ts;
+
+      if (!pausedRef.current && !draggingRef.current && groupWidthRef.current > 0) {
+        offsetRef.current -= AUTO_SPEED_PX_PER_SEC * dt;
+        normalizeOffset();
+        applyTransform();
+      }
+
+      rafRef.current = window.requestAnimationFrame(step);
+    };
+
+    rafRef.current = window.requestAnimationFrame(step);
+    return () => {
+      window.cancelAnimationFrame(rafRef.current);
+      window.clearTimeout(resumeTimeoutRef.current);
+    };
+  }, []);
+
+  const onPointerDown = (event) => {
+    if (event.pointerType === "mouse" && event.button !== 0) return;
+    draggingRef.current = true;
+    pause();
+    window.clearTimeout(resumeTimeoutRef.current);
+    dragStartXRef.current = event.clientX;
+    dragStartOffsetRef.current = offsetRef.current;
+    viewportRef.current?.setPointerCapture?.(event.pointerId);
+  };
+
+  const onPointerMove = (event) => {
+    if (!draggingRef.current) return;
+    const deltaX = event.clientX - dragStartXRef.current;
+    offsetRef.current = dragStartOffsetRef.current + deltaX;
+    normalizeOffset();
+    applyTransform();
+  };
+
+  const onPointerUp = (event) => {
+    if (!draggingRef.current) return;
+    draggingRef.current = false;
+    viewportRef.current?.releasePointerCapture?.(event.pointerId);
+    scheduleResume(RESUME_DELAY_MS);
+  };
 
   return (
     <section className="w-full bg-white">
@@ -26,42 +130,92 @@ export default function BrandCarousel() {
             {t("brandsWeWorkWith")}
           </h2>
         </div>
-        <div className="brand-marquee" aria-label="Our Brands">
-          <div className="brand-track">
-            {trackItems.map((brand, idx) => (
-              <div
-                className="brand-item"
-                key={`${brand.src}-${idx}`}
-                style={{
-                  "--logo-width": `${brand.width}px`,
-                  "--logo-width-mobile": `${brand.mobileWidth}px`,
-                }}
-              >
-                <img
-                  src={brand.src}
-                  alt={brand.alt}
-                  loading="lazy"
-                  className={`brand-logo ${brand.className || ""}`}
-                />
-              </div>
-            ))}
+
+        <div
+          ref={viewportRef}
+          className="brand-marquee"
+          aria-label="Our Brands"
+          onPointerDown={onPointerDown}
+          onPointerMove={onPointerMove}
+          onPointerUp={onPointerUp}
+          onPointerCancel={onPointerUp}
+          onMouseEnter={pause}
+          onMouseLeave={() => scheduleResume(0)}
+          onFocus={() => pause()}
+          onBlur={() => scheduleResume(0)}
+        >
+          <div ref={trackRef} className="brand-track">
+            <div ref={groupRef} className="brand-group">
+              {brands.map((brand) => (
+                <div
+                  className="brand-item"
+                  key={`group-a-${brand.src}`}
+                  style={{
+                    "--logo-width": `${brand.width}px`,
+                    "--logo-width-mobile": `${brand.mobileWidth}px`,
+                  }}
+                >
+                  <img
+                    src={brand.src}
+                    alt={brand.alt}
+                    loading="lazy"
+                    className={`brand-logo ${brand.className || ""}`}
+                    draggable="false"
+                  />
+                </div>
+              ))}
+            </div>
+            <div className="brand-group" aria-hidden="true">
+              {brands.map((brand) => (
+                <div
+                  className="brand-item"
+                  key={`group-b-${brand.src}`}
+                  style={{
+                    "--logo-width": `${brand.width}px`,
+                    "--logo-width-mobile": `${brand.mobileWidth}px`,
+                  }}
+                >
+                  <img
+                    src={brand.src}
+                    alt=""
+                    loading="lazy"
+                    className={`brand-logo ${brand.className || ""}`}
+                    draggable="false"
+                  />
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>
+
       <style jsx>{`
         .brand-marquee {
           position: relative;
           overflow: hidden;
           width: 100%;
           padding: 4px 0;
+          touch-action: pan-y;
+          user-select: none;
+          cursor: grab;
+        }
+
+        .brand-marquee:active {
+          cursor: grabbing;
         }
 
         .brand-track {
           display: flex;
           align-items: center;
+          will-change: transform;
+        }
+
+        .brand-group {
+          display: flex;
+          align-items: center;
           gap: clamp(16px, 2.4vw, 32px);
-          width: max-content;
-          animation: scroll 39.6s linear infinite;
+          padding-right: clamp(16px, 2.4vw, 32px);
+          flex-shrink: 0;
         }
 
         .brand-item {
@@ -82,6 +236,7 @@ export default function BrandCarousel() {
           max-width: var(--logo-width);
           display: block;
           object-fit: contain;
+          pointer-events: none;
         }
 
         @media (hover: hover) {
@@ -91,38 +246,26 @@ export default function BrandCarousel() {
           }
         }
 
-        @keyframes scroll {
-          0% {
-            transform: translateX(0);
-          }
-          100% {
-            transform: translateX(-50%);
-          }
-        }
-
         @media (max-width: 768px) {
-          .brand-track {
+          .brand-group {
             gap: clamp(12px, 3.6vw, 20px);
-            animation-duration: 16.7s;
+            padding-right: clamp(12px, 3.6vw, 20px);
           }
 
           .brand-item {
-            width: auto;
             height: 54px;
             padding: 8px 6px;
           }
 
           .brand-logo {
             height: 30px;
-            width: auto;
             max-width: var(--logo-width-mobile);
           }
-
         }
 
         @media (prefers-reduced-motion: reduce) {
           .brand-track {
-            animation: none;
+            transform: none !important;
           }
         }
       `}</style>
