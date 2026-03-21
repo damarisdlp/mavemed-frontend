@@ -145,6 +145,11 @@
     "es": "Las sesiones 1, 2, 3 y 4 incluyen el costo de la sesion mas el 20% de la siguiente. El total se paga en incrementos."
   },
   {
+    "id": "ba.bio_revit.01.caption",
+    "en": "Results are after 1 session in a 3 session treatment plan.",
+    "es": "Los resultados son despues de 1 sesion dentro de un plan de tratamiento de 3 sesiones."
+  },
+  {
     "id": "exp.bio_revit.pre.1",
     "en": "Before treatment, disclose autoimmune history, immunotherapy, pregnancy/breastfeeding status, allergies, and any active skin condition in the target area.",
     "es": "Antes del tratamiento, informa antecedente autoinmune, inmunoterapia, embarazo/lactancia, alergias y cualquier condicion activa de piel en la zona objetivo."
