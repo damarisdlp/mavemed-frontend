@@ -12,6 +12,13 @@
       "primary": "/nctf.jpg",
       "secondary": "/nctf2.jpg"
     },
+    "beforeAfterBasePath": "/before-after/bio-revitalization-french-glow",
+    "beforeAfterGallery": [
+      {
+        "id": "01",
+        "captionKey": "ba.bio_revit.01.caption"
+      }
+    ],
     "notesKeys": [
       "note.bio_revit.medical_admin",
       "note.bio_revit.no_volume",
