@@ -4,8 +4,8 @@
     "serviceId": "svc_lip_fillers",
     "nameKey": "opt.lip_fillers.stylage_m",
     "price": { "amount": 330, "currency": "USD" },
-    "isOptionPromoActive": true,
-    "promoPrice": { "amount": 290, "currency": "USD" },
+    "isOptionPromoActive": false,
+    "promoPrice": { "amount":0, "currency": "USD" },
     "priceTextKey": "",
     "notesKeys": [
       "note.lip_fillers.stylage_premium_lab",
@@ -21,8 +21,8 @@
     "serviceId": "svc_lip_fillers",
     "nameKey": "opt.lip_fillers.volift",
     "price": { "amount": 385, "currency": "USD" },
-    "isOptionPromoActive": true,
-    "promoPrice": { "amount": 350, "currency": "USD" },
+    "isOptionPromoActive": false,
+    "promoPrice": { "amount": 0, "currency": "USD" },
     "priceTextKey": "",
     "notesKeys": [
       "note.lip_fillers.volift_premium_lab",
@@ -39,7 +39,7 @@
     "nameKey": "opt.lip_fillers.volbella",
     "price": { "amount": 385, "currency": "USD" },
     "isOptionPromoActive": false,
-    "promoPrice": null,
+    "promoPrice": { "amount": 0, "currency": "USD" },
     "priceTextKey": "",
     "notesKeys": [
       "note.lip_fillers.volbella_premium_lab",
@@ -56,7 +56,7 @@
     "nameKey": "opt.lip_fillers.generic_deep",
     "price": { "amount": 300, "currency": "USD" },
     "isOptionPromoActive": false,
-    "promoPrice": null,
+    "promoPrice": { "amount": 0, "currency": "USD" },
     "priceTextKey": "",
     "notesKeys": [
       "note.lip_fillers.generic_deep_premium_lab",
@@ -71,8 +71,8 @@
     "serviceId": "svc_facial_balancing",
     "nameKey": "opt.facial_balancing.volift",
     "price": { "amount": 385, "currency": "USD" },
-    "isOptionPromoActive": true,
-    "promoPrice": { "amount": 350, "currency": "USD" },
+    "isOptionPromoActive": false,
+    "promoPrice": { "amount": 0, "currency": "USD" },
     "priceTextKey": "",
     "notesKeys": [
       "note.facial_balancing.volift_tech",
@@ -89,7 +89,7 @@
     "nameKey": "opt.facial_balancing.voluma",
     "price": { "amount": 390, "currency": "USD" },
     "isOptionPromoActive": false,
-    "promoPrice": null,
+    "promoPrice": { "amount": 0, "currency": "USD" },
     "priceTextKey": "",
     "notesKeys": [
       "note.facial_balancing.voluma_tech",
@@ -97,6 +97,20 @@
       "note.facial_balancing.voluma_zones",
       "note.facial_balancing.voluma_lidocaine",
       "note.facial_balancing.voluma_duration",
+      "note.promo.facial_balancing.two_plus",
+      "note.promo.facial_balancing.supply_note"
+    ]
+  },
+  {
+    "id": "opt_facial_balancing_revolax_subq",
+    "serviceId": "svc_facial_balancing",
+    "nameKey": "opt.facial_balancing.revolax_subq",
+    "price": { "amount": 300, "currency": "USD" },
+    "isOptionPromoActive": false,
+    "promoPrice": { "amount": 0, "currency": "USD" },
+    "priceTextKey": "",
+    "notesKeys": [
+      "note.promo.facial_balancing.two_plus",
       "note.promo.facial_balancing.supply_note"
     ]
   },
@@ -106,7 +120,7 @@
     "nameKey": "opt.facial_balancing.volux",
     "price": { "amount": 390, "currency": "USD" },
     "isOptionPromoActive": false,
-    "promoPrice": null,
+    "promoPrice": { "amount": 0, "currency": "USD" },
     "priceTextKey": "",
     "notesKeys": [
       "note.facial_balancing.volux_tech",
