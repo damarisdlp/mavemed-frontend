@@ -8,14 +8,8 @@ import CookieBanner from "@/components/CookieBanner";
 import OrganizationSchema from "@/components/OrganizationSchema";
 import LeadPopupGate from "@/components/LeadPopupGate";
 import { Analytics } from "@vercel/analytics/next";
-import { Manrope } from "next/font/google";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
-
-const manrope = Manrope({
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
-});
 
 function App({ Component, pageProps }) {
   const router = useRouter();
@@ -57,7 +51,7 @@ function App({ Component, pageProps }) {
   }, [consent, gaId, router.events]);
 
   return (
-    <div className={manrope.className}>
+    <div className="antialiased">
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
