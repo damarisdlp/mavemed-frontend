@@ -22,7 +22,6 @@ import PromoPackageSection from "@/components/PromoPackageSection";
 import Footer from "@/components/Footer";
 import ScrollToTopButton from "@/components/ScrollToTop";
 import SeoLinks from "@/components/SeoLinks";
-import LeadPopupGate from "@/components/LeadPopupGate";
 import { getLocalized } from "@/lib/i18n/getLocalized";
 import { discoverAllBeforeAfterBySlug } from "@/lib/utils/beforeAfterGallery";
 import { buildHomeBeforeAfterItems } from "@/lib/utils/homeBeforeAfterShowcase";
@@ -108,7 +107,6 @@ export default function Home({ popularTreatments = [], beforeAfterItems = [] }) 
         />
       </Head>
       <ScrollToTopButton />
-      <LeadPopupGate />
       <PromoBanner />
       <Header isMobileMenuOpen={isMobileMenuOpen} setIsMobileMenuOpen={setIsMobileMenuOpen} />
       <HeroSection />
