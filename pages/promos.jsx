@@ -149,6 +149,28 @@ const getWeeklyLabelFromPromoOptions = (promoOptions, locale) => {
   return labels.join(" / ");
 };
 
+const getWeekdayName = (weekday, locale) => {
+  const dayNames =
+    locale === "es"
+      ? ["Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado"]
+      : ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+  return dayNames[weekday] || "";
+};
+
+const getWeekdaysFromSchedule = (weeklySchedule) => {
+  if (!weeklySchedule || typeof weeklySchedule !== "object") return [];
+  const rawDays = Array.isArray(weeklySchedule.daysOfWeek) ? weeklySchedule.daysOfWeek : [];
+  return Array.from(new Set(rawDays.map(normalizeWeekday).filter((day) => day != null))).sort(
+    (a, b) => getMondayFirstWeekdayIndex(a) - getMondayFirstWeekdayIndex(b)
+  );
+};
+
+const getWeekdaysFromPromoOptions = (promoOptions = []) => {
+  return Array.from(
+    new Set((promoOptions || []).flatMap((opt) => getWeekdaysFromSchedule(opt?.weeklySchedule)))
+  ).sort((a, b) => getMondayFirstWeekdayIndex(a) - getMondayFirstWeekdayIndex(b));
+};
+
 const buildPromoCategories = (allTreatments, locale, options = {}) => {
   const { pricePrefix = "", promoTypeFilter = PROMO_TYPE_SEASONAL } = options;
   const normalizedPromoTypeFilter = normalizePromoTypeFilter(promoTypeFilter);
@@ -226,6 +248,7 @@ const buildPromoCategories = (allTreatments, locale, options = {}) => {
   const promoCategoryKeys = new Set(promoTreatments.map((t) => getCategoryKeyForTreatment(t)));
   const packageCategoryOwnerById = new Map();
   const shouldDisplayPackageInCategory = (packageId, currentCategoryKey) => {
+    if (normalizedPromoTypeFilter === PROMO_TYPE_WEEKLY) return true;
     if (!packageId) return true;
     if (packageCategoryOwnerById.has(packageId)) {
       return packageCategoryOwnerById.get(packageId) === currentCategoryKey;
@@ -242,6 +265,34 @@ const buildPromoCategories = (allTreatments, locale, options = {}) => {
     return ownerCategoryKey === currentCategoryKey;
   };
 
+  const getCategoryTargets = (treatment, promoOptionsForGrouping = []) => {
+    if (normalizedPromoTypeFilter !== PROMO_TYPE_WEEKLY) {
+      const key = getCategoryKeyForTreatment(treatment);
+      return [{ key, title: treatment.categoryDisplayName || key, weeklySortIndex: null }];
+    }
+
+    const weekdays = getWeekdaysFromPromoOptions(promoOptionsForGrouping);
+    if (!weekdays.length) {
+      const key = getCategoryKeyForTreatment(treatment);
+      return [{ key, title: treatment.categoryDisplayName || key, weeklySortIndex: null }];
+    }
+
+    return weekdays.map((weekday) => ({
+      key: `weekday-${weekday}`,
+      title: getWeekdayName(weekday, locale),
+      weeklySortIndex: getMondayFirstWeekdayIndex(weekday),
+    }));
+  };
+
+  const ensureCategory = (key, title) => {
+    if (!categoriesMap[key]) {
+      categoriesMap[key] = {
+        title,
+        cards: [],
+      };
+    }
+  };
+
   const categoriesMap = {};
   const packageKeysByCategory = new Map();
   promoTreatments.forEach((t) => {
@@ -256,14 +307,6 @@ const buildPromoCategories = (allTreatments, locale, options = {}) => {
     if (!promoOptions.length && !(t.packages || []).length && !hasLinkedPackagesForTreatment) {
       return;
     }
-    const catKey = getCategoryKeyForTreatment(t);
-    if (!categoriesMap[catKey]) {
-      categoriesMap[catKey] = {
-        title: t.categoryDisplayName || catKey,
-        cards: [],
-      };
-    }
-    const packageKeySet = packageKeysByCategory.get(catKey) || new Set();
     const optionValidTillMap = new Map(
       (promoDetails?.options || [])
         .map((opt) => {
@@ -331,22 +374,29 @@ const buildPromoCategories = (allTreatments, locale, options = {}) => {
         normalizedPromoTypeFilter === PROMO_TYPE_WEEKLY
           ? getWeeklySortIndexFromPromoOptions(serviceOptions)
           : null;
+      const serviceCategoryTargets = getCategoryTargets(t, serviceOptions);
 
-      categoriesMap[catKey].cards.push({
-        optionName: serviceOptionName,
-        description,
-        price,
-        priceValue: Number.isFinite(lowest?.value) ? lowest.value : null,
-        image: t.images?.primary || "/placeholder.jpg",
-        slug: t.urlSlug,
-        validTillLabel: serviceValidTillLabel,
-        daysLeft: serviceDaysLeft,
-        weeklyLabel:
-          normalizedPromoTypeFilter === PROMO_TYPE_WEEKLY
-            ? getWeeklyLabelFromPromoOptions(serviceOptions, locale)
-            : "",
-        weeklySortIndex: serviceWeeklySortIndex,
-        isPackage: false,
+      serviceCategoryTargets.forEach((target) => {
+        ensureCategory(target.key, target.title);
+        categoriesMap[target.key].cards.push({
+          optionName: serviceOptionName,
+          description,
+          price,
+          priceValue: Number.isFinite(lowest?.value) ? lowest.value : null,
+          image: t.images?.primary || "/placeholder.jpg",
+          slug: t.urlSlug,
+          validTillLabel: serviceValidTillLabel,
+          daysLeft: serviceDaysLeft,
+          weeklyLabel:
+            normalizedPromoTypeFilter === PROMO_TYPE_WEEKLY
+              ? getWeeklyLabelFromPromoOptions(serviceOptions, locale)
+              : "",
+          weeklySortIndex:
+            normalizedPromoTypeFilter === PROMO_TYPE_WEEKLY
+              ? target.weeklySortIndex
+              : serviceWeeklySortIndex,
+          isPackage: false,
+        });
       });
     }
 
@@ -365,8 +415,7 @@ const buildPromoCategories = (allTreatments, locale, options = {}) => {
       });
 
       linkedPackages.forEach(({ pkg, source }) => {
-        if (!pkg?.packageId || packageKeySet.has(pkg.packageId)) return;
-        if (!shouldDisplayPackageInCategory(pkg.packageId, catKey)) return;
+        if (!pkg?.packageId) return;
         const priceEntries = (pkg.options || [])
           .map((opt) => ({
             price: opt.price || null,
@@ -407,26 +456,34 @@ const buildPromoCategories = (allTreatments, locale, options = {}) => {
         const packageScheduleOptions = sourcePackagePromoOptions.length
           ? sourcePackagePromoOptions
           : linkedPromoOptions;
-        categoriesMap[catKey].cards.push({
-          optionName: getLocalized(pkg.title, locale),
-          description,
-          price: packagePrice,
-          priceValue: packagePriceValue,
-          image: source?.images?.primary || "/placeholder.jpg",
-          slug: source?.urlSlug || t.urlSlug,
-          validTillLabel: packageValidTillLabel,
-          daysLeft: packageDaysLeft,
-          weeklyLabel:
-            normalizedPromoTypeFilter === PROMO_TYPE_WEEKLY
-              ? getWeeklyLabelFromPromoOptions(packageScheduleOptions, locale)
-              : "",
-          weeklySortIndex:
-            normalizedPromoTypeFilter === PROMO_TYPE_WEEKLY
-              ? getWeeklySortIndexFromPromoOptions(packageScheduleOptions)
-              : null,
-          isPackage: true,
+        const packageCategoryTargets = getCategoryTargets(t, packageScheduleOptions);
+        packageCategoryTargets.forEach((target) => {
+          ensureCategory(target.key, target.title);
+          const packageKeySet = packageKeysByCategory.get(target.key) || new Set();
+          if (packageKeySet.has(pkg.packageId)) return;
+          if (!shouldDisplayPackageInCategory(pkg.packageId, target.key)) return;
+          categoriesMap[target.key].cards.push({
+            optionName: getLocalized(pkg.title, locale),
+            description,
+            price: packagePrice,
+            priceValue: packagePriceValue,
+            image: source?.images?.primary || "/placeholder.jpg",
+            slug: source?.urlSlug || t.urlSlug,
+            validTillLabel: packageValidTillLabel,
+            daysLeft: packageDaysLeft,
+            weeklyLabel:
+              normalizedPromoTypeFilter === PROMO_TYPE_WEEKLY
+                ? getWeeklyLabelFromPromoOptions(packageScheduleOptions, locale)
+                : "",
+            weeklySortIndex:
+              normalizedPromoTypeFilter === PROMO_TYPE_WEEKLY
+                ? target.weeklySortIndex
+                : getWeeklySortIndexFromPromoOptions(packageScheduleOptions),
+            isPackage: true,
+          });
+          packageKeySet.add(pkg.packageId);
+          packageKeysByCategory.set(target.key, packageKeySet);
         });
-        packageKeySet.add(pkg.packageId);
       });
     }
 
@@ -438,10 +495,6 @@ const buildPromoCategories = (allTreatments, locale, options = {}) => {
           opt.option?.optionKey || opt.option?.nameKey || opt.option?.id || optName;
         const normalizedKey = normalizeName(optKey);
         const packageEntryKey = opt.option?.packageId || normalizedKey;
-        if (packageKeySet.has(packageEntryKey)) return;
-        if (opt.option?.packageId && !shouldDisplayPackageInCategory(opt.option.packageId, catKey)) {
-          return;
-        }
         const optionValidTillValue =
           optionValidTillMap.get(normalizeName(optKey)) ||
           getLocalized(promoDetails?.validTill, locale) ||
@@ -459,26 +512,38 @@ const buildPromoCategories = (allTreatments, locale, options = {}) => {
           normalizedPromoTypeFilter === PROMO_TYPE_WEEKLY
             ? getWeeklySortIndexFromSchedule(opt.weeklySchedule)
             : null;
-        categoriesMap[catKey].cards.push({
-          optionName: optName,
-          description,
-          price: `${opt.promoPrice}${opt.currency ? ` ${opt.currency}` : ""}`,
-          priceValue: Number.isFinite(opt?.value) ? opt.value : null,
-          image: t.images?.primary || "/placeholder.jpg",
-          slug: t.urlSlug,
-          validTillLabel: optionValidTillLabel,
-          daysLeft: optionDaysLeft,
-          weeklyLabel:
-            normalizedPromoTypeFilter === PROMO_TYPE_WEEKLY
-              ? formatWeeklyScheduleLabel(opt.weeklySchedule, locale)
-              : "",
-          weeklySortIndex: packageWeeklySortIndex,
-          isPackage: true,
+        const packageCategoryTargets = getCategoryTargets(t, [opt]);
+        packageCategoryTargets.forEach((target) => {
+          ensureCategory(target.key, target.title);
+          const packageKeySet = packageKeysByCategory.get(target.key) || new Set();
+          if (packageKeySet.has(packageEntryKey)) return;
+          if (opt.option?.packageId && !shouldDisplayPackageInCategory(opt.option.packageId, target.key)) {
+            return;
+          }
+          categoriesMap[target.key].cards.push({
+            optionName: optName,
+            description,
+            price: `${opt.promoPrice}${opt.currency ? ` ${opt.currency}` : ""}`,
+            priceValue: Number.isFinite(opt?.value) ? opt.value : null,
+            image: t.images?.primary || "/placeholder.jpg",
+            slug: t.urlSlug,
+            validTillLabel: optionValidTillLabel,
+            daysLeft: optionDaysLeft,
+            weeklyLabel:
+              normalizedPromoTypeFilter === PROMO_TYPE_WEEKLY
+                ? formatWeeklyScheduleLabel(opt.weeklySchedule, locale)
+                : "",
+            weeklySortIndex:
+              normalizedPromoTypeFilter === PROMO_TYPE_WEEKLY
+                ? target.weeklySortIndex
+                : packageWeeklySortIndex,
+            isPackage: true,
+          });
+          packageKeySet.add(packageEntryKey);
+          packageKeysByCategory.set(target.key, packageKeySet);
         });
-        packageKeySet.add(packageEntryKey);
       });
     }
-    packageKeysByCategory.set(catKey, packageKeySet);
   });
 
   return Object.values(categoriesMap).filter((cat) => cat.cards.length > 0);
@@ -842,7 +907,7 @@ export default function PromosPage({ promoCategoriesByType = {} }) {
             <div
               key={idx}
               id={getLocalized(cat.title, locale).replace(/\s+/g, "-").toLowerCase()}
-              className="mb-12 scroll-mt-[calc(var(--site-header-offset)+175px)] sm:scroll-mt-[calc(var(--site-header-offset)+150px)] md:scroll-mt-[calc(var(--site-header-offset)+160px)]"
+              className="mb-12 scroll-mt-[calc(var(--site-header-offset)+230px)] sm:scroll-mt-[calc(var(--site-header-offset)+210px)] md:scroll-mt-[calc(var(--site-header-offset)+220px)]"
             >
               <h2 className="text-xl sm:text-2xl text-black font-serif font-medium mb-4">
                 {getLocalized(cat.title, locale)}
