@@ -22,7 +22,7 @@
       "currency": "USD"
     },
     "optionType": "package",
-    "isOptionPromoActive": false,
+    "isOptionPromoActive": true,
     "promoPrice": {
       "amount": 390,
       "currency": "USD"
@@ -41,7 +41,7 @@
       "currency": "USD"
     },
     "optionType": "package",
-    "isOptionPromoActive": false,
+    "isOptionPromoActive": true,
     "promoPrice": {
       "amount": 575,
       "currency": "USD"
