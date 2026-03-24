@@ -10,6 +10,7 @@ export async function getServerSideProps({ res }) {
     "/",
     "/treatments",
     "/promos",
+    "/learn/lip-fillers-tijuana",
     "/aboutus",
     "/ourteam",
     "/contact",
