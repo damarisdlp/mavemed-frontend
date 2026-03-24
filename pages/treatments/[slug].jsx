@@ -178,6 +178,21 @@ export default function TreatmentPage({ treatment, packageGroups = [], addonTrea
       : "";
   const showLearnArticle = Boolean(learnArticle && learnTitle);
   const isLipFillersPage = treatment.urlSlug === "hyaluronic-acid-lip-fillers";
+  const lipFillerGuideLink = {
+    href: "/learn/lip-fillers-tijuana",
+    label:
+      normalizedLocale === "es"
+        ? "Guía educativa"
+        : "Education page",
+    title:
+      normalizedLocale === "es"
+        ? "Lee nuestra guía completa sobre relleno de labios."
+        : "Read our comprehensive lip filler guide.",
+    subtitle:
+      normalizedLocale === "es"
+        ? "Explora una explicación enfocada en recuperación, resultados, comparación con lip flip y dudas frecuentes para pacientes que viajan a Tijuana."
+        : "Explore a search-friendly breakdown of recovery, results, lip flip comparisons, and common questions for patients traveling to Tijuana.",
+  };
   const lipFillerVideoCopy = LIP_FILLER_VIDEO_CARD.copy[normalizedLocale];
   const mappedServiceSchema = SERVICE_SCHEMA_BY_SLUG[treatment.urlSlug] || null;
   const fallbackPriceRange = deriveFallbackPriceRange(treatment);
@@ -318,6 +333,26 @@ export default function TreatmentPage({ treatment, packageGroups = [], addonTrea
                   className="inline-flex w-max shrink-0 whitespace-nowrap text-sm text-[#731a2f] underline underline-offset-4"
                 >
                   {t("learnArticle.cta")}
+                </NextLink>
+              </div>
+            </div>
+          )}
+          {isLipFillersPage && (
+            <div className="max-w-5xl mx-auto px-6 pb-8">
+              <div className="border border-gray-200 bg-white rounded-2xl p-5 flex flex-col gap-3 md:flex-row md:items-center md:justify-between md:gap-6">
+                <div className="min-w-0">
+                  <p className="text-xs uppercase tracking-[0.2em] text-gray-500">
+                    {lipFillerGuideLink.label}
+                  </p>
+                  <p className="text-base font-semibold text-black">{lipFillerGuideLink.title}</p>
+                  <p className="text-sm text-gray-600">{lipFillerGuideLink.subtitle}</p>
+                </div>
+                <NextLink
+                  href={lipFillerGuideLink.href}
+                  locale={currentLocale}
+                  className="inline-flex w-max shrink-0 whitespace-nowrap text-sm text-[#731a2f] underline underline-offset-4"
+                >
+                  {lipFillerGuideLink.title}
                 </NextLink>
               </div>
             </div>
