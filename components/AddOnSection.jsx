@@ -125,7 +125,7 @@ export default function AddOnSection({ addOns = [], addonTreatments = [] }) {
           localize(addon.serviceDisplayName || addon.displayName);
         const localizedDescription = localize(addon.description);
         const promoSummary = getPromoSummary(addon, locale);
-        const hasPromoBanner = promoSummary?.isPromoActive;
+        const hasPromoBanner = (promoSummary?.promoOptions || []).length > 0;
 
         const href =
           addonRef.link ||

@@ -54,12 +54,7 @@
     "descriptionKey": "svc.casmara_infinity.desc",
     "detailsKey": "svc.casmara_infinity.details",
     "isPopular": false,
-    "isPromoActive": true,
-    "packageIds": [
-      "pkg_skin_renewal_protocol",
-      "pkg_skin_renewal_pdrn",
-      "pkg_skin_renewal_prp"
-    ],
+    "isPromoActive": false,
     "images": {
       "primary": "/infinity.jpg",
       "secondary": "/infinity2.jpg"
@@ -99,12 +94,7 @@
     "descriptionKey": "svc.casmara_purifying.desc",
     "detailsKey": "svc.casmara_purifying.details",
     "isPopular": true,
-    "isPromoActive": true,
-    "packageIds": [
-      "pkg_casmara_purifying_prp",
-      "pkg_casmara_purifying_pn",
-      "pkg_casmara_purifying_pdrn"
-    ],
+    "isPromoActive": false,
     "images": {
       "primary": "/purifying.jpg",
       "secondary": "/purifying2.jpg"
@@ -145,12 +135,7 @@
     "descriptionKey": "svc.casmara_retinol_proage.desc",
     "detailsKey": "svc.casmara_retinol_proage.details",
     "isPopular": false,
-    "isPromoActive": true,
-    "packageIds": [
-      "pkg_casmara_retinol_prp",
-      "pkg_casmara_retinol_pn",
-      "pkg_casmara_retinol_pdrn"
-    ],
+    "isPromoActive": false,
     "images": {
       "primary": "/retinol.jpg",
       "secondary": "/retinol2.jpg"

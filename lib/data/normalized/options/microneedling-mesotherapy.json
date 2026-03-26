@@ -442,7 +442,7 @@
       "amount": 310,
       "currency": "USD"
     },
-    "isOptionPromoActive": false,
+    "isOptionPromoActive": true,
     "promoPrice": null,
     "priceTextKey": ""
   },
@@ -454,7 +454,7 @@
       "amount": 620,
       "currency": "USD"
     },
-    "isOptionPromoActive": false,
+    "isOptionPromoActive": true,
     "promoPrice": null,
     "priceTextKey": ""
   },
@@ -466,7 +466,7 @@
       "amount": 930,
       "currency": "USD"
     },
-    "isOptionPromoActive": false,
+    "isOptionPromoActive": true,
     "promoPrice": null,
     "priceTextKey": ""
   },
@@ -478,7 +478,7 @@
       "amount": 235,
       "currency": "USD"
     },
-    "isOptionPromoActive": false,
+    "isOptionPromoActive": true,
     "promoPrice": null,
     "priceTextKey": ""
   },
@@ -490,7 +490,7 @@
       "amount": 265,
       "currency": "USD"
     },
-    "isOptionPromoActive": false,
+    "isOptionPromoActive": true,
     "promoPrice": null,
     "priceTextKey": ""
   },
@@ -502,7 +502,7 @@
       "amount": 295,
       "currency": "USD"
     },
-    "isOptionPromoActive": false,
+    "isOptionPromoActive": true,
     "promoPrice": null,
     "priceTextKey": ""
   },

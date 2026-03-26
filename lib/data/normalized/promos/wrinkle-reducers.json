@@ -14,7 +14,16 @@
           "promo.botox.note2"
         ],
         "promoType": "seasonal",
-        "validTill": "2026-03-14"
+        "validTill": "2026-12-31"
+      },
+      {
+        "optionNameKey": "promo.botox.option_name",
+        "notesKeys": [
+          "promo.botox.note1",
+          "promo.botox.note2"
+        ],
+        "promoType": "seasonal",
+        "validTill": "2026-12-31"
       },
       {
         "optionNameKey": "opt.dermawrinkle.per_unit",
@@ -23,7 +32,16 @@
           "promo.dermawrinkle.note2"
         ],
         "promoType": "seasonal",
-        "validTill": "2026-03-14"
+        "validTill": "2026-12-31"
+      },
+      {
+        "optionNameKey": "promo.dermawrinkle.option_name",
+        "notesKeys": [
+          "promo.dermawrinkle.note1",
+          "promo.dermawrinkle.note2"
+        ],
+        "promoType": "seasonal",
+        "validTill": "2026-12-31"
       },
       {
         "optionNameKey": "opt.weekly.tox_collagen.botox_package",

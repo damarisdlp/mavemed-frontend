@@ -865,6 +865,26 @@
     "es": "Precio exclusivo para Microneedling Skin Renewal"
   },
   {
+    "id": "promo.microneedling_collagen_boost.headline",
+    "en": "Exclusive Collagen Boost Package Pricing",
+    "es": "Precio exclusivo para paquetes Collagen Boost"
+  },
+  {
+    "id": "promo.microneedling_collagen_boost.note",
+    "en": "A 3-session microneedling package designed to support collagen stimulation, consistency, and long-term skin quality with PRP, PN, or PDRN options. Package cost is due upfront.",
+    "es": "Un paquete de 3 sesiones de microneedling diseñado para apoyar la estimulación de colágeno, la constancia y la calidad de la piel a largo plazo con opciones PRP, PN o PDRN. Costo del paquete se paga por adelantado."
+  },
+  {
+    "id": "promo.microneedling_packages.headline",
+    "en": "Exclusive Microneedling Package Pricing",
+    "es": "Precio exclusivo para paquetes de Microneedling"
+  },
+  {
+    "id": "promo.microneedling_packages.note",
+    "en": "Choose a Skin Renewal Package that includes one HydraFacial plus one Microneedling or Mesotherapy session, or a 3-session Collagen Boost package with PRP, PN, or PDRN. Package cost is due upfront.",
+    "es": "Elige un paquete Skin Renewal que incluye un HydraFacial más una sesión de Microneedling o Mesoterapia, o un paquete Collagen Boost de 3 sesiones con PRP, PN o PDRN. El costo del paquete se paga por adelantado."
+  },
+  {
     "id": "opt.weekly.skin_renewal.prp_package",
     "en": "Skin Renewal Package - PRP",
     "es": "Paquete Skin Renewal - PRP"

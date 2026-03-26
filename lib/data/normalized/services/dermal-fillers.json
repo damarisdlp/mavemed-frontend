@@ -6,7 +6,7 @@
     "nameKey": "svc.facial_balancing.name",
     "descriptionKey": "svc.facial_balancing.desc",
     "detailsKey": "svc.facial_balancing.details",
-    "isPopular": false,
+    "isPopular": true,
     "isPromoActive": true,
     "images": {
       "primary": "/facialfillers.jpg",

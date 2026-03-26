@@ -15,6 +15,29 @@
         ],
         "promoType": "seasonal",
         "validTill": "2026-12-31"
+      },
+      {
+        "optionNameKey": "opt.weekly.ultra_collagen_boost.package",
+        "notesKeys": [
+          "note.weekly.ultra_collagen_boost.includes.heading",
+          "note.weekly.ultra_collagen_boost.includes.sculptra",
+          "note.weekly.ultra_collagen_boost.includes.full_face_rf",
+          "note.weekly.ultra_collagen_boost.includes.hands_rf",
+          "note.weekly.ultra_collagen_boost.rate.heading",
+          "note.weekly.ultra_collagen_boost.rate.intro",
+          "note.weekly.ultra_collagen_boost.rate.remaining_sessions",
+          "note.weekly.ultra_collagen_boost.rate.updated_pricing",
+          "note.weekly.ultra_collagen_boost.rate.bundle_value"
+        ],
+        "packageId": "pkg_ultra_collagen_boost_3_session",
+        "promoType": "weekly",
+        "weeklySchedule": {
+          "daysOfWeek": [
+            "saturday"
+          ],
+          "timeZone": "America/Tijuana"
+        },
+        "validTill": "2026-12-31"
       }
     ]
   }

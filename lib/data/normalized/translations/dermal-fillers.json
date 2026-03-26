@@ -110,6 +110,11 @@
     "es": "Relleno de Ácido Hialurónico fabricado por Allergan Aesthetics - Densidad muy alta"
   },
   {
+    "id": "opt.facial_balancing.revolax_subq",
+    "en": "Revolax Sub-Q Hyaluronic Acid Filler - High Density",
+    "es": "Relleno de Ácido Hialurónico Revolax Sub-Q - Densidad alta"
+  },
+  {
     "id": "note.facial_balancing.volift_price",
     "en": "Price per 1ml syringe",
     "es": "Precio por jeringa de 1ml"
@@ -443,6 +448,11 @@
     "id": "note.promo.facial_balancing.supply_note",
     "en": "Until supplies last for some brands.",
     "es": "Hasta agotar existencias en algunas marcas."
+  },
+  {
+    "id": "note.promo.facial_balancing.two_plus",
+    "en": "Exclusive pricing applies with the purchase of 2 or more syringes.",
+    "es": "El precio exclusivo aplica en la compra de 2 o más jeringas."
   },
   {
     "id": "note.lip_fillers.generic_deep_balance",

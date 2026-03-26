@@ -143,6 +143,19 @@ export default function TreatmentDetails({ treatment, packageGroups = [] }) {
     return field;
   };
 
+  const getRegularPriceDisplay = (field) => {
+    if (
+      !field ||
+      typeof field !== "object" ||
+      (!Number.isFinite(field.amount) &&
+        !Number.isFinite(field.minAmount) &&
+        !Number.isFinite(field.maxAmount))
+    ) {
+      return "";
+    }
+    return getLocalizedPrice(field);
+  };
+
   const handleLeadChange = (e) => {
     const { name, value } = e.target;
     if (name === "countryCode") countryCodeTouchedRef.current = true;
@@ -524,6 +537,16 @@ export default function TreatmentDetails({ treatment, packageGroups = [] }) {
     });
   };
 
+  const isPackageIncludesNote = (note) => {
+    const text = String(getLocalized(note) || "").trim().toLowerCase();
+    return (
+      text.startsWith("includes ") ||
+      text.startsWith("price includes") ||
+      text.startsWith("incluye ") ||
+      text.startsWith("el precio incluye")
+    );
+  };
+
   const renderDescriptionWithLinks = (field) => {
     const text = getLocalized(field);
     if (typeof text !== "string" || !text.trim()) return text;
@@ -586,6 +609,11 @@ export default function TreatmentDetails({ treatment, packageGroups = [] }) {
           optionKey: promoOpt.option?.optionKey || "",
           promoPrice: promoOpt.promoPrice,
           currency: promoOpt.currency,
+          originalPrice: getRegularPriceDisplay(
+            pricingMatch?.optionPrice || promoOpt.option?.optionPrice
+          ),
+          originalCurrency:
+            pricingMatch?.optionPrice?.currency || promoOpt.option?.optionPrice?.currency || "",
           validTill: getLocalized(promoDetails?.validTill),
           weeklyLabel: formatWeeklyScheduleLabel(promoOpt.weeklySchedule),
           notes: cleanNotes(pricingMatch?.notes),
@@ -616,6 +644,8 @@ export default function TreatmentDetails({ treatment, packageGroups = [] }) {
             optionKey: opt?.optionKey || "",
             promoPrice: matchedPrice.promoPrice,
             currency: matchedPrice.currency,
+            originalPrice: getRegularPriceDisplay(pricingMatch?.optionPrice),
+            originalCurrency: pricingMatch?.optionPrice?.currency || "",
             validTill: optionValidTill,
             weeklyLabel:
               formatWeeklyScheduleLabel(opt?.weeklySchedule) ||
@@ -654,13 +684,58 @@ export default function TreatmentDetails({ treatment, packageGroups = [] }) {
     const edition = parts.slice(1).join(" - ").trim();
     return edition || label;
   };
+  const getSortablePackagePrice = (value) => {
+    if (value && typeof value === "object") {
+      const numericValue = getPriceMinValue(value);
+      return Number.isFinite(numericValue) ? numericValue : Number.POSITIVE_INFINITY;
+    }
+    const localizedValue = getLocalizedPrice(value);
+    if (typeof localizedValue !== "string") return Number.POSITIVE_INFINITY;
+    const numericValue = parseFloat(localizedValue.replace(/[^0-9.]/g, ""));
+    return Number.isFinite(numericValue) ? numericValue : Number.POSITIVE_INFINITY;
+  };
+  const sortPackageOptionsByPrice = (options = []) =>
+    [...options].sort((a, b) => {
+      const priceDiff =
+        getSortablePackagePrice(a?.promoPrice || a?.priceText || a?.price) -
+        getSortablePackagePrice(b?.promoPrice || b?.priceText || b?.price);
+      if (priceDiff !== 0) return priceDiff;
+      return String(getLocalized(a?.label) || a?.label || "").localeCompare(
+        String(getLocalized(b?.label) || b?.label || ""),
+        undefined,
+        { numeric: true, sensitivity: "base" }
+      );
+    });
+  const sortPackageGroupsByNameAndPrice = (groups = []) =>
+    [...groups]
+      .map((pkg) => ({
+        ...pkg,
+        options: sortPackageOptionsByPrice(pkg.options || []),
+      }))
+      .sort((a, b) => {
+        const titleDiff = String(getLocalized(a?.title) || a?.title || "").localeCompare(
+          String(getLocalized(b?.title) || b?.title || ""),
+          undefined,
+          { numeric: true, sensitivity: "base" }
+        );
+        if (titleDiff !== 0) return titleDiff;
+        const aLowest = getSortablePackagePrice(a?.options?.[0]?.promoPrice || a?.options?.[0]?.priceText);
+        const bLowest = getSortablePackagePrice(b?.options?.[0]?.promoPrice || b?.options?.[0]?.priceText);
+        return aLowest - bLowest;
+      });
 
   const basePromoDisplayOptions = buildPromoDisplayOptions();
   const promoDisplayOptions = basePromoDisplayOptions;
-  const localPackageOptions = promoDisplayOptions.filter((opt) => opt.isPackage);
-  const servicePromoOptions = promoDisplayOptions.filter(
-    (opt) => !opt.isPackage && !(opt?.linkedPackageIds?.length > 0)
+  const activePromoPackageIds = new Set(
+    promoDisplayOptions.flatMap((opt) => {
+      const ids = [];
+      if (opt?.isPackage && opt?.packageId) ids.push(opt.packageId);
+      if (Array.isArray(opt?.linkedPackageIds)) ids.push(...opt.linkedPackageIds.filter(Boolean));
+      return ids;
+    })
   );
+  const localPackageOptions = promoDisplayOptions.filter((opt) => opt.isPackage);
+  const servicePromoOptions = promoDisplayOptions.filter((opt) => !opt.isPackage);
   const promoValidTillValues = servicePromoOptions
     .map((opt) => opt.validTill)
     .filter((value) => typeof value === "string" && value.trim() !== "");
@@ -704,6 +779,8 @@ export default function TreatmentDetails({ treatment, packageGroups = [] }) {
           edition && edition !== title
             ? `${title} - ${edition}`.trim()
             : title || edition || "",
+        originalPrice: opt.originalPrice || "",
+        originalCurrency: opt.originalCurrency || "",
         promoPrice: opt.promoPrice,
         currency: opt.currency,
         weeklyLabel: opt.weeklyLabel || "",
@@ -716,21 +793,23 @@ export default function TreatmentDetails({ treatment, packageGroups = [] }) {
   const mergedPackageGroups = (() => {
     const combined = [
       ...localPackageGroups,
-      ...registryPackageGroups.map((group) => ({
-        packageId: group.packageId,
-        title: group.title,
-        validTill: group.validTill,
-        weeklyLabel: group.weeklyLabel || "",
-        notes: group.notes || [],
-        options: group.options || [],
-      })),
+      ...registryPackageGroups
+        .filter((group) => group?.packageId && activePromoPackageIds.has(group.packageId))
+        .map((group) => ({
+          packageId: group.packageId,
+          title: group.title,
+          validTill: group.validTill,
+          weeklyLabel: group.weeklyLabel || "",
+          notes: group.notes || [],
+          options: group.options || [],
+        })),
     ];
     const deduped = new Map();
     combined.forEach((pkg) => {
       if (!pkg.packageId) return;
       if (!deduped.has(pkg.packageId)) deduped.set(pkg.packageId, pkg);
     });
-    return Array.from(deduped.values());
+    return sortPackageGroupsByNameAndPrice(Array.from(deduped.values()));
   })();
   const getPackageGroupKey = (pkg) => {
     const raw = `${pkg?.packageId || ""} ${pkg?.title || ""}`.toLowerCase();
@@ -789,7 +868,9 @@ export default function TreatmentDetails({ treatment, packageGroups = [] }) {
     const normalizedCategory = normalize(categoryName);
     const pricingOptions = pricing?.options || [];
     const servicePricingOptions = pricingOptions.filter((opt) => opt?.optionType !== "package");
-    const packagePricingOptions = pricingOptions.filter((opt) => opt?.optionType === "package");
+    const packagePricingOptions = pricingOptions.filter(
+      (opt) => opt?.optionType === "package" && optionHasPromo(opt, locale)
+    );
     const promoOptions = promoSummary.promoOptions || [];
     const promoServiceOptions = promoSummary.servicePromoOptions || [];
     const promoOptionByKey = new Map(
@@ -866,9 +947,7 @@ export default function TreatmentDetails({ treatment, packageGroups = [] }) {
     const leadPackageGroups =
       mergedPackageGroups.length > 0
         ? mergedPackageGroups
-        : Array.isArray(packageGroups) && packageGroups.length > 0
-          ? packageGroups
-          : [];
+        : [];
 
     if (leadPackageGroups.length > 0) {
       leadPackageGroups.forEach((pkg, pkgIdx) => {
@@ -1240,11 +1319,22 @@ export default function TreatmentDetails({ treatment, packageGroups = [] }) {
                           <div className="font-semibold">{renderNoteWithLinks(pkg.title)}</div>
                         </div>
                         {pkg.notes?.length > 0 && (
-                          <ul className="text-xs text-white/80 list-disc list-outside pl-4 mt-2 space-y-1">
-                            {pkg.notes.map((note, nIdx) => (
-                              <li key={nIdx}>{renderNoteWithLinks(note)}</li>
+                          <>
+                            {pkg.notes.filter(isPackageIncludesNote).map((note, nIdx) => (
+                              <p key={`include-${nIdx}`} className="text-xs text-white/80 mt-2">
+                                {renderNoteWithLinks(note)}
+                              </p>
                             ))}
-                          </ul>
+                            {pkg.notes.filter((note) => !isPackageIncludesNote(note)).length > 0 && (
+                              <ul className="text-xs text-white/80 list-disc list-outside pl-4 mt-2 space-y-1">
+                                {pkg.notes
+                                  .filter((note) => !isPackageIncludesNote(note))
+                                  .map((note, nIdx) => (
+                                    <li key={nIdx}>{renderNoteWithLinks(note)}</li>
+                                  ))}
+                              </ul>
+                            )}
+                          </>
                         )}
                         <div className="space-y-1 mt-2">
                           {pkg.options.map((opt, optIdx) => (
@@ -1255,8 +1345,16 @@ export default function TreatmentDetails({ treatment, packageGroups = [] }) {
                                   {": "}
                                 </>
                               ) : null}
-                              {opt.promoPrice ? opt.promoPrice : ""}
-                              {opt.currency ? ` ${opt.currency}` : ""}
+                              {opt.originalPrice && opt.originalPrice !== opt.promoPrice ? (
+                                <span className="line-through text-white/70 mr-2">
+                                  {opt.originalPrice}
+                                  {opt.originalCurrency ? ` ${opt.originalCurrency}` : ""}
+                                </span>
+                              ) : null}
+                              <span>
+                                {opt.promoPrice ? opt.promoPrice : ""}
+                                {opt.currency ? ` ${opt.currency}` : ""}
+                              </span>
                             </div>
                           ))}
                         </div>

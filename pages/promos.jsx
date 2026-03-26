@@ -58,6 +58,46 @@ const formatPackagePrice = (price, locale) => {
   return "";
 };
 
+const formatPriceWithCurrency = (price, locale, fallbackCurrency = "") => {
+  const hasNumericPrice =
+    price &&
+    typeof price === "object" &&
+    (Number.isFinite(price.amount) ||
+      Number.isFinite(price.minAmount) ||
+      Number.isFinite(price.maxAmount));
+  if (!hasNumericPrice) return "";
+  const priceText = formatPackagePrice(price, locale);
+  if (!priceText) return "";
+  const currency = price?.currency || fallbackCurrency || "";
+  return `${priceText}${currency ? ` ${currency}` : ""}`;
+};
+
+const getCardPriceSortValue = (card) =>
+  Number.isFinite(card?.priceValue) ? card.priceValue : Number.POSITIVE_INFINITY;
+
+const sortPackageCardsByNameAndPrice = (cards = []) =>
+  [...cards].sort((a, b) => {
+    const nameDiff = String(a?.optionName || "").localeCompare(String(b?.optionName || ""), undefined, {
+      numeric: true,
+      sensitivity: "base",
+    });
+    if (nameDiff !== 0) return nameDiff;
+    const priceDiff = getCardPriceSortValue(a) - getCardPriceSortValue(b);
+    if (priceDiff !== 0) return priceDiff;
+    return String(a?.slug || "").localeCompare(String(b?.slug || ""), undefined, {
+      numeric: true,
+      sensitivity: "base",
+    });
+  });
+
+const organizeCategoryCards = (cards = [], sortServiceCards = (items) => items) => {
+  const serviceCards = sortServiceCards((cards || []).filter((card) => !card?.isPackage));
+  const packageCards = sortPackageCardsByNameAndPrice(
+    (cards || []).filter((card) => card?.isPackage)
+  );
+  return [...serviceCards, ...packageCards];
+};
+
 const PROMO_TYPE_SEASONAL = "seasonal";
 const PROMO_TYPE_WEEKLY = "weekly";
 const WEEKDAY_INDEX_BY_NAME = {
@@ -374,6 +414,14 @@ const buildPromoCategories = (allTreatments, locale, options = {}) => {
         normalizedPromoTypeFilter === PROMO_TYPE_WEEKLY
           ? getWeeklySortIndexFromPromoOptions(serviceOptions)
           : null;
+      const serviceOriginalPriceText = formatPriceWithCurrency(
+        lowest?.option?.optionPrice,
+        locale,
+        lowest?.option?.optionPrice?.currency || lowest?.currency || ""
+      );
+      const serviceOriginalPrice = serviceOriginalPriceText
+        ? `${pricePrefixLabel}${serviceOriginalPriceText}`
+        : "";
       const serviceCategoryTargets = getCategoryTargets(t, serviceOptions);
 
       serviceCategoryTargets.forEach((target) => {
@@ -381,6 +429,7 @@ const buildPromoCategories = (allTreatments, locale, options = {}) => {
         categoriesMap[target.key].cards.push({
           optionName: serviceOptionName,
           description,
+          originalPrice: serviceOriginalPrice,
           price,
           priceValue: Number.isFinite(lowest?.value) ? lowest.value : null,
           image: t.images?.primary || "/placeholder.jpg",
@@ -456,6 +505,16 @@ const buildPromoCategories = (allTreatments, locale, options = {}) => {
         const packageScheduleOptions = sourcePackagePromoOptions.length
           ? sourcePackagePromoOptions
           : linkedPromoOptions;
+        const lowestPackagePromoOption = [...packageScheduleOptions]
+          .filter((option) => Number.isFinite(option?.value))
+          .sort((a, b) => a.value - b.value)[0];
+        const packageOriginalPrice = formatPriceWithCurrency(
+          lowestPackagePromoOption?.option?.optionPrice,
+          locale,
+          lowestPackagePromoOption?.option?.optionPrice?.currency ||
+            lowestPackagePromoOption?.currency ||
+            ""
+        );
         const packageCategoryTargets = getCategoryTargets(t, packageScheduleOptions);
         packageCategoryTargets.forEach((target) => {
           ensureCategory(target.key, target.title);
@@ -465,6 +524,7 @@ const buildPromoCategories = (allTreatments, locale, options = {}) => {
           categoriesMap[target.key].cards.push({
             optionName: getLocalized(pkg.title, locale),
             description,
+            originalPrice: packageOriginalPrice,
             price: packagePrice,
             priceValue: packagePriceValue,
             image: source?.images?.primary || "/placeholder.jpg",
@@ -512,6 +572,11 @@ const buildPromoCategories = (allTreatments, locale, options = {}) => {
           normalizedPromoTypeFilter === PROMO_TYPE_WEEKLY
             ? getWeeklySortIndexFromSchedule(opt.weeklySchedule)
             : null;
+        const directPackageOriginalPrice = formatPriceWithCurrency(
+          opt.option?.optionPrice,
+          locale,
+          opt.option?.optionPrice?.currency || opt.currency || ""
+        );
         const packageCategoryTargets = getCategoryTargets(t, [opt]);
         packageCategoryTargets.forEach((target) => {
           ensureCategory(target.key, target.title);
@@ -523,6 +588,7 @@ const buildPromoCategories = (allTreatments, locale, options = {}) => {
           categoriesMap[target.key].cards.push({
             optionName: optName,
             description,
+            originalPrice: directPackageOriginalPrice,
             price: `${opt.promoPrice}${opt.currency ? ` ${opt.currency}` : ""}`,
             priceValue: Number.isFinite(opt?.value) ? opt.value : null,
             image: t.images?.primary || "/placeholder.jpg",
@@ -580,17 +646,20 @@ export default function PromosPage({ promoCategoriesByType = {} }) {
     sortOption === "default"
       ? (() => {
           const selectedType = normalizePromoTypeFilter(promoTypeFilter);
-          if (selectedType !== PROMO_TYPE_WEEKLY) return categories;
+          if (selectedType !== PROMO_TYPE_WEEKLY) {
+            return categories.map((cat) => ({
+              ...cat,
+              cards: organizeCategoryCards(cat.cards),
+            }));
+          }
 
           const getCardWeeklySortValue = (card) =>
             Number.isFinite(card?.weeklySortIndex) ? card.weeklySortIndex : Number.POSITIVE_INFINITY;
-          const getCardPriceValue = (card) =>
-            Number.isFinite(card?.priceValue) ? card.priceValue : Number.POSITIVE_INFINITY;
           const sortCardsByWeeklyOrder = (cards = []) =>
             [...cards].sort((a, b) => {
               const weeklyDiff = getCardWeeklySortValue(a) - getCardWeeklySortValue(b);
               if (weeklyDiff !== 0) return weeklyDiff;
-              const priceDiff = getCardPriceValue(a) - getCardPriceValue(b);
+              const priceDiff = getCardPriceSortValue(a) - getCardPriceSortValue(b);
               if (priceDiff !== 0) return priceDiff;
               return String(a?.optionName || "").localeCompare(String(b?.optionName || ""));
             });
@@ -602,7 +671,7 @@ export default function PromosPage({ promoCategoriesByType = {} }) {
           return [...categories]
             .map((cat) => ({
               ...cat,
-              cards: sortCardsByWeeklyOrder(cat.cards),
+              cards: organizeCategoryCards(cat.cards, sortCardsByWeeklyOrder),
             }))
             .sort((a, b) => {
               const weeklyDiff =
@@ -633,12 +702,12 @@ export default function PromosPage({ promoCategoriesByType = {} }) {
             if (!values.length) return null;
             return sortDir === "asc" ? Math.min(...values) : Math.max(...values);
           };
+          const sortCardsBySelectedOrder = (cards = []) =>
+            [...cards].sort((a, b) => compareValues(getCardSortValue(a), getCardSortValue(b)));
           return categories
             .map((cat) => ({
               ...cat,
-              cards: [...cat.cards].sort((a, b) =>
-                compareValues(getCardSortValue(a), getCardSortValue(b))
-              ),
+              cards: organizeCategoryCards(cat.cards, sortCardsBySelectedOrder),
             }))
             .sort((a, b) =>
               compareValues(getCategorySortValue(a.cards), getCategorySortValue(b.cards))
@@ -935,13 +1004,24 @@ export default function PromosPage({ promoCategoriesByType = {} }) {
                           </p>
                         )}
                         {card.price && (
-                          <p
-                            className={`font-semibold text-sm mt-1 ${
-                              card.isPackage ? "text-white" : "text-[#731a2f]"
-                            }`}
-                          >
-                            {card.price}
-                          </p>
+                          <div className="mt-1 flex items-center gap-2 flex-wrap">
+                            {card.originalPrice && card.originalPrice !== card.price && (
+                              <p
+                                className={`text-sm line-through ${
+                                  card.isPackage ? "text-white/70" : "text-gray-500"
+                                }`}
+                              >
+                                {card.originalPrice}
+                              </p>
+                            )}
+                            <p
+                              className={`font-semibold text-sm ${
+                                card.isPackage ? "text-white" : "text-[#731a2f]"
+                              }`}
+                            >
+                              {card.price}
+                            </p>
+                          </div>
                         )}
                         {card.weeklyLabel && (
                           <p

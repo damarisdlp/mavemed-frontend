@@ -121,8 +121,8 @@
   },
   {
     "id": "opt.botox.per_unit",
-    "en": "Neuromodulator / Muscle Relaxant (Per Unit)",
-    "es": "Neuromodulador / Relajante Muscular (Por Unidad)"
+    "en": "Recognized Name Brand (Per Unit)",
+    "es": "Marca de Nombre Reconocida (Por Unidad)"
   },
   {
     "id": "note.botox.premium_labs",
@@ -151,13 +151,13 @@
   },
   {
     "id": "promo.botox.option_name",
-    "en": "Neuromodulator / Muscle Relaxant - 45-Unit Exclusive Pack",
-    "es": "Neuromodulador / Relajante Muscular - Paquete Exclusivo de 45 Unidades"
+    "en": "Recognized Name Brand - 45-Unit Exclusive Pack",
+    "es": "Marca de Nombre Reconocida - Paquete Exclusivo de 45 Unidades"
   },
   {
     "id": "promo.botox.note1",
-    "en": "Equivalent to $7.11USD per unit when purchased as the 45-unit pack.",
-    "es": "Equivale a $7.11USD por unidad al comprar el paquete de 45 unidades."
+    "en": "Equivalent to $6.50 USD per unit when purchased as the 45-unit pack.",
+    "es": "Equivale a $6.50 USD por unidad al comprar el paquete de 45 unidades."
   },
   {
     "id": "promo.botox.note2",
@@ -426,8 +426,8 @@
   },
   {
     "id": "opt.dermawrinkle.per_unit",
-    "en": "Generic Neuromodulator - Botulinum Toxin Type A (Per Unit)",
-    "es": "Neuromodulador Genérico - Toxina Botulínica Tipo A (Por Unidad)"
+    "en": "Generic Name Brand - Botulinum Toxin Type A (Per Unit)",
+    "es": "Marca de Nombre Genérica - Toxina Botulínica Tipo A (Por Unidad)"
   },
   {
     "id": "note.dermawrinkle.any_zone",
@@ -451,13 +451,13 @@
   },
   {
     "id": "promo.dermawrinkle.option_name",
-    "en": "Generic Neuromodulator (Botulinum Toxin Type A) - 45-Unit Exclusive Pack",
-    "es": "Neuromodulador Genérico (Toxina Botulínica Tipo A) - Paquete Exclusivo de 45 Unidades"
+    "en": "Generic Name Brand (Botulinum Toxin Type A) - 45-Unit Exclusive Pack",
+    "es": "Marca de Nombre Genérica (Toxina Botulínica Tipo A) - Paquete Exclusivo de 45 Unidades"
   },
   {
     "id": "promo.dermawrinkle.note1",
-    "en": "Equivalent to $5.00 per unit when purchased as the 45-unit pack.",
-    "es": "Equivale a $5.00 por unidad al comprar el paquete de 45 unidades."
+    "en": "Equivalent to $4.50 USD per unit when purchased as the 45-unit pack.",
+    "es": "Equivale a $4.50 USD por unidad al comprar el paquete de 45 unidades."
   },
   {
     "id": "promo.dermawrinkle.note2",
@@ -611,8 +611,8 @@
   },
   {
     "id": "opt.weekly.tox_collagen.botox_package",
-    "en": "Tox + Collagen Boost Package - Neuromodulator / Muscle Relaxant",
-    "es": "Paquete Tox + Collagen Boost - Neuromodulador / Relajante Muscular"
+    "en": "Tox + Collagen Boost Package - Recognized Toxin Name Brand",
+    "es": "Paquete Tox + Collagen Boost - Marca de Nombre Reconocida"
   },
   {
     "id": "opt.weekly.tox_collagen.generic_package",

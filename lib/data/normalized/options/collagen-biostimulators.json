@@ -24,7 +24,7 @@
     "nameKey": "promo.sculptra.option_name",
     "optionType": "package",
     "price": {
-      "amount": 1545,
+      "amount": 1725,
       "currency": "USD"
     },
     "isOptionPromoActive": true,

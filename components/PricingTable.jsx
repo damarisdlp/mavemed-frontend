@@ -5,7 +5,7 @@ import { useRouter } from "next/router";
 import AddOnSection from "./AddOnSection";
 import { useTranslation } from "next-i18next";
 import { optionHasPromo } from "@/lib/utils/promo";
-import { formatMoney, formatMoneyRange } from "@/lib/utils/price";
+import { formatMoney, formatMoneyRange, getPriceMinValue } from "@/lib/utils/price";
 import { getLocalized } from "@/lib/i18n/getLocalized";
 
 export default function PricingTable({ treatment, addonTreatments = [], packageGroups = [] }) {
@@ -34,6 +34,19 @@ export default function PricingTable({ treatment, addonTreatments = [], packageG
       return localize(field);
     }
     return field;
+  };
+
+  const getRegularPriceDisplay = (field) => {
+    if (
+      !field ||
+      typeof field !== "object" ||
+      (!Number.isFinite(field.amount) &&
+        !Number.isFinite(field.minAmount) &&
+        !Number.isFinite(field.maxAmount))
+    ) {
+      return "";
+    }
+    return getLocalizedPrice(field);
   };
 
   const normalizeName = (value) =>
@@ -191,10 +204,60 @@ export default function PricingTable({ treatment, addonTreatments = [], packageG
     const edition = parts.slice(1).join(" - ").trim();
     return edition || label;
   };
+  const getSortablePackagePrice = (value) => {
+    if (value && typeof value === "object") {
+      const numericValue = getPriceMinValue(value);
+      return Number.isFinite(numericValue) ? numericValue : Number.POSITIVE_INFINITY;
+    }
+    const localizedValue = getLocalizedPrice(value);
+    if (typeof localizedValue !== "string") return Number.POSITIVE_INFINITY;
+    const numericValue = parseFloat(localizedValue.replace(/[^0-9.]/g, ""));
+    return Number.isFinite(numericValue) ? numericValue : Number.POSITIVE_INFINITY;
+  };
+  const sortPackageOptionsByPrice = (options = []) =>
+    [...options].sort((a, b) => {
+      const priceDiff =
+        getSortablePackagePrice(a?.priceText || a?.promoPrice || a?.price) -
+        getSortablePackagePrice(b?.priceText || b?.promoPrice || b?.price);
+      if (priceDiff !== 0) return priceDiff;
+      return String(localize(a?.label) || a?.label || "").localeCompare(
+        String(localize(b?.label) || b?.label || ""),
+        undefined,
+        { numeric: true, sensitivity: "base" }
+      );
+    });
+  const sortPackageGroupsByNameAndPrice = (groups = []) =>
+    [...groups]
+      .map((pkg) => ({
+        ...pkg,
+        options: sortPackageOptionsByPrice(pkg.options || []),
+      }))
+      .sort((a, b) => {
+        const titleDiff = String(localize(a?.title) || a?.title || "").localeCompare(
+          String(localize(b?.title) || b?.title || ""),
+          undefined,
+          { numeric: true, sensitivity: "base" }
+        );
+        if (titleDiff !== 0) return titleDiff;
+        const aLowest = getSortablePackagePrice(a?.options?.[0]?.priceText || a?.options?.[0]?.promoPrice);
+        const bLowest = getSortablePackagePrice(b?.options?.[0]?.priceText || b?.options?.[0]?.promoPrice);
+        return aLowest - bLowest;
+      });
 
   const pricingOptions = treatment?.pricing?.options || [];
+  const activePromoPricingOptions = pricingOptions.filter((opt) => optionHasPromo(opt, locale));
+  const activePromoPackageIds = new Set(
+    activePromoPricingOptions.flatMap((opt) => {
+      const ids = [];
+      if (opt?.optionType === "package" && opt?.packageId) ids.push(opt.packageId);
+      if (Array.isArray(opt?.linkedPackageIds)) ids.push(...opt.linkedPackageIds.filter(Boolean));
+      return ids;
+    })
+  );
 
-  const registryPackageGroups = Array.isArray(packageGroups) ? packageGroups : [];
+  const registryPackageGroups = (Array.isArray(packageGroups) ? packageGroups : []).filter(
+    (pkg) => pkg?.packageId && activePromoPackageIds.has(pkg.packageId)
+  );
   const filteredPricingOptions =
     filterConfig && activeFilter !== "all"
       ? pricingOptions.filter((opt) => opt.filterGroupKey === activeFilter)
@@ -344,7 +407,7 @@ export default function PricingTable({ treatment, addonTreatments = [], packageG
             const localPackageGroups = (() => {
               const groups = new Map();
               const packageOptions = pricingOptions.filter(
-                (opt) => opt.optionType === "package"
+                (opt) => opt.optionType === "package" && optionHasPromo(opt, locale)
               );
               packageOptions.forEach((opt) => {
                 const name = localize(opt.optionName);
@@ -365,6 +428,8 @@ export default function PricingTable({ treatment, addonTreatments = [], packageG
                 };
                 existing.options.push({
                   label: edition && edition !== title ? edition : "",
+                  originalPrice: getRegularPriceDisplay(opt.optionPrice),
+                  originalCurrency: opt.optionPrice?.currency || "",
                   priceText,
                   currency,
                 });
@@ -379,7 +444,7 @@ export default function PricingTable({ treatment, addonTreatments = [], packageG
                 if (!pkg.packageId) return;
                 if (!deduped.has(pkg.packageId)) deduped.set(pkg.packageId, pkg);
               });
-              return Array.from(deduped.values());
+              return sortPackageGroupsByNameAndPrice(Array.from(deduped.values()));
             })();
             if (!allPackageGroups.length) return null;
             return (
@@ -414,8 +479,16 @@ export default function PricingTable({ treatment, addonTreatments = [], packageG
                               {": "}
                             </>
                           ) : null}
-                          {opt.priceText ? opt.priceText : ""}
-                          {opt.currency ? ` ${opt.currency}` : ""}
+                          {opt.originalPrice && opt.originalPrice !== opt.priceText ? (
+                            <span className="line-through text-white/70 mr-2">
+                              {opt.originalPrice}
+                              {opt.originalCurrency ? ` ${opt.originalCurrency}` : ""}
+                            </span>
+                          ) : null}
+                          <span>
+                            {opt.priceText ? opt.priceText : ""}
+                            {opt.currency ? ` ${opt.currency}` : ""}
+                          </span>
                         </div>
                       ))}
                     </div>

@@ -2,8 +2,8 @@
   {
     "id": "promo_microneedling_prp",
     "serviceId": "svc_microneedling_prp",
-    "headlineKey": "promo.microneedling_skin_renewal.headline",
-    "descriptionKey": "promo.skin_renewal.casmara_note",
+    "headlineKey": "promo.microneedling_packages.headline",
+    "descriptionKey": "promo.microneedling_packages.note",
     "validFrom": null,
     "validTill": null,
     "options": [
@@ -49,8 +49,8 @@
   {
     "id": "promo_microneedling_pn",
     "serviceId": "svc_microneedling_polynucleotides",
-    "headlineKey": "promo.microneedling_skin_renewal.headline",
-    "descriptionKey": "promo.skin_renewal.casmara_note",
+    "headlineKey": "promo.microneedling_packages.headline",
+    "descriptionKey": "promo.microneedling_packages.note",
     "validFrom": null,
     "validTill": null,
     "options": [
@@ -96,8 +96,8 @@
   {
     "id": "promo_microneedling_pdrn",
     "serviceId": "svc_microneedling_pdrn",
-    "headlineKey": "promo.microneedling_skin_renewal.headline",
-    "descriptionKey": "promo.skin_renewal.casmara_note",
+    "headlineKey": "promo.microneedling_packages.headline",
+    "descriptionKey": "promo.microneedling_packages.note",
     "validFrom": null,
     "validTill": null,
     "options": [
