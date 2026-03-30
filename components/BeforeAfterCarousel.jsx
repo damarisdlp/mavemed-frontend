@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 import "keen-slider/keen-slider.min.css";
 import { useKeenSlider } from "keen-slider/react";
@@ -52,6 +53,26 @@ export default function BeforeAfterCarousel({
   if (!slides.length) return null;
 
   const localize = (value, fallback = "") => getLocalized(value, locale) || fallback;
+  const withLocalePath = (path) => {
+    const raw = String(path || "").trim();
+    if (!raw) return "";
+    if (/^(https?:)?\/\//.test(raw)) return raw;
+    return `/${locale === "es" ? "es/" : ""}${raw.replace(/^\//, "")}`;
+  };
+  const renderCaptionSegments = (segments = [], keyPrefix = "caption") => {
+    if (!Array.isArray(segments) || !segments.length) return null;
+    return segments.map((segment, idx) => {
+      const textValue = localize(segment?.text, "");
+      if (!textValue) return null;
+      const href = withLocalePath(segment?.href);
+      if (!href) return <span key={`${keyPrefix}-text-${idx}`}>{textValue}</span>;
+      return (
+        <Link key={`${keyPrefix}-link-${idx}`} href={href} className="underline underline-offset-4">
+          {textValue}
+        </Link>
+      );
+    });
+  };
   const imageAspectClasses = compact
     ? "aspect-[16/15] sm:aspect-[32/15] md:aspect-[64/27]"
     : "aspect-[4/5] sm:aspect-[16/10] md:aspect-[16/9]";
@@ -72,6 +93,9 @@ export default function BeforeAfterCarousel({
             const fallbackAlt = `${serviceName || t("beforeAfter.heading")} ${index + 1}`;
             const altText = localize(slide.alt, fallbackAlt);
             const caption = localize(slide.caption, "");
+            const captionSegments = Array.isArray(slide.captionSegments)
+              ? renderCaptionSegments(slide.captionSegments, `caption-${index}`)
+              : null;
 
             return (
               <div key={`${slide.beforeSrc}-${slide.afterSrc}-${index}`} className="keen-slider__slide">
@@ -130,7 +154,7 @@ export default function BeforeAfterCarousel({
                       className="w-full accent-[#731a2f]"
                       aria-label={t("beforeAfter.compareAria", { index: index + 1 })}
                     />
-                    {caption ? <p className="mt-2 text-sm text-gray-600">{caption}</p> : null}
+                    {captionSegments ? <p className="mt-2 text-sm text-gray-600">{captionSegments}</p> : caption ? <p className="mt-2 text-sm text-gray-600">{caption}</p> : null}
                   </div>
                 </div>
               </div>

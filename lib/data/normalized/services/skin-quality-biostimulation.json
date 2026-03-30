@@ -16,7 +16,129 @@
     "beforeAfterGallery": [
       {
         "id": "01",
-        "captionKey": "ba.bio_revit.01.caption"
+        "captionSegments": [
+          {
+            "text": {
+              "en": "This patient received 2 syringes of ",
+              "es": "Esta paciente recibio 2 jeringas de "
+            }
+          },
+          {
+            "text": {
+              "en": "Juvederm Voluma",
+              "es": "Juvederm Voluma"
+            },
+            "href": "/treatments/facial-balancing-fillers"
+          },
+          {
+            "text": {
+              "en": " in the cheekbones, 2 syringes of ",
+              "es": " en los pomulos, 2 jeringas de "
+            }
+          },
+          {
+            "text": {
+              "en": "Juvederm Volux",
+              "es": "Juvederm Volux"
+            },
+            "href": "/treatments/facial-balancing-fillers"
+          },
+          {
+            "text": {
+              "en": " in the chin, 1 session of ",
+              "es": " en el menton, 1 sesion de "
+            }
+          },
+          {
+            "text": {
+              "en": "NCTF",
+              "es": "NCTF"
+            },
+            "href": "/treatments/bio-revitalization-french-glow"
+          },
+          {
+            "text": {
+              "en": ", and 1 full-face ",
+              "es": ", y 1 sesion de rostro completo de "
+            }
+          },
+          {
+            "text": {
+              "en": "Sylfirm microneedling",
+              "es": "Sylfirm microneedling"
+            },
+            "href": "/treatments/sylfirm-rf-microneedling"
+          },
+          {
+            "text": {
+              "en": ".",
+              "es": "."
+            }
+          }
+        ]
+      },
+      {
+        "id": "02",
+        "captionSegments": [
+          {
+            "text": {
+              "en": "This patient received 2 syringes of ",
+              "es": "Esta paciente recibio 2 jeringas de "
+            }
+          },
+          {
+            "text": {
+              "en": "Juvederm Voluma",
+              "es": "Juvederm Voluma"
+            },
+            "href": "/treatments/facial-balancing-fillers"
+          },
+          {
+            "text": {
+              "en": " in the cheekbones, 2 syringes of ",
+              "es": " en los pomulos, 2 jeringas de "
+            }
+          },
+          {
+            "text": {
+              "en": "Juvederm Volux",
+              "es": "Juvederm Volux"
+            },
+            "href": "/treatments/facial-balancing-fillers"
+          },
+          {
+            "text": {
+              "en": " in the chin, 1 session of ",
+              "es": " en el menton, 1 sesion de "
+            }
+          },
+          {
+            "text": {
+              "en": "NCTF",
+              "es": "NCTF"
+            },
+            "href": "/treatments/bio-revitalization-french-glow"
+          },
+          {
+            "text": {
+              "en": ", and 1 full-face ",
+              "es": ", y 1 sesion de rostro completo de "
+            }
+          },
+          {
+            "text": {
+              "en": "Sylfirm microneedling",
+              "es": "Sylfirm microneedling"
+            },
+            "href": "/treatments/sylfirm-rf-microneedling"
+          },
+          {
+            "text": {
+              "en": ".",
+              "es": "."
+            }
+          }
+        ]
       }
     ],
     "notesKeys": [

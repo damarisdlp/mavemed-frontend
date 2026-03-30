@@ -15,62 +15,176 @@
     ],
     "additionalProperties": false,
     "properties": {
-      "id": { "type": "string", "pattern": "^svc_" },
-      "slug": { "type": "string" },
-      "categoryId": { "type": "string", "pattern": "^cat_" },
-      "nameKey": { "type": "string" },
-      "descriptionKey": { "type": "string" },
-      "detailsKey": { "type": "string" },
-      "isPopular": { "type": "boolean", "default": false },
-      "isPromoActive": { "type": "boolean", "default": false },
+      "id": {
+        "type": "string",
+        "pattern": "^svc_"
+      },
+      "slug": {
+        "type": "string"
+      },
+      "categoryId": {
+        "type": "string",
+        "pattern": "^cat_"
+      },
+      "nameKey": {
+        "type": "string"
+      },
+      "descriptionKey": {
+        "type": "string"
+      },
+      "detailsKey": {
+        "type": "string"
+      },
+      "isPopular": {
+        "type": "boolean",
+        "default": false
+      },
+      "isPromoActive": {
+        "type": "boolean",
+        "default": false
+      },
       "images": {
         "type": "object",
-        "required": ["primary", "secondary"],
+        "required": [
+          "primary",
+          "secondary"
+        ],
         "additionalProperties": false,
         "properties": {
-          "primary": { "type": "string" },
-          "secondary": { "type": "string" }
+          "primary": {
+            "type": "string"
+          },
+          "secondary": {
+            "type": "string"
+          }
         }
       },
-      "notesKeys": { "type": "array", "items": { "type": "string" } },
-      "goalsKeys": { "type": "array", "items": { "type": "string" } },
-      "treatableAreaKeys": { "type": "array", "items": { "type": "string" } },
-      "beforeAfterBasePath": { "type": "string" },
-      "beforeAfterFileExtension": { "type": "string" },
+      "notesKeys": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "goalsKeys": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "treatableAreaKeys": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "beforeAfterBasePath": {
+        "type": "string"
+      },
+      "beforeAfterFileExtension": {
+        "type": "string"
+      },
       "beforeAfterGallery": {
         "type": "array",
         "items": {
           "type": "object",
           "anyOf": [
-            { "required": ["id"] },
-            { "required": ["beforeSrc", "afterSrc"] }
+            {
+              "required": [
+                "id"
+              ]
+            },
+            {
+              "required": [
+                "beforeSrc",
+                "afterSrc"
+              ]
+            }
           ],
           "additionalProperties": false,
           "properties": {
-            "id": { "type": "string" },
-            "beforeSrc": { "type": "string" },
-            "afterSrc": { "type": "string" },
-            "altKey": { "type": "string" },
-            "captionKey": { "type": "string" }
+            "id": {
+              "type": "string"
+            },
+            "beforeSrc": {
+              "type": "string"
+            },
+            "afterSrc": {
+              "type": "string"
+            },
+            "altKey": {
+              "type": "string"
+            },
+            "captionKey": {
+              "type": "string"
+            },
+            "captionSegments": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "required": [
+                  "text"
+                ],
+                "additionalProperties": false,
+                "properties": {
+                  "text": {
+                    "oneOf": [
+                      {
+                        "type": "string"
+                      },
+                      {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "properties": {
+                          "en": {
+                            "type": "string"
+                          },
+                          "es": {
+                            "type": "string"
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "href": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
           }
         }
       },
       "filterConfig": {
         "type": "object",
-        "required": ["defaultKey", "viewAllLabelKey", "filters"],
+        "required": [
+          "defaultKey",
+          "viewAllLabelKey",
+          "filters"
+        ],
         "additionalProperties": false,
         "properties": {
-          "defaultKey": { "type": "string" },
-          "viewAllLabelKey": { "type": "string" },
+          "defaultKey": {
+            "type": "string"
+          },
+          "viewAllLabelKey": {
+            "type": "string"
+          },
           "filters": {
             "type": "array",
             "items": {
               "type": "object",
-              "required": ["key", "labelKey"],
+              "required": [
+                "key",
+                "labelKey"
+              ],
               "additionalProperties": false,
               "properties": {
-                "key": { "type": "string" },
-                "labelKey": { "type": "string" }
+                "key": {
+                  "type": "string"
+                },
+                "labelKey": {
+                  "type": "string"
+                }
               }
             }
           }

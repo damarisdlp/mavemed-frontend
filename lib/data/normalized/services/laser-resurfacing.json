@@ -169,6 +169,14 @@
       {
         "id": "01",
         "captionKey": "ba.sylfirm.01.caption"
+      },
+      {
+        "id": "02",
+        "captionKey": "ba.sylfirm.01.caption"
+      },
+      {
+        "id": "03",
+        "captionKey": "ba.sylfirm.01.caption"
       }
     ],
     "notesKeys": [
