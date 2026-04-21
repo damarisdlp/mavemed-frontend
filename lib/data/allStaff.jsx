@@ -1,4 +1,3 @@
-import { vicky } from "./staff/cosmetologists/vicky"
 import { manuel } from "./staff/cosmetologists/manuel"
 import { mayra } from "./staff/cosmetologists/mayra"
 import { veronica } from "./staff/directors/veronica"
@@ -12,7 +11,6 @@ export const allStaff = [
     nataly,
     jocelyn,
     zury,
-    vicky,
     manuel,
     mayra,
 ]

@@ -127,8 +127,8 @@ export default function HeroSection() {
           className="
             absolute inset-0
             bg-gradient-to-b
-            from-black/80
-            via-black/50
+            from-black/60
+            via-black/30
             to-black/0
           "
         />

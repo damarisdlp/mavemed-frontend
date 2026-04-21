@@ -81,12 +81,6 @@ export default function TeamPage({ teamCategories = [] }) {
                   },
                   {
                     "@type": "Person",
-                    name: "Vicky",
-                    jobTitle: "Cosmetologist",
-                    url: "https://www.mavemedspa.com/ourteam/vicky",
-                  },
-                  {
-                    "@type": "Person",
                     name: "Manuel",
                     jobTitle: "Cosmetologist & Masseur",
                     url: "https://www.mavemedspa.com/ourteam/manuel",
