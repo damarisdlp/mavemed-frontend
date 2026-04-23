@@ -8,6 +8,7 @@ import CookieBanner from "@/components/CookieBanner";
 import OrganizationSchema from "@/components/OrganizationSchema";
 import LeadPopupGate from "@/components/LeadPopupGate";
 import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 
@@ -86,6 +87,7 @@ function App({ Component, pageProps }) {
       <LeadPopupGate />
       <Component {...pageProps} />
       <Analytics />
+      <SpeedInsights />
       <ScrollToTopButton />
       <CookieBanner gaId={gaId} onConsentChange={setConsent} />
     </div>
