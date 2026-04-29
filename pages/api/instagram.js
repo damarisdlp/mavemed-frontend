@@ -9,9 +9,8 @@ export default async function handler(req, res) {
   }
 
   const token = process.env.INSTAGRAM_TOKEN;
-  const userId = process.env.INSTAGRAM_USER_ID;
-  if (!token || !userId) {
-    return res.status(500).json({ error: "Missing Instagram configuration" });
+  if (!token) {
+    return res.status(500).json({ error: "Missing Instagram configuration: INSTAGRAM_TOKEN" });
   }
 
   const pinnedIds = (process.env.INSTAGRAM_PINNED_IDS || "")
@@ -47,7 +46,7 @@ export default async function handler(req, res) {
     "like_count"
   ].join(",");
 
-  const url = `https://graph.instagram.com/${userId}/media?fields=${fields}&access_token=${token}`;
+  const url = `https://graph.instagram.com/me/media?fields=${fields}&access_token=${token}`;
   const accountUrl = `https://graph.instagram.com/me?fields=id,username&access_token=${token}`;
 
   try {
