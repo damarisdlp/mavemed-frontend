@@ -1863,5 +1863,15 @@
     "id": "promo.weekly.venus.description",
     "en": "Weekly RF specials with fixed weekday purchase windows.",
     "es": "Promociones semanales de RF con ventanas de compra por día fijo."
+  },
+  {
+    "id": "opt.ultraformer.per_shot",
+    "en": "Per-shot pricing · Consultation required",
+    "es": "Precio por disparo · Valoración requerida"
+  },
+  {
+    "id": "price.ultraformer.per_shot",
+    "en": "$1.25–$1.50 USD per shot. Ultraformer MPT uses a per-shot pricing model. A consultation is required to determine how many shots you need and your total treatment cost.",
+    "es": "$1.25–$1.50 USD por disparo. Ultraformer MPT utiliza un modelo de precio por disparo. Se requiere una valoración para determinar cuántos disparos necesitas y el costo total de tu tratamiento."
   }
 ]

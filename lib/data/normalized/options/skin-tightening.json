@@ -1,5 +1,15 @@
 [
   {
+    "id": "opt_ultraformer_per_shot",
+    "serviceId": "svc_ultraformer_mpt",
+    "nameKey": "opt.ultraformer.per_shot",
+    "price": {},
+    "isOptionPromoActive": false,
+    "promoPrice": null,
+    "priceTextKey": "price.ultraformer.per_shot",
+    "notesKeys": []
+  },
+  {
     "id": "opt_ultraformer_deep_synergy_booster",
     "serviceId": "svc_ultraformer_mpt",
     "nameKey": "opt.ultraformer.deep_synergy_booster",
@@ -13,7 +23,8 @@
     "filterGroupKey": "face",
     "notesKeys": [
       "note.ultraformer.deep_synergy_booster"
-    ]
+    ],
+    "isActive": false
   },
   {
     "id": "opt_ultraformer_deep_contour",
@@ -29,7 +40,8 @@
     "filterGroupKey": "face",
     "notesKeys": [
       "note.ultraformer.deep_contour.included"
-    ]
+    ],
+    "isActive": false
   },
   {
     "id": "opt_ultraformer_refreshing_lift",
@@ -45,7 +57,8 @@
     "filterGroupKey": "face",
     "notesKeys": [
       "note.ultraformer.refreshing_lift"
-    ]
+    ],
+    "isActive": false
   },
   {
     "id": "opt_ultraformer_submentum_lower_face",
@@ -61,7 +74,8 @@
     "filterGroupKey": "face",
     "notesKeys": [
       "note.ultraformer.submentum_lower_face"
-    ]
+    ],
+    "isActive": false
   },
   {
     "id": "opt_ultraformer_360_contour",
@@ -77,7 +91,8 @@
     "filterGroupKey": "face",
     "notesKeys": [
       "note.ultraformer.360_contour"
-    ]
+    ],
+    "isActive": false
   },
   {
     "id": "opt_ultraformer_premium_facial_sculpting",
@@ -93,7 +108,8 @@
     "filterGroupKey": "face",
     "notesKeys": [
       "note.ultraformer.premium_facial_sculpting"
-    ]
+    ],
+    "isActive": false
   },
   {
     "id": "opt_ultraformer_total_facial_rejuvenation",
@@ -109,7 +125,8 @@
     "filterGroupKey": "face",
     "notesKeys": [
       "note.ultraformer.total_facial_rejuvenation"
-    ]
+    ],
+    "isActive": false
   },
   {
     "id": "opt_ultraformer_neck_sculpting",
@@ -126,7 +143,8 @@
     "filterGroupKey": "body",
     "notesKeys": [
       "note.ultraformer.neck_sculpting"
-    ]
+    ],
+    "isActive": false
   },
   {
     "id": "opt_ultraformer_decolletage_rejuvenation",
@@ -143,7 +161,8 @@
     "filterGroupKey": "body",
     "notesKeys": [
       "note.ultraformer.decolletage_rejuvenation"
-    ]
+    ],
+    "isActive": false
   },
   {
     "id": "opt_ultraformer_combo_lift_smooth",
@@ -159,7 +178,8 @@
     "filterGroupKey": "body",
     "notesKeys": [
       "note.ultraformer.combo_lift_smooth"
-    ]
+    ],
+    "isActive": false
   },
   {
     "id": "opt_ultraformer_express_body_glow",
@@ -175,7 +195,8 @@
     "filterGroupKey": "body",
     "notesKeys": [
       "note.ultraformer.express_body_glow"
-    ]
+    ],
+    "isActive": false
   },
   {
     "id": "opt_ultraformer_express_back_glow",
@@ -192,7 +213,8 @@
     "filterGroupKey": "body",
     "notesKeys": [
       "note.ultraformer.express_back_glow"
-    ]
+    ],
+    "isActive": false
   },
   {
     "id": "opt_ultraformer_defined_arms",
@@ -208,7 +230,8 @@
     "filterGroupKey": "body",
     "notesKeys": [
       "note.ultraformer.defined_arms"
-    ]
+    ],
+    "isActive": false
   },
   {
     "id": "opt_ultraformer_thigh_sculpting",
@@ -224,7 +247,8 @@
     "filterGroupKey": "body",
     "notesKeys": [
       "note.ultraformer.thigh_sculpting"
-    ]
+    ],
+    "isActive": false
   },
   {
     "id": "opt_venus_refreshing_lift",
