@@ -1139,6 +1139,11 @@ export default function TreatmentDetails({ treatment, packageGroups = [] }) {
                 {t("treatmentDetails.priceHeading")}
               </h2>
               <p className="text-gray-700">{startingPriceText}</p>
+              {pricing.options?.[0]?.optionKey === "opt.ultraformer.per_shot" && pricing.options[0].notes?.map((note, idx) => (
+                <p key={idx} className="text-sm text-gray-600">
+                  {getLocalized(note)}
+                </p>
+              ))}
               <button
                 type="button"
                 onClick={() => openLeadForm(false)}

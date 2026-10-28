@@ -353,9 +353,9 @@ export default function PricingTable({ treatment, addonTreatments = [], packageG
                 return (
                   <div
                     key={`zone-${idx}`}
-                    className="flex flex-row justify-between items-start border p-4 rounded-lg shadow-sm hover:shadow-md transition bg-[#f9f9f9]"
+                    className="flex flex-col gap-4 sm:flex-row sm:gap-6 justify-between items-start border p-4 rounded-lg shadow-sm hover:shadow-md transition bg-[#f9f9f9]"
                   >
-                    <div className="text-lg font-medium flex-1">
+                    <div className="text-lg font-medium flex-1 min-w-0">
                       {renderInlineEducationLinks(optionName, `pricing-option-${idx}`)}
                       {showPromo && optionValidTill ? (
                         <p className="mt-1 text-xs text-gray-600">
@@ -375,7 +375,7 @@ export default function PricingTable({ treatment, addonTreatments = [], packageG
                       )}
                     </div>
 
-                    <div className="text-sm leading-6 text-right w-max flex-shrink-0">
+                    <div className="text-sm leading-6 text-left sm:text-right w-full sm:w-auto sm:max-w-[50%] min-w-0 break-words">
                       <div className="flex justify-between gap-2">
                         <span className="font-semibold text-left whitespace-nowrap">
                           {priceLabel}

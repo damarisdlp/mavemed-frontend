@@ -7,7 +7,9 @@
     "isOptionPromoActive": false,
     "promoPrice": null,
     "priceTextKey": "price.ultraformer.per_shot",
-    "notesKeys": []
+    "notesKeys": [
+      "note.ultraformer.per_shot_consultation"
+    ]
   },
   {
     "id": "opt_ultraformer_deep_synergy_booster",
