@@ -79,12 +79,6 @@ export default function TeamPage({ teamCategories = [] }) {
                     jobTitle: "Cosmetologist",
                     url: "https://www.mavemedspa.com/ourteam/mayra",
                   },
-                  {
-                    "@type": "Person",
-                    name: "Zury",
-                    jobTitle: "Receptionist",
-                    url: "https://www.mavemedspa.com/ourteam/zury",
-                  },
                 ],
               },
             }),
