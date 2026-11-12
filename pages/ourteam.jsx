@@ -57,18 +57,6 @@ export default function TeamPage({ teamCategories = [] }) {
                 itemListElement: [
                   {
                     "@type": "Person",
-                    name: "Veronica",
-                    jobTitle: "Founder",
-                    url: "https://www.mavemedspa.com/ourteam/veronica",
-                  },
-                  {
-                    "@type": "Person",
-                    name: "Damaris",
-                    jobTitle: "Chief Executive Director",
-                    url: "https://www.mavemedspa.com/ourteam/damaris",
-                  },
-                  {
-                    "@type": "Person",
                     name: "Dra. Nataly",
                     jobTitle: "MD",
                     url: "https://www.mavemedspa.com/ourteam/drnataly",

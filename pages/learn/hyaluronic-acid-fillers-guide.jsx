@@ -94,12 +94,6 @@ const content = {
         bio: "Specializes in anatomy-based injectables and advanced facial balancing, with a focus on conservative layering to preserve natural facial expressions.",
         profilePath: "/ourteam/dranataly",
       },
-      {
-        name: "Damaris",
-        credentials: "Director, Mave Medical Spa",
-        bio: "Oversees clinical standards and continuity of care, ensuring international and local patients receive a seamless, world-class experience in Tijuana.",
-        profilePath: "/ourteam/damaris",
-      },
     ],
     sourcesQuestion: "Which primary sources support this guide?",
     sourcesAnswer:
@@ -233,12 +227,6 @@ const content = {
           "Proveedora Médica, Procedimientos Estéticos",
         bio: "Enfocada en planificación anatómica de inyectables, técnica conservadora por capas y protocolos de seguimiento seguro.",
         profilePath: "/ourteam/dranataly",
-      },
-      {
-        name: "Damaris",
-        credentials: "Directora de Clínica, Mave Medical Spa",
-        bio: "Dirige estándares de tratamiento, sistemas de educación para pacientes y continuidad de atención en pacientes transfronterizos.",
-        profilePath: "/ourteam/damaris",
       },
     ],
     sourcesQuestion: "¿Qué fuentes primarias respaldan esta guía?",
