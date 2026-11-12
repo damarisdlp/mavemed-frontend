@@ -21,10 +21,14 @@ export default function PrivacyPage() {
   const strings = {
     title: privacyContent.title[locale] || privacyContent.title.en,
     desc: privacyContent.intro[locale] || privacyContent.intro.en,
-    consent: privacyContent.consent[locale] || privacyContent.consent.en,
-    lastUpdated: privacyContent.lastUpdated[locale] || privacyContent.lastUpdated.en,
+    description: privacyContent.description[locale] || privacyContent.description.en,
+    documentHeading: privacyContent.document.heading[locale] || privacyContent.document.heading.en,
+    documentLabel: privacyContent.document.label[locale] || privacyContent.document.label.en,
+    documentHint: privacyContent.document.hint[locale] || privacyContent.document.hint.en,
+    rightsHeading: privacyContent.rights.heading[locale] || privacyContent.rights.heading.en,
+    rightsBody: privacyContent.rights.body[locale] || privacyContent.rights.body.en,
+    contactText: privacyContent.contact.text[locale] || privacyContent.contact.text.en,
     contactEmail: privacyContent.contact.email,
-    contactPhone: locale === "es" ? privacyContent.contact.esPhone : privacyContent.contact.phone,
   };
 
   return (
@@ -47,11 +51,7 @@ export default function PrivacyPage() {
       <PromoBanner />
       <Header />
 
-       {/* Hero Banner for Team Member */}
-              <div className="bg-white">
-                <div className="relative w-full h-[50px] md:h-[60px]">
-                        </div>
-                </div>
+      <div className="h-[50px] bg-white md:h-[60px]" aria-hidden="true" />
 
       <div className="bg-white">
         <div className="w-full max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 pt-4 md:pt-6">
@@ -69,42 +69,33 @@ export default function PrivacyPage() {
           <h1 className="text-black font-serif font-medium mb-4 leading-tight text-[clamp(2rem,5vw,3rem)]">
             {strings.title}
           </h1>
-          <p className="text-sm text-gray-500 mb-2">{strings.lastUpdated}</p>
           <p className="text-gray-700 mb-4">{strings.desc}</p>
-          <p className="text-gray-700 mb-6">{strings.consent}</p>
+          <p className="text-gray-700 mb-6">{strings.description}</p>
 
-          <div className="space-y-8 text-gray-700 leading-relaxed">
-            {privacyContent.sections.map((section, idx) => (
-              <div key={idx} className="space-y-3">
-                <h2 className="text-lg font-semibold text-black">
-                  {section.heading[locale] || section.heading.en}
-                </h2>
-                <div className="space-y-2">
-                  {(section.body[locale] || section.body.en).map((para, pIdx) => (
-                    <p key={pIdx}>{para}</p>
-                  ))}
-                </div>
-              </div>
-            ))}
+          <div className="mb-8">
+            <p className="font-semibold text-black mb-3">{strings.documentHeading}</p>
+            <a
+              href={privacyContent.document.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-describedby="privacy-document-hint"
+              className="inline-flex items-center gap-2 rounded bg-[#731a2f] px-5 py-3 font-semibold text-white hover:bg-[#591424] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#731a2f]"
+            >
+              {strings.documentLabel}
+              <span aria-hidden="true">↗</span>
+            </a>
+            <p id="privacy-document-hint" className="mt-3 text-sm italic text-gray-600">
+              {strings.documentHint}
+            </p>
           </div>
 
-          <div className="mt-8 text-gray-700">
-            <p className="font-semibold text-black mb-2">
-              {t("privacy.contactTitle")}
-            </p>
+          <div className="space-y-4 text-gray-700 leading-relaxed">
+            <h2 className="text-lg font-semibold text-black">{strings.rightsHeading}</h2>
+            <p>{strings.rightsBody}</p>
+            <p>{strings.contactText}</p>
             <p>
-              {t("privacy.contactText")}
-            </p>
-            <p className="mt-2">
-              {t("privacy.emailLabel")}{" "}
-              <a href={`mailto:${strings.contactEmail}`} className="underline text-[#731a2f]">
+              <a href={`mailto:${strings.contactEmail}`} className="font-semibold underline text-[#731a2f]">
                 {strings.contactEmail}
-              </a>
-            </p>
-            <p>
-              {t("privacy.phoneLabel")}{" "}
-              <a href={`tel:${strings.contactPhone}`} className="underline text-[#731a2f]">
-                {strings.contactPhone}
               </a>
             </p>
           </div>
