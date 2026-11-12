@@ -5,6 +5,7 @@ import Link from "next/link";
 import { getActiveLeadForm, resolveLeadFormCopy } from "@/lib/data/leadForms";
 import { validatePhoneNumber } from "@/lib/utils/phone";
 import { getLeadAuthHeaders } from "@/lib/utils/leadAuthClient";
+import { markLeadPopupSeen, shouldShowLeadPopup } from "@/lib/utils/leadPopup";
 
 export default function PromoLeadPopup() {
   const router = useRouter();
@@ -53,11 +54,6 @@ export default function PromoLeadPopup() {
     phone: "",
   });
 
-  const sessionKey = useMemo(
-    () => (isSpanish ? "mave_promo_popup_seen_es" : "mave_promo_popup_seen_en"),
-    [isSpanish]
-  );
-
   const submitLangRef = useRef("en");
 
   const defaultCountryCode = isSpanish ? "+52" : "+1";
@@ -76,7 +72,10 @@ export default function PromoLeadPopup() {
       keepalive: true,
     });
 
+  const previousLanguageRef = useRef(isSpanish);
   useEffect(() => {
+    if (previousLanguageRef.current === isSpanish) return;
+    previousLanguageRef.current = isSpanish;
     setStatus({ type: "", message: "" });
     setIsSubmitting(false);
     setForm({ fullName: "", email: "", countryCode: defaultCountryCode, phone: "" });
@@ -92,13 +91,11 @@ export default function PromoLeadPopup() {
   useEffect(() => {
     if (typeof window === "undefined") return;
     if (!isHomePage) return;
-    const hasSeen = window.sessionStorage.getItem(sessionKey);
-    if (!hasSeen) {
+    if (shouldShowLeadPopup()) {
       submitLangRef.current = isSpanish ? "es" : "en";
       setIsOpen(true);
-      window.sessionStorage.setItem(sessionKey, "1");
     }
-  }, [sessionKey, isSpanish, isHomePage]);
+  }, [isSpanish, isHomePage]);
 
   useEffect(() => {
     if (typeof window === "undefined") return;
@@ -117,16 +114,16 @@ export default function PromoLeadPopup() {
   useEffect(() => {
     if (typeof window === "undefined") return;
     const openPopup = () => {
+      markLeadPopupSeen();
       submitLangRef.current = isSpanish ? "es" : "en";
       setStatus({ type: "", message: "" });
       setIsSubmitting(false);
       setIsOpen(true);
-      window.sessionStorage.setItem(sessionKey, "1");
     };
 
     window.addEventListener("promo-popup-open", openPopup);
     return () => window.removeEventListener("promo-popup-open", openPopup);
-  }, [isSpanish, sessionKey]);
+  }, [isSpanish]);
 
   useEffect(() => {
     if (typeof window === "undefined") return;

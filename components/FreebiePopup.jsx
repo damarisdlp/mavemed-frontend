@@ -2,6 +2,7 @@ import { useEffect, useMemo, useState, useRef } from "react";
 import { useRouter } from "next/router";
 import { useTranslation } from "next-i18next";
 import { validatePhoneNumber } from "@/lib/utils/phone";
+import { shouldShowLeadPopup } from "@/lib/utils/leadPopup";
 
 export default function FreebiePopup() {
   const router = useRouter();
@@ -40,39 +41,29 @@ export default function FreebiePopup() {
     company: "",
   });
 
-  const sessionKey = useMemo(
-    () => (isSpanish ? "mave_freebie_popup_seen_es" : "mave_freebie_popup_seen_en"),
-    [isSpanish]
-  );
-
   // Lock the language used for submission at the moment the popup opens,
   // so toggling languages mid-flight cannot submit to the wrong endpoint.
   const submitLangRef = useRef("en");
 
-  // Reset UI state on language toggle, prevent stale success message,
-  // and allow popup to show again under the other language.
+  // Close the form on language changes without resetting visitor history.
+  const previousLanguageRef = useRef(isSpanish);
   useEffect(() => {
+    if (previousLanguageRef.current === isSpanish) return;
+    previousLanguageRef.current = isSpanish;
     setStatus({ type: "", message: "" });
     setIsSubmitting(false);
     setForm({ name: "", email: "", phone: "", company: "" });
     setIsOpen(false);
-
-    if (typeof window !== "undefined") {
-      window.sessionStorage.removeItem("mave_freebie_popup_seen_en");
-      window.sessionStorage.removeItem("mave_freebie_popup_seen_es");
-    }
   }, [isSpanish]);
 
   useEffect(() => {
     if (typeof window === "undefined") return;
 
-    const hasSeen = window.sessionStorage.getItem(sessionKey);
-    if (!hasSeen) {
+    if (shouldShowLeadPopup()) {
       submitLangRef.current = isSpanish ? "es" : "en";
       setIsOpen(true);
-      window.sessionStorage.setItem(sessionKey, "1");
     }
-  }, [sessionKey, isSpanish]);
+  }, [isSpanish]);
 
   const handleChange = (event) => {
     const { name, value } = event.target;
