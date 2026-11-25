@@ -1111,8 +1111,8 @@
   },
   {
     "id": "svc.serum_add_ons.name",
-    "en": "Serum Add-Ons (PRP, PN, PDRN)",
-    "es": "Complementos de Suero (PRP, PN, PDRN)"
+    "en": "Serum Add-Ons (PN, PDRN)",
+    "es": "Complementos de Suero (PN, PDRN)"
   },
   {
     "id": "svc.serum_add_ons.desc",

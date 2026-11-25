@@ -11,13 +11,13 @@
   },
   {
     "id": "svc.microneedling.desc",
-    "en": "Refine texture, minimize pores, and stimulate collagen through precision Microneedling using fine sterile needles. Choose PRP/PRFM for glow and recovery support, PN for hydration and regeneration, PDRN for recovery and tone, or Toskani and Caviar Extract infusions for targeted skin renewal.",
-    "es": "Mejora la textura, minimiza poros y estimula el colágeno mediante Microneedling de precisión con agujas estériles finas. Elige PRP/PRFM para luminosidad y apoyo a la recuperación, PN para hidratación y regeneración, PDRN para recuperación y tono, o infusiones Toskani y Extracto de Caviar para renovación dirigida."
+    "en": "Refine texture, minimize pores, and stimulate collagen through precision Microneedling using fine sterile needles. Choose PN for hydration and regeneration, PDRN for recovery and tone, or Toskani and Caviar Extract infusions for targeted skin renewal.",
+    "es": "Mejora la textura, minimiza poros y estimula el colágeno mediante Microneedling de precisión con agujas estériles finas. Elige PN para hidratación y regeneración, PDRN para recuperación y tono, o infusiones Toskani y Extracto de Caviar para renovación dirigida."
   },
   {
     "id": "svc.microneedling.details",
-    "en": "Microneedling uses fine sterile needles to create microchannels that activate the skin's natural renewal response, stimulating collagen and elastin while improving texture and firmness. Infusions can be selected based on your goal: PRP/PRFM to support recovery and glow, PN to hydrate and regenerate, PDRN to calm and even tone, or Toskani and Caviar Extract for targeted skin renewal.",
-    "es": "El Microneedling utiliza agujas estériles finas para crear microcanales que activan la respuesta natural de renovación de la piel, estimulando colágeno y elastina mientras mejora textura y firmeza. Las infusiones se eligen según el objetivo: PRP/PRFM para apoyar recuperación y luminosidad, PN para hidratar y regenerar, PDRN para calmar y unificar el tono, o Toskani y Extracto de Caviar para renovación dirigida."
+    "en": "Microneedling uses fine sterile needles to create microchannels that activate the skin's natural renewal response, stimulating collagen and elastin while improving texture and firmness. Infusions can be selected based on your goal: PN to hydrate and regenerate, PDRN to calm and even tone, or Toskani and Caviar Extract for targeted skin renewal.",
+    "es": "El Microneedling utiliza agujas estériles finas para crear microcanales que activan la respuesta natural de renovación de la piel, estimulando colágeno y elastina mientras mejora textura y firmeza. Las infusiones se eligen según el objetivo: PN para hidratar y regenerar, PDRN para calmar y unificar el tono, o Toskani y Extracto de Caviar para renovación dirigida."
   },
   {
     "id": "note.microneedling.sessions",
@@ -191,13 +191,13 @@
   },
   {
     "id": "svc.mesotherapy.desc",
-    "en": "Targeted microinjections of skin-rejuvenating substances like PRP, PDRN, hyaluronic acid, and vitamins to deeply hydrate, support recovery, and enhance radiance.",
-    "es": "Microinyecciones dirigidas de sustancias rejuvenecedoras como PRP, PDRN, ácido hialurónico y vitaminas para hidratar profundamente, apoyar la recuperación y potenciar la luminosidad de la piel."
+    "en": "Targeted microinjections of skin-rejuvenating substances like PDRN, hyaluronic acid, and vitamins to deeply hydrate, support recovery, and enhance radiance.",
+    "es": "Microinyecciones dirigidas de sustancias rejuvenecedoras como PDRN, ácido hialurónico y vitaminas para hidratar profundamente, apoyar la recuperación y potenciar la luminosidad de la piel."
   },
   {
     "id": "svc.mesotherapy.details",
-    "en": "Mesotherapy is a minimally invasive treatment that delivers skin-boosting compounds directly into the dermis via microinjections. Actives include PRP/PRFM from your blood, polynucleotides for regeneration, niacinamide and hyaluronic acid boosters for hydration and glow, antioxidant cocktails for revitalization, and Allergan Aesthetics FDA-cleared HA microdroplets for cheek smoothness and luminosity.",
-    "es": "La mesoterapia es un tratamiento mínimamente invasivo que introduce compuestos revitalizantes directamente en la dermis mediante microinyecciones. Los activos incluyen PRP/PRFM de su propia sangre, polinucleótidos para regeneración, potenciadores con niacinamida y ácido hialurónico para hidratación y luminosidad, cócteles antioxidantes para revitalización y microgotas de AH de Allergan Aesthetics aprobadas por la FDA para suavizar y dar luminosidad a las mejillas."
+    "en": "Mesotherapy is a minimally invasive treatment that delivers skin-boosting compounds directly into the dermis via microinjections. Actives include polynucleotides for regeneration, niacinamide and hyaluronic acid boosters for hydration and glow, antioxidant cocktails for revitalization, and Allergan Aesthetics FDA-cleared HA microdroplets for cheek smoothness and luminosity.",
+    "es": "La mesoterapia es un tratamiento mínimamente invasivo que introduce compuestos revitalizantes directamente en la dermis mediante microinyecciones. Los activos incluyen polinucleótidos para regeneración, potenciadores con niacinamida y ácido hialurónico para hidratación y luminosidad, cócteles antioxidantes para revitalización y microgotas de AH de Allergan Aesthetics aprobadas por la FDA para suavizar y dar luminosidad a las mejillas."
   },
   {
     "id": "note.mesotherapy.customized",
@@ -871,8 +871,8 @@
   },
   {
     "id": "promo.microneedling_collagen_boost.note",
-    "en": "A 3-session microneedling package designed to support collagen stimulation, consistency, and long-term skin quality with PRP, PN, or PDRN options. Package cost is due upfront.",
-    "es": "Un paquete de 3 sesiones de microneedling diseñado para apoyar la estimulación de colágeno, la constancia y la calidad de la piel a largo plazo con opciones PRP, PN o PDRN. Costo del paquete se paga por adelantado."
+    "en": "A 3-session microneedling package designed to support collagen stimulation, consistency, and long-term skin quality with PN or PDRN options. Package cost is due upfront.",
+    "es": "Un paquete de 3 sesiones de microneedling diseñado para apoyar la estimulación de colágeno, la constancia y la calidad de la piel a largo plazo con opciones PN o PDRN. Costo del paquete se paga por adelantado."
   },
   {
     "id": "promo.microneedling_packages.headline",
@@ -881,8 +881,8 @@
   },
   {
     "id": "promo.microneedling_packages.note",
-    "en": "Choose a Skin Renewal Package that includes one HydraFacial plus one Microneedling or Mesotherapy session, or a 3-session Collagen Boost package with PRP, PN, or PDRN. Package cost is due upfront.",
-    "es": "Elige un paquete Skin Renewal que incluye un HydraFacial más una sesión de Microneedling o Mesoterapia, o un paquete Collagen Boost de 3 sesiones con PRP, PN o PDRN. El costo del paquete se paga por adelantado."
+    "en": "Choose a Skin Renewal Package that includes one HydraFacial plus one Microneedling or Mesotherapy session, or a 3-session Collagen Boost package with PN or PDRN. Package cost is due upfront.",
+    "es": "Elige un paquete Skin Renewal que incluye un HydraFacial más una sesión de Microneedling o Mesoterapia, o un paquete Collagen Boost de 3 sesiones con PN o PDRN. El costo del paquete se paga por adelantado."
   },
   {
     "id": "opt.weekly.skin_renewal.prp_package",
