@@ -29,6 +29,7 @@
   },
   {
     "id": "svc_matrixectomy",
+    "isVisible": false,
     "slug": "matrixectomy",
     "categoryId": "cat_podiatry",
     "nameKey": "svc.matrixectomy.name",
